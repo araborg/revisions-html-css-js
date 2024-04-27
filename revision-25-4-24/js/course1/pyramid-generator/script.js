@@ -4,5 +4,11 @@ character[1] = "a";
 console.log(character);
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
-rows.push("freeCodeCamp");
+
+let pushed = rows.push("freeCodeCamp");
+console.log(`This is d pushed value: ${pushed}`);
+
+let popped = rows.pop();
+console.log(`This is d popped value: ${popped}`);
+
 console.log(rows);
