@@ -38,3 +38,4 @@ for (const row of rows) {
 console.log(result);
 
 // console.log("" + "\n" + 2);
+function padRow() {}
