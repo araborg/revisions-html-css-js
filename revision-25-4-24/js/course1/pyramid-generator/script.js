@@ -20,5 +20,21 @@ const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-    console.log(i);
+    // rows.push(i);
+    rows.push(character);
 }
+
+console.log(rows);
+
+// console.log(`wt rows looks like ${rows}`);
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+    // result = result + row + "\n";
+}
+
+console.log(result);
+
+// console.log("" + "\n" + 2);
