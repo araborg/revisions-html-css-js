@@ -21,7 +21,7 @@ const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
     // rows.push(i);
-    rows.push(character);
+    rows.push(character.repeat(i + 1));
 }
 
 console.log(rows);
