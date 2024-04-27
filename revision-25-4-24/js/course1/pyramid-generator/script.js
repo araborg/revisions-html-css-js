@@ -49,9 +49,18 @@ if (" ") {
     console.log("Condition is true");
 }
 
-let continueLoop = false;
+// let continueLoop = false;
 let done = 0;
 
-while (continueLoop) {
+while (done !== count) {
+    //while (continueLoop)
     done++;
+
+    /*
+    if (done === count) {
+        continueLoop = false;
+    }
+    */
+
+    rows.push(padRow(done, count));
 }
