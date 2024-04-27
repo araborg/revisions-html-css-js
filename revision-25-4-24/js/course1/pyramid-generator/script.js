@@ -14,20 +14,17 @@ console.log(`This is d popped value: ${popped}`);
 
 console.log(rows);
 */
-// ================stops here ===============
+
 const character = "#";
 const count = 8;
 const rows = [];
 
-for (let i = 1; i < count; i += 1) {
-    // rows.push(i);
-    // rows.push(character.repeat(i + 1));
+// change ds code to diff kind of loop
+/*
+for (let i = 1; i <= count; i += 1) {
     rows.push(padRow(i, count));
 }
-
-console.log(rows);
-
-// console.log(`wt rows looks like ${rows}`);
+*/
 
 let result = "";
 
@@ -37,17 +34,6 @@ for (const row of rows) {
 }
 
 console.log(result);
-/*
-// console.log("" + "\n" + 2);
-function padRow(name) {
-    const test = "Testing";
-    // return character + name;
-    return test;
-}
-const call = padRow("Baba");
-console.log(call);
-// console.log(test); // Uncaught ReferenceError: test is not defined
-*/
 
 function padRow(rowNumber, rowCount) {
     return (
