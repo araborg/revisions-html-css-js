@@ -38,4 +38,8 @@ for (const row of rows) {
 console.log(result);
 
 // console.log("" + "\n" + 2);
-function padRow() {}
+function padRow() {
+    return "Hello";
+}
+const call = padRow();
+console.log(call);
