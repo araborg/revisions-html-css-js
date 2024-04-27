@@ -60,9 +60,31 @@
             </fieldset>
 
             <fieldset>
-                <label for=""
+                <label for="profile-pic"
                     >Upload a profile picture:
-                    <input type="file" />
+                    <input type="file" id="profile-pic" />
+                </label>
+
+                <label for="age">
+                    Input your age (years):
+                    <input type="number" min="13" max="120" id="age" />
+                </label>
+
+                <label for="referrer">
+                    How did you hear about us?
+
+                    <select name="" id="referrer">
+                        <option value=""></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                    </select>
+                </label>
+
+                <label for="bio">
+                    Provide a bio:
+                    <textarea name="" id="bio" cols="30" rows="3"></textarea>
                 </label>
             </fieldset>
 
