@@ -1,3 +1,4 @@
+/*
 let character = "Hello";
 let count = 8;
 character[1] = "a";
@@ -12,3 +13,8 @@ let popped = rows.pop();
 console.log(`This is d popped value: ${popped}`);
 
 console.log(rows);
+*/
+// ================stops here ===============
+const character = "#";
+const count = 8;
+const rows = [];
