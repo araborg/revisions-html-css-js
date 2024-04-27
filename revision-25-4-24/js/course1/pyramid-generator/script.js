@@ -57,13 +57,32 @@ while (condition) {
 }
 
 1.
-*/
 
 let continueLoop = false;
 let done = 0;
 
-while (continueLoop) {
+while (!continueLoop) {
     done++;
+    rows.push(padRow(done, count));
+    
+    if (done === count) {
+        continueLoop = false;
+        console.log(`continue loop if {}`);
+    }
+    
+    console.log(done);
+}
+
+2.
+
+*/
+let done = 0;
+
+while (done !== count) {
+    done++;
+    rows.push(padRow(done, count));
+
+    console.log(done);
 }
 
 while (rows.length < count) {
@@ -88,4 +107,4 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-console.log(result);
+// console.log(result);
