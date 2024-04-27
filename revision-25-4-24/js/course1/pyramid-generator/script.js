@@ -26,12 +26,12 @@ for (let i = 1; i <= count; i += 1) {
 }
 */
 
-let result = "";
+// let result = "";
 
-for (const row of rows) {
-    result = result + "\n" + row;
-    // result = result + row + "\n";
-}
+// for (const row of rows) {
+//     result = result + "\n" + row;
+//     // result = result + row + "\n";
+// }
 
 // console.log(result);
 
@@ -52,9 +52,13 @@ if (" ") {
 // let continueLoop = false;
 let done = 0;
 
-while (done !== count) {
+while (rows.length < count) {
     //while (continueLoop)
-    done++;
+    // while (done !== count)
+    // while (done <= count)
+    // while (rows.length <= count)
+
+    // done++;
 
     /*
     if (done === count) {
@@ -62,5 +66,13 @@ while (done !== count) {
     }
     */
 
-    rows.push(padRow(done, count));
+    rows.push(padRow(rows.length + 1, count));
 }
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
