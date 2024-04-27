@@ -19,9 +19,12 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-/*
-change ds code to diff kind of loop
+let result = "";
 
+/*
+A: For loop
+
+// change ds code to diff kind of loop
 for (let i = 1; i <= count; i += 1) {
     rows.push(padRow(i, count));
 }
@@ -44,20 +47,27 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-// ================stops here ===============
+function getResult() {
+    for (const row of rows) {
+        result = result + "\n" + row;
+    }
+
+    console.log(result);
+}
+
 /*
 if (" ") {
     console.log("Condition is true");
 }
 
-While loop:
+B: While loop:
 
 while (condition) {
     logic
 }
 
-1.
 
+1. Uncaught RangeError: Invalid count value: -1
 let continueLoop = false;
 let done = 0;
 
@@ -67,45 +77,62 @@ while (!continueLoop) {
     
     if (done === count) {
         continueLoop = false;
-        console.log(`continue loop if {}`);
     }
     
     console.log(done);
 }
 
-2.
 
-*/
+2.
 let done = 0;
-let result = "";
 
 while (done !== count) {
     done++;
     rows.push(padRow(done, count));
-
-    console.log(done);
 }
 
-while (rows.length < count) {
-    // while (done !== count)
-    // while (done <= count)
-    // while (rows.length <= count)
+getResult();
 
-    // done++;
 
-    /*
-    if (done === count) {
-        continueLoop = false;
-    }
-    */
+3. Uncaught RangeError: Invalid count value: -1
 
+let done = 0;
+
+while (done <= count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+getResult();
+
+
+4.
+let done = 0;
+
+while (done < count) {
+    done++;
+    rows.push(padRow(done, count));
+}
+
+getResult();
+
+
+5.
+let done = 0;
+
+while (done < count) {
+    done++;
     rows.push(padRow(rows.length + 1, count));
 }
 
-// let result = "";
+getResult();
 
-for (const row of rows) {
-    result = result + "\n" + row;
+
+6.
+*/
+
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
 }
 
-// console.log(result);
+getResult();
