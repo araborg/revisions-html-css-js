@@ -19,21 +19,22 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-// change ds code to diff kind of loop
 /*
+change ds code to diff kind of loop
+
 for (let i = 1; i <= count; i += 1) {
     rows.push(padRow(i, count));
 }
+
+let result = "";
+
+for (const row of rows) {
+    result = result + "\n" + row;
+    // result = result + row + "\n";
+}
+
+console.log(result);
 */
-
-// let result = "";
-
-// for (const row of rows) {
-//     result = result + "\n" + row;
-//     // result = result + row + "\n";
-// }
-
-// console.log(result);
 
 function padRow(rowNumber, rowCount) {
     return (
@@ -44,12 +45,20 @@ function padRow(rowNumber, rowCount) {
 }
 
 // ================stops here ===============
-// console.log(Boolean(false) == true);
+/*
 if (" ") {
     console.log("Condition is true");
 }
 
-// let continueLoop = false;
+While loop:
+
+while (condition) {
+    logic
+}
+
+*/
+
+let continueLoop = false;
 let done = 0;
 
 while (rows.length < count) {
