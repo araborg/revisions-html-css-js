@@ -33,7 +33,7 @@ for (const row of rows) {
     // result = result + row + "\n";
 }
 
-console.log(result);
+// console.log(result);
 
 function padRow(rowNumber, rowCount) {
     return (
@@ -41,4 +41,17 @@ function padRow(rowNumber, rowCount) {
         character.repeat(2 * rowNumber - 1) +
         " ".repeat(rowCount - rowNumber)
     );
+}
+
+// ================stops here ===============
+// console.log(Boolean(false) == true);
+if (" ") {
+    console.log("Condition is true");
+}
+
+let continueLoop = false;
+let done = 0;
+
+while (continueLoop) {
+    done++;
 }
