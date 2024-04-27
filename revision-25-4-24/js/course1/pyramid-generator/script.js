@@ -77,6 +77,7 @@ while (!continueLoop) {
 
 */
 let done = 0;
+let result = "";
 
 while (done !== count) {
     done++;
@@ -101,7 +102,7 @@ while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
 }
 
-let result = "";
+// let result = "";
 
 for (const row of rows) {
     result = result + "\n" + row;
