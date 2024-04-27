@@ -39,7 +39,9 @@ console.log(result);
 
 // console.log("" + "\n" + 2);
 function padRow(name) {
-    return name;
+    const test = "Testing";
+    return character + name;
 }
-const call = padRow();
+const call = padRow("Baba");
 console.log(call);
+console.log(test); // Uncaught ReferenceError: test is not defined
