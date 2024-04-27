@@ -56,13 +56,17 @@ while (condition) {
     logic
 }
 
+1.
 */
 
 let continueLoop = false;
 let done = 0;
 
+while (continueLoop) {
+    done++;
+}
+
 while (rows.length < count) {
-    //while (continueLoop)
     // while (done !== count)
     // while (done <= count)
     // while (rows.length <= count)
