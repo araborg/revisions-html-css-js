@@ -19,9 +19,10 @@ const character = "#";
 const count = 8;
 const rows = [];
 
-for (let i = 0; i < count; i = i + 1) {
+for (let i = 1; i < count; i += 1) {
     // rows.push(i);
-    rows.push(character.repeat(i + 1));
+    // rows.push(character.repeat(i + 1));
+    rows.push(padRow(i, count));
 }
 
 console.log(rows);
@@ -36,12 +37,22 @@ for (const row of rows) {
 }
 
 console.log(result);
-
+/*
 // console.log("" + "\n" + 2);
 function padRow(name) {
     const test = "Testing";
-    return character + name;
+    // return character + name;
+    return test;
 }
 const call = padRow("Baba");
 console.log(call);
-console.log(test); // Uncaught ReferenceError: test is not defined
+// console.log(test); // Uncaught ReferenceError: test is not defined
+*/
+
+function padRow(rowNumber, rowCount) {
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        " ".repeat(rowCount - rowNumber)
+    );
+}
