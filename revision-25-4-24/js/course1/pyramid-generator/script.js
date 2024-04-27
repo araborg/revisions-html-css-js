@@ -68,6 +68,7 @@ while (condition) {
 
 
 1. Uncaught RangeError: Invalid count value: -1
+
 let continueLoop = false;
 let done = 0;
 
@@ -83,7 +84,9 @@ while (!continueLoop) {
 }
 
 
-2.
+2. This will go into infinite loop if done is initialized with
+a bigger value than count e.g 10
+
 let done = 0;
 
 while (done !== count) {
