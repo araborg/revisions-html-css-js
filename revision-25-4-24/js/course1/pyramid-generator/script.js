@@ -189,6 +189,11 @@ getResult();
 */
 
 const numbers = [1, 2, 3];
-const unshifted = numbers.unshift(4);
+const unshifted = numbers.unshift(5);
 console.log(numbers); // [4, 1, 2, 3]
-console.log(unshifted); // 4
+console.log(unshifted); // 4, i.e d arr length
+
+/* 
+unshift added value(s) to the beginning of an arr while 
+shift removes & return value(s) from d beginning of an arr 
+*/
