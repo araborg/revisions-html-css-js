@@ -127,9 +127,10 @@ getResult();
 
 
 5.
-let done = 0;
-
 Due to d fact dt rows is empty, rows.length = 0;
+As done increases by 1, rows.length increases by 1;
+
+let done = 0;
 
 while (done < count) {
     done++;
@@ -140,6 +141,8 @@ getResult();
 
 
 6.
+This is d most improved code.
+
 */
 
 while (rows.length < count) {
