@@ -14,6 +14,8 @@ body {
 label {
     display: block;
     margin: 0.5rem 0;
+
+    border: 2px solid white;
 }
 
 h1,
@@ -39,4 +41,10 @@ fieldset {
 
 fieldset:last-of-type {
     border-bottom: none;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
 }
