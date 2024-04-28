@@ -176,8 +176,8 @@ function getResult() {
     console.log(result);
 }
 
-for (let i = count; i > 0; i -= 1) {
+for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));
 }
 
-console.log(rows);
+getResult();
