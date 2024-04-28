@@ -143,10 +143,14 @@ getResult();
 6.
 This is d most improved code.
 
-*/
+Initial: array rows.length = 0;
 
 while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
 }
 
 getResult();
+
+
+Inverted Loops:
+*/
