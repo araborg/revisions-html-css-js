@@ -55,3 +55,9 @@ textarea {
     margin-right: 0.5em;
     vertical-align: baseline;
 }
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+}
