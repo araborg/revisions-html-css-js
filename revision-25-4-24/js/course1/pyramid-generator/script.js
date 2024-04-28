@@ -13,7 +13,6 @@ let popped = rows.pop();
 console.log(`This is d popped value: ${popped}`);
 
 console.log(rows);
-*/
 
 const character = "#";
 const count = 8;
@@ -21,7 +20,7 @@ const rows = [];
 
 let result = "";
 
-/*
+
 A: For loop
 
 // change ds code to diff kind of loop
@@ -37,7 +36,7 @@ for (const row of rows) {
 }
 
 console.log(result);
-*/
+
 
 function padRow(rowNumber, rowCount) {
     return (
@@ -55,7 +54,8 @@ function getResult() {
     console.log(result);
 }
 
-/*
+
+
 if (" ") {
     console.log("Condition is true");
 }
@@ -154,3 +154,26 @@ getResult();
 
 Inverted Loops:
 */
+const character = "#";
+const count = 8;
+const rows = [];
+
+let result = "";
+
+function padRow(rowNumber, rowCount) {
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        " ".repeat(rowCount - rowNumber)
+    );
+}
+
+function getResult() {
+    for (const row of rows) {
+        result = result + "\n" + row;
+    }
+
+    console.log(result);
+}
+
+for (let i = count; i > 0; false) {}
