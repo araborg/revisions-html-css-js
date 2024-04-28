@@ -33,6 +33,8 @@ form {
     max-width: 500px;
     min-width: 300px;
 
+    /* y nt margin-bottom: d spacing is needed inside 
+    & nt outside d form*/
     padding-bottom: 2em;
 }
 
