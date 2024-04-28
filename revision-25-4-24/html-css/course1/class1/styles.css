@@ -14,8 +14,6 @@ body {
 label {
     display: block;
     margin: 0.5rem 0;
-
-    /* border: 2px solid white; */
 }
 
 h1,
@@ -53,7 +51,6 @@ textarea {
 
     min-height: 2em;
 
-    /* padding: 0 0.5rem; */
     font-size: 1rem;
 }
 
@@ -88,9 +85,15 @@ input[name="submit"] {
     background-color: #3b3b4f;
     font-size: 1.1rem;
     border-color: white;
+
+    cursor: pointer;
 }
 
 input[type="file"] {
     padding: 1px 2px;
     min-height: 0;
+}
+
+label a {
+    color: #dfdfe2;
 }
