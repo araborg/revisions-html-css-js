@@ -73,6 +73,7 @@ input:focus, /* pseudo class */
 select:focus,
 textarea:focus {
     outline: none;
+    border: none; /* ??????? */
 }
 
 .inline {
