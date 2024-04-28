@@ -154,8 +154,8 @@ getResult();
 
 C: Inverted Loops:
 */
-const character = "#";
-const count = 8;
+let character = "#";
+let count = 8;
 const rows = [];
 
 let result = "";
@@ -203,12 +203,16 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-let inverted = true;
+character = "!";
+count = 10;
+
+let inverted = false;
 
 for (let i = 1; i <= count; i++) {
     if (inverted) {
         rows.unshift(padRow(i, count));
     } else {
+        rows.push(padRow(i, count));
     }
 }
 
