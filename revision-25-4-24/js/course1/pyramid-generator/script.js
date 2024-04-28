@@ -68,7 +68,7 @@ while (condition) {
 
 
 1. Uncaught RangeError: Invalid count value: -1
-This: done = 8, count = 8; results in error wn done = 9;
+This: done = 8, count = 8; results in error wn done++ gives 9;
 
 let continueLoop = false;
 let done = 0;
@@ -103,7 +103,7 @@ getResult();
 
 
 3. Uncaught RangeError: Invalid count value: -1
-This: done = 8, count = 8; results in error wn done = 9;
+This: done = 8, count = 8; results in error wn done++ gives 9;
 
 let done = 0;
 
@@ -128,6 +128,8 @@ getResult();
 
 5.
 let done = 0;
+
+Due to d fact dt rows is empty, rows.length = 0;
 
 while (done < count) {
     done++;
