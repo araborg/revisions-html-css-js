@@ -87,6 +87,10 @@ while (!continueLoop) {
 2. This will go into infinite loop if done is initialized with
 a bigger value than count e.g 10
 
+done !== count is true in all of dse cases:
+done = 4, count = 8;
+done = 9, count = 8;
+
 let done = 0;
 
 while (done !== count) {
