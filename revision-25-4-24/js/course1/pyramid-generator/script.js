@@ -185,4 +185,10 @@ for (let i = count; i > 0; i--) {
 
 getResult();
 
+2. Not using inverted method:
 */
+
+const numbers = [1, 2, 3];
+const unshifted = numbers.unshift(4);
+console.log(numbers); // [4, 1, 2, 3]
+console.log(unshifted); // 4
