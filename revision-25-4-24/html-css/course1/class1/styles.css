@@ -49,6 +49,8 @@ fieldset:last-of-type {
     border-bottom: none;
 }
 
+/* fieldset::after, fieldset::first-letter: e.gs of pseudo elemt */
+
 input,
 select,
 textarea {
