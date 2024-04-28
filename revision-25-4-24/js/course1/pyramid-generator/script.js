@@ -176,8 +176,13 @@ function getResult() {
     console.log(result);
 }
 
+/*
+1. For loops:
+
 for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));
 }
 
 getResult();
+
+*/
