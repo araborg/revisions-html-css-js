@@ -203,8 +203,13 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
+let inverted = true;
+
 for (let i = 1; i <= count; i++) {
-    rows.unshift(padRow(i, count));
+    if (inverted) {
+        rows.unshift(padRow(i, count));
+    } else {
+    }
 }
 
 getResult();
