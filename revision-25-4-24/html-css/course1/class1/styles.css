@@ -31,6 +31,10 @@ form {
     min-width: 300px;
 
     width: 60vw;
+
+    margin-bottom: 2rem;
+
+    /* border: 2px solid green; */
 }
 
 fieldset {
@@ -48,16 +52,42 @@ select,
 textarea {
     width: 100%;
     margin-top: 10px;
+
+    min-height: 2em;
+
+    /* padding: 0 0.5rem; */
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
 }
 
 .inline {
     width: unset;
     margin-right: 0.5em;
     vertical-align: baseline;
+
+    min-height: 0;
 }
 
 input,
 textarea {
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+input[name="submit"] {
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    min-height: 2em;
+
+    margin: 0 auto;
+    background-color: #3b3b4f;
+    font-size: 1.1rem;
+    border-color: white;
 }
