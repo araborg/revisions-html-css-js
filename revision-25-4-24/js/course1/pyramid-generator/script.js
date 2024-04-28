@@ -152,7 +152,7 @@ while (rows.length < count) {
 getResult();
 
 
-Inverted Loops:
+C: Inverted Loops:
 */
 const character = "#";
 const count = 8;
@@ -176,4 +176,8 @@ function getResult() {
     console.log(result);
 }
 
-for (let i = count; i > 0; i = i - 1) {}
+for (let i = count; i > 0; i -= 1) {
+    rows.push(padRow(i, count));
+}
+
+console.log(rows);
