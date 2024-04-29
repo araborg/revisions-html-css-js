@@ -14,10 +14,44 @@ body {
     font-size: 1.6rem;
 }
 
+h1,
+p {
+    text-align: center;
+    margin: 1em auto;
+}
+
 form {
     width: 60vw;
     min-width: 30rem;
     max-width: 50rem;
 
     margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+}
+
+label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+input {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+input,
+select,
+textarea {
+    min-height: 2em;
+}
+
+input[type="radio"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    /* vertical-align: baseline; */
 }
