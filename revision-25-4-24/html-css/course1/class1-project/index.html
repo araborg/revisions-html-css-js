@@ -34,7 +34,13 @@
 
                 <label for="email">
                     Enter Your Email:
-                    <input type="email" id="email" name="email" required />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class=""
+                        required
+                    />
                 </label>
 
                 <label for="password">
@@ -53,22 +59,16 @@
                 <legend>Account type (required)</legend>
                 <label for="personal">
                     <input
-                        type="radio"
-                        name="account-type"
                         id="personal"
+                        name="account-type"
+                        type="radio"
                         checked
-                        required
                     />
                     Personal
                 </label>
 
                 <label for="business">
-                    <input
-                        type="radio"
-                        name="account-type"
-                        id="business"
-                        required
-                    />
+                    <input type="radio" name="account-type" id="business" />
                     Business
                 </label>
             </fieldset>
