@@ -62,7 +62,7 @@
                     Personal
                 </label>
 
-                <label for="personal">
+                <label for="business">
                     <input
                         type="radio"
                         name="account-type"
@@ -72,20 +72,26 @@
                     Business
                 </label>
             </fieldset>
+
             <fieldset>
-                <label for="">
+                <label for="profile-pic">
                     Upload a profile picture
-                    <input type="file" size="100kb" />
+                    <input
+                        id="profile-pic"
+                        type="file"
+                        size="10000b"
+                        name="profile-pic"
+                    />
                 </label>
 
-                <label for="">
+                <label for="age">
                     Input your age (years)
-                    <input type="number" min="13" max="120" />
+                    <input id="age" type="number" min="13" max="120" />
                 </label>
 
-                <label for="">
+                <label for="select">
                     Provide a bio
-                    <select name="" id="">
+                    <select name="select" id="select">
                         <option value="1">(select one)</option>
                         <option value="2">freeCodeCamp News</option>
                         <option value="3">freeCodeCamp Youtube Channels</option>
@@ -94,10 +100,10 @@
                     </select>
                 </label>
 
-                <label for="">
+                <label for="textarea">
                     <textarea
-                        name=""
-                        id=""
+                        name="textarea"
+                        id="textarea"
                         cols="30"
                         rows="3"
                         placeholder="I like coding on the beach"
@@ -105,11 +111,17 @@
                 </label>
             </fieldset>
 
-            <label for="">
-                <input type="checkbox" /> I accept the terms and conditions
+            <label for="terms-and-conditions">
+                <input
+                    id="terms-and-conditions"
+                    name="terms-and-conditions"
+                    type="checkbox"
+                    required
+                />
+                I accept the terms and conditions
             </label>
 
-            <input type="submit" value="Submit" />
+            <input name="submit" type="submit" value="Submit" />
         </form>
     </body>
 </html>
