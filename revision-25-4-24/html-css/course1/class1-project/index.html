@@ -34,15 +34,16 @@
 
                 <label for="email">
                     Enter Your Email:
-                    <input type="text" id="email" name="email" required />
+                    <input type="email" id="email" name="email" required />
                 </label>
 
                 <label for="last-name">
                     Enter Your Last Name:
                     <input
-                        type="text"
+                        type="password"
                         id="last-name"
                         name="last-name"
+                        pattern="[a-z0-5]{8,}"
                         required
                     />
                 </label>
