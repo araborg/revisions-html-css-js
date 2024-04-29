@@ -68,7 +68,12 @@
                 </label>
 
                 <label for="business">
-                    <input type="radio" name="account-type" id="business" />
+                    <input
+                        type="radio"
+                        class=""
+                        name="account-type"
+                        id="business"
+                    />
                     Business
                 </label>
             </fieldset>
@@ -86,12 +91,19 @@
 
                 <label for="age">
                     Input your age (years)
-                    <input id="age" type="number" min="13" max="120" />
+                    <input
+                        id="age"
+                        type="number"
+                        min="13"
+                        max="120"
+                        class=""
+                        required
+                    />
                 </label>
 
                 <label for="select">
                     Provide a bio
-                    <select name="select" id="select">
+                    <select name="select" id="select" required>
                         <option value="1">(select one)</option>
                         <option value="2">freeCodeCamp News</option>
                         <option value="3">freeCodeCamp Youtube Channels</option>
@@ -107,6 +119,7 @@
                         cols="30"
                         rows="3"
                         placeholder="I like coding on the beach"
+                        required
                     ></textarea>
                 </label>
             </fieldset>
