@@ -41,7 +41,6 @@ let done = 0;
 
 while (done < target) {
     done++;
-    // console.log(done);
     layers.push(padRow(done, target));
 }
 
