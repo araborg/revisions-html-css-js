@@ -23,6 +23,10 @@ function printPyramid() {
 
     console.log(result);
 }
+
+
+generateFlatPyramid();
+printPyramid();
 */
 
 function padRow(currentRow, totalRow) {
@@ -32,9 +36,6 @@ function padRow(currentRow, totalRow) {
         pad.repeat(totalRow - currentRow)
     );
 }
-
-// generateFlatPyramid();
-// printPyramid();
 
 // 2. Whole loop
 /*
