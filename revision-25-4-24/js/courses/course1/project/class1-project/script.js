@@ -3,11 +3,11 @@ const character = "#";
 const rows = [];
 const counts = 8;
 
-const result = "";
+let result = "";
 
 function printResult() {
     for (let i = 0; i < counts; i++) {
-        rows.push(rowPad(i + 1));
+        rows.push(rowPad(i + 1, counts));
     }
 
     console.log(rows);
@@ -16,8 +16,6 @@ function printResult() {
 printResult();
 
 function rowPad(rowNumber, rowCount) {
-    return character.repeat(rowNumber);
+    console.log(rowNumber);
+    return (result = result + character.repeat(rowNumber));
 }
-
-// const call = rowPad(1);
-// console.log(call);
