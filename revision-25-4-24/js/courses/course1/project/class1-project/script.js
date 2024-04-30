@@ -12,10 +12,6 @@ function generateFlatPyramid() {
     }
 }
 
-// for (let i = 0; i < layers.length; i++) {
-//     console.log(layers[i]);
-// }
-
 function printPyramid() {
     for (const layer of layers) {
         // result = result + "\n" + layer;
@@ -33,5 +29,5 @@ function padRow(currentRow, totalRow) {
     );
 }
 
-generateFlatPyramid();
+// generateFlatPyramid();
 printPyramid();
