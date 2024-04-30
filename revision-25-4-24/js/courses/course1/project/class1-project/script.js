@@ -71,7 +71,7 @@ function generateInvertedPyramid() {
 function generateInvertedPyramid() {
     for (let i = target; target >= 1; i--) {
         // layers.push(padRow(i, target));
-        // console.log(i);
+        console.log(i);
     }
 }
 
