@@ -6,20 +6,32 @@ let result = "";
 
 const pad = " ";
 
-for (let i = 0; i < target; i++) {
-    layers.push(padRow(i, target));
+function generateFlatPyramid() {
+    for (let i = 1; i <= target; i++) {
+        layers.push(padRow(i, target));
+    }
 }
 
 // for (let i = 0; i < layers.length; i++) {
 //     console.log(layers[i]);
 // }
 
-for (const layer of layers) {
-    result = result + "\n" + layer;
-}
+function printPyramid() {
+    for (const layer of layers) {
+        // result = result + "\n" + layer;
+        result = result + layer + "\n";
+    }
 
-console.log(result);
+    console.log(result);
+}
 
 function padRow(currentRow, totalRow) {
-    return character.repeat(currentRow);
+    return (
+        pad.repeat(totalRow - currentRow) +
+        character.repeat(2 * currentRow - 1) +
+        pad.repeat(totalRow - currentRow)
+    );
 }
+
+generateFlatPyramid();
+printPyramid();
