@@ -4,6 +4,8 @@ const character = "#";
 
 const result = "";
 
+const pad = " ";
+
 for (let i = 0; i < target; i++) {
     layers.push(character.repeat(i));
 }
