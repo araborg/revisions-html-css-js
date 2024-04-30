@@ -2,12 +2,12 @@ const target = 8;
 const layers = [];
 const character = "#";
 
-const result = "";
+let result = "";
 
 const pad = " ";
 
 for (let i = 0; i < target; i++) {
-    layers.push(character.repeat(i));
+    layers.push(padRow(i, target));
 }
 
 // for (let i = 0; i < layers.length; i++) {
@@ -15,7 +15,11 @@ for (let i = 0; i < target; i++) {
 // }
 
 for (const layer of layers) {
-    console.log(layer);
+    result = result + "\n" + layer;
 }
 
-// console.log(layers);
+console.log(result);
+
+function padRow(currentRow, totalRow) {
+    return character.repeat(currentRow);
+}
