@@ -69,8 +69,9 @@ function generateInvertedPyramid() {
 */
 
 function generateInvertedPyramid() {
-    for (let i = 1; i <= target; i++) {
-        layers.unshift(padRow(i, target));
+    for (let i = target; target >= 1; i--) {
+        // layers.push(padRow(i, target));
+        // console.log(i);
     }
 }
 
