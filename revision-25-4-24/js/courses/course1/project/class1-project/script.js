@@ -1,3 +1,4 @@
+// 1. For loop
 const target = 8;
 const layers = [];
 const character = "#";
@@ -31,3 +32,6 @@ function padRow(currentRow, totalRow) {
 
 // generateFlatPyramid();
 printPyramid();
+
+// 2. Whole loop
+while() {}
