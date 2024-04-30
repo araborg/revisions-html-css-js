@@ -13,14 +13,17 @@ function generateFlatPyramid() {
     }
 }
 
+/*
 function printPyramid() {
     for (const layer of layers) {
+        console.log(layer);
         // result = result + "\n" + layer;
         result = result + layer + "\n";
     }
 
     console.log(result);
 }
+*/
 
 function padRow(currentRow, totalRow) {
     return (
@@ -31,7 +34,23 @@ function padRow(currentRow, totalRow) {
 }
 
 // generateFlatPyramid();
-printPyramid();
+// printPyramid();
 
 // 2. Whole loop
-while() {}
+let done = 0;
+
+while (done < target) {
+    done++;
+    // console.log(done);
+    layers.push(padRow(done, target));
+}
+
+function printPyramid() {
+    for (const layer of layers) {
+        result = result + layer + "\n";
+    }
+
+    console.log(result);
+}
+
+printPyramid();
