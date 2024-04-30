@@ -59,6 +59,13 @@ function printPyramid() {
 }
 
 printPyramid();
+
+function generateInvertedPyramid() {
+    for (let i = 1; i <= target; i++) {
+        layers.unshift(padRow(i, target));
+    }
+}
+
 */
 
 function generateInvertedPyramid() {
