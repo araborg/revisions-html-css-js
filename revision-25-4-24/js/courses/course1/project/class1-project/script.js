@@ -69,14 +69,12 @@ function generateInvertedPyramid() {
 */
 
 function generateInvertedPyramid() {
-    for (let i = target; target >= 1; i--) {
-        // layers.push(padRow(i, target));
-        console.log(i);
+    for (let i = target; i > 0; i--) {
+        layers.push(padRow(i, target));
     }
 }
 
 generateInvertedPyramid();
-console.log(layers);
 
 function printPyramid() {
     for (const layer of layers) {
