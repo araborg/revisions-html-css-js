@@ -37,6 +37,7 @@ function padRow(currentRow, totalRow) {
 // printPyramid();
 
 // 2. Whole loop
+/*
 let done = 0;
 
 while (done < target) {
@@ -44,9 +45,34 @@ while (done < target) {
     layers.push(padRow(done, target));
 }
 
+while (layers.length < target) {
+    layers.push(padRow(layers.length + 1, target));
+}
+
 function printPyramid() {
     for (const layer of layers) {
-        result = result + layer + "\n";
+        result = result + "\n" + layer;
+        // result = result + layer + "\n";
+    }
+
+    console.log(result);
+}
+
+printPyramid();
+*/
+
+function generateInvertedPyramid() {
+    for (let i = 1; i <= target; i++) {
+        layers.unshift(padRow(i, target));
+    }
+}
+
+generateInvertedPyramid();
+console.log(layers);
+
+function printPyramid() {
+    for (const layer of layers) {
+        result = result + "\n" + layer;
     }
 
     console.log(result);
