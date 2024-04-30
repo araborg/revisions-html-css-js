@@ -67,4 +67,7 @@ input[type="radio"] {
 
 input[type="submit"] {
     width: 60%;
+    margin: 0 auto;
+
+    border: 2px solid rebeccapurple;
 }
