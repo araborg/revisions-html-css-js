@@ -5,17 +5,12 @@ const counts = 8;
 
 let result = "";
 
-function printResult() {
-    for (let i = 0; i < counts; i++) {
-        rows.push(rowPad(i + 1, counts));
-    }
-
-    console.log(rows);
+for (let i = 1; i <= counts; i++) {
+    rows.push(character.repeat(i));
 }
 
-printResult();
+// for (const row of rows) {
+//     result = result + row + "\n";
+// }
 
-function rowPad(rowNumber, rowCount) {
-    console.log(rowNumber);
-    return (result = result + character.repeat(rowNumber));
-}
+// console.log(result);
