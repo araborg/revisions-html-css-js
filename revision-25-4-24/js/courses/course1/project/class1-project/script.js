@@ -6,11 +6,19 @@ const counts = 8;
 let result = "";
 
 for (let i = 1; i <= counts; i++) {
-    rows.push(character.repeat(i));
+    rows.push(padRow(i, counts));
 }
 
-// for (const row of rows) {
-//     result = result + row + "\n";
-// }
+function padRow(rowNumber, rowCount) {
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        " ".repeat(rowCount - rowNumber)
+    );
+}
 
-// console.log(result);
+for (const row of rows) {
+    result = result + row + "\n";
+}
+
+console.log(result);
