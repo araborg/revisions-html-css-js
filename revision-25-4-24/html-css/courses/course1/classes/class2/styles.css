@@ -7,3 +7,9 @@ p,
 h1 {
     text-align: center;
 }
+
+#menu {
+    border: 3px solid purple;
+
+    width: 300px;
+}
