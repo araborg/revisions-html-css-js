@@ -103,3 +103,9 @@ a:active {
 .address {
     margin-bottom: 5px;
 }
+
+/* imgs r inline elemts */
+img {
+    display: block;
+    margin: 0 auto;
+}
