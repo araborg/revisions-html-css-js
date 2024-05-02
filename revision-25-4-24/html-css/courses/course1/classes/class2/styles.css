@@ -25,13 +25,13 @@ h1 {
 .flavor {
     text-align: left;
     border: 3px solid black;
-    width: 50%;
+    width: 74%;
 }
 
 .price {
     text-align: right;
     border: 3px solid white;
-    width: 50%;
+    width: 24%;
 }
 
 .item p {
