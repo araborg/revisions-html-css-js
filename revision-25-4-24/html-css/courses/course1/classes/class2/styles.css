@@ -99,3 +99,7 @@ a:active {
     /* color: white; */
     color: brown;
 }
+
+.address {
+    margin-bottom: 5px;
+}
