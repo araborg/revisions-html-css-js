@@ -81,3 +81,7 @@ footer p {
 a {
     color: black;
 }
+
+a:visited {
+    color: grey;
+}
