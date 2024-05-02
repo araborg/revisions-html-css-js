@@ -30,19 +30,19 @@ h1 {
 .flavor,
 .dessert {
     text-align: left;
-    border: 3px solid black;
-    width: 74%;
+    /* border: 3px solid black; */
+    width: 70%;
 }
 
 .price {
     text-align: right;
-    border: 3px solid white;
-    width: 24%;
+    /* border: 3px solid white; */
+    width: 20%;
 }
 
 .item p {
     display: inline-block;
-    margin: 0;
+    margin: 5px 0;
 }
 
 h1,
