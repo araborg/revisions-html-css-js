@@ -9,8 +9,6 @@ h1 {
 }
 
 .menu {
-    border: 3px solid purple;
-
     width: 80%;
 
     background-color: burlywood;
@@ -20,10 +18,16 @@ h1 {
     margin-right: auto;
 }
 
+/* article {
+    border: 3px solid black;
+} */
+
 .flavor {
     text-align: left;
+    border: 3px solid black;
 }
 
 .price {
     text-align: right;
+    border: 3px solid white;
 }
