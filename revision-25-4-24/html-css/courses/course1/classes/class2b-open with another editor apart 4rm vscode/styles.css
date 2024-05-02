@@ -32,13 +32,13 @@ h1 {
 .dessert {
     text-align: left;
     /* border: 3px solid black; */
-    width: 70%;
+    width: 50%;
 }
 
 .price {
     text-align: right;
     /* border: 3px solid white; */
-    width: 20%;
+    width: 50%;
 }
 
 .item p {
