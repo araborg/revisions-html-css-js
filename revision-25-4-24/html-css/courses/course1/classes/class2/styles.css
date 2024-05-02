@@ -10,6 +10,7 @@ h1 {
 
 .menu {
     width: 80%;
+    max-width: 500px;
 
     background-color: burlywood;
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
