@@ -25,6 +25,7 @@ h1 {
 .flavor {
     text-align: left;
     border: 3px solid black;
+    width: 50%;
 }
 
 .price {
@@ -35,5 +36,5 @@ h1 {
 
 .item p {
     display: inline-block;
-    width: 50%;
+    margin: 0;
 }
