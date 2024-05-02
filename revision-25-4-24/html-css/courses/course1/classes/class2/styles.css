@@ -23,3 +23,7 @@ h1 {
 .flavor {
     text-align: left;
 }
+
+.price {
+    text-align: right;
+}
