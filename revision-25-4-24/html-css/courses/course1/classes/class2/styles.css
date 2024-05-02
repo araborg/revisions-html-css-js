@@ -8,7 +8,7 @@ h1 {
     text-align: center;
 }
 
-#menu {
+.menu {
     border: 3px solid purple;
 
     width: 80%;
