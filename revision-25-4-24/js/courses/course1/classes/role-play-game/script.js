@@ -24,3 +24,5 @@ const goldText = document.document.querySelector("#goldText");
 const monsterStats = document.document.querySelector("#monsterStats");
 const monsterName = document.document.querySelector("#monsterName");
 const monsterHealthText = document.document.querySelector("#monsterHealth");
+
+function goStore() {}
