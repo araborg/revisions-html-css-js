@@ -30,9 +30,9 @@ function goTown() {
     button2.innerText = "Go to cave";
     button3.innerText = "Fight dragon";
 
-    button1.onclick = buyHealth;
-    button2.onclick = buyWeapon;
-    button3.onclick = goTown;
+    button1.onclick = goStore;
+    button2.onclick = goCave;
+    button3.onclick = fightDragon;
 
     text.innerText = "You enter the store.";
 }
