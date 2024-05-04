@@ -38,3 +38,4 @@ function fightDragon() {
 }
 
 // Initialize buttons
+button1.onclick = goStore;
