@@ -64,6 +64,8 @@ function fightDragon() {
     console.log("Fighting dragon.");
 }
 
-function buyHealth() {}
+// function buyHealth() {}
 
-function buyWeapon() {}
+// function buyWeapon() {}
+
+function update(location) {}
