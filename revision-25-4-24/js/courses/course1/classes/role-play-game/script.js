@@ -69,3 +69,5 @@ function fightDragon() {
 // function buyWeapon() {}
 
 function update(location) {}
+
+const locations = [];
