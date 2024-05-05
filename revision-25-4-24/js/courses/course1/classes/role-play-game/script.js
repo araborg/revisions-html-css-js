@@ -77,4 +77,4 @@ const cat = {
     "Number of legs": 4,
 };
 
-console.log(cat);
+console.log(cat.name);
