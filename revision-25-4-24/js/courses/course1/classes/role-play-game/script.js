@@ -72,6 +72,8 @@ function update(location) {}
 
 const locations = [];
 
-const cat = {};
+const cat = {
+    name: "Whiskers",
+};
 
 console.log(cat);
