@@ -71,3 +71,7 @@ function fightDragon() {
 function update(location) {}
 
 const locations = [];
+
+const cat = {};
+
+console.log(cat);
