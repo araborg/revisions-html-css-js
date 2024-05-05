@@ -25,6 +25,12 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+// Initialize buttons
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
+// fxns
 function goTown() {
     button1.innerText = "Go to store";
     button2.innerText = "Go to cave";
@@ -34,7 +40,8 @@ function goTown() {
     button2.onclick = goCave;
     button3.onclick = fightDragon;
 
-    text.innerText = "You enter the store.";
+    text.innerText =
+        "You are in the town square. You see a sign that says Store.";
 }
 
 function goStore() {
@@ -57,7 +64,6 @@ function fightDragon() {
     console.log("Fighting dragon.");
 }
 
-// Initialize buttons
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
+function buyHealth() {}
+
+function buyWeapon() {}
