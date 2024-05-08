@@ -75,7 +75,12 @@ function buyHealth() {
 
 function buyWeapon() {}
 
-const weapon = [];
+const weapon = [
+    { name: "stick", power: 5 },
+    { name: "dagger", power: 30 },
+    { name: "claw hammer", power: 50 },
+    { name: "sword", power: 100 },
+];
 
 function update(location) {
     button1.innerText = location["button text"][0];
