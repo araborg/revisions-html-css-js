@@ -35,6 +35,7 @@ function goTown() {
     update(locations[0]);
 }
 
+/*
 function goStore() {
     button1.innerText = "Buy 10 health (10 gold)";
     button2.innerText = "Buy weapon (30 gold)";
@@ -45,6 +46,11 @@ function goStore() {
     button3.onclick = goTown;
 
     text.innerText = "You enter the store.";
+}
+*/
+
+function goStore() {
+    update(locations[1]);
 }
 
 function goCave() {
