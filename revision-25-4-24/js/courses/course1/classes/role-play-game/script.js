@@ -60,7 +60,7 @@ function buyHealth() {}
 function buyWeapon() {}
 
 function update(location) {
-    button1.innerText = location["button text"];
+    button1.innerText = location["button text"][0];
     button2.innerText = "Go to cave";
     button3.innerText = "Fight dragon";
 
