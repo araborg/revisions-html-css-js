@@ -97,11 +97,17 @@ const locations = [
     },
 ];
 
-// const cat = {
-//     name: "Whiskers",
-//     "Number of legs": 4,
-// };
+/*
+const cat = {
+    name: "Whiskers",
+    "Number of legs": 4,
+};
 
-// cat["home"] = "Ibadan";
+cat["home"] = "Ibadan";
 
-// console.log(cat);
+console.log(cat);
+*/
+
+function fightSlime() {}
+
+function fightBeast() {}
