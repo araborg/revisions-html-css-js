@@ -112,6 +112,8 @@ function buyHealth() {
     }
 }
 
+function sellWeapon() {}
+
 function buyWeapon() {
     if (currentWeapon < weapons.length - 1) {
         if (gold >= 30) {
