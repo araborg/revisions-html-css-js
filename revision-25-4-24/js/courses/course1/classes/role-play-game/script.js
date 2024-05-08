@@ -73,7 +73,10 @@ function buyHealth() {
     }
 }
 
-function buyWeapon() {}
+function buyWeapon() {
+    if (gold >= 30) {
+    }
+}
 
 const weapon = [
     { name: "stick", power: 5 },
