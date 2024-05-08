@@ -30,6 +30,45 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
+// arrays
+const weapon = [
+    { name: "stick", power: 5 },
+    { name: "dagger", power: 30 },
+    { name: "claw hammer", power: 50 },
+    { name: "sword", power: 100 },
+];
+
+const locations = [
+    {
+        name: "town square",
+        "button text": ["Go to store", "Go to cave", "Fight dragon"],
+        "button functions": [goStore, goCave, fightDragon],
+        text: 'You are in the town square. You see a sign that says "Store".',
+    },
+
+    {
+        name: "store",
+        "button text": [
+            "Buy 10 health (10 gold)",
+            "Buy weapon (30 gold)",
+            "Go to town square",
+        ],
+        "button functions": [buyHealth, buyWeapon, goTown],
+        text: "You enter the store.",
+    },
+
+    {
+        name: "cave",
+        "button text": [
+            "Fight slime",
+            "Fight fanged beast",
+            "Go to town square",
+        ],
+        "button functions": [fightSlime, fightBeast, goTown],
+        text: "You enter the cave. You see some monsters.",
+    },
+];
+
 // fxns
 function goTown() {
     update(locations[0]);
@@ -80,17 +119,11 @@ function buyWeapon() {
         currentWeapon++;
 
         goldText.innerText = gold;
-        let newWeapon = weapons;
+        let newWeapon = weapons["currentWeapon"];
+        console.log(newWeapon);
         text.innerText = "You now have a new weapon.";
     }
 }
-
-const weapon = [
-    { name: "stick", power: 5 },
-    { name: "dagger", power: 30 },
-    { name: "claw hammer", power: 50 },
-    { name: "sword", power: 100 },
-];
 
 function update(location) {
     button1.innerText = location["button text"][0];
@@ -103,37 +136,6 @@ function update(location) {
 
     text.innerText = location.text;
 }
-
-const locations = [
-    {
-        name: "town square",
-        "button text": ["Go to store", "Go to cave", "Fight dragon"],
-        "button functions": [goStore, goCave, fightDragon],
-        text: 'You are in the town square. You see a sign that says "Store".',
-    },
-
-    {
-        name: "store",
-        "button text": [
-            "Buy 10 health (10 gold)",
-            "Buy weapon (30 gold)",
-            "Go to town square",
-        ],
-        "button functions": [buyHealth, buyWeapon, goTown],
-        text: "You enter the store.",
-    },
-
-    {
-        name: "cave",
-        "button text": [
-            "Fight slime",
-            "Fight fanged beast",
-            "Go to town square",
-        ],
-        "button functions": [fightSlime, fightBeast, goTown],
-        text: "You enter the cave. You see some monsters.",
-    },
-];
 
 /*
 const cat = {
