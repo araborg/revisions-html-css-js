@@ -74,7 +74,7 @@ const locations = [];
 
 const cat = {
     name: "Whiskers",
-    "Number of legs": 4,
+    // "Number of legs": 4,
 };
 
-console.log(cat["Number of legs"]);
+console.log(cat);
