@@ -62,11 +62,13 @@ function fightDragon() {
 }
 
 function buyHealth() {
-    gold -= 10;
-    health += 10;
+    if (gold >= 10) {
+        gold -= 10;
+        health += 10;
 
-    goldText.innerText = gold;
-    healthText.innerText = health;
+        goldText.innerText = gold;
+        healthText.innerText = health;
+    }
 }
 
 function buyWeapon() {}
