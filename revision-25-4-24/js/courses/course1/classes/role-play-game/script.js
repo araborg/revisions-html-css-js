@@ -70,7 +70,11 @@ function buyWeapon() {}
 
 function update(location) {}
 
-const locations = [];
+const locations = [
+    {
+        name: "town square",
+    },
+];
 
 // const cat = {
 //     name: "Whiskers",
