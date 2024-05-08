@@ -73,7 +73,7 @@ function update(location) {}
 const locations = [
     {
         name: "town square",
-        "button text": [],
+        "button text": ["goStore", "goCave", "fightDragon"],
     },
 ];
 
