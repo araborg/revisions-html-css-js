@@ -32,7 +32,7 @@ button3.onclick = fightDragon;
 
 // fxns
 function goTown() {
-    update();
+    update(locations);
 }
 
 function goStore() {
