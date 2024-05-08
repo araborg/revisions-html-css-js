@@ -31,7 +31,7 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 // arrays
-const weapon = [
+const weapons = [
     { name: "stick", power: 5 },
     { name: "dagger", power: 30 },
     { name: "claw hammer", power: 50 },
@@ -113,14 +113,14 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    if (currentWeapon < 3) {
+    if (currentWeapon < weapons.length) {
         if (gold >= 30) {
             gold -= 30;
 
             currentWeapon++;
 
             goldText.innerText = gold;
-            let newWeapon = weapon[currentWeapon].name;
+            let newWeapon = weapons[currentWeapon].name;
 
             text.innerText = "You now have a " + newWeapon + ".";
 
