@@ -31,7 +31,9 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 // fxns
-function goTown() {}
+function goTown() {
+    update();
+}
 
 function goStore() {
     button1.innerText = "Buy 10 health (10 gold)";
