@@ -72,9 +72,11 @@ function update(location) {}
 
 const locations = [];
 
-const cat = {
-    name: "Whiskers",
-    // "Number of legs": 4,
-};
+// const cat = {
+//     name: "Whiskers",
+//     "Number of legs": 4,
+// };
 
-console.log(cat);
+// cat["home"] = "Ibadan";
+
+// console.log(cat);
