@@ -215,6 +215,7 @@ function fightDragon() {
 
 function goFight() {
     update(location[3]);
+    monsterHealth = monsters[fighting].health;
 }
 
 function attack() {}
