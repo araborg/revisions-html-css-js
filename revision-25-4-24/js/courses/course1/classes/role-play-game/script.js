@@ -5,7 +5,7 @@ let gold = 50;
 
 let currentWeapon = 0;
 
-let fighting;
+let fighting; // reps d monster index
 
 let monsterHealth;
 
@@ -68,22 +68,26 @@ const locations = [
 
     {
         name: "store",
+
         "button text": [
             "Buy 10 health (10 gold)",
             "Buy weapon (30 gold)",
             "Go to town square",
         ],
+
         "button functions": [buyHealth, buyWeapon, goTown],
         text: "You enter the store.",
     },
 
     {
         name: "cave",
+
         "button text": [
             "Fight slime",
             "Fight fanged beast",
             "Go to town square",
         ],
+
         "button functions": [fightSlime, fightBeast, goTown],
         text: "You enter the cave. You see some monsters.",
     },
@@ -95,11 +99,6 @@ const locations = [
         text: "You are fighting a monster.",
     },
 ];
-
-// fxns
-function goTown() {
-    update(locations[0]);
-}
 
 /*
 function goStore() {
@@ -114,6 +113,26 @@ function goStore() {
     text.innerText = "You enter the store.";
 }
 */
+// locations' fxns
+function update(location) {
+    // btn text
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+
+    // fxn attached to btn
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
+
+    // corresponding text
+    text.innerText = location.text;
+}
+
+// applicatn of locatn's fxn
+function goTown() {
+    update(locations[0]);
+}
 
 function goStore() {
     update(locations[1]);
@@ -123,6 +142,7 @@ function goCave() {
     update(locations[2]);
 }
 
+// transactn fxns
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -143,7 +163,7 @@ function sellWeapon() {
         let currentWeapon = inventory.shift();
         text.innerText = "You sold a " + currentWeapon + ".";
 
-        text.innerText = " In your inventory you have: " + inventory;
+        text.innerText += " In your inventory you have: " + inventory;
     } else {
         text.innerText = "Don't sell your only weapon!";
     }
@@ -175,18 +195,6 @@ function buyWeapon() {
     }
 }
 
-function update(location) {
-    button1.innerText = location["button text"][0];
-    button2.innerText = location["button text"][1];
-    button3.innerText = location["button text"][2];
-
-    button1.onclick = location["button functions"][0];
-    button2.onclick = location["button functions"][1];
-    button3.onclick = location["button functions"][2];
-
-    text.innerText = location.text;
-}
-
 /*
 const cat = {
     name: "Whiskers",
@@ -198,6 +206,15 @@ cat["home"] = "Ibadan";
 console.log(cat);
 */
 
+// fights fxn
+function goFight() {
+    update(location[3]);
+    monsterHealth = monsters[fighting].health;
+
+    monsterStats.style.display = "block";
+}
+
+// fight monster fxns
 function fightSlime() {
     fighting = 0; //index of slime in the monsters array
     goFight();
@@ -213,11 +230,7 @@ function fightDragon() {
     goFight();
 }
 
-function goFight() {
-    update(location[3]);
-    monsterHealth = monsters[fighting].health;
-}
-
+// fight methods fxns
 function attack() {}
 
 function dodge() {}
