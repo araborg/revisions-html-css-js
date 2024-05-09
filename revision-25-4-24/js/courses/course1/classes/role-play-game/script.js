@@ -112,7 +112,10 @@ function buyHealth() {
     }
 }
 
-function sellWeapon() {}
+function sellWeapon() {
+    if (inventory.length > 1) {
+    }
+}
 
 function buyWeapon() {
     if (currentWeapon < weapons.length - 1) {
