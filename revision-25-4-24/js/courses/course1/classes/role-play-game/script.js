@@ -212,6 +212,9 @@ function goFight() {
     monsterHealth = monsters[fighting].health;
 
     monsterStats.style.display = "block";
+
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealth.innerText = monsters[fighting].health;
 }
 
 // fight monster fxns
