@@ -196,10 +196,14 @@ function fightSlime() {
     goFight();
 }
 
-function fightBeast() {}
+function fightBeast() {
+    fighting = 0; //index of beast in the monsters array
+    goFight();
+}
 
 function fightDragon() {
-    console.log("Fighting dragon.");
+    fighting = 2; //index of dragon in the monsters array
+    goFight();
 }
 
 function goFight() {}
