@@ -113,6 +113,7 @@ function goStore() {
     text.innerText = "You enter the store.";
 }
 */
+
 // locations' fxns
 function update(location) {
     // btn text
@@ -234,6 +235,8 @@ function fightDragon() {
 }
 
 // fight methods fxns
-function attack() {}
+function attack() {
+    text.innerText = "The " + monsterName + " attacks.";
+}
 
 function dodge() {}
