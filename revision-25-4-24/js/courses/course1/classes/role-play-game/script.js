@@ -191,7 +191,10 @@ cat["home"] = "Ibadan";
 console.log(cat);
 */
 
-function fightSlime() {}
+function fightSlime() {
+    fighting = 0; //index of slime in the monsters array
+    goFight();
+}
 
 function fightBeast() {}
 
