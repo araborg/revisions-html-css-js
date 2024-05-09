@@ -197,7 +197,7 @@ function fightSlime() {
 }
 
 function fightBeast() {
-    fighting = 0; //index of beast in the monsters array
+    fighting = 1; //index of beast in the monsters array
     goFight();
 }
 
@@ -207,3 +207,7 @@ function fightDragon() {
 }
 
 function goFight() {}
+
+function attack() {}
+
+function dodge() {}
