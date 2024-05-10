@@ -295,7 +295,9 @@ function attack() {
     }
 }
 
-function getMonsterAttackValue(level) {}
+function getMonsterAttackValue(level) {
+    const hit = level * 5 - Math.floor(Math.random * xp);
+}
 
 function dodge() {
     text.innerText = "You dodge the attack from the " + monsters[fighting].name;
