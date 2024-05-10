@@ -105,10 +105,16 @@ const locations = [
 
     // 4
     {
-        name: "fight",
-        "button text": ["Attack", "Dodge", "Run"],
-        "button functions": [attack, dodge, goTown],
-        text: "You are fighting a monster.",
+        name: "kill monster",
+
+        "button text": [
+            "Go to town square",
+            "Go to town square",
+            "Go to town square",
+        ],
+
+        "button functions": [goTown, goTown, goTown],
+        text: "The monster screams Arg! as it dies. You gain experience points and find gold.",
     },
 ];
 
