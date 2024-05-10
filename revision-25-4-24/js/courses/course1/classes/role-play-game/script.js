@@ -155,7 +155,7 @@ function update(location) {
     button3.onclick = location["button functions"][2];
 
     // corresponding text
-    text.innerText = location.text;
+    text.innerHTML = location.text;
 }
 
 // applicatn of locatn's fxn
