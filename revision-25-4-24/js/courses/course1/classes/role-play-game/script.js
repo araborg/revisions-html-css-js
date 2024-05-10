@@ -245,7 +245,7 @@ console.log(cat);
 
 // fights fxn
 function goFight() {
-    update(location[3]);
+    update(locations[3]);
     monsterHealth = monsters[fighting].health;
 
     monsterStats.style.display = "block";
