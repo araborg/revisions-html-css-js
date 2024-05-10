@@ -134,6 +134,8 @@ function goStore() {
 
 // locations' fxns
 function update(location) {
+    monsterStats.style.display = "none";
+
     // btn text
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
