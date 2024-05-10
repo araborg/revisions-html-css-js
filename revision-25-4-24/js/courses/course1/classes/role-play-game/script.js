@@ -246,6 +246,10 @@ function attack() {
 
     healthText.innerText = health;
     monsterHealth.innerText = monsterHealth;
+
+    if (health <= 0) {
+        lose();
+    }
 }
 
 function dodge() {}
