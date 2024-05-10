@@ -59,6 +59,7 @@ const monsters = [
 ];
 
 const locations = [
+    // 0
     {
         name: "town square",
         "button text": ["Go to store", "Go to cave", "Fight dragon"],
@@ -66,6 +67,7 @@ const locations = [
         text: 'You are in the town square. You see a sign that says "Store".',
     },
 
+    // 1
     {
         name: "store",
 
@@ -79,6 +81,7 @@ const locations = [
         text: "You enter the store.",
     },
 
+    // 2
     {
         name: "cave",
 
@@ -92,6 +95,15 @@ const locations = [
         text: "You enter the cave. You see some monsters.",
     },
 
+    // 3
+    {
+        name: "fight",
+        "button text": ["Attack", "Dodge", "Run"],
+        "button functions": [attack, dodge, goTown],
+        text: "You are fighting a monster.",
+    },
+
+    // 4
     {
         name: "fight",
         "button text": ["Attack", "Dodge", "Run"],
@@ -264,6 +276,8 @@ function defeatMonster() {
 
     goldText.innerText = gold;
     xpText.innerText = xp;
+
+    update(locations[4]);
 }
 
 function lose() {}
