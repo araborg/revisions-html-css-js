@@ -3,9 +3,9 @@ let xp = 0;
 let health = 100;
 let gold = 50;
 
-let currentWeapon = 0;
+let currentWeapon = 0; // reps a weapon index
 
-let fighting; // reps d monster index
+let fighting; // reps a monster index
 
 let monsterHealth;
 
@@ -175,7 +175,7 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
-            currentWeapon++;
+            currentWeapon++; // reps a weapon index
 
             goldText.innerText = gold;
             let newWeapon = weapons[currentWeapon].name;
@@ -240,7 +240,8 @@ function attack() {
     text.innerText +=
         " You attack it with your " + weapons[currentWeapon].name + ".";
 
-    monsterHealth -= monsters[fighting].level;
+    health -= monsters[fighting].level;
+    monsterHealth -= weapons[currentWeapon].power;
 }
 
 function dodge() {}
