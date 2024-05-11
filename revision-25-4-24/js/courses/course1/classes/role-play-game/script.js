@@ -346,6 +346,14 @@ function easterEgg() {
 
 function pick(guess) {}
 
+function pickTwo() {
+    pick(2);
+}
+
+function pickEight() {
+    pick(8);
+}
+
 function restart() {
     xp = 0;
     health = 100;
