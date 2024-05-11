@@ -340,6 +340,10 @@ function winGame() {
     update(locations[6]);
 }
 
+function easterEgg() {
+    update(locations[7]);
+}
+
 function restart() {
     xp = 0;
     health = 100;
