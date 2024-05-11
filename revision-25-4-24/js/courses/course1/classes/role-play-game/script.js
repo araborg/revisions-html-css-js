@@ -344,6 +344,8 @@ function easterEgg() {
     update(locations[7]);
 }
 
+function pick(guess) {}
+
 function restart() {
     xp = 0;
     health = 100;
