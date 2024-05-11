@@ -366,6 +366,9 @@ function pick(guess) {
     }
 
     if (numbers.includes(guess)) {
+        text.innerText += "Right! You win 20 gold!";
+        gold += 20;
+        goldText.innerText = gold;
     }
 }
 
