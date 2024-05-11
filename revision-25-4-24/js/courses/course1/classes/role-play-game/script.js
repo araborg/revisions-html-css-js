@@ -302,7 +302,7 @@ function attack() {
         }
     }
 
-    if (Math.random() <= 0.1) {
+    if (Math.random() <= 0.1 && inventory.length !== 1) {
         text.innerText += " Your " + weapons.pop() + " breaks.";
         currentWeapon--;
     }
