@@ -97,7 +97,7 @@ const locations = [
         text: "You enter the cave. You see some monsters.",
     },
 
-    // 3
+    // 3: for d slime. beast and dragon
     {
         name: "fight",
         "button text": ["Attack", "Dodge", "Run"],
@@ -257,7 +257,7 @@ console.log(cat);
 function goFight() {
     update(locations[3]);
     monsterHealth = monsters[fighting].health;
-    console.log(monsterHealth);
+    // console.log(monsterHealth);
 
     monsterStats.style.display = "block";
 
