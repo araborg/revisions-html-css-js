@@ -285,7 +285,7 @@ function fightDragon() {
 
 // fight methods fxns
 function attack() {
-    text.innerText = "The " + monsterName + " attacks.";
+    text.innerText = "The " + monsters[fighting].name + " attacks.";
     text.innerText +=
         " You attack it with your " + weapons[currentWeapon].name + ".";
 
