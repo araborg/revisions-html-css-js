@@ -3,7 +3,7 @@ let xp = 0;
 let health = 100;
 let gold = 50;
 
-let currentWeapon = 0; // reps a weapon index
+let currentWeapon = 0; // reps a weapon index i.e stick
 let fighting; // reps a monster index
 
 let monsterHealth;
@@ -33,6 +33,7 @@ button3.onclick = fightDragon;
 
 // arrays
 const weapons = [
+    // currentWeapon: 0 i.e stick
     { name: "stick", power: 5 },
     { name: "dagger", power: 30 },
     { name: "claw hammer", power: 50 },
