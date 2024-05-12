@@ -17,6 +17,7 @@ const button3 = document.querySelector("#button3");
 
 // stats and text
 const text = document.querySelector("#text");
+
 const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText"); // == health i.e 100
 const goldText = document.querySelector("#goldText");
