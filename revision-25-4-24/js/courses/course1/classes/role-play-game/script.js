@@ -22,7 +22,7 @@ const healthText = document.querySelector("#healthText"); // == health i.e 100
 const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
-const monsterHealthText = document.querySelector("#monsterHealth");
+const monsterHealthText = document.querySelector("#monsterHealth"); // monster health dt is currently invisible
 
 // Initialize buttons
 button1.onclick = goStore;
