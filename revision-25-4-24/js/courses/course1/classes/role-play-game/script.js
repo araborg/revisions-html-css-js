@@ -253,7 +253,7 @@ cat["home"] = "Ibadan";
 console.log(cat);
 */
 
-// fights fxn
+// fights fxn: uses one obj for 3 fxns
 function goFight() {
     update(locations[3]);
     monsterHealth = monsters[fighting].health;
