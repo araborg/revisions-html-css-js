@@ -20,7 +20,8 @@ const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText"); // == health i.e 100
 const goldText = document.querySelector("#goldText");
-const monsterStats = document.querySelector("#monsterStats");
+
+const monsterStats = document.querySelector("#monsterStats"); // d div containing monster(name & health)
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth"); // monster health dt is currently invisible
 
