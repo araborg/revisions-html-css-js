@@ -256,11 +256,11 @@ console.log(cat);
 // fights fxn: uses one obj for 3 fxns
 function goFight() {
     update(locations[3]);
-    monsterHealth = monsters[fighting].health;
-    // console.log(monsterHealth);
 
     monsterStats.style.display = "block";
 
+    monsterHealth = monsters[fighting].health;
+    // console.log(monsterHealth);
     monsterName.innerText = monsters[fighting].name;
     // monsterHealth.innerText = monsters[fighting].health;
 
