@@ -97,7 +97,7 @@ const locations = [
         text: "You enter the cave. You see some monsters.",
     },
 
-    // 3: for d slime. beast and dragon
+    // 3: for displaying slime. beast and dragon
     {
         name: "fight",
         "button text": ["Attack", "Dodge", "Run"],
