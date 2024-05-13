@@ -319,6 +319,7 @@ function attack() {
         }
     }
 
+    // weapon shd be able to break
     if (Math.random() <= 0.1 && inventory.length !== 1) {
         text.innerText += " Your " + weapons.pop() + " breaks.";
         currentWeapon--;
