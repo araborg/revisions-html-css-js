@@ -406,5 +406,6 @@ function restart() {
     goldText.innerText = gold;
     healthText.innerText = health;
     xpText.innerText = xp;
+
     goTown();
 }
