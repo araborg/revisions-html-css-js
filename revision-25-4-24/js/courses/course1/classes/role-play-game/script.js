@@ -294,6 +294,7 @@ function attack() {
     text.innerText +=
         " You attack it with your " + weapons[currentWeapon].name + ".";
 
+    // health = player's health
     health -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
@@ -333,6 +334,7 @@ function getMonsterAttackValue(level) {
 }
 
 function isMonsterHit() {
+    // ds returns true if d random num is > 0.2 or if health is lower than 20
     return Math.random() > 0.2 || health < 20;
 }
 
