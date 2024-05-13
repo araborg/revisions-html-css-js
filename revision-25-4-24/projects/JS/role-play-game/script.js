@@ -37,6 +37,12 @@ function defeatMonster() {}
 
 function easterEgg() {}
 
+function pick(guess) {}
+
+function pickTwo() {}
+function pickEight() {}
+
+function restart() {}
 
 */
 
