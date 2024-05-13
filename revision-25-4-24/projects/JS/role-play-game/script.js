@@ -9,6 +9,15 @@ monsterHealth
 
 armoury
 
+function update(location){}
+
+function goTown(){}
+function goStore(){}
+function goCave(){}
+
+function buyhealth() {}
+
+
 
 */
 
