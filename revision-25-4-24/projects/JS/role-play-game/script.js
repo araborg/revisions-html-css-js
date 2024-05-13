@@ -1,3 +1,17 @@
+/*
+variables:
+xp;
+playerHealth
+gold
+weaponIndex
+monsterIndex;
+monsterHealth
+
+armoury
+
+
+*/
+
 // starting tools
 const weapons = [
     // currentWeapon: 0 i.e stick
