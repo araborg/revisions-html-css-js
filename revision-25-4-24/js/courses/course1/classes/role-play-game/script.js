@@ -336,6 +336,14 @@ function isMonsterHit() {
     return Math.random() > 0.2 || health < 20;
 }
 
+function lose() {
+    update(locations[5]);
+}
+
+function winGame() {
+    update(locations[6]);
+}
+
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
     xp += monsters[fighting].level;
@@ -344,14 +352,6 @@ function defeatMonster() {
     xpText.innerText = xp;
 
     update(locations[4]);
-}
-
-function lose() {
-    update(locations[5]);
-}
-
-function winGame() {
-    update(locations[6]);
 }
 
 function easterEgg() {
