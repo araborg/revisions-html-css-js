@@ -294,10 +294,11 @@ function attack() {
     text.innerText +=
         " You attack it with your " + weapons[currentWeapon].name + ".";
 
-    // health = player's health
+    // health = player's health: it is reduced
     health -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
+        // monster health is reduced
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     } else {
