@@ -15,8 +15,27 @@ function goTown(){}
 function goStore(){}
 function goCave(){}
 
-function buyhealth() {}
+function buyHealth() {}
+function sellWeapon() {}
+function buyWeapon() {}
 
+function goFight() {}
+
+function fightSlime() {}
+function fightBeast() {}
+function fightDragon() {}
+
+function dodge() {}
+function attack() {}
+
+function getMonsterAttackValue(){}
+function isMonsterHit() {}
+
+function lose() {}
+function winGame() {}
+function defeatMonster() {}
+
+function easterEgg() {}
 
 
 */
