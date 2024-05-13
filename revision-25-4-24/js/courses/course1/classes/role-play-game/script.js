@@ -259,11 +259,11 @@ function goFight() {
 
     monsterStats.style.display = "block";
 
-    monsterHealth = monsters[fighting].health;
-    // console.log(monsterHealth);
     monsterName.innerText = monsters[fighting].name;
     // monsterHealth.innerText = monsters[fighting].health;
 
+    monsterHealth = monsters[fighting].health;
+    // console.log(monsterHealth);
     monsterHealthText.innerText = monsterHealth;
 }
 
@@ -281,6 +281,11 @@ function fightBeast() {
 function fightDragon() {
     fighting = 2; //index of dragon in the monsters array
     goFight();
+}
+
+// dodge fxn
+function dodge() {
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name;
 }
 
 // fight methods fxns
@@ -329,10 +334,6 @@ function getMonsterAttackValue(level) {
 
 function isMonsterHit() {
     return Math.random() > 0.2 || health < 20;
-}
-
-function dodge() {
-    text.innerText = "You dodge the attack from the " + monsters[fighting].name;
 }
 
 function defeatMonster() {
