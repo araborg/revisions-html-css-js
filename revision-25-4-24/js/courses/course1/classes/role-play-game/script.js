@@ -1,6 +1,6 @@
 let xp = 0;
 
-let health = 100;
+let health = 100; // player's health
 let gold = 50;
 
 let currentWeapon = 0; // reps a weapon index i.e stick
@@ -334,7 +334,7 @@ function getMonsterAttackValue(level) {
 }
 
 function isMonsterHit() {
-    // ds returns true if d random num is > 0.2 or if health is lower than 20
+    // ds returns true if d random num is > 0.2 or if player's health is lower than 20
     return Math.random() > 0.2 || health < 20;
 }
 
