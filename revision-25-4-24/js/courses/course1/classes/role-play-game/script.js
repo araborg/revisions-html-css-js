@@ -315,7 +315,7 @@ function attack() {
         if (fighting === 2) {
             winGame();
         } else {
-            defeatMonster();
+            defeatMonster(); // adds to gold & xp value
         }
     }
 
