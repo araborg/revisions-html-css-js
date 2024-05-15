@@ -10,6 +10,7 @@ body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     margin: 0;
     padding: 20px 0;
+    font-family: sans-serif;
 }
 
 .menu {
@@ -38,6 +39,8 @@ img {
     display: inline-block;
     width: 50%;
     /* border: 2px solid green; */
+    margin: 5px 0;
+    /* line-height: .5; */
 }
 
 /* .item p:first-child {
