@@ -59,6 +59,10 @@ img {
     text-align: right;
 }
 
+.item p:first-child {
+    text-align: left;
+}
+
 hr:last-of-type {
     margin-top: 25px;
 }
