@@ -15,7 +15,13 @@ body {
     padding: 20px;
 }
 
-h1, .established {
+/* h1, .established {
+    text-align: center;
+} */
+
+h1,
+h2,
+p {
     text-align: center;
 }
 
@@ -38,11 +44,10 @@ hr {
 
 h1, h2 {
     font-family: Impact, serif;
-
 }
 
 h2 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 30px;
 }
 
@@ -71,7 +76,9 @@ img {
     margin-top: 25px;
 } */
 
-
+.bottom-line{
+    margin-top: 25px;
+}
 
 footer {
     font-size: 14px;
