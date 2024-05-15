@@ -7,5 +7,12 @@ black
 */
 
 body {
-    /* background-color: green; */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    margin: 0;
+}
+
+.menu {
+    width: 80%;
+    /* max-width: 500px; */
+    background-color: burlywood;
 }
