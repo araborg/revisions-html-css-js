@@ -8,9 +8,10 @@ black
 
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    
     margin: 8px;
     padding: 20px ;
-    font-family: sans-serif;
 }
 
 .menu {
@@ -28,7 +29,10 @@ main {
 
 h1, .established {
     text-align: center;
+}
 
+h1 {
+    margin-top: 0;
 }
 
 h1, h2 {
