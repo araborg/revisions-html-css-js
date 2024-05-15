@@ -33,6 +33,15 @@ h1, .established {
 
 h1 {
     margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+hr {
+    height: 3px;
+    background: brown;
+    border: none;
+    /* border-bottom: none; */
 }
 
 h1, h2 {
