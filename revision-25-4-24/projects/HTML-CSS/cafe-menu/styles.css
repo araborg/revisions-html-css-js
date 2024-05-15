@@ -67,10 +67,11 @@ img {
     text-align: left;
 }
 
-hr:last-of-type {
+/* hr:last-of-type {
     margin-top: 25px;
-    border: 3px solid green;
-}
+} */
+
+
 
 footer {
     font-size: 14px;
