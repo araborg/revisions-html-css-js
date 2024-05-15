@@ -1,11 +1,3 @@
-/* 
-burlywood
-brown
-brown
-black
-black
-*/
-
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
@@ -21,10 +13,6 @@ body {
 
     margin: 0 auto;
     padding: 20px;
-}
-
-main {
-    /* margin: 8px; */
 }
 
 h1, .established {
@@ -67,10 +55,6 @@ img {
     font-size: 18px;
 }
 
-/* .item p:first-child {
-    text-align: left;
-} */
-
 .item p:last-child {
     text-align: right;
 }
@@ -82,6 +66,22 @@ hr:last-of-type {
 footer {
     font-size: 14px;
     text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: brown;
 }
 
 footer .address {
