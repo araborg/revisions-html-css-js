@@ -77,13 +77,13 @@ img {
     margin-top: 25px;
 } */
 
-.bottom-line{
+.bottom-line {
     margin-top: 25px;
 }
 
 footer {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */ /* bcos text align: center; has been applied to p element above*/
 }
 
 a:link {
