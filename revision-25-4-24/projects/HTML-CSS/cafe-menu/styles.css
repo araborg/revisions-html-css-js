@@ -39,9 +39,8 @@ h1 {
 
 hr {
     height: 3px;
-    background: brown;
-    border: none;
-    /* border-bottom: none; */
+    background-color: brown;
+    border-color: brown;
 }
 
 h1, h2 {
@@ -51,6 +50,7 @@ h1, h2 {
 
 h2 {
     text-align: center;
+    font-size: 30px;
 }
 
 img {
