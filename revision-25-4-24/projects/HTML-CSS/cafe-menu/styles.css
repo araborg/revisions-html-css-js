@@ -78,3 +78,12 @@ img {
 hr:last-of-type {
     margin-top: 25px;
 }
+
+footer {
+    font-size: 14px;
+    text-align: center;
+}
+
+footer .address {
+    margin-bottom: 5px;
+}
