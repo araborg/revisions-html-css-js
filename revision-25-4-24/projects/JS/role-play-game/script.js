@@ -64,7 +64,7 @@ const monsterHealthText = document.getElementById("monsterHealthText");
 
 // text
 const text = document.getElementById("text");
-/*
+
 const weapons = [
     // currentWeapon: 0 i.e stick
     { name: "stick", power: 5 },
@@ -73,6 +73,7 @@ const weapons = [
     { name: "sword", power: 100 },
 ];
 
+/*
 const monsters = [
     {
         name: "Slime",
