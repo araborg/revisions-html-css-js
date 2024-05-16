@@ -40,10 +40,11 @@ body {
 #button1,
 #button2,
 #button3 {
-    /* color: #0a0a23; */
-    /* background-color: #feac32; */
-    /* background-image: linear-gradient(#fecc4c, #ffac33); */
-    /* border: 3px solid #feac32; */
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
 }
 
 #monsterStats {
