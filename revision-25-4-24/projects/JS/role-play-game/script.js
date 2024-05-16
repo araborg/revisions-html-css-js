@@ -51,22 +51,18 @@ function restart() {}
 const xp = document.getElementById("xpText");
 const playerHealthText = document.getElementById("playerHealthText");
 const gold = document.getElementById("goldText");
-console.log(xp, playerHealthText, gold);
 
 // buttons
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
-console.log(button1, button2, button3);
 
 // monsterStats
 const monsterName = document.getElementById("monsterName");
 const monsterHealth = document.getElementById("monsterHealth");
-console.log(monsterName, monsterHealth);
 
 // text
 const text = document.getElementById("text");
-console.log(text);
 /*
 const weapons = [
     // currentWeapon: 0 i.e stick
