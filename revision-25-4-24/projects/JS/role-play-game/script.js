@@ -73,7 +73,6 @@ const weapons = [
     { name: "sword", power: 100 },
 ];
 
-/*
 const monsters = [
     {
         name: "Slime",
@@ -94,6 +93,7 @@ const monsters = [
     },
 ];
 
+/*
 const locations = [
     // 0
     {
