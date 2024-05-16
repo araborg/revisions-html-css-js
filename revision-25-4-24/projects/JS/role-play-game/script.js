@@ -147,9 +147,11 @@ button3.onclick = fightDragon;
 function update(location) {}
 
 function goTown() {}
+
 function goStore() {
     console.log("Go into the store");
 }
+
 function goCave() {
     console.log("Go into the cave");
 }
@@ -162,6 +164,7 @@ function goFight() {}
 
 function fightSlime() {}
 function fightBeast() {}
+
 function fightDragon() {
     console.log("Go fight dragon");
 }
