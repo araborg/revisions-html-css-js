@@ -145,6 +145,7 @@ button3.onclick = fightDragon;
 
 // fxns
 function update(location) {
+    // console.log(location);
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
@@ -156,7 +157,10 @@ function update(location) {
     text.innerText = location.text;
 }
 
-function goTown() {}
+function goTown() {
+    update(locations[0]);
+    console.log(location[0]);
+}
 
 function goStore() {
     update(locations[1]);
