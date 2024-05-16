@@ -9,8 +9,9 @@ body {
     background-color: #ffffff;
 
     width: 40%;
-    max-width: 500px;
+
     min-width: 400px;
+    max-width: 500px;
 
     margin: 30px auto 0;
     padding: 10px;
@@ -27,9 +28,11 @@ body {
     margin-right: 10px;
 }
 
-#button1,
+/* #button1,
 #button2,
-#button3 {
+#button3  */
+
+button {
     cursor: pointer;
     color: #0a0a23;
 
