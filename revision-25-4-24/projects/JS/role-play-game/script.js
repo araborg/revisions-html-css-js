@@ -162,7 +162,9 @@ function goStore() {
     update(locations[1]);
 }
 
-function goCave() {}
+function goCave() {
+    update(locations[2]);
+}
 
 function buyHealth() {
     console.log("buy health at $10");
