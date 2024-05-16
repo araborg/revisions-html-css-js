@@ -38,16 +38,20 @@ function pickEight() {}
 function restart() {}
 
 */
+let xp = 0;
+let playerHealth = 100;
+let gold = 50;
 
-let weaponIndex;
+let weaponIndex = 0;
 let monsterIndex;
+let monsterHealth;
 
 let armoury = ["stick"];
 
 // player stats
-const xp = document.getElementById("xpText");
+const xpText = document.getElementById("xpText");
 const playerHealthText = document.getElementById("playerHealthText");
-const gold = document.getElementById("goldText");
+const goldText = document.getElementById("goldText");
 
 // buttons
 const button1 = document.getElementById("button1");
@@ -56,7 +60,7 @@ const button3 = document.getElementById("button3");
 
 // monsterStats
 const monsterName = document.getElementById("monsterName");
-const monsterHealth = document.getElementById("monsterHealth");
+const monsterHealthText = document.getElementById("monsterHealthText");
 
 // text
 const text = document.getElementById("text");
