@@ -1,9 +1,9 @@
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
-    
+
     /* margin: 8px; */
-    padding: 20px ;
+    padding: 20px;
 }
 
 .menu {
@@ -43,7 +43,8 @@ hr {
     border-color: brown;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Impact, serif;
 }
 
@@ -65,15 +66,17 @@ img {
     font-size: 18px;
 }
 
-.item p:first-child { /* or: .price {} */
+.item p:first-child {
+    /* or: .price {} */
     text-align: left;
 }
 
-.item p:last-child { /* or: .flavor, .dessert {}*/
+.item p:last-child {
+    /* or: .flavor, .dessert {}*/
     text-align: right;
 }
 
-/* hr:last-of-type {
+/* hr:last-of-type {  ds didn't work but d class selector .bottom-line worked
     margin-top: 25px;
 } */
 
