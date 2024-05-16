@@ -149,6 +149,10 @@ function update(location) {
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
+
+    button1.onclick = buyHealth;
+    button2.onclick = buyWeapon;
+    button3.onclick = goStore;
 }
 
 function goTown() {}
@@ -159,9 +163,14 @@ function goStore() {
 
 function goCave() {}
 
-function buyHealth() {}
+function buyHealth() {
+    console.log("buy health at $10");
+}
 function sellWeapon() {}
-function buyWeapon() {}
+
+function buyWeapon() {
+    console.log("buy weapon at $30");
+}
 
 function goFight() {}
 
