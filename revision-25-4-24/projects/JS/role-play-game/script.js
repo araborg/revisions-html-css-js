@@ -1,43 +1,4 @@
-/*
-variables:
-
-
-function update(location){}
-
-function goTown(){}
-function goStore(){}
-function goCave(){}
-
-function buyHealth() {}
-function sellWeapon() {}
-function buyWeapon() {}
-
-function goFight() {}
-
-function fightSlime() {}
-function fightBeast() {}
-function fightDragon() {}
-
-function dodge() {}
-function attack() {}
-
-function getMonsterAttackValue(){}
-function isMonsterHit() {}
-
-function lose() {}
-function winGame() {}
-function defeatMonster() {}
-
-function easterEgg() {}
-
-function pick(guess) {}
-
-function pickTwo() {}
-function pickEight() {}
-
-function restart() {}
-
-*/
+// variables
 let xp = 0;
 let playerHealth = 100;
 let gold = 50;
@@ -93,7 +54,6 @@ const monsters = [
     },
 ];
 
-/*
 const locations = [
     // 0
     {
@@ -177,4 +137,50 @@ const locations = [
         text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
     },
 ];
-*/
+
+// init btns
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
+// fxns
+function update(location) {}
+
+function goTown() {}
+function goStore() {
+    console.log("Go into the store");
+}
+function goCave() {
+    console.log("Go into the cave");
+}
+
+function buyHealth() {}
+function sellWeapon() {}
+function buyWeapon() {}
+
+function goFight() {}
+
+function fightSlime() {}
+function fightBeast() {}
+function fightDragon() {
+    console.log("Go fight dragon");
+}
+
+function dodge() {}
+function attack() {}
+
+function getMonsterAttackValue() {}
+function isMonsterHit() {}
+
+function lose() {}
+function winGame() {}
+function defeatMonster() {}
+
+function easterEgg() {}
+
+function pick(guess) {}
+
+function pickTwo() {}
+function pickEight() {}
+
+function restart() {}
