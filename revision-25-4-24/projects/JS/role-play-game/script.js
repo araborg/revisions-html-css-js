@@ -1,13 +1,6 @@
 /*
 variables:
-xp;
-playerHealth
-gold
-weaponIndex
-monsterIndex;
-monsterHealth
 
-armoury
 
 function update(location){}
 
@@ -46,7 +39,11 @@ function restart() {}
 
 */
 
-// starting tools
+let weaponIndex;
+let monsterIndex;
+
+let armoury = ["stick"];
+
 // player stats
 const xp = document.getElementById("xpText");
 const playerHealthText = document.getElementById("playerHealthText");
