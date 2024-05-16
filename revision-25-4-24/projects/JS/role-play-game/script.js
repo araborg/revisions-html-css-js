@@ -145,7 +145,6 @@ button3.onclick = fightDragon;
 
 // fxns
 function update(location) {
-    console.log(location);
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
@@ -153,6 +152,8 @@ function update(location) {
     button1.onclick = buyHealth;
     button2.onclick = buyWeapon;
     button3.onclick = goStore;
+
+    text.innerText = location.text;
 }
 
 function goTown() {}
@@ -166,6 +167,7 @@ function goCave() {}
 function buyHealth() {
     console.log("buy health at $10");
 }
+
 function sellWeapon() {}
 
 function buyWeapon() {
