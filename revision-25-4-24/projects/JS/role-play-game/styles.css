@@ -12,17 +12,18 @@
 body {
     background-color: #0a0a23;
 
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 #game {
+    /* margin-top: 15px; */
     background-color: #ffffff;
 
     width: 40%;
     max-width: 500px;
     min-width: 400px;
 
-    margin: 0 auto;
+    margin: 30px auto 0;
     padding: 10px;
 }
 
