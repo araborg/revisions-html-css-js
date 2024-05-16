@@ -144,17 +144,20 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 // fxns
-function update(location) {}
+function update(location) {
+    console.log(location);
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+}
 
 function goTown() {}
 
 function goStore() {
-    console.log("Go into the store");
+    update(locations[1]);
 }
 
-function goCave() {
-    console.log("Go into the cave");
-}
+function goCave() {}
 
 function buyHealth() {}
 function sellWeapon() {}
