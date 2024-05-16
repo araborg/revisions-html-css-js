@@ -65,12 +65,12 @@ img {
     font-size: 18px;
 }
 
-.item p:last-child { /* or: .flavor, .dessert {}*/
-    text-align: right;
-}
-
 .item p:first-child { /* or: .price {} */
     text-align: left;
+}
+
+.item p:last-child { /* or: .flavor, .dessert {}*/
+    text-align: right;
 }
 
 /* hr:last-of-type {
