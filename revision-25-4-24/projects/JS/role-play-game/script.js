@@ -182,15 +182,17 @@ function buyHealth() {
     }
 }
 
-function sellWeapon() {}
+function sellWeapon() {
+    alert("Sell your weapon for 15 gold");
+}
 
 function buyWeapon() {
     console.log(weaponIndex);
 
-    if (weaponIndex < weapons.length - 1) {
+    if (gold > 30 && weaponIndex < weapons.length - 1) {
+        gold -= 30;
+        goldText.innerText = gold;
         weaponIndex++;
-
-        // console.log(weaponIndex);
 
         const newWeapon = weapons[weaponIndex].name;
         armoury.push(newWeapon);
@@ -198,9 +200,12 @@ function buyWeapon() {
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
-    }
 
-    // console.log(weaponIndex);
+        if (armoury.length === weapons.length) {
+            sellWeapon();
+            button2.innerText = "Sell your weapon for 15 gold";
+        }
+    }
 }
 
 function goFight() {}
