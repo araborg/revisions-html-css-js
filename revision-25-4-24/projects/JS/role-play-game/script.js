@@ -211,12 +211,11 @@ function buyWeapon() {
         armoury.push(newWeapon);
 
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
-    } else if (weaponIndex === weapons.length) {
-        console.log(weaponIndex);
+    } else if (weaponIndex === weapons.length - 1) {
         // gold += 15;
         // goldText.innerText = gold;
 
-        // button2.innerText = "Sell weapon for 15 gold";
+        button2.innerText = "Sell weapon for 15 gold";
 
         // sellWeapon();
     } else {
@@ -227,17 +226,6 @@ function buyWeapon() {
         1. buy weapon until it is 4
         2. sell weapon until it remains 1
     */
-
-    if (armoury.length === weapons.length) {
-        gold += 15;
-        goldText.innerText = gold;
-
-        button2.innerText = "Sell weapon for 15 gold";
-
-        sellWeapon();
-    } else if (armoury.length === 1) {
-        text.innerText = "Don't sell your only weapon!";
-    }
 }
 
 function goFight() {}
