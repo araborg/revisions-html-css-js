@@ -158,6 +158,7 @@ function update(location) {
 }
 
 function goTown() {
+    // go to town square btn fxn
     update(locations[0]);
 }
 
