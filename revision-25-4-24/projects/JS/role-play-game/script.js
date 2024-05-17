@@ -180,13 +180,21 @@ function buyHealth() {
     } else {
         text.innerText = "You do not have enough gold to buy health.";
     }
-    console.log("buy health at $10");
 }
 
 function sellWeapon() {}
 
 function buyWeapon() {
-    console.log("buy weapon at $30");
+    if (weaponIndex < weapons.length) {
+        weaponIndex++;
+        const newWeapon = weapons[weaponIndex].name;
+        console.log(newWeapon, weaponIndex, weapons.length);
+
+        text.innerText =
+            "You now have a dagger. In your inventory you have: stick,dagger";
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
+    }
 }
 
 function goFight() {}
