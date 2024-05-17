@@ -203,7 +203,7 @@ function buyWeapon() {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
 
-    if (armoury.length === weapons.length && armoury.length > 1) {
+    if (armoury.length === weapons.length) {
         gold += 15;
         goldText.innerText = gold;
 
