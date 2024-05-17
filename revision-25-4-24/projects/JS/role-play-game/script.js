@@ -171,6 +171,15 @@ function goCave() {
 }
 
 function buyHealth() {
+    if (gold > 0) {
+        playerHealth += 10;
+        gold -= 10;
+
+        playerHealthText.innerText = playerHealth;
+        goldText.innerText = gold;
+    } else {
+        text.innerText = "You do not have enough gold to buy health.";
+    }
     console.log("buy health at $10");
 }
 
