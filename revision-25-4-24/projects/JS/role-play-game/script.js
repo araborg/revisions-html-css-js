@@ -191,7 +191,10 @@ function buyWeapon() {
         console.log(newWeapon, weaponIndex, weapons.length);
 
         text.innerText =
-            "You now have a dagger. In your inventory you have: stick,dagger";
+            "You now have a " +
+            newWeapon +
+            ". In your inventory you have: " +
+            armoury;
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
