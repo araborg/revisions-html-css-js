@@ -187,10 +187,10 @@ function sellWeapon() {}
 function buyWeapon() {
     console.log(weaponIndex);
 
-    if (weaponIndex < weapons.length) {
+    if (weaponIndex < weapons.length - 1) {
         weaponIndex++;
 
-        console.log(weaponIndex);
+        // console.log(weaponIndex);
 
         const newWeapon = weapons[weaponIndex].name;
         armoury.push(newWeapon);
@@ -199,6 +199,8 @@ function buyWeapon() {
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
+
+    // console.log(weaponIndex);
 }
 
 function goFight() {}
