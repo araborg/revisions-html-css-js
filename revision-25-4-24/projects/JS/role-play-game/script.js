@@ -187,9 +187,8 @@ function sellWeapon() {
 }
 
 function buyWeapon() {
-    console.log(weaponIndex);
-
-    if (gold > 30 && weaponIndex < weapons.length - 1) {
+    // if (gold > 30 && weaponIndex < weapons.length - 1) {
+    if (weaponIndex < weapons.length - 1) {
         gold -= 30;
         goldText.innerText = gold;
         weaponIndex++;
@@ -200,6 +199,7 @@ function buyWeapon() {
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
+        console.log(armoury.length, weapons.length);
 
         if (armoury.length === weapons.length) {
             sellWeapon();
