@@ -185,16 +185,17 @@ function buyHealth() {
 function sellWeapon() {}
 
 function buyWeapon() {
+    console.log(weaponIndex);
+
     if (weaponIndex < weapons.length) {
         weaponIndex++;
-        const newWeapon = weapons[weaponIndex].name;
-        let addToArmoury = armoury.push(newWeapon);
 
-        text.innerText =
-            "You now have a " +
-            newWeapon +
-            ". In your inventory you have: " +
-            armoury;
+        console.log(weaponIndex);
+
+        const newWeapon = weapons[weaponIndex].name;
+        armoury.push(newWeapon);
+
+        text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
