@@ -183,9 +183,21 @@ function buyHealth() {
 }
 
 function sellWeapon() {
-    const soldWeapon = armoury.pop();
+    // const soldWeapon = armoury.pop();
 
-    text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
+    // text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
+    console.log("sold one weapon");
+
+    // if (armoury.length === weapons.length) {
+    //     gold += 15;
+    //     goldText.innerText = gold;
+
+    //     button2.innerText = "Sell weapon for 15 gold";
+
+    //     sellWeapon();
+    // } else if (armoury.length === 1) {
+    //     text.innerText = "Don't sell your only weapon!";
+    // }
 }
 
 function buyWeapon() {
@@ -199,10 +211,22 @@ function buyWeapon() {
         armoury.push(newWeapon);
 
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
+    } else if (weaponIndex === weapons.length) {
+        console.log(weaponIndex);
+        // gold += 15;
+        // goldText.innerText = gold;
+
+        // button2.innerText = "Sell weapon for 15 gold";
+
+        // sellWeapon();
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
     }
-    // else {
-    //     text.innerText = "You do not have enough gold to buy a weapon.";
-    // }
+
+    /*
+        1. buy weapon until it is 4
+        2. sell weapon until it remains 1
+    */
 
     if (armoury.length === weapons.length) {
         gold += 15;
