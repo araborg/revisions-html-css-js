@@ -199,9 +199,10 @@ function buyWeapon() {
         armoury.push(newWeapon);
 
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
-    } else {
-        text.innerText = "You do not have enough gold to buy a weapon.";
     }
+    // else {
+    //     text.innerText = "You do not have enough gold to buy a weapon.";
+    // }
 
     if (armoury.length === weapons.length) {
         gold += 15;
@@ -210,6 +211,8 @@ function buyWeapon() {
         button2.innerText = "Sell weapon for 15 gold";
 
         sellWeapon();
+    } else if (armoury.length === 1) {
+        text.innerText = "Don't sell your only weapon!";
     }
 }
 
