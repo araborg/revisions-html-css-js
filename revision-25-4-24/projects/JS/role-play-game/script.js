@@ -183,7 +183,9 @@ function buyHealth() {
 }
 
 function sellWeapon() {
-    alert("Sell your weapon for 15 gold");
+    const soldWeapon = armoury.pop();
+
+    text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
 }
 
 function buyWeapon() {
@@ -202,8 +204,12 @@ function buyWeapon() {
         console.log(armoury.length, weapons.length);
 
         if (armoury.length === weapons.length) {
+            gold += 15;
+            goldText.innerText = gold;
+
+            button2.innerText = "Sell weapon for 15 gold";
+
             sellWeapon();
-            button2.innerText = "Sell your weapon for 15 gold";
         }
     }
 }
