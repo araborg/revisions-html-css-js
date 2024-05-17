@@ -188,7 +188,7 @@ function buyWeapon() {
     if (weaponIndex < weapons.length) {
         weaponIndex++;
         const newWeapon = weapons[weaponIndex].name;
-        console.log(newWeapon, weaponIndex, weapons.length);
+        let addToArmoury = armoury.push(newWeapon);
 
         text.innerText =
             "You now have a " +
