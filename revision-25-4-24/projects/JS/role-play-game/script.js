@@ -184,7 +184,8 @@ function buyHealth() {
 
 function sellWeapon() {
     if (armoury.length > 1) {
-        const soldWeapon = armoury.shift();
+        // const soldWeapon = armoury.shift();
+        const soldWeapon = armoury.pop();
 
         text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
 
@@ -193,7 +194,6 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        // console.log(weaponIndex);
         weaponIndex = weapons.length - 2;
 
         while (armoury.length === 1 && weaponIndex > 0) {
@@ -203,8 +203,6 @@ function sellWeapon() {
 
             button2.onclick = buyWeapon;
         }
-
-        // console.log(weaponIndex);
     }
 }
 
