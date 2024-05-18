@@ -193,18 +193,26 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        if (armoury.length === 1) {
-            weaponIndex = 0;
+        // console.log(weaponIndex);
+        weaponIndex = weapons.length - 2;
+
+        if (armoury.length === 1 && weaponIndex >= 0) {
+            weaponIndex--;
+
             button2.innerText = "Buy weapon (30 gold)";
 
             button2.onclick = buyWeapon;
+
+            weaponIndex++;
         }
+
+        // console.log(weaponIndex);
     }
 }
 
 function buyWeapon() {
-    if (gold > 30 && weaponIndex < weapons.length - 1) {
-        // if (weaponIndex < weapons.length - 1) {
+    // if (gold > 30 && weaponIndex < weapons.length - 1) {
+    if (weaponIndex < weapons.length - 1) {
         gold -= 30;
         goldText.innerText = gold;
         weaponIndex++;
