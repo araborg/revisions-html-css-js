@@ -196,6 +196,7 @@ function sellWeapon() {
         button2.innerText = "Buy weapon (30 gold)";
 
         button2.onclick = buyWeapon;
+        console.log("buy weapon");
     }
 }
 
