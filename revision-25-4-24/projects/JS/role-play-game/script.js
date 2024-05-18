@@ -183,25 +183,13 @@ function buyHealth() {
 }
 
 function sellWeapon() {
-    // if (armoury.length > 1) {
-    //     const soldWeapon = armoury.pop();
+    if (armoury.length > 1) {
+        const soldWeapon = armoury.shift();
 
-    //     text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
-    // } else {
-    //     text.innerText = "Don't sell your only weapon!";
-    // }
-    console.log("sold one weapon");
-
-    // if (armoury.length === weapons.length) {
-    //     gold += 15;
-    //     goldText.innerText = gold;
-
-    //     button2.innerText = "Sell weapon for 15 gold";
-
-    //     sellWeapon();
-    // } else if (armoury.length === 1) {
-    //     text.innerText = "Don't sell your only weapon!";
-    // }
+        text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
+    } else {
+        text.innerText = "Don't sell your only weapon!";
+    }
 }
 
 function buyWeapon() {
@@ -223,11 +211,6 @@ function buyWeapon() {
     } else {
         text.innerText = "You do not have enough gold to buy a weapon.";
     }
-
-    /*
-        1. buy weapon until it is 4
-        2. sell weapon until it remains 1
-    */
 }
 
 function goFight() {}
