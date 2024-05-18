@@ -187,6 +187,9 @@ function sellWeapon() {
         const soldWeapon = armoury.shift();
 
         text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
+
+        gold += 15;
+        goldText.innerText = gold;
     } else {
         text.innerText = "Don't sell your only weapon!";
     }
