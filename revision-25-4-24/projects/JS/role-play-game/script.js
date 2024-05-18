@@ -193,10 +193,10 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        button2.innerText = "Buy weapon (30 gold)";
+        // button2.innerText = "Buy weapon (30 gold)";
 
-        button2.onclick = buyWeapon;
-        console.log("buy weapon");
+        // button2.onclick = buyWeapon;
+        // console.log("buy weapon");
     }
 }
 
@@ -211,7 +211,7 @@ function buyWeapon() {
         armoury.push(newWeapon);
 
         text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
-    } else if (weaponIndex === weapons.length - 1) {
+    } else if (weaponIndex === weapons.length - 1 && weapons.length !== 1) {
         button2.innerText = "Sell weapon for 15 gold";
         text.innerText = "You already have the most powerful weapon!";
 
