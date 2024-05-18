@@ -202,10 +202,9 @@ function sellWeapon() {
             button2.innerText = "Buy weapon (30 gold)";
 
             button2.onclick = buyWeapon;
-
-            // weaponIndex++;
         }
 
+        console.log(armoury);
         // console.log(weaponIndex);
     }
 }
