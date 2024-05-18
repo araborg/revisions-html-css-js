@@ -193,10 +193,12 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        // button2.innerText = "Buy weapon (30 gold)";
+        if (armoury.length === 1) {
+            button2.innerText = "Buy weapon (30 gold)";
 
-        // button2.onclick = buyWeapon;
-        // console.log("buy weapon");
+            // button2.onclick = buyWeapon;
+            console.log("buy weapon");
+        }
     }
 }
 
