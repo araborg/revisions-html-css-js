@@ -192,6 +192,10 @@ function sellWeapon() {
         goldText.innerText = gold;
     } else {
         text.innerText = "Don't sell your only weapon!";
+
+        button2.innerText = "Buy weapon (30 gold)";
+
+        button2.onclick = buyWeapon;
     }
 }
 
