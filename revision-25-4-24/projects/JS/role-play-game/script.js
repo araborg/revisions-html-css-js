@@ -196,14 +196,14 @@ function sellWeapon() {
         // console.log(weaponIndex);
         weaponIndex = weapons.length - 2;
 
-        if (armoury.length === 1 && weaponIndex >= 0) {
+        while (armoury.length === 1 && weaponIndex > 0) {
             weaponIndex--;
 
             button2.innerText = "Buy weapon (30 gold)";
 
             button2.onclick = buyWeapon;
 
-            weaponIndex++;
+            // weaponIndex++;
         }
 
         // console.log(weaponIndex);
