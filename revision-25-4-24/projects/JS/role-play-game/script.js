@@ -203,8 +203,8 @@ function sellWeapon() {
 }
 
 function buyWeapon() {
-    // if (gold > 30 && weaponIndex < weapons.length - 1) {
-    if (weaponIndex < weapons.length - 1) {
+    if (gold > 30 && weaponIndex < weapons.length - 1) {
+        // if (weaponIndex < weapons.length - 1) {
         gold -= 30;
         goldText.innerText = gold;
         weaponIndex++;
