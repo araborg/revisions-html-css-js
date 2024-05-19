@@ -230,11 +230,15 @@ function buyWeapon() {
 
 function goFight() {}
 
-function fightSlime() {}
-function fightBeast() {}
+function fightSlime() {
+    monsterIndex = 0;
+}
+function fightBeast() {
+    monsterIndex = 1;
+}
 
 function fightDragon() {
-    console.log("Go fight dragon");
+    monsterIndex = 2;
 }
 
 function dodge() {}
