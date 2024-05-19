@@ -257,7 +257,9 @@ function fightDragon() {
     goFight();
 }
 
-function dodge() {}
+function dodge() {
+    text.innerText = "You dodge the attack from the fanged beast";
+}
 function attack() {}
 
 function getMonsterAttackValue() {}
