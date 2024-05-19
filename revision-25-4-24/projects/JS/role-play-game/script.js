@@ -228,17 +228,22 @@ function buyWeapon() {
     }
 }
 
-function goFight() {}
+function goFight() {
+    console.log(`fighting ${monsters[monsterIndex].name}`);
+}
 
 function fightSlime() {
     monsterIndex = 0;
+    goFight();
 }
 function fightBeast() {
     monsterIndex = 1;
+    goFight();
 }
 
 function fightDragon() {
     monsterIndex = 2;
+    goFight();
 }
 
 function dodge() {}
