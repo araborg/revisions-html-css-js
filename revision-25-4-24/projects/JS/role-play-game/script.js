@@ -269,6 +269,9 @@ function dodge() {
 function attack() {
     const monsterName = monsters[monsterIndex].name;
     const chosenWeapon = weapons[weaponIndex].name;
+
+    playerHealth -= 10;
+    playerHealthText.innerText = health;
     // if (a) {
 
     // }else {
