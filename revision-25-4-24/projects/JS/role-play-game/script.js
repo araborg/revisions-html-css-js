@@ -249,6 +249,7 @@ function fightSlime() {
     monsterIndex = 0;
     goFight();
 }
+
 function fightBeast() {
     monsterIndex = 1;
     goFight();
