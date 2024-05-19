@@ -271,7 +271,7 @@ function attack() {
     const chosenWeapon = weapons[weaponIndex].name;
 
     playerHealth -= 10;
-    playerHealthText.innerText = health;
+    playerHealthText.innerText = playerHealth;
     // if (a) {
 
     // }else {
@@ -279,6 +279,37 @@ function attack() {
     // }
     console.log("Player attacks " + monsters[monsterIndex].name);
 }
+
+/*
+    // update text element: 
+    The monster attacks.
+    You attack it with your weapons.
+
+    reduce health with getMonsterAttackValue(level)
+
+    if monster is Hit
+        reduce monster health using weapon power & random number with xp
+    else
+        update text element
+
+    healthText update
+    monster health update
+
+    health less than 0
+        call lose()
+    monster health less than zero
+        monster index is 2
+            call win game
+        or
+            call defeat monster
+
+    weapon break
+    if Math random is less or equal .1 and armoury length not equal 1
+        update text = " Your sword breaks.";
+        reduce weaponIndex
+
+
+*/
 
 function getMonsterAttackValue() {}
 function isMonsterHit() {}
