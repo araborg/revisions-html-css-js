@@ -160,6 +160,7 @@ function update(location) {
 
 function goTown() {
     // go to town square btn fxn
+    monsterStats.style.display = "none";
     update(locations[0]);
 }
 
@@ -235,7 +236,11 @@ function goFight() {
     monsterStats.style.display = "block";
 
     const currentMonster = monsters[monsterIndex].name;
-    console.log(currentMonster);
+    monsterHealth = monsters[monsterIndex].health;
+
+    monsterHealthText.innerText = monsterHealth;
+    monsterName.innerText = currentMonster;
+    // console.log(currentMonster, monsterHealth);
 }
 
 function fightSlime() {
