@@ -267,7 +267,7 @@ function dodge() {
 
 // fxns based on game states
 function attack() {
-    console.log("Attack " + monsters[monsterIndex].name);
+    console.log("Player attacks " + monsters[monsterIndex].name);
 }
 
 function getMonsterAttackValue() {}
