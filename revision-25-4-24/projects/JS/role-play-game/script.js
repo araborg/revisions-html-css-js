@@ -232,7 +232,7 @@ function buyWeapon() {
 function goFight() {
     update(locations[3]);
 
-    monst;
+    monsterStats.style.display = "block";
 }
 
 function fightSlime() {
