@@ -233,6 +233,8 @@ function buyWeapon() {
 function goFight() {
     update(locations[3]);
 
+    button2.onclick = dodge;
+
     monsterStats.style.display = "block";
 
     const currentMonster = monsters[monsterIndex].name;
@@ -285,4 +287,4 @@ function restart() {
     //     update(locations[6]);
 }
 
-button2.addEventListener("click", dodge);
+// button2.addEventListener("click", dodge);
