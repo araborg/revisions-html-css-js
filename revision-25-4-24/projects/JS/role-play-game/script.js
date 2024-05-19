@@ -267,6 +267,11 @@ function dodge() {
 
 // fxns based on game states
 function attack() {
+    // if (a) {
+
+    // }else {
+    text.innerText = `The ${monsters[monsterIndex].name} attacks. You attack it with your ${weapons[weaponIndex].name}. You miss.`;
+    // }
     console.log("Player attacks " + monsters[monsterIndex].name);
 }
 
