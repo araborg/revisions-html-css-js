@@ -230,6 +230,7 @@ function buyWeapon() {
 
 function goFight() {
     console.log(`fighting ${monsters[monsterIndex].name}`);
+    update(locations[3]);
 }
 
 function fightSlime() {
