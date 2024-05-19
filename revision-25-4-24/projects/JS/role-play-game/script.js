@@ -258,7 +258,8 @@ function fightDragon() {
 }
 
 function dodge() {
-    text.innerText = "You dodge the attack from the fanged beast";
+    text.innerText =
+        "You dodge the attack from the " + monsters[monsterIndex].name;
 }
 function attack() {}
 
@@ -277,3 +278,5 @@ function pickTwo() {}
 function pickEight() {}
 
 function restart() {}
+
+button2.addEventListener("click", dodge);
