@@ -20,6 +20,7 @@ const button2 = document.getElementById("button2");
 const button3 = document.getElementById("button3");
 
 // monsterStats
+const monsterStats = document.getElementById("monsterStats");
 const monsterName = document.getElementById("monsterName");
 const monsterHealthText = document.getElementById("monsterHealthText");
 
@@ -230,6 +231,8 @@ function buyWeapon() {
 
 function goFight() {
     update(locations[3]);
+
+    monst;
 }
 
 function fightSlime() {
