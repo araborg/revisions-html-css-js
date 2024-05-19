@@ -261,12 +261,16 @@ function dodge() {
     text.innerText =
         "You dodge the attack from the " + monsters[monsterIndex].name;
 }
+
+// fxns based on game states
 function attack() {}
 
 function getMonsterAttackValue() {}
 function isMonsterHit() {}
 
-function lose() {}
+function lose() {
+    // update(locations[5])
+}
 function winGame() {}
 function defeatMonster() {}
 
@@ -277,6 +281,8 @@ function pick(guess) {}
 function pickTwo() {}
 function pickEight() {}
 
-function restart() {}
+function restart() {
+    //     update(locations[6]);
+}
 
 button2.addEventListener("click", dodge);
