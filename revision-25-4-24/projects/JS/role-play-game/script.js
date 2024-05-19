@@ -233,6 +233,9 @@ function goFight() {
     update(locations[3]);
 
     monsterStats.style.display = "block";
+
+    const currentMonster = monsters[monsterIndex].name;
+    console.log(currentMonster);
 }
 
 function fightSlime() {
