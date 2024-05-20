@@ -283,7 +283,9 @@ function attack() {
         monsterHealth -=
             weapons[weaponIndex].power * Math.floor(Math.random() * xp);
 
-        console.log(`Weapons: ${weaponIndex}`);
+        console.log(
+            weapons[weaponIndex].power * Math.floor(Math.random() * xp)
+        );
         console.log(`monsterHealth: ${monsterHealth}`);
     } else {
     }
