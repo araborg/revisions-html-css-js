@@ -334,6 +334,7 @@ function isMonsterHit() {
 
 function lose() {
     // call update with d lose obj
+    update(locations[5]);
 }
 function winGame() {
     // call win obj
