@@ -270,6 +270,9 @@ function attack() {
     const monsterName = monsters[monsterIndex].name;
     const chosenWeapon = weapons[weaponIndex].name;
 
+    text.innerText = `The ${monsterName} attacks.`;
+    text.innerText += `You attack it with your ${chosenWeapon}.`;
+
     playerHealth -= 10;
     playerHealthText.innerText = playerHealth;
     // if (a) {
@@ -282,8 +285,6 @@ function attack() {
 
 /*
     // update text element: 
-    The monster attacks.
-    You attack it with your weapons.
 
     reduce health with getMonsterAttackValue(level)
 
