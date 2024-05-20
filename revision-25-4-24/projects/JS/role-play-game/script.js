@@ -298,6 +298,7 @@ function attack() {
         }
         // monster health less than zero
     } else if (monsterHealth <= 0) {
+        console.log(monsterHealth);
         // monster index is 2
         if (monsterIndex === 2) {
             // call win game
@@ -338,7 +339,7 @@ function getMonsterAttackValue(level) {
 function isMonsterHit() {
     // random greater than .2 or health less than 20
     const value = Math.random() > 0.2 || playerHealth < 20;
-    console.log(value);
+    // console.log(value);
     return value;
     // return Math.random() > 0.2 || playerHealth < 20;
 }
