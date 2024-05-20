@@ -285,7 +285,7 @@ function attack() {
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
     } else {
         //     update text element: " You miss.";
-        text.innerText = " You miss.";
+        text.innerText += " You miss.";
     }
 
     playerHealthText.innerText = playerHealth;
