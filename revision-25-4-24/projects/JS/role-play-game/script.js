@@ -407,6 +407,7 @@ function pickEight() {
 }
 
 function restart() {
+    console.log("Restart!!!");
     // reset xp, playerHealth, gold, weaponIndex, armoury to initial values
     // display xp, playerHealth, gold
     // call go to town obj
