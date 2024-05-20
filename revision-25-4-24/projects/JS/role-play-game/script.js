@@ -334,7 +334,9 @@ function defeatMonster() {
     // call update with kill monster obj
 }
 
-function easterEgg() {}
+function easterEgg() {
+    // call easter egg obj
+}
 
 function pick(guess) {}
 
