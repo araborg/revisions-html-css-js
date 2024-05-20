@@ -315,7 +315,7 @@ function getMonsterAttackValue() {}
 function isMonsterHit() {}
 
 function lose() {
-    // update(locations[5])
+    // call update with d lose obj
 }
 function winGame() {}
 function defeatMonster() {
