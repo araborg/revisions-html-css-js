@@ -344,7 +344,9 @@ function pickTwo() {
     // call pick with 2
 }
 
-function pickEight() {}
+function pickEight() {
+    // call pick with 8
+}
 
 function restart() {
     // reset xp, playerHealth, gold, weaponIndex, armoury to initial values
