@@ -295,17 +295,20 @@ function attack() {
 
             // call lose()
             lose();
+
+            // monster health less than zero
+        } else if (monsterHealth <= 0) {
+            console.log(monsterHealth);
+            monsterHealth = 0;
+            monsterHealthText.innerText = monsterHealth;
+            // monster index is 2
+            if (monsterIndex === 2) {
+                // call win game
+                winGame();
+            }
+            // or
+            //     call defeat monster
         }
-        // monster health less than zero
-    } else if (monsterHealth <= 0) {
-        console.log(monsterHealth);
-        // monster index is 2
-        if (monsterIndex === 2) {
-            // call win game
-            winGame();
-        }
-        // or
-        //     call defeat monster
     } else {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
