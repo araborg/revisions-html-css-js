@@ -279,9 +279,12 @@ function attack() {
     //     if monster is Hit
     console.log(`isMonsterHit: ${isMonsterHit()}`);
     if (isMonsterHit()) {
+        //     reduce monster health using weapon power & random number with xp
+        monsterHealth -=
+            weapons[chosenWeapon].power * Math.floor(Math.random() * xp);
+        console.log(`monsterHealth: ${monsterHealth}`);
     } else {
     }
-    //     reduce monster health using weapon power & random number with xp
     // else
     //     update text element: " You miss.";
 
