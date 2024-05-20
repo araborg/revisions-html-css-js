@@ -354,6 +354,7 @@ function lose() {
 }
 function winGame() {
     // call win obj
+    update(locations[6]);
 }
 
 function defeatMonster() {
