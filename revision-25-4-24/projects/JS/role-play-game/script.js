@@ -320,6 +320,7 @@ function getMonsterAttackValue(level) {
     const hit = level * 5 - Math.floor(Math.random() * xp);
     console.log(hit);
     // return hit if it greater than 0 or return 0
+    return hit > 0 ? hit : 0;
 }
 
 function isMonsterHit() {
