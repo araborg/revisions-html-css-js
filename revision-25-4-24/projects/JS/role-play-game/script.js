@@ -1,7 +1,7 @@
 // variables
 let xp = 0;
 let playerHealth = 100;
-let gold = 150;
+let gold = 50;
 
 let weaponIndex = 0;
 let monsterIndex;
