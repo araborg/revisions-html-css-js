@@ -290,7 +290,7 @@ function attack() {
     if monster is Hit
         reduce monster health using weapon power & random number with xp
     else
-        update text element
+        update text element: " You miss.";
 
     healthText update
     monster health update
@@ -316,7 +316,9 @@ function getMonsterAttackValue() {
     // return hit if it greater than 0 or return 0
 }
 
-function isMonsterHit() {}
+function isMonsterHit() {
+    // random greater than .2 or health less than 20
+}
 
 function lose() {
     // call update with d lose obj
