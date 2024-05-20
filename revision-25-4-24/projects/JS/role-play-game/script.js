@@ -278,7 +278,7 @@ function attack() {
     // if (a) {
 
     // }else {
-    text.innerText = `The ${monsterName} attacks. You attack it with your ${chosenWeapon}. You miss.`;
+    // text.innerText = `The ${monsterName} attacks. You attack it with your ${chosenWeapon}. You miss.`;
     // }
     console.log("Player attacks " + monsters[monsterIndex].name);
 }
