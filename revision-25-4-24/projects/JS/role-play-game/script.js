@@ -276,9 +276,7 @@ function attack() {
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
 
-    //     if monster is Hit
-    // console.log(`isMonsterHit: ${isMonsterHit()}`);
-
+    // if monster is Hit
     if (isMonsterHit()) {
         //     reduce monster health using weapon power & random number with xp
         monsterHealth -=
