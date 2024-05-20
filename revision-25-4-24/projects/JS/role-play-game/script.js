@@ -318,7 +318,12 @@ function lose() {
     // update(locations[5])
 }
 function winGame() {}
-function defeatMonster() {}
+function defeatMonster() {
+    // add to gold: monster lever * 6.7
+    // add to xp using monster level
+    // display d new gold and xp value
+    // call update with kill monster obj
+}
 
 function easterEgg() {}
 
