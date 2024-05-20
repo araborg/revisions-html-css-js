@@ -284,6 +284,12 @@ function attack() {
 
         playerHealthText.innerText = playerHealth;
         monsterHealthText.innerText = monsterHealth;
+
+        // health less than 0
+        if (monsterHealth < 0) {
+            // call lose()
+            lose();
+        }
     } else {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
@@ -296,11 +302,7 @@ function attack() {
 
    
 
-    healthText update
-    monster health update
-
-    health less than 0
-        call lose()
+    
     monster health less than zero
         monster index is 2
             call win game
