@@ -276,6 +276,15 @@ function attack() {
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
 
+    //     if monster is Hit
+    console.log(`isMonsterHit: ${isMonsterHit()}`);
+    if (isMonsterHit()) {
+    } else {
+    }
+    //     reduce monster health using weapon power & random number with xp
+    // else
+    //     update text element: " You miss.";
+
     playerHealthText.innerText = playerHealth;
     // if (a) {
 
@@ -292,10 +301,7 @@ function attack() {
 
     
 
-    if monster is Hit
-        reduce monster health using weapon power & random number with xp
-    else
-        update text element: " You miss.";
+   
 
     healthText update
     monster health update
@@ -326,6 +332,7 @@ function getMonsterAttackValue(level) {
 
 function isMonsterHit() {
     // random greater than .2 or health less than 20
+    return Math.random() > 0.2 || playerHealth < 20;
 }
 
 function lose() {
