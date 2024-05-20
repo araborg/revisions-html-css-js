@@ -281,9 +281,11 @@ function attack() {
 
     // if monster is Hit
     if (isMonsterHit()) {
-        //     reduce monster health using weapon power & random number with xp
+        // reduce monster health using weapon power & random number with xp
+        // weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
+        console.log(monsterHealth);
 
         playerHealthText.innerText = playerHealth;
         monsterHealthText.innerText = monsterHealth;
