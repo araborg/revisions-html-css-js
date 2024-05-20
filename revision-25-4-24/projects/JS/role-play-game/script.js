@@ -271,7 +271,7 @@ function attack() {
     const chosenWeapon = weapons[weaponIndex].name;
 
     text.innerText = `The ${monsterName} attacks.`;
-    text.innerText += `You attack it with your ${chosenWeapon}.`;
+    text.innerText += ` You attack it with your ${chosenWeapon}.`;
 
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
@@ -283,6 +283,9 @@ function attack() {
         //     reduce monster health using weapon power & random number with xp
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
+        console.log(monsterHealth);
+
+        monsterHealthText.innerText = monsterHealth;
     } else {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
