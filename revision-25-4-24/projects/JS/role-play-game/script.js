@@ -298,9 +298,9 @@ function attack() {
 
             // monster health less than zero
         } else if (monsterHealth <= 0) {
-            console.log(monsterHealth);
             monsterHealth = 0;
             monsterHealthText.innerText = monsterHealth;
+
             // monster index is 2
             if (monsterIndex === 2) {
                 // call win game
