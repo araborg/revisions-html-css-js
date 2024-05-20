@@ -340,7 +340,10 @@ function easterEgg() {
 
 function pick(guess) {}
 
-function pickTwo() {}
+function pickTwo() {
+    // call pick with 2
+}
+
 function pickEight() {}
 
 function restart() {
