@@ -311,7 +311,11 @@ function attack() {
 
 */
 
-function getMonsterAttackValue() {}
+function getMonsterAttackValue() {
+    //     declare hit and cal it using level * 5 minus random number * xp
+    // return hit if it greater than 0 or return 0
+}
+
 function isMonsterHit() {}
 
 function lose() {
