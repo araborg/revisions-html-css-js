@@ -296,6 +296,12 @@ function attack() {
             // call lose()
             lose();
         }
+    } else if (monsterHealth <= 0) {
+        // monster health less than zero
+        // monster index is 2
+        //     call win game
+        // or
+        //     call defeat monster
     } else {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
@@ -309,11 +315,7 @@ function attack() {
    
 
     
-    monster health less than zero
-        monster index is 2
-            call win game
-        or
-            call defeat monster
+
 
     weapon break
     if Math random is less or equal .1 and armoury length not equal 1
