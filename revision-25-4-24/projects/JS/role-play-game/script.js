@@ -276,7 +276,6 @@ function attack() {
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
 
-    playerHealth -= 10;
     playerHealthText.innerText = playerHealth;
     // if (a) {
 
@@ -284,7 +283,9 @@ function attack() {
     // text.innerText = `The ${monsterName} attacks. You attack it with your ${chosenWeapon}. You miss.`;
     // }
     console.log("Player attacks " + monsters[monsterIndex].name);
-    console.log(monsters[monsterIndex].level, playerHealth);
+    console.log(
+        `monster level: ${monsters[monsterIndex].level}, player health: ${playerHealth}`
+    );
 }
 
 /*
@@ -318,7 +319,7 @@ function attack() {
 function getMonsterAttackValue(level) {
     // declare hit and cal it using level * 5 minus random number * xp
     const hit = level * 5 - Math.floor(Math.random() * xp);
-    console.log(hit);
+    console.log(`hit = ${hit}`);
     // return hit if it greater than 0 or return 0
     return hit > 0 ? hit : 0;
 }
