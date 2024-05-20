@@ -305,9 +305,10 @@ function attack() {
             if (monsterIndex === 2) {
                 // call win game
                 winGame();
+            } else {
+                // call defeat monster
+                defeatMonster();
             }
-            // or
-            //     call defeat monster
         }
     } else {
         //     update text element: " You miss.";
@@ -358,10 +359,15 @@ function winGame() {
 }
 
 function defeatMonster() {
+    /*The monster screams "Arg!" as it dies. You gain experience points and find gold.*/
+
     // add to gold: monster lever * 6.7
+    gold += monsters[monsterIndex].level * 6.7;
+    console.log(gold);
     // add to xp using monster level
     // display d new gold and xp value
     // call update with kill monster obj
+    update(locations[4]);
 }
 
 function easterEgg() {
