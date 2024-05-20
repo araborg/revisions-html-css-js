@@ -282,26 +282,11 @@ function attack() {
         //     reduce monster health using weapon power & random number with xp
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
-
-        console.log(
-            weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1
-        );
-        console.log(`monsterHealth: ${monsterHealth}`);
     } else {
+        //     update text element: " You miss.";
     }
-    // else
-    //     update text element: " You miss.";
 
     playerHealthText.innerText = playerHealth;
-    // if (a) {
-
-    // }else {
-    // text.innerText = `The ${monsterName} attacks. You attack it with your ${chosenWeapon}. You miss.`;
-    // }
-    console.log("Player attacks " + monsters[monsterIndex].name);
-    console.log(
-        `monster level: ${monsters[monsterIndex].level}, player health: ${playerHealth}`
-    );
 }
 
 /*
