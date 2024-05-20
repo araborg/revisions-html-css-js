@@ -296,10 +296,13 @@ function attack() {
             // call lose()
             lose();
         }
-    } else if (monsterHealth <= 0) {
         // monster health less than zero
+    } else if (monsterHealth <= 0) {
         // monster index is 2
-        //     call win game
+        if (monsterIndex === 2) {
+            // call win game
+            winGame();
+        }
         // or
         //     call defeat monster
     } else {
