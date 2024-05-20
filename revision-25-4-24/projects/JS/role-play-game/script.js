@@ -277,7 +277,7 @@ function attack() {
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
 
     //     if monster is Hit
-    console.log(`isMonsterHit: ${isMonsterHit()}`);
+    // console.log(`isMonsterHit: ${isMonsterHit()}`);
 
     if (isMonsterHit()) {
         //     reduce monster health using weapon power & random number with xp
@@ -319,7 +319,6 @@ function attack() {
 function getMonsterAttackValue(level) {
     // declare hit and cal it using level * 5 minus random number * xp
     const hit = level * 5 - Math.floor(Math.random() * xp);
-    console.log(`hit = ${hit}`);
     // return hit if it greater than 0 or return 0
     return hit > 0 ? hit : 0;
 }
