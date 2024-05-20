@@ -281,7 +281,9 @@ function attack() {
     if (isMonsterHit()) {
         //     reduce monster health using weapon power & random number with xp
         monsterHealth -=
-            weapons[chosenWeapon].power * Math.floor(Math.random() * xp);
+            weapons[weaponIndex].power * Math.floor(Math.random() * xp);
+
+        console.log(`Weapons: ${weaponIndex}`);
         console.log(`monsterHealth: ${monsterHealth}`);
     } else {
     }
