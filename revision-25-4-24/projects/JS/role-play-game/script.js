@@ -281,15 +281,13 @@ function attack() {
         //     reduce monster health using weapon power & random number with xp
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
-        console.log(monsterHealth);
 
+        playerHealthText.innerText = playerHealth;
         monsterHealthText.innerText = monsterHealth;
     } else {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
     }
-
-    playerHealthText.innerText = playerHealth;
 }
 
 /*
