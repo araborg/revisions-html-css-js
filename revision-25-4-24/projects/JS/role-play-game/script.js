@@ -338,7 +338,22 @@ function easterEgg() {
     // call easter egg obj
 }
 
-function pick(guess) {}
+function pick(guess) {
+    // declare an empty arr
+    // use while loop to populate d empty arr with random number btw 0-10
+    // update text: "You picked " + guess + ". Here are the random numbers:\n";
+    // show d number by updating text using for loop
+    // if number includes guess
+    //     update text: "Right! You win 20 gold!";
+    //     increase gold by 20
+    //     update gold text
+    // else
+    //     update text: "Wrong! You lose 10 health!";
+    //     decreate health by 10
+    //     update health text
+    //     check if health is less or equal 0:
+    //         call lose
+}
 
 function pickTwo() {
     // call pick with 2
