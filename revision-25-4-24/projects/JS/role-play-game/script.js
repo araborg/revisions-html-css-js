@@ -416,7 +416,12 @@ function restart() {
     armoury = ["stick"];
 
     // display xp, playerHealth, gold
+    xpText.innerText = xp;
+    playerHealthText.innerText = playerHealth;
+    goldText.innerText = gold;
+
     // call go to town obj
+    update(locations[0]);
 }
 
 // button2.addEventListener("click", dodge);
