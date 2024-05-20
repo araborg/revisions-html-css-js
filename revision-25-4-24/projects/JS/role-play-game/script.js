@@ -333,7 +333,9 @@ function pickTwo() {}
 function pickEight() {}
 
 function restart() {
-    //     update(locations[6]);
+    // reset xp, playerHealth, gold, weaponIndex, armoury to initial values
+    // display xp, playerHealth, gold
+    // call go to town obj
 }
 
 // button2.addEventListener("click", dodge);
