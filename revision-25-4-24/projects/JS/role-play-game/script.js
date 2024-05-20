@@ -155,7 +155,10 @@ function update(location) {
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
 
-    text.innerText = location.text;
+    // modified this to show &#x2620;
+    // text.innerText = location.text;
+
+    text.innerHTML = location.text;
 }
 
 function goTown() {
@@ -286,7 +289,10 @@ function attack() {
         monsterHealthText.innerText = monsterHealth;
 
         // health less than 0
-        if (monsterHealth < 0) {
+        if (playerHealth <= 0) {
+            playerHealth = 0;
+            playerHealthText.innerText = playerHealth;
+
             // call lose()
             lose();
         }
@@ -334,6 +340,7 @@ function isMonsterHit() {
 
 function lose() {
     // call update with d lose obj
+
     update(locations[5]);
 }
 function winGame() {
