@@ -362,9 +362,10 @@ function defeatMonster() {
     /*The monster screams "Arg!" as it dies. You gain experience points and find gold.*/
 
     // add to gold: monster lever * 6.7
-    gold += monsters[monsterIndex].level * 6.7;
+    gold += Math.floor(monsters[monsterIndex].level * 6.7);
     console.log(gold);
     // add to xp using monster level
+    xp += monsters[monsterIndex].level;
     // display d new gold and xp value
     // call update with kill monster obj
     update(locations[4]);
