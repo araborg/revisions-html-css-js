@@ -317,7 +317,10 @@ function isMonsterHit() {}
 function lose() {
     // call update with d lose obj
 }
-function winGame() {}
+function winGame() {
+    // call win obj
+}
+
 function defeatMonster() {
     // add to gold: monster lever * 6.7
     // add to xp using monster level
