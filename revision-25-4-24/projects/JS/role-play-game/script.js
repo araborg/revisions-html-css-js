@@ -31,8 +31,11 @@ const text = document.getElementById("text");
 const weapons = [
     // currentWeapon: 0 i.e stick
     { name: "stick", power: 5 },
+
     { name: "dagger", power: 30 },
+
     { name: "claw hammer", power: 50 },
+
     { name: "sword", power: 100 },
 ];
 
