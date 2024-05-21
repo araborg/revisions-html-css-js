@@ -276,7 +276,7 @@ function sellWeapon() {
 
         // personal modifications [0, 1, 2, 3]
         weaponIndex = weapons.length - 2;
-        console.log(`before d while loop: ${weaponIndex}`);
+        console.log(`before d while loop: ${weaponIndex}`); // 2
 
         while (armoury.length === 1 && weaponIndex > 0) {
             weaponIndex--;
@@ -284,9 +284,9 @@ function sellWeapon() {
             button2.innerText = "Buy weapon (30 gold)";
             button2.onclick = buyWeapon;
 
-            console.log(`inside d while loop: ${weaponIndex}`);
+            console.log(`inside d while loop: ${weaponIndex}`); // 1, 0
         }
-        console.log(`after d while loop: ${weaponIndex}`);
+        console.log(`after d while loop: ${weaponIndex}`); // 0
     }
 }
 
