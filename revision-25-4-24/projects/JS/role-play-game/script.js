@@ -243,7 +243,7 @@ function goFight() {
 
     button2.onclick = dodge;
 
-    monsterStats.style.display = "block";
+    // monsterStats.style.display = "block";
 
     const currentMonster = monsters[monsterIndex].name;
     monsterHealth = monsters[monsterIndex].health;
@@ -369,7 +369,7 @@ function defeatMonster() {
     // call update with kill monster obj
     update(locations[4]);
 
-    monsterStats.style.display = "none";
+    // monsterStats.style.display = "none";
 }
 
 function easterEgg() {
@@ -447,7 +447,7 @@ function restart() {
     playerHealthText.innerText = playerHealth;
     goldText.innerText = gold;
 
-    monsterStats.style.display = "none";
+    // monsterStats.style.display = "none";
 
     // call go to town obj
     update(locations[0]);
