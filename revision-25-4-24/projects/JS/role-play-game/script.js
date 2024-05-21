@@ -401,7 +401,6 @@ function pick(guess) {
     } else {
         // update text: "Wrong! You lose 10 health!";
         text.innerText = "Wrong! You lose 10 health!";
-        4;
 
         // decreate health by 10
         playerHealth -= 10;
@@ -415,10 +414,7 @@ function pick(guess) {
             lose();
         }
     }
-    // else
 }
-
-pick(5);
 
 function pickTwo() {
     // call pick with 2
