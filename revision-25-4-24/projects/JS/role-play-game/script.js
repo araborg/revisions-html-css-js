@@ -275,18 +275,23 @@ function sellWeapon() {
         text.innerText = "Don't sell your only weapon!";
 
         // personal modifications [0, 1, 2, 3]
-        weaponIndex = weapons.length - 2;
-        console.log(`before d while loop: ${weaponIndex}`); // 2
+        // weaponIndex = weapons.length - 2;
+        // weaponIndex = weapons.length - 3;
 
-        while (armoury.length === 1 && weaponIndex > 0) {
-            weaponIndex--;
+        // while (armoury.length === 1 && weaponIndex > 0) {
+        //     weaponIndex--;
 
-            button2.innerText = "Buy weapon (30 gold)";
-            button2.onclick = buyWeapon;
+        //     button2.innerText = "Buy weapon (30 gold)";
+        //     button2.onclick = buyWeapon;
 
-            console.log(`inside d while loop: ${weaponIndex}`); // 1, 0
-        }
-        console.log(`after d while loop: ${weaponIndex}`); // 0
+        // }
+
+        // return weaponIndex to 0, d index of d 1st weapon, stick
+        // d index will be increased in buyWeapon
+        weaponIndex = 0;
+
+        button2.innerText = "Buy weapon (30 gold)";
+        button2.onclick = buyWeapon;
     }
 }
 
