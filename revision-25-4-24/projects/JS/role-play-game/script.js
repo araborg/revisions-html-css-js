@@ -401,7 +401,7 @@ function pick(guess) {
         goldText.innerText = gold;
     } else {
         // update text: "Wrong! You lose 10 health!";
-        text.innerText = "Wrong! You lose 10 health!";
+        text.innerText += "Wrong! You lose 10 health!";
 
         // decreate health by 10
         playerHealth -= 10;
