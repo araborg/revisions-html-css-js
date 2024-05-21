@@ -363,6 +363,8 @@ function defeatMonster() {
 
     // call update with kill monster obj
     update(locations[4]);
+
+    monsterStats.style.display = "none";
 }
 
 function easterEgg() {
