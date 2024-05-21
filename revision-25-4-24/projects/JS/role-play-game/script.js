@@ -272,12 +272,12 @@ function dodge() {
 function attack() {
     const monsterName = monsters[monsterIndex].name;
     const chosenWeapon = weapons[weaponIndex].name;
-
     text.innerText = `The ${monsterName} attacks.`;
     text.innerText += ` You attack it with your ${chosenWeapon}.`;
 
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
+    playerHealthText.innerText = playerHealth;
 
     // if monster is Hit
     if (isMonsterHit()) {
@@ -285,9 +285,7 @@ function attack() {
         // weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
-        console.log(monsterHealth);
 
-        playerHealthText.innerText = playerHealth;
         monsterHealthText.innerText = monsterHealth;
 
         // health less than 0
@@ -352,17 +350,15 @@ function isMonsterHit() {
 
 function lose() {
     // call update with d lose obj
-
     update(locations[5]);
 }
+
 function winGame() {
     // call win obj
     update(locations[6]);
 }
 
 function defeatMonster() {
-    /*The monster screams "Arg!" as it dies. You gain experience points and find gold.*/
-
     // add to gold: monster lever * 6.7
     gold += Math.floor(monsters[monsterIndex].level * 6.7);
 
@@ -419,6 +415,8 @@ function restart() {
     xpText.innerText = xp;
     playerHealthText.innerText = playerHealth;
     goldText.innerText = gold;
+
+    monsterStats.style.display = "none";
 
     // call go to town obj
     update(locations[0]);
