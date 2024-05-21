@@ -376,11 +376,8 @@ function pick(guess) {
     // use while loop to populate d empty arr with random number btw 0-10
     while (numbers.length < 10) {
         const randomNum = Math.floor(Math.random() * 10);
-        console.log(randomNum);
         numbers.push(randomNum);
     }
-
-    console.log(numbers);
 
     // update text: "You picked " + guess + ". Here are the random numbers:\n";
     // show d number by updating text using for loop
