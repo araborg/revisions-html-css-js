@@ -31,11 +31,8 @@ const text = document.getElementById("text");
 const weapons = [
     // currentWeapon: 0 i.e stick
     { name: "stick", power: 5 },
-
     { name: "dagger", power: 30 },
-
     { name: "claw hammer", power: 50 },
-
     { name: "sword", power: 100 },
 ];
 
@@ -150,7 +147,6 @@ button3.onclick = fightDragon;
 
 // fxns
 function update(location) {
-    // console.log(location);
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
