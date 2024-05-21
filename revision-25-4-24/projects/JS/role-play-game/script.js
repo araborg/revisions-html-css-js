@@ -11,9 +11,9 @@ let monsterHealth;
 let armoury = ["stick"];
 
 // player stats
-const xpText = document.getElementById("xpText");
-const playerHealthText = document.getElementById("playerHealthText");
-const goldText = document.getElementById("goldText");
+const xpText = document.querySelector("#xpText");
+const playerHealthText = document.querySelector("#playerHealthText");
+const goldText = document.querySelector("#goldText");
 
 // buttons
 const button1 = document.getElementById("button1");
