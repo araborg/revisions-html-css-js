@@ -322,7 +322,6 @@ function attack() {
         text.innerText == " Your sword breaks.";
         weaponIndex--;
     }
-    console.log(weaponIndex);
     // reduce weaponIndex
 }
 
