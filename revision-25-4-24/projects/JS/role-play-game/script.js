@@ -419,6 +419,7 @@ function pick(guess) {
 
 function pickTwo() {
     // call pick with 2
+    pick(2);
 }
 
 function pickEight() {
