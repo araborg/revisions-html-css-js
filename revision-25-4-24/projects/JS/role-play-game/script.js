@@ -192,6 +192,28 @@ function buyHealth() {
     }
 }
 
+function buyWeapon() {
+    if (gold >= 30 && weaponIndex < weapons.length - 1) {
+        // if (weaponIndex < weapons.length - 1) {
+        gold -= 30;
+        goldText.innerText = gold;
+        weaponIndex++;
+
+        const newWeapon = weapons[weaponIndex].name;
+
+        armoury.push(newWeapon);
+
+        text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
+    } else if (weaponIndex === weapons.length - 1 && weapons.length !== 1) {
+        button2.innerText = "Sell weapon for 15 gold";
+        text.innerText = "You already have the most powerful weapon!";
+
+        button2.onclick = sellWeapon;
+    } else {
+        text.innerText = "You do not have enough gold to buy a weapon.";
+    }
+}
+
 function sellWeapon() {
     if (armoury.length > 1) {
         // const soldWeapon = armoury.shift();
@@ -213,28 +235,6 @@ function sellWeapon() {
 
             button2.onclick = buyWeapon;
         }
-    }
-}
-
-function buyWeapon() {
-    if (gold >= 30 && weaponIndex < weapons.length - 1) {
-        // if (weaponIndex < weapons.length - 1) {
-        gold -= 30;
-        goldText.innerText = gold;
-        weaponIndex++;
-
-        const newWeapon = weapons[weaponIndex].name;
-
-        armoury.push(newWeapon);
-
-        text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
-    } else if (weaponIndex === weapons.length - 1 && weapons.length !== 1) {
-        button2.innerText = "Sell weapon for 15 gold";
-        text.innerText = "You already have the most powerful weapon!";
-
-        button2.onclick = sellWeapon;
-    } else {
-        text.innerText = "You do not have enough gold to buy a weapon.";
     }
 }
 
