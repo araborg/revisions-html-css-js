@@ -388,9 +388,16 @@ function pick(guess) {
     }
 
     // if number includes guess
-    //     update text: "Right! You win 20 gold!";
-    //     increase gold by 20
-    //     update gold text
+    if (numbers.includes(guess)) {
+        //     update text: "Right! You win 20 gold!";
+        text.innerText += "Right! You win 20 gold!";
+
+        //     increase gold by 20
+        gold += 20;
+
+        //     update gold text
+        goldText.innerText = gold;
+    }
     // else
     //     update text: "Wrong! You lose 10 health!";
     //     decreate health by 10
