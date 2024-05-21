@@ -262,23 +262,24 @@ function buyWeapon() {
 
 function sellWeapon() {
     if (armoury.length > 1) {
+        gold += 15;
+        goldText.innerText = gold;
+
         // const soldWeapon = armoury.shift();
         const soldWeapon = armoury.pop();
 
-        text.innerText = `You sold ${soldWeapon}. Your weapons remain ${armoury}`;
-
-        gold += 15;
-        goldText.innerText = gold;
+        text.innerText = `You sold a ${soldWeapon}.`;
+        text.innerText += ` Your weapons remain ${armoury}`;
     } else {
         text.innerText = "Don't sell your only weapon!";
 
+        // personal modifications [0, 1, 2, 3]
         weaponIndex = weapons.length - 2;
 
         while (armoury.length === 1 && weaponIndex > 0) {
             weaponIndex--;
 
             button2.innerText = "Buy weapon (30 gold)";
-
             button2.onclick = buyWeapon;
         }
     }
