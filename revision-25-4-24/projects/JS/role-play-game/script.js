@@ -367,6 +367,7 @@ function defeatMonster() {
 
 function easterEgg() {
     // call easter egg obj
+    update(locations[7]);
 }
 
 function pick(guess) {
@@ -425,7 +426,6 @@ function pickEight() {
 }
 
 function restart() {
-    console.log("Restart!!!");
     // reset xp, playerHealth, gold, weaponIndex, armoury to initial values
     xp = 0;
     playerHealth = 100;
