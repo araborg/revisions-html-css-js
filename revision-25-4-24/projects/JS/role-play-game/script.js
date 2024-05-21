@@ -384,26 +384,38 @@ function pick(guess) {
 
     // show d number by updating text using for loop
     for (let i = 0; i < numbers.length; i++) {
-        text.innerText += numbers[i] + "\n";
+        // text.innerText += numbers[i] + "\n";
+        text.innerText += `${numbers[i]} \n`;
     }
 
     // if number includes guess
     if (numbers.includes(guess)) {
-        //     update text: "Right! You win 20 gold!";
+        // update text: "Right! You win 20 gold!";
         text.innerText += "Right! You win 20 gold!";
 
-        //     increase gold by 20
+        // increase gold by 20
         gold += 20;
 
-        //     update gold text
+        // update gold text
         goldText.innerText = gold;
+    } else {
+        // update text: "Wrong! You lose 10 health!";
+        text.innerText = "Wrong! You lose 10 health!";
+        4;
+
+        // decreate health by 10
+        playerHealth -= 10;
+
+        // update health text
+        playerHealthText.innerText = playerHealth;
+
+        // check if health is less or equal 0:
+        if (playerHealth <= 0) {
+            // call lose
+            lose();
+        }
     }
     // else
-    //     update text: "Wrong! You lose 10 health!";
-    //     decreate health by 10
-    //     update health text
-    //     check if health is less or equal 0:
-    //         call lose
 }
 
 pick(5);
