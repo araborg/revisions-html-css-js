@@ -213,6 +213,10 @@ function buyWeapon() {
     //     text.innerText = "You do not have enough gold to buy a weapon.";
     // }
 
+    /*
+        1. Check if d weaponIndex doesn't equal weapons length 
+        2. Check if there is enough gold to buy more health
+    */
     if (weaponIndex < weapons.length - 1) {
         if (gold >= 30) {
             gold -= 30;
@@ -233,6 +237,27 @@ function buyWeapon() {
 
         button2.onclick = sellWeapon;
     }
+
+    // if (gold >= 30) {
+    //     if (weaponIndex < weapons.length - 1) {
+    //         gold -= 30;
+    //         weaponIndex++;
+
+    //         goldText.innerText = gold;
+    //         const newWeapon = weapons[weaponIndex].name;
+
+    //         text.innerText = `You now have a ${newWeapon}.`;
+    //         armoury.push(newWeapon);
+    //         text.innerText += ` In your inventory you have: ${armoury}`;
+    //     } else {
+    //         button2.innerText = "Sell weapon for 15 gold";
+    //         text.innerText = "You already have the most powerful weapon!";
+
+    //         button2.onclick = sellWeapon;
+    //     }
+    // } else {
+    //     text.innerText = "You do not have enough gold to buy a weapon.";
+    // }
 }
 
 function sellWeapon() {
