@@ -325,19 +325,6 @@ function attack() {
     // reduce weaponIndex
 }
 
-/*
-
-    
-
-   
-
-    
-
-
-
-
-*/
-
 function getMonsterAttackValue(level) {
     // declare hit and cal it using level * 5 minus random number * xp
     const hit = level * 5 - Math.floor(Math.random() * xp);
