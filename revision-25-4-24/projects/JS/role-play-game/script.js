@@ -380,7 +380,13 @@ function pick(guess) {
     }
 
     // update text: "You picked " + guess + ". Here are the random numbers:\n";
+    text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
+
     // show d number by updating text using for loop
+    for (let i = 0; i < numbers.length; i++) {
+        console.log(i);
+    }
+
     // if number includes guess
     //     update text: "Right! You win 20 gold!";
     //     increase gold by 20
