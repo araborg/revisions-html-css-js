@@ -424,6 +424,7 @@ function pickTwo() {
 
 function pickEight() {
     // call pick with 8
+    pick(8);
 }
 
 function restart() {
