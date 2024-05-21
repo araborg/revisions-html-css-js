@@ -147,10 +147,15 @@ button3.onclick = fightDragon;
 
 // fxns
 function update(location) {
+    // hide monster stats wn u r nt attacking
+    monsterStats.style.display = "none";
+
+    // btns text
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
 
+    // btns fxn calls on click
     button1.onclick = location["button functions"][0];
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
@@ -163,7 +168,7 @@ function update(location) {
 
 function goTown() {
     // go to town square btn fxn
-    monsterStats.style.display = "none";
+    // monsterStats.style.display = "none";
     update(locations[0]);
 }
 
