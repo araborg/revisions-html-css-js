@@ -384,7 +384,6 @@ function pick(guess) {
 
     // show d number by updating text using for loop
     for (let i = 0; i < numbers.length; i++) {
-        console.log(i);
         text.innerText += numbers[i] + "\n";
     }
 
