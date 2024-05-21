@@ -4,6 +4,7 @@ let playerHealth = 100;
 let gold = 50;
 
 let weaponIndex = 0;
+
 let monsterIndex;
 let monsterHealth;
 
