@@ -243,7 +243,7 @@ function goFight() {
 
     button2.onclick = dodge;
 
-    // monsterStats.style.display = "block";
+    monsterStats.style.display = "block";
 
     const currentMonster = monsters[monsterIndex].name;
     monsterHealth = monsters[monsterIndex].health;
