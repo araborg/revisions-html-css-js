@@ -1,7 +1,7 @@
 // variables
 let xp = 0;
 let playerHealth = 100;
-let gold = 50;
+let gold = 450;
 
 let weaponIndex = 0;
 
@@ -222,6 +222,7 @@ function buyWeapon() {
             gold -= 30;
             weaponIndex++;
 
+            console.log(`inside buyWeapon fxn: ${weaponIndex}`);
             goldText.innerText = gold;
             const newWeapon = weapons[weaponIndex].name;
 
@@ -275,13 +276,17 @@ function sellWeapon() {
 
         // personal modifications [0, 1, 2, 3]
         weaponIndex = weapons.length - 2;
+        console.log(`before d while loop: ${weaponIndex}`);
 
         while (armoury.length === 1 && weaponIndex > 0) {
             weaponIndex--;
 
             button2.innerText = "Buy weapon (30 gold)";
             button2.onclick = buyWeapon;
+
+            console.log(`inside d while loop: ${weaponIndex}`);
         }
+        console.log(`after d while loop: ${weaponIndex}`);
     }
 }
 
