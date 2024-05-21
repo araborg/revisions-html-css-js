@@ -314,6 +314,16 @@ function attack() {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
     }
+
+    // weapon break
+    // if Math random is less or equal .1 and armoury length not equal 1
+    if (Math.random() <= 0.1 && armoury.length !== 1) {
+        // update text = " Your sword breaks.";
+        text.innerText == " Your sword breaks.";
+        weaponIndex--;
+    }
+    console.log(weaponIndex);
+    // reduce weaponIndex
 }
 
 /*
@@ -325,10 +335,6 @@ function attack() {
     
 
 
-    weapon break
-    if Math random is less or equal .1 and armoury length not equal 1
-        update text = " Your sword breaks.";
-        reduce weaponIndex
 
 
 */
