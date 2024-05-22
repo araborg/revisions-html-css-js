@@ -223,13 +223,11 @@ function sellWeapon() {
         gold += 15;
         goldText.innerText = gold;
 
-        // const soldWeapon = armoury.shift();
-        const soldWeapon = armoury.pop();
-
         // as u sell weapon decrease weaponIndex
         weaponIndex--;
 
-        text.innerText = `You sold a ${soldWeapon}.`;
+        // text.innerText = `You sold a ${armoury.shift()}.`;
+        text.innerText = `You sold a ${armoury.pop()}.`;
         text.innerText += ` Your weapons remain ${armoury}`;
     } else {
         text.innerText = "Don't sell your only weapon!";
@@ -258,6 +256,9 @@ function goFight() {
     update(locations[3]);
 
     monsterStats.style.display = "block";
+
+    /* monsterIndex is needed here. Hence d reason 
+    it was supplied in d fxn calling goFight() */
 
     monsterHealth = monsters[monsterIndex].health;
 
