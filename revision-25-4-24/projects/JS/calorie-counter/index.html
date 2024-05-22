@@ -10,6 +10,7 @@
     <body>
         <h1>Calorie Counter</h1>
 
+        <!-- input -->
         <label for="budget">Budget</label>
         <input
             type="number"
@@ -19,7 +20,7 @@
             min="0"
         />
 
-        <!-- all d fieldsets av a div with a class input-container -->
+        <!-- fieldset: all d fieldsets av a div with a class input-container -->
         <fieldset id="breakfast">
             <legend>Breakfast</legend>
             <div class="input-container"></div>
@@ -46,6 +47,7 @@
         </fieldset>
         <!-- ================================================= -->
 
+        <!-- controls -->
         <label for="entry-dropdown">Add food or exercise</label>
 
         <select name="options" id="entry-dropdown">
@@ -59,10 +61,12 @@
         <button type="button" id="add-entry">Add Entry</button>
         <!-- ================================================= -->
 
+        <!-- btns -->
         <button type="submit">Calculate Remaining Calories</button>
         <button type="buton" id="clear">Clear</button>
         <!-- ================================================= -->
 
+        <!-- output -->
         <div id="output" class="output hide"></div>
     </body>
 
