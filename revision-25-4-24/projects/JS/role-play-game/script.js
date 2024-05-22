@@ -1,7 +1,7 @@
 // variables
 let xp = 0;
-let playerHealth = 100000;
-let gold = 40500;
+let playerHealth = 100;
+let gold = 50;
 
 let weaponIndex = 0;
 
@@ -160,15 +160,10 @@ function update(location) {
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
 
-    // modified this to show &#x2620;
-    // text.innerText = location.text;
-
     text.innerHTML = location.text;
 }
 
 function goTown() {
-    // go to town square btn fxn
-    // monsterStats.style.display = "none";
     update(locations[0]);
 }
 
@@ -193,26 +188,6 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    // if (gold >= 30 && weaponIndex < weapons.length - 1) {
-    //     // if (weaponIndex < weapons.length - 1) {
-    //     gold -= 30;
-    //     goldText.innerText = gold;
-    //     weaponIndex++;
-
-    //     const newWeapon = weapons[weaponIndex].name;
-
-    //     armoury.push(newWeapon);
-
-    //     text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${armoury}`;
-    // } else if (weaponIndex === weapons.length - 1 && weapons.length !== 1) {
-    //     button2.innerText = "Sell weapon for 15 gold";
-    //     text.innerText = "You already have the most powerful weapon!";
-
-    //     button2.onclick = sellWeapon;
-    // } else {
-    //     text.innerText = "You do not have enough gold to buy a weapon.";
-    // }
-
     /*
         1. Check if d weaponIndex doesn't equal weapons length 
         2. Check if there is enough gold to buy more health
@@ -238,27 +213,6 @@ function buyWeapon() {
 
         button2.onclick = sellWeapon;
     }
-
-    // if (gold >= 30) {
-    //     if (weaponIndex < weapons.length - 1) {
-    //         gold -= 30;
-    //         weaponIndex++;
-
-    //         goldText.innerText = gold;
-    //         const newWeapon = weapons[weaponIndex].name;
-
-    //         text.innerText = `You now have a ${newWeapon}.`;
-    //         armoury.push(newWeapon);
-    //         text.innerText += ` In your inventory you have: ${armoury}`;
-    //     } else {
-    //         button2.innerText = "Sell weapon for 15 gold";
-    //         text.innerText = "You already have the most powerful weapon!";
-
-    //         button2.onclick = sellWeapon;
-    //     }
-    // } else {
-    //     text.innerText = "You do not have enough gold to buy a weapon.";
-    // }
 }
 
 function sellWeapon() {
@@ -274,19 +228,6 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        // personal modifications [0, 1, 2, 3]
-        // weaponIndex = weapons.length - 2;
-        // weaponIndex = weapons.length - 3;
-
-        // while (armoury.length === 1 && weaponIndex > 0) {
-        //     weaponIndex--;
-
-        //     button2.innerText = "Buy weapon (30 gold)";
-        //     button2.onclick = buyWeapon;
-
-        // }
-
-        // return weaponIndex to 0, d index of d 1st weapon, stick
         // d index will be increased in buyWeapon
         weaponIndex = 0;
 
@@ -317,70 +258,22 @@ function goFight() {
 
     monsterHealth = monsters[monsterIndex].health;
 
-    // button2.onclick = dodge;
-    // const currentMonster = monsters[monsterIndex].name;
-    // monsterName.innerText = currentMonster;
-
     monsterName.innerText = monsters[monsterIndex].name;
     monsterHealthText.innerText = monsterHealth;
 }
 
 // fxns based on game states
 function attack() {
-    // const monsterName = monsters[monsterIndex].name;
-    // const chosenWeapon = weapons[weaponIndex].name;
-    // text.innerText = `The ${monsterName} attacks.`;
-    // text.innerText += ` You attack it with your ${chosenWeapon}.`;
-
     text.innerText = `The ${monsters[monsterIndex].name} attacks.`;
     text.innerText += ` You attack it with your ${weapons[weaponIndex].name}.`;
 
-    // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
 
     // if monster is Hit
-    /*
-    if (isMonsterHit()) {
-        // reduce monster health using weapon power & random number with xp
-        // weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1
-        monsterHealth -=
-            weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
-
-        monsterHealthText.innerText = monsterHealth;
-
-        // health less than 0
-        if (playerHealth <= 0) {
-            playerHealth = 0;
-            playerHealthText.innerText = playerHealth;
-
-            // call lose()
-            lose();
-
-            // monster health less than zero
-        } else if (monsterHealth <= 0) {
-            monsterHealth = 0;
-            monsterHealthText.innerText = monsterHealth;
-
-            // monster index is 2
-            if (monsterIndex === 2) {
-                // call win game
-                winGame();
-            } else {
-                // call defeat monster
-                defeatMonster();
-            }
-        }
-    } else {
-        //     update text element: " You miss.";
-        text.innerText += " You miss.";
-    }
-    */
-    // if monster is Hit
     if (isMonsterHit()) {
         monsterHealth -=
             weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
     } else {
-        //     update text element: " You miss.";
         text.innerText += " You miss.";
     }
 
@@ -389,74 +282,51 @@ function attack() {
 
     // health less than 0
     if (playerHealth <= 0) {
-        // call lose()
         lose();
-
-        // monster health less than zero
     } else if (monsterHealth <= 0) {
-        // monster index is 2
         if (monsterIndex === 2) {
-            // call win game
             winGame();
         } else {
-            // call defeat monster
             defeatMonster();
         }
     }
 
-    // playerHealth = 0;
-    // playerHealthText.innerText = playerHealth;
-
     // weapon break
-    // if Math random is less or equal .1 and armoury length not equal 1
     if (Math.random() <= 0.1 && armoury.length !== 1) {
-        // update text = " Your sword breaks.";
         text.innerText == ` Your ${armoury.pop()} breaks.`;
+        // reduce weaponIndex
         weaponIndex--;
     }
-    // reduce weaponIndex
 }
 
 function getMonsterAttackValue(level) {
-    // declare hit and cal it using level * 5 minus random number * xp
     const hit = level * 5 - Math.floor(Math.random() * xp);
-    // return hit if it greater than 0 or return 0
     return hit > 0 ? hit : 0;
 }
 
 function isMonsterHit() {
-    // random greater than .2 or health less than 20
-    // const value = Math.random() > 0.2 || playerHealth < 20;
-    // console.log(value);
-    // return value;
     return Math.random() > 0.2 || playerHealth < 20;
 }
 
 function lose() {
-    // call update with d lose obj
     update(locations[5]);
 }
 
 function winGame() {
-    // call win obj
     update(locations[6]);
 }
 
 function defeatMonster() {
-    // add to gold: monster lever * 6.7
     gold += Math.floor(monsters[monsterIndex].level * 6.7);
 
     // add to xp using monster level
     xp += monsters[monsterIndex].level;
 
-    // display d new gold and xp value
     goldText.innerText = gold;
     xpText.innerText = xp;
 
     // call update with kill monster obj
     update(locations[4]);
-
-    // monsterStats.style.display = "none";
 }
 
 function dodge() {
@@ -470,57 +340,38 @@ function easterEgg() {
 }
 
 function pickTwo() {
-    // call pick with 2
     pick(2);
 }
 
 function pickEight() {
-    // call pick with 8
     pick(8);
 }
 
 function pick(guess) {
-    // declare an empty arr
     const numbers = [];
 
-    // use while loop to populate d empty arr with random number btw 0-10
     while (numbers.length < 10) {
         const randomNum = Math.floor(Math.random() * 11);
         numbers.push(randomNum);
     }
 
-    // update text: "You picked " + guess + ". Here are the random numbers:\n";
     text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
 
-    // show d number by updating text using for loop
     for (let i = 0; i < numbers.length; i++) {
-        // text.innerText += numbers[i] + "\n";
         text.innerText += `${numbers[i]} \n`;
     }
 
-    // if number includes guess
     if (numbers.includes(guess)) {
-        // update text: "Right! You win 20 gold!";
         text.innerText += "Right! You win 20 gold!";
-
-        // increase gold by 20
         gold += 20;
-
-        // update gold text
         goldText.innerText = gold;
     } else {
-        // update text: "Wrong! You lose 10 health!";
         text.innerText += "Wrong! You lose 10 health!";
 
-        // decreate health by 10
         playerHealth -= 10;
-
-        // update health text
         playerHealthText.innerText = playerHealth;
 
-        // check if health is less or equal 0:
         if (playerHealth <= 0) {
-            // call lose
             lose();
         }
     }
@@ -531,6 +382,7 @@ function restart() {
     xp = 0;
     playerHealth = 100;
     gold = 50;
+
     weaponIndex = 0;
     armoury = ["stick"];
 
@@ -539,10 +391,6 @@ function restart() {
     playerHealthText.innerText = playerHealth;
     goldText.innerText = gold;
 
-    // monsterStats.style.display = "none";
-
-    // call go to town obj
-    update(locations[0]);
+    // call go to town obj: update(locations[0]);
+    goTown();
 }
-
-// button2.addEventListener("click", dodge);
