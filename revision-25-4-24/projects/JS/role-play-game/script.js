@@ -1,7 +1,7 @@
 // variables
 let xp = 0;
 let playerHealth = 100;
-let gold = 50;
+let gold = 3550;
 
 let weaponIndex = 0;
 
@@ -195,9 +195,10 @@ function buyWeapon() {
     if (weaponIndex < weapons.length - 1) {
         if (gold >= 30) {
             gold -= 30;
+
+            // as u buy weapon increase weaponIndex
             weaponIndex++;
 
-            console.log(`inside buyWeapon fxn: ${weaponIndex}`);
             goldText.innerText = gold;
             const newWeapon = weapons[weaponIndex].name;
 
@@ -223,13 +224,13 @@ function sellWeapon() {
         // const soldWeapon = armoury.shift();
         const soldWeapon = armoury.pop();
 
+        // as u sell weapon decrease weaponIndex
+        weaponIndex--;
+
         text.innerText = `You sold a ${soldWeapon}.`;
         text.innerText += ` Your weapons remain ${armoury}`;
     } else {
         text.innerText = "Don't sell your only weapon!";
-
-        // d index will be increased in buyWeapon
-        weaponIndex = 0;
 
         button2.innerText = "Buy weapon (30 gold)";
         button2.onclick = buyWeapon;
