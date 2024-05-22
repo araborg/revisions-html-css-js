@@ -342,9 +342,9 @@ function attack() {
 
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
-    playerHealthText.innerText = playerHealth;
 
     // if monster is Hit
+    /*
     if (isMonsterHit()) {
         // reduce monster health using weapon power & random number with xp
         // weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1
@@ -379,6 +379,38 @@ function attack() {
         //     update text element: " You miss.";
         text.innerText += " You miss.";
     }
+    */
+    // if monster is Hit
+    if (isMonsterHit()) {
+        monsterHealth -=
+            weapons[weaponIndex].power + Math.floor(Math.random() * xp) + 1;
+    } else {
+        //     update text element: " You miss.";
+        text.innerText += " You miss.";
+    }
+
+    playerHealthText.innerText = playerHealth;
+    monsterHealthText.innerText = monsterHealth;
+
+    // health less than 0
+    if (playerHealth <= 0) {
+        // call lose()
+        lose();
+
+        // monster health less than zero
+    } else if (monsterHealth <= 0) {
+        // monster index is 2
+        if (monsterIndex === 2) {
+            // call win game
+            winGame();
+        } else {
+            // call defeat monster
+            defeatMonster();
+        }
+    }
+
+    // playerHealth = 0;
+    // playerHealthText.innerText = playerHealth;
 
     // weapon break
     // if Math random is less or equal .1 and armoury length not equal 1
