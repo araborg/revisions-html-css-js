@@ -295,21 +295,6 @@ function sellWeapon() {
     }
 }
 
-function goFight() {
-    update(locations[3]);
-
-    button2.onclick = dodge;
-
-    monsterStats.style.display = "block";
-
-    const currentMonster = monsters[monsterIndex].name;
-    monsterHealth = monsters[monsterIndex].health;
-
-    monsterHealthText.innerText = monsterHealth;
-    monsterName.innerText = currentMonster;
-    // console.log(currentMonster, monsterHealth);
-}
-
 function fightSlime() {
     monsterIndex = 0;
     goFight();
@@ -328,6 +313,22 @@ function fightDragon() {
 function dodge() {
     text.innerText =
         "You dodge the attack from the " + monsters[monsterIndex].name;
+}
+
+function goFight() {
+    update(locations[3]);
+
+    // button2.onclick = dodge;
+    monsterHealth = monsters[monsterIndex].health;
+
+    monsterStats.style.display = "block";
+
+    // const currentMonster = monsters[monsterIndex].name;
+    // monsterName.innerText = currentMonster;
+
+    monsterName.innerText = monsters[monsterIndex].name;
+    monsterHealthText.innerText = monsterHealth;
+    // console.log(currentMonster, monsterHealth);
 }
 
 // fxns based on game states
