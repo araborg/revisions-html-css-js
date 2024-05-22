@@ -10,10 +10,6 @@ let monsterHealth;
 
 let armoury = ["stick"];
 
-// modify d armoury
-// armoury = armoury.join(", ").split(",  ");
-// console.log(armoury);
-
 // buttons
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
@@ -209,9 +205,8 @@ function buyWeapon() {
             text.innerText = `You now have a ${newWeapon}.`;
             armoury.push(newWeapon);
 
-            text.innerText += ` In your inventory you have: ${armoury
-                .join(", ")
-                .split(",  ")}`;
+            // armoury = armoury.join(", ").split(",  ");
+            text.innerText += ` In your inventory you have: ${armoury}`;
         } else {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
@@ -221,8 +216,6 @@ function buyWeapon() {
         button2.innerText = "Sell weapon for 15 gold";
         button2.onclick = sellWeapon;
     }
-
-    console.log(armoury);
 }
 
 function sellWeapon() {
