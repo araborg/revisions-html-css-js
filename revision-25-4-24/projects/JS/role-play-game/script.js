@@ -310,33 +310,35 @@ function fightDragon() {
     goFight();
 }
 
-function dodge() {
-    text.innerText =
-        "You dodge the attack from the " + monsters[monsterIndex].name;
-}
-
 function goFight() {
     update(locations[3]);
 
-    // button2.onclick = dodge;
-    monsterHealth = monsters[monsterIndex].health;
-
     monsterStats.style.display = "block";
 
+    monsterHealth = monsters[monsterIndex].health;
+
+    // button2.onclick = dodge;
     // const currentMonster = monsters[monsterIndex].name;
     // monsterName.innerText = currentMonster;
 
     monsterName.innerText = monsters[monsterIndex].name;
     monsterHealthText.innerText = monsterHealth;
-    // console.log(currentMonster, monsterHealth);
+}
+
+function dodge() {
+    text.innerText =
+        "You dodge the attack from the " + monsters[monsterIndex].name;
 }
 
 // fxns based on game states
 function attack() {
-    const monsterName = monsters[monsterIndex].name;
-    const chosenWeapon = weapons[weaponIndex].name;
-    text.innerText = `The ${monsterName} attacks.`;
-    text.innerText += ` You attack it with your ${chosenWeapon}.`;
+    // const monsterName = monsters[monsterIndex].name;
+    // const chosenWeapon = weapons[weaponIndex].name;
+    // text.innerText = `The ${monsterName} attacks.`;
+    // text.innerText += ` You attack it with your ${chosenWeapon}.`;
+
+    text.innerText = `The ${monsters[monsterIndex].name} attacks.`;
+    text.innerText += ` You attack it with your ${weapons[weaponIndex].name}.`;
 
     // reduce health with getMonsterAttackValue(level)
     playerHealth -= getMonsterAttackValue(monsters[monsterIndex].level);
