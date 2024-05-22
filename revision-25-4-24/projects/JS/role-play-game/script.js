@@ -1,7 +1,7 @@
 // variables
 let xp = 0;
-let playerHealth = 100;
-let gold = 450;
+let playerHealth = 100000;
+let gold = 40500;
 
 let weaponIndex = 0;
 
@@ -325,11 +325,6 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-function dodge() {
-    text.innerText =
-        "You dodge the attack from the " + monsters[monsterIndex].name;
-}
-
 // fxns based on game states
 function attack() {
     // const monsterName = monsters[monsterIndex].name;
@@ -416,7 +411,7 @@ function attack() {
     // if Math random is less or equal .1 and armoury length not equal 1
     if (Math.random() <= 0.1 && armoury.length !== 1) {
         // update text = " Your sword breaks.";
-        text.innerText == " Your sword breaks.";
+        text.innerText == ` Your ${armoury.pop()} breaks.`;
         weaponIndex--;
     }
     // reduce weaponIndex
@@ -431,10 +426,10 @@ function getMonsterAttackValue(level) {
 
 function isMonsterHit() {
     // random greater than .2 or health less than 20
-    const value = Math.random() > 0.2 || playerHealth < 20;
+    // const value = Math.random() > 0.2 || playerHealth < 20;
     // console.log(value);
-    return value;
-    // return Math.random() > 0.2 || playerHealth < 20;
+    // return value;
+    return Math.random() > 0.2 || playerHealth < 20;
 }
 
 function lose() {
@@ -464,9 +459,24 @@ function defeatMonster() {
     // monsterStats.style.display = "none";
 }
 
+function dodge() {
+    text.innerText =
+        "You dodge the attack from the " + monsters[monsterIndex].name;
+}
+
 function easterEgg() {
     // call easter egg obj
     update(locations[7]);
+}
+
+function pickTwo() {
+    // call pick with 2
+    pick(2);
+}
+
+function pickEight() {
+    // call pick with 8
+    pick(8);
 }
 
 function pick(guess) {
@@ -514,16 +524,6 @@ function pick(guess) {
             lose();
         }
     }
-}
-
-function pickTwo() {
-    // call pick with 2
-    pick(2);
-}
-
-function pickEight() {
-    // call pick with 8
-    pick(8);
 }
 
 function restart() {
