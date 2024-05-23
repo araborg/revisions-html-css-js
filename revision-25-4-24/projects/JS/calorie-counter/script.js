@@ -11,6 +11,14 @@ const output = document.getElementById("output");
 
 let isError = false;
 
+/*
+1. forwardslash / 4 regex while backslash \ for escape
+2. Shorthand character e.g \s
+3. Character class e.g /[hello]/
+4. Flags e.g /hello/g
+
+
+*/
 function cleanInputString(str) {
-    const regex = /[+-\s]/;
+    const regex = /[+-\s]/g;
 }
