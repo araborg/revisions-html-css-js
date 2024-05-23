@@ -54,4 +54,10 @@ The match method returns null when no match is found
 function addEntry() {
     // get d id of selected option of entryDropdown select element
     const targetId = "#" + entryDropdown.value;
+
+    // target the .input-container element within the element that has your targetId
+    // i.e document.querySelector('#breakfast/lunch/dinner .input-container');
+    const targetInputContainer = document.querySelector(
+        targetId + " .input-container"
+    );
 }
