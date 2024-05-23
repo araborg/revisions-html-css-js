@@ -52,5 +52,6 @@ The match method returns null when no match is found
 */
 
 function addEntry() {
+    // get d id of selected option of entryDropdown select element
     const targetId = "#" + entryDropdown.value;
 }
