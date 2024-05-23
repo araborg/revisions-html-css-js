@@ -12,14 +12,13 @@ let isError = false;
 /*
 Regex A:
 1. forwardslash (/regex/) 4 regex while backslash is ("Who is "\tunde\"") for escape
-2. Shorthand character e.g \s = space, \i = insensitive
-3. Character class e.g /[hello]/
-4. Flags e.g global: /hello/g
+2. Shorthand character e.g \s = space
+3. Character class,[] e.g /[hello]/
+4. Flags e.g \g = global: /hello/g, \i = insensitive
 5. replace() method
 */
 
-// console.log("hello".replace(/l/g, "3"));
-
+// clean d str of +, -, empty space(s) as many as dy occurs, g
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, "");
