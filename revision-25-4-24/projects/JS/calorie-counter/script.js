@@ -7,8 +7,6 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
-// const esc = "come \"home\""
-
 let isError = false;
 
 /*
@@ -26,8 +24,10 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-// console.log(cleanInputString(" + ba-+b-")); // bab
-// console.log(cleanInputString(" + ba-+ bs- ")); // babs
+/*
+console.log(cleanInputString(" + ba-+b-")); // bab
+console.log(cleanInputString(" + ba-+ bs- ")); // babs
+*/
 
 /*
 1. Flag e.g insensitive /hello/i
@@ -35,7 +35,6 @@ function cleanInputString(str) {
 3. + modifier: matches pattern dt occurs one or more times
 4. Shorthand character , \d: matches any digit
 5. match() method
-
 */
 
 function isInvalidInput(str) {
@@ -44,6 +43,10 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
+/*
 console.log(isInvalidInput("1e3"));
 console.log(isInvalidInput("20e90"));
-console.log(isInvalidInput("10"));
+console.log(isInvalidInput("10")); // null
+
+The match method returns null when no match is found
+*/
