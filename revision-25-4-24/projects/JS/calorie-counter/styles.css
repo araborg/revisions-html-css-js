@@ -78,3 +78,34 @@ button {
     background-color: var(--light-yellow);
     border: 2px solid var(--dark-yellow);
 }
+
+label,
+input,
+select,
+fieldset,
+button {
+    margin-bottom: 10px;
+}
+
+.output {
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.output span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.surplus {
+    color: var(--light-pink);
+}
+
+.deficit {
+    color: var(--light-green);
+}
