@@ -1,8 +1,9 @@
 /* 
 HTML structure
 body
-    main
-        container
+    main: for SEO
+        h1
+        container: for width
             form
                 label & input elemt
                 fieldsets
@@ -35,4 +36,13 @@ body {
 
     background-color: var(--fcc-blue);
     color: var(--light-grey);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 680px;
 }
