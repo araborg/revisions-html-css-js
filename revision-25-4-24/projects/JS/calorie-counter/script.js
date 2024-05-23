@@ -27,5 +27,6 @@ function cleanInputString(str) {
 }
 
 console.log(cleanInputString(" + ba-+b-")); // bab
-
 console.log(cleanInputString(" + ba-+ bs- ")); // babs
+
+function isInvalidInput(str) {}
