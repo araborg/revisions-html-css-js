@@ -31,8 +31,13 @@ console.log(cleanInputString(" + ba-+ bs- ")); // babs
 /*
 
 1. Flag e.g insensitive /hello/i
+2. Numbers e.g [0-9]
+3. + modifier: matches pattern dt occurs one or more times
+
+
+
 */
 
 function isInvalidInput(str) {
-    const regex = /e/i;
+    const regex = /[0-9]+e[0-9]+/i;
 }
