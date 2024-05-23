@@ -24,8 +24,14 @@ main
     --dark-blue: #0a0a23;
     --dark-red: #850000;
     --dark-yellow: #feac32;
+
+    font-size: 62.5%;
 }
 
 body {
     font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+
+    background-color: var(--fcc-blue);
+    color: var(--light-grey);
 }
