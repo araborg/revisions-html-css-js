@@ -16,6 +16,7 @@ let isError = false;
 2. Shorthand character e.g \s
 3. Character class e.g /[hello]/
 4. Flags e.g global: /hello/g
+5. replace() method
 */
 
 // console.log("hello".replace(/l/g, "3"));
@@ -34,7 +35,7 @@ console.log(cleanInputString(" + ba-+ bs- ")); // babs
 2. Numbers e.g [0-9]
 3. + modifier: matches pattern dt occurs one or more times
 4. Shorthand character , \d: matches any digit
-
+5. match() method
 
 */
 
