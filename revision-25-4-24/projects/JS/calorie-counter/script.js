@@ -26,5 +26,5 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-console.log(cleanInputString(" + ba-+b-"));
-console.log(cleanInputString(" + ba-+ bs- "));
+console.log(cleanInputString(" + ba-+b-")); // bab
+console.log(cleanInputString(" + ba-+ bs- ")); // babs
