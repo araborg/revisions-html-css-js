@@ -15,10 +15,9 @@ let isError = false;
 1. forwardslash / 4 regex while backslash \ for escape
 2. Shorthand character e.g \s
 3. Character class e.g /[hello]/
-4. Flags e.g /hello/g
-
-
+4. Flags e.g global: /hello/g
 */
+
 // console.log("hello".replace(/l/g, "3"));
 
 function cleanInputString(str) {
@@ -29,6 +28,11 @@ function cleanInputString(str) {
 console.log(cleanInputString(" + ba-+b-")); // bab
 console.log(cleanInputString(" + ba-+ bs- ")); // babs
 
+/*
+
+1. Flag e.g insensitive /hello/i
+*/
+
 function isInvalidInput(str) {
-    const regex = /e/;
+    const regex = /e/i;
 }
