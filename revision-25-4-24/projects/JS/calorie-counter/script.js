@@ -31,7 +31,7 @@ function cleanInputString(str) {
 
 /*
 1. Flag e.g insensitive /hello/i
-2. Numbers e.g [0-9]
+2. Character class e.g Numbers: [0-9]
 3. + modifier: matches pattern dt occurs one or more times
 4. Shorthand character , \d: matches any digit
 5. match() method
@@ -46,3 +46,4 @@ function isInvalidInput(str) {
 
 console.log(isInvalidInput("1e3"));
 console.log(isInvalidInput("20e90"));
+console.log(isInvalidInput("10"));
