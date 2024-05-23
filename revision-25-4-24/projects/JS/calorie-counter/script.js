@@ -19,6 +19,11 @@ let isError = false;
 
 
 */
+// console.log("hello".replace(/l/g, "3"));
+
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
+    return str.replace(regex, "");
 }
+
+console.log(cleanInputString(" + ba-+b-"));
