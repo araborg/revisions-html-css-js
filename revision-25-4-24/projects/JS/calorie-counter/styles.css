@@ -1,16 +1,17 @@
 /* 
 HTML structure
-main
-    container
-        form
-            label & input elemt
-            fieldsets
-            controls
-                label & select elemts
-                btn
-            btns
-            
-        output
+body
+    main
+        container
+            form
+                label & input elemt
+                fieldsets
+                controls
+                    label & select elemts
+                    btn
+                btns
+                
+            output
 
 */
 :root {
