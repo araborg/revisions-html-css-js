@@ -27,3 +27,4 @@ function cleanInputString(str) {
 }
 
 console.log(cleanInputString(" + ba-+b-"));
+console.log(cleanInputString(" + ba-+ bs- "));
