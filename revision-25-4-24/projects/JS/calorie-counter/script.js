@@ -26,11 +26,10 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-console.log(cleanInputString(" + ba-+b-")); // bab
-console.log(cleanInputString(" + ba-+ bs- ")); // babs
+// console.log(cleanInputString(" + ba-+b-")); // bab
+// console.log(cleanInputString(" + ba-+ bs- ")); // babs
 
 /*
-
 1. Flag e.g insensitive /hello/i
 2. Numbers e.g [0-9]
 3. + modifier: matches pattern dt occurs one or more times
@@ -44,3 +43,6 @@ function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
 }
+
+console.log(isInvalidInput("1e3"));
+console.log(isInvalidInput("20e90"));
