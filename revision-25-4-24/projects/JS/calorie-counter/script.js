@@ -38,6 +38,7 @@ Regex B:
 5. match() method
 */
 
+// stop invalid inputs e.g 1e0, 3E400
 function isInvalidInput(str) {
     // const regex = /[0-9]+e[0-9]+/i;
     const regex = /\d+e\d+/i;
