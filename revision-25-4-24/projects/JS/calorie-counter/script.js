@@ -10,6 +10,7 @@ const output = document.getElementById("output");
 let isError = false;
 
 /*
+Regex A:
 1. forwardslash / 4 regex while backslash \ for escape
 2. Shorthand character e.g \s
 3. Character class e.g /[hello]/
@@ -30,6 +31,7 @@ console.log(cleanInputString(" + ba-+ bs- ")); // babs
 */
 
 /*
+Regex B:
 1. Flag e.g insensitive /hello/i
 2. Character class e.g Numbers: [0-9]
 3. + modifier: matches pattern dt occurs one or more times
