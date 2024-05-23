@@ -49,6 +49,7 @@ h1 {
 
 h1,
 .container,
+/* d essence of adding output is to mk d margin similar */
 .output {
     margin: 20px auto;
 }
