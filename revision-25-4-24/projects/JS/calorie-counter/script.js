@@ -50,3 +50,5 @@ console.log(isInvalidInput("10")); // null
 
 The match method returns null when no match is found
 */
+
+function addEntry() {}
