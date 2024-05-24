@@ -75,7 +75,9 @@ function addEntry() {
     // console.log(entryNumber);
 
     const HTMLString = `
-        <label>Entry ${entryNumber} Name</label>
+        <label for="${entryDropdown.value}-${entryNumber}-name">
+            Entry ${entryNumber} Name
+        </label>
     `;
 }
 
