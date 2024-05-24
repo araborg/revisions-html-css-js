@@ -13,7 +13,8 @@ let isError = false;
 
 /*
 Regex A:
-1. forwardslash (/regex/) 4 regex while backslash is ("Who is "\tunde\"") for escape
+1. forward slash (/regex/) 4 regex while back slash is 
+("Who is "\tunde\"") for escape (of quotes)
 2. Shorthand character e.g \s = space
 3. Character class,[] e.g /[hello]/
 4. Flags e.g \g = global: /hello/g, \i = insensitive
