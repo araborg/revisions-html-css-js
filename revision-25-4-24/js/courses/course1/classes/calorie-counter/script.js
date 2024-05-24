@@ -1,3 +1,4 @@
+// HTML elemts selections
 const calorieCounter = document.getElementById("calorie-counter");
 
 const budgetNumberInput = document.getElementById("budget");
@@ -7,6 +8,7 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 const output = document.getElementById("output");
 
+// state variable
 let isError = false;
 
 /*
