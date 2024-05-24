@@ -105,4 +105,4 @@ function addEntry() {
     targetInputContainer.innerHTML += HTMLString;
 }
 
-addEntry();
+addEntryButton.addEventListener("click", addEntry);
