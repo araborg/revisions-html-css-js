@@ -105,7 +105,7 @@ function addEntry() {
     `;
 
     // targetInputContainer.innerHTML += HTMLString;
-    targetInputContainer.insertAdjacentElement();
+    targetInputContainer.insertAdjacentElement("beforeend", HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
