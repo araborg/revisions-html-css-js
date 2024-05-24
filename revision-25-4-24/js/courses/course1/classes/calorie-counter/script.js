@@ -75,10 +75,12 @@ function addEntry() {
     );
 
     const entryNumber =
-        targetInputContainer.querySelectorAll('input[type="text"]');
+        targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
+    console.log(entryNumber);
 
     // wt will ds return?????
-    // const entryNumber = document.querySelectorAll('input[type="text"]');
+    // const entryNumber =
+    //     document.querySelectorAll('input[type="text"]').length + 1;
     // console.log(entryNumber);
 
     const HTMLString = `
