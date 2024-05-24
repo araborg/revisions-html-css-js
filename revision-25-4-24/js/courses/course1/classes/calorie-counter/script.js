@@ -1,11 +1,18 @@
 // HTML elemts selections
+// form elemt
 const calorieCounter = document.getElementById("calorie-counter");
 
+// input elemt
 const budgetNumberInput = document.getElementById("budget");
+
+// select elemt
 const entryDropdown = document.getElementById("entry-dropdown");
 
+// btns
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
+
+// output
 const output = document.getElementById("output");
 
 // state variable
@@ -94,6 +101,8 @@ function addEntry() {
             min="0"
         />
     `;
+
+    targetInputContainer.innerHTML += HTMLString;
 }
 
 addEntry();
