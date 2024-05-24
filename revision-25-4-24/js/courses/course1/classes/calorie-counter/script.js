@@ -17,7 +17,7 @@ Regex A:
 ("Who is "\tunde\"") for escape (of quotes)
 2. Shorthand character e.g \s = space, \d = digits btw 0-9
 3. Character class,[] e.g /[hello]/
-4. Flags e.g \g = global: /hello/g, \i = insensitive
+4. Flags e.g /g = global: /hello/g, /i = insensitive
 5. .replace() method
 */
 
@@ -44,6 +44,7 @@ Regex B:
 // stop invalid inputs e.g 1e0, 3E400
 function isInvalidInput(str) {
     // const regex = /[0-9]+e[0-9]+/i;
+    // wt [] will do is wt + does????
     const regex = /\d+e\d+/i;
     return str.match(regex);
 }
