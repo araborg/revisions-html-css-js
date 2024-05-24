@@ -74,7 +74,9 @@ function addEntry() {
     // const entryNumber = document.querySelectorAll('input[type="text"]');
     // console.log(entryNumber);
 
-    const HTMLString = ``;
+    const HTMLString = `
+        <label>Entry ${entryNumber} Name</label>
+    `;
 }
 
 addEntry();
