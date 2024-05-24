@@ -15,10 +15,10 @@ let isError = false;
 Regex A:
 1. forward slash (/regex/) 4 regex while back slash is 
 ("Who is "\tunde\"") for escape (of quotes)
-2. Shorthand character e.g \s = space
+2. Shorthand character e.g \s = space, \d = digits btw 0-9
 3. Character class,[] e.g /[hello]/
 4. Flags e.g \g = global: /hello/g, \i = insensitive
-5. replace() method
+5. .replace() method
 */
 
 // clean d str of +, -, empty space(s) as many as dy occurs, g
