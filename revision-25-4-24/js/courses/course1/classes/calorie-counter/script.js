@@ -67,12 +67,11 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
-    console.log(targetInputContainer);
-
     const entryNumber =
         targetInputContainer.querySelectorAll('input[type="text"]');
 
-    console.log(entryNumber);
+    // const entryNumber = document.querySelectorAll('input[type="text"]');
+    // console.log(entryNumber);
 }
 
 addEntry();
