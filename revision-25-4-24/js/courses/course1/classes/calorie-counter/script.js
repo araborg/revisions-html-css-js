@@ -64,7 +64,7 @@ function addEntry() {
     // target the .input-container element within the element that has your targetId
     // i.e document.querySelector('#breakfast/lunch/dinner .input-container');
     const targetInputContainer = document.querySelector(
-        `#${entryDropdown.value}   .input-container`
+        `#${entryDropdown.value} .input-container`
     );
 }
 
