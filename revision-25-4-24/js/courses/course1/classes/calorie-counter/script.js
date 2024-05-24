@@ -80,13 +80,19 @@ function addEntry() {
         </label>
         <input 
             type="text"
-            placeholder="Name"
             id="${entryDropdown.value}-${entryNumber}-name"
+            placeholder="Name"
         />
 
         <label for="${entryDropdown.value}-${entryNumber}-calories">
             Entry ${entryNumber} Calories
         </label>
+        <input
+            type="number"
+            id="${entryDropdown.value}-${entryNumber}-calories"
+            placeholder="Calories"
+            min="0"
+        />
     `;
 }
 
