@@ -64,7 +64,7 @@ function addEntry() {
     // target the .input-container element within the element that has your targetId
     // i.e document.querySelector('#breakfast/lunch/dinner .input-container');
     const targetInputContainer = document.querySelector(
-        targetId + " .input-container"
+        `${targetId}   .input-container`
     );
 }
 
