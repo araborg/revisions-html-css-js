@@ -126,4 +126,4 @@ function getCaloriesFromInputs(list) {
     return calories;
 }
 
-console.log(isInvalidInput("1e10"));
+function calculateCalories(e) {}
