@@ -184,3 +184,5 @@ function calculateCalories(e) {
 
 // console.log(calculateCalories());
 calorieCounter.addEventListener("submit", calculateCalories);
+
+function clearForm() {}
