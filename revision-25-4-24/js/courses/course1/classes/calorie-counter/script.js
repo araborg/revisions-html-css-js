@@ -158,7 +158,9 @@ function calculateCalories(e) {
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
     if (isError) return;
-    // console.log(breakfastNumberInputs);
+
+    const consumedCalories =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
 
 // console.log(calculateCalories());
