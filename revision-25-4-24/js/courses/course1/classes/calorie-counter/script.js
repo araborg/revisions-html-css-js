@@ -185,4 +185,6 @@ function calculateCalories(e) {
 // console.log(calculateCalories());
 calorieCounter.addEventListener("submit", calculateCalories);
 
-function clearForm() {}
+function clearForm() {
+    const inputContainers = document.querySelectorAll(".input-container");
+}
