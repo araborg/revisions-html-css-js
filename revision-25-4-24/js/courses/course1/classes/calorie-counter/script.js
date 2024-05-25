@@ -1,4 +1,3 @@
-// HTML elemts selections
 // form elemt
 const calorieCounter = document.getElementById("calorie-counter");
 
@@ -26,6 +25,9 @@ Regex A:
 3. Character class,[] e.g /[hello]/
 4. Flags e.g /g = global: /hello/g, /i = insensitive
 5. .replace() method
+6. e.g:
+    console.log(cleanInputString(" + ba-+b-")); // bab
+    console.log(cleanInputString(" + ba-+ bs- ")); // babs
 */
 
 // clean d str of +, -, empty space(s) as many as dy occurs, g
@@ -35,17 +37,16 @@ function cleanInputString(str) {
 }
 
 /*
-console.log(cleanInputString(" + ba-+b-")); // bab
-console.log(cleanInputString(" + ba-+ bs- ")); // babs
-*/
-
-/*
 Regex B:
 1. Flag e.g insensitive /hello/i
 2. Character class e.g Numbers: [0-9]
 3. + modifier: matches pattern dt occurs one or more times
 4. Shorthand character , \d: matches any digit
-5. match() method
+5. match() method: The match method returns null when no match is found
+6. e.g:
+    console.log(isInvalidInput("1e3"));
+    console.log(isInvalidInput("20e90"));
+    console.log(isInvalidInput("10")); // null
 */
 
 // stop invalid inputs e.g 1e0, 3E400
@@ -56,27 +57,21 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-/*
-console.log(isInvalidInput("1e3"));
-console.log(isInvalidInput("20e90"));
-console.log(isInvalidInput("10")); // null
-
-The match method returns null when no match is found
-*/
-
 function addEntry() {
     // get d id of selected option of entryDropdown select element
     // const targetId = "#" + entryDropdown.value;
+    // console.log(targetId);
 
     // target the .input-container element within the element that has your targetId
     // i.e document.querySelector('#breakfast/lunch/dinner .input-container');
     const targetInputContainer = document.querySelector(
         `#${entryDropdown.value} .input-container`
     );
+    // targetInputContainer.style.backgroundColor = "red";
 
     const entryNumber =
         targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
-    console.log(entryNumber);
+    // console.log(entryNumber);
 
     // wt will ds return?????
     // const entryNumber =
@@ -110,4 +105,6 @@ function addEntry() {
 
 addEntryButton.addEventListener("click", addEntry);
 
-function getCaloriesFromInputs(lists) {}
+function getCaloriesFromInputs(lists) {
+    let calories = 0;
+}
