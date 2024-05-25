@@ -195,4 +195,6 @@ function clearForm() {
     }
 
     budgetNumberInput.value = "";
+
+    output.innerText = "";
 }
