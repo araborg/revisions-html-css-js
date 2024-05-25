@@ -150,6 +150,7 @@ function calculateCalories(e) {
 
     // calling fxn
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
 
     // console.log(breakfastNumberInputs);
 }
