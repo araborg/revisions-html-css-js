@@ -127,6 +127,15 @@ function getCaloriesFromInputs(list) {
 }
 
 function calculateCalories(e) {
+    // The default action of the submit event is to reload the page.
     e.preventDefault();
     isError = false;
+
+    const breakfastNumberInputs = document.querySelectorAll(
+        '#breakfast input[type="number"]'
+    );
+
+    console.log(breakfastNumberInputs);
 }
+
+// console.log(calculateCalories());
