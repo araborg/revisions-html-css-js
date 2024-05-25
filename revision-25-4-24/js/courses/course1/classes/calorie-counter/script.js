@@ -122,4 +122,8 @@ function getCaloriesFromInputs(list) {
         // valid input
         calories += Number(currVal);
     }
+
+    return calories;
 }
+
+console.log(isInvalidInput("1e10"));
