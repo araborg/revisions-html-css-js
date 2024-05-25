@@ -112,10 +112,14 @@ function getCaloriesFromInputs(list) {
         const currVal = cleanInputString(item.value);
         const invalidInputMatch = isInvalidInput(currVal);
 
+        // invalid input
         if (invalidInputMatch) {
             alert("Invalid Input" + invalidInputMatch[0]);
             isError = true;
             return null;
         }
+
+        // valid input
+        calories += Number(currVal);
     }
 }
