@@ -30,6 +30,7 @@ Regex A:
     console.log(cleanInputString(" + ba-+ bs- ")); // babs
 */
 
+// Helper function: A
 // clean d str of +, -, empty space(s) as many as dy occurs, g
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
@@ -49,6 +50,7 @@ Regex B:
     console.log(isInvalidInput("10")); // null
 */
 
+// Helper function: B
 // stop invalid inputs e.g 1e0, 3E400
 function isInvalidInput(str) {
     // const regex = /[0-9]+e[0-9]+/i;
@@ -105,6 +107,7 @@ function addEntry() {
 
 addEntryButton.addEventListener("click", addEntry);
 
+// Helper function: C
 function getCaloriesFromInputs(list) {
     let calories = 0;
 
@@ -182,7 +185,6 @@ function calculateCalories(e) {
     output.classList.remove("hide");
 }
 
-// console.log(calculateCalories());
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function clearForm() {
