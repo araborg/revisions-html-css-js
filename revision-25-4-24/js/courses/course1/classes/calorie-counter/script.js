@@ -148,9 +148,12 @@ function calculateCalories(e) {
         "#exercise input[type=number]"
     );
 
-    // calling fxn
+    // calling getCaloriesFromInputs() with respective input array node, []
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     // console.log(breakfastNumberInputs);
 }
