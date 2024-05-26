@@ -1,112 +1,128 @@
+/* HINT: Ask yourself why this? */
 body {
-    /* background-color: burlywood; */
-    font-family: sans-serif;
-    padding: 20px;
+    width: 100%;
+    height: 100vh;
 
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    margin: 0;
+
+    background-color: #1b1b32;
+    color: #f5f6f7;
+
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0; /* 0.5rem = 8px */
 }
 
 h1,
-h2,
 p {
+    /* 2 methods of centering an element */
     text-align: center;
+    margin: 1em auto;
+    /* 1em = 16px */
 }
 
-.menu {
-    width: 80%;
+form {
+    margin: 0 auto;
+
+    width: 60vw;
+
     max-width: 500px;
+    min-width: 300px;
 
-    background-color: burlywood;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    /* margin: 0 auto; */
-
-    padding: 20px;
+    /* y nt margin-bottom: d spacing is needed inside 
+    & nt outside d form*/
+    padding-bottom: 2em;
 }
 
-.flavor,
-.dessert {
-    text-align: left;
-    width: 50%;
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
 }
 
-.price {
-    text-align: right;
-    width: 50%;
+/* pseudo class */
+fieldset:last-of-type {
+    border-bottom: none;
 }
 
-.item p {
-    display: inline-block;
+/* fieldset::after, fieldset::first-letter: e.gs of pseudo elemt */
 
-    margin: 5px 0;
-    font-size: 18px;
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.625em; /* 0.625em = 10px */
+
+    min-height: 2em;
+
+    font-size: 1rem;
+
+    /*
+        initial padding value of:
+        an input r: padding: 1px 2px;
+        a textarea r: padding: 2px;
+    */
+    padding: 0.0625em 0.5em;
 }
 
-h1,
-h2 {
-    font-family: Impact, serif;
+input:focus, /* pseudo class */
+select:focus,
+textarea:focus {
+    outline: none;
+    border: none; /* ??????? */
 }
 
-.established {
-    font-style: italic;
+.inline {
+    width: unset;
+
+    margin-right: 0.5em;
+
+    vertical-align: baseline;
+
+    min-height: 0;
 }
 
-h1 {
-    font-size: 40px;
-
-    margin-top: 0;
-    margin-bottom: 15px;
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
 }
 
-h2 {
-    font-size: 30px;
-}
-
-hr {
-    height: 2px;
-
-    background-color: brown;
-    border-color: brown;
-}
-
-.bottom-line {
-    margin-top: 25px;
-}
-
-/* FOOTER */
-footer p {
-    font-size: 14px;
-}
-
-/* a:link */
-a {
-    color: black;
-}
-
-a:visited {
-    /* color: grey; */
-    color: black;
-}
-
-a:hover {
-    color: brown;
-}
-
-a:active {
-    /* color: white; */
-    color: brown;
-}
-
-.address {
-    margin-bottom: 5px;
-}
-
-/* img is an inline elemt: odas r input, anchor tag, span*/
-img {
+/* attribute selectors */
+input[name="submit"] {
     display: block;
 
+    width: 60%;
+    min-width: 300px;
+    min-height: 2em;
+
     margin: 0 auto;
-    margin-top: -25px;
+
+    background-color: #3b3b4f;
+    font-size: 1.1rem;
+    border-color: white;
+
+    cursor: pointer;
+}
+
+/* attribute selectors */
+input[type="file"] {
+    /* padding: 1px 2px; */
+    /* padding: unset; */
+    padding: 1px 8px;
+    min-height: 0;
+}
+
+/* input[type="file"],
+select {
+    width: unset;
+} */
+
+label a {
+    color: #dfdfe2;
 }

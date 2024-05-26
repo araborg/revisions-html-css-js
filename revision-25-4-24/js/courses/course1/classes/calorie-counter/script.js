@@ -104,7 +104,6 @@ function addEntry() {
     // targetInputContainer.innerHTML += HTMLString;
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
-
 addEntryButton.addEventListener("click", addEntry);
 
 // Helper function: C
@@ -184,7 +183,6 @@ function calculateCalories(e) {
 
     output.classList.remove("hide");
 }
-
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function clearForm() {
@@ -201,5 +199,4 @@ function clearForm() {
     output.innerText = "";
     output.classList.add("hide");
 }
-
 clearButton.addEventListener("click", clearForm);

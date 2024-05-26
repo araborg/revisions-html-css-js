@@ -6,9 +6,9 @@ body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
 
+h1,
 h2,
-p,
-h1 {
+p {
     text-align: center;
 }
 
@@ -21,28 +21,25 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 
+    /* margin: 0 auto; */
+
     padding: 20px;
 }
-
-/* article {
-    border: 3px solid black;
-} */
 
 .flavor,
 .dessert {
     text-align: left;
-    /* border: 3px solid black; */
     width: 50%;
 }
 
 .price {
     text-align: right;
-    /* border: 3px solid white; */
     width: 50%;
 }
 
 .item p {
     display: inline-block;
+
     margin: 5px 0;
     font-size: 18px;
 }
@@ -60,7 +57,6 @@ h1 {
     font-size: 40px;
 
     margin-top: 0;
-
     margin-bottom: 15px;
 }
 
@@ -70,6 +66,7 @@ h2 {
 
 hr {
     height: 2px;
+
     background-color: brown;
     border-color: brown;
 }
@@ -83,6 +80,7 @@ footer p {
     font-size: 14px;
 }
 
+/* a:link */
 a {
     color: black;
 }
@@ -105,10 +103,10 @@ a:active {
     margin-bottom: 5px;
 }
 
-/* imgs r inline elemts: odas r input, anchor tag, */
+/* img is an inline elemt: odas r input, anchor tag, span*/
 img {
     display: block;
-    margin: 0 auto;
 
+    margin: 0 auto;
     margin-top: -25px;
 }
