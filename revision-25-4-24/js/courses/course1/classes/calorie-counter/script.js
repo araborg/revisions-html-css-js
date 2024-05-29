@@ -59,7 +59,7 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("10E2")); // ['10E2', index: 0, input: '10E2', groups: undefined]
+// console.log(isInvalidInput("10E2")); // ['10E2', index: 0, input: '10E2', groups: undefined]
 
 function addEntry() {
     // get d id of selected option of entryDropdown select element
@@ -168,6 +168,7 @@ function calculateCalories(e) {
 
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
     const remainingCalories =
         budgetCalories - consumedCalories + exerciseCalories;
 
