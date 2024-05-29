@@ -202,9 +202,10 @@ function clearForm() {
         container.innerHTML = "";
     }
 
+    // budget input
     budgetNumberInput.value = "";
 
     output.innerText = "";
-    // output.classList.add("hide");
+    output.classList.add("hide");
 }
 clearButton.addEventListener("click", clearForm);
