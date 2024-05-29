@@ -160,6 +160,7 @@ function calculateCalories(e) {
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+    console.log(budgetCalories);
 
     if (isError) return;
 
