@@ -159,6 +159,7 @@ function calculateCalories(e) {
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
+    // manually mks budgetNumberInput an arr: [budgetNumberInput]
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
     console.log(budgetCalories);
 
