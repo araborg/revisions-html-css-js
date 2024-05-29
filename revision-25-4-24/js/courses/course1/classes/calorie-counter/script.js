@@ -163,6 +163,7 @@ function calculateCalories(e) {
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
     // console.log(budgetCalories);
 
+    // if dre is an error after calling getCaloriesFromInputs() dn end calculateCalories fxn
     if (isError) return;
 
     const consumedCalories =
