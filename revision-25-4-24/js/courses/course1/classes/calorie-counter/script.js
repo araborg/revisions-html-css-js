@@ -197,6 +197,7 @@ function clearForm() {
         document.querySelectorAll(".input-container")
     );
 
+    // set all inputs to empty str
     for (const container of inputContainers) {
         container.innerHTML = "";
     }
@@ -204,6 +205,6 @@ function clearForm() {
     budgetNumberInput.value = "";
 
     output.innerText = "";
-    output.classList.add("hide");
+    // output.classList.add("hide");
 }
 clearButton.addEventListener("click", clearForm);
