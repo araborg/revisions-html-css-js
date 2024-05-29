@@ -152,7 +152,7 @@ function calculateCalories(e) {
         "#exercise input[type=number]"
     );
 
-    // calling getCaloriesFromInputs() with respective input array node, []
+    // calling getCaloriesFromInputs() with respective input array NodeList, []
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
@@ -161,7 +161,7 @@ function calculateCalories(e) {
 
     // manually mks budgetNumberInput an arr: [budgetNumberInput]
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
-    console.log(budgetCalories);
+    // console.log(budgetCalories);
 
     if (isError) return;
 
