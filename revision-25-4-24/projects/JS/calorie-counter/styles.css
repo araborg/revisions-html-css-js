@@ -51,3 +51,16 @@ button {
     height: 25px;
     /* max-height: 150px; */
 }
+
+button {
+    border-color: var(--dark-yellow);
+    background-color: #fecc4c;
+}
+
+.surplus {
+    color: var(--light-pink);
+}
+
+.deficit {
+    color: var(--light-green);
+}
