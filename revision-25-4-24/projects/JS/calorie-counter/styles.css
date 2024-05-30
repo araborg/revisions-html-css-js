@@ -31,6 +31,11 @@ body {
 
 h1,
 .container,
+.controls,
 .output {
     margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
 }
