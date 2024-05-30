@@ -40,6 +40,10 @@ h1,
     text-align: center;
 }
 
+label {
+    margin-bottom: 150px;
+}
+
 fieldset {
     margin: 10px 0;
 }
