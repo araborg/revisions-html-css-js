@@ -6,3 +6,4 @@ function submitBtn() {
 }
 
 calorieCounter.addEventListener("submit", submitBtn);
+// calorieCounter.addEventListener("click", submitBtn);
