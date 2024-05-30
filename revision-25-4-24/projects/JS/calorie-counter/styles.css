@@ -9,6 +9,8 @@
     --dark-blue: #0a0a23;
     --dark-red: #850000;
     --dark-yellow: #feac32;
+
+    font-size: 62.5%;
 }
 
 /* font-family: Lato */
@@ -17,4 +19,18 @@ body {
 
     color: var(--light-grey);
     font-family: Lato, Arial, Helvetica, sans-serif;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    max-width: 650px;
+}
+
+h1,
+.container,
+.output {
+    margin: 20px auto;
 }
