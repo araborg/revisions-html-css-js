@@ -26,16 +26,27 @@ body {
 
 .container {
     width: 80%;
-    max-width: 650px;
+    max-width: 680px;
 }
 
 h1,
 .container,
-.controls,
 .output {
     margin: 20px auto;
 }
 
-h1 {
+h1,
+.output {
     text-align: center;
+}
+
+fieldset {
+    margin: 10px 0;
+}
+
+input,
+select,
+button {
+    height: 25px;
+    /* max-height: 150px; */
 }
