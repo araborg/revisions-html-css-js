@@ -31,6 +31,7 @@ body {
 
 h1,
 .container,
+.controls,
 .output {
     margin: 20px auto;
 }
@@ -38,10 +39,6 @@ h1,
 h1,
 .output {
     text-align: center;
-}
-
-label {
-    margin-bottom: 150px;
 }
 
 fieldset {
