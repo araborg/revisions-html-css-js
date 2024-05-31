@@ -90,6 +90,12 @@ button {
     margin-bottom: 10px;
 }
 
+.output {
+    border: 2px solid var(--light-grey);
+    padding: 10px;
+    text-align: center;
+}
+
 .surplus {
     color: var(--light-pink);
 }
