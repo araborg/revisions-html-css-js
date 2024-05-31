@@ -20,29 +20,23 @@ body {
     font-family: Lato, Arial, Helvetica, sans-serif;
 
     font-size: 1.8rem;
-    /* font-weight: bold; */
 }
 
 .container {
-    /* width: 80%; */
     width: 90%;
     max-width: 680px;
 }
 
 h1,
 .container,
-/* .controls, */
 .output {
-    /* margin: 10px auto; */
     margin: 20px auto;
 }
 
-h1
-/* .output  */ {
+h1 {
     text-align: center;
 }
 
-/* =================== */
 label,
 legend {
     font-weight: bold;
@@ -52,22 +46,8 @@ legend {
     display: flex;
     flex-direction: column;
 }
-/* =================== */
-
-/* fieldset {
-    margin: 10px 0;
-} */
-
-/* input,
-select,
-button {
-    height: 25px;
-} */
 
 button {
-    /* border-color: var(--dark-yellow); */
-    /* background-color: #fecc4c; */
-
     background-color: var(--light-yellow);
     border: 2px solid var(--dark-yellow);
 
