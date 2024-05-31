@@ -82,6 +82,14 @@ select {
     color: var(--dark-blue);
 }
 
+label,
+input,
+fieldset,
+select,
+button {
+    margin-bottom: 10px;
+}
+
 .surplus {
     color: var(--light-pink);
 }
