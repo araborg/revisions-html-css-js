@@ -55,9 +55,9 @@ button {
     text-decoration: none;
 }
 
-button,
 input,
-select {
+select,
+button {
     min-height: 24px;
     color: var(--dark-blue);
 }
