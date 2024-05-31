@@ -31,9 +31,10 @@ body {
 
 h1,
 .container,
-.controls,
+/* .controls, */
 .output {
-    margin: 10px auto;
+    /* margin: 10px auto; */
+    margin: 20px auto;
 }
 
 h1,
