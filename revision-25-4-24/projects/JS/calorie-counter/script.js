@@ -12,7 +12,8 @@ function addInput() {
         `#${entryDropdown.value} .input-container`
     );
 
-    const targetNumber = document.querySelectorAll("input[type=text]").length;
+    const targetNumber =
+        document.querySelectorAll("input[type=text]").length + 1;
     console.log(targetNumber);
 }
 
