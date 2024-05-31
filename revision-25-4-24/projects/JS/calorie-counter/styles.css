@@ -37,10 +37,18 @@ h1,
     margin: 20px auto;
 }
 
-h1,
-.output {
+h1
+/* .output  */ {
     text-align: center;
 }
+
+/* =================== */
+label,
+legend {
+    font-weight: bold;
+}
+
+/* =================== */
 
 fieldset {
     margin: 10px 0;
