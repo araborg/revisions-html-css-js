@@ -1,3 +1,6 @@
-const calorieCounter = document.querySelector("#calorie-counter");
 const budgetInput = document.querySelector("#budget");
-console.log(budgetInput);
+const entryDropdown = document.querySelector("#entry-dropdown");
+const calorieCounter = document.querySelector("#calorie-counter");
+const addEntry = document.getElementById("add-entry");
+const clearBtn = document.querySelector("#clear");
+console.log(addEntry);
