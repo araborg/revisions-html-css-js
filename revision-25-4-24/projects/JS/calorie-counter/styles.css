@@ -54,19 +54,25 @@ legend {
 }
 /* =================== */
 
-fieldset {
+/* fieldset {
     margin: 10px 0;
-}
+} */
 
-input,
+/* input,
 select,
 button {
     height: 25px;
-}
+} */
 
 button {
-    border-color: var(--dark-yellow);
-    background-color: #fecc4c;
+    /* border-color: var(--dark-yellow); */
+    /* background-color: #fecc4c; */
+
+    background-color: var(--light-yellow);
+    border: 2px solid var(--dark-yellow);
+
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .surplus {
