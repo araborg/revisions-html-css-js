@@ -63,8 +63,8 @@ button {
 }
 
 label,
-input,
 fieldset,
+input,
 select,
 button {
     margin-bottom: 10px;
@@ -73,6 +73,7 @@ button {
 .output {
     border: 2px solid var(--light-grey);
     padding: 10px;
+
     text-align: center;
 }
 

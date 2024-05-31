@@ -1,9 +1,3 @@
 const calorieCounter = document.querySelector("#calorie-counter");
-// console.log(calorieCounter);
-
-function submitBtn() {
-    console.log("Hello");
-}
-
-calorieCounter.addEventListener("submit", submitBtn);
-// calorieCounter.addEventListener("click", submitBtn);
+const budgetInput = document.querySelector("#budget");
+console.log(budgetInput);
