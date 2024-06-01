@@ -45,22 +45,25 @@ function addInput() {
 addEntry.addEventListener("click", addInput);
 
 // function calCalories(num) {
-function sumCalories(num) {
+function sumCalories(nums) {
     // declare init value 4 calories
     const calories = 0;
 
-    const inputValue = trimInput(num.value);
-    const brushedValue = isInvalidInput(inputValue);
+    for (num of nums) {
+        // console.log(breakfast.value);
+        const inputValue = trimInput(num.value);
+        const brushedValue = isInvalidInput(inputValue);
 
-    if (brushedValue) {
-        hasError = true;
-        return null;
+        if (brushedValue) {
+            alert(`Invalid Input: ${brushedValue[0]}`);
+            hasError = true;
+            return null;
+        }
+
+        calories += brushedValue;
     }
 
-    for (breakfast of breakfastInputs) {
-        console.log(breakfast.value);
-    }
-    // console.log(brushedValue);
+    console.log(calories);
     // console.log("cal calories");
 }
 
