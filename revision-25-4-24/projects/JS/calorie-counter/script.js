@@ -1,5 +1,6 @@
 const budgetInput = document.querySelector("#budget");
 const entryDropdown = document.querySelector("#entry-dropdown");
+console.log(budgetInput.value);
 
 // btns
 const calorieCounter = document.querySelector("#calorie-counter");
@@ -46,8 +47,9 @@ addEntry.addEventListener("click", addInput);
 // function calCalories(num) {
 function calCalories() {
     const breakfastInputs = document.querySelectorAll("#breakfast");
+    console.log(breakfastInputs.value);
     for (breakfast of breakfastInputs) {
-        console.log(breakfasts.value);
+        console.log(breakfast.value);
     }
     // const inputValue = trimInput(num.value);
     // const brushedValue = isInvalidInput(inputValue);
