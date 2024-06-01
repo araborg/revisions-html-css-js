@@ -7,11 +7,11 @@ const clearBtn = document.querySelector("#clear");
 
 // Helper fxns
 function trimInput(str) {
-    const regex = /+-s/g;
+    const regex = /[+-\s]/g;
     return str.replace(regex, "");
 }
 
-console.log(trimInput(" -+2800"));
+console.log(trimInput("Hello" + " -+2800"));
 
 // add appropriate input
 function addInput() {
