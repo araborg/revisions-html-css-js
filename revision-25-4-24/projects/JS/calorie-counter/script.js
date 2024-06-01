@@ -66,7 +66,7 @@ function getCalorieSum(calories) {
     // console.log(isInvalidInput(calories));
 }
 
-getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
+// getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
 getCalorieSum(["40", "50", " +60", "- 70+ "]);
 
 // detect if it is surplus or deficit
