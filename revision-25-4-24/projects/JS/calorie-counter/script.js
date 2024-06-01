@@ -50,7 +50,9 @@ function sumCalories(nums) {
 
     for (num of nums) {
         const inputValue = trimInput(num.value);
+        console.log(inputValue);
         const brushedValue = isInvalidInput(inputValue);
+        console.log(brushedValue);
 
         if (brushedValue) {
             alert(`Invalid Input: ${brushedValue[0]}`);
