@@ -42,36 +42,3 @@ function addInput() {
 }
 
 addEntry.addEventListener("click", addInput);
-
-// function calCalories(num) {
-function sumCalories(nums) {
-    console.log(nums);
-    // declare init value 4 calories
-    let calories = 0;
-
-    for (num of nums) {
-        const inputValue = trimInput(num.value);
-        console.log(inputValue);
-        const brushedValue = isInvalidInput(inputValue);
-        console.log(brushedValue);
-
-        if (brushedValue) {
-            alert(`Invalid Input: ${brushedValue[0]}`);
-            hasError = true;
-            return null;
-        }
-
-        calories += Number(inputValue);
-    }
-
-    return calories;
-}
-
-function calCalories() {
-    const breakfastInputs = document.querySelectorAll(
-        "#breakfast input[type=number]"
-    );
-
-    sumCalories(breakfastInputs);
-}
-calorieCounter.addEventListener("submit", calCalories);
