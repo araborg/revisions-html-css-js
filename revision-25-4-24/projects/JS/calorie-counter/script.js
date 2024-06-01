@@ -6,12 +6,13 @@ const addEntry = document.getElementById("add-entry");
 const clearBtn = document.querySelector("#clear");
 
 // Helper fxns
+// remove space, plus, minus from d input value
 function trimInput(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, "");
 }
 
-console.log(trimInput("Hello" + " -+2800"));
+function invalidInput(str) {}
 
 // add appropriate input
 function addInput() {
