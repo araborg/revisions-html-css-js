@@ -49,7 +49,7 @@ function sumCalories(nums) {
     let calories = 0;
 
     for (num of nums) {
-        console.log(num);
+        console.log(typeof num.value);
         // const inputValue = trimInput(num.value);
         // const brushedValue = isInvalidInput(inputValue);
 
@@ -72,7 +72,7 @@ function calCalories() {
     );
     // console.log(breakfastInputs.value);
 
-    return sumCalories(breakfastInputs);
+    sumCalories(breakfastInputs);
     // console.log()
 }
 calorieCounter.addEventListener("submit", calCalories);
