@@ -4,7 +4,14 @@ const entryDropdown = document.querySelector("#entry-dropdown");
 const calorieCounter = document.querySelector("#calorie-counter");
 const addEntry = document.getElementById("add-entry");
 const clearBtn = document.querySelector("#clear");
-// console.log(calorieCounter, addEntry, clearBtn);
+
+// Helper fxns
+function trimInput(str) {
+    const regex = /+-s/g;
+    return str.replace(regex, "");
+}
+
+console.log(trimInput(" -+2800"));
 
 // add appropriate input
 function addInput() {
@@ -24,8 +31,6 @@ function addInput() {
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
-
-    // console.log(targetInputContainer);
 }
 
 addEntry.addEventListener("click", addInput);
