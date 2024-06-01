@@ -44,13 +44,18 @@ function addInput() {
 addEntry.addEventListener("click", addInput);
 
 // cal d calories
-function getCalorieSum(calo) {
+function getCalorieSum(calories) {
     // decalare an initiatl value for calorie
     let calorie = 0;
-    console.log(isInvalidInput(calo));
+
+    for (calo of calories) {
+        const trimValue = trimInput(calo);
+        console.log(trimValue);
+    }
+    // console.log(isInvalidInput(calories));
 }
 
-getCalorieSum("10e3");
+getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
 
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus() {}
