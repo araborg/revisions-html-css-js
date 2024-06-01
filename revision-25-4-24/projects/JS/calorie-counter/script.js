@@ -45,25 +45,30 @@ function addInput() {
 addEntry.addEventListener("click", addInput);
 
 // function calCalories(num) {
-function sumCalories() {
-    const breakfastInputs = document.querySelectorAll(
-        "#breakfast input[type=number]"
-    );
-    // console.log(breakfastInputs);
+function sumCalories(num) {
+    // declare init value 4 calories
+    const calories = 0;
+
+    const inputValue = trimInput(num.value);
+    const brushedValue = isInvalidInput(inputValue);
+
+    if (brushedValue) {
+        hasError = true;
+        return null;
+    }
+
     for (breakfast of breakfastInputs) {
         console.log(breakfast.value);
     }
-    // const inputValue = trimInput(num.value);
-    // const brushedValue = isInvalidInput(inputValue);
-
-    // if (brushedValue) {
-    //     hasError = true;
-    //     return null;
-    // }
-
     // console.log(brushedValue);
     // console.log("cal calories");
 }
 
-function calCalories() {}
+function calCalories() {
+    const breakfastInputs = document.querySelectorAll(
+        "#breakfast input[type=number]"
+    );
+
+    console.log(sumCalories(breakfastInputs));
+}
 calorieCounter.addEventListener("submit", calCalories);
