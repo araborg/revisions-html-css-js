@@ -50,7 +50,12 @@ function getCalorieSum(calories) {
 
     for (calo of calories) {
         const trimValue = trimInput(calo);
-        console.log(trimValue);
+        const isInvalid = isInvalidInput(trimValue);
+        // console.log(isInvalid);
+
+        if (isInvalid) {
+            alert("Invalid input: " + isInvalid);
+        }
     }
     // console.log(isInvalidInput(calories));
 }
