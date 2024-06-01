@@ -45,6 +45,7 @@ addEntry.addEventListener("click", addInput);
 
 // function calCalories(num) {
 function sumCalories(nums) {
+    console.log(nums);
     // declare init value 4 calories
     let calories = 0;
 
