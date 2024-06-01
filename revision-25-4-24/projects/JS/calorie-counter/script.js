@@ -16,11 +16,11 @@ function addInput() {
         targetInputContainer.querySelectorAll("input[type=text]").length + 1;
 
     const inputHTML = `
-        <label>Entry {targetNumber} Name</label>
-        <input type="text" />
+        <label for="${entryDropdown.value}-${targetNumber}-name">Entry ${targetNumber} Name</label>
+        <input type="text" id="${entryDropdown.value}-${targetNumber}-name"/>
 
-        <label>Entry {targetNumber} Calories</label>
-        <input type="number" />
+        <label for="${entryDropdown.value}-${targetNumber}-calories">Entry ${targetNumber} Calories</label>
+        <input type="number" id="${entryDropdown.value}-${targetNumber}-calories"/>
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
