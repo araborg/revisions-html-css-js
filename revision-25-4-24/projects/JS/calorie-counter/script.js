@@ -28,13 +28,15 @@ function addInput() {
 
     const inputHTML = `
         <label for="${entryDropdown.value}-${targetNumber}-name">Entry ${targetNumber} Name</label>
-        <input type="text" id="${entryDropdown.value}-${targetNumber}-name"/>
+        <input type="text" id="${entryDropdown.value}-${targetNumber}-name" required/>
 
         <label for="${entryDropdown.value}-${targetNumber}-calories">Entry ${targetNumber} Calories</label>
-        <input type="number" id="${entryDropdown.value}-${targetNumber}-calories"/>
+        <input type="number" id="${entryDropdown.value}-${targetNumber}-calories" required/>
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
 }
 
 addEntry.addEventListener("click", addInput);
+
+function calCalories(num) {}
