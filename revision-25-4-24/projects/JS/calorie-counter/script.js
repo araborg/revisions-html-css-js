@@ -43,10 +43,22 @@ function addInput() {
 
 addEntry.addEventListener("click", addInput);
 
-function calCalories(num) {
-    const inputValue = trimInput(num.value);
-    const brushedValue = isInvalidInput(inputValue);
-
-    if (brushedValue) {
+// function calCalories(num) {
+function calCalories() {
+    const breakfastInputs = document.querySelectorAll("#breakfast");
+    for (breakfast of breakfastInputs) {
+        console.log(breakfasts.value);
     }
+    // const inputValue = trimInput(num.value);
+    // const brushedValue = isInvalidInput(inputValue);
+
+    // if (brushedValue) {
+    //     hasError = true;
+    //     return null;
+    // }
+
+    // console.log(brushedValue);
+    // console.log("cal calories");
 }
+
+calorieCounter.addEventListener("submit", calCalories);
