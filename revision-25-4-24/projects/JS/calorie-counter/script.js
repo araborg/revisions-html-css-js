@@ -35,7 +35,7 @@ function addInput() {
         <input type="text" id="${entryDropdown.value}" required/>
 
         <label for="${entryDropdown.value}">Entry ${targetNumber} Calories</label>
-        <input type="number" id="${entryDropdown.value}" required/>
+        <input id="${entryDropdown.value}" required/>
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
@@ -61,7 +61,7 @@ function sumCalories(nums) {
         calories += Number(inputValue);
     }
 
-    console.log(calories);
+    return calories;
 }
 
 function calCalories() {
