@@ -47,11 +47,11 @@ addEntry.addEventListener("click", addInput);
 // function calCalories(num) {
 function sumCalories(nums) {
     // declare init value 4 calories
-    const calories = 0;
+    let calories = 0;
 
     for (num of nums) {
         // console.log(breakfast.value);
-        const inputValue = trimInput(num.value);
+        const inputValue = Number(trimInput(num.value));
         const brushedValue = isInvalidInput(inputValue);
 
         if (brushedValue) {
