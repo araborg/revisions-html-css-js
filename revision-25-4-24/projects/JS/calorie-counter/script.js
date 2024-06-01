@@ -45,7 +45,7 @@ function addInput() {
 addEntry.addEventListener("click", addInput);
 
 // function calCalories(num) {
-function calCalories() {
+function sumCalories() {
     const breakfastInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
@@ -65,4 +65,5 @@ function calCalories() {
     // console.log("cal calories");
 }
 
+function calCalories() {}
 calorieCounter.addEventListener("submit", calCalories);
