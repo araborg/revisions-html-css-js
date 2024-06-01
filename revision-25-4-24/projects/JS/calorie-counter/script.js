@@ -1,6 +1,5 @@
 const budgetInput = document.querySelector("#budget");
 const entryDropdown = document.querySelector("#entry-dropdown");
-console.log(budgetInput.value);
 
 // btns
 const calorieCounter = document.querySelector("#calorie-counter");
@@ -51,7 +50,7 @@ function sumCalories(nums) {
 
     for (num of nums) {
         // console.log(breakfast.value);
-        const inputValue = Number(trimInput(num.value));
+        const inputValue = trimInput(num.value);
         const brushedValue = isInvalidInput(inputValue);
 
         if (brushedValue) {
@@ -60,10 +59,10 @@ function sumCalories(nums) {
             return null;
         }
 
-        calories += brushedValue;
+        calories += Number(brushedValue);
+        console.log(calories);
     }
 
-    console.log(calories);
     // console.log("cal calories");
 }
 
@@ -71,7 +70,9 @@ function calCalories() {
     const breakfastInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
+    // console.log(breakfastInputs.value);
 
-    console.log(sumCalories(breakfastInputs));
+    return sumCalories(breakfastInputs);
+    console.log();
 }
 calorieCounter.addEventListener("submit", calCalories);
