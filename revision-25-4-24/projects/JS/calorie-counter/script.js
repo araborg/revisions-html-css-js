@@ -1,9 +1,13 @@
 const budgetInput = document.querySelector("#budget");
 const entryDropdown = document.querySelector("#entry-dropdown");
 
+// btns
 const calorieCounter = document.querySelector("#calorie-counter");
 const addEntry = document.getElementById("add-entry");
 const clearBtn = document.querySelector("#clear");
+
+// state
+const hasError = false;
 
 // Helper fxns
 // remove space, plus, minus from d input value
@@ -12,7 +16,7 @@ function trimInput(str) {
     return str.replace(regex, "");
 }
 
-function invalidInput(str) {
+function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
 }
@@ -39,4 +43,10 @@ function addInput() {
 
 addEntry.addEventListener("click", addInput);
 
-function calCalories(num) {}
+function calCalories(num) {
+    const inputValue = trimInput(num.value);
+    const brushedValue = isInvalidInput(inputValue);
+
+    if (brushedValue) {
+    }
+}
