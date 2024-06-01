@@ -13,8 +13,9 @@ function addInput() {
     );
 
     const targetNumber =
-        document.querySelectorAll("input[type=text]").length + 1;
+        targetInputContainer.querySelectorAll("input[type=text]").length + 1;
+
+    console.log(targetNumber);
 }
 
-// addInput();
 addEntry.addEventListener("click", addInput);
