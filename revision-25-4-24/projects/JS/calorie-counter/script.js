@@ -42,3 +42,9 @@ function addInput() {
 }
 
 addEntry.addEventListener("click", addInput);
+
+// cal d calories
+function getCalorieSum() {}
+
+// detect if it is surplus or deficit
+function isCaloriesDeficitOrSurplus() {}
