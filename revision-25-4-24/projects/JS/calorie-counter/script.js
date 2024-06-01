@@ -15,7 +15,17 @@ function addInput() {
     const targetNumber =
         targetInputContainer.querySelectorAll("input[type=text]").length + 1;
 
-    console.log(targetNumber);
+    const inputHTML = `
+        <label>Entry {targetNumber} Name</label>
+        <input type="text" />
+
+        <label>Entry {targetNumber} Calories</label>
+        <input type="number" />
+    `;
+
+    targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
+
+    // console.log(targetInputContainer);
 }
 
 addEntry.addEventListener("click", addInput);
