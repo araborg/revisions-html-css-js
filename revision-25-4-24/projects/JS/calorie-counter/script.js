@@ -14,7 +14,6 @@ function addInput() {
 
     const targetNumber =
         document.querySelectorAll("input[type=text]").length + 1;
-    console.log(targetNumber);
 }
 
 // addInput();
