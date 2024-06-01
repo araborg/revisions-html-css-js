@@ -17,4 +17,5 @@ function addInput() {
     console.log(targetNumber);
 }
 
-addInput();
+// addInput();
+addEntry.addEventListener("click", addInput);
