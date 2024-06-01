@@ -49,18 +49,18 @@ function sumCalories(nums) {
     let calories = 0;
 
     for (num of nums) {
-        // console.log(breakfast.value);
-        const inputValue = trimInput(num.value);
-        const brushedValue = isInvalidInput(inputValue);
+        console.log(num);
+        // const inputValue = trimInput(num.value);
+        // const brushedValue = isInvalidInput(inputValue);
 
-        if (brushedValue) {
-            alert(`Invalid Input: ${brushedValue[0]}`);
-            hasError = true;
-            return null;
-        }
+        // if (brushedValue) {
+        //     alert(`Invalid Input: ${brushedValue[0]}`);
+        //     hasError = true;
+        //     return null;
+        // }
 
-        calories += Number(brushedValue);
-        console.log(calories);
+        // calories += Number(brushedValue);
+        // console.log(calories);
     }
 
     // console.log("cal calories");
@@ -73,6 +73,6 @@ function calCalories() {
     // console.log(breakfastInputs.value);
 
     return sumCalories(breakfastInputs);
-    console.log();
+    // console.log()
 }
 calorieCounter.addEventListener("submit", calCalories);
