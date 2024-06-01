@@ -59,9 +59,10 @@ function getCalorieSum(calories) {
             return null;
         }
 
-        calorie += Number(isInvalid);
-        console.log(calorie);
+        calorie += Number(trimValue);
     }
+    console.log(calorie);
+    return calorie;
     // console.log(isInvalidInput(calories));
 }
 
