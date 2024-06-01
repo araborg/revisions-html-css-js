@@ -7,7 +7,7 @@ const addEntry = document.getElementById("add-entry");
 const clearBtn = document.querySelector("#clear");
 
 // state
-const hasError = false;
+let hasError = false;
 
 // Helper fxns
 // remove space, plus, minus from d input value
@@ -55,12 +55,18 @@ function getCalorieSum(calories) {
 
         if (isInvalid) {
             alert("Invalid input: " + isInvalid);
+            hasError = true;
+            return null;
         }
+
+        calorie += Number(isInvalid);
+        console.log(calorie);
     }
     // console.log(isInvalidInput(calories));
 }
 
 getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
+getCalorieSum(["40", "50", " +60", "- 70+ "]);
 
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus() {}
