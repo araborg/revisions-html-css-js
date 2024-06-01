@@ -32,11 +32,11 @@ function addInput() {
         targetInputContainer.querySelectorAll("input[type=text]").length + 1;
 
     const inputHTML = `
-        <label for="${entryDropdown.value}-${targetNumber}-name">Entry ${targetNumber} Name</label>
-        <input type="text" id="${entryDropdown.value}-${targetNumber}-name" required/>
+        <label for="${entryDropdown.value}">Entry ${targetNumber} Name</label>
+        <input type="text" id="${entryDropdown.value}" required/>
 
-        <label for="${entryDropdown.value}-${targetNumber}-calories">Entry ${targetNumber} Calories</label>
-        <input type="number" id="${entryDropdown.value}-${targetNumber}-calories" required/>
+        <label for="${entryDropdown.value}">Entry ${targetNumber} Calories</label>
+        <input type="number" id="${entryDropdown.value}" required/>
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
@@ -46,8 +46,10 @@ addEntry.addEventListener("click", addInput);
 
 // function calCalories(num) {
 function calCalories() {
-    const breakfastInputs = document.querySelectorAll("#breakfast");
-    console.log(breakfastInputs.value);
+    const breakfastInputs = document.querySelectorAll(
+        "#breakfast input[type=number]"
+    );
+    // console.log(breakfastInputs);
     for (breakfast of breakfastInputs) {
         console.log(breakfast.value);
     }
