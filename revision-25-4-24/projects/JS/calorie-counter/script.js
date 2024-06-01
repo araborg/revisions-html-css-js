@@ -12,7 +12,10 @@ function trimInput(str) {
     return str.replace(regex, "");
 }
 
-function invalidInput(str) {}
+function invalidInput(str) {
+    const regex = /\d+e\d+/i;
+    return str.match(regex);
+}
 
 // add appropriate input
 function addInput() {
