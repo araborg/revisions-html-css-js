@@ -94,10 +94,13 @@ function isCaloriesDeficitOrSurplus(e) {
     const remainingCalories =
         budgetCalories - consumedCalories + exerciseCalories;
 
-    console.log(remainingCalories);
+    const surplusOrDeficitCalories =
+        remainingCalories < 0 ? "Surplus" : "Deficit";
+
+    // console.log(remainingCalories);
 
     const output = `
-        <span></span>
+        <span class="${surplusOrDeficitCalories.toLowerCase()}"></span>
     `;
 }
 
