@@ -119,6 +119,8 @@ function clearAllInputs() {
         input.innerHTML = "";
     }
 
+    budgetInput.value = "";
+    output.innerText = "";
     output.classList.add("hide");
 }
 
