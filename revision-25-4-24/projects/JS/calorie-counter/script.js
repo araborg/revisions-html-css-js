@@ -104,7 +104,7 @@ function isCaloriesDeficitOrSurplus(e) {
 
     const outputText = `
         <span class="${surplusOrDeficitCalories.toLowerCase()}">
-            ${remainingCalories} Calorie ${surplusOrDeficitCalories}
+            ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficitCalories}
         </span>
 
         <hr />
