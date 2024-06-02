@@ -35,7 +35,7 @@ function addInput() {
         <input type="text" id="${entryDropdown.value}" required/>
 
         <label for="${entryDropdown.value}">Entry ${targetNumber} Calories</label>
-        <input id="${entryDropdown.value}" required/>
+        <input type="number" id="${entryDropdown.value}" required/>
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", inputHTML);
@@ -67,7 +67,7 @@ function getCalorieSum(calories) {
 }
 
 // getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
-getCalorieSum(["40", "50", " +60", "- 70+ "]);
+getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
 
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus() {}
