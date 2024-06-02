@@ -87,12 +87,18 @@ function isCaloriesDeficitOrSurplus(e) {
     const dinnerCalories = getCalorieSum(dinnerInput);
     const snacksCalories = getCalorieSum(snacksInput);
     const exerciseCalories = getCalorieSum(exerciseInput);
+    const budgetCalories = getCalorieSum([budgetInput]);
 
-    const consumedCalories = breakfastCalories+lunchCalories+dinnerCalories+snacksCalories
-    const remainingCalories = 
+    const consumedCalories =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const remainingCalories =
+        budgetCalories - consumedCalories + exerciseCalories;
 
-    const output = ``
-    
+    console.log(remainingCalories);
+
+    const output = `
+        <span></span>
+    `;
 }
 
 // isCaloriesDeficitOrSurplus();
