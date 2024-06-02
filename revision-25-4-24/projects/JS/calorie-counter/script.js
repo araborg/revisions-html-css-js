@@ -74,6 +74,7 @@ function isCaloriesDeficitOrSurplus() {
     const breakfastInput = document.querySelectorAll(
         "#breakfast .input-container"
     );
+    console.log(breakfastInput);
     console.log(getCalorieSum(breakfastInput));
 }
 
