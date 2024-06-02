@@ -49,18 +49,17 @@ function getCalorieSum(calories) {
     let calorie = 0;
 
     for (calo of calories) {
-        console.log(calo.value);
-        // const trimValue = trimInput(calo.value);
-        // const isInvalid = isInvalidInput(trimValue);
-        // // console.log(isInvalid);
+        // console.log(calo.value);
+        const trimValue = trimInput(calo.value);
+        const isInvalid = isInvalidInput(trimValue);
 
-        // if (isInvalid) {
-        //     alert("Invalid input: " + isInvalid);
-        //     hasError = true;
-        //     return null;
-        // }
+        if (isInvalid) {
+            alert("Invalid input: " + isInvalid);
+            hasError = true;
+            return null;
+        }
 
-        // calorie += Number(trimValue);
+        calorie += Number(trimValue);
     }
 
     return calorie;
