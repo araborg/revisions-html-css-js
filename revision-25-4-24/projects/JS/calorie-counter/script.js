@@ -69,7 +69,9 @@ function getCalorieSum(calories) {
 // getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
 
 // detect if it is surplus or deficit
-function isCaloriesDeficitOrSurplus() {
+function isCaloriesDeficitOrSurplus(e) {
+    e.preventDefault();
+
     const breakfastInput = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
