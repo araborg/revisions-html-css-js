@@ -49,7 +49,7 @@ function getCalorieSum(calories) {
     let calorie = 0;
 
     for (calo of calories) {
-        const trimValue = trimInput(calo);
+        const trimValue = trimInput(calo.value);
         const isInvalid = isInvalidInput(trimValue);
         // console.log(isInvalid);
 
@@ -69,4 +69,11 @@ function getCalorieSum(calories) {
 // getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
 
 // detect if it is surplus or deficit
-function isCaloriesDeficitOrSurplus() {}
+function isCaloriesDeficitOrSurplus() {
+    const breakfastInput = document.querySelectorAll(
+        "#breakfast .input-container"
+    );
+    console.log(getCalorieSum(breakfastInput));
+}
+
+isCaloriesDeficitOrSurplus();
