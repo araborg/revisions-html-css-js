@@ -50,7 +50,6 @@ function getCalorieSum(calories) {
     let calorie = 0;
 
     for (calo of calories) {
-        // console.log(calo.value);
         const trimValue = trimInput(calo.value);
         const isInvalid = isInvalidInput(trimValue);
 
@@ -65,9 +64,6 @@ function getCalorieSum(calories) {
 
     return calorie;
 }
-
-// getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
-// getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
 
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus(e) {
@@ -100,8 +96,6 @@ function isCaloriesDeficitOrSurplus(e) {
 
     console.log(surplusOrDeficitCalories);
 
-    // console.log(remainingCalories);
-
     const outputText = `
         <span class="${surplusOrDeficitCalories.toLowerCase()}">
             ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficitCalories}
@@ -117,7 +111,5 @@ function isCaloriesDeficitOrSurplus(e) {
     output.innerHTML = outputText;
     output.classList.remove("hide");
 }
-
-// isCaloriesDeficitOrSurplus();
 
 calorieCounter.addEventListener("submit", isCaloriesDeficitOrSurplus);
