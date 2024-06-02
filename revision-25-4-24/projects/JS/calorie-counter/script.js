@@ -94,8 +94,6 @@ function isCaloriesDeficitOrSurplus(e) {
     const surplusOrDeficitCalories =
         remainingCalories < 0 ? "Surplus" : "Deficit";
 
-    console.log(surplusOrDeficitCalories);
-
     const outputText = `
         <span class="${surplusOrDeficitCalories.toLowerCase()}">
             ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficitCalories}
@@ -117,7 +115,8 @@ calorieCounter.addEventListener("submit", isCaloriesDeficitOrSurplus);
 function clearAllInputs() {
     const allInputs = document.querySelectorAll("input");
     for (input of allInputs) {
-        input.innerHTML = "";
+        // input.innerHTML = "";
+        console.log(input);
     }
     // console.log(allInputs);
     output.classList.add("hide");
