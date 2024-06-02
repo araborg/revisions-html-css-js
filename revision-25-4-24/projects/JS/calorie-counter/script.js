@@ -98,6 +98,8 @@ function isCaloriesDeficitOrSurplus(e) {
     const surplusOrDeficitCalories =
         remainingCalories < 0 ? "Surplus" : "Deficit";
 
+    console.log(surplusOrDeficitCalories);
+
     // console.log(remainingCalories);
 
     const outputText = `
@@ -112,7 +114,8 @@ function isCaloriesDeficitOrSurplus(e) {
         <p>${exerciseCalories} Calories Burned</p>
     `;
 
-    output;
+    output.innerHTML += outputText;
+    output.classList.remove("hide");
 }
 
 // isCaloriesDeficitOrSurplus();
