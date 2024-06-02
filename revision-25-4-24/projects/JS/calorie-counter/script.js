@@ -61,13 +61,12 @@ function getCalorieSum(calories) {
 
         calorie += Number(trimValue);
     }
-    console.log(calorie);
+
     return calorie;
-    // console.log(isInvalidInput(calories));
 }
 
 // getCalorieSum(["10e3", "9e2", "30", "40", "50", " +60", "- 70+ "]);
-getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
+// getCalorieSum(["40", "50", " +60", "- 70+ ", "200e1"]);
 
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus() {}
