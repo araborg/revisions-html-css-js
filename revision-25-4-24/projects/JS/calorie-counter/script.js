@@ -116,7 +116,6 @@ function clearAllInputs() {
     const allInputs = document.querySelectorAll("input");
     for (input of allInputs) {
         input.value = "";
-        console.log(input);
     }
     // console.log(allInputs);
     output.classList.add("hide");
