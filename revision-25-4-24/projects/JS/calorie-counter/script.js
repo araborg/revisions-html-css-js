@@ -114,7 +114,7 @@ function isCaloriesDeficitOrSurplus(e) {
         <p>${exerciseCalories} Calories Burned</p>
     `;
 
-    output.innerHTML += outputText;
+    output.innerHTML = outputText;
     output.classList.remove("hide");
 }
 
