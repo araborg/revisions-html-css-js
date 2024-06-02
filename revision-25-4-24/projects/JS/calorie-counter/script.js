@@ -79,11 +79,24 @@ function isCaloriesDeficitOrSurplus() {
     const exerciseInput = document.querySelectorAll(
         "#exercise input[type=number]"
     );
+
+    const breakfastCalories = getCalorieSum(breakfastInput);
+    const lunchCalories = getCalorieSum(lunchInput);
+    const dinnerCalories = getCalorieSum(dinnerInput);
+    const snacksCalories = getCalorieSum(snacksInput);
+    const exerciseCalories = getCalorieSum(exerciseInput);
+
     // console.log(breakfastInput);
     // for (input of breakfastInput) {
     //     console.log(input.value);
     // }
-    console.log();
+    console.log(
+        breakfastCalories,
+        lunchCalories,
+        dinnerCalories,
+        snacksCalories,
+        exerciseCalories
+    );
 }
 
 // isCaloriesDeficitOrSurplus();
