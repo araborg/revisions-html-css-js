@@ -72,7 +72,7 @@ function getCalorieSum(calories) {
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus() {
     const breakfastInput = document.querySelectorAll(
-        "#breakfast .input-container"
+        "#breakfast input[type=number]"
     );
     console.log(breakfastInput);
     for (input of breakfastInput) {
