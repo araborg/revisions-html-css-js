@@ -49,6 +49,7 @@ function getCalorieSum(calories) {
     let calorie = 0;
 
     for (calo of calories) {
+        console.log(calo);
         const trimValue = trimInput(calo.value);
         const isInvalid = isInvalidInput(trimValue);
         // console.log(isInvalid);
@@ -76,4 +77,6 @@ function isCaloriesDeficitOrSurplus() {
     console.log(getCalorieSum(breakfastInput));
 }
 
-isCaloriesDeficitOrSurplus();
+// isCaloriesDeficitOrSurplus();
+
+calorieCounter.addEventListener("submit", isCaloriesDeficitOrSurplus);
