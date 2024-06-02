@@ -73,11 +73,17 @@ function isCaloriesDeficitOrSurplus() {
     const breakfastInput = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
+    const lunchInput = document.querySelectorAll("#lunch input[type=number]");
+    const dinnerInput = document.querySelectorAll("#dinner input[type=number]");
+    const snacksInput = document.querySelectorAll("#snacks input[type=number]");
+    const exerciseInput = document.querySelectorAll(
+        "#exercise input[type=number]"
+    );
     // console.log(breakfastInput);
     // for (input of breakfastInput) {
     //     console.log(input.value);
     // }
-    console.log(getCalorieSum(breakfastInput));
+    console.log();
 }
 
 // isCaloriesDeficitOrSurplus();
