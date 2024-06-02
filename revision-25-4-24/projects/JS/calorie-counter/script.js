@@ -115,7 +115,7 @@ calorieCounter.addEventListener("submit", isCaloriesDeficitOrSurplus);
 function clearAllInputs() {
     const allInputs = document.querySelectorAll("input");
     for (input of allInputs) {
-        // input.innerHTML = "";
+        input.value = "";
         console.log(input);
     }
     // console.log(allInputs);
