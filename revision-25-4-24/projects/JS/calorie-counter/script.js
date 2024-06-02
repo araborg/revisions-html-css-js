@@ -1,5 +1,6 @@
 const budgetInput = document.querySelector("#budget");
 const entryDropdown = document.querySelector("#entry-dropdown");
+const output = document.querySelector("#output");
 
 // btns
 const calorieCounter = document.querySelector("#calorie-counter");
@@ -99,7 +100,7 @@ function isCaloriesDeficitOrSurplus(e) {
 
     // console.log(remainingCalories);
 
-    const output = `
+    const outputText = `
         <span class="${surplusOrDeficitCalories.toLowerCase()}">
             ${remainingCalories} Calorie ${surplusOrDeficitCalories}
         </span>
@@ -110,6 +111,8 @@ function isCaloriesDeficitOrSurplus(e) {
         <p>${consumedCalories} Calories Consumed</p>
         <p>${exerciseCalories} Calories Burned</p>
     `;
+
+    output;
 }
 
 // isCaloriesDeficitOrSurplus();
