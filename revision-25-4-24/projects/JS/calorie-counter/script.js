@@ -107,8 +107,8 @@ function isCaloriesDeficitOrSurplus(e) {
         <hr />
         
         <p>${budgetCalories} Calories Budgeted</p>
-        <p>Calories Consumed</p>
-        <p>Calories Burned</p>
+        <p>${consumedCalories} Calories Consumed</p>
+        <p>${exerciseCalories} Calories Burned</p>
     `;
 }
 
