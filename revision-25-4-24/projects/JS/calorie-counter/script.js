@@ -68,6 +68,7 @@ function getCalorieSum(calories) {
 // detect if it is surplus or deficit
 function isCaloriesDeficitOrSurplus(e) {
     e.preventDefault();
+    hasError = false;
 
     const breakfastInput = document.querySelectorAll(
         "#breakfast input[type=number]"
@@ -85,6 +86,8 @@ function isCaloriesDeficitOrSurplus(e) {
     const snacksCalories = getCalorieSum(snacksInput);
     const exerciseCalories = getCalorieSum(exerciseInput);
     const budgetCalories = getCalorieSum([budgetInput]);
+
+    if (hasError) return;
 
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
