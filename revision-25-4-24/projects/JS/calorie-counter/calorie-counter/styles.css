@@ -7,4 +7,10 @@
     --light-pink: #ffadad;
     --dark-red: #850000;
     --light-green: #acd157;
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
 }
