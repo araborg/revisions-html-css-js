@@ -21,4 +21,8 @@ body {
     max-width: 680px;
 }
 
-h1
+h1,
+.container,
+.output {
+    margin: 20px auto;
+}
