@@ -36,10 +36,10 @@ const addInput = () => {
     console.log(inputContainer);
 
     const inputHTML = `
-        <label for="${}"> Entry ${} Name</label>
+        <label for="${selectOption.value}-1-name"> Entry ${} Name</label>
         <input type="text" id="" placeholder="Name" />
 
-        <label for="${}"> Entry ${} Name</label>
+        <label for="${selectOption.value}-1-calories"> Entry ${} Calories</label>
         <input type="number" placeholder="Calories" />
 
     `
