@@ -28,20 +28,17 @@ function isInvalidInput(str) {
 // console.log(Boolean(isInvalidInput("20e23"))); // true
 
 const addInput = () => {
-    // console.log("Input added");
-    // const selectValue = selectOption.value;
     const inputContainer = document.querySelector(
         `#${selectOption.value} .input-container`
     );
-    // console.log(inputContainer);
 
     // get d length of d inputs in an input container
-    const inputContainerLength =
-        document.querySelectorAll(`#${selectOption.value} input[type=text]`)
-            .length + 1;
-    // console.log(inputContainerLength);
+    // const inputContainerLength =
+    //     document.querySelectorAll(`#${selectOption.value} input[type=text]`)
+    //         .length + 1;
 
-    // let inputContainerLength;
+    const inputContainerLength =
+        inputContainer.querySelectorAll(`input[type=text]`).length + 1;
 
     const inputHTML = `
         <label for="${selectOption.value}-${inputContainerLength}-name"> Entry ${inputContainerLength} Name</label>
