@@ -16,6 +16,12 @@ function trimInput(str) {
     return str.replace(regex, "");
 }
 
-// Helper B
+// Helper B: stop invalid input valid
+function isInvalidInput(str) {
+    const regex = /\d+e\d+/i;
+    return str.match(regex);
+}
 
+console.log(isInvalidInput("20e23"));
+console.log(Boolean(isInvalidInput("20e23")));
 // Helper C
