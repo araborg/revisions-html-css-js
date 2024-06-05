@@ -73,7 +73,6 @@ function getCaloriesValues(array) {
         calories += Number(trimmedValue);
     }
 
-    console.log(calories);
     return calories;
 }
 
@@ -110,7 +109,7 @@ const calRemainingCalories = (e) => {
         dinnerCalories,
         snacksCalories,
         exerciseCalories,
-        budgetValue
+        budgetCalories
     );
 };
 
