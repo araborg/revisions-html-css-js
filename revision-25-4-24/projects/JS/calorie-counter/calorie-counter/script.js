@@ -1,6 +1,8 @@
 const budget = document.querySelector("#budget");
 const output = document.querySelector("#output");
 
+const selectOption = document.querySelector("#options");
+
 // btns
 const caloriesCounter = document.querySelector("#calories-counter");
 const addEntryBtn = document.querySelector("#add-entry");
@@ -28,6 +30,7 @@ function isInvalidInput(str) {
 const addInput = () => {
     console.log("Input added");
 };
+
 addEntryBtn.addEventListener("click", addInput);
 
 // Helper C
@@ -37,7 +40,7 @@ function getCaloriesValues(array) {
 
     // loop d arr
     for (const arr of array) {
-        console.log(arr);
+        // console.log(arr);
     }
 }
 
