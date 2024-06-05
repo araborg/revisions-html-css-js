@@ -28,7 +28,9 @@ function isInvalidInput(str) {
 // console.log(Boolean(isInvalidInput("20e23"))); // true
 
 const addInput = () => {
-    console.log("Input added");
+    // console.log("Input added");
+    const selectValue = selectOption.value;
+    console.log(selectValue);
 };
 
 addEntryBtn.addEventListener("click", addInput);
