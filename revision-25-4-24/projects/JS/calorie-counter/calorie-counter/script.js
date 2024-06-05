@@ -22,11 +22,18 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("20e23"));
-console.log(Boolean(isInvalidInput("20e23"))); // true
+// console.log(isInvalidInput("20e23"));
+// console.log(Boolean(isInvalidInput("20e23"))); // true
 
 // Helper C
-function getCaloriesValues(arr) {
+function getCaloriesValues(array) {
     // init calories
     let calories = 0;
+
+    // loop d arr
+    for (const arr of array) {
+        console.log(arr);
+    }
 }
+
+getCaloriesValues([2, 3, 4, 5, 6]);
