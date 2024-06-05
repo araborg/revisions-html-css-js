@@ -61,11 +61,13 @@ function getCaloriesValues(array) {
 
     // loop d arr
     for (const arr of array) {
-        console.log(arr.value);
+        const trimmedValue = trimInput(arr.value);
+        const isInvalidInputValue = isInvalidInput(trimmedValue);
+        console.log(trimmedValue);
     }
 }
 
-getCaloriesValues([1, 2, 3, 4, 5, 6]);
+// getCaloriesValues([1, 2, 3, 4, 5, 6]);
 
 const calRemainingCalories = (e) => {
     e.preventDefault();
