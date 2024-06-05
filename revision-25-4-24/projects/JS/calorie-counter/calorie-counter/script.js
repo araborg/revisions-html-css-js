@@ -29,8 +29,20 @@ function isInvalidInput(str) {
 
 const addInput = () => {
     // console.log("Input added");
-    const selectValue = selectOption.value;
-    console.log(selectValue);
+    // const selectValue = selectOption.value;
+    const inputContainer = document.querySelector(
+        `#${selectOption.value} .input-container`
+    );
+    console.log(inputContainer);
+
+    const inputHTML = `
+        <label for="${}"> Entry ${} Name</label>
+        <input type="text" id="" placeholder="Name" />
+
+        <label for="${}"> Entry ${} Name</label>
+        <input type="number" placeholder="Calories" />
+
+    `
 };
 
 addEntryBtn.addEventListener("click", addInput);
