@@ -49,6 +49,8 @@ const addInput = () => {
         <input type="number" placeholder="Calories" />
 
     `;
+
+    inputContainer.insertAdjacentHTML("beforeend", inputHTML);
 };
 
 addEntryBtn.addEventListener("click", addInput);
