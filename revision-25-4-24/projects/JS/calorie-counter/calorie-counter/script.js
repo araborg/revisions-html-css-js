@@ -70,9 +70,8 @@ function getCaloriesValues(array) {
             return null;
         }
 
-        calories += trimmedValue;
+        calories += Number(trimmedValue);
     }
-
     return calories;
 }
 
