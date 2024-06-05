@@ -35,14 +35,21 @@ const addInput = () => {
     );
     console.log(inputContainer);
 
+    // get d length of d inputs in an input container
+    const inputContainerLength =
+        inputContainer.querySelectorAll(".input-container").length + 1;
+    console.log(inputContainerLength);
+
     const inputHTML = `
-        <label for="${selectOption.value}-1-name"> Entry ${} Name</label>
+        <label for="${selectOption.value}-1-name"> Entry ${1} Name</label>
         <input type="text" id="" placeholder="Name" />
 
-        <label for="${selectOption.value}-1-calories"> Entry ${} Calories</label>
+        <label for="${
+            selectOption.value
+        }-1-calories"> Entry ${1} Calories</label>
         <input type="number" placeholder="Calories" />
 
-    `
+    `;
 };
 
 addEntryBtn.addEventListener("click", addInput);
