@@ -64,7 +64,7 @@ function getCaloriesValues(array) {
         const trimmedValue = trimInput(arr.value);
         const isInvalidInputValue = isInvalidInput(trimmedValue);
 
-        if (isInvalidInput) {
+        if (isInvalidInputValue) {
             alert("Invalid Input: " + isInvalidInputValue[0]);
             isError = true;
             return null;
@@ -73,7 +73,6 @@ function getCaloriesValues(array) {
         calories += trimmedValue;
     }
 
-    console.log(calories);
     return calories;
 }
 
