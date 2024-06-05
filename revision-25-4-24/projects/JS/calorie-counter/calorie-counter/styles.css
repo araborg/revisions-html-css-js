@@ -41,3 +41,22 @@ select,
 button {
     margin-bottom: 10px;
 }
+
+label,
+fieldset {
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    min-height: 2.4rem;
+    color: var(--fcc-blue);
+}
+
+button {
+    border: 2px solid var(--dark-yellow);
+
+    background-color: var(--light-yellow);
+    cursor: pointer;
+}
