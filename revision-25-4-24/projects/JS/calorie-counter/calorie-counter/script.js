@@ -63,8 +63,18 @@ function getCaloriesValues(array) {
     for (const arr of array) {
         const trimmedValue = trimInput(arr.value);
         const isInvalidInputValue = isInvalidInput(trimmedValue);
-        console.log(trimmedValue);
+
+        if (isInvalidInput) {
+            alert("Invalid Input: " + isInvalidInputValue[0]);
+            isError = true;
+            return null;
+        }
+
+        calories += trimmedValue;
     }
+
+    console.log(calories);
+    return calories;
 }
 
 // getCaloriesValues([1, 2, 3, 4, 5, 6]);
