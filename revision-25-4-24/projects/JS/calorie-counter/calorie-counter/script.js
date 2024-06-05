@@ -32,7 +32,7 @@ const addInput = () => {
         `#${selectOption.value} .input-container`
     );
 
-    // get d length of d inputs in an input container
+    // get d length of d inputs in an input container: ds can be done in 2 ways
     // const inputContainerLength =
     //     document.querySelectorAll(`#${selectOption.value} input[type=text]`)
     //         .length + 1;
@@ -61,8 +61,22 @@ function getCaloriesValues(array) {
 
     // loop d arr
     for (const arr of array) {
-        // console.log(arr);
+        console.log(arr.value);
     }
 }
 
 getCaloriesValues([1, 2, 3, 4, 5, 6]);
+
+const calRemainingCalories = (e) => {
+    e.preventDefault();
+
+    // get meals inputs
+    const breakfastInputs = document.querySelectorAll(
+        "#breakfast input[type=number]"
+    );
+
+    // cal getCaloriesValues on d meal input arrar
+    const breakfastCalories = getCaloriesValues(breakfastInputs);
+};
+
+caloriesCounter.addEventListener("submit", calRemainingCalories);
