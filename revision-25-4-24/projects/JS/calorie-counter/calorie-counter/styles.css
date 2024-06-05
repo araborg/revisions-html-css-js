@@ -73,7 +73,7 @@ button {
 }
 
 .hide {
-    /* display: none; */
+    display: none;
 }
 
 .output span {
