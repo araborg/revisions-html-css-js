@@ -10,9 +10,12 @@ const clearBtn = document.querySelector("#clear");
 let isError = false;
 
 // Helper fxns
+// Helper A: remove plus, minus signs and space
 function trimInput(str) {
     const regex = /[+-\s]/g;
     return str.replace(regex, "");
 }
 
-console.log(trimInput(" +- 200 + - "));
+// Helper B
+
+// Helper C
