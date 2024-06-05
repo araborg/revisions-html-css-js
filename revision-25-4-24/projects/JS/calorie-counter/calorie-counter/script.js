@@ -72,10 +72,10 @@ function getCaloriesValues(array) {
 
         calories += Number(trimmedValue);
     }
+
+    console.log(calories);
     return calories;
 }
-
-// getCaloriesValues([1, 2, 3, 4, 5, 6]);
 
 const calRemainingCalories = (e) => {
     e.preventDefault();
