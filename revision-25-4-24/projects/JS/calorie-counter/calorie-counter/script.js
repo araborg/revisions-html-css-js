@@ -33,17 +33,19 @@ const addInput = () => {
     const inputContainer = document.querySelector(
         `#${selectOption.value} .input-container`
     );
-    console.log(inputContainer);
+    // console.log(inputContainer);
 
     // get d length of d inputs in an input container
     const inputContainerLength =
-        inputContainer.querySelectorAll(".input-container").length + 1;
+        document.querySelectorAll(`#${selectOption.value} input[type=text]`)
+            .length + 1;
     // console.log(inputContainerLength);
+
+    // let inputContainerLength;
 
     const inputHTML = `
         <label for="${selectOption.value}-${inputContainerLength}-name"> Entry ${inputContainerLength} Name</label>
         <input type="text" id="" placeholder="Name" />
-
 
         <label for="${selectOption.value}-${inputContainerLength}-calories"> Entry ${inputContainerLength} Calories</label>
         <input type="number" placeholder="Calories" />
