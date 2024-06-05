@@ -84,9 +84,36 @@ const calRemainingCalories = (e) => {
     const breakfastInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
+    const lunchInputs = document.querySelectorAll("#lunch input[type=number]");
+    const dinnerInputs = document.querySelectorAll(
+        "#dinner input[type=number]"
+    );
+    const snacksInputs = document.querySelectorAll(
+        "#snacks input[type=number]"
+    );
+    const exerciseInputs = document.querySelectorAll(
+        "#exercise input[type=number]"
+    );
+
+    const budgetValue = budget.value;
 
     // cal getCaloriesValues on d meal input arrar
     const breakfastCalories = getCaloriesValues(breakfastInputs);
+    const lunchCalories = getCaloriesValues(lunchInputs);
+    const dinnerCalories = getCaloriesValues(dinnerInputs);
+    const snacksCalories = getCaloriesValues(snacksInputs);
+    const exerciseCalories = getCaloriesValues(exerciseInputs);
+
+    const budgetCalories = getCaloriesValues([budgetValue]);
+
+    console.log(
+        breakfastCalories,
+        lunchCalories,
+        dinnerCalories,
+        snacksCalories,
+        exerciseCalories,
+        budgetValue
+    );
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
