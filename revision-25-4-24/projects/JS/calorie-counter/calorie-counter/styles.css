@@ -34,4 +34,10 @@ h1,
     margin: 20px auto;
 }
 
-/* label */
+label,
+input,
+fieldset,
+select,
+button {
+    margin-bottom: 10px;
+}
