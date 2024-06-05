@@ -23,5 +23,10 @@ function isInvalidInput(str) {
 }
 
 console.log(isInvalidInput("20e23"));
-console.log(Boolean(isInvalidInput("20e23")));
+console.log(Boolean(isInvalidInput("20e23"))); // true
+
 // Helper C
+function getCaloriesValues(arr) {
+    // init calories
+    let calories = 0;
+}
