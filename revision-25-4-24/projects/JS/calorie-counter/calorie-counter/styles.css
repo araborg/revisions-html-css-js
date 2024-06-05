@@ -70,3 +70,7 @@ button {
 .hide {
     /* display: none; */
 }
+
+.output span {
+    font-weight: bold;
+}
