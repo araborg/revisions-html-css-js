@@ -25,6 +25,11 @@ function isInvalidInput(str) {
 // console.log(isInvalidInput("20e23"));
 // console.log(Boolean(isInvalidInput("20e23"))); // true
 
+const addInput = () => {
+    console.log("Input added");
+};
+addEntryBtn.addEventListener("click", addInput);
+
 // Helper C
 function getCaloriesValues(array) {
     // init calories
@@ -36,4 +41,4 @@ function getCaloriesValues(array) {
     }
 }
 
-getCaloriesValues([2, 3, 4, 5, 6]);
+getCaloriesValues([1, 2, 3, 4, 5, 6]);
