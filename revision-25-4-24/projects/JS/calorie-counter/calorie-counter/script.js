@@ -95,8 +95,6 @@ const calRemainingCalories = (e) => {
         "#exercise input[type=number]"
     );
 
-    const budgetValue = budget.value;
-
     // cal getCaloriesValues on d meal input arrar
     const breakfastCalories = getCaloriesValues(breakfastInputs);
     const lunchCalories = getCaloriesValues(lunchInputs);
@@ -104,7 +102,7 @@ const calRemainingCalories = (e) => {
     const snacksCalories = getCaloriesValues(snacksInputs);
     const exerciseCalories = getCaloriesValues(exerciseInputs);
 
-    const budgetCalories = getCaloriesValues([budgetValue]);
+    const budgetCalories = getCaloriesValues([budget]);
 
     console.log(
         breakfastCalories,
