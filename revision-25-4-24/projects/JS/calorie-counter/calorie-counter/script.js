@@ -33,7 +33,7 @@ const addInput = () => {
     const inputContainer = document.querySelector(
         `#${selectOption.value} .input-container`
     );
-    // console.log(inputContainer);
+    console.log(inputContainer);
 
     // get d length of d inputs in an input container
     const inputContainerLength =
