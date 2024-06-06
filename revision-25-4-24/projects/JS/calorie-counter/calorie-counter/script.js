@@ -51,7 +51,6 @@ const addInput = () => {
 
     inputContainer.insertAdjacentHTML("beforeend", inputHTML);
 };
-
 addEntryBtn.addEventListener("click", addInput);
 
 // Helper C
@@ -129,10 +128,10 @@ const calRemainingCalories = (e) => {
         <p> ${exerciseCalories} Calories Burned </p>
     `;
 
-    output.classList.remove("hide");
     output.innerHTML = outputHTML;
-};
 
+    output.classList.remove("hide");
+};
 caloriesCounter.addEventListener("submit", calRemainingCalories);
 
 function clearForm() {
@@ -145,5 +144,4 @@ function clearForm() {
     budget.value = "";
     output.classList.add("hide");
 }
-
 clearBtn.addEventListener("click", clearForm);
