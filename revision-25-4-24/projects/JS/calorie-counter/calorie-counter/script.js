@@ -114,7 +114,7 @@ const calRemainingCalories = (e) => {
         remainingCalories < 0 ? "Surplus" : "Deficit";
 
     const outputHTML = `
-        <span class="${surplusOrDeficitCalories}">${Math.abs(
+        <span class="${surplusOrDeficitCalories.toLowerCase()}">${Math.abs(
         remainingCalories
     )} Calories ${surplusOrDeficitCalories}</span>    
 
@@ -124,6 +124,7 @@ const calRemainingCalories = (e) => {
         <p> ${consumedCalories} Calories Consumed </p>
         <p> ${exerciseCalories} Calories Burned </p>
     `;
+    console.log(outputHTML);
 
     output.classList.remove("hide");
     output.innerHTML = outputHTML;
