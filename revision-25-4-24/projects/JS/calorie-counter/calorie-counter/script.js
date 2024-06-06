@@ -1,5 +1,6 @@
 const budget = document.querySelector("#budget");
 const output = document.querySelector("#output");
+console.log(output);
 
 const selectOption = document.querySelector("#options");
 
@@ -123,6 +124,9 @@ const calRemainingCalories = (e) => {
         <p> ${consumedCalories} Calories Consumed </p>
         <p> ${exerciseCalories} Calories Burned </p>
     `;
+
+    output.classList.remove("hide");
+    output.innerHTML = outputHTML;
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
