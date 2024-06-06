@@ -1,6 +1,5 @@
 const budget = document.querySelector("#budget");
 const output = document.querySelector("#output");
-console.log(output);
 
 const selectOption = document.querySelector("#options");
 
