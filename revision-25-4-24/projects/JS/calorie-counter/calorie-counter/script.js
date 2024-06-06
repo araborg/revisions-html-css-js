@@ -124,7 +124,6 @@ const calRemainingCalories = (e) => {
         <p> ${consumedCalories} Calories Consumed </p>
         <p> ${exerciseCalories} Calories Burned </p>
     `;
-    console.log(outputHTML);
 
     output.classList.remove("hide");
     output.innerHTML = outputHTML;
