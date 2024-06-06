@@ -103,6 +103,10 @@ const calRemainingCalories = (e) => {
 
     const budgetCalories = getCaloriesValues([budget]);
 
+    if (isError) {
+        return;
+    }
+
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
