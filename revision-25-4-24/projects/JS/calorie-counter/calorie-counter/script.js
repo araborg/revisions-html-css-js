@@ -124,7 +124,7 @@ const calRemainingCalories = (e) => {
         <p> ${exerciseCalories} Calories Burned </p>
     `;
 
-    output.innerHTML = outputHTML;
+    output.insertAdjacentHTML("beforeend", outputHTML);
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
@@ -135,7 +135,7 @@ function clearForm() {
     for (const input of allInput) {
         input.innerHTML = "";
     }
-    console.log(allInput);
+    budget.value = "";
 }
 
 clearBtn.addEventListener("click", clearForm);
