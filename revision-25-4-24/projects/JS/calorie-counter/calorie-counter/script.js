@@ -78,7 +78,7 @@ function getCaloriesValues(array) {
 
 const calRemainingCalories = (e) => {
     e.preventDefault();
-    console.log(isError);
+    isError = false;
 
     // get meals inputs
     const breakfastInputs = document.querySelectorAll(
@@ -104,6 +104,7 @@ const calRemainingCalories = (e) => {
 
     const budgetCalories = getCaloriesValues([budget]);
 
+    console.log(isError);
     if (isError) {
         return;
     }
