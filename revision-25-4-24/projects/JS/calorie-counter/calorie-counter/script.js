@@ -109,7 +109,16 @@ const calRemainingCalories = (e) => {
     const remainingCalories =
         budgetCalories - consumedCalories + exerciseCalories;
 
-    const surplusOrDeficitCalories = remainingCalories;
+    const surplusOrDeficitCalories =
+        remainingCalories < 0 ? "Surplus" : "Deficit";
+
+    const outputHTML = `
+        <span class="${surplusOrDeficitCalories}">${Math.abs(
+        remainingCalories
+    )} Calorie ${surplusOrDeficitCalories}</span>    
+    `;
+
+    output.innerHTML = outputHTML;
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
