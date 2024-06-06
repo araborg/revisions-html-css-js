@@ -136,7 +136,9 @@ function clearForm() {
     for (const input of allInput) {
         input.innerHTML = "";
     }
+
     budget.value = "";
+    output.classList.add("hide");
 }
 
 clearBtn.addEventListener("click", clearForm);
