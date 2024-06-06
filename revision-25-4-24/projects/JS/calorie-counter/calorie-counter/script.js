@@ -78,6 +78,7 @@ function getCaloriesValues(array) {
 
 const calRemainingCalories = (e) => {
     e.preventDefault();
+    console.log(isError);
 
     // get meals inputs
     const breakfastInputs = document.querySelectorAll(
