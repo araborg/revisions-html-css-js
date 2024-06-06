@@ -123,8 +123,6 @@ const calRemainingCalories = (e) => {
         <p> ${consumedCalories} Calories Consumed </p>
         <p> ${exerciseCalories} Calories Burned </p>
     `;
-
-    output.insertAdjacentHTML("beforeend", outputHTML);
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
