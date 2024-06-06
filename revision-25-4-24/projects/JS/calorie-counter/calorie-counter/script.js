@@ -104,7 +104,6 @@ const calRemainingCalories = (e) => {
 
     const budgetCalories = getCaloriesValues([budget]);
 
-    console.log(isError);
     if (isError) {
         return;
     }
