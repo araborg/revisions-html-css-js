@@ -103,14 +103,13 @@ const calRemainingCalories = (e) => {
 
     const budgetCalories = getCaloriesValues([budget]);
 
-    console.log(
-        breakfastCalories,
-        lunchCalories,
-        dinnerCalories,
-        snacksCalories,
-        exerciseCalories,
-        budgetCalories
-    );
+    const consumedCalories =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    const remainingCalories =
+        budgetCalories - consumedCalories + exerciseCalories;
+
+    const surplusOrDeficitCalories = remainingCalories;
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
