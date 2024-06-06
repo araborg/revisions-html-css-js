@@ -119,14 +119,23 @@ const calRemainingCalories = (e) => {
 
         <hr/>
 
-        <p>${budgetCalories} Calories Budgeted</p>
-        <p>${consumedCalories} Calories Consumed</p>
-        <p>${exerciseCalories} Calories Burned</p>
+        <p> ${budgetCalories} Calories Budgeted </p>
+        <p> ${consumedCalories} Calories Consumed </p>
+        <p> ${exerciseCalories} Calories Burned </p>
     `;
-
-    console.log(outputHTML);
 
     output.innerHTML = outputHTML;
 };
 
 caloriesCounter.addEventListener("submit", calRemainingCalories);
+
+function clearForm() {
+    const allInput = document.querySelectorAll(".input-container");
+
+    for (const input of allInput) {
+        input.innerHTML = "";
+    }
+    console.log(allInput);
+}
+
+clearBtn.addEventListener("click", clearForm);
