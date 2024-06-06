@@ -115,8 +115,13 @@ const calRemainingCalories = (e) => {
     const outputHTML = `
         <span class="${surplusOrDeficitCalories}">${Math.abs(
         remainingCalories
-    )} Calorie ${surplusOrDeficitCalories}</span>    
+    )} Calories ${surplusOrDeficitCalories}</span>    
+
+    <hr/>
+    <p></p>
     `;
+
+    console.log(outputHTML);
 
     output.innerHTML = outputHTML;
 };
