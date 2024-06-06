@@ -117,8 +117,11 @@ const calRemainingCalories = (e) => {
         remainingCalories
     )} Calories ${surplusOrDeficitCalories}</span>    
 
-    <hr/>
-    <p></p>
+        <hr/>
+
+        <p>${budgetCalories} Calories Budgeted</p>
+        <p>${consumedCalories} Calories Consumed</p>
+        <p>${exerciseCalories} Calories Burned</p>
     `;
 
     console.log(outputHTML);
