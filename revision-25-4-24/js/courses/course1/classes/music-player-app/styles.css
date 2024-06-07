@@ -287,3 +287,18 @@ button:focus,
     font-family: var(--font-headline);
     width: 30px;
 }
+
+.playlist-song-delete {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.playlist-song-delete {
+    fill: var(--foreground-color);
+}
+
+.playlist-song-delete:hover circle,
+.playlist-song-delete:focus circle {
+    fill: #ff0000;
+}
