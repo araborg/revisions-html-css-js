@@ -144,6 +144,10 @@ ul {
     /* row-gap: 20px; */
 }
 
+.player-display-song-artist {
+    height: 80px;
+}
+
 /* ============================ */
 /* temporary value */
 .playlist {
