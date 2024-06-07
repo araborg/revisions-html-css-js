@@ -89,6 +89,13 @@ ul {
     display: flex;
 }
 
+.parallel-lines > div {
+    height: 2px;
+    background-color: var(--highlight-color);
+
+    width: 100%;
+    min-width: 75px;
+}
 /* ============================ */
 /* temporary value */
 #player-album-art img {
@@ -98,4 +105,5 @@ ul {
 .playlist {
     border: 3px solid green;
 }
+
 /* ============================ */
