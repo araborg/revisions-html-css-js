@@ -72,8 +72,6 @@ ul {
 
 .player-bar,
 .playlist-bar {
-    border: 3px solid red;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +85,10 @@ ul {
 
 .parallel-lines {
     display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 6px;
+    padding: 0 5px;
 }
 
 .parallel-lines > div {
@@ -96,6 +98,15 @@ ul {
     width: 100%;
     min-width: 75px;
 }
+
+.fcc-title,
+.playlist-title {
+    color: var(--secondary-color);
+    font-family: var(--font-headline);
+
+    margin: 0 10px;
+}
+
 /* ============================ */
 /* temporary value */
 #player-album-art img {
