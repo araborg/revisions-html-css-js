@@ -157,6 +157,10 @@ ul {
     fill: var(--highlight-color);
 }
 
+.playlist-song {
+    outline-color: var(--highlight-color);
+}
+
 /* ===================== */
 
 .player-buttons {
@@ -177,6 +181,10 @@ button {
     outline-color: var(--highlight-color);
     text-align: center;
 }
+
+/* .playlist-song {
+    outline-color: var(--highlight-color);
+} */
 
 /* ============================ */
 /* temporary value */
