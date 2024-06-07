@@ -109,12 +109,17 @@ ul {
 
 .player-content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--foreground-color);
+    width: 430px;
 }
 
 /* ============================ */
 /* temporary value */
 #player-album-art img {
-    width: 300px;
+    width: 100px;
 }
 
 .playlist {
