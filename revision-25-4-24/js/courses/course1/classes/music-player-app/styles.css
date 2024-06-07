@@ -211,9 +211,24 @@ button:focus,
 
     display: flex;
     flex-direction: column;
+    justify-content: start;
+
     row-gap: 8px;
+
+    padding: 8px 9px;
+    visibility: visible;
+    list-style: none;
 }
 
 .playlist li:not(:last-child) {
     border-bottom: 1px solid var(--background-color);
+}
+
+.playlist-song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 55px;
+    padding: 5px;
 }
