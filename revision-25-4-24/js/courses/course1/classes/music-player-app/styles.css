@@ -148,6 +148,20 @@ ul {
     height: 80px;
 }
 
+.player-buttons svg {
+    fill: var(--primary-color);
+}
+
+/* JS added class */
+.playing svg {
+    fill: var(--highlight-color);
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* ============================ */
 /* temporary value */
 .playlist {
