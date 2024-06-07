@@ -280,3 +280,10 @@ button:focus,
     font-size: 0.725rem;
     width: 80px;
 }
+
+.playlist-song-duration {
+    font-size: 0.725rem;
+    margin: auto;
+    font-family: var(--font-headline);
+    width: 30px;
+}
