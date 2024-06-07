@@ -157,6 +157,8 @@ ul {
     fill: var(--highlight-color);
 }
 
+/* ===================== */
+
 .player-buttons {
     display: flex;
     justify-content: space-around;
@@ -169,7 +171,11 @@ button {
     color: var(--primary-color);
     cursor: pointer;
 
+    /* border: 3px solid green; */
+
     font-size: var(--root-font-size);
+    outline-color: var(--highlight-color);
+    text-align: center;
 }
 
 /* ============================ */
