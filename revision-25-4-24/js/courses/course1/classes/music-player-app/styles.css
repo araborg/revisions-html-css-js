@@ -114,6 +114,9 @@ ul {
 
     background-color: var(--foreground-color);
     width: 430px;
+    height: 200px;
+
+    column-gap: 13px;
 }
 
 /* ============================ */
