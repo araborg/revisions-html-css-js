@@ -210,6 +210,8 @@ button:focus,
     background-color: var(--foreground-color);
 
     display: flex;
+    flex-direction: column;
+    row-gap: 8px;
 }
 
 .playlist li:not(:last-child) {
