@@ -186,20 +186,32 @@ button {
     outline-color: var(--highlight-color);
 } */
 
-.playlist li:not(:last-child) {
-    border-bottom: 1px solid var(--background-color);
-}
-
 button:focus,
 .playlist-song:focus {
     outline-style: dashed;
     outline-width: 2px;
 }
 
-/* ============================ */
-/* temporary value */
+/* Playlist */
 .playlist {
-    border: 3px solid green;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    row-gap: 10px;
 }
 
-/* ============================ */
+#playlist-songs {
+    width: 430px;
+    height: 100%;
+    background-color: var(--foreground-color);
+
+    display: flex;
+}
+
+.playlist li:not(:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
