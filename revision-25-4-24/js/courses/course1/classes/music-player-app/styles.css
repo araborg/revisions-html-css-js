@@ -240,3 +240,16 @@ button:focus,
 [aria-current="true"] p {
     color: var(--highlight-color);
 }
+
+.playlist-song-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    column-gap: 7px;
+    padding: 5px 0;
+    font-family: var(--font-family);
+
+    height: 100%;
+}
