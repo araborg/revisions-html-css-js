@@ -107,6 +107,10 @@ ul {
     margin: 0 10px;
 }
 
+.player-content {
+    display: flex;
+}
+
 /* ============================ */
 /* temporary value */
 #player-album-art img {
