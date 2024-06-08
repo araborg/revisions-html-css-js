@@ -366,5 +366,16 @@ button:focus,
         width: 40px;
     }
 
-    .
+    .playlist-song-duration > button {
+        padding: 0;
+    }
+
+    .player-content {
+        display: inline;
+        justify-items: center;
+
+        position: relative;
+
+        height: 100%;
+    }
 }
