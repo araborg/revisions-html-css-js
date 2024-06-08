@@ -255,8 +255,6 @@ button:focus,
 #player-song-title,
 #player-song-artist {
     margin: 0;
-
-    /* border: 2px solid purple; */
 }
 
 #player-song-artist {
