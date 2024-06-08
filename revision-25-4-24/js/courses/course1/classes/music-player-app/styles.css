@@ -112,11 +112,12 @@ ul {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--foreground-color);
+    column-gap: 13px;
+
     width: 430px;
     height: 200px;
 
-    column-gap: 13px;
+    background-color: var(--foreground-color);
 
     /* border: 3px solid green; */
 }
