@@ -288,9 +288,7 @@ button:focus,
     padding: 0;
     width: 20px;
     height: 20px;
-}
 
-.playlist-song-delete {
     fill: var(--foreground-color);
 }
 
