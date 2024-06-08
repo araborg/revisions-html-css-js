@@ -388,4 +388,9 @@ button:focus,
 
         background: #000;
     }
+
+    #player-album-art img {
+        width: 100%;
+        opacity: 0.6;
+    }
 }
