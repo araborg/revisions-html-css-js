@@ -229,8 +229,9 @@ button:focus,
     justify-content: space-between;
     align-items: center;
 
-    height: 55px;
     padding: 5px;
+
+    height: 55px;
 }
 
 [aria-current="true"] {
@@ -246,12 +247,13 @@ button:focus,
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
     column-gap: 7px;
+
     padding: 5px 0;
-    font-family: var(--font-family);
 
     height: 100%;
+
+    font-family: var(--font-family);
 }
 
 #player-song-title,
