@@ -394,7 +394,26 @@ button:focus,
         opacity: 0.6;
     }
 
+    .player-display-song-artist {
+        padding: 0 10px;
+    }
+
     .player-display-song-artist > p {
         white-space: pre-wrap;
+    }
+
+    .player-display {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 280px;
+
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 1000;
+
+        background-color: transparent;
     }
 }
