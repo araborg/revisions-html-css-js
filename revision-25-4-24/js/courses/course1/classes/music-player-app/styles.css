@@ -311,4 +311,13 @@ button:focus,
     .playlist {
         width: 300px;
     }
+
+    .player {
+        height: 340px;
+    }
+
+    #playlist-songs {
+        height: 280px;
+        padding: 5px 6px;
+    }
 }
