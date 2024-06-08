@@ -410,7 +410,7 @@ button:focus,
         height: 280px;
 
         justify-content: space-between;
-        align-items: center;
+        text-align: center;
 
         z-index: 1000;
 
