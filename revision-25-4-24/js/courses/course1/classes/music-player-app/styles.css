@@ -155,25 +155,23 @@ ul {
 }
 
 /* JS added class */
-.playing svg {
+.playing > svg {
     fill: var(--highlight-color);
 }
-
-.playlist-song {
-    outline-color: var(--highlight-color);
-}
-
-/* ===================== */
 
 .player-buttons {
     display: flex;
     justify-content: space-around;
 }
 
+.playlist-song {
+    outline-color: var(--highlight-color);
+}
+
 button {
     background: transparent;
-
     border: none;
+
     color: var(--primary-color);
     cursor: pointer;
 
@@ -202,22 +200,22 @@ button:focus,
     display: flex;
     flex-direction: column;
     align-items: center;
-
     row-gap: 10px;
 }
 
 #playlist-songs {
     width: 430px;
     height: 100%;
+
     background-color: var(--foreground-color);
 
     display: flex;
     flex-direction: column;
     justify-content: start;
-
     row-gap: 8px;
 
     padding: 8px 9px;
+
     visibility: visible;
     list-style: none;
 }
