@@ -334,4 +334,8 @@ button:focus,
     #playlist-songs::-webkit-scrollbar-track {
         background: var(--background-color);
     }
+
+    #playlist-songs::-webkit-scrollbar-thumb {
+        background: var(--secondary-color);
+    }
 }
