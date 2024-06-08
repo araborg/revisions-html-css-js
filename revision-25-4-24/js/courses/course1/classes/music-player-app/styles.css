@@ -64,10 +64,10 @@ ul {
     flex-direction: column;
     align-items: center;
 
+    row-gap: 10px;
+
     height: 260px;
     padding: 10px;
-
-    row-gap: 10px;
 }
 
 .player-bar,
@@ -302,3 +302,17 @@ button:focus,
 .playlist-song-delete:focus circle {
     fill: #ff0000;
 }
+
+/* 
+Consistency doesn't gurantee that you will be successful
+but not being consistent will guarantee that you won't 
+reach success.
+An easy productivity hack is instead of spending time getting 
+in the mood to work just start working. Confront the work. 
+People think they need perfect conditions to start when in 
+reality starting is the perfect condition.
+
+Thanks for showing UP.
+
+
+*/
