@@ -393,4 +393,8 @@ button:focus,
         width: 100%;
         opacity: 0.6;
     }
+
+    .player-display-song-artist > p {
+        white-space: pre-wrap;
+    }
 }
