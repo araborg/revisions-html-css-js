@@ -292,8 +292,9 @@ button:focus,
 }
 
 .playlist-song-artist {
-    font-size: 0.725rem;
     width: 80px;
+
+    font-size: 0.725rem;
 }
 
 .playlist-song-duration {
