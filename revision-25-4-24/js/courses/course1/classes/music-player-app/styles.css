@@ -298,10 +298,11 @@ button:focus,
 }
 
 .playlist-song-duration {
+    width: 30px;
+
     font-size: 0.725rem;
     margin: auto;
     font-family: var(--font-headline);
-    width: 30px;
 }
 
 .playlist-song-delete {
