@@ -149,13 +149,13 @@ ul {
 }
 
 .player-display {
+    height: 153px;
+    width: 226px;
+
     display: flex;
     flex-direction: column;
 
     padding: 14px;
-
-    height: 153px;
-    width: 226px;
 
     background-color: var(--background-color);
 
