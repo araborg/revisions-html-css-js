@@ -381,7 +381,7 @@ button:focus,
     #player-album-art {
         height: 280px;
 
-        /* z-index: -100; */
+        z-index: -100;
 
         box-shadow: none;
 
@@ -392,14 +392,6 @@ button:focus,
         width: 100%;
 
         opacity: 0.6;
-    }
-
-    .player-display-song-artist {
-        padding: 0 10px;
-    }
-
-    .player-display-song-artist > p {
-        white-space: pre-wrap;
     }
 
     .player-display {
@@ -415,5 +407,13 @@ button:focus,
         z-index: 1000;
 
         background-color: transparent;
+    }
+
+    .player-display-song-artist {
+        padding: 0 10px;
+    }
+
+    .player-display-song-artist > p {
+        white-space: pre-wrap;
     }
 }
