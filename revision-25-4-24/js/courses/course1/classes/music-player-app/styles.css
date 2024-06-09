@@ -72,8 +72,6 @@ ul {
     /* row-gap: 10px; */
 
     padding: 10px;
-
-    border: 2px solid white;
 }
 
 .player-bar,
@@ -87,8 +85,6 @@ ul {
     padding: 0 5px;
 
     background-color: var(--foreground-color);
-
-    /* border: 2px solid red; */
 }
 
 .parallel-lines {
@@ -97,8 +93,6 @@ ul {
 
     row-gap: 6px;
     padding: 0 5px;
-
-    border: 2px solid green;
 }
 
 .parallel-lines > div {
@@ -115,8 +109,6 @@ ul {
     font-family: var(--font-headline);
 
     margin: 0 10px;
-
-    border: 2px solid orangered;
 }
 
 .player-content {
@@ -130,23 +122,17 @@ ul {
     column-gap: 13px;
 
     background-color: var(--foreground-color);
-
-    border: 3px solid green;
 }
 
 #player-album-art {
     background-color: var(--secondary-color);
     border: 6px solid var(--background-color);
-
-    border: 2px solid blue;
 }
 
 #player-album-art img {
     width: 150px;
 
     display: block;
-
-    border: 2px solid yellow;
 }
 
 .player-display {
@@ -160,7 +146,6 @@ ul {
 
     background-color: var(--background-color);
 
-    border: 2px solid yellowgreen;
     /* row-gap: 20px; */
 }
 
@@ -192,8 +177,6 @@ button {
 
     color: var(--primary-color);
     cursor: pointer;
-
-    /* border: 3px solid green; */
 
     font-size: var(--root-font-size);
     outline-color: var(--highlight-color);
@@ -280,16 +263,16 @@ button:focus,
     font-size: 1.125rem;
 }
 
+#player-song-artist {
+    color: var(--highlight-color);
+    font-size: 0.75rem;
+}
+
 .playerlist-song-title {
     width: 241px;
 
     font-size: 0.85rem;
     text-align: left;
-}
-
-#player-song-artist {
-    color: var(--highlight-color);
-    font-size: 0.75rem;
 }
 
 .playlist-song-artist {
@@ -303,6 +286,7 @@ button:focus,
 
     font-size: 0.725rem;
     margin: auto;
+
     font-family: var(--font-headline);
 }
 
