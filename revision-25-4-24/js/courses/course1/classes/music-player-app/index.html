@@ -4,24 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- external font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap"
             rel="stylesheet"
         />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="styles.css" />
 
-        <link rel="stylesheet" href="./styles.css" />
-
-        <title>Music Player App</title>
+        <title>
+            Learn Basic String and Array Methods by Building a Music Player App
+        </title>
     </head>
 
     <body>
@@ -51,8 +47,8 @@
 
                     <div class="player-display">
                         <div class="player-display-song-artist">
-                            <p id="player-song-title">Ekilo fo mo ode</p>
-                            <p id="player-song-artist">KSA</p>
+                            <p id="player-song-title"></p>
+                            <p id="player-song-artist"></p>
                         </div>
 
                         <div class="player-buttons">
@@ -93,7 +89,7 @@
                                 </svg>
                             </button>
 
-                            <button id="pause" class="pause" aria-label="pause">
+                            <button id="pause" class="pause" aria-label="Pause">
                                 <svg
                                     width="17"
                                     height="19"
@@ -166,43 +162,9 @@
                     </div>
                 </div>
 
-                <ul id="playlist-songs">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                </ul>
+                <ul id="playlist-songs"></ul>
             </div>
         </div>
-
-        <script src="./script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
