@@ -142,6 +142,7 @@ ul {
 
 #player-album-art img {
     width: 150px;
+
     display: block;
 
     border: 2px solid yellow;
