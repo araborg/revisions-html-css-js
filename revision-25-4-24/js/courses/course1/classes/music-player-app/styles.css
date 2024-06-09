@@ -280,16 +280,16 @@ button:focus,
     font-size: 1.125rem;
 }
 
-#player-song-artist {
-    color: var(--highlight-color);
-    font-size: 0.75rem;
-}
-
 .playerlist-song-title {
     width: 241px;
 
     font-size: 0.85rem;
     text-align: left;
+}
+
+#player-song-artist {
+    color: var(--highlight-color);
+    font-size: 0.75rem;
 }
 
 .playlist-song-artist {
