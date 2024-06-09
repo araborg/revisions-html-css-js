@@ -386,12 +386,12 @@ button:focus,
     }
 
     .player-content {
+        height: 100%;
+
         display: inline;
         justify-items: center;
 
         position: relative;
-
-        height: 100%;
     }
 
     #player-album-art {
