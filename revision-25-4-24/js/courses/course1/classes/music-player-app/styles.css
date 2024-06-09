@@ -57,6 +57,7 @@ ul {
 .player,
 .playlist {
     width: 450px;
+
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
