@@ -285,8 +285,9 @@ button:focus,
 }
 
 .playerlist-song-title {
-    font-size: 0.85rem;
     width: 241px;
+
+    font-size: 0.85rem;
     text-align: left;
 }
 
