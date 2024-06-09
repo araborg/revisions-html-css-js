@@ -373,7 +373,7 @@ button:focus,
         height: 100%;
 
         display: inline;
-        justify-items: center;
+        /* justify-items: center; */
 
         position: relative;
     }
@@ -381,7 +381,7 @@ button:focus,
     #player-album-art {
         height: 280px;
 
-        z-index: -100;
+        /* z-index: -100; */
 
         box-shadow: none;
 
