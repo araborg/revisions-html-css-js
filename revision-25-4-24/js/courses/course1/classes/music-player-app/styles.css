@@ -407,6 +407,8 @@ button:focus,
         z-index: 1000;
 
         background-color: transparent;
+
+        border: 5px solid red;
     }
 
     .player-display-song-artist {
