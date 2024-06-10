@@ -40,6 +40,10 @@
     border: 2px solid indigo;
 }
 
-.playlist {
+.player-display-song-artist {
+    border: 2px solid indianred;
+}
+
+.player-display-song-artist .playlist {
     border: 2px solid violet;
 }
