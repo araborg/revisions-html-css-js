@@ -44,6 +44,10 @@
     border: 2px solid indianred;
 }
 
+.player-buttons {
+    border: 2px solid rosybrown;
+}
+
 .player-display-song-artist .playlist {
     border: 2px solid violet;
 }
