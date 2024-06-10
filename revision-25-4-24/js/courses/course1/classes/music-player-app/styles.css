@@ -19,3 +19,11 @@
 .container {
     border: 2px solid red;
 }
+
+.player {
+    border: 2px solid orange;
+}
+
+.playlist {
+    border: 2px solid yellow;
+}
