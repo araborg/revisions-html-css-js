@@ -55,3 +55,7 @@
 .playlist-bar {
     border: 2px solid pink;
 }
+
+#playlist-songs {
+    border: 2px solid goldenrod;
+}
