@@ -36,6 +36,10 @@
     border: 2px solid blue;
 }
 
+.player-display {
+    border: 2px solid indigo;
+}
+
 .playlist {
     border: 2px solid violet;
 }
