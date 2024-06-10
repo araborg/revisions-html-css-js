@@ -32,6 +32,10 @@
     border: 2px solid green;
 }
 
+#player-album-art {
+    border: 2px solid blue;
+}
+
 .playlist {
     border: 2px solid violet;
 }
