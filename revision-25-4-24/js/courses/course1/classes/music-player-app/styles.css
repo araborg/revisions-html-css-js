@@ -28,6 +28,10 @@
     border: 2px solid yellow;
 }
 
+.player-content {
+    border: 2px solid green;
+}
+
 .playlist {
     border: 2px solid violet;
 }
