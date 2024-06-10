@@ -51,3 +51,7 @@
 .playlist {
     border: 2px solid violet;
 }
+
+.playlist-bar {
+    border: 2px solid pink;
+}
