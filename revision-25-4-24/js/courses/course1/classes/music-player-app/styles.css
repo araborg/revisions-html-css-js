@@ -24,6 +24,10 @@
     border: 2px solid orange;
 }
 
-.playlist {
+.player-bar {
     border: 2px solid yellow;
+}
+
+.playlist {
+    border: 2px solid violet;
 }
