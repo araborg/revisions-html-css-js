@@ -52,7 +52,7 @@
 }
 
 .player-buttons {
-    /* border: 2px solid rosybrown; */
+    border: 2px solid rosybrown;
 }
 
 .playlist {
@@ -216,4 +216,8 @@ ul {
     fill: var(--highlight-color);
 }
 
-.
+.player-buttons {
+    display: flex;
+
+    /* justify-content: space-around; */
+}
