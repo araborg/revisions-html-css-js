@@ -246,4 +246,6 @@ button {
 
 button:focus,
 .playlist-song:focus {
+    outline-style: dashed;
+    outline-width: 2px;
 }
