@@ -108,3 +108,7 @@ ul {
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
+
+.player {
+    height: 260px;
+}
