@@ -130,6 +130,8 @@ ul {
     flex-wrap: wrap;
 
     row-gap: 6px;
+
+    padding: 0 5px;
 }
 
 .parallel-lines > div {
