@@ -77,6 +77,11 @@ body {
     font-family: var(--font-family);
 }
 
+h1 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
 .container {
     margin-top: 10px;
 
