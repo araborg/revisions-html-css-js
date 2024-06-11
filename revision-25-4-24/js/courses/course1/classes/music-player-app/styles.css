@@ -82,6 +82,10 @@ h1 {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: var(--root-font-size);
+}
+
 .container {
     margin-top: 10px;
 
