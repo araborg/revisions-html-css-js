@@ -123,6 +123,12 @@ ul {
 
 .player-bar,
 .playlist-bar {
+    height: 30px;
+    width: 100%;
+
+    display: flex;
+
+    background-color: var(--foreground-color);
 }
 
 .parallel-lines {
