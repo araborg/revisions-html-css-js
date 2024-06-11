@@ -183,6 +183,13 @@ ul {
     border: 6px solid var(--background-color);
 }
 
+#player-album-art img {
+    /* border: 2px solid violet; */
+
+    width: 150px;
+    display: block;
+}
+
 .player-display {
     height: 153px;
     width: 226px;
@@ -199,11 +206,4 @@ ul {
     /* border: 2px solid green; */
 
     height: 80px;
-}
-
-#player-album-art img {
-    /* border: 2px solid violet; */
-
-    width: 150px;
-    display: block;
 }
