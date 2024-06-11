@@ -165,6 +165,11 @@ ul {
     font-family: var(--font-headline);
 }
 
+.player-content {
+    display: flex;
+    align-items: center;
+}
+
 #player-album-art img {
     border: 2px solid violet;
 
