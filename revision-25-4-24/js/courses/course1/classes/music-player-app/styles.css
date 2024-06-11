@@ -166,8 +166,16 @@ ul {
 }
 
 .player-content {
+    width: 430px;
+    height: 200px;
+
+    column-gap: 13px;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    background-color: var(--foreground-color);
 }
 
 #player-album-art img {
