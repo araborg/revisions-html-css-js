@@ -112,3 +112,9 @@ ul {
 .player {
     height: 260px;
 }
+
+#player-album-art img {
+    border: 2px solid violet;
+
+    width: 150px;
+}
