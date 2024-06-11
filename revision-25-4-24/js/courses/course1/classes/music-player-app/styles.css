@@ -40,7 +40,7 @@
 }
 
 .player-display {
-    border: 2px solid indigo;
+    border: 2px solid white;
 }
 
 .player-song-title {
@@ -181,6 +181,15 @@ ul {
 #player-album-art {
     background-color: var(--secondary-color);
     border: 6px solid var(--background-color);
+}
+
+.player-display {
+    display: flex;
+    flex-direction: column;
+
+    /* padding: 14px; */
+
+    /* background-color: var(--background-color); */
 }
 
 #player-album-art img {
