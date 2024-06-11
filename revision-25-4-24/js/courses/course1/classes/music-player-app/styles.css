@@ -207,3 +207,13 @@ ul {
 
     height: 80px;
 }
+
+.player-buttons svg {
+    fill: var(--primary-color);
+}
+
+.playing > svg {
+    fill: var(--highlight-color);
+}
+
+.
