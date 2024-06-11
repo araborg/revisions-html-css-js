@@ -219,5 +219,12 @@ ul {
 .player-buttons {
     display: flex;
 
-    /* justify-content: space-around; */
+    justify-content: space-around;
+}
+
+button {
+    background: transparent;
+    color: var(--primary-color);
+
+    font-size: var(--root-font-size);
 }
