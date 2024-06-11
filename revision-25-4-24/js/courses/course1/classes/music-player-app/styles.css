@@ -123,10 +123,22 @@ ul {
 
 .player-bar,
 .playlist-bar {
-    width: 100%;
-    height: 30px;
+    /* width: 100%; */
+    /* height: 30px; */
 
-    background-color: var(--foreground-color);
+    /* background-color: var(--foreground-color); */
+}
+
+.parallel-lines {
+    display: flex;
+}
+
+.parallel-lines > div {
+    height: 2px;
+    /* width: 100%; */
+    /* min-width: 75px; */
+
+    background-color: var(--highlight-color);
 }
 
 #player-album-art img {
