@@ -86,6 +86,10 @@ h2 {
     font-size: var(--root-font-size);
 }
 
+ul {
+    margin: 0;
+}
+
 .container {
     margin-top: 10px;
 
@@ -93,4 +97,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* row-gap: 20px; */
 }
