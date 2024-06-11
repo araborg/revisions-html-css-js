@@ -20,7 +20,7 @@
 
 /* borders for demacation */
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .player {
@@ -43,6 +43,10 @@
     border: 2px solid indigo;
 }
 
+.player-song-title {
+    border: 2px solid red;
+}
+
 .player-display-song-artist {
     border: 2px solid indianred;
 }
@@ -56,7 +60,7 @@
 }
 
 .playlist-bar {
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
 }
 
 #playlist-songs {
