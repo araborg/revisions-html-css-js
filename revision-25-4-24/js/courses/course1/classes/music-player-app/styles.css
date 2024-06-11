@@ -40,7 +40,7 @@
 }
 
 .player-display {
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 .player-song-title {
@@ -52,7 +52,7 @@
 }
 
 .player-buttons {
-    border: 2px solid rosybrown;
+    /* border: 2px solid rosybrown; */
 }
 
 .playlist {
@@ -193,6 +193,12 @@ ul {
     padding: 14px;
 
     background-color: var(--background-color);
+}
+
+.player-display-song-artist {
+    /* border: 2px solid green; */
+
+    height: 80px;
 }
 
 #player-album-art img {
