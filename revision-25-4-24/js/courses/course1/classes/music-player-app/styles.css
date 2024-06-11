@@ -235,3 +235,15 @@ button {
 
     cursor: pointer;
 }
+
+.playlist-song {
+    outline-color: var(--highlight-color);
+}
+
+.playlist li:not(:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
+
+button:focus,
+.playlist-song:focus {
+}
