@@ -226,5 +226,12 @@ button {
     background: transparent;
     color: var(--primary-color);
 
+    border: none;
+    outline-color: var(--highlight-color);
+
     font-size: var(--root-font-size);
+
+    text-align: center;
+
+    cursor: pointer;
 }
