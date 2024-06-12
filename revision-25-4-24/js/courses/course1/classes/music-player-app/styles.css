@@ -468,6 +468,10 @@ button:focus,
     .player-display-song-artist {
         padding: 0 10px;
     }
+
+    .player-display-song-artist > p {
+        white-space: pre-wrap;
+    }
 }
 
 /* 
