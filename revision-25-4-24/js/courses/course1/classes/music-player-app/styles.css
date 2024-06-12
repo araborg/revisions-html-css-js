@@ -391,6 +391,39 @@ button:focus,
     #playlist-songs::-webkit-scrollbar-thumb {
         background: var(--secondary-color);
     }
+
+    h1 {
+        font-size: 0.813rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+    }
+
+    /* .player-bar, */
+    /* .playlist-bar, */
+    .player-content,
+    #playlist-songs {
+        border: 5px solid green;
+
+        width: 280px;
+    }
+
+    .playlist-song {
+        justify-content: space-between;
+    }
+
+    .playlist-song-title {
+        width: 140px;
+    }
+
+    .playlist-song-artist {
+        width: 40px;
+    }
+
+    .playlist-song-duration > button {
+        padding: 0;
+    }
 }
 
 /* 
