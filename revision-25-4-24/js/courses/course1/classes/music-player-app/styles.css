@@ -427,6 +427,8 @@ button:focus,
 
     .player-content {
         height: 100%;
+
+        display: inline;
     }
 }
 
