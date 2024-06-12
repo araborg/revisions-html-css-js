@@ -288,6 +288,14 @@ button:focus,
     padding: 5px;
 }
 
+[aria-current="true"] {
+    background-color: var(--background-color);
+}
+
+[aria-current="true"] p {
+    color: var(--highlight-color);
+}
+
 /* 
 New css features i learnt:
 1. visibility
