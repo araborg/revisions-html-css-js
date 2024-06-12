@@ -359,6 +359,16 @@ button:focus,
     fill: #ff0000;
 }
 
+@media (max-width: 700px) {
+    .player,
+    .playlist {
+        width: 300px;
+    }
+
+    .player {
+    }
+}
+
 /* 
 New css features i learnt:
 1. visibility
