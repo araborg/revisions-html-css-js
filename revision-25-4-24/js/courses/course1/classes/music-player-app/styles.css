@@ -345,6 +345,13 @@ button:focus,
     font-size: 0.725rem;
 }
 
+.playlist-song-delete {
+    width: 20px;
+    height: 20px;
+
+    padding: 0;
+}
+
 /* 
 New css features i learnt:
 1. visibility
