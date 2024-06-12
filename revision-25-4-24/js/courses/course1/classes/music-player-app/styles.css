@@ -424,6 +424,10 @@ button:focus,
     .playlist-song-duration > button {
         padding: 0;
     }
+
+    .player-content {
+        height: 100%;
+    }
 }
 
 /* 
