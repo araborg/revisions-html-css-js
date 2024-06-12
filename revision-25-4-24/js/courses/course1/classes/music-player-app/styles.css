@@ -464,6 +464,10 @@ button:focus,
         justify-content: space-between;
         text-align: center;
     }
+
+    .player-display-song-artist {
+        padding: 0 10px;
+    }
 }
 
 /* 
