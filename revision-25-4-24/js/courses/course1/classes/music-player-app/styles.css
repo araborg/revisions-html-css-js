@@ -249,3 +249,8 @@ button:focus,
     outline-style: dashed;
     outline-width: 2px;
 }
+
+.playlist {
+    height: auto;
+    padding: 10px;
+}
