@@ -366,6 +366,7 @@ button:focus,
     }
 
     .player {
+        height: 340px;
     }
 }
 
