@@ -268,7 +268,12 @@ button:focus,
 
     display: flex;
     flex-direction: column;
-    /* justify-content: start; */
+    justify-content: start;
     row-gap: 8px;
-    /* padding: 8px 9px; */
+
+    padding: 8px 9px;
+
+    visibility: visible;
+
+    list-style: none;
 }
