@@ -430,6 +430,20 @@ button:focus,
 
         display: inline;
     }
+
+    #player-album-art {
+        height: 280px;
+
+        box-shadow: none;
+
+        background: #000;
+    }
+
+    #player-album-art img {
+        width: 100%;
+
+        opacity: 0.6;
+    }
 }
 
 /* 
