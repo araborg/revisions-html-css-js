@@ -462,6 +462,7 @@ button:focus,
         background-color: transparent;
 
         justify-content: space-between;
+        text-align: center;
     }
 }
 
