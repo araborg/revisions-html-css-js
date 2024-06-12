@@ -254,10 +254,15 @@ button:focus,
     height: auto;
     padding: 10px;
 
-    background-color: var(--foreground-color);
-
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
+}
+
+#playlist-songs {
+    width: 430px;
+    height: 100%;
+
+    background-color: var(--foreground-color);
 }
