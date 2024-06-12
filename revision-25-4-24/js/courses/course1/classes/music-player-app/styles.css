@@ -265,4 +265,10 @@ button:focus,
     height: 100%;
 
     background-color: var(--foreground-color);
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    row-gap: 8px;
+    /* padding: 8px 9px; */
 }
