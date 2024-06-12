@@ -278,6 +278,16 @@ button:focus,
     list-style: none;
 }
 
+.playlist-song {
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+}
+
 /* 
 New css features i learnt:
 1. visibility
