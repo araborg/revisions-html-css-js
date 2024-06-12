@@ -44,15 +44,15 @@
 }
 
 .player-song-title {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .player-display-song-artist {
-    border: 2px solid indianred;
+    /* border: 2px solid indianred; */
 }
 
 .player-buttons {
-    border: 2px solid rosybrown;
+    /* border: 2px solid rosybrown; */
 }
 
 .playlist {
@@ -64,7 +64,7 @@
 }
 
 #playlist-songs {
-    border: 2px solid goldenrod;
+    /* border: 2px solid goldenrod; */
 }
 
 /* project styles */
