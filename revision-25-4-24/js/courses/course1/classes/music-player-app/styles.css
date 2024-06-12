@@ -429,6 +429,10 @@ button:focus,
         height: 100%;
 
         display: inline;
+
+        justify-items: center;
+
+        position: relative;
     }
 
     #player-album-art {
@@ -437,12 +441,17 @@ button:focus,
         box-shadow: none;
 
         background: #000;
+        z-index: -100;
     }
 
     #player-album-art img {
         width: 100%;
 
         opacity: 0.6;
+    }
+
+    .player-display {
+        position: absolute;
     }
 }
 
@@ -457,4 +466,9 @@ New css features i learnt:
 6. -webkit-scrollbar 
 7. -webkit-scrollbar-track
 8. -webkit-scrollbar-thumb 
+
+9. box-shadow
+10. justify-items: center;
+
+
 */
