@@ -368,6 +368,17 @@ button:focus,
     .player {
         height: 340px;
     }
+
+    #playlist-songs {
+        height: 280px;
+        padding: 5px 6px;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        scrollbar-color: var(--background-color);
+        scrollbar-width: thin;
+    }
 }
 
 /* 
@@ -377,5 +388,8 @@ New css features i learnt:
 3. outline-color
 4. outline-style
 5. outline-width
-6. 
+
+6. -webkit-scrollbar 
+7. -webkit-scrollbar-track
+8. -webkit-scrollbar-thumb 
 */
