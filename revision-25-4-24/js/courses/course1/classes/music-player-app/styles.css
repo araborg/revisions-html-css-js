@@ -404,8 +404,6 @@ button:focus,
     /* .playlist-bar, */
     .player-content,
     #playlist-songs {
-        border: 5px solid green;
-
         width: 280px;
     }
 
