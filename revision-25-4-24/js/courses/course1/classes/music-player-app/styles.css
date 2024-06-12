@@ -331,6 +331,15 @@ button:focus,
     text-align: left;
 }
 
+.playlist-song-artist {
+    width: 80px;
+
+    font-size: 0.725rem;
+}
+
+.playlist-song-duration {
+}
+
 /* 
 New css features i learnt:
 1. visibility
