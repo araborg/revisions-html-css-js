@@ -139,13 +139,3 @@ const userData = {
     currentSong: null,
     songCurrentTime: 0,
 };
-
-const printGreeting = () => {
-    console.log("Hello there!");
-};
-
-printGreeting();
-
-const addTwoNumbers = (num1, num2) => num1 + num2;
-
-console.log(addTwoNumbers(3, 4));
