@@ -79,3 +79,7 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
     },
 ];
+
+const playlistSongs = document.getElementById("playlist-songs");
+
+console.log(playlistSongs);
