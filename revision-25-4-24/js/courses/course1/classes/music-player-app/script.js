@@ -131,3 +131,7 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
 ];
+
+const audio = new Audio();
+
+console.log(audio);
