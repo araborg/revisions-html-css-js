@@ -141,5 +141,7 @@ const userData = {
 };
 
 const renderSongs = (array) => {
-    const songsHTML = array.map((song) => {});
+    const songsHTML = array.map((song) => {
+        return ``;
+    });
 };
