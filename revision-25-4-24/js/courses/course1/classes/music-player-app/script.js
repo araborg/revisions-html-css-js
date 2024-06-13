@@ -140,6 +140,8 @@ const userData = {
     songCurrentTime: 0,
 };
 
+// console.log(userData?.songs[1]?.title);
+
 const renderSongs = (array) => {
     const songsHTML = array
         .map((song) => {
