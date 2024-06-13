@@ -134,4 +134,4 @@ const allSongs = [
 
 const audio = new Audio();
 
-console.log(audio);
+console.log(audio); // <audio preload="auto"></audio>
