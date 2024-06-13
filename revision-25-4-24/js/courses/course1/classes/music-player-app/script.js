@@ -140,4 +140,6 @@ const userData = {
     songCurrentTime: 0,
 };
 
-const renderSongs = (array) => {};
+const renderSongs = (array) => {
+    const songsHTML = array.map();
+};
