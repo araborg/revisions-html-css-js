@@ -141,8 +141,9 @@ const userData = {
 };
 
 const renderSongs = (array) => {
-    const songsHTML = array.map((song) => {
-        return `
+    const songsHTML = array
+        .map((song) => {
+            return `
             <li id='song-${song.id}' class='playlist-song'>
                 <button class='playlist-song-info'>
                     <span class="playlist-song-title">
@@ -160,7 +161,7 @@ const renderSongs = (array) => {
 
                 <button 
                     class="playlist-song-delete"
-                    arial-label="Delete-${song.title}"
+                    arial-label="Delete ${song.title}"
                 >
                     <svg 
                         width="20" 
@@ -179,9 +180,12 @@ const renderSongs = (array) => {
                     </svg>
                 </button>
 
-                
+
             </li>
         
         `;
-    });
+        })
+        .join("");
+
+    playlistSongs.innerHTML = songsHTML;
 };
