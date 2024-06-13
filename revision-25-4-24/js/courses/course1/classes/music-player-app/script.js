@@ -139,3 +139,5 @@ const userData = {
     currentSong: null,
     songCurrentTime: 0,
 };
+
+const renderSongs = (array) => {};
