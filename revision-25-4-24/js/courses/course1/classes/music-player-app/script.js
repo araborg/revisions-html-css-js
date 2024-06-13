@@ -1,3 +1,4 @@
+/*
 const allSongs = [
     {
         id: 0,
@@ -79,6 +80,7 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
     },
 ];
+*/
 
 const playlistSongs = document.getElementById("playlist-songs");
 
@@ -87,5 +89,3 @@ const pauseButton = document.getElementById("pause");
 const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
-
-console.log(playlistSongs, playButton, pauseButton);
