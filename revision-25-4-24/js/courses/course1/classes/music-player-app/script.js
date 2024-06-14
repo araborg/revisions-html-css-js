@@ -224,9 +224,7 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
-    console.log(userData?.currentSong?.id); // undefined
-    console.log(song.id);
-
+    /*
     if (
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
@@ -235,11 +233,20 @@ const playSong = (id) => {
     } else {
         audio.currentTime = userData?.songCurrentTime;
     }
+    */
+
+    if (userData?.currentSong === null) {
+        audio.currentTime = 0;
+        console.log("if statement");
+    } else if (userData?.currentSong.id !== song.id) {
+        console.log("else if statement");
+    } else {
+        audio.currentTime = userData?.songCurrentTime;
+
+        console.log("else statement");
+    }
 
     userData.currentSong = song;
-
-    console.log(userData?.currentSong?.id); // song.id
-    console.log(userData?.songCurrentTime);
 
     playButton.classList.add("playing");
 
