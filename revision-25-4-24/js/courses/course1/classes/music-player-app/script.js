@@ -130,6 +130,14 @@ const allSongs = [
         duration: "0:22",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
+
+    {
+        id: 5,
+        title: "Olori oko",
+        artist: "Infinity",
+        duration: "5:56",
+        src: "../music-player-app/music/Olori oko.mp3",
+    },
 ];
 
 const audio = new Audio();
@@ -230,6 +238,8 @@ const playSong = (id) => {
     }
 
     userData.currentSong = song;
+
+    console.log(userData?.currentSong?.id); // undefined
 
     playButton.classList.add("playing");
 
