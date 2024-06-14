@@ -212,28 +212,28 @@ renderSongs(sortSongs());
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
-    console.log(song);
 
     audio.src = song.src;
     audio.title = song.title;
 
-    console.log(userData?.currentSong?.id);
+    console.log(song);
+    console.log(userData?.currentSong?.id); // undefined
     console.log(song.id);
 
-    // if (
-    //     userData?.currentSong === null ||
-    //     userData?.currentSong.id !== song.id
-    // ) {
-    //     audio.currentTime = 0;
-    // } else {
-    //     audio.currentTime = userData?.songCurrentTime;
-    // }
+    if (
+        userData?.currentSong === null ||
+        userData?.currentSong.id !== song.id
+    ) {
+        audio.currentTime = 0;
+    } else {
+        audio.currentTime = userData?.songCurrentTime;
+    }
 
-    // userData.currentSong = song;
+    userData.currentSong = song;
 
-    // playButton.classList.add("playing");
+    playButton.classList.add("playing");
 
-    // audio.play();
+    audio.play();
 };
 
 playButton.addEventListener("click", () => {
