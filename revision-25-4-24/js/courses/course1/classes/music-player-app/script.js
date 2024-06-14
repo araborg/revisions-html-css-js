@@ -233,6 +233,8 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
+    console.log(userData?.previousSong.id, currentSong.id);
+
     userData.previousSong = currentSong;
 
     playButton.classList.add("playing");
