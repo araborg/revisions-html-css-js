@@ -214,9 +214,10 @@ const playSong = (id) => {
     audio.title = song.title;
 
     if (
-        userData?.currentSong === null &&
-        userData?.currentSong.id === song.id
+        userData?.currentSong === null ||
+        userData?.currentSong.id !== song.id
     ) {
+        audio.currentTime = 0;
     }
 };
 
