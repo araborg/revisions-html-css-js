@@ -207,16 +207,21 @@ const sortSongs = () => {
 
 renderSongs(sortSongs());
 
-const playSong = (id) => {};
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+};
 
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
 2. optional chaining (?.) for nested obj ppties dt might 
-be null or undefined
+be null or undefined.
+
 3. why .join() method is used on .map() method
+
 4. .find() method returns d 1st elemt dt fulfilled d 
 stipulated condition
+
 5.
 6.
 7.
