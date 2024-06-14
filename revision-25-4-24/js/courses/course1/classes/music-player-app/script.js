@@ -147,7 +147,10 @@ const renderSongs = (array) => {
         .map((song) => {
             return `
                 <li id='song-${song.id}' class='playlist-song'>
-                    <button class='playlist-song-info'>
+                    <button 
+                        class='playlist-song-info'
+                        onclick="playSong(${song.id})"
+                    >
                         <span class="playlist-song-title">
                             ${song.title}
                         </span>
@@ -209,30 +212,37 @@ renderSongs(sortSongs());
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
+    console.log(song);
 
     audio.src = song.src;
     audio.title = song.title;
 
-    console.log("userData?.currentSong.id " + userData?.currentSong.id);
-    console.log("song.id " + song.id);
+    console.log(userData?.currentSong?.id);
+    console.log(song.id);
 
-    if (
-        userData?.currentSong === null ||
-        userData?.currentSong.id !== song.id
-    ) {
-        audio.currentTime = 0;
-    } else {
-        audio.currentTime = userData?.songCurrentTime;
-    }
+    // if (
+    //     userData?.currentSong === null ||
+    //     userData?.currentSong.id !== song.id
+    // ) {
+    //     audio.currentTime = 0;
+    // } else {
+    //     audio.currentTime = userData?.songCurrentTime;
+    // }
 
-    userData.currentSong = song;
+    // userData.currentSong = song;
 
-    playButton.classList.add("playing");
+    // playButton.classList.add("playing");
 
-    audio.play();
+    // audio.play();
 };
 
-playButton.addEventListener("click");
+playButton.addEventListener("click", () => {
+    if (!userData?.currentSong) {
+        playSong(userData?.songs[0].id);
+    } else {
+        playSong(userData?.currentSong.id);
+    }
+});
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
