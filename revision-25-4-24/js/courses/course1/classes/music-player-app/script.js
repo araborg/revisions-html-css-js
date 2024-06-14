@@ -204,3 +204,5 @@ const sortSongs = () => {
 
     return userData?.songs;
 };
+
+console.log(sortSongs());
