@@ -243,6 +243,9 @@ playButton.addEventListener("click", () => {
         playSong(userData?.currentSong.id);
     }
 });
+
+const pauseSong = () => {};
+
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
