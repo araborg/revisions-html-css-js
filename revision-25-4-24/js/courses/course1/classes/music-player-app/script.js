@@ -225,15 +225,13 @@ const playSong = (id) => {
     audio.title = currentSong.title;
 
     if (
-        userData?.previousSong === null ||
-        userData?.previousSong.id !== currentSong.id
+        userData?.previousSong === null || // 1st click of a song
+        userData?.previousSong.id !== currentSong.id // 2nd click of same song
     ) {
         audio.currentTime = 0;
     } else {
         audio.currentTime = userData?.songCurrentTime;
     }
-
-    console.log(userData?.previousSong.id, currentSong.id);
 
     userData.previousSong = currentSong;
 
