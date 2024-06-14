@@ -224,7 +224,6 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
-    console.log(song);
     console.log(userData?.currentSong?.id); // undefined
     console.log(song.id);
 
@@ -239,7 +238,8 @@ const playSong = (id) => {
 
     userData.currentSong = song;
 
-    console.log(userData?.currentSong?.id); // undefined
+    console.log(userData?.currentSong?.id); // song.id
+    console.log(userData?.songCurrentTime);
 
     playButton.classList.add("playing");
 
