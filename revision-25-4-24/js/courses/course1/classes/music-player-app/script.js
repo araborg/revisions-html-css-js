@@ -226,8 +226,13 @@ const playSong = (id) => {
     }
 
     userData.currentSong = song;
+
+    playButton.classList.add("playing");
+
+    audio.play();
 };
 
+playButton.addEventListener("click");
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
