@@ -213,12 +213,19 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
+    console.log("userData?.currentSong.id " + userData?.currentSong.id);
+    console.log("song.id " + song.id);
+
     if (
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
     ) {
         audio.currentTime = 0;
+    } else {
+        audio.currentTime = userData?.songCurrentTime;
     }
+
+    userData.currentSong = song;
 };
 
 /*
