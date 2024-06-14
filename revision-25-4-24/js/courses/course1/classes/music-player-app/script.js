@@ -206,3 +206,5 @@ const sortSongs = () => {
 };
 
 renderSongs(sortSongs());
+
+const playSong = (id) => {};
