@@ -264,6 +264,8 @@ const pauseSong = () => {
     console.log(userData.currentTime);
 };
 
+pauseButton.addEventListener("click");
+
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
