@@ -225,12 +225,12 @@ const playSong = (id) => {
     audio.title = currentSong.title;
 
     if (
-        userData?.previousSong === null || // 1st click of a song
-        userData?.previousSong.id !== currentSong.id // 2nd click of same song
+        userData?.previousSong === null || // 1st click of a (same) song
+        userData?.previousSong.id !== currentSong.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
     } else {
-        audio.currentTime = userData?.songCurrentTime;
+        audio.currentTime = userData?.songCurrentTime; // 2nd click of same song
     }
 
     userData.previousSong = currentSong;
@@ -241,7 +241,7 @@ const playSong = (id) => {
 };
 
 playButton.addEventListener("click", () => {
-    if (!userData?.previousSong) {
+    if (userData?.previousSong === null) {
         playSong(userData?.songs[0].id);
     } else {
         playSong(userData?.previousSong.id);
