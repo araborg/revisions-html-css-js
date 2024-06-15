@@ -264,7 +264,7 @@ const pauseSong = () => {
     console.log(userData.currentTime);
 };
 
-pauseButton.addEventListener("click");
+pauseButton.addEventListener("click", pauseSong);
 
 /*
 Ths learnt:
