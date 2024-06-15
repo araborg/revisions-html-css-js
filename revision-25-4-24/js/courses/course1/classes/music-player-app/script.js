@@ -227,10 +227,10 @@ const renderSongs = (array) => {
 renderSongs(sortSongs());
 
 const playSong = (id) => {
-    const currentSong = userData?.songs.find((song) => song.id === id);
+    const song = userData?.songs.find((song) => song.id === id);
 
-    audio.src = currentSong.src;
-    audio.title = currentSong.title;
+    audio.src = song.src;
+    audio.title = song.title;
 
     if (
         userData?.currentSong === null || // 1st click of a (same) song
@@ -241,7 +241,7 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime; // 2nd click of d same song
     }
 
-    userData.currentSong = currentSong;
+    userData.currentSong = song;
 
     playButton.classList.add("playing");
 
