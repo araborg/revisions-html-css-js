@@ -238,6 +238,7 @@ button {
 
 .playlist-song {
     outline-color: var(--highlight-color);
+    background-image: var("../");
 }
 
 .playlist li:not(:last-child) {

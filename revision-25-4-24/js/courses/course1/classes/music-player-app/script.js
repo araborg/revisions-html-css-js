@@ -138,13 +138,21 @@ const allSongs = [
         duration: "5:56",
         src: "../music-player-app/music/Olori oko.mp3",
     },
+
+    {
+        id: 6,
+        title: "Ogoo ogo",
+        artist: "Dunsin Oyekan & Elijah Sunday",
+        duration: "10:53",
+        src: "../music-player-app/music/ogo.mp3",
+    },
 ];
 
 const audio = new Audio();
 
 const userData = {
     songs: [...allSongs],
-    previousSong: null,
+    currentSong: null,
     songCurrentTime: 0,
 };
 
@@ -225,15 +233,15 @@ const playSong = (id) => {
     audio.title = currentSong.title;
 
     if (
-        userData?.previousSong === null || // 1st click of a (same) song
-        userData?.previousSong.id !== currentSong.id // 1st click of a totally diff song
+        userData?.currentSong === null || // 1st click of a (same) song
+        userData?.currentSong.id !== currentSong.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
     } else {
-        audio.currentTime = userData?.songCurrentTime; // 2nd click of same song
+        audio.currentTime = userData?.songCurrentTime; // 2nd click of d same song
     }
 
-    userData.previousSong = currentSong;
+    userData.currentSong = currentSong;
 
     playButton.classList.add("playing");
 
@@ -241,10 +249,10 @@ const playSong = (id) => {
 };
 
 playButton.addEventListener("click", () => {
-    if (userData?.previousSong === null) {
+    if (userData?.currentSong === null) {
         playSong(userData?.songs[0].id);
     } else {
-        playSong(userData?.previousSong.id);
+        playSong(userData?.currentSong.id);
     }
 });
 
