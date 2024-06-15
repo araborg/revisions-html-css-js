@@ -234,7 +234,7 @@ const playSong = (id) => {
 
     if (
         userData?.currentSong === null || // 1st click of a (same) song
-        userData?.currentSong.id !== currentSong.id // 1st click of a totally diff song
+        userData?.currentSong.id !== song.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
     } else {
