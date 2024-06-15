@@ -258,6 +258,8 @@ playButton.addEventListener("click", () => {
 
 const pauseSong = () => {
     userData.currentTime = audio.currentTime;
+    playButton.classList.remove("playing");
+    play.pause();
 
     console.log(userData.currentTime);
 };
