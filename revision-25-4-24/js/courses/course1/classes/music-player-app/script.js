@@ -256,7 +256,11 @@ playButton.addEventListener("click", () => {
     }
 });
 
-const pauseSong = () => {};
+const pauseSong = () => {
+    userData.currentTime = audio.currentTime;
+
+    console.log(userData.currentTime);
+};
 
 /*
 Ths learnt:
