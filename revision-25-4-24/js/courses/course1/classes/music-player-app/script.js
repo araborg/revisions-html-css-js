@@ -268,7 +268,7 @@ const pauseSong = () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
-const getCurrentSongIndex = () => {};
+const getCurrentSongIndex = () => userData.songs.indexOf(userData?.currentSong);
 
 /*
 Ths learnt:
@@ -281,7 +281,8 @@ be null or undefined.
 4. .find() method returns d 1st elemt dt fulfilled d 
 stipulated condition
 
-5.
+5. .indexOf()
+
 6.
 7.
 8.
