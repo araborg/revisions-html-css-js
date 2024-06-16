@@ -268,6 +268,8 @@ const pauseSong = () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
+const getCurrentSongIndex = () => {};
+
 /*
 Ths learnt:
 1. arrow fxn (() => {}) is an anonymous fxn expression
