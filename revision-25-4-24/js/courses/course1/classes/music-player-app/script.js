@@ -237,19 +237,17 @@ const playSong = (id) => {
         userData?.currentSong.id !== song.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
+        console.log("Hello button clicked 1");
     } else {
         audio.currentTime = userData?.songCurrentTime; // 2nd click of d same song
+        console.log("Hello button clicked 1++");
     }
-
-    console.log(audio.currentTime);
 
     userData.currentSong = song;
 
     playButton.classList.add("playing");
 
     audio.play();
-
-    console.log(userData.songCurrentTime);
 };
 
 playButton.addEventListener("click", () => {
@@ -266,8 +264,6 @@ const pauseSong = () => {
     playButton.classList.remove("playing");
 
     audio.pause();
-
-    console.log(userData.songCurrentTime);
 };
 
 pauseButton.addEventListener("click", pauseSong);
