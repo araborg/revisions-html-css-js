@@ -306,6 +306,10 @@ const highlightCurrentSong = () => {
     playlistSongElements.forEach((songEl) => {
         songEl.removeAttribute("aria-current");
     });
+
+    if (songToHighlight) {
+        return songToHighlight.setAttribute("aria-current", true);
+    }
 };
 
 //
@@ -336,8 +340,8 @@ stipulated condition
 
 5. .indexOf()
 6. .removeAttribute()
+7. .setAttribute(arg1, arg2)
 
-7.
 8.
 9.
 10.
