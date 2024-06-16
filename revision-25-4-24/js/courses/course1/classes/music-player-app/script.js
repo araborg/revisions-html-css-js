@@ -314,6 +314,7 @@ const highlightCurrentSong = () => {
 };
 
 const setPlayerDisplay = () => {};
+
 //
 //
 //
