@@ -303,7 +303,9 @@ const highlightCurrentSong = () => {
         `song-${userData?.currentSong.id}`
     );
 
-    playlistSongElements.forEach((songEl) => {});
+    playlistSongElements.forEach((songEl) => {
+        songEl.removeAttribute("aria-current");
+    });
 };
 
 //
@@ -329,13 +331,12 @@ Ths learnt:
 be null or undefined.
 
 3. why .join() method is used on .map() method
-
 4. .find() method returns d 1st elemt dt fulfilled d 
 stipulated condition
 
 5. .indexOf()
+6. .removeAttribute()
 
-6.
 7.
 8.
 9.
