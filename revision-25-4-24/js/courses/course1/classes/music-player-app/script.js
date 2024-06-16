@@ -248,6 +248,7 @@ const playSong = (id) => {
     playButton.classList.add("playing");
 
     highlightCurrentSong();
+    setPlayerDisplay();
 
     audio.play();
 };
@@ -314,7 +315,7 @@ const highlightCurrentSong = () => {
 };
 
 const setPlayerDisplay = () => {
-    const playingSong = document.getElementById("player-song-title ");
+    const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
 
     const currentTitle = userData?.currentSong?.title;
