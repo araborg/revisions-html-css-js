@@ -282,6 +282,8 @@ const playNextSong = () => {
     }
 };
 
+nextButton.addEventListener("click", playNextSong);
+
 //
 //
 //
