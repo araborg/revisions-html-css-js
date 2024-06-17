@@ -343,6 +343,11 @@ const shuffle = () => {
 
     userData.currentSong = null;
     userData.songCurrentTime = 0;
+
+    renderSongs(userData?.songs);
+    pauseSong();
+    setPlayerDisplay();
+    setPlayButtonAccessibleText();
 };
 
 //
