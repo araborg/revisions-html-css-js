@@ -369,6 +369,9 @@ const deleteSong = (id) => {
         pauseSong();
         setPlayerDisplay();
     }
+
+    if (userData?.songs.length === 0) {
+    }
 };
 
 //
