@@ -199,6 +199,7 @@ const renderSongs = (array) => {
                     <button 
                         class="playlist-song-delete"
                         arial-label="Delete ${song.title}"
+                        onclick="deleteSong(${song.id})"
                     >
                         <svg 
                             width="20" 
