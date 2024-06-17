@@ -391,7 +391,13 @@ const deleteSong = (id) => {
     }
 };
 
-audio.addEventListener("ended", () => {});
+audio.addEventListener("ended", () => {
+    const currentSongIndex = getCurrentSongIndex();
+    const nextSongExists =
+        userData?.songs.length - 1 > currentSongIndex ? true : false;
+
+    // if (nextSongExists) playNextSong();
+});
 
 //
 //
