@@ -376,6 +376,9 @@ const deleteSong = (id) => {
 
         resetButton.id = "reset";
         resetButton.ariaLabel = "Reset playlist";
+
+        resetButton.appendChild(resetText);
+        playlistSongs.appendChild(resetButton);
     }
 };
 
@@ -412,8 +415,8 @@ stipulated condition
 9. .filter()
 10. .createElement()
 11. .createTextNode()
+12. .appendChild()
 
-12.
 13.
 14.
 15.
