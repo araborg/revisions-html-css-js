@@ -362,6 +362,8 @@ const deleteSong = (id) => {
     setPlayButtonAccessibleText();
 
     if (userData?.currentSong.id === id) {
+        userData.currentSong = null;
+        userData.currentSong = 0;
     }
 };
 
