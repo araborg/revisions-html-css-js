@@ -360,6 +360,9 @@ const deleteSong = (id) => {
     renderSongs(userData.songs);
     highlightCurrentSong();
     setPlayButtonAccessibleText();
+
+    if (userData?.currentSong.id === id) {
+    }
 };
 
 //
