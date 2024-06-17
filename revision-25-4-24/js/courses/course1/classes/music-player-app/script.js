@@ -382,6 +382,11 @@ const deleteSong = (id) => {
 
         resetButton.addEventListener("click", () => {
             userData.songs = [...allSongs];
+
+            renderSongs(sortSongs());
+
+            setPlayButtonAccessibleText();
+            resetButton.remove();
         });
     }
 };
@@ -421,7 +426,7 @@ stipulated condition
 11. .createTextNode()
 12. .appendChild()
 
-13.
+13. .remove()
 14.
 15.
 */
