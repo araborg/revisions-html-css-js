@@ -339,7 +339,7 @@ const setPlayButtonAccessibleText = () => {
 };
 
 const shuffle = () => {
-    userData?.songs.sort(Math.random() - 0.5);
+    userData?.songs.sort(() => Math.random() - 0.5);
 };
 
 //
