@@ -385,9 +385,9 @@ stipulated condition
 5. .indexOf()
 6. .removeAttribute()
 7. .setAttribute(arg1, arg2)
+8. Math.random() - 0.5
+9. .filter()
 
-8.
-9.
 10.
 11.
 12.
