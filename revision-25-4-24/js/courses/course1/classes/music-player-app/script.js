@@ -300,8 +300,8 @@ const playPreviousSong = () => {
 
 previousButton.addEventListener("click", playPreviousSong);
 
-// const highlightCurrentSong = () => {
-function highlightCurrentSong() {
+const highlightCurrentSong = () => {
+    // function highlightCurrentSong() {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
     const songToHighlight = document.getElementById(
         `song-${userData?.currentSong.id}`
@@ -314,10 +314,10 @@ function highlightCurrentSong() {
     if (songToHighlight) {
         return songToHighlight.setAttribute("aria-current", true);
     }
-}
+};
 
-// const setPlayerDisplay = () => {
-function setPlayerDisplay() {
+const setPlayerDisplay = () => {
+    // function setPlayerDisplay() {
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
 
@@ -326,17 +326,19 @@ function setPlayerDisplay() {
 
     playingSong.textContent = currentTitle ? currentTitle : "";
     songArtist.textContent = currentArtist ? currentArtist : "";
-}
+};
 
-// const setPlayButtonAccessibleText = () => {
-function setPlayButtonAccessibleText() {
+const setPlayButtonAccessibleText = () => {
+    // function setPlayButtonAccessibleText() {
     const song = userData?.currentSong || userData.songs[0];
 
     playButton.setAttribute(
         "aria-label",
         song?.title ? `Play ${song.title}` : "Play"
     );
-}
+};
+
+const shuffle = () => {};
 
 //
 //
