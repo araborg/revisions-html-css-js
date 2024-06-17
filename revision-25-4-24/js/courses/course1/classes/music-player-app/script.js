@@ -305,7 +305,7 @@ const highlightCurrentSong = () => {
     // function highlightCurrentSong() {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
     const songToHighlight = document.getElementById(
-        `song-${userData?.currentSong.id}`
+        `song-${userData?.currentSong?.id}`
     );
 
     playlistSongElements.forEach((songEl) => {
@@ -362,7 +362,7 @@ const deleteSong = (id) => {
     highlightCurrentSong();
     setPlayButtonAccessibleText();
 
-    if (userData?.currentSong.id === id) {
+    if (userData?.currentSong?.id === id) {
         userData.currentSong = null;
         userData.currentSong = 0;
 
