@@ -396,7 +396,9 @@ audio.addEventListener("ended", () => {
     const nextSongExists =
         userData?.songs.length - 1 > currentSongIndex ? true : false;
 
-    if (nextSongExists) playNextSong();
+    if (nextSongExists) {
+        playNextSong();
+    }
 });
 
 //
