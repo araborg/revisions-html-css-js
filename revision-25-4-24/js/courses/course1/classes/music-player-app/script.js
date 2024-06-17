@@ -391,6 +391,8 @@ const deleteSong = (id) => {
     }
 };
 
+audio.addEventListener("ended", () => {});
+
 //
 //
 //
@@ -427,6 +429,6 @@ stipulated condition
 12. .appendChild()
 
 13. .remove()
-14.
+14. ended event
 15.
 */
