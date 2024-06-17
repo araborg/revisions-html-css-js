@@ -339,16 +339,21 @@ const setPlayButtonAccessibleText = () => {
 };
 
 const shuffle = () => {
-    userData?.songs.sort(() => Math.random() - 0.5);
+    // userData?.songs.sort(() => Math.random() - 0.5);
+    const shuffledSongs = userData?.songs.sort(() => Math.random() - 0.5);
+    console.log(shuffledSongs);
 
     userData.currentSong = null;
     userData.songCurrentTime = 0;
 
-    renderSongs(userData?.songs);
+    // renderSongs(userData?.songs);
+    renderSongs(shuffledSongs);
     pauseSong();
     setPlayerDisplay();
     setPlayButtonAccessibleText();
 };
+
+shuffleButton.addEventListener("click", shuffle);
 
 //
 //
