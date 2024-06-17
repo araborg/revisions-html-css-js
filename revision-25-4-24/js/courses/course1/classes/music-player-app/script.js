@@ -371,6 +371,7 @@ const deleteSong = (id) => {
     }
 
     if (userData?.songs.length === 0) {
+        const resetButton = document.createElement("button");
     }
 };
 
@@ -405,8 +406,8 @@ stipulated condition
 7. .setAttribute(arg1, arg2)
 8. Math.random() - 0.5
 9. .filter()
+10. .createElement()
 
-10.
 11.
 12.
 13.
