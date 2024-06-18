@@ -274,8 +274,6 @@ const playSong = (id) => {
     setPlayerDisplay();
     setPlayButtonAccessibleText();
 
-    console.log(audio.ended == true);
-
     audio.play();
 };
 
@@ -449,6 +447,8 @@ audio.addEventListener("ended", () => {
         highlightCurrentSong();
         setPlayButtonAccessibleText();
     }
+
+    console.log(audio.ended == true);
 });
 
 //
