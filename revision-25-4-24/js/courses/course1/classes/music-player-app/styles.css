@@ -329,10 +329,11 @@ button:focus,
 #player-song-duration {
     font-size: 0.75rem;
     color: var(--highlight-color);
+    margin-top: 5px;
 }
 
 .playlist-song-title {
-    width: 241px;
+    width: 220px;
 
     font-size: 0.85rem;
     text-align: left;
