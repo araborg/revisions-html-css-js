@@ -366,10 +366,10 @@ button:focus,
     width: 20px;
     height: 20px;
 
-    padding: 0;
+    /* padding: 0; */
     border: 2px solid red;
-    text-align: center;
-    align-self: center;
+    /* text-align: center; */
+    /* align-self: center; */
 
     fill: var(--secondary-color);
 }
