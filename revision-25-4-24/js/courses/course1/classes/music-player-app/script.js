@@ -152,6 +152,7 @@ const allSongs = [
 // very impt
 const audio = new Audio();
 
+// make a copy of the allSongs so as not to directly modify it
 const userData = {
     songs: [...allSongs],
     currentSong: null,
