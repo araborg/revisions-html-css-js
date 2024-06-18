@@ -386,11 +386,10 @@ const replaySong = (id) => {
     if (userData?.currentSong !== null) {
         const replaySong = userData?.songs.find((song) => song.id === id);
 
-        console.log(audio.ended);
+        if (audio.currentTime !== replaySong.duration) {
+            // alert("replay 1");
 
-        if (audio.currentTime === replaySong.duration) {
-            //     playSong(replaySong.id);
-            alert("replay 1");
+            setInterval(playSong(replaySong.id), replaySong.duration);
         }
     }
 };
