@@ -363,6 +363,7 @@ button:focus,
 }
 
 .playlist-song-replay {
+    fill: var(--secondary-color);
 }
 
 .playlist-song-delete:hover circle,
