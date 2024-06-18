@@ -268,9 +268,9 @@ const playSong = (id) => {
         // console.log("Hello button clicked 1++");
     }
 
-    console.log(userData?.currentSong);
+    // console.log(userData?.currentSong);
     userData.currentSong = song;
-    console.log(userData?.currentSong);
+    // console.log(userData?.currentSong);
 
     playButton.classList.add("playing");
 
