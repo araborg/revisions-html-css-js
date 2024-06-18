@@ -328,6 +328,7 @@ button:focus,
 
 #player-song-duration {
     font-size: 0.75rem;
+    color: var(--highlight-color);
 }
 
 .playlist-song-title {
