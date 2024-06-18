@@ -388,10 +388,10 @@ const replaySong = (id) => {
 
         console.log(audio.ended);
 
-        // if (audio.ended) {
-        //     playSong(replaySong.id);
-        //     console.log("replay 1");
-        // }
+        if (audioEnded) {
+            //     playSong(replaySong.id);
+            alert("replay 1");
+        }
     }
 };
 
