@@ -159,8 +159,7 @@ const userData = {
     songCurrentTime: 0,
 };
 
-// console.log(userData?.songs[1]?.title);
-
+// d lesser item get sorted 1st
 const sortSongs = () => {
     userData?.songs.sort((a, b) => {
         if (a.title < b.title) {
