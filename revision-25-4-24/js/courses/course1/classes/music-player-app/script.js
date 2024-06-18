@@ -262,10 +262,10 @@ const playSong = (id) => {
         userData?.currentSong.id !== song.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
-        // console.log("Hello button clicked 1");
+        console.log("Hello button clicked 1");
     } else {
-        audio.currentTime = userData?.songCurrentTime; // 2nd click of d same song
-        // console.log("Hello button clicked 1++");
+        audio.currentTime = userData?.songCurrentTime; // 2nd/3rd/4th... clicks of d same song
+        console.log("Hello button clicked 1++");
     }
 
     userData.currentSong = song;
@@ -386,11 +386,14 @@ const replaySong = (id) => {
     if (userData?.currentSong !== null) {
         const replaySong = userData?.songs.find((song) => song.id === id);
 
-        if (audio.currentTime !== replaySong.duration) {
-            console.log("replay 1");
+        if (
+            audio.currentTime !== replaySong.duration &&
+            replaySong.duration > 0
+        ) {
             const iReplay = () => playSong(replaySong.id);
 
             setInterval(iReplay, replaySong.duration);
+            console.log("replay 1");
         }
     }
 };
