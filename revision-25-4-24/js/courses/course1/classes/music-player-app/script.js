@@ -338,6 +338,7 @@ const setPlayerDisplay = () => {
     // function setPlayerDisplay() {
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
+    const songDuration = document.getElementById("player-song-duration");
 
     const currentTitle = userData?.currentSong?.title;
     const currentArtist = userData?.currentSong?.artist;
