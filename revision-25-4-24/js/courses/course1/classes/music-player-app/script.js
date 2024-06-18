@@ -91,6 +91,8 @@ const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
+let audioEnded;
+
 const allSongs = [
     {
         id: 0,
@@ -448,9 +450,7 @@ audio.addEventListener("ended", () => {
         setPlayButtonAccessibleText();
     }
 
-    audio.ended = true;
-
-    console.log(audio.ended);
+    audioEnded = !audio.ended;
 });
 
 //
