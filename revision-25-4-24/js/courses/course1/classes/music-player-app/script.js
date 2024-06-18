@@ -384,8 +384,9 @@ const replaySong = (id) => {
     if (userData?.currentSong?.id !== null) {
         const replaySong = userData?.songs.find((song) => song.id === id);
 
-        while (true) {
+        while (userData?.currentSong !== null) {
             playSong(replaySong.id);
+            console.log("replay");
         }
     }
 };
