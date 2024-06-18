@@ -388,7 +388,7 @@ const replaySong = (id) => {
 
         console.log(audio.ended);
 
-        if (audioEnded) {
+        if (audio.currentTime === replaySong.duration) {
             //     playSong(replaySong.id);
             alert("replay 1");
         }
