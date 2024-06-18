@@ -197,7 +197,11 @@ const renderSongs = (array) => {
                         </span>
                     </button>
 
-                    <button>
+                    <button
+                        class="playlist-song-delete"
+                        arial-label="Replay ${song.title}"
+                        onclick=""
+                    >
                         <svg
                             width="24"
                             height="19"
