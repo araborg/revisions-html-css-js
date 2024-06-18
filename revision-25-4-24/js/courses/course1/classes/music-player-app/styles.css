@@ -312,7 +312,8 @@ button:focus,
 }
 
 #player-song-title,
-#player-song-artist {
+#player-song-artist,
+#player-song-duration {
     margin: 0;
 }
 
@@ -323,6 +324,10 @@ button:focus,
 
 #player-song-title {
     font-size: 1.125rem;
+}
+
+#player-song-duration {
+    font-size: 0.75rem;
 }
 
 .playlist-song-title {
