@@ -381,6 +381,7 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const replaySong = (id) => {
+    console.log(id);
     if (userData?.currentSong?.id !== null) {
         const replaySong = userData?.songs[id];
         console.log(replaySong);
