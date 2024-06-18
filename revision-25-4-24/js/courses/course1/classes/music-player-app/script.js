@@ -381,7 +381,9 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const replaySong = (id) => {
-    console.log(id);
+    if (playSong(id)) {
+        console.log("a song is playing");
+    }
 };
 
 replayButton.addEventListener("click", replaySong);
