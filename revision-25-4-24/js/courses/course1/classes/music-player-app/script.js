@@ -274,6 +274,8 @@ const playSong = (id) => {
     setPlayerDisplay();
     setPlayButtonAccessibleText();
 
+    console.log(audio.ended == true);
+
     audio.play();
 };
 
@@ -381,12 +383,14 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const replaySong = (id) => {
-    while (userData?.currentSong !== null && audio.ended) {
+    if (userData?.currentSong !== null) {
         const replaySong = userData?.songs.find((song) => song.id === id);
 
-        // if (userData?.currentSong !== null) {
-        playSong(replaySong.id);
-        console.log("replay 1");
+        console.log(audio.ended);
+
+        // if (audio.ended) {
+        //     playSong(replaySong.id);
+        //     console.log("replay 1");
         // }
     }
 };
