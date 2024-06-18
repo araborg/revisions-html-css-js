@@ -443,12 +443,14 @@ audio.addEventListener("ended", () => {
         userData.songCurrentTime = 0;
 
         pauseSong();
-        setPlayerDisplay();
+        audio.setPlayerDisplay();
         highlightCurrentSong();
         setPlayButtonAccessibleText();
     }
 
-    console.log(audio.ended == true);
+    audio.ended = true;
+
+    console.log(audio.ended);
 });
 
 //
