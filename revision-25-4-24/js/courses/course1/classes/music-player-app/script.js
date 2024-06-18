@@ -386,6 +386,7 @@ const replaySong = (id) => {
 
         if (userData?.currentSong !== null) {
             playSong(replaySong.id);
+            console.log("replay 1");
         }
     }
 };
