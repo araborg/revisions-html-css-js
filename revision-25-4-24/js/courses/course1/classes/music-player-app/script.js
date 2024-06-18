@@ -262,13 +262,15 @@ const playSong = (id) => {
         userData?.currentSong.id !== song.id // 1st click of a totally diff song
     ) {
         audio.currentTime = 0;
-        console.log("Hello button clicked 1");
+        // console.log("Hello button clicked 1");
     } else {
         audio.currentTime = userData?.songCurrentTime; // 2nd/3rd/4th... clicks of d same song
-        console.log("Hello button clicked 1++");
+        // console.log("Hello button clicked 1++");
     }
 
+    console.log(userData?.currentSong);
     userData.currentSong = song;
+    console.log(userData?.currentSong);
 
     playButton.classList.add("playing");
 
