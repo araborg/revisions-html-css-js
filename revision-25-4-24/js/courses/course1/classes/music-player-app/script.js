@@ -201,7 +201,7 @@ const renderSongs = (array) => {
                     <button
                         class="playlist-song-replay playlist-song-info"
                         arial-label="Replay ${song.title}"
-                        onclick=""
+                        onclick="replaySong(${song.id})"
                     >
                         <svg
                             width="24"
