@@ -198,7 +198,7 @@ const renderSongs = (array) => {
                     </button>
 
                     <button
-                        class="playlist-song-delete"
+                        class="playlist-song-replay"
                         arial-label="Replay ${song.title}"
                         onclick=""
                     >
