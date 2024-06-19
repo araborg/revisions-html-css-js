@@ -385,23 +385,26 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-const replaySong = () => {
+const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
         const currentSongIndex = getCurrentSongIndex();
 
         if (currentSongIndex === -1) {
             let currentSongIndex = 0;
             playSong(userData?.songs[currentSongIndex]?.id);
+
+            highlightCurrentSong();
+            setPlayButtonAccessibleText();
         }
     });
 };
 
-replayButton.addEventListener("click", replaySong);
+replayButton.addEventListener("click", replayAllSongs);
 
 /*
 replayButton;
 
-const replayAllSongs = (id) => {
+const replaySong = (id) => {
     if (userData?.currentSong !== null) {
         const song = userData?.songs.find((song) => song.id === id);
 
