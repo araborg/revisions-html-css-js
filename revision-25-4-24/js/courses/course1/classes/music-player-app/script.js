@@ -276,6 +276,7 @@ const playSong = (id) => {
 
     highlightCurrentSong();
     setPlayerDisplay();
+
     setPlayButtonAccessibleText();
 
     audio.play();
@@ -328,7 +329,6 @@ const playPreviousSong = () => {
 previousButton.addEventListener("click", playPreviousSong);
 
 const highlightCurrentSong = () => {
-    // function highlightCurrentSong() {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
     const songToHighlight = document.getElementById(
         `song-${userData?.currentSong?.id}`
