@@ -435,6 +435,7 @@ const deleteSong = (id) => {
             renderSongs(sortSongs());
 
             setPlayButtonAccessibleText();
+
             resetButton.remove();
         });
     }
@@ -454,6 +455,7 @@ audio.addEventListener("ended", () => {
         pauseSong();
         audio.setPlayerDisplay();
         highlightCurrentSong();
+
         setPlayButtonAccessibleText();
     }
 
@@ -483,5 +485,10 @@ stipulated condition
 
 13. .remove()
 14. ended event
-15.
+15. setPlayButtonAccessibleText() called in: 
+    playSong()
+    shuffle()
+    deleteSong()
+        resetButton()
+    audio.addEventListener()
 */
