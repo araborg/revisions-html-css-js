@@ -386,23 +386,11 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-const replaySong = (id) => {
-    if (userData?.currentSong !== null) {
-        const replaySong = userData?.songs.find((song) => song.id === id);
+const replayAllSongs = (id) => {};
 
-        if (
-            audio.currentTime !== replaySong.duration &&
-            replaySong.duration > 0
-        ) {
-            const iReplay = () => playSong(replaySong.id);
+replayButton.addEventListener("click", replayAllSongs);
 
-            setInterval(iReplay, replaySong.duration);
-            console.log("replay 1");
-        }
-    }
-};
-
-replayButton.addEventListener("click", replaySong);
+const replaySong = (id) => {};
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
