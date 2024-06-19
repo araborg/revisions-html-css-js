@@ -201,7 +201,6 @@ const renderSongs = (array) => {
                     <button
                         class="playlist-song-replay playlist-song-info"
                         arial-label="Replay ${song.title}"
-                        onclick="replaySong(${song.id})"
                     >
                         <svg
                             width="24"
@@ -389,27 +388,28 @@ shuffleButton.addEventListener("click", shuffle);
 const replaySong = () => {
     audio.addEventListener("ended", () => {
         const currentSongIndex = getCurrentSongIndex();
-        const nextSongExists =
-            userData?.songs.length - 1 > currentSongIndex ? true : false;
+        // const nextSongExists =
+        //     userData?.songs.length - 1 > currentSongIndex ? true : false;
 
-        if (nextSongExists) {
-            playNextSong();
-        } else {
-            // userData.currentSong = null;
-            // userData.songCurrentTime = 0;
-
-            // pauseSong();
-            // setPlayerDisplay();
-            // highlightCurrentSong();
-
-            // setPlayButtonAccessibleText();
-
-            playSong(userData?.songs[0].id);
+        if (currentSongIndex) {
+            playSong(currentSongIndex);
         }
+        //  else {
+        // userData.currentSong = null;
+        // userData.songCurrentTime = 0;
+
+        // pauseSong();
+        // setPlayerDisplay();
+        // highlightCurrentSong();
+
+        // setPlayButtonAccessibleText();
+
+        // playSong(userData?.songs[0].id);
+        // }
     });
 };
 
-songToReplay.addEventListener("click", replaySong);
+replayButton.addEventListener("click", replaySong);
 
 replayButton;
 
