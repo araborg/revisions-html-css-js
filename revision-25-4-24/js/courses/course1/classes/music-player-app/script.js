@@ -386,7 +386,26 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-const replayAllSongs = (id) => {};
+const replayAllSongs = () => {
+    audio.addEventListener("ended", () => {
+        const currentSongIndex = getCurrentSongIndex();
+        const nextSongExists =
+            userData?.songs.length - 1 > currentSongIndex ? true : false;
+
+        if (nextSongExists) {
+            playNextSong();
+        } else {
+            userData.currentSong = null;
+            userData.songCurrentTime = 0;
+
+            pauseSong();
+            setPlayerDisplay();
+            highlightCurrentSong();
+
+            setPlayButtonAccessibleText();
+        }
+    });
+};
 
 replayButton.addEventListener("click", replayAllSongs);
 
@@ -441,7 +460,7 @@ const deleteSong = (id) => {
     }
 };
 
-/*
+// /*
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
     const nextSongExists =
@@ -454,14 +473,15 @@ audio.addEventListener("ended", () => {
         userData.songCurrentTime = 0;
 
         pauseSong();
-        audio.setPlayerDisplay();
+        setPlayerDisplay();
         highlightCurrentSong();
 
         setPlayButtonAccessibleText();
     }
-
 });
-*/
+
+setPlayButtonAccessibleText();
+// */
 
 //
 
