@@ -397,7 +397,7 @@ const replaySong = () => {
         // console.log(nextSongExists);
         if (currentSongIndex === -1) {
             let currentSongIndex = 0;
-            playSong(currentSongIndex);
+            playSong(userData?.songs[currentSongIndex]);
             //     console.log("end of the song");
         }
         //  else {
