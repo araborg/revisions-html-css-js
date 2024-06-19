@@ -400,21 +400,25 @@ const replayAllSongs = () => {
             }
         });
     } else {
-        alert("Play a song of your choice");
+        alert("Play a song of your choice before replay");
     }
 };
 
 replayButton.addEventListener("click", replayAllSongs);
 
 const replaySong = (id) => {
-    const replaySong = userData?.songs.find((song) => song.id === id);
+    if (userData?.currentSong) {
+        const replaySong = userData?.songs.find((song) => song.id === id);
 
-    audio.addEventListener("ended", () => {
-        highlightCurrentSong();
-        setPlayButtonAccessibleText();
+        audio.addEventListener("ended", () => {
+            highlightCurrentSong();
+            setPlayButtonAccessibleText();
 
-        playSong(replaySong.id);
-    });
+            playSong(replaySong.id);
+        });
+    } else {
+        alert("Play a song of your choice before replay");
+    }
 };
 
 const deleteSong = (id) => {
