@@ -362,7 +362,7 @@ const setPlayButtonAccessibleText = () => {
         song?.title ? `Play ${song.title}` : "Play"
     );
 
-    console.log(playButton.getAttribute("aria-label"));
+    // console.log(playButton.getAttribute("aria-label"));
 };
 
 setPlayButtonAccessibleText();
@@ -385,16 +385,16 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-/*
 const replaySong = () => {
     audio.addEventListener("ended", () => {
         const currentSongIndex = getCurrentSongIndex();
-        // const nextSongExists =
-        //     userData?.songs.length - 1 > currentSongIndex ? true : false;
+        const nextSongExists =
+            userData?.songs.length - 1 > currentSongIndex ? true : false;
 
-        if (currentSongIndex) {
-            playSong(currentSongIndex);
-        }
+        console.log(nextSongExists);
+        // if (!nextSongExists) {
+        //     console.log("end of the song");
+        // }
         //  else {
         // userData.currentSong = null;
         // userData.songCurrentTime = 0;
@@ -412,6 +412,7 @@ const replaySong = () => {
 
 replayButton.addEventListener("click", replaySong);
 
+/*
 replayButton;
 
 const replayAllSongs = (id) => {
@@ -488,7 +489,6 @@ audio.addEventListener("ended", () => {
 
 function init() {
     highlightCurrentSong();
-    console.log("running");
 }
 
 init();
