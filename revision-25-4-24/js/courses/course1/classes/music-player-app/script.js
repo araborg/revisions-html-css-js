@@ -528,6 +528,7 @@ const highlightCurrentSong
 const setPlayerDisplay
 const setPlayButtonAccessibleText
 const shuffle
+const replayAllSongs
 const replaySong
 const deleteSong
 */
