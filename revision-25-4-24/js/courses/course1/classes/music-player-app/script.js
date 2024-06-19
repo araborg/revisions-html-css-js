@@ -201,6 +201,7 @@ const renderSongs = (array) => {
                     <button
                         class="playlist-song-replay playlist-song-info"
                         arial-label="Replay ${song.title}"
+                        onclick="replaySong(${song.id})"
                     >
                         <svg
                             width="24"
@@ -401,22 +402,10 @@ const replayAllSongs = () => {
 
 replayButton.addEventListener("click", replayAllSongs);
 
-/*
-replayButton;
-
 const replaySong = (id) => {
-    if (userData?.currentSong !== null) {
-        const song = userData?.songs.find((song) => song.id === id);
-
-        if (audio.currentTime !== song.duration && song.duration > 0) {
-            const iReplay = () => playSong(song.id);
-
-            setInterval(iReplay, song.duration);
-            console.log("replay 1");
-        }
-    }
+    const currentSongIndex = getCurrentSongIndex();
+    console.log(currentSongIndex);
 };
-*/
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
