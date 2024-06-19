@@ -441,6 +441,7 @@ const deleteSong = (id) => {
     }
 };
 
+/*
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
     const nextSongExists =
@@ -459,8 +460,8 @@ audio.addEventListener("ended", () => {
         setPlayButtonAccessibleText();
     }
 
-    audioEnded = !audio.ended;
 });
+*/
 
 //
 
