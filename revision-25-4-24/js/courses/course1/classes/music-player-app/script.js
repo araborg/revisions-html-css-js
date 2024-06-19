@@ -403,14 +403,11 @@ const replayAllSongs = () => {
 replayButton.addEventListener("click", replayAllSongs);
 
 const replaySong = (id) => {
-    const currentSongIndex = getCurrentSongIndex();
-    console.log(userData?.songs[id].id);
-    console.log(id);
-    const replaySong = userData?.songs.findIndex((song) => song.id === id);
+    const replaySong = userData?.songs.find((song) => song.id === id);
     console.log(replaySong);
 
     audio.addEventListener("ended", () => {
-        playSong(userData?.songs[id].id);
+        playSong(replaySong.id);
     });
 };
 
