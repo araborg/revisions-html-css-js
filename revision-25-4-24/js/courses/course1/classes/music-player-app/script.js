@@ -358,7 +358,6 @@ const setPlayerDisplay = () => {
 };
 
 const setPlayButtonAccessibleText = () => {
-    // function setPlayButtonAccessibleText() {
     const song = userData?.currentSong || userData.songs[0];
 
     playButton.setAttribute(
@@ -368,14 +367,14 @@ const setPlayButtonAccessibleText = () => {
 };
 
 const shuffle = () => {
-    // userData?.songs.sort(() => Math.random() - 0.5);
-    const shuffledSongs = userData?.songs.sort(() => Math.random() - 0.5);
+    userData?.songs.sort(() => Math.random() - 0.5);
+    // const shuffledSongs = userData?.songs.sort(() => Math.random() - 0.5);
 
     userData.currentSong = null;
     userData.songCurrentTime = 0;
 
-    // renderSongs(userData?.songs);
-    renderSongs(shuffledSongs);
+    renderSongs(userData?.songs);
+    // renderSongs(shuffledSongs);
     pauseSong();
     setPlayerDisplay();
     setPlayButtonAccessibleText();
