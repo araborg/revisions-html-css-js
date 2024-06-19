@@ -385,6 +385,7 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
+/*
 const replaySong = () => {
     audio.addEventListener("ended", () => {
         const currentSongIndex = getCurrentSongIndex();
@@ -425,6 +426,7 @@ const replayAllSongs = (id) => {
         }
     }
 };
+*/
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
