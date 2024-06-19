@@ -391,7 +391,7 @@ const replaySong = () => {
         const nextSongExists =
             userData?.songs.length - 1 > currentSongIndex ? true : false;
 
-        console.log(userData?.songs.length, currentSongIndex);
+        console.log(userData?.songs.length - 1, currentSongIndex);
         console.log(nextSongExists);
 
         // console.log(nextSongExists);
