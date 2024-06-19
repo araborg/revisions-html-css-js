@@ -344,7 +344,6 @@ const highlightCurrentSong = () => {
 };
 
 const setPlayerDisplay = () => {
-    // function setPlayerDisplay() {
     const playingSong = document.getElementById("player-song-title");
     const songArtist = document.getElementById("player-song-artist");
     const songDuration = document.getElementById("player-song-duration");
