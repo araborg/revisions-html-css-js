@@ -493,4 +493,20 @@ Ths learnt:
     deleteSong()
         resetButton()
     audio.addEventListener()
+
+16. 
+const userData
+const sortSongs
+const renderSongs
+const playSong
+const pauseSong
+const getCurrentSongIndex
+const playNextSong
+const playPreviousSong
+const highlightCurrentSong
+const setPlayerDisplay
+const setPlayButtonAccessibleText
+const shuffle
+const replaySong
+const deleteSong
 */
