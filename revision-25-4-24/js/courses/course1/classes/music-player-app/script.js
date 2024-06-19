@@ -386,7 +386,7 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-const replayAllSongs = () => {
+const replaySong = () => {
     audio.addEventListener("ended", () => {
         const currentSongIndex = getCurrentSongIndex();
         const nextSongExists =
@@ -409,9 +409,11 @@ const replayAllSongs = () => {
     });
 };
 
-replayButton.addEventListener("click", replayAllSongs);
+songToReplay.addEventListener("click", replaySong);
 
-const replaySong = (id) => {
+replayButton;
+
+const replayAllSongs = (id) => {
     if (userData?.currentSong !== null) {
         const song = userData?.songs.find((song) => song.id === id);
 
