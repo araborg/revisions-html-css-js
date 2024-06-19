@@ -1,4 +1,3 @@
-/*
 const allSongs = [
     {
         id: 0,
@@ -79,8 +78,22 @@ const allSongs = [
         duration: "2:43",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
     },
+    {
+        id: 10,
+        title: "Olori oko",
+        artist: "Infinity",
+        duration: "5:56",
+        src: "../music-player-app/music/Olori oko.mp3",
+    },
+
+    {
+        id: 11,
+        title: "Ogoo ogo",
+        artist: "Dunsin Oyekan & Elijah Sunday",
+        duration: "10:53",
+        src: "../music-player-app/music/ogo.mp3",
+    },
 ];
-*/
 
 const playlistSongs = document.getElementById("playlist-songs");
 
@@ -90,7 +103,7 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
-
+/*
 const allSongs = [
     {
         id: 0,
@@ -131,24 +144,8 @@ const allSongs = [
         duration: "0:22",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
-
-    // {
-    //     id: 5,
-    //     title: "Olori oko",
-    //     artist: "Infinity",
-    //     duration: "5:56",
-    //     src: "../music-player-app/music/Olori oko.mp3",
-    // },
-
-    // {
-    //     id: 6,
-    //     title: "Ogoo ogo",
-    //     artist: "Dunsin Oyekan & Elijah Sunday",
-    //     duration: "10:53",
-    //     src: "../music-player-app/music/ogo.mp3",
-    // },
 ];
-
+*/
 // very impt
 const audio = new Audio();
 
