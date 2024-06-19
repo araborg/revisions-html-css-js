@@ -132,21 +132,21 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
 
-    {
-        id: 5,
-        title: "Olori oko",
-        artist: "Infinity",
-        duration: "5:56",
-        src: "../music-player-app/music/Olori oko.mp3",
-    },
+    // {
+    //     id: 5,
+    //     title: "Olori oko",
+    //     artist: "Infinity",
+    //     duration: "5:56",
+    //     src: "../music-player-app/music/Olori oko.mp3",
+    // },
 
-    {
-        id: 6,
-        title: "Ogoo ogo",
-        artist: "Dunsin Oyekan & Elijah Sunday",
-        duration: "10:53",
-        src: "../music-player-app/music/ogo.mp3",
-    },
+    // {
+    //     id: 6,
+    //     title: "Ogoo ogo",
+    //     artist: "Dunsin Oyekan & Elijah Sunday",
+    //     duration: "10:53",
+    //     src: "../music-player-app/music/ogo.mp3",
+    // },
 ];
 
 // very impt
