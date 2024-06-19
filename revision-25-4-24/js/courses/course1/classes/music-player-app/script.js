@@ -481,6 +481,12 @@ audio.addEventListener("ended", () => {
 });
 
 setPlayButtonAccessibleText();
+
+function init() {
+    highlightCurrentSong();
+}
+
+init();
 // */
 
 //
