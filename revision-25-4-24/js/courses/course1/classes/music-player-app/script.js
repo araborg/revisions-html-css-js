@@ -390,7 +390,18 @@ const replayAllSongs = (id) => {};
 
 replayButton.addEventListener("click", replayAllSongs);
 
-const replaySong = (id) => {};
+const replaySong = (id) => {
+    if (userData?.currentSong !== null) {
+        const song = userData?.songs.find((song) => song.id === id);
+
+        if (audio.currentTime !== song.duration && song.duration > 0) {
+            const iReplay = () => playSong(song.id);
+
+            setInterval(iReplay, song.duration);
+            console.log("replay 1");
+        }
+    }
+};
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
