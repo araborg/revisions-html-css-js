@@ -395,14 +395,16 @@ const replayAllSongs = () => {
         if (nextSongExists) {
             playNextSong();
         } else {
-            userData.currentSong = null;
-            userData.songCurrentTime = 0;
+            // userData.currentSong = null;
+            // userData.songCurrentTime = 0;
 
-            pauseSong();
-            setPlayerDisplay();
-            highlightCurrentSong();
+            // pauseSong();
+            // setPlayerDisplay();
+            // highlightCurrentSong();
 
-            setPlayButtonAccessibleText();
+            // setPlayButtonAccessibleText();
+
+            playSong(userData?.songs[0].id);
         }
     });
 };
