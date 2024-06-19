@@ -91,8 +91,6 @@ const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
-let audioEnded;
-
 const allSongs = [
     {
         id: 0,
@@ -368,6 +366,8 @@ const setPlayButtonAccessibleText = () => {
     console.log(playButton.getAttribute("aria-label"));
 };
 
+setPlayButtonAccessibleText();
+
 const shuffle = () => {
     // const shuffledSongs = userData?.songs.sort(() => Math.random() - 0.5);
     userData?.songs.sort(() => Math.random() - 0.5);
@@ -480,10 +480,9 @@ audio.addEventListener("ended", () => {
     }
 });
 
-setPlayButtonAccessibleText();
-
 function init() {
     highlightCurrentSong();
+    console.log("running");
 }
 
 init();
