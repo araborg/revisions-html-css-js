@@ -387,7 +387,7 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const replayAllSongs = () => {
-    if (!userData?.currentSong) {
+    if (userData?.currentSong) {
         audio.addEventListener("ended", () => {
             const currentSongIndex = getCurrentSongIndex();
 
@@ -399,6 +399,8 @@ const replayAllSongs = () => {
                 setPlayButtonAccessibleText();
             }
         });
+    } else {
+        alert("Play a song of your choice");
     }
 };
 
