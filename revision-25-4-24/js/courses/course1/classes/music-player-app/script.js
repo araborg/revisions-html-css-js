@@ -457,20 +457,6 @@ audio.addEventListener("ended", () => {
 });
 
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /*
 Ths learnt:
