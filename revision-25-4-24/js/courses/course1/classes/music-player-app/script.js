@@ -395,9 +395,11 @@ const replaySong = () => {
         console.log(nextSongExists);
 
         // console.log(nextSongExists);
-        // if (nextSongExists) {
-        //     console.log("end of the song");
-        // }
+        if (currentSongIndex === -1) {
+            let currentSongIndex = 0;
+            playSong(currentSongIndex);
+            //     console.log("end of the song");
+        }
         //  else {
         // userData.currentSong = null;
         // userData.songCurrentTime = 0;
