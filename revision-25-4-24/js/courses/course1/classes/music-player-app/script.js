@@ -404,10 +404,12 @@ replayButton.addEventListener("click", replayAllSongs);
 
 const replaySong = (id) => {
     const replaySong = userData?.songs.find((song) => song.id === id);
-    console.log(replaySong);
 
     audio.addEventListener("ended", () => {
         playSong(replaySong.id);
+
+        highlightCurrentSong();
+        setPlayButtonAccessibleText();
     });
 };
 
