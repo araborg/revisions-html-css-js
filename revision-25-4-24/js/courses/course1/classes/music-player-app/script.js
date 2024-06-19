@@ -364,6 +364,8 @@ const setPlayButtonAccessibleText = () => {
         "aria-label",
         song?.title ? `Play ${song.title}` : "Play"
     );
+
+    console.log(playButton.getAttribute());
 };
 
 const shuffle = () => {
