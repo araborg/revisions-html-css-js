@@ -144,7 +144,7 @@ const allSongs = [
 
     {
         id: 6,
-        // title: "Ogoo ogo",
+        title: "Ogoo ogo",
         artist: "Dunsin Oyekan & Elijah Sunday",
         duration: "10:53",
         src: "../music-player-app/music/ogo.mp3",
