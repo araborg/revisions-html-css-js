@@ -387,17 +387,19 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const replayAllSongs = () => {
-    audio.addEventListener("ended", () => {
-        const currentSongIndex = getCurrentSongIndex();
+    if (!userData?.currentSong) {
+        audio.addEventListener("ended", () => {
+            const currentSongIndex = getCurrentSongIndex();
 
-        if (currentSongIndex === -1) {
-            let currentSongIndex = 0;
-            playSong(userData?.songs[currentSongIndex]?.id);
+            if (currentSongIndex === -1) {
+                let currentSongIndex = 0;
+                playSong(userData?.songs[currentSongIndex]?.id);
 
-            highlightCurrentSong();
-            setPlayButtonAccessibleText();
-        }
-    });
+                highlightCurrentSong();
+                setPlayButtonAccessibleText();
+            }
+        });
+    }
 };
 
 replayButton.addEventListener("click", replayAllSongs);
@@ -406,10 +408,10 @@ const replaySong = (id) => {
     const replaySong = userData?.songs.find((song) => song.id === id);
 
     audio.addEventListener("ended", () => {
-        playSong(replaySong.id);
-
         highlightCurrentSong();
         setPlayButtonAccessibleText();
+
+        playSong(replaySong.id);
     });
 };
 
