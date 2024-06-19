@@ -404,7 +404,14 @@ replayButton.addEventListener("click", replayAllSongs);
 
 const replaySong = (id) => {
     const currentSongIndex = getCurrentSongIndex();
-    console.log(currentSongIndex);
+    console.log(userData?.songs[id].id);
+    console.log(id);
+    const replaySong = userData?.songs.findIndex((song) => song.id === id);
+    console.log(replaySong);
+
+    audio.addEventListener("ended", () => {
+        playSong(userData?.songs[id].id);
+    });
 };
 
 const deleteSong = (id) => {
