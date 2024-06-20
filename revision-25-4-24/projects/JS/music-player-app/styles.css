@@ -24,4 +24,6 @@ body {
 
 .container {
     border: 3px solid green;
+
+    display: flex;
 }
