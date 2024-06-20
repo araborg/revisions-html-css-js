@@ -20,82 +20,122 @@
 
 body {
     border: 3px solid red;
+
+    padding: 10px;
 }
 
 .container {
+    padding: 10px;
+
     border: 3px solid orange;
 
     display: flex;
 }
 
 .player {
+    padding: 10px;
+
     border: 3px solid yellow;
 }
 
 .player-bar {
+    padding: 10px;
+
     border: 3px solid green;
 }
 
 .parrallel-lines {
+    padding: 10px;
+
     border: 3px solid silver;
 }
 
 .fcc-title {
+    padding: 10px;
+
     border: 3px solid gold;
 }
 
 .player-content {
+    padding: 10px;
+
     border: 3px solid indigo;
 }
 
 .player-album-art {
+    padding: 10px;
+
     border: 3px solid brown;
 }
 
 .player-display {
+    padding: 10px;
+
     border: 3px solid pink;
 }
 
 .player-display-song-artist {
+    padding: 10px;
+
     border: 3px solid olive;
 }
 
 #player-song-title {
+    padding: 10px;
+
     border: 3px solid maroon;
 }
 
 #player-song-artist {
+    padding: 10px;
+
     border: 3px solid gray;
 }
 
 #player-song-duration {
+    padding: 10px;
+
     border: 3px solid gray;
 }
 
 .player-buttons {
+    padding: 10px;
+
     border: 3px solid violet;
 }
 
 button {
+    padding: 10px;
+
     border: 3px solid red;
 }
 
 button svg {
+    padding: 10px;
+
     border: 3px solid green;
 }
 
 .playlist {
+    padding: 10px;
+
     border: 3px solid blue;
 }
 
 .playlist-bar {
+    padding: 10px;
+
     border: 3px solid yellowgreen;
 }
 
 .playlist-title {
+    padding: 10px;
+
     border: 3px solid indigo;
 }
 
 #playlist-songs {
+    padding: 10px;
+
     border: 3px solid indianred;
 }
