@@ -47,3 +47,7 @@ body {
 .player-album-art {
     border: 3px solid brown;
 }
+
+.player-display {
+    border: 3px solid pink;
+}
