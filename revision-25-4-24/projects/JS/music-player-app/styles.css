@@ -23,7 +23,11 @@ body {
 }
 
 .container {
-    border: 3px solid green;
+    border: 3px solid orange;
 
     display: flex;
+}
+
+.player {
+    border: 3px solid yellow;
 }
