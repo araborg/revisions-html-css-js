@@ -40,6 +40,10 @@ body {
     border: 3px solid silver;
 }
 
+.fcc-title {
+    border: 3px solid gold;
+}
+
 .player-content {
     border: 3px solid indigo;
 }
