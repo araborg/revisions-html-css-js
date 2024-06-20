@@ -25,16 +25,21 @@ body {
 }
 
 .container {
-    width: 480px;
+    /* width: 480px; */
     padding: 10px;
 
     border: 13px solid orange;
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: center; */
 }
+
+/*
+Ths learnt:
+1. Wn using flex to center a container, no need for width
+*/
 
 .player {
     padding: 10px;
