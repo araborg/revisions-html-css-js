@@ -51,3 +51,7 @@ body {
 .player-display {
     border: 3px solid pink;
 }
+
+.player-display-song-artist {
+    border: 3px solid olive;
+}
