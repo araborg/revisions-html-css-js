@@ -45,4 +45,5 @@ body {
 }
 
 .player-album-art {
+    border: 3px solid brown;
 }
