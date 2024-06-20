@@ -31,3 +31,11 @@ body {
 .player {
     border: 3px solid yellow;
 }
+
+.player-bar {
+    border: 3px solid green;
+}
+
+.player-content {
+    border: 3px solid indigo;
+}
