@@ -3,8 +3,8 @@
     --primary-color: #dfdfe2;
     --secondary-color: #ffffff;
 
-    --background-color: #1b1b32;
     --foreground-color: #3b3b4f;
+    --background-color: #1b1b32;
 
     --app-background-color: #4d4d62;
     --highlight-color: #f1be32;
@@ -19,4 +19,5 @@
 }
 
 body {
+    border: 3px solid red;
 }
