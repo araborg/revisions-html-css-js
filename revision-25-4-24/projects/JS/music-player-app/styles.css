@@ -72,6 +72,8 @@ body {
     border: 3px solid violet;
 }
 
-buttons {
+button {
     border: 3px solid red;
 }
+
+/* button */
