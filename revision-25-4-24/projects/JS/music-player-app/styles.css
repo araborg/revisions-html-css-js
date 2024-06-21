@@ -116,6 +116,8 @@ it more than 100
     padding: 10px;
 
     border: 3px solid indigo;
+
+    display: flex;
 }
 
 #player-album-art {
@@ -126,7 +128,7 @@ it more than 100
 
 #player-album-art img {
     border: 3px solid green;
-    width: 75px;
+    width: 150px;
 }
 
 .player-display {
