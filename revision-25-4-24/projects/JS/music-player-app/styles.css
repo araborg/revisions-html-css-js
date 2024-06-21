@@ -52,6 +52,12 @@ Ths learnt:
 1. Wn using flex to center a container, no need for width
 */
 
+.player,
+.playlist {
+    width: 480px;
+    background-color: var(--background-color);
+}
+
 .player {
     padding: 10px;
 
