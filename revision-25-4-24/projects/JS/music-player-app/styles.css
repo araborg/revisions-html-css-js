@@ -76,16 +76,27 @@ it more than 100
     background-color: var(--foreground-color);
 
     display: flex;
+    align-items: center;
 }
 
 .parallel-lines {
-    padding: 5px;
+    /* padding: 5px; */
 
-    border: 3px solid silver;
+    /* border: 3px solid silver; */
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
 }
 
 .parallel-lines div {
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
+
+    height: 2px;
+    width: 150%;
+
+    min-width: 75px;
+    background-color: var(--highlight-color);
 }
 
 .fcc-title {
