@@ -69,7 +69,8 @@ it more than 100
     border: 3px solid yellow;
 }
 
-.player-bar {
+.player-bar,
+.playlist-bar {
     width: 100%;
 
     display: flex;
