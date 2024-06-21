@@ -66,21 +66,22 @@ it more than 100
 .player {
     padding: 10px;
 
-    border: 3px solid yellow;
+    border: 3px solid yellowgreen;
 }
 
 .player-bar,
 .playlist-bar {
     width: 100%;
+    height: 30px;
 
     display: flex;
     align-items: center;
     /* justify-content: center; */
 
-    /* padding: 10px; */
+    margin-bottom: 15px;
 
     /* border: 3px solid green; */
-    background-color: var(--app-background-color);
+    background-color: var(--foreground-color);
 }
 
 .parallel-lines {
@@ -121,6 +122,7 @@ it more than 100
 }
 
 .player-content {
+    background-color: var(--foreground-color);
     padding: 10px;
 
     border: 3px solid indigo;
