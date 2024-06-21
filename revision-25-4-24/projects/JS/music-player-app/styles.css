@@ -50,6 +50,11 @@ body {
 /*
 Ths learnt:
 1. Wn using flex to center a container, no need for width
+2. If u think width: 100%; does nt work on a box, increase
+it more than 100
+3.
+4.
+
 */
 
 .player,
@@ -60,13 +65,13 @@ Ths learnt:
 
 .player {
     padding: 10px;
-    /* width: 100%; */
 
     border: 3px solid yellow;
 }
 
 .player-bar {
     display: flex;
+    width: 100%;
 
     padding: 10px;
 
