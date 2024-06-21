@@ -70,8 +70,11 @@ it more than 100
 }
 
 .player-bar {
-    display: flex;
     width: 100%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
 
     /* padding: 10px; */
 
@@ -81,13 +84,14 @@ it more than 100
 .parallel-lines {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
 
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center; */
 
     /* padding: 5px; */
 
-    border: 3px solid silver;
+    /* border: 3px solid silver; */
 }
 
 .parallel-lines div {
