@@ -192,6 +192,9 @@ button svg {
     padding: 10px;
 
     border: 3px solid indigo;
+
+    font-family: var(--font-headline);
+    font-size: var(--root-font-size);
 }
 
 #playlist-songs {
