@@ -84,14 +84,14 @@ Ths learnt:
 }
 
 .parallel-lines div {
-    width: 120px;
+    width: 10px;
     height: 5px;
 
-    /* max-width: 75px; */
+    max-width: 75px;
 
     /* padding: 10px; */
 
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
 
     background-color: var(--highlight-color);
 }
