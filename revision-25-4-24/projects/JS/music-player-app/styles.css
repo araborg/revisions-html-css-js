@@ -113,15 +113,25 @@ it more than 100
 
 .player-content {
     background-color: var(--foreground-color);
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid indigo;
 
+    /* min-width: 380px; */
+
+    /* width: 430px; */
     display: flex;
+
+    /* align-items: center; */
+    /* justify-content: center; */
+
+    column-gap: 10px;
+
+    border: 3px solid green;
 }
 
 #player-album-art {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid brown;
 }
@@ -132,7 +142,8 @@ it more than 100
 }
 
 .player-display {
-    padding: 10px;
+    /* padding: 10px; */
+    width: 226px;
 
     border: 3px solid pink;
 }
@@ -141,6 +152,10 @@ it more than 100
     padding: 10px;
 
     border: 3px solid olive;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* row-gap: 10px; */
 }
 
 #player-song-title {
@@ -165,6 +180,8 @@ it more than 100
     padding: 10px;
 
     border: 3px solid violet;
+
+    display: flex;
 }
 
 button {
