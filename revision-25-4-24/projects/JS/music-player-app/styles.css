@@ -93,10 +93,12 @@ it more than 100
 
     min-width: 75px;
 
-    padding: 5px;
-    margin: 5px 0;
+    /* padding: 5px; */
+    /* margin: 5px 0; */
 
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
+
+    background-color: var(--highlight-color);
 }
 
 .fcc-title {
