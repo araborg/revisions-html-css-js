@@ -30,7 +30,7 @@ body {
 
     /* padding: 10px; */
 
-    background-color: var(--foreground-color);
+    background-color: var(--app-background-color);
     color: var(--primary-color);
 }
 
@@ -42,6 +42,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    /* background-color: var(--foreground-color); */
 
     /* justify-content: center; */
     /* width: 480px; */
@@ -79,7 +81,7 @@ it more than 100
 
     /* padding: 10px; */
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .parallel-lines {
@@ -111,7 +113,10 @@ it more than 100
 }
 
 .fcc-title {
-    padding: 10px;
+    font-size: 1.125rem;
+    font-family: var(--font-family);
+
+    /* padding: 10px; */
 
     /* border: 3px solid gold; */
 }
