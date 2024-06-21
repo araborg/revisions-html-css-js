@@ -26,7 +26,9 @@
 }
 
 body {
+    color: var(--primary-color);
     background-color: var(--app-background-color);
+    font-family: var(--font-family);
     /* border: 3px solid red; */
 
     /* padding: 10px; */
@@ -69,6 +71,8 @@ it more than 100
 .playlist-bar {
     border: 10px solid green;
     background-color: var(--foreground-color);
+
+    display: flex;
 }
 
 .parallel-lines {
