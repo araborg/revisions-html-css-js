@@ -29,22 +29,12 @@ body {
     /* border: 3px solid red; */
 
     /* padding: 10px; */
-
-    background-color: var(--app-background-color);
-    color: var(--primary-color);
 }
 
 .container {
     /* padding: 10px; */
 
     /* border: 13px solid orange; */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* justify-content: center; */
-    /* width: 480px; */
 }
 
 /*
@@ -59,7 +49,6 @@ it more than 100
 
 .player,
 .playlist {
-    width: 480px;
     background-color: var(--background-color);
 }
 
@@ -71,42 +60,17 @@ it more than 100
 
 .player-bar,
 .playlist-bar {
-    width: 100%;
-    height: 30px;
-
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-
-    margin-bottom: 15px;
-
     /* border: 3px solid green; */
     background-color: var(--foreground-color);
 }
 
 .parallel-lines {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 5px;
-    padding: 0 5px;
-
-    /* align-items: center; */
-    /* justify-content: center; */
-
     /* padding: 5px; */
 
     /* border: 3px solid silver; */
 }
 
 .parallel-lines div {
-    width: 100%;
-    height: 2px;
-
-    min-width: 75px;
-
-    /* padding: 5px; */
-    /* margin: 5px 0; */
-
     /* border: 3px solid purple; */
 
     background-color: var(--highlight-color);
