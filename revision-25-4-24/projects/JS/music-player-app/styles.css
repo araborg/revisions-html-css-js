@@ -58,6 +58,7 @@ it more than 100
 .player,
 .playlist {
     width: 480px;
+    padding: 10px;
     background-color: var(--background-color);
 }
 
@@ -69,14 +70,15 @@ it more than 100
 
 .player-bar,
 .playlist-bar {
-    /* height: 20px; */
-
     width: 100%;
-    border: 10px solid green;
+    height: 30px;
     background-color: var(--foreground-color);
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    /* margin: 5px; */
 }
 
 .parallel-lines {
@@ -90,8 +92,6 @@ it more than 100
 }
 
 .parallel-lines div {
-    /* border: 3px solid purple; */
-
     height: 2px;
     width: 100%;
 
