@@ -42,7 +42,7 @@ body {
     /* height: 300px; */
     /* padding: 10px; */
 
-    border: 13px solid orange;
+    /* border: 13px solid orange; */
 }
 
 /*
@@ -59,13 +59,14 @@ it more than 100
 .playlist {
     width: 480px;
     padding: 10px;
+
     background-color: var(--background-color);
 }
 
 .player {
-    padding: 10px;
+    /* padding: 10px; */
 
-    border: 3px solid yellowgreen;
+    /* border: 3px solid yellowgreen; */
 }
 
 .player-bar,
