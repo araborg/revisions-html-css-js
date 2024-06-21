@@ -60,20 +60,24 @@ it more than 100
 
 .player-bar,
 .playlist-bar {
-    /* border: 3px solid green; */
+    border: 10px solid green;
     background-color: var(--foreground-color);
 }
 
 .parallel-lines {
-    /* padding: 5px; */
+    padding: 5px;
 
-    /* border: 3px solid silver; */
+    border: 3px solid silver;
 }
 
 .parallel-lines div {
-    /* border: 3px solid purple; */
+    border: 3px solid purple;
 
-    background-color: var(--highlight-color);
+    /* height: 2px; */
+    /* width: 100%; */
+
+    /* min-width: 75px; */
+    /* background-color: var(--highlight-color); */
 }
 
 .fcc-title {
