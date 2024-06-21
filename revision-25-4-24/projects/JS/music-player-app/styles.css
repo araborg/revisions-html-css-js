@@ -65,29 +65,15 @@ Ths learnt:
 }
 
 .player-bar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
 
-    /* padding: 10px; */
-
-    /* border: 3px solid green; */
-    background-color: var(--foreground-color);
+    border: 3px solid green;
 }
 
 .parallel-lines {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
+    padding: 5px;
 
-    /* justify-content: center; */
-    row-gap: 5px;
-    /* width: 100%; */
-
-    padding: 0 5px;
-
-    /* border: 3px solid silver; */
+    border: 3px solid silver;
 }
 
 .parallel-lines div {
@@ -102,13 +88,9 @@ Ths learnt:
 }
 
 .fcc-title {
-    /* padding: 10px; */
+    padding: 10px;
 
-    /* border: 3px solid gold; */
-
-    font-size: 1.125rem;
-    font-family: var(--font-family);
-    line-height: 1.6;
+    border: 3px solid gold;
 }
 
 .player-content {
