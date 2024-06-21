@@ -55,6 +55,7 @@ it more than 100
 
 .player,
 .playlist {
+    width: 480px;
     background-color: var(--background-color);
 }
 
