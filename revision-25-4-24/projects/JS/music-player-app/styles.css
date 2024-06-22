@@ -66,9 +66,14 @@ it more than 100
 }
 
 .player {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* padding: 10px; */
+    height: 260px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    align-items: center;
 
     /* border: 3px solid yellowgreen; */
 }
@@ -145,6 +150,9 @@ it more than 100
     display: flex;
     flex-direction: column;
     padding: 14px;
+    background-color: var(--background-color);
+    height: 153px;
+    width: 266px;
 
     /* justify-content: space-between; */
     /* padding: 10px; */
@@ -152,12 +160,8 @@ it more than 100
 
     /* align-items: space-around; */
     /* padding: 10px; */
-    width: 266px;
-    height: 153px;
 
     border: 3px solid white;
-
-    background-color: var(--background-color);
 }
 
 .player-display-song-artist {
