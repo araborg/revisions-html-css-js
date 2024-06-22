@@ -88,8 +88,7 @@ it more than 100
     flex-wrap: wrap;
     row-gap: 5px;
 
-    padding: 0 5px;
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .parallel-lines div {
