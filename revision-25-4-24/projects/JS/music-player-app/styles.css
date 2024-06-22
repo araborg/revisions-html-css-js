@@ -81,10 +81,16 @@ body {
 .player-bar {
 }
 
-.parallel-bar {
+.parallel-lines {
 }
 
-.parallel-bar div {
+.parallel-lines div {
+    /* height: 2px; */
+    /* width: 100%; */
+
+    /* min-width: 75px; */
+
+    background-color: var(--highlight-color);
 }
 
 .player-content {
