@@ -47,7 +47,7 @@ body {
     border: 3px solid green;
 }
 
-.player-bar {
+.player-bar { /* d container for 3 items: h1 & 2 parallel-lines containers*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ body {
     border: 10px solid purple;
 }
 
-.parallel-lines {
+.parallel-lines { { /* d container for 2 items: d 2 divs */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
