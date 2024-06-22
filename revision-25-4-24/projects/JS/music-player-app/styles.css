@@ -75,7 +75,7 @@ it more than 100
 
     align-items: center;
 
-    /* border: 3px solid yellowgreen; */
+    border: 3px solid yellowgreen;
 }
 
 .player-bar,
@@ -127,19 +127,19 @@ it more than 100
     align-items: center;
     justify-content: center;
 
-    border: 3px solid white;
+    border: 3px solid green;
 }
 
 #player-album-art {
     /* width: 200px; */
     /* padding: 10px; */
 
-    border: 5px solid var(--background-color);
+    border: 6px solid var(--background-color);
     background-color: var(--primary-color);
 }
 
 #player-album-art img {
-    border: 3px solid white;
+    /* border: 3px solid white; */
     width: 150px;
     /* z-index: 1; */
     /* z-index: -100; */
@@ -152,7 +152,7 @@ it more than 100
     padding: 14px;
     background-color: var(--background-color);
     height: 153px;
-    width: 266px;
+    width: 226px;
 
     /* justify-content: space-between; */
     /* padding: 10px; */
