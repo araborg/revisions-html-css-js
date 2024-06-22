@@ -83,16 +83,21 @@ body {
 
     align-items: center;
     justify-content: center;
+
+    padding: 10px;
 }
 
 .player-bar,
 .playlist-bar {
+    /* border: 5px solid brown; */
     height: 30px;
+    /* padding: 0 5px; */
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
+    width: 100%;
     background-color: var(--app-background-color);
 }
 
@@ -100,7 +105,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    row-gap: 10px;
+    row-gap: 5px;
+    padding: 0 5px;
 }
 
 .parallel-lines div {
