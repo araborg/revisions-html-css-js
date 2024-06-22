@@ -158,6 +158,9 @@ it more than 100
 
 button {
     background: transparent;
+    border: none;
+
+    color: var(--primary-color);
 }
 
 button svg {
