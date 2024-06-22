@@ -76,6 +76,9 @@ body {
 }
 
 .player {
+    border: 5px solid red;
+
+    display: flex;
 }
 
 .player-bar,
