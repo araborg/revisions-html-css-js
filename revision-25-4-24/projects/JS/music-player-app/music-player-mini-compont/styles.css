@@ -35,16 +35,11 @@ body {
     display: flex;
     flex-direction: column;
 
-    /* justify-content: center; */
     align-items: center;
-
-    border: 3px solid red;
 }
 
 .player {
     width: 480px;
-
-    border: 3px solid green;
 }
 
 .player-bar {
@@ -52,10 +47,6 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-
-    /* height: 30px; */
-
-    border: 10px solid purple;
 }
 
 .parallel-lines {
@@ -66,8 +57,6 @@ body {
     row-gap: 5px;
 
     padding: 0 5px;
-
-    /* border: 3px solid green; */
 }
 
 .parallel-lines div {
@@ -75,8 +64,6 @@ body {
     width: 100%;
 
     min-width: 75px;
-
-    /* border: 5px solid violet; */
 
     background-color: var(--highlight-color);
 }
