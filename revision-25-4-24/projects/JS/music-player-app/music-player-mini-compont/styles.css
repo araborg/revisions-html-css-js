@@ -34,13 +34,13 @@ body {
     flex-direction: column;
 
     align-items: center;
-=}
+}
 
 .player {
     width: 480px;
-    background-color: var(--background-color);
-
     padding: 10px;
+
+    background-color: var(--background-color);
 }
 
 .player-bar {
