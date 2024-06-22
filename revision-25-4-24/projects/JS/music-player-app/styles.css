@@ -144,13 +144,16 @@ it more than 100
 .player-display {
     display: flex;
     flex-direction: column;
+    padding: 14px;
+
     /* justify-content: space-between; */
-    padding: 10px;
+    /* padding: 10px; */
     /* column-gap: 10px; */
 
     /* align-items: space-around; */
     /* padding: 10px; */
     width: 266px;
+    height: 153px;
 
     border: 3px solid white;
 
