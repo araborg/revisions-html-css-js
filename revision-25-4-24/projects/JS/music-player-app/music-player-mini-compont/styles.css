@@ -18,6 +18,12 @@
     --font-family: "Lato", sans-serif;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--app-background-color);
     color: var(--primary-color);
@@ -42,19 +48,24 @@ body {
 }
 
 .player-bar {
-    /* display: flex; */
+    width: 100%;
+    display: flex;
+
+    border: 10px solid purple;
 }
 
 .parallel-lines {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+
+    border: 3px solid yellow;
 }
 
 .parallel-lines div {
     height: 2px;
     width: 100%;
 
-    /* min-width: 75px; */
+    min-width: 75px;
 
     background-color: var(--highlight-color);
 }
