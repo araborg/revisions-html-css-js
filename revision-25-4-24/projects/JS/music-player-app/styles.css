@@ -46,7 +46,25 @@ flex-direction: column to align-items: center to center an item
 it more than 100
 
 3. U can use width ppty twice in a selector by using min(width)
-4.
+4. A btn can have background: transparent; and border: none;
+
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+
+16.
+17.
+18.
+19.
+20.
 
 */
 
@@ -161,6 +179,7 @@ button {
     border: none;
 
     color: var(--primary-color);
+    outline-color: var(--highlight-color);
 }
 
 button svg {
