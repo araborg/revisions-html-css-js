@@ -48,3 +48,16 @@ it more than 100
     --font-headline: "Roboto Mono", monospace;
     --font-family: "Lato", sans-serif;
 }
+
+/* box-sizing */
+
+body {
+    background-color: var(--foreground-color);
+    color: var(--secondary-color);
+}
+
+.container {
+    display: flex;
+
+    background-color: var(--background-color);
+}
