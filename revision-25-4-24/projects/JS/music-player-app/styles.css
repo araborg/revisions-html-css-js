@@ -151,7 +151,7 @@ it more than 100
 }
 
 .player-display-song-artist {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid olive;
 
@@ -161,25 +161,25 @@ it more than 100
 }
 
 #player-song-title {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid maroon;
 }
 
 #player-song-artist {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid gray;
 }
 
 #player-song-duration {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid gray;
 }
 
 .player-buttons {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid violet;
 
@@ -187,13 +187,13 @@ it more than 100
 }
 
 button {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid red;
 }
 
 button svg {
-    padding: 10px;
+    /* padding: 10px; */
 
     border: 3px solid green;
 }
