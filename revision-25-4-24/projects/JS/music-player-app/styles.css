@@ -75,6 +75,18 @@ body {
     padding: 10px;
 }
 
+.player {
+}
+
+.player-bar {
+}
+
+.parallel-bar {
+}
+
+.parallel-bar div {
+}
+
 .player-content {
     border: 4px solid green;
 }
