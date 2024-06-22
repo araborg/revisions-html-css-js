@@ -68,8 +68,6 @@ it more than 100
     row-gap: 10px;
 
     align-items: center;
-
-    border: 3px solid yellowgreen;
 }
 
 .player-bar,
@@ -116,8 +114,6 @@ it more than 100
     column-gap: 13px;
     align-items: center;
     justify-content: center;
-
-    border: 3px solid green;
 }
 
 #player-album-art {
@@ -137,8 +133,6 @@ it more than 100
     background-color: var(--background-color);
     height: 153px;
     width: 226px;
-
-    border: 3px solid white;
 }
 
 .player-display-song-artist {
@@ -158,17 +152,16 @@ it more than 100
 }
 
 .player-buttons {
-    border: 3px solid violet;
-
     display: flex;
+    justify-content: space-between;
 }
 
 button {
-    border: 3px solid red;
+    background: transparent;
 }
 
 button svg {
-    border: 3px solid green;
+    fill: var(--primary-color);
 }
 
 .playlist {
