@@ -72,25 +72,24 @@ it more than 100
 
 .player,
 .playlist {
-    width: 480px;
-    /* padding: 10px; */
+    width: 450px;
 
     background-color: var(--background-color);
-    /* border: 4px solid var(--foreground-color); */
+    border: 4px solid var(--foreground-color);
 }
 
 .player {
     height: 260px;
-    /* padding: 10px; */
+    padding: 10px;
 
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 
-    /* border: 3px solid white; */
+    /* border: 5px solid red; */
 }
 
 .player-bar,
@@ -100,8 +99,10 @@ it more than 100
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
 
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 
     background-color: var(--foreground-color);
 }
@@ -113,7 +114,7 @@ it more than 100
     flex-wrap: wrap;
     row-gap: 5px;
 
-    /* padding: 0 10px; */
+    padding: 0 5px;
 }
 
 .parallel-lines div {
