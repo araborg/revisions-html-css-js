@@ -110,17 +110,11 @@ it more than 100
 
 .player-content {
     background-color: var(--foreground-color);
-    /* padding: 10px; */
 
     border: 3px solid indigo;
 
-    /* min-width: 380px; */
-
-    /* width: 430px; */
+    width: 430px;
     display: flex;
-
-    /* align-items: center; */
-    /* justify-content: center; */
 
     column-gap: 10px;
 
