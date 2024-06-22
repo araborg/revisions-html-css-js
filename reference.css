@@ -96,19 +96,7 @@ it more than 100
 }
 
 .player-display {
-    display: flex;
-    flex-direction: column;
-    padding: 14px;
-    background-color: var(--background-color);
-    height: 153px;
-    width: 226px;
-
-    /* justify-content: space-between; */
-    /* padding: 10px; */
-    /* column-gap: 10px; */
-
-    /* align-items: space-around; */
-    /* padding: 10px; */
+    padding: 10px;
 
     border: 3px solid white;
 }
@@ -117,14 +105,9 @@ it more than 100
 }
 
 .player-display-song-artist p {
-    margin: 0;
-    /* padding: 10px; */
+    padding: 10px;
 
-    /* border: 3px solid olive; */
-
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* row-gap: 10px; */
+    border: 3px solid olive;
 }
 
 #player-song-title {
