@@ -61,8 +61,7 @@ body {
     flex-wrap: wrap;
     row-gap: 5px;
 
-    /* padding: 0 10px; */
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 .parallel-lines div {
@@ -76,4 +75,6 @@ body {
 
 .fcc-title {
     font-size: 1.125rem;
+    font-family: var(--font-headline);
+    margin: 0 10px;
 }
