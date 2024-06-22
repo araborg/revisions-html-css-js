@@ -83,6 +83,7 @@ body {
 }
 
 .parallel-lines {
+    display: flex;
 }
 
 .parallel-lines div {
