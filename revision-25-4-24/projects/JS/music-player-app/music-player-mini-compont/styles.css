@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 :root {
     /* colors */
     --primary-color: #dfdfe2;
@@ -16,12 +22,6 @@
     /* font-families */
     --font-headline: "Roboto Mono", monospace;
     --font-family: "Lato", sans-serif;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
 }
 
 body {
