@@ -72,7 +72,7 @@ body {
     background-color: var(--background-color);
 
     border: 4px solid var(--app-background-color);
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .player {
@@ -83,7 +83,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    padding: 10px;
+    /* padding: 14px; */
     /* width: 240px; */
 
     /* border: 5px solid red; */
@@ -97,7 +97,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0 5px;
+    /* padding: 0 5px; */
 
     background-color: var(--app-background-color);
 }
@@ -107,7 +107,7 @@ body {
     flex-wrap: wrap;
 
     row-gap: 10px;
-    padding: 0 5px;
+    /* padding: 0 5px; */
     /* padding: 0 5px; */
 }
 
