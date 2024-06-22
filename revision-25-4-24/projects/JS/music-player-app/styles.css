@@ -112,7 +112,7 @@ it more than 100
 
 .player-content {
     width: 430px;
-    height: 200px;
+    /* height: 200px; */
 
     min-width: 100%;
 
@@ -142,10 +142,9 @@ it more than 100
 }
 
 .player-display {
-    margin: 0;
-
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
 
     /* align-items: space-around; */
