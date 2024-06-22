@@ -118,17 +118,11 @@ it more than 100
     background-color: var(--foreground-color);
     width: 430px;
     height: 200px;
+    column-gap: 13px;
+    align-items: center;
+    justify-content: center;
 
-    /* min-width: 100%; */
-
-    /* row-gap: 10px; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-
-    /* column-gap: 10px; */
-    padding: 10px;
-
-    /* border: 3px solid green; */
+    border: 3px solid white;
 }
 
 #player-album-art {
@@ -137,11 +131,10 @@ it more than 100
 
     border: 5px solid var(--background-color);
     background-color: var(--primary-color);
-    /* border: 3px solid brown; */
 }
 
 #player-album-art img {
-    /* border: 3px solid green; */
+    border: 3px solid white;
     width: 150px;
     /* z-index: 1; */
     /* z-index: -100; */
@@ -157,9 +150,9 @@ it more than 100
 
     /* align-items: space-around; */
     /* padding: 10px; */
-    /* width: 270px; */
+    width: 266px;
 
-    /* border: 3px solid white; */
+    border: 3px solid white;
 
     background-color: var(--background-color);
 }
