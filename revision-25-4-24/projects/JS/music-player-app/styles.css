@@ -78,7 +78,8 @@ body {
 .player {
 }
 
-.player-bar {
+.player-bar,
+.playlist-bar {
 }
 
 .parallel-lines {
