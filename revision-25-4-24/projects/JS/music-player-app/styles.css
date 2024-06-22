@@ -1,3 +1,34 @@
+/*
+Ths learnt:
+1. Wn using flex to center a container, no need for width
+2. As flex-direction: row is to justify-content: center so is
+flex-direction: column to align-items: center to center an item
+
+2. If u think width: 100%; does nt work on a box, increase
+it more than 100
+
+3. U can use width ppty twice in a selector by using min(width)
+4. A btn can have background: transparent; and border: none;
+
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+
+16.
+17.
+18.
+19.
+20.
+*/
+
 :root {
     /* colors */
     --primary-color: #dfdfe2;
@@ -38,44 +69,12 @@ body {
     justify-content: center;
 }
 
-/*
-Ths learnt:
-1. Wn using flex to center a container, no need for width
-2. As flex-direction: row is to justify-content: center so is
-flex-direction: column to align-items: center to center an item
-
-2. If u think width: 100%; does nt work on a box, increase
-it more than 100
-
-3. U can use width ppty twice in a selector by using min(width)
-4. A btn can have background: transparent; and border: none;
-
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-
-16.
-17.
-18.
-19.
-20.
-
-*/
-
 .player,
 .playlist {
     width: 450px;
 
     background-color: var(--background-color);
-    /* border: 3px solid var(--foreground-color); */
+    border: 3px solid var(--foreground-color);
 }
 
 .player {
@@ -88,8 +87,6 @@ it more than 100
 
     align-items: center;
     justify-content: center;
-
-    border: 5px solid red;
 }
 
 .player-bar,
