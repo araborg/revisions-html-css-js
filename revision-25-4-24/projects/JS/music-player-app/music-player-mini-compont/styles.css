@@ -42,10 +42,12 @@ body {
 }
 
 .player-bar {
-    display: flex;
+    /* display: flex; */
 }
 
 .parallel-lines {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .parallel-lines div {
