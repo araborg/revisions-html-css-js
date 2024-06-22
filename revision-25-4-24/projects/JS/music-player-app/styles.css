@@ -176,10 +176,13 @@ it more than 100
 
 button {
     background: transparent;
-    border: none;
+    /* border: none; */
+    border: 3px solid red;
 
     color: var(--primary-color);
-    outline-color: var(--highlight-color);
+    /* outline-color: var(--highlight-color); */
+
+    cursor: pointer;
 }
 
 button svg {
