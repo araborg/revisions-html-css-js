@@ -40,3 +40,13 @@ body {
 
     border: 3px solid green;
 }
+
+.parallel-lines {
+}
+
+.parallel-lines div {
+    height: 2px;
+    width: 100%;
+
+    background-color: var(--highlight-color);
+}
