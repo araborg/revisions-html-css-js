@@ -109,14 +109,12 @@ it more than 100
 }
 
 .player-content {
-    background-color: var(--foreground-color);
-
-    border: 3px solid indigo;
-
     width: 430px;
-    display: flex;
 
+    display: flex;
     column-gap: 10px;
+
+    background-color: var(--foreground-color);
 
     border: 3px solid green;
 }
