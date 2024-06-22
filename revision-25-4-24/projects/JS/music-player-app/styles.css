@@ -80,12 +80,21 @@ body {
 
 .player-bar,
 .playlist-bar {
+    height: 30px;
+
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--app-background-color);
 }
 
 .parallel-lines {
     display: flex;
     flex-wrap: wrap;
+
+    row-gap: 10px;
+    padding: 0 5px;
 }
 
 .parallel-lines div {
@@ -95,6 +104,11 @@ body {
     min-width: 75px;
 
     background-color: var(--highlight-color);
+}
+
+.fcc-title {
+    font-size: 1.125rem;
+    font-family: var(--font-headline);
 }
 
 .player-content {
