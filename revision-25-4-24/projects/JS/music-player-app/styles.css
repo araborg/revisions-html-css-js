@@ -87,7 +87,7 @@ it more than 100
     row-gap: 10px;
 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 
     /* border: 5px solid red; */
 }
