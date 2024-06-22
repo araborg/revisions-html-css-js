@@ -51,14 +51,7 @@ it more than 100
 }
 
 .player {
-    height: 260px;
     padding: 10px;
-
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-
-    align-items: center;
 
     border: 3px solid yellowgreen;
 }
