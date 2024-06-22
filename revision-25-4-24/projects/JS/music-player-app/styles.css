@@ -75,7 +75,7 @@ it more than 100
     width: 450px;
 
     background-color: var(--background-color);
-    border: 4px solid var(--foreground-color);
+    /* border: 3px solid var(--foreground-color); */
 }
 
 .player {
@@ -89,7 +89,7 @@ it more than 100
     align-items: center;
     justify-content: center;
 
-    /* border: 5px solid red; */
+    border: 5px solid red;
 }
 
 .player-bar,
