@@ -80,10 +80,12 @@ body {
 
 .player-bar,
 .playlist-bar {
+    display: flex;
 }
 
 .parallel-lines {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .parallel-lines div {
