@@ -43,8 +43,12 @@ body {
 /*
 Ths learnt:
 1. Wn using flex to center a container, no need for width
+2. As flex-direction: row is to justify-content: center so is
+flex-direction: column to align-items: center to center an item
+
 2. If u think width: 100%; does nt work on a box, increase
 it more than 100
+
 3.
 4.
 
@@ -66,7 +70,7 @@ it more than 100
 
 .player-bar,
 .playlist-bar {
-    /* width: 100%; */
+    width: 100%;
     height: 30px;
     background-color: var(--foreground-color);
 
@@ -74,7 +78,6 @@ it more than 100
     align-items: center;
     justify-content: center;
 
-    /* margin: 5px; */
     margin-bottom: 10px;
 }
 
