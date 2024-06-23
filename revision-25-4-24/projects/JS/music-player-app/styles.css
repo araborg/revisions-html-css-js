@@ -93,6 +93,7 @@ body {
     /* border: 5px solid yellow; */
 
     background-color: var(--app-background-color);
+    padding: 10px;
 }
 
 .parallel-lines {
