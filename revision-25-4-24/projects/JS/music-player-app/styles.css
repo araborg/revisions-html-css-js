@@ -220,3 +220,12 @@ button {
     font-family: var(--font-headline);
     margin: 0 10px;
 }
+
+#playlist-songs {
+    /* background-color: ; */
+    list-style: none;
+}
+
+.playlist-song {
+    background-color: var(--app-background-color);
+}
