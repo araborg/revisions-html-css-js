@@ -55,8 +55,17 @@ it more than 100
     box-sizing: border-box;
 }
 
+body {
+    border: 5px solid violet;
+
+    background-color: var(--app-background-color);
+}
+
 .container {
     border: 5px solid red;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .player {
