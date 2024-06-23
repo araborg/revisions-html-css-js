@@ -94,3 +94,7 @@ body {
 .player-content {
     /* border: 5px solid green; */
 }
+
+#player-album-art img {
+    width: 120px;
+}
