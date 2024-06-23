@@ -80,18 +80,24 @@ body {
 
     width: 460px;
     border: 3px solid var(--foreground-color);
+
+    padding: 10px;
 }
 
 .player {
-    border: 5px solid orange;
+    /* border: 5px solid orange; */
 
     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 
 .player-bar,
 .playlist-bar {
     /* border: 5px solid yellow; */
     background-color: var(--foreground-color);
+
+    /* height: 30px; */
 }
 
 .player-content {
