@@ -138,14 +138,16 @@ body {
     width: 430px;
     background-color: var(--app-background-color);
 
-    padding: 10px;
+    padding: 15px;
 
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-between;
     column-gap: 13px;
 }
 
+#player-album-art {
+}
 #player-album-art img {
     /* border: 5px solid white; */
     width: 150px;
@@ -153,6 +155,8 @@ body {
 
 .player-display {
     background-color: var(--background-color);
+
+    width: 226px;
 }
 
 .player-display-song-artist p {
