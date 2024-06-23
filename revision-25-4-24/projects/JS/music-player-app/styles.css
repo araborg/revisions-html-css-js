@@ -100,6 +100,11 @@ body {
 
 .parallel-lines div {
     height: 2px;
+    width: 100%;
+
+    min-width: 75px;
+
+    background-color: var(--highlight-color);
 }
 
 .fcc-title {
