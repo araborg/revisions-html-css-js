@@ -54,3 +54,11 @@ it more than 100
 *::before {
     box-sizing: border-box;
 }
+
+.container {
+    border: 5px solid red;
+}
+
+.player {
+    border: 5px solid orange;
+}
