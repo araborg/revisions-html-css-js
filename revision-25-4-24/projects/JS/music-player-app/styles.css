@@ -103,10 +103,10 @@ body {
 
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    /* justify-content: space-between; */
 
     height: 30px;
-    width: 430px;
+    /* width: 100%; */
 }
 
 .parallel-lines {
@@ -146,8 +146,8 @@ body {
 .playlist {
     padding: 10px;
 
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 .playlist-title {
