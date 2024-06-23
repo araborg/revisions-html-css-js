@@ -147,7 +147,13 @@ body {
 }
 
 #player-album-art {
+    background-color: var(--secondary-color);
+
+    border: 5px solid var(--background-color);
+
+    display: block;
 }
+
 #player-album-art img {
     /* border: 5px solid white; */
     width: 150px;
