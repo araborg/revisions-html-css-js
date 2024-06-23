@@ -103,7 +103,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 
     height: 30px;
     width: 430px;
@@ -145,6 +145,9 @@ body {
 
 .playlist {
     padding: 10px;
+
+    display: flex;
+    justify-content: center;
 }
 
 .playlist-title {
