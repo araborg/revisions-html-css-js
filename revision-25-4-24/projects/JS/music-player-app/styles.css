@@ -177,8 +177,9 @@ body {
 }
 
 #player-song-title {
-    font-size: 0.9rem;
+    font-size: 1.125rem;
 }
+
 #player-song-artist {
 }
 #player-song-duration {
