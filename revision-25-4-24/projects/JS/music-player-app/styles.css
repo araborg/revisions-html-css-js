@@ -79,7 +79,7 @@ body {
     background-color: var(--background-color);
 
     border: 3px solid var(--app-background-color);
-    width: 450px;
+    width: 460px;
 }
 
 .player {
@@ -133,10 +133,16 @@ body {
 .player-content {
     /* border: 5px solid green; */
 
-    width: 430px;
+    width: 440px;
     background-color: var(--app-background-color);
 }
 #player-album-art img {
     /* border: 5px solid white; */
     width: 150px;
+}
+
+.playlist-title {
+    font-size: var(--root-font-size);
+    font-family: var(--font-headline);
+    margin: 0 10px;
 }
