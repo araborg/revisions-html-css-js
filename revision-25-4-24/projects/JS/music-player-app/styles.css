@@ -99,7 +99,7 @@ body {
     /* border: 5px solid yellow; */
 
     background-color: var(--app-background-color);
-    padding: 10px;
+    /* padding: 10px; */
 
     display: flex;
     align-items: center;
@@ -209,12 +209,14 @@ button {
 }
 
 .playlist {
+    /* border: 3px solid red; */
+    /* padding: 10px; */
     height: auto;
-    padding: 10px;
 
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: space-around;
+    align-items: center;
 }
 
 .playlist-title {
@@ -226,25 +228,31 @@ button {
 #playlist-songs {
     /* background-color: ; */
     width: 430px;
+    /* height: auto; */
     /* height: 100px; */
+    border: 3px solid green;
 
     list-style: none;
+    margin: 0;
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding: 8px 9px;
+    justify-content: center;
+    /* padding: 8px 9px; */
     background-color: var(--app-background-color);
 }
 
 .playlist-song {
     height: 55px;
-    padding: 5px;
+    /* padding: 5px; */
     /* padding: 10px; */
-    border-bottom: 1px solid var(--background-color);
     /* margin: 0; */
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.playlist li:not(:last-child) {
+    /* border-bottom: 1px solid var(--background-color); */
 }
