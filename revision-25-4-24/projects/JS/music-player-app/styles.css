@@ -85,8 +85,6 @@ body {
 .player {
     /* border: 5px solid orange; */
 
-    height: 200px;
-
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -120,15 +118,18 @@ body {
     min-width: 75px;
 
     background-color: var(--highlight-color);
+
+    padding: 0 5px;
 }
 
 .fcc-title {
     font-size: 1.125rem;
     font-family: var(--font-headline);
+    margin: 0 10px;
 }
 
 .player-content {
-    /* border: 5px solid green; */
+    border: 5px solid green;
 }
 #player-album-art img {
     /* border: 5px solid white; */
