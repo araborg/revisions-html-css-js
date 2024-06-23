@@ -11,7 +11,7 @@ it more than 100
 4. A btn can have background: transparent; and border: none;
 
 5. Impt of box-sizing
-6.
+6. CSS is all about boxes all along
 7.
 8.
 9.
@@ -47,4 +47,10 @@ it more than 100
     /* font-families */
     --font-headline: "Roboto Mono", monospace;
     --font-family: "Lato", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
