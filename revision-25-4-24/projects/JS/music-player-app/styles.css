@@ -99,7 +99,7 @@ body {
     /* border: 5px solid yellow; */
 
     background-color: var(--app-background-color);
-    /* padding: 10px; */
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -210,12 +210,14 @@ button {
 
 .playlist {
     /* border: 3px solid red; */
-    /* padding: 10px; */
+    padding: 10px;
     height: auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    row-gap: 10px;
+
+    /* justify-content: space-around; */
     align-items: center;
 }
 
@@ -238,21 +240,20 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 8px 9px; */
+    padding: 8px 9px;
     background-color: var(--app-background-color);
 }
 
 .playlist-song {
     height: 55px;
-    /* padding: 5px; */
-    /* padding: 10px; */
-    /* margin: 0; */
+    padding: 5px;
+    margin: 0;
 
     display: flex;
-    /* justify-content: space-between; */
-    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .playlist li:not(:last-child) {
-    /* border-bottom: 1px solid var(--background-color); */
+    border-bottom: 1px solid var(--background-color);
 }
