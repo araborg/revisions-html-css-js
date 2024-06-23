@@ -164,17 +164,24 @@ body {
     background-color: var(--background-color);
 
     width: 226px;
-    padding: 13px;
-    height: 150px;
+    height: 153px;
+    padding: 14px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .player-display-song-artist p {
     margin: 0;
+}
+
+#player-song-title {
+    font-size: 0.9rem;
+}
+#player-song-artist {
+}
+#player-song-duration {
 }
 
 .player-buttons {
