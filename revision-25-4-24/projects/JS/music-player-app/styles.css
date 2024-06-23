@@ -183,9 +183,10 @@ body {
 #player-song-artist {
     font-size: 0.75rem;
     color: var(--highlight-color);
+    margin-bottom: 2px;
 }
 #player-song-duration {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 .player-buttons {
