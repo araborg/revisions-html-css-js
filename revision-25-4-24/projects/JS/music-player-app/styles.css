@@ -83,16 +83,20 @@ body {
 }
 
 .player {
-    /* border: 5px solid orange; */
+    border: 5px solid orange;
+
+    display: flex;
 }
 
 .player-bar,
 .playlist-bar {
     /* border: 5px solid yellow; */
+    background-color: var(--foreground-color);
 }
 
 .player-content {
     /* border: 5px solid green; */
+    background-color: var(--foreground-color);
 }
 
 #player-album-art img {
