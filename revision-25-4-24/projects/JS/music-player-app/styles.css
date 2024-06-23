@@ -89,6 +89,9 @@ body {
 
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
+
+    padding: 10px;
 }
 
 .player-bar,
@@ -99,11 +102,15 @@ body {
     padding: 10px;
 
     display: flex;
+    align-items: center;
+
+    height: 30px;
 }
 
 .parallel-lines {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
 }
 
 .parallel-lines div {
