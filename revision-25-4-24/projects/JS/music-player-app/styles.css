@@ -86,6 +86,9 @@ body {
     /* border: 5px solid orange; */
 
     height: 200px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .player-bar,
