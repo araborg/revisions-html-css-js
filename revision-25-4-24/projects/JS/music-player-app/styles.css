@@ -94,9 +94,13 @@ body {
 
     background-color: var(--app-background-color);
     padding: 10px;
+
+    display: flex;
 }
 
 .parallel-lines {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .parallel-lines div {
