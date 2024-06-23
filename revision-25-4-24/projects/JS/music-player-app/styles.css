@@ -57,6 +57,11 @@ it more than 100
 
 body {
     /* border: 5px solid violet; */
+
+    background-color: var(--foreground-color);
+
+    color: var(--secondary-color);
+    font-family: var(--font-family);
 }
 
 .container {
