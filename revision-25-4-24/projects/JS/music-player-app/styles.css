@@ -137,10 +137,26 @@ body {
 
     width: 430px;
     background-color: var(--app-background-color);
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 13px;
 }
+
 #player-album-art img {
     /* border: 5px solid white; */
     width: 150px;
+}
+
+.player-display {
+    background-color: var(--background-color);
+}
+
+.player-display-song-artist p {
+    margin: 0;
 }
 
 .playlist {
