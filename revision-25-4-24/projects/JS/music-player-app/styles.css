@@ -165,11 +165,12 @@ body {
 
     width: 226px;
     padding: 13px;
-    /* height: 200px; */
+    height: 150px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* align-items: center; */
 }
 
 .player-display-song-artist p {
