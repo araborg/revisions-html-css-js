@@ -146,7 +146,8 @@ body {
 .playlist {
     padding: 10px;
 
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     /* justify-content: center; */
 }
 
