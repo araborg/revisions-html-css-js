@@ -77,10 +77,15 @@ body {
 .player,
 .playlist {
     background-color: var(--background-color);
+
+    border: 3px solid var(--app-background-color);
+    width: 450px;
 }
 
 .player {
     /* border: 5px solid orange; */
+
+    height: 200px;
 }
 
 .player-bar,
