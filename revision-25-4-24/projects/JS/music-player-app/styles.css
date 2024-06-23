@@ -181,6 +181,11 @@ body {
 }
 
 button {
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
 }
 
 .playlist {
