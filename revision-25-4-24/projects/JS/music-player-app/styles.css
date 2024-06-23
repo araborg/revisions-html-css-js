@@ -103,8 +103,10 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     height: 30px;
+    width: 430px;
 }
 
 .parallel-lines {
@@ -133,7 +135,7 @@ body {
 .player-content {
     /* border: 5px solid green; */
 
-    width: 420px;
+    width: 430px;
     background-color: var(--app-background-color);
 }
 #player-album-art img {
