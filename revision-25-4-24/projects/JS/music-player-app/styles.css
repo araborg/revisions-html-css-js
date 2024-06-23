@@ -94,10 +94,24 @@ body {
 
 .player-bar,
 .playlist-bar {
-    /* border: 5px solid yellow; */
+    border: 5px solid yellow;
     background-color: var(--foreground-color);
 
     /* height: 30px; */
+
+    display: flex;
+}
+
+.parallel-lines {
+}
+
+.parallel-lines div {
+    height: 2px;
+
+    width: 100%;
+    min-width: 75px;
+
+    background-color: var(--highlight-color);
 }
 
 .player-content {
