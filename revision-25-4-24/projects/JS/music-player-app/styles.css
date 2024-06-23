@@ -62,3 +62,8 @@ it more than 100
 .player {
     border: 5px solid orange;
 }
+
+.player-bar,
+.playlist-bar {
+    border: 5px solid yellow;
+}
