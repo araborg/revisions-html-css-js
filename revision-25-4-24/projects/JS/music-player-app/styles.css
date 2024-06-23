@@ -91,12 +91,15 @@ body {
 .player-bar,
 .playlist-bar {
     /* border: 5px solid yellow; */
+
+    background-color: var(--app-background-color);
 }
 
 .parallel-lines {
 }
 
 .parallel-lines div {
+    height: 2px;
 }
 
 .fcc-title {
