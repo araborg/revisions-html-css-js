@@ -164,7 +164,7 @@ body {
     background-color: var(--background-color);
 
     width: 226px;
-    padding: 14px;
+    padding: 13px;
     /* height: 200px; */
 
     display: flex;
@@ -176,8 +176,15 @@ body {
     margin: 0;
 }
 
+.player-buttons {
+    display: flex;
+    justify-content: center;
+}
+
 .player-buttons svg {
     fill: var(--secondary-color);
+
+    /* border: 3px solid green; */
 }
 
 button {
