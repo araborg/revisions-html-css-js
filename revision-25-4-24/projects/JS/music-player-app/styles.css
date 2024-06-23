@@ -136,13 +136,15 @@ body {
     /* border: 5px solid green; */
 
     width: 430px;
+    height: 200px;
+
     background-color: var(--app-background-color);
 
-    padding: 15px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     column-gap: 13px;
 }
 
@@ -162,10 +164,23 @@ body {
     background-color: var(--background-color);
 
     width: 226px;
+    padding: 14px;
+    /* height: 200px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .player-display-song-artist p {
     margin: 0;
+}
+
+.player-buttons svg {
+    fill: var(--secondary-color);
+}
+
+button {
 }
 
 .playlist {
