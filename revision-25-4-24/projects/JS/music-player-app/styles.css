@@ -103,6 +103,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     row-gap: 5px;
+
+    padding: 0 5px;
 }
 
 .parallel-lines div {
@@ -112,8 +114,6 @@ body {
     min-width: 75px;
 
     background-color: var(--highlight-color);
-
-    padding: 0 5px;
 }
 
 .fcc-title {
@@ -235,4 +235,11 @@ button {
 
 .playlist li:not(:last-child) {
     border-bottom: 1px solid var(--background-color);
+}
+
+@media (max-width: 700px) {
+    /* .player,
+    .playlist {
+        width: 200px;
+    } */
 }
