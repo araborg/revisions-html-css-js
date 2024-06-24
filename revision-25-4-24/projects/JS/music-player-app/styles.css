@@ -104,7 +104,8 @@ body {
     align-items: center;
     /* justify-content: center; */
     justify-content: space-between;
-    padding: 0 5px;
+    /* padding: 0 5px; */
+    padding: 5px;
     width: 100%;
 
     height: 30px;
@@ -120,9 +121,11 @@ body {
 
 .parallel-lines div {
     height: 2px;
-    width: 100%;
+    /* width: 100%; */
 
-    min-width: 75px;
+    /* min-width: 75px; */
+    width: 75px;
+    min-width: 100%;
 
     background-color: var(--highlight-color);
 }
@@ -137,13 +140,14 @@ h1 {
     width: 430px;
     height: 200px;
 
-    background-color: var(--app-background-color);
+    background-color: var(--foreground-color);
 
-    padding: 10px;
+    /* padding: 10px; */
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
     column-gap: 13px;
 }
 
@@ -258,10 +262,12 @@ button {
 
     .player {
         height: 340px;
+
+        /* border: 4px solid green; */
     }
 
     #playlist-songs {
-        height: 280px;
+        /* height: 280px; */
         padding: 5px 6px;
 
         overflow-y: scroll;
