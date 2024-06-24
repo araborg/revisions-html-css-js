@@ -267,17 +267,36 @@ button {
     }
 
     #playlist-songs {
-        /* height: 280px; */
+        height: 280px;
         padding: 5px 6px;
+
+        /* overflow-y: scroll; */
+        /* overflow-x: hidden; */
 
         overflow-y: scroll;
         overflow-x: hidden;
 
+        scrollbar-color: var(--background-color) var(--secondary-color);
+        scrollbar-width: thin;
+
         /* border: 4px solid green; */
+    }
+
+    #playlist-songs::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #playlist-songs::-webkit-scrollbar-track {
+        background: var(--background-color);
+    }
+
+    #playlist-songs::-webkit-scrollbar-thumb {
+        background: var(--secondary-color);
     }
 
     h1 {
         font-size: 0.813rem;
+        margin: 0 5px;
     }
 
     h2 {
@@ -292,16 +311,16 @@ button {
     }
 
     .playlist-song {
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
 
-    .playlist-song-title {
+    /* .playlist-song-title {
         width: 140px;
-    }
+    } */
 
-    .playlist-song-artist {
+    /* .playlist-song-artist {
         width: 40px;
-    }
+    } */
 
     .player-content {
         /* border: 4px solid red; */
