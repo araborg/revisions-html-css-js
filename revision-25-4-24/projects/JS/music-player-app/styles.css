@@ -331,4 +331,11 @@ button {
     .player-display-song-artist > p {
         white-space: pre-wrap;
     }
+
+    .player-display {
+        z-index: 100;
+
+        position: absolute;
+        width: 100%;
+    }
 }
