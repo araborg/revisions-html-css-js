@@ -93,8 +93,6 @@ body {
     padding: 10px;
 
     height: 260px;
-
-    border: 3px solid red;
 }
 
 .player-bar,
@@ -129,7 +127,7 @@ body {
     background-color: var(--highlight-color);
 }
 
-.fcc-title {
+h1 {
     font-size: 1.125rem;
     font-family: var(--font-headline);
     margin: 0 10px;
