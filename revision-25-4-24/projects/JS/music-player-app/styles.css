@@ -240,6 +240,17 @@ button {
 @media (max-width: 700px) {
     .player,
     .playlist {
-        width: 200px;
+        width: 300px;
+
+        border: 4px solid white;
+    }
+
+    .player {
+        height: 340px;
+    }
+
+    #playlist-songs {
+        height: 340px;
+        padding: 5px 6px;
     }
 }
