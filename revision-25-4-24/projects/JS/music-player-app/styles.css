@@ -252,5 +252,15 @@ button {
     #playlist-songs {
         height: 340px;
         padding: 5px 6px;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .player-bar,
+    .playlist-bar,
+    .player-content,
+    #playlist-songs {
+        width: 280px;
     }
 }
