@@ -250,11 +250,17 @@ button {
     }
 
     #playlist-songs {
-        height: 340px;
+        height: 280px;
         padding: 5px 6px;
 
-        overflow-x: hidden;
         overflow-y: scroll;
+        overflow-x: hidden;
+
+        border: 4px solid green;
+    }
+
+    h1 {
+        font-size: 0.813rem;
     }
 
     .player-bar,
