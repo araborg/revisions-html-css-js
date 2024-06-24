@@ -238,8 +238,8 @@ button {
 }
 
 @media (max-width: 700px) {
-    /* .player,
+    .player,
     .playlist {
         width: 200px;
-    } */
+    }
 }
