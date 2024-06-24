@@ -305,5 +305,12 @@ button {
         z-index: -100;
         height: 280px;
         box-shadow: none;
+
+        background: #000;
+    }
+
+    #player-album-art img {
+        width: 100%;
+        opacity: 0.6;
     }
 }
