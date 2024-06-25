@@ -172,19 +172,20 @@ ul {
 }
 
 #player-album-art img {
-    width: 150px;
     display: block;
+
+    width: 150px;
 }
 
 .player-display {
-    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
 
     width: 226px;
     height: 153px;
     padding: 14px;
 
-    display: flex;
-    flex-direction: column;
+    background-color: var(--background-color);
 }
 
 .player-display-song-artist {
