@@ -39,6 +39,9 @@ it more than 100.
 25. outline-style: dashed; outline-width: 2px;
 26. height: auto;
 
+27. visibility: visible;
+
+
 */
 
 :root {
