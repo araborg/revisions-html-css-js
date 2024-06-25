@@ -214,6 +214,12 @@ ul {
     font-size: 0.7rem;
 }
 
+#player-song-title,
+#player-song-artist,
+#player-song-duration {
+    margin: 0;
+}
+
 .player-buttons {
     display: flex;
     justify-content: center;
