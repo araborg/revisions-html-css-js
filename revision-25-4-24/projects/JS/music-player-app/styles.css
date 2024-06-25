@@ -177,7 +177,6 @@ ul {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .player-display-song-artist p {
