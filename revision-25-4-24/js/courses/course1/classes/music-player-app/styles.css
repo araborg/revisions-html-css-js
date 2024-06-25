@@ -291,6 +291,14 @@ button:focus,
     padding: 5px;
 }
 
+[aria-current="true"] {
+    background-color: var(--background-color);
+}
+
+[aria-current="true"] p {
+    color: var(--highlight-color);
+}
+
 .playlist-song-info {
     height: 100%;
     width: 89%;
