@@ -74,7 +74,7 @@ it more than 100.
 }
 
 body {
-    background-color: var(--foreground-color);
+    /* background-color: var(--foreground-color); */
 
     color: var(--secondary-color);
     font-family: var(--font-family);
@@ -91,6 +91,14 @@ h2 {
 
 ul {
     margin: 0;
+}
+
+.fcc-title,
+.playlist-title {
+    color: var(--secondary-color);
+    font-family: var(--font-headline);
+
+    margin: 0 10px;
 }
 
 .container {
@@ -146,14 +154,6 @@ ul {
     min-width: 75px;
 
     background-color: var(--highlight-color);
-}
-
-.fcc-title,
-.playlist-title {
-    color: var(--secondary-color);
-    font-family: var(--font-headline);
-
-    margin: 0 10px;
 }
 
 .player-content {
