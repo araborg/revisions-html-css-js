@@ -41,6 +41,8 @@ it more than 100.
 
 27. visibility: visible;
 
+28. img as e.g. of inline elemets
+
 
 */
 
@@ -242,40 +244,39 @@ button:focus,
 }
 
 .playlist {
-    padding: 10px;
-    height: auto;
-
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 10px;
 
-    align-items: center;
+    padding: 10px;
+    height: auto;
 }
 
 #playlist-songs {
-    width: 430px;
-    height: 100%;
-
-    list-style: none;
-
     display: flex;
     flex-direction: column;
     row-gap: 8px;
     padding: 8px 9px;
     justify-content: start;
 
-    background-color: var(--foreground-color);
+    width: 430px;
+    height: 100%;
+
+    list-style: none;
 
     visibility: visible;
+
+    background-color: var(--foreground-color);
 }
 
 .playlist-song {
-    height: 55px;
-    padding: 5px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    height: 55px;
+    padding: 5px;
 
     outline-color: var(--highlight-color);
 }
@@ -338,16 +339,18 @@ button:focus,
 
     .player-content {
         display: inline;
-        position: relative;
-
         justify-items: center;
+
+        position: relative;
 
         height: 100%;
     }
 
     #player-album-art {
-        z-index: -100;
         height: 280px;
+
+        z-index: -100;
+
         box-shadow: none;
 
         background: #000;
@@ -367,17 +370,17 @@ button:focus,
     }
 
     .player-display {
-        z-index: 100;
+        position: absolute;
+        top: 0;
+
+        justify-content: space-between;
+        text-align: center;
 
         width: 100%;
         height: 280px;
 
-        position: absolute;
-        top: 0;
-
         background: transparent;
 
-        justify-content: space-between;
-        text-align: center;
+        z-index: 100;
     }
 }
