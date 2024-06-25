@@ -280,10 +280,6 @@ button:focus,
     outline-color: var(--highlight-color);
 }
 
-[aria-current="true"] {
-    background-color: var(--background-color);
-}
-
 .playlist li:not(:last-child) {
     border-bottom: 1px solid var(--background-color);
 }
