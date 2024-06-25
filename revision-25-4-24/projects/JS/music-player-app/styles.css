@@ -37,6 +37,7 @@ it more than 100.
 
 24. :focus
 25. outline-style: dashed; outline-width: 2px;
+26. height: auto;
 
 */
 
@@ -255,6 +256,8 @@ button:focus,
     justify-content: start;
 
     background-color: var(--foreground-color);
+
+    visibility: visible;
 }
 
 .playlist-song {
