@@ -227,21 +227,25 @@ button {
 
 #playlist-songs {
     width: 430px;
+    height: 100%;
 
     list-style: none;
-    margin: 0;
+    /* margin: 0; */
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    row-gap: 8px;
     padding: 8px 9px;
-    background-color: var(--app-background-color);
+    /* justify-content: center; */
+    justify-content: start;
+
+    background-color: var(--foreground-color);
 }
 
 .playlist-song {
     height: 55px;
     padding: 5px;
-    margin: 0;
+    /* margin: 0; */
 
     display: flex;
     justify-content: space-between;
@@ -280,18 +284,6 @@ button {
         scrollbar-width: thin;
 
         /* border: 4px solid green; */
-    }
-
-    #playlist-songs::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    #playlist-songs::-webkit-scrollbar-track {
-        background: var(--background-color);
-    }
-
-    #playlist-songs::-webkit-scrollbar-thumb {
-        background: var(--secondary-color);
     }
 
     h1 {
