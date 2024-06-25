@@ -122,10 +122,16 @@ body {
     background-color: var(--highlight-color);
 }
 
+.fcc-title,
+.playlist-title {
+    color: var(--secondary-color);
+    margin: 0 10px;
+    font-family: var(--font-headline);
+}
+
 h1 {
     font-size: 1.125rem;
-    font-family: var(--font-headline);
-    margin: 0 10px;
+    line-height: 1.6;
 }
 
 ul {
@@ -212,10 +218,8 @@ button {
     align-items: center;
 }
 
-.playlist-title {
+h2 {
     font-size: var(--root-font-size);
-    font-family: var(--font-headline);
-    margin: 0 10px;
 }
 
 #playlist-songs {
@@ -269,7 +273,10 @@ button {
 
     h1 {
         font-size: 0.813rem;
-        margin: 0 5px;
+    }
+
+    .fcc-title {
+        margin: 0 2px;
     }
 
     h2 {
