@@ -31,6 +31,8 @@ it more than 100.
 19. opacity: 0.6;
 20. position: relative/absolute.
 21. justify-content: start.
+
+22. line-height
 */
 
 :root {
@@ -64,6 +66,19 @@ body {
 
     color: var(--secondary-color);
     font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: var(--root-font-size);
+}
+
+ul {
+    margin: 0;
 }
 
 .container {
@@ -127,15 +142,6 @@ body {
     color: var(--secondary-color);
     margin: 0 10px;
     font-family: var(--font-headline);
-}
-
-h1 {
-    font-size: 1.125rem;
-    line-height: 1.6;
-}
-
-ul {
-    margin: 0;
 }
 
 .player-content {
@@ -216,10 +222,6 @@ button {
     row-gap: 10px;
 
     align-items: center;
-}
-
-h2 {
-    font-size: var(--root-font-size);
 }
 
 #playlist-songs {
