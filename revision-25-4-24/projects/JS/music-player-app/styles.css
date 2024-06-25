@@ -101,10 +101,9 @@ ul {
 
 .player,
 .playlist {
-    background-color: var(--background-color);
-
-    border: 3px solid var(--foreground-color);
     width: 450px;
+    border: 3px solid var(--foreground-color);
+    background-color: var(--background-color);
 }
 
 .player {
@@ -113,34 +112,33 @@ ul {
     align-items: center;
     row-gap: 10px;
 
-    padding: 10px;
-
     height: 260px;
+    padding: 10px;
 }
 
 .player-bar,
 .playlist-bar {
-    background-color: var(--foreground-color);
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5px;
-    width: 100%;
 
+    width: 100%;
     height: 30px;
+    padding: 0 5px;
+
+    background-color: var(--foreground-color);
 }
 
 .parallel-lines {
     display: flex;
     flex-wrap: wrap;
     row-gap: 6px;
+
     padding: 0 5px;
 }
 
 .parallel-lines > div {
     height: 2px;
-
     width: 100%;
     min-width: 75px;
 
@@ -150,20 +148,21 @@ ul {
 .fcc-title,
 .playlist-title {
     color: var(--secondary-color);
-    margin: 0 10px;
     font-family: var(--font-headline);
+
+    margin: 0 10px;
 }
 
 .player-content {
-    width: 430px;
-    height: 200px;
-
-    background-color: var(--foreground-color);
-
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 13px;
+
+    width: 430px;
+    height: 200px;
+
+    background-color: var(--foreground-color);
 }
 
 #player-album-art {
