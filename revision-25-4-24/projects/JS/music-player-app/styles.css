@@ -12,7 +12,17 @@ it more than 100.
 
 3. U can use width ppty twice in a selector by using min(width).
 4. A btn can have background: transparent; and border: none;
-5. Impt of box-sizing.
+
+5. Impt of box-sizing:
+The box-sizing CSS property sets how the total width and height 
+of an element is calculated.
+    box-sizing: border-box;
+    width: 100%;
+    border: solid #5B6DCD 10px;
+    padding: 5px;
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing    
+
 6. CSS is all about boxes all along.
 
 7. In case you needed to use borders, use it for most impt containers.
@@ -36,6 +46,7 @@ it more than 100.
 
 22. line-height: The line-height CSS property sets the height of a line 
 box. It's commonly used to set the distance between lines of text. 
+
 23. outline-color
 
 24. :focus
