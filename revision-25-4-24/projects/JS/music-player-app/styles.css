@@ -43,12 +43,15 @@ box. It's commonly used to set the distance between lines of text.
 26. height: auto;
 
 27. visibility: visible;
-
 28. img as e.g. of inline elemets.
 29. media(min/max-width: px) {}
 
 30. ul has an invisible default margin of 16px
 31. li has an invisible deault left padding of ......
+32. Grping more than 2 selectors together if dy have common ppties.
+
+
+
 
 
 
