@@ -179,6 +179,10 @@ ul {
     flex-direction: column;
 }
 
+.player-display-song-artist {
+    height: 80px;
+}
+
 .player-display-song-artist p {
     margin: 0;
 }
