@@ -103,6 +103,9 @@ in the inline direction.
 The cross axis runs perpendicular to the main axis. Therefore, if your 
 flex-direction (main axis) is set to row or row-reverse the cross axis 
 runs down the columns.
+If your main axis is column or column-reverse then the cross axis runs 
+along the rows.
+
 
 
 
