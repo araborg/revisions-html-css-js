@@ -92,10 +92,8 @@ its alignment container along the appropriate axis.
 
 38. The main axis
 The main axis is defined by flex-direction, which has four possible values:
-row
-row-reverse
-column
-column-reverse
+row, row-reverse, column, column-reverse
+
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
 
