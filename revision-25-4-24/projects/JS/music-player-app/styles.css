@@ -99,6 +99,10 @@ column-reverse
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
 
+39. The cross axis:
+The cross axis runs perpendicular to the main axis. Therefore, if your 
+flex-direction (main axis) is set to row or row-reverse the cross axis 
+runs down the columns.
 
 
 
