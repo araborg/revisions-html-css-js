@@ -66,11 +66,16 @@ of d parent elemt width.
 
 34. align-items:
 align-items: stretch/start/end/center. 
-The default value is stretch.The CSS align-items property sets the 
+The default value is stretch. The CSS align-items property sets the 
 align-self value on all DIRECT children as a group. 
 In flexbox, it controls the alignment of items on the cross axis. 
 In grid layout, it controls the alignment of items on the block axis 
 within their grid areas.
+
+35. block axis:
+CSS grid layout is a two-dimensional layout method enabling the laying out of content in rows and columns. Therefore in any grid we have two axes. The block or column axis, and the inline or row axis.
+
+
 
 35. align-self:
 align-self: stretch/start/end/center. 
