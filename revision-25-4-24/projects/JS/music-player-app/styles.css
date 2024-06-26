@@ -64,6 +64,9 @@ box. It's commonly used to set the distance between lines of text.
 33. width: 100% means d child elemt shd occupy d whole width
 of d parent elemt width.
 
+34. align-items: strecth/start/end/center/
+The CSS align-items property sets the align-self value on all direct children as a group. In flexbox, it controls the alignment of items on the cross axis. In grid layout, it controls the alignment of items on the block axis within their grid areas.
+
 
 
 
