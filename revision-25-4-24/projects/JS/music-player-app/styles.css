@@ -64,7 +64,8 @@ box. It's commonly used to set the distance between lines of text.
 33. width: 100% means d child elemt shd occupy d whole width
 of d parent elemt width.
 
-34. align-items: stretch/start/end/center. The default value is stretch.
+34. align-items:
+align-items: stretch/start/end/center. The default value is stretch.
 The CSS align-items property sets the align-self value on all DIRECT 
 children as a group. 
 In flexbox, it controls the alignment of items on the cross axis. 
