@@ -72,30 +72,31 @@ In flexbox, it controls the alignment of items on the cross axis.
 In grid layout, it controls the alignment of items on the block axis 
 within their grid areas.
 
-35. block axis:
-CSS grid layout is a two-dimensional layout method enabling the laying out of content in rows and columns. Therefore in any grid we have two axes. The block or column axis, and the inline or row axis.
+35. block/column axis:
+CSS grid layout is a two-dimensional layout method enabling the 
+laying out of content in rows and columns. Therefore in any grid 
+we have two axes. The block or column axis, and the inline or 
+row axis.
 
-
-
-35. align-self:
+36. align-self:
 align-self: stretch/start/end/center. 
 The align-self CSS property overrides a grid or flex item's align-items 
 value. 
 In grid, it aligns the item inside the grid area. 
 In flexbox, it aligns the item on the cross axis.
 
-36. justify-content:
+37. justify-content:
 justify-content: start/center/space-between/space-around/space-evenly
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
 container, and the inline axis of a grid container.
 
-37. justify-self:
+38. justify-self:
 justify-self: stretch/start/end/center
 The CSS justify-self property sets the way a box is justified inside 
 its alignment container along the appropriate axis.
 
-38. The main axis
+39. The main axis
 The main axis is defined by flex-direction, which has four possible values:
 row, row-reverse, column, column-reverse
 Should you choose row or row-reverse, your main axis will run along the row 
