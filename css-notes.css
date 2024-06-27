@@ -143,7 +143,9 @@ element.
 
 
 42. width: auto;
-
+It means use the available space. With use the available space, it means 
+that margins and paddings will be respected, and the element will not 
+overflow its parent.
 
 
 */
