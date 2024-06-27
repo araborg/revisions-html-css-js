@@ -193,6 +193,8 @@ button:focus,
 .playlist-song:focus {
     outline-style: dashed;
     outline-width: 2px;
+
+    outline-color: var(--highlight-color);
 }
 
 .playlist {

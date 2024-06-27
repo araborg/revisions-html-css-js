@@ -270,6 +270,15 @@ The border property may be specified using one, two, or three of the values list
 above. The order of the values does not matter.
 
 
+51. outline
+The outline CSS shorthand property sets most of the outline properties in a single 
+declaration.
+
+This property is a shorthand for the following CSS properties:
+outline-color, outline-style, outline-width
+
+The outline property may be specified using one, two, or three of the values listed below. The order of the values does not matter. As with all shorthand properties, any omitted sub-values will be set to their init
+
 
 
 *****************************************
