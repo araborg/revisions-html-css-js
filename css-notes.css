@@ -203,6 +203,19 @@ types. The outer type sets an element's participation in flow layout; the
 inner type sets the layout of children.
 
 
+47. inner and outer display
+<display-outside>
+These keywords specify the element's outer display type, which is essentially 
+its role in flow layout:
+
+1. block
+The element generates a block box, generating line breaks both before and after 
+the element when in the normal flow.
+
+2. inline
+The element generates one or more inline boxes that do not generate line breaks 
+before or after themselves. In normal flow, the next element will be on the same 
+line if there is space.
 
 
 
