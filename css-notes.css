@@ -291,6 +291,9 @@ An element's padding area is the space between its content and its border.
 margin:
 The margin CSS shorthand property sets the margin area on all four sides of an 
 element.
+The margin area, bounded by the margin edge, extends the border area to include 
+an empty area used to separate the element from its neighbors. Its dimensions 
+are the margin box width and the margin box height.
 
 Note: Padding creates extra space within an element. In contrast, margin creates 
 extra space around an element.
