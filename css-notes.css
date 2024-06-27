@@ -256,6 +256,15 @@ The element behaves like an inline-level element and lays out its content accord
 to the ruby formatting model. It behaves like the corresponding HTML <ruby> elements.
 
 
+49. fill
+The fill attribute has two different meanings. For shapes and text it's a 
+presentation attribute that defines the color (or any SVG paint servers like 
+gradients or patterns) used to paint the element; for animation it defines 
+the final state of the animation.
+
+50.
+
+
 *****************************************
 CSS box alignment
 READ UP
