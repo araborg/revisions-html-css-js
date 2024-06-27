@@ -124,6 +124,9 @@ min-width overrides width.
 If the value for width is greater than the value for max-width, then 
 max-width overrides width.
 
+auto: The browser will calculate and select a width for the 
+specified element.
+
 Height:
 The height CSS property specifies the height of an element. By default, 
 the property defines the height of the content area. If box-sizing is 
