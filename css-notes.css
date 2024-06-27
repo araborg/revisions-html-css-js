@@ -202,6 +202,8 @@ Formally, the display property sets an element's inner and outer display
 types. The outer type sets an element's participation in flow layout; the 
 inner type sets the layout of children.
 
+display: inline/inline-block/flex/grid
+
 
 47. inner and outer display
 <display-outside>
