@@ -153,6 +153,12 @@ ul {
     margin: 0;
 } */
 
+#player-song-title,
+#player-song-artist,
+#player-song-duration {
+    margin: 0;
+}
+
 #player-song-title {
     font-size: 1.125rem;
 }
@@ -160,17 +166,12 @@ ul {
 #player-song-artist {
     font-size: 0.75rem;
     color: var(--highlight-color);
+
     margin-bottom: 2px;
 }
 
 #player-song-duration {
     font-size: 0.7rem;
-}
-
-#player-song-title,
-#player-song-artist,
-#player-song-duration {
-    margin: 0;
 }
 
 .player-buttons {
