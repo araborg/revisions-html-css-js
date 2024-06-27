@@ -299,7 +299,7 @@ Note: Padding creates extra space within an element. In contrast, margin creates
 extra space around an element.
 
 
-53. visibility
+53. visibility: visible/hidden/collapse;
 The visibility CSS property shows or hides an element without changing the layout 
 of a document. The property can also hide rows or columns in a <table>.
 
