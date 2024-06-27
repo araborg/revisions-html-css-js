@@ -222,7 +222,7 @@ These keywords specify the element's inner display type, which defines the type
 of formatting context that its contents are laid out in (assuming it is a 
 non-replaced element):
 
-flow
+flow;
 The element lays out its contents using flow layout (block-and-inline layout).
 
 If its outer display type is inline, and it is participating in a block or inline 
@@ -231,7 +231,7 @@ container box.
 
 Depending on the value of other properties (such as position, float, or overflow) 
 and whether it is itself participating in a block or inline formatting context, 
-it either establishes a new block formatting context (BFC) for its contents or 
+it either establishes a new block formatting context for its contents or 
 integrates its contents into its parent formatting context.
 
 flow-root:
