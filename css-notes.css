@@ -140,16 +140,15 @@ auto: The browser will calculate and select a height for the specified
 element.
 
 41. width: 100%;
-it means be as big as the parent element.
+It means be as big as the parent element.
 That is you want the element to be as big as its parent. The consequence 
 is that if you have set margins and paddings on the parent element, the 
 element will overflow, which is something you don’t necessarily want.
 
 
 42. width: auto;
-It means use the available space. With use the available space, it means 
-that margins and paddings will be respected, and the element will not 
-overflow its parent.
+It means use the available space i.e margins and paddings will be 
+respected, and the element will not overflow its parent.
 
 
 */

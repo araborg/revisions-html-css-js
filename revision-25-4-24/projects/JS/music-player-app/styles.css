@@ -75,7 +75,7 @@ ul {
     row-gap: 10px;
 
     height: 260px;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .player-bar,
@@ -84,12 +84,14 @@ ul {
     align-items: center;
     justify-content: space-between;
 
-    width: 100%;
+    /* width: 100%; */
     height: 30px;
 
-    padding: 0 5px;
+    /* padding: 0 5px; */
 
     background-color: var(--foreground-color);
+
+    border: 2px solid green;
 }
 
 .parallel-lines {
@@ -97,7 +99,7 @@ ul {
     flex-wrap: wrap;
     row-gap: 6px;
 
-    padding: 0 5px;
+    /* padding: 0 5px; */
 }
 
 .parallel-lines > div {
