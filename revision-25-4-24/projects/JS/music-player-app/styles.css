@@ -209,7 +209,7 @@ button:focus,
     display: flex;
     flex-direction: column;
     /* row-gap: 8px; */
-    padding: 8px 9px;
+    padding: 2px 9px;
     justify-content: start;
 
     width: 430px;
@@ -220,8 +220,6 @@ button:focus,
     visibility: visible;
 
     background-color: var(--foreground-color);
-
-    border: 2px solid white;
 }
 
 .playlist-song {
