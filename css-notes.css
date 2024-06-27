@@ -283,6 +283,14 @@ any omitted sub-values will be set to their init
 
 
 52. padding/margin:
+padding:
+The padding CSS shorthand property sets the padding area on all four sides of an 
+element at once.
+An element's padding area is the space between its content and its border.
+
+margin:
+
+Note: Padding creates extra space within an element. In contrast, margin creates extra space around an element.
 
 
 
