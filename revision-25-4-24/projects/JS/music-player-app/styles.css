@@ -209,8 +209,8 @@ button:focus,
     display: flex;
     flex-direction: column;
     /* row-gap: 8px; */
-    padding: 2px 9px;
-    justify-content: start;
+    padding: 8px 9px;
+    /* justify-content: start; */
 
     width: 430px;
     height: 100%;
