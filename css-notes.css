@@ -110,12 +110,16 @@ If your main axis is column or column-reverse then the cross axis runs
 along the rows.
 
 40. Impt of width/height:
+Width:
+The width CSS property sets an element's width. By default, it sets the 
+width of the content area, but if box-sizing is set to border-box, it 
+sets the width of the border area.
 
 
 41. width: 100%;
 
 
-42.
+42. width: auto;
 
 
 
