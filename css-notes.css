@@ -123,6 +123,8 @@ set to border-box, however, it instead determines the height of the
 border area.
 height: px, rem, em, %, auto
 
+N.B: The min-height and max-height properties override height.
+
 41. width: 100%;
 
 
