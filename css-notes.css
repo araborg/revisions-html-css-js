@@ -116,6 +116,14 @@ width of the content area, but if box-sizing is set to border-box, it
 sets the width of the border area.
 width: px, rem, em, %, auto
 
+The specified value of width applies to the content area so long as its 
+value remains within the values defined by min-width and max-width.
+
+If the value for width is less than the value for min-width, then 
+min-width overrides width.
+If the value for width is greater than the value for max-width, then 
+max-width overrides width.
+
 Height:
 The height CSS property specifies the height of an element. By default, 
 the property defines the height of the content area. If box-sizing is 
