@@ -13,6 +13,7 @@ it more than 100.
 3. U can use width ppty twice in a selector by using min(width).
 4. A btn can have background: transparent; and border: none;
 
+
 5. Impt of box-sizing:
 The box-sizing CSS property sets how the total width and height 
 of an element is calculated.
@@ -22,6 +23,7 @@ of an element is calculated.
     padding: 5px;
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing    
+
 
 6. CSS is all about boxes all along.
 
@@ -44,8 +46,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 20. position: relative/absolute.
 21. justify-content: start.
 
+
 22. line-height: The line-height CSS property sets the height of a line 
 box. It's commonly used to set the distance between lines of text. 
+
 
 23. outline-color
 
@@ -64,6 +68,7 @@ box. It's commonly used to set the distance between lines of text.
 33. width: 100% means d child elemt shd occupy d whole width
 of d parent elemt width.
 
+
 34. align-items:
 align-items: stretch/start/end/center. 
 The default value is stretch. The CSS align-items property sets the 
@@ -72,11 +77,13 @@ In flexbox, it controls the alignment of items on the cross/blk axis.
 In grid layout, it controls the alignment of items on the block axis 
 within their grid areas.
 
+
 35. block/column axis:
 CSS grid layout is a two-dimensional layout method enabling the 
 laying out of content in rows and columns. Therefore in any grid 
 we have two axes. The block or column axis, and the inline or 
 row axis.
+
 
 36. align-self:
 align-self: stretch/start/end/center. 
@@ -85,16 +92,19 @@ value.
 In grid, it aligns the item inside the grid area. 
 In flexbox, it aligns the item on the cross axis.
 
+
 37. justify-content:
 justify-content: start/center/space-between/-around/-evenly.
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
 container, and the inline axis of a grid container.
 
+
 38. justify-self:
 justify-self: stretch/start/end/center
 The CSS justify-self property sets the way a box is justified inside 
 its alignment container along the appropriate axis.
+
 
 39. The main axis
 The main axis is defined by flex-direction, which has four possible values:
@@ -102,12 +112,14 @@ row, row-reverse, column, column-reverse
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
 
+
 39. The cross axis:
 The cross axis runs perpendicular to the main axis. Therefore, if your 
 flex-direction (main axis) is set to row or row-reverse the cross axis 
 runs down the columns.
 If your main axis is column or column-reverse then the cross axis runs 
 along the rows.
+
 
 40. Impt of width/height:
 Width:
@@ -139,6 +151,7 @@ N.B: The min-height and max-height properties override height.
 auto: The browser will calculate and select a height for the specified 
 element.
 
+
 41. width: 100%;
 It means be as big as the parent element.
 That is you want the element to be as big as its parent. The consequence 
@@ -149,6 +162,7 @@ element will overflow, which is something you don’t necessarily want.
 42. width: auto;
 It means use the available space i.e margins and paddings will be 
 respected, and the element will not overflow its parent.
+
 
 43. flex-wrap: nowrap/wrap/wrap-reverse;
 The flex-wrap CSS property sets whether flex items are forced onto one 
