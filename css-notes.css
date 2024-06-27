@@ -140,6 +140,10 @@ auto: The browser will calculate and select a height for the specified
 element.
 
 41. width: 100%;
+it means be as big as the parent element.
+That is you want the element to be as big as its parent. The consequence 
+is that if you have set margins and paddings on the parent element, the 
+element will overflow, which is something you don’t necessarily want.
 
 
 42. width: auto;
