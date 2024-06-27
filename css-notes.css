@@ -262,7 +262,14 @@ presentation attribute that defines the color (or any SVG paint servers like
 gradients or patterns) used to paint the element; for animation it defines 
 the final state of the animation.
 
-50.
+50. border:
+The border shorthand CSS property sets an element's border. It sets the values of 
+border-width, border-style, and border-color.
+
+The border property may be specified using one, two, or three of the values listed 
+above. The order of the values does not matter.
+
+
 
 
 *****************************************
