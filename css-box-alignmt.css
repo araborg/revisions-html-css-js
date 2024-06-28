@@ -159,6 +159,34 @@ Distributed alignment: These keywords define alignment as a distribution
 of space among alignment subjects.
 
 
+Positional alignment keyword values
+The following values are defined for positional alignment, and can be used 
+as values for content alignment with justify-content and align-content and 
+lso for self alignment with justify-self and align-self.
+center
+start
+end
+self-start
+self-end
+flex-start for flexbox only
+flex-end for flexbox only
+left
+right
+
+Other than the physical values of left and right, which relate to physical 
+attributes of the screen, all of the other values are logical values and 
+relate to the writing mode of the content.
+
+For example, when working in CSS grid layout, if you are working in English 
+and set justify-content to start this will move the items in the inline 
+dimension to the start, which will be the left as sentences in English 
+start on the left. If you were using Arabic, a right to left language, then 
+the same value of start would result in the items moving to the right, as 
+sentences in Arabic start on the right-hand side of the page.
+
+Both of these examples have justify-content: start, however the location 
+of start changes according to the writing mode.
+
 
 
 
