@@ -10,7 +10,7 @@ flex-direction: column to align-items: center to center an
 item horizontally.
 
 3. If u think width: 100%; does nt work on a box, increase
-it more than 100 and see the effect.
+it more than 100% and see the effect.
 
 4. U can use width ppty twice in a selector by using min(width).
 5. A btn can have background: transparent; and border: none;
