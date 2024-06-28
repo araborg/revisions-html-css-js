@@ -30,20 +30,6 @@ body {
     padding: 10px;
 }
 
-/*
-Ths learnt:
-1. Wn using flex to center a container, no need for width
-2. As flex-direction: row is to justify-content: center so is
-flex-direction: column to align-items: center to center an item
-
-2. If u think width: 100%; does nt work on a box, increase
-it more than 100
-
-3. U can use width ppty twice in a selector by using min(width)
-4.
-
-*/
-
 .player,
 .playlist {
     padding: 10px;
