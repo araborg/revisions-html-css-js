@@ -144,6 +144,19 @@ fallback alignment is specified individually for each layout method
 and detailed on the page for that method.
 
 
+Types of alignment:
+There are three different types of alignment that the specification 
+details; these use keyword values.
+
+Positional alignment: specifying the position of an alignment subject 
+with relation to its alignment container.
+
+Baseline alignment: These keywords define alignment as a relationship 
+among the baselines of multiple alignment subjects within an alignment 
+context.
+
+Distributed alignment: These keywords define alignment as a distribution 
+of space among alignment subjects.
 
 
 
