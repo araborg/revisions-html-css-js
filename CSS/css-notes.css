@@ -273,7 +273,7 @@ container, and the inline axis of a grid container. It deals with
 container
 
 
-35. justify-items: deals with children elemts
+35. justify-items: stretch/center/start/end
 The CSS justify-items property defines the default justify-self for all 
 items of the box, giving them all a default way of justifying each box 
 along the appropriate axis.
@@ -288,20 +288,20 @@ In grid layouts, it aligns the items inside their grid areas on the
 inline axis 
 
 
-35. justify-self: stretch/start/end/center
+36. justify-self: stretch/start/end/center
 It deals with a single child elemt. The CSS justify-self property sets 
 the way a box/item is justified inside its alignment container along 
 the appropriate axis.
 
 
-36. The main axis
+37. The main axis
 The main axis is defined by flex-direction, which has four possible values:
 row, row-reverse, column, column-reverse
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
 
 
-37. The cross axis:
+38. The cross axis:
 The cross axis runs perpendicular to the main axis. Therefore, if your 
 flex-direction (main axis) is set to row or row-reverse the cross axis 
 runs down the columns.
@@ -309,9 +309,7 @@ If your main axis is column or column-reverse then the cross axis runs
 along the rows.
 
 
-
-
-42. row-gap:
+39. row-gap:
 The row-gap CSS property sets the size of the gap (gutter) between an 
 element's rows.
 
@@ -320,7 +318,7 @@ and to maintain compatibility with legacy websites, browsers will still
 accept grid-row-gap as an alias for row-gap.
 
 
-43. column-gap
+40. column-gap
 The column-gap CSS property sets the size of the gap (gutter) between an 
 element's columns.
 
