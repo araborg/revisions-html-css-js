@@ -62,8 +62,35 @@ justify-content and on the Cross Axis using align-items. The first
 item overrides the align-items set on the group by setting align-self 
 to center.
 
+.box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.box :first-child {
+    align-self: center;
+}
+
+<div class="box">
+    <div>One</div>
+    <div>Two</div>
+
+    <div>Three
+        <br>has
+        <br>extra
+        <br>text
+    </div>
+</div>
 
 
+Relationship to writing modes:
+Alignment is linked to writing modes in that when we align an 
+item we do not consider whether we are aligning it to the physical 
+dimensions of top, right, bottom and left. Instead we describe 
+alignment in terms of the start and end of the particular dimension 
+we are working with. This ensures that alignment works in the same 
+way whichever writing mode the document has.
 
 
 vertical-align
