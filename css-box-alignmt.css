@@ -137,6 +137,11 @@ This will typically be the alignment subject's containing block. An
 alignment container may contain one or many alignment subjects.
 
 
+Fallback alignment
+If you set an alignment that cannot be fulfilled, then the fallback 
+alignment will come into play and deal with the available space. This 
+fallback alignment is specified individually for each layout method 
+and detailed on the page for that method.
 
 
 
