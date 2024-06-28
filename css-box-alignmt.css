@@ -8,5 +8,14 @@ all of CSS. This document details the general concepts found
 in the specification.
 
 
+Older alignment methods:
+CSS traditionally had very limited alignment capabilities. We 
+were able to align text using text-align, center blocks using 
+auto margins, and in table or inline-block layouts using the 
+vertical-align property. 
+
+
+
+vertical-align
 
 */
