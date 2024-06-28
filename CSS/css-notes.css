@@ -25,6 +25,42 @@ width: auto;
 It means use the available space i.e margins and paddings will be 
 respected, and the element will not overflow its parent.
 
+Impt of width/height:
+Width:
+The width CSS property sets an element's width. By default, it sets the 
+width of the content area, but if box-sizing is set to border-box, it 
+sets the width of the border area.
+width: px, rem, em, %, auto
+
+The specified value of width applies to the content area so long as its 
+value remains within the values defined by min-width and max-width.
+
+If the value for width is less than the value for min-width, then 
+min-width overrides width.
+If the value for width is greater than the value for max-width, then 
+max-width overrides width.
+
+auto: The browser will calculate and select a width for the 
+specified element.
+
+Height:
+The height CSS property specifies the height of an element. By default, 
+the property defines the height of the content area. If box-sizing is 
+set to border-box, however, it instead determines the height of the 
+border area.
+height: px, rem, em, %, auto
+
+N.B: The min-height and max-height properties override height.
+
+auto: The browser will calculate and select a height for the specified 
+element.
+
+
+
+
+
+
+
 
 4. U can use width ppty twice in a selector by using 
 min/max-width and width.
@@ -69,24 +105,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 
 15. display: inline means: display d elemts side by side.
 
-16. justify-items: deals with children elemts
-The CSS justify-items property defines the default justify-self for all 
-items of the box, giving them all a default way of justifying each box 
-along the appropriate axis.
-
-The effect of this property is dependent of the layout mode we are in:
-In block-level layouts, it aligns the items inside their individual 
-containing block on the inline axis.
-
-For absolutely-positioned elements, it aligns the items inside their 
-containing block on the inline axis, accounting for the offset values 
-of top, left, bottom, and right.
-
-In table cell layouts, this property is ignored.
-In flexbox layouts, this property is ignored.
-
-In grid layouts, it aligns the items inside their grid areas on the 
-inline axis 
+16. flex-wrap: nowrap/wrap/wrap-reverse;
+The flex-wrap CSS property sets whether flex items are forced onto one 
+line or can wrap onto multiple lines. If wrapping is allowed, it sets 
+the direction that lines are stacked.
 
 
 17. box-shadow: none;
@@ -219,7 +241,7 @@ align-content/-items/-self:
 31. align-content: start/end/center/space-btw/space-ard
 The CSS align-content property sets the distribution of space 
 between and around content items along a flexbox's CROSS axis, 
-or a grid or block-level element's BLOCK axis. 
+or a grid or block-level element's BLOCK axis of a container. 
 
 It affects space in a container around the content items.
 
@@ -256,6 +278,26 @@ container, and the inline axis of a grid container. It deals with
 container
 
 
+35. justify-items: deals with children elemts
+The CSS justify-items property defines the default justify-self for all 
+items of the box, giving them all a default way of justifying each box 
+along the appropriate axis.
+
+The effect of this property is dependent of the layout mode we are in:
+In block-level layouts, it aligns the items inside their individual 
+containing block on the inline axis.
+
+For absolutely-positioned elements, it aligns the items inside their 
+containing block on the inline axis, accounting for the offset values 
+of top, left, bottom, and right.
+
+In table cell layouts, this property is ignored.
+In flexbox layouts, this property is ignored.
+
+In grid layouts, it aligns the items inside their grid areas on the 
+inline axis 
+
+
 35. justify-self: deals with a single child elemt
 justify-self: stretch/start/end/center
 The CSS justify-self property sets the way a box is justified inside 
@@ -277,44 +319,6 @@ If your main axis is column or column-reverse then the cross axis runs
 along the rows.
 
 
-38. Impt of width/height:
-Width:
-The width CSS property sets an element's width. By default, it sets the 
-width of the content area, but if box-sizing is set to border-box, it 
-sets the width of the border area.
-width: px, rem, em, %, auto
-
-The specified value of width applies to the content area so long as its 
-value remains within the values defined by min-width and max-width.
-
-If the value for width is less than the value for min-width, then 
-min-width overrides width.
-If the value for width is greater than the value for max-width, then 
-max-width overrides width.
-
-auto: The browser will calculate and select a width for the 
-specified element.
-
-Height:
-The height CSS property specifies the height of an element. By default, 
-the property defines the height of the content area. If box-sizing is 
-set to border-box, however, it instead determines the height of the 
-border area.
-height: px, rem, em, %, auto
-
-N.B: The min-height and max-height properties override height.
-
-auto: The browser will calculate and select a height for the specified 
-element.
-
-
-
-
-
-41. flex-wrap: nowrap/wrap/wrap-reverse;
-The flex-wrap CSS property sets whether flex items are forced onto one 
-line or can wrap onto multiple lines. If wrapping is allowed, it sets 
-the direction that lines are stacked.
 
 
 42. row-gap:
