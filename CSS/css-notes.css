@@ -28,8 +28,10 @@ values.
 6. Impt of box-sizing:
 The box-sizing CSS property sets how the total width and height 
 of an element is calculated.
+
 .box {
     box-sizing: border-box;
+
     width: 100%;
     border: solid #5B6DCD 10px;
     padding: 5px;
@@ -44,8 +46,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 9. Picturize row(main-axis) and column(cross-axis) directions.
 10. Learn to un(comment) out border(s).
 
-11. Knowing more abt width by cal d actual width and padding.
+11. Knowing more abt width by calculating d actual width and padding.
+
 12. Understand perfectly your website structure (HTML layout).
+
 13. min-width: 75px means width will be 75px and above.
 14. max-width: 700px means width will be 700px and below.
 
@@ -57,18 +61,18 @@ items of the box, giving them all a default way of justifying each box
 along the appropriate axis.
 
 The effect of this property is dependent of the layout mode we are in:
-In block-level layouts, it aligns the items inside their containing block 
-on the inline axis.
+In block-level layouts, it aligns the items inside their individual 
+containing block on the inline axis.
 
 For absolutely-positioned elements, it aligns the items inside their 
-containing block on the inline axis, accounting for the offset values of 
-top, left, bottom, and right.
+containing block on the inline axis, accounting for the offset values 
+of top, left, bottom, and right.
 
 In table cell layouts, this property is ignored.
 In flexbox layouts, this property is ignored.
 
-In grid layouts, it aligns the items inside their grid areas on the inline 
-axis 
+In grid layouts, it aligns the items inside their grid areas on the 
+inline axis 
 
 
 17. box-shadow: none;
