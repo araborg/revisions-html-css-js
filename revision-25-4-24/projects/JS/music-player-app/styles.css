@@ -149,10 +149,6 @@ ul {
     fill: var(--secondary-color);
 }
 
-/* .player-display-song-artist p {
-    margin: 0;
-} */
-
 #player-song-title,
 #player-song-artist,
 #player-song-duration {
@@ -176,7 +172,6 @@ ul {
 
 .player-buttons {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-around;
 }
 
@@ -212,7 +207,6 @@ button:focus,
     /* row-gap: 8px; */
     padding: 8px 9px;
     justify-content: start;
-    /* justify-content: center; */
 
     width: 430px;
     height: 100%;
