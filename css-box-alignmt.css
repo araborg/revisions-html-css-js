@@ -122,6 +122,13 @@ and block. The justify- properties are always used to align on the
 main axis, the align- properties on the cross axis.
 
 
+The alignment subject:
+The alignment subject is the thing that is being aligned. For 
+justify-self or align-self, or when setting these values as a 
+group with justify-items or align-items, this will be the margin 
+box of the element that this property is being used on. The 
+justify-content and align-content properties differ per layout 
+method.
 
 
 
