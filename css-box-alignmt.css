@@ -114,6 +114,12 @@ align-items
 align-self
 align-content
 
+Flexbox adds an additional complication in that the above is true 
+when flex-direction is set to row. The properties are swapped when 
+flexbox is set to column. Therefore, when working with flexbox it 
+is easier to think about the main and cross axis rather than inline 
+and block. The justify- properties are always used to align on the 
+main axis, the align- properties on the cross axis.
 
 
 
