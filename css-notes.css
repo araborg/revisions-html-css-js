@@ -308,14 +308,15 @@ property to none instead of using visibility.
 
 
 54. :not()
-The :not() CSS pseudo-class represents elements that do not match a list of selectors. 
-Since it prevents specific items from being selected, it is known as the negation 
-pseudo-class.
+The :not() CSS pseudo-class represents elements that do not match a list of 
+selectors. 
+Since it prevents specific items from being selected, it is known as the 
+negation pseudo-class.
 
-The :not() pseudo-class requires a selector list, a comma-separated list of one or 
-more selectors, as its argument. The list must not contain another negation selector 
-or a pseudo-element, but any other simple, compound, and complex selectors are 
-allowed.
+The :not() pseudo-class requires a selector list, a comma-separated list of 
+one or more selectors, as its argument. The list must not contain another 
+negation selector or a pseudo-element, but any other simple, compound, and 
+complex selectors are allowed.
 
 55. buttons:
 button styles: the background color, text color, the border style, the size, 
@@ -325,10 +326,11 @@ hover state, focus state, active state,
 
 
 56. CSS scrollbars styling
-The CSS scrollbars styling module defines properties that you can use for visual styling 
-of scrollbars. You can customize the width of the scrollbar as required. You can also 
-customize the color of the scrollbar track, which is the background of the scrollbar, 
-and the color of the scrollbar thumb, which is the draggable handle of the scrollbar.
+The CSS scrollbars styling module defines properties that you can use for visual 
+styling of scrollbars. You can customize the width of the scrollbar as required. 
+You can also customize the color of the scrollbar track, which is the background 
+of the scrollbar, and the color of the scrollbar thumb, which is the draggable 
+handle of the scrollbar.
 
 .poem {
     overflow: scroll;
@@ -336,9 +338,20 @@ and the color of the scrollbar thumb, which is the draggable handle of the scrol
     scrollbar-color: red orange;
 }
 
-Note: When customizing scrollbars, ensure that the thumb and track have enough contrast 
-with the surrounding background. Also ensure that the scrollbar hit area is large enough 
-for people who use touch input.
+Note: When customizing scrollbars, ensure that the thumb and track have enough 
+contrast with the surrounding background. Also ensure that the scrollbar hit 
+area is large enough for people who use touch input.
+
+
+57. inline
+The element generates one or more inline boxes that do not generate line breaks 
+before or after themselves. In normal flow, the next element will be on the same 
+line if there is space.
+
+Note: When browsers that support multi-keyword syntax encounter a display 
+property that only has an outer value (e.g., display: block or display: inline), 
+the inner value is set to flow (e.g., display: block flow and display: inline 
+flow).
 
 
 *****************************************
