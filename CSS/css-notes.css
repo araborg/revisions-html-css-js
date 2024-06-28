@@ -12,8 +12,8 @@ an item horizontally.
 3. If u think width: 100%; does nt work on a box/elemt, increase
 it more than 100% and see the effect. Same for any other features.
 
-width: 100%; means d child elemt shd occupy d whole width
-of d parent elemt width.
+width: 100%; means d child elemt shd occupy d whole width of d 
+parent elemt width.
 
 4. U can use width ppty twice in a selector by using 
 min/max-width and width.
@@ -196,13 +196,12 @@ display property to none instead of using visibility.
 29. Grp more than 2 selectors together if dy have common ppties.
 
 
-
-
-31. align-items:
-align-items: stretch/start/end/center. 
+31. align-items: stretch/start/end/center. 
 The default value is stretch. The CSS align-items property sets the 
 align-self value on all DIRECT children as a group. 
+
 In flexbox, it controls the alignment of items on the cross/blk axis. 
+
 In grid layout, it controls the alignment of items on the block axis 
 within their grid areas.
 
