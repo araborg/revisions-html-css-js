@@ -529,6 +529,10 @@ This property is a shorthand for the following CSS properties:
 align-self
 justify-self
 
+place-self: center stretch;
+place-self: center start;
+place-self: start end;
+place-self: end center;
 
 
 
