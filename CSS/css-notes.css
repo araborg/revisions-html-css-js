@@ -288,10 +288,10 @@ In grid layouts, it aligns the items inside their grid areas on the
 inline axis 
 
 
-35. justify-self: deals with a single child elemt
-justify-self: stretch/start/end/center
-The CSS justify-self property sets the way a box is justified inside 
-its alignment container along the appropriate axis.
+35. justify-self: stretch/start/end/center
+It deals with a single child elemt. The CSS justify-self property sets 
+the way a box/item is justified inside its alignment container along 
+the appropriate axis.
 
 
 36. The main axis
