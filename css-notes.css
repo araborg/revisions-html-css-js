@@ -7,14 +7,14 @@ Ths learnt:
 2. As flex-direction: row is to justify-content: center so is
 flex-direction: column to align-items: center to center an item.
 
-2. If u think width: 100%; does nt work on a box, increase
+3. If u think width: 100%; does nt work on a box, increase
 it more than 100 and see the effect.
 
-3. U can use width ppty twice in a selector by using min(width).
-4. A btn can have background: transparent; and border: none;
+4. U can use width ppty twice in a selector by using min(width).
+5. A btn can have background: transparent; and border: none;
 
 
-5. Impt of box-sizing:
+6. Impt of box-sizing:
 The box-sizing CSS property sets how the total width and height 
 of an element is calculated.
     box-sizing: border-box;
@@ -24,8 +24,6 @@ of an element is calculated.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing    
 
-
-6. CSS is all about boxes all along.
 
 7. In case you needed to use borders, use it for most impt containers.
 8. Use ROYGBIV for your border colors.
@@ -144,11 +142,14 @@ overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the
 nearest actually scrolling ancestor.
 
 
+21. CSS is all about boxes all along.
+
+
 22. line-height: The line-height CSS property sets the height of a line 
 box. It's commonly used to set the distance between lines of text. 
 
 
-24. :focus
+23. :focus
 The :focus CSS pseudo-class represents an element (such as a form input) that 
 has received focus. It is generally triggered when the user clicks or taps on 
 an element or selects it with the keyboard's Tab key.
@@ -157,7 +158,7 @@ Note: This pseudo-class applies only to the focused element itself. Use
 :focus-within if you want to select an element that contains a focused element.
 
 
-27. visibility: visible/hidden/collapse;
+24. visibility: visible/hidden/collapse;
 The visibility CSS property shows or hides an element without changing the layout 
 of a document. The property can also hide rows or columns in a <table>.
 
@@ -165,18 +166,18 @@ To both hide an element and remove it from the document layout, set the display
 property to none instead of using visibility.
 
 
-28. img as e.g. of inline elemets.
-29. media(min/max-width: px) {}
+25. img as e.g. of inline elemets.
+26. media(min/max-width: px) {}
 
-30. ul has an invisible default margin of 16px
-31. li has an invisible deault left padding of ......
-32. Grping more than 2 selectors together if dy have common ppties.
+27. ul has an invisible default margin of 16px
+28. li has an invisible deault left padding of ......
+29. Grping more than 2 selectors together if dy have common ppties.
 
-33. width: 100% means d child elemt shd occupy d whole width
+30. width: 100% means d child elemt shd occupy d whole width
 of d parent elemt width.
 
 
-34. align-items:
+31. align-items:
 align-items: stretch/start/end/center. 
 The default value is stretch. The CSS align-items property sets the 
 align-self value on all DIRECT children as a group. 
@@ -185,14 +186,14 @@ In grid layout, it controls the alignment of items on the block axis
 within their grid areas.
 
 
-35. block/column axis:
+32. block/column axis:
 CSS grid layout is a two-dimensional layout method enabling the 
 laying out of content in rows and columns. Therefore in any grid 
 we have two axes. The block or column axis, and the inline or 
 row axis.
 
 
-36. align-self:
+33. align-self:
 align-self: stretch/start/end/center. 
 The align-self CSS property overrides a grid or flex item's align-items 
 value. 
@@ -203,27 +204,27 @@ In flexbox, it aligns the item on the cross axis.
 justify-content/-items/-self
 
 
-37. justify-content: deals with container
+34. justify-content: deals with container
 justify-content: start/center/space-between/-around/-evenly.
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
 container, and the inline axis of a grid container.
 
 
-38. justify-self: deals with a single child elemt
+35. justify-self: deals with a single child elemt
 justify-self: stretch/start/end/center
 The CSS justify-self property sets the way a box is justified inside 
 its alignment container along the appropriate axis.
 
 
-39. The main axis
+36. The main axis
 The main axis is defined by flex-direction, which has four possible values:
 row, row-reverse, column, column-reverse
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
 
 
-39. The cross axis:
+37. The cross axis:
 The cross axis runs perpendicular to the main axis. Therefore, if your 
 flex-direction (main axis) is set to row or row-reverse the cross axis 
 runs down the columns.
@@ -231,7 +232,7 @@ If your main axis is column or column-reverse then the cross axis runs
 along the rows.
 
 
-40. Impt of width/height:
+38. Impt of width/height:
 Width:
 The width CSS property sets an element's width. By default, it sets the 
 width of the content area, but if box-sizing is set to border-box, it 
@@ -262,25 +263,25 @@ auto: The browser will calculate and select a height for the specified
 element.
 
 
-41. width: 100%;
+39. width: 100%;
 It means be as big as the parent element.
 That is you want the element to be as big as its parent. The consequence 
 is that if you have set margins and paddings on the parent element, the 
 element will overflow, which is something you don’t necessarily want.
 
 
-42. width: auto;
+40. width: auto;
 It means use the available space i.e margins and paddings will be 
 respected, and the element will not overflow its parent.
 
 
-43. flex-wrap: nowrap/wrap/wrap-reverse;
+41. flex-wrap: nowrap/wrap/wrap-reverse;
 The flex-wrap CSS property sets whether flex items are forced onto one 
 line or can wrap onto multiple lines. If wrapping is allowed, it sets 
 the direction that lines are stacked.
 
 
-44. row-gap:
+42. row-gap:
 The row-gap CSS property sets the size of the gap (gutter) between an 
 element's rows.
 
@@ -289,7 +290,7 @@ and to maintain compatibility with legacy websites, browsers will still
 accept grid-row-gap as an alias for row-gap.
 
 
-45. column-gap
+43. column-gap
 The column-gap CSS property sets the size of the gap (gutter) between an 
 element's columns.
 
@@ -303,7 +304,7 @@ and to maintain compatibility with legacy websites, browsers will still
 accept grid-column-gap as an alias for column-gap.
 
 
-46.display
+44. display
 The display CSS property sets whether an element is treated as a block or 
 inline box and the layout used for its children, such as flow layout, grid 
 or flex.
@@ -315,7 +316,7 @@ inner type sets the layout of children.
 display: inline/inline-block/flex/grid
 
 
-47. inner and outer display
+45. inner and outer display
 <display-outside>
 These keywords specify the element's outer display type, which is essentially 
 its role in flow layout:
@@ -329,7 +330,7 @@ The element generates one or more inline boxes that do not generate line breaks
 before or after themselves. In normal flow, the next element will be on the same 
 line if there is space.
 
-48. <display-inside>
+46. <display-inside>
 These keywords specify the element's inner display type, which defines the type 
 of formatting context that its contents are laid out in (assuming it is a 
 non-replaced element):
@@ -366,14 +367,14 @@ The element behaves like an inline-level element and lays out its content accord
 to the ruby formatting model. It behaves like the corresponding HTML <ruby> elements.
 
 
-49. fill
+47. fill
 The fill attribute has two different meanings. For shapes and text it's a 
 presentation attribute that defines the color (or any SVG paint servers like 
 gradients or patterns) used to paint the element; for animation it defines 
 the final state of the animation.
 
 
-50. border:
+48. border:
 The border shorthand CSS property sets an element's border. It sets the values of 
 border-width, border-style, and border-color.
 
@@ -381,7 +382,7 @@ The border property may be specified using one, two, or three of the values list
 above. The order of the values does not matter.
 
 
-51. outline
+49. outline
 The outline CSS shorthand property sets most of the outline properties in a single 
 declaration.
 
@@ -393,7 +394,7 @@ below. The order of the values does not matter. As with all shorthand properties
 any omitted sub-values will be set to their init
 
 
-52. padding/margin:
+50. padding/margin:
 padding:
 The padding CSS shorthand property sets the padding area on all four sides of an 
 element at once.
@@ -410,7 +411,7 @@ Note: Padding creates extra space within an element. In contrast, margin creates
 extra space around an element.
 
 
-53. z-index
+51. z-index
 The z-index CSS property sets the z-order of a positioned element and its 
 descendants or flex and grid items. Overlapping elements with a larger z-index 
 cover those with a smaller one.
@@ -427,7 +428,7 @@ The box does not establish a new local stacking context. The stack level of
 the generated box in the current stacking context is 0.
 
 
-54. :not()
+52. :not()
 The :not() CSS pseudo-class represents elements that do not match a list of 
 selectors. 
 Since it prevents specific items from being selected, it is known as the 
@@ -439,14 +440,14 @@ negation selector or a pseudo-element, but any other simple, compound, and
 complex selectors are allowed.
 
 
-55. buttons:
+53. buttons:
 button styles: the background color, text color, the border style, the size, 
 
 button states: 
 hover state, focus state, active state, 
 
 
-56. CSS scrollbars styling
+54. CSS scrollbars styling
 The CSS scrollbars styling module defines properties that you can use for visual 
 styling of scrollbars. You can customize the width of the scrollbar as required. 
 You can also customize the color of the scrollbar track, which is the background 
@@ -464,7 +465,7 @@ contrast with the surrounding background. Also ensure that the scrollbar hit
 area is large enough for people who use touch input.
 
 
-57. inline
+55. inline
 The element generates one or more inline boxes that do not generate line breaks 
 before or after themselves. In normal flow, the next element will be on the same 
 line if there is space.
