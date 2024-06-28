@@ -232,8 +232,9 @@ The CSS align-content property sets the distribution of space
 between and around content items along a flexbox's cross axis, 
 or a grid or block-level element's block axis.
 
-The interactive example below uses grid layout to demonstrate 
-some of the values of this property.
+This property has no effect on single line flex containers 
+(i.e. ones with flex-wrap: nowrap) but does affect flex
+containers with flex-direction: column.
 
 
 33. align-self: stretch/start/end/center. 
