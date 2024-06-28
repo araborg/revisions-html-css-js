@@ -312,6 +312,11 @@ The :not() CSS pseudo-class represents elements that do not match a list of sele
 Since it prevents specific items from being selected, it is known as the negation 
 pseudo-class.
 
+The :not() pseudo-class requires a selector list, a comma-separated list of one or 
+more selectors, as its argument. The list must not contain another negation selector 
+or a pseudo-element, but any other simple, compound, and complex selectors are 
+allowed.
+
 
 
 
