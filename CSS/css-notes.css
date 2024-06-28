@@ -28,11 +28,13 @@ values.
 6. Impt of box-sizing:
 The box-sizing CSS property sets how the total width and height 
 of an element is calculated.
+.box {
     box-sizing: border-box;
     width: 100%;
     border: solid #5B6DCD 10px;
     padding: 5px;
-
+}
+    
 https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing    
 
 
