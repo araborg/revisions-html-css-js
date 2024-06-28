@@ -311,25 +311,17 @@ along the rows.
 
 39. row-gap:
 The row-gap CSS property sets the size of the gap (gutter) between an 
-element's rows.
-
-Early versions of the specification called this property grid-row-gap, 
-and to maintain compatibility with legacy websites, browsers will still 
-accept grid-row-gap as an alias for row-gap.
+element's rows. Rows r in horizontal directions. 
 
 
 40. column-gap
 The column-gap CSS property sets the size of the gap (gutter) between an 
-element's columns.
+element's columns. Columns r in vertical directions.
 
 Initially a part of Multi-column Layout, the definition of column-gap has 
 been broadened to include multiple layout methods. Now specified in CSS 
 box alignment, it may be used in multi-column, flexible box, and grid 
 layouts.
-
-Early versions of the specification called this property grid-column-gap, 
-and to maintain compatibility with legacy websites, browsers will still
-accept grid-column-gap as an alias for column-gap.
 
 
 44. display
