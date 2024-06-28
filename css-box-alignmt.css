@@ -28,6 +28,37 @@ grid areas is controlled with align-items. The first item overrides
 the align-items value set on the group by setting align-self to 
 center.
 
+.box {
+    display: grid;
+    width: 540px;
+    grid-template-columns: 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.box :first-child {
+    align-self: center;
+}
+
+<div class="box">
+    <div>One</div>
+    <div>Two</div>
+
+    <div>Three
+        <br>has
+        <br>extra
+        <br>text
+    </div>
+    
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+</div>
+
+
+
+
+
 
 vertical-align
 
