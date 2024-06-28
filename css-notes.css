@@ -333,6 +333,12 @@ The z-index CSS property sets the z-order of a positioned element and its
 descendants or flex and grid items. Overlapping elements with a larger z-index 
 cover those with a smaller one.
 
+The z-index property is specified as either the keyword auto or an <integer>.
+
+auto:
+The box does not establish a new local stacking context. The stack level of 
+the generated box in the current stacking context is 0.
+
 
 
 
