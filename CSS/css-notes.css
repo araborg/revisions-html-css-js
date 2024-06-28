@@ -282,11 +282,6 @@ The effect of this property is dependent of the layout mode we are in:
 In block-level layouts, it aligns the items inside their individual 
 containing block on the inline axis.
 
-For absolutely-positioned elements, it aligns the items inside their 
-containing block on the inline axis, accounting for the offset values 
-of top, left, bottom, and right.
-
-In table cell layouts, this property is ignored.
 In flexbox layouts, this property is ignored.
 
 In grid layouts, it aligns the items inside their grid areas on the 
