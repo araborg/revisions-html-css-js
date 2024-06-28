@@ -12,6 +12,9 @@ an item horizontally.
 3. If u think width: 100%; does nt work on a box/elemt, increase
 it more than 100% and see the effect. Same for any other features.
 
+width: 100%; means d child elemt shd occupy d whole width
+of d parent elemt width.
+
 4. U can use width ppty twice in a selector by using 
 min/max-width and width.
 
