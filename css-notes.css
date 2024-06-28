@@ -60,6 +60,15 @@ axis
 
 
 17. box-shadow: none;
+The box-shadow CSS property adds shadow effects around an element's frame. 
+You can set multiple effects separated by commas. A box shadow is described 
+by X and Y offsets relative to the element, blur and spread radius, and 
+color.
+
+box-shadow: 10px 5px 5px red;
+box-shadow: inset 5em 1em gold;
+
+
 18. white-space: pre-wrap;
 
 19. opacity: 0.6;
@@ -343,8 +352,6 @@ The z-index property is specified as either the keyword auto or an <integer>.
 auto:
 The box does not establish a new local stacking context. The stack level of 
 the generated box in the current stacking context is 0.
-
-
 
 
 54. :not()
