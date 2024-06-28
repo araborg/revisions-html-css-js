@@ -209,6 +209,35 @@ or align-self, or when setting these values as a group with justify-items
 and align-items.
 
 
+Distributed alignment:
+The distributed alignment keywords are used with the align-content and 
+justify-content properties. These keywords define what happens to any 
+additional space after alignment subjects have been displayed. The 
+values are as follows:
+stretch
+space-between
+space-around
+space-evenly
+
+For example, in Flex Layout items are aligned with flex-start initially. 
+Working in a horizontal top to bottom writing mode such as English, with 
+flex-direction as row the items start on the far left and any available 
+space after displaying the items is placed after the items.
+
+Three rectangles of different widths are inside a box. They are all 
+aligned to the left side of the containing box, with about 10px between 
+them, and 10px between the left side of the first rectangle and the parent 
+container.
+If you set justify-content: space-between on the flex container, the 
+available space is now shared out and placed between the items.
+
+Three rectangles of different widths are inside a box. The first rectangle 
+is aligned to the left side of the containing box, the third rectangle is 
+aligned right, and the middle rectangle is equally spaced between the first 
+and last.
+There needs to be space available in the dimension you wish to align the 
+items in, in order for these keywords to take effect. With no space, there 
+is nothing to distribute.
 
 
 
