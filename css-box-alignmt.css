@@ -240,7 +240,7 @@ items in, in order for these keywords to take effect. With no space, there
 is nothing to distribute.
 
 
-Overflow alignment
+Overflow alignment:
 The safe and unsafe keywords help define behavior when an alignment subject 
 is larger than the alignment container. The safe keyword will align to start 
 in the case of a specified alignment causing an overflow, the aim being to 
@@ -251,6 +251,20 @@ If you specify unsafe then the alignment will be honoured even if it would
 cause such data loss.
 
 
+Gaps between boxes
+The box alignment specification also includes the gap, row-gap, and 
+column-gap properties. These properties enable the setting of a consistent 
+gap between items in a row or column, in any layout method which has items 
+arranged in this way.
+
+The gap property is a shorthand for row-gap and column-gap, which allows us 
+to set these properties at once:
+row-gap
+column-gap
+gap
+
+In the below example, a grid layout uses the gap shorthand to set a 10px gap 
+between row tracks, and a 2em gap between column tracks.
 
 
 
