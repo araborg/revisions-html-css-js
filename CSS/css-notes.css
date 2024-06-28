@@ -214,8 +214,7 @@ we have two axes. The block or column axis, and the inline or
 row axis.
 
 
-align-content/-items/-self
-
+align-content/-items/-self:
 
 31. align-content: start/end/center/space-btw/space-ard
 The CSS align-content property sets the distribution of space 
@@ -241,13 +240,14 @@ within their grid areas.
 
 33. align-self: stretch/start/end/center. 
 The align-self CSS property overrides a grid or flex item's align-items 
-value. 
+value common to all d children elements and affect only d specified 
+child elemt.
+
 In grid, it aligns the item inside the grid area. 
 In flexbox, it aligns the item on the cross axis.
 
 
-justify-content/-items/-self
-
+justify-content/-items/-self:
 
 34. justify-content: deals with container
 justify-content: start/center/space-between/-around/-evenly.
