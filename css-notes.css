@@ -324,6 +324,23 @@ button states:
 hover state, focus state, active state, 
 
 
+56. CSS scrollbars styling
+The CSS scrollbars styling module defines properties that you can use for visual styling 
+of scrollbars. You can customize the width of the scrollbar as required. You can also 
+customize the color of the scrollbar track, which is the background of the scrollbar, 
+and the color of the scrollbar thumb, which is the draggable handle of the scrollbar.
+
+.poem {
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: red orange;
+}
+
+Note: When customizing scrollbars, ensure that the thumb and track have enough contrast 
+with the surrounding background. Also ensure that the scrollbar hit area is large enough 
+for people who use touch input.
+
+
 *****************************************
 CSS box alignment
 READ UP
