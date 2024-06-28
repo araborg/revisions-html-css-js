@@ -37,6 +37,7 @@ value remains within the values defined by min-width and max-width.
 
 If the value for width is less than the value for min-width, then 
 min-width overrides width.
+
 If the value for width is greater than the value for max-width, then 
 max-width overrides width.
 
@@ -54,12 +55,6 @@ N.B: The min-height and max-height properties override height.
 
 auto: The browser will calculate and select a height for the specified 
 element.
-
-
-
-
-
-
 
 
 4. U can use width ppty twice in a selector by using 
