@@ -186,7 +186,7 @@ display property to none instead of using visibility.
 
 
 25. img, inputs, links as e.g. of inline elemets.
-26. media(min/max-width: px) {}
+26. media(min/max-width: px) {} for responsiveness.
 
 27. ul has an invisible default margin of 16px
 28. li has an invisible deault left padding of ......
@@ -554,6 +554,20 @@ place-self: start end;
 place-self: end center;
 
 
+60. CSS Default Values Reference
+h1:
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+
+
+
+
+    
 *****************************************
 CSS box alignment
 READ UP
