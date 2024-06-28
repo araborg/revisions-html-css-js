@@ -185,7 +185,7 @@ To both hide an element and remove it from the document layout, set the
 display property to none instead of using visibility.
 
 
-25. img as e.g. of inline elemets.
+25. img, inputs, links as e.g. of inline elemets.
 26. media(min/max-width: px) {}
 
 27. ul has an invisible default margin of 16px
