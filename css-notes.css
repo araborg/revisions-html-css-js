@@ -138,16 +138,19 @@ overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't the
 nearest actually scrolling ancestor.
 
 
-21. justify-content: start.
-
-
 22. line-height: The line-height CSS property sets the height of a line 
 box. It's commonly used to set the distance between lines of text. 
 
 
-23. outline-color
-
 24. :focus
+The :focus CSS pseudo-class represents an element (such as a form input) that 
+has received focus. It is generally triggered when the user clicks or taps on 
+an element or selects it with the keyboard's Tab key.
+
+Note: This pseudo-class applies only to the focused element itself. Use 
+:focus-within if you want to select an element that contains a focused element.
+
+
 25. outline-style: dashed; outline-width: 2px;
 26. height: auto;
 
