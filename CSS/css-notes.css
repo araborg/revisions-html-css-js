@@ -249,11 +249,11 @@ In flexbox, it aligns the item on the cross axis.
 
 justify-content/-items/-self:
 
-34. justify-content: deals with container
-justify-content: start/center/space-between/-around/-evenly.
+34. justify-content: start/center/space-between/-around/-evenly.
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
-container, and the inline axis of a grid container.
+container, and the inline axis of a grid container. It deals with 
+container
 
 
 35. justify-self: deals with a single child elemt
