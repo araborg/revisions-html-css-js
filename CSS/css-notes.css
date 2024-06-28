@@ -12,8 +12,19 @@ an item horizontally.
 3. If u think width: 100%; does nt work on a box/elemt, increase
 it more than 100% and see the effect. Same for any other features.
 
-width: 100%; means d child elemt shd occupy d whole width of d 
-parent elemt width.
+
+width: 100%; 
+It means d child elemt shd occupy d whole width of d 
+parent elemt width. It means be as big as the parent element.
+That is you want the element to be as big as its parent. The 
+consequence is that if you have set margins and paddings on the 
+parent element (and box-sizing is not border-box), the element 
+will overflow, which is something you don’t necessarily want.
+
+width: auto;
+It means use the available space i.e margins and paddings will be 
+respected, and the element will not overflow its parent.
+
 
 4. U can use width ppty twice in a selector by using 
 min/max-width and width.
@@ -212,6 +223,7 @@ laying out of content in rows and columns. Therefore in any grid
 we have two axes. The block or column axis, and the inline or 
 row axis.
 
+align-content/-items/-self
 
 33. align-self: stretch/start/end/center. 
 The align-self CSS property overrides a grid or flex item's align-items 
@@ -282,16 +294,7 @@ auto: The browser will calculate and select a height for the specified
 element.
 
 
-39. width: 100%;
-It means be as big as the parent element.
-That is you want the element to be as big as its parent. The consequence 
-is that if you have set margins and paddings on the parent element, the 
-element will overflow, which is something you don’t necessarily want.
 
-
-40. width: auto;
-It means use the available space i.e margins and paddings will be 
-respected, and the element will not overflow its parent.
 
 
 41. flex-wrap: nowrap/wrap/wrap-reverse;
