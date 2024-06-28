@@ -231,7 +231,7 @@ button:focus,
     height: 55px;
     padding: 5px;
 
-    outline-color: var(--highlight-color);
+    /* outline-color: var(--highlight-color); */
 }
 
 .playlist li:not(:last-child) {

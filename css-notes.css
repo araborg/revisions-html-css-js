@@ -307,6 +307,11 @@ To both hide an element and remove it from the document layout, set the display
 property to none instead of using visibility.
 
 
+54. :not()
+The :not() CSS pseudo-class represents elements that do not match a list of selectors. 
+Since it prevents specific items from being selected, it is known as the negation 
+pseudo-class.
+
 
 
 
