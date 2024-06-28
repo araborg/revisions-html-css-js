@@ -487,6 +487,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 
 
 57. place-content:
+The place-content CSS shorthand property allows you to align content along 
+both the block and inline directions at once (i.e. the align-content and 
+justify-content properties) in a relevant layout system such as Grid or 
+Flexbox.
 
 
 58. place-items:
