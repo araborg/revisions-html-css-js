@@ -2,7 +2,8 @@
 ASK WHY?????????????????????????
 
 Ths learnt:
-1. Wn using flex to center a container, no need for width.
+1. Wn using flex to center a container, no need to give the 
+parent container a width.
 
 2. As flex-direction: row is to justify-content: center so is
 flex-direction: column to align-items: center to center an item.
