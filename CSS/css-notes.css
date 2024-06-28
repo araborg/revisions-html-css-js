@@ -9,11 +9,20 @@ parent container a width.
 flex-direction: column to align-items: center to center an 
 item horizontally.
 
-3. If u think width: 100%; does nt work on a box, increase
+3. If u think width: 100%; does nt work on a box/elemt, increase
 it more than 100% and see the effect.
 
-4. U can use width ppty twice in a selector by using min(width).
+4. U can use width ppty twice in a selector by using 
+min/max-width and width.
+
+
 5. A btn can have background: transparent; and border: none;
+
+The background shorthand CSS property sets all background style 
+properties at once, such as color, image, origin and size, or 
+repeat method. Component properties not set in the background 
+shorthand property value declaration are set to their default 
+values.
 
 
 6. Impt of box-sizing:
