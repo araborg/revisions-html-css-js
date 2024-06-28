@@ -288,9 +288,11 @@ button:focus,
         }
     */
 
-    .playlist-song {
-        /* justify-content: space-between; */
-    }
+    /*
+        .playlist-song {
+            justify-content: space-between;
+        }
+    */
 
     /* .playlist-song-title {
         width: 140px;
