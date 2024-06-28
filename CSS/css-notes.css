@@ -219,8 +219,10 @@ align-content/-items/-self
 
 31. align-content: start/end/center/space-btw/space-ard
 The CSS align-content property sets the distribution of space 
-between and around content items along a flexbox's cross axis, 
-or a grid or block-level element's block axis.
+between and around content items along a flexbox's CROSS axis, 
+or a grid or block-level element's BLOCK axis. 
+
+It affects space in a container around the content items.
 
 This property has no effect on single line flex containers 
 (i.e. ones with flex-wrap: nowrap) but does affect flex
