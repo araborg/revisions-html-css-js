@@ -18,57 +18,6 @@
     --font-family: "Lato", sans-serif;
 }
 
-/*
-borders for demacation
-.container {
-    border: 2px solid red;
-}
-
-.player {
-    border: 2px solid orange;
-}
-
-.player-bar {
-    border: 2px solid olivedrab;
-}
-
-.player-content {
-    border: 2px solid green;
-}
-
-#player-album-art {
-    border: 2px solid blue;
-}
-
-.player-display {
-    border: 2px solid white;
-}
-
-.player-song-title {
-    border: 2px solid red;
-}
-
-.player-display-song-artist {
-    border: 2px solid indianred;
-}
-
-.player-buttons {
-    border: 2px solid rosybrown;
-}
-
-.playlist {
-    border: 2px solid violet;
-}
-
-.playlist-bar {
-    border: 2px solid pink;
-}
-
-#playlist-songs {
-    border: 2px solid goldenrod;
-}
-*/
-
 /* project styles */
 *,
 *::before,
