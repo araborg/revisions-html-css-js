@@ -88,6 +88,7 @@ of transparency.
 0:	The element is fully transparent (that is, invisible).
 1 (default value):	The element is fully opaque (visually solid).
 
+
 20. position: relative/absolute.
 The position CSS property sets how an element is positioned in a document. 
 The top, right, bottom, and left properties determine the final location 
@@ -156,8 +157,6 @@ Note: This pseudo-class applies only to the focused element itself. Use
 :focus-within if you want to select an element that contains a focused element.
 
 
-
-
 27. visibility: visible/hidden/collapse;
 The visibility CSS property shows or hides an element without changing the layout 
 of a document. The property can also hide rows or columns in a <table>.
@@ -200,7 +199,9 @@ value.
 In grid, it aligns the item inside the grid area. 
 In flexbox, it aligns the item on the cross axis.
 
+
 justify-content/-items/-self
+
 
 37. justify-content: deals with container
 justify-content: start/center/space-between/-around/-evenly.
@@ -371,6 +372,7 @@ presentation attribute that defines the color (or any SVG paint servers like
 gradients or patterns) used to paint the element; for animation it defines 
 the final state of the animation.
 
+
 50. border:
 The border shorthand CSS property sets an element's border. It sets the values of 
 border-width, border-style, and border-color.
@@ -435,6 +437,7 @@ The :not() pseudo-class requires a selector list, a comma-separated list of
 one or more selectors, as its argument. The list must not contain another 
 negation selector or a pseudo-element, but any other simple, compound, and 
 complex selectors are allowed.
+
 
 55. buttons:
 button styles: the background color, text color, the border style, the size, 
