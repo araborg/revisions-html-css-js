@@ -240,6 +240,15 @@ items in, in order for these keywords to take effect. With no space, there
 is nothing to distribute.
 
 
+Overflow alignment
+The safe and unsafe keywords help define behavior when an alignment subject 
+is larger than the alignment container. The safe keyword will align to start 
+in the case of a specified alignment causing an overflow, the aim being to 
+avoid "data loss" where part of the item is outside the boundaries of the 
+alignment container and can't be scrolled to.
+
+If you specify unsafe then the alignment will be honoured even if it would 
+cause such data loss.
 
 
 
