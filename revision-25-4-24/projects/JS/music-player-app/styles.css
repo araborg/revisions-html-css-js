@@ -302,7 +302,7 @@ button:focus,
 
     .player-content {
         display: inline;
-        justify-items: center;
+        /* justify-items: center; */
 
         position: relative;
 
