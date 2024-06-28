@@ -266,6 +266,24 @@ gap
 In the below example, a grid layout uses the gap shorthand to set a 10px gap 
 between row tracks, and a 2em gap between column tracks.
 
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+}
+
+.box :first-child {
+    align-self: center;
+}
+
+<div class="box">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
+</div>
 
 
 
