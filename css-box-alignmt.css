@@ -93,8 +93,26 @@ we are working with. This ensures that alignment works in the same
 way whichever writing mode the document has.
 
 
-Two dimensions of alignment
-When using the box alignment properties you will align content on one of two axes — the inline (or main) axis, and the block (or cross) axis. The inline axis is the axis along which words in a sentence flow in the writing mode being used — for English, for example, the inline axis is horizontal. The block axis is the axis along which blocks, such as paragraph elements, are laid out and it runs across the Inline axis.
+Two dimensions of alignment:
+When using the box alignment properties you will align content on 
+one of two axes — the inline (or main) axis, and the block (or cross) 
+axis. The inline axis is the axis along which words in a sentence 
+flow in the writing mode being used — for English, for example, the 
+inline axis is horizontal. The block axis is the axis along which 
+blocks, such as paragraph elements, are laid out and it runs across 
+the Inline axis.
+
+When aligning items on the inline axis you will use the properties 
+which begin with justify-:
+justify-items
+justify-self
+justify-content
+
+When aligning items on the block axis you will use the properties 
+that begin align-:
+align-items
+align-self
+align-content
 
 
 
