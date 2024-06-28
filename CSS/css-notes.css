@@ -172,15 +172,17 @@ has received focus. It is generally triggered when the user clicks or taps on
 an element or selects it with the keyboard's Tab key.
 
 Note: This pseudo-class applies only to the focused element itself. Use 
-:focus-within if you want to select an element that contains a focused element.
+:focus-within if you want to select an element that contains a focused 
+element.
 
 
 24. visibility: visible/hidden/collapse;
-The visibility CSS property shows or hides an element without changing the layout 
-of a document. The property can also hide rows or columns in a <table>.
+The visibility CSS property shows or hides an element without changing 
+the layout of a document. The property can also hide rows or columns 
+in a <table>.
 
-To both hide an element and remove it from the document layout, set the display 
-property to none instead of using visibility.
+To both hide an element and remove it from the document layout, set the 
+display property to none instead of using visibility.
 
 
 25. img as e.g. of inline elemets.
