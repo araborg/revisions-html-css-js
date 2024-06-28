@@ -56,6 +56,12 @@ center.
 </div>
 
 
+Flexbox Alignment Example:
+In this example, three flex items are aligned on the main axis using 
+justify-content and on the Cross Axis using align-items. The first 
+item overrides the align-items set on the group by setting align-self 
+to center.
+
 
 
 
