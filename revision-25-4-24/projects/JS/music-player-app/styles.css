@@ -294,13 +294,17 @@ button:focus,
         }
     */
 
-    /* .playlist-song-title {
-        width: 140px;
-    } */
+    /* 
+        .playlist-song-title {
+            width: 140px;
+        } 
+    */
 
-    /* .playlist-song-artist {
-        width: 40px;
-    } */
+    /* 
+        .playlist-song-artist {
+            width: 40px;
+        } 
+    */
 
     .player-content {
         display: inline;
