@@ -6,7 +6,8 @@ Ths learnt:
 parent container a width.
 
 2. As flex-direction: row is to justify-content: center so is
-flex-direction: column to align-items: center to center an item.
+flex-direction: column to align-items: center to center an 
+item horizontally.
 
 3. If u think width: 100%; does nt work on a box, increase
 it more than 100 and see the effect.
