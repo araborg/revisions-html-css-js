@@ -280,6 +280,14 @@ button:focus,
         width: 280px;
     }
 
+    /*
+        Even this will work:
+        .player-content,
+        #playlist-songs {
+            width: 280px;
+        }
+    */
+
     .playlist-song {
         justify-content: space-between;
     }
