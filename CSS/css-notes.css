@@ -178,20 +178,22 @@ The element is positioned relative to its original position.
 Surrounding elements won't be affected, but there will be space
 where the element would have been in the static (original) position.
 
-This value creates a new stacking context when the value of z-index is not 
-auto. 
+This value creates a new stacking context when the value of z-index 
+is not auto. 
 
 
 Absolute:
-The element is removed from the normal document flow, and no space is created 
-for the element in the page layout. The element is positioned relative to its 
-closest POSTITIONED ANCESTOR (if any e.g a relatively positioned container) or 
-to the initial containing block. Its final position is determined by the 
-values of top, right, bottom, and left.
+The element is removed from the normal document flow, and no space 
+is created for the element in the page layout. The element is 
+positioned relative to its closest POSTITIONED ANCESTOR (if any e.g 
+a relatively positioned container) or to the initial containing block. 
+Its final position is determined by the values of top, right, bottom, 
+and left.
 
-This value creates a new stacking context when the value of z-index is not 
-auto. The margins of absolutely positioned boxes do not collapse with other 
-margins.
+This value creates a new stacking context when the value of z-index 
+is not auto. The margins of absolutely positioned boxes do not 
+collapse with other margins.
+
 
 Fixed:
 The element is removed from the normal document flow, and no space is created 
