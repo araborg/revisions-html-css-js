@@ -225,6 +225,11 @@ both height and width properties.
 inline-flex: is similar to display: flex; but the container on wc display:
 inline-flex; is applied behaves like an inline elemt.
 
+grid: by having grid layouts, you av precise ctrl over both rows 
+and columns.
+
+
+
 
 26. media(min/max-width: px) {} for responsiveness.
 
