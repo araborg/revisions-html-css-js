@@ -56,7 +56,8 @@ height: px, rem, em, %, auto
 
 N.B: The min-height and max-height properties override height.
 
-auto: The browser will calculate and select a height for the specified 
+height: auto; 
+The browser will calculate and select a height for the specified 
 element.
 
 
