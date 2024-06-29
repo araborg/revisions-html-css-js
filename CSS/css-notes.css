@@ -461,17 +461,17 @@ scrollbar hit area is large enough for people who use touch input.
 
 
 52. inline
-The element generates one or more inline boxes that do not generate line breaks 
-before or after themselves. In normal flow, the next element will be on the same 
-line if there is space.
+The element generates one or more inline boxes that do not generate line 
+breaks before or after themselves. In normal flow, the next element will 
+be on the same line if there is space.
 
 Note: When browsers that support multi-keyword syntax encounter a display 
-property that only has an outer value (e.g., display: block or display: inline), 
-the inner value is set to flow (e.g., display: block flow and display: inline 
-flow).
+property that only has an outer value (e.g., display: block or 
+display: inline), the inner value is set to flow (e.g., display: block 
+flow and display: inline flow).
 
 
-53. vertical-align:`baseline, top, middle, bottom, sub, text-top, 
+53. vertical-align: baseline, top, middle, bottom, sub, text-top, 
 The vertical-align CSS property sets vertical alignment of an inline, 
 inline-block or table-cell box.
 
