@@ -625,7 +625,9 @@ ul li:nth-child(6) {} selects d 6th child in a parent container.
 ul li:nth-child(odd) {} selects d children at the odd number positions 
 (e.g 1st, 3rd, 5th, 7th, 9th etc) in a parent container.
 
-ul li:nth-child(even) {}
+ul li:nth-child(even) {}  selects d children at the even number positions 
+(e.g 2nd, 4th, 6th, 8th, 10th etc) in a parent container.
+
 
 ul li:nth-child(3n) {}
 ul li:nth-child(n + 5) {}
