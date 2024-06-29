@@ -576,6 +576,13 @@ out in the direction that words are laid out in the language of your
 document along the inline, row axis. Start and flex-start will be 
 where the beginning of a sentence of text would start.
 
+If you change flex-direction to one of the reverse values, they will 
+lay themselves out from the end axis and in the reverse order to the 
+way words are written in the language of your document. Then, start 
+and flex-start will change to the end of that axis — so to the 
+location where your lines would wrap if working in rows, or at the 
+end of your last paragraph of text in the block direction.
+
 
 
 59. flex-end
