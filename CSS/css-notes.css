@@ -105,8 +105,11 @@ directions.
 12. Understand perfectly your website structure (HTML layout).
 How d elements r arranged and related.
 
-13. min-width: 75px means width will be 75px and above.
-14. max-width: 700px means width will be 700px and below.
+13. min-width: 75px means width will be 75px and above and not
+less.
+
+14. max-width: 700px means width will be 700px and below and 
+not higher.
 
 15. display: inline means: display d elemts side by side.
 
