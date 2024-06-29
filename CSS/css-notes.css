@@ -161,7 +161,8 @@ thus, the space given for the element in the page layout is the same as if
 position were static.
 
 The element is positioned relative to its original position.
-
+Surrounding elements won't be affected, but there will be space
+where the element would have been in the static (original) position.
 
 This value creates a new stacking context when the value of z-index is not 
 auto. 
