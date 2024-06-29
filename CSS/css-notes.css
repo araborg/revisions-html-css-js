@@ -420,14 +420,17 @@ the generated box in the current stacking context is 0.
 
 49. :not()
 The :not() CSS pseudo-class represents elements that do not match a list of 
-selectors. 
-Since it prevents specific items from being selected, it is known as the 
-negation pseudo-class.
+selectors. Since it prevents specific items from being selected, it is known 
+as the negation pseudo-class.
 
 The :not() pseudo-class requires a selector list, a comma-separated list of 
 one or more selectors, as its argument. The list must not contain another 
 negation selector or a pseudo-element, but any other simple, compound, and 
 complex selectors are allowed.
+
+.playlist li:not(:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
 
 
 50. buttons:
