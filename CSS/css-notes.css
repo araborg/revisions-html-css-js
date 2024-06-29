@@ -638,14 +638,16 @@ upward, position 5 inclusive.
 8. ul li:nth-child(-n + 4) {} selects every child(ren) at positions 4 
 downward, position 4 inclusive.
 
-ul li:nth-child(3n + 1) {}
-ul li:nth-child(3n - 1) {}
+9. ul li:nth-child(3n + 1) {} selects every child(ren) at positions multiple 
+of 3 plus 1 (eg. position 1, 4, 7, 10 etc) in a parent container.
 
-ul li:nth-last-child(4) {}
-ul li:nth-last-child(4n) {}
+10. ul li:nth-child(3n - 1) {} 
 
-ul li:not(:first-child) {}
-ul li:not(:last-child) {}
+11. ul li:nth-last-child(4) {}
+12. ul li:nth-last-child(4n) {}
+
+13. ul li:not(:first-child) {}
+14. ul li:not(:last-child) {}
 
 
 
