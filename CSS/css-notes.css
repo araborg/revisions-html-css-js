@@ -630,6 +630,13 @@ ul li:nth-child(-n + 4) {}
 ul li:nth-child(3n + 1) {}
 ul li:nth-child(3n - 1) {}
 
+ul li:nth-last-child(4) {}
+ul li:nth-last-child(4n) {}
+
+ul li:not(:first-child) {}
+ul li:not(:last-child) {}
+
+
 
 *****************************************
 CSS box alignment
