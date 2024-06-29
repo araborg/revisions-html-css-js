@@ -1,4 +1,6 @@
 /*
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment
+
 CSS box alignment:
 The CSS box alignment module specifies CSS features that relate 
 to the alignment of boxes in the various CSS box layout models: 
@@ -17,7 +19,10 @@ CSS traditionally had very limited alignment capabilities. We
 were able to align text using text-align, center blocks using 
 auto margins, and in table or inline-block layouts using the 
 vertical-align property. 
----text-align: center; margin: auto; vertical-align;
+
+text-align: center; 
+margin: auto; 
+vertical-align;
 
 
 Basic examples:
@@ -39,7 +44,7 @@ by setting align-self to center.
     display: grid;
     width: 540px;
     grid-template-columns: 120px 120px 120px;
-    
+
     align-items: start;
     justify-content: space-between;
 }
