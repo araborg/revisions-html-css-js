@@ -584,8 +584,11 @@ location where your lines would wrap if working in rows, or at the
 end of your last paragraph of text in the block direction.
 
 
+59. flex-end:
+It means the items are all aligned to the end of the cross axis. 
+End and flex-end will be where the beginning of a sentence of 
+text would end.
 
-59. flex-end
 
 *****************************************
 CSS box alignment
