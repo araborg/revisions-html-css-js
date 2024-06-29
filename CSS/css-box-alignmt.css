@@ -145,6 +145,9 @@ box of the element that this property is being used on. The
 justify-content and align-content properties differ per layout 
 method.
 
+N.B: 
+*-self is to individual item as *-items is to more than one item.
+
 
 The alignment container:
 The alignment container is the box the subject is being aligned inside. 
