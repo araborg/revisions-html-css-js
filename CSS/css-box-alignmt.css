@@ -150,8 +150,8 @@ N.B:
 
 
 The alignment container:
-The alignment container is the box the subject is being aligned inside. 
-This will typically be the alignment subject's containing block. An 
+This is the box the subject is being aligned inside. This will 
+typically be the alignment subject's containing block. An 
 alignment container may contain one or many alignment subjects.
 
 
