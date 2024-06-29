@@ -188,6 +188,11 @@ Its final position is determined by the values of top, right, bottom, and left.
 This value always creates a new stacking context. In printed documents, the 
 element is placed in the same position on every page.
 
+Elements r positioned relative to the viewport and remain fixed even when 
+the page is scrolled. There will be no sparce where the element would have
+been in the static position.
+
+
 Sticky:
 The element is positioned according to the normal flow of the document, and then 
 offset relative to its nearest scrolling ancestor and containing block (nearest 
