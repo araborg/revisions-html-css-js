@@ -567,7 +567,10 @@ ul:
     padding-left: 40px;
     
 
-58. flex-start
+58. flex-start:
+It means the items are all aligned to the start of the cross axis. 
+
+
 
 
 59. flex-end
