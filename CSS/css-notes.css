@@ -234,11 +234,13 @@ inline-grid; is applied behaves like an inline elemt.
 display: none; d elemt will be completely invisible and take up no space 
 within d documt.
 
-display:inherit; sets d display ppty of an elemt to its initial value, 
+display:inherit; d child elemt with d display inherit will inherit the 
+display value from its parent elemt(eg. div) and act as a block-level 
+elemt.
+
+display: initial; sets d display ppty of an elemt to its initial value, 
 wc is usu inline for most elemts.
 
-
-display: initial;
 
 26. media(min/max-width: px) {} for responsiveness.
 
@@ -611,6 +613,22 @@ end of your last paragraph of text in the block direction.
 It means the items are all aligned to the end of the cross axis. 
 End and flex-end will be where the beginning of a sentence of 
 text would end.
+
+
+60. nth-child selector: e.g:
+ul li:first-child {}
+ul li:last-child {}
+
+ul li:nth-child(6) {}
+ul li:nth-child(odd) {}
+ul li:nth-child(even) {}
+
+ul li:nth-child(3n) {}
+ul li:nth-child(n + 5) {}
+ul li:nth-child(-n + 4) {}
+
+ul li:nth-child(3n + 1) {}
+ul li:nth-child(3n - 1) {}
 
 
 *****************************************
