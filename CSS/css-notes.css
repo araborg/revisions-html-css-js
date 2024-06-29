@@ -324,7 +324,7 @@ box alignment, it may be used in multi-column, flexible box, and grid
 layouts.
 
 
-44. display
+41. display
 The display CSS property sets whether an element is treated as a block or 
 inline box and the layout used for its children, such as flow layout, grid 
 or flex.
@@ -336,7 +336,7 @@ inner type sets the layout of children.
 display: inline/inline-block/flex/grid
 
 
-45. inner and outer display
+42. inner and outer display
 <display-outside>
 These keywords specify the element's outer display type, which is essentially 
 its role in flow layout:
@@ -350,7 +350,8 @@ The element generates one or more inline boxes that do not generate line breaks
 before or after themselves. In normal flow, the next element will be on the same 
 line if there is space.
 
-46. <display-inside>
+
+43. <display-inside>
 These keywords specify the element's inner display type, which defines the type 
 of formatting context that its contents are laid out in (assuming it is a 
 non-replaced element):
@@ -387,14 +388,14 @@ The element behaves like an inline-level element and lays out its content accord
 to the ruby formatting model. It behaves like the corresponding HTML <ruby> elements.
 
 
-47. fill
+44. fill
 The fill attribute has two different meanings. For shapes and text it's a 
 presentation attribute that defines the color (or any SVG paint servers like 
 gradients or patterns) used to paint the element; for animation it defines 
 the final state of the animation.
 
 
-48. border:
+45. border:
 The border shorthand CSS property sets an element's border. It sets the values of 
 border-width, border-style, and border-color.
 
@@ -402,7 +403,7 @@ The border property may be specified using one, two, or three of the values list
 above. The order of the values does not matter.
 
 
-49. outline
+46. outline
 The outline CSS shorthand property sets most of the outline properties in a single 
 declaration.
 
@@ -414,7 +415,7 @@ below. The order of the values does not matter. As with all shorthand properties
 any omitted sub-values will be set to their init
 
 
-50. padding/margin:
+47. padding/margin:
 padding:
 The padding CSS shorthand property sets the padding area on all four sides of an 
 element at once.
@@ -431,7 +432,7 @@ Note: Padding creates extra space within an element. In contrast, margin creates
 extra space around an element.
 
 
-51. z-index
+48. z-index
 The z-index CSS property sets the z-order of a positioned element and its 
 descendants or flex and grid items. Overlapping elements with a larger z-index 
 cover those with a smaller one.
@@ -448,7 +449,7 @@ The box does not establish a new local stacking context. The stack level of
 the generated box in the current stacking context is 0.
 
 
-52. :not()
+49. :not()
 The :not() CSS pseudo-class represents elements that do not match a list of 
 selectors. 
 Since it prevents specific items from being selected, it is known as the 
@@ -460,14 +461,14 @@ negation selector or a pseudo-element, but any other simple, compound, and
 complex selectors are allowed.
 
 
-53. buttons:
+50. buttons:
 button styles: the background color, text color, the border style, the size, 
 
 button states: 
 hover state, focus state, active state, 
 
 
-54. CSS scrollbars styling
+51. CSS scrollbars styling
 The CSS scrollbars styling module defines properties that you can use for visual 
 styling of scrollbars. You can customize the width of the scrollbar as required. 
 You can also customize the color of the scrollbar track, which is the background 
@@ -485,7 +486,7 @@ contrast with the surrounding background. Also ensure that the scrollbar hit
 area is large enough for people who use touch input.
 
 
-55. inline
+52. inline
 The element generates one or more inline boxes that do not generate line breaks 
 before or after themselves. In normal flow, the next element will be on the same 
 line if there is space.
@@ -496,7 +497,7 @@ the inner value is set to flow (e.g., display: block flow and display: inline
 flow).
 
 
-56. vertical-align:`baseline, top, middle, bottom, sub, text-top, 
+53. vertical-align:`baseline, top, middle, bottom, sub, text-top, 
 The vertical-align CSS property sets vertical alignment of an inline, 
 inline-block or table-cell box.
 
@@ -506,7 +507,7 @@ elements: you can't use it to vertically align block-level elements.
 https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 
 
-57. place-content:
+54. place-content:
 The place-content CSS shorthand property allows you to align content along 
 both the block and inline directions at once (i.e. the align-content and 
 justify-content properties) in a relevant layout system such as Grid or 
@@ -523,7 +524,7 @@ place-content: end center;
 place-content: end center;
 
 
-58. place-items:
+55. place-items:
 The CSS place-items shorthand property allows you to align items along both 
 the block and inline directions at once (i.e. the align-items and 
 justify-items properties) in a relevant layout system such as Grid or Flexbox. 
@@ -539,7 +540,7 @@ place-items: start end;
 place-items: end center;
 
 
-59. place-self:
+56. place-self:
 The place-self CSS shorthand property allows you to align an individual item 
 in both the block and inline directions at once (i.e. the align-self and 
 justify-self properties) in a relevant layout system such as Grid or Flexbox. 
@@ -555,7 +556,7 @@ place-self: start end;
 place-self: end center;
 
 
-60. CSS Default Values Reference: 
+57. CSS Default Values Reference: 
 https://www.w3schools.com/cssref/css_default_values.php
 
 h1:
@@ -592,6 +593,8 @@ p
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+
+    
 *****************************************
 CSS box alignment
 READ UP
