@@ -365,16 +365,16 @@ the final state of the animation.
 
 
 45. border:
-The border shorthand CSS property sets an element's border. It sets the values of 
-border-width, border-style, and border-color.
+The border shorthand CSS property sets an element's border. It sets the values 
+of border-width, border-style, and border-color.
 
-The border property may be specified using one, two, or three of the values listed 
-above. The order of the values does not matter.
+The border property may be specified using one, two, or three of the values 
+listed above. The order of the values does not matter.
 
 
 46. outline
-The outline CSS shorthand property sets most of the outline properties in a single 
-declaration.
+The outline CSS shorthand property sets most of the outline properties in a 
+single declaration.
 
 This property is a shorthand for the following CSS properties:
 outline-color, outline-style, outline-width
