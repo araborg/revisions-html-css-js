@@ -19,8 +19,8 @@ it more than 100% and see the effect. Same for any other features.
 
 width: 100%; 
 It means d child elemt shd occupy d whole width of d parent elemt. 
-It means be as big as the parent element i.e you want the element 
-to be as big as its parent. 
+It means be as big as the parent element i.e you want the child 
+element to be as big as its parent. 
 The consequence is that if you have set margins and paddings on the 
 parent element (and box-sizing is not border-box), the element 
 will overflow, which is something you don’t necessarily want.
