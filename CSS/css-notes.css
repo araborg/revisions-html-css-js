@@ -520,8 +520,7 @@ Flexbox.
 If the second value is not present, the first value is also used for it.
 
 This property is a shorthand for the following CSS properties:
-align-self
-justify-self
+align-self, justify-self
 
 place-self: center stretch;
 place-self: center start;
