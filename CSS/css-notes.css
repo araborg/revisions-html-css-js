@@ -222,6 +222,10 @@ both height and width properties.
 inline-block elemt has both the inline and block display ppties. It has
 both height and width properties.
 
+inline-flex: is similar to display: flex; but the container on wc display:
+inline-flex; is applied behaves like an inline elemt.
+
+
 26. media(min/max-width: px) {} for responsiveness.
 
 27. ul/ol has an invisible default margin top and bottom of 16px.
