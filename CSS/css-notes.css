@@ -231,6 +231,14 @@ and columns.
 inline-grid: is similar to display: grid; but the container on wc display:
 inline-grid; is applied behaves like an inline elemt.
 
+display: none; d elemt will be completely invisible and take up no space 
+within d documt.
+
+display:inherit; sets d display ppty of an elemt to its initial value, 
+wc is usu inline for most elemts.
+
+
+display: initial;
 
 26. media(min/max-width: px) {} for responsiveness.
 
