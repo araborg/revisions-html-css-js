@@ -78,7 +78,7 @@ align-self to center.
 
 .box {
     display: flex;
-    
+
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -103,7 +103,7 @@ Relationship to writing modes:
 Alignment is linked to writing modes in that when we align an 
 item we do not consider whether we are aligning it to the physical 
 dimensions of top, right, bottom and left. Instead we describe 
-alignment in terms of the start and end of the particular dimension 
+alignment in terms of the START and END of the particular dimension 
 we are working with. This ensures that alignment works in the same 
 way whichever writing mode the document has.
 
@@ -119,15 +119,11 @@ the Inline axis.
 
 When aligning items on the inline axis you will use the properties 
 which begin with justify-:
-justify-items
-justify-self
-justify-content
+justify-items, justify-self, justify-content
 
 When aligning items on the block axis you will use the properties 
 that begin align-:
-align-items
-align-self
-align-content
+align-items, align-self, align-content
 
 Flexbox adds an additional complication in that the above is true 
 when flex-direction is set to row. The properties are swapped when 
