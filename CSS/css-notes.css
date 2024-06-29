@@ -5,9 +5,13 @@ Ths learnt:
 1. Wn using flex to center a container, no need to give the 
 parent container a width.
 
-2. As flex-direction: row; is to justify-content: center; so 
-is flex-direction: column; to align-items: center; to center 
-an item horizontally.
+2. To center an item horizontally in a container:
+- when main-axis is in horizontal direction i.e. flex-direction: 
+row; use justify-content: center; 
+- when main-axis in vertical i.e. flex-direction: column;
+use align-items: center; 
+
+These will centralize the item within the parent container.
 
 3. If u think width: 100%; does nt work on a box/elemt, increase
 it more than 100% and see the effect. Same for any other features.
@@ -662,7 +666,6 @@ of 3 plus 1 (eg. position 1, 4, 7, 10 etc) in a parent container.
 
 10. ul li:nth-child(3n - 1) {} selects every child(ren) at positions multiple 
 of 3 minus 1 (eg. position 2, 5, 8 etc) in a parent container.
-
 
 11. ul li:nth-last-child(4) {} selects d last 4th child from the end of a 
 parent container/the 4th child from the end.
