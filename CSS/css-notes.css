@@ -145,9 +145,13 @@ of positioned elements
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
 Static:
+This is d default positioning for HTML elements, where they follow the 
+normal flow of the document based on the HTML structure.
+
 The element is positioned according to the Normal Flow of the document. 
 The top, right, bottom, left, and z-index properties have no effect. 
 This is the default value.
+
 
 Relative:
 The element is positioned according to the normal flow of the document, and 
@@ -158,6 +162,7 @@ position were static.
 
 This value creates a new stacking context when the value of z-index is not 
 auto. 
+
 
 Absolute:
 The element is removed from the normal document flow, and no space is created 
