@@ -629,11 +629,13 @@ text would end.
 (e.g 2nd, 4th, 6th, 8th, 10th etc) in a parent container.
 
 
-6. ul li:nth-child(3n) {} selects every child(ren) at positions multiple of 3
-(e.g 2nd, 4th, 6th, 8th, 10th etc) in a parent container.
+6. ul li:nth-child(3n) {} selects every child(ren) at positions multiple 
+of 3 in a parent container.
 
-ul li:nth-child(n + 5) {}
-ul li:nth-child(-n + 4) {}
+7. ul li:nth-child(n + 5) {} selects every child(ren) at positions 5 upward, 
+position inclusive.
+
+8. ul li:nth-child(-n + 4) {}
 
 ul li:nth-child(3n + 1) {}
 ul li:nth-child(3n - 1) {}
