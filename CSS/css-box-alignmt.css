@@ -17,6 +17,7 @@ CSS traditionally had very limited alignment capabilities. We
 were able to align text using text-align, center blocks using 
 auto margins, and in table or inline-block layouts using the 
 vertical-align property. 
+---text-align: center; margin: auto; vertical-align;
 
 
 Basic examples:
