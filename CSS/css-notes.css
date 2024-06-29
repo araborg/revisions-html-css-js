@@ -386,9 +386,9 @@ properties, any omitted sub-values will be set to their init.
 
 47. padding/margin:
 padding:
-The padding CSS shorthand property sets the padding area on all four sides of an 
-element at once.
-An element's padding area is the space between its content and its border.
+The padding CSS shorthand property sets the padding area on all four sides 
+of an element at once. An element's padding area is the space between its 
+content and its border.
 
 margin:
 The margin CSS shorthand property sets the margin area on all four sides of an 
