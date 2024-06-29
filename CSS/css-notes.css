@@ -154,7 +154,7 @@ of transparency.
 20. position: relative/absolute.
 The position CSS property sets how an element is positioned in a document. 
 The top, right, bottom, and left properties determine the final location 
-of positioned elements
+of positioned elements.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
@@ -168,11 +168,11 @@ This is the default value.
 
 
 Relative:
-The element is positioned according to the normal flow of the document, and 
-then offset relative to ITSELF based on the values of top, right, bottom, 
-and left. The offset does not affect the position of any other elements; 
-thus, the space given for the element in the page layout is the same as if 
-position were static.
+The element is positioned according to the normal flow of the document, 
+and then offset relative to ITSELF based on the values of top, right, 
+bottom, and left. The offset does not affect the position of any other 
+elements; thus, the space given for the element in the page layout is 
+the same as if position were static.
 
 The element is positioned relative to its original position.
 Surrounding elements won't be affected, but there will be space
