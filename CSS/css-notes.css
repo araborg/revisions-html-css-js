@@ -228,7 +228,8 @@ inline-flex; is applied behaves like an inline elemt.
 grid: by having grid layouts, you av precise ctrl over both rows 
 and columns.
 
-
+inline-grid: is similar to display: grid; but the container on wc display:
+inline-grid; is applied behaves like an inline elemt.
 
 
 26. media(min/max-width: px) {} for responsiveness.
