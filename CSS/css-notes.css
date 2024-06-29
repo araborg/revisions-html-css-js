@@ -620,7 +620,8 @@ ul li:first-child {} selects d 1st child in a parent container.
 
 ul li:last-child {} selects d last child in a parent container.
 
-ul li:nth-child(6) {}
+ul li:nth-child(6) {} selects d 6th child in a parent container.
+
 ul li:nth-child(odd) {}
 ul li:nth-child(even) {}
 
