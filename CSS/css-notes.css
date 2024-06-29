@@ -474,9 +474,7 @@ flow and display: inline flow).
 53. vertical-align: baseline, top, middle, bottom, sub, text-top, 
 The vertical-align CSS property sets vertical alignment of an inline, 
 inline-block or table-cell box.
-
-Note that vertical-align only applies to inline, inline-block and table-cell 
-elements: you can't use it to vertically align block-level elements.
+You can't use it to vertically align block-level elements.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 
