@@ -28,15 +28,18 @@ CSS grid layout alignment example:
 In this example using grid layout, there is extra space in the 
 grid container after laying out the fixed width tracks on the 
 inline (main) axis. This space is distributed using justify-content. 
+
 On the block (cross) axis the alignment of the items inside their 
-grid areas is controlled with align-items. The first item overrides 
-the align-items value set on the group by setting align-self to 
-center.
+grid areas is controlled with align-items. 
+
+The first item overrides the align-items value set on the group 
+by setting align-self to center.
 
 .box {
     display: grid;
     width: 540px;
     grid-template-columns: 120px 120px 120px;
+    
     align-items: start;
     justify-content: space-between;
 }
