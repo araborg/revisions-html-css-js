@@ -570,6 +570,11 @@ ul:
 58. flex-start:
 It means the items are all aligned to the start of the cross axis. 
 
+While this may all seem a little confusing, the rule to remember is 
+that unless you do something to change it, flex items lay themselves 
+out in the direction that words are laid out in the language of your 
+document along the inline, row axis. Start and flex-start will be 
+where the beginning of a sentence of text would start.
 
 
 
