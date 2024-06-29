@@ -253,6 +253,8 @@ Three rectangles of different widths are inside a box. The first rectangle
 is aligned to the left side of the containing box, the third rectangle is 
 aligned right, and the middle rectangle is equally spaced between the first 
 and last.
+
+N.B:
 There needs to be space available in the dimension you wish to align the 
 items in, in order for these keywords to take effect. With no space, there 
 is nothing to distribute.
@@ -277,9 +279,7 @@ arranged in this way.
 
 The gap property is a shorthand for row-gap and column-gap, which allows us 
 to set these properties at once:
-row-gap
-column-gap
-gap
+row-gap, column-gap, gap
 
 In the below example, a grid layout uses the gap shorthand to set a 10px gap 
 between row tracks, and a 2em gap between column tracks.
