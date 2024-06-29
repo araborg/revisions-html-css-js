@@ -618,7 +618,7 @@ text would end.
 60. nth-child selectors:
 ul li:first-child {} selects d 1st child in a parent container.
 
-ul li:last-child {}
+ul li:last-child {} selects d last child in a parent container.
 
 ul li:nth-child(6) {}
 ul li:nth-child(odd) {}
