@@ -486,8 +486,7 @@ justify-content properties) in a relevant layout system such as Grid or
 Flexbox.
 
 This property is a shorthand for the following CSS properties:
-align-content
-justify-content
+align-content, justify-content
 
 place-content: end space-between;
 place-content: space-around start;
