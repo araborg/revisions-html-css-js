@@ -65,10 +65,13 @@ element.
 and width.
 
 
-5. A btn can have background: transparent; and border: none;
+5. A btn can have: 
+background: transparent; 
+and 
+border: none;
 
 The background shorthand CSS property sets all background style 
-properties at once, such as color, image, origin and size, or 
+properties at once, such as: color, image, origin and size, or 
 repeat method. Component properties not set in the background 
 shorthand property value declaration are set to their default 
 values.
