@@ -651,8 +651,11 @@ parent container/the 4th child from the end.
 12. ul li:nth-last-child(4n) {} selects multipte of last 4th child from the 
 end of a parent container 
 
-13. ul li:not(:first-child) {}
-14. ul li:not(:last-child) {}
+13. ul li:not(:first-child) {} selects every other children apart from the 
+first child.
+
+14. ul li:not(:last-child) {} selects every other children apart from the 
+last child.
 
 
 
