@@ -540,7 +540,14 @@ h1:
     margin-right: 0;
     font-weight: bold;
 
-ol	
+p:	
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+
+ol:	
     display: block;
     list-style-type: decimal;
     margin-top: 1em;
@@ -550,7 +557,7 @@ ol
     padding-left: 40px;
 
     
-ul	
+ul:	
     display: block;
     list-style-type: disc;
     margin-top: 1em;
@@ -559,12 +566,7 @@ ul
     margin-right: 0;
     padding-left: 40px;
     
-p	
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+
 
 
 *****************************************
