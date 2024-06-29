@@ -111,7 +111,8 @@ less.
 14. max-width: 700px means width will be 700px and below and 
 not higher.
 
-15. display: inline means: display d elemts side by side.
+15. display: inline means: display d elemts side by side in a 
+horizontal line.
 
 16. flex-wrap: nowrap/wrap/wrap-reverse;
 The flex-wrap CSS property sets whether flex items are forced onto one 
