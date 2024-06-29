@@ -1,6 +1,13 @@
 /*
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_box_alignment
 
+Summary:
+Types of alignment:
+Positional alignment
+Baseline alignment
+Distributed alignment
+
+
 CSS box alignment:
 The CSS box alignment module specifies CSS features that relate 
 to the alignment of boxes in the various CSS box layout models: 
@@ -287,6 +294,7 @@ between row tracks, and a 2em gap between column tracks.
 .box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
     gap: 10px 2em;
 }
 
@@ -305,5 +313,4 @@ between row tracks, and a 2em gap between column tracks.
 
 Be aware that other things may increase the visual gap displayed, for 
 example using the space distribution keywords or adding margins to items.
-
 */
