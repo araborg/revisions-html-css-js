@@ -434,10 +434,11 @@ complex selectors are allowed.
 
 
 50. buttons:
-button styles: the background color, text color, the border style, the size, 
+button styles: 
+the background color, text color, the border style, the size.
 
 button states: 
-hover state, focus state, active state, 
+hover state, focus state, active state.
 
 
 51. CSS scrollbars styling
