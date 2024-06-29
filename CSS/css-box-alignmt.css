@@ -71,12 +71,14 @@ by setting align-self to center.
 
 Flexbox Alignment Example:
 In this example, three flex items are aligned on the main axis using 
-justify-content and on the Cross Axis using align-items. The first 
-item overrides the align-items set on the group by setting align-self 
-to center.
+justify-content and on the Cross Axis using align-items. 
+
+The first item overrides the align-items set on the group by setting 
+align-self to center.
 
 .box {
     display: flex;
+    
     align-items: flex-start;
     justify-content: space-between;
 }
