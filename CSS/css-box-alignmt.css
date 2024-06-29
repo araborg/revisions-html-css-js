@@ -98,6 +98,10 @@ align-self to center.
     </div>
 </div>
 
+N.B: Alignment can be thought of as:
+1. start and end
+2. main and cross axes
+ 
 
 Relationship to writing modes:
 Alignment is linked to writing modes in that when we align an 
