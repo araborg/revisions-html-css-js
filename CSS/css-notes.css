@@ -354,8 +354,8 @@ justify-content/-items/-self:
 36. justify-content: start/center/space-between/-around/-evenly.
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
-container, and the inline axis of a grid container. It deals with 
-container
+container, and the inline axis of a grid container. 
+It deals with d parent container.
 
 
 37. justify-items: stretch/center/start/end
