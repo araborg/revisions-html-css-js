@@ -424,44 +424,44 @@ display: inline/inline-block/flex/grid
 
 42. inner and outer display:
 <display-outside>
-These keywords specify the element's outer display type, which is essentially 
-its role in flow layout i.e. participation in flow layout:
+These keywords specify the element's outer display type, which is 
+essentially its role in flow layout i.e. participation in flow layout:
 
 1. block:
-The element generates a block box, generating line breaks both before and after 
-the element when in the normal flow.
+The element generates a block box, generating line breaks both before 
+and after the element when in the normal flow.
 
 2. inline:
-The element generates one or more inline boxes that do not generate line breaks 
-before or after themselves. In normal flow, the next element will be on the same 
-line if there is space.
+The element generates one or more inline boxes that do not generate line 
+breaks before or after themselves. In normal flow, the next element will 
+be on the same line if there is space.
 
 
 43. <display-inside>
-These keywords specify the element's inner display type, which defines the type 
-of formatting context that its contents are laid out in (assuming it is a 
-non-replaced element). It sets the layout of children wc can be for instance
-flex, grid etc.
+These keywords specify the element's inner display type, which defines 
+the type of formatting context that its contents are laid out in (assuming 
+it is a non-replaced element). It sets the layout of children wc can be for 
+instance flex, grid etc.
 
 
 44. fill:
-The fill attribute has two different meanings. For shapes and text it's a 
-presentation attribute that defines the color (or any SVG paint servers like 
-gradients or patterns) used to paint the element; for animation it defines 
-the final state of the animation.
+The fill attribute has two different meanings. For shapes and text it's 
+a presentation attribute that defines the color (or any SVG paint servers 
+like gradients or patterns) used to paint the element; for animation it 
+defines the final state of the animation.
 
 
 45. border:
-The border shorthand CSS property sets an element's border. It sets the values 
-of border-width, border-style, and border-color.
+The border shorthand CSS property sets an element's border. It sets the 
+values of border-width, border-style, and border-color.
 
-The border property may be specified using one, two, or three of the values 
-listed above. The order of the values does not matter.
+The border property may be specified using one, two, or three of the 
+values listed above. The order of the values does not matter.
 
 
 46. outline:
-The outline CSS shorthand property sets most of the outline properties in a 
-single declaration.
+The outline CSS shorthand property sets most of the outline properties 
+in a single declaration.
 
 This property is a shorthand for the following CSS properties:
 outline-color, outline-style, outline-width
