@@ -259,8 +259,8 @@ To both hide an element and remove it from the document layout, set the
 display property to none instead of using visibility.
 
 
-25. img, span, links r e.gs of inline elemets. Inline elemts do nt have
-both height and width properties.
+25. img, span, links r e.gs of inline elemets. 
+Inline elemts do nt have both height and width properties.
 
 inline-block elemt has both the inline and block display ppties. It has
 both height and width properties.
