@@ -584,10 +584,9 @@ place-content: end center;
 
 55. place-items:
 The CSS place-items shorthand property allows you to align items along 
-both the block and inline directions at once (i.e. the align-items and 
-justify-items properties) in a relevant layout system such as Grid or 
-Flexbox. 
-If the second value is not set, the first value is also used for it.
+both the block and inline directions at once in a relevant layout system 
+such as Grid or Flexbox. 
+If the second value is not set, the first value is used for it.
 
 This property is a shorthand for the following CSS properties:
 align-items, justify-items
