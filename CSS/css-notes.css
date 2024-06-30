@@ -422,16 +422,16 @@ inner type sets the layout of children.
 display: inline/inline-block/flex/grid
 
 
-42. inner and outer display
+42. inner and outer display:
 <display-outside>
 These keywords specify the element's outer display type, which is essentially 
 its role in flow layout i.e. participation in flow layout:
 
-1. block
+1. block:
 The element generates a block box, generating line breaks both before and after 
 the element when in the normal flow.
 
-2. inline
+2. inline:
 The element generates one or more inline boxes that do not generate line breaks 
 before or after themselves. In normal flow, the next element will be on the same 
 line if there is space.
