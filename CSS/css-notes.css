@@ -114,6 +114,16 @@ not higher.
 15. display: inline means: display d elemts side by side in a 
 horizontal line.
 
+The element generates one or more inline boxes that do not generate 
+line breaks before or after themselves. In normal flow, the next 
+element will be on the same line if there is space.
+
+Note: When browsers that support multi-keyword syntax encounter 
+a display property that only has an outer value (e.g., display: block 
+or display: inline), the inner value is set to flow (e.g., 
+display: block flow and display: inline flow).
+
+
 16. flex-wrap: nowrap/wrap/wrap-reverse;
 The flex-wrap CSS property sets whether flex items are forced onto one 
 line or can wrap onto multiple lines. If wrapping is allowed, it sets 
@@ -527,8 +537,7 @@ simple, compound, and complex selectors are allowed.
 button styles: 
 the background color, text color, the border style, the size.
 
-button states: 
-hover state, focus state, active state.
+button states: hover, focus, active.
 
 
 51. CSS scrollbars styling
