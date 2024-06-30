@@ -491,20 +491,21 @@ margin creates extra space around an element.
 
 
 48. z-index
-The z-index CSS property sets the z-order of a positioned element and its 
-descendants or flex and grid items. Overlapping elements with a larger z-index 
-cover those with a smaller one.
+The z-index CSS property sets the z-order of a positioned element 
+and its descendants or flex and grid items. Overlapping elements 
+with a larger z-index cover those with a smaller one.
 
-For a positioned box (that is, one with any position other than static), the 
-z-index property specifies:
+For a positioned box (that is, one with any position other than 
+static), the z-index property specifies:
 - The stack level of the box in the current stacking context.
 - Whether the box establishes a local stacking context.
 
-The z-index property is specified as either the keyword auto or an <integer>.
+The z-index property is specified as either the keyword auto or 
+an <integer>.
 
 auto:
-The box does not establish a new local stacking context. The stack level of 
-the generated box in the current stacking context is 0.
+The box does not establish a new local stacking context. The stack 
+level of the generated box in the current stacking context is 0.
 
 
 49. :not()
