@@ -464,11 +464,12 @@ The outline CSS shorthand property sets most of the outline properties
 in a single declaration.
 
 This property is a shorthand for the following CSS properties:
-outline-color, outline-style, outline-width
+outline-width, outline-style, outline-color.
 
-The outline property may be specified using one, two, or three of the values 
-listed below. The order of the values does not matter. As with all shorthand 
-properties, any omitted sub-values will be set to their init.
+The outline property may be specified using one, two, or three of the 
+values listed above. The order of the values does not matter. As with 
+all shorthand properties, any omitted sub-values will be set to their 
+initial values.
 
 
 47. padding/margin:
