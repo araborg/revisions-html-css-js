@@ -582,7 +582,7 @@ place-content: end center;
 place-content: end center;
 
 
-55. place-items:
+54. place-items:
 The CSS place-items shorthand property allows you to align items along 
 both the block and inline directions at once in a relevant layout system 
 such as Grid or Flexbox. 
@@ -598,7 +598,7 @@ place-items: end center;
 place-items: center;
 
 
-56. place-self:
+55. place-self:
 The place-self CSS shorthand property allows you to align an individual 
 item in both the block and inline directions at once in a relevant layout 
 system such as Grid or Flexbox. 
@@ -613,7 +613,7 @@ place-self: start end;
 place-self: end center;
 
 
-57. CSS Default Values Reference: 
+56. CSS Default Values Reference: 
 https://www.w3schools.com/cssref/css_default_values.php
 
 h1:
@@ -652,7 +652,7 @@ ul:
     padding-left: 40px;
     
 
-58. flex-start:
+57. flex-start:
 It means the items are all aligned to the start of the main axis. 
 
 While this may all seem a little confusing, the rule to remember is 
@@ -669,55 +669,84 @@ location where your lines would wrap if working in rows, or at the
 end of your last paragraph of text in the block direction.
 
 
-59. flex-end:
+58. flex-end:
 It means the items are all aligned to the end of the main axis. 
 End and flex-end will be where the beginning of a sentence of 
 text would end.
 
 
-60. nth-child selectors:
-1. ul li:first-child {} selects d 1st child in a parent container.
+59. nth-child selectors:
+1. ul li:first-child {
+    selects d 1st child in a parent container.
+} 
 
-2. ul li:last-child {} selects d last child in a parent container.
+2. ul li:last-child {
+    selects d last child in a parent container.
+} 
 
-3. ul li:nth-child(6) {} selects d 6th child in a parent container.
+3. ul li:nth-child(6) {
+    selects d 6th child in a parent container.
+} 
 
-4. ul li:nth-child(odd) {} selects d children at the odd number positions 
-(e.g 1st, 3rd, 5th, 7th, 9th etc) in a parent container.
+4. ul li:nth-child(odd) {
+    selects d children at the odd number positions 
+    (e.g 1st, 3rd, 5th, 7th, 9th etc) in a parent container.
+} 
 
-5. ul li:nth-child(even) {}  selects d children at the even number positions 
-(e.g 2nd, 4th, 6th, 8th, 10th etc) in a parent container.
+5. ul li:nth-child(even) {
+    selects d children at the even number positions 
+    (e.g 2nd, 4th, 6th, 8th, 10th) in a parent container.
+}
 
 
-6. ul li:nth-child(3n) {} selects every child(ren) at positions multiple 
+
+6. ul li:nth-child(3n) {
+    selects every child(ren) at positions multiple 
+} 
 of 3 in a parent container.
 
-7. ul li:nth-child(n + 5) {} selects every child(ren) at positions 5 
+7. ul li:nth-child(n + 5) {
+    selects every child(ren) at positions 5 
+} 
 upward, position 5 inclusive.
 
-8. ul li:nth-child(-n + 4) {} selects every child(ren) at positions 4 
+8. ul li:nth-child(-n + 4) {
+    selects every child(ren) at positions 4 
+} 
 downward, position 4 inclusive.
 
-9. ul li:nth-child(3n + 1) {} selects every child(ren) at positions multiple 
+9. ul li:nth-child(3n + 1) {
+    selects every child(ren) at positions multiple 
+} 
 of 3 plus 1 (eg. position 1, 4, 7, 10 etc) in a parent container.
 
-10. ul li:nth-child(3n - 1) {} selects every child(ren) at positions multiple 
+10. ul li:nth-child(3n - 1) {
+    selects every child(ren) at positions multiple 
+} 
 of 3 minus 1 (eg. position 2, 5, 8 etc) in a parent container.
 
-11. ul li:nth-last-child(4) {} selects d last 4th child from the end of a 
+11. ul li:nth-last-child(4) {
+    selects d last 4th child from the end of a 
+} 
 parent container/the 4th child from the end.
 
-12. ul li:nth-last-child(4n) {} selects multipte of last 4th child from the 
+12. ul li:nth-last-child(4n) {
+    selects multipte of last 4th child from the 
+} 
 end of a parent container 
 
-13. ul li:not(:first-child) {} selects every other children apart from the 
+13. ul li:not(:first-child) {
+    selects every other children apart from the 
+} 
 first child.
 
-14. ul li:not(:last-child) {} selects every other children apart from the 
+14. ul li:not(:last-child) {
+    selects every other children apart from the 
+} 
 last child.
 
 
-61. Types of alignment:
+60. Types of alignment:
 Positional alignment
 Baseline alignment
 Distributed alignment
