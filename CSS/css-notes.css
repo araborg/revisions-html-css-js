@@ -695,7 +695,7 @@ text would end.
 
 5. ul li:nth-child(even) {
     selects d children at the even number positions 
-    (e.g 2nd, 4th, 6th, 8th, 10th) in a parent container.
+    (e.g 2nd, 4th, 6th, 8th, 10th ...) in a parent container.
 }
 
 6. ul li:nth-child(3n) {
@@ -715,12 +715,12 @@ text would end.
 
 9. ul li:nth-child(3n + 1) {
     selects every child(ren) at positions multiple of 3 plus 
-    1 (eg. position 1, 4, 7, 10) in a parent container.
+    1 (eg. position 1, 4, 7, 10 ...) in a parent container.
 } 
 
 10. ul li:nth-child(3n - 1) {
     selects every child(ren) at positions multiple of 3 minus 
-    1 (eg. position 2, 5, 8) in a parent container.
+    1 (eg. position 2, 5, 8 ...) in a parent container.
 } 
 
 11. ul li:nth-last-child(4) {
