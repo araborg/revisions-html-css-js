@@ -724,24 +724,22 @@ text would end.
 } 
 
 11. ul li:nth-last-child(4) {
-    selects d last 4th child from the end of a 
+    selects d last 4th child from the end of a parent 
+    container or the 4th child from the end.
 } 
-parent container/the 4th child from the end.
 
 12. ul li:nth-last-child(4n) {
-    selects multipte of last 4th child from the 
+    selects multipte of last 4th child from the end of a 
+    parent container 
 } 
-end of a parent container 
 
 13. ul li:not(:first-child) {
-    selects every other children apart from the 
+    selects every other children apart from the first child.
 } 
-first child.
 
 14. ul li:not(:last-child) {
-    selects every other children apart from the 
+    selects every other children apart from the last child.
 } 
-last child.
 
 
 60. Types of alignment:
