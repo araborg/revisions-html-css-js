@@ -559,18 +559,7 @@ enough contrast with the surrounding background. Also ensure that the
 scrollbar hit area is large enough for people who use touch input.
 
 
-52. inline
-The element generates one or more inline boxes that do not generate line 
-breaks before or after themselves. In normal flow, the next element will 
-be on the same line if there is space.
-
-Note: When browsers that support multi-keyword syntax encounter a display 
-property that only has an outer value (e.g., display: block or 
-display: inline), the inner value is set to flow (e.g., display: block 
-flow and display: inline flow).
-
-
-53. vertical-align: baseline, top, middle, bottom, sub, text-top, 
+52. vertical-align: baseline, top, middle, bottom, sub, text-top.
 The vertical-align CSS property sets vertical alignment of an inline, 
 inline-block or table-cell box.
 You can't use it to vertically align block-level elements.
@@ -578,11 +567,10 @@ You can't use it to vertically align block-level elements.
 https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 
 
-54. place-content:
+53. place-content:
 The place-content CSS shorthand property allows you to align content along 
-both the block and inline directions at once (i.e. the align-content and 
-justify-content properties) in a relevant layout system such as Grid or 
-Flexbox.
+both the block and inline directions at once in a relevant layout system 
+such as Grid or Flexbox.
 
 This property is a shorthand for the following CSS properties:
 align-content, justify-content
