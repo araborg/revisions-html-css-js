@@ -690,7 +690,7 @@ text would end.
 
 4. ul li:nth-child(odd) {
     selects d children at the odd number positions 
-    (e.g 1st, 3rd, 5th, 7th, 9th etc) in a parent container.
+    (e.g 1st, 3rd, 5th, 7th, 9th ...) in a parent container.
 } 
 
 5. ul li:nth-child(even) {
@@ -698,32 +698,30 @@ text would end.
     (e.g 2nd, 4th, 6th, 8th, 10th) in a parent container.
 }
 
-
-
 6. ul li:nth-child(3n) {
     selects every child(ren) at positions multiple 
+    of 3 in a parent container.
 } 
-of 3 in a parent container.
 
 7. ul li:nth-child(n + 5) {
-    selects every child(ren) at positions 5 
+    selects every child(ren) at positions greater than 5, 
+    position 5 inclusive.
 } 
-upward, position 5 inclusive.
 
 8. ul li:nth-child(-n + 4) {
-    selects every child(ren) at positions 4 
+    selects every child(ren) at positions lesser than 4, 
+    position 4 inclusive.
 } 
-downward, position 4 inclusive.
 
 9. ul li:nth-child(3n + 1) {
-    selects every child(ren) at positions multiple 
+    selects every child(ren) at positions multiple of 3 plus 
+    1 (eg. position 1, 4, 7, 10) in a parent container.
 } 
-of 3 plus 1 (eg. position 1, 4, 7, 10 etc) in a parent container.
 
 10. ul li:nth-child(3n - 1) {
-    selects every child(ren) at positions multiple 
+    selects every child(ren) at positions multiple of 3 minus 
+    1 (eg. position 2, 5, 8) in a parent container.
 } 
-of 3 minus 1 (eg. position 2, 5, 8 etc) in a parent container.
 
 11. ul li:nth-last-child(4) {
     selects d last 4th child from the end of a 
