@@ -653,7 +653,7 @@ ul:
     
 
 58. flex-start:
-It means the items are all aligned to the start of the cross axis. 
+It means the items are all aligned to the start of the main axis. 
 
 While this may all seem a little confusing, the rule to remember is 
 that unless you do something to change it, flex items lay themselves 
@@ -670,7 +670,7 @@ end of your last paragraph of text in the block direction.
 
 
 59. flex-end:
-It means the items are all aligned to the end of the cross axis. 
+It means the items are all aligned to the end of the main axis. 
 End and flex-end will be where the beginning of a sentence of 
 text would end.
 
