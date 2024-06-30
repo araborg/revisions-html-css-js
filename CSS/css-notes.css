@@ -299,6 +299,23 @@ we have two axes. The block or column axis, and the inline or
 row axis.
 
 
+31. The cross axis:
+The cross axis runs perpendicular to the main axis. Therefore, if your 
+flex-direction (main axis) is set to row or row-reverse the cross axis 
+runs down the columns.
+If your main axis is column or column-reverse then the cross axis runs 
+along the rows.
+
+
+32. The main axis
+The main axis is defined by flex-direction, which has four possible values:
+row, row-reverse, column, column-reverse
+Should you choose row or row-reverse, your main axis will run along the row 
+in the inline direction.
+
+
+
+
 align-content/-items/-self:
 
 31. align-content: start/end/center/space-btw/space-ard
@@ -362,19 +379,6 @@ the way a box/item is justified inside its alignment container along
 the appropriate axis.
 
 
-37. The main axis
-The main axis is defined by flex-direction, which has four possible values:
-row, row-reverse, column, column-reverse
-Should you choose row or row-reverse, your main axis will run along the row 
-in the inline direction.
-
-
-38. The cross axis:
-The cross axis runs perpendicular to the main axis. Therefore, if your 
-flex-direction (main axis) is set to row or row-reverse the cross axis 
-runs down the columns.
-If your main axis is column or column-reverse then the cross axis runs 
-along the rows.
 
 
 39. row-gap:
