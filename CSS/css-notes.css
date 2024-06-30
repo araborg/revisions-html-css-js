@@ -317,7 +317,7 @@ perpendicularly.
 
 align-content/-items/-self:
 
-31. align-content: start/end/center/space-btw/space-ard
+33. align-content: start/end/center/space-btw/space-ard
 The CSS align-content property sets the distribution of space 
 between and around content items along a flexbox's CROSS axis, 
 or a grid or block-level element's BLOCK axis of a container. 
@@ -329,7 +329,7 @@ This property has no effect on single line flex containers
 containers with flex-direction: column.
 
 
-32. align-items: stretch/start/end/center. 
+34. align-items: stretch/start/end/center. 
 The default value is stretch. The CSS align-items property sets the 
 align-self value on all DIRECT children as a group. 
 
@@ -339,7 +339,7 @@ In grid layout, it controls the alignment of items on the block axis
 within their grid areas.
 
 
-33. align-self: stretch/start/end/center. 
+35. align-self: stretch/start/end/center. 
 The align-self CSS property overrides a grid or flex item's align-items 
 value common to all d children elements and affect only d specified 
 child elemt.
@@ -350,14 +350,14 @@ In flexbox, it aligns the item on the cross axis.
 
 justify-content/-items/-self:
 
-34. justify-content: start/center/space-between/-around/-evenly.
+36. justify-content: start/center/space-between/-around/-evenly.
 The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex 
 container, and the inline axis of a grid container. It deals with 
 container
 
 
-35. justify-items: stretch/center/start/end
+37. justify-items: stretch/center/start/end
 The CSS justify-items property defines the default justify-self for all 
 items of the box, giving them all a default way of justifying each box 
 along the appropriate axis.
@@ -372,12 +372,10 @@ In grid layouts, it aligns the items inside their grid areas on the
 inline axis 
 
 
-36. justify-self: stretch/start/end/center
+38. justify-self: stretch/start/end/center
 It deals with a single child elemt. The CSS justify-self property sets 
 the way a box/item is justified inside its alignment container along 
 the appropriate axis.
-
-
 
 
 39. row-gap:
