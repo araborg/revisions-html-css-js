@@ -65,5 +65,8 @@ body {
 .parallel-lines > div {
     height: 2px;
 
+    width: 100%;
+    min-width: 75px;
+
     background: var(--highlight-color);
 }
