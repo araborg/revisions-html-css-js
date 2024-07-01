@@ -43,5 +43,9 @@ body {
 
 .player,
 .playlist {
+    width: 450px;
+
+    padding: 10px;
+    background: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
