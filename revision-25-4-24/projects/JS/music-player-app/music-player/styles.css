@@ -55,8 +55,6 @@ body {
     justify-content: center;
     align-items: center;
     row-gap: 10px;
-
-    /* border: 3px solid red; */
 }
 
 .player-bar,
@@ -108,10 +106,11 @@ ul {
 
     background: var(--foreground-color);
 
-    padding: 15px;
+    padding: 10px;
 
     display: flex;
     align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
+    justify-content: space-around;
 
     column-gap: 13px;
 }
@@ -129,20 +128,51 @@ ul {
 }
 
 .player-display {
+    width: 235px;
     height: 150px;
-    padding: 14px;
+
+    padding: 10px;
+
+    color: var(--primary-color);
 
     background: var(--background-color);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 
-    border: 3px solid green;
+    /* align-items: center; */
+
+    row-gap: 20px;
+    justify-content: space-around;
+}
+
+.player-display-song-artist {
+    /* border: 3px solid red; */
 }
 
 .player-display-song-artist p {
     margin: 0;
+}
+
+#player-song-title {
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+}
+#player-song-artist {
+    font-size: 0.75rem;
+    color: var(--highlight-color);
+    margin-bottom: 2px;
+}
+#player-song-duration {
+    font-size: 0.75rem;
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    /* border: 3px solid green; */
 }
 
 .player-buttons svg {
@@ -151,4 +181,8 @@ ul {
 
 button {
     background: transparent;
+    border: none;
+
+    text-align: center;
+    cursor: pointer;
 }
