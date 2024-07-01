@@ -26,4 +26,6 @@
 
 body {
     background: var(--app-background-color);
+
+    color: var(--secondary-color);
 }
