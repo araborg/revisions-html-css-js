@@ -25,9 +25,10 @@
 }
 
 body {
+    color: var(--secondary-color);
     background: var(--app-background-color);
 
-    color: var(--secondary-color);
+    font-family: var(--font-family);
 }
 
 .container {
@@ -48,4 +49,21 @@ body {
     padding: 10px;
     background: var(--background-color);
     border: 3px solid var(--foreground-color);
+}
+
+.player-bar,
+.playlist-bar {
+    display: flex;
+
+    background-color: var(--foreground-color);
+}
+
+.parallel-lines {
+    border: 3px solid green;
+}
+
+.parallel-lines > div {
+    height: 2px;
+
+    background: var(--highlight-color);
 }
