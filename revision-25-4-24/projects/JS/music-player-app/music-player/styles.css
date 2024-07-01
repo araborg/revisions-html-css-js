@@ -106,7 +106,7 @@ ul {
 
     background: var(--foreground-color);
 
-    padding: 10px;
+    padding: 15px;
 
     display: flex;
     align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
