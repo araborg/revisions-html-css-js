@@ -110,8 +110,6 @@ ul {
 
     padding: 15px;
 
-    /* border: 3px solid green; */
-
     display: flex;
     align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
 
@@ -135,4 +133,22 @@ ul {
     padding: 14px;
 
     background: var(--background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 3px solid green;
+}
+
+.player-display-song-artist p {
+    margin: 0;
+}
+
+.player-buttons svg {
+    fill: var(--secondary-color);
+}
+
+button {
+    background: transparent;
 }
