@@ -54,15 +54,19 @@ body {
 .player-bar,
 .playlist-bar {
     display: flex;
+    align-items: center;
 
     background-color: var(--foreground-color);
+
+    /* border: 3px solid red; */
 }
 
 .parallel-lines {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .parallel-lines > div {
