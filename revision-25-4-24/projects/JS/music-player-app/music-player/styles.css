@@ -97,6 +97,11 @@ h2 {
     font-size: var(--root-font-size);
 }
 
+.fcc-title,
+.playlist-title {
+    font-family: var(--font-headline);
+}
+
 ul {
     margin: 0;
 }
@@ -106,7 +111,7 @@ ul {
 
     background: var(--foreground-color);
 
-    padding: 15px;
+    padding: 16px;
 
     display: flex;
     align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
@@ -131,7 +136,7 @@ ul {
     width: 235px;
     height: 150px;
 
-    padding: 10px 15px;
+    padding: 0 10px;
 
     color: var(--primary-color);
 
@@ -142,8 +147,8 @@ ul {
 
     align-items: center;
 
-    row-gap: 10px;
-    /* justify-content: start; */
+    /* row-gap: 10px; */
+    justify-content: space-around;
     /* border: 4px solid yellow; */
 }
 
