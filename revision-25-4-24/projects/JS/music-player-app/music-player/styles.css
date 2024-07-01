@@ -125,9 +125,11 @@ ul {
     background: var(--secondary-color);
 }
 .player-display {
-    background: var(--secondary-color);
+    background: var(--background-color);
 }
 
 #player-album-art > img {
+    display: block;
+
     width: 150px;
 }
