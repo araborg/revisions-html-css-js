@@ -46,15 +46,27 @@ body {
 .playlist {
     width: 450px;
 
-    padding: 10px;
+    /* padding: 10px; */
     background: var(--background-color);
     border: 3px solid var(--foreground-color);
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    row-gap: 10px;
 }
 
 .player-bar,
 .playlist-bar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5px;
+    height: 30px;
 
     background-color: var(--foreground-color);
 
@@ -66,6 +78,8 @@ body {
     flex-wrap: wrap;
     row-gap: 5px;
 
+    padding: 0 5px;
+
     /* border: 3px solid green; */
 }
 
@@ -76,4 +90,21 @@ body {
     min-width: 75px;
 
     background: var(--highlight-color);
+}
+
+h1 {
+    margin: 0 10px;
+
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.player-content {
+    width: 430px;
+
+    background: var(--foreground-color);
+}
+
+#player-album-art > img {
+    width: 150px;
 }
