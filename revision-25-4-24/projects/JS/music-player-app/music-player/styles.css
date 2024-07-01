@@ -17,3 +17,13 @@
     --font-headline: "Roboto Mono", monospace;
     --font-family: "Lato", sans-serif;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* body{
+    background: var(--app-background-color);
+} */
