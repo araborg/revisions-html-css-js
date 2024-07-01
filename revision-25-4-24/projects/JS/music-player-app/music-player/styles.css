@@ -33,10 +33,7 @@ body {
 
 .container {
     display: flex;
-
     flex-direction: column;
-
-    /* justify-content: center; */
     align-items: center;
 
     margin-top: 10px;
@@ -47,6 +44,7 @@ body {
     width: 450px;
 
     padding: 10px;
+
     background: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
@@ -55,10 +53,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     align-items: center;
-
     row-gap: 10px;
+
     /* border: 3px solid red; */
 }
 
@@ -111,11 +108,13 @@ ul {
 
     background: var(--foreground-color);
 
-    padding: 17px;
+    padding: 15px;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 
     display: flex;
+    align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
+
     column-gap: 13px;
 }
 
@@ -124,12 +123,16 @@ ul {
 
     background: var(--secondary-color);
 }
-.player-display {
-    background: var(--background-color);
-}
 
-#player-album-art > img {
+#player-album-art img {
     display: block;
 
     width: 150px;
+}
+
+.player-display {
+    height: 150px;
+    padding: 14px;
+
+    background: var(--background-color);
 }
