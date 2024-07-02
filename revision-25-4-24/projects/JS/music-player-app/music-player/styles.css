@@ -199,6 +199,7 @@ button {
     list-style: none;
 
     padding: 8px 9px;
+    cursor: pointer;
 }
 
 #playlist-songs li:not(:last-child) {
@@ -210,6 +211,7 @@ button {
 
     display: flex;
     align-items: center;
+    font-size: 0.85rem;
 }
 
 @media (max-width: 700px) {
