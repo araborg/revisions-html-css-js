@@ -157,7 +157,7 @@ ul {
 #player-song-title {
     font-size: 1.2rem;
 
-    white-space: pre-line;
+    /* white-space: pre-line; */
 }
 #player-song-artist {
     font-size: 0.75rem;
