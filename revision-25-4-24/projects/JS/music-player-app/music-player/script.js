@@ -8,8 +8,6 @@ const replayBtn = document.getElementById("replay");
 
 const playlistSongs = document.getElementById("playlistSongs");
 
-console.log(playlistSongs);
-
 const allSongs = [
     {
         id: 0,
@@ -82,3 +80,11 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
     },
 ];
+
+const songsObj = {
+    songs: [...allSongs],
+    selectedSong: null,
+    songDuration: 0,
+};
+
+console.log(songsObj);
