@@ -246,11 +246,14 @@ button {
 
     .player-album-art {
         z-index: -100;
-        /* opacity: 0.6; */
+
+        background: var(--app-background-color);
     }
 
     #player-album-art img {
+        opacity: 1;
         width: 100%;
+        z-index: 100;
     }
 
     .player-display {
