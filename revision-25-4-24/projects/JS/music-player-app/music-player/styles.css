@@ -212,7 +212,8 @@ button {
 }
 
 @media (max-width: 700px) {
-    body {
-        background: white;
+    .player,
+    .playlist {
+        width: 300px;
     }
 }
