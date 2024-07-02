@@ -6,4 +6,6 @@ const nextBtn = document.getElementById("next");
 const shuffleBtn = document.getElementById("shuffle");
 const replayBtn = document.getElementById("replay");
 
-console.log(replayBtn);
+const playlistSongs = document.getElementById("playlistSongs");
+
+console.log(playlistSongs);
