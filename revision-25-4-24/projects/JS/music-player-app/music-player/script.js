@@ -88,8 +88,12 @@ const songsObj = {
 };
 
 const sortSong = (songs) => {
-    songs.map((song) => {
+    songs.forEach((song) => {
         console.log(song);
+    });
+
+    songs.sort((a, b) => {
+        // if(song.titl)
     });
 };
 
