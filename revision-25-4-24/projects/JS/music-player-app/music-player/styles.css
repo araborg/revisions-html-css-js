@@ -287,4 +287,8 @@ button {
     #player-song-duration {
         font-size: 0.75rem;
     }
+
+    .playlist-title {
+        font-size: 0.7rem;
+    }
 }
