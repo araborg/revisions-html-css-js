@@ -6,7 +6,7 @@ const nextBtn = document.getElementById("next");
 const shuffleBtn = document.getElementById("shuffle");
 const replayBtn = document.getElementById("replay");
 
-const playlistSongs = document.getElementById("playlistSongs");
+const playlistSongs = document.getElementById("playlist-songs");
 
 const allSongs = [
     {
@@ -104,15 +104,20 @@ const sortSong = (songs) => {
         }
     });
 
-    // console.log(songs);
     return songs;
 };
 
 sortSong(songsObj?.songs);
 
 const displaySong = (songs) => {
-    const song = songs.forEach((song) => {
-        console.log(song);
+    songs.forEach((song) => {
+        const eachSong = `
+            <li class="playlist-song"> ${song.title}</li>
+        `;
+
+        console.log(eachSong);
+
+        playlistSongs.innerHTML += eachSong;
     });
 };
 
