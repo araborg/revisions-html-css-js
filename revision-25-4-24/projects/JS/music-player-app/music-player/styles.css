@@ -155,9 +155,9 @@ ul {
 }
 
 #player-song-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
-    /* white-space: pre-line; */
+    /* white-space: wrap; */
 }
 #player-song-artist {
     font-size: 0.75rem;
@@ -279,6 +279,7 @@ button {
 
     #player-song-title {
         /* font-size: 0.95rem; */
+        width: 200px;
     }
     #player-song-artist {
         font-size: 0.75rem;
