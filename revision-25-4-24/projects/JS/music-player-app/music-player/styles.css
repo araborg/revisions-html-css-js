@@ -228,20 +228,10 @@ button {
 
         background: transparent;
         display: inline;
-        /* border: 4px solid yellow; */
 
         padding: 0px;
 
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-
         position: relative;
-        /* align-items: center;  */
-        /* ds is impt for display: block to achieve wt is intended for d img */
-        /* justify-content: space-around; */
-
-        /* column-gap: 14px; */
     }
 
     .player-album-art {
@@ -261,14 +251,11 @@ button {
         top: 0;
 
         background: transparent;
-        /* opacity: 0.6; */
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* align-items: center; */
 
-        /* border: 3px solid red; */
         height: 280px;
         width: 100%;
     }
@@ -278,15 +265,24 @@ button {
     }
 
     #player-song-title {
-        /* font-size: 0.95rem; */
         width: 200px;
     }
+
     #player-song-artist {
         font-size: 0.75rem;
         color: var(--highlight-color);
     }
+
     #player-song-duration {
         font-size: 0.75rem;
+    }
+
+    .playlist {
+        height: 250px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        scroll-behavior: smooth;
     }
 
     .playlist-title {
