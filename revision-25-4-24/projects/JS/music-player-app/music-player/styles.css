@@ -195,4 +195,18 @@ button {
 
 #playlist-songs {
     background: var(--foreground-color);
+    list-style: none;
+
+    padding: 8px 9px;
+}
+
+#playlist-songs li:not(:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
+
+.playlist-song {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
 }
