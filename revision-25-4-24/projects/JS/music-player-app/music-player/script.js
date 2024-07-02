@@ -107,9 +107,10 @@ const sortSong = (songs) => {
     return songs;
 };
 
-sortSong(songsObj?.songs);
+// sortSong(songsObj?.songs);
 
 const displaySong = (songs) => {
+    console.log(songs);
     songs.forEach((song) => {
         const eachSong = `
             <li class="playlist-song">
@@ -129,4 +130,5 @@ const displaySong = (songs) => {
     });
 };
 
+// displaySong(sortSong(songsObj?.songs));
 displaySong(songsObj?.songs);
