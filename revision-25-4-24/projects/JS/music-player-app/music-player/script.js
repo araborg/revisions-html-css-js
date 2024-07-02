@@ -87,4 +87,10 @@ const songsObj = {
     songDuration: 0,
 };
 
-console.log(songsObj);
+const sortSong = (songs) => {
+    songs.map((song) => {
+        console.log(song);
+    });
+};
+
+sortSong(songsObj?.songs);
