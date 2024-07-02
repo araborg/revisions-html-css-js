@@ -88,23 +88,30 @@ const songsObj = {
 };
 
 const sortSong = (songs) => {
-    // songs.forEach((song) => {
-    //     console.log(song);
-    // });
-
     songs.sort((a, b) => {
         if (a.title > b.title) {
-            return -1;
+            return 1;
         }
 
         if (a.title < b.title) {
-            return 1;
+            return -1;
         }
 
         if (a.title === b.title) {
             return 0;
         }
     });
+
+    // console.log(songs);
+    return songs;
 };
 
 sortSong(songsObj?.songs);
+
+const displaySong = (songs) => {
+    const song = songs.forEach((song) => {
+        console.log(song);
+    });
+};
+
+displaySong(songsObj?.songs);
