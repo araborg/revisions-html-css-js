@@ -87,6 +87,8 @@ const songsObj = {
     songDuration: 0,
 };
 
+const audio = new Audio();
+
 const sortSong = (songs) => {
     songs.sort((a, b) => {
         if (a.title > b.title) {
