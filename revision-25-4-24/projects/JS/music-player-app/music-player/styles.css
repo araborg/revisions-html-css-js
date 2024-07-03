@@ -197,12 +197,14 @@ button {
     background: var(--foreground-color);
     list-style: none;
 
-    /* padding: 8px 9px; */
+    padding: 8px;
     cursor: pointer;
 
     width: 430px;
     /* border: 3px solid red; */
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #playlist-songs li:not(:last-child) {
@@ -211,7 +213,7 @@ button {
 }
 
 .playlist-song {
-    /* padding: 9px 8px; */
+    padding: 9px 8px;
 
     display: flex;
     align-items: center;
