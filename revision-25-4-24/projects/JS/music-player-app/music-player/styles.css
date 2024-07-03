@@ -235,18 +235,21 @@ button {
     align-items: center;
     justify-content: space-between;
     column-gap: 5px;
+    padding: 0 5px;
 
     width: 100%;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 .playlist-track-title {
     width: auto;
-    min-width: 230px;
+    min-width: 195px;
 
     font-size: 0.85rem;
 
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-between;
 
     /* border: 3px solid yellow; */
     /* min- */
@@ -258,7 +261,7 @@ button {
     /* font-size: 0.75rem; */
 
     border: 3px solid green;
-    min-width: 90px;
+    min-width: 80.8px;
 
     font-size: 0.725rem;
     /* flex-wrap: nowrap; */
