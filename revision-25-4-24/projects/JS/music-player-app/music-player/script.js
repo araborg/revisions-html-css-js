@@ -114,7 +114,7 @@ const displaySong = (songs) => {
         .map((song) => {
             return `
             <li class="playlist-song">
-                <span>
+                <span class="playlist-track-info">
                     <span class="playlist-track-title">${song.title}</span>
                     <span class="playlist-track-artist">${song.artist}</span>
                     <span class="playlist-track-duration">${song.duration}</span>
