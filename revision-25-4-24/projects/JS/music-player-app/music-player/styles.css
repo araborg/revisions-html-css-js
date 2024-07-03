@@ -270,6 +270,15 @@ button {
 
 .playlist-replay-btn svg {
     fill: var(--secondary-color);
+
+    width: 16px;
+    height: 13px;
+}
+
+/* .playlist-replay-btn:hover svg { */
+
+.playlist-replay-btn:hover svg {
+    background-color: var(--background-color);
 }
 
 .playlist-delete-btn:hover circle {
