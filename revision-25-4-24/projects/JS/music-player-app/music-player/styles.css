@@ -186,6 +186,8 @@ button {
 
     text-align: center;
     cursor: pointer;
+
+    /* border: 3px solid greenyellow; */
 }
 
 .playlist {
@@ -219,8 +221,7 @@ button {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-size: 0.85rem;
+    justify-content: start;
 
     width: 100%;
 
@@ -228,11 +229,11 @@ button {
 }
 
 .playlist-track-info {
-    /* display: flex; */
+    display: flex;
     /* align-items: center; */
     /* justify-content: space-between; */
 
-    width: 100%;
+    /* width: 100%; */
     border: 3px solid blue;
 }
 
@@ -241,24 +242,34 @@ button {
 
     /* width: auto; */
 
+    font-size: 0.85rem;
+
     border: 3px solid yellow;
     /* min- */
-    width: 230px;
+    width: auto;
+    /* width: 80px; */
 }
 
 .playlist-track-artist {
-    /* width: 120px; */
+    /* font-size: 0.75rem; */
 
     border: 3px solid green;
+
+    font-size: 0.725rem;
 }
 
 .playlist-track-duration {
     border: 3px solid red;
     /* width: 30px; */
+
+    font-size: 0.725rem;
 }
 
 .playlist-replay-btn {
     border: 3px solid yellow;
+    height: 30px;
+    /* width: 30px; */
+    /* text-align: center; */
 }
 
 .playlist-delete-btn {
