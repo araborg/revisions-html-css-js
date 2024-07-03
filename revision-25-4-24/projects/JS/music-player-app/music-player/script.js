@@ -136,5 +136,5 @@ const displaySong = (songs) => {
     playlistSongs.innerHTML += eachSong;
 };
 
-// displaySong(sortSong(songsObj?.songs));
-displaySong(songsObj?.songs);
+displaySong(sortSong(songsObj?.songs));
+// displaySong(songsObj?.songs);
