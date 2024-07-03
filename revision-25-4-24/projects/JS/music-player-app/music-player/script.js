@@ -115,9 +115,9 @@ const displaySong = (songs) => {
             return `
             <li class="playlist-song">
                 <span>
-                    <span>${song.title}</span>
-                    <span>${song.artist}</span>
-                    <span>${song.duration}</span>
+                    <span class="playlist-track-title">${song.title}</span>
+                    <span class="playlist-track-artist">${song.artist}</span>
+                    <span class="playlist-track-duration">${song.duration}</span>
                 </span>
 
                 <button>
