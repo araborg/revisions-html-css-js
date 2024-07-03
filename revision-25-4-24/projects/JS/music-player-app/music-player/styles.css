@@ -275,7 +275,9 @@ button {
     height: 13px;
 }
 
-/* .playlist-replay-btn:hover svg { */
+/* .playlist-replay-btn:hover circle {
+    background-color: var(--background-color);
+} */
 
 .playlist-replay-btn:hover svg {
     background-color: var(--background-color);
