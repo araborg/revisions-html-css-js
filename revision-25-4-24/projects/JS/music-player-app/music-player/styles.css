@@ -188,6 +188,7 @@ button {
 .playlist {
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 10px;
 }
 
@@ -198,6 +199,8 @@ button {
     padding: 8px 9px;
     cursor: pointer;
 
+    width: 430px;
+    border: 3px solid red;
     /* display: flex; */
 }
 
@@ -207,7 +210,7 @@ button {
 }
 
 .playlist-song {
-    padding: 5px 10px;
+    padding: 9px 5px;
 
     display: flex;
     align-items: center;
@@ -217,8 +220,6 @@ button {
     width: 100%;
 
     /* padding-bottom: 30px; */
-
-    border: 3px solid red;
 }
 
 .playlist-track-info {
@@ -226,7 +227,7 @@ button {
     align-items: center;
     justify-content: space-between;
 
-    width: 100%;
+    /* width: 100%; */
 }
 
 .playlist-track-title {
@@ -234,7 +235,7 @@ button {
 
     /* width: auto; */
 
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     /* min- */
     width: 230px;
 }
@@ -242,11 +243,11 @@ button {
 .playlist-track-artist {
     width: 120px;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .playlist-track-duration {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     width: 30px;
 }
 
