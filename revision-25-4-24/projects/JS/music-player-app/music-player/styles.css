@@ -228,11 +228,12 @@ button {
 }
 
 .playlist-track-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
 
-    /* width: 100%; */
+    width: 100%;
+    border: 3px solid pink;
 }
 
 .playlist-track-title {
@@ -242,7 +243,7 @@ button {
 
     border: 3px solid yellow;
     /* min- */
-    /* width: 230px; */
+    width: 230px;
 }
 
 .playlist-track-artist {
