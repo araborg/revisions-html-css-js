@@ -221,7 +221,7 @@ button {
 
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
 
     width: 100%;
 
@@ -230,23 +230,23 @@ button {
 
 .playlist-track-info {
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
 
-    /* width: 100%; */
+    width: 100%;
     border: 3px solid blue;
 }
 
 .playlist-track-title {
     /* flex-wrap: wrap; */
 
-    /* width: auto; */
+    width: 260px;
 
     font-size: 0.85rem;
 
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     /* min- */
-    width: auto;
+    /* width: auto; */
     /* width: 80px; */
 }
 
