@@ -279,9 +279,9 @@ button {
     background-color: var(--background-color);
 } */
 
-.playlist-replay-btn:hover svg {
+/* .playlist-replay-btn:hover svg {
     background-color: var(--background-color);
-}
+} */
 
 .playlist-delete-btn:hover circle {
     fill: red;
