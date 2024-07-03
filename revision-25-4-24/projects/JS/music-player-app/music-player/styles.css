@@ -215,7 +215,7 @@ button {
 }
 
 .playlist-song {
-    padding: 9px 8px;
+    padding: 5px;
 
     display: flex;
     align-items: center;
@@ -233,7 +233,7 @@ button {
     /* justify-content: space-between; */
 
     width: 100%;
-    border: 3px solid pink;
+    border: 3px solid blue;
 }
 
 .playlist-track-title {
