@@ -114,10 +114,10 @@ const displaySong = (songs) => {
         .map((song) => {
             return `
                 <li class="playlist-song">
-                    <span class="playlist-track-info">
-                        <span class="playlist-title">${song.title}</span>
-                        <span class="playlist-artist">${song.artist}</span>
-                        <div class="playlist-duration">${song.duration}</div>
+                    <span class="playlist-song-info">
+                        <span class="playlist-song-title">${song.title}</span>
+                        <span class="playlist-song-artist">${song.artist}</span>
+                        <div class="playlist-song-duration">${song.duration}</div>
                     </span>
 
                     <button class="playlist-replay-btn">
