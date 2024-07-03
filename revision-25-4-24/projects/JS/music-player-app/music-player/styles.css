@@ -201,7 +201,7 @@ button {
     background: var(--foreground-color);
     list-style: none;
 
-    padding: 8px;
+    padding: 8px 5px;
     cursor: pointer;
 
     /* width: 430px; */
@@ -215,11 +215,11 @@ button {
 
 #playlist-songs li:not(:last-child) {
     border-bottom: 1px solid var(--background-color);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .playlist-song {
-    padding: 5px;
+    /* padding: 5px; */
 
     display: flex;
     align-items: center;
@@ -242,8 +242,9 @@ button {
 }
 
 .playlist-track-title {
-    width: auto;
-    min-width: 195px;
+    /* width: auto; */
+    /* min-width: 17px; */
+    width: 200px;
 
     font-size: 0.85rem;
 
@@ -260,7 +261,7 @@ button {
 .playlist-track-artist {
     /* font-size: 0.75rem; */
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
     min-width: 80.8px;
 
     font-size: 0.725rem;
@@ -268,21 +269,21 @@ button {
 }
 
 .playlist-track-duration {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     /* width: 30px; */
 
     font-size: 0.725rem;
 }
 
 .playlist-replay-btn {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     height: 30px;
     /* width: 30px; */
     /* text-align: center; */
 }
 
 .playlist-delete-btn {
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 @media (max-width: 700px) {
