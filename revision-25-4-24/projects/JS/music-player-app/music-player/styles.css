@@ -268,10 +268,12 @@ button {
     height: 30px;
 }
 
+/*
 .playlist-delete-btn:hover svg {
     fill: red;
-    /* background: red; */
+    background: red;
 }
+*/
 
 @media (max-width: 700px) {
     .player,
