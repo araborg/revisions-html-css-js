@@ -200,18 +200,25 @@ button {
 
     padding: 8px 9px;
     cursor: pointer;
+
+    /* display: flex; */
 }
 
 #playlist-songs li:not(:last-child) {
-    border-bottom: 1px solid var(--background-color);
+    /* border-bottom: 1px solid var(--background-color); */
+    /* margin-bottom: 10px; */
 }
 
 .playlist-song {
-    padding: 10px;
+    padding: 5px 10px;
 
     display: flex;
     align-items: center;
     font-size: 0.85rem;
+
+    padding-bottom: 30px;
+
+    border: 3px solid yellow;
 }
 
 @media (max-width: 700px) {
