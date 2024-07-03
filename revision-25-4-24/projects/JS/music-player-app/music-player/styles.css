@@ -238,7 +238,7 @@ button {
 
     /* width: auto; */
 
-    /* border: 3px solid yellow; */
+    border: 3px solid yellow;
     /* min- */
     /* width: 230px; */
 }
@@ -246,17 +246,20 @@ button {
 .playlist-track-artist {
     /* width: 120px; */
 
-    /* border: 3px solid green; */
+    border: 3px solid green;
 }
 
 .playlist-track-duration {
-    /* border: 3px solid red; */
+    border: 3px solid red;
     /* width: 30px; */
 }
 
 .playlist-replay-btn {
+    border: 3px solid yellow;
 }
+
 .playlist-delete-btn {
+    border: 3px solid green;
 }
 
 @media (max-width: 700px) {
