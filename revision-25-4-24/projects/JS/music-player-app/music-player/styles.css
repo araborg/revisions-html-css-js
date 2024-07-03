@@ -272,12 +272,9 @@ button {
     fill: var(--secondary-color);
 }
 
-/*
-.playlist-delete-btn:hover svg {
+.playlist-delete-btn:hover circle {
     fill: red;
-    background: red;
 }
-*/
 
 @media (max-width: 700px) {
     .player,
