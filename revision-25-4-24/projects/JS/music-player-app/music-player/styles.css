@@ -240,18 +240,18 @@ button {
 
     /* border: 3px solid yellow; */
     /* min- */
-    width: 230px;
+    /* width: 230px; */
 }
 
 .playlist-track-artist {
-    width: 120px;
+    /* width: 120px; */
 
     /* border: 3px solid green; */
 }
 
 .playlist-track-duration {
     /* border: 3px solid red; */
-    width: 30px;
+    /* width: 30px; */
 }
 
 @media (max-width: 700px) {
