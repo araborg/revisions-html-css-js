@@ -302,7 +302,8 @@ wc is usu inline for most elemts.
 26. media(min/max-width: px) {} for responsiveness.
 
 27. ul/ol has an invisible default margin top and bottom of 16px.
-28. ul/ol has an invisible deault left padding of 40px.
+28. ul/ol has an invisible default left padding of 40px.
+
 29. Grp more than 2 selectors together if dy have common ppties.
 
 
