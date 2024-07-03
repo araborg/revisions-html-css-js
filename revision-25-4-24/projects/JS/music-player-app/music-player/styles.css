@@ -254,6 +254,11 @@ button {
     /* width: 30px; */
 }
 
+.playlist-replay-btn {
+}
+.playlist-delete-btn {
+}
+
 @media (max-width: 700px) {
     .player,
     .playlist {
