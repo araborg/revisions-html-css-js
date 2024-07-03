@@ -224,7 +224,7 @@ button {
     padding: 0 5px;
 }
 
-.playlist-track-info {
+.playlist-song-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -233,7 +233,7 @@ button {
     width: 100%;
 }
 
-.playlist-track-title {
+.playlist-song-title {
     width: 200px;
 
     font-size: 0.85rem;
@@ -244,7 +244,7 @@ button {
     /* border: 3px solid yellow; */
 }
 
-.playlist-track-artist {
+.playlist-song-artist {
     /* border: 3px solid green; */
     width: 95px;
     padding: 0 5px;
@@ -253,7 +253,7 @@ button {
     font-size: 0.725rem;
 }
 
-.playlist-track-duration {
+.playlist-song-duration {
     /* border: 3px solid red; */
 
     font-size: 0.725rem;
@@ -266,6 +266,10 @@ button {
 
 .playlist-replay-btn {
     height: 30px;
+}
+
+.playlist-replay-btn svg {
+    fill: var(--secondary-color);
 }
 
 /*
