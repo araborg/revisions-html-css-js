@@ -241,7 +241,8 @@ button {
 }
 
 .playlist-song-title {
-    width: 200px;
+    width: 100%;
+    min-width: 220px;
 
     font-size: 0.85rem;
 
@@ -264,7 +265,7 @@ button {
     font-size: 0.725rem;
     text-align: center;
 
-    width: 45px;
+    width: 35px;
 
     padding: 4px 6px;
 }
