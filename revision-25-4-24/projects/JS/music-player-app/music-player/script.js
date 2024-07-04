@@ -144,5 +144,7 @@ const displaySong = (songs) => {
 displaySong(sortSong(songsObj?.songs));
 
 const playSong = (id) => {
-    console.log(id);
+    const chosenSong = songsObj?.songs.find((song) => song.id === id);
+
+    console.log(chosenSong);
 };
