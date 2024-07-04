@@ -107,8 +107,6 @@ const sortSong = (songs) => {
     return songs;
 };
 
-// sortSong(songsObj?.songs);
-
 const displaySong = (songs) => {
     const eachSong = songs
         .map((song) => {
