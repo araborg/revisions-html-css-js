@@ -144,7 +144,12 @@ const displaySong = (songs) => {
 displaySong(sortSong(songsObj?.songs));
 
 const playSong = (id) => {
-    const chosenSong = songsObj?.songs.find((song) => song.id === id);
+    let chosenSong = songsObj?.songs.find((song) => song.id === id);
+
+    // if (songsObj?.selectedSong === null) {
+    // }
 
     console.log(chosenSong);
+
+    audio.play();
 };
