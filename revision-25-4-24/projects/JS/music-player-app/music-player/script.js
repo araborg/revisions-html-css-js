@@ -150,6 +150,7 @@ const playSong = (id) => {
     // }
 
     console.log(chosenSong);
+    audio.src = chosenSong.src;
 
     audio.play();
 };
