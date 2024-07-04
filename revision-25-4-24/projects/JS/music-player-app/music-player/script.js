@@ -167,6 +167,7 @@ const playSong = (id) => {
     if (
         songsObj?.selectedSong === null ||
         songsObj?.selectedSong?.id !== chosenSong?.id
+        // chosenSong?.id !== songsObj?.selectedSong?.id
     ) {
         console.log("first click");
     } else {
