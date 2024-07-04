@@ -165,8 +165,6 @@ const playSong = (id) => {
         songsObj?.selectedSong === null ||
         chosenSong?.id !== songsObj?.selectedSong?.id
     ) {
-        console.log("first click");
-        // chosenSong = songsObj?.songs[0];
         // console.log("null");
     } else {
         console.log("second click");
