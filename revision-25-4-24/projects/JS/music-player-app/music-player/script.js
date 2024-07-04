@@ -159,10 +159,11 @@ const playSong = (id) => {
     // 3. mk audio.scr equal d chosen song src
 
     let chosenSong = songsObj?.songs.find((song) => song.id === id);
+    // songsObj?.selectedSong = chosenSong
 
     if (songsObj?.selectedSong === null || songsObj) {
         chosenSong = songsObj?.songs[0];
-        console.log("null");
+        // console.log("null");
     } else {
         console.log("not null");
     }
@@ -170,9 +171,14 @@ const playSong = (id) => {
     console.log(chosenSong);
     audio.src = chosenSong.src;
 
+    chosenIndex(chosenSong);
+
     audio.play();
 };
 
 playBtn.addEventListener("click", playSong);
 
-const chosenIndex = () => {};
+const chosenIndex = (song) => {
+    const selectedSong = songsObj?.songs.findIndex(() => song.id);
+    console.log(selectedSong);
+};
