@@ -171,7 +171,7 @@ const playSong = (id) => {
     console.log(chosenSong);
     audio.src = chosenSong.src;
 
-    chosenIndex(chosenSong);
+    // chosenIndex(chosenSong);
 
     audio.play();
 };
