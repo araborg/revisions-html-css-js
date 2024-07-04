@@ -158,8 +158,10 @@ const playSong = (id) => {
         console.log("not null");
     }
 
-    // console.log(chosenSong);
+    console.log(chosenSong);
     audio.src = chosenSong.src;
 
     audio.play();
 };
+
+playBtn.addEventListener("click", playSong);
