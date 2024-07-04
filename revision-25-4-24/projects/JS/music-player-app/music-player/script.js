@@ -144,12 +144,21 @@ const displaySong = (songs) => {
 displaySong(sortSong(songsObj?.songs));
 
 const playSong = (id) => {
+    // to play a song:
+    // 1. select d song
+    // if there is no song playing already play d 1st song
+    // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
+    // 3. mk audio.scr equal d chosen song src
+
     let chosenSong = songsObj?.songs.find((song) => song.id === id);
 
-    // if (songsObj?.selectedSong === null) {
-    // }
+    if (songsObj?.selectedSong === null || songsObj) {
+        console.log("null");
+    } else {
+        console.log("not null");
+    }
 
-    console.log(chosenSong);
+    // console.log(chosenSong);
     audio.src = chosenSong.src;
 
     audio.play();
