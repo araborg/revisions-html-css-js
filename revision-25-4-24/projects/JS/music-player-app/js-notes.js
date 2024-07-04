@@ -5,7 +5,10 @@ Ths learnt:
 3. map method and how to use it.
 4. find method and how to use it.
 
-5.
+5. Y is both of thses different:
+    songsObj?.selectedSong?.id !== chosenSong?.id
+    chosenSong?.id !== songsObj?.selectedSong?.id
+
 6.
 7.
 8.

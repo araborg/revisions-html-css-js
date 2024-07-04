@@ -166,18 +166,14 @@ const playSong = (id) => {
 
     if (
         songsObj?.selectedSong === null ||
-        chosenSong?.id !== songsObj?.selectedSong?.id
+        songsObj?.selectedSong?.id !== chosenSong?.id
     ) {
-        // console.log("null");
+        console.log("first click");
     } else {
         console.log("second click");
     }
 
-    console.log(chosenSong);
     songsObj.selectedSong = chosenSong;
-
-    chosenIndex(chosenSong.title);
-    console.log(songsObj.selectedSong, chosenSong);
 
     audio.play();
 };
