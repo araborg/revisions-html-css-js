@@ -79,6 +79,14 @@ const allSongs = [
         duration: "2:43",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/chasing-that-feeling.mp3",
     },
+
+    {
+        id: 9,
+        title: "Hallelujah Praise The Lord",
+        artist: "Nathan Bassey",
+        duration: "12:13",
+        src: "../../../../../../../../../Music/Nathaniel_Bassey_-_Hallelujah_Praise_The_Lord_CeeNaija.com_.mp3",
+    },
 ];
 
 const songsObj = {
