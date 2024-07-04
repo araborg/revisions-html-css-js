@@ -85,7 +85,7 @@ const allSongs = [
         title: "Hallelujah Praise The Lord",
         artist: "Nathan Bassey",
         duration: "12:13",
-        src: "../../../../../../../../../Music/Nathaniel_Bassey_-_Hallelujah_Praise_The_Lord_CeeNaija.com_.mp3",
+        src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
     },
 ];
 
