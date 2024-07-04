@@ -230,7 +230,7 @@ button {
     justify-content: space-between;
     padding: 5px 0;
 
-    /* width: 100%; */
+    width: 100%;
 
     /* border: 3px solid yellow; */
     /* outline-color: var(--highlight-color); */
@@ -267,9 +267,6 @@ button {
 
 .playlist-replay-btn {
     height: 30px;
-    /* text-align: center; */
-
-    display: inline-block;
 }
 
 .playlist-replay-btn svg {
@@ -371,34 +368,17 @@ button {
 
     .playlist-song-title {
         width: 135px;
-
-        /* font-size: 0.85rem; */
-
-        /* display: flex; */
-        /* justify-content: space-between; */
     }
 
     .playlist-song-artist {
-        /* border: 3px solid green; */
         width: 43px;
-        /* padding: 0 5px; */
-        /* text-align: center; */
-
-        /* font-size: 0.725rem; */
     }
 
     .playlist-song-duration {
-        /* font-size: 0.725rem; */
-        /* text-align: center; */
-
         width: 32px;
-
-        /* padding: 4px 6px; */
     }
 
     .playlist-replay-btn {
-        padding: 1.2px;
-        /* height: 15px; */
-        /* width: 15px; */
+        padding: 7px 0;
     }
 }
