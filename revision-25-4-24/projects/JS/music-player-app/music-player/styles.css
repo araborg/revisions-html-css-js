@@ -293,6 +293,8 @@ button {
 
 .playlist-delete-btn:hover circle {
     fill: red;
+
+    /* background-image: url("../../../../../../Nathaniel_Bassey_-_Hallelujah_Praise_The_Lord_CeeNaija.com_.mp3"); */
 }
 
 @media (max-width: 700px) {
