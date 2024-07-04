@@ -139,10 +139,7 @@ const displaySong = (songs) => {
         })
         .join("");
 
-    console.log(eachSong);
-
     playlistSongs.innerHTML += eachSong;
 };
 
 displaySong(sortSong(songsObj?.songs));
-// displaySong(songsObj?.songs);
