@@ -161,17 +161,23 @@ const playSong = (id) => {
     let chosenSong = songsObj?.songs.find((song) => song.id === id);
     // songsObj?.selectedSong = chosenSong
 
-    if (songsObj?.selectedSong === null || songsObj) {
+    if (
+        songsObj?.selectedSong === null ||
+        chosenSong?.id !== songsObj?.selectedSong?.id
+    ) {
+        console.log("first click");
         // chosenSong = songsObj?.songs[0];
         // console.log("null");
     } else {
-        console.log("not null");
+        console.log("second click");
     }
 
-    console.log(chosenSong);
+    // console.log(chosenSong);
+    songsObj.selectedSong = chosenSong;
     audio.src = chosenSong.src;
 
-    chosenIndex(chosenSong.title);
+    // chosenIndex(chosenSong.title);
+    console.log(songsObj.selectedSong, chosenSong);
 
     audio.play();
 };
