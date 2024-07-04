@@ -110,9 +110,10 @@ const sortSong = (songs) => {
 const displaySong = (songs) => {
     const eachSong = songs
         .map((song) => {
+            // console.log(song);
             return `
                 <li class="playlist-song">
-                    <span class="playlist-song-info">
+                    <span class="playlist-song-info" onclick=playSong(${song.id})>
                         <span class="playlist-song-title">${song.title}</span>
                         <span class="playlist-song-artist">${song.artist}</span>
                         <div class="playlist-song-duration">${song.duration}</div>
@@ -142,4 +143,6 @@ const displaySong = (songs) => {
 
 displaySong(sortSong(songsObj?.songs));
 
-const playSong = (id) => {};
+const playSong = (id) => {
+    console.log(id);
+};
