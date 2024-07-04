@@ -161,7 +161,7 @@ const playSong = (id) => {
     let chosenSong = songsObj?.songs.find((song) => song.id === id);
 
     if (songsObj?.selectedSong === null || songsObj) {
-        // chosenSong = songsObj?.songs[0];
+        chosenSong = songsObj?.songs[0];
         console.log("null");
     } else {
         console.log("not null");
@@ -174,3 +174,5 @@ const playSong = (id) => {
 };
 
 playBtn.addEventListener("click", playSong);
+
+const chosenIndex = () => {};
