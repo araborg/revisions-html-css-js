@@ -141,3 +141,5 @@ const displaySong = (songs) => {
 };
 
 displaySong(sortSong(songsObj?.songs));
+
+const playSong = (id) => {};
