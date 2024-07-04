@@ -1,7 +1,8 @@
 /*
-1. Creating a refernce obj that has a copy and initial values of variables.
-2.
-3.
+Ths learnt:
+1. Creating a refernce (obj) that has a copy and initial values of variables.
+2. sort method and how to use it.
+3. map method and how to use it.
 4.
 
 5.
