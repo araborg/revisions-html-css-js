@@ -152,6 +152,7 @@ const displaySong = (songs) => {
 displaySong(sortSong(songsObj?.songs));
 
 const playSong = (id) => {
+    /*
     // to play a song:
     // 1. select d song
     // if there is no song playing already play d 1st song
@@ -161,23 +162,26 @@ const playSong = (id) => {
     let chosenSong = songsObj?.songs.find((song) => song.id === id);
     // songsObj?.selectedSong = chosenSong
 
-    if (
-        songsObj?.selectedSong === null ||
-        chosenSong?.id !== songsObj?.selectedSong?.id
-    ) {
-        // console.log("null");
-    } else {
-        console.log("second click");
-    }
-
-    // console.log(chosenSong);
-    songsObj.selectedSong = chosenSong;
+    audio.title = chosenSong.title;
     audio.src = chosenSong.src;
 
-    // chosenIndex(chosenSong.title);
-    console.log(songsObj.selectedSong, chosenSong);
+        if (
+            songsObj?.selectedSong === null ||
+            chosenSong?.id !== songsObj?.selectedSong?.id
+        ) {
+            // console.log("null");
+        } else {
+            console.log("second click");
+        }
 
-    audio.play();
+        console.log(chosenSong);
+        songsObj.selectedSong = chosenSong;
+
+        chosenIndex(chosenSong.title);
+        console.log(songsObj.selectedSong, chosenSong);
+
+        audio.play();
+    */
 };
 
 playBtn.addEventListener("click", playSong);
