@@ -157,31 +157,8 @@ const playSong = (id) => {
     // if there is no song playing already play d 1st song
     // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
     // 3. mk audio.scr equal d chosen song src
-
-    const chosenSong = songsObj?.songs.find((song) => song.id === id);
-    // songsObj?.selectedSong = chosenSong
-
-    audio.title = chosenSong.title;
-    audio.src = chosenSong.src;
-
-    if (
-        songsObj?.selectedSong === null ||
-        songsObj?.selectedSong?.id !== chosenSong?.id
-        // chosenSong?.id !== songsObj?.selectedSong?.id
-    ) {
-        console.log("first click");
-    } else {
-        console.log("second click");
-    }
-
-    songsObj.selectedSong = chosenSong;
-
-    audio.play();
 };
 
 playBtn.addEventListener("click", playSong);
 
-const chosenIndex = (song) => {
-    const selectedSong = songsObj?.songs.findIndex(() => song);
-    console.log(selectedSong);
-};
+const chosenIndex = (song) => {};
