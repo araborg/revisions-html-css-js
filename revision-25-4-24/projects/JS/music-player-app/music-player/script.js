@@ -162,14 +162,8 @@ const playSong = (id) => {
     // 3. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
     if (userData?.prevSong === null || userData?.prevSong?.id !== song.id) {
         audio.currentTime = 0;
-
-        userData?.prevSong === null
-            ? console.log("null")
-            : console.log("userData?.prevSong?.id !== song.id");
     } else {
         audio.currentTime = userData?.currentTime;
-
-        console.log("else statement");
     }
 
     // 4. update userData.prevSong
