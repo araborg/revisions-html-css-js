@@ -160,7 +160,6 @@ const displaySong = (songs) => {
 displaySong(sortSong(userData?.songs));
 
 const playSong = (id) => {
-    console.log(id);
     // 1. select d song
     const song = userData?.songs.find((song) => song.id === id);
 
@@ -186,7 +185,7 @@ playBtn.addEventListener("click", () => {
     if (userData?.prevSong === null) {
         playSong(userData?.songs[0].id);
     } else {
-        console.log(userData?.prevSong);
+        // console.log(userData?.prevSong);
         playSong(userData?.prevSong?.id);
     }
 });
