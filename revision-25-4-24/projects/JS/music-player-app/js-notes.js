@@ -1,6 +1,7 @@
 /*
 Ths learnt:
 1. Creating a refernce (obj) that has a copy and initial values of variables.
+
 2. Sort method and how to use it.
 A function that determines the order of the elements. The function is called 
 with the following arguments: a, b
@@ -10,7 +11,12 @@ It should return a number where:
     Zero or NaN indicates that a and b are considered equal.
 
 
-3. Map method and how to use it.
+3. Map method:
+Returns a new array with each element being the result of the callback function.
+The map() method is an iterative method. It calls a provided callbackFn function 
+once for each element in an array and constructs a new array from the results. 
+
+
 4. Find method and how to use it.
 
 5. Spread opreator [...]
