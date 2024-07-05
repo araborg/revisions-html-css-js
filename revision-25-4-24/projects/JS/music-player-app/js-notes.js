@@ -24,6 +24,10 @@ testing function, undefined is returned.
 
 
 5. Spread opreator [...]
+Spread syntax is the opposite of Rest syntax. Spread syntax "expands" an array 
+into its elements, while Rest syntax collects multiple elements and "condenses" 
+them into a single element.
+
 
 6. Splitting this:
     if (
