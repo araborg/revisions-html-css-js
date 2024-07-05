@@ -2,6 +2,14 @@
 Ths learnt:
 1. Creating a refernce (obj) that has a copy and initial values of variables.
 2. Sort method and how to use it.
+A function that determines the order of the elements. The function is called 
+with the following arguments: a, b
+It should return a number where:
+    A negative value indicates that a should come before b.
+    A positive value indicates that a should come after b.
+    Zero or NaN indicates that a and b are considered equal.
+
+
 3. Map method and how to use it.
 4. Find method and how to use it.
 
