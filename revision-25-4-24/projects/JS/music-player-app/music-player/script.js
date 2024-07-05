@@ -161,18 +161,6 @@ const playSong = (id) => {
     audio.src = song.src;
 
     // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
-    if (userData?.prevSong === null) {
-        console.log("1", userData?.prevSong);
-    } else if (userData?.prevSong.id !== song.id) {
-        console.log("2", userData?.prevSong, song);
-    } else {
-        console.log("3", userData?.prevSong, song);
-    }
-
-    userData.prevSong = song;
-
-    // console.log(userData?.prevSong?.id);
-    // console.log(song.id);
 
     // 3. mk audio.scr equal d chosen song src
 };
