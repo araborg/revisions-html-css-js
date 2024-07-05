@@ -168,15 +168,9 @@ const playSong = (id) => {
 
     // 4. update userData.prevSong
     userData.prevSong = song;
-    chosenIndex(song);
 
     // 5. play song
     audio.play();
 };
 
 playBtn.addEventListener("click", playSong);
-
-const chosenIndex = (song) => {
-    const songIndex = userData?.songs.indexOf(song);
-    console.log(songIndex);
-};
