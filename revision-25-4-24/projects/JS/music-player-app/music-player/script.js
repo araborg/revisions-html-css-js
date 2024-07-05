@@ -178,14 +178,19 @@ playBtn.addEventListener("click", playSong);
 const songIndex = () => userData?.songs.indexOf(userData?.prevSong);
 
 const playNextSong = () => {
-    const song = songIndex();
-
-    if (userData?.prevSong === null) {
+    if (userData?.prevSong === null || songIndex === -1) {
         playSong(userData?.songs[0].id);
     } else {
+        const songIn = songIndex();
+        const nextSongIndex = songIn + 1;
+        playSong(userData?.songs[nextSongIndex].id);
+
+        console.log(nextSongIndex, songIn);
     }
 
-    console.log(song);
+    console.log(userData?.prevSong);
+
+    // console.log(song);
 };
 
 nextBtn.addEventListener("click", playNextSong);
