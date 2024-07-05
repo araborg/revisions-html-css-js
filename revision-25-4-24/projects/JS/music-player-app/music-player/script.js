@@ -166,7 +166,7 @@ const playSong = (id) => {
         audio.currentTime = userData?.currentTime;
     }
 
-    // 4. update userData.prevSong
+    // 4. update userData.prevSong (ds is impt bcos it determine wt condition works in d if statemt)
     userData.prevSong = song;
 
     // 5. play song
