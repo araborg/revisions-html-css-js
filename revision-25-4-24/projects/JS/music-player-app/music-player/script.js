@@ -152,6 +152,7 @@ const displaySong = (songs) => {
 displaySong(sortSong(userData?.songs));
 
 const playSong = (id) => {
+    console.log(id);
     // 1. select d song
     const song = userData?.songs.find((song) => song.id === id);
 
@@ -178,17 +179,23 @@ playBtn.addEventListener("click", playSong);
 const songIndex = () => userData?.songs.indexOf(userData?.prevSong);
 
 const playNextSong = () => {
-    if (userData?.prevSong === null || songIndex === -1) {
+    const allSongsLength = userData?.songs.length;
+
+    if (userData?.prevSong === null) {
         playSong(userData?.songs[0].id);
     } else {
         const songIn = songIndex();
         const nextSongIndex = songIn + 1;
-        console.log(nextSongIndex);
-        playSong(userData?.songs[nextSongIndex]?.id);
 
-        // console.log(nextSongIndex, songIn);
+        if (nextSongIndex !== allSongsLength) {
+            playSong(userData?.songs[nextSongIndex]?.id);
+        } else {
+            // ds tks care of next song wn next btn is pressed on d last song
+            playSong(userData?.songs[0].id);
+        }
     }
 
+    console.log(allSongsLength);
     console.log(userData?.prevSong);
 
     // console.log(song);
