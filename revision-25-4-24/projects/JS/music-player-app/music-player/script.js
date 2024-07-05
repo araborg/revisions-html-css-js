@@ -159,9 +159,9 @@ const playSong = (id) => {
     audio.title = song.title;
     audio.src = song.src;
 
-    // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
+    // 3. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
 
-    // 3. mk audio.scr equal d chosen song src
+    // 4. mk audio.scr equal d chosen song src
 };
 
 playBtn.addEventListener("click", playSong);
