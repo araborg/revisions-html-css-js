@@ -164,9 +164,9 @@ const playSong = (id) => {
     if (userData?.selectedSong === null) {
         console.log("1", userData?.selectedSong);
     } else if (userData?.selectedSong.id !== song.id) {
-        console.log("2", song);
+        console.log("2", userData?.selectedSong, song);
     } else {
-        console.log("3", userData?.selectedSong);
+        console.log("3", userData?.selectedSong, song);
     }
 
     userData.selectedSong = song;
