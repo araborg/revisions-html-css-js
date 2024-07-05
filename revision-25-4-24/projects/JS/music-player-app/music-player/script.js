@@ -182,7 +182,14 @@ const playSong = (id) => {
     audio.play();
 };
 
-playBtn.addEventListener("click", playSong);
+playBtn.addEventListener("click", () => {
+    if (userData?.prevSong === null) {
+        playSong(userData?.songs[0].id);
+    } else {
+        console.log(userData?.prevSong);
+        playSong(userData?.prevSong?.id);
+    }
+});
 
 const songIndex = () => userData?.songs.indexOf(userData?.prevSong);
 
