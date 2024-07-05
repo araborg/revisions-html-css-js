@@ -87,6 +87,14 @@ const allSongs = [
         duration: "12:13",
         src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
     },
+
+    {
+        id: 11,
+        title: "Walking with The Lord",
+        artist: "Nathan Bassey",
+        duration: "12:13",
+        src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
+    },
 ];
 
 const userData = {
@@ -194,11 +202,6 @@ const playNextSong = () => {
             playSong(userData?.songs[0].id);
         }
     }
-
-    console.log(allSongsLength);
-    console.log(userData?.prevSong);
-
-    // console.log(song);
 };
 
 nextBtn.addEventListener("click", playNextSong);
