@@ -89,7 +89,7 @@ const allSongs = [
     },
 ];
 
-const songsObj = {
+const userData = {
     songs: [...allSongs],
     selectedSong: null,
     songDuration: 0,
@@ -149,11 +149,13 @@ const displaySong = (songs) => {
     playlistSongs.innerHTML += eachSong;
 };
 
-displaySong(sortSong(songsObj?.songs));
+displaySong(sortSong(userData?.songs));
 
 const playSong = (id) => {
     // to play a song:
     // 1. select d song
+    const song = userData?.songs.find((song) => song.id === id);
+    console.log(song);
     // if there is no song playing already play d 1st song
     // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
     // 3. mk audio.scr equal d chosen song src

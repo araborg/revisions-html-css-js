@@ -5,9 +5,7 @@ Ths learnt:
 3. map method and how to use it.
 4. find method and how to use it.
 
-5. Y is both of thses different:
-    songsObj?.selectedSong?.id !== chosenSong?.id
-    chosenSong?.id !== songsObj?.selectedSong?.id
+5. Spread opreator [...]
 
 6.
 7.
