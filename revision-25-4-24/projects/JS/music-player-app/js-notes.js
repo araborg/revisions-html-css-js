@@ -26,7 +26,16 @@ Ths learnt:
 
     }
 
-7.
+7. 
+    if (userData?.prevSong === null || userData?.prevSong?.id !== song.id) {
+        userData?.prevSong === null
+            ? console.log("null")
+            : console.log("userData?.prevSong?.id !== song.id");
+
+    } else {
+        console.log("else statement");
+    }
+        
 8.
 
 9.

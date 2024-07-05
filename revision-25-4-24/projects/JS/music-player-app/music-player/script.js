@@ -160,10 +160,12 @@ const playSong = (id) => {
     audio.src = song.src;
 
     // 3. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
-    if (userData?.prevSong === null) {
+    if (userData?.prevSong === null || userData?.prevSong?.id !== song.id) {
         audio.currentTime = 0;
 
-        console.log("null");
+        userData?.prevSong === null
+            ? console.log("null")
+            : console.log("userData?.prevSong?.id !== song.id");
     } else {
         audio.currentTime = userData?.currentTime;
 
@@ -171,6 +173,7 @@ const playSong = (id) => {
     }
 
     // 4. mk audio.scr equal d chosen song src
+    userData.prevSong = song;
 };
 
 playBtn.addEventListener("click", playSong);
