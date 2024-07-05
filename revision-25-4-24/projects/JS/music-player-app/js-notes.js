@@ -1,9 +1,9 @@
 /*
 Ths learnt:
 1. Creating a refernce (obj) that has a copy and initial values of variables.
-2. sort method and how to use it.
-3. map method and how to use it.
-4. find method and how to use it.
+2. Sort method and how to use it.
+3. Map method and how to use it.
+4. Find method and how to use it.
 
 5. Spread opreator [...]
 
