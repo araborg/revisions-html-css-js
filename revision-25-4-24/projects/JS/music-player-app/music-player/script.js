@@ -155,24 +155,24 @@ const playSong = (id) => {
     // to play a song:
     // 1. select d song
     const song = userData?.songs.find((song) => song.id === id);
-    console.log(song);
+    // console.log(song);
 
     audio.title = song.title;
     audio.src = song.src;
 
     // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
     if (userData?.selectedSong === null) {
-        console.log("1");
+        console.log("1", userData?.selectedSong);
     } else if (userData?.selectedSong.id !== song.id) {
-        console.log("2");
+        console.log("2", song);
     } else {
-        console.log("3");
+        console.log("3", userData?.selectedSong);
     }
 
     userData.selectedSong = song;
 
-    console.log(userData?.selectedSong?.id);
-    console.log(song.id);
+    // console.log(userData?.selectedSong?.id);
+    // console.log(song.id);
 
     // 3. mk audio.scr equal d chosen song src
 };
