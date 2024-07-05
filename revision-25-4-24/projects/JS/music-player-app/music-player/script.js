@@ -156,8 +156,12 @@ const playSong = (id) => {
     // 1. select d song
     const song = userData?.songs.find((song) => song.id === id);
     console.log(song);
-    // if there is no song playing already play d 1st song
+
+    audio.title = song.title;
+    audio.src = song.src;
+
     // 2. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
+
     // 3. mk audio.scr equal d chosen song src
 };
 
