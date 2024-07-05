@@ -152,11 +152,10 @@ const displaySong = (songs) => {
 displaySong(sortSong(userData?.songs));
 
 const playSong = (id) => {
-    // to play a song:
     // 1. select d song
     const song = userData?.songs.find((song) => song.id === id);
-    // console.log(song);
 
+    // 2. update audio ppties with selected song ppties
     audio.title = song.title;
     audio.src = song.src;
 
