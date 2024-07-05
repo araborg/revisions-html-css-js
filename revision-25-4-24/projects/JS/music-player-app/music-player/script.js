@@ -169,6 +169,8 @@ const playSong = (id) => {
         console.log("3");
     }
 
+    userData.selectedSong = song;
+
     console.log(userData?.selectedSong?.id);
     console.log(song.id);
 
