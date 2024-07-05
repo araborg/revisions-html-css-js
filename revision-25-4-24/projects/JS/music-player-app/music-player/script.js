@@ -92,7 +92,7 @@ const allSongs = [
 const userData = {
     songs: [...allSongs],
     prevSong: null,
-    songDuration: 0,
+    currentTime: 0,
 };
 
 const audio = new Audio();
@@ -160,6 +160,15 @@ const playSong = (id) => {
     audio.src = song.src;
 
     // 3. using conditions, mk d audio.currentTime either 0 or chosenSong.currentTime
+    if (userData?.prevSong === null) {
+        audio.currentTime = 0;
+
+        console.log("null");
+    } else {
+        audio.currentTime = userData?.currentTime;
+
+        console.log("else statement");
+    }
 
     // 4. mk audio.scr equal d chosen song src
 };
