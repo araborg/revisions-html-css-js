@@ -195,6 +195,7 @@ const playNextSong = () => {
         const songIn = songIndex();
         const nextSongIndex = songIn + 1;
 
+        // wt if d song gets to the end of d list
         if (nextSongIndex !== allSongsLength) {
             playSong(userData?.songs[nextSongIndex]?.id);
         } else {
