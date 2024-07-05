@@ -17,7 +17,11 @@ The map() method is an iterative method. It calls a provided callbackFn function
 once for each element in an array and constructs a new array from the results. 
 
 
-4. Find method and how to use it.
+4. Find method:
+The find() method of Array instances returns the first element in the provided 
+array that satisfies the provided testing function. If no values satisfy the 
+testing function, undefined is returned.
+
 
 5. Spread opreator [...]
 
