@@ -172,8 +172,10 @@ const playSong = (id) => {
         console.log("else statement");
     }
 
-    // 4. mk audio.scr equal d chosen song src
+    // 4. update userData.prevSong
     userData.prevSong = song;
+
+    // 5. play song
 };
 
 playBtn.addEventListener("click", playSong);
