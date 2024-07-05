@@ -7,7 +7,25 @@ Ths learnt:
 
 5. Spread opreator [...]
 
-6.
+6. Splitting this:
+    if (
+        userData?.currentSong === null || 
+        userData?.currentSong.id !== song.id 
+    ) {
+       
+    } else {
+       
+    }
+
+    into this:
+    if (userData?.selectedSong === null) {
+
+    } else if (userData?.selectedSong.id !== song.id) {
+
+    } else {
+
+    }
+
 7.
 8.
 
