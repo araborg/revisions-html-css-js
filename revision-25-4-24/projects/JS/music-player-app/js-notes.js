@@ -68,7 +68,14 @@ N.B: The index starts at zero, 0.
     userData?.currentTime = audio.currentTime;
     userData.currentTime = audio.currentTime;
 
-10.
+10. return
+The return statement ends function execution and specifies a value to be 
+returned to the function caller.
+The return statement can only be used within function bodies. When a return 
+statement is used in a function body, the execution of the function is 
+stopped. The return statement has different effects when placed in different 
+functions:
+
 11.
 12.
 
