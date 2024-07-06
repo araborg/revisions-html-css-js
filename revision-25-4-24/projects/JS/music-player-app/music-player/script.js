@@ -182,6 +182,9 @@ const playSong = (id) => {
     // 4. update userData.prevSong (ds is impt bcos it determine wt condition works in d if statemt)
     userData.prevSong = song;
 
+    // 6. other fxns
+    updateDisplay();
+
     // 5. play song
     audio.play();
 };
@@ -219,7 +222,9 @@ const playNextSong = () => {
 nextBtn.addEventListener("click", playNextSong);
 
 const updateDisplay = () => {
-    console.log("hello");
-};
+    const songIn = songIndex();
+    const curSong = userData?.songs[songIn];
+    console.log(curSong);
 
-updateDisplay();
+    songArtist.innerText += curSong.artist;
+};
