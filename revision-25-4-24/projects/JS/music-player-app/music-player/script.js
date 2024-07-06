@@ -229,13 +229,13 @@ const shuffle = () => {
 shuffleBtn.addEventListener("click", shuffle);
 
 const replay = (id) => {
-    const songId = id ? userData?.prevSong.id : id;
-    const song = userData?.songs.find((song) => song.id === songId);
+    // const songId = id ? userData?.prevSong.id : id;
+    // const song = userData?.songs.find((song) => song.id === songId);
 
-    console.log(songId, song);
-    // const endReach =
-    // audio.addEventListener("ended", () => alert("Hello"));
-    // console.log(endReach);
+    const song = userData?.songs.find((song) => song.id === id);
+
+    // console.log(songId, song);
+    audio.addEventListener("ended", () => playSong(song.id));
 };
 
 replayBtn.addEventListener("click", replay);
