@@ -242,8 +242,6 @@ const replayAll = (id) => {
         return;
     } else {
         audio.addEventListener("ended", (e) => {
-            console.log(e);
-
             const curSongIn = songIndex();
 
             // const curSong = userData?.songs[curSongIn];
@@ -255,7 +253,7 @@ const replayAll = (id) => {
                 playSong(nextSong.id);
             }
 
-            console.log(nextSong);
+            console.log(userData?.songs[curSongIn].title);
         });
     }
 };
