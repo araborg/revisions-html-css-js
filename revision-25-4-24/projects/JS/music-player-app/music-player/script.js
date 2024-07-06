@@ -248,7 +248,6 @@ const playPrevSong = () => {
 previousBtn.addEventListener("click", playPrevSong);
 
 const pauseSong = () => {
-    console.log("song paused");
     if (userData?.prevSong === null) {
         return;
     } else {
