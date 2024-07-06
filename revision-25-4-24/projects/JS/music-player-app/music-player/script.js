@@ -226,5 +226,5 @@ const updateDisplay = () => {
     const curSong = userData?.songs[songIn];
     console.log(curSong);
 
-    songArtist.innerText += curSong.artist;
+    songArtist.innerHTML = curSong.artist;
 };
