@@ -11,8 +11,6 @@ const songTitle = document.getElementById("player-song-title");
 const songArtist = document.getElementById("player-song-artist");
 const songDuration = document.getElementById("player-song-duration");
 
-console.log(songTitle, songArtist, songDuration);
-
 const playlistSongs = document.getElementById("playlist-songs");
 
 const allSongs = [
@@ -220,4 +218,8 @@ const playNextSong = () => {
 
 nextBtn.addEventListener("click", playNextSong);
 
-const updateDisplay = () => {};
+const updateDisplay = () => {
+    console.log("hello");
+};
+
+updateDisplay();
