@@ -54,13 +54,13 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
 
-    {
-        id: 5,
-        title: "Hallelujah Praise The Lord",
-        artist: "Nathan Bassey",
-        duration: "12:13",
-        src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
-    },
+    // {
+    //     id: 5,
+    //     title: "Hallelujah Praise The Lord",
+    //     artist: "Nathan Bassey",
+    //     duration: "12:13",
+    //     src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
+    // },
 ];
 
 const userData = {
