@@ -76,7 +76,9 @@ statement is used in a function body, the execution of the function is
 stopped. The return statement has different effects when placed in different 
 functions:
 
-11.
+11. Shuffle:
+Math.random() - 0.5
+
 12.
 
 13.

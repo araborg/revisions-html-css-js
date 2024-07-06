@@ -259,7 +259,7 @@ const pauseSong = () => {
 pauseBtn.addEventListener("click", pauseSong);
 
 const shuffle = () => {
-    const shuffleSong = userData?.songs.sort(Math.random() - 0.5);
+    const shuffleSong = userData?.songs.sort(() => Math.random() - 0.5);
 
     console.log(shuffleSong);
 };
