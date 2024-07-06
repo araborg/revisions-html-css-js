@@ -241,26 +241,23 @@ const replayAll = (id) => {
     if (userData?.prevSong === null) {
         return;
     } else {
-        // playSong(userData?.songs[0].id);
-        const nextSong = userData?.songs[curSongIn + 1];
-        console.log(nextSong);
         audio.addEventListener("ended", (e) => {
             console.log(e);
-            playSong(nextSong.id);
+
+            const curSongIn = songIndex();
+
+            // const curSong = userData?.songs[curSongIn];
+            const nextSong = userData?.songs[curSongIn + 1];
+
+            if (!nextSong?.id) {
+                playSong(userData?.songs[0].id);
+            } else {
+                playSong(nextSong.id);
+            }
+
+            console.log(nextSong);
         });
     }
 };
 
-// replayBtn.addEventListener("click", replayAll);
-
-audio.addEventListener("ended", (e) => {
-    console.log(e);
-
-    const curSongIn = songIndex();
-
-    // const curSong = userData?.songs[curSongIn];
-    const nextSong = userData?.songs[curSongIn + 1];
-    playSong(nextSong.id);
-
-    console.log(nextSong);
-});
+replayBtn.addEventListener("click", replayAll);
