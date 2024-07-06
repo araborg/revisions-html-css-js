@@ -269,8 +269,11 @@ shuffleBtn.addEventListener("click", shuffle);
 
 const replay = (id) => {
     // console.log(id);
-    const endReach = audio.addEventListener("end", () => console.log(true));
+    // const endReach =
+    audio.addEventListener("ended", () => alert("Hello"));
     // console.log(endReach);
 };
 
 replayBtn.addEventListener("click", replay);
+
+// audio.addEventListener("ended", () => alert("outside the body"));
