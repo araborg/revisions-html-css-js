@@ -253,7 +253,10 @@ const replayAll = (id) => {
                 playSong(nextSong.id);
             }
 
-            console.log(userData?.songs[curSongIn].title);
+            const title = !nextSong?.id
+                ? userData?.songs[0].title
+                : userData?.songs[curSongIn + 1].title;
+            console.log(title);
         });
     }
 };

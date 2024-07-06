@@ -87,7 +87,8 @@ Math.random() - 0.5
 
 
 13. Diff btw song.id and song index using indexOf
-14.
+14. Making undefined to serve as a boolean: !undefined
+
 15.
 
 16.
