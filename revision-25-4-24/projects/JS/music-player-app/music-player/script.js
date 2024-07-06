@@ -224,7 +224,6 @@ nextBtn.addEventListener("click", playNextSong);
 const updateDisplay = () => {
     const songIn = songIndex();
     const curSong = userData?.songs[songIn];
-    console.log(curSong);
 
     songTitle.innerText = curSong.title;
     songArtist.innerText = curSong.artist;
