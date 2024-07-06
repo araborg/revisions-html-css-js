@@ -229,15 +229,21 @@ const shuffle = () => {
 shuffleBtn.addEventListener("click", shuffle);
 
 const replay = (id) => {
-    // const songId = id ? userData?.prevSong.id : id;
-    // const song = userData?.songs.find((song) => song.id === songId);
-
     const song = userData?.songs.find((song) => song.id === id);
 
     // console.log(songId, song);
     audio.addEventListener("ended", () => playSong(song.id));
 };
 
-replayBtn.addEventListener("click", replay);
+const replayAll = (id) => {
+    const curSongIn = songIndex();
+
+    const nextSong = userData?.songs[curSongIn + 1];
+    console.log(nextSong);
+
+    audio.addEventListener("ended", () => playSong(nextSong.id));
+};
+
+replayBtn.addEventListener("click", replayAll);
 
 // audio.addEventListener("ended", () => alert("outside the body"));
