@@ -249,13 +249,12 @@ previousBtn.addEventListener("click", playPrevSong);
 
 const pauseSong = () => {
     console.log("song paused");
-};
-
-pauseBtn.addEventListener("click", () => {
     if (userData?.prevSong === null) {
         return;
     } else {
         userData.currentTime = audio.currentTime;
         audio.pause();
     }
-});
+};
+
+pauseBtn.addEventListener("click", pauseSong);
