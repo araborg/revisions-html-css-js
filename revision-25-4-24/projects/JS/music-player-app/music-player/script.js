@@ -251,8 +251,16 @@ const replayAll = (id) => {
     }
 };
 
-replayBtn.addEventListener("click", replayAll);
+// replayBtn.addEventListener("click", replayAll);
 
 audio.addEventListener("ended", (e) => {
     console.log(e);
+
+    const curSongIn = songIndex();
+
+    // const curSong = userData?.songs[curSongIn];
+    const nextSong = userData?.songs[curSongIn + 1];
+    playSong(nextSong.id);
+
+    console.log(nextSong);
 });
