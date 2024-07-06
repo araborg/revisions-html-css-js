@@ -428,7 +428,7 @@ const deleteSong = (id) => {
 
     if (userData?.currentSong?.id === id) {
         userData.currentSong = null;
-        userData.currentSong = 0;
+        userData.currentTime = 0;
 
         pauseSong();
         setPlayerDisplay();
