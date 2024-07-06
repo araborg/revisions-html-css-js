@@ -68,7 +68,7 @@ N.B: The index starts at zero, 0.
     userData?.currentTime = audio.currentTime; //SyntaxError: Invalid left-hand side in assignment
     userData.currentTime = audio.currentTime;
 
-10. return
+10. Return
 The return statement ends function execution and specifies a value to be 
 returned to the function caller.
 The return statement can only be used within function bodies. When a return 
