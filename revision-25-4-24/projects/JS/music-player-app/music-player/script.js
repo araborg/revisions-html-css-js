@@ -261,10 +261,14 @@ pauseBtn.addEventListener("click", pauseSong);
 const shuffle = () => {
     const shuffleSong = userData?.songs.sort(() => Math.random() - 0.5);
 
-    // console.log(shuffleSong);
-
     playlistSongs.innerHTML = "";
     displaySong(shuffleSong);
 };
 
 shuffleBtn.addEventListener("click", shuffle);
+
+const replay = () => {
+    console.log("will replay");
+};
+
+replayBtn.addEventListener("click", replay);
