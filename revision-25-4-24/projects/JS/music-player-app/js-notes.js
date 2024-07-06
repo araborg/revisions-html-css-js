@@ -86,7 +86,7 @@ Math.random() - 0.5
     const songId = id ? userData?.prevSong.id : id;
 
 
-13.
+13. Diff btw song.id and song index using indexOf
 14.
 15.
 
