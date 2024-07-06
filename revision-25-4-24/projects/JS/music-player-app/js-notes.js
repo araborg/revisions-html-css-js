@@ -65,7 +65,7 @@ N.B: The index starts at zero, 0.
 
 
 9. Diff btw these:
-    userData?.currentTime = audio.currentTime;
+    userData?.currentTime = audio.currentTime; //SyntaxError: Invalid left-hand side in assignment
     userData.currentTime = audio.currentTime;
 
 10. return
