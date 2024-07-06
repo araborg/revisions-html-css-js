@@ -242,11 +242,10 @@ const replayAll = (id) => {
         return;
     } else {
         // playSong(userData?.songs[0].id);
+        const nextSong = userData?.songs[curSongIn + 1];
+        console.log(nextSong);
+        audio.addEventListener("ended", () => playSong(nextSong.id));
     }
-    const nextSong = userData?.songs[curSongIn + 1];
-    console.log(nextSong);
-
-    audio.addEventListener("ended", () => playSong(nextSong.id));
 };
 
 replayBtn.addEventListener("click", replayAll);
