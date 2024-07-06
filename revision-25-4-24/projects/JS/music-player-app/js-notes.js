@@ -79,7 +79,12 @@ functions:
 11. Shuffle:
 Math.random() - 0.5
 
-12.
+12. Diff between this:
+    const songId = id ? id : userData?.prevSong.id;
+    
+    and this:
+    const songId = id ? userData?.prevSong.id : id;
+
 
 13.
 14.

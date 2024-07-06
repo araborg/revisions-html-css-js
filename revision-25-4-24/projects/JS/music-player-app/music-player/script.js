@@ -229,10 +229,9 @@ const shuffle = () => {
 shuffleBtn.addEventListener("click", shuffle);
 
 const replay = (id) => {
-    // const songId = id || userData?.prevSong.id;
-    console.log(userData?.prevSong.id, id);
+    const songId = id ? userData?.prevSong.id : id;
 
-    // console.log(songId);
+    console.log(songId);
     // const endReach =
     // audio.addEventListener("ended", () => alert("Hello"));
     // console.log(endReach);
