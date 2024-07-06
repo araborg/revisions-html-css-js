@@ -268,7 +268,9 @@ const shuffle = () => {
 shuffleBtn.addEventListener("click", shuffle);
 
 const replay = (id) => {
-    console.log(id);
+    // console.log(id);
+    const endReach = audio.addEventListener("end", () => console.log(true));
+    // console.log(endReach);
 };
 
 replayBtn.addEventListener("click", replay);
