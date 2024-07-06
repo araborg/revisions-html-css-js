@@ -229,3 +229,18 @@ const updateDisplay = () => {
     songArtist.innerText = curSong.artist;
     songDuration.innerText = curSong.duration;
 };
+
+const playPrevSong = () => {
+    const curSongIndex = songIndex();
+
+    const prevSong = userData?.songs[curSongIndex - 1];
+
+    if (userData?.prevSong === null || curSongIndex < 1) {
+        console.log(userData?.prevSong, curSongIndex);
+        return;
+    } else {
+        playSong(prevSong.id);
+    }
+};
+
+previousBtn.addEventListener("click", playPrevSong);
