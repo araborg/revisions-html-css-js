@@ -234,11 +234,13 @@ const playPrevSong = () => {
     const curSongIndex = songIndex();
 
     const preSong = userData?.songs[curSongIndex - 1];
-    console.log(curSongIndex, userData?.prevSong);
 
-    if (userData?.prevSong === null || curSongIndex <= 0) return;
-    else {
-        // console.log(userData?.prevSong, curSongIndex);
+    if (userData?.prevSong === null) {
+        return;
+    } else if (userData?.prevSong === userData?.songs[0]) {
+        const lastSongIndex = userData.songs.length;
+        playSong(userData.songs[lastSongIndex - 1].id);
+    } else {
         playSong(preSong.id);
     }
 };
