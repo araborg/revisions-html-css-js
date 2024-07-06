@@ -257,3 +257,9 @@ const pauseSong = () => {
 };
 
 pauseBtn.addEventListener("click", pauseSong);
+
+const shuffle = () => {
+    console.log("shuffle");
+};
+
+shuffleBtn.addEventListener("click", shuffle);
