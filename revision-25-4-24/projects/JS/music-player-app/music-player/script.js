@@ -244,10 +244,15 @@ const replayAll = (id) => {
         // playSong(userData?.songs[0].id);
         const nextSong = userData?.songs[curSongIn + 1];
         console.log(nextSong);
-        audio.addEventListener("ended", () => playSong(nextSong.id));
+        audio.addEventListener("ended", (e) => {
+            console.log(e);
+            playSong(nextSong.id);
+        });
     }
 };
 
 replayBtn.addEventListener("click", replayAll);
 
-// audio.addEventListener("ended", () => alert("outside the body"));
+audio.addEventListener("ended", (e) => {
+    console.log(e);
+});
