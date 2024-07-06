@@ -233,14 +233,13 @@ const updateDisplay = () => {
 const playPrevSong = () => {
     const curSongIndex = songIndex();
 
-    const prevSong = userData?.songs[curSongIndex - 1];
-    // console.log(typeof curSongIndex);
+    const preSong = userData?.songs[curSongIndex - 1];
+    console.log(curSongIndex, userData?.prevSong);
 
-    if (userData?.prevSong === null || curSongIndex <= 0) {
-        console.log(userData?.prevSong, curSongIndex);
-        return;
-    } else {
-        playSong(prevSong.id);
+    if (userData?.prevSong === null || curSongIndex <= 0) return;
+    else {
+        // console.log(userData?.prevSong, curSongIndex);
+        playSong(preSong.id);
     }
 };
 
