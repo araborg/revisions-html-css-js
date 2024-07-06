@@ -246,3 +246,21 @@ const playPrevSong = () => {
 };
 
 previousBtn.addEventListener("click", playPrevSong);
+
+const pauseSong = () => {
+    console.log("song paused");
+};
+
+pauseBtn.addEventListener("click", () => {
+    if (userData?.prevSong === null) {
+        return;
+    } else {
+        // const curTime = audio.currentTime;
+
+        // userData?.currentTime = curTime
+        // console.log(audio.currentTime);
+
+        userData.currentTime = audio.currentTime;
+        audio.pause();
+    }
+});

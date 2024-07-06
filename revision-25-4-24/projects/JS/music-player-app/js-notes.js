@@ -64,7 +64,10 @@ be found in the array, or -1 if it is not present.
 N.B: The index starts at zero, 0.
 
 
-9.
+9. Diff btw these:
+    userData?.currentTime = audio.currentTime;
+    userData.currentTime = audio.currentTime;
+
 10.
 11.
 12.
