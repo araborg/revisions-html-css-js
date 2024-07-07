@@ -319,10 +319,6 @@ const setPlayButtonAccessibleText = () => {
 */
 
 const setSongDuration = (song) => {
-    const tick = function () {
-        const min = String(Math.trunc(time / 60));
-    };
-
     let hour = 0,
         min = 0,
         sec = 0,
@@ -339,20 +335,16 @@ const setSongDuration = (song) => {
 
     hour = hour * 60 * 60;
     min = min * 60;
+    sec = Number(sec);
 
-    console.log(hour);
+    time = hour + min + sec;
 
-    // if (hour === NaN || min === NaN || sec === NaN) {
-    //     hour = 0;
-    //     min = 0;
-    //     sec = 0;
-    //     // return 0;
-    //     timeInSec = hour + min + sec;
-    // } else {
-    // }
-    timeInSec = hour + min + sec;
+    const tick = function () {
+        const min = String(Math.trunc(time / 60)).padStart(2, 0);
+        console.log(min);
+    };
 
-    console.log(timeInSec);
+    tick();
 };
 
 /*
