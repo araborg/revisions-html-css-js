@@ -56,7 +56,7 @@ const allSongs = [
 
     {
         id: 5,
-        title: "Hallelujah Praise The Lord",
+        title: "Praise The Lord",
         artist: "Nathan Bassey",
         duration: "12:13",
         src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
