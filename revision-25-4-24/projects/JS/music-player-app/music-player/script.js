@@ -351,6 +351,7 @@ const setSongDuration = (song) => {
 
         if (time === 0) {
             clearInterval(timer);
+            songDuration.textContent = userData?.prevSong.duration;
         }
 
         time--;
