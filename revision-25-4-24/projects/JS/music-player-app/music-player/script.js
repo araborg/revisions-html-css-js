@@ -322,11 +322,26 @@ const setSongDuration = (song) => {
     const tick = function () {
         const min = String(Math.trunc(time / 60));
     };
+
+    let hour, min, sec;
     let countdown = song;
     countdown = countdown.split(":");
-    console.log(countdown);
-    const [min, sec] = ["0", "22"];
-    console.log(min, sec);
+
+    if (countdown.length > 2) {
+        [hour, min, sec] = countdown;
+    } else {
+        [min, sec] = countdown;
+    }
+    hour = hour * 60 * 60;
+    min = min * 60;
+
+    if (hour === NaN || min === NaN || sec === NaN) {
+        return 0;
+    }
+
+    timeInSec = hour + min + sec;
+
+    console.log(timeInSec);
 };
 
 /*
