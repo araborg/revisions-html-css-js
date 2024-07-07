@@ -57,13 +57,13 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
 
-    // {
-    //     id: 5,
-    //     title: "Hallelujah Praise The Lord",
-    //     artist: "Nathan Bassey",
-    //     duration: "12:13",
-    //     src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
-    // },
+    {
+        id: 5,
+        title: "Hallelujah Praise The Lord",
+        artist: "Nathan Bassey",
+        duration: "12:13",
+        src: "../../../../../Hallelujah-Praise-The-Lord.mp3",
+    },
 ];
 
 const userData = {
@@ -323,22 +323,33 @@ const setSongDuration = (song) => {
         const min = String(Math.trunc(time / 60));
     };
 
-    let hour, min, sec;
+    let hour = 0,
+        min = 0,
+        sec = 0,
+        timeInSec;
     let countdown = song;
     countdown = countdown.split(":");
 
     if (countdown.length > 2) {
         [hour, min, sec] = countdown;
+        console.log(hour);
     } else {
         [min, sec] = countdown;
     }
+
     hour = hour * 60 * 60;
     min = min * 60;
 
-    if (hour === NaN || min === NaN || sec === NaN) {
-        return 0;
-    }
+    console.log(hour);
 
+    // if (hour === NaN || min === NaN || sec === NaN) {
+    //     hour = 0;
+    //     min = 0;
+    //     sec = 0;
+    //     // return 0;
+    //     timeInSec = hour + min + sec;
+    // } else {
+    // }
     timeInSec = hour + min + sec;
 
     console.log(timeInSec);
