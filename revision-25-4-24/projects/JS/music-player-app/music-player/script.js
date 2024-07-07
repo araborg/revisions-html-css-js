@@ -152,6 +152,8 @@ const playSong = (id) => {
     // 6. other fxns
     updateDisplay();
     highlightCurrentSong();
+    setSongDuration(song.duration);
+
     // setPlayButtonAccessibleText();
 
     // 5. play song
@@ -313,4 +315,48 @@ const setPlayButtonAccessibleText = () => {
         song?.title ? `Play ${song.title}` : `Play`
     );
 };
+
+*/
+
+const setSongDuration = (song) => {
+    const tick = function () {
+        const min = String(Math.trunc(time / 60));
+    };
+    let countdown = song;
+    countdown = countdown.split(":");
+    console.log(countdown);
+    const { min, sec } = ["0", "22"];
+    console.log(min, sec);
+};
+
+/*
+const startLogOutTimer = function () {
+  const tick = function () {
+    const min = String(Math.trunc(time / 60)).padStart(2, 0);
+    const sec = String(time % 60).padStart(2, 0);
+
+    // In each call, print the remaining time to UI
+    labelTimer.textContent = `${min}:${sec}`;
+
+    // When 0 seconds, stop timer and log out user
+    if (time === 0) {
+      clearInterval(timer);
+      labelWelcome.textContent = 'Log in to get started';
+      containerApp.style.opacity = 0;
+    }
+
+    // Decrease 1s
+    time--;
+  };
+
+  // Set time to 5 minutes
+  let time = 120;
+
+  // Call the timer every second
+  tick();
+  const timer = setInterval(tick, 1000);
+
+  return timer;
+};
+
 */

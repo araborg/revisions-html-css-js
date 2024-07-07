@@ -93,7 +93,9 @@ Math.random() - 0.5
 userData.songs = userData?.songs.filter((song) => song.id !== id);
 
 
-16.
+16. Array/Obj destructuring:
+    const [min, sec] = ["0", "22"];
+
 17.
 18.
 19.
