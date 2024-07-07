@@ -244,8 +244,13 @@ const replayAll = (id) => {
     if (userData?.prevSong === null) {
         return;
     } else {
-        audio.addEventListener("ended", (e) => {
+        audio.addEventListener("ended", () => {
             let curSongIn = songIndex();
+            console.log(curSongIn === -1);
+
+            if (curSongIn === -1) {
+                console.log("reached the end");
+            }
 
             // const curSong = userData?.songs[curSongIn];
             // const nextSong = userData?.songs[curSongIn + 1];
@@ -276,3 +281,10 @@ const deleteSong = (id) => {
 
     displaySong(userData?.songs);
 };
+
+audio.addEventListener("ended", () => {
+    const currentSongIn = songIndex();
+
+    const nextSongExists =
+        userData?.songs.length - 1 > currentSongIn ? true : false;
+});
