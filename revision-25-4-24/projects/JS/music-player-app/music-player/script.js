@@ -250,8 +250,6 @@ const replayAll = (id) => {
             if (curSongIn === -1) {
                 let curSongIn = 0;
                 playSong(userData?.songs[curSongIn].id);
-            } else {
-                alert("Play a song of ur choice before replay");
             }
         });
     }
