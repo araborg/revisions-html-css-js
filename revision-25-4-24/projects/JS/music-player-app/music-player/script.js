@@ -152,7 +152,7 @@ const playSong = (id) => {
     // 6. other fxns
     updateDisplay();
     highlightCurrentSong();
-    setPlayButtonAccessibleText();
+    // setPlayButtonAccessibleText();
 
     // 5. play song
     audio.play();
@@ -304,6 +304,7 @@ const highlightCurrentSong = () => {
     }
 };
 
+/*
 const setPlayButtonAccessibleText = () => {
     const song = userData?.prevSong || userData.songs[0];
 
@@ -312,3 +313,4 @@ const setPlayButtonAccessibleText = () => {
         song?.title ? `Play ${song.title}` : `Play`
     );
 };
+*/
