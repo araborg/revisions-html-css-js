@@ -6,9 +6,6 @@ const nextBtn = document.getElementById("next");
 const shuffleBtn = document.getElementById("shuffle");
 const replayBtn = document.getElementById("replay");
 
-// const deleteBtn = document.querySelectorAll(".playlist-delete-btn");
-// console.log(deleteBtn);
-
 // player info
 const songTitle = document.getElementById("player-song-title");
 const songArtist = document.getElementById("player-song-artist");
@@ -274,7 +271,6 @@ const deleteSong = (id) => {
 
 audio.addEventListener("ended", () => {
     const currentSongIn = songIndex();
-    console.log(currentSongIn);
 
     const nextSongExists =
         userData?.songs.length - 1 > currentSongIn ? true : false;
@@ -352,9 +348,9 @@ const setSongDuration = (song) => {
         songDuration.textContent = `${min}:${sec}`;
         // hr > 0 ? `${hr}:${min}:${sec}` : `${min}:${sec}`;
 
-        if (time === 0 || userData?.prevSong.id !== song.id) {
+        if (time === -1 || userData?.prevSong.id !== song.id) {
             clearInterval(timer);
-            songDuration.textContent = song.duration;
+            songDuration.textContent = countdown;
         }
 
         time--;
