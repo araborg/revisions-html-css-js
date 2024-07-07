@@ -245,29 +245,14 @@ const replayAll = (id) => {
         return;
     } else {
         audio.addEventListener("ended", () => {
-            let curSongIn = songIndex();
-            console.log(curSongIn === -1);
+            const curSongIn = songIndex();
 
             if (curSongIn === -1) {
-                console.log("reached the end");
-            }
-
-            // const curSong = userData?.songs[curSongIn];
-            // const nextSong = userData?.songs[curSongIn + 1];
-
-            /*
-            if (!nextSong?.id) {
-                playSong(userData?.songs[0].id);
+                let curSongIn = 0;
+                playSong(userData?.songs[curSongIn].id);
             } else {
-                // while (curSongIn < userData?.songs.length - 1) {
-                playSong(userData?.songs[curSongIn + 1].id);
-                console.log(userData?.songs[curSongIn + 1].id);
-                curSongIn++;
-                // }
-
-                // console.log(nextSong);
+                alert("Play a song of ur choice before replay");
             }
-            */
         });
     }
 };
