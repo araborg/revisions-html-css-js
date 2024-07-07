@@ -61,7 +61,7 @@ them into a single element.
 8. indexOf():
 The indexOf() method returns the first index at which a given element can 
 be found in the array, or -1 if it is not present.
-N.B: The index starts at zero, 0.
+N.B: The index in indexOf starts at zero, 0.
 
 
 9. Diff btw these:
