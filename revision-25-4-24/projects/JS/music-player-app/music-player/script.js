@@ -325,7 +325,7 @@ const setSongDuration = (song) => {
     let countdown = song;
     countdown = countdown.split(":");
     console.log(countdown);
-    const { min, sec } = ["0", "22"];
+    const [min, sec] = ["0", "22"];
     console.log(min, sec);
 };
 

@@ -95,6 +95,9 @@ userData.songs = userData?.songs.filter((song) => song.id !== id);
 
 16. Array/Obj destructuring:
     const [min, sec] = ["0", "22"];
+    const { min, sec } = {};
+
+
 
 17.
 18.
