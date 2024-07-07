@@ -248,8 +248,9 @@ const replayAll = (id) => {
             let curSongIn = songIndex();
 
             // const curSong = userData?.songs[curSongIn];
-            const nextSong = userData?.songs[curSongIn + 1];
+            // const nextSong = userData?.songs[curSongIn + 1];
 
+            /*
             if (!nextSong?.id) {
                 playSong(userData?.songs[0].id);
             } else {
@@ -261,6 +262,7 @@ const replayAll = (id) => {
 
                 // console.log(nextSong);
             }
+            */
         });
     }
 };
