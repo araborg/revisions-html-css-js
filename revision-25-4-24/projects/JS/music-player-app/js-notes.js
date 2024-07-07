@@ -89,7 +89,9 @@ Math.random() - 0.5
 13. Diff btw song.id and song index using indexOf
 14. Making undefined to serve as a boolean: !undefined
 
-15.
+15. Assigning an existing variable to d result of an array method:     
+userData.songs = userData?.songs.filter((song) => song.id !== id);
+
 
 16.
 17.
