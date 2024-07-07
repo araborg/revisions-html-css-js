@@ -92,7 +92,6 @@ const sortSong = (songs) => {
 const displaySong = (songs) => {
     const eachSong = songs
         .map((song) => {
-            // console.log(song);
             return `
                 <li class="playlist-song" id="song-${song.id}">
                     <button class="playlist-song-info" onclick=playSong(${song.id})>
@@ -115,7 +114,6 @@ const displaySong = (songs) => {
                     </button>
                     
                 </li>
-
         `;
         })
         .join("");
@@ -161,7 +159,6 @@ playBtn.addEventListener("click", () => {
     if (userData?.prevSong === null) {
         playSong(userData?.songs[0].id);
     } else {
-        // console.log(userData?.prevSong);
         playSong(userData?.prevSong?.id);
     }
 });
@@ -238,12 +235,11 @@ shuffleBtn.addEventListener("click", shuffle);
 const replay = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
 
-    // console.log(songId, song);
     audio.addEventListener("ended", () => playSong(song.id));
 };
 
 const replayAll = (id) => {
-    const curSongIn = songIndex();
+    // const curSongIn = songIndex();
 
     if (userData?.prevSong === null) {
         return;
