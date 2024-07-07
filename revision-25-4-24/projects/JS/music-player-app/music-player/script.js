@@ -349,9 +349,9 @@ const setSongDuration = (song) => {
         songDuration.textContent = `${min}:${sec}`;
         // hr > 0 ? `${hr}:${min}:${sec}` : `${min}:${sec}`;
 
-        if (time === 0) {
+        if (time === 0 || userData?.prevSong.id !== song.id) {
             clearInterval(timer);
-            songDuration.textContent = userData?.prevSong.duration;
+            // songDuration.textContent = ;
         }
 
         time--;
