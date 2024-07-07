@@ -287,7 +287,6 @@ const highlightCurrentSong = () => {
     const songToHighlight = document.getElementById(
         `song-${userData?.prevSong.id}`
     );
-    // console.log(songToHighlight);
 
     playlistSongElements.forEach((songEl) => {
         songEl.removeAttribute("aria-current");
@@ -315,8 +314,6 @@ const setSongDuration = (song) => {
         min = 0,
         sec = 0,
         time;
-
-    // const timer = setInterval(tick, 1000);
 
     let countdown = song.duration;
     countdown = countdown.split(":");
