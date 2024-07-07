@@ -286,13 +286,21 @@ const deleteSong = (id) => {
 
     displaySong(userData?.songs);
 
-    if(userData?.songs.length ===0){
-        userData?.songs = [...allSongs]
-        userData?.currentTime=0
-        userData?.prevSong=null
+    if (userData?.songs.length === 0) {
+        userData.songs = [...allSongs];
+        userData.currentTime = 0;
+        userData.prevSong = null;
 
-        const button = document.createElement("button")
-        console.log(button)
+        const button = document.createElement("button");
+        button.className = "reload";
+        button.innerText = "Reload All Songs";
+
+        playlistSongs.appendChild(button);
+
+        button.addEventListener("click", () => {
+            displaySong(userData?.songs);
+        });
+        button.classList.add("hide");
     }
 };
 
