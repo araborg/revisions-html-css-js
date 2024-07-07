@@ -284,7 +284,17 @@ const deleteSong = (id) => {
 
 audio.addEventListener("ended", () => {
     const currentSongIn = songIndex();
+    console.log(currentSongIn);
 
     const nextSongExists =
         userData?.songs.length - 1 > currentSongIn ? true : false;
+
+    if (nextSongExists) {
+        playNextSong();
+    } else {
+        userData.prevSong = null;
+        userData.currentTime = 0;
+
+        pauseSong();
+    }
 });
