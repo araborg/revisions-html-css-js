@@ -221,6 +221,10 @@ button {
     border-bottom: 1px solid var(--background-color);
 }
 
+[aria-current="true"] {
+    background-color: var(--background-color);
+}
+
 .playlist-song {
     display: flex;
     align-items: center;

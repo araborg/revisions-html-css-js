@@ -146,9 +146,13 @@ const playSong = (id) => {
     // 4. update userData.prevSong (ds is impt bcos it determine wt condition works in d if statemt)
     userData.prevSong = song;
 
+    // 7. add a class to d play btn
+    playBtn.classList.add("playing");
+
     // 6. other fxns
     updateDisplay();
     highlightCurrentSong();
+    setPlayButtonAccessibleText();
 
     // 5. play song
     audio.play();
@@ -298,4 +302,13 @@ const highlightCurrentSong = () => {
     if (songToHighlight) {
         return songToHighlight.setAttribute("aria-current", true);
     }
+};
+
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.prevSong || userData.songs[0];
+
+    playBtn.setAttribute(
+        "aria-label",
+        song?.title ? `Play ${song.title}` : `Play`
+    );
 };
