@@ -322,7 +322,7 @@ const setSongDuration = (song) => {
     let hour = 0,
         min = 0,
         sec = 0,
-        timeInSec;
+        time;
     let countdown = song;
     countdown = countdown.split(":");
 
@@ -340,14 +340,26 @@ const setSongDuration = (song) => {
     time = hour + min + sec;
 
     const tick = function () {
+        // const hr = String(Math.trunc(time / 60));
         const min = String(Math.trunc(time / 60));
         min.length > 1 ? min.padStart(2, 0) : min.padStart(1, 0);
 
         const sec = String(Math.trunc(time % 60)).padStart(2, 0);
-        console.log(min, sec);
+
+        songDuration.textContent = `${min}:${sec}`;
+        // hr > 0 ? `${hr}:${min}:${sec}` : `${min}:${sec}`;
+
+        if (time === 0) {
+            clearInterval(timer);
+        }
+
+        time--;
     };
 
     tick();
+
+    const timer = setInterval(tick, 1000);
+    return timer;
 };
 
 /*
