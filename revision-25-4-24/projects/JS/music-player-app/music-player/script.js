@@ -262,13 +262,13 @@ replayBtn.addEventListener("click", replayAll);
 const replayAllSongs = () => {
     if (userData?.prevSong) {
         audio.addEventListener("ended", () => {
-            const currentSongIndex = getCurrentSongIndex();
+            const currentSongIndex = songIndex();
 
             if (currentSongIndex === -1) {
-                let currentSongIndex = 0;
+                const currentSongIndex = 0;
                 playSong(userData?.songs[currentSongIndex]?.id);
 
-                highlightCurrentSong();
+                // highlightCurrentSong();
                 // setPlayButtonAccessibleText();
             }
         });
@@ -277,7 +277,7 @@ const replayAllSongs = () => {
     }
 };
 
-replayButton.addEventListener("click", replayAllSongs);
+replayBtn.addEventListener("click", replayAllSongs);
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
