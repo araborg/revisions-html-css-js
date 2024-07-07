@@ -152,7 +152,7 @@ const playSong = (id) => {
     // 6. other fxns
     updateDisplay();
     highlightCurrentSong();
-    setSongDuration(song.duration);
+    setSongDuration(song);
 
     // setPlayButtonAccessibleText();
 
@@ -323,7 +323,10 @@ const setSongDuration = (song) => {
         min = 0,
         sec = 0,
         time;
-    let countdown = song;
+
+    // const timer = setInterval(tick, 1000);
+
+    let countdown = song.duration;
     countdown = countdown.split(":");
 
     if (countdown.length > 2) {
@@ -351,7 +354,7 @@ const setSongDuration = (song) => {
 
         if (time === 0 || userData?.prevSong.id !== song.id) {
             clearInterval(timer);
-            // songDuration.textContent = ;
+            songDuration.textContent = song.duration;
         }
 
         time--;
