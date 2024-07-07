@@ -97,7 +97,7 @@ const displaySong = (songs) => {
         .map((song) => {
             // console.log(song);
             return `
-                <li class="playlist-song">
+                <li class="playlist-song" id="song-${song.id}">
                     <span class="playlist-song-info" onclick=playSong(${song.id})>
                         <span class="playlist-song-title">${song.title}</span>
                         <span class="playlist-song-artist">${song.artist}</span>
@@ -148,6 +148,7 @@ const playSong = (id) => {
 
     // 6. other fxns
     updateDisplay();
+    highlightCurrentSong();
 
     // 5. play song
     audio.play();
@@ -281,3 +282,12 @@ audio.addEventListener("ended", () => {
         pauseSong();
     }
 });
+
+const highlightCurrentSong = () => {
+    const playlistSongElements = document.querySelectorAll(".playlist-song");
+
+    const songToHighlight = document.getElementById(
+        `song-${userData?.prevSong.id}`
+    );
+    console.log(songToHighlight);
+};
