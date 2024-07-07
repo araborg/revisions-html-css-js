@@ -340,8 +340,11 @@ const setSongDuration = (song) => {
     time = hour + min + sec;
 
     const tick = function () {
-        const min = String(Math.trunc(time / 60)).padStart(2, 0);
-        console.log(min);
+        const min = String(Math.trunc(time / 60));
+        min.length > 1 ? min.padStart(2, 0) : min.padStart(1, 0);
+
+        const sec = String(Math.trunc(time % 60)).padStart(2, 0);
+        console.log(min, sec);
     };
 
     tick();
