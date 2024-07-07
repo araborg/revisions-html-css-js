@@ -98,11 +98,11 @@ const displaySong = (songs) => {
             // console.log(song);
             return `
                 <li class="playlist-song" id="song-${song.id}">
-                    <span class="playlist-song-info" onclick=playSong(${song.id})>
+                    <button class="playlist-song-info" onclick=playSong(${song.id})>
                         <span class="playlist-song-title">${song.title}</span>
                         <span class="playlist-song-artist">${song.artist}</span>
                         <div class="playlist-song-duration">${song.duration}</div>
-                    </span>
+                    </button>
 
                     <button class="playlist-replay-btn" onclick=replay(${song.id})>
                         <svg width="24" height="19" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">

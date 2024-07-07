@@ -192,6 +192,9 @@ button {
     background: transparent;
     border: none;
 
+    color: var(--primary-color);
+    outline-color: var(--highlight-color);
+
     text-align: center;
     cursor: pointer;
 }
@@ -225,6 +228,20 @@ button {
     background-color: var(--background-color);
 }
 
+[aria-current="true"] p {
+    /* color: var(--highlight-color); */
+}
+
+.playing > svg {
+    fill: var(--highlight-color);
+}
+
+button:focus,
+.playlist-song:focus {
+    outline-style: dashed;
+    outline-width: 2px;
+}
+
 .playlist-song {
     display: flex;
     align-items: center;
@@ -245,8 +262,7 @@ button {
 
     width: 100%;
 
-    /* border: 3px solid yellow; */
-    /* outline-color: var(--highlight-color); */
+    outline-color: var(--highlight-color);
 }
 
 .playlist-song-title {
