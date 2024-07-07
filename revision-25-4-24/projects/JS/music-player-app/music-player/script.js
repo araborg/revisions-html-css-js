@@ -285,6 +285,15 @@ const deleteSong = (id) => {
     playlistSongs.innerText = "";
 
     displaySong(userData?.songs);
+
+    if(userData?.songs.length ===0){
+        userData?.songs = [...allSongs]
+        userData?.currentTime=0
+        userData?.prevSong=null
+
+        const button = document.createElement("button")
+        console.log(button)
+    }
 };
 
 audio.addEventListener("ended", () => {
