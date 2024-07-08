@@ -340,8 +340,8 @@ const setSongDuration = (song) => {
         sec = 0,
         time;
 
-    let countdown = song.duration;
-    countdown = countdown.split(":");
+    let countdown = song.duration.split(":");
+    // countdown = countdown.split(":");
 
     if (countdown.length > 2) {
         [hour, min, sec] = countdown;
@@ -373,6 +373,11 @@ const setSongDuration = (song) => {
     };
 
     // tick();
+
+    if (pauseSong()) {
+        console.log("hello");
+    }
+    console.log(audio.pause());
 
     const timer = setInterval(tick, 1000);
 
