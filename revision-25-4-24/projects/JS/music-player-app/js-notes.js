@@ -101,7 +101,17 @@ userData.songs = userData?.songs.filter((song) => song.id !== id);
 
 17. remove method:
 
-18.
+18. Same code diff usage/purpose
+    nt reusable but avoid declaration of new variable:
+    const displaySong = () => {
+        const eachSong = userData.songs.map((song) => {})
+    }
+
+    reusable fxn: 
+    const displaySong = (songs) => {
+        const eachSong = songs.map((song) => {})
+    }
+            
 19.
 20.
 

@@ -270,8 +270,6 @@ const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
 
     displaySong(userData.songs);
-    // highlightCurrentSong();
-    // setPlayButtonAccessibleText();
 
     if (userData?.songs.length === 0) {
         const resetButton = document.createElement("button");

@@ -197,6 +197,7 @@ button {
 
     text-align: center;
     cursor: pointer;
+
     font-size: var(--root-font-size);
 }
 
