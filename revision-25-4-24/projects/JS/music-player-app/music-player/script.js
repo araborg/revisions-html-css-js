@@ -67,9 +67,9 @@ const userData = {
     songs: [...allSongs],
     prevSong: null,
     currentTime: 0,
-    songPaused: false,
-    countdown: 0,
 };
+
+let songPaused;
 
 const audio = new Audio();
 
@@ -220,9 +220,10 @@ const pauseSong = () => {
         return;
     } else {
         userData.currentTime = audio.currentTime;
+        playBtn.classList.remove("playing");
         audio.pause();
 
-        userData.songPaused = true;
+        songPaused = false;
     }
 };
 
@@ -345,7 +346,7 @@ const setSongDuration = (song) => {
         sec = 0,
         time;
 
-    countdown = song.duration.split(":");
+    let countdown = song.duration.split(":");
     // countdown = countdown.split(":");
 
     if (countdown.length > 2) {
@@ -382,7 +383,7 @@ const setSongDuration = (song) => {
     if (pauseSong()) {
         console.log("hello");
     }
-    console.log(userData.songPaused);
+    console.log(songPaused);
 
     const timer = setInterval(tick, 1000);
 
