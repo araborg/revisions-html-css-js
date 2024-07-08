@@ -68,6 +68,7 @@ const userData = {
     prevSong: null,
     currentTime: 0,
     songPaused: false,
+    countdown: 0,
 };
 
 const audio = new Audio();
@@ -344,7 +345,7 @@ const setSongDuration = (song) => {
         sec = 0,
         time;
 
-    let countdown = song.duration.split(":");
+    countdown = song.duration.split(":");
     // countdown = countdown.split(":");
 
     if (countdown.length > 2) {
