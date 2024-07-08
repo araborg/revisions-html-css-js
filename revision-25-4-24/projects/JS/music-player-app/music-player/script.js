@@ -69,6 +69,8 @@ const userData = {
     currentTime: 0,
 };
 
+let songPaused = false;
+
 const audio = new Audio();
 
 const sortSong = (songs) => {
@@ -214,12 +216,13 @@ const playPrevSong = () => {
 previousBtn.addEventListener("click", playPrevSong);
 
 const pauseSong = () => {
-    if (userData?.prevSong === null && ) {
+    if (userData?.prevSong === null) {
         return;
     } else {
         userData.currentTime = audio.currentTime;
         audio.pause();
-        console.log(audio.pause());
+
+        pauseSong = true;
     }
 };
 
@@ -378,7 +381,7 @@ const setSongDuration = (song) => {
     if (pauseSong()) {
         console.log("hello");
     }
-    console.log(audio.pause());
+    console.log(songPaused);
 
     const timer = setInterval(tick, 1000);
 
