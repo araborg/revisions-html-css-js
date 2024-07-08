@@ -375,5 +375,6 @@ const setSongDuration = (song) => {
     // tick();
 
     const timer = setInterval(tick, 1000);
+
     return timer;
 };
