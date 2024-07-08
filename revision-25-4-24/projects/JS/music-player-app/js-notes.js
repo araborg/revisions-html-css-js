@@ -99,8 +99,14 @@ userData.songs = userData?.songs.filter((song) => song.id !== id);
 
 
 
-17. remove method:
+17. Element: remove method:
 The Element.remove() method removes the element from the DOM.
+
+18. Element: append() method
+The Element.append() method inserts a set of Node objects or 
+string objects after the last child of the Element. String 
+objects are inserted as equivalent Text nodes.
+
 
 18. Same code diff usage/purpose
     nt reusable but avoid declaration of new variable:
