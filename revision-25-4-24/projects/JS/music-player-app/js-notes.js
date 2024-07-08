@@ -100,6 +100,7 @@ userData.songs = userData?.songs.filter((song) => song.id !== id);
 
 
 17. remove method:
+The Element.remove() method removes the element from the DOM.
 
 18. Same code diff usage/purpose
     nt reusable but avoid declaration of new variable:
@@ -111,7 +112,7 @@ userData.songs = userData?.songs.filter((song) => song.id !== id);
     const displaySong = (songs) => {
         const eachSong = songs.map((song) => {})
     }
-            
+
 19.
 20.
 
