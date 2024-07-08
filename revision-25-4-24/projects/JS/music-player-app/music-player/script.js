@@ -118,7 +118,8 @@ const displaySong = (songs) => {
         })
         .join("");
 
-    playlistSongs.innerHTML += eachSong;
+    // playlistSongs.innerHTML += eachSong;
+    playlistSongs.innerHTML = eachSong;
 };
 
 displaySong(sortSong(userData?.songs));
@@ -259,17 +260,18 @@ const replayAllSongs = () => {
 replayBtn.addEventListener("click", replayAllSongs);
 
 const deleteSong = (id) => {
+    if (userData?.prevSong?.id === id) {
+        userData.prevSong = null;
+        userData.currentTime = 0;
+
+        pauseSong();
+    }
+
     userData.songs = userData?.songs.filter((song) => song.id !== id);
 
-    playlistSongs.innerText = "";
-
-    displaySong(userData?.songs);
+    displaySong(userData.songs);
 
     if (userData?.songs.length === 0) {
-        userData.songs = [...allSongs];
-        userData.currentTime = 0;
-        userData.prevSong = null;
-
         const resetButton = document.createElement("button");
         const resetText = document.createTextNode("Reload All Songs");
 
@@ -279,9 +281,13 @@ const deleteSong = (id) => {
         resetButton.appendChild(resetText);
         playlistSongs.appendChild(resetButton);
 
-        button.addEventListener("click", () => {
-            displaySong(userData?.songs);
-            button.remove();
+        resetButton.addEventListener("click", () => {
+            userData.songs = [...allSongs];
+            // userData.currentTime = 0;
+            // userData.prevSong = null;
+
+            displaySong(sortSong(userData?.songs));
+            resetButton.remove();
         });
     }
 };
