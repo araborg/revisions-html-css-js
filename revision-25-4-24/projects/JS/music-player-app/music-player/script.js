@@ -357,14 +357,12 @@ const setSongDuration = (song) => {
     time = hour + min + sec;
 
     const tick = function () {
-        // const hr = String(Math.trunc(time / 60));
         const min = String(Math.trunc(time / 60));
         min.length > 1 ? min.padStart(2, 0) : min.padStart(1, 0);
 
         const sec = String(Math.trunc(time % 60)).padStart(2, 0);
 
         songDuration.textContent = `${min}:${sec}`;
-        // hr > 0 ? `${hr}:${min}:${sec}` : `${min}:${sec}`;
 
         if (time === -1 || userData?.prevSong.id !== song.id) {
             clearInterval(timer);
@@ -374,7 +372,7 @@ const setSongDuration = (song) => {
         time--;
     };
 
-    tick();
+    // tick();
 
     const timer = setInterval(tick, 1000);
     return timer;
