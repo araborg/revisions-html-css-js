@@ -270,6 +270,8 @@ const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
 
     displaySong(userData.songs);
+    // highlightCurrentSong();
+    // setPlayButtonAccessibleText();
 
     if (userData?.songs.length === 0) {
         const resetButton = document.createElement("button");
@@ -325,7 +327,6 @@ const highlightCurrentSong = () => {
     }
 };
 
-/*
 const setPlayButtonAccessibleText = () => {
     const song = userData?.prevSong || userData.songs[0];
 
@@ -334,8 +335,6 @@ const setPlayButtonAccessibleText = () => {
         song?.title ? `Play ${song.title}` : `Play`
     );
 };
-
-*/
 
 const setSongDuration = (song) => {
     let hour = 0,
