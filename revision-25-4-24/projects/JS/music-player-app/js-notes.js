@@ -107,9 +107,8 @@ The Element.append() method inserts a set of Node objects or
 string objects after the last child of the Element. String 
 objects are inserted as equivalent Text nodes.
 
-
-18. Same code diff usage/purpose
-    nt reusable but avoid declaration of new variable:
+19. Same code diff usage/purpose
+    Nt reusable but avoid declaration of new variable:
     const displaySong = () => {
         const eachSong = userData.songs.map((song) => {})
     }
