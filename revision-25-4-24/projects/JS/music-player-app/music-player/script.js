@@ -278,8 +278,8 @@ const deleteSong = (id) => {
 
         button.addEventListener("click", () => {
             displaySong(userData?.songs);
+            button.remove();
         });
-        button.classList.add("hide");
     }
 };
 
