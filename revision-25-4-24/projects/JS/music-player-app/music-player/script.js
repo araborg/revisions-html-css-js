@@ -157,6 +157,34 @@ const playSong = (id) => {
     // 5. play song
     audio.play();
 };
+/*
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+
+    audio.src = song.src;
+    audio.title = song.title;
+
+    if (
+        userData?.prevSong === null || // true
+        userData?.prevSong.id !== song.id // true
+    ) {
+        audio.currentTime = 0;
+    } else {
+        audio.currentTime = userData?.currentTime;
+    }
+
+    userData.prevSong = song;
+    playBtn.classList.add("playing");
+
+    updateDisplay();
+    highlightCurrentSong();
+    setSongDuration(song);
+
+    // console.log(userData.currentSong);
+
+    audio.play();
+};
+*/
 
 playBtn.addEventListener("click", () => {
     if (userData?.prevSong === null) {
@@ -220,13 +248,22 @@ const pauseSong = () => {
     // return;
     // } else {
     userData.currentTime = audio.currentTime;
+
     playBtn.classList.remove("playing");
     audio.pause();
 
-    songPaused = false;
+    // songPaused = false;
     // }
 };
 
+/*
+const pauseSong = () => {
+    userData.currentTime = audio.currentTime;
+
+    playBtn.classList.remove("playing");
+    audio.pause();
+};
+*/
 pauseBtn.addEventListener("click", pauseSong);
 
 const shuffle = () => {
@@ -378,12 +415,7 @@ const setSongDuration = (song) => {
         time--;
     };
 
-    // tick();
-
-    if (pauseSong()) {
-        console.log("hello");
-    }
-    console.log(songPaused);
+    tick();
 
     const timer = setInterval(tick, 1000);
 
