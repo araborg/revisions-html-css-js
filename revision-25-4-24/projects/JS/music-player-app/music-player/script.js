@@ -214,11 +214,12 @@ const playPrevSong = () => {
 previousBtn.addEventListener("click", playPrevSong);
 
 const pauseSong = () => {
-    if (userData?.prevSong === null) {
+    if (userData?.prevSong === null && ) {
         return;
     } else {
         userData.currentTime = audio.currentTime;
         audio.pause();
+        console.log(audio.pause());
     }
 };
 
