@@ -67,9 +67,8 @@ const userData = {
     songs: [...allSongs],
     prevSong: null,
     currentTime: 0,
+    songPaused: false,
 };
-
-let songPaused = false;
 
 const audio = new Audio();
 
@@ -228,8 +227,8 @@ const pauseSong = () => {
 };
 
 const pauseSongHelperFunction = () => {
+    userData.songPaused = true;
     pauseSong();
-    console.log("Hello");
 };
 
 pauseBtn.addEventListener("click", pauseSongHelperFunction);
@@ -386,6 +385,10 @@ const setSongDuration = (song) => {
     tick();
 
     const timer = setInterval(tick, 1000);
+
+    if (userData.songPaused) {
+        console.log("Pause btn pressed");
+    }
 
     return timer;
 };
