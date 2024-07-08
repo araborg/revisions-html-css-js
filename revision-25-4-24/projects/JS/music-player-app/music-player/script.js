@@ -270,11 +270,14 @@ const deleteSong = (id) => {
         userData.currentTime = 0;
         userData.prevSong = null;
 
-        const button = document.createElement("button");
-        button.className = "reload";
-        button.innerText = "Reload All Songs";
+        const resetButton = document.createElement("button");
+        const resetText = document.createTextNode("Reload All Songs");
 
-        playlistSongs.appendChild(button);
+        resetButton.id = "reset";
+        resetButton.ariaLabel = "Reset Playlist";
+
+        resetButton.appendChild(resetText);
+        playlistSongs.appendChild(resetButton);
 
         button.addEventListener("click", () => {
             displaySong(userData?.songs);
