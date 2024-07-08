@@ -150,6 +150,7 @@ const playSong = (id) => {
     // 6. other fxns
     updateDisplay();
     highlightCurrentSong();
+
     setSongDuration(song);
 
     // setPlayButtonAccessibleText();
@@ -226,7 +227,12 @@ const pauseSong = () => {
     }
 };
 
-pauseBtn.addEventListener("click", pauseSong);
+const pauseSongHelperFunction = () => {
+    pauseSong();
+    console.log("Hello");
+};
+
+pauseBtn.addEventListener("click", pauseSongHelperFunction);
 
 const shuffle = () => {
     const shuffleSong = userData?.songs.sort(() => Math.random() - 0.5);
