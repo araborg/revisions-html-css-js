@@ -380,7 +380,7 @@ const setSongDuration = (song) => {
     if (pauseSong()) {
         console.log("hello");
     }
-    console.log(songPaused);
+    console.log(userData.songPaused);
 
     const timer = setInterval(tick, 1000);
 
