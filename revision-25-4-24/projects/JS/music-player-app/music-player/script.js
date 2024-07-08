@@ -295,7 +295,7 @@ const deleteSong = (id) => {
         });
     }
 };
-
+/*
 audio.addEventListener("ended", () => {
     const currentSongIn = songIndex();
 
@@ -311,6 +311,7 @@ audio.addEventListener("ended", () => {
         pauseSong();
     }
 });
+*/
 
 const highlightCurrentSong = () => {
     const playlistSongElements = document.querySelectorAll(".playlist-song");
@@ -367,9 +368,9 @@ const setSongDuration = (song) => {
 
         songDuration.textContent = `${min}:${sec}`;
 
-        if (time === -1 || userData?.prevSong.id !== song.id) {
+        if (time === -1 || userData?.prevSong?.id !== song.id) {
             clearInterval(timer);
-            songDuration.textContent = countdown;
+            songDuration.textContent = `${countdown[0]}:${countdown[1]}`;
         }
 
         time--;
