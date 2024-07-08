@@ -216,15 +216,15 @@ const playPrevSong = () => {
 previousBtn.addEventListener("click", playPrevSong);
 
 const pauseSong = () => {
-    if (userData?.prevSong === null) {
-        return;
-    } else {
-        userData.currentTime = audio.currentTime;
-        playBtn.classList.remove("playing");
-        audio.pause();
+    // if (userData?.prevSong === null) {
+    // return;
+    // } else {
+    userData.currentTime = audio.currentTime;
+    playBtn.classList.remove("playing");
+    audio.pause();
 
-        songPaused = false;
-    }
+    songPaused = false;
+    // }
 };
 
 pauseBtn.addEventListener("click", pauseSong);
