@@ -223,8 +223,6 @@ const pauseSong = () => {
 
         playBtn.classList.remove("playing");
         audio.pause();
-
-        songPaused = true;
     }
 };
 
@@ -380,8 +378,6 @@ const setSongDuration = (song) => {
     };
 
     tick();
-
-    console.log(songPaused);
 
     const timer = setInterval(tick, 1000);
 
