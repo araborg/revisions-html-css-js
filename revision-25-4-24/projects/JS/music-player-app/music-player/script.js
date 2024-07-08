@@ -67,9 +67,8 @@ const userData = {
     songs: [...allSongs],
     prevSong: null,
     currentTime: 0,
+    songPaused: false,
 };
-
-let songPaused = false;
 
 const audio = new Audio();
 
@@ -222,7 +221,7 @@ const pauseSong = () => {
         userData.currentTime = audio.currentTime;
         audio.pause();
 
-        pauseSong = true;
+        userData.songPaused = true;
     }
 };
 
