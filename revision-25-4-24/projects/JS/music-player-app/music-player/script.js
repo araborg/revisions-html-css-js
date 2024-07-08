@@ -238,27 +238,6 @@ const replay = (id) => {
     audio.addEventListener("ended", () => playSong(song.id));
 };
 
-/*
-const replayAll = (id) => {
-    // const curSongIn = songIndex();
-
-    if (userData?.prevSong === null) {
-        return;
-    } else {
-        audio.addEventListener("ended", () => {
-            const curSongIn = songIndex();
-
-            if (curSongIn === -1) {
-                let curSongIn = 0;
-                playSong(userData?.songs[curSongIn].id);
-            }
-        });
-    }
-};
-
-replayBtn.addEventListener("click", replayAll);
-*/
-
 const replayAllSongs = () => {
     if (userData?.prevSong) {
         audio.addEventListener("ended", () => {
