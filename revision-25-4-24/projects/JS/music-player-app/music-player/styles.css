@@ -229,6 +229,10 @@ button {
     background-color: var(--background-color);
 }
 
+[aria-current="true"] p {
+    color: var(--highlight-color);
+}
+
 .playing > svg {
     fill: var(--highlight-color);
 }
