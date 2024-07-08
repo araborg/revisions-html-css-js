@@ -118,7 +118,13 @@ objects are inserted as equivalent Text nodes.
         const eachSong = songs.map((song) => {})
     }
 
-19.
+19. clearTimeout(), clearInterval(), setTimeout(), setInterval()
+JavaScript offers two functions clearTimeout() and clearInterval() 
+to cancel or stop the timer and halt the execution of code. The 
+setTimeout() and setInterval() both return a unique IDs. These IDs 
+are used by the clearTimeout() and clearInterval() to clear the 
+timer and stop the code execution beforehand.
+
 20.
 
 

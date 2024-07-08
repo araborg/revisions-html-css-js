@@ -150,7 +150,8 @@ const playSong = (id) => {
     updateDisplay();
     highlightCurrentSong();
 
-    setSongDuration(song);
+    // setSongDuration(song);
+    setSongDuration();
 
     // setPlayButtonAccessibleText();
 
@@ -229,6 +230,7 @@ const pauseSong = () => {
 const pauseSongHelperFunction = () => {
     userData.songPaused = true;
     pauseSong();
+    setSongDuration();
 };
 
 pauseBtn.addEventListener("click", pauseSongHelperFunction);
@@ -344,7 +346,10 @@ const setPlayButtonAccessibleText = () => {
     );
 };
 
-const setSongDuration = (song) => {
+// const setSongDuration = (song) => {
+const setSongDuration = () => {
+    const song = userData?.prevSong;
+
     let hour = 0,
         min = 0,
         sec = 0,
@@ -380,15 +385,21 @@ const setSongDuration = (song) => {
         }
 
         time--;
+        // playerCurrentTime = `${countdown[0]}:${countdown[1]}`;
     };
 
     tick();
 
     const timer = setInterval(tick, 1000);
 
+    /*
     if (userData.songPaused) {
-        console.log("Pause btn pressed");
+        //
+        songDuration.textContent = audio.currentTime;
+        clearInterval(timer);
+        return timer;
     }
+        */
 
     return timer;
 };
