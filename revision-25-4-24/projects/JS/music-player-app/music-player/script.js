@@ -389,17 +389,18 @@ const setSongDuration = () => {
 
     tick();
 
-    const timer = setInterval(tick, 1000);
+    let timer = setInterval(tick, 1000);
 
-    if (userData.songPaused) {
-        //
-        songDuration.textContent = audio.currentTime;
-        time = audio.currentTime;
-        clearInterval(timer);
-        // return timer;
-    }
+    /*
+        if (userData.songPaused) {
+            songDuration.textContent = audio.currentTime;
+            clearInterval(timer);
+            time = 0;
+            time = audio.currentTime;
+            timer = `${0}.padStart(2, 0):${0}.padStart(2, 0)`;
+        }
 
-    console.log(time);
-
+        console.log(time);
+    */
     return timer;
 };
