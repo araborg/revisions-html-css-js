@@ -146,7 +146,7 @@ linear-gradient function needs at least two color arguments to work.
 While the linear-gradient function needs a minimum of two color 
 arguments to work, it can accept many color arguments.
 
-
+N.B: Linear gradient works with background and not background-color
 
 Stops at 50
 */
