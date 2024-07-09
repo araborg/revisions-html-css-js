@@ -45,7 +45,7 @@ h1 {
 }
 
 .green {
-    background: linear-gradient(180deg);
+    background: linear-gradient(180deg, #55680d, #116c31);
 }
 
 .blue {
@@ -147,6 +147,12 @@ While the linear-gradient function needs a minimum of two color
 arguments to work, it can accept many color arguments.
 
 N.B: Linear gradient works with background and not background-color
+
+If no gradientDirection argument is provided to the linear-gradient 
+function, it arranges colors from top to bottom, or along a 180 
+degree line, by default.
+
+
 
 Stops at 50
 */
