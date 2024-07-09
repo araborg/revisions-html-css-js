@@ -1,6 +1,8 @@
 /* 
     N.B: Ask why some common CSS ppties that goes along with each other
     were not used.
+    E.g: 
+    1. Y padding: 5px; was used instead of padding: 0 5px;
 */
 
 :root {
