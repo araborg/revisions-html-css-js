@@ -312,14 +312,6 @@ button:focus,
     height: 15px;
 }
 
-/* .playlist-replay-btn:hover circle {
-    background-color: var(--background-color);
-} */
-
-/* .playlist-replay-btn:hover svg {
-    background-color: var(--background-color);
-} */
-
 .playlist-delete-btn:hover circle {
     fill: red;
 }
