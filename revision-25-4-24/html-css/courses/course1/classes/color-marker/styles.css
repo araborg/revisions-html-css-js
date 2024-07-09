@@ -23,7 +23,7 @@ h1 {
 }
 
 .one {
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(127, 255, 0);
 }
 
 .two {
@@ -47,7 +47,12 @@ magenta: pure blue and pure red
 
 Tertiary colors: are created by combining a primary with 
 a nearby secondary color.
-orange: pure red and set green to 127.
+orange: pure red and set green to 127, rgb(255, 127, 0)
+spring green: combine cyan with green, rgb(0, 255, 127)
+violet: combine magenta with blue, rgb(127, 0, 255)
+
+chartreuse green: red is at 127, and set green to the max value.
+rgb(127, 255, 0)
 
 
 There two main color models: 
