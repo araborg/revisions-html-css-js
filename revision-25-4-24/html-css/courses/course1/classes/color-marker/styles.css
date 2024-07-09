@@ -35,17 +35,28 @@ h1 {
 }
 
 /*
-Pry colors: are colors that when combined create pure white.
+There two main color models: 
+    - the additive RGB (red, green, blue) model used in electronic devices
+    - the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
+
+rgb(): CSS rgb function 
+
+margin: 10px auto;
+May work on the parent and child elements. d only requiremt is 
+dt width ppty must be included.
+
+
+- Pry colors: are colors that when combined create pure white.
 red
 blue
 green
 
-Sec colors: are the colors produced by primary colors. 
+- Sec colors: are the colors produced by primary colors. 
 yellow:  pure red and pure green
 cyan: pure green and pure blue
 magenta: pure blue and pure red
 
-Tertiary colors: are created by combining a primary with 
+- Tertiary colors: are created by combining a primary with 
 a nearby secondary color.
 orange: pure red and set green to 127, rgb(255, 127, 0)
 
@@ -62,15 +73,7 @@ rose: which is sometimes called bright pink. blue is at 127 and red
 is at the max value. rgb(255, 0, 127)
 
 
+- Complementary Colors
 
-There two main color models: 
-    - the additive RGB (red, green, blue) model used in electronic devices
-    - the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
-
-rgb(): CSS rgb function 
-
-margin: 10px auto;
-May work on the parent and child elements. d only requiremt is 
-dt width ppty must be included.
 
 */
