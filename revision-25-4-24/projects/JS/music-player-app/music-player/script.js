@@ -392,14 +392,15 @@ const setSongDuration = () => {
 
     const timer = setInterval(tick, 1000);
 
-    /*
     if (userData.songPaused) {
         //
         songDuration.textContent = audio.currentTime;
+        time = audio.currentTime;
         clearInterval(timer);
         return timer;
     }
-        */
+
+    console.log(time);
 
     return timer;
 };
