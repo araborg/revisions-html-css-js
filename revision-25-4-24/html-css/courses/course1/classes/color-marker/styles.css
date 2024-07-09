@@ -54,6 +54,8 @@ violet: combine magenta with blue, rgb(127, 0, 255)
 chartreuse green: red is at 127, and set green to the max value.
 rgb(127, 255, 0)
 
+azure: green is at 127 and blue is at the max value, rgb(0, 127, 255)
+
 
 There two main color models: 
     - the additive RGB (red, green, blue) model used in electronic devices
