@@ -52,10 +52,12 @@ red
 blue
 green
 
+
 - Sec colors: are the colors produced by primary colors. 
 yellow:  pure red and pure green
 cyan: pure green and pure blue
 magenta: pure blue and pure red
+
 
 - Tertiary colors: are created by combining a primary color with 
 a nearby secondary color.
@@ -118,6 +120,14 @@ and lightness values.
 
 Lightness is how bright a color appears, from 0%, or complete black, 
 to 100%, complete white, with 50% being neutral.
+
+
+Linear gradient:
+linear-gradient(gradientDirection, color1, color2, ...);
+
+
+
+
 
 
 Stops at 50
