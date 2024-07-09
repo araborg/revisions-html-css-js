@@ -25,7 +25,7 @@ h1 {
 
 .red {
     /* background-color: rgb(255, 0, 0); */
-    background: linear-gradient(90deg);
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));
 }
 
 .green {
@@ -126,8 +126,9 @@ to 100%, complete white, with 50% being neutral.
 Linear gradient:
 linear-gradient(gradientDirection, color1, color2, ...);
 
-
-
+linear-gradient function needs at least two color arguments to work.
+While the linear-gradient function needs a minimum of two color 
+arguments to work, it can accept many color arguments.
 
 
 
