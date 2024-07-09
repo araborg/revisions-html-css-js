@@ -285,7 +285,6 @@ button:focus,
 }
 
 .playlist-song-artist {
-    /* border: 3px solid green; */
     width: 135px;
     padding: 0 5px;
     text-align: center;
@@ -294,8 +293,6 @@ button:focus,
 }
 
 .playlist-song-duration {
-    /* border: 3px solid red; */
-
     font-size: 0.725rem;
     text-align: center;
 
