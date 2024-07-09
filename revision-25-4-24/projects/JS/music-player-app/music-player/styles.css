@@ -120,7 +120,10 @@ ul {
     padding: 16px;
 
     display: flex;
-    align-items: center; /* ds is impt for display: block to achieve wt is intended for d img */
+
+    /* ds is impt for display: block to achieve wt is intended for d img */
+    align-items: center;
+
     justify-content: space-around;
 
     column-gap: 14px;
