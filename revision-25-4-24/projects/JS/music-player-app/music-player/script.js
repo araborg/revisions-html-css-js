@@ -385,7 +385,6 @@ const setSongDuration = () => {
         }
 
         time--;
-        // playerCurrentTime = `${countdown[0]}:${countdown[1]}`;
     };
 
     tick();
@@ -397,7 +396,7 @@ const setSongDuration = () => {
         songDuration.textContent = audio.currentTime;
         time = audio.currentTime;
         clearInterval(timer);
-        return timer;
+        // return timer;
     }
 
     console.log(time);
