@@ -111,18 +111,19 @@ Lightness is how bright a color appears, from 0%, or complete black,
 to 100%, complete white, with 50% being neutral.
 
 
-Linear gradient:
+11. Linear gradient:
 linear-gradient(gradientDirection, color1, color2, ...);
 
 linear-gradient function needs at least two color arguments to work.
+
 While the linear-gradient function needs a minimum of two color 
 arguments to work, it can accept many color arguments.
 
-N.B: Linear gradient works with background and not background-color
+N.B: Linear gradient works with background and not background-color.
 
 If no gradientDirection argument is provided to the linear-gradient 
 function, it arranges colors from top to bottom, or along a 180 
-degree line, by default.
+degree line(horizontally/block format), by default.
 
 Que: Diff btw background-color and background.
 background can be used with linear-gradient while background-color
