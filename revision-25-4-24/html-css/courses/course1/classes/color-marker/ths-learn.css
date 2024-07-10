@@ -48,7 +48,7 @@ cyan: pure green and pure blue
 magenta: pure blue and pure red
 
 
-- Tertiary colors: are created by combining a primary color with 
+7. Tertiary colors: are created by combining a primary color with 
 a nearby secondary color.
 orange: pure red and set green to 127, rgb(255, 127, 0)
 
@@ -65,7 +65,7 @@ rose: which is sometimes called bright pink. blue is at 127 and red
 is at the max value. rgb(255, 0, 127)
 
 
-- Complementary Colors
+8. Complementary Colors
 A color wheel is a circle where similar colors, or hues, are near 
 each other, and different ones are further apart. 
 
@@ -79,11 +79,11 @@ and use its complementary color as an accent to bring attention
 to certain content on the page.
 
 
-Hexadecimal:
+9. Hexadecimal:
 Hex color values start with a # character and take six characters 
-from 0-9 and A-F. The first pair of characters represent red, 
-the second pair represent green, and the third pair represent 
-blue. For example, #4B5320.
+from 0-9 and A-F. The first pair of characters represent red, the 
+second pair represent green, and the third pair represent blue. 
+For example, #4B5320.
 
 With hex colors, 00 is 0% of that color, and FF is 100%.
 So #00FF00 translates to 0% red, 100% green, and 0% blue, and is 
