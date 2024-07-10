@@ -129,6 +129,7 @@ degree line(horizontally/block format), by default.
 background can be used with linear-gradient while background-color
 can't.
 
+13. Opacity
 Opacity describes how opaque, or non-transparent, something is. 
 With the value 0, or 0%, the element will be completely transparent, 
 and at 1.0, or 100%, the element will be completely opaque like it 
@@ -143,10 +144,9 @@ To add an alpha channel to an rgb color, use the rgba function
 instead.
 
 rgba()
-
 You can also use an alpha channel with hsl and hex colors.
 
-The default display property for div elements is block.
+14. The default display property for div elements is block.
 
 
 All HTML elements have borders, though they're usually set to 
