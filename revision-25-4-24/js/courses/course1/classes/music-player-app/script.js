@@ -92,5 +92,10 @@ const getCurrentSongIndex
 const sortSongs
 
 
+const replayAllSongs
+
+
+const replaySong
+
 
 */
