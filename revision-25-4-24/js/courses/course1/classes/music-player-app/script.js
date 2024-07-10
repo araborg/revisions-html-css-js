@@ -1,3 +1,4 @@
+/*
 const allSongs = [
     {
         id: 0,
@@ -145,7 +146,7 @@ const allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/sailing-away.mp3",
     },
 ];
-*/
+
 // very impt
 const audio = new Audio();
 
@@ -481,7 +482,7 @@ function init() {
 }
 
 init();
-// */
+*/
 
 //
 
