@@ -104,7 +104,7 @@ const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
-/*
+
 const allSongs = [
     {
         id: 0,
@@ -457,7 +457,7 @@ const deleteSong = (id) => {
     }
 };
 
-// /*
+
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
     const nextSongExists =
