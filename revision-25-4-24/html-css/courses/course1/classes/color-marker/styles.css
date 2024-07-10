@@ -48,6 +48,7 @@ h1 {
     width: 110px;
     height: 25px;
     background-color: white;
+    opacity: 0.5;
 }
 
 .green {
@@ -163,6 +164,12 @@ background can be used with linear-gradient while background-color
 can't.
 
 Opacity describes how opaque, or non-transparent, something is. 
+With the value 0, or 0%, the element will be completely transparent, 
+and at 1.0, or 100%, the element will be completely opaque like it 
+is by default.
 
-Stops at 50
+Another way to set the opacity for an element is with the alpha 
+channel. Similar to the opacity property, the alpha channel 
+controls how transparent or opaque a color is.
+
 */
