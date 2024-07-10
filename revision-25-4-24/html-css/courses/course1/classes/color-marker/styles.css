@@ -47,7 +47,8 @@ h1 {
 .sleeve {
     width: 110px;
     height: 25px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.5;
 }
 
@@ -171,5 +172,17 @@ is by default.
 Another way to set the opacity for an element is with the alpha 
 channel. Similar to the opacity property, the alpha channel 
 controls how transparent or opaque a color is.
+
+You're already familiar with using the rgb function to set colors. 
+To add an alpha channel to an rgb color, use the rgba function 
+instead.
+
+rgba()
+
+You can also use an alpha channel with hsl and hex colors.
+
+
+
+
 
 */
