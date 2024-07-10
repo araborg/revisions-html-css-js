@@ -50,6 +50,8 @@ h1 {
     /* background-color: white; */
     background-color: rgba(255, 255, 255, 0.5);
     opacity: 0.5;
+    border-left-width: 10px;
+    border-left-style: solid;
 }
 
 .cap {
