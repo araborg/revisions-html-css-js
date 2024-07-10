@@ -56,7 +56,9 @@ h1 {
     /* border-left-style: solid; */
     /* border-left-color: black; */
 
-    border-left: 10px solid black;
+    /* border-left: 10px solid black; */
+
+    border-left: 10px double black;
 }
 
 .cap {
