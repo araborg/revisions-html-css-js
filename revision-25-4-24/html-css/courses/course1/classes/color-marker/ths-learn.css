@@ -149,14 +149,16 @@ You can also use an alpha channel with hsl and hex colors.
 14. The default display property for div elements is block.
 
 
-All HTML elements have borders, though they're usually set to 
+15. All HTML elements have borders, though they're usually set to 
 none by default.
 
-Box Shadow:
+
+16. Box Shadow:
 The box-shadow property lets you apply one or more shadows around 
 an element. Here is basic syntax:
 
-box-shadow: offsetX offsetY blurRadius color;
+box-shadow: offsetX offsetY blurRadius spreadRadius color;
+
 
 - a positive offsetX value moves the shadow right and a negative value
 moves it left
@@ -175,8 +177,5 @@ But what if you wanted to expand the shadow out further? You can
 do that with the optional spreadRadius value:
 
 box-shadow: offsetX offsetY blurRadius spreadRadius color;
-
-
-
 
 */
