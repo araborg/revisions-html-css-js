@@ -125,7 +125,7 @@ If no gradientDirection argument is provided to the linear-gradient
 function, it arranges colors from top to bottom, or along a 180 
 degree line(horizontally/block format), by default.
 
-Que: Diff btw background-color and background.
+12. Diff btw background-color and background.
 background can be used with linear-gradient while background-color
 can't.
 
