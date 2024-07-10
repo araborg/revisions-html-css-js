@@ -146,6 +146,7 @@ instead.
 rgba()
 You can also use an alpha channel with hsl and hex colors.
 
+
 14. The default display property for div elements is block.
 
 
@@ -158,7 +159,6 @@ The box-shadow property lets you apply one or more shadows around
 an element. Here is basic syntax:
 
 box-shadow: offsetX offsetY blurRadius spreadRadius color;
-
 
 - a positive offsetX value moves the shadow right and a negative value
 moves it left
