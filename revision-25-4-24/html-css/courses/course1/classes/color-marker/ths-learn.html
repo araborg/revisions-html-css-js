@@ -129,13 +129,17 @@ Box Shadow:
 The box-shadow property lets you apply one or more shadows around 
 an element. Here is basic syntax:
 
-box-shadow: offsetX offsetY color;
+box-shadow: offsetX offsetY blurRadius color;
 
 - a positive offsetX value moves the shadow right and a negative value
 moves it left
 
 - a positive offsetY value moves the shadow down and a negative value 
 moves it up.
+
+If a blurRadius value isn't included, it defaults to 0 and produces 
+sharp edges. The higher the value of blurRadius, the greater the 
+blurring effect is.
 
 The height and width of the shadow is determined by the height and 
 width of the element it's applied to. 
