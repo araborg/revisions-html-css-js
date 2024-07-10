@@ -59,6 +59,8 @@ h1 {
     /* border-left: 10px solid black; */
 
     border-left: 10px double rgba(0, 0, 0, 0.75);
+
+    box-shadow: 5px 5px red;
 }
 
 .cap {
