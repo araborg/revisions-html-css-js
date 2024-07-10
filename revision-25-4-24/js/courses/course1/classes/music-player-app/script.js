@@ -51,8 +51,46 @@ const allSongs = [
 
 
 const audio
+
+
 let userData
+
+
 const playSong
+
+
+const pauseSong
+
+
+const playNextSong
+
+
+const playPreviousSong
+
+
+const shuffle
+
+
+const deleteSong
+
+
+const setPlayerDisplay
+
+
+const highlightCurrentSong
+
+
+const renderSongs
+
+
+const setPlayButtonAccessibleText
+
+
+const getCurrentSongIndex
+
+
+const sortSongs
+
 
 
 */
