@@ -20,7 +20,7 @@ h1 {
     margin: 10px auto;
     padding: 10px 0;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .red {
@@ -60,7 +60,8 @@ h1 {
 
     border-left: 10px double rgba(0, 0, 0, 0.75);
 
-    box-shadow: 5px 5px red;
+    /* box-shadow: 5px 5px red; */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 .cap {
