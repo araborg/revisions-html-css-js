@@ -1,13 +1,16 @@
-<!-- 
+/*
 1. There two main color models: 
     - the additive RGB (red, green, blue) model used in electronic devices
     - the subtractive CMYK (cyan, magenta, yellow, black) model used in print.
 
+
 2. rgb(): CSS rgb function 
+
 
 3. margin: 10px auto;
 May work on the parent and child elements. d only requiremt is 
 dt width ppty must be included.
+
 
 4. Using 2 or more classes in an HTML elements:
 One classes takes care of general feactures while the other takes
@@ -18,7 +21,7 @@ care of peculiar features.
 .marker {
     width: 200px;
     height: 25px;
-    
+
     margin: 10px auto;
 }
 
@@ -33,13 +36,13 @@ care of peculiar features.
 }
 
 
-- Pry colors: are colors that when combined create pure white.
+5. Pry colors: are colors that when combined create pure white.
 red
 blue
 green
 
 
-- Sec colors: are the colors produced by primary colors. 
+6. Sec colors: are the colors produced by primary colors. 
 yellow:  pure red and pure green
 cyan: pure green and pure blue
 magenta: pure blue and pure red
@@ -175,4 +178,4 @@ box-shadow: offsetX offsetY blurRadius spreadRadius color;
 
 
 
--->
+*/
