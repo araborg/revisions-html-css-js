@@ -89,14 +89,14 @@ With hex colors, 00 is 0% of that color, and FF is 100%.
 So #00FF00 translates to 0% red, 100% green, and 0% blue, and is 
 the same as rgb(0, 255, 0).
 
-Lower the intensity of green by setting the green value of the 
-hex color to 7F, #007F00.
+Lower the intensity of green by setting the green value of the hex 
+color to 7F, #007F00.
 
 
-hsl():
+10. hsl():
 The HSL color model, (or hue, saturation, and lightness).
 
-The CSS hsl function accepts 3 values: a number from 0 to 360 for 
+The CSS hsl function accepts 3 values: a degree from 0 to 360 for 
 hue, a percentage from 0 to 100 for saturation, and a percentage 
 from 0 to 100 for lightness.
 
