@@ -35,5 +35,11 @@
 
     .playing > svg 
 
+    outline-style: dashed;
+    outline-width: 2px;
+
+    height: auto;
+
+
 
 */
