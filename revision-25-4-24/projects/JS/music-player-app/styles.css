@@ -42,7 +42,7 @@ body {
 .player,
 .playlist {
     width: 450px;
-    height: 260px;
+    /* height: 260px; */
 
     padding: 10px;
 
@@ -51,12 +51,32 @@ body {
     border: 3px solid var(--foreground-color);
 }
 
+.player {
+    border: 3px solid green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .player-bar {
     background-color: var(--app-background-color);
 }
 
+h1 {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.fcc-title {
+    font-family: var(--font-headline);
+}
+
 .player-content {
     background-color: var(--app-background-color);
+
+    width: 430px;
+    height: 200px;
 }
 
 #player-album-art img {
