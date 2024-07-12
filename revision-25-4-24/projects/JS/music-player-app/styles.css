@@ -25,15 +25,15 @@
 body {
     background: var(--app-background-color);
     color: var(--secondary-color);
-    font-size: var(--root-font-size);
 
     font-family: var(--font-family);
 }
 
 .container {
+    /* justify-content: center; */
+
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
 
     margin-top: 10px;
@@ -44,7 +44,9 @@ body {
     width: 450px;
     height: 260px;
 
-    border: 3px solid purple;
+    background-color: var(--background-color);
+
+    border: 3px solid var(--foreground-color);
 }
 
 #player-album-art img {
