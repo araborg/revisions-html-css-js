@@ -9,17 +9,20 @@ h1 {
 }
 
 .container {
-    height: auto;
-    width: 300px;
+    /* height: auto; */
+    /* width: 300px; */
 
-    margin: auto;
+    /* margin: auto; */
+
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
 }
 
 .marker {
-    margin: 10px auto;
-
     width: 200px;
     height: 25px;
+
+    margin: 10px auto;
 }
 
 /* rgb colors */
@@ -58,8 +61,6 @@ h1 {
 .cap {
     width: 60px;
     height: 25px;
-
-    /* border-right: 2px double rgba(0, 0, 0, 0.75); */
 }
 
 .sleeve {
