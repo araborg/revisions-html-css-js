@@ -1,21 +1,9 @@
 /* 
 
 
-
-
-
-rgba(0, 0, 0, 0.75);
-
-
-#55680d
-#71f53e
-#116c31
-#3b7e20cc
-
 hsl(186, 76%, 16%),
 hsl(223, 90%, 60%),
 hsl(240, 56%, 42%)
-
 
 
 */
@@ -46,7 +34,7 @@ h1 {
 /* rgb colors */
 .red {
     background: linear-gradient(
-        /* 90deg, */ rgb(122, 74, 14),
+        rgb(122, 74, 14),
         rgb(245, 62, 113),
         rgb(162, 27, 27)
     );
@@ -56,7 +44,8 @@ h1 {
 
 /* hex colors */
 .green {
-    background-color: green;
+    background: linear-gradient(#55680d, #71f53e, #116c31);
+    box-shadow: 0 0 20px 0 #3b7e20cc;
 }
 
 /* hsl colors */
@@ -73,7 +62,7 @@ h1 {
     width: 60px;
     height: 25px;
 
-    border-right: 2px double black;
+    border-right: 2px double rgba(0, 0, 0, 0.75);
 }
 
 .sleeve {
@@ -81,5 +70,5 @@ h1 {
     height: 25px;
 
     background-color: rgba(255, 255, 255, 0.5);
-    border-left: 2px double black;
+    border-left: 2px double rgba(0, 0, 0, 0.75);
 }
