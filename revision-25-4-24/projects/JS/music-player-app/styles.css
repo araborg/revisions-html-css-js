@@ -44,9 +44,19 @@ body {
     width: 450px;
     height: 260px;
 
+    padding: 10px;
+
     background-color: var(--background-color);
 
     border: 3px solid var(--foreground-color);
+}
+
+.player-bar {
+    background-color: var(--app-background-color);
+}
+
+.player-content {
+    background-color: var(--app-background-color);
 }
 
 #player-album-art img {
