@@ -24,6 +24,8 @@
 
 body {
     background: var(--app-background-color);
+    color: var(--secondary-color);
+    font-size: var(--root-font-size);
 }
 
 .container {
