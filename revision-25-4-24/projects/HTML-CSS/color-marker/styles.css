@@ -1,5 +1,4 @@
 /* 
-rgb(255, 255, 255);
 
 rgb(122, 74, 14),
 
@@ -24,6 +23,9 @@ hsl(223, 90%, 60%),
 hsl(240, 56%, 42%)
 
 */
+body {
+    background-color: rgb(255, 255, 255);
+}
 
 h1 {
     text-align: center;
@@ -48,7 +50,11 @@ h1 {
 
 /* rgb colors */
 .red {
-    background-color: red;
+    background: linear-gradient(
+        rgba(180, 12, 13),
+        rgba(180, 12, 13),
+        rgba(180, 12, 13)
+    );
 }
 
 /* hex colors */
@@ -70,7 +76,7 @@ h1 {
     width: 60px;
     height: 30px;
 
-    background-color: purple;
+    /* background-color: purple; */
     border-right: 2px double black;
     /* border: 2px solid yellow; */
 }
