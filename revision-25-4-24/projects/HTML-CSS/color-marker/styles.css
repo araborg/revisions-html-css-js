@@ -32,8 +32,6 @@ h1 {
 }
 
 .container {
-    border: 2px solid green;
-
     height: auto;
     width: 300px;
 
@@ -46,8 +44,6 @@ h1 {
     width: 200px;
 
     height: 30px;
-
-    border: 2px solid purple;
 }
 
 .red {
@@ -56,4 +52,8 @@ h1 {
 
 .green {
     background-color: green;
+}
+
+.blue {
+    background-color: blue;
 }
