@@ -35,6 +35,10 @@ body {
     align-items: center;
 }
 
+#player-album-art img {
+    width: 150px;
+}
+
 /*
     width: 450px;
     height: 260px
