@@ -57,10 +57,21 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    row-gap: 10px;
 }
 
 .player-bar {
     background-color: var(--app-background-color);
+
+    width: 100%;
+}
+
+.parallel-lines {
+}
+
+.parallel-lines div {
 }
 
 h1 {
