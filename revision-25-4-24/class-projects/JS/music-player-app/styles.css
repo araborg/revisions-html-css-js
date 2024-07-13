@@ -235,6 +235,7 @@ button {
 .playlist-song-info {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .song-title {
@@ -248,11 +249,15 @@ button {
 .song-artist {
     font-size: 0.725rem;
     margin: 0 10px;
+
+    border: 2px solid red;
+
+    white-space: nowrap;
 }
 
 .song-duration {
     font-size: 0.725rem;
-    width: 30px;
+    /* width: 30px; */
 }
 
 /*
