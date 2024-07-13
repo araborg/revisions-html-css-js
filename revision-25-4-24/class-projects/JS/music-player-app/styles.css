@@ -200,6 +200,7 @@ button {
 .playlist {
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
     /* justify-content: start; */
@@ -207,7 +208,12 @@ button {
     row-gap: 10px;
 
     /* width: 100%; */
+    /* width: 450px; */
     /* border: 4px solid green; */
+}
+
+.playlist-bar {
+    width: 100%;
 }
 
 #playlist-songs {
@@ -216,8 +222,7 @@ button {
     padding: 10px;
 
     height: auto;
-    /* width: 100%; */
-    width: 450px;
+    width: 430px;
 
     list-style: none;
 }
@@ -234,6 +239,8 @@ button {
     justify-content: space-between;
 
     height: 55px;
+    width: 100%;
+
     padding: 5px;
 
     /* border: 2px solid red; */
