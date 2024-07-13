@@ -257,6 +257,10 @@ button {
     /* width: 30px; */
 }
 
+.replay {
+    fill: var(--secondary-color);
+}
+
 /*
     width: 450px;
     height: 260px
