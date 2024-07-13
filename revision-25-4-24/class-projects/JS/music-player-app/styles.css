@@ -211,6 +211,7 @@ button {
     padding: 10px;
 
     height: auto;
+    width: 100%;
 
     list-style: none;
 }
@@ -228,8 +229,6 @@ button {
 
     height: 55px;
     padding: 5px;
-
-    /* border: 2px solid green; */
 }
 
 .playlist-song-info {
@@ -241,7 +240,7 @@ button {
 .song-title {
     font-size: 0.85rem;
 
-    width: 241px;
+    width: 221px;
 
     text-align: left;
 }
@@ -249,8 +248,6 @@ button {
 .song-artist {
     font-size: 0.725rem;
     margin: 0 10px;
-
-    border: 2px solid red;
 
     white-space: nowrap;
 }
