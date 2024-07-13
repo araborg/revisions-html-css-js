@@ -60,17 +60,23 @@ body {
     row-gap: 10px;
 }
 
-.player-bar {
+.player-bar,
+.playlist-bar {
     background-color: var(--app-background-color);
     border: 3px solid green;
 
     width: 100%;
 
     padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
 
 .parallel-lines {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .parallel-lines div {
