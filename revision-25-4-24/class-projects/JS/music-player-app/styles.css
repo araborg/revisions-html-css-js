@@ -229,6 +229,8 @@ button {
 
     height: 55px;
     padding: 5px;
+
+    border: 2px solid red;
 }
 
 .playlist-song-info {
@@ -259,6 +261,20 @@ button {
 
 .replay {
     fill: var(--secondary-color);
+
+    /* to align d btn */
+    display: flex;
+    align-items: center;
+
+    /* padding: 10px 5px; */
+
+    /* border: 2px solid red; */
+}
+
+.delete {
+    /* to align d btn */
+    display: flex;
+    align-items: center;
 }
 
 /*
