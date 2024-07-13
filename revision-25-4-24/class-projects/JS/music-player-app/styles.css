@@ -265,16 +265,16 @@ button {
     /* to align d btn */
     display: flex;
     align-items: center;
-
-    /* padding: 10px 5px; */
-
-    /* border: 2px solid red; */
 }
 
 .delete {
     /* to align d btn */
     display: flex;
     align-items: center;
+}
+
+.delete:hover center {
+    background-color: red;
 }
 
 /*
