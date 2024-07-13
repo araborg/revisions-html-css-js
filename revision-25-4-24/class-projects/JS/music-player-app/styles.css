@@ -282,6 +282,10 @@ button {
     fill: red;
 }
 
+.playing svg {
+    fill: var(--highlight-color);
+}
+
 /*
     width: 450px;
     height: 260px
