@@ -128,7 +128,7 @@ ul {
 
     column-gap: 17px;
 
-    background-color: var(--app-background-color);
+    background-color: var(--foreground-color);
 }
 
 #player-album-art {
