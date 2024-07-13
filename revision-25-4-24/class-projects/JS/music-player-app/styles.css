@@ -300,7 +300,15 @@ button {
 
     .player,
     .playlist {
-        width: 350px;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 0.8125rem;
+    }
+
+    h2 {
+        font-size: 0.75rem;
     }
 }
 
