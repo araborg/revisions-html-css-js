@@ -125,7 +125,31 @@ setTimeout() and setInterval() both return a unique IDs. These IDs
 are used by the clearTimeout() and clearInterval() to clear the 
 timer and stop the code execution beforehand.
 
-20.
+20. arrow fxn (() => {}) is an anonymous fxn expression
+21. optional chaining (?.) for nested obj ppties dt might be null or undefined.
 
+22. why .join() method is used on .map() method
+23. .find() method returns d 1st elemt dt fulfilled d stipulated condition
 
+24. .indexOf()
+25. .removeAttribute()
+
+26. .setAttribute(arg1, arg2)
+27. Math.random() - 0.5
+
+28. .filter()
+29. .createElement()
+
+30. .createTextNode()
+31. .appendChild()
+
+32. .remove()
+33. ended event
+
+34. setPlayButtonAccessibleText() called in: 
+    playSong()
+    shuffle()
+    deleteSong()
+        resetButton()
+    audio.addEventListener()
 */

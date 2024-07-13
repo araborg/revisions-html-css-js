@@ -3,6 +3,21 @@
     were not used.
     E.g: 
     1. Y padding: 5px; was used instead of padding: 0 5px;
+
+
+    New css features i learnt:
+    1. visibility
+    2. row/column gap
+    3. outline-color
+    4. outline-style
+    5. outline-width
+
+    6. -webkit-scrollbar 
+    7. -webkit-scrollbar-track
+    8. -webkit-scrollbar-thumb 
+
+    9. box-shadow
+    10. justify-items: center;
 */
 
 :root {
