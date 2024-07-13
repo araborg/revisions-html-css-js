@@ -178,6 +178,17 @@ ul {
     font-size: 0.75rem;
 }
 
+.player-buttons svg {
+    fill: var(--secondary-color);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    border: 4px solid green;
+}
+
 /* playlist */
 .playlist {
     display: flex;
