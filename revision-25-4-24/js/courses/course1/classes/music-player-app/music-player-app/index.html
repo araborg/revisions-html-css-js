@@ -3,16 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
         />
+
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Mono&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Music Player App</title>
+
+        <link rel="stylesheet" href="./styles.css" />
+
+        <title>Music Player</title>
     </head>
 
     <body>
@@ -42,9 +46,9 @@
 
                     <div class="player-display">
                         <div class="player-display-song-artist">
-                            <p id="player-song-title">Can't Stay Down</p>
-                            <p id="player-song-artist">KSA</p>
-                            <p id="player-song-duration">5:20</p>
+                            <p id="player-song-title"></p>
+                            <p id="player-song-artist"></p>
+                            <p id="player-song-duration"></p>
                         </div>
 
                         <div class="player-buttons">
@@ -168,7 +172,7 @@
                         <div></div>
                     </div>
 
-                    <h2 class="playlist-title" id="playlist">Playlist</h2>
+                    <h2 class="playlist-title">Playlist</h2>
 
                     <div class="parallel-lines">
                         <div></div>
@@ -176,38 +180,10 @@
                     </div>
                 </div>
 
-                <ul id="playlist-songs">
-                    <li class="playlist-song">1</li>
-                    <li class="playlist-song">2</li>
-                    <li class="playlist-song">3</li>
-                    <li class="playlist-song">4</li>
-                    <li class="playlist-song">5</li>
-                    <li class="playlist-song">6</li>
-                    <li class="playlist-song">7</li>
-                    <li class="playlist-song">8</li>
-                    <li class="playlist-song">9</li>
-                    <li class="playlist-song">10</li>
-                    <li class="playlist-song">11</li>
-                    <li class="playlist-song">12</li>
-                    <li class="playlist-song">13</li>
-                    <li class="playlist-song">14</li>
-                    <li class="playlist-song">15</li>
-                    <li class="playlist-song">16</li>
-                    <li class="playlist-song">17</li>
-                    <li class="playlist-song">18</li>
-
-                    <li class="playlist-song">19</li>
-                    <li class="playlist-song">20</li>
-                    <li class="playlist-song">21</li>
-                    <li class="playlist-song">22</li>
-                    <li class="playlist-song">23</li>
-                    <li class="playlist-song">24</li>
-                    <li class="playlist-song">25</li>
-                    <li class="playlist-song">26</li>
-                    <li class="playlist-song">27</li>
-                </ul>
+                <ul id="playlist-songs"></ul>
             </div>
         </div>
-        <script src="script.js"></script>
+
+        <script src="./script.js"></script>
     </body>
 </html>

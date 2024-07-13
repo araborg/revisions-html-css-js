@@ -42,7 +42,6 @@ body {
 .player,
 .playlist {
     width: 450px;
-    /* height: 260px; */
 
     padding: 10px;
 
@@ -58,12 +57,13 @@ body {
     align-items: center;
 
     row-gap: 10px;
+
+    height: 260px;
 }
 
 .player-bar,
 .playlist-bar {
     background-color: var(--app-background-color);
-    /* border: 3px solid green; */
 
     width: 100%;
     height: 30px;
@@ -145,10 +145,10 @@ ul {
 .player-display {
     background-color: var(--background-color);
 
-    padding: 14px;
-
     width: 226px;
     height: 153px;
+
+    padding: 14px;
 
     display: flex;
     flex-direction: column;
@@ -217,6 +217,42 @@ button {
 
 #playlist-songs li:not(li:last-child) {
     border-bottom: 1px solid var(--background-color);
+}
+
+.playlist-song {
+    font-size: var(--root-font-size);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 55px;
+    padding: 5px;
+
+    /* border: 2px solid green; */
+}
+
+.playlist-song-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.song-title {
+    font-size: 0.85rem;
+
+    width: 241px;
+
+    text-align: left;
+}
+
+.song-artist {
+    font-size: 0.725rem;
+    margin: 0 10px;
+}
+
+.song-duration {
+    font-size: 0.725rem;
+    width: 30px;
 }
 
 /*
