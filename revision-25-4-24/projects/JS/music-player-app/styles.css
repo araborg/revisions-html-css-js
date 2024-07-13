@@ -99,9 +99,17 @@ h1 {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: var(--font-family);
+}
+
 .fcc-title {
     font-family: var(--font-headline);
     margin: 0 10px;
+}
+
+.playlist-title {
+    font-family: var(--font-headline);
 }
 
 .player-content {
