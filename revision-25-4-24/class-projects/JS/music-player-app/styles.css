@@ -30,11 +30,11 @@ body {
 }
 
 .container {
-    /* justify-content: center; */
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* doesn't seems to be needed but added */
+    justify-content: center;
 
     margin-top: 10px;
 }
