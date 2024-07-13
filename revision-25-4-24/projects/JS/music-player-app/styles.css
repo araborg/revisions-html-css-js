@@ -160,8 +160,6 @@ ul {
 
 /* playlist */
 .playlist {
-    /* padding: 10px; */
-
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -169,10 +167,18 @@ ul {
     /* border: 4px solid green; */
 }
 
-.playlist-songs {
+#playlist-songs {
     background-color: var(--app-background-color);
 
+    padding: 10px;
+
     height: auto;
+
+    list-style: none;
+}
+
+#playlist-songs li:not(li:last-child) {
+    border-bottom: 1px solid var(--background-color);
 }
 
 /*
