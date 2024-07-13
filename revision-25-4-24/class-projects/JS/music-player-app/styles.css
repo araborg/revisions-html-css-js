@@ -206,10 +206,6 @@ button {
     row-gap: 10px;
 }
 
-.playlist-bar {
-    width: 100%;
-}
-
 #playlist-songs {
     padding: 8px 9px;
 
@@ -241,8 +237,6 @@ button {
     padding: 5px;
 
     color: var(--primary-color);
-
-    /* border: 2px solid red; */
 }
 
 .playlist-song-info {
@@ -279,10 +273,12 @@ button {
     align-items: center;
 }
 
-/* .replay:hover circle { */
-/* fill: var(--background-color); */
-/* background: var(--background-color); */
-/* } */
+/* 
+.replay:hover circle { 
+    fill: var(--background-color);
+    background: var(--background-color);
+} 
+*/
 
 .delete {
     /* to align d btn */
@@ -296,6 +292,16 @@ button {
 
 .playing svg {
     fill: var(--highlight-color);
+}
+
+/* media query */
+@media (max-width: 700px) {
+    /* border: 2px solid red; */
+
+    .player,
+    .playlist {
+        width: 350px;
+    }
 }
 
 /*
