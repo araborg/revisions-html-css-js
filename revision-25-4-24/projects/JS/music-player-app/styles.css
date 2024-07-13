@@ -155,7 +155,24 @@ ul {
 .player-display-song-artist {
     height: 80px;
 
-    border: 4px solid green;
+    /* border: 4px solid green; */
+}
+
+.player-display-song-artist p {
+    margin: 0;
+}
+
+#player-song-title {
+    font-size: 1.125rem;
+}
+
+#player-song-artist {
+    font-size: 0.85rem;
+    color: var(--highlight-color);
+}
+
+#player-song-duration {
+    font-size: 0.75rem;
 }
 
 /* playlist */
