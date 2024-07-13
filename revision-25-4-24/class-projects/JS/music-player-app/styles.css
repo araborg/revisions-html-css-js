@@ -230,7 +230,7 @@ button {
     height: 55px;
     padding: 5px;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .playlist-song-info {
@@ -267,14 +267,19 @@ button {
     align-items: center;
 }
 
+/* .replay:hover circle { */
+/* fill: var(--background-color); */
+/* background: var(--background-color); */
+/* } */
+
 .delete {
     /* to align d btn */
     display: flex;
     align-items: center;
 }
 
-.delete:hover center {
-    background-color: red;
+.delete:hover circle {
+    fill: red;
 }
 
 /*
