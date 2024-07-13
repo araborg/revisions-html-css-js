@@ -117,10 +117,28 @@ h2 {
 
     width: 430px;
     height: 200px;
+
+    padding: 14px;
+
+    display: flex;
+    align-items: center;
+
+    column-gap: 17px;
+}
+
+#player-album-art {
+    border: 6px solid var(--background-color);
+
+    background-color: var(--background-color);
 }
 
 #player-album-art img {
     width: 150px;
+    display: block;
+}
+
+.player-display {
+    background-color: var(--background-color);
 }
 
 /*
