@@ -143,8 +143,6 @@ ul {
 }
 
 .player-display {
-    background-color: var(--background-color);
-
     width: 226px;
     height: 153px;
 
@@ -152,13 +150,12 @@ ul {
 
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+
+    background-color: var(--background-color);
 }
 
 .player-display-song-artist {
     height: 80px;
-
-    /* border: 4px solid green; */
 }
 
 .player-display-song-artist p {
@@ -181,6 +178,7 @@ ul {
 .player-buttons {
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
 .player-buttons svg {
@@ -206,10 +204,6 @@ button {
     /* justify-content: start; */
 
     row-gap: 10px;
-
-    /* width: 100%; */
-    /* width: 450px; */
-    /* border: 4px solid green; */
 }
 
 .playlist-bar {
@@ -269,7 +263,7 @@ button {
 
 .song-duration {
     font-size: 0.725rem;
-    /* width: 30px; */
+    width: 30px;
 }
 
 .replay {
