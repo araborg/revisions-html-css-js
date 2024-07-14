@@ -304,6 +304,14 @@ button {
         width: 300px;
     }
 
+    .player {
+        height: 340px;
+    }
+
+    #playlist-songs {
+        height: 280px;
+    }
+
     h1 {
         font-size: 0.8125rem;
         line-height: 0;
