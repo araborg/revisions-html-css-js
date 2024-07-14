@@ -302,12 +302,42 @@ button {
 
 /* media query */
 @media (max-width: 700px) {
+    .player,
+    .playlist {
+        width: 300px;
+    }
+
+    .player-bar,
+    .playlist-bar,
+    .player-content,
+    #playlist-songs {
+        width: 280px;
+    }
+
+    .player-content {
+        position: relative;
+
+        display: inline;
+        justify-items: center;
+    }
+
+    #player-album-art {
+        height: 280px;
+    }
+
+    #player-album-art img {
+        width: 100%;
+    }
+
+    .player-display {
+        position: absolute;
+        top: 0;
+    }
 }
 
 /*
     width: 300px;
 
-    width: 5px;
 
     width: 280px;
 
@@ -319,7 +349,8 @@ button {
 
     width: 100%;
 
-    
+    UDEAFNULP0724
+
     height: 340px;
     
     height: 280px;
