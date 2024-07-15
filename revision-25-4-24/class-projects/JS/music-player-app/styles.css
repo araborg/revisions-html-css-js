@@ -171,6 +171,31 @@ ul {
     font-size: 0.75rem;
 }
 
+button:focus,
+.playlist-song:focus {
+    outline-width: 2px;
+    outline-style: dashed;
+}
+
+button {
+    background: transparent;
+    border: none;
+
+    font-size: var(--root-font-size);
+
+    text-align: center;
+    border: 3px solid green;
+}
+
+.player-buttons svg {
+    fill: var(--primary-color);
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* playlist */
 .playlist {
     height: auto;
