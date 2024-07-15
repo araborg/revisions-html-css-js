@@ -63,17 +63,23 @@ ul {
 .playlist {
     width: 450px;
 
-    border: 3px solid green;
-}
-
-/* 
-.player,
-.playlist {
-    width: 450px;
-
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
+
+.player {
+    height: 260px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    row-gap: 10px;
+}
+/* 
+
 
 .player {
     height: 260px;
