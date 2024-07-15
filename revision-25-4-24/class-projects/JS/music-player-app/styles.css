@@ -122,8 +122,6 @@ ul {
     align-items: center;
     justify-content: center;
     column-gap: 13px;
-
-    /* border: 3px solid green; */
 }
 
 #player-album-art {
@@ -137,6 +135,20 @@ ul {
 }
 
 .player-display {
+    height: 153px;
+    width: 226px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* border: 3px solid green; */
+
+    padding: 14px;
+
+    background-color: var(--background-color);
+}
+
+.player-display-song-artist {
 }
 
 /* playlist */
