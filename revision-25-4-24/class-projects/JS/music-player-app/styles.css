@@ -223,17 +223,17 @@ button {
     height: 100%;
     width: 430px;
 
-    padding: 8px 9px;
-    list-style: none;
-
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: start; */
+    justify-content: center;
     row-gap: 8px;
 
-    visibility: visible;
+    padding: 8px 9px;
 
-    /* border: 3px solid green; */
+    list-style: none;
+
+    visibility: visible;
 }
 
 .playlist-song {
@@ -309,4 +309,5 @@ button {
 
 /* Responsiveness */
 @media (max-width: 720px) {
+    /* border: 3px solid green; */
 }
