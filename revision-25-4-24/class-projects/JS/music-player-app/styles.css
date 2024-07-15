@@ -246,9 +246,24 @@ button {
     padding: 5px;
 
     outline-color: var(--highlight-color);
-    /* border: 3px solid red; */
 }
 
 [aria-current="true"] {
     background-color: var(--background-color);
+}
+
+.playlist-song-info {
+    /* height: 100%; */
+
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+
+    column-gap: 7px;
+    padding: 5px 0;
+
+    /* font-family: var(--font-family); */
+
+    /* border: 3px solid red; */
 }
