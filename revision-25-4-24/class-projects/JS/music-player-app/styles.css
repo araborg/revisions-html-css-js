@@ -149,7 +149,7 @@ ul {
 .player-display-song-artist {
     height: 80px;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 #player-song-title,
@@ -181,10 +181,15 @@ button {
     background: transparent;
     border: none;
 
+    outline-color: var(--highlight-color);
+    /* color: var(--primary-color); */
+
     font-size: var(--root-font-size);
 
     text-align: center;
-    border: 3px solid green;
+
+    cursor: pointer;
+    /* border: 3px solid green; */
 }
 
 .player-buttons svg {
@@ -194,6 +199,10 @@ button {
 .player-buttons {
     display: flex;
     justify-content: space-around;
+}
+
+.playing > svg {
+    fill: var(--highlight-color);
 }
 
 /* playlist */
