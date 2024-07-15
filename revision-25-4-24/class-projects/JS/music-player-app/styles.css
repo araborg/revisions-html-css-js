@@ -212,9 +212,29 @@ button {
 
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     row-gap: 10px;
 }
 
-.playlist-songs {
-    background-color: var(--foreground-color);
+.playlist li:not(li:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
+
+#playlist-songs {
+    height: 100%;
+    width: 430px;
+
+    padding: 8px 9px;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    visibility: visible;
+}
+
+.playlist-song {
+    outline-color: var(--highlight-color);
+    border: 3px solid red;
 }
