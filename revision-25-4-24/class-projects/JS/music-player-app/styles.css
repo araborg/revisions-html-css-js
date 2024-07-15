@@ -84,6 +84,11 @@ ul {
     row-gap: 10px;
 }
 
+.player-bar,
+.playlist-bar {
+    border: 3px solid green;
+}
+
 .parallel-lines > div {
     height: 2px;
 
