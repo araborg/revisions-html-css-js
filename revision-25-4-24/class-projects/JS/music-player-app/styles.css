@@ -163,8 +163,12 @@ ul {
 }
 
 #player-song-artist {
-    font-size: 0.75;
+    font-size: 0.75rem;
     color: var(--highlight-color);
+}
+
+#player-song-duration {
+    font-size: 0.75rem;
 }
 
 /* playlist */
