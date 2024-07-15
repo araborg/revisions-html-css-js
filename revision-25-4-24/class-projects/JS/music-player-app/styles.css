@@ -59,8 +59,11 @@ ul {
     /* justify-content: center; */
 }
 
-#player-album-art img {
-    width: 150px;
+.player,
+.playlist {
+    width: 450px;
+
+    border: 3px solid green;
 }
 
 /* 
@@ -86,3 +89,7 @@ ul {
 
 
 */
+
+#player-album-art img {
+    width: 150px;
+}
