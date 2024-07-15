@@ -37,18 +37,19 @@ h2 {
     font-size: var(--root-font-size);
 }
 
-/* 
-
 .fcc-title,
 .playlist-title {
     color: var(--secondary-color);
-    margin: 0 10px;
     font-family: var(--font-headline);
 }
 
 ul {
     margin: 0;
 }
+
+/* 
+
+
 
 
 */
