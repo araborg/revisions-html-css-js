@@ -141,14 +141,30 @@ ul {
     display: flex;
     flex-direction: column;
 
-    /* border: 3px solid green; */
-
     padding: 14px;
 
     background-color: var(--background-color);
 }
 
 .player-display-song-artist {
+    height: 80px;
+
+    border: 3px solid green;
+}
+
+#player-song-title,
+#player-song-artist,
+#player-song-duration {
+    margin: 0;
+}
+
+#player-song-title {
+    font-size: 1.125rem;
+}
+
+#player-song-artist {
+    font-size: 0.75;
+    color: var(--highlight-color);
 }
 
 /* playlist */
