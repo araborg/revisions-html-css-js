@@ -87,8 +87,6 @@ ul {
 
 .player-bar,
 .playlist-bar {
-    /* border: 3px solid green; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,14 +115,39 @@ ul {
 }
 
 .player-content {
+    width: 430px;
+    height: 200px;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 13px;
+
+    /* border: 3px solid green; */
+}
+
+#player-album-art {
+    background-color: var(--secondary-color);
+    border: 6px solid var(--background-color);
 }
 
 #player-album-art img {
     width: 150px;
+    display: block;
+}
+
+.player-display {
 }
 
 /* playlist */
+.playlist {
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 
 .playlist-songs {
     background-color: var(--foreground-color);
