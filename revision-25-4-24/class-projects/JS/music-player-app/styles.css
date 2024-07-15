@@ -77,6 +77,20 @@ ul {
 .player {
     height: 260px;
     padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.parallel-lines > div {
+    height: 2px;
+
+    width: 100%;
+    min-width: 75px;
+
+    background-color: var(--highlight-color);
 }
 
 .player-content {
