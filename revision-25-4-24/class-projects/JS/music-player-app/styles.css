@@ -189,7 +189,6 @@ button {
     text-align: center;
 
     cursor: pointer;
-    /* border: 3px solid green; */
 }
 
 .player-buttons svg {
@@ -212,7 +211,7 @@ button {
 
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     row-gap: 10px;
 }
 
@@ -229,12 +228,27 @@ button {
 
     display: flex;
     flex-direction: column;
+    justify-content: start;
     row-gap: 8px;
 
     visibility: visible;
+
+    /* border: 3px solid green; */
 }
 
 .playlist-song {
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px;
+
     outline-color: var(--highlight-color);
-    border: 3px solid red;
+    /* border: 3px solid red; */
+}
+
+[aria-current="true"] {
+    background-color: var(--background-color);
 }
