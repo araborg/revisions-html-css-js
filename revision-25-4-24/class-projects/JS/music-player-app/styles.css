@@ -294,3 +294,15 @@ button {
 .replay {
     fill: var(--primary-color);
 }
+
+.song-delete {
+    padding: 0;
+
+    width: 20px;
+    height: 20px;
+}
+
+.song-delete:hover circle,
+.song-delete:focus circle {
+    fill: #ff0000;
+}
