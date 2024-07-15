@@ -148,8 +148,6 @@ ul {
 
 .player-display-song-artist {
     height: 80px;
-
-    /* border: 3px solid green; */
 }
 
 #player-song-title,
@@ -225,8 +223,10 @@ button {
 
     display: flex;
     flex-direction: column;
+
     /* justify-content: start; */
     justify-content: center;
+
     row-gap: 8px;
 
     padding: 8px 9px;
@@ -253,16 +253,16 @@ button {
 }
 
 .playlist-song-info {
-    /* height: 100%; */
-
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: space-around;
 
     column-gap: 7px;
     padding: 5px 0;
 
+    /* Not necessary */
+    /* flex-direction: row; */
+    /* height: 100%; */
     /* font-family: var(--font-family); */
 }
 
@@ -271,15 +271,14 @@ button {
     width: 235px;
 
     font-size: 0.85rem;
-    /* text-align: left; */
 
-    /* border: 3px solid red; */
+    /* text-align: left; */
 }
 
 .song-artist {
     font-size: 0.725rem;
-    /* width: 80px; */
 
+    /* width: 80px; */
     width: 75px;
 }
 
@@ -293,6 +292,9 @@ button {
 
 .song-replay {
     fill: var(--primary-color);
+
+    display: flex;
+    align-items: center;
 }
 
 .song-delete {
