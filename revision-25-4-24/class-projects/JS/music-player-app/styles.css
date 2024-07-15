@@ -282,3 +282,15 @@ button {
 
     width: 75px;
 }
+
+.song-duration {
+    font-size: 0.725rem;
+    margin: auto;
+    width: 30px;
+
+    font-family: var(--font-headline);
+}
+
+.replay {
+    fill: var(--primary-color);
+}
