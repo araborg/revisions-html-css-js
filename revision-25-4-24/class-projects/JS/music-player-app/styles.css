@@ -306,3 +306,7 @@ button {
 .song-delete:focus circle {
     fill: #ff0000;
 }
+
+/* Responsiveness */
+@media (max-width: 720px) {
+}
