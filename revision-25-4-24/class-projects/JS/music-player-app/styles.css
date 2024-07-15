@@ -66,3 +66,27 @@ ul {
     background-color: var(--background-color);
     border: 3px solid var(--foreground-color);
 }
+
+.player-bar,
+.player-content,
+.playlist-bar,
+#playlist-songs {
+    background-color: var(--foreground-color);
+}
+
+.player {
+    height: 260px;
+    padding: 10px;
+}
+
+.player-content {
+    display: flex;
+}
+
+#player-album-art img {
+    width: 150px;
+}
+
+.playlist-songs {
+    background-color: var(--foreground-color);
+}
