@@ -291,7 +291,7 @@ button {
     font-family: var(--font-headline);
 }
 
-.replay {
+.song-replay {
     fill: var(--primary-color);
 }
 
