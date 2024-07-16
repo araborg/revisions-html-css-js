@@ -47,6 +47,16 @@ body {
     padding: 10px;
 }
 
+.player-bar,
+.playlist-bar,
+.player-content,
+#playlist-songs {
+    background-color: var(--foreground-color);
+}
+
+.player {
+}
+
 #player-album-art img {
     width: 150px;
 }
