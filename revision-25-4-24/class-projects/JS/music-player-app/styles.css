@@ -33,6 +33,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin-top: 10px;
+}
+
+.player,
+.playlist {
+    width: 450px;
+
+    border: 6px solid var(--foreground-color);
 }
 
 #player-album-art img {
