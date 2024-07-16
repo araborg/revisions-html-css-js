@@ -224,8 +224,8 @@ button {
     display: flex;
     flex-direction: column;
 
-    /* justify-content: start; */
-    justify-content: center;
+    justify-content: start;
+    /* justify-content: center; */
 
     row-gap: 8px;
 
