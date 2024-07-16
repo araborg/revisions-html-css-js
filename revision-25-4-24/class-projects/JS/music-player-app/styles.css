@@ -260,10 +260,12 @@ button {
     column-gap: 7px;
     padding: 5px 0;
 
-    /* Not necessary */
-    /* flex-direction: row; */
-    /* height: 100%; */
-    /* font-family: var(--font-family); */
+    /* 
+        Not necessary:
+        height: 100%;
+        flex-direction: row;
+        font-family: var(--font-family);
+    */
 }
 
 .song-title {
@@ -280,6 +282,7 @@ button {
 
     /* width: 80px; */
     width: 75px;
+    margin: auto;
 }
 
 .song-duration {
