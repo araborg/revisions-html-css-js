@@ -41,7 +41,10 @@ body {
 .playlist {
     width: 450px;
 
+    background-color: var(--background-color);
     border: 6px solid var(--foreground-color);
+
+    padding: 10px;
 }
 
 #player-album-art img {
