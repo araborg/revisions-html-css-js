@@ -15,3 +15,13 @@
     --font-headline: "Roboto Mono", monospace;
     --font-family: "Lato", sans-serif;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#player-album-art img {
+    width: 150px;
+}
