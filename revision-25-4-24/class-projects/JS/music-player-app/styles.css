@@ -350,8 +350,12 @@ button {
     }
 
     .player-content {
+        /* height: 100%; */
+
         display: inline;
-        justify-items: center;
+        /* justify-items: center; */
+
+        position: relative;
     }
 
     /* .player-content {
@@ -362,4 +366,18 @@ button {
 
         z-index: -100;
     } */
+
+    .player-display {
+        position: absolute;
+        top: 0;
+
+        width: 100%;
+        height: 280px;
+
+        background-color: transparent;
+        text-align: center;
+        /* justify-content: space-between; */
+
+        z-index: 100;
+    }
 }
