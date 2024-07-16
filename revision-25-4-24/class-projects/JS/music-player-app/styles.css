@@ -332,15 +332,6 @@ button {
         width: 280px;
     }
 
-    #playlist-songs {
-        height: 280px;
-
-        overflow-y: scroll;
-        overflow-x: hidden;
-
-        padding: 5px 6px;
-    }
-
     h1 {
         font-size: 0.813rem;
     }
@@ -385,5 +376,36 @@ button {
         justify-content: space-between;
 
         z-index: 100;
+    }
+
+    .player-display-song-artist {
+        padding: 0 10px;
+    }
+
+    /* .player-display-song-artist > p { */
+    /* white-space: pre-wrap; */
+    /* } */
+
+    #playlist-songs {
+        height: 280px;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        padding: 5px 6px;
+    }
+
+    /*
+        .playlist-song {
+            justify-content: space-between;
+        }
+    */
+
+    .song-title {
+        width: 140px;
+    }
+
+    .song-artist {
+        width: 40px;
     }
 }
