@@ -169,6 +169,15 @@ ul {
     font-size: 0.75rem;
 }
 
+.player-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-buttons svg {
+    fill: var(--primary-color);
+}
+
 button:focus,
 .playlist-song:focus {
     outline-width: 2px;
@@ -187,15 +196,6 @@ button {
     text-align: center;
 
     cursor: pointer;
-}
-
-.player-buttons svg {
-    fill: var(--primary-color);
-}
-
-.player-buttons {
-    display: flex;
-    justify-content: space-around;
 }
 
 .playing > svg {
