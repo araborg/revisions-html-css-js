@@ -350,7 +350,7 @@ button {
     }
 
     .player-content {
-        /* height: 100%; */
+        height: 100%;
 
         display: inline;
         /* justify-items: center; */
@@ -358,14 +358,20 @@ button {
         position: relative;
     }
 
-    /* .player-content {
+    #player-album-art {
         height: 280px;
 
         box-shadow: none;
         background: #000;
 
         z-index: -100;
-    } */
+    }
+
+    #player-album-art img {
+        width: 100%;
+
+        opacity: 0.6;
+    }
 
     .player-display {
         position: absolute;
@@ -376,7 +382,7 @@ button {
 
         background-color: transparent;
         text-align: center;
-        /* justify-content: space-between; */
+        justify-content: space-between;
 
         z-index: 100;
     }
