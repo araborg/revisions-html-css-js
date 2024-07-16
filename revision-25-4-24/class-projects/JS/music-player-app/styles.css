@@ -47,6 +47,18 @@ body {
     padding: 10px;
 }
 
+h1 {
+    font-size: 1.125rem;
+}
+
+h2 {
+    font-size: var(--root-font-size);
+}
+
+ul {
+    margin: 0;
+}
+
 .player-bar,
 .playlist-bar,
 .player-content,
@@ -64,7 +76,25 @@ body {
     /* align-items: center; */
 }
 
+.player-bar,
+.playlist-bar {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    /* justify-content: space-between; */
+
+    padding: 0 5px;
+}
+
 .parallel-lines {
+    display: flex;
+    flex-wrap: wrap;
+
+    row-gap: 6px;
+
+    padding: 0 5px;
 }
 
 .parallel-lines > div {
