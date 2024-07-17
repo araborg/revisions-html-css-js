@@ -306,6 +306,10 @@ button:focus,
         font-size: 0.75rem;
     }
 
+    .player-content {
+        height: 280px;
+    }
+
     .playlist-title {
         margin: 0 5px;
     }
