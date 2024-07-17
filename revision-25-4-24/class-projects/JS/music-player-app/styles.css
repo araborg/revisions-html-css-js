@@ -257,11 +257,15 @@ button:focus,
     margin: auto;
 }
 
-.song-replay > svg {
-    fill: var(--primary-color);
+.song-delete,
+.song-replay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.song-delete {
+.song-replay > svg {
+    fill: var(--primary-color);
 }
 
 .song-delete:hover circle {
