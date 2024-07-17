@@ -282,7 +282,19 @@ button:focus,
 @media (max-width: 700px) {
     .player,
     .playlist {
-        width: 350px;
+        width: 300px;
+    }
+
+    .player {
+        height: 340px;
+    }
+
+    .player-bar {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        padding: 0 75px;
     }
 
     h1 {
@@ -294,8 +306,26 @@ button:focus,
         font-size: 0.75rem;
     }
 
-    .fcc-title,
     .playlist-title {
         margin: 0 5px;
+    }
+
+    .fcc-title {
+        margin: 0 2.5px;
+        padding: 0;
+    }
+
+    .playlist {
+        /* height: 280px; */
+
+        /* overflow-y: scroll; */
+        /* overflow-x: hidden; */
+
+        /* align-items: start; */
+        /* justify-content: start; */
+        /* justify-items: start; */
+    }
+
+    #playlist-song {
     }
 }
