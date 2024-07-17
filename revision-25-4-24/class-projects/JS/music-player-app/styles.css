@@ -202,10 +202,15 @@ button:focus,
 .playlist {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     row-gap: 10px;
 }
 
 #playlist-songs {
+    height: auto;
+    width: 430px;
+
     padding: 8px 9px;
 
     display: flex;
@@ -213,9 +218,13 @@ button:focus,
     row-gap: 5px;
 
     list-style: none;
+
+    /* border: 2px solid green; */
 }
 
 .playlist-song {
+    height: 55px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -231,18 +240,20 @@ button:focus,
 }
 
 .song-title {
-    font-size: 0.813rem;
-    width: 240px;
+    font-size: 0.85rem;
+    width: 236px;
 }
 
 .song-artist {
     font-size: 0.7rem;
-    width: 80px;
+    width: 75px;
 }
 
 .song-duration {
     font-size: 0.7rem;
     width: 30px;
+
+    margin: auto;
 }
 
 /* Media Quaries: Responsiveness */
