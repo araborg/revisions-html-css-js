@@ -216,6 +216,7 @@ button:focus,
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 5px;
 
     list-style: none;
@@ -223,26 +224,28 @@ button:focus,
 
 .playlist-song {
     height: 55px;
+    /* width: 100%; */
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 5px;
+    padding: 5px;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .playlist-song-info {
     display: flex;
-
     justify-content: space-around;
     align-items: center;
+
+    column-gap: 10px;
 }
 
 .song-title {
     font-size: 0.85rem;
-    width: 236px;
+    width: 230px;
 }
 
 .song-artist {
@@ -262,6 +265,9 @@ button:focus,
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* width: 20px; */
+    /* height: 20px; */
 }
 
 .song-replay > svg {
