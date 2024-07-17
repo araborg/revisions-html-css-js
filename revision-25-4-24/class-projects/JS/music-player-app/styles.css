@@ -218,11 +218,29 @@ button:focus,
 .playlist-song {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     border: 2px solid green;
 }
 
 .playlist-song-info {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.song-title {
+    font-size: 0.813rem;
+    width: 240px;
+}
+
+.song-artist {
+    font-size: 0.75rem;
+    width: 80px;
+}
+
+.song-duration {
 }
 
 /* Media Quaries: Responsiveness */
