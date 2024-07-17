@@ -286,7 +286,16 @@ button:focus,
     }
 
     h1 {
-        font-size: 1.125rem;
-        line-height: 1.6;
+        font-size: 0.8125rem;
+        line-height: 0;
+    }
+
+    h2 {
+        font-size: 0.75rem;
+    }
+
+    .fcc-title,
+    .playlist-title {
+        margin: 0 5px;
     }
 }
