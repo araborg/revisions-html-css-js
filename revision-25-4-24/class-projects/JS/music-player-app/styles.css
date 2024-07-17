@@ -235,8 +235,6 @@ button:focus,
     align-items: center;
 
     padding: 5px;
-
-    /* border: 2px solid green; */
 }
 
 .playlist-song-info {
@@ -269,9 +267,6 @@ button:focus,
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* width: 20px; */
-    /* height: 20px; */
 }
 
 .song-replay > svg {
@@ -283,3 +278,10 @@ button:focus,
 }
 
 /* Media Quaries: Responsiveness */
+
+@media (max-width: 700px) {
+    .player,
+    .playlist {
+        width: 350px;
+    }
+}
