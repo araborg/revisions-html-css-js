@@ -197,3 +197,18 @@ button:focus,
     outline-width: 2px;
     outline-style: dashed;
 }
+
+/* Playlist */
+.playlist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#playlist-songs {
+    padding: 8px 9px;
+
+    list-style: none;
+}
+
+/* Media Quaries: Responsiveness */
