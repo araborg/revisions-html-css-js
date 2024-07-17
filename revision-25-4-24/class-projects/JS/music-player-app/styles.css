@@ -236,11 +236,13 @@ button:focus,
 }
 
 .song-artist {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     width: 80px;
 }
 
 .song-duration {
+    font-size: 0.7rem;
+    width: 30px;
 }
 
 /* Media Quaries: Responsiveness */
