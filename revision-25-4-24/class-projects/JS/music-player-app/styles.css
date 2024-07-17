@@ -222,9 +222,13 @@ button:focus,
     list-style: none;
 }
 
+#playlist-songs li:not(li:last-child) {
+    border-bottom: 1px solid var(--background-color);
+}
+
 .playlist-song {
     height: 55px;
-    /* width: 100%; */
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
