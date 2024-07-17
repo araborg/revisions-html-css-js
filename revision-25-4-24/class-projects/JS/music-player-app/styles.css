@@ -218,8 +218,6 @@ button:focus,
     row-gap: 5px;
 
     list-style: none;
-
-    /* border: 2px solid green; */
 }
 
 .playlist-song {
@@ -228,6 +226,8 @@ button:focus,
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 0 5px;
 
     border: 2px solid green;
 }
@@ -258,6 +258,10 @@ button:focus,
 
 .song-replay > svg {
     fill: var(--primary-color);
+}
+
+.song-delete:hover circle {
+    border: 2px solid red;
 }
 
 /* Media Quaries: Responsiveness */
