@@ -208,7 +208,21 @@ button:focus,
 #playlist-songs {
     padding: 8px 9px;
 
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
     list-style: none;
+}
+
+.playlist-song {
+    display: flex;
+    justify-content: space-between;
+
+    border: 2px solid green;
+}
+
+.playlist-song-info {
 }
 
 /* Media Quaries: Responsiveness */
