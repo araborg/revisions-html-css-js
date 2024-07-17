@@ -256,4 +256,8 @@ button:focus,
     margin: auto;
 }
 
+.song-replay > svg {
+    fill: var(--primary-color);
+}
+
 /* Media Quaries: Responsiveness */
