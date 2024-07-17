@@ -175,3 +175,12 @@ ul {
 .player-buttons {
     display: flex;
 }
+
+.player-buttons svg {
+    fill: var(--primary-color);
+}
+
+button {
+    background: transparent;
+    border: none;
+}
