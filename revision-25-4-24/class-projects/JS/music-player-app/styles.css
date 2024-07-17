@@ -186,6 +186,7 @@ button {
     border: none;
 
     text-align: center;
+    font-size: var(--root-font-size);
 
     cursor: pointer;
 
@@ -260,8 +261,11 @@ button:focus,
     fill: var(--primary-color);
 }
 
+.song-delete {
+}
+
 .song-delete:hover circle {
-    border: 2px solid red;
+    fill: red;
 }
 
 /* Media Quaries: Responsiveness */
