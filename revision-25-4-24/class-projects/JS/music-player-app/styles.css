@@ -285,6 +285,7 @@ button:focus,
         width: 300px;
     }
 
+    /* player */
     .player {
         height: 340px;
     }
@@ -310,6 +311,7 @@ button:focus,
         height: 280px;
     }
 
+    /* playlist */
     .playlist-title {
         margin: 0 5px;
     }
