@@ -334,6 +334,8 @@ button:focus,
 
         height: 280px;
         width: 280px;
+
+        justify-content: space-between;
     }
 
     /* playlist */
