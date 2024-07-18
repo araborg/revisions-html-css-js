@@ -329,7 +329,7 @@ button:focus,
     #player-album-art img {
         width: 100%;
 
-        /* opacity: 0.6; */
+        opacity: 0.6;
     }
 
     .player-display {
@@ -343,7 +343,7 @@ button:focus,
 
         justify-content: space-between;
 
-        border: 3px solid green;
+        /* border: 3px solid green; */
     }
 
     .player-display-song-artist {
