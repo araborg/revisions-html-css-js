@@ -287,6 +287,8 @@ button:focus,
 
     .player {
         height: 340px;
+
+        border: 2px solid white;
     }
 
     .player-bar {
@@ -302,24 +304,43 @@ button:focus,
         line-height: 0;
     }
 
-    h2 {
-        font-size: 0.75rem;
-    }
-
-    .player-content {
-        height: 280px;
-    }
-
-    .playlist-title {
-        margin: 0 5px;
-    }
-
     .fcc-title {
         margin: 0 2.5px;
         padding: 0;
     }
 
+    h2 {
+        font-size: 0.75rem;
+    }
+
+    .player-content {
+        position: relative;
+
+        height: 280px;
+        width: 280px;
+
+        display: inline;
+
+        /* border: 3px solid green; */
+    }
+
+    #player-album-art {
+    }
+
+    #player-album-art img {
+        width: 100%;
+    }
+
+    .player-display {
+        position: absolute;
+        top: 0;
+
+        width: 280px;
+    }
+
     .playlist {
+        border: 2px solid yellow;
+
         /* height: 280px; */
 
         /* overflow-y: scroll; */
@@ -328,6 +349,10 @@ button:focus,
         /* align-items: start; */
         /* justify-content: start; */
         /* justify-items: start; */
+    }
+
+    .playlist-title {
+        margin: 0 5px;
     }
 
     #playlist-song {
