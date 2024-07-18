@@ -335,11 +335,21 @@ button:focus,
         height: 280px;
         width: 280px;
 
+        padding: 10px;
+
         justify-content: space-between;
+        align-items: center;
+        /* text-align: center; */
     }
 
     .player-display-song-artist {
         text-align: center;
+    }
+
+    #player-song-title {
+        width: 232px;
+
+        white-space: wrap;
     }
 
     #player-song-duration {
