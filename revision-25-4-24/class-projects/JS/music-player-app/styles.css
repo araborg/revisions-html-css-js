@@ -288,7 +288,7 @@ button:focus,
     .player {
         height: 340px;
 
-        border: 2px solid white;
+        /* border: 2px solid white; */
     }
 
     .player-bar {
@@ -320,8 +320,6 @@ button:focus,
         width: 280px;
 
         display: inline;
-
-        /* border: 3px solid green; */
     }
 
     #player-album-art {
@@ -336,6 +334,13 @@ button:focus,
         top: 0;
 
         width: 280px;
+        height: 280px;
+
+        background-color: transparent;
+
+        justify-content: space-between;
+
+        border: 3px solid green;
     }
 
     .playlist {
