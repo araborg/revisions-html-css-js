@@ -372,6 +372,15 @@ button:focus,
     }
 
     .song-title {
-        width: 150px;
+        width: 130px;
+    }
+
+    .song-artist {
+        width: 10px;
+        margin-right: 25px;
+    }
+
+    .song-replay {
+        padding: 1px 0;
     }
 }
