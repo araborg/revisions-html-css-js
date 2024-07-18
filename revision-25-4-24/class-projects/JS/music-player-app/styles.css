@@ -323,10 +323,13 @@ button:focus,
     }
 
     #player-album-art {
+        background-color: #000;
     }
 
     #player-album-art img {
         width: 100%;
+
+        /* opacity: 0.6; */
     }
 
     .player-display {
@@ -341,6 +344,10 @@ button:focus,
         justify-content: space-between;
 
         border: 3px solid green;
+    }
+
+    .player-display-song-artist {
+        text-align: center;
     }
 
     .playlist {
