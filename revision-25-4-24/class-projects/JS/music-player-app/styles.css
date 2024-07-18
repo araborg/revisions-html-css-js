@@ -342,6 +342,10 @@ button:focus,
         text-align: center;
     }
 
+    #player-song-duration {
+        font-weight: 600;
+    }
+
     /* playlist */
     .playlist-title {
         margin: 0 5px;
