@@ -338,6 +338,10 @@ button:focus,
         justify-content: space-between;
     }
 
+    .player-display-song-artist {
+        text-align: center;
+    }
+
     /* playlist */
     .playlist-title {
         margin: 0 5px;
