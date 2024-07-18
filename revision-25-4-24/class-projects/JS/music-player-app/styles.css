@@ -308,7 +308,27 @@ button:focus,
     }
 
     .player-content {
+        position: relative;
+
         height: 280px;
+        width: 280px;
+
+        display: inline;
+    }
+
+    #player-album-art {
+        background: #000;
+    }
+
+    #player-album-art img {
+        width: 100%;
+
+        opacity: 0.6;
+    }
+
+    .player-display {
+        position: absolute;
+        top: 0;
     }
 
     /* playlist */
@@ -322,14 +342,6 @@ button:focus,
     }
 
     .playlist {
-        /* height: 280px; */
-
-        /* overflow-y: scroll; */
-        /* overflow-x: hidden; */
-
-        /* align-items: start; */
-        /* justify-content: start; */
-        /* justify-items: start; */
     }
 
     #playlist-song {
