@@ -204,6 +204,7 @@ button:focus,
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     row-gap: 10px;
 }
@@ -353,10 +354,10 @@ button:focus,
     .playlist {
         border: 2px solid yellow;
 
-        /* height: 280px; */
+        height: 280px;
 
-        /* overflow-y: scroll; */
-        /* overflow-x: hidden; */
+        overflow-y: scroll;
+        overflow-x: hidden;
 
         /* align-items: start; */
         /* justify-content: start; */
@@ -367,6 +368,7 @@ button:focus,
         margin: 0 5px;
     }
 
-    #playlist-song {
+    #playlist-songs {
+        width: 280px;
     }
 }
