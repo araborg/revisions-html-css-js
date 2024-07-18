@@ -1,11 +1,9 @@
-/*
-const playlistSongs
-const playButton
-const pauseButton
-const nextButton
-const previousButton
-const shuffleButton
-
+// const playlistSongs
+// const playButton
+// const pauseButton
+// const nextButton
+// const previousButton
+// const shuffleButton
 
 const allSongs = [
     {
@@ -49,53 +47,34 @@ const allSongs = [
     },
 ];
 
+// const audio
 
-const audio
+// let userData
 
+// const playSong
 
-let userData
+// const pauseSong
 
+// const playNextSong
 
-const playSong
+// const playPreviousSong
 
+// const shuffle
 
-const pauseSong
+// const deleteSong
 
+// const setPlayerDisplay
 
-const playNextSong
+// const highlightCurrentSong
 
+// const renderSongs
 
-const playPreviousSong
+// const setPlayButtonAccessibleText
 
+// const getCurrentSongIndex
 
-const shuffle
+// const sortSongs
 
+// const replayAllSongs
 
-const deleteSong
-
-
-const setPlayerDisplay
-
-
-const highlightCurrentSong
-
-
-const renderSongs
-
-
-const setPlayButtonAccessibleText
-
-
-const getCurrentSongIndex
-
-
-const sortSongs
-
-
-const replayAllSongs
-
-
-const replaySong
-
-
-*/
+// const replaySong
