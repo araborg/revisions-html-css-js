@@ -359,6 +359,11 @@ button:focus,
     .playlist {
     }
 
-    #playlist-song {
+    #playlist-songs {
+        height: 280px;
+        width: 280px;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 }
