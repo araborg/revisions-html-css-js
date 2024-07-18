@@ -336,20 +336,11 @@ button:focus,
         width: 280px;
 
         justify-content: space-between;
-        /* align-items: center; */
     }
 
     .player-display-song-artist {
-        /* width: 100%; */
-        /* width: 225px; */
-
-        /* margin: 0 auto; */
-
         text-align: center;
         padding: 0 10px;
-    }
-
-    #player-song-title {
     }
 
     #player-song-duration {
@@ -364,9 +355,6 @@ button:focus,
     .fcc-title {
         margin: 0 2.5px;
         padding: 0;
-    }
-
-    .playlist {
     }
 
     #playlist-songs {
