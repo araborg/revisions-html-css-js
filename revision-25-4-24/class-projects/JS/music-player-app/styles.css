@@ -234,7 +234,7 @@ button:focus,
     justify-content: space-between;
     align-items: center;
 
-    padding: 5px;
+    padding: 10px 5px;
 }
 
 .playlist-song-info {
@@ -344,7 +344,7 @@ button:focus,
     }
 
     #player-song-duration {
-        font-weight: 600;
+        font-weight: 800;
     }
 
     /* playlist */
