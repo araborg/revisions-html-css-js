@@ -366,4 +366,12 @@ button:focus,
         overflow-y: scroll;
         overflow-x: hidden;
     }
+
+    .playlist-song {
+        width: 100%;
+    }
+
+    .song-title {
+        width: 150px;
+    }
 }
