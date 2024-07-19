@@ -51,8 +51,6 @@ const allSongs = [
 
 const audio = new Audio();
 
-console.log(audio);
-
 // let userData
 
 // const playSong
