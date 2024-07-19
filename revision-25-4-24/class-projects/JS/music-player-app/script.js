@@ -163,12 +163,15 @@ const pauseSong = () => {
     playButton.classList.remove("playing");
 
     userData.currentTime = audio.currentTime;
-    console.log(userData.currentTime);
 
     audio.pause();
 };
 
 pauseButton.addEventListener("click", pauseSong);
+
+audio.addEventListener("ended", () => {
+    console.log(userData.currentTime);
+});
 
 // const playNextSong
 
