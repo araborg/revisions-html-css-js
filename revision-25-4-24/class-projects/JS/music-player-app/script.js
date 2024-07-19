@@ -150,6 +150,8 @@ const playSong = (id) => {
 playButton.addEventListener("click", () => {
     if (!userData.currentSong) {
         playSong(userData.songs[0]);
+    } else {
+        playButton(userData?.currentSong.id);
     }
 });
 
