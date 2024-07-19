@@ -169,16 +169,20 @@ const pauseSong = () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
-const songId = getCurrentSongIndex();
+const getDuration = () => {
+    const songId = getCurrentSongIndex();
 
-if (userData.currentSong.id !== userData.songs[songId]) {
-    userData.currentTime = 0;
-} else {
-    audio.addEventListener("ended", () => {
-        userData.currentTime = audio.currentTime;
-    });
-    console.log(userData.currentTime);
-}
+    if (userData?.currentSong?.id !== userData.songs[songId]) {
+        userData.currentTime = 0;
+    } else {
+        audio.addEventListener("ended", () => {
+            userData.currentTime = audio.currentTime;
+        });
+        console.log(userData.currentTime);
+    }
+};
+
+getDuration();
 
 // const playNextSong
 
