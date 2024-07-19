@@ -7,16 +7,6 @@ const nextButton = document.getElementById("next");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
-console.log(
-    playlistSongs,
-    playButton,
-    pauseButton,
-    nextButton,
-    previousButton,
-    shuffleButton,
-    replayButton
-);
-
 const allSongs = [
     {
         id: 0,
