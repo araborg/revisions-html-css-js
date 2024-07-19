@@ -233,10 +233,6 @@ button:focus,
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 10px 5px;
-
-    border: 2px solid rebeccapurple;
 }
 
 .playlist-song-info {
@@ -247,6 +243,8 @@ button:focus,
     column-gap: 10px;
 
     cursor: pointer;
+
+    padding: 10px 5px;
 }
 
 .song-title {
