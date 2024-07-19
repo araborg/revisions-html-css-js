@@ -143,6 +143,8 @@ const playSong = (id) => {
     }
 
     userData.currentSong = songEl;
+
+    audio.play();
 };
 
 // const pauseSong
