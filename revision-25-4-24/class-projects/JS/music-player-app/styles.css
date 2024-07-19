@@ -202,19 +202,22 @@ button:focus,
 /* Playlist */
 .playlist {
     height: auto;
+    padding: 10px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     row-gap: 10px;
+
+    border: 2px solid red;
 }
 
 #playlist-songs {
     height: 100%;
     width: 430px;
 
-    padding: 8px 9px;
+    /* padding: 8px 9px; */
 
     display: flex;
     flex-direction: column;
@@ -222,6 +225,8 @@ button:focus,
     row-gap: 5px;
 
     list-style: none;
+
+    border: 2px solid yellow;
 }
 
 #playlist-songs li:not(li:last-child) {
@@ -230,13 +235,16 @@ button:focus,
 
 .playlist-song {
     height: 55px;
-    width: 100%;
+    /* width: 100%; */
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 5px;
+    border: 2px solid green;
+
+    /* padding: 10px 5px; */
+    /* padding: 5px; */
 }
 
 .playlist-song-info {
