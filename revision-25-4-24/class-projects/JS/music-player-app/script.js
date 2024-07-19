@@ -49,7 +49,9 @@ const allSongs = [
     },
 ];
 
-// const audio
+const audio = new Audio();
+
+console.log(audio);
 
 // let userData
 
