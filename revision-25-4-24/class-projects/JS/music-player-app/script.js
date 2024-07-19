@@ -58,15 +58,13 @@ let userData = {
 };
 
 const renderSongs = (array) => {
-    array.map((song) => {
+    const songHTML = array.map((song) => {
         `
             <li class='playlist-song'>
                 <div class="playlist-song-info">
-                    <span class="song-title"
-                        >Can't Stop Me. Can't Even Slow Me Down.
-                    </span>
-                    <span class="song-artist"> Quincy Larson </span>
-                    <span class="song-duration"> 3:52 </span>
+                    <span class="song-title">${song.title}</span>
+                    <span class="song-artist">${song.artist}</span>
+                    <span class="song-duration">${song.duration}</span>
                 </div>
 
                 <button class="song-replay">
@@ -104,6 +102,8 @@ const renderSongs = (array) => {
             
         `;
     });
+
+    console.log(songHTML);
 };
 
 renderSongs(userData.songs);
