@@ -237,8 +237,6 @@ button:focus,
     justify-content: space-between;
     align-items: center;
 
-    border: 2px solid green;
-
     padding: 5px;
 }
 
