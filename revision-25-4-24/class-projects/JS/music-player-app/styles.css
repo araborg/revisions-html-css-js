@@ -232,7 +232,6 @@ button:focus,
 
 .playlist-song {
     height: 55px;
-    /* width: 100%; */
 
     display: flex;
     justify-content: space-between;
@@ -241,7 +240,6 @@ button:focus,
     border: 2px solid green;
 
     padding: 5px;
-    /* padding: 10px 5px; */
 }
 
 .playlist-song-info {
