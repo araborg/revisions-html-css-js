@@ -99,7 +99,6 @@ const renderSongs = (array) => {
                     </svg>
                 </button>
             </li>
-            
         `;
     });
 
