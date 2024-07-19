@@ -133,7 +133,10 @@ const playSong = (id) => {
     audio.src = songEl.src;
     audio.title = songEl.title;
 
-    if (userData.currentSong === null) {
+    if (
+        userData.currentSong === null ||
+        userData.currentSong.id !== songEl.id
+    ) {
         console.log(true);
     } else {
         console.log(false);
