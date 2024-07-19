@@ -155,7 +155,12 @@ playButton.addEventListener("click", () => {
     }
 });
 
-const pauseSong = () => {};
+const pauseSong = () => {
+    const song = userData.songs.indexOf(userData.currentSong);
+    console.log(song);
+};
+
+pauseButton.addEventListener("click", pauseSong);
 
 // const playNextSong
 
