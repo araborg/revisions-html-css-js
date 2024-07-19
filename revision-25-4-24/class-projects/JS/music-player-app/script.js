@@ -139,7 +139,7 @@ const playSong = (id) => {
     ) {
         audio.currentTime = 0;
     } else {
-        audio.currentTime = songEl.currentTime;
+        audio.currentTime = userData.currentTime;
     }
 
     userData.currentSong = songEl;
