@@ -235,6 +235,8 @@ button:focus,
     align-items: center;
 
     padding: 10px 5px;
+
+    border: 2px solid rebeccapurple;
 }
 
 .playlist-song-info {
