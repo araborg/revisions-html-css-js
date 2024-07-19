@@ -79,7 +79,7 @@ const renderSongs = (array) => {
     const songHTML = array
         .map((song) => {
             return `
-                <li class='playlist-song ${song.id}' >
+                <li class='playlist-song ${song.id}' onclick = playSong('${song.id}') >
                     <div class="playlist-song-info">
                         <span class="song-title">${song.title}</span>
                         <span class="song-artist">${song.artist}</span>
@@ -127,8 +127,14 @@ const renderSongs = (array) => {
 
 renderSongs(sortSongs(userData.songs));
 
-const playSong = () => {
-    const songEl = userData.songs.filter();
+const playSong = (id) => {
+    console.log(id);
+    const songEl = userData.songs.find((song) => {
+        return String(song.id) === id;
+        // console.log(typeof song.id);
+        // console.log(typeof id);
+    });
+    console.log(songEl);
 };
 
 // const pauseSong
