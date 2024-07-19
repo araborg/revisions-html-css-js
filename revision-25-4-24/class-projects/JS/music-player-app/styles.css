@@ -224,8 +224,6 @@ button:focus,
     row-gap: 8px;
 
     list-style: none;
-
-    border: 2px solid yellow;
 }
 
 #playlist-songs li:not(li:last-child) {
