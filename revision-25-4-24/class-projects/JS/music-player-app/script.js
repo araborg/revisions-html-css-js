@@ -127,7 +127,7 @@ const renderSongs = (array) => {
 
 renderSongs(sortSongs(userData.songs));
 
-// const playSong
+const playSong = () => {};
 
 // const pauseSong
 
