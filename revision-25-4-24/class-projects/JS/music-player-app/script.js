@@ -144,6 +144,8 @@ const playSong = (id) => {
 
     userData.currentSong = songEl;
 
+    playButton.classList.add("playing");
+
     audio.play();
 };
 
@@ -161,11 +163,6 @@ const pauseSong = () => {
     const songIndex = getCurrentSongIndex();
 
     const song = userData?.songs[songIndex];
-
-    if (!userData?.currentSong) return;
-    else {
-        audio.currentTime === userData.currentTime;
-    }
 
     audio.pause();
 };

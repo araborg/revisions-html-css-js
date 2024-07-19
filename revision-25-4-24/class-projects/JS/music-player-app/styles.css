@@ -199,6 +199,10 @@ button:focus,
     outline-style: dashed;
 }
 
+.playing > svg {
+    fill: var(--highlight-color);
+}
+
 /* Playlist */
 .playlist {
     height: auto;
