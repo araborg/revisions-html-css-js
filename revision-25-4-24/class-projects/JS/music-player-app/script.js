@@ -137,11 +137,10 @@ const playSong = (id) => {
         userData.currentSong === null ||
         userData.currentSong.id !== songEl.id
     ) {
-        console.log(true);
+        audio.currentTime = 0;
     } else {
-        console.log(false);
+        audio.currentTime = songEl.currentTime;
     }
-    console.log(songEl.id, userData?.currentSong?.id);
 
     userData.currentSong = songEl;
 };
