@@ -57,6 +57,24 @@ let userData = {
     currentTime: 0,
 };
 
+const sortSongs = (songs) => {
+    songs.sort((a, b) => {
+        if (a.title < b.title) {
+            return -1;
+        }
+
+        if (a.title > b.title) {
+            return 1;
+        }
+
+        if (a.title === b.title) {
+            return 0;
+        }
+    });
+
+    return songs;
+};
+
 const renderSongs = (array) => {
     const songHTML = array
         .map((song) => {
@@ -107,7 +125,7 @@ const renderSongs = (array) => {
     playlistSongs.innerHTML = songHTML;
 };
 
-renderSongs(userData.songs);
+renderSongs(sortSongs(userData.songs));
 
 // const playSong
 
@@ -128,8 +146,6 @@ renderSongs(userData.songs);
 // const setPlayButtonAccessibleText
 
 // const getCurrentSongIndex
-
-// const sortSongs
 
 // const replayAllSongs
 
