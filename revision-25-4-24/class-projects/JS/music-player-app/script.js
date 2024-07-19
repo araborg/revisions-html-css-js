@@ -128,9 +128,10 @@ const renderSongs = (array) => {
 renderSongs(sortSongs(userData.songs));
 
 const playSong = (id) => {
-    console.log(id);
     const songEl = userData.songs.find((song) => song.id === id);
-    console.log(songEl);
+
+    audio.src = songEl.src;
+    audio.title = songEl.title;
 };
 
 // const pauseSong
