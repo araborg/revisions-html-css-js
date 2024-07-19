@@ -57,6 +57,8 @@ let userData = {
     currentTime: 0,
 };
 
+// const renderSongs
+
 // const playSong
 
 // const pauseSong
@@ -72,8 +74,6 @@ let userData = {
 // const setPlayerDisplay
 
 // const highlightCurrentSong
-
-// const renderSongs
 
 // const setPlayButtonAccessibleText
 
