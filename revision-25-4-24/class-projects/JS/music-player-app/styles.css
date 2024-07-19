@@ -217,12 +217,13 @@ button:focus,
     height: 100%;
     width: 430px;
 
-    /* padding: 8px 9px; */
+    padding: 8px 9px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 5px;
+    /* justify-content: start; */
+    row-gap: 8px;
 
     list-style: none;
 
@@ -243,8 +244,8 @@ button:focus,
 
     border: 2px solid green;
 
+    padding: 5px;
     /* padding: 10px 5px; */
-    /* padding: 5px; */
 }
 
 .playlist-song-info {
