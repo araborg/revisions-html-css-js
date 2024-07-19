@@ -155,11 +155,19 @@ playButton.addEventListener("click", () => {
     }
 });
 
-const songIndex = () => userData.songs.indexOf(userData.currentSong);
-console.log(songIndex());
+const getCurrentSongIndex = () => userData.songs.indexOf(userData.currentSong);
 
 const pauseSong = () => {
-    console.log(song, userData.songs[song]);
+    const songIndex = getCurrentSongIndex();
+
+    const song = userData?.songs[songIndex];
+
+    if (!userData?.currentSong) return;
+    else {
+        audio.currentTime === userData.currentTime;
+    }
+
+    audio.pause();
 };
 
 pauseButton.addEventListener("click", pauseSong);
@@ -177,8 +185,6 @@ pauseButton.addEventListener("click", pauseSong);
 // const highlightCurrentSong
 
 // const setPlayButtonAccessibleText
-
-// const getCurrentSongIndex
 
 // const replayAllSongs
 
