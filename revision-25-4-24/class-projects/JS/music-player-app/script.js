@@ -149,9 +149,10 @@ const playSong = (id) => {
 
 playButton.addEventListener("click", () => {
     if (!userData.currentSong) {
-        playSong(userData.songs[0]);
+        playSong(userData.songs[0].id);
     } else {
         playButton(userData?.currentSong.id);
+        console.log();
     }
 });
 
