@@ -151,7 +151,7 @@ playButton.addEventListener("click", () => {
     if (!userData.currentSong) {
         playSong(userData.songs[0].id);
     } else {
-        playButton(userData?.currentSong.id);
+        playSong(userData?.currentSong.id);
         console.log();
     }
 });
