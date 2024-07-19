@@ -141,6 +141,7 @@ const playSong = (id) => {
     } else {
         console.log(false);
     }
+    console.log(songEl.id, userData.currentSong.id);
 
     userData.currentSong = songEl;
 };
