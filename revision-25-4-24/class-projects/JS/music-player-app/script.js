@@ -1,4 +1,5 @@
-// const playlistSongs
+const playlistSongs = document.getElementById("playlist-songs");
+console.log(playlistSongs);
 // const playButton
 // const pauseButton
 // const nextButton
