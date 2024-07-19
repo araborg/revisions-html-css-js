@@ -209,7 +209,7 @@ button:focus,
 }
 
 #playlist-songs {
-    height: auto;
+    /* height: auto; */
     width: 430px;
 
     padding: 8px 9px;
@@ -233,6 +233,8 @@ button:focus,
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 10px 5px;
 }
 
 .playlist-song-info {
@@ -244,7 +246,7 @@ button:focus,
 
     cursor: pointer;
 
-    padding: 10px 5px;
+    /* height: 40px; */
 }
 
 .song-title {
