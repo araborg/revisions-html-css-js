@@ -160,13 +160,7 @@ playButton.addEventListener("click", () => {
 const getCurrentSongIndex = () => userData.songs.indexOf(userData.currentSong);
 
 const pauseSong = () => {
-    const songIndex = getCurrentSongIndex();
     playButton.classList.remove("playing");
-
-    const song = userData?.songs[songIndex];
-    song.currentTime = audio.currentTime;
-    console.log(song.currentTime, audio.currentTime);
-    // audio.currentTime = song?.currentTime;
 
     audio.pause();
 };
