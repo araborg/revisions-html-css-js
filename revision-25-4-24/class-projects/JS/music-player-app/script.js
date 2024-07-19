@@ -1,9 +1,13 @@
 const playlistSongs = document.getElementById("playlist-songs");
-console.log(playlistSongs);
-// const playButton
-// const pauseButton
+
+const playButton = document.getElementById("play");
+
+const pauseButton = document.getElementById("pause");
+
 // const nextButton
+
 // const previousButton
+
 // const shuffleButton
 
 const allSongs = [
