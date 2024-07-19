@@ -162,6 +162,9 @@ const getCurrentSongIndex = () => userData.songs.indexOf(userData.currentSong);
 const pauseSong = () => {
     playButton.classList.remove("playing");
 
+    userData.currentTime = audio.currentTime;
+    console.log(userData.currentTime);
+
     audio.pause();
 };
 
