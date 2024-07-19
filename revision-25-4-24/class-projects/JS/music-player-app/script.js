@@ -147,6 +147,12 @@ const playSong = (id) => {
     audio.play();
 };
 
+playButton.addEventListener("click", () => {
+    if (!userData.currentSong) {
+        playSong(userData.songs[0]);
+    }
+});
+
 // const pauseSong
 
 // const playNextSong
