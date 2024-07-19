@@ -155,7 +155,7 @@ playButton.addEventListener("click", () => {
     }
 });
 
-// const pauseSong
+const pauseSong = () => {};
 
 // const playNextSong
 
