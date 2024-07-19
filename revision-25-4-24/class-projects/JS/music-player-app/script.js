@@ -132,6 +132,14 @@ const playSong = (id) => {
 
     audio.src = songEl.src;
     audio.title = songEl.title;
+
+    if (userData.currentSong === null) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+
+    userData.currentSong = songEl;
 };
 
 // const pauseSong
