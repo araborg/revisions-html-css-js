@@ -212,7 +212,7 @@ const playPreviousSong = () => {
     console.log(songIndex);
 };
 
-playPreviousSong();
+previousButton.addEventListener("click", playPreviousSong);
 
 // const shuffle
 
