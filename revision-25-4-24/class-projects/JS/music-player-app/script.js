@@ -173,9 +173,10 @@ pauseButton.addEventListener("click", pauseSong);
 
 const playNextSong = () => {
     const songIndex = getCurrentSongIndex();
-    const nextSong = userData?.songs[songIndex + 1];
+    const nextSongIndex = songIndex + 1;
+    const nextSong = userData?.songs[nextSongIndex];
 
-    console.log(userData.currentSong, nextSong);
+    console.log(userData.currentSong, nextSong, nextSongIndex);
 
     /*
     // const newSongIndex = userData?.songs[songIndex + 1];
@@ -183,18 +184,19 @@ const playNextSong = () => {
     // console.log(userData.songs[newSongIndex]);
     */
 
-    // if (songIndex === userData?.songs.length - 1) {
-    // console.log(userData.songs[0]);
-    // }
-
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
+        if (nextSongIndex > userData?.songs.length - 1) {
+            playSong(userData?.songs[0].id);
+        }
         playSong(nextSong?.id);
     }
 };
 
 nextButton.addEventListener("click", playNextSong);
+
+console.log(userData?.songs.length);
 
 const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
