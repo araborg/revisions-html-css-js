@@ -203,9 +203,10 @@ const setPlayerDisplay = () => {
     // console.log(typeof songTitle.innerHTML, typeof song.title);
     // songTitle.innerText = song.title;
 
+    playerSongTitle.innerText = song.title || "";
+
     playerSongArtist.innerHTML = song.artist || "";
     playerSongDuration.innerHTML = song.duration || "";
-    playerSongDuration.innerText = song.duration || "";
 
     // console.log(songArtist);
 };
