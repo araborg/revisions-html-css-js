@@ -189,9 +189,10 @@ const playNextSong = () => {
     } else {
         if (!nextSong) {
             //     playSong(userData?.songs[0].id);
-            playSong(userData?.songs[0].id);
+            playSong(userData?.songs[0]?.id);
+        } else {
+            playSong(nextSong?.id);
         }
-        playSong(nextSong?.id);
     }
 
     console.log(userData?.currentSong);
