@@ -192,8 +192,9 @@ const playNextSong = () => {
             playSong(userData?.songs[0].id);
         }
         playSong(nextSong?.id);
-        // console.log(typeof userData?.songs[nextSongIndex]);
     }
+
+    console.log(userData?.currentSong);
 };
 
 nextButton.addEventListener("click", playNextSong);
