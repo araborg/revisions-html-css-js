@@ -188,7 +188,6 @@ const playNextSong = () => {
         playSong(userData?.songs[0].id);
     } else {
         if (!nextSong) {
-            //     playSong(userData?.songs[0].id);
             playSong(userData?.songs[0]?.id);
         } else {
             playSong(nextSong?.id);
