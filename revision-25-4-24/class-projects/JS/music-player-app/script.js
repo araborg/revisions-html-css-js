@@ -191,13 +191,14 @@ const playNextSong = () => {
         // if (nextSongIndex > userData?.songs.length - 1) {
         //     playSong(userData?.songs[0].id);
         // }
-        // playSong(nextSong?.id);
+        playSong(nextSong?.id);
+        console.log(nextSongIndex);
     }
 };
 
 nextButton.addEventListener("click", playNextSong);
 
-console.log(userData?.songs.length);
+// console.log(userData?.songs.length);
 
 const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
