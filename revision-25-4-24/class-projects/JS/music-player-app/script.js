@@ -168,7 +168,19 @@ const pauseSong = () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
-const playNextSong = () => {};
+const playNextSong = () => {
+    const songIndex = getCurrentSongIndex();
+
+    if (!userData.currentSong) {
+        playSong(userData?.songs[0].id);
+    } else {
+        playSong(userData?.currentSong?.id);
+    }
+
+    console.log(songIndex);
+};
+
+nextButton.addEventListener("click", playNextSong);
 
 // const playPreviousSong
 
