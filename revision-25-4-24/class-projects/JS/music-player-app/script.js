@@ -176,7 +176,7 @@ const playNextSong = () => {
     const nextSongIndex = songIndex + 1;
     const nextSong = userData?.songs[nextSongIndex];
 
-    console.log(userData.currentSong, nextSong, nextSongIndex);
+    // console.log(userData.currentSong, nextSong, nextSongIndex);
 
     /*
     // const newSongIndex = userData?.songs[songIndex + 1];
@@ -187,6 +187,7 @@ const playNextSong = () => {
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
+        console.log(nextSongIndex);
         if (nextSongIndex > userData?.songs.length - 1) {
             playSong(userData?.songs[0].id);
         }
