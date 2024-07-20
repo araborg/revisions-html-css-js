@@ -7,10 +7,10 @@ const nextButton = document.getElementById("next");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
-const songTitle = document.querySelector(".song-title");
-const songArtist = document.querySelector(".song-artist");
-const songDuration = document.querySelector(".song-duration");
-// console.log(songArtist.innerHTML, songTitle, songDuration);
+const playerSongTitle = document.querySelector("#player-song-title");
+const playerSongArtist = document.querySelector("#player-song-artist");
+const playerSongDuration = document.querySelector("#player-song-duration");
+console.log(playerSongArtist.innerHTML, songTitle, songDuration);
 
 const allSongs = [
     {
@@ -201,7 +201,8 @@ const setPlayerDisplay = () => {
     const song = userData?.songs[songIndex];
     // console.log(song.title, song.artist, song.duration);
 
-    songTitle.innerHTML += song.title;
+    console.log(typeof songTitle.innerHTML, typeof song.title);
+    songTitle.innerText = song.title;
 
     // songArtist.innerHTML = song.artist || "";
     // songDuration.innerHTML = song.duration || "";
