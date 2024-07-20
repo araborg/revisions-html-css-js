@@ -206,7 +206,13 @@ const setPlayerDisplay = () => {
     playerSongDuration.innerHTML = song.duration || "";
 };
 
-// const playPreviousSong
+const playPreviousSong = () => {
+    const songIndex = getCurrentSongIndex();
+
+    console.log(songIndex);
+};
+
+playPreviousSong();
 
 // const shuffle
 
