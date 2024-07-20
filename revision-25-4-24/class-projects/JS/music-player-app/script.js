@@ -175,6 +175,8 @@ const playNextSong = () => {
     const songIndex = getCurrentSongIndex();
     const nextSong = userData?.songs[songIndex + 1];
 
+    console.log(userData.currentSong, nextSong);
+
     /*
     // const newSongIndex = userData?.songs[songIndex + 1];
     // console.log(newSongIndex);
@@ -186,8 +188,6 @@ const playNextSong = () => {
     } else {
         playSong(nextSong?.id);
     }
-
-    console.log(nextSong, userData.currentSong);
 };
 
 nextButton.addEventListener("click", playNextSong);
