@@ -168,7 +168,7 @@ const pauseSong = () => {
 
 pauseButton.addEventListener("click", pauseSong);
 
-// const playNextSong
+const playNextSong = () => {};
 
 // const playPreviousSong
 

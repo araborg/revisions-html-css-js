@@ -252,8 +252,6 @@ button:focus,
     column-gap: 10px;
 
     cursor: pointer;
-
-    /* height: auto; */
 }
 
 .song-title {
