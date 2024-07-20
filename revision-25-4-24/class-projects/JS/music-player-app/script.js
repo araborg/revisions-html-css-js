@@ -187,10 +187,11 @@ const playNextSong = () => {
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
-        console.log(nextSongIndex.src === undefined);
-        // if (nextSongIndex === userData?.songs?.length) {
-        //     playSong(userData?.songs[0].id);
-        // }
+        console.log(nextSong.src === undefined);
+        if (nextSong.src === undefined) {
+            //     playSong(userData?.songs[0].id);
+            console.log(nextSong);
+        }
         playSong(nextSong?.id);
         // console.log(typeof userData?.songs[nextSongIndex]);
     }
