@@ -208,8 +208,12 @@ const setPlayerDisplay = () => {
 
 const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
+    const previousSong = userData?.songs[songIndex + 1];
+    console.log(previousSong);
 
-    console.log(songIndex);
+    if (songIndex === -1 && !userData?.userData) {
+        console.log(true);
+    }
 };
 
 previousButton.addEventListener("click", playPreviousSong);
