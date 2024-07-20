@@ -173,8 +173,9 @@ pauseButton.addEventListener("click", pauseSong);
 
 const playNextSong = () => {
     const songIndex = getCurrentSongIndex();
+    const nextSong = userData?.songs[songIndex + 1];
 
-    console.log(songIndex);
+    console.log(nextSong);
 
     /*
     // const newSongIndex = userData?.songs[songIndex + 1];
