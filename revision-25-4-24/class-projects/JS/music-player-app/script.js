@@ -187,10 +187,9 @@ const playNextSong = () => {
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
-        console.log(nextSong.src === undefined);
-        if (nextSong.src === undefined) {
+        if (!nextSong) {
             //     playSong(userData?.songs[0].id);
-            console.log(nextSong);
+            playSong(userData?.songs[0].id);
         }
         playSong(nextSong?.id);
         // console.log(typeof userData?.songs[nextSongIndex]);
