@@ -198,17 +198,11 @@ const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
 
     const song = userData?.songs[songIndex];
-    // console.log(song.title, song.artist, song.duration);
-
-    // console.log(typeof songTitle.innerHTML, typeof song.title);
-    // songTitle.innerText = song.title;
 
     playerSongTitle.innerText = song.title || "";
 
     playerSongArtist.innerHTML = song.artist || "";
     playerSongDuration.innerHTML = song.duration || "";
-
-    // console.log(songArtist);
 };
 
 // const playPreviousSong
