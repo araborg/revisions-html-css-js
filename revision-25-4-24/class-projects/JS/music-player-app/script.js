@@ -8,6 +8,8 @@ const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
 const songTitle = document.querySelector(".song-title");
+const songArtist = document.querySelector("song-duration");
+const songDuration = document.querySelector("song-artist");
 
 const allSongs = [
     {
