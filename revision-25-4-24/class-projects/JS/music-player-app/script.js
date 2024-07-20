@@ -10,7 +10,6 @@ const replayButton = document.getElementById("replay");
 const playerSongTitle = document.querySelector("#player-song-title");
 const playerSongArtist = document.querySelector("#player-song-artist");
 const playerSongDuration = document.querySelector("#player-song-duration");
-// console.log(playerSongArtist.innerHTML, songTitle, songDuration);
 
 const allSongs = [
     {
@@ -206,7 +205,7 @@ const setPlayerDisplay = () => {
 
     playerSongArtist.innerHTML = song.artist || "";
     playerSongDuration.innerHTML = song.duration || "";
-    playerSongDuration.innerText = "Hello";
+    playerSongDuration.innerText = song.duration || "";
 
     // console.log(songArtist);
 };
