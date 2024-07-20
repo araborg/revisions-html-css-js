@@ -10,6 +10,7 @@ const replayButton = document.getElementById("replay");
 const songTitle = document.querySelector(".song-title");
 const songArtist = document.querySelector(".song-artist");
 const songDuration = document.querySelector(".song-duration");
+console.log(songArtist.innerHTML, songTitle, songDuration);
 
 const allSongs = [
     {
@@ -198,12 +199,16 @@ const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
 
     const song = userData?.songs[songIndex];
-    console.log(song);
+    console.log(song.title, song.artist, song.duration);
 
-    songTitle.innerHTML = song.title || "";
-    console.log(song.title);
+    songTitle.innerHTML = song.title;
+
     songArtist.innerHTML = song.artist || "";
     songDuration.innerHTML = song.duration || "";
+
+    songDuration.innerText = "Hello";
+
+    console.log(songArtist);
 };
 
 // const playPreviousSong
