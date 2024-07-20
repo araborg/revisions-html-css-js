@@ -182,13 +182,13 @@ const playNextSong = () => {
 
 nextButton.addEventListener("click", playNextSong);
 
+const setPlayerDisplay = () => {};
+
 // const playPreviousSong
 
 // const shuffle
 
 // const deleteSong
-
-// const setPlayerDisplay
 
 // const highlightCurrentSong
 
