@@ -146,6 +146,9 @@ const playSong = (id) => {
 
     playButton.classList.add("playing");
 
+    // helper fxns
+    setPlayerDisplay();
+
     audio.play();
 };
 
@@ -182,7 +185,12 @@ const playNextSong = () => {
 
 nextButton.addEventListener("click", playNextSong);
 
-const setPlayerDisplay = () => {};
+const setPlayerDisplay = () => {
+    const songIndex = getCurrentSongIndex();
+
+    const song = userData?.songs[songIndex];
+    console.log(song);
+};
 
 // const playPreviousSong
 
