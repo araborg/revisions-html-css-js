@@ -7,6 +7,8 @@ const nextButton = document.getElementById("next");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
+const songTitle = document.querySelector(".song-title");
+
 const allSongs = [
     {
         id: 0,
@@ -174,6 +176,7 @@ pauseButton.addEventListener("click", pauseSong);
 const playNextSong = () => {
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
+
     const nextSong = userData?.songs[nextSongIndex];
 
     if (!userData.currentSong) {
@@ -189,13 +192,11 @@ const playNextSong = () => {
 
 nextButton.addEventListener("click", playNextSong);
 
-// console.log(userData?.songs.length);
-
 const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
 
     const song = userData?.songs[songIndex];
-    // console.log(song);
+    console.log(song);
 };
 
 // const playPreviousSong
