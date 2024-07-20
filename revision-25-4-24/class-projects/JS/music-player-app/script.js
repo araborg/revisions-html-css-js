@@ -213,6 +213,8 @@ const playPreviousSong = () => {
 
     if (songIndex === -1 && !userData?.userData) {
         console.log(true);
+    } else {
+        playSong(previousSong.id);
     }
 };
 
