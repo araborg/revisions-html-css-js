@@ -176,14 +176,6 @@ const playNextSong = () => {
     const nextSongIndex = songIndex + 1;
     const nextSong = userData?.songs[nextSongIndex];
 
-    // console.log(userData.currentSong, nextSong, nextSongIndex);
-
-    /*
-    // const newSongIndex = userData?.songs[songIndex + 1];
-    // console.log(newSongIndex);
-    // console.log(userData.songs[newSongIndex]);
-    */
-
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
@@ -193,8 +185,6 @@ const playNextSong = () => {
             playSong(nextSong?.id);
         }
     }
-
-    console.log(userData?.currentSong);
 };
 
 nextButton.addEventListener("click", playNextSong);
