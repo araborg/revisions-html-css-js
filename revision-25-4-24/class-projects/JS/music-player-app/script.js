@@ -179,8 +179,6 @@ const playNextSong = () => {
     } else {
         playSong(userData?.currentSong?.id);
     }
-
-    console.log(songIndex);
 };
 
 nextButton.addEventListener("click", playNextSong);
