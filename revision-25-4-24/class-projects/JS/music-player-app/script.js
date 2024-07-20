@@ -175,7 +175,7 @@ const playNextSong = () => {
     const songIndex = getCurrentSongIndex();
     const nextSong = userData?.songs[songIndex + 1];
 
-    console.log(userData.currentSong, nextSong);
+    console.log(userData.currentSong, nextSong, songIndex);
 
     /*
     // const newSongIndex = userData?.songs[songIndex + 1];
