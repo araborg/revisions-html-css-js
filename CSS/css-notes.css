@@ -759,12 +759,15 @@ Use border to chech the initial width and height of an elemt.
 62. Padding:
 It increases an elemt's width and height.
 
+Every side of an elemt needs padding - it may only 
+be applicable at d top & bottom in sm cases.
+
 
 63. Width:
 It smtimes affect alignmt.
 
 
-64.
+64. 
 
 
 65.
