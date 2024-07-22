@@ -208,10 +208,11 @@ const setPlayerDisplay = () => {
 
 const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
-    const previousSongIndex = songIndex - 1;
-    console.log(previousSongIndex);
+    console.log(songIndex);
+    // const previousSongIndex = songIndex - 1;
+    // console.log(previousSongIndex);
 
-    if (previousSongIndex === -1) {
+    if (previousSongIndex < 0) {
         console.log(userData?.songs[-1]);
         // playSong(userData?.songs[-1]);
         // console.log(songIndex);
