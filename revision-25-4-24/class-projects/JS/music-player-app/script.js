@@ -212,6 +212,10 @@ const playPreviousSong = () => {
     const prevSongIndex =
         songIndex >= 0 ? songIndex - 1 : userData?.songs.length - 1;
 
+    console.log(prevSongIndex);
+    prevSongIndex--;
+    console.log(prevSongIndex);
+
     // console.log(songIndex, prevSongIndex, userData?.currentSong);
     // const prevSong = userData?.songs[prevSongIndex];
     // console.log(prevSongIndex, userData?.currentSong, prevSong);
@@ -222,7 +226,6 @@ const playPreviousSong = () => {
      
     2. decrease it by one on each click
     3. 
-    */
 
     if (!userData?.currentSong && songIndex === -1) {
         const prevSong = userData?.songs[songLength - 1];
@@ -240,6 +243,8 @@ const playPreviousSong = () => {
         const prevSong = userData?.songs[songIndex];
         console.log(prevSong);
     }
+
+        */
 };
 
 previousButton.addEventListener("click", playPreviousSong);
