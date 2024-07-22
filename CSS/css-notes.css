@@ -782,7 +782,15 @@ but apply experiene and crictical thinking. Don't
 be quick to check soln.
 
 
-67. 
+67. CSS Values:
+Parent:
+    height: auto;
+
+Inner Parent:
+    height: 100%;
+
+Child:
+    height: 55px;
 
 
 68.
