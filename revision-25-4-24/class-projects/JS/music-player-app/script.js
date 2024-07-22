@@ -212,8 +212,10 @@ const playPreviousSong = () => {
     const prevSong = userData?.songs[prevSongIndex];
 
     console.log(prevSong);
-
-    if (!prevSong) {
+    if (!userData?.currentSong) {
+        const songsLength = userData?.songs.length;
+        playSong(userData?.songs[songsLength]);
+    } else if (!prevSong) {
         console.log("less than 0");
     }
 
