@@ -208,44 +208,10 @@ const setPlayerDisplay = () => {
 
 const playPreviousSong = () => {
     let songIndex = getCurrentSongIndex();
+    const prevSongIndex = songIndex - 1;
+    const prevSong = userData?.songs[prevSongIndex];
 
-    let prevSongIndex =
-        songIndex >= 0 ? songIndex - 1 : userData?.songs.length - 1;
-
-    console.log(songIndex);
-    // console.log(prevSongIndex);
-    // prevSongIndex--;
-    // console.log(prevSongIndex);
-
-    // console.log(songIndex, prevSongIndex, userData?.currentSong);
-    // const prevSong = userData?.songs[prevSongIndex];
-    // console.log(prevSongIndex, userData?.currentSong, prevSong);
-    // console.log(previousSongIndex);
-
-    /*
-    1. get the current song index5+
-     
-    2. decrease it by one on each click
-    3. 
-
-    if (!userData?.currentSong && songIndex === -1) {
-        const prevSong = userData?.songs[songLength - 1];
-        // console.log(prevSong);
-        // const lastSongIndex = userData?.songs.indexOf(prevSong);
-        // console.log("No song");
-        // console.log("Next song " + lastSongIndex);
-        // songIndex = lastSongIndex;
-        playSong(userData?.songs[songIndex]);
-        songIndex--;
-        // for (let i = lastSongIndex; i >= 0; i--) {
-
-        // }
-    } else {
-        const prevSong = userData?.songs[songIndex];
-        console.log(prevSong);
-    }
-
-        */
+    playSong(prevSong?.id);
 };
 
 previousButton.addEventListener("click", playPreviousSong);
