@@ -195,17 +195,6 @@ const playNextSong = () => {
 
 nextButton.addEventListener("click", playNextSong);
 
-const setPlayerDisplay = () => {
-    const songIndex = getCurrentSongIndex();
-
-    const song = userData?.songs[songIndex];
-
-    playerSongTitle.innerText = song.title || "";
-
-    playerSongArtist.innerHTML = song.artist || "";
-    playerSongDuration.innerHTML = song.duration || "";
-};
-
 const playPreviousSong = () => {
     const prevSongIndex = getCurrentSongIndex() - 1;
     const prevSong = userData?.songs[prevSongIndex];
@@ -223,6 +212,17 @@ const playPreviousSong = () => {
 };
 
 previousButton.addEventListener("click", playPreviousSong);
+
+const setPlayerDisplay = () => {
+    const songIndex = getCurrentSongIndex();
+
+    const song = userData?.songs[songIndex];
+
+    playerSongTitle.innerText = song.title || "";
+
+    playerSongArtist.innerHTML = song.artist || "";
+    playerSongDuration.innerHTML = song.duration || "";
+};
 
 // const shuffle
 
