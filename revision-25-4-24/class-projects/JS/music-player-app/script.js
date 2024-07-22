@@ -208,17 +208,17 @@ const setPlayerDisplay = () => {
 
 const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
-    // const previousSong = userData?.currentSong
-    //     ? userData?.songs[songIndex - 1]
-    //     : userData.songs[userData.songs.length - 1];
-    // console.log(previousSong);
+    const previousSongIndex = songIndex - 1;
+    console.log(previousSongIndex);
 
-    if (songIndex === -1) {
-        // console.log(userData?.songs[-1]);
-        // playSong(userData?.songs[-1]);
-    } else {
-        playSong(previousSong.id);
-    }
+    // if (songIndex === -1) {
+    // console.log(userData?.songs[-1]);
+    // playSong(userData?.songs[-1]);
+    // console.log(songIndex);
+    // } else {
+    // playSong(previousSong.id);
+    // console.log(`songIndex: ${songIndex}`);
+    // }
 };
 
 previousButton.addEventListener("click", playPreviousSong);
