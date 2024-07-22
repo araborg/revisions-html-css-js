@@ -211,17 +211,19 @@ const playPreviousSong = () => {
     const prevSongIndex = songIndex - 1;
     const prevSong = userData?.songs[prevSongIndex];
 
-    console.log(prevSong);
-    if (!userData?.currentSong) {
+    // console.log(prevSong);
+    if (
+        !userData?.currentSong ||
+        userData?.currentSong === userData?.songs[0]
+    ) {
         const songsLength = userData?.songs.length;
 
         console.log(userData?.songs[songsLength - 1]);
-        playSong(userData?.songs[songsLength - 1]);
-    } else if (prevSong === undefined) {
+        playSong(userData?.songs[songsLength - 1].id);
+    } else {
         console.log("less than 0");
+        playSong(prevSong?.id);
     }
-
-    playSong(prevSong?.id);
 };
 
 previousButton.addEventListener("click", playPreviousSong);
