@@ -212,6 +212,11 @@ const playPreviousSong = () => {
     const prevSong = userData?.songs[prevSongIndex];
 
     playSong(prevSong?.id);
+    console.log(prevSong);
+
+    if (prevSong?.src === undefined) {
+        console.log("less than 0");
+    }
 };
 
 previousButton.addEventListener("click", playPreviousSong);
