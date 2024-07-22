@@ -214,6 +214,13 @@ const playPreviousSong = () => {
     console.log(prevSongIndex, userData?.currentSong, prevSong);
     // console.log(previousSongIndex);
 
+    /*
+    1. get the current song index
+    2. decrease it by one on each click
+    3. 
+
+    */
+
     if (prevSong === undefined) {
         const songsLength = userData?.songs.length;
         prevSong = userData?.songs[songsLength - 1];
