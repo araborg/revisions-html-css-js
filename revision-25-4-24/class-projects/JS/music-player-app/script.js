@@ -221,7 +221,6 @@ const playPreviousSong = () => {
         console.log(userData?.songs[songsLength - 1]);
         playSong(userData?.songs[songsLength - 1].id);
     } else {
-        console.log("less than 0");
         playSong(prevSong?.id);
     }
 };
