@@ -209,8 +209,9 @@ const setPlayerDisplay = () => {
 const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
     const prevSongIndex = songIndex - 1;
+    const songLength = userData?.songs.length;
 
-    console.log(songIndex, typeof prevSongIndex);
+    // console.log(songIndex, prevSongIndex, userData?.currentSong);
     // const prevSong = userData?.songs[prevSongIndex];
     // console.log(prevSongIndex, userData?.currentSong, prevSong);
     // console.log(previousSongIndex);
@@ -221,9 +222,13 @@ const playPreviousSong = () => {
     3. 
     */
 
-    if (!userData?.currentSong) {
+    if (!userData?.currentSong && songIndex === -1) {
+        const prevSong = userData?.songs[songLength - 1];
+        // console.log(prevSong);
+        const lastSongIndex = userData?.songs.indexOf(prevSong);
+        console.log(lastSongIndex);
         console.log("No song");
-    } else if (songIndex === -1) {
+    } else if (null) {
         console.log("Undefined");
     }
 };
