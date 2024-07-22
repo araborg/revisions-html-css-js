@@ -208,15 +208,18 @@ const setPlayerDisplay = () => {
 
 const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
-    console.log(songIndex);
-    // const previousSongIndex = songIndex - 1;
+    const prevSongIndex = songIndex - 1;
+
+    const prevSong = userData?.songs[prevSongIndex];
+    console.log(prevSongIndex, userData?.currentSong, prevSong);
     // console.log(previousSongIndex);
 
-    // if () {
-
-    // } else {
-
-    // }
+    if (prevSong === undefined) {
+        const songsLength = userData?.songs.length;
+        prevSong = userData?.songs[songsLength - 1];
+        console.log(prevSong);
+    } else {
+    }
 };
 
 previousButton.addEventListener("click", playPreviousSong);
