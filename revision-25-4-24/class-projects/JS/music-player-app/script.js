@@ -228,6 +228,10 @@ const playPreviousSong = () => {
         const lastSongIndex = userData?.songs.indexOf(prevSong);
         console.log(lastSongIndex);
         console.log("No song");
+
+        for (let i = lastSongIndex; i >= 0; i--) {
+            console.log("Next song");
+        }
     } else if (null) {
         console.log("Undefined");
     }
