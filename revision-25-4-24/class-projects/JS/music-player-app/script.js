@@ -221,7 +221,9 @@ const playPreviousSong = () => {
     3. 
     */
 
-    if (!prevSongIndex) {
+    if (!userData?.currentSong) {
+        console.log("No song");
+    } else if (songIndex === -1) {
         console.log("Undefined");
     }
 };
