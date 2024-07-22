@@ -210,22 +210,19 @@ const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
     const prevSongIndex = songIndex - 1;
 
-    const prevSong = userData?.songs[prevSongIndex];
-    console.log(prevSongIndex, userData?.currentSong, prevSong);
+    console.log(songIndex, prevSongIndex);
+    // const prevSong = userData?.songs[prevSongIndex];
+    // console.log(prevSongIndex, userData?.currentSong, prevSong);
     // console.log(previousSongIndex);
 
     /*
     1. get the current song index
     2. decrease it by one on each click
     3. 
-
     */
 
-    if (prevSong === undefined) {
-        const songsLength = userData?.songs.length;
-        prevSong = userData?.songs[songsLength - 1];
-        console.log(prevSong);
-    } else {
+    if (songIndex === -1) {
+        console.log("Undefined");
     }
 };
 
