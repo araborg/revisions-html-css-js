@@ -214,7 +214,7 @@ const playPreviousSong = () => {
     console.log(prevSong);
     playSong(prevSong?.id);
 
-    if (prevSong?.src === undefined) {
+    if (prevSong === undefined) {
         console.log("less than 0");
     }
 };
