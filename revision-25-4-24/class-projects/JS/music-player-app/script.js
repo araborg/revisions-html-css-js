@@ -210,7 +210,7 @@ const playPreviousSong = () => {
     const songIndex = getCurrentSongIndex();
     const prevSongIndex = songIndex - 1;
 
-    console.log(songIndex, prevSongIndex);
+    console.log(songIndex, typeof prevSongIndex);
     // const prevSong = userData?.songs[prevSongIndex];
     // console.log(prevSongIndex, userData?.currentSong, prevSong);
     // console.log(previousSongIndex);
@@ -221,7 +221,7 @@ const playPreviousSong = () => {
     3. 
     */
 
-    if (songIndex === -1) {
+    if (!prevSongIndex) {
         console.log("Undefined");
     }
 };
