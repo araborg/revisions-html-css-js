@@ -185,6 +185,7 @@ const playNextSong = () => {
     if (!userData.currentSong) {
         playSong(userData?.songs[0].id);
     } else {
+        // wn d last song is finished, songIndex will be more than number of songs
         if (!nextSong) {
             playSong(userData?.songs[0]?.id);
         } else {
