@@ -227,7 +227,8 @@ const setPlayerDisplay = () => {
 
 const shuffle = () => {
     const shuffleNum = Math.ceil(Math.random() - 0.5);
-    console.log(shuffleNum);
+    // console.log(shuffleNum);
+    userData?.songs.sort(shuffleNum);
 };
 
 shuffleButton.addEventListener("click", shuffle);
