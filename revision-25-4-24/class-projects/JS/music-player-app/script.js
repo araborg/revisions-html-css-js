@@ -218,7 +218,6 @@ const setPlayerDisplay = () => {
     const songIndex = getCurrentSongIndex();
 
     const song = userData?.songs[songIndex];
-    console.log(song);
 
     playerSongTitle.innerText = song?.title ? song?.title : "";
 
