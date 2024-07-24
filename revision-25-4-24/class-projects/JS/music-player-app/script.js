@@ -246,7 +246,10 @@ const deleteSong = (id) => {
     if (!userData?.songs.length) {
         const resetBtn = document.createElement("button");
         const textNode = document.createTextNode("Reset Playlist");
-        console.log(resetBtn, textNode);
+
+        resetBtn.id = "reset";
+
+        resetBtn.appendChild(textNode);
     }
 };
 
