@@ -239,11 +239,10 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
-    // /const songs =
-    userData?.songs.filter((song) => song.id !== id);
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
+    console.log(userData.songs);
 
-    renderSongs(userData?.songs);
-    // console.log(songs);
+    renderSongs(userData.songs);
 };
 
 // const highlightCurrentSong
