@@ -258,6 +258,8 @@ const deleteSong = (id) => {
             userData.songs = [...allSongs];
             renderSongs(sortSongs(userData?.songs));
         });
+
+        console.log(resetBtn);
     }
 };
 
