@@ -239,7 +239,7 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
-    if (userData?.currentSong.id === id) {
+    if (userData?.currentSong?.id === id) {
         console.log(true);
     }
 
