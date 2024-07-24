@@ -243,7 +243,7 @@ const deleteSong = (id) => {
     userData?.songs.filter((song) => song.id !== id);
 
     renderSongs(userData?.songs);
-    console.log(songs);
+    // console.log(songs);
 };
 
 // const highlightCurrentSong
