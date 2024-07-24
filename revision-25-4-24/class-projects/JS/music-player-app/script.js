@@ -1,4 +1,5 @@
-const playlist = document.getElementById("playlist");
+const playlist = document.querySelector(".playlist");
+
 const playlistSongs = document.getElementById("playlist-songs");
 
 const previousButton = document.getElementById("previous");
@@ -253,7 +254,8 @@ const deleteSong = (id) => {
         resetBtn.ariaLabel = "Reset";
 
         resetBtn.appendChild(resetText);
-        playlist.appendChild(resetBtn);
+        console.log(playlist);
+        // playlist.appendChild(resetBtn);
     }
 };
 
