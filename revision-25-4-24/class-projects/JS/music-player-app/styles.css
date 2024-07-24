@@ -242,6 +242,8 @@ button:focus,
     align-items: center;
 
     padding: 5px;
+
+    border: 2px solid blue;
 }
 
 .playlist-song-info {
