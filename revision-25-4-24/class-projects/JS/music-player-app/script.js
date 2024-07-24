@@ -226,7 +226,7 @@ const setPlayerDisplay = () => {
 };
 
 const shuffle = () => {
-    const shuffleNum = Math.random() - 0.5;
+    const shuffleNum = Math.round(Math.random() - 0.5);
     console.log(shuffleNum);
 };
 
