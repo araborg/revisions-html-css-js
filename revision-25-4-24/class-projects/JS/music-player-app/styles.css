@@ -243,7 +243,7 @@ button:focus,
 
     padding: 5px;
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .playlist-song-info {
@@ -255,7 +255,7 @@ button:focus,
 
     cursor: pointer;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .song-title {
