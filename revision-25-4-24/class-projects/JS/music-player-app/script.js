@@ -239,9 +239,9 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
-    userData.songs = userData?.songs.filter((song) => song.id !== id);
+    const songs = userData?.songs.slice().filter((song) => song.id !== id);
 
-    renderSongs(userData?.songs);
+    renderSongs(songs);
 
     if (!userData?.songs.length) {
         const resetBtn = document.createElement("button");
