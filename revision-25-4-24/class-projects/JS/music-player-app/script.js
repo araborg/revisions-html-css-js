@@ -1,5 +1,3 @@
-const playlist = document.querySelector(".playlist");
-
 const playlistSongs = document.getElementById("playlist-songs");
 
 const previousButton = document.getElementById("previous");
