@@ -245,13 +245,13 @@ const deleteSong = (id) => {
 
     if (!userData?.songs.length) {
         const resetBtn = document.createElement("button");
-        const textNode = document.createTextNode("Reset Playlist");
+        const resetText = document.createTextNode("Reset Playlist");
 
         resetBtn.id = "reset";
         resetBtn.classList = "reset";
         resetBtn.ariaLabel = "Reset";
 
-        resetBtn.appendChild(textNode);
+        resetBtn.appendChild(resetText);
     }
 };
 
