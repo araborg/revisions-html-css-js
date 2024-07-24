@@ -255,7 +255,6 @@ const deleteSong = (id) => {
         playlistSongs.appendChild(resetBtn);
 
         resetBtn.addEventListener("click", () => {});
-        // console.log(playlist);
     }
 };
 
