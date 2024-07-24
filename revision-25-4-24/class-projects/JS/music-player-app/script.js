@@ -253,6 +253,7 @@ const deleteSong = (id) => {
         resetBtn.ariaLabel = "Reset";
 
         resetBtn.appendChild(resetText);
+        playlist.appendChild(resetBtn);
     }
 };
 
