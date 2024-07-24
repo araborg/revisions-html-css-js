@@ -62,8 +62,10 @@ let userData = {
     currentTime: 0,
 };
 
-const sortSongs = (songs) => {
-    songs.sort((a, b) => {
+// const sortSongs = (songs) => {
+// songs.sort((a, b) => {
+const sortSongs = () => {
+    return userData?.songs.sort((a, b) => {
         if (a.title < b.title) {
             return -1;
         }
@@ -77,7 +79,7 @@ const sortSongs = (songs) => {
         }
     });
 
-    return songs;
+    // return songs;
 };
 
 const renderSongs = (array) => {
@@ -130,7 +132,8 @@ const renderSongs = (array) => {
     playlistSongs.innerHTML = songHTML;
 };
 
-renderSongs(sortSongs(userData.songs));
+// renderSongs(sortSongs(userData.songs));
+renderSongs(sortSongs());
 
 const playSong = (id) => {
     const songEl = userData.songs.find((song) => song.id === id);
@@ -264,11 +267,9 @@ const deleteSong = (id) => {
 
         resetBtn.addEventListener("click", () => {
             userData.songs = [...allSongs];
-            renderSongs(sortSongs(userData?.songs));
+            renderSongs(sortSongs());
 
             resetBtn.remove();
-
-            console.log(resetBtn);
         });
     }
 };
