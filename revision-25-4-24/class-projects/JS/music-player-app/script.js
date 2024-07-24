@@ -233,6 +233,7 @@ const shuffle = () => {
 
     renderSongs(userData?.songs);
     setPlayerDisplay();
+    pauseSong();
 };
 
 shuffleButton.addEventListener("click", shuffle);
