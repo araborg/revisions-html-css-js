@@ -91,7 +91,7 @@ const renderSongs = (array) => {
                         <span class="song-duration">${song.duration}</span>
                     </div>
 
-                    <button class="song-replay">
+                    <button class="song-replay" onclick = replaySong(${song.id})>
                         <svg
                             width="14"
                             height="14"
