@@ -225,7 +225,11 @@ const setPlayerDisplay = () => {
     playerSongDuration.innerHTML = song.duration || "";
 };
 
-// const shuffle
+const shuffle = () => {
+    console.log("clicked");
+};
+
+shuffleButton.addEventListener("click", shuffle);
 
 // const deleteSong
 
