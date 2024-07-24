@@ -292,6 +292,11 @@ button:focus,
     fill: red;
 }
 
+.reset {
+    padding: 5px;
+    height: 20px;
+}
+
 /* Media Quaries: Responsiveness */
 @media (max-width: 700px) {
     .player,
