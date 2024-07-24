@@ -244,7 +244,8 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
 
     if (!userData?.songs.length) {
-        console.log("deleted all songs");
+        const resetBtn = document.createElement("button");
+        console.log(resetBtn);
     }
 };
 
