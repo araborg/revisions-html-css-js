@@ -253,6 +253,8 @@ const deleteSong = (id) => {
 
         resetBtn.appendChild(resetText);
         playlistSongs.appendChild(resetBtn);
+
+        resetBtn.addEventListener("click", () => {});
         // console.log(playlist);
     }
 };
