@@ -237,7 +237,9 @@ const shuffle = () => {
 
 shuffleButton.addEventListener("click", shuffle);
 
-// const deleteSong
+const deleteSong = (id) => {
+    console.log(id);
+};
 
 // const highlightCurrentSong
 
