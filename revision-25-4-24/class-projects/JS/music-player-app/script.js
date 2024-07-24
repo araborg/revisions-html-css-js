@@ -226,12 +226,13 @@ const setPlayerDisplay = () => {
 };
 
 const shuffle = () => {
-    const shuffleNum = Math.random() - 0.5;
+    // const shuffleNum = Math.random() - 0.5;
     // console.log(shuffleNum);
-    userData?.songs.sort(() => shuffleNum);
+    userData?.songs.sort(() => Math.random() - 0.5);
+    return renderSongs(userData?.songs);
 
-    console.log(userData?.songs);
-    return userData?.songs;
+    // console.log(userData?.songs);
+    // return userData?.songs;
 };
 
 shuffleButton.addEventListener("click", shuffle);
