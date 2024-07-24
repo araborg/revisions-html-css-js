@@ -240,9 +240,12 @@ shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
-    console.log(userData.songs);
 
-    renderSongs(userData.songs);
+    renderSongs(userData?.songs);
+
+    if (!userData?.songs.length) {
+        console.log("deleted all songs");
+    }
 };
 
 // const highlightCurrentSong
