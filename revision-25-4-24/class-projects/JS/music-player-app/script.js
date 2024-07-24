@@ -254,7 +254,9 @@ const deleteSong = (id) => {
         resetBtn.appendChild(resetText);
         playlistSongs.appendChild(resetBtn);
 
-        resetBtn.addEventListener("click", () => {});
+        resetBtn.addEventListener("click", () => {
+            renderSongs(sortSongs(userData?.songs));
+        });
     }
 };
 
