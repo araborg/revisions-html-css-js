@@ -105,7 +105,7 @@ const renderSongs = (array) => {
                         </svg>
                     </button>
 
-                    <button class="song-delete">
+                    <button class="song-delete" onclick=deleteSong(${song.id})>
                         <svg
                             width="20"
                             height="20"
