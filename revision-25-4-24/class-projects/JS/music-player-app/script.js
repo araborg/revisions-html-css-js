@@ -227,11 +227,11 @@ const setPlayerDisplay = () => {
 
 const shuffle = () => {
     userData?.songs.sort(() => Math.random() - 0.5);
-    renderSongs(userData?.songs);
 
     userData.currentSong = null;
     userData.currentTime = 0;
 
+    renderSongs(userData?.songs);
     setPlayerDisplay();
 
     console.log(userData?.currentSong);
