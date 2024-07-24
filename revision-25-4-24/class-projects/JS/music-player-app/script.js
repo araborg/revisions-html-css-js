@@ -233,9 +233,6 @@ const shuffle = () => {
 
     renderSongs(userData?.songs);
     setPlayerDisplay();
-
-    console.log(userData?.currentSong);
-    // return userData?.songs;
 };
 
 shuffleButton.addEventListener("click", shuffle);
