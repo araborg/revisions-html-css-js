@@ -253,7 +253,7 @@ button:focus,
 
     column-gap: 10px;
 
-    height: 32px;
+    height: 100%;
 
     cursor: pointer;
 
