@@ -220,10 +220,10 @@ const setPlayerDisplay = () => {
     const song = userData?.songs[songIndex];
     console.log(song);
 
-    playerSongTitle.innerText = song.title ? song.title : "";
+    playerSongTitle.innerText = song?.title ? song?.title : "";
 
-    playerSongArtist.innerHTML = song.artist ? song.artist : "";
-    playerSongDuration.innerHTML = song.duration ? song.duration : "";
+    playerSongArtist.innerHTML = song?.artist ? song?.artist : "";
+    playerSongDuration.innerHTML = song?.duration ? song?.duration : "";
 };
 
 const shuffle = () => {
