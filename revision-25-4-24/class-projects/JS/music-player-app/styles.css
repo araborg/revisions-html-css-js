@@ -293,9 +293,9 @@ button:focus,
 }
 
 .reset {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 
     padding: 5px;
     height: 30px;
