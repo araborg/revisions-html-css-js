@@ -84,7 +84,7 @@ const renderSongs = (array) => {
     const songHTML = array
         .map((song) => {
             return `
-                <li class='playlist-song ${song.id}' onclick = playSong(${song.id}) >
+                <li class='playlist-song song-${song.id}' onclick = playSong(${song.id}) >
                     <div class="playlist-song-info">
                         <span class="song-title">${song.title}</span>
                         <span class="song-artist">${song.artist}</span>
