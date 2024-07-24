@@ -239,6 +239,10 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
+    if (userData?.currentSong.id === id) {
+        console.log(true);
+    }
+
     userData.songs = userData?.songs.slice().filter((song) => song.id !== id);
 
     renderSongs(userData?.songs);
