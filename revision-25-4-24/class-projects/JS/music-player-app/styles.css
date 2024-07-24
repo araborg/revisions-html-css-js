@@ -293,10 +293,15 @@ button:focus,
 }
 
 .reset {
-    padding: 5px;
-    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    border: 3px solid green;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+
+    color: var(--primary-color);
 }
 
 /* Media Quaries: Responsiveness */
