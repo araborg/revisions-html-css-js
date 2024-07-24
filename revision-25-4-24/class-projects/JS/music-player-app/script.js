@@ -226,7 +226,8 @@ const setPlayerDisplay = () => {
 };
 
 const shuffle = () => {
-    console.log("clicked");
+    const shuffleNum = Math.random() - 0.5;
+    console.log(shuffleNum);
 };
 
 shuffleButton.addEventListener("click", shuffle);
