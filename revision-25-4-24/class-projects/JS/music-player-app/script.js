@@ -231,6 +231,7 @@ const shuffle = () => {
 
     userData.currentSong = null;
     userData.currentTime = 0;
+
     setPlayerDisplay();
 
     console.log(userData?.currentSong);
