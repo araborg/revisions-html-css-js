@@ -257,7 +257,6 @@ const deleteSong = (id) => {
         resetBtn.addEventListener("click", () => {
             userData.songs = [...allSongs];
             renderSongs(sortSongs(userData?.songs));
-            console.log(userData?.songs);
         });
     }
 };
