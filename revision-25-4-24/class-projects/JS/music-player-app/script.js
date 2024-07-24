@@ -239,7 +239,8 @@ const shuffle = () => {
 shuffleButton.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
-    console.log(id);
+    userData?.songs.filter((song) => song.id !== id);
+    console.log(userData?.songs);
 };
 
 // const highlightCurrentSong
