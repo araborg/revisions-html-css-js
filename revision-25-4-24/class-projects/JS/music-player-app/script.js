@@ -226,12 +226,12 @@ const setPlayerDisplay = () => {
 };
 
 const shuffle = () => {
-    // const shuffleNum = Math.random() - 0.5;
-    // console.log(shuffleNum);
     userData?.songs.sort(() => Math.random() - 0.5);
-    return renderSongs(userData?.songs);
+    renderSongs(userData?.songs);
 
-    // console.log(userData?.songs);
+    userData.currentSong = null;
+
+    console.log(userData?.currentSong);
     // return userData?.songs;
 };
 
