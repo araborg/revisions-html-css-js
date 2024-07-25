@@ -258,8 +258,6 @@ button:focus,
     height: 100%;
 
     cursor: pointer;
-
-    /* border: 2px solid red; */
 }
 
 .song-title {
