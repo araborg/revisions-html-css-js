@@ -277,7 +277,12 @@ const deleteSong = (id) => {
 
 const highlightCurrentSong = () => {
     const songs = document.querySelectorAll(".playlist-song");
-    console.log(songs);
+
+    const currentSong = document.querySelector(
+        `.song-${userData?.currentSong.id}`
+    );
+
+    console.log(currentSong);
 };
 
 // const setPlayButtonAccessibleText
