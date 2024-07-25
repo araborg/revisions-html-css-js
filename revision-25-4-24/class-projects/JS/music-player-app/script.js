@@ -156,6 +156,7 @@ const playSong = (id) => {
 
     // helper fxns
     setPlayerDisplay();
+    highlightCurrentSong();
 
     audio.play();
 };
@@ -274,7 +275,10 @@ const deleteSong = (id) => {
     }
 };
 
-const highlightCurrentSong = () => {};
+const highlightCurrentSong = () => {
+    const songs = document.querySelectorAll(".playlist-song");
+    console.log(songs);
+};
 
 // const setPlayButtonAccessibleText
 
