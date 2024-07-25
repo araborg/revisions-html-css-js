@@ -274,7 +274,7 @@ const deleteSong = (id) => {
     }
 };
 
-// const highlightCurrentSong
+const highlightCurrentSong = () => {};
 
 // const setPlayButtonAccessibleText
 
