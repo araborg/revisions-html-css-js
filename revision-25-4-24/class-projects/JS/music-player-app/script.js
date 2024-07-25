@@ -278,11 +278,19 @@ const deleteSong = (id) => {
 const highlightCurrentSong = () => {
     const songs = document.querySelectorAll(".playlist-song");
 
-    const currentSong = document.querySelector(
+    const highlightSong = document.querySelector(
         `.song-${userData?.currentSong.id}`
     );
 
-    console.log(currentSong);
+    for (let song of songs) {
+        song.removeAttribute("aria-current");
+    }
+
+    if (highlightSong) {
+        highlightSong.setAttribute("aria-current", true);
+    }
+
+    console.log(highlightSong);
 };
 
 // const setPlayButtonAccessibleText

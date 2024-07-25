@@ -246,6 +246,10 @@ button:focus,
     /* border: 2px solid blue; */
 }
 
+[aria-current] {
+    background-color: var(--background-color);
+}
+
 .playlist-song-info {
     display: flex;
     justify-content: space-around;
