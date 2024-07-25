@@ -250,7 +250,7 @@ const deleteSong = (id) => {
         pauseSong();
     }
 
-    userData.songs = userData?.songs.slice().filter((song) => song.id !== id);
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
 
     renderSongs(userData?.songs);
 
