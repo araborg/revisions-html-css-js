@@ -242,8 +242,6 @@ button:focus,
     align-items: center;
 
     padding: 5px;
-
-    /* border: 2px solid blue; */
 }
 
 [aria-current] {
