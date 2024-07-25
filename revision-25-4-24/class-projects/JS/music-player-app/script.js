@@ -287,10 +287,8 @@ const highlightCurrentSong = () => {
     }
 
     if (highlightSong) {
-        highlightSong.setAttribute("aria-current", true);
+        highlightSong.setAttribute("aria-current", "true");
     }
-
-    console.log(highlightSong);
 };
 
 // const setPlayButtonAccessibleText
