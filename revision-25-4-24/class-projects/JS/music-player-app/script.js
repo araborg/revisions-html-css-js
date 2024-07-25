@@ -299,4 +299,5 @@ const highlightCurrentSong = () => {
 
 audio.addEventListener("ended", () => {
     console.log("Hello");
+    console.log("makes 10");
 });
