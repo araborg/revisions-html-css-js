@@ -300,7 +300,7 @@ const highlightCurrentSong = () => {
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
 
-    if (userData.songs.length > songIndex) {
+    if (userData.songs.length - 1 >= songIndex) {
         const nextSongIndex = songIndex + 1;
         const nextSong = userData.songs[nextSongIndex];
         console.log(userData.songs.length, songIndex);
