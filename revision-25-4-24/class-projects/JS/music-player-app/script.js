@@ -309,22 +309,19 @@ audio.addEventListener("ended", () => {
 });
 
 const replayAllSongs = () => {
-    console.log("Do you want to go again");
-    console.log(userData.currentSong);
-
-    const songIndex = getCurrentSongIndex();
-    const nextSongIndex = songIndex + 1;
     // if (!userData?.currentSong) {
     // return;
     // } else {
     audio.addEventListener("ended", () => {
+        const songIndex = getCurrentSongIndex();
+        const nextSongIndex = songIndex + 1;
+
         if (userData.songs.length - 1 >= nextSongIndex) {
             const nextSong = userData.songs[nextSongIndex];
 
             playSong(nextSong?.id);
         } else {
-            userData.currentSong = userData?.songs[0];
-
+            // userData.currentSong = userData?.songs[0];
             // playSong(userData?.songs[0].id);
         }
     });
