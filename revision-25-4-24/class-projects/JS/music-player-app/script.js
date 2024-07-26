@@ -308,9 +308,7 @@ audio.addEventListener("ended", () => {
     }
 });
 
-replayButton.addEventListener("click", () => {
-    console.log("Do you want to go again");
-});
+replayButton.addEventListener("click");
 
 const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
