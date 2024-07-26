@@ -308,4 +308,7 @@ audio.addEventListener("ended", () => {
     }
 });
 
-const replayAllSongs = () => {};
+const replayAllSongs = () => {
+    const songIndex = getCurrentSongIndex();
+    const nextSongIndex = songIndex + 1;
+};
