@@ -309,6 +309,7 @@ audio.addEventListener("ended", () => {
 });
 
 const replayAllSongs = () => {
+    console.log("Do you want to go again");
     if (!userData?.currentSong) {
         return;
     } else {
@@ -321,7 +322,7 @@ const replayAllSongs = () => {
 
                 playSong(nextSong?.id);
             } else {
-                console.log("Do you want to go again");
+                playSong(userData?.songs[0]);
             }
         });
     }
