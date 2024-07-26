@@ -322,8 +322,10 @@ const replayAllSongs = () => {
             playSong(nextSong?.id);
         } else {
             // userData.currentSong = userData?.songs[0];
-            // playSong(userData?.songs[0].id);
+            playSong(userData?.songs[0].id);
         }
+
+        console.log(songIndex, nextSongIndex);
     });
     // }
 };
