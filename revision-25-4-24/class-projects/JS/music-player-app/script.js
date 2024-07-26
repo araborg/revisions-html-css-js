@@ -309,21 +309,7 @@ audio.addEventListener("ended", () => {
 });
 
 const replayAllSongs = () => {
-    const songIndex = getCurrentSongIndex();
-
-    audio.addEventListener("ended", () => {
-        const nextSongIndex = songIndex + 1;
-
-        console.log(songIndex, nextSongIndex);
-
-        if (userData.songs.length - 1 >= nextSongIndex) {
-            const nextSong = userData.songs[nextSongIndex];
-
-            playSong(nextSong?.id);
-        } else {
-            return;
-        }
-    });
+    audio.addEventListener("ended", () => {});
 };
 
 replayButton.addEventListener("click", replayAllSongs);
