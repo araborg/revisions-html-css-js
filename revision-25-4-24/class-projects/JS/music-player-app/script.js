@@ -313,14 +313,16 @@ replayButton.addEventListener("click", () => {
 });
 
 const replayAllSongs = () => {
-    const songIndex = getCurrentSongIndex();
-    const nextSongIndex = songIndex + 1;
+    audio.addEventListener("ended", () => {
+        const songIndex = getCurrentSongIndex();
+        const nextSongIndex = songIndex + 1;
 
-    if (userData.songs.length - 1 >= nextSongIndex) {
-        const nextSong = userData.songs[nextSongIndex];
+        if (userData.songs.length - 1 >= nextSongIndex) {
+            const nextSong = userData.songs[nextSongIndex];
 
-        playSong(nextSong?.id);
-    } else {
-        console.log("Do you want to go again");
-    }
+            playSong(nextSong?.id);
+        } else {
+            console.log("Do you want to go again");
+        }
+    });
 };
