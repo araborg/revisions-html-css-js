@@ -293,8 +293,6 @@ const highlightCurrentSong = () => {
 
 // const setPlayButtonAccessibleText
 
-// const replayAllSongs
-
 // const replaySong
 
 audio.addEventListener("ended", () => {
@@ -309,3 +307,5 @@ audio.addEventListener("ended", () => {
         return;
     }
 });
+
+const replayAllSongs = () => {};
