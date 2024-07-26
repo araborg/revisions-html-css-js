@@ -309,7 +309,9 @@ audio.addEventListener("ended", () => {
 });
 
 const replayAllSongs = () => {
-    audio.addEventListener("ended", () => {});
+    audio.addEventListener("ended", () => {
+        console.log("end reached");
+    });
 };
 
 replayButton.addEventListener("click", replayAllSongs);
