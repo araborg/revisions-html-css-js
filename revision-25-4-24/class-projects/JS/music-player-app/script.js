@@ -308,8 +308,6 @@ audio.addEventListener("ended", () => {
     }
 });
 
-replayButton.addEventListener("click");
-
 const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
         const songIndex = getCurrentSongIndex();
@@ -324,3 +322,5 @@ const replayAllSongs = () => {
         }
     });
 };
+
+replayButton.addEventListener("click", replayAllSongs);
