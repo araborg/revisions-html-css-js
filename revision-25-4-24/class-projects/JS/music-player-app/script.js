@@ -299,16 +299,17 @@ const highlightCurrentSong = () => {
 
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
+    const nextSongIndex = songIndex + 1;
 
     if (userData.songs.length - 1 >= songIndex) {
-        const nextSongIndex = songIndex + 1;
         const nextSong = userData.songs[nextSongIndex];
-        console.log(userData.songs.length, songIndex);
 
         playSong(nextSong?.id);
     } else {
         return;
     }
+
+    console.log(userData.songs.length, songIndex);
 
     // console.log(songIndex);
 });
