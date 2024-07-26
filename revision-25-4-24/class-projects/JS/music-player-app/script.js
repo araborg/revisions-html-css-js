@@ -301,15 +301,15 @@ audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
 
-    if (userData.songs.length - 1 >= songIndex) {
+    console.log(userData.songs.length, nextSongIndex);
+
+    if (userData.songs.length - 1 >= nextSongIndex) {
         const nextSong = userData.songs[nextSongIndex];
 
         playSong(nextSong?.id);
     } else {
         return;
     }
-
-    console.log(userData.songs.length, songIndex);
 
     // console.log(songIndex);
 });
