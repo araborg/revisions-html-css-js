@@ -322,6 +322,8 @@ const replayAllSongs = () => {
 
                 playSong(nextSong?.id);
             } else {
+                userData.currentSong = userData?.songs[0];
+
                 playSong(userData?.songs[0]);
             }
         });
