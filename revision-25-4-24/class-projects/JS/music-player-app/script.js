@@ -308,11 +308,19 @@ audio.addEventListener("ended", () => {
     }
 });
 
+replayButton.addEventListener("click", () => {
+    console.log("Do you want to go again");
+});
+
 const replayAllSongs = () => {
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
 
     if (userData.songs.length - 1 >= nextSongIndex) {
         const nextSong = userData.songs[nextSongIndex];
+
+        playSong(nextSong?.id);
+    } else {
+        console.log("Do you want to go again");
     }
 };
