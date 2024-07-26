@@ -305,8 +305,8 @@ audio.addEventListener("ended", () => {
         const nextSong = userData.songs[nextSongIndex];
         console.log(nextSong);
 
-        // playSong();
+        playSong(nextSong.id);
     }
 
-    console.log(songIndex);
+    // console.log(songIndex);
 });
