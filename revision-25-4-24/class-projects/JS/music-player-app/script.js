@@ -298,6 +298,7 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 audio.addEventListener("ended", () => {
-    console.log("Hello");
-    console.log("makes 10");
+    const songIndex = getCurrentSongIndex();
+
+    console.log(songIndex);
 });
