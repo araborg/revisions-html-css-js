@@ -306,6 +306,8 @@ audio.addEventListener("ended", () => {
         console.log(nextSong);
 
         playSong(nextSong.id);
+    } else {
+        return;
     }
 
     // console.log(songIndex);
