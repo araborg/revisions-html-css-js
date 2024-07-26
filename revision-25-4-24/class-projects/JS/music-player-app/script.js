@@ -300,5 +300,11 @@ const highlightCurrentSong = () => {
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
 
+    if (userData.songs.length > songIndex) {
+        const nextSong = songIndex + 1;
+
+        playSong();
+    }
+
     console.log(songIndex);
 });
