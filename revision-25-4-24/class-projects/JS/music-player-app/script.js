@@ -301,8 +301,6 @@ audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
 
-    console.log(userData.songs.length, nextSongIndex);
-
     if (userData.songs.length - 1 >= nextSongIndex) {
         const nextSong = userData.songs[nextSongIndex];
 
@@ -310,6 +308,4 @@ audio.addEventListener("ended", () => {
     } else {
         return;
     }
-
-    // console.log(songIndex);
 });
