@@ -303,7 +303,7 @@ audio.addEventListener("ended", () => {
     if (userData.songs.length > songIndex) {
         const nextSongIndex = songIndex + 1;
         const nextSong = userData.songs[nextSongIndex];
-        console.log(nextSong);
+        console.log(userData.songs.length, songIndex);
 
         playSong(nextSong.id);
     } else {
