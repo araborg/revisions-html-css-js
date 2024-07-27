@@ -298,6 +298,7 @@ const highlightCurrentSong = () => {
 
 const replayAllSongs = () => {
     const songIndex = getCurrentSongIndex();
+    // const nextSongIndex = songIndex + 1;
 
     // if (userData?.currentSong) {
     //     console.log(userData?.songs.length, nextSongIndex);
@@ -307,7 +308,9 @@ const replayAllSongs = () => {
         const nextSongIndex = songIndex + 1;
         // console.log(userData?.songs.length, nextSongIndex);
 
-        console.log(userData?.songs.length - 1 === nextSongIndex);
+        if (userData?.songs.length === nextSongIndex) {
+            console.log("song");
+        }
     });
 
     // if (userData?.songs.length === nextSongIndex) {
