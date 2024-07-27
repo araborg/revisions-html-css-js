@@ -302,19 +302,15 @@ const replaySong = (id) => {
 
     userData.replayASong = !userData.replayASong;
 
-    // console.log(userData.replayASong);
-
     console.log(userData?.replayAllEnabled);
 
     if (userData?.replayASong) {
-        // audio.addEventListener("ended", () => {
-        // playSong(song?.id);
-        // });
+        audio.addEventListener("ended", () => {
+            playSong(song?.id);
+        });
 
         console.log("working");
     }
-    // !userData?.replayAllEnabled;
-    // console.log(userData?.replayAllEnabled);
 };
 
 songReplay.addEventListener("click", replaySong);
