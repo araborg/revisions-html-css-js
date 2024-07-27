@@ -8,6 +8,7 @@ const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
 const songReplay = document.querySelector(".song-replay");
+console.log(songReplay);
 
 // player display
 const playerSongTitle = document.querySelector("#player-song-title");
@@ -97,7 +98,7 @@ const renderSongs = (array) => {
                         <span class="song-duration">${song.duration}</span>
                     </div>
 
-                    <button class="song-replay" onclick = replaySong(${song.id})>
+                    <button class="song-replay song-${song.id}" onclick = replaySong(${song.id})>
                         <svg
                             width="14"
                             height="14"
@@ -312,8 +313,6 @@ const replaySong = (id) => {
         audio.addEventListener("ended", () => {
             playSong(song?.id);
         });
-
-        console.log("working");
     } else if (songIndex !== nextSongIndex) {
         audio.addEventListener("ended", () => {
             // if (userData?.currentSong) {}
@@ -322,11 +321,10 @@ const replaySong = (id) => {
 
                 playSong(nextSong?.id);
 
-                if (
-                    userData.currentSong !==
-                    userData.songs[userData.songs.length - 1]
-                ) {
+                if (userData.currentSong !== song) {
                     nextSongIndex = nextSongIndex + 1;
+                } else {
+                    console.log("hello");
                 }
 
                 /*
@@ -344,6 +342,13 @@ const replaySong = (id) => {
                 // return;
             }*/
 
+            if (
+                userData.currentSong ===
+                userData.songs[userData.songs.length - 1]
+            ) {
+                console.log("hello");
+                // return;
+            }
             console.log(userData.currentSong);
         });
     }
