@@ -299,13 +299,13 @@ const highlightCurrentSong = () => {
 const replayAllSongs = () => {
     const songIndex = getCurrentSongIndex();
 
-    if (userData?.currentSong) {
-        console.log(userData?.songs.length, nextSongIndex);
-    }
+    // if (userData?.currentSong) {
+    //     console.log(userData?.songs.length, nextSongIndex);
+    // }
 
     audio.addEventListener("ended", () => {
-        console.log(userData?.songs.length, nextSongIndex);
         const nextSongIndex = songIndex + 1;
+        // console.log(userData?.songs.length, nextSongIndex);
 
         console.log(userData?.songs.length - 1 === nextSongIndex);
     });
