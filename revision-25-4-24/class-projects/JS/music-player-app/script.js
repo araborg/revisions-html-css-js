@@ -297,6 +297,8 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 const replayAllSongs = () => {
+    userData.replayAllEnabled = true;
+
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
 
@@ -312,6 +314,8 @@ const replayAllSongs = () => {
 };
 
 replayButton.addEventListener("click", replayAllSongs);
+
+console.log(userData?.replayAllEnabled);
 
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
