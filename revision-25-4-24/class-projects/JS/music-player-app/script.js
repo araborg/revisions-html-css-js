@@ -303,6 +303,8 @@ const replaySong = (id) => {
     let songIndex = getCurrentSongIndex();
     let nextSongIndex = songIndex + 1;
 
+    console.log(userData?.songs[songIndex], song);
+
     userData.replayASong = !userData.replayASong;
 
     // console.log(userData?.replayAllEnabled);
