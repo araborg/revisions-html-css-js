@@ -310,7 +310,12 @@ audio.addEventListener("ended", () => {
 
 const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
-        console.log("end reached");
+        const songIndex = getCurrentSongIndex();
+        const nextSongIndex = songIndex + 1;
+
+        if (userData?.songs.length - 1 === nextSongIndex) {
+            console.log("end reached");
+        }
     });
 };
 
