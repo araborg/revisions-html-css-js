@@ -310,7 +310,7 @@ const replayAllSongs = () => {
         });
     }
 
-    console.log("replayAllSongs playing");
+    console.log("replayAllSongs playing", userData?.replayAllEnabled);
 };
 
 replayButton.addEventListener("click", replayAllSongs);
