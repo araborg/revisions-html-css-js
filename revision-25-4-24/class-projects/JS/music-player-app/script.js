@@ -297,8 +297,9 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 const replayAllSongs = () => {
+    const songIndex = getCurrentSongIndex();
+
     audio.addEventListener("ended", () => {
-        const songIndex = getCurrentSongIndex();
         const nextSongIndex = songIndex + 1;
 
         if (userData.songs.length - 1 >= nextSongIndex) {
