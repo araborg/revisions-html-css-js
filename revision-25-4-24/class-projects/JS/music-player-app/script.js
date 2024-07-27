@@ -297,12 +297,10 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 const replayAllSongs = () => {
+    userData.replayAllEnabled = true;
     const songIndex = getCurrentSongIndex();
-    // const nextSongIndex = songIndex + 1;
 
-    // if (userData?.currentSong) {
-    //     console.log(userData?.songs.length, nextSongIndex);
-    // }
+    console.log(songIndex);
 
     audio.addEventListener("ended", () => {
         const nextSongIndex = songIndex + 1;
@@ -315,7 +313,7 @@ const replayAllSongs = () => {
 
     // if (userData?.songs.length === nextSongIndex) {
 
-    // console.log("end reached");
+    console.log("end reached");
     // }
 };
 
@@ -323,17 +321,20 @@ replayButton.addEventListener("click", replayAllSongs);
 
 // console.log(userData?.replayAllEnabled);
 
-audio.addEventListener("ended", () => {
-    const songIndex = getCurrentSongIndex();
-    const nextSongIndex = songIndex + 1;
+const playAll = () => {
+    audio.addEventListener("ended", () => {
+        const songIndex = getCurrentSongIndex();
+        const nextSongIndex = songIndex + 1;
 
-    if (userData.songs.length - 1 >= nextSongIndex) {
-        const nextSong = userData.songs[nextSongIndex];
+        if (userData.songs.length - 1 >= nextSongIndex) {
+            const nextSong = userData.songs[nextSongIndex];
 
-        playSong(nextSong?.id);
-    } else {
-        return;
-    }
-
+            playSong(nextSong?.id);
+        } else {
+            return;
+        }
+    });
     console.log("playing");
-});
+};
+
+!userData?.replayAllEnabled ? playAll() : replayAllSongs();
