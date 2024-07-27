@@ -315,7 +315,7 @@ const replayAllSongs = () => {
 
         console.log(songIndex, nextSongIndex);
 
-        if (userData?.songs.length - 1 === nextSongIndex) {
+        if (userData?.songs.length === nextSongIndex) {
             console.log("end reached");
         }
     });
