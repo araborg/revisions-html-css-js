@@ -110,7 +110,7 @@ const renderSongs = (array) => {
                         </svg>
                     </button>
 
-                    <button class="song-delete" onclick=deleteSong(${song.id})>
+                    <button class="song-delete song-${song.id}" onclick=deleteSong(${song.id})>
                         <svg
                             width="20"
                             height="20"
@@ -296,7 +296,11 @@ const highlightCurrentSong = () => {
 
 // const setPlayButtonAccessibleText
 
-const replaySong = () => {};
+const replaySong = (id) => {
+    console.log(id);
+};
+
+songReplay.addEventListener("click", replaySong);
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
