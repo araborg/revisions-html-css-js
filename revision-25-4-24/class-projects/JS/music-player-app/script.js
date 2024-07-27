@@ -321,19 +321,19 @@ const replaySong = (id) => {
                 const nextSong = userData.songs[nextSongIndex];
 
                 playSong(nextSong?.id);
-            }
 
+                if (userData.currentSong !== song) {
+                    nextSongIndex = nextSongIndex + 1;
+                }
+            } else if (
+                userData.currentSong ===
+                userData.songs[userData.songs.length - 1]
+            ) {
+                console.log("hello");
+                // return;
+            }
             console.log(userData.currentSong);
-
-            if (userData.currentSong !== song) {
-                nextSongIndex = nextSongIndex + 1;
-            }
         });
-    } else if (
-        userData.currentSong === userData.songs[userData.songs.length - 1]
-    ) {
-        console.log("hello");
-        // return;
     }
 
     console.log(userData.replayASong);
