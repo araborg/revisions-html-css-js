@@ -297,7 +297,13 @@ const highlightCurrentSong = () => {
 // const setPlayButtonAccessibleText
 
 const replaySong = (id) => {
-    console.log(id);
+    const song = userData.songs.find((song) => song.id === id);
+
+    if (!userData?.replayAllEnabled) {
+        audio.addEventListener("ended", () => {
+            playSong(song.id);
+        });
+    }
 };
 
 songReplay.addEventListener("click", replaySong);
