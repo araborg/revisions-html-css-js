@@ -300,15 +300,15 @@ const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
         const songIndex = getCurrentSongIndex();
         const nextSongIndex = songIndex + 1;
-        console.log(songIndex, nextSongIndex);
+        console.log(songIndex, nextSongIndex, userData.songs.length);
 
-        if (userData.songs.length === nextSongIndex) {
-            //     const nextSong = userData.songs[nextSongIndex];
-            // console.log(nextSongIndex);
-            playSong(userData?.songs[0].id);
+        // if (userData.songs.length === nextSongIndex) {
+        //     const nextSong = userData.songs[nextSongIndex];
+        // console.log(nextSongIndex);
+        // playSong(userData?.songs[0].id);
 
-            //     playSong(nextSong?.id);
-        }
+        //     playSong(nextSong?.id);
+        // }
         //  else {
         //     console.log("play more");
         // }
