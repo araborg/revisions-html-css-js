@@ -322,14 +322,18 @@ const replaySong = (id) => {
 
                 playSong(nextSong?.id);
 
-                if (
-                    userData.currentSong !== song &&
-                    userData.currentSong ===
-                        userData.songs[userData.songs.length - 1]
-                ) {
+                if (userData.currentSong !== song) {
                     nextSongIndex = nextSongIndex + 1;
                 }
             }
+
+            /*else if (
+                userData.currentSong ===
+                userData.songs[userData.songs.length - 1]
+            ) {
+                console.log("hello");
+                // return;
+            }*/
 
             console.log(userData.currentSong);
         });
