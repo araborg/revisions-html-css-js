@@ -306,12 +306,13 @@ const replaySong = (id) => {
 
     console.log(userData?.replayAllEnabled);
 
-    if (!userData?.replayAllEnabled) {
-        audio.addEventListener("ended", () => {
-            playSong(song?.id);
-        });
+    if (userData?.replayASong) {
+        // audio.addEventListener("ended", () => {
+        // playSong(song?.id);
+        // });
+
+        console.log("working");
     }
-    userData.replayAllEnabled = !userData.replayAllEnabled;
     // !userData?.replayAllEnabled;
     console.log(userData?.replayAllEnabled);
 };
