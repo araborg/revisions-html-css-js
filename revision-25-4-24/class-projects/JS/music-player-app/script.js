@@ -299,15 +299,16 @@ const highlightCurrentSong = () => {
 const replaySong = (id) => {
     const song = userData.songs.find((song) => song.id === id);
 
-    console.log(!userData?.replayAllEnabled);
+    console.log(userData?.replayAllEnabled);
 
     if (!userData?.replayAllEnabled) {
-        //     audio.addEventListener("ended", () => {
-        //         playSong(song?.id);
-        //     });
-
-        !userData?.replayAllEnabled;
+        audio.addEventListener("ended", () => {
+            playSong(song?.id);
+        });
     }
+    userData.replayAllEnabled = !userData.replayAllEnabled;
+    // !userData?.replayAllEnabled;
+    console.log(userData?.replayAllEnabled);
 };
 
 songReplay.addEventListener("click", replaySong);
