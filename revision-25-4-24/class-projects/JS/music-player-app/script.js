@@ -303,6 +303,8 @@ const replayAllSongs = () => {
     if (userData?.currentSong) {
         console.log(userData?.songs.length, nextSongIndex);
     }
+
+    console.log(userData?.songs.length === nextSongIndex);
     // if (userData?.songs.length === nextSongIndex) {
 
     // audio.addEventListener("ended", () => {
