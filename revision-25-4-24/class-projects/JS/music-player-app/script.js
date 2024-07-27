@@ -312,7 +312,6 @@ const replaySong = (id) => {
         });
     } else if (songIndex !== nextSongIndex) {
         audio.addEventListener("ended", () => {
-            // if (userData?.currentSong) {}
             if (userData.songs.length - 1 >= nextSongIndex) {
                 const nextSong = userData.songs[nextSongIndex];
 
@@ -323,28 +322,13 @@ const replaySong = (id) => {
                 } else {
                     console.log("hello");
                 }
-
-                /*
-                 if (userData.currentSong !== song) {
-                    nextSongIndex = nextSongIndex + 1;
-                }
-                */
             }
-
-            /*else if (
-                userData.currentSong ===
-                userData.songs[userData.songs.length - 1]
-            ) {
-                console.log("hello");
-                // return;
-            }*/
 
             if (
                 userData.currentSong ===
                 userData.songs[userData.songs.length - 1]
             ) {
                 console.log("hello");
-                // return;
             }
             console.log(userData.currentSong);
         });
