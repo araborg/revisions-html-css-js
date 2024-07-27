@@ -300,6 +300,10 @@ const highlightCurrentSong = () => {
 const replaySong = (id) => {
     const song = userData.songs.find((song) => song.id === id);
 
+    userData.replayASong = !userData.replayASong;
+
+    console.log(userData.replayASong);
+
     /*
         console.log(userData?.replayAllEnabled);
 
