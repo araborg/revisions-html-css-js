@@ -319,7 +319,7 @@ const replaySong = (id) => {
         });
 
         console.log("working");
-    } else {
+    } else if (songIndex !== nextSongIndex) {
         audio.addEventListener("ended", () => {
             // let songIndex = getCurrentSongIndex();
             // let nextSongIndex = songIndex + 1;
