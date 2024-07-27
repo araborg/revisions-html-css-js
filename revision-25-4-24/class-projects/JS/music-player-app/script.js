@@ -302,7 +302,7 @@ const replayAllSongs = () => {
         // const nextSongIndex = songIndex + 1;
 
         // console.log(songIndex, songIndex + 1, userData.songs.length);
-        console.log(songIndex);
+        console.log(songIndex - 1);
         console.log(userData?.songs[songIndex]);
 
         // if (userData.songs.length === nextSongIndex) {
@@ -339,4 +339,4 @@ const playAll = () => {
     console.log("playing");
 };
 
-!userData?.replayAllEnabled ? playAll() : replayAllSongs();
+// !userData?.replayAllEnabled ? playAll() : replayAllSongs();
