@@ -320,11 +320,12 @@ const replaySong = (id) => {
                 const nextSong = userData.songs[nextSongIndex];
 
                 playSong(nextSong?.id);
-            } else {
-                userData?.replayAllEnabled
-                    ? playSong(userData?.songs[0].id)
-                    : null;
             }
+            // else {
+            //     userData?.replayAllEnabled
+            //         ? playSong(userData?.songs[0].id)
+            //         : null;
+            // }
 
             console.log("not working");
         });
