@@ -303,6 +303,8 @@ const replaySong = (id) => {
         audio.addEventListener("ended", () => {
             playSong(song.id);
         });
+    } else {
+        userData.replayAllEnabled = true;
     }
 };
 
