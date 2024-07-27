@@ -309,16 +309,15 @@ audio.addEventListener("ended", () => {
 });
 
 const replayAllSongs = () => {
-    audio.addEventListener("ended", () => {
-        const songIndex = getCurrentSongIndex();
-        const nextSongIndex = songIndex + 1;
+    const songIndex = getCurrentSongIndex();
+    const nextSongIndex = songIndex + 1;
 
-        console.log(songIndex, nextSongIndex);
-
-        if (userData?.songs.length === nextSongIndex) {
+    if (userData?.songs.length === nextSongIndex) {
+        console.log(userData?.songs.length, nextSongIndex);
+        audio.addEventListener("ended", () => {
             console.log("end reached");
-        }
-    });
+        });
+    }
 };
 
 replayButton.addEventListener("click", replayAllSongs);
