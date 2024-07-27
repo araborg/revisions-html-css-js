@@ -302,7 +302,8 @@ const replaySong = (id) => {
 
     userData.replayASong = !userData.replayASong;
 
-    console.log(userData?.replayAllEnabled);
+    // console.log(userData?.replayAllEnabled);
+    console.log(userData.replayASong);
 
     if (userData?.replayASong) {
         audio.addEventListener("ended", () => {
@@ -310,6 +311,23 @@ const replaySong = (id) => {
         });
 
         console.log("working");
+    } else {
+        audio.addEventListener("ended", () => {
+            const songIndex = getCurrentSongIndex();
+            const nextSongIndex = songIndex + 1;
+
+            if (userData.songs.length - 1 >= nextSongIndex) {
+                const nextSong = userData.songs[nextSongIndex];
+
+                playSong(nextSong?.id);
+            } else {
+                userData?.replayAllEnabled
+                    ? playSong(userData?.songs[0].id)
+                    : null;
+            }
+
+            console.log("not working");
+        });
     }
 
     console.log(userData.replayASong);
