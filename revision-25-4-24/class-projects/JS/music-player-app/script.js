@@ -313,6 +313,8 @@ const replayAllSongs = () => {
         const songIndex = getCurrentSongIndex();
         const nextSongIndex = songIndex + 1;
 
+        console.log(songIndex, nextSongIndex);
+
         if (userData?.songs.length - 1 === nextSongIndex) {
             console.log("end reached");
         }
