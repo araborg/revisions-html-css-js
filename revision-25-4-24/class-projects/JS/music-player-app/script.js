@@ -306,7 +306,7 @@ const replayAllSongs = () => {
 
         audio.addEventListener("ended", () => {
             const nextSongIndex = songIndex + 1;
-            // console.log(userData?.songs.length, nextSongIndex);
+            console.log(userData?.songs.length - 1, nextSongIndex);
 
             console.log("end reached 1");
 
