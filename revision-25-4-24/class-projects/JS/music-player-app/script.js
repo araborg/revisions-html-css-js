@@ -306,6 +306,8 @@ const replayAllSongs = () => {
             console.log("end reached");
         });
     }
+
+    console.log("replayAllSongs playing");
 };
 
 replayButton.addEventListener("click", replayAllSongs);
@@ -321,4 +323,6 @@ audio.addEventListener("ended", () => {
     } else {
         return;
     }
+
+    console.log("playing");
 });
