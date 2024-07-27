@@ -60,6 +60,7 @@ let userData = {
     songs: [...allSongs],
     currentSong: null,
     currentTime: 0,
+    replayAllEnabled: false,
 };
 
 // const sortSongs = (songs) => {
