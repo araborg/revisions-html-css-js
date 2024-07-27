@@ -298,7 +298,8 @@ const highlightCurrentSong = () => {
 
 const replaySong = (id) => {
     const song = userData.songs.find((song) => song.id === id);
-    console.log(song);
+
+    console.log(userData?.replayAllEnabled);
 
     if (!userData?.replayAllEnabled) {
         audio.addEventListener("ended", () => {
@@ -311,7 +312,6 @@ songReplay.addEventListener("click", replaySong);
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
-    return replaySong() === undefined;
 };
 
 replayButton.addEventListener("click", replayAllSongs);
