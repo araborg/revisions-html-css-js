@@ -303,7 +303,7 @@ const replaySong = (id) => {
     let songIndex = getCurrentSongIndex();
     let nextSongIndex = songIndex + 1;
 
-    console.log(userData?.songs[songIndex].title, song.title);
+    // console.log(userData?.songs[songIndex].title, song.title);
 
     userData.replayASong = !userData.replayASong;
 
@@ -311,8 +311,8 @@ const replaySong = (id) => {
     console.log(userData.replayASong);
 
     if (
-        userData?.replayASong
-        // &&         userData?.songs[songIndex].title === song.title
+        userData?.replayASong &&
+        userData?.songs[songIndex].title === song.title
     ) {
         audio.addEventListener("ended", () => {
             playSong(song?.id);
