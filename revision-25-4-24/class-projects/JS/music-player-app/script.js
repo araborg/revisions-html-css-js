@@ -315,21 +315,21 @@ replayButton.addEventListener("click", replayAllSongs);
 
 // console.log(userData?.replayAllEnabled);
 
-const playAll = () => {
-    audio.addEventListener("ended", () => {
-        const songIndex = getCurrentSongIndex();
-        const nextSongIndex = songIndex + 1;
+// const playAll = () => {
+audio.addEventListener("ended", () => {
+    const songIndex = getCurrentSongIndex();
+    const nextSongIndex = songIndex + 1;
 
-        if (userData.songs.length - 1 >= nextSongIndex) {
-            const nextSong = userData.songs[nextSongIndex];
+    if (userData.songs.length - 1 >= nextSongIndex) {
+        const nextSong = userData.songs[nextSongIndex];
 
-            playSong(nextSong?.id);
-        }
-        // else {
-        //     return;
-        // }
-    });
-    console.log("playing");
-};
+        playSong(nextSong?.id);
+    }
+    // else {
+    //     return;
+    // }
+});
+console.log("playing");
+// };
 
-!userData?.replayAllEnabled ? playAll() : replayAllSongs();
+// !userData?.replayAllEnabled ? playAll() : replayAllSongs();
