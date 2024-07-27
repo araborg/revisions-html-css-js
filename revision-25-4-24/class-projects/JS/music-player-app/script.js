@@ -311,6 +311,8 @@ const replaySong = (id) => {
 
         console.log("working");
     }
+
+    console.log(userData.replayASong);
 };
 
 songReplay.addEventListener("click", replaySong);
