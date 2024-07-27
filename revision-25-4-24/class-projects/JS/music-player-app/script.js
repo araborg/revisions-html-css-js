@@ -7,9 +7,6 @@ const nextButton = document.getElementById("next");
 const shuffleButton = document.getElementById("shuffle");
 const replayButton = document.getElementById("replay");
 
-const songReplay = document.querySelector(".song-replay");
-console.log(songReplay);
-
 // player display
 const playerSongTitle = document.querySelector("#player-song-title");
 const playerSongArtist = document.querySelector("#player-song-artist");
