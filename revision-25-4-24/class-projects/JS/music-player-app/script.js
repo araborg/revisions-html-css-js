@@ -321,26 +321,27 @@ const replaySong = (id) => {
         console.log("working");
     } else if (songIndex !== nextSongIndex) {
         audio.addEventListener("ended", () => {
-            // let songIndex = getCurrentSongIndex();
-            // let nextSongIndex = songIndex + 1;
-
             console.log(songIndex, nextSongIndex);
 
             if (userData.songs.length - 1 >= nextSongIndex) {
                 const nextSong = userData.songs[nextSongIndex];
 
                 playSong(nextSong?.id);
+            } else if (
+                userData.currentSong ===
+                userData.songs[userData.songs.length - 1]
+            ) {
+                console.log("hello");
+                // return;
             }
 
             console.log(userData.currentSong, song);
 
             if (userData.currentSong !== song) {
                 nextSongIndex = nextSongIndex + 1;
-            } else {
-                return;
             }
 
-            console.log(nextSongIndex);
+            console.log(nextSongIndex, userData?.currentSong);
             // else {
             //     userData?.replayAllEnabled
             //         ? playSong(userData?.songs[0].id)
