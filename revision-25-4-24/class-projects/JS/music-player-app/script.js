@@ -297,24 +297,13 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 const replayAllSongs = () => {
-    audio.addEventListener("ended", () => {
-        const songIndex = getCurrentSongIndex();
-        const nextSongIndex = songIndex + 1;
-
-        if (userData.songs.length - 1 >= nextSongIndex) {
-            const nextSong = userData.songs[nextSongIndex];
-
-            playSong(nextSong?.id);
-        } else {
-            playSong(userData?.songs[0].id);
-        }
-    });
+    userData.replayAllEnabled = true;
 };
 
 replayButton.addEventListener("click", replayAllSongs);
 
 // console.log(userData?.replayAllEnabled);
-/*
+// /*
 // const playAll = () => {
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
@@ -324,13 +313,11 @@ audio.addEventListener("ended", () => {
         const nextSong = userData.songs[nextSongIndex];
 
         playSong(nextSong?.id);
+    } else {
+        userData?.replayAllEnabled ? playSong(userData?.songs[0].id) : null;
     }
-    // else {
-    //     return;
-    // }
 });
 // console.log("playing");
 // };
 
-// !userData?.replayAllEnabled ? playAll() : replayAllSongs();
-*/
+// */
