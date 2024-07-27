@@ -304,12 +304,13 @@ const replayAllSongs = () => {
         console.log(userData?.songs.length, nextSongIndex);
     }
 
-    console.log(userData?.songs.length === nextSongIndex);
+    audio.addEventListener("ended", () => {
+        console.log(userData?.songs.length === nextSongIndex);
+    });
+
     // if (userData?.songs.length === nextSongIndex) {
 
-    // audio.addEventListener("ended", () => {
     // console.log("end reached");
-    // });
     // }
 };
 
