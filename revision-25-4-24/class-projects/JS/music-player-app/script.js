@@ -298,22 +298,27 @@ const highlightCurrentSong = () => {
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
-    const songIndex = getCurrentSongIndex();
 
-    console.log(songIndex);
+    if (userData?.currentSong) {
+        const songIndex = getCurrentSongIndex();
 
-    audio.addEventListener("ended", () => {
-        const nextSongIndex = songIndex + 1;
-        // console.log(userData?.songs.length, nextSongIndex);
+        console.log(songIndex);
 
-        if (userData?.songs.length === nextSongIndex) {
-            console.log("song");
-        }
-    });
+        audio.addEventListener("ended", () => {
+            const nextSongIndex = songIndex + 1;
+            // console.log(userData?.songs.length, nextSongIndex);
+
+            console.log("end reached 1");
+
+            if (userData?.songs.length === nextSongIndex) {
+                console.log("song");
+            }
+        });
+    }
 
     // if (userData?.songs.length === nextSongIndex) {
 
-    console.log("end reached");
+    console.log("end reached 2");
     // }
 };
 
