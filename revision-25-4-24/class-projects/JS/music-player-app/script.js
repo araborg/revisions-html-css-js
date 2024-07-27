@@ -295,6 +295,21 @@ const highlightCurrentSong = () => {
 
 // const replaySong
 
+const replayAllSongs = () => {
+    const songIndex = getCurrentSongIndex();
+    const nextSongIndex = songIndex + 1;
+
+    if (userData?.songs.length === nextSongIndex) {
+        console.log(userData?.songs.length, nextSongIndex);
+
+        audio.addEventListener("ended", () => {
+            console.log("end reached");
+        });
+    }
+};
+
+replayButton.addEventListener("click", replayAllSongs);
+
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
     const nextSongIndex = songIndex + 1;
@@ -307,17 +322,3 @@ audio.addEventListener("ended", () => {
         return;
     }
 });
-
-const replayAllSongs = () => {
-    const songIndex = getCurrentSongIndex();
-    const nextSongIndex = songIndex + 1;
-
-    if (userData?.songs.length === nextSongIndex) {
-        console.log(userData?.songs.length, nextSongIndex);
-        audio.addEventListener("ended", () => {
-            console.log("end reached");
-        });
-    }
-};
-
-replayButton.addEventListener("click", replayAllSongs);
