@@ -353,8 +353,6 @@ const replaySong = (id) => {
     console.log(userData.replayASong);
 };
 
-songReplay.addEventListener("click", replaySong);
-
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
 };
