@@ -300,6 +300,9 @@ const highlightCurrentSong = () => {
 const replaySong = (id) => {
     const song = userData.songs.find((song) => song.id === id);
 
+    let songIndex;
+    let nextSongIndex;
+
     userData.replayASong = !userData.replayASong;
 
     // console.log(userData?.replayAllEnabled);
@@ -313,8 +316,8 @@ const replaySong = (id) => {
         console.log("working");
     } else {
         audio.addEventListener("ended", () => {
-            const songIndex = getCurrentSongIndex();
-            const nextSongIndex = songIndex + 1;
+            let songIndex = getCurrentSongIndex();
+            let nextSongIndex = songIndex + 1;
 
             console.log(songIndex, nextSongIndex);
 
