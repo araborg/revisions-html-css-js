@@ -298,6 +298,7 @@ const highlightCurrentSong = () => {
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
+    console.log("btn clicked");
 };
 
 replayButton.addEventListener("click", replayAllSongs);
@@ -314,6 +315,7 @@ audio.addEventListener("ended", () => {
 
         playSong(nextSong?.id);
     } else {
+        console.log(userData?.replayAllEnabled);
         userData?.replayAllEnabled ? playSong(userData?.songs[0].id) : null;
     }
 });
