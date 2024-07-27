@@ -305,17 +305,17 @@ const replayAllSongs = () => {
     if (userData?.songs.length === nextSongIndex) {
         console.log(userData?.songs.length, nextSongIndex);
 
-        audio.addEventListener("ended", () => {
-            console.log("end reached");
-        });
+        // audio.addEventListener("ended", () => {
+        console.log("end reached");
+        // });
     }
 
-    console.log("replayAllSongs playing", userData?.replayAllEnabled);
+    console.log("replayAllSongs playing");
 };
 
 replayButton.addEventListener("click", replayAllSongs);
 
-console.log(userData?.replayAllEnabled);
+// console.log(userData?.replayAllEnabled);
 
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
