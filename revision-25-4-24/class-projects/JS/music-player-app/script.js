@@ -312,6 +312,7 @@ songReplay.addEventListener("click", replaySong);
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
+    return replaySong();
 };
 
 replayButton.addEventListener("click", replayAllSongs);
