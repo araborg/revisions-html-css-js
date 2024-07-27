@@ -297,13 +297,18 @@ const highlightCurrentSong = () => {
 // const replaySong
 
 const replayAllSongs = () => {
-    const lastSong = userData.songs[userData?.songs.length - 1];
+    audio.addEventListener("ended", () => {
+        const songIndex = getCurrentSongIndex();
+        const nextSongIndex = songIndex + 1;
 
-    if (userData?.currentSong === lastSong) {
-        console.log("hello");
-    }
+        if (userData.songs.length - 1 >= nextSongIndex) {
+            const nextSong = userData.songs[nextSongIndex];
 
-    // console.log(lastSong);
+            playSong(nextSong?.id);
+        } else {
+            playSong(userData?.songs[0].id);
+        }
+    });
 };
 
 replayButton.addEventListener("click", replayAllSongs);
