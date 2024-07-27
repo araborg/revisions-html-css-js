@@ -322,9 +322,18 @@ const replaySong = (id) => {
 
                 playSong(nextSong?.id);
 
-                if (userData.currentSong !== song) {
+                if (
+                    userData.currentSong !==
+                    userData.songs[userData.songs.length - 1]
+                ) {
                     nextSongIndex = nextSongIndex + 1;
                 }
+
+                /*
+                 if (userData.currentSong !== song) {
+                    nextSongIndex = nextSongIndex + 1;
+                }
+                */
             }
 
             /*else if (
