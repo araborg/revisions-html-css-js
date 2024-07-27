@@ -332,7 +332,11 @@ const replaySong = (id) => {
                 playSong(nextSong?.id);
             }
 
-            nextSongIndex = nextSongIndex + 1;
+            if (nextSongIndex <= userData.songs.length) {
+                nextSongIndex = nextSongIndex + 1;
+            } else {
+                return;
+            }
 
             console.log(nextSongIndex);
             // else {
