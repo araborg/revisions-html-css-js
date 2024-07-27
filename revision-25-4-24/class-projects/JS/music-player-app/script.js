@@ -63,6 +63,7 @@ let userData = {
     currentSong: null,
     currentTime: 0,
     replayAllEnabled: false,
+    replayASong: false,
 };
 
 // const sortSongs = (songs) => {
