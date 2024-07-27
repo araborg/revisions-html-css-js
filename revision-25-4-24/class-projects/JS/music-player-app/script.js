@@ -309,7 +309,7 @@ const replayAllSongs = () => {
 replayButton.addEventListener("click", replayAllSongs);
 
 // console.log(userData?.replayAllEnabled);
-
+/*
 // const playAll = () => {
 audio.addEventListener("ended", () => {
     const songIndex = getCurrentSongIndex();
@@ -324,7 +324,8 @@ audio.addEventListener("ended", () => {
     //     return;
     // }
 });
-console.log("playing");
+// console.log("playing");
 // };
 
 // !userData?.replayAllEnabled ? playAll() : replayAllSongs();
+*/
