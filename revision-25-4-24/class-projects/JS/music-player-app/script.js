@@ -298,13 +298,12 @@ const highlightCurrentSong = () => {
 
 const replaySong = (id) => {
     const song = userData.songs.find((song) => song.id === id);
+    console.log(song);
 
     if (!userData?.replayAllEnabled) {
         audio.addEventListener("ended", () => {
-            playSong(song.id);
+            playSong(song?.id);
         });
-    } else {
-        userData.replayAllEnabled = true;
     }
 };
 
@@ -312,7 +311,7 @@ songReplay.addEventListener("click", replaySong);
 
 const replayAllSongs = () => {
     userData.replayAllEnabled = true;
-    return replaySong();
+    return replaySong() === undefined;
 };
 
 replayButton.addEventListener("click", replayAllSongs);
