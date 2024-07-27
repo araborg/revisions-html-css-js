@@ -299,22 +299,13 @@ const highlightCurrentSong = () => {
 const replayAllSongs = () => {
     audio.addEventListener("ended", () => {
         const songIndex = getCurrentSongIndex();
-        // const nextSongIndex = songIndex + 1;
+        const nextSongIndex = songIndex + 1;
 
-        // console.log(songIndex, songIndex + 1, userData.songs.length);
-        console.log(songIndex - 1);
-        console.log(userData?.songs[songIndex]);
+        if (userData.songs.length - 1 >= nextSongIndex) {
+            const nextSong = userData.songs[nextSongIndex];
 
-        // if (userData.songs.length === nextSongIndex) {
-        // playSong(userData?.songs[0].id);
-        // }
-        //     const nextSong = userData.songs[nextSongIndex];
-        // console.log(nextSongIndex);
-
-        //     playSong(nextSong?.id);
-        //  else {
-        //     console.log("play more");
-        // }
+            playSong(nextSong?.id);
+        }
     });
 };
 
