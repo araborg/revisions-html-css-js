@@ -39,7 +39,7 @@ body {
 }
 
 .divider {
-    /* margin: auto; */
+    margin: auto;
 
     width: 150px;
     height: 10px;
