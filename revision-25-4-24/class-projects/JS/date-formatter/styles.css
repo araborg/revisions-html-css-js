@@ -17,3 +17,9 @@ body {
     color: var(--white);
     background-color: var(--dark-grey);
 }
+
+.title-container {
+    margin: 10px 0;
+
+    border: 2px solid red;
+}
