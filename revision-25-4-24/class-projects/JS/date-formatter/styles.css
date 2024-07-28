@@ -37,3 +37,9 @@ body {
     width: 30px;
     height: 30px;
 }
+
+.divider {
+    /* margin: auto; */
+
+    background-color: var(--yellow);
+}
