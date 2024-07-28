@@ -41,5 +41,8 @@ body {
 .divider {
     /* margin: auto; */
 
+    width: 150px;
+    height: 10px;
+
     background-color: var(--yellow);
 }
