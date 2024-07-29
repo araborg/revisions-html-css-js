@@ -77,5 +77,8 @@ select {
     padding: 10px;
     padding-right: 38px;
 
+    transition: color 0.3s ease, background-color 0.3s ease,
+        border-bottom-color 0.3s ease;
+
     border: 3px solid green;
 }
