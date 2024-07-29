@@ -186,6 +186,26 @@ sequential keyboard navigation using the Tab key.
 }
 
 
+10. Using d width (50%) in .dropdown-container to control d width 
+(100%) in select elemt
+
+.dropdown-container {
+    position: relative;
+
+    width: 50%;
+
+    margin: 40px auto;
+}
+
+select {
+    display: block;
+    margin: 20px auto 0;
+
+    width: 100%;
+
+    height: 50px;
+}
+
 
 
 JS:
