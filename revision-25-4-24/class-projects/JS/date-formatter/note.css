@@ -172,6 +172,20 @@ Elements with pointer-events: none; will still receive focus through
 sequential keyboard navigation using the Tab key.
 
 
+9.
+.dropdown-container {
+    position: relative;
+
+    width: 50%;
+    margin: 40px auto;
+
+    
+    This totally affected d appearancee of the container
+    border: 2px solid orange; 
+    
+}
+
+
 
 
 JS:
