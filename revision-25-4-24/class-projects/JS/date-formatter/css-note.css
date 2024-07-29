@@ -81,8 +81,7 @@ in select element, indicating that list can be expanded.
 auto: Acts as none on elements with no special styling.
 
 
-7.
-Transition:
+7. Transition:
 The transition CSS property is a shorthand property for 
 transition-property, 
 transition-duration, 
@@ -91,9 +90,8 @@ transition-delay, and
 transition-behavior.
 
 Transitions enable you to define the transition between two states 
-of an element. 
-Different states may be defined using pseudo-classes like :hover 
-or :active or dynamically set using JavaScript.
+of an element. Different states may be defined using pseudo-classes 
+like :hover or :active or dynamically set using JavaScript.
 
 transition:
     all 200ms,
