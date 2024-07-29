@@ -65,4 +65,9 @@ select {
 
     /* why use 100% for font? */
     font-size: 100%;
+    font-weight: bold;
+    cursor: pointer;
+
+    background-color: var(--white);
+    border: none;
 }
