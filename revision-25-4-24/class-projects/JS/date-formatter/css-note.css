@@ -35,6 +35,16 @@ auto:
 The browser selects a suitable margin to use. For example, in certain 
 cases this value can be used to center an element.
 
+Horizontal centering
+You can horizontally center an element within its parent by setting 
+margin: 0 auto;.
+
+A more common method to center an element horizontally is by setting 
+display: flex; and justify-content: center; on a container, which 
+centers its flex item children.
+
+
+
 
 4.
 What effect will border has on this?
