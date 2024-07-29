@@ -62,4 +62,7 @@ select {
 
     width: 100%;
     height: 50px;
+
+    /* why use 100% for font? */
+    font-size: 100%;
 }

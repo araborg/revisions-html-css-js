@@ -26,7 +26,12 @@ What effect will border has on this?
     box-sizing: border-box;
 
     border: 2px solid red;
-
 }
+
+5.
+Why use 100% for font?
+font-size: 100%;
+
+
 
 */
