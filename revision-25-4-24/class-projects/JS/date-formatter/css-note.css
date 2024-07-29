@@ -39,21 +39,14 @@ between rows and columns. This property applies to multi-column,
 flex, and grid containers.
 
 This property is a shorthand for the following CSS properties:
-column-gap
-row-gap
+column-gap, row-gap
 
 The visible space between elements may differ from the provided gap 
 value because margins, padding, and distributed alignment may increase 
 the separation between elements beyond what is determined by gap.
 
-The visible space between elements may differ from the provided gap 
-value because margins, padding, and distributed alignment may 
-increase the separation between elements beyond what is determined 
-by gap.
 
-
-5.
-Why use 100% for font?
+5. Why use 100% for font?
 font-size: 100%;
 
 font-size:
