@@ -58,9 +58,7 @@ the font size also updates the sizes of the font size-relative
 Percentage: is relative to the parent element's font size.
 
 
-6.
-appearance: none;
-
+6. appearance: none;
 The appearance CSS property is used to display UI elements with 
 platform-specific styling, based on the operating system's theme.
 
@@ -77,12 +75,10 @@ across different browsers, and some do not support it at all.
 The differences are smaller in the newest browsers.
 
 Values:
-none
-Hides certain features of widgets, such as arrow displayed in 
-select element, indicating that list can be expanded.
+none: Hides certain features of widgets, such as arrow displayed 
+in select element, indicating that list can be expanded.
 
-auto
-Acts as none on elements with no special styling.
+auto: Acts as none on elements with no special styling.
 
 
 7.
