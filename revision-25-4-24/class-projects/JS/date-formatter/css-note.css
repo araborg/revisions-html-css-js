@@ -66,6 +66,10 @@ font-size: 100%;
 font-size:
 The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.
 
+<percentage>
+A positive <percentage> value, relative to the parent element's font size.
+
+
 
 6.
 appearance: none;
