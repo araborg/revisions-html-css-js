@@ -70,4 +70,12 @@ select {
 
     background-color: var(--white);
     border: none;
+
+    color: var(--dark-grey);
+    appearance: none;
+
+    padding: 10px;
+    padding-right: 38px;
+
+    border: 3px solid green;
 }
