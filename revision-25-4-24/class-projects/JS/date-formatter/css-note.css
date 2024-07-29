@@ -135,6 +135,17 @@ CSS:
 }
 
 
+8.
+Pointer-events:
+The pointer-events CSS property sets under what circumstances (if any) a 
+particular graphic element can become the target of pointer events.
+
+In addition to indicating that the element is not the target of pointer events, the value none instructs the pointer event to go "through" the element and target whatever is "underneath" that element instead.
+
+Note that preventing an element from being the target of pointer events by using pointer-events does not necessarily mean that pointer event listeners on that element cannot or will not be triggered. If one of the element's children has pointer-events explicitly set to allow that child to be the target of pointer events, then any events targeting that child will pass through the parent as the event travels along the parent chain, and trigger event listeners on the parent as appropriate. Of course any pointer activity at a point on the screen that is covered by the parent but not by the child will not be caught by either the child or the parent (it will go "through" the parent and target whatever is underneath).
+
+Elements with pointer-events: none will still receive focus through sequential keyboard navigation using the Tab key.
+
 
 JS:
 1.
