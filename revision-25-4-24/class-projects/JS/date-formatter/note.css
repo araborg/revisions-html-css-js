@@ -207,6 +207,13 @@ select {
 }
 
 
+11. Selecting options in select elemt:
+select option {
+    color: red;
+}
+
+
+
 
 JS:
 1.
