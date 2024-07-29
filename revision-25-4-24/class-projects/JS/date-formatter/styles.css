@@ -70,6 +70,7 @@ select {
 
     background-color: var(--white);
     border: none;
+    outline: none;
 
     color: var(--dark-grey);
 
