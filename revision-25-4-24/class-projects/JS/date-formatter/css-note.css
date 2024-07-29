@@ -11,23 +11,17 @@ CSS:
 
 
 2. 
-Gap: 
-The gap CSS shorthand property sets the gaps (also called gutters) 
-between rows and columns. This property applies to multi-column, 
-flex, and grid containers.
+What effect will border has on this?
 
-This property is a shorthand for the following CSS properties:
-column-gap
-row-gap
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-The visible space between elements may differ from the provided gap 
-value because margins, padding, and distributed alignment may increase 
-the separation between elements beyond what is determined by gap.
-
-The visible space between elements may differ from the provided gap 
-value because margins, padding, and distributed alignment may 
-increase the separation between elements beyond what is determined 
-by gap.
+    border: 2px solid red;
+}
 
 
 3. 
@@ -46,17 +40,23 @@ centers its flex item children.
 
 
 4.
-What effect will border has on this?
+Gap: 
+The gap CSS shorthand property sets the gaps (also called gutters) 
+between rows and columns. This property applies to multi-column, 
+flex, and grid containers.
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+This property is a shorthand for the following CSS properties:
+column-gap
+row-gap
 
-    border: 2px solid red;
-}
+The visible space between elements may differ from the provided gap 
+value because margins, padding, and distributed alignment may increase 
+the separation between elements beyond what is determined by gap.
+
+The visible space between elements may differ from the provided gap 
+value because margins, padding, and distributed alignment may 
+increase the separation between elements beyond what is determined 
+by gap.
 
 
 5.
