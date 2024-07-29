@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 :root {
@@ -80,7 +80,7 @@ select {
     transition: color 0.3s ease, background-color 0.3s ease,
         border-bottom-color 0.3s ease;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 .select-icon {
@@ -100,4 +100,9 @@ select {
 .select-icon svg.icon {
     transition: fill 0.3s ease;
     fill: var(--dark-grey);
+}
+
+#current-date {
+    font-size: 2rem;
+    text-align: center;
 }
