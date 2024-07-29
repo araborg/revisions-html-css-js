@@ -48,3 +48,8 @@ body {
 
     background-color: var(--yellow);
 }
+
+.dropdown-container {
+    width: 50%;
+    margin: 40px auto;
+}
