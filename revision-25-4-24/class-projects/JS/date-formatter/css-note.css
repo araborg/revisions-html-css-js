@@ -64,7 +64,9 @@ Why use 100% for font?
 font-size: 100%;
 
 font-size:
-The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative <length> units, such as em, ex, and so forth.
+The font-size CSS property sets the size of the font. Changing the font 
+size also updates the sizes of the font size-relative <length> units, 
+such as em, ex, and so forth.
 
 <percentage>
 A positive <percentage> value, relative to the parent element's font size.
@@ -106,29 +108,30 @@ transition-timing-function,
 transition-delay, and 
 transition-behavior.
 
-Transitions enable you to define the transition between two states of an element. 
-Different states may be defined using pseudo-classes like :hover or :active or 
-dynamically set using JavaScript.
+Transitions enable you to define the transition between two states 
+of an element. 
+Different states may be defined using pseudo-classes like :hover 
+or :active or dynamically set using JavaScript.
 
 transition:
     all 200ms,
     opacity 400ms;
 
-In this case, all the properties that change as the element changes state will 
-transition with a duration of 200ms except for opacity, which will take 400ms 
-to transition.
+In this case, all the properties that change as the element changes 
+state will transition with a duration of 200ms except for opacity, 
+which will take 400ms to transition.
 
 Basic example
-In this example, when the user hovers over the element, there is a one-second 
-delay before the four-second font-size transition occurs.
+In this example, when the user hovers over the element, there is a 
+one-second delay before the four-second font-size transition occurs.
 
 HTML:
 <a class="target">Hover over me</a>
 
 CSS
-We include two <time> values. In the transition shorthand, the first <time> 
-value is the transition-duration. The second time value is the transition-delay. 
-Both default to 0s if omitted.
+We include two <time> values. In the transition shorthand, the first 
+<time> value is the transition-duration. The second time value is the 
+transition-delay. Both default to 0s if omitted.
 
 CSS:
 .target {
@@ -143,8 +146,8 @@ CSS:
 
 8.
 Pointer-events:
-The pointer-events CSS property sets under what circumstances (if any) a 
-particular graphic element can become the target of pointer events.
+The pointer-events CSS property sets under what circumstances (if any) 
+a particular graphic element can become the target of pointer events.
 
 In addition to indicating that the element is not the target of pointer 
 events, the value none instructs the pointer event to go "through" the 
