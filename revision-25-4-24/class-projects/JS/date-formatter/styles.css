@@ -78,6 +78,9 @@ select {
     padding-right: 38px;
 
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
     transition: color 0.3s ease, background-color 0.3s ease,
         border-bottom-color 0.3s ease;
 
