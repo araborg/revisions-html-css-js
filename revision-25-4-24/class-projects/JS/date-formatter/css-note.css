@@ -27,12 +27,13 @@ You can horizontally center an element within its parent by setting
 margin: 0 auto;.
 
 A more common method to center an element horizontally is by setting 
-display: flex; and justify-content: center; on a container, which 
-centers its flex item children.
+display: flex; 
+and 
+justify-content: center; 
+on a container, which centers its flex item children.
 
 
-4.
-Gap: 
+4. Gap: 
 The gap CSS shorthand property sets the gaps (also called gutters) 
 between rows and columns. This property applies to multi-column, 
 flex, and grid containers.
