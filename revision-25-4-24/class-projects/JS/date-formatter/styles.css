@@ -28,7 +28,7 @@ body {
     gap: 8px;
     /* column-gap: 8px; */
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .title {
@@ -110,6 +110,10 @@ select {
 @media (max-width: 375px) {
     .title {
         font-size: 2rem;
+    }
+
+    .date-svg {
+        display: none;
     }
 
     .dropdown-container {
