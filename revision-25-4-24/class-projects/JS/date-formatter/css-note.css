@@ -112,6 +112,9 @@ In this case, all the properties that change as the element changes state will
 transition with a duration of 200ms except for opacity, which will take 400ms 
 to transition.
 
+Basic example
+In this example, when the user hovers over the element, there is a one-second delay before the four-second font-size transition occurs.
+
 
 
 
