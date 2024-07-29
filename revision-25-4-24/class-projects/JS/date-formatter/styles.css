@@ -13,14 +13,14 @@
     --white: #ffffff;
     --yellow: #f1be32;
 
-    --font-family: "Poppins", sans-serif;
+    --font: "Poppins", sans-serif;
 }
 
 body {
     color: var(--white);
     background-color: var(--dark-grey);
 
-    font-family: var(--font-family);
+    font-family: var(--font);
 }
 
 .title-container {

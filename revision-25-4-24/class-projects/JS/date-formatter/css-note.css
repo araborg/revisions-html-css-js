@@ -144,7 +144,7 @@ pointer activity at a point on the screen that is covered by the parent
 but not by the child will not be caught by either the child or the parent 
 (it will go "through" the parent and target whatever is underneath).
 
-Elements with pointer-events: none will still receive focus through 
+Elements with pointer-events: none; will still receive focus through 
 sequential keyboard navigation using the Tab key.
 
 
