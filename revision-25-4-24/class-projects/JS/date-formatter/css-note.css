@@ -1,5 +1,5 @@
 /* 
-
+CSS:
 1. 
 *,
 *::after,
@@ -10,7 +10,11 @@
 }
 
 2. 
-gap
+Gap: 
+The gap CSS shorthand property sets the gaps (also called gutters) 
+between rows and columns. This property applies to multi-column, 
+flex, and grid containers.
+
 
 3. 
 margin: auto
@@ -32,6 +36,15 @@ What effect will border has on this?
 Why use 100% for font?
 font-size: 100%;
 
+
+JS:
+1.
+
+
+2.
+
+
+3.
 
 
 */
