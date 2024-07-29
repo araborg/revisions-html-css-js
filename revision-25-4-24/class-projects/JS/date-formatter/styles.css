@@ -56,11 +56,6 @@ body {
 
     width: 50%;
     margin: 40px auto;
-
-    /* 
-        This totally affected d appearancee of the container
-        border: 2px solid orange; 
-    */
 }
 
 select {
