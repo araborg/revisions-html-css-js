@@ -213,6 +213,12 @@ select option {
 }
 
 
+12.
+Position: absolute; on d .select-icon was used in relative to 
+.dropdown-container, wc is d parant container for both d icon
+and d select elemt.
+
+
 
 
 JS:
