@@ -94,8 +94,8 @@ Acts as none on elements with no special styling.
 7.
 Transition:
 The transition CSS property is a shorthand property for 
-transition-property, t
-ransition-duration, 
+transition-property, 
+transition-duration, 
 transition-timing-function, 
 transition-delay, and 
 transition-behavior.
@@ -115,7 +115,21 @@ to transition.
 Basic example
 In this example, when the user hovers over the element, there is a one-second delay before the four-second font-size transition occurs.
 
+HTML:
+<a class="target">Hover over me</a>
 
+CSS
+We include two <time> values. In the transition shorthand, the first <time> value is the transition-duration. The second time value is the transition-delay. Both default to 0s if omitted.
+
+CSS:
+.target {
+    font-size: 14px;
+    transition: font-size 4s 1s;
+}
+
+.target:hover {
+    font-size: 36px;
+}
 
 
 
