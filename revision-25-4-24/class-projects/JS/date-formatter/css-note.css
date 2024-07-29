@@ -9,6 +9,7 @@ CSS:
     box-sizing: border-box;
 }
 
+
 2. 
 Gap: 
 The gap CSS shorthand property sets the gaps (also called gutters) 
@@ -42,8 +43,6 @@ margin: 0 auto;.
 A more common method to center an element horizontally is by setting 
 display: flex; and justify-content: center; on a container, which 
 centers its flex item children.
-
-
 
 
 4.
