@@ -1,6 +1,6 @@
 /* 
 CSS:
-1. 
+1. One of d standard rules of CSS
 *,
 *::after,
 *::before {
@@ -10,9 +10,7 @@ CSS:
 }
 
 
-2. 
-What effect will border has on this?
-
+2. What effect will border has on this?
 *,
 *::after,
 *::before {
@@ -20,9 +18,7 @@ What effect will border has on this?
 }
 
 
-3. 
-margin: auto
-
+3. margin: auto
 auto: The browser selects a suitable margin to use. For example, 
 in certain cases this value can be used to center an element.
 
