@@ -22,11 +22,11 @@ What effect will border has on this?
 
 3. 
 margin: auto
-auto:
-The browser selects a suitable margin to use. For example, in certain 
-cases this value can be used to center an element.
 
-Horizontal centering
+auto: The browser selects a suitable margin to use. For example, 
+in certain cases this value can be used to center an element.
+
+Horizontal centering:
 You can horizontally center an element within its parent by setting 
 margin: 0 auto;.
 
