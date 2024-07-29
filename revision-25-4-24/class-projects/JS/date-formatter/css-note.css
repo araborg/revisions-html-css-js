@@ -105,21 +105,24 @@ Different states may be defined using pseudo-classes like :hover or :active or
 dynamically set using JavaScript.
 
 transition:
-  all 200ms,
-  opacity 400ms;
+    all 200ms,
+    opacity 400ms;
 
 In this case, all the properties that change as the element changes state will 
 transition with a duration of 200ms except for opacity, which will take 400ms 
 to transition.
 
 Basic example
-In this example, when the user hovers over the element, there is a one-second delay before the four-second font-size transition occurs.
+In this example, when the user hovers over the element, there is a one-second 
+delay before the four-second font-size transition occurs.
 
 HTML:
 <a class="target">Hover over me</a>
 
 CSS
-We include two <time> values. In the transition shorthand, the first <time> value is the transition-duration. The second time value is the transition-delay. Both default to 0s if omitted.
+We include two <time> values. In the transition shorthand, the first <time> 
+value is the transition-duration. The second time value is the transition-delay. 
+Both default to 0s if omitted.
 
 CSS:
 .target {
