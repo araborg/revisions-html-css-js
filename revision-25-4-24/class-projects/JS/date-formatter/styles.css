@@ -82,3 +82,9 @@ select {
 
     border: 3px solid green;
 }
+
+.select-icon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
