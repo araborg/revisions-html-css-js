@@ -31,6 +31,10 @@ by gap.
 
 3. 
 margin: auto
+auto:
+The browser selects a suitable margin to use. For example, in certain 
+cases this value can be used to center an element.
+
 
 4.
 What effect will border has on this?
