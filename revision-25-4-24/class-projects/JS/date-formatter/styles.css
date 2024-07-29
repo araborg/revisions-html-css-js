@@ -108,4 +108,11 @@ select {
 }
 
 @media (max-width: 375px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .dropdown-container {
+        width: 80%;
+    }
 }
