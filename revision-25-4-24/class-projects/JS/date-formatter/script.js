@@ -14,4 +14,4 @@ const formattedDate = `${day}-${month}-${year}`;
 
 // const newYear = date.getUTCFullYear
 
-console.log(month);
+console.log(formattedDate);
