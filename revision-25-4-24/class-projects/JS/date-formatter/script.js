@@ -33,9 +33,9 @@ const greeting = "Hello World";
 const splitGreet = greeting.split();
 console.log(splitGreet);
 
-const exampleSentence = "selur pmaCedoCeerf".split();
+const exampleSentence = "selur pmaCedoCeerf".split("");
 console.log(exampleSentence);
 
 const str = "hello";
-const str2 = str.split("");
+const str2 = str.split(" ");
 console.log(str2);
