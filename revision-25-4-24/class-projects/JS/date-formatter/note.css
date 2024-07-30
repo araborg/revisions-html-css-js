@@ -372,7 +372,7 @@ the default separator is a comma.
 N.B: join() converts an array to string
  
 
-13. Break
+13. Break statement
 If your switch statement is going to have multiple cases, it 
 is best practice to include a break statement.
 
@@ -390,10 +390,9 @@ switch (someVariable) {
 
 
 14. Default case:
-In a switch statement, the default case is executed when 
-none of the previous case conditions match the value being 
-evaluated. It serves as a catch-all for any other possible 
-cases.
+In a switch statement, the default case is executed when none 
+of the previous case conditions match the value being evaluated. 
+It serves as a catch-all for any other possible cases.
 
 
 15. EventListener learnt so far:
@@ -417,37 +416,6 @@ addEventListener('change', () => {})
 
 
 20.
-
-
-21.
-
-
-22.
-
-
-23.
-
-
-24.
-
-
-25.
-
-
-26.
-
-
-27.
-
-
-28.
-
-
-29.
-
-
-30.
-
 
 
 */
