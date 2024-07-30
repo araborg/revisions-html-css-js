@@ -146,8 +146,7 @@ We include two <time> values. In the transition shorthand, the first
 transition-delay. Both default to 0s if omitted.
 
 
-8.
-Pointer-events:
+8. Pointer-events:
 The pointer-events CSS property sets under what circumstances (if any) 
 a particular graphic element can become the target of pointer events.
 
