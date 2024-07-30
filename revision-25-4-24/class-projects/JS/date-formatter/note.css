@@ -238,6 +238,10 @@ console.log(currentDate);
 .getDate() method, which returns a number between 
 1 and 31 that represents the day of the month for that date. 
 
+const date = new Date();
+const dayOfTheMonth = date.getDate();
+console.log(dayOfTheMonth);
+
 
 3.
 
