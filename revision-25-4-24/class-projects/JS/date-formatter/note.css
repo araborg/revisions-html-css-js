@@ -262,15 +262,21 @@ const year = date.getFullYear();
 console.log(year); // 2024
 
 
-5. .getHours()
+5. getHours()
 This method returns a number between 0 and 23. This represents 
 the hour for the provided date, where 0 is midnight and 23 is 
 11 p.m.
 
+const hours = date.getHours();
+console.log(hours); // 13
 
-6. .getMinutes()
+
+6. getMinutes()
 This method returns a number between 0 and 59 which represents 
 the minutes for the provided date.
+
+const minutes = date.getMinutes();
+console.log(minutes); // 30
 
 
 7. Change event

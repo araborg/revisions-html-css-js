@@ -10,10 +10,10 @@ const day = date.getDate();
 const month = date.getMonth() + 1;
 
 const year = date.getFullYear();
-console.log(year);
 
 const hours = date.getHours();
 const minutes = date.getMinutes();
+console.log(hours, minutes);
 
 const formattedDate = `${day}-${month}-${year}`;
 const formattedDateHM = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
