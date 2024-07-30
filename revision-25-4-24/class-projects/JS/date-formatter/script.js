@@ -34,3 +34,4 @@ const splitGreet = greeting.split();
 console.log(splitGreet);
 
 const exampleSentence = "selur pmaCedoCeerf".split();
+console.log(exampleSentence);
