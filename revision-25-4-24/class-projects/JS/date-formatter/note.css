@@ -240,8 +240,8 @@ This method returns a number between 1 and 31 that represents the
 day of the month for that date. 
 
 const date = new Date();
-const dayOfTheMonth = date.getDate();
-console.log(dayOfTheMonth);
+const day = date.getDate();
+console.log(day); // 30
 
 
 3. .getMonth()
