@@ -1,2 +1,3 @@
 const currentDateParagraph = document.getElementById("current-date");
-console.log(currentDateParagraph);
+const dateOptionsSelectElement = document.getElementById("date-options");
+console.log(currentDateParagraph, dateOptionsSelectElement);
