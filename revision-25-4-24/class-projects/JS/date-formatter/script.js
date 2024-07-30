@@ -20,6 +20,8 @@ currentDateParagraph.textContent = formattedDate;
 
 console.log(formattedDate);
 
+formattedDate.split("-");
+
 dateOptionsSelectElement.addEventListener("change", () => {
     console.log(dateOptionsSelectElement.value);
 
