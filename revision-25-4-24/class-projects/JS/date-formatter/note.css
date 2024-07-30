@@ -303,7 +303,8 @@ followed by code to run if there's a match.
 switch (expr) {}
 
 
-10.
+10. Split('-')
+Split method separate strings into an array of substrings.
 
 
 11.
