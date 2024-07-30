@@ -266,7 +266,11 @@ This method returns a number between 0 and 59 which represents
 the minutes for the provided date.
 
 
-7.
+7. Change event
+In JavaScript, the change event is used to detect when 
+the value of an HTML element has changed:
+
+element.addEventListener("change", () => {});
 
 
 8.
