@@ -308,6 +308,10 @@ The split() method is used to divide a string into substrings
 based on a specified separator. It then returns these substrings
 as elements of an array.
 
+The split method takes in a parameter known as a separator. The 
+separator is used to tell the computer where each split should 
+occur.
+
 
 11.
 
