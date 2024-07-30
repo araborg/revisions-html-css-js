@@ -234,16 +234,21 @@ const currentDate = new Date();
 console.log(currentDate);
 
 
-2.
-.getDate() method, which returns a number between 
-1 and 31 that represents the day of the month for that date. 
+2. .getDate()
+This method returns a number between 1 and 31 that represents the 
+day of the month for that date. 
 
 const date = new Date();
 const dayOfTheMonth = date.getDate();
 console.log(dayOfTheMonth);
 
 
-3.
+3. .getMonth()
+This method returns a number between 0 and 11. This represents 
+the month for the date provided, where 0 is January and 11 is 
+December. Because the number this method returns is zero-based, 
+you need to add 1 to it to get the expected month number.
+
 
 
 */
