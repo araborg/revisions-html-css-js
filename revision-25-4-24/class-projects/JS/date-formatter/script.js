@@ -5,10 +5,11 @@ const dateOptionsSelectElement = document.getElementById("date-options");
 
 // current date: ds serves like an API
 const date = new Date();
-console.log(date);
 
 const day = date.getDate();
 const month = date.getMonth() + 1;
+console.log(month);
+
 const year = date.getFullYear();
 
 const hours = date.getHours();

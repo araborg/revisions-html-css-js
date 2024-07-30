@@ -244,11 +244,14 @@ const day = date.getDate();
 console.log(day); // 30
 
 
-3. .getMonth()
+3. getMonth()
 This method returns a number between 0 and 11. This represents 
 the month for the date provided, where 0 is January and 11 is 
 December. Because the number this method returns is zero-based, 
 you need to add 1 to it to get the expected month number.
+
+const month = date.getMonth() + 1;
+console.log(month); // 7
 
 
 4. .getFullYear()
