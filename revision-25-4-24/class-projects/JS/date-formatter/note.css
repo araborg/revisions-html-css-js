@@ -295,7 +295,10 @@ switch (dayOfWeek) {
 }
 
 
-9.
+9. Case clause
+A case clause in the switch statement checks for a match against 
+the expression in the bracket of the switch statement, followed 
+by code to run if there's a match.
 
 
 10.
