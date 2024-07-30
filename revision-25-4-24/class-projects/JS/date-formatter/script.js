@@ -20,7 +20,7 @@ currentDateParagraph.textContent = formattedDate;
 
 console.log(formattedDate);
 
-const format = formattedDate.split("-").reverse();
+const format = formattedDate.split("-").reverse().join("");
 
 console.log(format);
 
@@ -30,18 +30,3 @@ dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
     }
 });
-
-const greeting = "Hello World";
-const splitGreet = greeting.split();
-console.log(splitGreet);
-
-const exampleSentence = "selur pmaCedoCeerf".split("");
-console.log(exampleSentence);
-
-const str = "hello";
-const str2 = str.split(" ");
-console.log(str2);
-
-console.log("reverse".reverse());
-
-["e", "s", "r", "e", "v", "e", "r"];
