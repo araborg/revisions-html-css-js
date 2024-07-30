@@ -322,7 +322,11 @@ hyphen "-". If you don't provide a separator, the method will
 return an array with the original string as the only element.
 
 
-11.
+11. reverse()
+To reverse an array of elements, you can use the reverse method. 
+This method reverses the order of the elements in the array in 
+place. The first element becomes the last, and the last element 
+becomes the first.
 
 
 12.
