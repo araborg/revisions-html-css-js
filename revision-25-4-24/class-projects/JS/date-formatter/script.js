@@ -35,7 +35,7 @@ dateOptionsSelectElement.addEventListener("change", () => {
             break;
 
         case "mm-dd-yyyy-h-mm":
-            currentDateParagraph.textContent = `${month}-${day}-${year}-${hours} hours - ${minutes} minutes`;
+            currentDateParagraph.textContent = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;
             break;
     }
 });
