@@ -282,9 +282,8 @@ against multiple possible values and execute different code
 blocks based on the match. It's commonly used for branching 
 logic.
 
-E.g: Switch statement
-
 This looks like an if statement: if (dayOfWeek) {}
+E.g: Switch statement
 switch (dayOfWeek) {}
 
 switch (dayOfWeek) {
@@ -298,6 +297,7 @@ switch (dayOfWeek) {
     case 2:
         console.log("It's Tuesday!");
         break;
+        
     // ...cases for other workdays
 
     default:
