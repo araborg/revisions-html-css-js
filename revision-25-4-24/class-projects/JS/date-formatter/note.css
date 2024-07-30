@@ -280,7 +280,7 @@ based on the match. It's commonly used for branching logic.
 
 E.g:
 switch (dayOfWeek) {}
-
+This looks like an if statement: if (dayOfWeek) {}
 
 switch (dayOfWeek) {
     case 1:
