@@ -14,18 +14,17 @@ const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
 
-currentDateParagraph.textContent = formattedDate;
-
 // const newYear = date.getUTCFullYear
 
-console.log(formattedDate);
+// console.log(formattedDate);
 
 const format = formattedDate.split("-").reverse().join("");
 
-console.log(format);
+// console.log(format);
 
 dateOptionsSelectElement.addEventListener("change", () => {
-    console.log(dateOptionsSelectElement.value);
+    // console.log(dateOptionsSelectElement.value);
+    currentDateParagraph.textContent = formattedDate;
 
     switch (dateOptionsSelectElement.value) {
     }
