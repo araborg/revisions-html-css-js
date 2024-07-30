@@ -235,6 +235,8 @@ console.log(currentDate);
 
 
 2.
+.getDate() method, which returns a number between 
+1 and 31 that represents the day of the month for that date. 
 
 
 3.
