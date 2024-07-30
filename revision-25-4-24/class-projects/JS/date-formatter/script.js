@@ -22,4 +22,7 @@ console.log(formattedDate);
 
 dateOptionsSelectElement.addEventListener("change", () => {
     console.log(dateOptionsSelectElement.value);
+
+    switch (dateOptionsSelectElement.value) {
+    }
 });

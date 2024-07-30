@@ -279,6 +279,9 @@ multiple possible values and execute different code blocks
 based on the match. It's commonly used for branching logic.
 
 E.g:
+switch (dayOfWeek) {}
+
+
 switch (dayOfWeek) {
     case 1:
         console.log("It's Monday!");
