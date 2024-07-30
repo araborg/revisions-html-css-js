@@ -250,9 +250,9 @@ December. Because the number this method returns is zero-based,
 you need to add 1 to it to get the expected month number.
 
 
-4.
-The .getFullYear() method returns a number which represents the year 
-for the provided date.
+4. .getFullYear()
+The .getFullYear() method returns a number which represents the 
+year for the provided date.
 
 5.
 
