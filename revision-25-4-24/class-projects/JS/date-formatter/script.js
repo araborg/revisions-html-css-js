@@ -13,7 +13,6 @@ const year = date.getFullYear();
 
 const hours = date.getHours();
 const minutes = date.getMinutes();
-console.log(hours, minutes);
 
 const formattedDate = `${day}-${month}-${year}`;
 const formattedDateHM = `${month}-${day}-${year} ${hours} Hours ${minutes} Minutes`;

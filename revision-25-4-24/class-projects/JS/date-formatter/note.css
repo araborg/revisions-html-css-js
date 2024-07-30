@@ -30,6 +30,7 @@ CSS:
 *::before {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -51,9 +52,7 @@ You can horizontally center an element within its parent by setting
 margin: 0 auto;.
 
 A more common method to center an element horizontally is by setting 
-display: flex; 
-and 
-justify-content: center; 
+display: flex; and justify-content: center; 
 on a container, which centers its flex item children.
 
 
