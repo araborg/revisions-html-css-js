@@ -304,7 +304,9 @@ switch (expr) {}
 
 
 10. Split('-')
-Split method separate strings into an array of substrings.
+The split() method is used to divide a string into substrings 
+based on a specified separator. It then returns these substrings
+as elements of an array.
 
 
 11.
