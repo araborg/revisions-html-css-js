@@ -1,4 +1,6 @@
 const currentDateParagraph = document.getElementById("current-date");
+
+// ds is d select elemt
 const dateOptionsSelectElement = document.getElementById("date-options");
 
 const date = new Date();
@@ -17,3 +19,7 @@ currentDateParagraph.textContent = formattedDate;
 // const newYear = date.getUTCFullYear
 
 console.log(formattedDate);
+
+dateOptionsSelectElement.addEventListener("change", () => {
+    console.log(dateOptionsSelectElement.value);
+});

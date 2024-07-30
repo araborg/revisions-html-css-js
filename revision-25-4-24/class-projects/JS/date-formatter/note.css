@@ -267,14 +267,16 @@ the minutes for the provided date.
 
 
 7. Change event
-In JavaScript, the change event is used to detect when 
-the value of an HTML element has changed:
+In JavaScript, the change event is used to detect when the value 
+of an HTML element has changed:
 
 element.addEventListener("change", () => {});
 
 
-8.
-
+8. Switch statement 
+A switch statement is used to compare an expression against 
+multiple possible values and execute different code blocks 
+based on the match. It's commonly used for branching logic.
 
 9.
 
