@@ -342,6 +342,9 @@ Other examples of separators can include a space " ", or a
 hyphen "-". If you don't provide a separator, the method will 
 return an array with the original string as the only element.
 
+const str = "hello";
+str.split(); // ["hello"]
+
 
 11. reverse()
 To reverse an array of elements, you can use the reverse method. 
