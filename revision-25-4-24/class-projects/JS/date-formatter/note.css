@@ -229,6 +229,7 @@ This method returns a number between 1 and 31 that represents the
 day of the month for that date. 
 
 const date = new Date();
+
 const day = date.getDate();
 console.log(day); // 30
 
@@ -276,9 +277,10 @@ element.addEventListener("change", () => {});
 
 
 8. Switch statement 
-A switch statement is used to compare an expression against 
-multiple possible values and execute different code blocks 
-based on the match. It's commonly used for branching logic.
+A switch statement is used to compare/match an expression 
+against multiple possible values and execute different code 
+blocks based on the match. It's commonly used for branching 
+logic.
 
 E.g: Switch statement
 
