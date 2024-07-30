@@ -3,7 +3,7 @@ const currentDateParagraph = document.getElementById("current-date");
 // ds is d select elemt
 const dateOptionsSelectElement = document.getElementById("date-options");
 
-// current date
+// current date: ds serves like an API
 const date = new Date();
 
 const day = date.getDate();
