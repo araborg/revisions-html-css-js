@@ -254,9 +254,12 @@ const month = date.getMonth() + 1;
 console.log(month); // 7
 
 
-4. .getFullYear()
+4. getFullYear()
 This method returns a number which represents the year for the 
 provided date.
+
+const year = date.getFullYear();
+console.log(year); // 2024
 
 
 5. .getHours()

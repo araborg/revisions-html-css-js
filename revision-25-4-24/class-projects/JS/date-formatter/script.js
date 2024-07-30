@@ -8,9 +8,9 @@ const date = new Date();
 
 const day = date.getDate();
 const month = date.getMonth() + 1;
-console.log(month);
 
 const year = date.getFullYear();
+console.log(year);
 
 const hours = date.getHours();
 const minutes = date.getMinutes();
