@@ -42,4 +42,6 @@ const str = "hello";
 const str2 = str.split(" ");
 console.log(str2);
 
-console.log(["r", "e", "v", "e", "r", "s", "e"].reverse());
+console.log("reverse".reverse());
+
+["e", "s", "r", "e", "v", "e", "r"];

@@ -329,9 +329,13 @@ place. The first element becomes the last, and the last element
 becomes the first.
 
 N.B: reverse() works with arrays and not strings.
+console.log("reverse".reverse());
+// TypeError: "reverse".reverse is not a function
 
 console.log(["r", "e", "v", "e", "r", "s", "e"].reverse());
 // ['e', 's', 'r', 'e', 'v', 'e', 'r']
+
+
 
 12.
 
