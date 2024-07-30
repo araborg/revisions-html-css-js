@@ -328,6 +328,10 @@ This method reverses the order of the elements in the array in
 place. The first element becomes the last, and the last element 
 becomes the first.
 
+N.B: reverse() works with arrays and not strings.
+
+console.log(["r", "e", "v", "e", "r", "s", "e"].reverse());
+// ['e', 's', 'r', 'e', 'v', 'e', 'r']
 
 12.
 
