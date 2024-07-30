@@ -298,7 +298,7 @@ switch (dayOfWeek) {}
 
 switch (dayOfWeek) {
     // if dayOfWeek equals 1, then console.log("It's Monday!") 
-    will be executed
+    will be executed and so on.
     
     case 1: 
         console.log("It's Monday!");
@@ -308,7 +308,7 @@ switch (dayOfWeek) {
         console.log("It's Tuesday!");
         break;
     // ...cases for other workdays
-    
+
     default:
         console.log("It's the weekend!");
 }
@@ -319,7 +319,10 @@ A case clause in the switch statement checks for a match against
 the expression, expr, in the bracket of the switch statement, 
 followed by code to run if there's a match.
 
-switch (expr) {}
+switch (expr) {
+    case expressn to match with expr
+        if there is a match, run ds code
+}
 
 
 10. Split('-')
