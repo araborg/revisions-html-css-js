@@ -28,3 +28,9 @@ dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
     }
 });
+
+const greeting = "Hello World";
+const splitGreet = greeting.split();
+console.log(splitGreet);
+
+const exampleSentence = "selur pmaCedoCeerf".split();
