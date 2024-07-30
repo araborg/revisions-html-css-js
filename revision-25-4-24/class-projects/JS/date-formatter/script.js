@@ -14,12 +14,8 @@ const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
 
-const format = formattedDate.split("-").reverse().join("");
-
-// console.log(format);
-
 dateOptionsSelectElement.addEventListener("change", () => {
-    // console.log(dateOptionsSelectElement.value);
+    console.log(dateOptionsSelectElement.value);
 
     switch (dateOptionsSelectElement.value) {
         case "yyyy-mm-dd":
