@@ -36,5 +36,6 @@ dateOptionsSelectElement.addEventListener("change", () => {
 
         case "mm-dd-yyyy-h-mm":
             currentDateParagraph.textContent = ``;
+            break;
     }
 });
