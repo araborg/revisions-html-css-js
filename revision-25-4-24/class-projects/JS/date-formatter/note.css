@@ -355,6 +355,7 @@ code for all matching cases:
 switch (someVariable) {
     case 'case123':
         // Write your logic here
+        
         break; // Terminates the switch statement
 }
 
