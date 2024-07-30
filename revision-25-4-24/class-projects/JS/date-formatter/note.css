@@ -132,11 +132,6 @@ HTML:
 <a class="target">Hover over me</a>
 
 CSS:
-We include two <time> values. In the transition shorthand, the first 
-<time> value is the transition-duration. The second time value is the 
-transition-delay. Both default to 0s if omitted.
-
-CSS:
 .target {
     font-size: 14px;
     transition: font-size 4s 1s;
@@ -145,6 +140,10 @@ CSS:
 .target:hover {
     font-size: 36px;
 }
+
+We include two <time> values. In the transition shorthand, the first 
+<time> value is the transition-duration. The second time value is the 
+transition-delay. Both default to 0s if omitted.
 
 
 8.
