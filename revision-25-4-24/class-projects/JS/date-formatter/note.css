@@ -367,7 +367,10 @@ evaluated. It serves as a catch-all for any other possible
 cases.
 
 
-15.
+15. EventListener learnt so far
+addEventListener('click', () => {})
+addEventListener('ended', () => {})
+addEventListener('change', () => {})
 
 
 16.
