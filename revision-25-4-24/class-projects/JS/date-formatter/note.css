@@ -291,18 +291,24 @@ A switch statement is used to compare an expression against
 multiple possible values and execute different code blocks 
 based on the match. It's commonly used for branching logic.
 
-E.g:
-switch (dayOfWeek) {}
+E.g: Switch statement
+
 This looks like an if statement: if (dayOfWeek) {}
+switch (dayOfWeek) {}
 
 switch (dayOfWeek) {
-    case 1:
+    // if dayOfWeek equals 1, then console.log("It's Monday!") 
+    will be executed
+    
+    case 1: 
         console.log("It's Monday!");
         break;
+
     case 2:
         console.log("It's Tuesday!");
         break;
     // ...cases for other workdays
+    
     default:
         console.log("It's the weekend!");
 }
