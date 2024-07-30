@@ -336,8 +336,11 @@ console.log(["r", "e", "v", "e", "r", "s", "e"].reverse());
 // ['e', 's', 'r', 'e', 'v', 'e', 'r']
 
 
-
-12.
+12. join()
+This method takes an array of elements and joins them into 
+a string. Similar to the split method, the join method also 
+takes an optional separator. If you don't provide a separator, 
+the default separator is a comma.
 
 
 13.
