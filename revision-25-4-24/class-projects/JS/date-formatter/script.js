@@ -12,6 +12,8 @@ const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
 
+currentDateParagraph.textContent = formattedDate;
+
 // const newYear = date.getUTCFullYear
 
 console.log(formattedDate);
