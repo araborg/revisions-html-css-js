@@ -353,10 +353,13 @@ place. The first element becomes the last, and the last element
 becomes the first.
 
 N.B: reverse() works with arrays and not strings.
-console.log("reverse".reverse());
-// TypeError: "reverse".reverse is not a function
 
-console.log(["r", "e", "v", "e", "r", "s", "e"].reverse());
+const str = "reverse";
+console.log(str.reverse());
+// TypeError: str.reverse is not a function
+
+const arr = ["r", "e", "v", "e", "r", "s", "e"];
+console.log(arr.reverse());
 // ['e', 's', 'r', 'e', 'v', 'e', 'r']
 
 
