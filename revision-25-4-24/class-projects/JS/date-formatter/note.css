@@ -251,10 +251,14 @@ you need to add 1 to it to get the expected month number.
 
 
 4. .getFullYear()
-The .getFullYear() method returns a number which represents the 
-year for the provided date.
+This method returns a number which represents the year for the 
+provided date.
 
-5.
+
+5. .getHours()
+This method returns a number between 0 and 23. This represents 
+the hour for the provided date, where 0 is midnight and 23 is 
+11 p.m.
 
 
 6.
