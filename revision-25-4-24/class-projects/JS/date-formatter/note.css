@@ -369,6 +369,8 @@ a string. Similar to the split method, the join method also
 takes an optional separator. If you don't provide a separator, 
 the default separator is a comma.
 
+N.B: join() converts an array to string
+ 
 
 13. Break
 If your switch statement is going to have multiple cases, it 
