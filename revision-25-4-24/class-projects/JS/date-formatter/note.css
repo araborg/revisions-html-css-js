@@ -347,13 +347,13 @@ N.B: reverse() works with arrays and not strings.
 
 String:
 const str = "reverse";
-console.log(str.reverse());
-// TypeError: str.reverse is not a function
+
+console.log(str.reverse()); // TypeError: str.reverse is not a function
 
 Array:
 const arr = ["r", "e", "v", "e", "r", "s", "e"];
-console.log(arr.reverse());
-// ['e', 's', 'r', 'e', 'v', 'e', 'r']
+
+console.log(arr.reverse()); // ['e', 's', 'r', 'e', 'v', 'e', 'r']
 
 
 12. join()
