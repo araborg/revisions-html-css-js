@@ -894,6 +894,8 @@ the site does not use HTTPS.
 A type of submit is automatically set to submit its nearest 
 parent form element.
 
+<input type="submit" value="Submit" />
+
 
 10.
 
