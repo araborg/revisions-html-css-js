@@ -863,7 +863,10 @@ As label elements are inline by default, they are all displayed
 side by side on the same line, making their text hard to read. 
 
 
-8.
+8. Label and Input
+Nest an input element within each label. Be sure to add each 
+input after the label text, and include a space after the 
+colon.
 
 
 9.
