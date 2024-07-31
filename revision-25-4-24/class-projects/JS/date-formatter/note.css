@@ -297,7 +297,7 @@ switch (dayOfWeek) {
     case 2:
         console.log("It's Tuesday!");
         break;
-        
+
     // ...cases for other workdays
 
     default:
@@ -345,10 +345,12 @@ becomes the first.
 
 N.B: reverse() works with arrays and not strings.
 
+String:
 const str = "reverse";
 console.log(str.reverse());
 // TypeError: str.reverse is not a function
 
+Array:
 const arr = ["r", "e", "v", "e", "r", "s", "e"];
 console.log(arr.reverse());
 // ['e', 's', 'r', 'e', 'v', 'e', 'r']
