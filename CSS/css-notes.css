@@ -883,6 +883,10 @@ colon.
 Following accessibility best practices, link the input elements 
 and the label elements together using the for attribute.
 
+Specifying the type attribute of a form element is important 
+for the browser to know what kind of data it should expect. 
+If the type is not specified, the browser will default to text.
+
 
 10.
 
