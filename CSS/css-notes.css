@@ -841,6 +841,12 @@ specified in the action attribute. The form-data can be sent via
 a GET request as URL parameters (with method="get") or via a 
 POST request as data in the request body (with method="post").
 
+<form
+    action="https://register-demo.freecodecamp.org"
+    method="POST">
+    
+</form>
+
 
 5.
 
