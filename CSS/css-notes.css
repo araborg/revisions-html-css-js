@@ -818,6 +818,8 @@ of the viewport. This makes it relative to the viewport height.
 
 
 3. Body Default Margin
+The body has a default margin of 8px.
+
 Get rid of the horizontal scroll-bar, by setting the body default 
 margin added by some browsers to 0.
 
