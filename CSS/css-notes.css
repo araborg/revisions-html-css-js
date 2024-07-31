@@ -851,10 +851,16 @@ POST request as data in the request body (with method="post").
 5. Fieldset
 
 
-6.
+6. rem unit
+The rem unit stands for root em, and is relative to the font 
+size of the <html> element.
 
 
-7.
+7. label
+Read up more
+
+As label elements are inline by default, they are all displayed 
+side by side on the same line, making their text hard to read. 
 
 
 8.
