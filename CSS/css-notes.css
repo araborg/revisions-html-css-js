@@ -891,6 +891,9 @@ The email type only allows emails with a @ and a . in the
 domain. The password type obscures the input, and warns if 
 the site does not use HTTPS.
 
+A type of submit is automatically set to submit its nearest 
+parent form element.
+
 
 10.
 
