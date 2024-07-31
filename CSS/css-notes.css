@@ -887,6 +887,10 @@ Specifying the type attribute of a form element is important
 for the browser to know what kind of data it should expect. 
 If the type is not specified, the browser will default to text.
 
+The email type only allows emails with a @ and a . in the 
+domain. The password type obscures the input, and warns if 
+the site does not use HTTPS.
+
 
 10.
 
