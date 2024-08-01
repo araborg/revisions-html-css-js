@@ -1076,7 +1076,9 @@ class of inline.
 28. unset
 
 
-29.
+29. input[name="password"]
+The above selects input elements with a name attribute value 
+of password.
 
 
 30.

@@ -59,9 +59,9 @@ textarea {
 
 input,
 textarea {
+    color: #ffffff;
     background-color: #0a0a23;
 
-    color: #ffffff;
     border: 1px solid #0a0a23;
 }
 
