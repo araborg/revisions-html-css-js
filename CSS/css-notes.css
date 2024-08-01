@@ -1006,6 +1006,17 @@ but comes with the added benefit of being able to receive
 multi-line text, and an initial number of text rows and 
 columns.
 
+To give textarea an initial size, you can add the rows and 
+cols attributes.
+
+<textarea 
+    name="" 
+    id="bio" 
+    rows="3" 
+    cols="30"
+>
+</textarea>
+
 
 21.
 
