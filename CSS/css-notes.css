@@ -938,6 +938,8 @@ parent form element.
     <input type="submit" value="Submit" />
 </form>
 
+type = "text/submit/radio/checkbox/password/email"
+
 
 9. required attribute
 
