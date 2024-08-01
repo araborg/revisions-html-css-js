@@ -1039,7 +1039,13 @@ p {
 
 
 24. width:
+form {
+    min-width: 300px;
 
+    width: 60vw;
+
+    max-width: 500px;
+}
 
 
 25.
