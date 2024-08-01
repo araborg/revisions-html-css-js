@@ -79,4 +79,10 @@ input[type="submit"] {
     width: 60%;
 
     margin: 0 auto;
+
+    min-height: 2em;
+    font-size: 1.1rem;
+
+    background-color: #3b3b4f;
+    border-color: #fff;
 }
