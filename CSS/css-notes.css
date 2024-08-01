@@ -1000,7 +1000,11 @@ Each option needs to be given a value attribute. Without which,
 the text content of the option will be submitted to the server.
 
 
-20.
+20. Textarea element
+The textarea element acts like an input element of type text, 
+but comes with the added benefit of being able to receive 
+multi-line text, and an initial number of text rows and 
+columns.
 
 
 1.
