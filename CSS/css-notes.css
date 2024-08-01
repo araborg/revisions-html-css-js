@@ -955,6 +955,9 @@ Doing so prevents inputs of less than 8 characters being submitted.
 The above is a regular expression which matches eight or more 
 lowercase letters or the digits 0 to 5 and set minlength to 8. 
 
+Since minlength is set with the regular expression there is no 
+need for minlength attribute again.
+
 
 13.
 
