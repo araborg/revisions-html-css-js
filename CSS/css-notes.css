@@ -862,12 +862,11 @@ well as labels (<label>) within a web form.
         <br />
 
         OR: 
-        <label for="kraken">
+        <label>
             Kraken 
 
             <input 
                 type="radio" 
-                id="kraken" 
                 name="monster" 
                 value="K" 
             />
