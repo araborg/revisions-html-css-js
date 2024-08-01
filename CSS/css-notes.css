@@ -1051,7 +1051,15 @@ form {
 25. last-of-type{}
 
 
-26.
+26. Input, Textarea and Select
+Select all input, textarea, and select elements, and make them 
+take up the full width of their parent elements.
+
+input,
+select,
+textarea {
+    width: 100%;
+}
 
 
 27.
