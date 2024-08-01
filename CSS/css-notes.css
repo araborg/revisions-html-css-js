@@ -861,6 +861,7 @@ well as labels (<label>) within a web form.
         
         <br />
 
+        OR: 
         <label for="kraken">
             Kraken 
 
@@ -881,6 +882,7 @@ well as labels (<label>) within a web form.
 
         <input type="radio" id="mothman" name="monster" value="M" />
         <label for="mothman">Mothman</label>
+
     </fieldset>
 </form>
 
@@ -891,10 +893,20 @@ size of the <html> element.
 
 
 7. label
-Read up more
-
 As label elements are inline by default, they are all displayed 
 side by side on the same line, making their text hard to read. 
+
+The <label> HTML element represents a caption for an item in a user interface.
+
+To explicitly associate a <label> element with an <input> element, you first need to add the id attribute to the <input> element. Next, you add the for attribute to the <label> element, where the value of for is the same as the id in the <input> element.
+
+Alternatively, you can nest the <input> directly inside the <label>, in which case the for and id attributes are not needed because the association is implicit:
+
+<label>
+    Do you like peas?
+    <input type="checkbox" name="peas" />
+</label>
+
 
 
 8. Label and Input
