@@ -960,6 +960,19 @@ need for minlength attribute again.
 
 
 13.
+To relate the radio inputs, give them the same name attribute values
+
+<fieldset>
+    <label for="">
+        <input type="radio" name="account-type" />
+        Personal
+    </label>
+
+    <label for="">
+        <input type="radio" name="account-type" />
+        Business
+    </label>
+</fieldset>
 
 
 14.
