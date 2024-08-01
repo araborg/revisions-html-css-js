@@ -1062,7 +1062,15 @@ textarea {
 }
 
 
-27.
+27. class attribute
+This can be used to apply different styles to diffent elemt.
+
+E.g:
+For the second fieldset, you want the input and label text to 
+appear on the same line.
+
+Start, by giving the input elements in the second fieldset a 
+class of inline.
 
 
 28.
