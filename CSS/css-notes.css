@@ -918,27 +918,7 @@ association is implicit:
 </label>
 
 
-
-8. Label and Input
-Nest an input element within each label. Be sure to add each 
-input after the label text, and include a space after the 
-colon.
-
-<fieldset>
-    <label for="">Enter Your First Name: <input type="text"/></label>
-
-    <label for="">Enter Your Last Name: <input type="text"/></label>
-
-    <label for="">Enter Your Email: <input type="text" /></label>
-
-    <label for="">Create a New Password: <input type="text"/></label>
-</fieldset>
-
-
-9. Input's "for" attribute
-Following accessibility best practices, link the input elements 
-and the label elements together using the for attribute.
-
+8. Input's "type" attribute
 Specifying the type attribute of a form element is important 
 for the browser to know what kind of data it should expect. 
 If the type is not specified, the browser will default to text.
@@ -951,6 +931,9 @@ A type of submit is automatically set to submit its nearest
 parent form element.
 
 <input type="submit" value="Submit" />
+
+
+9. 
 
 
 10.
