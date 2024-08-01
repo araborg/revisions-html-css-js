@@ -40,3 +40,7 @@ fieldset {
 
     padding: 2rem 0;
 }
+
+fieldset:last-of-type {
+    border: none;
+}
