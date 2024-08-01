@@ -820,7 +820,7 @@ body {
     width: 100%;
     height: 100vh;
 }
-    
+
 
 3. Body Default Margin
 The body has a default margin of 8px.
@@ -848,7 +848,8 @@ POST request as data in the request body (with method="post").
 
 <form
     action="https://register-demo.freecodecamp.org"
-    method="POST">
+    method="POST"
+>
 
 </form>
 
@@ -867,6 +868,8 @@ well as labels (<label>) within a web form.
         <br />
 
         OR: 
+
+        No "for" attribute and id attribute needed 
         <label>
             Kraken 
 
@@ -881,11 +884,6 @@ well as labels (<label>) within a web form.
 
         <input type="radio" id="sasquatch" name="monster" value="S" />
         <label for="sasquatch">Sasquatch</label>
-        
-        <br />
-
-        <input type="radio" id="mothman" name="monster" value="M" />
-        <label for="mothman">Mothman</label>
 
     </fieldset>
 </form>
