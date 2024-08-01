@@ -16,6 +16,8 @@ label {
     display: block;
 
     margin: 0.5rem 0;
+
+    /* border: 3px solid green; */
 }
 
 h1,
@@ -53,9 +55,15 @@ textarea {
     margin: 10px 0 0;
 }
 
+input,
+textarea {
+    background-color: #0a0a23;
+}
+
 .inline {
     width: unset;
 
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+    /* vertical-align: baseline; */
 }
