@@ -48,6 +48,7 @@
                     <input
                         type="password"
                         id="new-password"
+                        name="password"
                         required
                         pattern="[a-z0-5]{8,}"
                     />
@@ -80,19 +81,29 @@
                 <label for="profile-picture">
                     Upload a profile picture:
 
-                    <input type="file" id="profile-picture" />
+                    <input
+                        type="file"
+                        id="profile-picture"
+                        name="profile-picture"
+                    />
                 </label>
 
                 <label for="age">
                     Input your age (years):
 
-                    <input type="number" id="age" min="13" max="120" />
+                    <input
+                        type="number"
+                        name="age"
+                        id="age"
+                        min="13"
+                        max="120"
+                    />
                 </label>
 
                 <label for="referrer">
                     How did you hear about us?
 
-                    <select name="" id="referrer">
+                    <select name="referrer" id="referrer">
                         <option value="">(select one)</option>
                         <option value="1">freeCodeCamp News</option>
                         <option value="2">freeCodeCamp YouTube Channel</option>
@@ -105,7 +116,7 @@
                     Provide a bio:
 
                     <textarea
-                        name=""
+                        name="bio"
                         id="bio"
                         rows="3"
                         cols="30"
@@ -116,7 +127,12 @@
             </fieldset>
 
             <label for="terms-and-conditions">
-                <input type="checkbox" id="terms-and-conditions" required />
+                <input
+                    type="checkbox"
+                    id="terms-and-conditions"
+                    name="terms-and-conditions"
+                    required
+                />
 
                 I accept the
                 <a href="https://www.freecodecamp.org/news/terms-of-service/">
