@@ -72,3 +72,9 @@ textarea {
     vertical-align: middle;
     /* vertical-align: baseline; */
 }
+
+input[type="submit"] {
+    display: block;
+
+    width: 60%;
+}
