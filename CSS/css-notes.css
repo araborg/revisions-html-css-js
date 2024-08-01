@@ -1030,7 +1030,12 @@ attribute is used to identify the element in the form
 submission.
 
 
-23.
+23. Why this?
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
 
 
 24.
