@@ -942,7 +942,10 @@ parent form element.
 9. required attribute
 
 
-10.
+10. minlength attribute
+minlength="8"
+
+Doing so prevents inputs of less than 8 characters being submitted.
 
 
 11. 
