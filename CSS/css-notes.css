@@ -938,7 +938,7 @@ parent form element.
     <input type="submit" value="Submit" />
 </form>
 
-type = "text/submit/radio/checkbox/password/email/file"
+type = "text/number/submit/radio/checkbox/password/email/file"
 
 
 9. required attribute
@@ -983,7 +983,7 @@ To relate the radio inputs, give them the same name attribute values
 15. checked attribute
 
 
-16.
+16.  min and max attributes
 
 
 17.
