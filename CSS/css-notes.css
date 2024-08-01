@@ -930,7 +930,13 @@ the site does not use HTTPS.
 A type of submit is automatically set to submit its nearest 
 parent form element.
 
-<input type="submit" value="Submit" />
+<form action="https://register-demo.freecodecamp.org" method="POST">
+
+    ..................
+    ..................
+
+    <input type="submit" value="Submit" />
+</form>
 
 
 9. 
