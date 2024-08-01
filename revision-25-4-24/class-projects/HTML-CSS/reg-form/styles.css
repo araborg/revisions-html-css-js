@@ -52,3 +52,7 @@ textarea {
 
     margin: 10px 0 0;
 }
+
+.inline {
+    width: unset;
+}
