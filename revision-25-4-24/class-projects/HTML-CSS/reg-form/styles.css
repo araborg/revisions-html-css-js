@@ -78,11 +78,17 @@ input[type="submit"] {
 
     width: 60%;
 
-    margin: 0 auto;
+    margin: 1em auto;
 
     min-height: 2em;
     font-size: 1.1rem;
 
     background-color: #3b3b4f;
     border-color: #fff;
+
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
 }
