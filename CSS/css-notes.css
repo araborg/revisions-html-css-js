@@ -995,7 +995,9 @@ and the option element acts as a label for each dropdown option.
 18. option element
 
 
-19.
+19. option value
+Each option needs to be given a value attribute. Without which, 
+the text content of the option will be submitted to the server.
 
 
 20.
