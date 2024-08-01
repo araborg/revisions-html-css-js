@@ -951,7 +951,9 @@ Doing so prevents inputs of less than 8 characters being submitted.
 11. pattern attribute 
 
 
-12.
+12. [a-z0-5]{8,}
+The above is a regular expression which matches eight or more 
+lowercase letters or the digits 0 to 5 and set minlength to 8. 
 
 
 13.
