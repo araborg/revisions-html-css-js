@@ -963,7 +963,10 @@ the site does not use HTTPS.
 A type of submit is automatically set to submit its nearest 
 parent form element.
 
-<form action="https://register-demo.freecodecamp.org" method="POST">
+<form 
+    action="https://register-demo.freecodecamp.org" 
+    method="POST"
+>
 
     ..................
     ..................
@@ -971,8 +974,21 @@ parent form element.
     <input type="submit" value="Submit" />
 </form>
 
-type = "text/number/submit/radio/checkbox/password/email/file/date/
-month/week/time/datetime-local/range"
+type attribute can be: 
+text, 
+number, 
+submit, 
+radio, 
+checkbox, 
+password, 
+email, 
+file, 
+date, 
+month, 
+week, 
+time, 
+datetime-local, 
+range
 
 
 10. required attribute
