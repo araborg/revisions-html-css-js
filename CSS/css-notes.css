@@ -1066,7 +1066,7 @@ under which the browser is running. Generally this is a
 square but it may have rounded corners. A checkbox allows 
 you to select single values for submission in a form.
 
-Providing a bigger hit area for your checkboxes
+Providing a bigger hit area for your checkboxes:
 In the above examples, you may have noticed that you can 
 toggle a checkbox by clicking on its associated <label> 
 element as well as on the checkbox itself. This is a 
@@ -1089,7 +1089,6 @@ attribute.
 It is valid for the input types including: date, month, week, 
 time, datetime-local, number and range types, and the <meter> 
 element.
-
 
 max:
 The max attribute defines the maximum value that is acceptable 
