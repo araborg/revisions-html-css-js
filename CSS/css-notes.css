@@ -1111,7 +1111,7 @@ make it selected by default when the page first loads.
 </select>
 
 
-20. Textarea element
+21. Textarea element
 The textarea element acts like an input element of type text, 
 but comes with the added benefit of being able to receive 
 multi-line text, and an initial number of text rows and 
@@ -1129,7 +1129,7 @@ cols attributes.
 </textarea>
 
 
-21. placeholder attribute
+22. placeholder attribute
 The placeholder accepts a text value, which is displayed until 
 the user starts typing.
 
@@ -1191,7 +1191,6 @@ p:last-of-type {
 }
 
 
-
 26. Input, Textarea and Select
 Select all input, textarea, and select elements, and make them 
 take up the full width of their parent elements.
@@ -1225,9 +1224,15 @@ class of inline.
 
 
 28. unset
-The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In other words, it behaves like the inherit keyword in the first case, when the property is an inherited property, and like the initial keyword in the second case, when the property is a non-inherited property.
+The unset CSS keyword resets a property to its inherited value 
+if the property naturally inherits from its parent, and to its 
+initial value if not. In other words, it behaves like the 
+inherit keyword in the first case, when the property is an 
+inherited property, and like the initial keyword in the second 
+case, when the property is a non-inherited property.
 
-unset can be applied to any CSS property, including the CSS shorthand property all.
+unset can be applied to any CSS property, including the CSS 
+shorthand property all.
 
 
 29. input[name="password"]
@@ -1238,64 +1243,6 @@ of password.
 30.
 
 
-1.
-
-
-2.
-
-
-3.
-
-
-4.
-
-
-5.
-
-
-6.
-
-
-7.
-
-
-8.
-
-
-9.
-
-
-10.
-
-
-1.
-
-
-2.
-
-
-3.
-
-
-4.
-
-
-5.
-
-
-6.
-
-
-7.
-
-
-8.
-
-
-9.
-
-
-10.
 
 
 
