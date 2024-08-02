@@ -955,9 +955,17 @@ is not included, the :optional pseudo class will match.
 
 
 10. minlength attribute
-minlength="8"
+The minlength attribute defines the minimum string length that the 
+user can enter into an <input> or <textarea>. The attribute must 
+have an integer value of 0 or higher.
 
-Doing so prevents inputs of less than 8 characters being submitted.
+This value must be less than or equal to the value of maxlength, 
+otherwise the value will never be valid, as it is impossible to 
+meet both criteria.
+
+For example: minlength="8"
+By adding minlength="8", the value must either be empty or eight 
+characters or longer to be valid.
 
 
 11. pattern attribute 
