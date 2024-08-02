@@ -1092,6 +1092,11 @@ items in an HTML document.
 Each option needs to be given a value attribute. Without which, 
 the text content of the option will be submitted to the server.
 
+The content of this attribute represents the value to be submitted 
+with the form, should this option be selected. If this attribute 
+is omitted, the value is taken from the text content of the option 
+element.
+
 
 20. selected attribute
 
