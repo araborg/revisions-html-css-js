@@ -866,7 +866,12 @@ well as labels (<label>) within a web form.
     <fieldset>
         <legend>Choose your favorite monster</legend>
 
-        <input type="radio" id="kraken" name="monster" value="K" />
+        <input 
+            type="radio" 
+            id="kraken" 
+            name="monster" 
+            value="K" 
+        />
         <label for="kraken">Kraken</label>
         
         <br />
