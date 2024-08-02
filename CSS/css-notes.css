@@ -942,7 +942,7 @@ in which case the for and id attributes are not needed because the
 association is implicit:
 
 As label elements are inline by default, they are all displayed 
-side by side on the same line, making their text hard to read. 
+side by side on the same line. 
 
 <label>
     Do you like peas?
