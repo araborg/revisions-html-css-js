@@ -1099,6 +1099,9 @@ element.
 
 
 20. selected attribute
+You can include a selected attribute on an <option> element to 
+make it selected by default when the page first loads.
+
 
 <!-- The second value will be selected initially -->
 <select name="choice">
