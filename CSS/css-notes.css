@@ -891,12 +891,29 @@ well as labels (<label>) within a web form.
 </form>
 
 
-6. rem unit
+6. legend tag
+The <legend> HTML element represents a caption for the content of its 
+parent <fieldset>.
+
+<fieldset>
+    <legend>Choose your favorite monster</legend>
+
+    <input type="radio" id="kraken" name="monster" value="K" />
+    <label for="kraken">Kraken</label>
+    
+    <br />
+
+    <input type="radio" id="sasquatch" name="monster" value="S" />
+    <label for="sasquatch">Sasquatch</label>
+</fieldset>
+
+
+7. rem unit
 The rem unit stands for root em, and is relative to the font size 
 of the <html> element.
 
 
-7. label
+8. label
 As label elements are inline by default, they are all displayed 
 side by side on the same line, making their text hard to read. 
 
@@ -918,7 +935,7 @@ association is implicit:
 </label>
 
 
-8. Input's "type" attribute
+9. Input's "type" attribute
 Specifying the type attribute of a form element is important 
 for the browser to know what kind of data it should expect. 
 If the type is not specified, the browser will default to text.
@@ -938,10 +955,11 @@ parent form element.
     <input type="submit" value="Submit" />
 </form>
 
-type = "text/number/submit/radio/checkbox/password/email/file"
+type = "text/number/submit/radio/checkbox/password/email/file/date/
+month/week/time/datetime-local/range"
 
 
-9. required attribute
+10. required attribute
 The Boolean required attribute, if present, indicates that the user 
 must specify a value for the input before the owning form can be 
 submitted.
@@ -954,7 +972,7 @@ elements, the :required pseudo class will match. If the attribute
 is not included, the :optional pseudo class will match.
 
 
-10. minlength attribute
+11. minlength attribute
 The minlength attribute defines the minimum string length that the 
 user can enter into an <input> or <textarea>. The attribute must 
 have an integer value of 0 or higher.
@@ -968,7 +986,7 @@ By adding minlength="8", the value must either be empty or eight
 characters or longer to be valid.
 
 
-11. pattern attribute 
+12. pattern attribute 
 The pattern attribute, when specified, is a regular expression 
 which the input's value must match for the value to pass 
 constraint validation. It must be a valid JavaScript regular 
@@ -978,7 +996,7 @@ The pattern attribute is an attribute of the text, tel, email,
 url, password, and search input types.
 
 
-12. [a-z0-5]{8,}
+13. [a-z0-5]{8,}
 The above is a regular expression which matches eight or more 
 lowercase letters or the digits 0 to 5 and set minlength to 8. 
 
@@ -986,7 +1004,7 @@ Since minlength is set with the regular expression there is no
 need for minlength attribute again.
 
 
-13. name attribute
+14. name attribute
 With form submissions, it is useful, and good practice, to 
 provide each submittable element with a name attribute. This 
 attribute is used to identify the element in the form 
@@ -1008,14 +1026,39 @@ values
 </fieldset>
 
 
-14. legend tag
-
-
 15. checked attribute
+<input> elements of type checkbox are rendered by default 
+as boxes that are checked (ticked) when activated, like you 
+might see in an official government paper form. The exact 
+appearance depends upon the operating system configuration 
+under which the browser is running. Generally this is a 
+square but it may have rounded corners. A checkbox allows 
+you to select single values for submission in a form 
+(or not).
+
+Providing a bigger hit area for your checkboxes
+In the above examples, you may have noticed that you can 
+toggle a checkbox by clicking on its associated <label> 
+element as well as on the checkbox itself. This is a 
+really useful feature of HTML form labels that makes it 
+easier to click the option you want, especially on 
+small-screen devices like smartphones.
+
+Beyond accessibility, this is another good reason to 
+properly set up <label> elements on your forms.
 
 
 16.  min and max attributes
+min: 
+The min attribute defines the minimum value that is acceptable and valid for the input containing the attribute. If the value of the element is less than this, the element fails validation. This value must be less than or equal to the value of the max attribute.
 
+It is valid for the input types including: date, month, week, time, datetime-local, number and range types, and the <meter> element.
+
+
+max:
+The max attribute defines the maximum value that is acceptable and valid for the input containing the attribute. If the value of the element is greater than this, the element fails validation. This value must be greater than or equal to the value of the min attribute. 
+
+Valid for the numeric input types, including the date, month, week, time, datetime-local, number and range types, and both the <progress> and <meter> elements, the max attribute is a number that specifies the most positive value a form control to be considered valid.
 
 17. select elemt
 Adding a dropdown to the form is easy with the select element. 
