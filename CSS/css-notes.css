@@ -992,16 +992,16 @@ range
 
 
 10. required attribute
-The Boolean required attribute, if present, indicates that the user 
-must specify a value for the input before the owning form can be 
-submitted.
+The Boolean required attribute, if present, indicates that the 
+user must specify a value for the input before the owning form 
+can be submitted.
 
-The required attribute is supported by text, search, url, tel, email, 
-password, date, month, week, time, datetime-local, number, checkbox, 
-radio, file, <input> types along with the <select> and <textarea> 
-form control elements. If present on any of these input types and 
-elements, the :required pseudo class will match. If the attribute 
-is not included, the :optional pseudo class will match.
+The required attribute is supported by text, search, url, tel, 
+email, password, date, month, week, time, datetime-local, number, 
+checkbox, radio, file, <input> types along with the <select> and 
+<textarea> form control elements. If present on any of these input 
+types and elements, the :required pseudo class will match. If the 
+attribute is not included, the :optional pseudo class will match.
 
 
 11. minlength attribute
