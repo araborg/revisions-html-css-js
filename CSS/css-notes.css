@@ -812,7 +812,7 @@ The whole essence of this is for the browser to know what
 type of document it's reading.
 
 
-2. vh (view height) unit
+2. vh unit
 It stands for viewport height, and is equal to 1% of the height 
 of the viewport. This makes it relative to the viewport height.
 
