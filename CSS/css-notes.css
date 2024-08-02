@@ -986,8 +986,14 @@ Since minlength is set with the regular expression there is no
 need for minlength attribute again.
 
 
-13.
-To relate the radio inputs, give them the same name attribute values
+13. name attribute
+With form submissions, it is useful, and good practice, to 
+provide each submittable element with a name attribute. This 
+attribute is used to identify the element in the form 
+submission.
+
+To relate the radio inputs, give them the same name attribute 
+values
 
 <fieldset>
     <label for="">
@@ -1048,12 +1054,7 @@ the placeholder attribute is used. The placeholder accepts a
 text value, which is displayed until the user starts typing.
 
 
-22. name attribute
-With form submissions, it is useful, and good practice, to 
-provide each submittable element with a name attribute. This 
-attribute is used to identify the element in the form 
-submission.
-
+22.
 
 23. Why this?
 h1,
