@@ -823,7 +823,8 @@ body {
 
 
 3. Body Default Margin
-The body has a default margin of 8px.
+The body has a default margin of 8px, wc may result in a 
+horizontal scroll bar in case the whole page is used.
 
 Get rid of the horizontal scroll-bar, by setting the body default 
 margin added by some browsers to 0.
