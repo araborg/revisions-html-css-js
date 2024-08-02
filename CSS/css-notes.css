@@ -1035,7 +1035,7 @@ N.B: Since minlength is set with the regular expression there
 is no need for minlength attribute again.
 
 
-14. name attribute
+13. name attribute
 With form submissions, it is useful, and good practice, to 
 provide each submittable element with a name attribute. This 
 attribute is used to identify the element in the form 
@@ -1057,7 +1057,7 @@ values
 </fieldset>
 
 
-15. checked attribute
+14. checked attribute
 <input> elements of type checkbox are rendered by default 
 as boxes that are checked (ticked) when activated, like you 
 might see in an official government paper form. The exact 
@@ -1079,7 +1079,7 @@ Beyond accessibility, this is another good reason to
 properly set up <label> elements on your forms.
 
 
-16.  min and max attributes
+15.  min and max attributes
 min: 
 The min attribute defines the minimum value that is acceptable 
 and valid for the input containing the attribute. If the value 
@@ -1106,20 +1106,20 @@ number that specifies the most positive value a form control
 to be considered valid.
 
 
-17. select elemt
+16. select elemt
 Adding a dropdown to the form is easy with the select element. 
 The select element is a container for a group of option elements, 
 and the option element acts as a label for each dropdown option. 
 
 
-18. option element
+17. option element
 The <option> HTML element is used to define an item contained in 
 a <select>, an <optgroup>, or a <datalist> element. As such, 
 <option> can represent menu items in popups and other lists of 
 items in an HTML document.
 
 
-19. option value
+18. option value
 Each option needs to be given a value attribute. Without which, 
 the text content of the option will be submitted to the server.
 
@@ -1129,7 +1129,7 @@ is omitted, the value is taken from the text content of the option
 element.
 
 
-20. selected attribute
+19. selected attribute
 You can include a selected attribute on an <option> element to 
 make it selected by default when the page first loads.
 
@@ -1142,7 +1142,7 @@ make it selected by default when the page first loads.
 </select>
 
 
-21. Textarea element
+20. Textarea element
 The textarea element acts like an input element of type text, 
 but comes with the added benefit of being able to receive 
 multi-line text, and an initial number of text rows and 
@@ -1160,12 +1160,12 @@ cols attributes.
 </textarea>
 
 
-22. placeholder attribute
+21. placeholder attribute
 The placeholder accepts a text value, which is displayed until 
 the user starts typing.
 
 
-23. Why this?
+22. Why this?
 h1,
 p {
     margin: 1em auto;
@@ -1173,7 +1173,7 @@ p {
 }
 
 
-24. width:
+23. width:
 form {
     min-width: 300px;
 
@@ -1183,7 +1183,7 @@ form {
 }
 
 
-25. last-of-type{}
+24. last-of-type{}
 The :last-of-type CSS pseudo-class represents the last element 
 of its type among a group of sibling elements.
 
@@ -1222,7 +1222,7 @@ p:last-of-type {
 }
 
 
-26. Input, Textarea and Select
+25. Input, Textarea and Select
 Select all input, textarea, and select elements, and make them 
 take up the full width of their parent elements.
 
@@ -1233,7 +1233,7 @@ textarea {
 }
 
 
-27. class attribute
+26. class attribute
 This can be used to apply different styles to diffent elemt.
 
 The case-sensitive class selector starts with a dot (.) 
@@ -1254,7 +1254,7 @@ Start, by giving the input elements in the second fieldset a
 class of inline.
 
 
-28. unset
+27. unset
 The unset CSS keyword resets a property to its inherited value 
 if the property naturally inherits from its parent, and to its 
 initial value if not. In other words, it behaves like the 
@@ -1266,7 +1266,7 @@ unset can be applied to any CSS property, including the CSS
 shorthand property all.
 
 
-29. input[name="password"]
+28. input[name="password"]
 The above selects input elements with a name attribute value 
 of password.
 
