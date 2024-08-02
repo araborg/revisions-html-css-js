@@ -929,11 +929,8 @@ of the <html> element.
 
 
 8. label
-As label elements are inline by default, they are all displayed 
-side by side on the same line, making their text hard to read. 
-
-The <label> HTML element represents a caption for an item in 
-a user interface.
+The <label> HTML element represents a caption/brief explanation 
+for an item in a user interface.
 
 To explicitly associate a <label> element with an <input> element, 
 you first need to add the id attribute to the <input> element. Next, 
@@ -943,6 +940,9 @@ of for is the same as the id in the <input> element.
 Alternatively, you can nest the <input> directly inside the <label>, 
 in which case the for and id attributes are not needed because the 
 association is implicit:
+
+As label elements are inline by default, they are all displayed 
+side by side on the same line, making their text hard to read. 
 
 <label>
     Do you like peas?
