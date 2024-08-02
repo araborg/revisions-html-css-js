@@ -969,6 +969,13 @@ characters or longer to be valid.
 
 
 11. pattern attribute 
+The pattern attribute, when specified, is a regular expression 
+which the input's value must match for the value to pass 
+constraint validation. It must be a valid JavaScript regular 
+expression, as used by the RegExp type.
+
+The pattern attribute is an attribute of the text, tel, email, 
+url, password, and search input types.
 
 
 12. [a-z0-5]{8,}
