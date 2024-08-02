@@ -951,8 +951,9 @@ side by side on the same line.
 
 
 9. Input's "type" attribute
-Specifying the type attribute of a form element is important 
-for the browser to know what kind of data it should expect. 
+Specifying the "type" attribute of an input elemt of a form 
+element is important for the browser to know what kind of 
+data it should expect. 
 If the type is not specified, the browser will default to text.
 
 The email type only allows emails with a @ and a . in the 
