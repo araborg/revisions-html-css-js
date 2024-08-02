@@ -1027,13 +1027,12 @@ expression, as used by the RegExp type.
 The pattern attribute is an attribute of the text, tel, email, 
 url, password, and search input types.
 
-
-13. [a-z0-5]{8,}
+[a-z0-5]{8,}
 The above is a regular expression which matches eight or more 
 lowercase letters or the digits 0 to 5 and set minlength to 8. 
 
-Since minlength is set with the regular expression there is no 
-need for minlength attribute again.
+N.B: Since minlength is set with the regular expression there 
+is no need for minlength attribute again.
 
 
 14. name attribute
