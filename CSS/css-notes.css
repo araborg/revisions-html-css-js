@@ -907,8 +907,8 @@ well as labels (<label>) within a web form.
 
 
 6. legend tag
-The <legend> HTML element represents a caption for the content of its 
-parent <fieldset>.
+The <legend> HTML element represents a caption or brief explanation 
+for the content of its parent <fieldset>.
 
 <fieldset>
     <legend>Choose your favorite monster</legend>
