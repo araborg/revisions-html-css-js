@@ -1042,7 +1042,7 @@ attribute is used to identify the element in the form
 submission.
 
 To relate the radio inputs, give them the same name attribute 
-values
+values.
 
 <fieldset>
     <label for="">
@@ -1064,8 +1064,7 @@ might see in an official government paper form. The exact
 appearance depends upon the operating system configuration 
 under which the browser is running. Generally this is a 
 square but it may have rounded corners. A checkbox allows 
-you to select single values for submission in a form 
-(or not).
+you to select single values for submission in a form.
 
 Providing a bigger hit area for your checkboxes
 In the above examples, you may have noticed that you can 
