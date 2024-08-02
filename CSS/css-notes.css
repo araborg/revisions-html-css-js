@@ -878,7 +878,9 @@ well as labels (<label>) within a web form.
 
         OR: 
 
-        No "for" attribute and id attribute needed 
+        Both "for" attribute and id attribute are nt needed 
+        wn d input elemt is inside the label.
+
         <label>
             Kraken 
 
@@ -891,7 +893,12 @@ well as labels (<label>) within a web form.
         
         <br />
 
-        <input type="radio" id="sasquatch" name="monster" value="S" />
+        <input 
+            type="radio" 
+            id="sasquatch" 
+            name="monster" 
+            value="S" 
+        />
         <label for="sasquatch">Sasquatch</label>
 
     </fieldset>
