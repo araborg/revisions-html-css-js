@@ -1130,11 +1130,9 @@ cols attributes.
 
 
 21. placeholder attribute
-the placeholder attribute is used. The placeholder accepts a 
-text value, which is displayed until the user starts typing.
+The placeholder accepts a text value, which is displayed until 
+the user starts typing.
 
-
-22.
 
 23. Why this?
 h1,
@@ -1155,6 +1153,43 @@ form {
 
 
 25. last-of-type{}
+The :last-of-type CSS pseudo-class represents the last element 
+of its type among a group of sibling elements.
+
+<p>This `p` is not selected.</p>
+
+<p>This `p` is not selected either.</p>
+
+<p>
+    This `p` is last `p` element of its parent e.g. `body` selected by `p` type
+    selector.
+</p>
+
+<div class="container">
+    <div class="item">This `div` is not selected.</div>
+
+    <div class="item">This `div` is not selected either.</div>
+
+    <div class="item">
+        This `div` is last `div` element of its parent `div` selected by `.container
+        .item` class selector.
+    </div>
+
+    <p class="item">
+        This `p` is last `p` element of its parent `div` selected by `.container
+        .item` class selector.
+    </p>
+</div>
+
+p:last-of-type {
+    background: skyblue;
+}
+
+.container .item:last-of-type {
+    color: red;
+    font-weight: bold;
+}
+
 
 
 26. Input, Textarea and Select
@@ -1171,6 +1206,16 @@ textarea {
 27. class attribute
 This can be used to apply different styles to diffent elemt.
 
+The case-sensitive class selector starts with a dot (.) 
+character. It will select everything in the document with that 
+class applied to it.
+
+Target an element if it has more than one class applied
+You can apply multiple classes to an element and target them 
+individually, or only select the element when all of the classes 
+in the selector are present. This can be helpful when building 
+up components that can be combined in different ways on your site.
+
 E.g:
 For the second fieldset, you want the input and label text to 
 appear on the same line.
@@ -1180,6 +1225,9 @@ class of inline.
 
 
 28. unset
+The unset CSS keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its initial value if not. In other words, it behaves like the inherit keyword in the first case, when the property is an inherited property, and like the initial keyword in the second case, when the property is a non-inherited property.
+
+unset can be applied to any CSS property, including the CSS shorthand property all.
 
 
 29. input[name="password"]
