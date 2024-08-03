@@ -938,22 +938,24 @@ It smtimes affect alignmt.
 65. Projects:
 Don't recollect what you crammed from a project but apply 
 experiene and crictical thinking. 
+
 Don't be quick to check soln.
 
 
 66. CSS Values:
-Parent:
-    height: auto;
+    Parent:
+        height: auto;
 
-Inner Parent:
-    height: 100%;
+    Inner Parent:
+        height: 100%;
 
-Child:
-    height: 55px;
+    Child:
+        height: 55px;
 
 
 68. Margin
-margin: auto; may be very helpful.
+margin: auto; 
+may be very helpful.
 
 
 
