@@ -630,7 +630,7 @@ If the second value is not set, the first value is also used for
 it.
 
 This property is a shorthand for the following CSS properties:
-align-items, justify-items
+align-items, justify-items.
 
 place-items: center stretch;
 place-items: center start;
