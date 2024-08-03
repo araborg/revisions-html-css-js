@@ -1099,9 +1099,7 @@ attribute.
 
 Valid for the numeric input types, including the date, month, 
 week, time, datetime-local, number and range types, and both 
-the <progress> and <meter> elements, the max attribute is a 
-number that specifies the most positive value a form control 
-to be considered valid.
+the <progress> and <meter> elements.
 
 
 16. select elemt
