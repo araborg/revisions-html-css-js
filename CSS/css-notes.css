@@ -413,8 +413,8 @@ the inline axis
 
 38. justify-self: stretch/start/end/center
 It deals with a single child elemt. The CSS justify-self property 
-sets the way a box/item is justified inside its alignment container 
-along the appropriate axis.
+sets the way a box or an item is justified inside its alignment 
+container along the appropriate axis.
 
 
 39. row-gap:
