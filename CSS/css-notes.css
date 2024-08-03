@@ -536,8 +536,10 @@ margin creates extra space around an element.
 
 48. z-index
 The z-index CSS property sets the z-order of a positioned element 
-and its descendants or flex and grid items. Overlapping elements 
-with a larger z-index cover those with a smaller one.
+and its descendants or flex and grid items. 
+
+Overlapping elements with a larger z-index cover those with a 
+smaller one.
 
 For a positioned box (that is, one with any position other than 
 static), the z-index property specifies:
@@ -553,9 +555,9 @@ level of the generated box in the current stacking context is 0.
 
 
 49. :not()
-The :not() CSS pseudo-class represents elements that do not match a 
-list of selectors. Since it prevents specific items from being selected, 
-it is known as the negation pseudo-class.
+The :not() CSS pseudo-class represents elements that do not match 
+a list of selectors. Since it prevents specific items from being 
+selected, it is known as the negation pseudo-class.
 
 The :not() pseudo-class requires a selector list, a comma-separated 
 list of one or more selectors, as its argument. The list must not 
