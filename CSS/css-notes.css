@@ -733,10 +733,13 @@ fieldset:
 figcaption:	
     display: block;	
 
-    
-figure	display: block;
+
+figure:
+	display: block;
+
     margin-top: 1em;
     margin-bottom: 1em;
+
     margin-left: 40px;
     margin-right: 40px;	
 
@@ -760,8 +763,10 @@ aside:
 
 blockquote:
     display: block;
+
     margin-top: 1em;
     margin-bottom: 1em;
+    
     margin-left: 40px;
     margin-right: 40px;
 
@@ -769,6 +774,7 @@ blockquote:
 caption:
     display: table-caption;
     text-align: center;
+
 
 div:
     display: block;
@@ -780,10 +786,13 @@ header:
 
 hr:
     display: block;
+
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+
     margin-left: auto;
     margin-right: auto;
+    
     border-style: inset;
     border-width: 1px;
 
