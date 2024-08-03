@@ -486,10 +486,11 @@ the layout of children wc can be for instance flex, grid etc.
 
 
 44. fill:
-The fill attribute has two different meanings. For shapes and text it's 
-a presentation attribute that defines the color (or any SVG paint servers 
-like gradients or patterns) used to paint the element; for animation it 
-defines the final state of the animation.
+The fill attribute has two different meanings (color and final 
+state of animation). For shapes and text it's a presentation 
+attribute that defines the color (or any SVG paint servers like 
+gradients or patterns) used to paint the element; for animation 
+it defines the final state of the animation.
 
 
 45. border:
