@@ -396,18 +396,19 @@ It deals with d parent container.
 
 
 37. justify-items: stretch/center/start/end
-The CSS justify-items property defines the default JUSTIFY-SELF for all 
-items of the box, giving them all a default way of justifying each box 
-along the appropriate axis.
+The CSS justify-items property defines the default JUSTIFY-SELF for 
+all items of the box, giving them all a default way of justifying 
+each box along the appropriate axis.
 
-The effect of this property is dependent of the layout mode we are in:
-In block-level layouts, it aligns the items inside their individual 
-containing block on the inline axis.
+The effect of this property is dependent of the layout mode we 
+are in: 
+In block-level layouts, it aligns the items inside their 
+individual containing block on the inline axis.
 
 In flexbox layouts, this property is ignored.
 
-In grid layouts, it aligns the items inside their grid areas on the 
-inline axis 
+In grid layouts, it aligns the items inside their grid areas on 
+the inline axis 
 
 
 38. justify-self: stretch/start/end/center
