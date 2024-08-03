@@ -716,18 +716,25 @@ body:
 
 fieldset:	
     display: block;
+
     margin-left: 2px;
     margin-right: 2px;
+    
     padding-top: 0.35em;
+    
     padding-bottom: 0.625em;
+    
     padding-left: 0.75em;
     padding-right: 0.75em;
+    
     border: 2px groove (internal value);
 
 
-figcaption	
+figcaption:	
     display: block;	
-    figure	display: block;
+
+    
+figure	display: block;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 40px;
@@ -735,99 +742,122 @@ figcaption
 
 
 footer:	
-display: block;	
+    display: block;	
 
 
 form:
-display: block;
-margin-top: 0em;
+    display: block;
+    margin-top: 0em;
 
 
 article:
-display: block;	
+    display: block;	
 
 
 aside:
-display: block;
+    display: block;
 
 
 blockquote:
-display: block;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 40px;
-margin-right: 40px;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
 
 
 caption:
-display: table-caption;
-text-align: center;
+    display: table-caption;
+    text-align: center;
 
 div:
-display: block;
+    display: block;
 
 
 header:	
-display: block;	
+    display: block;	
 
 
 hr:
-display: block;
-margin-top: 0.5em;
-margin-bottom: 0.5em;
-margin-left: auto;
-margin-right: auto;
-border-style: inset;
-border-width: 1px;
-
-html	display: block;
-
-img	display: inline-block;
-
-legend	display: block;
-padding-left: 2px;
-padding-right: 2px;
-border: none;
-
-menu	display: block;
-list-style-type: disc;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
-
-nav	display: block;
-
-section	display: block;
-
-table	display: table;
-border-collapse: separate;
-border-spacing: 2px;
-border-color: gray;	
-
-tbody	display: table-row-group;
-vertical-align: middle;
-border-color: inherit;	
-td	display: table-cell;
-vertical-align: inherit;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 
 
-tfoot	display: table-footer-group;
-vertical-align: middle;
-border-color: inherit;	
+html:
+    display: block;
 
-th	display: table-cell;
-vertical-align: inherit;
-font-weight: bold;
-text-align: center;	
-thead	display: table-header-group;
-vertical-align: middle;
-border-color: inherit;
 
-tr	display: table-row;
-vertical-align: inherit;
-border-color: inherit;
+img:
+    display: inline-block;
+
+
+legend:
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+
+
+menu:
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+
+
+nav:
+    display: block;
+
+
+section:
+    display: block;
+
+
+table:
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;	
+
+tbody:
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;	
+
+td:
+    display: table-cell;
+    vertical-align: inherit;
+
+
+tfoot:
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;	
+
+th:
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;	
+
+
+thead:
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+
+tr:
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
     
 
 57. flex-start:
