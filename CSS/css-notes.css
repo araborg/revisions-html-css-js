@@ -1244,7 +1244,7 @@ The case-sensitive class selector starts with a dot (.)
 character. It will select everything in the document with that 
 class applied to it.
 
-Target an element if it has more than one class applied
+Target an element if it has more than one class applied:
 You can apply multiple classes to an element and target them 
 individually, or only select the element when all of the classes 
 in the selector are present. This can be helpful when building 
@@ -1265,6 +1265,9 @@ initial value if not. In other words, it behaves like the
 inherit keyword in the first case, when the property is an 
 inherited property, and like the initial keyword in the second 
 case, when the property is a non-inherited property.
+
+That is, it can either be inherit if it has a parent or initial
+if it doesn't. 
 
 unset can be applied to any CSS property, including the CSS 
 shorthand property all.
