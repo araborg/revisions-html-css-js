@@ -181,7 +181,7 @@ degree to which content behind an element is hidden, and is the opposite
 of transparency.
 
 0:	The element is fully transparent (that is, invisible).
-1 (default value):	The element is fully opaque (visually solid).
+1 (default value):	The element is fully opaque (visually solid/visible).
 
 
 20. position: relative/absolute.
