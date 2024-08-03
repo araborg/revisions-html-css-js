@@ -154,10 +154,23 @@ timer and stop the code execution beforehand.
     audio.addEventListener()
 
 
-35. append
+35. append, appendChild
 
 
 36. innerText, innerHTML, textConteny
 
 
+37. remove(), removeChild()
+
+
+38. getAttribute(), setAttribute(), removeAttribute()
+
+
+39. data attribute
+
+
+40. classList attribute
+
+
+41. Style attribute
 */
