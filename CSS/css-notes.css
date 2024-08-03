@@ -11,7 +11,7 @@ row; use justify-content: center;
 - when main-axis in vertical i.e. flex-direction: column;
 use align-items: center; 
 
-These will centralize the item(s) within the parent container.
+These will centre the item(s) within the parent container.
 
 
 3. If u think width: 100%; does nt work on a box/elemt, increase
