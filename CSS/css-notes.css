@@ -377,11 +377,12 @@ axis within their grid areas.
 
 
 35. align-self: stretch/start/end/center. 
-The align-self CSS property overrides a grid or flex item's align-items 
-value common to all d children elements and affect only d specified 
-child elemt.
+The align-self CSS property overrides a grid or flex item's 
+align-items value common to all d children elements and affect 
+only d specified child elemt.
 
 In flexbox, it aligns the item on the cross axis.
+
 In grid, it aligns the item inside the grid area. 
 
 
