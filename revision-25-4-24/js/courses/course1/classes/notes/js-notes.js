@@ -152,4 +152,12 @@ timer and stop the code execution beforehand.
     deleteSong()
         resetButton()
     audio.addEventListener()
+
+
+35. append
+
+
+36. innerText, innerHTML, textConteny
+
+
 */
