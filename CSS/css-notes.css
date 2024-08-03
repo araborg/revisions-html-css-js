@@ -1273,15 +1273,9 @@ unset can be applied to any CSS property, including the CSS
 shorthand property all.
 
 
-28. input[name="password"]
+28. attribute selector
+input[name="password"]
 The above selects input elements with a name attribute value 
 of password.
-
-
-30.
-
-
-
-
 
 */
