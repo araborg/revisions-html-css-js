@@ -838,7 +838,7 @@ section:
 
 table:
     display: table;
-    
+
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;	
@@ -877,13 +877,15 @@ tr:
     
 
 57. flex-start:
-It means the items are all aligned to the start of the main axis. 
+It means the items are all aligned to the start of the main 
+axis. 
 
-While this may all seem a little confusing, the rule to remember is 
-that unless you do something to change it, flex items lay themselves 
-out in the direction that words are laid out in the language of your 
-document along the inline, row axis. Start and flex-start will be 
-where the beginning of a sentence of text would start.
+While this may all seem a little confusing, the rule to remember 
+is that unless you do something to change it, flex items lay 
+themselves out in the direction that words are laid out in the 
+language of your document along the inline, row axis. Start and 
+flex-start will be where the beginning of a sentence of text 
+would start.
 
 If you change flex-direction to one of the reverse values, they will 
 lay themselves out from the end axis and in the reverse order to the 
@@ -913,14 +915,14 @@ Distributed alignment
 
 Helpful Hints:
 61. Border: 
-Use border to chech the initial width and height of an elemt.
+Use border to check the initial width and height of an elemt.
 
 
 62. Padding:
 It increases an elemt's width and height.
 
-Every side of an elemt needs padding - it may only 
-be applicable at d top & bottom in sm cases.
+Every side of an elemt needs padding - it may only be 
+applicable at d top & bottom in sm cases.
 
 It can also be helpful in alignmt.
 
