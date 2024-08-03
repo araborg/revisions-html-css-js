@@ -81,16 +81,15 @@ input[type="submit"] {
     display: block;
 
     width: 60%;
+    min-width: 300px;
+    min-height: 2em;
 
     margin: 1em auto;
 
-    min-height: 2em;
     font-size: 1.1rem;
 
     background-color: #3b3b4f;
     border-color: #fff;
-
-    min-width: 300px;
 }
 
 input[type="file"] {
