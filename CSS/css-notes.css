@@ -590,15 +590,16 @@ thumb, which is the draggable handle of the scrollbar.
     scrollbar-color: red orange;
 }
 
-Note: When customizing scrollbars, ensure that the thumb and track 
-have enough contrast with the surrounding background. Also ensure 
-that the scrollbar hit area is large enough for people who use 
-touch input.
+Note: When customizing scrollbars, ensure that the thumb and 
+track have enough contrast with the surrounding background. 
+Also ensure that the scrollbar hit area is large enough for 
+people who use touch input.
 
 
 52. vertical-align: baseline, top, middle, bottom, sub, text-top.
-The vertical-align CSS property sets vertical alignment of an inline, 
-inline-block or table-cell box.
+The vertical-align CSS property sets vertical alignment of an 
+inline, inline-block or table-cell box.
+
 You can't use it to vertically align block-level elements.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
