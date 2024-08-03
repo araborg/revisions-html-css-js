@@ -412,14 +412,14 @@ the inline axis
 
 
 38. justify-self: stretch/start/end/center
-It deals with a single child elemt. The CSS justify-self property sets 
-the way a box/item is justified inside its alignment container along 
-the appropriate axis.
+It deals with a single child elemt. The CSS justify-self property 
+sets the way a box/item is justified inside its alignment container 
+along the appropriate axis.
 
 
 39. row-gap:
-The row-gap CSS property sets the size of the gap (gutter) between an 
-element's rows. Rows r in horizontal directions. 
+The row-gap CSS property sets the size of the gap (gutter) between 
+an element's rows. Rows r in horizontal directions. 
 
 Rows egs:
 ======================= row
