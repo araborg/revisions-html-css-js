@@ -191,6 +191,7 @@ of positioned elements.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/position
 
+
 Static:
 This is d default positioning for HTML elements, where they follow the 
 normal flow of the document based on the HTML structure.
@@ -235,10 +236,6 @@ positioned relative to its initial containing block, which is the
 VIEWPORT in the case of visual media. 
 Its final position is determined by the values of top, right, 
 bottom, and left.
-
-This value always creates a new stacking context. In printed 
-documents, the element is placed in the same position on every 
-page.
 
 Elements r positioned relative to the viewport and remain fixed 
 even when the page is scrolled. There will be no space where 
