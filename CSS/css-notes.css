@@ -1180,7 +1180,11 @@ form {
     width: 60vw;
 
     max-width: 500px;
+
+    margin: 0 auto;
 }
+
+The actual width in this case is max-width: 500px.
 
 
 24. last-of-type{}
