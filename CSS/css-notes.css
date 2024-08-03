@@ -292,14 +292,14 @@ set the display property to none instead of using visibility.
 25. img, span, links r e.gs of inline elemets. 
 Inline elemts do nt have both height and width properties.
 
-inline-block elemt has both the inline and block display ppties. It has
-both height and width properties.
+inline-block elemt has both the inline and block display ppties. 
+It has both height and width properties.
 
-inline-flex: is similar to display: flex; but the container on wc display:
-inline-flex; is applied behaves like an inline elemt.
+inline-flex: is similar to display: flex; but the container on 
+wc display: inline-flex; is applied behaves like an inline elemt.
 
-grid: by having grid layouts, you av precise ctrl over both rows and 
-columns.
+grid: by having grid layouts, you av precise ctrl over both rows 
+and columns.
 
 inline-grid: is similar to display: grid; but the container on wc display:
 inline-grid; is applied behaves like an inline elemt.
