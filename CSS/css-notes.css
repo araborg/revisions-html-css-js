@@ -807,18 +807,24 @@ img:
 
 legend:
     display: block;
+
     padding-left: 2px;
     padding-right: 2px;
+    
     border: none;
 
 
 menu:
     display: block;
+
     list-style-type: disc;
+    
     margin-top: 1em;
     margin-bottom: 1em;
+    
     margin-left: 0;
     margin-right: 0;
+    
     padding-left: 40px;
 
 
@@ -832,6 +838,7 @@ section:
 
 table:
     display: table;
+    
     border-collapse: separate;
     border-spacing: 2px;
     border-color: gray;	
