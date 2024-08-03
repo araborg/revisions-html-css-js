@@ -712,6 +712,71 @@ ul:
 body:	
     display: block;
     margin: 8px;
+
+    fieldset	display: block;
+margin-left: 2px;
+margin-right: 2px;
+padding-top: 0.35em;
+padding-bottom: 0.625em;
+padding-left: 0.75em;
+padding-right: 0.75em;
+border: 2px groove (internal value);
+
+
+figcaption	display: block;	
+figure	display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 40px;
+margin-right: 40px;	
+footer	display: block;	
+form	display: block;
+margin-top: 0em;
+
+
+article	display: block;	
+aside	display: block;
+
+blockquote	display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 40px;
+margin-right: 40px;
+
+caption	display: table-caption;
+text-align: center;
+
+div	display: block;
+
+header	display: block;	
+
+hr	display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
+
+html	display: block;
+
+img	display: inline-block;
+
+legend	display: block;
+padding-left: 2px;
+padding-right: 2px;
+border: none;
+
+menu	display: block;
+list-style-type: disc;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+
+
+
     
 
 57. flex-start:
