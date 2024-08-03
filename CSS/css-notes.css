@@ -435,10 +435,10 @@ row-gap
 The column-gap CSS property sets the size of the gap (gutter) between 
 an element's columns. Columns r in vertical directions.
 
-Initially a part of Multi-column Layout, the definition of column-gap has 
-been broadened to include multiple layout methods. Now specified in CSS 
-box alignment, it may be used in multi-column, flexible box, and grid 
-layouts.
+Initially a part of Multi-column Layout, the definition of column-gap 
+has been broadened to include multiple layout methods. Now specified 
+in CSS box alignment, it may be used in multi-column, flexible box, 
+and grid layouts.
 
 column egs:
 column               column              column              column
