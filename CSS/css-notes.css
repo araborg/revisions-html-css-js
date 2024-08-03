@@ -343,10 +343,12 @@ along the rows.
 32. The main axis
 The main axis is defined by flex-direction, which has four possible values:
 row, row-reverse, column, column-reverse
+
 Should you choose row or row-reverse, your main axis will run along the row 
 in the inline direction.
+
 If your main axis is column or column-reverse then the main axis runs 
-perpendicularly.
+perpendicularly down.
 
 
 align-content/-items/-self:
