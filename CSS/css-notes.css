@@ -101,7 +101,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 7. In case you needed to use borders, use it for most impt containers.
 8. Use ROYGBIV for your border colors.
 
-9. Picturize row(inline-direction) and column(block-direction) 
+9. Picture row(inline-direction) and column(block-direction) 
 directions.
 
 10. Learn to un(comment) out border(s).
@@ -121,17 +121,13 @@ less.
 14. max-width: 700px means width will be 700px and below and 
 not higher.
 
-15. display: inline means: display d elemts side by side in a 
+15. Inline display
+display: inline means: display d elemts side by side in a 
 horizontal line.
 
 The element generates one or more inline boxes that do not generate 
 line breaks before or after themselves. In normal flow, the next 
 element will be on the same line if there is space.
-
-Note: When browsers that support multi-keyword syntax encounter 
-a display property that only has an outer value (e.g., display: block 
-or display: inline), the inner value is set to flow (e.g., 
-display: block flow and display: inline flow).
 
 
 16. flex-wrap: nowrap/wrap/wrap-reverse;
