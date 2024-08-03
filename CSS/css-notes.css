@@ -916,6 +916,7 @@ Distributed alignment
 Helpful Hints:
 61. Border: 
 Use border to check the initial width and height of an elemt.
+It can also influence d space available for alignmt.
 
 
 62. Padding:
@@ -934,17 +935,13 @@ It smtimes affect alignmt.
 64. Height and Width go hand in hand with space alignmt.
 
 
-65. Border:
-It can also influence d space available for alignmt.
+65. Projects:
+Don't recollect what you crammed from a project but apply 
+experiene and crictical thinking. 
+Don't be quick to check soln.
 
 
-66. Projects:
-Don't recollect what you crammed from a project 
-but apply experiene and crictical thinking. Don't
-be quick to check soln.
-
-
-67. CSS Values:
+66. CSS Values:
 Parent:
     height: auto;
 
