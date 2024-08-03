@@ -479,10 +479,10 @@ is space.
 
 
 43. <display-inside>
-These keywords specify the element's inner display type, which defines 
-the type of formatting context that its contents are laid out in (assuming 
-it is a non-replaced element). It sets the layout of children wc can be for 
-instance flex, grid etc.
+These keywords specify the element's inner display type, which 
+defines the type of formatting context that its contents are 
+laid out in (assuming it is a non-replaced element). It sets 
+the layout of children wc can be for instance flex, grid etc.
 
 
 44. fill:
