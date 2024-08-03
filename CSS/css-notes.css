@@ -707,6 +707,11 @@ ul:
     margin-right: 0;
     
     padding-left: 40px;
+
+
+body:	
+    display: block;
+    margin: 8px;
     
 
 57. flex-start:
