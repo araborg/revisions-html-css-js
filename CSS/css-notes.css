@@ -301,18 +301,20 @@ wc display: inline-flex; is applied behaves like an inline elemt.
 grid: by having grid layouts, you av precise ctrl over both rows 
 and columns.
 
-inline-grid: is similar to display: grid; but the container on wc display:
-inline-grid; is applied behaves like an inline elemt.
+inline-grid: is similar to display: grid; but the container on wc 
+display: inline-grid; is applied behaves like an inline elemt.
 
-display: none; d elemt will be completely invisible and take up no space 
-within d documt.
+display: none; 
+d elemt will be completely invisible and take up no space within
+ d documt.
 
-display:inherit; d child elemt with d display inherit will inherit the 
-display value from its parent elemt(eg. div) and act as a block-level 
-elemt.
+display:inherit; 
+d child elemt with d display inherit will inherit the display value 
+from its parent elemt(eg. div) and act as a block-level elemt.
 
-display: initial; sets d display ppty of an elemt to its initial value, 
-wc is usu inline for most elemts.
+display: initial; 
+sets d display ppty of an elemt to its initial value, wc is usu 
+inline for most elemts.
 
 
 26. media(min/max-width: px) {} for responsiveness.
