@@ -157,6 +157,12 @@ box-shadow.
 The white-space CSS property sets how white space inside an element 
 is handled.
 
+The property specifies two things:
+Whether and how white space is collapsed.
+Whether and how lines wrap.
+
+Note: To make words break within themselves, use overflow-wrap, 
+word-break, or hyphens instead.
 
 19. opacity: 0.6;
 The opacity CSS property sets the opacity of an element. Opacity is the 
