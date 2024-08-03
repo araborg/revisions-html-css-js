@@ -640,10 +640,12 @@ place-items: center;
 
 
 55. place-self:
-The place-self CSS shorthand property allows you to align an individual 
-item in both the block and inline directions at once in a relevant layout 
-system such as Grid or Flexbox. 
-If the second value is not present, the first value is also used for it.
+The place-self CSS shorthand property allows you to align an 
+individual item in both the block and inline directions at 
+once in a relevant layout system such as Grid or Flexbox. 
+
+If the second value is not present, the first value is also 
+used for it.
 
 This property is a shorthand for the following CSS properties:
 align-self, justify-self
