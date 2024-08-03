@@ -450,13 +450,13 @@ column               column              column              column
 
 
 41. display
-The display CSS property sets whether an element is treated as a block 
-or inline box and the layout used for its children, such as flow layout, 
-grid or flex.
+The display CSS property sets whether an element is treated as a 
+block or inline box and the layout used for its children, such as 
+flow layout, grid or flex.
 
-Formally, the display property sets an element's inner and outer display 
-types. The outer type sets an element's participation in flow layout; the 
-inner type sets the layout of children.
+Formally, the display property sets an element's inner and outer 
+display types. The outer type sets an element's participation in 
+flow layout; the inner type sets the layout of children.
 
 display: inline/inline-block/flex/grid
 
