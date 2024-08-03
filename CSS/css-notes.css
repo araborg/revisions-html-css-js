@@ -1133,7 +1133,9 @@ make it selected by default when the page first loads.
 <!-- The second value will be selected initially -->
 <select name="choice">
     <option value="first">First Value</option>
+
     <option value="second" selected>Second Value</option>
+    
     <option value="third">Third Value</option>
 </select>
 
