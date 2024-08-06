@@ -19,7 +19,6 @@
 
 body {
     background-color: var(--dark-grey);
-
     color: #fff;
 
     font-family: var(--font);
@@ -36,7 +35,6 @@ body {
 
 .title {
     margin-right: 8px;
-
     font-size: 2.5rem;
 }
 
@@ -50,16 +48,15 @@ body {
     width: 180px;
 
     margin: 10px auto 40px;
-    text-align: center;
 
     background-color: var(--yellow);
 }
 
 .select-container {
+    position: relative;
+
     width: 50%;
     margin: 0 auto;
-
-    position: relative;
 
     margin-bottom: 40px;
 }
@@ -98,6 +95,5 @@ select {
     text-align: center;
 
     font-size: 2rem;
-
     font-weight: var(--font-weight);
 }
