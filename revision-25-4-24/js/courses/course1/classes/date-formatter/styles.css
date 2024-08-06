@@ -83,11 +83,10 @@ select {
 .select-icon {
     position: absolute;
     top: 8px;
-    right: 8px;
-
-    pointer-events: none;
+    right: 4px;
 
     /* border: 2px solid black; */
+    pointer-events: none;
 }
 
 .icon {
