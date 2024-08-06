@@ -67,6 +67,8 @@ select {
     width: 100%;
 
     height: 50px;
+
+    appearance: none;
 }
 
 .select-icon {
