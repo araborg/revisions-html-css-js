@@ -48,7 +48,7 @@ body {
     height: 10px;
     width: 180px;
 
-    margin: 10px auto 30px;
+    margin: 10px auto 40px;
     text-align: center;
 
     background-color: var(--yellow);
@@ -66,7 +66,7 @@ body {
 select {
     /* border: 2px solid red; */
 
-    height: 60px;
+    height: 50px;
     width: 100%;
 
     appearance: none;
