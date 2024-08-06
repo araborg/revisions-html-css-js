@@ -76,7 +76,7 @@ select {
     appearance: none;
 
     font-size: var(--font-size);
-    font-weight: bold;
+    font-weight: var(--font-weight);
 
     cursor: pointer;
 }
@@ -99,5 +99,5 @@ select {
 
     font-size: 2rem;
 
-    font-weight: bold;
+    font-weight: var(--font-weight);
 }
