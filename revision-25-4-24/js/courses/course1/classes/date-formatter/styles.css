@@ -64,12 +64,14 @@ body {
 }
 
 select {
-    /* border: 2px solid red; */
+    border: 2px solid red;
 
     height: 50px;
     width: 100%;
 
     appearance: none;
+
+    cursor: pointer;
 }
 
 .select-icon {
@@ -78,7 +80,6 @@ select {
     right: 6px;
 
     margin-left: 10px;
-    cursor: pointer;
 }
 
 .icon {
