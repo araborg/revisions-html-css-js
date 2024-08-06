@@ -22,17 +22,17 @@ const minutes = date.getMinutes();
 
 // `${nameOfDay}: ${day}-${month}-${year}`;
 const currentDate = `${day}-${month}-${year}`;
-const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Hours`;
+const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Minutes`;
 
-const splitDate = currentDate;
 console.log(currentDate);
+// const splitDate = currentDate;
 
 selectDate.addEventListener("change", function () {
     console.log(selectDate.value);
 
     switch (selectDate.value) {
         case "yyyy-mm-dd":
-            currentDate.split("-");
+            // currentDate.split("-");
             break;
         case "dd-mm-yyyy":
             currentDateClass.textContent = currentDate;
