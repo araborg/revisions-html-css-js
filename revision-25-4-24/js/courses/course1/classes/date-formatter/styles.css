@@ -50,21 +50,25 @@ body {
 
 .divider {
     height: 10px;
-    width: 120px;
+    width: 180px;
 
-    margin: 20px 0;
+    margin: 20px auto;
+    text-align: center;
 
     background-color: var(--yellow);
+    /* border: 2px solid green; */
 }
 
 .select-container {
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
 
-    border: 2px solid green;
+    border: 2px solid blue;
 }
 
 #date-format {
     /* margin: 0 auto; */
-    width: 100%;
+    width: 60%;
+
+    border: 2px solid red;
 }
