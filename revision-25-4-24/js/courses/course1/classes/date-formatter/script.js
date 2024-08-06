@@ -20,7 +20,6 @@ const year = date.getFullYear();
 const hour = date.getHours();
 const minutes = date.getMinutes();
 
-// `${nameOfDay}: ${day}-${month}-${year}`;
 const currentDate = `${day}-${month}-${year}`;
 const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Minutes`;
 
