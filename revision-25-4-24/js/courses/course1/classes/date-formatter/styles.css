@@ -76,6 +76,9 @@ select {
     position: absolute;
     top: 8px;
     right: 6px;
+
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .icon {
