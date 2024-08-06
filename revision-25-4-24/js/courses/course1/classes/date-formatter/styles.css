@@ -64,43 +64,10 @@ body {
 }
 
 select {
-    display: block;
-    border: 2px solid red;
-
-    height: 50px;
-    width: 100%;
-
-    /* margin-right: 300px; */
-
-    /* appearance: none; */
-
-    padding: 10px;
-    padding-right: 38px;
-
-    cursor: pointer;
-
-    z-index: 10;
 }
 
 .select-icon {
-    position: absolute;
-    top: 8px;
-    right: 4px;
-
-    border: 2px solid green;
-
-    width: 30px;
-    height: 36px;
-
-    /* margin-left: 10px; */
 }
 
 .icon {
-    fill: var(--dark-grey);
-
-    cursor: pointer;
-
-    z-index: 0;
-
-    border: 3px solid blue;
 }
