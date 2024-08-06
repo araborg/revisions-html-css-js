@@ -77,7 +77,7 @@ select {
     padding: 10px;
     padding-right: 38px;
 
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .select-icon {
