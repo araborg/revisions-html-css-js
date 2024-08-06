@@ -64,12 +64,18 @@ body {
 }
 
 select {
+    display: block;
     border: 2px solid red;
 
     height: 50px;
     width: 100%;
 
-    appearance: none;
+    /* margin-right: 300px; */
+
+    /* appearance: none; */
+
+    padding: 10px;
+    padding-right: 38px;
 
     /* cursor: pointer; */
 }
@@ -77,7 +83,7 @@ select {
 .select-icon {
     position: absolute;
     top: 8px;
-    right: 6px;
+    right: 4px;
 
     margin-left: 10px;
 }
@@ -85,5 +91,5 @@ select {
 .icon {
     fill: var(--dark-grey);
 
-    cursor: pointer;
+    /* cursor: pointer; */
 }
