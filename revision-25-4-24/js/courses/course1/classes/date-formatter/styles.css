@@ -62,7 +62,7 @@ body {
 
     position: relative;
 
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 select {
@@ -91,4 +91,14 @@ select {
     margin-left: 5px;
 
     /* border: 3px solid green; */
+}
+
+.current-date {
+    text-align: center;
+
+    font-size: 2rem;
+
+    /* width: 100px; */
+
+    /* margin: 0 auto; */
 }
