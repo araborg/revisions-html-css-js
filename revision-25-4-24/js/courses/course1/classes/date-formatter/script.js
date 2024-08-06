@@ -16,6 +16,9 @@ const nameOfDay = weekdays[date.getDay()];
 const month = date.getMonth();
 const year = date.getFullYear();
 
+const hour = date.getHours();
+const minutes = date.getMinutes();
+
 console.log(day, nameOfDay, month, year);
 
 selectDate.addEventListener("change", function () {
