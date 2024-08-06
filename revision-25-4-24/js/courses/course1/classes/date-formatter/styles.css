@@ -44,10 +44,6 @@ body {
     height: 30px;
 }
 
-.icon {
-    fill: yellow;
-}
-
 .divider {
     height: 10px;
     width: 180px;
@@ -60,14 +56,18 @@ body {
 }
 
 .select-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 
     width: 50%;
     margin: 0 auto;
 }
 
 #date-format {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     width: 100%;
+}
+
+.icon {
+    fill: yellow;
 }
