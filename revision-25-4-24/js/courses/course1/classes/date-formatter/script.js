@@ -1,6 +1,14 @@
 const selectDate = document.getElementById("date-format");
 
-const weekdays = [];
+const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
 const date = new Date();
 
 const day = date.getDate();
