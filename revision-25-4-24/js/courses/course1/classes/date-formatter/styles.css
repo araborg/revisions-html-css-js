@@ -12,6 +12,10 @@ body {
     justify-content: center;
 }
 
+.title {
+    margin-right: 8px;
+}
+
 .date-svg {
     width: 30px;
     height: 30px;
