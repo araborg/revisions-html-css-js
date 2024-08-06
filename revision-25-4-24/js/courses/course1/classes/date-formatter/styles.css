@@ -3,18 +3,26 @@
 *::before {
     margin: 0;
     padding: 0;
+
+    box-sizing: border-box;
 }
 
 :root {
     --dark-grey: #0a0a23;
     --white: #ffffff;
     --yellow: #f1be32;
+
+    --font: "Montserrat", sans-serif;
+    --font-size: 16px;
 }
 
 body {
     background-color: var(--dark-grey);
 
     color: #fff;
+
+    font-family: var(--font);
+    font-size: var(--font-size);
 }
 
 .title-container {
@@ -27,6 +35,8 @@ body {
 
 .title {
     margin-right: 8px;
+
+    font-size: 2rem;
 }
 
 .date-svg {
