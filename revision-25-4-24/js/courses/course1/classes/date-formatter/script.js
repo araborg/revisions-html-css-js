@@ -33,8 +33,12 @@ selectDate.addEventListener("change", function () {
     switch (selectDate.value) {
         case "yyyy-mm-dd":
             // currentDate.split("-");
+            currentDateClass.textContent = splitDate;
             break;
         case "dd-mm-yyyy":
             currentDateClass.textContent = currentDate;
+            break;
+        case "dd-mm-yyyy-h-m":
+            console.log("nothing");
     }
 });
