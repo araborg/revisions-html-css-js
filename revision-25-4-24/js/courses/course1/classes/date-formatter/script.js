@@ -24,8 +24,8 @@ const minutes = date.getMinutes();
 const currentDate = `${day}-${month}-${year}`;
 const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Minutes`;
 
-console.log(currentDate);
-// const splitDate = currentDate;
+const splitDate = currentDate.split("-").reverse().join("-");
+console.log(splitDate);
 
 selectDate.addEventListener("change", function () {
     console.log(selectDate.value);
