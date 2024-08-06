@@ -74,6 +74,9 @@ select {
 
     appearance: none;
 
+    font-size: var(--font-size);
+    font-weight: bold;
+
     cursor: pointer;
 }
 
