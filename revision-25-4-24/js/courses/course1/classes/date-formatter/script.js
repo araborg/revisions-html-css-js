@@ -25,7 +25,6 @@ const currentDate = `${day}-${month}-${year}`;
 const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Minutes`;
 
 const splitDate = currentDate.split("-").reverse().join("-");
-console.log(splitDate);
 
 selectDate.addEventListener("change", function () {
     console.log(selectDate.value);
