@@ -64,11 +64,13 @@ body {
     position: relative;
 }
 
-#date-format {
+select {
     /* border: 2px solid red; */
 
     height: 60px;
     width: 100%;
+
+    appearance: none;
 }
 
 .select-icon {
