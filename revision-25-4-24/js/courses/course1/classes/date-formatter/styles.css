@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --dark-grey: #0a0a23;
     --white: #ffffff;
@@ -5,7 +12,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--dark-grey);
 
     color: #fff;
 }
