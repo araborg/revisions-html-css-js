@@ -32,7 +32,6 @@ selectDate.addEventListener("change", function () {
 
     switch (selectDate.value) {
         case "yyyy-mm-dd":
-            // currentDate.split("-");
             currentDateClass.textContent = splitDate;
             break;
         case "dd-mm-yyyy":
@@ -40,5 +39,8 @@ selectDate.addEventListener("change", function () {
             break;
         case "dd-mm-yyyy-h-mm":
             currentDateClass.textContent = currentDateHM;
+            break;
+        default:
+            currentDateClass.textContent = "Select a date formatter";
     }
 });
