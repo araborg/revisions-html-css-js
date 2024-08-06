@@ -13,6 +13,7 @@ const date = new Date();
 
 const day = date.getDate();
 const nameOfDay = weekdays[date.getDay()];
+const month = date.getMonth();
 
 console.log(day, nameOfDay, month);
 
