@@ -38,7 +38,7 @@ selectDate.addEventListener("change", function () {
         case "dd-mm-yyyy":
             currentDateClass.textContent = currentDate;
             break;
-        case "dd-mm-yyyy-h-m":
-            console.log("nothing");
+        case "dd-mm-yyyy-h-mm":
+            currentDateClass.textContent = currentDateHM;
     }
 });
