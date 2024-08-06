@@ -41,6 +41,6 @@ selectDate.addEventListener("change", function () {
             currentDateClass.textContent = currentDateHM;
             break;
         default:
-            currentDateClass.textContent = "Select a date formatter";
+            currentDateClass.textContent = "Select a date format";
     }
 });
