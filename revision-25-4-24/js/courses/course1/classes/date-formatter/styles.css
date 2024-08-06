@@ -85,6 +85,8 @@ select {
     top: 8px;
     right: 4px;
 
+    border: 2px solid green;
+
     /* margin-left: 10px; */
 }
 
