@@ -60,14 +60,23 @@ body {
 
     width: 50%;
     margin: 0 auto;
+
+    position: relative;
 }
 
 #date-format {
     /* border: 2px solid red; */
 
+    height: 60px;
     width: 100%;
 }
 
+.select-icon {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
 .icon {
-    fill: yellow;
+    fill: var(--dark-grey);
 }
