@@ -71,7 +71,7 @@ select {
 
     appearance: none;
 
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .select-icon {
@@ -84,4 +84,6 @@ select {
 
 .icon {
     fill: var(--dark-grey);
+
+    cursor: pointer;
 }
