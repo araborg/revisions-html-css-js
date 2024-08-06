@@ -4,6 +4,14 @@ body {
     color: #fff;
 }
 
+.title-container {
+}
+
+.date-svg {
+    width: 30px;
+    height: 30px;
+}
+
 .icon {
     fill: white;
 }
