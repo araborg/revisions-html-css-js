@@ -86,10 +86,12 @@ select {
     color: initial;
 }
 
-/* input[type="checkbox"] {
-    width: unset;
-} */
-
 a:link {
     color: #fff;
+}
+
+input[type="submit"] {
+    width: 60%;
+
+    margin: 0 auto;
 }
