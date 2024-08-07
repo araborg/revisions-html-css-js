@@ -35,6 +35,10 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
+form fieldset:last-of-type {
+    border-bottom: none;
+}
+
 label {
     display: block;
     margin: 10px 0;
