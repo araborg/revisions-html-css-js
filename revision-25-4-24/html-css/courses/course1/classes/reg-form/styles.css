@@ -29,20 +29,19 @@ form {
 }
 
 fieldset {
-    padding: 0px;
+    padding: 32px 0;
 
     margin: 20px auto;
 
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 label {
-    /* display: block; */
-    /* margin: 8px 0; */
-    /* width: 100%; */
-    margin: 9px auto;
+    display: block;
+    margin: 8px 0;
+    width: 100%;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 input {
