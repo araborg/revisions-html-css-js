@@ -97,3 +97,19 @@ select {
     font-size: 2rem;
     font-weight: var(--font-weight);
 }
+
+@media (max-width: 375px) {
+    body {
+        background-color: green;
+    }
+
+    .select-container {
+        width: 80%;
+    }
+
+    select {
+        font-size: 1.2rem;
+
+        width: 100%;
+    }
+}
