@@ -99,10 +99,6 @@ select {
 }
 
 @media (max-width: 375px) {
-    body {
-        background-color: green;
-    }
-
     .title {
         font-size: 2rem;
     }
@@ -113,5 +109,9 @@ select {
 
     .select-container {
         width: 80%;
+    }
+
+    .current-date {
+        font-size: 1.8rem;
     }
 }
