@@ -8,7 +8,7 @@
 body {
     background-color: #1b1b32;
 
-    color: #fff;
+    color: #f5f6f7;
 }
 
 .title,
@@ -24,6 +24,7 @@ form {
     width: 60%;
 
     max-width: 500px;
+    padding-bottom: 30px;
 }
 
 fieldset {
@@ -44,8 +45,6 @@ label {
     margin: 10px 0;
 
     width: 100%;
-
-    /* border: 2px solid red; */
 }
 
 input,
@@ -91,7 +90,19 @@ a:link {
 }
 
 input[type="submit"] {
+    display: block;
+
     width: 60%;
+    height: 35px;
+
+    font-size: 100%;
 
     margin: 0 auto;
+
+    padding: 0 10px;
+
+    background-color: #3b3b4f;
+    border: 1px solid #fff;
+
+    cursor: pointer;
 }
