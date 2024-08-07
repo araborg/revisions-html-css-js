@@ -41,13 +41,17 @@ label {
 
     width: 100%;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+
+input,
+select {
+    height: 30px;
 }
 
 input,
 select,
 textarea {
-    height: 30px;
     width: 100%;
     /* padding: 0; */
     padding-right: 0;
