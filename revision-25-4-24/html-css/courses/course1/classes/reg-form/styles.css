@@ -35,9 +35,7 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
-label,
-select,
-textarea {
+label {
     display: block;
     margin: 10px 0;
 
@@ -46,13 +44,15 @@ textarea {
     border: 2px solid red;
 }
 
-input {
+input,
+select,
+textarea {
+    height: 30px;
     width: 100%;
     /* padding: 0; */
     padding-right: 0;
 
     margin-top: 6px;
-    height: 30px;
 
     border: none;
     outline: none;
@@ -70,4 +70,9 @@ input {
 
     margin: 0;
     margin-right: 4px;
+}
+
+select {
+    background-color: white;
+    color: initial;
 }
