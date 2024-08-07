@@ -24,5 +24,7 @@ const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${min
 console.log(currentDate, currentDateHM);
 
 selectDate.addEventListener("change", function () {
-    console.log(selectDate.value);
+    console.log(selectDate.value)
+    
+    switch () {}
 });
