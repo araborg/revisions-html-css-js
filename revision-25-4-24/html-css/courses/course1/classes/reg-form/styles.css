@@ -21,6 +21,16 @@ form {
     max-width: 500px;
 }
 
+fieldset {
+    padding: 20px 0;
+}
+
+label {
+    margin: 8px 0;
+}
+
 input {
     width: 100%;
+
+    margin-top: 10px;
 }
