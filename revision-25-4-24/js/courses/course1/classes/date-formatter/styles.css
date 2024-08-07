@@ -108,16 +108,10 @@ select {
     }
 
     .divider {
-        width: 100px;
+        width: 120px;
     }
 
     .select-container {
         width: 80%;
-    }
-
-    select {
-        font-size: 1rem;
-
-        width: 100%;
     }
 }
