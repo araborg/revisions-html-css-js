@@ -35,11 +35,15 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
-label {
+label,
+select,
+textarea {
     display: block;
     margin: 10px 0;
 
     width: 100%;
+
+    border: 2px solid red;
 }
 
 input {
@@ -58,4 +62,12 @@ input {
     font-size: 100%;
 
     background-color: #0a0a23;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+
+    margin: 0;
+    margin-right: 4px;
 }
