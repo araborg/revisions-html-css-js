@@ -27,12 +27,19 @@ form {
 }
 
 fieldset {
+    padding: 0;
+    margin: 0;
+
+    border: 3px solid green;
 }
 
 label {
     display: block;
     margin: 8px 0;
+
+    width: 100%;
 }
 
 input {
+    width: 100%;
 }
