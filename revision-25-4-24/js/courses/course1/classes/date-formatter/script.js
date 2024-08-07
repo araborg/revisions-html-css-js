@@ -1,4 +1,6 @@
 const selectDate = document.getElementById("date-format");
+const currentDateClass = document.querySelector(".current-date");
+console.log(currentDateClass);
 
 const weekdays = [
     "Sunday",
@@ -21,7 +23,6 @@ const minutes = date.getMinutes();
 
 const currentDate = `${nameOfDay}: ${day}-${month}-${year}`;
 const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Hours`;
-console.log(currentDate, currentDateHM);
 
 selectDate.addEventListener("change", function () {
     console.log(selectDate.value);
