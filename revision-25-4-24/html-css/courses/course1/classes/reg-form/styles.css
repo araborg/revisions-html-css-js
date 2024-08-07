@@ -30,12 +30,12 @@ fieldset {
     padding: 0;
     margin: 0;
 
-    border: 3px solid green;
+    /* border: 3px solid green; */
 }
 
 label {
     display: block;
-    margin: 8px 0;
+    margin: 10px 0;
 
     width: 100%;
 }
@@ -43,4 +43,9 @@ label {
 input {
     width: 100%;
     padding: 0;
+
+    margin-top: 6px;
+    height: 24px;
+
+    background-color: #0a0a23;
 }
