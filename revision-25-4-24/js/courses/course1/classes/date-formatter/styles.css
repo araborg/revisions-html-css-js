@@ -103,12 +103,20 @@ select {
         background-color: green;
     }
 
+    .title {
+        font-size: 2rem;
+    }
+
+    .divider {
+        width: 100px;
+    }
+
     .select-container {
         width: 80%;
     }
 
     select {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
         width: 100%;
     }
