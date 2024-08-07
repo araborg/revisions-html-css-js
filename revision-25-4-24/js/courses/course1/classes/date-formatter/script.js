@@ -20,7 +20,8 @@ const hour = date.getHours();
 const minutes = date.getMinutes();
 
 const currentDate = `${nameOfDay}: ${day}-${month}-${year}`;
-console.log(currentDate);
+const currentDateHM = `${nameOfDay}: ${day}-${month}-${year} ${hour} Hours ${minutes} Hours`;
+console.log(currentDate, currentDateHM);
 
 selectDate.addEventListener("change", function () {
     console.log(selectDate.value);
