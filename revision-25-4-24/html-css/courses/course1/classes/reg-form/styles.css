@@ -1,4 +1,5 @@
-* *::before,
+*,
+*::before,
 *::after {
     margin: 0;
     padding: 0;
@@ -14,6 +15,7 @@ body {
 .title,
 p {
     text-align: center;
+    margin: 20px 0;
 }
 
 form {
@@ -105,4 +107,7 @@ input[type="submit"] {
     border: 1px solid #fff;
 
     cursor: pointer;
+}
+
+@media (max-width: 720px) {
 }
