@@ -54,6 +54,18 @@ body::before {
     background-position: center;
 }
 
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+
+    border: 3px solid green;
+}
+
+.header {
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+}
+
 h1 {
     font-weight: 400;
     line-height: 1.2;
@@ -67,6 +79,14 @@ h1,
 p {
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+/* form */
+
+form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
 }
 
 label {
@@ -92,18 +112,6 @@ button {
     border: none;
 }
 
-.container {
-    width: 100%;
-    margin: 3.125rem auto 0 auto;
-
-    border: 3px solid green;
-}
-
-.header {
-    padding: 0 0.625rem;
-    margin-bottom: 1.875rem;
-}
-
 .description {
     font-style: italic;
 
@@ -119,14 +127,6 @@ button {
 
 .text-center {
     text-align: center;
-}
-
-/* form */
-
-form {
-    background: var(--color-darkblue-alpha);
-    padding: 2.5rem 0.625rem;
-    border-radius: 0.25rem;
 }
 
 .form-group {
