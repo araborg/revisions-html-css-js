@@ -45,12 +45,11 @@ label {
 }
 
 input,
-select {
-}
-
-input,
 select,
 textarea {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 2em;
 }
 
 .inline,
