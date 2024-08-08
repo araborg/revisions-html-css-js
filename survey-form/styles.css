@@ -81,6 +81,17 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.description {
+    font-style: italic;
+
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* form */
 
 form {
@@ -101,6 +112,13 @@ label {
     font-size: 1.125rem;
 
     margin-bottom: 0.5rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+
+    font-size: 0.9rem;
+    color: #e4e4e4;
 }
 
 .form-control {
@@ -130,35 +148,15 @@ label {
 }
 
 input,
-button,
 select,
-textarea {
+textarea,
+button {
     margin: 0;
 
     font-family: inherit;
     font-size: inherit;
+
     line-height: inherit;
-}
-
-button {
-    border: none;
-}
-
-.description {
-    font-style: italic;
-
-    font-weight: 200;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-}
-
-.clue {
-    margin-left: 0.25rem;
-    font-size: 0.9rem;
-    color: #e4e4e4;
-}
-
-.text-center {
-    text-align: center;
 }
 
 .input-radio,
@@ -193,6 +191,10 @@ button {
 
     border-radius: 2px;
     cursor: pointer;
+}
+
+button {
+    border: none;
 }
 
 /* media queries */
