@@ -65,15 +65,15 @@ textarea {
     vertical-align: middle;
 }
 
-select {
+input[type="submit"] {
+    display: block;
+
+    width: 60%;
+    min-width: 300px;
 }
 
 a:link {
 }
-
-input[type="submit"] {
-}
-
 /*
 @media (max-width: 400px) {
     .title {
