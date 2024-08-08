@@ -1604,12 +1604,13 @@ cubic-bezier function
 
 
 33. resize:
-The resize CSS property sets whether an element is resizable, and if so, in which directions.
+The resize CSS property sets whether an element is resizable, and if 
+so, in which directions.
 
 resize does not apply to the following:
-
 Inline elements
 Block elements for which the overflow property is set to visible
+
 
 
 *****************************************
