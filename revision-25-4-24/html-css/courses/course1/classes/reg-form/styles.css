@@ -7,14 +7,15 @@ body {
     background-color: #1b1b32;
     color: #f5f6f7;
 
-    font-family: Tahoma, sans-serif;
+    font-family: Tahoma;
     font-size: 16px;
   
 }
 
-.title,
+h1,
 p {
-    
+  margin: 1em auto;
+  text-align: center;  
 }
 
 form {
