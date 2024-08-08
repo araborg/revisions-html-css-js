@@ -1611,6 +1611,31 @@ resize does not apply to the following:
 Inline elements
 Block elements for which the overflow property is set to visible
 
+Values:
+none
+The element offers no user-controllable method for resizing it.
+
+both
+The element displays a mechanism for allowing the user to resize 
+it, which may be resized both horizontally and vertically.
+
+horizontal
+The element displays a mechanism for allowing the user to resize 
+it in the horizontal direction.
+
+vertical
+The element displays a mechanism for allowing the user to resize 
+it in the vertical direction.
+
+block
+The element displays a mechanism for allowing the user to resize 
+it in the block direction (either horizontally or vertically, 
+depending on the writing-mode and direction value).
+
+inline
+The element displays a mechanism for allowing the user to resize 
+it in the inline direction (either horizontally or vertically, 
+depending on the writing-mode and direction value).
 
 
 *****************************************
