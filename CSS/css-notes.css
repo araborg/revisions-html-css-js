@@ -1511,8 +1511,12 @@ The above selects input elements with a name attribute value
 of password.
 
 
-29. 
+29. What is the diff btw these:
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+and
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 30. 
