@@ -10,6 +10,8 @@ body {
     background-color: #1b1b32;
 
     color: #f5f6f7;
+
+    font-size: 16px;
 }
 
 .title,
@@ -110,8 +112,16 @@ input[type="submit"] {
 }
 
 @media (max-width: 400px) {
-    .title,
+    .title {
+        font-size: 28px;
+    }
+
     p {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 14px;
     }
 
     input[type="submit"] {
