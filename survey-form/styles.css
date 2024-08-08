@@ -95,6 +95,8 @@ button {
 .container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
+
+    border: 3px solid green;
 }
 
 .header {
@@ -180,22 +182,26 @@ form {
 
 .submit-button {
     display: block;
+
     width: 100%;
+
     padding: 0.75rem;
+
     background: var(--color-green);
     color: inherit;
+
     border-radius: 2px;
     cursor: pointer;
 }
 
-/* meida queries */
-
+/* media queries */
 @media (min-width: 480px) {
     form {
         padding: 2.5rem;
     }
 }
 
+/*
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -207,3 +213,4 @@ form {
         max-width: 720px;
     }
 }
+*/
