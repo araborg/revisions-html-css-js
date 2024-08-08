@@ -63,6 +63,8 @@ textarea {
     width: unset;
     margin: 0 0.5em 0 0;
     vertical-align: middle;
+
+    display: inline;
 }
 
 input[type="submit"] {
@@ -83,7 +85,8 @@ input[type="file"] {
     padding: 1px 2px;
 }
 
-a:link {
+label a {
+    color: #dfdfe2;
 }
 /*
 @media (max-width: 400px) {
