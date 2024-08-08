@@ -1535,9 +1535,12 @@ not rendered. It behaves as if display: none is set.
 Using a ::before pseudo-element to add content is discouraged, as 
 it is not reliably accessible to screen readers.
 
+
 Examples
 Adding quotation marks
-One simple example of using ::before pseudo-elements is to provide quotation marks. Here we use both ::before and ::after to insert quotation characters.
+One simple example of using ::before pseudo-elements is to provide 
+quotation marks. Here we use both ::before and ::after to insert 
+quotation characters.
 
 <q>Some quotes</q>, he said, <q>are better than none.</q>
 
