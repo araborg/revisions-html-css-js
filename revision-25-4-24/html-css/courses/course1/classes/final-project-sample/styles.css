@@ -168,6 +168,10 @@ form {
     form {
         padding: 2.5rem;
     }
+
+    .container {
+        max-width: 720px;
+    }
 }
 
 @media (min-width: 576px) {
