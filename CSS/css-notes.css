@@ -1526,6 +1526,10 @@ element with the content property. It is inline by default.
 
 body::before {
     content: "";
+
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 If the content property is not specified, has an invalid value, or 
