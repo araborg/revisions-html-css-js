@@ -1568,6 +1568,21 @@ will only have a visual effect when the border has transparent regions or
 partially opaque regions (due to border-style or border-image); otherwise, 
 the border masks the difference.
 
+Values:
+border-box:
+The background extends to the outside edge of the border (but underneath 
+the border in z-ordering).
+
+padding-box:
+The background extends to the outside edge of the padding. No background 
+is drawn beneath the border.
+
+content-box:
+The background is painted within (clipped to) the content box.
+
+text:
+The background is painted within (clipped to) the foreground text.
+
 
 
 
