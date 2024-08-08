@@ -15,22 +15,31 @@
 
 body {
     font-family: "Poppins", sans-serif;
+
     font-size: 1rem;
     font-weight: 400;
+
     line-height: 1.4;
+
     color: var(--color-white);
+
     margin: 0;
 }
 
 /* mobile friendly alternative to using background-attachment: fixed */
+/* body { */
 body::before {
     content: "";
+
     position: fixed;
     top: 0;
     left: 0;
+
     height: 100%;
     width: 100%;
+
     z-index: -1;
+
     background: var(--color-darkblue);
     background-image: linear-gradient(
             115deg,
