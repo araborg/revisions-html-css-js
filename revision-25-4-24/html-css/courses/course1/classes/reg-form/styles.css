@@ -40,10 +40,15 @@ form {
     min-width: 200px;
     width: 60vw;
     min-width: 500px;
+
+    padding-bottom: 2em;
 }
 
 fieldset {
     padding: 30px 0;
+
+    /*  */
+    padding: 2rem 0;
 
     border: none;
     border-bottom: 3px solid #3b3b4f;
@@ -58,6 +63,9 @@ label {
     margin: 10px 0;
 
     width: 100%;
+
+    /*  */
+    margin: 0.5rem 0;
 }
 
 input,
@@ -120,6 +128,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+/*
 @media (max-width: 400px) {
     .title {
         font-size: 28px;
@@ -141,3 +150,4 @@ input[type="submit"] {
         width: 100%;
     }
 }
+*/
