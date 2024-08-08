@@ -197,7 +197,7 @@ button {
     border: none;
 }
 
-/* media queries */
+/* 3 media queries */
 @media (min-width: 480px) {
     form {
         padding: 2.5rem;
