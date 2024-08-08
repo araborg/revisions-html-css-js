@@ -97,6 +97,7 @@ form {
 label {
     display: flex;
     align-items: center;
+
     font-size: 1.125rem;
 
     margin-bottom: 0.5rem;
@@ -122,9 +123,9 @@ label {
 }
 
 .form-control:focus {
-    border-color: #80bdff;
     outline: 0;
 
+    border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
