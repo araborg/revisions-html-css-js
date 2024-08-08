@@ -169,9 +169,9 @@ form {
         padding: 2.5rem;
     }
 
-    .container {
+    /* .container {
         max-width: 720px;
-    }
+    } */
 }
 
 @media (min-width: 576px) {
