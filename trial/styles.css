@@ -2,13 +2,20 @@ body {
     margin: 0;
 }
 
+.main {
+    display: flex;
+    gap: 5%;
+
+    padding: 2.5rem;
+}
+
 .container {
     border: 3px solid green;
 
-    width: 100%;
+    width: 40%;
     margin: 3.125rem auto 0;
 
-    padding: 2.5rem -0.625rem;
+    padding: 2.5rem 0.625rem;
 }
 
 @media (min-width: 480px) {
