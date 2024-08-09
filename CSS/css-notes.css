@@ -120,7 +120,8 @@ The min-width CSS property sets the minimum width of an element.
 It prevents the used value of the width property from becoming 
 smaller than the value specified for min-width
 
-
+The element's width is set to the value of min-width whenever 
+min-width is larger than max-width or width.
 
 
 min-width: 75px means width will be 75px and above and not
