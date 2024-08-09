@@ -115,7 +115,15 @@ How d elements r arranged and related.
 How each division/section is placed.
 How many components does each div/section has? 
 
-13. min-width: 75px means width will be 75px and above and not
+13. min-width:
+The min-width CSS property sets the minimum width of an element. 
+It prevents the used value of the width property from becoming 
+smaller than the value specified for min-width
+
+
+
+
+min-width: 75px means width will be 75px and above and not
 less.
 
 14. max-width: 700px means width will be 700px and below and 
@@ -1642,7 +1650,7 @@ depending on the writing-mode and direction value).
 Design for mobile displays from 360×640 through 414×896
 
 Design for tablet displays from 601×962 through 1280×800
-
+f
 Design for desktop displays from 1280×720 through 1920×1080
 
 
