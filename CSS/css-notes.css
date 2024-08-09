@@ -128,7 +128,11 @@ min-width: 75px means width will be 75px and above and not
 lesser than 75px.
 
 14. max-width
-The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width.
+The max-width CSS property sets the maximum width of an element. 
+It prevents the used value of the width property from becoming 
+larger than the value specified by max-width.
+
+N.B: max-width overrides width, but min-width overrides max-width.
 
 
 max-width: 700px means width will be 700px and below and 
