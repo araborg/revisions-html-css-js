@@ -125,7 +125,7 @@ The element's width is set to the value of min-width whenever
 min-width is larger than max-width or width.
 
 E.g: 
-min-width: 75px means width will be 75px and above and not
+min-width: 75px means actual width can be 75px and above and not
 lesser than 75px.
 
 14. max-width
