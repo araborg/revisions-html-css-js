@@ -152,6 +152,8 @@ body {
 }
 
 So, both 200px and 500px are comparing individually with 400px.
+That is, the width, 400px, can't be lower than 200px and the
+width, 400px, can't be higher than 500px. 
 
 
 15. Inline display
