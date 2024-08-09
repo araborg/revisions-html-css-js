@@ -128,12 +128,26 @@ E.g:
 min-width: 75px means actual width can be 75px and above and not
 lesser than 75px.
 
-14. max-width
+14. max-width:
 The max-width CSS property sets the maximum width of an element. 
 It prevents the used value of the width property from becoming 
 larger than the value specified by max-width.
 
-N.B: max-width overrides width, but min-width overrides max-width.
+N.B: The max-width property overrides the width property, but min-width will always override max-width whether followed before or after width in your declaration. Authors may use any of the length values as long as they are a positive value.
+
+.wrapper {
+  width: 100%;
+  max-width: 20em; /* Will be AT MOST 20em wide */
+}
+
+.wrapper {
+  min-width: 50em; /* Overrides max-width */
+  width: 100%;
+  max-width: 20em; /* Will be AT MOST 20em wide */
+}
+
+min-width       >       max-width       >       width
+
 
 E.g:
 max-width: 700px means width will be 700px and below and 
