@@ -4,8 +4,6 @@ body {
     width: 100vw;
     height: 100vh;
 
-    /* padding: 4rem; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +11,9 @@ body {
 
 .main {
     display: flex;
-    /* justify-items: center; */
+    justify-content: center;
     /* align-items: center; */
-    /* gap: 5%; */
+    gap: 5%;
 
     width: 70%;
     height: 50%;
@@ -28,8 +26,8 @@ body {
 .container {
     border: 3px solid green;
 
-    min-width: 200px;
-    /* width: 350px; */
+    /* min-width: 200px; */
+    width: 350px;
     /* margin: 3.125rem auto 0; */
 
     padding: 0.5rem;
