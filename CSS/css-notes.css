@@ -134,7 +134,7 @@ larger than the value specified by max-width.
 
 N.B: max-width overrides width, but min-width overrides max-width.
 
-
+E.g:
 max-width: 700px means width will be 700px and below and 
 not higher.
 
