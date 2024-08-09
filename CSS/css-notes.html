@@ -138,14 +138,17 @@ min-width will always override max-width whether followed
 before or after width in your declaration. 
 
 .wrapper {
-  width: 100%;
-  max-width: 20em; /* Will be AT MOST 20em wide */
+    width: 100%;
+
+    max-width: 20em; /* Will be AT MOST 20em wide */
 }
 
 .wrapper {
-  min-width: 50em; /* Overrides max-width */
-  width: 100%;
-  max-width: 20em; /* Will be AT MOST 20em wide */
+    min-width: 50em; /* Overrides max-width */
+
+    width: 100%;
+    
+    max-width: 20em; /* Will be AT MOST 20em wide */
 }
 
 min-width       >       max-width       >       width
