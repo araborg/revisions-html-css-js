@@ -3,7 +3,8 @@ body {
 }
 
 .container {
-    border: 3px solid green;
+    /* border: 3px solid green; */
 
     width: 100%;
+    margin: 3.125rem auto 0;
 }
