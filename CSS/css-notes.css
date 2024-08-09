@@ -123,7 +123,7 @@ smaller than the value specified for min-width
 The element's width is set to the value of min-width whenever 
 min-width is larger than max-width or width.
 
-
+E.g: 
 min-width: 75px means width will be 75px and above and not
 less.
 
