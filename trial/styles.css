@@ -53,11 +53,3 @@ h1 {
         max-width: 720px;
     }
 }
-
-@media (max-width: 490px) {
-    .main {
-        display: block;
-
-        background-color: red;
-    }
-}
