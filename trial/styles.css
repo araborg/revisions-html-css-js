@@ -44,6 +44,12 @@ p {
         max-width: 540px;
 
         border: 2px solid black;
+
+        display: block;
+    }
+
+    .sub-container {
+        width: 100%;
     }
 }
 
