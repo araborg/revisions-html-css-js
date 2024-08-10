@@ -30,6 +30,9 @@ p {
 }
 
 @media (min-width: 450px) {
+    .container {
+        padding: 2.5rem;
+    }
 }
 
 @media (min-width: 600px) {
