@@ -32,6 +32,8 @@ p {
 @media (min-width: 450px) {
     .container {
         padding: 2.5rem;
+
+        border: 2px solid red;
     }
 }
 
