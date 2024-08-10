@@ -20,3 +20,20 @@ body {
 
     padding: 0.8rem;
 }
+
+.title {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 12px;
+}
+
+@media (min-width: 450px) {
+}
+
+@media (min-width: 600px) {
+}
+
+@media (min-width: 758px) {
+}
