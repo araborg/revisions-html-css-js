@@ -84,13 +84,20 @@
                             type="file"
                             id="profile-picture"
                             name="profile-picture"
+                            required
                         />
                     </label>
 
                     <label for="age">
                         Input your age(years):
 
-                        <input type="number" id="age" name="age" />
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="13"
+                            max="120"
+                        />
                     </label>
 
                     <label for="feedback">
