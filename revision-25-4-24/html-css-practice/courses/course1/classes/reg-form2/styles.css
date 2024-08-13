@@ -24,7 +24,6 @@ fieldset {
     padding: 2rem 0;
 
     border: none;
-
     border-bottom: 3px solid #3b3b4f;
 }
 
@@ -37,8 +36,6 @@ label {
     width: 100%;
 
     margin: 8px 0;
-
-    /* border: 2px solid white; */
 }
 
 input,
@@ -47,9 +44,8 @@ textarea {
     display: block;
     margin: 8px 0;
 
-    min-height: 25px;
-
     width: 100%;
+    min-height: 25px;
 
     outline: none;
     border: none;
@@ -65,22 +61,17 @@ textarea {
 
 input {
     margin: 5px 0;
-
-    /* border: 2px solid green; */
 }
 
 select {
     background-color: #ffffff;
-
-    /* width: 100%; */
 }
 
 .inline {
-    /* border: 2px solid white; */
-    width: unset;
     display: inline;
+
+    width: unset;
     margin: 0 5px 0 0;
-    /* display: inline-block; */
 
     vertical-align: middle;
 }
@@ -91,15 +82,15 @@ a:link {
 
 input[type="submit"] {
     display: block;
-    width: 200px;
 
     margin: 2em auto;
+    padding: 10px;
 
     min-width: 300px;
-    background-color: #3b3b4f;
+    width: 200px;
 
+    background-color: #3b3b4f;
     border: 1px solid #fff;
-    padding: 10px;
 
     font-size: 1rem;
 
