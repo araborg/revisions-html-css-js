@@ -13,3 +13,13 @@ body {
 
     color: #ffffff;
 }
+
+.title,
+.text {
+    text-align: center;
+    margin: 1em auto;
+}
+
+fieldset {
+    margin: 1em auto;
+}
