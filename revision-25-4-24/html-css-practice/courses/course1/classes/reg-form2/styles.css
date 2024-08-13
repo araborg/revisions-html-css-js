@@ -12,7 +12,9 @@ body {
 
 form {
     width: 40%;
-    margin: 1em auto;
+    margin: 0 auto;
+
+    padding: 10px 0;
 }
 
 fieldset {
@@ -36,7 +38,7 @@ label {
 
     margin: 8px 0;
 
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 
 input,
@@ -77,7 +79,7 @@ select {
     /* border: 2px solid white; */
     width: unset;
     display: inline;
-    margin-right: 20px;
+    margin: 0 5px 0 0;
     /* display: inline-block; */
 
     vertical-align: middle;
