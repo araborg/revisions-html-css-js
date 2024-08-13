@@ -29,6 +29,8 @@ fieldset {
     width: 100%;
     margin: 0 auto;
 
+    padding: 2rem 0;
+
     border: none;
 
     border-bottom: 3px solid #3b3b4f;
