@@ -34,6 +34,8 @@ label {
     display: block;
     width: 100%;
 
+    margin: 8px 0;
+
     border: 2px solid white;
 }
 
@@ -45,7 +47,7 @@ textarea {
 
     min-height: 25px;
 
-    /* width: 100%; */
+    width: 100%;
 
     outline: none;
     border: none;
@@ -72,9 +74,9 @@ select {
 }
 
 .inline {
-    border: 2px solid white;
-    /* width: unset; */
-    display: inline-block;
+    /* border: 2px solid white; */
+    width: unset;
+    /* display: inline-block; */
 
     /* vertical-align: middle; */
 }
