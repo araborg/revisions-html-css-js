@@ -44,8 +44,18 @@ select,
 textarea {
     display: block;
     margin: 8px 0;
+
     min-height: 25px;
+
     width: 100%;
+
+    outline: none;
+    border: none;
+}
+
+input,
+textarea {
+    color: #ffffff;
 
     background-color: #0a0a23;
     border: 1px solid #0a0a23;
@@ -60,4 +70,24 @@ input {
 }
 
 select {
+    background-color: #ffffff;
+
+    width: 100%;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 200px;
+
+    margin: 2em auto;
+
+    min-width: 300px;
+    background-color: #3b3b4f;
+
+    border: 1px solid #fff;
+    padding: 10px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
 }
