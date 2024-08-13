@@ -21,7 +21,7 @@ body {
 }
 
 form {
-    width: 50%;
+    width: 40%;
     margin: 1em auto;
 }
 
@@ -36,16 +36,20 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
-label {
+label,
+select,
+textarea {
     display: block;
     margin: 8px 0;
+    min-height: 25px;
 }
 
 input {
     width: 100%;
 
     margin: 5px 0;
-    min-height: 5px;
+
+    display: block;
 
     /* border: 2px solid green; */
 }
