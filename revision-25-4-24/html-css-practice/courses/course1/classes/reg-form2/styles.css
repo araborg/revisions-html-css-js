@@ -75,6 +75,10 @@ select {
     width: 100%;
 }
 
+a:link {
+    color: #fff;
+}
+
 input[type="submit"] {
     display: block;
     width: 200px;
