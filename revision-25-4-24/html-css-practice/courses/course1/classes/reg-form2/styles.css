@@ -36,7 +36,10 @@ fieldset {
     border-bottom: 3px solid #3b3b4f;
 }
 
-label,
+label {
+}
+
+input,
 select,
 textarea {
     display: block;
