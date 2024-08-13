@@ -37,6 +37,7 @@ fieldset {
 }
 
 label {
+    display: block;
 }
 
 input,
@@ -64,8 +65,6 @@ textarea {
 input {
     margin: 5px 0;
 
-    display: block;
-
     /* border: 2px solid green; */
 }
 
@@ -76,10 +75,10 @@ select {
 }
 
 .inline {
-    width: unset;
+    /* width: unset; */
     /* display: inline; */
 
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 a:link {
