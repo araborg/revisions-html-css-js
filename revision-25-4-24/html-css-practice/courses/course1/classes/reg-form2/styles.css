@@ -32,6 +32,9 @@ fieldset:last-of-type {
 
 label {
     display: block;
+    width: 100%;
+
+    border: 2px solid white;
 }
 
 input,
@@ -42,7 +45,7 @@ textarea {
 
     min-height: 25px;
 
-    width: 100%;
+    /* width: 100%; */
 
     outline: none;
     border: none;
@@ -65,13 +68,13 @@ input {
 select {
     background-color: #ffffff;
 
-    width: 100%;
+    /* width: 100%; */
 }
 
 .inline {
     border: 2px solid white;
     /* width: unset; */
-    /* display: inline; */
+    display: inline-block;
 
     /* vertical-align: middle; */
 }
