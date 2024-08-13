@@ -77,7 +77,9 @@ select {
 
 .inline {
     width: unset;
-    display: inline;
+    /* display: inline; */
+
+    vertical-align: middle;
 }
 
 a:link {
