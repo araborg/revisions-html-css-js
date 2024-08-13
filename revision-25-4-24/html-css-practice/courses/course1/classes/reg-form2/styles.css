@@ -35,3 +35,16 @@ fieldset {
 
     border-bottom: 3px solid #3b3b4f;
 }
+
+label {
+    display: block;
+    margin: 8px 0;
+}
+
+input {
+    width: 100%;
+
+    margin: 5px 0;
+
+    /* border: 2px solid green; */
+}
