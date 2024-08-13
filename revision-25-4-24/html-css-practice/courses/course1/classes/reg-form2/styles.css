@@ -26,5 +26,8 @@ form {
 }
 
 fieldset {
-    margin: 1em auto;
+    margin: 0 auto;
+    border: none;
+
+    border-bottom: 3px solid #3b3b4f;
 }
