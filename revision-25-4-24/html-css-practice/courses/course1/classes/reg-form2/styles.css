@@ -75,6 +75,11 @@ select {
     width: 100%;
 }
 
+.inline {
+    width: unset;
+    display: inline;
+}
+
 a:link {
     color: #fff;
 }
