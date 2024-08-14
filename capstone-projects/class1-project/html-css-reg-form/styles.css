@@ -12,6 +12,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+
+    border: 2px solid red;
 }
 
 body {
@@ -24,4 +26,7 @@ body {
     line-height: 1.4;
 
     /* color: var(--color-white); */
+}
+
+body::before {
 }
