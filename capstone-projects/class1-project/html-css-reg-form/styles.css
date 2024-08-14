@@ -60,6 +60,4 @@ body::before {
 h1 {
     font-weight: 400;
     line-height: 1.2;
-
-    border: 2px solid green;
 }
