@@ -20,6 +20,7 @@
             <form action="" id="survey-form">
                 <div class="form-group">
                     <label for="name" id="name-label">Name</label>
+
                     <input
                         type="text"
                         name="name"
@@ -32,6 +33,7 @@
 
                 <div class="form-group">
                     <label for="email" id="email-label">Email</label>
+
                     <input
                         type="email"
                         name="email"
@@ -70,7 +72,9 @@
                         class="form-control"
                         required
                     >
-                        <option value=""></option>
+                        <option value="" disabled selected>
+                            Select current role
+                        </option>
                     </select>
                 </div>
 
