@@ -51,6 +51,7 @@ body::before {
         url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
 
     background-position: center;
+
     background-size: cover;
 
     background-repeat: no-repeat;
