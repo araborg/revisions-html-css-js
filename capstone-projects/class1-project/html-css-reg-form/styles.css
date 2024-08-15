@@ -62,11 +62,10 @@ body::before {
     margin: 3.125rem auto 0;
 }
 
+/* header section */
 .header {
     padding: 0 0.625rem;
     margin-bottom: 1.875rem;
-
-    border: 2px solid yellow;
 }
 
 h1 {
@@ -86,4 +85,9 @@ p {
 
 .description {
     font-weight: 200;
+    font-style: italic;
+
+    border: 2px solid yellow;
 }
+
+/* form section */
