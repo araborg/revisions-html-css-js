@@ -105,6 +105,8 @@ form {
 
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
+
+    margin-bottom: 5rem;
 }
 
 .form-group {
@@ -205,6 +207,13 @@ button {
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+        /* border: 2px solid green; */
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
         border: 2px solid green;
     }
 }
