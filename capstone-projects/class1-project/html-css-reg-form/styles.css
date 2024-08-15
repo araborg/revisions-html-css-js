@@ -217,3 +217,9 @@ button {
         max-width: 720px;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+}
