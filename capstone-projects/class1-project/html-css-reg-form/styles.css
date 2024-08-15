@@ -63,7 +63,7 @@ body::before {
 }
 
 .header {
-    padding: 0 0.625rem;
+    /* padding: 0 0.625rem; */
 
     border: 2px solid yellow;
 }
