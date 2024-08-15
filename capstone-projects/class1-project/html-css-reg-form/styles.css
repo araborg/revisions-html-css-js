@@ -97,3 +97,7 @@ form {
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
 }
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+}
