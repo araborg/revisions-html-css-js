@@ -190,3 +190,7 @@ textarea {
     border-radius: 2px;
     cursor: pointer;
 }
+
+button {
+    border: none;
+}
