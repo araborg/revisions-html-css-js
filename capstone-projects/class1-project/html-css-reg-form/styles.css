@@ -63,7 +63,8 @@ body::before {
 }
 
 .header {
-    /* padding: 0 0.625rem; */
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
 
     border: 2px solid yellow;
 }
@@ -81,4 +82,8 @@ h1,
 p {
     margin-top: 0;
     margin-bottom: 0.5rem;
+}
+
+.description {
+    font-weight: 200;
 }
