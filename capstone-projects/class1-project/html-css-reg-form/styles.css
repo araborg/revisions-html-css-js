@@ -61,10 +61,6 @@ body::before {
 }
 
 /* header section */
-.header {
-    padding: 0 0.625rem; /* 10px */
-    margin-bottom: 1.875rem; /* 30px */
-}
 
 h1 {
     font-weight: 400;
@@ -92,11 +88,9 @@ p {
     text-align: center;
 }
 
-.clue {
-    color: #e4e4e4;
-    font-size: 0.9rem; /* 14.4px */
-
-    margin-left: 0.25rem; /* 4px */
+.header {
+    padding: 0 0.625rem; /* 10px */
+    margin-bottom: 1.875rem; /* 30px */
 }
 
 /* form section */
