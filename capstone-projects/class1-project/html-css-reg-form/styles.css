@@ -94,9 +94,9 @@ p {
 
 .clue {
     color: #e4e4e4;
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* 14.4px */
 
-    margin-left: 0.25rem;
+    margin-left: 0.25rem; /* 18px */
 }
 
 /* form section */
