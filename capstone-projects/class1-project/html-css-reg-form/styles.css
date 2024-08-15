@@ -201,3 +201,10 @@ button {
         padding: 2.5rem;
     }
 }
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        border: 2px solid green;
+    }
+}
