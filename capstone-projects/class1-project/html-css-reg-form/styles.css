@@ -174,10 +174,11 @@ button {
 }
 
 .input-textarea {
-    min-height: 120px;
     width: 100%;
+    min-height: 120px;
 
     padding: 0.625rem; /* 10px */
+
     resize: vertical;
 }
 
