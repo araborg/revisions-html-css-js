@@ -65,7 +65,7 @@ body::before {
 .header {
     padding: 0 0.625rem;
 
-    border: 2px solid green;
+    border: 2px solid yellow;
 }
 
 h1 {
