@@ -204,6 +204,14 @@ button {
     form {
         padding: 2.5rem; /* 40px */
     }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.625rem;
+    }
 }
 
 @media (min-width: 576px) {
