@@ -91,3 +91,9 @@ p {
 }
 
 /* form section */
+form {
+    background: var(--color-darkblue-alpha);
+
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+}
