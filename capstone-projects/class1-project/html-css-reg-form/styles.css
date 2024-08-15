@@ -165,17 +165,17 @@ textarea {
 .input-checkbox {
     display: inline-block;
 
-    margin-right: 0.625rem;
+    margin-right: 0.625rem; /* 10px */
 
-    min-height: 1.25rem;
-    min-width: 1.25rem;
+    min-height: 1.25rem; /* 20px */
+    min-width: 1.25rem; /* 20px */
 }
 
 .input-textarea {
     min-height: 120px;
     width: 100%;
 
-    padding: 0.625rem;
+    padding: 0.625rem; /* 10px */
     resize: vertical;
 }
 
