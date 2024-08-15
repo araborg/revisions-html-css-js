@@ -124,9 +124,9 @@ label {
 }
 
 input,
-button,
 select,
-textarea {
+textarea,
+button {
     margin: 0;
 
     font-family: inherit;
