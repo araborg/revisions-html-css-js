@@ -96,17 +96,17 @@ p {
     color: #e4e4e4;
     font-size: 0.9rem; /* 14.4px */
 
-    margin-left: 0.25rem; /* 18px */
+    margin-left: 0.25rem; /* 4px */
 }
 
 /* form section */
 form {
     background: var(--color-darkblue-alpha);
 
-    padding: 2.5rem 0.625rem;
-    border-radius: 0.25rem;
+    padding: 2.5rem 0.625rem; /* 40px  10px*/
+    border-radius: 0.25rem; /* 4px */
 
-    margin-bottom: 5rem;
+    margin-bottom: 5rem; /* 80px */
 }
 
 .form-group {
