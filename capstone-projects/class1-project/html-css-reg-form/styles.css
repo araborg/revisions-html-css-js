@@ -62,8 +62,8 @@ body::before {
 
 /* header section */
 .header {
-    padding: 0 0.625rem;
-    margin-bottom: 1.875rem;
+    padding: 0 0.625rem; /* 10px */
+    margin-bottom: 1.875rem; /* 30px */
 }
 
 h1 {
