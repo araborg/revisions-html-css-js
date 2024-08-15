@@ -190,4 +190,7 @@ textarea {
 
     color: inherit;
     background: var(--color-green);
+
+    border-radius: 2px;
+    cursor: pointer;
 }
