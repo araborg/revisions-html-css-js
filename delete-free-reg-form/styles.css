@@ -56,7 +56,9 @@ body::before {
 /* container */
 
 /* form */
-
+form {
+    background: var(--color-darkblue-alpha);
+}
 /* 
        
 
