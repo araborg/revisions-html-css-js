@@ -44,6 +44,11 @@ body::before {
         ),
         url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
 
+    /* background-clip: padding-box; */
+
+    background-position: center;
+    /* background-size: cover; */
+
     z-index: -1;
 }
 
