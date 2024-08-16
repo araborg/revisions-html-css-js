@@ -53,10 +53,12 @@ body::before {
     z-index: -1;
 }
 
+/* container */
+
+/* form */
+
 /* 
-        115deg,
-            rgba(58, 58, 158, 0.8),
-            rgba(136, 136, 206, 0.7)
+       
 
 
              text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
