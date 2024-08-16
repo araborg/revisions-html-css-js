@@ -32,3 +32,7 @@ body {
 
     line-height: 1.4;
 }
+
+body::before {
+    content: "";
+}
