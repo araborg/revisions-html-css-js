@@ -58,16 +58,17 @@ h1 {
 }
 
 p {
-}
-
-.text-center {
-    text-align: center;
+    font-size: 1.125rem;
 }
 
 h1,
 p {
     margin: 0;
     margin-bottom: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .description {
@@ -77,6 +78,7 @@ p {
 }
 
 .container {
+    width: 100%;
 }
 
 /* form */
