@@ -98,7 +98,19 @@ form {
 label {
     display: flex;
     align-items: center;
+
+    margin-bottom: 0.25rem;
+
+    /* border: 2px solid green; */
 }
+
+.form-input {
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+}
+
 /* 
        
 
