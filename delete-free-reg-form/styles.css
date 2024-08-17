@@ -100,11 +100,21 @@ label {
     align-items: center;
 
     margin-bottom: 0.25rem;
-
-    /* border: 2px solid green; */
 }
 
 .form-input {
+    width: 100%;
+
+    display: inline-block;
+
+    min-height: 2.5rem;
+    padding: 0.375rem 0.75rem;
+    /* border: 2px solid green; */
+
+    font-size: inherit;
+
+    border-radius: 0.25rem;
+    border: 1px solid;
 }
 
 .form-group {
