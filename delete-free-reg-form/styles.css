@@ -55,6 +55,7 @@ body::before {
 
 /* container */
 h1 {
+    font-weight: 400;
 }
 
 p {
@@ -72,6 +73,7 @@ p {
 }
 
 .description {
+    font-style: italic;
 }
 
 .header {
