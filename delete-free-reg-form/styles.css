@@ -119,12 +119,14 @@ label {
     border-radius: 0.25rem;
     border: 1px solid #ced4da;
 
-    transition: border-color ease-in-out 2s;
+    transition: border-color 2s ease-in-out, box-shadow 2s ease-in-out;
 }
 
 .form-input:focus {
     outline: 0;
     border-color: #80bdff;
+
+    /* box-shadow: ; */
 }
 
 .form-group {
