@@ -79,6 +79,7 @@ p {
 
 .container {
     width: 100%;
+    margin: 3.125rem auto;
 }
 
 /* form */
