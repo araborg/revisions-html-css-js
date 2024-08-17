@@ -60,6 +60,18 @@ h1 {
 p {
 }
 
+.text-center {
+}
+
+.description {
+}
+
+.header {
+}
+
+.container {
+}
+
 /* form */
 form {
     background: var(--color-darkblue-alpha);
