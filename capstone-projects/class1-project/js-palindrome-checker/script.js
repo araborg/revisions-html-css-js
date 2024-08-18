@@ -25,7 +25,9 @@ five|\_/|four
 const removeUnwantedChar = (str) => {
     const regex = /[_\:\-\(\/\)\|,.\s]/gi;
 
-    console.log(str.replace(regex, ""));
+    // console.log(str.replace(regex, ""));
+
+    return str.replace(regex, "");
 };
 
 // removeUnwantedChar("A");
@@ -46,14 +48,14 @@ const removeUnwantedChar = (str) => {
 
 function check() {
     const textInputValue = textInput.value;
-    const inputValue = removeUnwantedChar(textInputValue);
+    const inputValue = removeUnwantedChar(textInputValue).toLowerCase();
 
     if (!textInput.value) {
         alert("Please input a value");
     } else {
         console.log(inputValue);
-        // const reverseTextInput = textInputValue.split("").reverse().join(" ");
-        // console.log(reverseTextInput);
+        const reverseTextInput = inputValue.split("").reverse().join("");
+        console.log(reverseTextInput);
     }
 }
 
