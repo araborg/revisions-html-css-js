@@ -18,13 +18,13 @@ function check() {
         const reverseTextInput = inputValue.split("").reverse().join("");
 
         if (reverseTextInput === inputValue) {
-            // const span = document.createElement("span");
-            // span.classList = "bold";
-            // span.append(`${textInputValue}`);
-            // console.log(span);
-            // result.append(span);
+            const span = document.createElement("span");
+            span.classList = "bold";
+            span.append(`${textInputValue}`);
+            console.log(span);
+            result.append(span);
 
-            result.innerText = `<span class="bold">${textInputValue}</span> is a palindrome.`;
+            // result.innerText = `<span class="bold">${textInputValue}</span> is a palindrome.`;
         } else {
             result.textContent = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
         }

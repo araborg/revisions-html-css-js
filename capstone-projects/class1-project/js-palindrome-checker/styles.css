@@ -1,3 +1,8 @@
 .bold {
     font-weight: bold;
 }
+
+body {
+    background-color: blue;
+    color: #fff;
+}
