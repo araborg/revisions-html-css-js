@@ -17,6 +17,7 @@ function check() {
     } else {
         const reverseTextInput = inputValue.split("").reverse().join("");
 
+        textInput.value = "";
         result.innerHTML = "";
 
         if (reverseTextInput === inputValue) {
