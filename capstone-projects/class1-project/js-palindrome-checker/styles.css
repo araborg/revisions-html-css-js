@@ -26,7 +26,7 @@ body {
 .form-group {
     border: 1px solid white;
 
-    height: 200px;
+    height: 250px;
     width: 100%;
 
     display: flex;
@@ -37,11 +37,13 @@ body {
 
 .input-btn {
     /* margin-bottom: 30px; */
-    height: 100px;
+    height: 90px;
 
     border: 1px solid red;
 }
 
-.result {
+#result {
     height: 30px;
+
+    border: 1px solid rgb(145, 97, 97);
 }
