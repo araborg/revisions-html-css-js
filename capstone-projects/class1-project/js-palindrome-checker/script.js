@@ -3,10 +3,22 @@ const btn = document.getElementById("check-btn");
 
 /*
 input values:
+A
+eye
+_eye
+race car
+A man, a plan, a canal. Panama
+never odd or even
+My age is 0, 0 si ega ym.
+0_0 (: /-\ :) 0-0
 
 
-
-
+==================
+not a palindrome
+nope
+almostomla
+1 eye for of 1 eye.
+five|\_/|four
 
 */
 
