@@ -33,10 +33,10 @@ body {
 }
 
 .form-group {
-    height: 250px;
+    /* height: 250px; */
     width: 400px;
 
-    padding: 20px;
+    padding: 10px 20px;
 
     display: flex;
     justify-content: center;
