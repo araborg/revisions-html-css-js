@@ -25,7 +25,7 @@ function check() {
             // span += ` is a palindrome.`;
             // console.log(span);
 
-            result.insertAdjacentHTML("beforeend", span);
+            result.insertAdjacentHTML("beforeend", `${span}`);
 
             // result.innerText = `<span class="bold">race car</span> is a palindrome.`;
         } else {
