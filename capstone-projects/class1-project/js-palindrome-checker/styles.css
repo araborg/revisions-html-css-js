@@ -7,6 +7,8 @@
 body {
     background-color: blue;
     color: #fff;
+
+    margin: 0;
 }
 
 .bold {
@@ -16,18 +18,23 @@ body {
 }
 
 .container {
-    width: 600px;
+    /* width: 600px; */
 
     border: 2px solid green;
 
-    margin: 3.125rem auto;
+    /* margin: 3.125rem auto; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-group {
     border: 1px solid white;
 
     height: 250px;
-    width: 100%;
+    width: 400px;
 
     display: flex;
     justify-content: center;
@@ -37,13 +44,19 @@ body {
 
 .input-btn {
     /* margin-bottom: 30px; */
-    height: 90px;
+    height: 70px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #result {
     height: 30px;
 
-    border: 1px solid rgb(145, 97, 97);
+    /* border: 1px solid rgb(145, 97, 97); */
+}
+
+.white {
+    background-color: #f3f3f3;
+
+    color: #030303;
 }
