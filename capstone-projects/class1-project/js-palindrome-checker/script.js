@@ -23,9 +23,14 @@ five|\_/|four
 */
 
 const removeUnwantedChar = (str) => {
-    const regex = "";
+    const regex = /[_\s]/gi;
+    console.log(str.replace(regex, ""));
 };
 
+removeUnwantedChar("race car");
+// console.log();
+
+/*
 function check() {
     const textInputValue = textInput.value;
     console.log(textInputValue);
@@ -39,3 +44,4 @@ function check() {
 }
 
 btn.addEventListener("click", check);
+*/
