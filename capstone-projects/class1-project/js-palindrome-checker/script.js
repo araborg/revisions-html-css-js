@@ -23,11 +23,11 @@ five|\_/|four
 */
 
 const removeUnwantedChar = (str) => {
-    const regex = /[_\s]/gi;
+    const regex = /[_,.\s]/gi;
     console.log(str.replace(regex, ""));
 };
 
-removeUnwantedChar("race car");
+removeUnwantedChar("A man, a plan, a canal. Panama");
 // console.log();
 
 /*
