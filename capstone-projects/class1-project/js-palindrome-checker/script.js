@@ -23,7 +23,6 @@ function check() {
             const span = `<span class="bold">${textInputValue}</span> is a palindrome.`;
 
             result.innerHTML += span;
-            textInput.value = "";
         } else {
             const span = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
 
