@@ -32,6 +32,10 @@ body {
     align-items: center;
 }
 
+.freecodecamp-logo {
+    width: 15rem;
+}
+
 .form-group {
     /* height: 250px; */
     width: 400px;
@@ -75,5 +79,5 @@ body {
 }
 
 .green {
-    background-color: green;
+    background-color: #00471b;
 }
