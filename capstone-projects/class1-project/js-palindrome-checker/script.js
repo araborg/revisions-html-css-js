@@ -55,7 +55,10 @@ function check() {
     } else {
         console.log(inputValue);
         const reverseTextInput = inputValue.split("").reverse().join("");
-        console.log(reverseTextInput);
+        console.log(reverseTextInput === inputValue);
+
+        if (reverseTextInput === inputValue) {
+        }
     }
 }
 
