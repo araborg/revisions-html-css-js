@@ -22,7 +22,7 @@ body {
 .container {
     /* width: 600px; */
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 
     margin: 3.125rem auto;
 
@@ -56,16 +56,20 @@ body {
 
 .input-btn {
     /* margin-bottom: 30px; */
-    height: 70px;
+    height: 50px;
     width: 70%;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #text-input {
     border: none;
 
     border-bottom: 2px solid #030303;
+
+    padding: 6px 12px;
+
+    border: 2px solid red;
 }
 
 #result {
