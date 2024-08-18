@@ -61,7 +61,7 @@ body {
     height: 50px;
     width: 100%;
 
-    border: 1px solid green;
+    /* border: 1px solid green; */
 
     display: flex;
 }
@@ -73,7 +73,7 @@ body {
     border-bottom: 2px solid #030303;
 
     padding: 6px 12px;
-
+    outline: none;
     /* border: 2px solid red; */
 }
 
