@@ -18,13 +18,6 @@ function check() {
         const reverseTextInput = inputValue.split("").reverse().join("");
 
         if (reverseTextInput === inputValue) {
-            // let span = document.createElement("span");
-            // span.classList = "bold";
-            // span.append(`${textInputValue}`);
-            // span.append(` is a palindrome.`);
-            // span += ` is a palindrome.`;
-            // console.log(span);
-
             const span = `<span class="bold">race car</span> is a palindrome.`;
 
             result.insertAdjacentHTML("beforeend", span);
