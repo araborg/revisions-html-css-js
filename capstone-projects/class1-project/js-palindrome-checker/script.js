@@ -17,6 +17,8 @@ function check() {
     } else {
         const reverseTextInput = inputValue.split("").reverse().join("");
 
+        result.innerHTML = "";
+
         if (reverseTextInput === inputValue) {
             const span = `<span class="bold">${textInputValue}</span> is a palindrome.`;
 
@@ -27,8 +29,6 @@ function check() {
 
             result.innerHTML += span;
         }
-
-        result.innerHTML = "";
     }
 }
 
