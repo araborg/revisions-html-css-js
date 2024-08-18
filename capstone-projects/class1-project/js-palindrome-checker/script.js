@@ -20,12 +20,11 @@ function check() {
         if (reverseTextInput === inputValue) {
             const span = `<span class="bold">${textInputValue}</span> is a palindrome.`;
 
-            // result.insertAdjacentHTML("beforeend", span);
             result.innerHTML += span;
         } else {
             const span = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
+
             result.innerHTML += span;
-            // result.insertAdjacentHTML("beforeend", span);
         }
     }
 
