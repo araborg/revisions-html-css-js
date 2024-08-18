@@ -1,6 +1,8 @@
 const textInput = document.getElementById("text-input");
 const btn = document.getElementById("check-btn");
 
+const removeUnwantedChar = (str) => {};
+
 function check() {
     const textInputValue = textInput.value;
     console.log(textInputValue);
@@ -8,17 +10,9 @@ function check() {
     if (!textInput.value) {
         alert("Please input a value");
     } else {
-        const reverseTextInput = textInputValue.split("");
-        // .reverse();
+        const reverseTextInput = textInputValue.split("").reverse().join(" ");
         console.log(reverseTextInput);
     }
 }
 
 btn.addEventListener("click", check);
-
-function isInvalidInput(str) {
-    const regex = /\d+e\d+/i;
-    return str.match(regex);
-}
-
-console.log(isInvalidInput("10"));
