@@ -2,26 +2,8 @@ const textInput = document.getElementById("text-input");
 const btn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
-/*
-input values:
-A
-eye
-_eye
-race car
-A man, a plan, a canal. Panama
-never odd or even
-My age is 0, 0 si ega ym.
-0_0 (: /-\ :) 0-0
-
-
-
-
-*/
-
 const removeUnwantedChar = (str) => {
     const regex = /[_\:\-\(\/\)\|,.\s]/gi;
-
-    // console.log(str.replace(regex, ""));
 
     return str.replace(regex, "");
 };
@@ -49,12 +31,10 @@ function check() {
     if (!textInput.value) {
         alert("Please input a value");
     } else {
-        // console.log(inputValue);
         const reverseTextInput = inputValue.split("").reverse().join("");
-        // console.log(reverseTextInput === inputValue);
 
         if (reverseTextInput === inputValue) {
-            result.textContent = `<span class="bold">${textInputValue}</span> is a palindrome.`;
+            result.innerHTML = `<span class="bold">${textInputValue}</span> is a palindrome.`;
         } else {
             result.textContent = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
         }
