@@ -22,3 +22,15 @@ body {
 
     margin: 3.125rem auto;
 }
+
+.form-group {
+    border: 1px solid white;
+
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
