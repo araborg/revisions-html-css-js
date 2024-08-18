@@ -31,7 +31,7 @@ body {
 }
 
 .form-group {
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     height: 250px;
     width: 400px;
@@ -40,13 +40,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    /* border: 1px solid red; */
+
+    border-radius: 4px;
 }
 
 .input-btn {
     /* margin-bottom: 30px; */
     height: 70px;
+    width: 70%;
 
-    /* border: 1px solid red; */
+    border: 1px solid green;
+}
+
+#text-input {
+    border: none;
+
+    border-bottom: 2px solid #030303;
 }
 
 #result {
