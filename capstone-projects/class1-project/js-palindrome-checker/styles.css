@@ -34,3 +34,12 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.input-btn {
+    /* margin-bottom: 30px; */
+    height: 300px;
+}
+
+.result {
+    height: 100px;
+}
