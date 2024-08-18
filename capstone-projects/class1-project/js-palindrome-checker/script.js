@@ -38,6 +38,10 @@ removeUnwantedChar("My age is 0, 0 si ega ym.");
 removeUnwantedChar("0_0 (: /- :) 0-0");
 // console.log();
 
+removeUnwantedChar("not a palindrome");
+removeUnwantedChar("nope");
+removeUnwantedChar("");
+removeUnwantedChar("");
 removeUnwantedChar("");
 
 /*
