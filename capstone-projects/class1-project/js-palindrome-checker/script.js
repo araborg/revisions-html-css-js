@@ -1,4 +1,4 @@
-const btn = document.getElementById("submit");
+const btn = document.getElementById("check-btn");
 
 function check() {
     console.log("btn clicked");
