@@ -3,7 +3,7 @@ const btn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 const removeUnwantedChar = (str) => {
-    const regex = /[_\:\-\(\/\)\|,.\s]/gi;
+    const regex = /[\_\:\-\(\/\\)\|,.\s]/gi;
 
     return str.replace(regex, "");
 };
