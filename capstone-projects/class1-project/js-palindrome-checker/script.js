@@ -5,7 +5,7 @@ function check() {
     if (!textInput.value) {
         alert("Please input a value");
     }
-    console.log("btn clicked");
+    console.log(textInput.value);
 }
 
 btn.addEventListener("click", check);
