@@ -54,9 +54,9 @@ function check() {
         // console.log(reverseTextInput === inputValue);
 
         if (reverseTextInput === inputValue) {
-            result.textContent = `<span class="bold">${textInputValue}</span>  is a palindrome.`;
+            result.textContent = `<span class="bold">${textInputValue}</span> is a palindrome.`;
         } else {
-            result.textContent = ` <span class="bold">${textInputValue}</span>  is not a palindrome.`;
+            result.textContent = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
         }
     }
 
