@@ -1,7 +1,18 @@
 const textInput = document.getElementById("text-input");
 const btn = document.getElementById("check-btn");
 
-const removeUnwantedChar = (str) => {};
+/*
+input values:
+
+
+
+
+
+*/
+
+const removeUnwantedChar = (str) => {
+    const regex = "";
+};
 
 function check() {
     const textInputValue = textInput.value;
