@@ -21,10 +21,10 @@ function check() {
             const span = `<span class="bold">race car</span> is a palindrome.`;
 
             result.insertAdjacentHTML("beforeend", span);
-
-            // result.innerText = `<span class="bold">race car</span> is a palindrome.`;
         } else {
-            result.textContent = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
+            const span = `<span class="bold">race car</span> is not a palindrome.`;
+
+            result.insertAdjacentHTML("beforeend", span);
         }
     }
 
