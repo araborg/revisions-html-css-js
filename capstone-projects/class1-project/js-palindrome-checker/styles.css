@@ -82,7 +82,9 @@ body {
 }
 
 #result {
-    height: 30px;
+    height: 50px;
+
+    padding-bottom: 20px;
 }
 
 .white {
