@@ -23,7 +23,7 @@ five|\_/|four
 */
 
 const removeUnwantedChar = (str) => {
-    const regex = /[_\:\-\(\/\),.\s]/gi;
+    const regex = /[_\:\-\(\/\)\|,.\s]/gi;
 
     console.log(str.replace(regex, ""));
 };
@@ -40,11 +40,10 @@ removeUnwantedChar("0_0 (: /- :) 0-0");
 
 removeUnwantedChar("not a palindrome");
 removeUnwantedChar("nope");
-removeUnwantedChar("");
-removeUnwantedChar("");
-removeUnwantedChar("");
+removeUnwantedChar("almostomla");
+removeUnwantedChar("1 eye for of 1 eye.");
+removeUnwantedChar("five|_/|four");
 
-/*
 function check() {
     const textInputValue = textInput.value;
     console.log(textInputValue);
@@ -58,4 +57,3 @@ function check() {
 }
 
 btn.addEventListener("click", check);
-*/
