@@ -18,13 +18,14 @@ function check() {
         const reverseTextInput = inputValue.split("").reverse().join("");
 
         if (reverseTextInput === inputValue) {
-            const span = `<span class="bold">race car</span> is a palindrome.`;
+            const span = `<span class="bold">${textInputValue}</span> is a palindrome.`;
 
-            result.insertAdjacentHTML("beforeend", span);
+            // result.insertAdjacentHTML("beforeend", span);
+            result.innerHTML += span;
         } else {
-            const span = `<span class="bold">race car</span> is not a palindrome.`;
-
-            result.insertAdjacentHTML("beforeend", span);
+            const span = `<span class="bold">${textInputValue}</span> is not a palindrome.`;
+            result.innerHTML += span;
+            // result.insertAdjacentHTML("beforeend", span);
         }
     }
 
