@@ -14,12 +14,7 @@ My age is 0, 0 si ega ym.
 0_0 (: /-\ :) 0-0
 
 
-==================
-not a palindrome
-nope
-almostomla
-1 eye for of 1 eye.
-five|\_/|four
+
 
 */
 
@@ -59,9 +54,13 @@ function check() {
         // console.log(reverseTextInput === inputValue);
 
         if (reverseTextInput === inputValue) {
-            result.textContent = `${textInputValue} is a palindrome`;
+            result.textContent = `${textInputValue} is a palindrome.`;
+        } else {
+            result.textContent = `${textInputValue} is not a palindrome.`;
         }
     }
+
+    textInput.value = "";
 }
 
 btn.addEventListener("click", check);
