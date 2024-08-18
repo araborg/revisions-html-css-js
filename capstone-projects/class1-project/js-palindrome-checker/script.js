@@ -1,5 +1,6 @@
 const textInput = document.getElementById("text-input");
 const btn = document.getElementById("check-btn");
+const result = document.getElementById("result");
 
 /*
 input values:
@@ -53,11 +54,12 @@ function check() {
     if (!textInput.value) {
         alert("Please input a value");
     } else {
-        console.log(inputValue);
+        // console.log(inputValue);
         const reverseTextInput = inputValue.split("").reverse().join("");
-        console.log(reverseTextInput === inputValue);
+        // console.log(reverseTextInput === inputValue);
 
         if (reverseTextInput === inputValue) {
+            result.textContent = `${textInputValue} is a palindrome`;
         }
     }
 }
