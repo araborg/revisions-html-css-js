@@ -11,13 +11,14 @@ Consider d effect of this:
 /* 
     Note d width in both .frame and .canvas r of d same value.
 
-    
+
 */
 
 .frame {
     border: 50px solid black;
 
     width: 500px;
+
     padding: 50px;
 
     margin: 20px auto;
@@ -25,6 +26,7 @@ Consider d effect of this:
 
 .canvas {
     width: 500px;
+
     height: 600px;
 
     background-color: #4d0f00;
