@@ -20,8 +20,6 @@
         d overflow d req padding occurs due to
         d dimensn of d .one elemt.
     */
-
-    /* border: 5px solid green; */
 }
 
 .one {
@@ -37,8 +35,6 @@
     border-radius: 9px;
 
     transform: rotate(-0.6deg);
-
-    /* border: 2px solid black; */
 }
 
 .two {
@@ -58,8 +54,6 @@
     border-bottom-right-radius: 10px;
 
     transform: rotate(0.4deg);
-
-    /* border: 2px solid green; */
 }
 
 .three {
@@ -75,8 +69,6 @@
     border-radius: 30px 25px 60px 12px;
 
     transform: rotate(0.2deg);
-
-    /* border: 5px solid green; */
 }
 
 .one,
