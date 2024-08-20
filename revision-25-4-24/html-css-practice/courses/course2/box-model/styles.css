@@ -1,11 +1,12 @@
-/*
-Consider d effect of this:
+/* /* */
+/* Consider d effect of this: */
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+/* */
 */
 
 /* 
