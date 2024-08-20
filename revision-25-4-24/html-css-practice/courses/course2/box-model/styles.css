@@ -12,6 +12,9 @@
     height: 600px;
 
     background-color: #4d0f00;
+
+    padding: 1px;
+    /* border: 5px solid green; */
 }
 
 .one {
@@ -21,4 +24,6 @@
     background-color: #efb762;
 
     margin: 20px auto;
+
+    /* border: 2px solid black; */
 }
