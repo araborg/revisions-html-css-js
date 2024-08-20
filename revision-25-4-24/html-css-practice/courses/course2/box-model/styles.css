@@ -6,12 +6,9 @@ Consider d effect of this:
 *::after {
     box-sizing: border-box;
 }
-*/
-
-/* 
-    Note d width in both .frame and .canvas r of d same value.
 
 
+Note d width in both .frame and .canvas r of d same value.
 */
 
 .frame {
