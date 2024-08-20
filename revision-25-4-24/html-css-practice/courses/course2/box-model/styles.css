@@ -13,7 +13,9 @@
 
     background-color: #4d0f00;
 
-    padding: 1px;
+    /* padding: 1px; */
+
+    overflow: hidden;
     /* border: 5px solid green; */
 }
 
