@@ -8,7 +8,12 @@ Consider d effect of this:
 }
 */
 
-/*  */
+/* 
+    Note d width in both .frame and .canvas r of d same value.
+
+    
+*/
+
 .frame {
     border: 50px solid black;
 
