@@ -61,3 +61,7 @@
 .two {
     filter: blur(1px);
 }
+
+.three {
+    filter: blur(2px);
+}
