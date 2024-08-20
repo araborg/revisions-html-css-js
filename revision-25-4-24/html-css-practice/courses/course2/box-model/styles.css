@@ -41,7 +41,7 @@
 
     background-color: #8f0401;
 
-    margin: auto;
+    margin: 0 auto 20px;
 
     /* border: 2px solid green; */
 }
@@ -51,6 +51,8 @@
     height: 28%;
 
     background-color: #b20403;
+
+    margin: auto;
 
     /* border: 5px solid green; */
 }
