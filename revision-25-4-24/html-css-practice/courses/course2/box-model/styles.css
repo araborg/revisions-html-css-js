@@ -18,7 +18,7 @@
 
     /* padding: 1px; */
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .one {
@@ -33,6 +33,8 @@
     /* border: 1px solid #efb762; */
 
     box-shadow: 0 0 3px 3px #efb762;
+
+    transform: rotate(-0.8deg);
 }
 
 .two {
