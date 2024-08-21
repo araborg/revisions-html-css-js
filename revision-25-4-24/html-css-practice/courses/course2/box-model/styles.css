@@ -19,6 +19,8 @@
     /* padding: 1px; */
 
     overflow: hidden;
+
+    filter: blur(2px);
 }
 
 .one {
