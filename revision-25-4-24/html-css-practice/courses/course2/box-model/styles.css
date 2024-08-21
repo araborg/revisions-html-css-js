@@ -64,3 +64,12 @@
 
     box-shadow: 0 0 3px 3px #b20403;
 }
+
+.one,
+.two {
+    filter: blur(1px);
+}
+
+.three {
+    filter: blur(2px);
+}
