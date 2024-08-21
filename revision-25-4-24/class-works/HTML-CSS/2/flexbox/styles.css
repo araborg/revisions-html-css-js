@@ -70,6 +70,12 @@ body {
     gap: 16px;
 }
 
+.gallery::after {
+    content: "";
+
+    width: 350px;
+}
+
 .gallery img {
     height: 300px;
 
