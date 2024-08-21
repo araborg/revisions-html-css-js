@@ -14,7 +14,11 @@
 
     background-color: #4d0f00;
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+
+    /* padding: 1px; */
+
+    overflow: hidden;
 }
 
 .one {
