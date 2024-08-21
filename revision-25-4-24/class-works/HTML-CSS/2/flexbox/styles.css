@@ -19,9 +19,13 @@ img {
 */
 
 .gallery img {
-    width: 100%;
+    height: 300px;
 
+    width: 100%;
     max-width: 350px;
 
-    height: 300px;
+    /* 
+        If the value for width is greater than the value for max-width, 
+        then max-width overrides width.
+    */
 }
