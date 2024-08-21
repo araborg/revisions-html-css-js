@@ -66,6 +66,8 @@ body {
     */
     max-width: 1400px;
     margin: 0 auto;
+
+    gap: 16px;
 }
 
 .gallery img {
@@ -79,4 +81,6 @@ body {
     */
 
     object-fit: cover;
+
+    border-radius: 10px;
 }
