@@ -18,7 +18,7 @@
 
     /* padding: 1px; */
 
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .one {
@@ -30,7 +30,6 @@
     margin: 20px auto;
 
     border-radius: 10px;
-    /* border: 1px solid #efb762; */
 
     box-shadow: 0 0 3px 3px #efb762;
 
@@ -39,7 +38,7 @@
 
 .two {
     width: 480px;
-    height: 180px;
+    height: 160px;
 
     background-color: #8f0401;
 
@@ -48,6 +47,8 @@
     box-shadow: 0 0 3px 3px #8f0401;
 
     border-radius: 5px 5px 5px 5px;
+
+    transform: rotate(0.5deg);
 }
 
 .three {
