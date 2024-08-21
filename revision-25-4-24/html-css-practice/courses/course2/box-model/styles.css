@@ -66,6 +66,8 @@
     border-bottom-right-radius: 8px;
 
     box-shadow: 0 0 3px 3px #b20403;
+
+    transform: rotate(-0.2deg);
 }
 
 .one,
