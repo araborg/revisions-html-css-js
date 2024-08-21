@@ -38,6 +38,14 @@ body {
 
     color: #ffffff;
 
+    display: flex;
+    /* 
+    ds gives the flex items d ability to takes up d whole row and
+    hence each flex item is displayed like a block elemt.
+    */
+
+    /* flex-direction: row-reverse; */
+
     border-bottom: 4px solid #fdb347;
 }
 
@@ -50,11 +58,5 @@ body {
     /* 
         If the value for width is greater than the value for max-width, 
         then max-width overrides width.
-    */
-
-    display: flex;
-    /* 
-        ds gives the flex items d ability to takes up d whole row and
-        hence each flex item is displayed like a block elemt.
     */
 }
