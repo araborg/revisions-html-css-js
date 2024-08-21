@@ -51,4 +51,6 @@ body {
         If the value for width is greater than the value for max-width, 
         then max-width overrides width.
     */
+
+    display: flex;
 }
