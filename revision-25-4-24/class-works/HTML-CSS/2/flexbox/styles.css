@@ -53,4 +53,8 @@ body {
     */
 
     display: flex;
+    /* 
+        ds gives the flex items d ability to takes up d whole row and
+        hence each flex item is displayed like a block elemt.
+    */
 }
