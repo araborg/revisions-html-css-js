@@ -36,16 +36,12 @@
 }
 
 .two {
+    width: 480px;
+    height: 200px;
+
+    background-color: #8f0401;
 }
 
 .three {
+    background-color: #b20403;
 }
-
-/* 
-#efb762
-#8f0401
-#b20403
-
-
-
-*/
