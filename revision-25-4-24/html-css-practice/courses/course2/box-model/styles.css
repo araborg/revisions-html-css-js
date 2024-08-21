@@ -28,6 +28,11 @@
     background-color: #efb762;
 
     margin: 20px auto;
+
+    border-radius: 10px;
+    /* border: 1px solid #efb762; */
+
+    box-sizing: 0 0 3px 3px #efb762;
 }
 
 /* 
