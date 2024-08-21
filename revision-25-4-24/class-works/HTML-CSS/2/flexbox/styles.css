@@ -73,9 +73,10 @@ body {
 
     width: 100%;
     max-width: 350px;
-
     /* 
         If the value for width is greater than the value for max-width, 
         then max-width overrides width.
     */
+
+    object-fit: cover;
 }
