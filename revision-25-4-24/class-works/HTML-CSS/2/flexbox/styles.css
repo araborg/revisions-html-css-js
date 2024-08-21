@@ -35,18 +35,18 @@ body {
     padding: 32px;
 
     background-color: #0a0a23;
-
     color: #ffffff;
+    border-bottom: 4px solid #fdb347;
+}
 
+.gallery {
     display: flex;
     /* 
     ds gives the flex items d ability to takes up d whole row and
     hence each flex item is displayed like a block elemt.
     */
 
-    /* flex-direction: row-reverse; */
-
-    border-bottom: 4px solid #fdb347;
+    flex-direction: row;
 }
 
 .gallery img {
