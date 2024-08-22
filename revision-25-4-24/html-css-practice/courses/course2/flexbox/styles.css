@@ -39,6 +39,8 @@ body {
 
     max-width: 1400px;
     margin: 20px auto;
+
+    padding-bottom: 50px;
 }
 
 .gallery img {
@@ -48,4 +50,6 @@ body {
     height: 300px;
 
     object-fit: cover;
+
+    border-radius: 10px;
 }
