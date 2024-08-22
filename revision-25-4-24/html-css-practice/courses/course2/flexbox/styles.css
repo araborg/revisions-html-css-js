@@ -9,11 +9,11 @@ body {
     margin: 0;
 
     color: #f5f6f7;
+
+    font-family: sans-serif;
 }
 
 .header {
-    font-family: sans-serif;
-
     text-transform: uppercase;
     text-align: center;
 
