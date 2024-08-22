@@ -69,18 +69,18 @@ body {
 
     align-items: center;
 
-    padding: 20px 10px;
+    gap: 16px;
 
     max-width: 1400px;
     margin: 0 auto;
     /* 
-        centralize d .gallery items.
-
-        d flex-items r in d middle bcos of d flex ppty, 
-        justify-content: center;
+    centralize d .gallery items.
+    
+    d flex-items r in d middle bcos of d flex ppty, 
+    justify-content: center;
     */
 
-    gap: 16px;
+    padding: 20px 10px;
 }
 
 .gallery::after {
