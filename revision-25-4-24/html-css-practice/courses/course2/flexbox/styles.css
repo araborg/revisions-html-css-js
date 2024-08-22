@@ -26,12 +26,14 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-
     flex-direction: row;
+
+    justify-content: center;
 
     /* padding: 30px; */
 
-    /* width: 1400px; */
+    /* width: 1200px; */
+    max-width: 1400px;
     /* margin: 20px auto; */
 
     border: 5px solid green;
