@@ -30,13 +30,13 @@ body {
 
     justify-content: center;
 
-    /* padding: 30px; */
+    /* ds gives an overflow */
+    /* width: 100vw; */
 
-    /* width: 1200px; */
-    /* max-width: 1400px; */
-    /* margin: 20px auto; */
+    height: 100vh;
 
-    border: 5px solid green;
+    max-width: 1400px;
+    margin: 20px auto;
 }
 
 .gallery img {
