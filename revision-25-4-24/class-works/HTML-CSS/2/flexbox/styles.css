@@ -56,8 +56,11 @@ body {
         run out of space.
     */
 
-    /* d container was used to centralize d items even without stting width. */
     justify-content: center;
+    /* 
+        d container was used to centralize d items even without setting 
+        width. 
+    */
 
     align-items: center;
 
