@@ -26,7 +26,7 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: row; */
 
     justify-content: center;
 
@@ -35,13 +35,13 @@ body {
 
     height: 100vh;
 
-    max-width: 1400px;
-    margin: 20px auto;
+    /* max-width: 1400px; */
+    /* margin: 20px auto; */
 }
 
 .gallery img {
-    width: 100%;
-    max-width: 350px;
+    /* width: 100%; */
+    /* max-width: 350px; */
 
-    height: 300px;
+    /* height: 300px; */
 }
