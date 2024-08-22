@@ -52,7 +52,7 @@ body {
 
     flex-wrap: wrap;
     /* 
-        Make it so your flex items wrap to the next row when they 
+        flex-wrap: makes your flex items wrap to the next row when they 
         run out of space.
     */
 
