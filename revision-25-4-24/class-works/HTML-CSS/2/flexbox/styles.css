@@ -66,14 +66,14 @@ body {
 
     padding: 20px 10px;
 
+    max-width: 1400px;
+    margin: 0 auto;
     /* 
         centralize d .gallery items.
 
         d flex-items r in d middle bcos of d flex ppty, 
         justify-content: center;
     */
-    max-width: 1400px;
-    margin: 0 auto;
 
     gap: 16px;
 }
