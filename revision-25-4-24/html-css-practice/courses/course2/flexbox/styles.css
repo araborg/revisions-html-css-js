@@ -29,10 +29,10 @@ body {
 
     flex-direction: row;
 
-    padding: 30px;
+    /* padding: 30px; */
 
-    width: 1400px;
-    margin: 20px auto;
+    /* width: 1400px; */
+    /* margin: 20px auto; */
 }
 
 .gallery img {
