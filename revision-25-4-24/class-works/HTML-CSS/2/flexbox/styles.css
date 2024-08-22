@@ -30,6 +30,10 @@ body {
 
 .header {
     text-align: center;
+    /*
+        ds can be applied on a container so as to affect
+        its children.
+    */
 
     text-transform: uppercase;
 
@@ -57,6 +61,8 @@ body {
 
     justify-content: center;
     /* 
+        ds affects d distribution of space in d .gallery container.
+
         d container was used to centralize d items even without setting 
         width. 
     */
