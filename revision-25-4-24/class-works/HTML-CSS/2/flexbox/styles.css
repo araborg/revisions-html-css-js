@@ -1,8 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
 /*
+
+
 .gallery {
     width: 50%;
 
@@ -16,7 +14,13 @@ img {
 
     border: 5px solid blue;
 }
+
+
 */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
