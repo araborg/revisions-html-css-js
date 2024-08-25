@@ -35,3 +35,7 @@ h1 {
 p {
     margin: 0;
 }
+
+.bold {
+    font-weight: 800;
+}
