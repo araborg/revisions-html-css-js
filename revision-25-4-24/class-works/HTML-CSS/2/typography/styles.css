@@ -26,12 +26,6 @@ header h1 {
     letter-spacing: 0.15px;
 }
 
-.divider {
-    border-bottom: 1px solid #888989;
-
-    margin: 2px 0;
-}
-
 p {
     margin: 0;
 
@@ -41,6 +35,13 @@ p {
 
 .bold {
     font-weight: 800;
+}
+
+/*  */
+.divider {
+    border-bottom: 1px solid #888989;
+
+    margin: 2px 0;
 }
 
 .large {
