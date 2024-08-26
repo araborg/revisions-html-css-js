@@ -18,14 +18,9 @@ body {
     margin: 20px auto;
 
     padding: 0 7px;
-
-    /* to be deleted */
-    /* padding: 20px 7px; */
 }
 
 header h1 {
-    /* font-weight: 800; */
-
     text-align: center;
 
     margin: -4px 0;
@@ -67,13 +62,9 @@ p {
 }
 
 .calories-info {
-    /* border: 2px solid red; */
-
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    /* height: 30px; */
 }
 
 .calories-info h2 {
