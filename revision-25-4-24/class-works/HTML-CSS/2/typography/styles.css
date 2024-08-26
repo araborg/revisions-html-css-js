@@ -18,6 +18,9 @@ body {
     margin: 20px auto;
 
     padding: 0 7px;
+
+    /* to be deleted */
+    padding: 20px 0;
 }
 
 header h1 {
@@ -103,6 +106,6 @@ p {
     margin-left: 1em;
 }
 
-.daily-value p {
+.daily-value p:not(.no-divider) {
     border-bottom: 1px solid #888989;
 }
