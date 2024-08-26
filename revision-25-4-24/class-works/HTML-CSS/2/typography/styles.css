@@ -63,6 +63,16 @@ p {
     font-size: 0.85rem;
 }
 
+.calories-info {
+    border: 2px solid red;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    /* height: 30px; */
+}
+
 .calories-info h2 {
     margin: 0;
 }
