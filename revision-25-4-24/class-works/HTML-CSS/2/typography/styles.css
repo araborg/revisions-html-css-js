@@ -64,7 +64,7 @@ p {
 }
 
 .calories-info {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     display: flex;
     justify-content: space-between;
@@ -75,4 +75,8 @@ p {
 
 .calories-info h2 {
     margin: 0;
+}
+
+.left-container p {
+    margin: -5px -2px;
 }
