@@ -46,9 +46,13 @@ p {
 
 .large {
     height: 10px;
+
+    border-color: red;
 }
 
 .large,
 .medium {
     background-color: black;
+
+    border: none;
 }
