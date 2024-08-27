@@ -2143,14 +2143,6 @@ progressively larger, as each has its font size set to 1.3em —
     </li>
 </ul>
 
-
-
-
-The rem unit means "The root element's font-size" (rem stands for "root em"). 
-The <li> elements inside the <ul> with a class of rems take their sizing 
-from the root element (<html>). This means that each successive level of 
-nesting does not keep getting larger.
-
 <ul class="rems">
     <li>One</li>
     <li>Two</li>
@@ -2178,6 +2170,12 @@ html {
 .rems li {
   font-size: 1.3rem;
 }
+
+
+The rem unit means "The root element's font-size" (rem stands for "root em"). 
+The <li> elements inside the <ul> with a class of rems take their sizing 
+from the root element (<html>). This means that each successive level of 
+nesting does not keep getting larger.
 
 14.
 Typography is often more art than science. You may have to tweak things 
