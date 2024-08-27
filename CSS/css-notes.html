@@ -2273,9 +2273,10 @@ gap, column-gap, and row-gap:
 Used to create gaps or gutters between flex items.
 
 
-23. Using auto margins for main axis alignment
+23. Using auto margins for main axis alignment:
 We don't have a justify-items or justify-self property available to 
 us on the main axis as our items are treated as a group on that axis. 
+
 However it is possible to do some individual alignment in order to 
 separate an item or a group of items from others by using auto margins
 along with flexbox.
@@ -2283,13 +2284,14 @@ along with flexbox.
 A common pattern is a navigation bar where some key items are aligned 
 to the right, with the main group on the left.
 
-
 E.g:
 <div class="box">
     <div>One</div>
     <div>Two</div>
     <div>Three</div>
+
     <div class="push">Four</div>
+    
     <div>Five</div>
 </div>
 
