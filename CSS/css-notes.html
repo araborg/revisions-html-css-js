@@ -2090,8 +2090,8 @@ increase the readability of your text.
 8. General class attribute:
 For instance, rather than targeting each element that needs 
 to be bold (individually with CSS), it is more efficient to 
-use a class (a single css rule) to apply the bold styling 
-to every element. 
+declare a class named bold (a single css rule) to apply the 
+bold styling to every element. 
 
 .bold {
     font-weight: 800;
@@ -2112,7 +2112,6 @@ The rem unit stands for root em, and is relative to the font
 size of the html element.
 
 Wn do u use em or rem for font-size?
-
 The em unit means "my parent element's font-size" if used for 
 font-size (and "my own font-size" when used for anything else).
 
@@ -2122,7 +2121,8 @@ progressively larger, as each has its font size set to 1.3em —
 1.3 times its parent element's font size. 
 
 That is, if d 1st parent is 16px, d next parent will be 20.8px
-(16px × 1.3) and d next parent will be 27.04px (20.8px × 1.3).
+(16px × 1.3) and d next parent will be 27.04px (20.8px × 1.3)
+and so on.
 
 
 <ul class="ems">
