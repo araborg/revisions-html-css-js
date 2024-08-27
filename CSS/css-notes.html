@@ -2209,6 +2209,13 @@ even wn display: flex is not declared?
 :not pseudo-selector can be used to select all elements 
 that do not match the given CSS rule.
 
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+This means apply border-bottom to all paragraph elemts 
+except d one with .no-divider class.
+
 
 18.
 You can italicize a word by wrapping it in an i element.
