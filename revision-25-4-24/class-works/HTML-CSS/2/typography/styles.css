@@ -108,7 +108,7 @@ p {
 }
 
 .note {
-    font-size: 0.6rem;
+    font-size: 0.6rem; /* 9.6px */
 
     margin: 5px 0;
 
