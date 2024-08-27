@@ -2279,7 +2279,8 @@ us on the main axis as our items are treated as a group on that axis.
 
 However it is possible to do some individual alignment in order to 
 separate an item or a group of items from others by using auto margins
-along with flexbox.
+along with flexbox (provided d container still has some available
+space).
 
 A common pattern is a navigation bar where some key items are aligned 
 to the right, with the main group on the left.
@@ -2291,7 +2292,7 @@ E.g:
     <div>Three</div>
 
     <div class="push">Four</div>
-    
+
     <div>Five</div>
 </div>
 
@@ -2299,7 +2300,7 @@ E.g:
     display: flex;
 }
 .push {
-    margin-left: ;
+    margin-left: auto;
 }
 
 
