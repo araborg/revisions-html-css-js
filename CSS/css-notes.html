@@ -2182,7 +2182,26 @@ However it is possible to do some individual alignment in order to
 separate an item or a group of items from others by using auto margins
 along with flexbox.
 
+A common pattern is a navigation bar where some key items are aligned 
+to the right, with the main group on the left.
 
+
+E.g:
+<div class="box">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div class="push">Four</div>
+    <div>Five</div>
+</div>
+
+.box {
+    display: flex;
+}
+.push {
+    margin-left: ;
+}
+    
 
 24.
 
