@@ -60,7 +60,7 @@ p {
 }
 
 .small-text {
-    font-size: 0.85rem;
+    font-size: 0.85rem; /* 13.6px */
 }
 
 .calories-info {
