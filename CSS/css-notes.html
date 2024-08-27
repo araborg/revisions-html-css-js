@@ -2117,6 +2117,7 @@ The rem unit stands for root em, and is relative to the font
 size of the html element.
 
 Wn do u use em or rem for font-size?
+
 The em unit means "my parent element's font-size" if used for 
 font-size (and "my own font-size" when used for anything else).
 
@@ -2142,11 +2143,13 @@ progressively larger, as each has its font size set to 1.3em —
     </li>
 </ul>
 
+
+
+
 The rem unit means "The root element's font-size" (rem stands for "root em"). 
 The <li> elements inside the <ul> with a class of rems take their sizing 
 from the root element (<html>). This means that each successive level of 
 nesting does not keep getting larger.
-
 
 <ul class="rems">
     <li>One</li>
