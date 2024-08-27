@@ -2120,24 +2120,24 @@ sizing from their parent. So each successive level of nesting gets
 progressively larger, as each has its font size set to 1.3em — 
 1.3 times its parent element's font size. 
 
-That is, if d 1st parent is 16px, d next parent will be 20.8px
-(16px × 1.3) and d next parent will be 27.04px (20.8px × 1.3)
-and so on.
+That is, if d 1st parent is 20.8px (16px × 1.3), d next parent will 
+be 27.04px (20.8px × 1.3) and d next parent will be 35.15px 
+(20.8px × 1.3) and so on.
 
 
 <ul class="ems">
-    <li>One</li>                        (16px)    
-    <li>Two</li>                        (16px)
+    <li>One</li>                        (20.8px)    
+    <li>Two</li>                        (20.8px)
 
     <li>Three
         <ul>
-            <li>Three A</li>            (20.8px)
+            <li>Three A</li>            (27.04px)
 
             <li>
                 Three B
                 
                 <ul>
-                    <li>Three B 2</li>  (27.04px)
+                    <li>Three B 2</li>  (35.15px)
                 </ul>
             </li>
         </ul>
@@ -2164,15 +2164,15 @@ and so on.
 </ul>
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .ems li {
-  font-size: 1.3em;
+    font-size: 1.3em; (20.8px)
 }
 
 .rems li {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 
