@@ -2124,7 +2124,11 @@ font-size (and "my own font-size" when used for anything else).
 The <li> elements inside the <ul> with a class of ems take their 
 sizing from their parent. So each successive level of nesting gets 
 progressively larger, as each has its font size set to 1.3em — 
-1.3 times its parent element's font size.
+1.3 times its parent element's font size. 
+
+That is, if d 1st parent is 16px, d next parent will be 20.8px
+(16px × 1.3) and d next parent will be 27.04px (20.8px × 1.3).
+
 
 <ul class="ems">
     <li>One</li>
@@ -2176,6 +2180,7 @@ The rem unit means "The root element's font-size" (rem stands for "root em").
 The <li> elements inside the <ul> with a class of rems take their sizing 
 from the root element (<html>). This means that each successive level of 
 nesting does not keep getting larger.
+
 
 14.
 Typography is often more art than science. You may have to tweak things 
