@@ -61,7 +61,6 @@ p {
 
 .daily-values p:not(.no-divider) {
     border-bottom: 1px solid #2b2a2a;
-
     padding: 2px 0;
 }
 
