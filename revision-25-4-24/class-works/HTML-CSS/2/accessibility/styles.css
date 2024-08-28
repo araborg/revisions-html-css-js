@@ -22,3 +22,8 @@ h1 {
 
     font-size: min(5vw, 1.2em);
 }
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
