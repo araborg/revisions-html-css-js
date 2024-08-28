@@ -21,6 +21,8 @@ body {
 
 .title {
     margin: -4px 0;
+
+    letter-spacing: 0.15px;
 }
 
 /* general classes */
