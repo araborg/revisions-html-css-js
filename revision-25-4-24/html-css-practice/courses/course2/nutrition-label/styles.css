@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 body {
     border: 2px solid red;
+
+    font-family: "Open Sans", sans-serif;
 }
