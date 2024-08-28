@@ -19,7 +19,7 @@ body {
     padding: 0 7px;
 }
 
-.title {
+header .title {
     margin: -4px 0;
 
     letter-spacing: 0.15px;
@@ -35,6 +35,13 @@ p {
 
 .calories-info {
     display: flex;
+
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.calories-info h2 {
+    margin: 0;
 }
 
 /* re-usable classes */
@@ -56,4 +63,8 @@ p {
 
 .bold {
     font-weight: 800;
+}
+
+.small-text {
+    font-size: 0.85rem;
 }
