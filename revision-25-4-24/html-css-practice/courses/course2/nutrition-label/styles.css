@@ -17,6 +17,8 @@ body {
     margin: 20px auto;
 
     padding: 0 7px;
+
+    padding: 20px 7px;
 }
 
 header .title {
@@ -60,7 +62,16 @@ p {
     font-size: 2.4em;
     font-weight: 700;
 
+    margin: -7px -2px;
+
     /* border: 2px solid red; */
+}
+
+.daily-values {
+}
+
+.right {
+    justify-content: flex-end;
 }
 
 /* re-usable classes */
@@ -70,6 +81,7 @@ p {
     margin: 2px 0;
 }
 
+.medium,
 .large {
     background-color: #2b2a2a;
 
@@ -78,6 +90,10 @@ p {
 
 .large {
     height: 10px;
+}
+
+.medium {
+    height: 5px;
 }
 
 .bold {
