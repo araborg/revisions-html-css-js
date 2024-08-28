@@ -40,6 +40,19 @@ p {
     margin: 2px 0;
 }
 
+.large {
+    background-color: #2b2a2a;
+
+    border-color: green;
+
+    /* border: none; */
+}
+
+.large {
+    height: 10px;
+    /* border: 2px solid green; */
+}
+
 .bold {
     font-weight: 800;
 }
