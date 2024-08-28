@@ -7,14 +7,14 @@ html {
 }
 
 body {
-    border: 2px solid red;
-
     font-family: "Open Sans", sans-serif;
 }
 
 .label {
-    border: 2px solid green;
+    border: 2px solid #888989;
 
     width: 270px;
     margin: 20px auto;
+
+    padding: 0 7px;
 }
