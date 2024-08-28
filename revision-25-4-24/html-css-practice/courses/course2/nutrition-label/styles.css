@@ -37,8 +37,8 @@ p {
 .calories-info {
     display: flex;
 
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .calories-info h2 {
