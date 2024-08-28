@@ -110,3 +110,7 @@ p {
 .indent {
     margin-left: 15px;
 }
+
+.double-indent {
+    margin-left: 30px;
+}
