@@ -42,12 +42,16 @@ p {
 
 .calories-info h2 {
     margin: 0;
+
+    border: 2px solid red;
 }
 
 .calories-info p {
     font-size: 2em;
 
     font-weight: 700;
+
+    border: 2px solid red;
 }
 
 /* re-usable classes */
