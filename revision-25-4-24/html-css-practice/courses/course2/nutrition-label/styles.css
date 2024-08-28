@@ -19,6 +19,15 @@ body {
     padding: 0 7px;
 }
 
+.title {
+    margin: -4px 0;
+}
+
+/* general classes */
 .divider {
-    border: 1px solid #2b2a2a;
+    border-bottom: 1px solid #2b2a2a;
+}
+
+.bold {
+    font-weight: 800;
 }
