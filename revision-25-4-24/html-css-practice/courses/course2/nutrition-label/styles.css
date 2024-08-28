@@ -25,9 +25,19 @@ body {
     letter-spacing: 0.15px;
 }
 
+p {
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 /* general classes */
 .divider {
     border-bottom: 1px solid #2b2a2a;
+
+    margin: 2px 0;
 }
 
 .bold {
