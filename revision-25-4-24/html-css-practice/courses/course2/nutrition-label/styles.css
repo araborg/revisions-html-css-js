@@ -35,7 +35,7 @@ p {
 
 /* re-usable classes */
 .divider {
-    border-bottom: 1px solid #2b2a2a;
+    border-bottom: 3px solid #971313;
 
     margin: 2px 0;
 }
@@ -43,14 +43,11 @@ p {
 .large {
     background-color: #2b2a2a;
 
-    border-color: green;
-
     /* border: none; */
 }
 
 .large {
     height: 10px;
-    /* border: 2px solid green; */
 }
 
 .bold {
