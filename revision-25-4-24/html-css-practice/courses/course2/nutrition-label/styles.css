@@ -45,7 +45,7 @@ p {
     margin: 0;
 }
 
-.calories-info p {
+.left-container p {
     font-size: 2em;
     font-weight: 700;
 
@@ -98,11 +98,11 @@ p {
 }
 
 .indent {
-    margin-left: 15px;
+    margin-left: 1em;
 }
 
 .double-indent {
-    margin-left: 30px;
+    margin-left: 2em;
 }
 
 .notes {
