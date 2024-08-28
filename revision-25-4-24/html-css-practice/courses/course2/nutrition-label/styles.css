@@ -116,4 +116,11 @@ p {
 }
 
 .notes {
+    font-size: 0.6rem;
+
+    margin: 5px 0;
+
+    padding: 0 7px;
+
+    text-indent: -8px;
 }
