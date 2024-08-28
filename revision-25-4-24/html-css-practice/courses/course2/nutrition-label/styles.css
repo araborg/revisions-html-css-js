@@ -44,6 +44,12 @@ p {
     margin: 0;
 }
 
+.calories-info p {
+    font-size: 2em;
+
+    font-weight: 700;
+}
+
 /* re-usable classes */
 .divider {
     border-bottom: 1px solid #2b2a2a;
