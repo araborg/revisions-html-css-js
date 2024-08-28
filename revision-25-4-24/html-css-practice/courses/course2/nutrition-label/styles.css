@@ -67,7 +67,8 @@ p {
     /* border: 2px solid red; */
 }
 
-.daily-values {
+.daily-values p:not(.no-divider) {
+    border-bottom: 1px solid #2b2a2a;
 }
 
 .right {
