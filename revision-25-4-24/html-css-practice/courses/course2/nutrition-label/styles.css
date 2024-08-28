@@ -33,6 +33,10 @@ p {
     align-items: flex-end;
 }
 
+.calories-info {
+    display: flex;
+}
+
 /* re-usable classes */
 .divider {
     border-bottom: 1px solid #2b2a2a;
