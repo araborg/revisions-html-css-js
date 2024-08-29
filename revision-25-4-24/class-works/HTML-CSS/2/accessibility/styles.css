@@ -112,3 +112,21 @@ section {
     max-width: 600px;
     margin: 0 auto 10px;
 }
+
+.info {
+    padding: 10px 0 0 10px;
+}
+
+.info input {
+    width: 50%;
+    text-align-last: left;
+}
+
+.formrow {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+input {
+    font-size: 16px;
+}
