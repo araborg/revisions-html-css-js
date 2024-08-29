@@ -73,7 +73,7 @@
                     <div class="info">
                         <label for="birth-date">
                             D.O.B:
-                            <span class="sr-only"> (Date of Birth) </span>
+                            <span class="sr-only">(Date of Birth)</span>
                         </label>
 
                         <input type="date" id="birth-date" name="birth-date" />
@@ -86,8 +86,11 @@
                     <div class="question-block">
                         <p>1</p>
 
-                        <fieldset class="question" name="question1">
-                            <legend>Question 1</legend>
+                        <fieldset class="question" name="html-question-one">
+                            <legend>
+                                The legend element represents a caption for the
+                                content of its parent fieldset element.
+                            </legend>
 
                             <ul class="answers-list">
                                 <li>
@@ -96,7 +99,7 @@
                                             type="radio"
                                             id="q1-a1"
                                             value="true"
-                                            name="answer1"
+                                            name="q1"
                                         />
 
                                         True
@@ -109,7 +112,7 @@
                                             type="radio"
                                             id="q1-a2"
                                             value="false"
-                                            name="answer1"
+                                            name="q1"
                                         />
 
                                         False
@@ -123,7 +126,11 @@
                         <p>2</p>
 
                         <fieldset class="question" name="question2">
-                            <legend>Question 2</legend>
+                            <legend>
+                                A label element nesting an input element is
+                                required to have a for attribute with the same
+                                value as the input's id.
+                            </legend>
 
                             <ul class="answers-list">
                                 <li>
@@ -132,7 +139,7 @@
                                             type="radio"
                                             id="q2-a1"
                                             value="true"
-                                            name="answer2"
+                                            name="q2"
                                         />
 
                                         True
@@ -145,7 +152,7 @@
                                             type="radio"
                                             id="q2-a2"
                                             value="false"
-                                            name="answer2"
+                                            name="q2"
                                         />
 
                                         False
@@ -161,33 +168,32 @@
 
                     <div class="formrow">
                         <div class="question-block">
-                            <label for="answer">
+                            <label for="selector">
                                 Can the CSS margin property accept negative
                                 values?
                             </label>
                         </div>
 
                         <div class="answer">
-                            <select name="answer" id="answer" required>
+                            <select name="selector" id="selector" required>
                                 <option value="">Select an option</option>
                                 <option value="yes">Yes</option>
-
                                 <option value="no">No</option>
                             </select>
                         </div>
 
                         <div class="question-block">
-                            <label for="textarea-que">
+                            <label for="css-textarea">
                                 Do you have any questions:
                             </label>
                         </div>
 
                         <div class="answer">
                             <textarea
-                                name="textarea-que"
-                                id="textarea-que"
+                                name="css-questions"
+                                id="css-textarea-que"
                                 cols="30"
-                                rows="3"
+                                rows="5"
                                 placeholder="What is flexbox...?"
                             ></textarea>
                         </div>
