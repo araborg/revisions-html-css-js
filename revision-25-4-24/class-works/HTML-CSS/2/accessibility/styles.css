@@ -125,10 +125,6 @@ h2 {
     border: 0;
 }
 
-p::before {
-    content: "Question #";
-}
-
 section {
     width: 80%;
     max-width: 600px;
@@ -161,8 +157,8 @@ input {
 }
 
 .formrow {
-    margin-top: 20px;
-    padding: 0 10px;
+    margin-top: 30px;
+    padding: 0 15px;
 }
 
 input {
@@ -182,6 +178,10 @@ p {
     margin-top: 5px;
     padding-left: 15px;
     font-size: 20px;
+}
+
+p::before {
+    content: "Question #";
 }
 
 .question {
