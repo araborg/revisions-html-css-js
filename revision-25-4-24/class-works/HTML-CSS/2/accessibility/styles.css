@@ -98,7 +98,7 @@ main {
 
 h1,
 h2 {
-    font-family: "Verdana", sans-serif;
+    font-family: "Verdana", Tahoma, sans-serif;
 }
 
 h2 {
@@ -136,7 +136,11 @@ section {
 }
 
 .info {
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 5px;
+}
+
+input {
+    font-size: 16px;
 }
 
 .info input {
