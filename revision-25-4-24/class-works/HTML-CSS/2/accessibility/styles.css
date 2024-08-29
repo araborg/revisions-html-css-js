@@ -122,6 +122,18 @@ section {
     text-align-last: left;
 }
 
+.info > label {
+    width: 10%;
+    min-width: 55px;
+
+    text-align: right;
+}
+
+.info > label,
+.info > input {
+    display: inline-block;
+}
+
 .formrow {
     margin-top: 20px;
     padding: 0 10px;
