@@ -5,6 +5,11 @@ header {
     background-color: #1b1b32;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -34,9 +39,18 @@ nav li {
     margin: 0 0.2rem;
     padding: 0.2rem;
 
-    /* display: block; */
+    display: block;
 
-    /* border: 2px solid green; */
+    /* width: 20px; */
+
+    border: 2px solid green;
+}
+
+nav li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+
+    cursor: pointer;
 }
 
 li > a {
