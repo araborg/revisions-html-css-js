@@ -28,6 +28,23 @@ nav > ul {
     justify-content: space-evenly;
 }
 
+/* note d selection used instead of nav ul li or nav > ul > li */
+nav li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+
+    /* display: block; */
+
+    /* border: 2px solid green; */
+}
+
+li > a {
+    /* color: #fff; */
+    color: inherit;
+    text-decoration: none;
+}
+
 h1,
 h2 {
     font-family: "Verdana", sans-serif;
@@ -56,15 +73,4 @@ h2 {
 
 p::before {
     content: "Question #";
-}
-
-/* note d selection used instead of nav ul li or nav > ul > li */
-nav li {
-    color: #dfdfe2;
-    margin: 0 0.2rem;
-    padding: 0.2rem;
-
-    display: block;
-
-    /* border: 2px solid green; */
 }
