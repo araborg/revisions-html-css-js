@@ -195,3 +195,8 @@ footer,
 footer a {
     color: #fff;
 }
+
+address {
+    text-align: center;
+    padding: 20px;
+}
