@@ -142,3 +142,18 @@ section {
 input {
     font-size: 16px;
 }
+
+.question-block {
+    text-align-last: left;
+
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
