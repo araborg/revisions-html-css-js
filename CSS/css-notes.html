@@ -2568,10 +2568,11 @@ The role attribute describes the role of an element in programs
 that can make use of it, such as screen readers or magnifiers.
 
 Usage Example:
+<a href="#" role="button">
+    Button Link
+</a>
 
-<a href="#" role="button">Button Link</a>
 Screen Readers will read this element as “button” instead of “link”.
-
 
 To increase the page accessibility, the role attribute can be used 
 to indicate the purpose behind an element on the page to assistive 
@@ -2583,6 +2584,14 @@ Every region role requires a label, which helps screen reader users
 understand the purpose of the region. One method for adding a label 
 is to add a heading element inside the region and then reference it 
 with the aria-labelledby attribute.
+
+e.g:
+<section 
+    role="region" 
+    aria-labelledby="html-questions"
+>
+    <h2 id="html-questions">HTML</h2>
+</section>
 
 
 11. aria attributes
