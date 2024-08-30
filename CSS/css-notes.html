@@ -2391,14 +2391,19 @@ The min() CSS function lets you set the smallest (most negative)
 value from a list of comma-separated expressions as the value of 
 a CSS property value. 
 
-The min() function can be used anywhere either as a <length>, 
-<frequency>, <angle>, <time>, <percentage>, <number>, or <integer> is allowed.
+The min() function takes one or more comma-separated expressions 
+as its parameter, with the smallest (most negative) expression 
+value result used as the value.
 
-The min() function takes one or more comma-separated expressions as its parameter, with the smallest (most negative) expression value result used as the value.
+The min() function can be used anywhere either as a <length>, 
+<frequency>, <angle>, <time>, <percentage>, <number>, or 
+<integer> is allowed.
+
+e.g:
+width: min(50vw, 200px); 
     
+In the above example, the width will be at most 200px, but will be smaller if the viewport is less than 400px wide (in which case 1vw would be 4px, so 50vw would be 200px). This technique uses an absolute unit to specify a fixed maximum value for the property, and a relative unit to allow the value to shrink to suit smaller viewports.
     
-    width: min(50vw, 200px); 
-    In the first above example, the width will be at most 200px, but will be smaller if the viewport is less than 400px wide (in which case 1vw would be 4px, so 50vw would be 200px). This technique uses an absolute unit to specify a fixed maximum value for the property, and a relative unit to allow the value to shrink to suit smaller viewports.
 
 
 6. aspect-ratio
