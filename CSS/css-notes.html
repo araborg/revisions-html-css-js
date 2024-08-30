@@ -2464,25 +2464,34 @@ The <nav> HTML element represents a section of a page whose
 purpose is to provide navigation links, either within the 
 current document or to other documents. 
 
-Common examples of navigation sections are menus, tables of contents, and indexes.
+Common examples of navigation sections are menus, tables of 
+contents, and indexes.
 
-Usage notes
-It's not necessary for all links to be contained in a <nav> element. <nav> is intended only for a major block of navigation links; typically the <footer> element often has a list of links that don't need to be in a <nav> element.
-A document may have several <nav> elements, for example, one for site navigation and one for intra-page navigation. aria-labelledby can be used in such case to promote accessibility, see example.
+Usage notes:
+It's not necessary for all links to be contained in a <nav> 
+element. <nav> is intended only for a major block of navigation 
+links; typically the <footer> element often has a list of links 
+that don't need to be in a <nav> element.
+
+A document may have several <nav> elements, for example, one for 
+site navigation and one for intra-page navigation. 
+
+aria-labelledby can be used in such case to promote accessibility.
 
 Examples
-In this example, a <nav> block is used to contain an unordered list (<ul>) of links. With appropriate CSS, this can be presented as a sidebar, navigation bar, or drop-down menu.
-
-html
-play
-Copy to Clipboard
 <nav class="menu">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">About</a></li>
+        
+        <li><a href="#">Contact</a></li>
+    </ul>
 </nav>
+
+In this example, a <nav> block is used to contain an unordered list 
+(<ul>) of links. With appropriate CSS, this can be presented as a sidebar, navigation bar, or drop-down menu.
+
 The semantics of the nav element is that of providing links. However a nav element doesn't have to contain a list, it can contain other kinds of content as well. In this navigation block, links are provided in prose:
 
 html
