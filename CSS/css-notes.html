@@ -2417,12 +2417,19 @@ a CSS property value. The max() function can be used either as a
 <length>, <frequency>, <angle>, <time>, <percentage>, <number>, 
 or <integer> is allowed.
 
-    The max() function takes one or more comma-separated expressions as its parameter, with the largest (most positive) expression value used as the value of the property to which it is assigned.
+The max() function takes one or more comma-separated expressions 
+as its parameter, with the largest (most positive) expression 
+value used as the value of the property to which it is assigned.
 
 e.g
 width: max(20vw, 400px); 
 
-In the example shown above, the width will be at least 400px, but will be wider if the viewport is more than 2000px wide (in which case 1vw would be 20px, so 20vw would be 400px). This technique uses an absolute unit to specify a fixed minimum value for the property, and a relative unit to allow the value to grow to suit larger viewports.
+In the example shown above, the width will be at least 400px, 
+but will be wider if the viewport is more than 2000px wide 
+(in which case 1vw would be 20px, so 20vw would be 400px). 
+This technique uses an absolute unit to specify a fixed minimum 
+value for the property, and a relative unit to allow the value 
+to grow to suit larger viewports.
 
 
 6. aspect-ratio
