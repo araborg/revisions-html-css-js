@@ -3050,13 +3050,6 @@ scroll-behavior: smooth;
 
 
 30. prefers-reduced-motion:
-
-The @media at-rule has a media feature called 
-prefers-reduced-motion to set CSS based on the user's 
-preferences. It can take one of the following values:
-reduce
-no-preference
-
 The prefers-reduced-motion CSS media feature is used to detect if a 
 user has enabled a setting on their device to minimize the amount of 
 non-essential motion. The setting is used to convey to the browser 
@@ -3066,6 +3059,14 @@ or replaces motion-based animations.
 Such animations can trigger discomfort for those with vestibular motion 
 disorders. Animations such as scaling or panning large objects can be 
 vestibular motion triggers.
+
+The @media at-rule has a media feature called 
+prefers-reduced-motion to set CSS based on the user's 
+preferences. 
+
+It can take one of the following values:
+reduce
+no-preference
 
 no-preference:
 Indicates that a user has made no preference known on the device. This 
