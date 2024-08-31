@@ -2990,6 +2990,15 @@ The address element does not have to contain a physical
 geographical location. It can be used to provide a link to the 
 subject. 
 
+The <address> HTML element indicates that the enclosed HTML 
+provides contact information for a person or people, or for 
+an organization.
+
+<address> can be used in a variety of contexts, such as providing 
+a business's contact information in the page header, or indicating 
+the author of an article by including an <address> element within 
+the <article>.
+
 
 23. br tag
 The br tag will allow each part of the address to be on its own 
@@ -3001,10 +3010,22 @@ On the topic of visual accessibility, contrast between elements
 is a key factor. For example, the contrast between the text and 
 the background of a heading should be at least 4.5:1.
 
+
 25.
+The <li> HTML element is used to represent an item in a list. It 
+must be contained in a parent element: an ordered list (<ol>), an 
+unordered list (<ul>), or a menu (<menu>).
+
 li:
     display: list-item;
 
+Eg:
+<div class="fake-list">I will display as a list item</div>
+
+.fake-list {
+    display: list-item;
+    list-style-position: inside;
+}
 
 
 26.
