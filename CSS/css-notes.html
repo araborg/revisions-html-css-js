@@ -2876,6 +2876,21 @@ Note: The value attribute cannot be used with <input type="file">.
 
 
 20. pseudo elemt
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s).
+
+selector::pseudo-element {
+    property: value;
+}
+
+For example, ::first-line can be used to change the font of the first line of a paragraph.
+
+/* The first line of every <p> element. */
+p::first-line {
+  color: blue;
+  text-transform: uppercase;
+}
+
+
 To prevent unnecessary repetition, target the before 
 pseudo-element of the p element, and give it a content 
 property of "Question #".
