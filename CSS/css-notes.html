@@ -2474,15 +2474,15 @@ as its parameter, with the smallest expression value result used
 as the value.
 
 e.g:
-width: min(50vw, 300px); 
+width: min(50vw, 200px); 
     
-In the above example, the width will be at most 300px, but will 
+In the above example, the width will be at most 200px, but will 
 be smaller if the viewport is less than 400px wide (in which 
 case 1vw would be 4px, so 50vw would be 200px). 
 
-This technique uses an absolute unit(300px) to specify a fixed 
-maximum value for the property, and a relative unit to allow 
-the value to shrink to suit smaller viewports.
+This technique uses an absolute unit(200px) to specify a fixed 
+maximum value for the property, and a relative unit (50vw) to 
+allow the value to shrink to suit smaller viewports.
     
 max()
 CSS has a max function which returns the largest of a set of 
