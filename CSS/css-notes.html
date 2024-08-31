@@ -2432,7 +2432,7 @@ value for the property, and a relative unit to allow the value
 to grow to suit larger viewports.
 
 
-6. aspect-ratio
+6. aspect-ratio:
 The aspect-ratio CSS property allows you to define the desired 
 width-to-height ratio of an element's box. This means that even 
 if the parent container or viewport size changes, the browser 
@@ -2535,7 +2535,7 @@ direct child of the first selector.
 li > a {}
 
 
-9. <section>: The Generic Section element
+9. <section>: The Generic Section element:
 The <section> HTML element represents a generic standalone 
 section of a document, which doesn't have a more specific 
 semantic element to represent it. 
@@ -2594,7 +2594,7 @@ e.g:
 </section>
 
 
-11. aria attributes
+11. aria attributes:
 Accessible Rich Internet Applications (ARIA) is a set of roles 
 and attributes that define ways to make web content and web 
 applications (especially those developed with JavaScript) more 
@@ -2627,14 +2627,14 @@ incorrectly, it can do more harm than good.
 Here's the markup for a progress bar widget:
 
 <div
-  id="percent-loaded"
+    id="percent-loaded"
 
-  role="progressbar"
+    role="progressbar"
 
-  aria-valuenow="75"
+    aria-valuenow="75"
 
-  aria-valuemin="0"
-  aria-valuemax="100">
+    aria-valuemin="0"
+    aria-valuemax="100">
 </div>
 
 This progress bar is built using a <div>, which has no meaning. 
@@ -2691,7 +2691,7 @@ Note: HTML landmark elements (<main>, <header>, <nav>, etc.) have
 built-in implicit ARIA roles, so there is no need to duplicate them.
 
 
-11. aria-labelledby:
+12. aria-labelledby:
 The aria-labelledby attribute identifies the element (or elements) 
 that labels the element it is applied to.
 
@@ -2707,62 +2707,6 @@ to each of these regions, so they won’t be able to tell which one they
 are on. By adding an accessible name with aria-labelledby they will 
 hear the name of the region as well, so now they will know which 
 region they are currently on.
-
-
-12. Typeface: 
-Typeface plays an important role in the accessibility of a page. 
-Some fonts are easier to read than others, and this is especially 
-true on low-resolution screens.
-
-Choosing the right font has a huge impact on how the readers 
-experience a website.
-
-The right font can create a strong identity for your brand.
-
-Using a font that is easy to read is important. The font adds 
-value to your text. It is also important to choose the correct 
-color and text size for the font.
-
-
-In CSS there are five generic font families:
-a. Serif fonts have a small stroke at the edges of each letter. They 
-create a sense of formality and elegance.
-
-b. Sans-serif fonts have clean lines (no small strokes attached). They 
-create a modern and minimalistic look.
-
-c. Monospace fonts - here all the letters have the same fixed width. 
-They create a mechanical look. 
-
-d. Cursive fonts imitate human handwriting.
-
-e. Fantasy fonts are decorative/playful fonts.
-
-All the different font names belong to one of the generic font 
-families. 
-
-Serif e.g:
-Times New Roman
-Georgia
-Garamond
-
-Sans-serif e.g:
-Arial
-Verdana
-Helvetica
-
-Monospace e.g:
-Courier New
-Lucida Console
-Monaco
-
-Cursive e.g:
-Brush Script MT
-Lucida Handwriting
-
-Fantasy e.g:
-Copperplate
-Papyrus
 
 
 13. Linking d nav items with a section of d pg:
