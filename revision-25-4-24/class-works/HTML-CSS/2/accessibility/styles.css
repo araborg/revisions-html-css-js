@@ -1,8 +1,15 @@
 @media (prefers-reduced-motion: no-preference) {
     * {
-        scroll-behavior: reduce;
+        scroll-behavior: smooth;
     }
 }
+
+/* @media (prefers-reduced-motion: reduce) {
+    * {
+        scroll-behavior: smooth;
+        
+    }
+} */
 
 body {
     background: #f5f6f7;
