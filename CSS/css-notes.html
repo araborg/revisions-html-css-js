@@ -2473,10 +2473,6 @@ The min() function takes one or more comma-separated expressions
 as its parameter, with the smallest (most negative) expression 
 value result used as the value.
 
-The min() function can be used anywhere either as a <length>, 
-<frequency>, <angle>, <time>, <percentage>, <number>, or 
-<integer> is allowed.
-
 e.g:
 width: min(50vw, 200px); 
     
@@ -2494,9 +2490,7 @@ comma-separated values.
 
 The max() CSS function lets you set the largest (most positive) 
 value from a list of comma-separated expressions as the value of 
-a CSS property value. The max() function can be used either as a 
-<length>, <frequency>, <angle>, <time>, <percentage>, <number>, 
-or <integer> is allowed.
+a CSS property value. 
 
 The max() function takes one or more comma-separated expressions 
 as its parameter, with the largest (most positive) expression 
@@ -2511,6 +2505,21 @@ but will be wider if the viewport is more than 2000px wide
 This technique uses an absolute unit to specify a fixed minimum 
 value for the property, and a relative unit to allow the value 
 to grow to suit larger viewports.
+
+
+For example:
+
+img {
+    width: max(250px, 25vw);
+}
+
+In this example, img elements will have a minimum width of 250px. 
+And as the viewport grows, the image will grow accordingly to be 
+25 percent of the viewport width.
+
+The min() and max() function can be used either as a <length>, 
+<frequency>, <angle>, <time>, <percentage>, <number>, or <integer> 
+is allowed.
 
 
 6. aspect-ratio:
