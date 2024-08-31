@@ -3177,8 +3177,8 @@ Values:
 auto: The scrolling box scrolls instantly.
 
 smooth: The scrolling box scrolls in a smooth fashion using a 
-user-agent-defined easing function over a user-agent-defined period of 
-time. User agents should follow platform conventions, if any.
+user-agent-defined easing function over a user-agent-defined period 
+of time. User agents should follow platform conventions, if any.
 
 scroll-behavior: smooth;
 
@@ -3209,6 +3209,13 @@ keyword value evaluates as false.
 reduce:
 Indicates that a user has enabled the setting on their device for reduced 
 motion. This keyword value evaluates as true.
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
 
 
 31. accesskey attribute:
