@@ -48,4 +48,6 @@ nav {
 nav > ul {
     display: flex;
     /* justify-content: space-evenly; */
+
+    padding-inline-start: 0;
 }
