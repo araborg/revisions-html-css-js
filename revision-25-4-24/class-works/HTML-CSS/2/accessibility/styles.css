@@ -44,3 +44,8 @@ nav {
 
     border: 2px solid green;
 }
+
+nav > ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
