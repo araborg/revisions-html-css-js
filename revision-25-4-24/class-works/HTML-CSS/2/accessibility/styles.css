@@ -57,3 +57,7 @@ nav > ul {
 
     flex-wrap: wrap;
 }
+
+nav > ul > li {
+    color: #dfdfe2;
+}
