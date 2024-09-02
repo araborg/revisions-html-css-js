@@ -18,3 +18,7 @@ header {
     position: fixed;
     top: 0;
 }
+
+#logo {
+    width: max(100px, 18vw);
+}
