@@ -36,3 +36,10 @@ h1 {
 
     border: 2px solid white;
 }
+
+nav {
+    width: 50%;
+    height: 50px;
+
+    border: 2px solid green;
+}
