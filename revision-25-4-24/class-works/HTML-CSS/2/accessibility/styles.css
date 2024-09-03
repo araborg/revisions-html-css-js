@@ -12,4 +12,21 @@ header {
 
     width: 100%;
     height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    background-color: #0a0a23;
+
+    width: max(100px, 18vw);
+
+    aspect-ratio: 35 / 4;
+
+    padding: 0.4rem;
 }
