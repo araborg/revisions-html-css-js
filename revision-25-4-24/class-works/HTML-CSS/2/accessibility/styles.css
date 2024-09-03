@@ -28,10 +28,14 @@ header {
 }
 
 nav {
-    width: 50%;
     border: 2px solid green;
+    width: 50%;
+    max-width: 300px;
+
+    color: #dfdfe2;
 }
 
 nav ul {
     display: flex;
+    justify-content: space-evenly;
 }
