@@ -38,4 +38,8 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-evenly;
+
+    margin-block: 0;
+
+    padding-inline-start: 0;
 }
