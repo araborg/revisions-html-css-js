@@ -30,6 +30,8 @@ header {
 nav {
     border: 2px solid green;
     width: 50%;
+    height: 50px;
+
     max-width: 300px;
 
     color: #dfdfe2;
@@ -42,4 +44,6 @@ nav ul {
     margin-block: 0;
 
     padding-inline-start: 0;
+
+    height: 100%;
 }
