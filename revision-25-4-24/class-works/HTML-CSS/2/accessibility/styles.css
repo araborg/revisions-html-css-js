@@ -171,8 +171,6 @@ input {
 }
 
 p {
-    border: 2px solid green;
-
     margin-top: 5px;
     padding-left: 15px;
     font-size: 20px;
@@ -186,4 +184,11 @@ p::before {
     border: none;
 
     padding-bottom: 0;
+}
+
+.answers-list {
+    border: 2px solid green;
+
+    list-style: none;
+    padding: 0;
 }
