@@ -211,3 +211,7 @@ footer,
 footer a {
     color: #dfdfe2;
 }
+
+address {
+    text-align: center;
+}
