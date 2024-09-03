@@ -9,6 +9,8 @@ body {
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     background-color: #1b1b32;
 
