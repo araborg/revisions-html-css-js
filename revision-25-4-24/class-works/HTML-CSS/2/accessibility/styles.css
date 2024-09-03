@@ -77,8 +77,6 @@ nav > ul > li {
     padding: 0.2rem;
 
     display: block;
-
-    /* border: 2px solid green; */
 }
 
 nav > ul > li:hover {
@@ -112,4 +110,32 @@ h2 {
 
 h2 {
     border-bottom: 4px solid #dfdfe2;
+
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.info {
+    border: 2px solid green;
+
+    padding: 10px 0 0 5px;
+}
+
+.info label,
+.info input {
+    display: inline-block;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+input {
+    font-size: 16px;
 }
