@@ -56,3 +56,12 @@ li a {
 
     border: 2px solid green;
 }
+
+h1 {
+    color: #f1be32;
+}
+
+h1,
+h2 {
+    font-family: Verdana, Tahoma;
+}
