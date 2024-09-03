@@ -187,8 +187,6 @@ p::before {
 }
 
 .answers-list {
-    border: 2px solid green;
-
     list-style: none;
     padding: 0;
 }
@@ -207,6 +205,10 @@ button {
     border: 3px solid #3b3b4f;
 }
 
+footer {
+    background-color: #2a2a40;
+}
+
 footer,
 footer a {
     color: #dfdfe2;
@@ -214,4 +216,7 @@ footer a {
 
 address {
     text-align: center;
+    padding: 0.3em;
+
+    border: 2px solid green;
 }
