@@ -61,6 +61,20 @@ nav > ul {
 
 nav > ul > li {
     color: #dfdfe2;
+
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+
+    display: block;
+
+    /* border: 2px solid green; */
+}
+
+nav > ul > li:hover {
+    color: #1b1b32;
+
+    background-color: #dfdfe2;
+    cursor: pointer;
 }
 
 li > a {
