@@ -1,3 +1,14 @@
+/* 
+    Y were these used:
+    text-align: center;
+
+    padding-inline-start: 0;
+    margin-block: 0;
+
+    display: block;
+
+*/
+
 body {
     background: #f5f6f7;
     color: #1b1b32;
@@ -58,17 +69,6 @@ nav > ul {
 
     height: 100%;
 }
-
-/* 
-    Y were these used:
-    text-align: center;
-
-    padding-inline-start: 0;
-    margin-block: 0;
-
-    display: block;
-
-*/
 
 nav > ul > li {
     color: #dfdfe2;
