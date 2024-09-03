@@ -120,8 +120,6 @@ input {
 }
 
 .info {
-    border: 2px solid green;
-
     padding: 10px 0 0 5px;
 }
 
@@ -160,4 +158,8 @@ input {
 .formrow {
     margin-top: 30px;
     padding: 0 15px;
+}
+
+.question-block {
+    border: 2px solid green;
 }
