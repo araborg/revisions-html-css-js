@@ -206,3 +206,8 @@ button {
     background: #d0d0d5;
     border: 3px solid #3b3b4f;
 }
+
+footer,
+footer a {
+    color: #dfdfe2;
+}
