@@ -38,12 +38,18 @@ nav {
 }
 
 nav ul {
+    list-style: none;
+
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     margin-block: 0;
 
     padding-inline-start: 0;
 
     height: 100%;
+}
+
+li a {
 }
