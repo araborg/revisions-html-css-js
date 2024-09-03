@@ -28,3 +28,9 @@ header {
 
     /* border: 2px solid green; */
 }
+
+nav ul {
+    width: 50%;
+
+    display: flex;
+}
