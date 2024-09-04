@@ -108,7 +108,7 @@
                     <fieldset>
                         <legend class="question">
                             The legend element represents a caption for the
-                            content of its parent fieldset element
+                            content of its parent fieldset element.
                         </legend>
 
                         <ul>
@@ -141,7 +141,27 @@
                     </fieldset>
                 </div>
 
-                <div></div>
+                <div>
+                    <p>2</p>
+
+                    <fieldset>
+                        <legend>
+                            A label element nesting an input element is required
+                            to have a for attribute with the same value as the
+                            input's id.
+                        </legend>
+
+                        <ul>
+                            <li>
+                                <label for="">
+                                    <input type="radio" />
+
+                                    True
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
 
             <section role="region" aria-labelledby="css-questions">
