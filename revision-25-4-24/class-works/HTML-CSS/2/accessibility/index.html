@@ -102,14 +102,44 @@
             <section role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">HTML</h2>
 
-                <fieldset>
+                <div class="questions">
                     <p>1</p>
 
-                    <legend>
-                        The legend element represents a caption for the content
-                        of its parent fieldset element
-                    </legend>
-                </fieldset>
+                    <fieldset>
+                        <legend class="question">
+                            The legend element represents a caption for the
+                            content of its parent fieldset element
+                        </legend>
+
+                        <ul>
+                            <li>
+                                <label for="q1-a1">
+                                    <input
+                                        type="radio"
+                                        id="q1-a1"
+                                        name="q1-a1"
+                                        value="true"
+                                    />
+
+                                    True
+                                </label>
+                            </li>
+
+                            <li>
+                                <label for="q1-2">
+                                    <input
+                                        type="radio"
+                                        id="q1-a1"
+                                        name="q1-a1"
+                                        value="false"
+                                    />
+
+                                    False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
 
             <section role="region" aria-labelledby="css-questions">
