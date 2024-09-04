@@ -57,118 +57,125 @@
         </header>
 
         <main>
-            <section role="region" aria-labelledby="student-info">
-                <h2 id="student-info">Student Info</h2>
+            <form action="" method="">
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info">Student Info</h2>
 
-                <div class="info">
-                    <label for="student-name">
-                        Name:
-                        <input
-                            type="text"
-                            id="student-name"
-                            name="student-name"
-                            required
-                        />
-                    </label>
-                </div>
+                    <div class="info">
+                        <label for="student-name">
+                            Name:
+                            <input
+                                type="text"
+                                id="student-name"
+                                name="student-name"
+                                required
+                            />
+                        </label>
+                    </div>
 
-                <div class="info">
-                    <label for="student-email">
-                        Email:
-                        <input
-                            type="email"
-                            id="student-email"
-                            name="student-email"
-                            required
-                        />
-                    </label>
-                </div>
+                    <div class="info">
+                        <label for="student-email">
+                            Email:
+                            <input
+                                type="email"
+                                id="student-email"
+                                name="student-email"
+                                required
+                            />
+                        </label>
+                    </div>
 
-                <div class="info">
-                    <label for="birth-date">
-                        D.O.B
-                        <span class="sr-only">(Date of Birth)</span>
+                    <div class="info">
+                        <label for="birth-date">
+                            D.O.B
+                            <span class="sr-only">(Date of Birth)</span>
 
-                        <input
-                            type="date"
-                            id="birth-date"
-                            name="birth-date"
-                            required
-                        />
-                    </label>
-                </div>
-            </section>
+                            <input
+                                type="date"
+                                id="birth-date"
+                                name="birth-date"
+                                required
+                            />
+                        </label>
+                    </div>
+                </section>
 
-            <section role="region" aria-labelledby="html-questions">
-                <h2 id="html-questions">HTML</h2>
+                <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions">HTML</h2>
 
-                <div>
-                    <p>1</p>
+                    <div>
+                        <p>1</p>
 
-                    <fieldset>
-                        <legend class="question">
-                            The legend element represents a caption for the
-                            content of its parent fieldset element.
-                        </legend>
+                        <fieldset>
+                            <legend class="question">
+                                The legend element represents a caption for the
+                                content of its parent fieldset element.
+                            </legend>
 
-                        <ul>
-                            <li>
-                                <label for="q1-a1">
-                                    <input
-                                        type="radio"
-                                        id="q1-a1"
-                                        name="q1-a1"
-                                        value="true"
-                                    />
+                            <ul>
+                                <li>
+                                    <label for="q1-a1">
+                                        <input
+                                            type="radio"
+                                            id="q1-a1"
+                                            name="q1-a1"
+                                            value="true"
+                                        />
 
-                                    True
-                                </label>
-                            </li>
+                                        True
+                                    </label>
+                                </li>
 
-                            <li>
-                                <label for="q1-2">
-                                    <input
-                                        type="radio"
-                                        id="q1-a1"
-                                        name="q1-a1"
-                                        value="false"
-                                    />
+                                <li>
+                                    <label for="q1-2">
+                                        <input
+                                            type="radio"
+                                            id="q1-a1"
+                                            name="q1-a1"
+                                            value="false"
+                                        />
 
-                                    False
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
+                                        False
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
 
-                <div>
-                    <p>2</p>
+                    <div>
+                        <p>2</p>
 
-                    <fieldset>
-                        <legend>
-                            A label element nesting an input element is required
-                            to have a for attribute with the same value as the
-                            input's id.
-                        </legend>
+                        <fieldset>
+                            <legend>
+                                A label element nesting an input element is
+                                required to have a for attribute with the same
+                                value as the input's id.
+                            </legend>
 
-                        <ul>
-                            <li>
-                                <label for="">
-                                    <input type="radio" />
+                            <ul>
+                                <li>
+                                    <label for="q2-a1">
+                                        <input
+                                            type="radio"
+                                            id="q2-a1"
+                                            name="q2-a1"
+                                            required
+                                        />
 
-                                    True
-                                </label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
-            </section>
+                                        True
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
 
-            <section role="region" aria-labelledby="css-questions">
-                <h2 id="css-questions">CSS</h2>
-            </section>
+                <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions">CSS</h2>
+                </section>
 
-            <button type="submit">Send</button>
+                <button type="submit">Send</button>
+            </form>
         </main>
 
         <footer></footer>
