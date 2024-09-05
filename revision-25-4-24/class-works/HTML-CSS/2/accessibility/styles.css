@@ -37,3 +37,8 @@ h1,
 h2 {
     font-family: Verdana, Tahoma;
 }
+
+nav {
+    width: 50%;
+    max-width: 300px;
+}
