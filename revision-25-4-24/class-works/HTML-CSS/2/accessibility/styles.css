@@ -36,11 +36,15 @@ h1 {
     color: #f1be32;
 
     font-size: 1.2rem;
+    align-items: center;
 }
 
 h1,
 h2 {
     font-family: Verdana, Tahoma;
+
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -80,9 +84,11 @@ li a {
 
 /* main */
 main {
-    border: 2px solid red;
-
     padding-top: 60px;
+}
+
+h2 {
+    margin-top: 50px;
 }
 
 section {
@@ -90,6 +96,8 @@ section {
     max-width: 600px;
 
     margin: 0 auto;
+
+    border: 2px solid red;
 }
 
 /* footer */
