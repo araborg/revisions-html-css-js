@@ -58,9 +58,14 @@ nav ul {
     /* border: 2px solid red; */
 }
 
-li {
+nav li {
     list-style: none;
     padding: 0;
+
+    display: block;
+}
+
+nav li:hover {
 }
 
 li a {
