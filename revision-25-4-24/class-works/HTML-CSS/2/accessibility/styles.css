@@ -7,7 +7,6 @@ body {
 }
 
 /* header */
-
 .header {
     display: flex;
     align-items: center;
@@ -80,7 +79,18 @@ li a {
 }
 
 /* main */
+main {
+    border: 2px solid red;
 
+    padding-top: 60px;
+}
+
+section {
+    width: 80%;
+    max-width: 600px;
+
+    margin: 0 auto;
+}
 
 /* footer */
 /* 
@@ -93,6 +103,5 @@ li a {
     #f5f6f7
     #2a2a40
 
-        /* border: 2px solid red; */
 
 */
