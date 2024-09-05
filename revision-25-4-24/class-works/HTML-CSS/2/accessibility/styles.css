@@ -66,6 +66,8 @@ nav li {
 }
 
 nav li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
 }
 
 li a {
