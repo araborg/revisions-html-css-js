@@ -44,10 +44,16 @@ nav {
     max-width: 300px;
 
     color: #dfdfe2;
+
+    border: 2px solid red;
 }
 
 ul {
     display: flex;
+    justify-content: space-between;
+
+    padding-inline-start: 0;
+    margin-block: 0;
 }
 
 /* 
