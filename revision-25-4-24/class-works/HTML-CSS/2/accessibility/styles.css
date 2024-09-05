@@ -8,6 +8,8 @@ body {
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     height: 50px;
 
@@ -23,4 +25,15 @@ body {
 
     margin: 0.4rem 0;
     padding: 0 0.4rem;
+}
+
+h1 {
+    color: #f1be32;
+
+    font-size: 1.2rem;
+}
+
+h1,
+h2 {
+    font-family: Verdana, Tahoma;
 }
