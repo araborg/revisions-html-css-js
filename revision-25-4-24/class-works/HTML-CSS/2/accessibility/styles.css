@@ -5,3 +5,16 @@ body {
     font-family: Helvetica;
     margin: 0;
 }
+
+.header {
+}
+
+#logo {
+    background-color: #0a0a23;
+
+    aspect-ratio: 34 / 5;
+
+    width: max(100px, 18vw);
+
+    /* width: 100%; */
+}
