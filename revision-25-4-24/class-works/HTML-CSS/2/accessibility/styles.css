@@ -42,6 +42,12 @@ h2 {
 nav {
     width: 50%;
     max-width: 300px;
+
+    color: #dfdfe2;
+}
+
+ul {
+    display: flex;
 }
 
 /* 
