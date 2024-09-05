@@ -7,6 +7,11 @@ body {
 }
 
 .header {
+    display: flex;
+
+    height: 50px;
+
+    background-color: #1b1b32;
 }
 
 #logo {
@@ -15,6 +20,9 @@ body {
     aspect-ratio: 34 / 5;
 
     width: max(100px, 18vw);
+
+    margin: 0.4rem 0;
+    padding: 0 0.4rem;
 
     /* width: 100%; */
 }
