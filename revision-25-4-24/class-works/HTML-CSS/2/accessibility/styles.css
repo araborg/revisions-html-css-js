@@ -6,6 +6,8 @@ body {
     margin: 0;
 }
 
+/* header */
+
 .header {
     display: flex;
     align-items: center;
@@ -15,6 +17,9 @@ body {
     width: 100%;
 
     background-color: #1b1b32;
+
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -55,7 +60,6 @@ nav ul {
     margin-block: 0;
 
     height: 50px;
-    /* border: 2px solid red; */
 }
 
 nav li {
@@ -75,6 +79,10 @@ li a {
     text-decoration: none;
 }
 
+/* main */
+
+
+/* footer */
 /* 
     #1b1b32;
     #0a0a23;
@@ -84,4 +92,7 @@ li a {
     #3b3b4f
     #f5f6f7
     #2a2a40
+
+        /* border: 2px solid red; */
+
 */
