@@ -11,16 +11,19 @@ Your img element should be centered within its parent element
 */
 
 body {
-    margin: 0;
+    margin: 2rem 0.5rem;
 
     background-color: #fdfdfd;
-    padding: 1.8rem 0.5rem;
+    padding: 0.8rem 0.5rem;
+
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 #main {
     background-color: #f1f1f1;
+    padding: 15px;
 
-    padding: 3rem 0.8rem 2rem;
+    border-radius: 5px;
 }
 
 header {
@@ -31,11 +34,23 @@ header {
     text-align: center;
 }
 
+#title {
+    font-size: 2.5rem;
+
+    /* margin: 2rem 0; */
+    /* padding: 3rem 0 1rem; */
+    /* margin: 0; */
+}
+
+p {
+    /* margin: 0; */
+    /* margin-bottom: 1.2rem; */
+}
+
 #img-block {
     background-color: #fdfdfd;
 
     /* width: 100%; */
-    /* border: 2px solid green; */
     /* padding: 1rem 0; */
 
     /* padding: 0; */
@@ -70,8 +85,6 @@ header {
 }
 
 #img-caption {
-    /* display: block; */
-    /* margin: 1rem 0; */
-
-    /* text-align: center; */
+    padding: 1rem 0;
+    text-align: center;
 }
