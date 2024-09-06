@@ -122,12 +122,26 @@ section {
 .sr-only {
     position: absolute;
 
-    /* border: 2px solid red; */
     width: 1px;
     height: 1px;
 
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
+}
+
+.question-block {
+    margin: 30px 20px;
+    border: 2px solid red;
+}
+
+p::before {
+    content: "Question #";
+}
+
+fieldset {
+    border: none;
+
+    padding: 0;
 }
 
 /* footer */
