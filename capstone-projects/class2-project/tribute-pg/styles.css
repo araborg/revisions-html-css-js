@@ -9,3 +9,13 @@ Your img element should be centered within its parent element
 
 
 */
+
+body {
+    margin: 0;
+
+    background-color: #f4f5f6;
+}
+
+#main {
+    background-color: #f4f5f6;
+}
