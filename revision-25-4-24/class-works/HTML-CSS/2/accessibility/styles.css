@@ -101,16 +101,20 @@ section {
 }
 
 .info {
-    border: 2px solid red;
     margin: 10px 0 15px 15px;
 }
 
 .info label {
+    border: 2px solid red;
     text-align: right;
+
+    display: inline-block;
+    width: 50px;
 }
 
 .info input {
     text-align: left;
+    /* width: 200px; */
 }
 
 /* footer */
