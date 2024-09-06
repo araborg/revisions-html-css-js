@@ -84,11 +84,13 @@ li a {
 
 /* main */
 main {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 h2 {
-    margin-top: 50px;
+    /* margin: 80px 0 30px; */
+
+    padding-top: 60px;
 
     border-bottom: 4px solid #dfdfe2;
 }
@@ -101,20 +103,21 @@ section {
 }
 
 .info {
-    margin: 10px 0 15px 15px;
+    margin: 10px 0 0 10px;
+    /* border: 2px solid red; */
 }
 
 .info label {
-    border: 2px solid red;
     text-align: right;
 
     display: inline-block;
-    width: 50px;
+    width: 55px;
 }
 
 .info input {
-    text-align: left;
-    /* width: 200px; */
+    font-size: 16px;
+    /* text-align: left; */
+    width: 50%;
 }
 
 /* footer */
