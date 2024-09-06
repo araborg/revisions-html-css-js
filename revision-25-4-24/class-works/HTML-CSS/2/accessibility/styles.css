@@ -43,8 +43,8 @@ h1,
 h2 {
     font-family: Verdana, Tahoma;
 
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
 nav {
@@ -89,6 +89,8 @@ main {
 
 h2 {
     margin-top: 50px;
+
+    border-bottom: 4px solid #dfdfe2;
 }
 
 section {
@@ -96,8 +98,19 @@ section {
     max-width: 600px;
 
     margin: 0 auto;
+}
 
+.info {
     border: 2px solid red;
+    margin: 10px 0 15px 15px;
+}
+
+.info label {
+    text-align: right;
+}
+
+.info input {
+    text-align: left;
 }
 
 /* footer */
