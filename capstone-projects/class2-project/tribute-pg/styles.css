@@ -27,18 +27,25 @@ header {
     margin-bottom: 4rem;
 }
 
-#img-div {
-    /* border: 2px solid green; */
-    margin: 0;
-
+#img-block {
     background-color: #fdfdfd;
 }
 
-#image {
+#img-div {
+    /* margin: 0; */
     width: 80%;
+    margin: 0 auto;
+}
+
+#image {
     /* max-width: 1200px; */
 
-    margin: 0 auto;
-
     height: 100%;
+
+    padding: 0.8rem 0;
+}
+
+#img-caption {
+    border: 2px solid green;
+    margin: 1rem 0;
 }
