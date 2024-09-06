@@ -160,7 +160,7 @@ fieldset li {
 .form-row {
     /* margin: 20px 0 0 15px; */
     /* border: 2px solid red; */
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 /* CSS */
@@ -188,6 +188,23 @@ button {
 }
 
 /* footer */
+
+footer {
+    background-color: #0a0a23;
+
+    color: #f5f6f7;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 10px;
+}
+
+footer a {
+    color: inherit;
+}
 /* 
     #1b1b32;
     #0a0a23;
