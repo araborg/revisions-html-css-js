@@ -43,7 +43,7 @@ h1,
 h2 {
     font-family: Verdana, Tahoma;
 
-    /* margin: 0; */
+    margin-top: 0;
     /* padding: 0; */
 }
 
@@ -84,7 +84,7 @@ li a {
 
 /* main */
 main {
-    padding-top: 40px;
+    margin-top: 50px;
 }
 
 h2 {
