@@ -13,9 +13,20 @@ Your img element should be centered within its parent element
 body {
     margin: 0;
 
-    background-color: #f4f5f6;
+    background-color: #fdfdfd;
+    padding: 1.6rem 0.5rem;
 }
 
 #main {
-    background-color: #f4f5f6;
+    background-color: #f1f1f1;
+
+    padding: 3rem 0.5rem 2rem;
+}
+
+#img-div {
+    border: 2px solid green;
+    margin: 0;
+}
+
+#image {
 }
