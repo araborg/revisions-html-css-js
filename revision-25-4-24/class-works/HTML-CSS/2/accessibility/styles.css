@@ -131,7 +131,8 @@ section {
 }
 
 .question-block {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin: 30px 0 0 15px;
 
     /* border: 2px solid red; */
 }
@@ -144,9 +145,8 @@ fieldset {
     border: none;
 
     padding: 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     margin: 0;
-    /* border: 2px solid red; */
 }
 
 fieldset ul {
@@ -159,6 +159,14 @@ fieldset li {
     margin: 0;
 }
 
+.form-row {
+    /* border: 2px solid red; */
+    /* margin: 20px 0 0 15px; */
+}
+
+.answer {
+    margin-left: 15px;
+}
 /* CSS */
 
 /* footer */
