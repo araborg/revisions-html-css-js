@@ -130,8 +130,9 @@ section {
 }
 
 .question-block {
-    margin: 30px 20px;
-    border: 2px solid red;
+    margin-top: 30px;
+
+    /* border: 2px solid red; */
 }
 
 p::before {
@@ -142,6 +143,19 @@ fieldset {
     border: none;
 
     padding: 0;
+    padding-left: 10px;
+    margin: 0;
+    /* border: 2px solid red; */
+}
+
+fieldset ul {
+    list-style: none;
+    padding: 0;
+}
+
+fieldset li {
+    padding: 0;
+    margin: 0;
 }
 
 /* footer */
