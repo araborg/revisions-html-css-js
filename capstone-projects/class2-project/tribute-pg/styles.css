@@ -29,6 +29,8 @@ header {
 
 #img-block {
     background-color: #fdfdfd;
+
+    padding: 1rem 0;
 }
 
 #img-div {
@@ -46,6 +48,11 @@ header {
 }
 
 #img-caption {
-    border: 2px solid green;
-    margin: 1rem 0;
+    /* display: block; */
+    /* border: 2px solid green; */
+    /* margin: 1rem 0; */
+
+    text-align: center;
+
+    /* background-color: red; */
 }
