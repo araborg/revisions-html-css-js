@@ -20,13 +20,25 @@ body {
 #main {
     background-color: #f1f1f1;
 
-    padding: 3rem 0.5rem 2rem;
+    padding: 3rem 0.8rem 2rem;
+}
+
+header {
+    margin-bottom: 4rem;
 }
 
 #img-div {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 0;
+
+    background-color: #fdfdfd;
 }
 
 #image {
+    width: 80%;
+    /* max-width: 1200px; */
+
+    margin: 0 auto;
+
+    height: 100%;
 }
