@@ -37,6 +37,8 @@ h1 {
 
     font-size: 1.2rem;
     align-items: center;
+
+    margin: 0;
 }
 
 h1,
@@ -157,11 +159,7 @@ fieldset li {
     margin: 0;
 }
 
-.form-row {
-    /* margin: 20px 0 0 15px; */
-    /* border: 2px solid red; */
-    /* padding: 5px; */
-}
+/* .form-row {} */
 
 /* CSS */
 .answer {
@@ -188,7 +186,6 @@ button {
 }
 
 /* footer */
-
 footer {
     background-color: #0a0a23;
 
