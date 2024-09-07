@@ -101,6 +101,10 @@ p {
     text-align: center;
 }
 
+.tribute-info-with-date li {
+    margin-bottom: 2rem;
+}
+
 blockquote {
     font-style: italic;
 
