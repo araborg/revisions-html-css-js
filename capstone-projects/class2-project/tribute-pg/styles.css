@@ -89,6 +89,12 @@ p {
     text-align: center;
 }
 
+#tribute-info {
+    width: 50%;
+
+    margin: 0 auto;
+}
+
 .tribute-info-heading {
     margin: 2rem 0;
 
