@@ -88,3 +88,9 @@ p {
     padding: 1rem 0;
     text-align: center;
 }
+
+.tribute-info-heading {
+    margin: 2rem 0;
+
+    border: 2px solid green;
+}
