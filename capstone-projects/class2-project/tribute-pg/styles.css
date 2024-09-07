@@ -26,8 +26,6 @@ body {
     border-radius: 5px;
 
     margin: 1rem 0rem;
-
-    /* border: 2px solid green; */
 }
 
 header {
@@ -79,23 +77,23 @@ p {
 
 .tribute-info-with-date li {
     margin-bottom: 1.2rem;
-    padding: 0 2rem;
 
     line-height: 1.6;
 }
 
 .block {
-    width: 80%;
-    max-width: 700px;
+    width: 50%;
     margin: 0 auto;
-    /* border: red 1px solid; */
+
+    border: red 1px solid;
 }
 
 blockquote {
     font-style: italic;
 
-    padding: 0 4.5rem 0 0;
     margin-top: 2rem;
+
+    line-height: 1.6;
 }
 
 cite {
@@ -105,7 +103,6 @@ cite {
 }
 
 .info {
-    /* border: 2px solid green; */
     width: 80%;
     margin: 0 auto;
 
