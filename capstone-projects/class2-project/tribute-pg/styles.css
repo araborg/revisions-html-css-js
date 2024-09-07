@@ -88,7 +88,7 @@ p {
     width: 80%;
     max-width: 700px;
     margin: 0 auto;
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 
 blockquote {
@@ -105,7 +105,7 @@ cite {
 }
 
 .info {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 80%;
     margin: 0 auto;
 }
