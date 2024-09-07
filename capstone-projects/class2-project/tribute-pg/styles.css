@@ -49,14 +49,14 @@ body {
     width: 50%;
 
     margin: 0 auto;
-
-    border: 2px solid green;
 }
 
 .tribute-info-heading {
     margin: 2rem auto;
 
     text-align: center;
+
+    font-weight: 600;
 }
 
 .tribute-info-with-date {
@@ -74,15 +74,17 @@ li span {
 }
 
 .block {
-    width: 55%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 550px;
     margin: 0 auto;
+
+    border: 2px solid green;
 }
 
 blockquote {
     font-style: italic;
 
-    padding-right: 2rem;
+    /* padding-right: 2rem; */
     margin: 0;
 
     line-height: 1.6;
