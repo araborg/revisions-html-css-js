@@ -1,15 +1,3 @@
-/* 
-
-Your #image should use max-width and height properties to resize 
-responsively, relative to the width of its parent element, without 
-exceeding its original size
-
-Your img element should be centered within its parent element
-
-
-
-*/
-
 body {
     background-color: #fdfdfd;
     padding: 0.4rem 0rem;
@@ -81,14 +69,19 @@ p {
     line-height: 1.6;
 }
 
+li span {
+    font-weight: 600;
+}
+
 .block {
     width: 55%;
     max-width: 600px;
     margin: 0 auto;
 
-    text-align: left;
+    /* padding: 0 1rem; */
+    /* text-align: left; */
 
-    border: red 1px solid;
+    /* border: red 1px solid; */
 }
 
 blockquote {
@@ -96,9 +89,8 @@ blockquote {
 
     /* margin-top: 2rem; */
 
-    padding: 0;
+    padding-right: 2rem;
     margin: 0;
-    padding: 0 3rem 0 0;
 
     line-height: 1.6;
 }
