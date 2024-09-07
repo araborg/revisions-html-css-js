@@ -69,8 +69,6 @@ p {
     width: 50%;
 
     margin: 0 auto;
-
-    /* padding: 0 2rem; */
 }
 
 .tribute-info-heading {
@@ -98,13 +96,6 @@ blockquote {
 
     padding: 0 4.5rem 0 0;
     margin-top: 2rem;
-
-    /* margin-right: 2rem; */
-    /* margin: 2rem 0;  */
-    /* padding-right: 3rem; */
-
-    /* padding: 1rem; */
-    /* text-align: center; */
 }
 
 cite {
