@@ -16,18 +16,12 @@ body {
     margin: 1rem 0rem;
 }
 
-header {
-}
-
 .author-description {
     text-align: center;
 }
 
 #title {
     font-size: 2.5rem;
-}
-
-p {
 }
 
 #img-block {
@@ -77,17 +71,10 @@ li span {
     width: 55%;
     max-width: 600px;
     margin: 0 auto;
-
-    /* padding: 0 1rem; */
-    /* text-align: left; */
-
-    /* border: red 1px solid; */
 }
 
 blockquote {
     font-style: italic;
-
-    /* margin-top: 2rem; */
 
     padding-right: 2rem;
     margin: 0;
