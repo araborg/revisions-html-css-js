@@ -96,6 +96,8 @@ p {
     width: 50%;
 
     margin: 0 auto;
+
+    /* padding: 0 2rem; */
 }
 
 .tribute-info-heading {
@@ -116,10 +118,19 @@ blockquote {
 
     /* padding: 0 2rem; */
 
-    width: 50%;
-    /* margin: 2rem auto; */
+    width: 100%;
+    /* margin: 0 auto; */
+    /* margin: 0 2rem; */
+    /* padding: 0 1rem; */
+
+    /* padding: 1rem; */
+    /* text-align: center; */
 
     background-color: red;
+}
+
+cite {
+    display: block;
 }
 
 .info {
