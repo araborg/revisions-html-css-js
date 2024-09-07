@@ -12,7 +12,9 @@ Your img element should be centered within its parent element
 
 body {
     background-color: #fdfdfd;
-    /* padding: 0.4rem 0rem; */
+    padding: 0.4rem 0rem;
+
+    color: #333333;
 
     font-family: Verdana, Tahoma, sans-serif;
 }
@@ -92,7 +94,7 @@ p {
 }
 
 #tribute-info {
-    width: 46%;
+    width: 50%;
 
     margin: 0 auto;
 }
@@ -105,6 +107,7 @@ p {
 
 .tribute-info-with-date li {
     margin-bottom: 1.2rem;
+    padding: 0 2rem;
 
     line-height: 1.6;
 }
