@@ -87,3 +87,7 @@ section {
     /*       0 12px    24px   12px */
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
+
+span:not(.sr-only) {
+    font-weight: normal;
+}

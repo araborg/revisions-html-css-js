@@ -4083,6 +4083,19 @@ attribute's value.
     text-align: right;
 }
 
+20.     font-weight: normal;
+
+
+21.:not() pseudo-selector
+The :not() pseudo-selector is used to target all elements that do 
+not match the selector - in this case, any of your span elements 
+that do not have the sr-only class.
+
+span:not(.sr-only) {
+    font-weight: normal;
+}
+
+
 *****************************************
 Font-family:
 
