@@ -114,3 +114,10 @@ table caption {
     top: -2.25rem; /* 36px */
     left: 0.5rem; /* 8px */
 }
+
+tbody td {
+    width: 100vw;
+
+    min-width: 4rem; /* 48px */
+    max-width: 4rem; /* 48px */
+}
