@@ -10,20 +10,20 @@ body {
 
 span[class~="sr-only"] {
     /* border: 2px solid green; */
-    border: 0;
+    border: 0 !important;
 
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
 
-    width: 1px;
-    height: 1px;
+    width: 1px !important;
+    height: 1px !important;
 
-    overflow: hidden;
-    white-space: nowrap;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 
-    position: absolute;
-    padding: 0;
-    margin: -1px;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
 }
 
 h1 {
