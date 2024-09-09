@@ -9,6 +9,6 @@ body {
 }
 
 span[class~="sr-only"] {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border: 0;
 }
