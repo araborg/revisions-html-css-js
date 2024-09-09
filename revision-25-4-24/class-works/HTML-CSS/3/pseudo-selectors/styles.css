@@ -25,3 +25,10 @@ span[class~="sr-only"] {
     padding: 0;
     margin: -1px;
 }
+
+h1 {
+    max-width: 37.25rem; /* 596px */
+    margin: 0 auto;
+
+    padding: 1.5rem 1.25rem; /* 24px 20px */
+}
