@@ -4066,8 +4066,22 @@ ensure your #years element does not get hidden by different stacks,
 add a z-index property set to 999 in the #years rule.
 
 
+19. span[class]:
+<div id="years" aria-hidden="true">
+    <span class="year">2019</span>
+    <span class="year">2020</span>
+    <span class="year">2021</span>
+</div>
 
+The span[class] syntax will target any 
+span element that has a class attribute set, regardless of the 
+attribute's value.
 
+#years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
 
 *****************************************
 Font-family:
