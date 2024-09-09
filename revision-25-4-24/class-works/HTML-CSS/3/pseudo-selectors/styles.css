@@ -31,6 +31,8 @@ h1 {
     margin: 0 auto;
 
     padding: 1.5rem 1.25rem; /* 24px 20px */
+
+    border: 2px solid green;
 }
 
 h1 .flex {
@@ -49,9 +51,17 @@ h1 .flex span:last-of-type {
 }
 
 section {
-    max-width: 40rem;
+    max-width: 40rem; /* 640px */
 
     margin: 0 auto;
 
     border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+
+    position: sticky;
+    top: 0;
 }
