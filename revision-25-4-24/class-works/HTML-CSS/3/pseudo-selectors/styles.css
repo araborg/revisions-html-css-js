@@ -95,4 +95,12 @@ span {
 table {
     border-collapse: collapse;
     border: 0;
+
+    width: 100%;
+
+    position: relative;
+
+    margin-top: 3rem; /* 48px */
+
+    border: 2px solid green;
 }
