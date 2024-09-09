@@ -4101,6 +4101,23 @@ your earlier properties, you can use the !important keyword to ensure
 these properties are always applied, regardless of order or 
 specificity.
 
+span[class~="sr-only"] {
+    /* border: 2px solid green; */
+    border: 0 !important;
+
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    overflow: hidden !important;
+    white-space: nowrap !important;
+
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
 
 
 
