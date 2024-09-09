@@ -3956,6 +3956,19 @@ element whose class includes sr-only.
 10.     border: 0;  means?
 
 11.
+span[class~="sr-only"] {
+    border: 0;
+
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+
+    height: 1px;
+    width: 1px;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 The CSS clip property is used to define the visible portions of 
 an element.
 
@@ -3969,6 +3982,12 @@ element.
 You need to size these elements down. Give your 
 span[class~="sr-only"] selector a width and height property set 
 to 1px.
+
+To prevent the text content from overflowing, give your 
+span[class~="sr-only"] selector an overflow property set to hidden 
+and a white-space property set to nowrap.
+
+
 
 12.
 
