@@ -46,7 +46,7 @@ h1 .flex span:first-of-type {
 }
 
 h1 .flex span:last-of-type {
-    font-size: 1.2em;
+    font-size: 1.2em; /* 19.2px */
 }
 
 section {
