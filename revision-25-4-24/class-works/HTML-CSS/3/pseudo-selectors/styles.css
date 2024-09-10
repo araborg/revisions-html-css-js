@@ -138,5 +138,10 @@ tr[class="total"] {
 tr[class="total"] th {
     text-align: left;
 
-    padding: 0.5rem 0.25rem 0.5rem;
+    padding: 0.5rem 0.25rem 0.5rem; /* 8px 4px 8px */
+}
+
+tr.total td {
+    text-align: right;
+    padding: 0.25rem; /* 4px */
 }
