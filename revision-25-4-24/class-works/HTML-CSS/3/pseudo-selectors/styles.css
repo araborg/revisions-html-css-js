@@ -1,5 +1,13 @@
 html {
     box-sizing: border-box;
+
+    border: 2px solid blue;
+}
+
+* {
+    border: 2px solid blue;
+
+    /* box-sizing: border-box; */
 }
 
 body {
