@@ -109,7 +109,7 @@ table {
 
 table caption {
     color: #356eaf;
-    font-size: 1.3em;
+    font-size: 1.3em; /* 20.8px */
     font-weight: normal;
 
     position: absolute;
