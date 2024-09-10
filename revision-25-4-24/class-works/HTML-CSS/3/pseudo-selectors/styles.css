@@ -153,3 +153,8 @@ tr.total td:nth-of-type(3) {
 tr.total:hover {
     background-color: #99c9ff;
 }
+
+/* td.current { */
+td[class="current"] {
+    font-style: italic;
+}
