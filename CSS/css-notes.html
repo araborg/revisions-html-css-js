@@ -3480,6 +3480,16 @@ To prevent the text content from overflowing, give your
 span[class~="sr-only"] selector an overflow property set to hidden 
 and a white-space property set to nowrap.
 
+Relatnship btw white-space and overflow:
+white-space: nowrap results in overflow
+
+I tried to solve it with white-space:nowrap; property on the 
+description, but the problem is, that if the description is 
+very long, it overflows the container.
+
+This means
+
+
 Finally, you need to take these hidden elements out of the document 
 flow. Give the span[class~="sr-only"] selector a position property 
 set to absolute, a padding property set to 0, and a margin property 
