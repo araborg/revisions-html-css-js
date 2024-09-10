@@ -3386,6 +3386,274 @@ the same as this:
     box-sizing: border-box;
 }
 
+
+8. You can use CSS to make elements with completely 
+hidden from the visual page, but still 
+be announced by screen readers.
+
+
+9. The span[class~="sr-only"] selector will select any span 
+element whose class includes sr-only.
+
+
+10.     border: 0;  means?
+
+
+11.
+span[class~="sr-only"] {
+    border: 0;
+
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+
+    height: 1px;
+    width: 1px;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    position: absolute;
+    padding: 0;
+    margin: -1px;
+}
+
+The CSS clip property is used to define the visible portions of 
+an element.
+
+The clip-path property determines the shape the clip property 
+should take.
+
+Set the clip-path property to the value of 
+inset(50%), forming the clip-path into a rectangle within the 
+element.
+
+You need to size these elements down. Give your 
+span[class~="sr-only"] selector a width and height property set 
+to 1px.
+
+To prevent the text content from overflowing, give your 
+span[class~="sr-only"] selector an overflow property set to hidden 
+and a white-space property set to nowrap.
+
+Finally, you need to take these hidden elements out of the document 
+flow. Give the span[class~="sr-only"] selector a position property 
+set to absolute, a padding property set to 0, and a margin property 
+set to -1px. This will ensure that not only are they no longer 
+visible, but they are not even within the page view.
+
+
+12. h1
+h1 can also be given width(max-width in ds case)
+
+h1 {
+    max-width: 37.25rem; /* 596px */
+    margin: 0 auto;
+
+    padding: 1.5rem 1.25rem; /* 24px 20px */
+}
+
+
+13.
+Target your flex container with an h1 .flex selector. Give it a 
+display property set to flex to enable the flexbox layout. Then 
+set the flex-direction property to column-reverse - this will 
+display the nested elements from bottom to top.
+
+
+14. :first-of-type & :last-of-type
+The :first-of-type pseudo-selector is used to target the first 
+element that matches the selector. 
+
+The :last-of-type pseudo-selector does the exact opposite - it 
+targets the last element that matches the selector. 
+
+
+15.
+You wrapped your table in a section element - now you can style 
+that to give your table a border.
+
+section {
+    border: 2px solid #d0d0d5;
+
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+
+16.
+The last part of your table heading is your years. Create a #years 
+selector, and enable flexbox. Justify the content to the end of the 
+flex direction, and make the element sticky. Fix it to the top of 
+its container with top: 0.
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+
+    position: sticky;
+    top: 0;
+}
+    
+
+17. calc() function
+The calc() function is a CSS function that allows you to calculate 
+a value based on other values. For example, you can use it to 
+calculate the width of the viewport minus the margin of an element:
+
+.example {
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+
+18. z-index:
+Adding position sticky moved the element into its own stack. To 
+ensure your #years element does not get hidden by different stacks, 
+add a z-index property set to 999 in the #years rule.
+
+
+19. span[class]:
+<div id="years" aria-hidden="true">
+    <span class="year">2019</span>
+    <span class="year">2020</span>
+    <span class="year">2021</span>
+</div>
+
+The span[class] syntax will target any 
+span element that has a class attribute set, regardless of the 
+attribute's value.
+
+#years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+
+20.     font-weight: normal;
+
+
+21.:not() pseudo-selector
+The :not() pseudo-selector is used to target all elements that do 
+not match the selector - in this case, any of your span elements 
+that do not have the sr-only class.
+
+span:not(.sr-only) {
+    font-weight: normal;
+}
+
+
+22. !important
+Rather than having to constantly double-check you are not overwriting 
+your earlier properties, you can use the !important keyword to ensure 
+these properties are always applied, regardless of order or 
+specificity.
+
+span[class~="sr-only"] {
+    /* border: 2px solid green; */
+    border: 0 !important;
+
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    overflow: hidden !important;
+    white-space: nowrap !important;
+
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+Note where the !important is placed.
+
+
+23.
+Now that you have added the !important keyword, you can remove the 
+:not(.sr-only) from your span selector.
+
+span {
+    font-weight: normal;
+}
+
+
+24. border-collapse: 
+property to collapse, which will allow cell borders to collapse into a 
+single border, instead of a border around each cell. Also set the 
+border property to 0 to hide the borders themselves.
+
+
+25.
+Create a selector to target your td elements within your table 
+body. Give them a width to fill the viewport, with a minimum and 
+maximum of 4rem. This approach ensures that the width is fixed, 
+whereas setting width specifically would allow the elements to 
+shrink to the container.
+
+tbody td {
+    width: 100vw;
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+Diff btw width: 100% and width: 100vw? Use d above code block as 
+practice
+
+
+26.
+width of the entire container, less 12rem.
+
+
+tbody th {
+    width: calc(100% - 12rem);
+} 
+
+Diff btw width: 100% and width: 100vw? Use d above code block as 
+practice
+
+
+27. [attribute="value"] selector:
+The [attribute="value"] selector targets any element that has an 
+attribute with a specific value. 
+
+
+28. Difference btw tr[class="total"] and tr.total 
+The key difference between tr[class="total"] and tr.total is that 
+the first will select tr elements where the only class is total. 
+The second will select tr elements where the class includes total.
+
+
+29. :nth-of-type()
+The :nth-of-type() pseudo-selector is used to target specific 
+elements based on their order among siblings of the same type. Use 
+this pseudo-selector to target the third td element within your 
+total table rows.
+
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem;
+}
+
+
+30. y using size with color?
+tr.data {
+    background-image: linear-gradient(
+        to bottom,
+        #dfdfe2 1.845rem,
+        #fff 1.845rem /* 29.52px */
+    );
+}
+
+
+31. Diff btw text-align and text-align-last?
+
+
+
+
+
+
+
 8.
 
 
@@ -3952,271 +4220,7 @@ Pseudo Selector:
 
 
 
-8. You can use CSS to make elements with completely 
-hidden from the visual page, but still 
-be announced by screen readers.
 
-9. The span[class~="sr-only"] selector will select any span 
-element whose class includes sr-only.
-
-10.     border: 0;  means?
-
-11.
-span[class~="sr-only"] {
-    border: 0;
-
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-
-    height: 1px;
-    width: 1px;
-
-    overflow: hidden;
-    white-space: nowrap;
-
-    position: absolute;
-    padding: 0;
-    margin: -1px;
-}
-
-The CSS clip property is used to define the visible portions of 
-an element.
-
-The clip-path property determines the shape the clip property 
-should take.
-
-Set the clip-path property to the value of 
-inset(50%), forming the clip-path into a rectangle within the 
-element.
-
-You need to size these elements down. Give your 
-span[class~="sr-only"] selector a width and height property set 
-to 1px.
-
-To prevent the text content from overflowing, give your 
-span[class~="sr-only"] selector an overflow property set to hidden 
-and a white-space property set to nowrap.
-
-Finally, you need to take these hidden elements out of the document 
-flow. Give the span[class~="sr-only"] selector a position property 
-set to absolute, a padding property set to 0, and a margin property 
-set to -1px. This will ensure that not only are they no longer 
-visible, but they are not even within the page view.
-
-12. h1
-h1 can also be given width(max-width in ds case)
-
-h1 {
-    max-width: 37.25rem; /* 596px */
-    margin: 0 auto;
-
-    padding: 1.5rem 1.25rem; /* 24px 20px */
-}
-
-13.
-Target your flex container with an h1 .flex selector. Give it a 
-display property set to flex to enable the flexbox layout. Then 
-set the flex-direction property to column-reverse - this will 
-display the nested elements from bottom to top.
-
-
-14. :first-of-type & :last-of-type
-The :first-of-type pseudo-selector is used to target the first 
-element that matches the selector. 
-
-The :last-of-type pseudo-selector does the exact opposite - it 
-targets the last element that matches the selector. 
-
-15.
-You wrapped your table in a section element - now you can style 
-that to give your table a border.
-
-section {
-    border: 2px solid #d0d0d5;
-
-    max-width: 40rem;
-    margin: 0 auto;
-}
-
-
-16.
-The last part of your table heading is your years. Create a #years 
-selector, and enable flexbox. Justify the content to the end of the 
-flex direction, and make the element sticky. Fix it to the top of 
-its container with top: 0.
-
-#years {
-    display: flex;
-    justify-content: flex-end;
-
-    position: sticky;
-    top: 0;
-}
-    
-
-17. calc() function
-The calc() function is a CSS function that allows you to calculate 
-a value based on other values. For example, you can use it to 
-calculate the width of the viewport minus the margin of an element:
-
-.example {
-    margin: 10px;
-    width: calc(100% - 20px);
-}
-
-
-18. z-index:
-Adding position sticky moved the element into its own stack. To 
-ensure your #years element does not get hidden by different stacks, 
-add a z-index property set to 999 in the #years rule.
-
-
-19. span[class]:
-<div id="years" aria-hidden="true">
-    <span class="year">2019</span>
-    <span class="year">2020</span>
-    <span class="year">2021</span>
-</div>
-
-The span[class] syntax will target any 
-span element that has a class attribute set, regardless of the 
-attribute's value.
-
-#years span[class] {
-    font-weight: bold;
-    width: 4.5rem;
-    text-align: right;
-}
-
-20.     font-weight: normal;
-
-
-21.:not() pseudo-selector
-The :not() pseudo-selector is used to target all elements that do 
-not match the selector - in this case, any of your span elements 
-that do not have the sr-only class.
-
-span:not(.sr-only) {
-    font-weight: normal;
-}
-
-22. !important
-Rather than having to constantly double-check you are not overwriting 
-your earlier properties, you can use the !important keyword to ensure 
-these properties are always applied, regardless of order or 
-specificity.
-
-span[class~="sr-only"] {
-    /* border: 2px solid green; */
-    border: 0 !important;
-
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    clip-path: inset(50%) !important;
-
-    width: 1px !important;
-    height: 1px !important;
-
-    overflow: hidden !important;
-    white-space: nowrap !important;
-
-    position: absolute !important;
-    padding: 0 !important;
-    margin: -1px !important;
-}
-
-Note where the !important is placed.
-
-23.
-Now that you have added the !important keyword, you can remove the 
-:not(.sr-only) from your span selector.
-
-span {
-    font-weight: normal;
-}
-
-
-24. border-collapse: 
-property to collapse, which will allow cell borders to collapse into a 
-single border, instead of a border around each cell. Also set the 
-border property to 0 to hide the borders themselves.
-
-
-25.
-Create a selector to target your td elements within your table 
-body. Give them a width to fill the viewport, with a minimum and 
-maximum of 4rem. This approach ensures that the width is fixed, 
-whereas setting width specifically would allow the elements to 
-shrink to the container.
-
-tbody td {
-    width: 100vw;
-    min-width: 4rem;
-    max-width: 4rem;
-}
-
-Diff btw width: 100% and width: 100vw? Use d above code block as 
-practice
-
-26.
-width of the entire container, less 12rem.
-
-
-tbody th {
-    width: calc(100% - 12rem);
-} 
-
-Diff btw width: 100% and width: 100vw? Use d above code block as 
-practice
-
-27. [attribute="value"] selector:
-The [attribute="value"] selector targets any element that has an 
-attribute with a specific value. 
-
-
-28. Difference btw tr[class="total"] and tr.total 
-The key difference between tr[class="total"] and tr.total is that 
-the first will select tr elements where the only class is total. 
-The second will select tr elements where the class includes total.
-
-29. :nth-of-type()
-The :nth-of-type() pseudo-selector is used to target specific 
-elements based on their order among siblings of the same type. Use 
-this pseudo-selector to target the third td element within your 
-total table rows.
-
-tr.total td:nth-of-type(3) {
-    padding-right: 0.5rem;
-}
-
-
-
-30. y using size with color?
-tr.data {
-    background-image: linear-gradient(
-        to bottom,
-        #dfdfe2 1.845rem,
-        #fff 1.845rem /* 29.52px */
-    );
-}
-
-
-31. Diff btw text-align and text-align-last?
-
-
-32.
-
-
-33.
-
-
-34.
-
-
-35.
-
-
-
-36.
 
 
 
