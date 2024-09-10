@@ -125,5 +125,5 @@ tbody td {
 tbody th {
     width: calc(100% - 12rem); /* 192px */
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
