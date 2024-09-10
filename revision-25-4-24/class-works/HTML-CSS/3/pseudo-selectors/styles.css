@@ -126,11 +126,17 @@ tbody td {
 
 tbody th {
     width: calc(100% - 12rem); /* 192px */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 tr[class="total"] {
     border-bottom: 4px double #0a0a23;
 
     font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align: left;
+
+    padding: 0.5rem 0.25rem 0.5rem;
 }
