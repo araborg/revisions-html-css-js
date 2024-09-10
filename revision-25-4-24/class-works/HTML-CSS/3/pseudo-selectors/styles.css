@@ -178,7 +178,7 @@ tr.data th .description {
     display: block;
 
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
 
     padding: 1rem 0 0.75rem; /* 16px 12px */
     margin-right: -13.5rem; /* -216px */
