@@ -182,6 +182,13 @@ tr.data th .description {
 
     padding: 1rem 0 0.75rem; /* 16px 12px */
     margin-right: -13.5rem; /* -216px */
+}
+
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+
+    padding: 0.3rem 0.25rem 0; /* 4.8px  4px 0 */
 
     border: 2px solid red;
 }
