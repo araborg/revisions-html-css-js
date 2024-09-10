@@ -119,12 +119,13 @@ table caption {
 tbody td {
     width: 100vw;
 
-    min-width: 4rem; /* 48px */
-    max-width: 4rem; /* 48px */
+    /* min-width: 4rem;  */
+    /* 48px */
+    /* max-width: 4rem;  */
+    /* 48px */
+    border: 2px solid red;
 }
 
 tbody th {
     width: calc(100% - 12rem); /* 192px */
-
-    /* border: 2px solid red; */
 }
