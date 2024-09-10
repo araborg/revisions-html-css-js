@@ -147,7 +147,6 @@ tr.total td {
 
 tr.total td:nth-of-type(3) {
     padding-right: 0.5rem;
-    border: 2px solid red;
 }
 
 tr.total:hover {
@@ -178,4 +177,9 @@ tr.data th .description {
 
     font-style: italic;
     font-weight: bold;
+
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem; /* -216px */
+
+    border: 2px solid red;
 }
