@@ -188,8 +188,6 @@ tr.data td {
     text-align: right;
 
     padding: 0.3rem 0.25rem 0; /* 4.8px  4px 0 */
-
-    /* border: 2px solid red; */
 }
 
 tr.data td:last-of-type {
