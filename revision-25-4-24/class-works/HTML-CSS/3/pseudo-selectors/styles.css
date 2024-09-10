@@ -172,3 +172,10 @@ tr.data th {
 
     padding: 0.3rem 0 0 0.5rem; /* 4.8px 0 0 8px */
 }
+
+tr.data th .description {
+    display: block;
+
+    font-style: italic;
+    font-weight: bold;
+}
