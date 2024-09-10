@@ -3407,6 +3407,24 @@ html {
 8. You can use CSS to make elements completely hidden from 
 the visual page, but still be announced by screen readers.
 
+E.G:
+span[class~="sr-only"] {
+    border: 0 !important;
+
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+
+    width: 1px !important;
+    height: 1px !important;
+
+    overflow: hidden !important;
+    white-space: nowrap !important;
+
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
 
 9. The span[class~="sr-only"] selector will select any span 
 element whose class includes sr-only.
