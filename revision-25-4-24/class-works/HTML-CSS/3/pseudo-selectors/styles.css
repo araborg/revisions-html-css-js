@@ -97,9 +97,9 @@ table {
     border-collapse: collapse;
     border: 0;
 
-    /* y? bcos we want to use absolute on table caption */
     width: 100%;
 
+    /* y? bcos we want to use absolute on table caption */
     position: relative;
 
     margin-top: 3rem; /* 48px */
