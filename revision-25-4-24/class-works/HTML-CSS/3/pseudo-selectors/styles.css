@@ -126,7 +126,6 @@ tbody td {
 
 tbody th {
     width: calc(100% - 12rem); /* 192px */
-    /* border: 2px solid red; */
 }
 
 tr[class="total"] {
@@ -144,4 +143,9 @@ tr[class="total"] th {
 tr.total td {
     text-align: right;
     padding: 0.25rem; /* 4px */
+}
+
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem;
+    border: 2px solid red;
 }
