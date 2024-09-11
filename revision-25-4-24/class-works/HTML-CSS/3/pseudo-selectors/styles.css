@@ -116,7 +116,7 @@ table caption {
 tbody td {
     width: 100vw;
     /* width: 100%; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     min-width: 4rem; /* 48px */
     max-width: 4rem; /* 48px */
