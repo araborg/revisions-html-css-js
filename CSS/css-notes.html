@@ -3625,8 +3625,9 @@ Normal font weight. Same as 400.
 
 21.:not() pseudo-selector
 The :not() pseudo-selector is used to target all elements that do 
-not match the selector - in this case, any of your span elements 
-that do not have the sr-only class.
+not match the selector (quoted inside d not() fxn)- in this case, 
+any of your span elements that do not have the sr-only class will
+have a normal(400) font-weight.
 
 span:not(.sr-only) {
     font-weight: normal;
