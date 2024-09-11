@@ -144,7 +144,7 @@ tr.total td {
 }
 
 tr.total td:nth-of-type(3) {
-    padding-right: 0.5rem;
+    padding-right: 0.5rem; /* 8px */
 }
 
 tr.total:hover {
