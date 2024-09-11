@@ -3706,10 +3706,18 @@ tbody td {
 Diff btw width: 100% and width: 100vw? Use d above code block as 
 practice. (U can include border to visually understand)
 
+The difference between using width: 100vw instead of width: 100% 
+is that while 100% will make the element fit all the space 
+available, the viewport width has a specific measure, in this 
+case the width of the available screen, including the document 
+margin.
+
+If you set the style body { margin: 0 }, 100vw should behave the 
+same as 100% (for an element that is a child to body).
+
 
 26.
 width of the entire container, less 12rem.
-
 
 tbody th {
     width: calc(100% - 12rem);
