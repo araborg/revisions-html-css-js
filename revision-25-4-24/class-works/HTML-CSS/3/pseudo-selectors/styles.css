@@ -130,37 +130,6 @@ tbody td {
     max-width: 4rem; /* 48px */
 }
 
-tr[class="total"] {
-    border-bottom: 4px double #0a0a23;
-
-    font-weight: bold;
-}
-
-tr.total:hover {
-    background-color: #99c9ff;
-}
-
-tr[class="total"] th {
-    text-align: left;
-
-    /*       8px    0 4px     8px */
-    padding: 0.5rem 0 0.25rem 0.5rem;
-}
-
-tr.total td {
-    text-align: right;
-    padding: 0.25rem; /* 4px */
-}
-
-tr.total td:nth-of-type(3) {
-    padding-right: 0.5rem; /* 8px */
-}
-
-/* td.current { */
-td[class="current"] {
-    font-style: italic;
-}
-
 tr.data {
     background-image: linear-gradient(
         to bottom,
@@ -198,4 +167,35 @@ tr.data td {
 
 tr.data td:last-of-type {
     padding: 0.5rem;
+}
+
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+
+    font-weight: bold;
+}
+
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+tr[class="total"] th {
+    text-align: left;
+
+    /*       8px    0 4px     8px */
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+    text-align: right;
+    padding: 0.25rem; /* 4px */
+}
+
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem; /* 8px */
+}
+
+/* td.current { */
+td[class="current"] {
+    font-style: italic;
 }
