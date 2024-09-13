@@ -62,6 +62,8 @@ section {
     position: sticky;
     top: 0;
 
+    z-index: 999;
+
     background-color: #0a0a23;
     color: #fff;
 
@@ -69,8 +71,6 @@ section {
 
     /*       8px        (20px + 2px)    8px    0 */
     padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
-
-    z-index: 999;
 }
 
 #years span[class] {
