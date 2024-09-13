@@ -154,7 +154,6 @@ tr.data th .description {
 
     padding: 1rem 0 0.75rem; /* 16px 0 12px */
     margin-right: -13.5rem; /* -216px */
-    /* border: 2px solid green; */
 }
 
 tr.data td {
@@ -164,8 +163,21 @@ tr.data td {
     padding: 0.3rem 0.25rem 0; /* 4.8px  4px 0 */
 }
 
+/* similar:
+tr.data td:last-of-type
+td[class="current"]
+
+
+
+*/
 tr.data td:last-of-type {
     padding: 0.5rem;
+}
+
+/* td.current { */
+td[class="current"] {
+    font-style: italic;
+    border: 2px solid green;
 }
 
 tr[class="total"] {
@@ -192,9 +204,4 @@ tr.total td {
 
 tr.total td:nth-of-type(3) {
     padding-right: 0.5rem; /* 8px */
-}
-
-/* td.current { */
-td[class="current"] {
-    font-style: italic;
 }
