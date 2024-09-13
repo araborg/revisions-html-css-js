@@ -113,6 +113,10 @@ table caption {
     left: 0.5rem; /* 8px */
 }
 
+tbody th {
+    width: calc(100% - 12rem); /* 192px */
+}
+
 tbody td {
     width: 100vw;
     /* width: 100%; */
@@ -120,10 +124,6 @@ tbody td {
 
     min-width: 4rem; /* 48px */
     max-width: 4rem; /* 48px */
-}
-
-tbody th {
-    width: calc(100% - 12rem); /* 192px */
 }
 
 tr[class="total"] {
