@@ -168,9 +168,8 @@ tr.data td {
 tr.data td:last-of-type
 td[class="current"]
 
-
-
 */
+
 tr.data td:last-of-type {
     padding: 0.5rem;
 }
