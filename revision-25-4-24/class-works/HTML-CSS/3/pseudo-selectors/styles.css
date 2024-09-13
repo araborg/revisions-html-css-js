@@ -144,8 +144,6 @@ tr.data th {
     padding-top: 0.3rem; /* 4.8px */
     padding-left: 0.5rem; /* 8px */
     /* padding: 0.3rem 0 0 0.5rem; */
-
-    border: 2px solid green;
 }
 
 tr.data th .description {
@@ -155,7 +153,9 @@ tr.data th .description {
     font-weight: normal;
 
     padding: 1rem 0 0.75rem; /* 16px 0 12px */
-    margin-right: -13.5rem; /* -216px */
+    margin-right: -13.5rem;
+    /* -216px */
+    /* border: 2px solid green; */
 }
 
 tr.data td {
