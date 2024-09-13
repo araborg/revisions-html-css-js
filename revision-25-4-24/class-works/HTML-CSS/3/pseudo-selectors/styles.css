@@ -156,9 +156,12 @@ tr.data th .description {
     margin-right: -13.5rem; /* -216px */
 }
 
+/* general for td */
 tr.data td {
     vertical-align: top;
     text-align: right;
+
+    border: 2px solid green;
 
     padding: 0.3rem 0.25rem 0; /* 4.8px  4px 0 */
 }
@@ -177,7 +180,6 @@ tr.data td:last-of-type {
 /* td.current { */
 td[class="current"] {
     font-style: italic;
-    border: 2px solid green;
 }
 
 tr[class="total"] {
