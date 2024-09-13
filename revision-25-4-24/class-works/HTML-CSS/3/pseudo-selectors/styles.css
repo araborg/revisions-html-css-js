@@ -136,8 +136,6 @@ tr.data {
         #dfdfe2 1.845rem,
         #fff 1.845rem /* 29.52px */
     );
-
-    border: 2px solid green;
 }
 
 tr.data th {
