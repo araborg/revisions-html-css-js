@@ -23,8 +23,6 @@ h1 {
     width: 36rem;
 
     margin: 0 auto;
-
-    /* border: 2px solid green; */
 }
 
 .flex {
@@ -42,6 +40,12 @@ h1 {
 
 h1 .flex span:last-of-type {
     font-size: 1.8rem;
+}
+
+#years {
+    justify-content: flex-end;
+
+    border: 2px solid green;
 }
 
 table {
