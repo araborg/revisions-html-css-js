@@ -39,6 +39,13 @@ body {
     transform: rotate(-45deg);
 }
 
+.cat-right-ear {
+    border-left: 35px solid red;
+    border-right: 35px solid red;
+
+    border-bottom: 70px solid #5e5e5e;
+}
+
 /* 
 #c9d2fc
 #000
