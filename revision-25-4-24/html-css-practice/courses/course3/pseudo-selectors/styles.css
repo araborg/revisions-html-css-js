@@ -90,6 +90,15 @@ tr.data th {
     text-align: left;
 }
 
+tr.data .description {
+    font-weight: normal;
+
+    display: block;
+    font-style: italic;
+
+    margin: 0.5rem 0;
+}
+
 tr.data td {
     width: 100vw;
     /* width: 100%; */
@@ -101,4 +110,8 @@ tr.data td {
 tr td {
     border: 2px solid red;
     text-align: right;
+}
+
+tr th {
+    /* padding: 0.75rem 0; */
 }
