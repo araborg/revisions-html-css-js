@@ -25,7 +25,6 @@ h1 {
     margin: 0 auto;
 
     margin-top: 3rem;
-    border: 2px solid green;
 }
 
 .flex {
@@ -33,6 +32,14 @@ h1 {
     flex-direction: column-reverse;
 
     gap: 1rem;
+}
+
+.flex span:first-of-type {
+    border: 2px solid green;
+}
+
+h1 .flex span:last-of-type {
+    border: 2px solid red;
 }
 
 table {
