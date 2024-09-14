@@ -29,6 +29,10 @@ h1 {
 }
 
 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+
+    gap: 1rem;
 }
 
 table {
