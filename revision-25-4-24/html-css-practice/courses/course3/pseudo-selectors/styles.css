@@ -68,8 +68,6 @@ table {
     margin: 0 auto;
 
     margin: 1.5rem 0.75rem;
-
-    border: 2px solid red;
 }
 
 .sr-only {
@@ -90,7 +88,14 @@ table {
 
 tr.data td {
     width: 100vw;
+    /* width: 100%; */
 
     min-width: 4rem;
     max-width: 4rem;
+
+    border: 2px solid red;
+}
+
+tr td {
+    text-align: right;
 }
