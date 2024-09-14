@@ -8,7 +8,7 @@ body {
 
 .cat-head {
     position: sticky;
-    top: 100px;
+    top: 0px;
     /* left: 100px; */
 
     width: 205px;
@@ -26,7 +26,7 @@ body {
     background-color: #000;
 
     position: absolute;
-    top: 100px;
+    top: 800px;
     left: 650px;
 }
 
