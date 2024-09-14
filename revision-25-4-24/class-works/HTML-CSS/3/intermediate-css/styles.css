@@ -28,7 +28,11 @@ body {
     border-right: 35px solid red;
     border-left: 35px solid red;
 
-    border-bottom: 70px solid #5e5e5e;
+    border-bottom: 70px solid green;
+
+    position: absolute;
+    top: -26px;
+    left: -31px;
 }
 
 /* 
