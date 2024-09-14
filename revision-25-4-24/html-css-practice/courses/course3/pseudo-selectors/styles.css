@@ -24,4 +24,12 @@ span[class~="sr-only"] {
     margin: -1px !important;
 }
 
+section {
+    max-width: 40rem;
+
+    margin: 0 auto;
+
+    border: 2px solid #d0d0d5;
+}
+
 /* border: 2px solid green; */
