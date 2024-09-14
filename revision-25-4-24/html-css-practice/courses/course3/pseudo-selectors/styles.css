@@ -68,6 +68,8 @@ table {
     margin: 0 auto;
 
     margin: 1.5rem 0.75rem;
+
+    position: relative;
 }
 
 .sr-only {
@@ -86,8 +88,23 @@ table {
     margin: -1px;
 }
 
+tr.data {
+    background-image: linear-gradient(
+        to bottom,
+        #dfdfe2 1.845rem,
+        #fff 1.845rem
+    );
+}
+
+tr th {
+    /* background-color: #dfdfe2; */
+}
+
 tr.data th {
     text-align: left;
+    border: 2px solid green;
+
+    width: 100%;
 }
 
 tr.data .description {
@@ -96,7 +113,9 @@ tr.data .description {
     display: block;
     font-style: italic;
 
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
+
+    width: 25rem;
 }
 
 tr.data td {
@@ -110,6 +129,8 @@ tr.data td {
 tr td {
     border: 2px solid red;
     text-align: right;
+
+    vertical-align: top;
 }
 
 tr th {
