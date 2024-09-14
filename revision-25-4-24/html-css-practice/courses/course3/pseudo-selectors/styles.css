@@ -64,10 +64,11 @@ h1 .flex span:last-of-type {
 }
 
 table {
-    width: 38rem;
-    margin: 0 auto;
+    /* width: 38rem; */
+    width: 100%;
+    /* margin: 0 auto; */
 
-    margin: 1.5rem 0.75rem;
+    /* margin: 1.5rem 0.75rem; */
 
     position: relative;
 }
@@ -97,6 +98,10 @@ tr.data {
 }
 
 tr th {
+    width: calc(100% - 12rem);
+
+    border: 2px solid green;
+
     /* background-color: #dfdfe2; */
 }
 
@@ -115,6 +120,10 @@ tr.data .description {
 
     /* margin: 0.5rem 0; */
 
+    /* border: 2px solid red; */
+
+    margin-right: -13.5rem;
+
     width: 25rem;
 }
 
@@ -127,12 +136,8 @@ tr.data td {
 }
 
 tr td {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: right;
 
     vertical-align: top;
-}
-
-tr th {
-    /* padding: 0.75rem 0; */
 }
