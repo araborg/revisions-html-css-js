@@ -27,11 +27,10 @@ body {
 .cat-left-ear {
     border-right: 35px solid red;
     border-left: 35px solid red;
+    border-bottom: 70px solid green;
 
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
-
-    border-bottom: 70px solid green;
 
     position: absolute;
     top: -26px;
