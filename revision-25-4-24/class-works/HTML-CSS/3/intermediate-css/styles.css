@@ -11,12 +11,16 @@ body {
     height: 180px;
 
     border: 1px solid #000;
+    border-radius: 46%;
+
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
 }
 
 /* 
 #c9d2fc
 #000
-
+#5e5e5e
+#45454f
 
 
 
