@@ -92,10 +92,9 @@ tr.data td {
 
     min-width: 4rem;
     max-width: 4rem;
-
-    border: 2px solid red;
 }
 
 tr td {
+    border: 2px solid red;
     text-align: right;
 }
