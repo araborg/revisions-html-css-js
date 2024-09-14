@@ -13,18 +13,18 @@ body {
 section {
     border: 2px solid #d0d0d5;
 
-    width: 50rem;
+    width: 40rem;
     margin: 0 auto;
 
     /* padding: 2rem 1rem; */
 }
 
 h1 {
-    width: 42.5rem;
+    width: 36rem;
 
     margin: 0 auto;
 
-    margin-top: 3rem;
+    /* border: 2px solid green; */
 }
 
 .flex {
@@ -32,21 +32,23 @@ h1 {
     flex-direction: column-reverse;
 
     gap: 1rem;
+
+    margin: 1rem 0;
 }
 
 .flex span:first-of-type {
-    border: 2px solid green;
-
     font-size: 1rem;
 }
 
 h1 .flex span:last-of-type {
-    border: 2px solid red;
-
     font-size: 1.8rem;
 }
 
 table {
-    width: 50rem;
+    width: 38rem;
     margin: 0 auto;
+
+    margin: 1.5rem 0.75rem;
+
+    border: 2px solid red;
 }
