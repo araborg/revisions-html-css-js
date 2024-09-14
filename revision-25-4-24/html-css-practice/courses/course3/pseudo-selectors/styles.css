@@ -22,7 +22,9 @@ section {
 h1 {
     width: 36rem;
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
+
+    border: 2px solid green;
 }
 
 .flex {
@@ -50,6 +52,10 @@ h1 .flex span:last-of-type {
     color: #fff;
 
     padding: 0.5rem;
+
+    margin: 0 -2px;
+
+    font-weight: bold;
 
     /* border: 2px solid green; */
 }
