@@ -28,6 +28,9 @@ body {
     border-right: 35px solid red;
     border-left: 35px solid red;
 
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+
     border-bottom: 70px solid green;
 
     position: absolute;
