@@ -43,9 +43,19 @@ h1 .flex span:last-of-type {
 }
 
 #years {
+    display: flex;
     justify-content: flex-end;
 
-    border: 2px solid green;
+    background-color: #0a0a23;
+    color: #fff;
+
+    padding: 0.5rem;
+
+    /* border: 2px solid green; */
+}
+
+.year {
+    width: 4rem;
 }
 
 table {
