@@ -15,16 +15,15 @@ section {
 
     width: 40rem;
     margin: 0 auto;
-
-    /* padding: 2rem 1rem; */
 }
 
 h1 {
-    width: 36rem;
+    width: 40rem;
 
-    /* margin: 0 auto; */
+    margin: 0 auto;
 
-    border: 2px solid green;
+    padding: 0rem 1rem;
+    /* border: 2px solid green; */
 }
 
 .flex {
@@ -33,7 +32,7 @@ h1 {
 
     gap: 1rem;
 
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .flex span:first-of-type {
