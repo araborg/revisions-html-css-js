@@ -90,11 +90,13 @@ table {
 }
 
 tr.data {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         #dfdfe2 1.845rem,
         #fff 1.845rem
-    );
+    ); */
+
+    border: 2px solid purple;
 }
 
 tr th {
@@ -133,11 +135,4 @@ tr.data td {
 
     min-width: 4rem;
     max-width: 4rem;
-}
-
-tr td {
-    /* border: 2px solid red; */
-    text-align: right;
-
-    vertical-align: top;
 }
