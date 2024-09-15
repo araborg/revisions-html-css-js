@@ -38,8 +38,6 @@ h1 {
     margin: 0 auto;
 
     padding: 1.5rem 1.25rem;
-
-    border: 2px solid green;
 }
 
 h1 .flex {
@@ -55,4 +53,29 @@ h1 .flex span:first-of-type {
 
 h1 .flex span:last-of-type {
     font-size: 1.2em;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: #0a0a23;
+    color: #fff;
+
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    margin: 0 -2px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+#years span[class] {
+    border: 2px solid green;
+
+    font-weight: bold;
+
+    width: 4.5rem;
+    text-align: right;
 }
