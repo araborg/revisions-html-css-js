@@ -180,3 +180,20 @@ td[class="current"] {
     font-style: italic;
 }
 */
+
+/*
+position: sticky;
+span[class~="sr-only"] 
+span[class]
+calc(100% - 12rem)
+linear-gradient(
+    to bottom,
+    #dfdfe2 1.845rem,
+    #fff 1.845rem 
+);
+:last-of-type
+:nth-of-type(3)
+class=""
+
+
+*/
