@@ -150,6 +150,13 @@ body {
     transform: rotate(-5deg);
 }
 
+.cat-nose {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    border-bottom: 20px solid #442c2c;
+}
+
 /* 
 #c9d2fc
 #000
@@ -157,6 +164,8 @@ body {
 #45454f
 
 #3b3b4f
+#442c2c
+
 
 https://www.youtube.com/watch?v=3YmDEF2p8_Y
 */
