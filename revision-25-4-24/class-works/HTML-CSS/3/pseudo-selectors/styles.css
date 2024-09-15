@@ -206,3 +206,18 @@ tr.total td:nth-of-type(3) {
 td[class="current"] {
     font-style: italic;
 }
+
+/*
+
+
+linear-gradient(
+    to bottom,
+    #dfdfe2 1.845rem,
+    #fff 1.845rem 
+);
+:last-of-type
+:nth-of-type(3)
+class=""
+
+
+*/
