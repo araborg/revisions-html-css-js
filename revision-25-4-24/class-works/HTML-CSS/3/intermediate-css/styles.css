@@ -208,6 +208,12 @@ body {
     background-color: #000;
 }
 
+.cat-whiskers-left-top {
+    position: absolute;
+    top: 120px;
+    left: 52px;
+}
+
 /* 
 #c9d2fc
 #000
