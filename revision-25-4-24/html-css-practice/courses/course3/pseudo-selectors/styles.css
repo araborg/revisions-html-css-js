@@ -107,14 +107,9 @@ table caption {
     font-size: 1.3em;
 }
 
-/* tbody th {
+/* Use this: th or: */
+tbody th {
     width: calc(100% - 12rem);
-    border: 2px solid red;
-} */
-
-th {
-    width: calc(100% - 12rem);
-
     border: 2px solid red;
 }
 
