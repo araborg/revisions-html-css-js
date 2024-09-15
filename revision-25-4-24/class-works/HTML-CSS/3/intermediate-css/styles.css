@@ -76,6 +76,13 @@ body {
     border-bottom-right-radius: 40%;
 }
 
+.cat-right-inner-ear {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 40px solid #3b3b4f;
+}
+
 /* 
 #c9d2fc
 #000
