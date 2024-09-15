@@ -41,9 +41,17 @@ html {
     float: left;
 }
 
+.key.black--key::after {
+    content: "";
+    background-color: #1d1e22;
+}
+
 /* 
 #00471b
 #040404
+#fff
+#1d1e22
+
 
 
 https://www.youtube.com/watch?v=rWkvbjeR3NE
