@@ -87,6 +87,11 @@ h1 .flex span:last-of-type {
 }
 
 table {
-    border: 2px solid red;
-    /* border */
+    border-collapse: collapse;
+    border: 0;
+}
+
+th,
+td {
+    /* border: 2px solid red; */
 }
