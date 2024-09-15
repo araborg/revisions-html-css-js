@@ -37,6 +37,8 @@ html {
     background-color: #040404;
 
     padding-left: 2px;
+
+    overflow: hidden;
 }
 
 .key {
@@ -76,6 +78,8 @@ html {
 
     .keys {
         width: 318px;
+
+        /* overflow: hidden; */
     }
 
     .logo {
