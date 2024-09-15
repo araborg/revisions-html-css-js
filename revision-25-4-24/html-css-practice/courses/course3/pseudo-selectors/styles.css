@@ -94,7 +94,7 @@ table {
 
     margin-top: 3rem;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 table caption {
@@ -154,7 +154,7 @@ tr.data td:last-of-type {
 }
 
 tr[class="total"] {
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
     border-bottom: 4px double #0a0a23;
 
