@@ -109,7 +109,6 @@ table caption {
 
 tbody th {
     width: calc(100% - 12rem);
-    /* border: 2px solid red; */
 }
 
 tbody td {
@@ -125,4 +124,22 @@ tbody tr.data {
         #dfdfe2 1.845rem,
         #fff 1.845rem
     );
+}
+
+tr.data th .description {
+    display: block;
+    padding: 1rem 0 0.75rem;
+
+    margin-right: -13.5rem;
+
+    font-style: italic;
+    font-weight: normal;
+}
+
+tr.data td {
+    /* border: 2px solid red; */
+    vertical-align: top;
+
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
 }
