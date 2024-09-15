@@ -50,6 +50,8 @@ html {
     margin: 2px;
 
     float: left;
+
+    border-radius: 0 0 3px 3px;
 }
 
 .key.black--key::after {
