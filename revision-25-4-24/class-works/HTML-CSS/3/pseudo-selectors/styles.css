@@ -210,6 +210,9 @@ td[class="current"] {
 /*
 
 
+
+
+calc(100% - 12rem)
 linear-gradient(
     to bottom,
     #dfdfe2 1.845rem,
