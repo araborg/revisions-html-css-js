@@ -5,6 +5,8 @@ html {
 body {
     font-family: sans-serif;
     color: #0a0a23;
+
+    /* background-color: blue; */
 }
 
 span[class~="sr-only"] {
@@ -82,4 +84,9 @@ h1 .flex span:last-of-type {
     border: 2px solid green;
 
     padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+table {
+    border: 2px solid red;
+    /* border */
 }
