@@ -50,5 +50,9 @@ h1 .flex {
 }
 
 h1 .flex span:first-of-type {
-    font-size: 1em;
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
 }
