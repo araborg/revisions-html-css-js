@@ -109,6 +109,7 @@ table caption {
 
 /* tbody th {
     width: calc(100% - 12rem);
+    border: 2px solid red;
 } */
 
 th {
@@ -117,19 +118,19 @@ th {
     border: 2px solid red;
 }
 
-/* tbody td {
-    width: 100vw;
-
-    min-width: 4rem;
-    max-width: 4rem;
-} */
-
-td {
+tbody td {
     width: 100vw;
 
     min-width: 4rem;
     max-width: 4rem;
 }
+
+/* td {
+    width: 100vw;
+
+    min-width: 4rem;
+    max-width: 4rem;
+} */
 
 th,
 td {
