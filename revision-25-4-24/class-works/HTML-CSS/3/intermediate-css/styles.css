@@ -233,6 +233,11 @@ body {
 }
 
 .cat-whisker-right-top {
+    position: absolute;
+    top: 120px;
+    left: 109px;
+
+    transform: rotate();
 }
 
 .cat-whisker-right-middle {
