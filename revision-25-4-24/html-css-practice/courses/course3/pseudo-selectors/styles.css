@@ -143,9 +143,23 @@ tr.data th .description {
 }
 
 tr.data td {
-    /* border: 2px solid red; */
     vertical-align: top;
 
     text-align: right;
     padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+    padding: 0.5rem;
+}
+
+tr[class="total"] {
+    border: 2px solid red;
+
+    border-bottom: 4px double #0a0a23;
+
+    font-weight: bold;
+}
+
+tr.total {
 }
