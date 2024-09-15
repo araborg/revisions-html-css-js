@@ -85,6 +85,12 @@ body {
     position: absolute;
     top: 22px;
     left: -20px;
+
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
 }
 
 /* 
