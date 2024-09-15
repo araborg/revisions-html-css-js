@@ -19,6 +19,8 @@ html {
     padding: 90px 20px 0 20px;
 
     position: relative;
+
+    border-radius: 10px;
 }
 
 .logo {
