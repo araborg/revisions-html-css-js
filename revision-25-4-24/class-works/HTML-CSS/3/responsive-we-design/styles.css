@@ -7,3 +7,16 @@ html {
 *::before {
     box-sizing: inherit;
 }
+
+#piano {
+    background-color: #00471b;
+
+    width: 992px;
+    height: 290px;
+}
+
+/* 
+#00471b
+
+
+*/
