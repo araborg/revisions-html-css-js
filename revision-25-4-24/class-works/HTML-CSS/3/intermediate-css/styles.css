@@ -55,6 +55,8 @@ body {
 
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
+
+    z-index: 1;
 }
 
 /* 
