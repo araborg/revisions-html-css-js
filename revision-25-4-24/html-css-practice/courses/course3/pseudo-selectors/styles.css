@@ -118,3 +118,11 @@ tbody td {
     min-width: 4rem;
     max-width: 4rem;
 }
+
+tbody tr.data {
+    background-image: linear-gradient(
+        to bottom,
+        #dfdfe2 1.845rem,
+        #fff 1.845rem
+    );
+}
