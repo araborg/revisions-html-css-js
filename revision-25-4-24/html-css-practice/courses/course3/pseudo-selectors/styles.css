@@ -126,6 +126,12 @@ tbody tr.data {
     );
 }
 
+tr.data th {
+    text-align: left;
+
+    padding: 0.3rem 0 0 0.5rem;
+}
+
 tr.data th .description {
     display: block;
     padding: 1rem 0 0.75rem;
