@@ -48,3 +48,7 @@ h1 .flex {
 
     gap: 1rem;
 }
+
+h1 .flex span:first-of-type {
+    font-size: 1em;
+}
