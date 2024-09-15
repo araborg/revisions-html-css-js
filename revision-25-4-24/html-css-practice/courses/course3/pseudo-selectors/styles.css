@@ -97,6 +97,28 @@ table {
     border: 2px solid green;
 }
 
+table caption {
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+
+    color: #356eaf;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+tbody th {
+    width: calc(100% - 12rem);
+
+    /* border: 2px solid red; */
+}
+
+th {
+    width: calc(100% - 12rem);
+
+    border: 2px solid red;
+}
+
 th,
 td {
     /* border: 2px solid red; */
