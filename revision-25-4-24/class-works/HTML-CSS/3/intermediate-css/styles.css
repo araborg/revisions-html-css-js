@@ -168,6 +168,13 @@ body {
     transform: rotate(180deg);
 }
 
+.cat-mouth div {
+    width: 30px;
+    height: 50px;
+
+    border: 2px solid #000;
+}
+
 /* 
 #c9d2fc
 #000
