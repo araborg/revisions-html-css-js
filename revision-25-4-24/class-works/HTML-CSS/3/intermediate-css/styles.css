@@ -237,7 +237,7 @@ body {
     top: 120px;
     left: 109px;
 
-    transform: rotate();
+    transform: rotate(-10deg);
 }
 
 .cat-whisker-right-middle {
