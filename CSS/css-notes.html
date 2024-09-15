@@ -3825,6 +3825,18 @@ or a line, right before a forced line break, is aligned.
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-align-last
 
 
+32. Calculating width:
+There r 3 td of a width of 4rem. 
+tbody td {
+    width: 100vw;
+
+    min-width: 4rem;
+    max-width: 4rem;
+}
+
+tbody th {
+    width: calc(100% - 12rem);
+}
 
 
 *****************************************
