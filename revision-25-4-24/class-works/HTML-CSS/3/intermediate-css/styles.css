@@ -116,6 +116,9 @@ body {
     position: absolute;
     top: 54px;
     left: 134px;
+
+    border-radius: 60%;
+    transform: rotate(-25deg);
 }
 
 .cat-left-inner-eye {
