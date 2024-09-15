@@ -1,3 +1,4 @@
+/*
 html {
     box-sizing: border-box;
 }
@@ -5,8 +6,6 @@ html {
 body {
     font-family: sans-serif;
     color: #0a0a23;
-
-    /* background-color: blue; */
 }
 
 span[class~="sr-only"] {
@@ -180,3 +179,4 @@ tr.total td:nth-of-type(3) {
 td[class="current"] {
     font-style: italic;
 }
+*/
