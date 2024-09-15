@@ -18,7 +18,12 @@ html {
 }
 
 .keys {
+    width: 949px;
+    height: 180px;
+
     background-color: #040404;
+
+    padding-left: 2px;
 }
 
 /* 
