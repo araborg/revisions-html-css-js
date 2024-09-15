@@ -81,14 +81,16 @@ h1 .flex span:last-of-type {
 }
 
 .table-wrap {
-    border: 2px solid green;
-
     padding: 0 0.75rem 1.5rem 0.75rem;
 }
 
 table {
     border-collapse: collapse;
     border: 0;
+
+    width: 100%;
+
+    border: 2px solid green;
 }
 
 th,
