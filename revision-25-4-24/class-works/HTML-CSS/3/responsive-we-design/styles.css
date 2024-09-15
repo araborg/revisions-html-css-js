@@ -28,6 +28,19 @@ html {
     padding-left: 2px;
 }
 
+.key {
+    width: 41px;
+    height: 175px;
+
+    background-color: #fff;
+
+    position: relative;
+
+    margin: 2px;
+
+    float: left;
+}
+
 /* 
 #00471b
 #040404
