@@ -161,5 +161,10 @@ tr[class="total"] {
     font-weight: bold;
 }
 
-tr.total {
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
+tr[class~="total"] th {
+    text-align: left;
 }
