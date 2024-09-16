@@ -3,4 +3,14 @@ html {
 }
 
 body {
+    color: #0a0a23;
+
+    background-color: #fafafa;
+}
+
+section {
+    width: 40rem;
+    margin: 0 auto;
+
+    border: 2px solid #d0d0d5;
 }
