@@ -7,7 +7,7 @@ body {
 
     font-family: sans-serif;
 
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
 }
 
 span[class~="sr-only"] {
@@ -37,8 +37,6 @@ h1 {
     margin: 0 auto;
 
     padding: 1.4rem 0;
-
-    /* border: 3px solid green; */
 }
 
 .flex {
@@ -62,19 +60,30 @@ h1 .flex span:last-of-type {
 
     font-weight: bold;
 
-    padding: 0.5rem 0;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
     margin: 0 -2px;
 
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+
+    text-align: right;
 }
 
 #years span[class] {
     width: 4.2rem;
 }
 
+#years span:last-of-type {
+    /* border: 3px solid green; */
+
+    width: 4rem;
+
+    /* margin-right: -0.2rem; */
+}
+
 .table-wrap {
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
 }
 
 table {
@@ -82,27 +91,54 @@ table {
 
     border-collapse: collapse;
     border: 0;
+
+    /* padding: 3rem; */
 }
 
 tbody tr.data {
     background-image: linear-gradient(
         to bottom,
         #dfdfe2 1.845rem,
-        #dfdfe2 845rem
+        #fff 1.845rem
     );
+}
+
+tr.data th {
+    /* margin-bottom: 15px; */
+    padding: 0.25rem 0.5rem;
 }
 
 tbody th {
     width: calc(100% -12rem);
+    text-align: left;
 }
 
 tr.data th .description {
     display: block;
+
+    padding: 1.2rem 0 0.75rem;
+
+    margin-right: -13.5rem;
+
+    font-style: italic;
+    font-weight: normal;
 }
 
-tr.data td {
+tbody td {
     width: 100vw;
 
     min-width: 4rem;
     max-width: 4rem;
+}
+
+tr.data td {
+    border: 3px solid green;
+    vertical-align: top;
+
+    text-align: right;
+    padding: 0.25rem 0.5rem;
+}
+
+tr[class="total"] td {
+    text-align: right;
 }
