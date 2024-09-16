@@ -11,8 +11,6 @@ body {
 }
 
 span[class~="sr-only"] {
-    border: 3px solid green;
-
     width: 1px;
     height: 1px;
 
@@ -34,11 +32,13 @@ section {
 }
 
 h1 {
-    width: 42rem;
+    width: 36rem;
 
     margin: 0 auto;
 
-    padding: 1rem 0.75rem;
+    padding: 1.4rem 0;
+
+    /* border: 3px solid green; */
 }
 
 .flex {
@@ -74,5 +74,13 @@ h1 .flex span:last-of-type {
 }
 
 .table-wrap {
-    /* padding: 1rem 0.75rem; */
+    padding: 0.5rem;
+}
+
+tbody tr.data {
+    background-image: linear-gradient(
+        to bottom,
+        #dfdfe2 1.845rem,
+        #dfdfe2 845rem
+    );
 }
