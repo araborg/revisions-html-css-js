@@ -91,3 +91,18 @@ tbody tr.data {
         #dfdfe2 845rem
     );
 }
+
+tbody th {
+    width: calc(100% -12rem);
+}
+
+tr.data th .description {
+    display: block;
+}
+
+tr.data td {
+    width: 100vw;
+
+    min-width: 4rem;
+    max-width: 4rem;
+}
