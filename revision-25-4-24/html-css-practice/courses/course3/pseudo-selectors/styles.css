@@ -5,6 +5,8 @@ html {
 body {
     color: #0a0a23;
 
+    font-family: sans-serif;
+
     background-color: #fafafa;
 }
 
@@ -21,7 +23,6 @@ h1 {
     width: 36rem;
 
     margin: 0 auto;
-    /* border: 3px solid green; */
 
     padding: 1rem 0;
 }
@@ -31,4 +32,13 @@ h1 {
     flex-direction: column-reverse;
 
     gap: 1rem;
+}
+
+h1 .flex span:first-of-type {
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    /* border: 3px solid green; */
+    font-size: 1.2em;
 }
