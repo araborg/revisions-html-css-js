@@ -47,8 +47,14 @@ h1 .flex span:last-of-type {
     background-color: #0a0a23;
     color: #fff;
 
-    padding: 0.5rem;
+    font-weight: bold;
+
+    padding: 0.5rem 0;
 
     display: flex;
     justify-content: flex-end;
+}
+
+#years span[class] {
+    width: 4.2rem;
 }
