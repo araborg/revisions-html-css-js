@@ -77,6 +77,13 @@ h1 .flex span:last-of-type {
     padding: 0.5rem;
 }
 
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+    border: 0;
+}
+
 tbody tr.data {
     background-image: linear-gradient(
         to bottom,
