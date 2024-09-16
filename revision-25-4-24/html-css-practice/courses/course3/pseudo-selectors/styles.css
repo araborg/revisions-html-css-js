@@ -20,11 +20,11 @@ section {
 }
 
 h1 {
-    width: 36rem;
+    width: 42rem;
 
     margin: 0 auto;
 
-    padding: 1rem 0;
+    padding: 1rem 0.75rem;
 }
 
 .flex {
