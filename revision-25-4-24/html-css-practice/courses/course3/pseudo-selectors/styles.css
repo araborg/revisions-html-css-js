@@ -10,13 +10,15 @@ body {
     background-color: #fafafa;
 }
 
+span[class~="sr-only"] {
+    border: 3px solid green;
+}
+
 section {
     width: 40rem;
     margin: 0 auto;
 
     border: 2px solid #d0d0d5;
-
-    padding: 1rem 0.75rem;
 }
 
 h1 {
@@ -39,7 +41,6 @@ h1 .flex span:first-of-type {
 }
 
 h1 .flex span:last-of-type {
-    /* border: 3px solid green; */
     font-size: 1.2em;
 }
 
@@ -50,6 +51,7 @@ h1 .flex span:last-of-type {
     font-weight: bold;
 
     padding: 0.5rem 0;
+    margin: 0 -2px;
 
     display: flex;
     justify-content: flex-end;
@@ -57,4 +59,8 @@ h1 .flex span:last-of-type {
 
 #years span[class] {
     width: 4.2rem;
+}
+
+.table-wrap {
+    /* padding: 1rem 0.75rem; */
 }
