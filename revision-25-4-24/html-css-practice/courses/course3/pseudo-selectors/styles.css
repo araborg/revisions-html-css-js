@@ -18,6 +18,12 @@ span[class~="sr-only"] {
 
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    padding: 0;
+    margin: -1px;
 }
 
 section {
