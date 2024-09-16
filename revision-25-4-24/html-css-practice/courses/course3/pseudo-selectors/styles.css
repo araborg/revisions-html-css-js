@@ -42,3 +42,13 @@ h1 .flex span:last-of-type {
     /* border: 3px solid green; */
     font-size: 1.2em;
 }
+
+#years {
+    background-color: #0a0a23;
+    color: #fff;
+
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: flex-end;
+}
