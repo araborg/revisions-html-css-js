@@ -12,6 +12,12 @@ body {
 
 span[class~="sr-only"] {
     border: 3px solid green;
+
+    width: 1px;
+    height: 1px;
+
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
 }
 
 section {
