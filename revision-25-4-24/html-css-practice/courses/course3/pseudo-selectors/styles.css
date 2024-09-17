@@ -175,6 +175,8 @@ tr[class="total"] td {
 tr[class="total"] {
     border-bottom: 4px double #000;
 
+    font-weight: bold;
+
     /* padding: 5px; */
     /* height: 10px; */
 }
