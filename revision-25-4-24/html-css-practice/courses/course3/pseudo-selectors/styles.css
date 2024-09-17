@@ -79,8 +79,8 @@ h1 .flex span:last-of-type {
     width: 4.5rem;
 }
 
-tr td:last-of-type {
-    padding-right: 10rem;
+tr.data td:last-of-type {
+    padding-right: 0.5rem;
 
     border: 2px solid red;
 }
