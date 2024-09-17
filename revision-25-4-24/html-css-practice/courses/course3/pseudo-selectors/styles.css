@@ -175,12 +175,17 @@ tr[class="total"] td {
 tr[class="total"] {
     border-bottom: 4px double #000;
 
-    /* border: 2px solid green; */
+    border: 2px solid green;
 
     /* padding: 5px; */
     /* height: 10px; */
 }
 
+tr.total:hover {
+    background-color: #99c9ff;
+}
+
 tr[class="total"] th {
     text-align: left;
+    padding-left: 0.5rem;
 }
