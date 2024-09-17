@@ -79,10 +79,10 @@ h1 .flex span:last-of-type {
     width: 4.5rem;
 }
 
-#years span:last-of-type {
-    /* width: 4rem; */
+tr td:last-of-type {
+    padding-right: 10rem;
 
-    /* margin-right: -0.2rem; */
+    border: 2px solid red;
 }
 
 .table-wrap {
