@@ -77,8 +77,6 @@ h1 .flex span:last-of-type {
 
 #years span[class] {
     width: 4.5rem;
-
-    /* border: 3px solid green; */
 }
 
 #years span:last-of-type {
@@ -88,7 +86,8 @@ h1 .flex span:last-of-type {
 }
 
 .table-wrap {
-    padding: 0.5rem 0.75rem;
+    padding: 0.5rem 0.65rem;
+    /* border: 3px solid green; */
 }
 
 table {
@@ -151,16 +150,16 @@ tr.data th .description {
 tbody td {
     width: 100vw;
 
-    min-width: 4rem;
-    max-width: 4rem;
+    min-width: 3.6rem;
+    max-width: 3.6rem;
 }
 
 tr.data td {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     vertical-align: top;
 
     text-align: right;
-    padding: 0.25rem 0.25rem 0 0rem;
+    padding: 0.25rem 0.5rem 0 0rem;
 }
 
 tr[class="total"] td {
