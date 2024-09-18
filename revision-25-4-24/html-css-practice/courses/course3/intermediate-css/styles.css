@@ -67,14 +67,17 @@ body {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
 
-    border-bottom: 35px solid #45454f;
+    border-bottom: 35px solid #3b3b4f;
 
     position: absolute;
     top: 29px;
     left: -20px;
 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 90px;
+
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 10px;
 
     /* transform: rotate(-45deg); */
 }
