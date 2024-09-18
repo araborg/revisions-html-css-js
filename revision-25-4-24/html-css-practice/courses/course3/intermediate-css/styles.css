@@ -104,7 +104,7 @@ body {
     background-color: #000;
 
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 40px;
 
     border-radius: 60%;
@@ -119,6 +119,16 @@ body {
     background-color: #000;
 
     position: absolute;
-    top: 60px;
-    left: 165px;
+    top: 50px;
+    left: 135px;
+
+    border-radius: 60%;
+
+    transform: rotate(-30deg);
+}
+
+.cat-left-inner-eye {
+}
+
+.cat-right-inner-eye {
 }
