@@ -235,3 +235,11 @@ body {
 
     /* transform: rotate(-2deg); */
 }
+
+.cat-left-whisker-bottom {
+    position: absolute;
+    top: 130px;
+    left: 45px;
+
+    transform: rotate(-5deg);
+}
