@@ -154,20 +154,20 @@ body {
 }
 
 .cat-nose {
-    border-left: 35px solid transparent;
-    border-right: 35px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
 
-    border-bottom: 70px solid #442c2c;
+    border-bottom: 25px solid #442c2c;
 
     position: absolute;
-    top: 50px;
-    left: 67px;
+    top: 100px;
+    left: 82px;
 
-    border-top-left-radius: 50px;
+    border-top-left-radius: 50%;
     border-top-right-radius: 60%;
 
     border-bottom-left-radius: 80px;
-    border-bottom-right-radius: 100px;
+    border-bottom-right-radius: 80px;
 
     transform: rotate(-180deg);
 }
