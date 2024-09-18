@@ -141,4 +141,14 @@ body {
 }
 
 .cat-right-inner-eye {
+    width: 10px;
+    height: 20px;
+
+    background-color: #fff;
+
+    border-radius: 60%;
+
+    position: absolute;
+    top: 10px;
+    left: 18px;
 }
