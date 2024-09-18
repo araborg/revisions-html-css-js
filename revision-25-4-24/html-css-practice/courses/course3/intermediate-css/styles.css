@@ -4,6 +4,8 @@ html {
 
 body {
     box-sizing: inherit;
+
+    background-color: #c9d2fc;
 }
 
 .cat-head {
@@ -21,4 +23,7 @@ body {
     left: 0;
 
     margin: auto;
+}
+
+.cat-left-ear {
 }
