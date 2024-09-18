@@ -200,7 +200,7 @@ body {
     transform: rotate(180deg);
 }
 
-.cat-whiskers div {
+.cat-whiskers div > div {
     width: 50px;
     height: 1px;
 
@@ -260,5 +260,5 @@ body {
     top: 130px;
     left: 107px;
 
-    transform: rotate(-7deg);
+    transform: rotate(6deg);
 }
