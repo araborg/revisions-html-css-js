@@ -2,6 +2,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    box-sizing: inherit;
+}
+
 .cat-head {
     width: 200px;
     height: 200px;
