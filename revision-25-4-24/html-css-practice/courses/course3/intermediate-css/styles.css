@@ -105,9 +105,20 @@ body {
 
     position: absolute;
     top: 60px;
-    left: 50px;
+    left: 40px;
 
     border-radius: 60%;
 
     transform: rotate(30deg);
+}
+
+.cat-right-eye {
+    width: 30px;
+    height: 40px;
+
+    background-color: #000;
+
+    position: absolute;
+    top: 60px;
+    left: 165px;
 }
