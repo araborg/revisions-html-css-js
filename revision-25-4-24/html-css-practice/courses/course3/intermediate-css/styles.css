@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+.cat-head {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 46%;
+
+    background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+}
