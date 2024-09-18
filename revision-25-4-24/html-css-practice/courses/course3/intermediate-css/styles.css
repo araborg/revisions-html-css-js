@@ -225,7 +225,7 @@ body {
 
     /* border: 2px solid red; */
 
-    transform: rotate(5deg);
+    transform: rotate(7deg);
 }
 
 .cat-left-whisker-middle {
@@ -241,5 +241,5 @@ body {
     top: 130px;
     left: 45px;
 
-    transform: rotate(-5deg);
+    transform: rotate(-7deg);
 }
