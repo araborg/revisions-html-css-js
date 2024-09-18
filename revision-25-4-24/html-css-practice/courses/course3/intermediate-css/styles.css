@@ -59,3 +59,10 @@ body {
 
     transform: rotate(45deg);
 }
+
+.cat-left-inner-ear {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-bottom: 35px solid #000;
+}
