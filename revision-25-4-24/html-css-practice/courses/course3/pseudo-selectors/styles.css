@@ -150,7 +150,6 @@ tbody td {
 }
 
 tr.data td {
-    /* border: 3px solid green; */
     vertical-align: top;
 
     text-align: right;
@@ -166,9 +165,6 @@ tr[class="total"] {
     border-bottom: 4px double #000;
 
     font-weight: bold;
-
-    /* padding: 5px; */
-    /* height: 10px; */
 }
 
 tr.total:hover {
@@ -181,7 +177,5 @@ tr[class="total"] th {
 }
 
 tr td:nth-of-type(3) {
-    /* border: 2px solid green; */
-
     font-style: italic;
 }
