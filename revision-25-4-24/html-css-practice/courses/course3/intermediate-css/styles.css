@@ -246,7 +246,8 @@ body {
 .cat-right-whisker-top {
     position: absolute;
     top: 120px;
-    left: 110px;
+    left: 107px;
+
     transform: rotate(-7deg);
 }
 .cat-right-whisker-middle {
