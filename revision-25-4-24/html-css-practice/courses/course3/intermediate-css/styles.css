@@ -27,6 +27,10 @@ body {
     margin: auto;
 }
 
+.cat-ears {
+    z-index: 1;
+}
+
 .cat-left-ear {
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
@@ -41,8 +45,6 @@ body {
     border-top-right-radius: 10px;
 
     transform: rotate(-45deg);
-
-    z-index: 1;
 }
 
 .cat-right-ear {
@@ -52,8 +54,8 @@ body {
     border-bottom: 70px solid #5e5e5e;
 
     position: absolute;
-    top: -56px;
-    left: 131px;
+    top: -26px;
+    left: 163px;
 
     transform: rotate(45deg);
 }
