@@ -9,12 +9,14 @@ body {
 }
 
 .cat-head {
-    width: 200px;
-    height: 200px;
+    width: 205px;
+    height: 180px;
 
     border-radius: 46%;
 
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
+
+    border: 1px solid #000;
 
     position: absolute;
     top: 0;
@@ -37,6 +39,10 @@ body {
 
     border-top-left-radius: 90px;
     border-top-right-radius: 10px;
+
+    transform: rotate(-45deg);
+
+    z-index: 1;
 }
 
 /* 
