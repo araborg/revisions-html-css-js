@@ -58,11 +58,18 @@ body {
     left: 163px;
 
     transform: rotate(45deg);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 90px;
 }
 
 .cat-left-inner-ear {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
 
-    border-bottom: 35px solid #000;
+    border-bottom: 35px solid #45454f;
+
+    position: absolute;
+    top: 29px;
+    left: -20px;
 }
