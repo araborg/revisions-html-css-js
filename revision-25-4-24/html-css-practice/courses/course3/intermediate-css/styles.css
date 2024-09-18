@@ -29,5 +29,18 @@ body {
     border-left: 35px solid transparent;
     border-right: 35px solid transparent;
 
-    border-bottom: 70px solid #000;
+    border-bottom: 70px solid #5e5e5e;
+
+    position: absolute;
+    top: -26px;
+    left: -31px;
+
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
 }
+
+/* 
+
+    z-index: 1;
+    transform: rotate(-45deg);
+*/
