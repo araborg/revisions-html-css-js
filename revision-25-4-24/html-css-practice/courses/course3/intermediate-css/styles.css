@@ -201,8 +201,11 @@ body {
 }
 
 .cat-left-whiskers div {
-    width: 120px;
-    height: 2px;
+    width: 50px;
+    height: 1px;
+
+    /* padding: 0; */
+    /* margin: 0; */
 
     /* border: 2px solid #000; */
 
@@ -212,11 +215,23 @@ body {
 
     background-color: #000;
 
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .cat-left-whisker-top {
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 120px;
+    left: 45px;
+
+    /* border: 2px solid red; */
+
+    transform: rotate(5deg);
+}
+
+.cat-left-whisker-middle {
+    position: absolute;
+    top: 125px;
+    left: 45px;
+
+    /* transform: rotate(-2deg); */
 }
