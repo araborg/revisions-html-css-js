@@ -200,7 +200,7 @@ body {
     transform: rotate(180deg);
 }
 
-.cat-whiskers {
+.cat-left-whiskers div {
     width: 120px;
     height: 2px;
 
@@ -211,4 +211,12 @@ body {
     border: 0;
 
     background-color: #000;
+
+    border: 3px solid red;
+}
+
+.cat-left-whisker-top {
+    position: absolute;
+    top: 150px;
+    left: 50px;
 }
