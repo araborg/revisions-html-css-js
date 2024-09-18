@@ -184,9 +184,16 @@ body {
 
 .cat-left-mouth {
     position: absolute;
-    top: 135px;
-    left: 50px;
+    top: 79px;
+    left: 75px;
+
+    transform: rotate(180deg);
 }
 
 .cat-right-mouth {
+    position: absolute;
+    top: 79px;
+    left: 95px;
+
+    transform: rotate(180deg);
 }
