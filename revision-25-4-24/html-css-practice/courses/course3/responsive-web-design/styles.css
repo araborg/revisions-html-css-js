@@ -17,8 +17,6 @@ html {
     padding: 90px 20px 0 20px;
 
     position: relative;
-
-    overflow: hidden;
 }
 
 #logo {
@@ -36,6 +34,8 @@ html {
     background-color: #040404;
 
     padding-left: 2px;
+
+    overflow: hidden;
 }
 
 .key {
@@ -86,10 +86,6 @@ html {
 
     .keys {
         width: 633px;
-    }
-
-    body {
-        background-color: red;
     }
 }
 
