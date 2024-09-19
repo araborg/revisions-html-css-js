@@ -33,4 +33,7 @@ html {
 .key {
     height: 175px;
     width: 41px;
+
+    background-color: #fff;
+    float: left;
 }
