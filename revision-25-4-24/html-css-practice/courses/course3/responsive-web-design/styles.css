@@ -1,10 +1,11 @@
 html {
+    box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 #piano {
@@ -14,9 +15,6 @@ html {
 
 #logo {
     width: 200px;
-
-    position: absolute;
-    top: 23px;
 }
 
 .keys {
@@ -25,18 +23,10 @@ html {
 
     background-color: #040404;
 
-    padding-left: 2px;
+    /* padding-left: 2px; */
 }
 
 .key {
     height: 175px;
     width: 41px;
-
-    background-color: #fff;
-
-    margin: 2px;
-
-    float: left;
-
-    border-radius: 0 0 3px 3px;
 }
