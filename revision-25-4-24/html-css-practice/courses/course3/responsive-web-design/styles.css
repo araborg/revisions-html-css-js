@@ -18,7 +18,7 @@ html {
 
     position: relative;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #logo {
@@ -65,12 +65,25 @@ html {
     border-radius: 0 0 3px 3px;
 }
 
-@media (max-width: 678px) {
+@media (min-width: 678px) {
     body {
         background-color: red;
     }
 
     #piano {
-        width: 650px;
+        width: 358px;
+    }
+
+    .keys {
+        width: 318px;
     }
 }
+
+/* 
+358px;
+318px;
+150px;
+675px;
+633px;
+
+*/
