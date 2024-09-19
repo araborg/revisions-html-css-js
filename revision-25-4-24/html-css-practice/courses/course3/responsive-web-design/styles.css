@@ -44,13 +44,15 @@ html {
     border-radius: 0 0 3px 3px;
 }
 
-.key.black--key::after {
-    content: "♥";
+/* .key */
 
-    width: 41px;
+.black--key::after {
+    width: 40px;
     height: 100px;
 
-    /* background-color: #000; */
+    content: "";
 
-    z-index: 100;
+    background-color: #1d1e22;
+
+    /* z-index: 100; */
 }
