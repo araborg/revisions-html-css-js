@@ -15,6 +15,8 @@ html {
     background-color: #00471b;
     margin: 80px auto;
     padding: 60px 20px 0 20px;
+
+    border: 2px solid red;
 }
 
 #logo {
@@ -26,8 +28,10 @@ html {
     height: 180px;
 
     background-color: #040404;
+    /* border: 2px solid #000; */
 
-    /* padding-left: 2px; */
+    padding-left: 2px;
+    /* margin: 2px; */
 }
 
 .key {
@@ -36,4 +40,6 @@ html {
 
     background-color: #fff;
     float: left;
+
+    margin: 2px;
 }
