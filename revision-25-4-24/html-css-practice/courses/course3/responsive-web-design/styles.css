@@ -17,6 +17,8 @@ html {
     padding: 90px 20px 0 20px;
 
     position: relative;
+
+    overflow: hidden;
 }
 
 #logo {
@@ -66,5 +68,9 @@ html {
 @media (max-width: 678px) {
     body {
         background-color: red;
+    }
+
+    #piano {
+        width: 650px;
     }
 }
