@@ -77,6 +77,20 @@ html {
     .keys {
         width: 318px;
     }
+
+    #logo {
+        width: 150px;
+    }
+}
+
+@media (min-width: 679px) and (max-width: 1199px) {
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+    }
 }
 
 /* 
