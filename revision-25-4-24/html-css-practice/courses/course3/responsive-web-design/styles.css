@@ -11,6 +11,10 @@ html {
 #piano {
     width: 992px;
     height: 290px;
+
+    background-color: #00471b;
+    margin: 80px auto;
+    padding: 60px 20px 0 20px;
 }
 
 #logo {
