@@ -5,33 +5,35 @@
 }
 
 #piano {
-    width: 990px;
-    height: 300px;
+    width: 992px;
+    height: 290px;
 
-    background-color: #00471b;
+    /* background-color: #00471b; */
 
-    margin: 80px auto;
+    /* margin: 80px auto; */
 
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 
 #logo {
     width: 200px;
     height: 20px;
 
-    position: absolute;
-    top: 120px;
+    /* position: absolute; */
+    /* top: 120px; */
 }
 
 .keys {
-    /* width: 100%; */
+    width: 949px;
+    height: 180px;
+
     margin: 60px 0 0 0;
     height: 230px;
 
     padding: 50px 20px 5px;
     border: 2px solid #040404;
 
-    /* background-color: green; */
+    background-color: #040404;
 }
 
 .key {
