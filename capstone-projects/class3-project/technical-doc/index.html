@@ -336,10 +336,12 @@
                     introduced in ECMAScript 2015.
                 </p>
 
-                <code>
-                    if (true) { let y = 5; } console.log(y); // ReferenceError:
-                    y is not defined
-                </code>
+                <div class="code-block">
+                    <code>
+                        if (true) { let y = 5; } console.log(y); //
+                        ReferenceError: y is not defined
+                    </code>
+                </div>
             </section>
 
             <section class="main-section" id="global-variables">
@@ -392,21 +394,25 @@
                     function or variable in the same scope. For example:
                 </p>
 
-                <code>
-                    // THIS WILL CAUSE AN ERROR function f() {}; const f = 5; //
-                    THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5;
-                    var g; //statements }
-                </code>
+                <div class="code-block">
+                    <code>
+                        // THIS WILL CAUSE AN ERROR function f() {}; const f =
+                        5; // THIS WILL CAUSE AN ERROR ALSO function f() { const
+                        g = 5; var g; //statements }
+                    </code>
+                </div>
 
                 <p>
                     However, object attributes are not protected, so the
                     following statement is executed without problems.
                 </p>
 
-                <code>
-                    const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-                    "otherValue";
-                </code>
+                <div class="code-block">
+                    <code>
+                        const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+                        "otherValue";
+                    </code>
+                </div>
             </section>
 
             <section class="main-section" id="data-types">
@@ -464,9 +470,11 @@
                     as follows:
                 </p>
 
-                <code>
-                    if (condition) { statement_1; } else { statement_2; }
-                </code>
+                <div class="code-block">
+                    <code>
+                        if (condition) { statement_1; } else { statement_2; }
+                    </code>
+                </div>
 
                 <p>
                     condition can be any expression that evaluates to true or
