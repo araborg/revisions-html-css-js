@@ -71,13 +71,21 @@ nav ul {
     /* padding: 0; */
 }
 
-nav ul li {
-    /* border: 3px solid red; */
+ul li {
+    /* text-decoration: none; */
+    list-style: none;
 
+    /* font-style: normal; */
+
+    /* border: 3px solid red; */
+}
+
+nav ul li {
     border-top: 1px solid #5f5f5f;
 }
 
 .nav-link {
+    text-decoration: none;
     padding: 15px 30px;
 
     display: block;
