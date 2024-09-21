@@ -131,8 +131,6 @@ nav ul li {
 
 .paragragh-block {
     padding-left: 8px;
-
-    /* white-space: inherit; */
 }
 
 p,
@@ -146,10 +144,6 @@ p {
 
 .paragragh-block ul {
     padding-left: 70px;
-
-    /* width: 100vw; */
-
-    /* list-style: none; */
 }
 
 .code-block {
@@ -157,7 +151,6 @@ p {
 
     padding: 20px;
 
-    /* padding-right: 40px; */
     margin: 10px;
 
     width: 66vw;
