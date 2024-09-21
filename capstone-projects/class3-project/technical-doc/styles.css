@@ -6,6 +6,13 @@ body {
     box-sizing: inherit;
 }
 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
 #navbar {
     border: 3px solid green;
 }
