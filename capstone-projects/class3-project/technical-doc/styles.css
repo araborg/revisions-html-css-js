@@ -12,6 +12,8 @@ body {
 
     font-size: 1rem;
 
+    color: #4d4e53;
+
     width: 100%;
 
     position: relative;
@@ -36,13 +38,12 @@ body {
     top: 0;
 }
 
-.nav-block {
+header {
     width: 100%;
-}
-
-#navbar .header {
     font-size: 1.8rem;
     padding: 15px 30px;
+
+    color: #202020;
 }
 
 nav ul {
@@ -81,4 +82,8 @@ nav ul li {
     position: relative;
     top: 0;
     left: 330px;
+}
+
+.main-section {
+    margin: 30px 0;
 }
