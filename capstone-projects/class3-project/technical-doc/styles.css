@@ -72,6 +72,8 @@ nav ul li {
     /* padding: 5px 0; */
 
     display: block;
+
+    color: #4d4e53;
 }
 
 /* main */
@@ -91,6 +93,8 @@ nav ul li {
     margin: 20px;
 
     margin-right: 40px;
+
+    /* width: 100%; */
 }
 
 .main-section header {
@@ -107,15 +111,21 @@ li {
     padding: 10px 0;
 }
 
-code {
-    display: block;
-
+.code-block {
     background-color: #f7f7f7;
 
     padding: 20px;
     margin: 10px;
 
-    width: 100%;
+    width: 65vw;
+
+    font-size: 0.8rem;
+
+    border-radius: 5px;
+}
+
+code {
+    /* display: block; */
 
     /* border: 2px solid green; */
 }
