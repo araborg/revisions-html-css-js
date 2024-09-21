@@ -1,13 +1,17 @@
 html {
     box-sizing: border-box;
+
+    /* white-space: nowrap; */
 }
 
 body {
     box-sizing: inherit;
 
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 10px;
+
+    /* flex-wrap: wrap; */
 
     font-family: Arial, "Open Sans", sans-serif;
 
@@ -20,6 +24,7 @@ body {
     /* position: relative; */
 
     line-height: 1.6;
+    overflow-x: hidden;
 
     /* overflow: hidden; */
 }
@@ -35,7 +40,7 @@ body {
 #navbar {
     /* width: 23%; */
 
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 
     border-right: 3px solid #a3a3a3;
 
@@ -102,7 +107,7 @@ nav ul li {
     /* text-wrap: wrap; */
     /* white-space: nowrap; */
 
-    line-break: auto;
+    /* line-break: auto; */
 
     /* border: 2px solid blue; */
 
@@ -126,6 +131,8 @@ nav ul li {
 
 .paragragh-block {
     padding-left: 8px;
+
+    /* white-space: inherit; */
 }
 
 p,
@@ -134,11 +141,11 @@ li {
 }
 
 p {
-    padding-left: 8px;
+    padding-left: 15px;
 }
 
 .paragragh-block ul {
-    padding-left: 84px;
+    padding-left: 70px;
 
     /* width: 100vw; */
 
