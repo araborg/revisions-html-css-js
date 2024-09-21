@@ -448,122 +448,133 @@
             <section class="main-section" id="data-types">
                 <header>Data types</header>
 
-                <p>The latest ECMAScript standard defines seven data types:</p>
+                <div class="paragragh-block">
+                    <p>
 
-                <ul>
-                    <li>Six data types that are primitives:</li>
+                    </p>
+                        The latest ECMAScript standard defines seven data types:
+                    </p>
 
                     <ul>
-                        <li>Boolean. true and false.</li>
+                        <li>Six data types that are primitives:</li>
 
-                        <li>
-                            null. A special keyword denoting a null value.
-                            Because JavaScript is case-sensitive, null is not
-                            the same as Null, NULL, or any other variant.
-                        </li>
+                        <ul>
+                            <li>Boolean. true and false.</li>
 
-                        <li>
-                            undefined. A top-level property whose value is
-                            undefined.
-                        </li>
+                            <li>
+                                null. A special keyword denoting a null value.
+                                Because JavaScript is case-sensitive, null is
+                                not the same as Null, NULL, or any other
+                                variant.
+                            </li>
 
-                        <li>Number. 42 or 3.14159.</li>
+                            <li>
+                                undefined. A top-level property whose value is
+                                undefined.
+                            </li>
 
-                        <li>String. "Howdy"</li>
+                            <li>Number. 42 or 3.14159.</li>
 
-                        <li>
-                            Symbol (new in ECMAScript 2015). A data type whose
-                            instances are unique and immutable.
-                        </li>
+                            <li>String. "Howdy"</li>
+
+                            <li>
+                                Symbol (new in ECMAScript 2015). A data type
+                                whose instances are unique and immutable.
+                            </li>
+                        </ul>
+
+                        <li>and Object</li>
                     </ul>
 
-                    <li>and Object</li>
-                </ul>
-
-                <p>
-                    Although these data types are a relatively small amount,
-                    they enable you to perform useful functions with your
-                    applications. Objects and functions are the other
-                    fundamental elements in the language. You can think of
-                    objects as named containers for values, and functions as
-                    procedures that your application can perform.
-                </p>
+                    <p>
+                        Although these data types are a relatively small amount,
+                        they enable you to perform useful functions with your
+                        applications. Objects and functions are the other
+                        fundamental elements in the language. You can think of
+                        objects as named containers for values, and functions as
+                        procedures that your application can perform.
+                    </p>
+                </div>
             </section>
 
             <section class="main-section" id="if-else">
                 <header>if...else statement</header>
 
-                <p>
-                    Use the if statement to execute a statement if a logical
-                    condition is true. Use the optional else clause to execute a
-                    statement if the condition is false. An if statement looks
-                    as follows:
-                </p>
-
-                <div class="code-block">
-                    <code>
-                        if (condition) { statement_1; } else { statement_2; }
-                    </code>
+                <div class="paragragh-block">
+                    <p>
+                        Use the if statement to execute a statement if a logical
+                        condition is true. Use the optional else clause to execute a
+                        statement if the condition is false. An if statement looks
+                        as follows:
+                    </p>
+    
+                    <div class="code-block">
+                        <code>
+                            if (condition) { statement_1; } else { statement_2; }
+                        </code>
+                    </div>
+    
+                    <p>
+                        condition can be any expression that evaluates to true or
+                        false. See Boolean for an explanation of what evaluates to
+                        true and false. If condition evaluates to true, statement_1
+                        is executed; otherwise, statement_2 is executed. statement_1
+                        and statement_2 can be any statement, including further
+                        nested if statements.
+                    </p>
+    
+                    <p>
+                        You may also compound the statements using else if to have
+                        multiple conditions tested in sequence, as follows:
+                    </p>
+    
+                    <div class="code-block">
+                        <code>
+                            if (condition_1) { statement_1; } else if (condition_2)
+                            { statement_2; } else if (condition_n) { statement_n; }
+                            else { statement_last; }
+                        </code>
+                    </div>
+    
+                    <p>
+                        In the case of multiple conditions only the first logical
+                        condition which evaluates to true will be executed. To
+                        execute multiple statements, group them within a block
+                        statement ({ ... }) . In general, it's good practice to
+                        always use block statements, especially when nesting if
+                        statements:
+                    </p>
+    
+                    <div class="code-block">
+                        <code>
+                            if (condition) { statement_1_runs_if_condition_is_true;
+                            statement_2_runs_if_condition_is_true; } else {
+                            statement_3_runs_if_condition_is_false;
+                            statement_4_runs_if_condition_is_false; }
+                        </code>
+                    </div>
+    
+                    <p>
+                        It is advisable to not use simple assignments in a
+                        conditional expression, because the assignment can be
+                        confused with equality when glancing over the code. For
+                        example, do not use the following code:
+                    </p>
+    
+                    <code>if (x = y) { /* statements here */ }</code>
+    
+                    <p>
+                        If you need to use an assignment in a conditional
+                        expression, a common practice is to put additional
+                        parentheses around the assignment. For example:
+                    </p>
+    
+                    <div class="code-block">
+                        <code> if ((x = y)) { /* statements here */ } </code>
+                    </div>
+                    
                 </div>
 
-                <p>
-                    condition can be any expression that evaluates to true or
-                    false. See Boolean for an explanation of what evaluates to
-                    true and false. If condition evaluates to true, statement_1
-                    is executed; otherwise, statement_2 is executed. statement_1
-                    and statement_2 can be any statement, including further
-                    nested if statements.
-                </p>
-
-                <p>
-                    You may also compound the statements using else if to have
-                    multiple conditions tested in sequence, as follows:
-                </p>
-
-                <div class="code-block">
-                    <code>
-                        if (condition_1) { statement_1; } else if (condition_2)
-                        { statement_2; } else if (condition_n) { statement_n; }
-                        else { statement_last; }
-                    </code>
-                </div>
-
-                <p>
-                    In the case of multiple conditions only the first logical
-                    condition which evaluates to true will be executed. To
-                    execute multiple statements, group them within a block
-                    statement ({ ... }) . In general, it's good practice to
-                    always use block statements, especially when nesting if
-                    statements:
-                </p>
-
-                <div class="code-block">
-                    <code>
-                        if (condition) { statement_1_runs_if_condition_is_true;
-                        statement_2_runs_if_condition_is_true; } else {
-                        statement_3_runs_if_condition_is_false;
-                        statement_4_runs_if_condition_is_false; }
-                    </code>
-                </div>
-
-                <p>
-                    It is advisable to not use simple assignments in a
-                    conditional expression, because the assignment can be
-                    confused with equality when glancing over the code. For
-                    example, do not use the following code:
-                </p>
-
-                <code>if (x = y) { /* statements here */ }</code>
-
-                <p>
-                    If you need to use an assignment in a conditional
-                    expression, a common practice is to put additional
-                    parentheses around the assignment. For example:
-                </p>
-
-                <div class="code-block">
-                    <code> if ((x = y)) { /* statements here */ } </code>
-                </div>
             </section>
 
             <section class="main-section" id="while-statement">
