@@ -106,9 +106,19 @@ nav ul li {
     color: #202020;
 }
 
+.paragragh-block {
+    padding-left: 15px;
+}
+
 p,
 li {
     padding: 10px 0;
+}
+
+.paragragh-block ul {
+    padding-left: 15px;
+
+    /* list-style: none; */
 }
 
 .code-block {
