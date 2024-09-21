@@ -32,5 +32,19 @@ body {
 }
 
 /* header */
+nav ul {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    font-size: 1.2em;
+}
+
+nav ul li {
+    border-bottom: 1px solid #5f5f5f;
+
+    padding: 10px;
+}
 
 /* main */
