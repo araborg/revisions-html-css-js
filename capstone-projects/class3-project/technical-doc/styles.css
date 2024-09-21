@@ -24,10 +24,6 @@ body {
     padding: 0;
 }
 
-.nav-block {
-    /* width: 100%; */
-}
-
 /* header */
 #navbar {
     /* border: 3px solid green; */
@@ -49,11 +45,15 @@ body {
     top: 0;
 }
 
+.nav-block {
+    width: 100%;
+}
+
 #navbar .header {
     /* border: 3px solid red; */
 
     font-size: 1.8rem;
-    padding: 10px 30px;
+    padding: 15px 30px;
 
     /* width: 100vw; */
 }
@@ -69,6 +69,8 @@ nav ul {
     overflow-y: scroll;
 
     height: 90vh;
+
+    /* padding: 5px 0; */
     /* margin: 0; */
     /* padding: 0; */
 }
@@ -84,11 +86,12 @@ ul li {
 
 nav ul li {
     border-top: 1px solid #5f5f5f;
+    padding: 10px 30px;
 }
 
 .nav-link {
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 5px 0;
 
     display: block;
     /* width: 100%; */
