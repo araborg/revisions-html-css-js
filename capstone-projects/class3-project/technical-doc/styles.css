@@ -156,17 +156,21 @@ p {
     background-color: #f7f7f7;
 
     padding: 20px;
+
+    /* padding-right: 40px; */
     margin: 10px;
 
-    width: 65vw;
+    width: 66vw;
 
     font-size: 0.8rem;
 
     border-radius: 5px;
+
+    border: 3px solid red;
 }
 
 code {
-    /* display: block; */
+    display: block;
 
-    /* border: 2px solid green; */
+    width: 530px;
 }
