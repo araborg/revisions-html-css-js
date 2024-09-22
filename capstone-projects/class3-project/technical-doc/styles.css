@@ -43,10 +43,10 @@ nav header {
 }
 
 nav ul {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     font-size: 1rem;
 
