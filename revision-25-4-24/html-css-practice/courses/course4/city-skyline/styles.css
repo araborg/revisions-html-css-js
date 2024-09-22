@@ -20,6 +20,12 @@ body {
 .bb1 {
     width: 10%;
     height: 70%;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bb1a {
