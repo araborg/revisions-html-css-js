@@ -87,9 +87,14 @@ body {
     height: 100%;
 
     background: linear-gradient(
-        var(--building-color2) 0% - 6%,
-        var(--window-color2) 6% - 9%
+        var(--building-color2),
+        var(--building-color2) 6%,
+
+        var(--window-color2) 6%,
+        var(--window-color2) 9%
     );
+
+    border: 2px solid black;
 }
 
 .bb3 {
