@@ -88,3 +88,12 @@ body {
 }
 
 /* foreground building */
+.foreground-building {
+    width: 100px;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+
+    background-color: red;
+}
