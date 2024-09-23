@@ -57,10 +57,22 @@ body {
 }
 
 .bb2 {
+    width: 10%;
+    height: 50%;
+
+    background-color: red;
 }
 
 .bb3 {
+    width: 10%;
+    height: 55%;
+
+    background-color: red;
 }
 
 .bb4 {
+    width: 11%;
+    height: 58%;
+
+    background-color: red;
 }
