@@ -4258,7 +4258,14 @@ value when there's a problem with the variable.
 
 
 13.
+That didn't work(d reason u added fallback value), 
+because the variables you declared in 
+.bb1 do not cascade to the .bb2 and .bb3 sibling elements. 
 
+That's just how CSS works. Because of this, variables are 
+often declared in the :root selector. This is the highest 
+level selector in CSS; putting your variables there will 
+make them usable everywhere. 
 
 14.
 
