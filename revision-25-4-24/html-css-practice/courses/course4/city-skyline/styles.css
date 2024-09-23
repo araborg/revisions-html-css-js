@@ -31,20 +31,7 @@ body {
     top: 0;
 }
 
-/* background-buildings */
-
-/*
-.background-buildings {
-
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-*/
-
+/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
@@ -103,24 +90,7 @@ body {
     background-color: var(--building-color4);
 }
 
-/* foreground building */
-
-/*
-.foreground-building {
-    width: 100px;
-    height: 100%;
-
-    position: absolute;
-    top: 0;
-
-    background-color: red;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-}
-*/
-
+/* FOREGROUND BUILDINGS - "fb" stands for "foreground */
 .fb1 {
     width: 10%;
     height: 60%;
