@@ -30,6 +30,7 @@ body {
     align-items: center;
 
     --building-color1: #999;
+    --building-color2: #66cc99;
 }
 
 .bb1a {
@@ -64,7 +65,7 @@ body {
     width: 10%;
     height: 50%;
 
-    background-color: red;
+    background-color: var(--building-color2);
 }
 
 .bb3 {
