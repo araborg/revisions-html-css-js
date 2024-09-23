@@ -49,7 +49,9 @@ body {
 
     background-color: var(--building-color1);
 
-    background: linear-gradient(--building-color1, --window-color1);
+    background: linear-gradient(var(--building-color1), var(--window-color1));
+
+    border: 2px solid blue;
 }
 
 .bb1b {
@@ -135,7 +137,7 @@ body {
     position: relative;
     right: 10%;
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .fb6 {
