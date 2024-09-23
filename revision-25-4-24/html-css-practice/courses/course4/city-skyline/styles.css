@@ -104,6 +104,8 @@ body {
 }
 
 /* foreground building */
+
+/*
 .foreground-building {
     width: 100px;
     height: 100%;
@@ -113,10 +115,11 @@ body {
 
     background-color: red;
 
-    /* display: flex; */
-    /* align-items: flex-end; */
-    /* justify-content: space-evenly; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
+*/
 
 .fb1 {
     width: 10%;
