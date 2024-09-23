@@ -83,5 +83,5 @@ body {
     width: 11%;
     height: 58%;
 
-    background-color: red;
+    background-color: var(--building-color4);
 }
