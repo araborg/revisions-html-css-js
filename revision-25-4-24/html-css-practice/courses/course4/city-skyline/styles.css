@@ -51,7 +51,13 @@ body {
 
     background: linear-gradient(var(--building-color1), var(--window-color1));
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+}
+
+.bb1-window {
+    height: 10%;
+
+    background: linear-gradient(var(--building-color1), var(--window-color1));
 }
 
 .bb1b {
