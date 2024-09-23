@@ -36,16 +36,15 @@ body {
 }
 
 .building-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .bb1-window {
