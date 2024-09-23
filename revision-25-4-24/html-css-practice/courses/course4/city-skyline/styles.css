@@ -96,6 +96,10 @@ body {
     top: 0;
 
     background-color: red;
+
+    /* display: flex; */
+    /* align-items: flex-end; */
+    /* justify-content: space-evenly; */
 }
 
 .fb1 {
