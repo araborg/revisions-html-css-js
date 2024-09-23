@@ -17,6 +17,7 @@ body {
     overflow: hidden;
 }
 
+/* background-buildings */
 .background-buildings {
     /* border: 2px solid black; */
 
@@ -85,3 +86,5 @@ body {
 
     background-color: var(--building-color4);
 }
+
+/* foreground building */
