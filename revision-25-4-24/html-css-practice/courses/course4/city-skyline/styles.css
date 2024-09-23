@@ -147,6 +147,9 @@ body {
     height: 45%;
 
     background-color: var(--building-color1);
+
+    position: relative;
+    left: 10%;
 }
 
 .fb5 {
@@ -154,6 +157,11 @@ body {
     height: 33%;
 
     background-color: var(--building-color2);
+
+    position: relative;
+    right: 10%;
+
+    border: 2px solid black;
 }
 
 .fb6 {
