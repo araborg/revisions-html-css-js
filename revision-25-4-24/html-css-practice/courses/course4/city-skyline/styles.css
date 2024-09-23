@@ -107,7 +107,7 @@ body {
         var(--window-color2) 9%
     );
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .bb3 {
