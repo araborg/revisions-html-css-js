@@ -46,8 +46,6 @@ body {
 .bb1 {
     width: 10%;
     height: 70%;
-
-    border: 5px solid green;
 }
 
 .bb1-window {
@@ -55,6 +53,7 @@ body {
 
     background: linear-gradient(var(--building-color1), var(--window-color1));
 }
+/* border: 5px solid green; */
 
 .bb1a {
     width: 70%;
