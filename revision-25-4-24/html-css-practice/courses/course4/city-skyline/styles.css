@@ -157,8 +157,6 @@ body {
     width: 10%;
     height: 60%;
 
-    background-color: var(--building-color4);
-
     border: 5px solid green;
 }
 
@@ -168,6 +166,8 @@ body {
 .fb1b {
     width: 60%;
     height: 10%;
+
+    background-color: var(--building-color4);
 }
 
 .fb1c {
