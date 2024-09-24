@@ -288,8 +288,6 @@ body {
     position: relative;
     right: 10%;
 
-    border: 5px solid green;
-
     background: repeating-linear-gradient(
             var(--building-color2),
             var(--building-color2) 5%,
@@ -312,4 +310,20 @@ body {
     height: 38%;
 
     background-color: var(--building-color3);
+
+    background: repeating-linear-gradient(
+            90deg,
+            var(--building-color3),
+            var(--building-color3) 10%,
+
+            transparent 10%,
+            transparent 30%
+        ),
+        repeating-linear-gradient(
+            var(--building-color3),
+            var(--building-color3) 10%,
+
+            var(--window-color3) 10%,
+            var(--window-color3) 30%
+        );
 }
