@@ -223,8 +223,6 @@ body {
 .fb3 {
     width: 10%;
     height: 35%;
-
-    border: 5px solid green;
 }
 
 .fb3a {
@@ -256,6 +254,14 @@ body {
 
     position: relative;
     left: 10%;
+
+    border: 5px solid green;
+}
+
+.fb4a {
+}
+
+.fb4b {
 }
 
 .fb5 {
@@ -266,6 +272,8 @@ body {
 
     position: relative;
     right: 10%;
+
+    border: 5px solid green;
 }
 
 .fb6 {
