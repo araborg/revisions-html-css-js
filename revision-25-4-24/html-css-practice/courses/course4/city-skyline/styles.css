@@ -195,12 +195,15 @@ body {
 .fb2 {
     width: 10%;
     height: 40%;
-
-    border: 5px solid green;
 }
 
 .fb2a {
     width: 100%;
+
+    border-bottom: 10vh solid var(--building-color3);
+
+    border-left: 1vw solid transparent;
+    border-right: 1vw solid transparent;
 }
 
 .fb2b {
@@ -219,9 +222,11 @@ body {
 
 .fb3 {
     width: 10%;
-    width: 35%;
+    height: 35%;
 
     background-color: var(--building-color1);
+
+    border: 5px solid green;
 }
 
 .fb4 {
