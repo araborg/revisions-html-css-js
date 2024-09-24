@@ -32,8 +32,8 @@ body {
     align-items: flex-end;
     justify-content: space-evenly;
 
-    /* position: absolute; */
-    /* top: 0; */
+    position: absolute;
+    top: 0;
 }
 
 .building-wrap {
