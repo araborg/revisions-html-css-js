@@ -328,7 +328,7 @@ body {
 }
 
 /* sky */
-/* .sky {
+.sky {
     background: radial-gradient(
         circle closest-corner at 15% 15%,
         #ffcf33,
@@ -338,19 +338,26 @@ body {
 
         #bbeeff 100%
     );
-} */
+}
 
 /* media query */
 @media (max-width: 1000px) {
+    :root {
+        --building-color1: #000;
+        --building-color2: #000;
+        --building-color3: #000;
+        --building-color4: #000;
+    }
+
     .sky {
         background: radial-gradient(
             circle closest-corner at 15% 15%,
-            #ffcf33,
-            #ffcf33 20%,
+            #ccc,
+            #ccc 20%,
 
-            #ffff66 21%,
+            #445 21%,
 
-            #bbeeff 100%
+            #b223 100%
         );
     }
 }
