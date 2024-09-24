@@ -43,16 +43,29 @@ body {
     align-items: center;
 }
 
+.window-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* sky */
+.sky {
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ffcf33,
+        #ffcf33 20%,
+
+        #ffff66 21%,
+
+        #bbeeff 100%
+    );
+}
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
-}
-
-.bb1-window {
-    height: 10%;
-
-    background: linear-gradient(var(--building-color1), var(--window-color1));
 }
 
 .bb1a {
@@ -75,6 +88,12 @@ body {
         var(--building-color1) 50%,
         var(--window-color1)
     );
+}
+
+.bb1-window {
+    height: 10%;
+
+    background: linear-gradient(var(--building-color1), var(--window-color1));
 }
 
 .bb2 {
@@ -147,12 +166,6 @@ body {
     background-color: var(--window-color4);
 }
 
-.window-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground */
 .fb1 {
     width: 10%;
@@ -181,6 +194,7 @@ body {
             90deg,
             var(--building-color4),
             var(--building-color4) 10%,
+
             transparent 10%,
             transparent 15%
         ),
@@ -327,19 +341,6 @@ body {
         );
 }
 
-/* sky */
-.sky {
-    background: radial-gradient(
-        circle closest-corner at 15% 15%,
-        #ffcf33,
-        #ffcf33 20%,
-
-        #ffff66 21%,
-
-        #bbeeff 100%
-    );
-}
-
 /* media query */
 @media (max-width: 1000px) {
     :root {
@@ -356,13 +357,13 @@ body {
 
     .sky {
         background: radial-gradient(
-            circle closest-corner at 15% 15%,
+            closest-corner circle at 15% 15%,
             #ccc,
             #ccc 20%,
 
             #445 21%,
 
-            #b223 100%
+            #223 100%
         );
     }
 }
