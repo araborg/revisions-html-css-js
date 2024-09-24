@@ -264,6 +264,9 @@ body {
 
     width: 100%;
     height: 89%;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fb4-window {
