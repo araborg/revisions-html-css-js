@@ -148,6 +148,12 @@ body {
     background-color: var(--window-color4);
 }
 
+.window-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground */
 .fb1 {
     width: 10%;
