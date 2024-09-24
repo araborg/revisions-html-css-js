@@ -339,3 +339,7 @@ body {
         #bbeeff 100%
     );
 }
+
+/* media query */
+@media (max-width: 1000px) {
+}
