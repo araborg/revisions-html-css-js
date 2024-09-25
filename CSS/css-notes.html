@@ -4368,16 +4368,24 @@ the bottom of the element; giving you some stripes, and
 saving you from having to add a bunch of elements to create 
 them.
 
-.bb2b {
+.fb1c {
     width: 100%;
-    height: 100%;
-    
+    height: 80%;
+
     background: repeating-linear-gradient(
-        var(--building-color2),
-        var(--building-color2) 6%,
-        var(--window-color2) 6%,
-        var(--window-color2) 9%
-    );
+            90deg,
+            var(--building-color4),
+            var(--building-color4) 10%,
+            transparent 10%,
+            transparent 15%
+        ),
+        
+        repeating-linear-gradient(
+            var(--building-color4),
+            var(--building-color4) 10%,
+            var(--window-color4) 10%,
+            var(--window-color4) 90%
+        );
 }
 
 
@@ -4432,8 +4440,15 @@ conditions, and they look like this:
 
 }  
 
-22.
 
+22. closest-corner circle:
+    background: radial-gradient(
+        closest-corner circle at 15% 15%,
+        #ffcf33,
+        #ffcf33 20%,
+        #ffff66 21%,
+        #bbeeff 100%
+    );
 
 23.
 
@@ -4481,6 +4496,7 @@ black  #bb99ff
 #ccc
 #445
 #b223
+
 
 *****************************************
 
