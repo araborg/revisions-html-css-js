@@ -4595,11 +4595,16 @@ value as the second argument. The first argument should be 2rem,
 min-content, and 2rem respectively.
 
 main {
-  display: grid;
-  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    display: grid;
+
+    grid-template-columns: 
+        minmax(2rem, 1fr) 
+        minmax(min-content, 94rem) 
+        minmax(2rem, 1fr);
+    
 }
 
-12.
+12. min-content
 
 
 13.
