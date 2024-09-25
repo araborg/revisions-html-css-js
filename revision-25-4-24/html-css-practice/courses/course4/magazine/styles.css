@@ -58,9 +58,16 @@ main {
     row-gap: 1.5rem;
 }
 
+/* heading */
+.hero {
+    grid-column: 1 / -1;
+
+    border: 2px solid green;
+}
+
+/* text */
 .text {
     grid-column: 2 / 3;
-    border: 2px solid green;
 }
 
 /* 
