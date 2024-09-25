@@ -67,6 +67,18 @@ main {
     border: 2px solid green;
 }
 
+img {
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.hero-title {
+    text-align: center;
+
+    color: orangered;
+}
+
 /* text */
 .text {
     grid-column: 2 / 3;
@@ -80,7 +92,7 @@ Raleway.
 
 linen
 rgb(20, 30, 40) === #141e28
-
+orangered
 
 
 
