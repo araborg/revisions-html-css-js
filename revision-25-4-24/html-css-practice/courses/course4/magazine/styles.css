@@ -37,6 +37,11 @@ a {
     color: linen;
 }
 
+/* grid section */
+main {
+    display: grid;
+}
+
 /* 
 
 Anton, 
