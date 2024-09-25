@@ -98,6 +98,10 @@ img {
     background-color: #306203;
 }
 
+.publish-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /* text */
 .text {
     grid-column: 2 / 3;
@@ -113,6 +117,8 @@ linen
 rgb(20, 30, 40) === #141e28
 orangered
 #306203
+gba(255, 255, 255, 0.5) === #ffffff80
+
 
 
 
