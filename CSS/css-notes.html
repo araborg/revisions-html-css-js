@@ -4491,13 +4491,30 @@ element, with a value of 400.
         alt="freecodecamp logo"
         class="hero-img"
         loading="lazy"
-        
+
         width="400"
     />
 
 4.
+The Referer HTTP header contains information about the 
+address or URL of a page that a user might be visiting 
+from. This information can be used in analytics to track 
+how many users from your page visit freecodecamp.org, 
+for example. Setting the rel attribute to noreferrer 
+omits this information from the HTTP request.
 
+    <p class="author-name">
+        By 
 
+        <a 
+            href="https://freecodecamp.org" 
+            target="_blank"
+            
+            rel="noreferrer"
+        >
+            freeCodeCamp
+        </a>
+    </p>
 5.
 
 
