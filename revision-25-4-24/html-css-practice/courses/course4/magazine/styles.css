@@ -45,6 +45,8 @@ main {
         minmax(2rem, 1fr)
         minmax(min-content, 94rem)
         minmax(2rem, 1fr);
+
+    row-gap: 3rem;
 }
 
 /* 
