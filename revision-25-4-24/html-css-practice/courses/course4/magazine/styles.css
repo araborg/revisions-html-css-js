@@ -88,6 +88,16 @@ img {
     text-align: center;
 }
 
+.author {
+    font-size: 2rem;
+
+    font-family: "Raleway", sans-serif;
+}
+
+.author-name a:hover {
+    background-color: #306203;
+}
+
 /* text */
 .text {
     grid-column: 2 / 3;
@@ -102,7 +112,7 @@ Raleway.
 linen
 rgb(20, 30, 40) === #141e28
 orangered
-
+#306203
 
 
 
