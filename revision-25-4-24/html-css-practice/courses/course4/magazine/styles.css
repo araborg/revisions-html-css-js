@@ -129,6 +129,11 @@ img {
     text-align: justify;
 }
 
+.first-paragraph::first-letter {
+    font-size: 6rem;
+    color: orangered;
+}
+
 /* 
 
 Anton, 
@@ -140,7 +145,7 @@ rgb(20, 30, 40) === #141e28
 orangered
 #306203
 gba(255, 255, 255, 0.5) === #ffffff80
-
+orangered
 
 
 
