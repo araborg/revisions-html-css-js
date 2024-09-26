@@ -216,6 +216,19 @@ hr {
     }
 }
 
+@media only screen and (max-width: 550px) {
+    .hero-title {
+        font-size: 6rem; /* 96px */
+    }
+
+    .hero-subtitle,
+    .author,
+    .quote,
+    .list-title {
+        font-size: 1.8rem;
+    }
+}
+
 /* 
 
 Anton, 
