@@ -6,7 +6,7 @@
 
     box-sizing: border-box;
 
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
 }
 
 html {
@@ -136,6 +136,10 @@ img {
 
     float: left;
     margin-right: 1rem;
+}
+
+hr {
+    margin: 1.5rem 0;
 }
 
 /* 
