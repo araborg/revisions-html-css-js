@@ -140,6 +140,8 @@ img {
 
 hr {
     margin: 1.5rem 0;
+
+    border: 1px solid rgba(120, 120, 120, 0.6);
 }
 
 /* 
@@ -154,7 +156,7 @@ orangered
 #306203
 gba(255, 255, 255, 0.5) === #ffffff80
 orangered
-
+rgba(120, 120, 120, .6) === #78787899
 
 
 */
