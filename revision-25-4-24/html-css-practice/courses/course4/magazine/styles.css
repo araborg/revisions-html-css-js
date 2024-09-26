@@ -130,7 +130,8 @@ img {
 }
 
 .first-paragraph::first-letter {
-    font-size: 6rem;
+    font-size: 6rem; /* 96px */
+
     color: orangered;
 }
 
