@@ -144,6 +144,14 @@ hr {
     border: 1px solid rgba(120, 120, 120, 0.6);
 }
 
+.quote {
+    color: #00beef;
+
+    font-size: 2.4rem;
+
+    text-align: center;
+}
+
 /* 
 
 Anton, 
@@ -157,6 +165,6 @@ orangered
 gba(255, 255, 255, 0.5) === #ffffff80
 orangered
 rgba(120, 120, 120, .6) === #78787899
-
+#00beef
 
 */
