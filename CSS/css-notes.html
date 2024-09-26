@@ -4864,6 +4864,17 @@ a grid-template-columns property of 1fr.
 This will collapse the three images into one column on smaller 
 screens.
 
+
+You should have a new @media rule for only screen and 
+(max-width: 720px).
+
+@media only screen and (max-width: 720px) {
+    .image-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 38.
 
 
