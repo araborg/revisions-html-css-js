@@ -172,6 +172,10 @@ hr {
     margin-bottom: 3rem; /* 48px */
 }
 
+.lists {
+    list-style: none;
+}
+
 /* 
 
 Anton, 
