@@ -5,6 +5,8 @@
     margin: 0;
 
     box-sizing: border-box;
+
+    border: 2px solid greenyellow;
 }
 
 html {
@@ -104,6 +106,7 @@ img {
 
 .social-icons {
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
     font-size: 3rem;
 }
