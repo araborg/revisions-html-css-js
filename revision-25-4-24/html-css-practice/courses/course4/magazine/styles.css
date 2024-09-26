@@ -167,7 +167,9 @@ hr {
     display: grid;
 
     grid-template-columns: 1fr 2fr;
-    column-gap: 3rem;
+    column-gap: 3rem; /* 48px */
+
+    margin-bottom: 3rem; /* 48px */
 }
 
 /* 
