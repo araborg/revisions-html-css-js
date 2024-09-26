@@ -113,8 +113,6 @@ img {
     font-size: 3rem;
 
     align-items: center;
-
-    /* justify-items: center; */
 }
 
 /* text */
@@ -135,11 +133,11 @@ img {
     color: orangered;
 
     float: left;
-    margin-right: 1rem;
+    margin-right: 1rem; /* 16px */
 }
 
 hr {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0; /* 24px */
 
     border: 1px solid rgba(120, 120, 120, 0.6);
 }
