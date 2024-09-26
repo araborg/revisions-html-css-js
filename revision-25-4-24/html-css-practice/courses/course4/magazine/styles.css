@@ -48,7 +48,7 @@ main {
         minmax(min-content, 94rem)
         minmax(2rem, 1fr);
 
-    row-gap: 3rem;
+    row-gap: 3rem; /* 48px */
 }
 
 .heading {
@@ -57,7 +57,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    row-gap: 1.5rem;
+    row-gap: 1.5rem; /* 24px */
 }
 
 /* heading */
@@ -91,7 +91,7 @@ img {
 }
 
 .author {
-    font-size: 2rem;
+    font-size: 2rem; /* 32px */
 
     font-family: "Raleway", sans-serif;
 }
