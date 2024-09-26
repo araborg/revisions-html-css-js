@@ -113,6 +113,8 @@ img {
     font-size: 3rem;
 
     align-items: center;
+
+    /* justify-items: center; */
 }
 
 /* text */
