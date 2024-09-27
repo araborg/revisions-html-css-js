@@ -78,3 +78,7 @@ img {
     grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
 }
+
+.image-wrapper {
+    display: grid;
+}
