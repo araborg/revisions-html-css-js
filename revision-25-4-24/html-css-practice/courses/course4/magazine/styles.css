@@ -51,11 +51,11 @@ main {
 .heading {
     border: 2px solid white;
 
-    grid-column: 2 / 3;
+    /* grid-column: 2 / 3; */
 }
 
 img {
-    /* width: 100%; */
+    width: 100%;
 
-    width: 400px;
+    /* width: 400px; */
 }
