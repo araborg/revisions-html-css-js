@@ -67,3 +67,7 @@ img {
 
     /* width: 400px; */
 }
+
+.text {
+    grid-column: 2 / 3;
+}
