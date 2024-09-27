@@ -46,8 +46,12 @@ main {
         minmax(2rem, 1fr)
         minmax(min-content, 94rem)
         minmax(2rem, 1fr);
+}
 
-    border: 1px solid red;
+.heading {
+    border: 2px solid white;
+
+    grid-column: 2 / 3;
 }
 
 img {
