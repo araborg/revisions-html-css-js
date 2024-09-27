@@ -6,7 +6,7 @@
 
     box-sizing: border-box;
 
-    /* border: 2px solid greenyellow; */
+    border: 2px solid greenyellow;
 }
 
 html {
@@ -40,5 +40,7 @@ a {
 
 /* heading */
 img {
-    width: 100%;
+    /* width: 100%; */
+
+    width: 400px;
 }
