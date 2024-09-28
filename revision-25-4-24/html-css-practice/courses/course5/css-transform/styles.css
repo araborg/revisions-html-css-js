@@ -73,9 +73,11 @@ body {
 }
 
 .penguin-body::before {
-    content: "";
+    content: "l";
 
     position: absolute;
+    top: 10%;
+    left: 25%;
 
     width: 50%;
     height: 45%;
