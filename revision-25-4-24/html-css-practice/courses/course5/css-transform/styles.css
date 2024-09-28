@@ -93,6 +93,10 @@ body {
     height: 17%;
 
     background-color: black;
+
+    top: 45%;
+
+    border-radius: 50%;
 }
 
 /* penguin-body */
