@@ -85,6 +85,8 @@ body {
     background-color: gray;
 
     border-radius: 0% 0% 100% 100%;
+
+    opacity: 70%;
 }
 
 .left-mountain {
