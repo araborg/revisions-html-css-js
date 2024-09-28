@@ -5311,7 +5311,23 @@ ancestor.
 }
 
 25.
+Round off the crest, by giving the pseudo-element bottom corners 
+a radius of 100%, leaving the top corners at 0%.
 
+.penguin-body::before {
+    content: "";
+
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    
+    width: 50%;
+    height: 45%;
+    
+    background-color: gray;
+
+    border-radius: 0% 0% 100% 100%;
+}
 
 26.
 
