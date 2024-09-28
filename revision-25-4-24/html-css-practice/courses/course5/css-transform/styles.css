@@ -75,7 +75,12 @@ body {
 .penguin-body::before {
     content: "";
 
-    /* position: absolute; */
+    position: absolute;
+
+    width: 50%;
+    height: 45%;
+
+    background-color: gray;
 }
 
 .left-mountain {
