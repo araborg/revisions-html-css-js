@@ -124,6 +124,10 @@ body {
     height: 10%;
 
     background-color: pink;
+
+    top: 65%;
+
+    border-radius: 50%;
 }
 
 /* penguin-body */
