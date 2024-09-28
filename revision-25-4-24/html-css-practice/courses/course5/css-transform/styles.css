@@ -112,6 +112,11 @@ body {
     height: 100%;
 
     background-color: var(--penguin-face);
+
+    top: 25%;
+    left: -23%;
+
+    border-radius: 50%;
 }
 
 /* penguin-body */
