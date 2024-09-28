@@ -152,6 +152,13 @@ body {
     left: 40%;
 }
 
+.beak.bottom {
+    width: 16%;
+
+    top: 65%;
+    left: 42%;
+}
+
 /* penguin-body */
 .penguin-body {
     width: 53%;
