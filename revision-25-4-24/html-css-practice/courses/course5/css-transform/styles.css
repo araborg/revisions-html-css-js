@@ -167,6 +167,10 @@ body {
     font-weight: bold;
 }
 
+.shirt div {
+    font-weight: initial;
+}
+
 /* penguin-body */
 .penguin-body {
     width: 53%;
