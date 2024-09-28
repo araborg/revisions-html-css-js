@@ -5302,7 +5302,13 @@ content property of the pseudo-element to an empty string.
 You should use the .penguin-body::before selector.
 
 24.
+Position the pseudo-element relative to its closest positioned 
+ancestor.
 
+.penguin-body::before {
+    content: "";
+    position: absolute;
+}
 
 25.
 
