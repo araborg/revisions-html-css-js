@@ -10,6 +10,11 @@ body {
     overflow: hidden;
 }
 
+.gound {
+    width: 100vw;
+    height: 400px;
+}
+
 /*
 
 rgb(118,201,255),
