@@ -21,6 +21,11 @@ body {
     position: absolute;
 }
 
+.penguin {
+    width: 300px;
+    height: 300px;
+}
+
 /*
 
 rgb(118,201,255),
