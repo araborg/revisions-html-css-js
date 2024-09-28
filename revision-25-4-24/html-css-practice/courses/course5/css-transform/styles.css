@@ -25,7 +25,10 @@ body {
     width: 300px;
     height: 300px;
 
-    margin: 75px auto;
+    margin: auto;
+    margin-top: 75px;
+
+    background-color: red;
 }
 
 /*
