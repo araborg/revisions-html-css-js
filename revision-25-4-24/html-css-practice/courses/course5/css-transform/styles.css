@@ -165,6 +165,10 @@ body {
     font-family: "Helvetica", sans-serif;
 
     font-weight: bold;
+
+    background-color: red;
+    width: 50px;
+    height: 50px;
 }
 
 .shirt div {
