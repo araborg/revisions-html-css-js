@@ -40,8 +40,6 @@ body {
 
     position: relative;
 
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
     /* animation-name: wave; */
     /* animation-duration: 1s; */
     /* transition-timing-function: ease-in-out; */
@@ -321,16 +319,12 @@ body {
     transform-origin: top left;
     transform: rotate(130deg) scaleX(-1);
 
-    animation-name: wave;
-    animation-duration: 3s;
-    animation-iteration-count: infine;
-    animation-timing-function: linear;
+    /* animation-name: wave; */
+    /* animation-duration: 3s; */
+    /* animation-iteration-count: infine; */
+    /* animation-timing-function: linear; */
 
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
-    /* animation: 3s linear infinite wave; */
-
-    /* animation: wave 3s infinite linear; */
+    animation: wave 3s infinite linear;
 }
 
 .arm.right {
