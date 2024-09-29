@@ -169,6 +169,9 @@ body {
 
 .shirt div {
     font-weight: initial;
+
+    top: 22.5px;
+    left: 12px;
 }
 
 /* penguin-body */
