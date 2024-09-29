@@ -323,6 +323,8 @@ body {
     animation-duration: 3s;
     animation-iteration-count: infine;
     animation-timing-function: linear;
+
+    /* animation: 3s linear infinite wave; */
 }
 
 .arm.right {
