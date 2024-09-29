@@ -5490,7 +5490,18 @@ function to be the top left corner of its parent.
 
 
 39.
+To keep the linear gradient on the correct side of the penguin's 
+left arm, first rotate it by 130deg, then invert the x-axis.
 
+You should give .arm.left a transform of rotate(130deg) scaleX(-1).
+
+.arm.left {
+    top: 35%;
+    left: 5%;
+    
+    transform-origin: top left; 
+    transform: rotate(130deg) scaleX(-1);
+}
 
 40.
 
