@@ -262,6 +262,13 @@ body {
     border-radius: 50%;
 }
 
+.foot {
+    width: 15%;
+    height: 30%;
+
+    background-color: orange;
+}
+
 /*
 
 
