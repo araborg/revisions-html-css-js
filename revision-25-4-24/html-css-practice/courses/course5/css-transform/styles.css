@@ -289,6 +289,9 @@ body {
     transform: rotate(-80deg);
 }
 
+.arm {
+    background: linear-gradient(90deg, gray, rgb(209, 210, 199));
+}
 /*
 
 
