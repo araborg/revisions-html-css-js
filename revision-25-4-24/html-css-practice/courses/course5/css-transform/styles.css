@@ -305,8 +305,15 @@ body {
     top: 35%;
     left: 5%;
 
-    transform-origin: 0% 0%;
+    /* transform-origin: 0% 0%; */
+
+    transform-origin: top left;
     transform: rotate(130deg) scaleX(-1);
+
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infine;
+    animation-timing-function: linear;
 }
 
 .arm.right {
