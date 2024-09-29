@@ -166,7 +166,6 @@ body {
 
     font-weight: bold;
 
-    background-color: red;
     width: 50px;
     height: 50px;
 
@@ -174,6 +173,8 @@ body {
     left: 127.5px;
 
     z-index: 1;
+
+    color: #6a6969;
 }
 
 .shirt div {
