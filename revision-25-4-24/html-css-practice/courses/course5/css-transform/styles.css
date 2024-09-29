@@ -321,12 +321,12 @@ body {
     transform-origin: top left;
     transform: rotate(130deg) scaleX(-1);
 
-    animation-name: wave;
-    animation-duration: 3s;
-    animation-iteration-count: infine;
-    animation-timing-function: linear;
+    /* animation-name: wave; */
+    /* animation-duration: 3s; */
+    /* animation-iteration-count: infine; */
+    /* animation-timing-function: linear; */
 
-    /* animation: 3s linear infinite wave; */
+    animation: 3s linear infinite wave;
 }
 
 .arm.right {
