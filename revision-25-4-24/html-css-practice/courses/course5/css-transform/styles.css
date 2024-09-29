@@ -267,6 +267,9 @@ body {
     height: 30%;
 
     background-color: orange;
+
+    top: 85%;
+    border-radius: 50%;
 }
 
 /*
