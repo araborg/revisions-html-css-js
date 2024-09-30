@@ -25,6 +25,8 @@
     left: 50%;
 
     transform-origin: 0% 0%;
+
+    /* transform-origin: top left; */
 }
 
 .line:nth-of-type(2) {
