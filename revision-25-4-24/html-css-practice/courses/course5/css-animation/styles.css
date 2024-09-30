@@ -12,6 +12,8 @@
     max-height: 500px;
 
     position: absolute;
+
+    animation: wheel 10s infinite linear;
 }
 
 .line {
