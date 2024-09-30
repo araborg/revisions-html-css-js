@@ -16,6 +16,9 @@
     /* animation: wheel 10s infinite linear; */
     animation-name: wheel;
     animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .line {
