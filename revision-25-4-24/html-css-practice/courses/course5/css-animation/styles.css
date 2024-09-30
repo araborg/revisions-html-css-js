@@ -1,3 +1,14 @@
+body {
+    /* width: 100%; */
+    /* height: 80vh; */
+
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+
+    overflow: hidden;
+}
+
 .wheel {
     border: 2px solid black;
 
@@ -7,6 +18,8 @@
 
     width: 55vw;
     height: 55vw;
+
+    margin: auto;
 
     max-width: 500px;
     max-height: 500px;
