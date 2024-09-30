@@ -13,7 +13,9 @@
 
     position: absolute;
 
-    animation: wheel 10s infinite linear;
+    /* animation: wheel 10s infinite linear; */
+    animation-name: wheel;
+    animation-duration: 10s;
 }
 
 .line {
