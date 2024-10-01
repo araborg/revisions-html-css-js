@@ -6094,8 +6094,6 @@ You should give .arm.left a transform of rotate(130deg) scaleX(-1).
 40. scaleX(-1);
 
 
-
-
 41.
 Now, you are going to use CSS animations to make the penguin 
 wave.
@@ -6103,6 +6101,7 @@ wave.
 Define a new @keyframes named wave.
 
 @keyframes wave {}
+
 
 42.
 Give wave four waypoints starting at 10%, and incrementing by 10%.
@@ -6130,8 +6129,9 @@ of not-allowed.
     cursor: not-allowed;
 }
 
+
 44.
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+animation: name duration timing-function delay iteration-count direction fill-mode;
 
 
 45.
@@ -6174,6 +6174,7 @@ To this:
     margin-top: -58px;
 }
 
+
 46. diff btw these
     animation-name: wave;
     animation-duration: 3s;
@@ -6185,18 +6186,6 @@ To this:
     /* animation: 3s linear infinite wave; */ ====
 
     /* animation: wave 3s infinite linear; */
-
-
-47.
-
-
-48.
-
-
-49.
-
-
-50.
 
 
 
