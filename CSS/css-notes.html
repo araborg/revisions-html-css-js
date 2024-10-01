@@ -5405,6 +5405,7 @@ In the .game .gazelle ruleset, add a delay of 400ms.
     left: 231px;
     z-index: 1;
     max-height: 50px;
+
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
@@ -5431,7 +5432,17 @@ Leaving out one of the properties causes the default value for that property to 
 
 Combine all the transition properties for the gazelle into one, shorthand declaration. The property being transitioned is max-height, with a duration of 750ms. The timing function is linear, and the delay is 400ms.
 
-
+.game .gazelle {
+    position: absolute;
+    top: 260px;
+    left: 231px;
+    z-index: 1;
+    max-height: 50px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+    transition-delay: 400ms;
+}
 
 
 8.
