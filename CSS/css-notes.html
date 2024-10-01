@@ -5412,7 +5412,26 @@ In the .game .gazelle ruleset, add a delay of 400ms.
 }
 
 
-7.
+7. Shorthand
+3 min
+Now that we’ve explored each transition property, you may find yourself with many CSS rule sets that look like the code below.
+
+transition-property: color;
+transition-duration: 1.5s;
+transition-timing-function: linear;
+transition-delay: 0.5s;
+
+Because these four properties are so frequently declared together, CSS provides a property that can be used to declare them all in one line: transition. This shorthand property describes each aspect of the transition puzzle in a single declaration. The properties must be specified in this order: transition-property, transition-duration, transition-timing-function, transition-delay.
+
+transition: color 1.5s linear 0.5s;
+
+In the example above, we have refactored the four lines of code in the previous example into one concise line. This example will cause any change in text color to transition at constant speed over 1.5 seconds, after a delay of 0.5 seconds.
+
+Leaving out one of the properties causes the default value for that property to be applied. There is one exception: You must set duration if you want to define delay. Since both are time values, the browser will always interpret the first time value it sees as duration.
+
+Combine all the transition properties for the gazelle into one, shorthand declaration. The property being transitioned is max-height, with a duration of 750ms. The timing function is linear, and the delay is 400ms.
+
+
 
 
 8.
