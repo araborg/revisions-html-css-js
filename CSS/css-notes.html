@@ -5406,15 +5406,22 @@ value to be longer.
 }
 
 6. Delay
-Our last transition property is transition-delay. Much like duration, its value is an amount of time. Delay specifies the time to wait before starting the transition. As with the duration property, the default value for transition-delay is 0s, which means no delay.
+Our last transition property is transition-delay. Much like duration, 
+its value is an amount of time. Delay specifies the time to wait 
+before starting the transition. As with the duration property, the 
+default value for transition-delay is 0s, which means no delay.
 
 transition-property: width;
 transition-duration: 750ms;
 transition-delay: 250ms;
 
-In the example above, a change in the width of the element will start after a quarter of a second, and it will animate over three quarters of a second.
+In the example above, a change in the width of the element will start 
+after a quarter of a second, and it will animate over three quarters 
+of a second.
 
-Right now the gazelle immediately begins the transition to the new state when the mouse hovers over it. Let’s add a delay to make the game a little more interesting.
+Right now the gazelle immediately begins the transition to the new 
+state when the mouse hovers over it. Let’s add a delay to make the 
+game a little more interesting.
 
 In the .game .gazelle ruleset, add a delay of 400ms.
 
@@ -5433,7 +5440,6 @@ In the .game .gazelle ruleset, add a delay of 400ms.
 
 
 7. Shorthand
-3 min
 Now that we’ve explored each transition property, you may find yourself with many CSS rule sets that look like the code below.
 
 transition-property: color;
