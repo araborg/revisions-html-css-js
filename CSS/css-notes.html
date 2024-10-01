@@ -5379,12 +5379,23 @@ Hover your mouse over the gazelle to observe the difference in motion. If you ca
     left: 231px;
     z-index: 1;
     max-height: 50px;
+
     transition-property: max-height;
     transition-duration: 750ms;
     transition-timing-function: linear;
 }
 
-6.
+6. Delay
+2 min
+Our last transition property is transition-delay. Much like duration, its value is an amount of time. Delay specifies the time to wait before starting the transition. As with the duration property, the default value for transition-delay is 0s, which means no delay.
+
+transition-property: width;
+transition-duration: 750ms;
+transition-delay: 250ms;
+
+In the example above, a change in the width of the element will start after a quarter of a second, and it will animate over three quarters of a second.
+
+
 
 
 7.
