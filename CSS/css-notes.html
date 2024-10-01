@@ -5399,7 +5399,17 @@ Right now the gazelle immediately begins the transition to the new state when th
 
 In the .game .gazelle ruleset, add a delay of 400ms.
 
-
+.game .gazelle {
+    position: absolute;
+    top: 260px;
+    left: 231px;
+    z-index: 1;
+    max-height: 50px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+    transition-delay: 400ms;
+}
 
 
 7.
