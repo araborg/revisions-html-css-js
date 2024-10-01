@@ -5348,7 +5348,25 @@ a {
 
 
 
-5.
+5. Timing Function
+4 min
+The next transition property is transition-timing-function. The timing function describes the pace of the transition.
+
+The default value is ease, which starts the transition slowly, speeds up in the middle, and slows down again at the end.
+
+Other valid values include:
+
+ease-in — starts slow, accelerates quickly, stops abruptly
+ease-out — begins abruptly, slows down, and ends slowly
+ease-in-out — starts slow, gets fast in the middle, and ends slowly
+linear — constant speed throughout
+
+transition-property: color;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+
+In the example above, the text color will be animated over one second. The timing function is ease-out which means it will begin abruptly and slow down as it ends.
+
 
 
 6.
