@@ -5459,7 +5459,11 @@ font-size 750ms ease-in 100ms;
 
 The above code transitions two properties at once. The text color transitions over one second with linear timing and no delay. At the same time, the font size transitions over 750 milliseconds with an ease-in timing and a 100 millisecond delay. This “chaining” is a powerful tool for expressing complicated animations.
 
-
+.button span,
+.button div,
+.button i {
+  transition: width 750ms ease-in 200ms, left 500ms ease-out 450ms;
+}
 
 
 9.
