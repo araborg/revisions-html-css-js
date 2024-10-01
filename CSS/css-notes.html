@@ -5367,7 +5367,22 @@ transition-timing-function: ease-out;
 
 In the example above, the text color will be animated over one second. The timing function is ease-out which means it will begin abruptly and slow down as it ends.
 
+Let’s use the transition-timing-function property in a game! Find the gazelle in the picture to your right and move your mouse over it. Hint: It’s under a zebra’s head.
 
+Add transition-timing-function as a property to the .game .gazelle ruleset with the value linear.
+
+Hover your mouse over the gazelle to observe the difference in motion. If you can’t tell the difference, you can change the transition-duration value to be longer.
+
+.game .gazelle {
+    position: absolute;
+    top: 260px;
+    left: 231px;
+    z-index: 1;
+    max-height: 50px;
+    transition-property: max-height;
+    transition-duration: 750ms;
+    transition-timing-function: linear;
+}
 
 6.
 
