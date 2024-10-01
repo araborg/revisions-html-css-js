@@ -4727,13 +4727,12 @@ While grid-template-columns: repeat(5, 1fr); is eneabled.
 }
 
 
-
-
 25. Alignmt:
 Much like Flexbox, with CSS Grid you can align the content of 
 grid items with align-items and justify-items. align-items will 
 align child elements along the column axis, and justify-items 
 will align child elements along the row axis.
+
 
 26. letter-spacing:
 
@@ -4787,6 +4786,7 @@ Now it's time to style your third section. Note that it has the
 text and text-with-images values for the class attribute, which 
 means it is already inheriting the styles from your .text rule.
 
+
 31.
 You will need to have a column for text and a column for images. 
 
@@ -4799,6 +4799,7 @@ property set to 1fr 2fr. Also set the column-gap property to
     grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
 }
+
 
 32. list-style-type and list-style:
 
@@ -4852,6 +4853,7 @@ property.
     place-items: center;
 }
 
+
 36.
 Create an .image-1, .image-3 rule and give it a grid-column 
 property set to 1 / -1. This will allow the first and third 
@@ -4860,7 +4862,6 @@ images to span the full width of the grid.
 .image-1, .image-3 {
     grid-column: 1 / -1;
 }
-
 
 
 37. @media query
