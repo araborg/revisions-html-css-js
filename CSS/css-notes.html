@@ -4629,6 +4629,7 @@ Create a .heading rule and set the grid-column property to
 2 / 3. This will tell the .heading element to start at grid 
 line 2 and end at grid line 3.
 
+
 14. grid-column: grid-column-start & grid-column-end
 
 
@@ -4647,6 +4648,7 @@ repeat(20, 200px) would create 20 columns each 200px wide.
 Give your .heading element a grid-template-columns property 
 set to repeat(2, 1fr) to create two columns of equal width.
 
+
 17. column:
 Remember that the grid-column property determines which columns 
 an element starts and ends at. There may be times where you are 
@@ -4656,7 +4658,9 @@ for the end column.
 
 N.B: Column run vertical while row runs horizontal.
 
+
 18. row:
+
 
 19.
 column-gap
@@ -4696,6 +4700,7 @@ which can result in items appearing out of order.
     
     grid-auto-flow: column;
 }
+
 
 24. grid-auto-columns
 Now the auto-placement algorithm will kick in when you add a 
