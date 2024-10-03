@@ -10,6 +10,17 @@
     --window-color4: #8cb3d9;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    overflow: hidden;
+}
+
 /* .background-buildings {
     border: 2px solid red;
 
