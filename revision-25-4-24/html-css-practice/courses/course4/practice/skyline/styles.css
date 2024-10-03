@@ -93,3 +93,15 @@ body {
         var(--window-color2) 9%
     );
 }
+
+.bb3 {
+    width: 10%;
+    height: 55%;
+
+    background: repeating-linear-gradient(
+        90deg,
+        var(--building-color3),
+        var(--building-color3),
+        var(--window-color3) 15%
+    );
+}
