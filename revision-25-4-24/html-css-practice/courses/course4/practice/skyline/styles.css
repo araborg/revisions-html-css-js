@@ -256,6 +256,9 @@ body {
 .fb4 {
     width: 8%;
     height: 48%;
+
+    position: relative;
+    left: 10%;
 }
 
 .fb4a {
