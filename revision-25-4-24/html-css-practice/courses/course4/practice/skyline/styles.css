@@ -73,12 +73,13 @@ body {
     width: 10%;
     height: 50%;
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .bb2a {
     border-bottom: 5vh solid var(--building-color2);
-    /* border-left: 5vw solid transparent; */
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
 }
 
 .bb2b {
