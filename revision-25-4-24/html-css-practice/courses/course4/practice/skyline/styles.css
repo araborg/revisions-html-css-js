@@ -105,3 +105,26 @@ body {
         var(--window-color3) 15%
     );
 }
+
+.bb4 {
+    width: 11%;
+    height: 58%;
+
+    border: 2px solid orange;
+}
+
+.bb4a {
+    background-color: var(--building-color4);
+}
+
+.bb4b {
+    background-color: var(--building-color4);
+}
+
+.bb4c {
+    background-color: var(--building-color4);
+}
+
+.bb4-window {
+    background-color: var(--window-color4);
+}
