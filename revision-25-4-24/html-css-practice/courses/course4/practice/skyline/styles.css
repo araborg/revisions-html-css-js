@@ -165,13 +165,42 @@ body {
 /* foreground buildings */
 .fb1 {
     border: 2px solid red;
+
+    width: 10%;
+    height: 60%;
+}
+
+.fb1a {
+}
+
+.fb1b {
+    width: 60%;
+    height: 10%;
+
+    background-color: var(--building-color4);
+}
+
+.fb1c {
+    width: 100%;
+    height: 80%;
+
+    background: repeating-linear-gradient(
+            var(--building-color4),
+            var(--building-color4) 10%
+        ),
+        repeating-linear-gradient(
+            var(--building-color4),
+            var(--building-color4) 10%,
+            var(--window-color4) 10%,
+            var(--window-color4) 90%
+        );
 }
 
 .fb2 {
     border: 2px solid orange;
 }
 
-.fb3.building-wrap {
+.fb3 {
     border: 2px solid yellowgreen;
 }
 
