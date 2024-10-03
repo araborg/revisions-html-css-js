@@ -23,7 +23,8 @@ body {
     overflow: hidden;
 }
 
-.background-buildings {
+.background-buildings,
+.foreground-buildings {
     width: 100%;
     height: 100%;
 
@@ -55,6 +56,8 @@ body {
         #bbeeff 100%
     );
 }
+
+/* background buildings */
 
 .bb1-window {
     height: 10%;
@@ -154,4 +157,29 @@ body {
     height: 90%;
 
     background-color: var(--window-color4);
+}
+
+/* foreground buildings */
+.fb1 {
+    border: 2px solid red;
+}
+
+.fb2 {
+    border: 2px solid orange;
+}
+
+.fb3.building-wrap {
+    border: 2px solid yellowgreen;
+}
+
+.fb4 {
+    border: 2px solid green;
+}
+
+.fb5 {
+    border: 2px solid indigo;
+}
+
+.fb6 {
+    border: 2px solid violet;
 }
