@@ -76,8 +76,9 @@ body {
     border: 2px solid blue;
 }
 
-.bba {
+.bb2a {
     border-bottom: 5vh solid var(--building-color2);
+    /* border-left: 5vw solid transparent; */
 }
 
 .bb2b {
