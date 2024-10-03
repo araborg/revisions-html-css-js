@@ -16,6 +16,8 @@
 
 body {
     height: 100vh;
+    width: 100vw;
+
     margin: 0;
 
     overflow: hidden;
@@ -47,4 +49,12 @@ body {
 
 .bb1a {
     width: 70%;
+}
+
+.bb1b {
+    width: 80%;
+}
+
+.bb1c {
+    width: 90%;
 }
