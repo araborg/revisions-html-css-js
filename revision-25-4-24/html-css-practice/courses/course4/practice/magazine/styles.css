@@ -79,6 +79,12 @@ img {
 
 .first-paragraph::first-letter {
     font-size: 6rem;
+
+    color: orangered;
+
+    margin-right: 1rem;
+
+    float: left;
 }
 
 hr {
