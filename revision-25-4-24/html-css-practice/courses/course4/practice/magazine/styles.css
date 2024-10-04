@@ -10,8 +10,9 @@
 }
 
 html {
-    /* font-size: 62.5%; 10px */
-    font-size: 18px;
+    font-size: 62.5%;
+    /* 10px */
+    /* font-size: 18px; */
 }
 
 body {
@@ -67,4 +68,13 @@ img {
 
 .text {
     grid-column: 2 / 3;
+
+    letter-spacing: 0.6px;
+    font-size: 1.8rem;
+}
+
+hr {
+    margin: 1.5rem 0;
+
+    border: 1px solid rgba(120, 120, 120, 0.6);
 }
