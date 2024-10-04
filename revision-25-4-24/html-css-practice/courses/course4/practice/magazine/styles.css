@@ -117,3 +117,7 @@ hr {
 
     margin-bottom: 3rem;
 }
+
+.lists {
+    list-style-type: none;
+}
