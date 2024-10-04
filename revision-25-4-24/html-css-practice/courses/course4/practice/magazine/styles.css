@@ -118,6 +118,11 @@ hr {
     margin-bottom: 3rem;
 }
 
+.list-title,
+.list-subtitle {
+    color: #00beef;
+}
+
 .lists {
     list-style-type: none;
 
