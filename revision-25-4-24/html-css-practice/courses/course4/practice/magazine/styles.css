@@ -56,7 +56,7 @@ main {
 .hero {
     grid-column: 1 / -1;
 
-    /* position: relative; */
+    position: relative;
 }
 
 .hero-title {
@@ -186,4 +186,24 @@ hr {
 .image-1,
 .image-3 {
     grid-column: 1 / -1;
+}
+
+/* media queries */
+@media only screen and (max-width: 420px) {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .hero-title {
+        font-size: 6rem;
+    }
+
+    .hero-subtitle,
+    .author,
+    .quote,
+    .list-title {
+        font-size: 1.8rem;
+    }
 }
