@@ -132,3 +132,13 @@ hr {
 .lists li {
     margin-bottom: 1.5rem;
 }
+
+.image-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.image-1,
+.image-3 {
+    grid-column: 1 / -1;
+}
