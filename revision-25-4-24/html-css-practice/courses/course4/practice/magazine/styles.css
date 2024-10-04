@@ -8,5 +8,11 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: "Baskervville", serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
 }
