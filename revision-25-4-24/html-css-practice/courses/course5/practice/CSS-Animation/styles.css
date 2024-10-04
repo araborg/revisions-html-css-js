@@ -1,0 +1,16 @@
+.wheel {
+    border: 2px solid black;
+
+    width: 55vw;
+    height: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+
+    border-radius: 50%;
+
+    margin-left: 50px;
+
+    position: absolute;
+
+    /* animation */
+}
