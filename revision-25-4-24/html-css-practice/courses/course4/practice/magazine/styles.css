@@ -71,6 +71,8 @@ img {
 
     letter-spacing: 0.6px;
     font-size: 1.8rem;
+
+    text-align: justify;
 }
 
 hr {
