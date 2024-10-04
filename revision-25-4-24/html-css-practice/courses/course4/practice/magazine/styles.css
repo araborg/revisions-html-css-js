@@ -87,6 +87,10 @@ main {
     background-color: #306203;
 }
 
+.publish-date {
+    color: rgba(255, 255, 255, 0.5);
+}
+
 img {
     width: 100%;
     object-fit: cover;
