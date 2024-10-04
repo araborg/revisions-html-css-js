@@ -8,7 +8,8 @@
 }
 
 html {
-    font-size: 62.5%; /* 10px */
+    /* font-size: 62.5%; 10px */
+    font-size: 18px;
 }
 
 body {
@@ -24,4 +25,9 @@ h1 {
 h2,
 h4 {
     font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: linen;
 }
