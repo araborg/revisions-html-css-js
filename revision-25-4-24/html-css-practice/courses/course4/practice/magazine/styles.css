@@ -73,6 +73,12 @@ img {
     font-size: 1.8rem;
 
     text-align: justify;
+
+    column-width: 25rem;
+}
+
+.first-paragraph::first-letter {
+    font-size: 6rem;
 }
 
 hr {
