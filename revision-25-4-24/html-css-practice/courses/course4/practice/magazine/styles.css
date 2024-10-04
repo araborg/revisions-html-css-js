@@ -77,6 +77,12 @@ main {
     text-align: center;
 }
 
+.author {
+    font-size: 2rem;
+
+    font-family: "Raleway", sans-serif;
+}
+
 img {
     width: 100%;
     object-fit: cover;
