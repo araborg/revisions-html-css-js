@@ -86,7 +86,12 @@
 }
 
 .cabin:nth-last-of-type(5) {
-    left: 87%;
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-last-of-type(6) {
+    right: 17%;
     top: 7%;
 }
 
