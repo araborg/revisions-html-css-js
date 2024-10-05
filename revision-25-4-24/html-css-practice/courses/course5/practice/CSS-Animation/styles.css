@@ -44,6 +44,14 @@
     transform: rotate(180deg);
 }
 
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(360deg);
+}
+
 @keyframes wheel {
     0% {
         transform: rotate(0deg);
