@@ -68,23 +68,23 @@
 }
 
 .cabin:nth-last-of-type(1) {
-    /* right: -8.5%; */
-    /* top: 50%; */
+    right: -8.5%;
+    top: 50%;
 }
 
 .cabin:nth-last-of-type(2) {
-    /* right: 17%; */
-    /* top: 93.5%; */
+    right: 17%;
+    top: 93.5%;
 }
 
 .cabin:nth-last-of-type(3) {
-    /* right: 67%; */
-    /* top: 93.5%; */
+    right: 67%;
+    top: 93.5%;
 }
 
 .cabin:nth-last-of-type(4) {
-    /* left: -8.5%; */
-    /* top: 50%; */
+    left: -8.5%;
+    top: 50%;
 }
 
 .cabin:nth-last-of-type(5) {
@@ -92,9 +92,9 @@
     top: 7%;
 }
 
-.cabin:nth-last-of-type(1) {
-    /* right: 17%; */
-    /* top: 7%; */
+.cabin:nth-last-of-type(6) {
+    right: 17%;
+    top: 7%;
 }
 
 /* animation keyframes */
