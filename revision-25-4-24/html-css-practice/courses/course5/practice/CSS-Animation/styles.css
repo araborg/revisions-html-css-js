@@ -22,7 +22,6 @@
     position: absolute;
 
     /* animation */
-
     animation-name: wheel;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
