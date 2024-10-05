@@ -21,6 +21,13 @@
     animation-timing-function: linear;
 }
 
+.line {
+    width: 50%;
+    height: 2px;
+
+    background-color: black;
+}
+
 @keyframes wheel {
     0% {
         transform: rotate(0deg);
