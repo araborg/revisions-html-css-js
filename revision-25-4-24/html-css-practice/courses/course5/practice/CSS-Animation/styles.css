@@ -66,6 +66,7 @@
 
     transform-origin: 50% 0%;
 
+    /* animation */
     animation: cabins 10s ease-in-out infinite;
 }
 
@@ -124,6 +125,7 @@
     }
 
     75% {
+        background-color: yellow;
     }
 
     100% {
