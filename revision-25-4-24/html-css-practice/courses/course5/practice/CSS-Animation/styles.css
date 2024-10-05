@@ -40,9 +40,9 @@
     transform: rotate(120deg);
 }
 
-/* .line:nth-child(4) {
+.line:nth-child(4) {
     transform: rotate(180deg);
-} */
+}
 
 /* .line:nth-of-type(5) {
     transform: rotate(240deg);
