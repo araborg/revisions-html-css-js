@@ -44,13 +44,13 @@
     transform: rotate(180deg);
 }
 
-/* .line:nth-of-type(5) {
+.line:nth-of-type(5) {
     transform: rotate(240deg);
-} */
+}
 
-/* .line:nth-of-type(6) {
-    transform: rotate(360deg);
-} */
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
 
 @keyframes wheel {
     0% {
