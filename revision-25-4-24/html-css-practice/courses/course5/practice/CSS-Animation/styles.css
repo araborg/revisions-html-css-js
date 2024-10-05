@@ -32,25 +32,25 @@
     transform-origin: 0% 0%;
 }
 
-.line:nth-of-type(2) {
+/* .line:nth-of-type(2) {
     transform: rotate(60deg);
-}
+} */
 
-.line:nth-of-type(3) {
+/* .line:nth-of-type(3) {
     transform: rotate(120deg);
-}
+} */
 
-.line:nth-child(4) {
+/* .line:nth-child(4) {
     transform: rotate(180deg);
-}
+} */
 
-.line:nth-of-type(5) {
+/* .line:nth-of-type(5) {
     transform: rotate(240deg);
-}
+} */
 
-.line:nth-of-type(6) {
+/* .line:nth-of-type(6) {
     transform: rotate(360deg);
-}
+} */
 
 @keyframes wheel {
     0% {
