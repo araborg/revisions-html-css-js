@@ -3,19 +3,12 @@
 
     width: 55vw;
     height: 55vw;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 500px;
+    max-height: 500px;
 
-    border-radius: 70%;
-
-    /* border-top-left-radius: 50%; */
-    /* border-top-right-radius: 50%; */
-    /* border-bottom-right-radius: 50%; */
-
-    /* border-bottom-left-radius: transparent; */
+    border-radius: 50%;
 
     border-left: 2px solid transparent;
-    /* border-top: 10px solid transparent; */
 
     margin-left: 50px;
 
@@ -23,7 +16,7 @@
 
     /* animation */
     animation-name: wheel;
-    animation-duration: 2.5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
