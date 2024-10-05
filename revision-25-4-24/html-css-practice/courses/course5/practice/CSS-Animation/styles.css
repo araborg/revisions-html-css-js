@@ -1,5 +1,5 @@
 .wheel {
-    border: 5px solid black;
+    border: 2px solid black;
 
     width: 55vw;
     height: 55vw;
@@ -7,8 +7,6 @@
     max-height: 500px;
 
     border-radius: 50%;
-
-    border-left: 2px solid transparent;
 
     margin-left: 50px;
 
@@ -40,6 +38,10 @@
 
 .line:nth-of-type(3) {
     transform: rotate(120deg);
+}
+
+.line:nth-child(4) {
+    transform: rotate(180deg);
 }
 
 @keyframes wheel {
