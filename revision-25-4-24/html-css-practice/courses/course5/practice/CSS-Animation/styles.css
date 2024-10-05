@@ -55,6 +55,25 @@
 }
 
 /* cabin */
+.cabin {
+    width: 20%;
+    height: 20%;
+
+    background-color: red;
+    border: 2px solid;
+
+    position: absolute;
+}
+
+.cabin:nth-last-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-last-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
 
 /* animation keyframes */
 @keyframes wheel {
