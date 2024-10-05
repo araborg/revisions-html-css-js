@@ -81,8 +81,13 @@
 }
 
 .cabin:nth-last-of-type(4) {
-    right: -8.5%;
+    left: -8.5%;
     top: 50%;
+}
+
+.cabin:nth-last-of-type(5) {
+    left: 87%;
+    top: 7%;
 }
 
 /* animation keyframes */
