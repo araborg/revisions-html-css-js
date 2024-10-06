@@ -1,9 +1,11 @@
+/* CSS Variable */
 :root {
     --penguin-face: white;
     --penguin-picorna: orange;
     --penguin-skin: gray;
 }
 
+/* body */
 body {
     margin: 0;
     padding: 0;
