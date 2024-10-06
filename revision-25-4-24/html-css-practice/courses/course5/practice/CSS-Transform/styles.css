@@ -28,11 +28,11 @@ body {
 
     margin-top: 100px;
 
-    z-index: 2;
-
     border: 2px solid green;
 
     position: absolute;
+
+    z-index: 2;
     transform: skew(0deg, 44deg);
 }
 
@@ -43,7 +43,13 @@ body {
 
     background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
 
+    position: absolute;
+    left: 110px;
+    top: 225px;
+
     z-index: 1;
+
+    transform: rotate(45deg);
 }
 
 /* sun */
