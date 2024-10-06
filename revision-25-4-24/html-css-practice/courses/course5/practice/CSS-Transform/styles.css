@@ -6,18 +6,6 @@
 }
 
 /* body */
-body {
-    margin: 0;
-    padding: 0;
-
-    width: 100%;
-    /* width: 100vw; */
-    height: 100vh;
-
-    overflow: hidden;
-
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
-}
 
 /* left-mountain */
 .left-mountain {
@@ -73,6 +61,10 @@ body {
 
     margin: auto;
     margin-top: 75px;
+
+    z-index: 4;
+
+    position: relative;
 
     border: 2px solid green;
 }
