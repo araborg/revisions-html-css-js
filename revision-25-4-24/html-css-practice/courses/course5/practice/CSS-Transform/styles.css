@@ -15,12 +15,16 @@ body {
     height: 100vh;
 
     overflow: hidden;
+
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
 }
 
 /* left-mountain */
 .left-mountain {
     width: 300px;
     height: 300px;
+
+    /* background: ; */
 }
 
 /* back-mountain */
