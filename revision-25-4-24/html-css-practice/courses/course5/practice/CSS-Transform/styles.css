@@ -73,3 +73,15 @@ body {
 /* penguin-body */
 
 /* ground */
+.ground {
+    width: 100vw;
+    height: 300px;
+
+    background: linear-gradient(rgb(88, 175, 236), rgb(182, 255, 255));
+
+    margin-top: -58px;
+
+    position: absolute;
+
+    z-index: 3;
+}
