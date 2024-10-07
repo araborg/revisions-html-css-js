@@ -50,6 +50,18 @@ body {
     transform: rotate(45deg);
 }
 /* sun */
+.sun {
+    width: 200px;
+    height: 200px;
+
+    background-color: yellow;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: -75px;
+    right: -75px;
+}
 
 /* penguin */
 .penguin {
