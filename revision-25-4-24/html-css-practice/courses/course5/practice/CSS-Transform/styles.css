@@ -68,6 +68,12 @@ body {
     position: absolute;
 }
 
+.penguin:active {
+    transform: scale(1.5);
+
+    /* cursor: not-allowed; */
+}
+
 /* penguin-head */
 .penguin-head {
     width: 50%;
