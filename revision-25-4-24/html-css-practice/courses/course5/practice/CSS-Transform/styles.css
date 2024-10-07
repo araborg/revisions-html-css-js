@@ -281,6 +281,8 @@ body {
     top: 85%;
 
     border-radius: 50%;
+
+    z-index: -1;
 }
 
 .foot.left {
@@ -292,7 +294,7 @@ body {
 .foot.right {
     right: 25%;
 
-    transform: rotate(-80);
+    transform: rotate(-80deg);
 }
 
 /* ground */
