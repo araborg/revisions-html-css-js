@@ -201,6 +201,8 @@ body {
     left: 127.5px;
 
     color: #6a6969;
+
+    z-index: 1;
 }
 
 .shirt div {
