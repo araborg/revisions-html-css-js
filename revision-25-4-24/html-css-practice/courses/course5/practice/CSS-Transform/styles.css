@@ -192,6 +192,11 @@ body {
 }
 
 /* shirt */
+.shirt {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+}
 
 /* penguin-body */
 
