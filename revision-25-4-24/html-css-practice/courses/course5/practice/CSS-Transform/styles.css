@@ -230,6 +230,23 @@ body {
     left: 23.5%;
 }
 
+.penguin-body::before {
+    content: "Hello";
+
+    width: 50%;
+    height: 45%;
+
+    background-color: var(--penguin-skin);
+
+    position: absolute;
+    top: 10%;
+    left: 25%;
+
+    border-radius: 0% 0% 100% 100%;
+
+    opacity: 70%;
+}
+
 /* ground */
 .ground {
     width: 100vw;
