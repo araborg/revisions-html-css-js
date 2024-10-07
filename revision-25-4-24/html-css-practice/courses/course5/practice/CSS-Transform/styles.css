@@ -262,7 +262,7 @@ body {
 
     transform-origin: 0% 0%;
 
-    transform: rotate(130deg);
+    transform: rotate(130deg) scaleX(-1);
 
     animation: 3s linear infinite wave;
 }
@@ -315,17 +315,18 @@ body {
 /* transform / animation */
 @keyframes wave {
     10% {
-        transform: rotate(110deg);
+        transform: rotate(110deg) scaleX(-1);
     }
 
     20% {
-        transform: rotate(130deg);
+        transform: rotate(130deg) scaleX(-1);
     }
 
     30% {
-        /* transform: rotate(110deg); */
+        transform: rotate(110deg) scaleX(-1);
     }
 
     40% {
+        transform: rotate(130deg) scaleX(-1);
     }
 }
