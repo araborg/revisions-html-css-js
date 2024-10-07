@@ -229,7 +229,7 @@ body {
 }
 
 .penguin-body::before {
-    content: "Hello";
+    content: "";
 
     width: 50%;
     height: 45%;
