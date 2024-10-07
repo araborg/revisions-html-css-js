@@ -247,6 +247,11 @@ body {
     opacity: 70%;
 }
 
+.arm {
+    width: 30%;
+    height: 60%;
+}
+
 /* ground */
 .ground {
     width: 100vw;
