@@ -61,7 +61,7 @@ body {
     margin: auto;
     margin-top: 75px;
 
-    position: relative;
+    /* position: relative; */
 
     z-index: 4;
 }
@@ -89,7 +89,7 @@ body {
 
     background: linear-gradient(rgb(88, 175, 236), rgb(182, 255, 255));
 
-    position: absolute;
+    /* position: absolute; */
 
     z-index: 3;
     margin-top: -58px;
