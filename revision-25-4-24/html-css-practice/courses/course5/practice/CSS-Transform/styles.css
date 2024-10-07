@@ -77,6 +77,7 @@ body {
     background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228));
 
     border-radius: 70% 70% 65% 65%;
+
     top: 10%;
     left: 25%;
 
@@ -84,6 +85,15 @@ body {
 }
 
 /* face */
+.face {
+    width: 60%;
+    height: 70%;
+
+    background-color: var(--penguin-face);
+
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+}
 
 /* chin */
 
