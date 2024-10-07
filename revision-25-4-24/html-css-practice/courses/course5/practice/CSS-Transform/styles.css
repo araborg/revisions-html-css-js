@@ -324,7 +324,7 @@ body {
     width: 100vw;
     height: calc(100vh - 300px);
 
-    background: linear-gradient(rgb(88, 175, 236), rgb(182, 255, 255));
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
 
     position: absolute;
 
