@@ -169,6 +169,18 @@ body {
 }
 
 /* beak */
+.beak {
+    height: 10%;
+
+    background-color: var(--penguin-picorna);
+    border-radius: 50%;
+}
+
+.beak.top {
+}
+
+.beak.bottom {
+}
 
 /* penguin-head */
 
