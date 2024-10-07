@@ -95,6 +95,14 @@ body {
     top: 15%;
 }
 
+.face.left {
+    left: 5%;
+}
+
+.face.right {
+    right: 5%;
+}
+
 /* chin */
 
 /* eye */
