@@ -117,6 +117,16 @@ body {
 }
 
 /* eye */
+.eye {
+    width: 15%;
+    height: 17%;
+
+    background-color: black;
+
+    top: 45%;
+
+    border-radius: 50%;
+}
 
 /* blush */
 
