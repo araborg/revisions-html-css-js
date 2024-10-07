@@ -256,6 +256,12 @@ body {
     border-radius: 30% 30% 30% 120%;
 }
 
+.arm.left {
+}
+
+.arm.right {
+}
+
 /* ground */
 .ground {
     width: 100vw;
