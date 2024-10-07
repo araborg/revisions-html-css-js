@@ -62,6 +62,8 @@ body {
     position: relative;
 
     z-index: 4;
+
+    transition: transform 1s ease-in-out 0ms;
 }
 
 .penguin * {
