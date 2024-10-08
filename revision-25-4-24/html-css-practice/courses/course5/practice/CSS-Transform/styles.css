@@ -166,6 +166,8 @@ body {
 
     /* background-color: blue; */
 
+    border: 3px solid red;
+
     border-radius: 50%;
 
     top: 25%;
