@@ -147,7 +147,7 @@ body {
 
     border-radius: 50%;
 
-    border: 1px solid green;
+    border: 3px solid green;
 }
 
 .eye.left {
@@ -159,7 +159,7 @@ body {
 }
 
 .eye-lid {
-    /* width: 150%; */
+    width: 150%;
     height: 100%;
 
     background-color: var(--penguin-face); /* white */
