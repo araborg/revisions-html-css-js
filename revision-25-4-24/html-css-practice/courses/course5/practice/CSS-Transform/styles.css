@@ -72,7 +72,7 @@ body {
     margin: auto;
     margin-top: 75px;
 
-    position: relative;
+    position: relative; /* ds is reference as the main obj wc other items relate to */
 
     z-index: 4;
 
