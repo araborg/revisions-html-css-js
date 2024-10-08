@@ -162,8 +162,6 @@ body {
 
     background-color: var(--penguin-face); /* white */
 
-    border: 3px solid red;
-
     border-radius: 50%;
 
     top: 25%;
