@@ -265,6 +265,8 @@ body {
 
     border-radius: 0% 0% 100% 100%;
 
+    border: 2px solid red;
+
     opacity: 70%;
 }
 
