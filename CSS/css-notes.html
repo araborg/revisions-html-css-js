@@ -6438,6 +6438,94 @@ Raleway.
 
 
 *****************************************
+Responsive Design;
+Responsive web design isn't a separate technology — it is 
+an approach. It is a term used to describe a set of best 
+practices used to create a layout that can respond to any 
+device being used to view the content.
+ 
+The term responsive design described using:
+fluid grids, 
+fluid images, and 
+media queries 
+to create responsive content
+
+Fluid images are set to not exceed the width of their container; 
+they have their max-width property set to 100%. Fluid images 
+scale down when their containing column narrows but do not grow 
+larger than their intrinsic size when the column grows. This 
+enables an image to scale down to fit its content, rather than 
+overflow it, but not grow larger and become pixelated if the 
+container becomes wider than the image.
+
+Media Queries
+Media queries allow us to run a series of tests (e.g. whether 
+the user's screen is greater than a certain width, or a certain 
+resolution) and apply CSS selectively to style the page 
+appropriately for the user's needs.
+
+For example, the following media query tests to see if the current 
+web page is being displayed as screen media (therefore not a printed 
+document) and the viewport is at least 80rem wide. The CSS for the 
+.container selector will only be applied if these two things are 
+true.
+
+@media screen and (min-width: 80rem) {
+    .container {
+        margin: 1em 2em;
+    }
+}
+
+A common approach when using Media Queries is to create a simple 
+single-column layout for narrow-screen devices (e.g. mobile phones), 
+then check for wider screens and implement a multiple-column layout 
+when you know that you have enough screen width to handle it. 
+Designing for mobile first is known as mobile first design.
+
+If using breakpoints, best practices encourage defining media query 
+breakpoints with relative units rather than absolute sizes of an 
+individual device.
+
+Media queries can help with RWD, but are not a requirement. 
+Flexible grids, relative units, and minimum and maximum unit values 
+can be used without queries.
+
+
+Responsive layout technologies
+Responsive sites are built on flexible grids, meaning you don't need
+to target every possible device size with pixel perfect layouts.
+
+Several layout methods, including Multiple-column layout, Flexbox, 
+and Grid are responsive by default. They all assume that you are 
+trying to create a flexible grid and give you easier ways to do 
+so.
+
+
+Multicol:
+With multicol, you specify a column-count to indicate the maximum 
+number of columns you want your content to be split into. The 
+browser then works out the size of these, a size that will change 
+according to the screen size.
+
+.container {
+    column-count: 3;
+}
+
+If you instead specify a column-width, you are specifying a minimum 
+width. The browser will create as many columns of that width as will 
+comfortably fit into the container, then share out the remaining 
+space between all the columns. Therefore the number of columns will 
+change according to how much space there is.
+
+.container {
+    column-width: 10em;
+}
+
+You can use the columns shorthand to provide a maximum number of 
+columns and a minimum column width. This can ensure line lengths 
+don't become unreadably long as the screen size increases or too 
+narrow as the screen size decreases.
+
 
 https://www.youtube.com/watch?v=jpC8g-kyjSQ
 
