@@ -6528,8 +6528,23 @@ narrow as the screen size decreases.
 
 
 
+Flexbox:
+In flexbox, flex items shrink or grow, distributing space between 
+the items according to the space in their container. By changing 
+the values for flex-grow and flex-shrink you can indicate how you 
+want the items to behave when they encounter more or less space 
+around them.
 
+In the example below the flex items will each take an equal amount 
+of space in the flex container, using the shorthand of flex: 1 
 
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
 
 
 
