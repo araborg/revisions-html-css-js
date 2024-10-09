@@ -6539,15 +6539,24 @@ In the example below the flex items will each take an equal amount
 of space in the flex container, using the shorthand of flex: 1 
 
 .container {
-  display: flex;
+    display: flex;
 }
 
 .item {
-  flex: 1;
+    flex: 1;
 }
 
 
+CSS grid:
+In CSS grid layout the fr unit allows the distribution of available 
+space across grid tracks. The next example creates a grid container 
+with three tracks sized at 1fr. This will create three column tracks, 
+each taking one part of the available space in the container. 
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
 
