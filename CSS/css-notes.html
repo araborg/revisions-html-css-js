@@ -6620,10 +6620,16 @@ media queries to only changing the layout of the page. They can
 be used to tweak any element to make it more usable or attractive 
 at alternate screen sizes.
 
+Using viewport units for responsive typography:
+Viewport units vw can also be used to enable responsive typography, 
+without the need for setting breakpoints with media queries. 1vw is 
+equal to one percent of the viewport width, meaning that if you set 
+your font size using vw, it will always relate to the size of the 
+viewport.
 
-Using viewport units for responsive typography
-Viewport units vw can also be used to enable responsive typography, without the need for setting breakpoints with media queries. 1vw is equal to one percent of the viewport width, meaning that if you set your font size using vw, it will always relate to the size of the viewport.
-
+h1 {
+    font-size: 6vw;
+}
 
 
 
