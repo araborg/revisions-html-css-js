@@ -6787,6 +6787,14 @@ either width or height.
 
 
 7. The "em" unit
+Relative length units are relative to something else. 
+
+For example:
+em is relative to the font size of this element, or the 
+font size of the parent element when used for font-size. 
+
+The benefit of using relative units is that with some careful planning you can make it so the size of text or other elements scales relative to everything else on the page. 
+
 
 
 8. Relative units r always relative either to a font-size, 
@@ -6815,6 +6823,7 @@ The root of an HTML page is always the html elemt.
 
 
 11. How to decide which unit to use: px, em or rem
+
 General rule of thumb:
 Font size: rem
 Padding and Margin: em
