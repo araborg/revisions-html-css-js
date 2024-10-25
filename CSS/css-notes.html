@@ -6776,6 +6776,14 @@ Relative to the viewport e.g vw, vh, vmin, vmax
 Don't set both width and height on an images but use
 either width or height.
 
+General rule: always use ds
+
+img {
+    max-width: 100%; 
+
+    display: block;
+}
+
 
 6.
 .container {
@@ -7012,13 +7020,7 @@ Always start with the typography before going to layout.
 
 
 23.
-General rule:
 
-img {
-    max-width: 100%;
-
-    display: block;
-}
 
 
 24. Starting to think mobile first:
