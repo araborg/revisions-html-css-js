@@ -6464,11 +6464,11 @@ the user's screen is greater than a certain width, or a certain
 resolution) and apply CSS selectively to style the page 
 appropriately for the user's needs.
 
-For example, the following media query tests to see if the current 
-web page is being displayed as screen media (therefore not a printed 
-document) and the viewport is at least 80rem wide. The CSS for the 
-.container selector will only be applied if these two things are 
-true.
+For example, the following media query tests to see if the 
+current web page is being displayed as screen media (therefore 
+not a printed document) and the viewport is at least 80rem wide. 
+The CSS for the .container selector will only be applied if 
+these two things are true.
 
 @media screen and (min-width: 80rem) {
     .container {
@@ -6477,23 +6477,25 @@ true.
 }
 
 A common approach when using Media Queries is to create a simple 
-single-column layout for narrow-screen devices (e.g. mobile phones), 
-then check for wider screens and implement a multiple-column layout 
-when you know that you have enough screen width to handle it. 
+single-column layout for narrow-screen devices (e.g. mobile 
+phones), then check for wider screens and implement a 
+multiple-column layout when you know that you have enough screen 
+width to handle it. 
 Designing for mobile first is known as mobile first design.
 
-If using breakpoints, best practices encourage defining media query 
-breakpoints with relative units rather than absolute sizes of an 
-individual device.
+If using breakpoints, best practices encourage defining media 
+query breakpoints with relative units rather than absolute 
+sizes of an individual device.
 
 Media queries can help with RWD, but are not a requirement. 
-Flexible grids, relative units, and minimum and maximum unit values 
-can be used without queries.
+Flexible grids, relative units, and minimum and maximum unit 
+values can be used without queries.
 
 
 Responsive layout technologies
-Responsive sites are built on flexible grids, meaning you don't need
-to target every possible device size with pixel perfect layouts.
+Responsive sites are built on flexible grids, meaning you don't 
+need to target every possible device size with pixel perfect 
+layouts.
 
 Several layout methods, including Multiple-column layout, Flexbox, 
 and Grid are responsive by default. They all assume that you are 
@@ -6511,11 +6513,11 @@ according to the screen size.
     column-count: 3;
 }
 
-If you instead specify a column-width, you are specifying a minimum 
-width. The browser will create as many columns of that width as will 
-comfortably fit into the container, then share out the remaining 
-space between all the columns. Therefore the number of columns will 
-change according to how much space there is.
+If you instead specify a column-width, you are specifying a 
+minimum width. The browser will create as many columns of that 
+width as will comfortably fit into the container, then share out 
+the remaining space between all the columns. Therefore the number 
+of columns will change according to how much space there is.
 
 .container {
     column-width: 10em;
@@ -6535,8 +6537,9 @@ the values for flex-grow and flex-shrink you can indicate how you
 want the items to behave when they encounter more or less space 
 around them.
 
-In the example below the flex items will each take an equal amount 
-of space in the flex container, using the shorthand of flex: 1 
+In the example below the flex items will each take an equal 
+amount of space in the flex container, using the shorthand of 
+flex: 1 
 
 .container {
     display: flex;
@@ -6548,10 +6551,11 @@ of space in the flex container, using the shorthand of flex: 1
 
 
 CSS grid:
-In CSS grid layout the fr unit allows the distribution of available 
-space across grid tracks. The next example creates a grid container 
-with three tracks sized at 1fr. This will create three column tracks, 
-each taking one part of the available space in the container. 
+In CSS grid layout the fr unit allows the distribution of 
+available space across grid tracks. The next example creates 
+a grid container with three tracks sized at 1fr. This will 
+create three column tracks, each taking one part of the 
+available space in the container. 
 
 .container {
     display: grid;
@@ -6559,8 +6563,8 @@ each taking one part of the available space in the container.
 }
 
 Responsive images/media:
-To ensure media is never larger than its responsive container, the 
-following approach can be used:
+To ensure media is never larger than its responsive container, 
+the following approach can be used:
 
 img,
 picture,
@@ -6569,14 +6573,15 @@ video {
 }
 
 This scales media to ensure they never overflow their containers. 
-Using a single large image and scaling it down to fit small devices 
-wastes bandwidth by downloading images larger than what is needed.
+Using a single large image and scaling it down to fit small 
+devices wastes bandwidth by downloading images larger than what 
+is needed.
 
-Responsive Images, using the <picture> element and the <img> srcset 
-and sizes attributes enables serving images targeted to the user's 
-viewport and the device's resolution. For example, you can include 
-a square image for mobile, but show the same scene as a landscape 
-image on desktop.
+Responsive Images, using the <picture> element and the <img> 
+src set and sizes attributes enables serving images targeted to 
+the user's viewport and the device's resolution. For example, 
+you can include a square image for mobile, but show the same 
+scene as a landscape image on desktop.
 
 The <picture> element enables providing multiple sizes along with 
 "hints" (metadata that describes the screen size and resolution 
@@ -6621,25 +6626,25 @@ be used to tweak any element to make it more usable or attractive
 at alternate screen sizes.
 
 Using viewport units for responsive typography:
-Viewport units vw can also be used to enable responsive typography, 
-without the need for setting breakpoints with media queries. 1vw is 
-equal to one percent of the viewport width, meaning that if you set 
-your font size using vw, it will always relate to the size of the 
-viewport.
+Viewport units vw can also be used to enable responsive 
+typography, without the need for setting breakpoints with media 
+queries. 1vw is equal to one percent of the viewport width, 
+meaning that if you set your font size using vw, it will always 
+relate to the size of the viewport.
 
 h1 {
     font-size: 6vw;
 }
 
-The problem with doing the above is that the user loses the ability 
-to zoom any text set using the vw unit, as that text is always 
-related to the size of the viewport. Therefore you should never set 
-text using viewport units alone.
+The problem with doing the above is that the user loses the 
+ability to zoom any text set using the vw unit, as that text 
+is always related to the size of the viewport. Therefore you 
+should never set text using viewport units alone.
 
-There is a solution, and it involves using calc(). If you add the 
-vw unit to a value set using a fixed size such as ems or rems then 
-the text will still be zoomable. Essentially, the vw unit adds on 
-top of that zoomed value:
+There is a solution, and it involves using calc(). If you add 
+the vw unit to a value set using a fixed size such as ems or 
+rems then the text will still be zoomable. Essentially, the 
+vw unit adds on top of that zoomed value:
 
 h1 {
     font-size: calc(1.5rem + 3vw);
@@ -6733,12 +6738,11 @@ xl:
 
 
 3. css clamp():
-The clamp() CSS function clamps a middle value within 
-a range of values between a defined minimum bound and 
-a maximum bound. 
+The clamp() CSS function clamps a middle value within a range 
+of values between a defined minimum bound and a maximum bound. 
 
-The function takes three parameters: a minimum value, 
-a preferred value, and a maximum allowed value.
+The function takes three parameters: a minimum value, a 
+preferred value, and a maximum allowed value.
 
 h1 {
     font-size: clamp(min-val, preferred-val, max-val)
