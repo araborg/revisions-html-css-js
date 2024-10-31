@@ -22,7 +22,11 @@ body {
 
 .title,
 .team-stats,
-.option-label,
+.options-label,
 footer {
     color: var(--white);
+}
+
+.title {
+    margin: 1.3em 0;
 }
