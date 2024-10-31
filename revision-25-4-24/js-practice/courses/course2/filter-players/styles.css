@@ -30,3 +30,15 @@ footer {
 .title {
     margin: 1.3em 0;
 }
+
+.team-stats {
+    border: 2px solid rebeccapurple;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-size: 1.3rem;
+
+    margin: 1.2em 0;
+}
