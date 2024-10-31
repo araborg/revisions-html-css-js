@@ -1,1 +1,1 @@
-alert("hello");
+const teamName = document.getElementById("team");
