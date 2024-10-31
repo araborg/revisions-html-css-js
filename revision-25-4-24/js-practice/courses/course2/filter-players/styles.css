@@ -68,3 +68,9 @@ footer {
 .player-card * {
     margin-bottom: 1.5em;
 }
+
+@media (max-width: 768px) {
+    .team-stats {
+        flex-direction: column;
+    }
+}
