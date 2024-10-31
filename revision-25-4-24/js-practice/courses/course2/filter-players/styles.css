@@ -47,6 +47,11 @@ footer {
 
 .cards {
     border: 2px solid rebeccapurple;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .player-card {
