@@ -32,8 +32,6 @@ footer {
 }
 
 .team-stats {
-    border: 2px solid rebeccapurple;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -41,4 +39,10 @@ footer {
     font-size: 1.3rem;
 
     margin: 1.2em 0;
+}
+
+.options-label {
+    border: 2px solid rebeccapurple;
+
+    font-size: 1.2rem;
 }
