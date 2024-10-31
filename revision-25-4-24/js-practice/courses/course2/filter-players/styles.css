@@ -59,3 +59,7 @@ footer {
 
     border-radius: 15px;
 }
+
+.player-card * {
+    margin-bottom: 1.5em;
+}
