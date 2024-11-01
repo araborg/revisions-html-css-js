@@ -278,7 +278,10 @@ const setPlayerCards = (arr = players) => {
             `;
         })
         .join("");
-    };
+};
+
+
+This works:
 
 
 

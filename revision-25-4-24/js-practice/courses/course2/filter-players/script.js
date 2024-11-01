@@ -221,8 +221,9 @@ headCoach.textContent = coachName;
 // Logic:
 const setPlayerCards = (arr = players) => {
     playerCards.innerHTML += arr
-        .map(({ name, position, number, isCaptain, nickname }) => {
-            `
+        .map(
+            ({ name, position, number, isCaptain, nickname }) =>
+                `
                 <div class="player-card">
                     <h2>
                         ${isCaptain ? "(Captain)" : ""} 
@@ -237,8 +238,8 @@ const setPlayerCards = (arr = players) => {
                         Nickname: ${nickname !== null ? nickname : "N/A"}
                     </p>
                 </div>
-            `;
-        })
+            `
+        )
         .join("");
 };
 
