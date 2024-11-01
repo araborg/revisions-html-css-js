@@ -24,7 +24,7 @@ const myFavoriteFootballTeam = {
         matches: 7,
     },
 
-    // arr
+    // arr of obj
     players: [
         {
             name: "Sergio Almirón",
