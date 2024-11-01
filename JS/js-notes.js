@@ -228,5 +228,11 @@ const team = myFavoriteFootballTeam.team;
 const {sport, team} = myFavoriteFootballTeam;
 
 
+3. Destructuring obj inside an obj:
+Now you need to access the coachName value from the 
+myFavoriteFootballTeam.headCoach object using the 
+destructuring syntax.
+
+const {coachName} = myFavoriteFootballTeam.headCoach;
 
 */

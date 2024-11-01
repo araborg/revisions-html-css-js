@@ -208,7 +208,7 @@ const team = myFavoriteFootballTeam.team;
 */
 
 // obj destructuring:
-const { sport, team } = myFavoriteFootballTeam;
-console.log(sport, team);
+const { sport, team, year, players } = myFavoriteFootballTeam;
+console.log(sport, team, year, players);
 
 // console.log(sport);
