@@ -198,6 +198,6 @@ and the object's prototype cannot be re-assigned. freeze()
 returns the same object that was passed in.
 
 
-
+2. Object destructuring:
 
 */
