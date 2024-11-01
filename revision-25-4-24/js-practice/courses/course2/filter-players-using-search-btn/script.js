@@ -230,7 +230,7 @@ const setPlayerCards = (arr = players) => {
                 `
                     <div class="player-card">
                         <h2>
-                            ${isCaptain ? "(Captain)" : ""} 
+                            ${isCaptain !== null ? "(Captain)" : ""} 
                             ${name}
                         </h2>
 
