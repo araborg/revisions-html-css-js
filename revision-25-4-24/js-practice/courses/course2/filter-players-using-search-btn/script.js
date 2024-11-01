@@ -250,7 +250,7 @@ const setPlayerCards = (arr = players) => {
 searchBtn.addEventListener("click", (e) => {
     playerCards.innerHTML = "";
 
-    console.log(userInput.value);
+    const inputValue = userInput.value.toLowerCase();
 
     // console.log(e.target.value);
 
