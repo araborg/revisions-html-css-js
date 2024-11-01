@@ -10,18 +10,21 @@ const searchBtn = document.getElementById("search");
 const userInput = document.getElementById("user-input");
 
 const myFavoriteFootballTeam = {
+    // obj ppty
     team: "Argentina",
     sport: "Football",
-
     year: 1986,
 
+    // boolean
     isWorldCupWinner: true,
 
+    // obj
     headCoach: {
         coachName: "Carlos Bilardo",
         matches: 7,
     },
 
+    // arr
     players: [
         {
             name: "Sergio Almirón",
