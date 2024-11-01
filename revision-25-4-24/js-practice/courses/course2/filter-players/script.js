@@ -7,14 +7,6 @@ const headCoach = document.getElementById("head-coach");
 const playerCards = document.getElementById("player-card");
 const playersDropdownList = document.getElementById("players");
 
-console.log(
-    teamName,
-    typeOfSport,
-    worldCupYear,
-    playerCards,
-    playersDropdownList
-);
-
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
@@ -25,4 +17,6 @@ const myFavoriteFootballTeam = {
         coachName: "Carlos Bilardo",
         matches: 7,
     },
+
+    players: [],
 };
