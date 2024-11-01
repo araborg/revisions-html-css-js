@@ -202,4 +202,6 @@ const myFavoriteFootballTeam = {
 Object.freeze(myFavoriteFootballTeam);
 
 const sport = myFavoriteFootballTeam.sport;
-console.log(sport);
+const team = myFavoriteFootballTeam.team;
+
+// console.log(sport);
