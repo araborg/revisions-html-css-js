@@ -220,8 +220,8 @@ headCoach.textContent = coachName;
 
 // Logic:
 const setPlayerCards = (arr = players) => {
-    playerCards.innerHTML += arr
-        .map((name, position, number, isCaptain, nickname) => {
+    return (playerCards.innerHTML += arr
+        .map(({ name, position, number, isCaptain, nickname }) => {
             `
                 <div class="player-card">
                     <h2>
@@ -239,11 +239,15 @@ const setPlayerCards = (arr = players) => {
                 </div>
             `;
         })
-        .join("");
+        .join(""));
 };
+
+// console.log(setPlayerCards(players));
 
 playersDropdownList.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
+
+    // console.log(e.target.value);
 
     switch (e.target.value) {
         case "nickname":
