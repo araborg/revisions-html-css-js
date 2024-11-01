@@ -254,13 +254,20 @@ searchBtn.addEventListener("click", (e) => {
 
     const inputValue = userInput.value.toLowerCase();
 
+    let result;
     switch (inputValue) {
         case players.name:
             setPlayerCards(
-                players.filter((player) => player.nickname !== null)
+                (result = players.filter((player) =>
+                    player.name.toLowerCase().includes(inputValue)
+                ))
             );
 
+            console.log(result);
+
             break;
+
+        /*
 
         case "nickname":
             setPlayerCards(
@@ -299,6 +306,7 @@ searchBtn.addEventListener("click", (e) => {
 
         default:
             setPlayerCards();
+            */
     }
 });
 
