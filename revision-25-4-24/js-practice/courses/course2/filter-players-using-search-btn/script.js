@@ -248,11 +248,11 @@ const setPlayerCards = (arr = players) => {
 // console.log(setPlayerCards(players));
 
 searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
     playerCards.innerHTML = "";
 
     const inputValue = userInput.value.toLowerCase();
-
-    // console.log(e.target.value);
 
     switch (inputValue) {
         case "nickname":
