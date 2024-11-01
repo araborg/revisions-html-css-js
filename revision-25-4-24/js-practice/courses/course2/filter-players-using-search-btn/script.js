@@ -254,45 +254,45 @@ searchBtn.addEventListener("click", (e) => {
 
     // console.log(e.target.value);
 
-    // switch (e.target.value) {
-    //     case "nickname":
-    //         setPlayerCards(
-    //             players.filter((player) => player.nickname !== null)
-    //         );
+    switch (inputValue) {
+        case "nickname":
+            setPlayerCards(
+                players.filter((player) => player.nickname !== null)
+            );
 
-    //         break;
+            break;
 
-    //     case "forward":
-    //         setPlayerCards(
-    //             players.filter((player) => player.position === "forward")
-    //         );
+        case "forward":
+            setPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
 
-    //         break;
+            break;
 
-    //     case "midfielder":
-    //         setPlayerCards(
-    //             players.filter((player) => player.position === "midfielder")
-    //         );
+        case "midfielder":
+            setPlayerCards(
+                players.filter((player) => player.position === "midfielder")
+            );
 
-    //         break;
+            break;
 
-    //     case "defender":
-    //         setPlayerCards(
-    //             players.filter((player) => player.position === "defender")
-    //         );
+        case "defender":
+            setPlayerCards(
+                players.filter((player) => player.position === "defender")
+            );
 
-    //         break;
+            break;
 
-    //     case "goalkeeper":
-    //         setPlayerCards(
-    //             players.filter((player) => player.position === "goalkeeper")
-    //         );
+        case "goalkeeper":
+            setPlayerCards(
+                players.filter((player) => player.position === "goalkeeper")
+            );
 
-    //         break;
+            break;
 
-    //     default:
-    //         setPlayerCards();
-    // }
+        default:
+            setPlayerCards();
+    }
 });
 
 // console.log(setPlayerCards());
