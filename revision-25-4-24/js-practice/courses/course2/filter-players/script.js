@@ -250,6 +250,13 @@ playersDropdownList.addEventListener("change", (e) => {
             setPlayerCards(
                 players.filter((player) => player.nickname !== null)
             );
+
+            break;
+
+        case "forward":
+            setPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
     }
 });
 
