@@ -247,6 +247,7 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
+/*
 searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -294,5 +295,12 @@ searchBtn.addEventListener("click", (e) => {
             setPlayerCards();
     }
 });
-
+*/
 // console.log(setPlayerCards());
+
+searchBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const inputValue = userInput.value.toLowerCase();
+    console.log(inputValue);
+});
