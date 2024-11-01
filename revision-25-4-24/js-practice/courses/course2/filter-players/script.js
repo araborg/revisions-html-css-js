@@ -4,7 +4,7 @@ const typeOfSport = document.getElementById("sport");
 const worldCupYear = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
 
-const playerCards = document.getElementById("player-card");
+const playerCards = document.getElementById("player-cards");
 const playersDropdownList = document.getElementById("players");
 
 const myFavoriteFootballTeam = {
@@ -219,4 +219,10 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 // Logic:
-const setPlayerCards = (arr = players) => {};
+const setPlayerCards = (arr = players) => {
+    playerCards.innerHTML += arr.map(
+        (name, position, number, isCaptain, nickname) => {}
+    );
+};
+
+// console.log(setPlayerCards());
