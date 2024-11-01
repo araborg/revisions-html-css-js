@@ -219,4 +219,4 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 // Logic:
-const setPlayerCards = () => {};
+const setPlayerCards = (arr = players) => {};
