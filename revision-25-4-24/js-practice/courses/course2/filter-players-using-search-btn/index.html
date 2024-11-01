@@ -26,20 +26,24 @@
 
             <label for="players" class="options-label">Filter Teammates:</label>
 
-            <select name="players" id="players">
+            <!-- <select name="players" id="players">
                 <option value="all">All Players</option>
                 <option value="nickname">Nicknames</option>
                 <option value="forward">Position Forward</option>
                 <option value="midfielder">Position Midfielder</option>
                 <option value="defender">Position Defender</option>
                 <option value="goalkeeper">Position Goalkeeper</option>
-            </select>
+            </select> -->
 
-            <form action="#" method="post">
-                <input type="search" />
+            <!-- <form action="#" method="post"> -->
+            <label for="">
+                Enter either all, nickname,forward,midfielder,defenderor
+                goalkeeper
+            </label>
+            <input type="search" id="user-input" />
 
-                <button type="submit">Search</button>
-            </form>
+            <button id="search" type="button">Search</button>
+            <!-- </form> -->
 
             <div class="cards" id="player-cards">
                 <div class="player-card">

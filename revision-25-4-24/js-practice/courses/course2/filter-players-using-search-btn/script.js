@@ -5,7 +5,7 @@ const worldCupYear = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
 
 const playerCards = document.getElementById("player-cards");
-const playersDropdownList = document.getElementById("players");
+const searchBtn = document.getElementById("search");
 
 const myFavoriteFootballTeam = {
     team: "Argentina",
@@ -245,50 +245,52 @@ const setPlayerCards = (arr = players) => {
 
 // console.log(setPlayerCards(players));
 
-playersDropdownList.addEventListener("change", (e) => {
+searchBtn.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
+
+    console.log(e.target.value);
 
     // console.log(e.target.value);
 
-    switch (e.target.value) {
-        case "nickname":
-            setPlayerCards(
-                players.filter((player) => player.nickname !== null)
-            );
+    // switch (e.target.value) {
+    //     case "nickname":
+    //         setPlayerCards(
+    //             players.filter((player) => player.nickname !== null)
+    //         );
 
-            break;
+    //         break;
 
-        case "forward":
-            setPlayerCards(
-                players.filter((player) => player.position === "forward")
-            );
+    //     case "forward":
+    //         setPlayerCards(
+    //             players.filter((player) => player.position === "forward")
+    //         );
 
-            break;
+    //         break;
 
-        case "midfielder":
-            setPlayerCards(
-                players.filter((player) => player.position === "midfielder")
-            );
+    //     case "midfielder":
+    //         setPlayerCards(
+    //             players.filter((player) => player.position === "midfielder")
+    //         );
 
-            break;
+    //         break;
 
-        case "defender":
-            setPlayerCards(
-                players.filter((player) => player.position === "defender")
-            );
+    //     case "defender":
+    //         setPlayerCards(
+    //             players.filter((player) => player.position === "defender")
+    //         );
 
-            break;
+    //         break;
 
-        case "goalkeeper":
-            setPlayerCards(
-                players.filter((player) => player.position === "goalkeeper")
-            );
+    //     case "goalkeeper":
+    //         setPlayerCards(
+    //             players.filter((player) => player.position === "goalkeeper")
+    //         );
 
-            break;
+    //         break;
 
-        default:
-            setPlayerCards();
-    }
+    //     default:
+    //         setPlayerCards();
+    // }
 });
 
 // console.log(setPlayerCards());
