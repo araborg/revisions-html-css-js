@@ -7,6 +7,8 @@ const headCoach = document.getElementById("head-coach");
 const playerCards = document.getElementById("player-cards");
 const searchBtn = document.getElementById("search");
 
+const userInput = document.getElementById("user-input");
+
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
@@ -245,10 +247,10 @@ const setPlayerCards = (arr = players) => {
 
 // console.log(setPlayerCards(players));
 
-searchBtn.addEventListener("change", (e) => {
+searchBtn.addEventListener("click", (e) => {
     playerCards.innerHTML = "";
 
-    console.log(e.target.value);
+    console.log(userInput.value);
 
     // console.log(e.target.value);
 
