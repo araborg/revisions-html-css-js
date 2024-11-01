@@ -224,21 +224,21 @@ const setPlayerCards = (arr = players) => {
         .map(
             ({ name, position, number, isCaptain, nickname }) =>
                 `
-                <div class="player-card">
-                    <h2>
-                        ${isCaptain ? "(Captain)" : ""} 
-                        ${name}
-                    </h2>
+                    <div class="player-card">
+                        <h2>
+                            ${isCaptain ? "(Captain)" : ""} 
+                            ${name}
+                        </h2>
 
-                    <p>Position: ${position}</p>
+                        <p>Position: ${position}</p>
 
-                    <p>Number: ${number}</p>
+                        <p>Number: ${number}</p>
 
-                    <p>
-                        Nickname: ${nickname !== null ? nickname : "N/A"}
-                    </p>
-                </div>
-            `
+                        <p>
+                            Nickname: ${nickname !== null ? nickname : "N/A"}
+                        </p>
+                    </div>
+                `
         )
         .join("");
 };
