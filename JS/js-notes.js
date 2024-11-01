@@ -235,4 +235,19 @@ destructuring syntax.
 
 const {coachName} = myFavoriteFootballTeam.headCoach;
 
+
+4. Function parameters:
+Function parameters can be initialized with default values. 
+If a function is called without an argument, then the default 
+value will be used:
+
+const greeting = (name = "Anonymous") => {
+    return "Hello " + name;
+} 
+
+console.log(greeting("John")); // Hello John
+console.log(greeting()); // Hello Anonymous
+
+
+5
 */

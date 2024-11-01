@@ -218,4 +218,5 @@ teamName.textContent = team;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
-// console.log(sport);
+// Logic:
+const setPlayerCards = () => {};
