@@ -207,8 +207,8 @@ from the myFavoriteFootballTeam object using dot notation
 and assigning them to new const variables. But in JavaScript, 
 there is an easier way to accomplish the same goal.
 
-The object destructuring syntax allows you to unpack values 
-from arrays and objects:
+N.B: The object destructuring syntax allows you to unpack 
+values from arrays and objects:
 
 const developerObj = {
     name: "Jessica Wilkins",
@@ -219,7 +219,8 @@ const developerObj = {
 const { name, isDeveloper } = developerObj;
 
 Rewrite the two lines of code below using the new 
-destructuring syntax. Your answer should be one line of code.
+destructuring syntax. Your answer should be one line 
+of code.
 
 const sport = myFavoriteFootballTeam.sport;
 const team = myFavoriteFootballTeam.team;

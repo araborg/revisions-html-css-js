@@ -199,9 +199,16 @@ const myFavoriteFootballTeam = {
     ],
 };
 
+// Mk d obj immutable:
 Object.freeze(myFavoriteFootballTeam);
 
+/*
 const sport = myFavoriteFootballTeam.sport;
 const team = myFavoriteFootballTeam.team;
+*/
+
+// obj destructuring:
+const { sport, team } = myFavoriteFootballTeam;
+console.log(sport, team);
 
 // console.log(sport);
