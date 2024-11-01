@@ -303,6 +303,9 @@ searchBtn.addEventListener("click", (e) => {
 
     const inputValue = userInput.value.toLowerCase();
 
-    const play = players.name.includes(inputValue) ? "true" : false;
+    const play = players.map((player) =>
+        player.name.toLowerCase().includes(inputValue) ? "true" : false
+    );
     console.log(inputValue, play);
 });
+// players?.name?.includes(inputValue)
