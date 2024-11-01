@@ -211,7 +211,6 @@ const team = myFavoriteFootballTeam.team;
 
 // obj destructuring:
 const { sport, team, year, players } = myFavoriteFootballTeam;
-// console.log(sport, team, year, players);
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
