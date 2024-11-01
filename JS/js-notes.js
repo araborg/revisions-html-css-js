@@ -249,7 +249,8 @@ console.log(greeting("John")); // Hello John
 console.log(greeting()); // Hello Anonymous
 
 
-5.
+5. Event, e
+playersDropdownList.addEventListener("change", (e) => {}
 
 
 6.
