@@ -222,20 +222,27 @@ headCoach.textContent = coachName;
 const displayPlayers = (arr = players) => {
     playerCards.innerHTML = "";
 
-    players.map(({ name, position, number }) => {
-        `
+    players.map(
+        ({ isCaptain, name, position, number, nickname }) =>
+            // console.log(isCaptain, name, position, number, nickname)
+
+            `
             <div class="player-card">
-                <h2>${isCaptain ? "Captain" : ""} ${name}</h2>
-                <p>Position: ${position}</p>
-                <p>Number: ${number}</p>
-                <p>Nickname: ${nickname}</p>
+                <h2>${name}</h2>
+                
             </div>
-        `;
-    });
+        `
+    );
 };
 
 // console.log(displayPlayers(players));
 displayPlayers(players);
+
+/*
+<p>Position: ${position}</p>
+                <p>Number: ${number}</p>
+                <p>Nickname: ${nickname}</p>
+*/
 /*
 const playerPosition = (position) => {
     switch (position) {
