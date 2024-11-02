@@ -228,15 +228,25 @@ const playerPosition = (position) => {
         (player) => player.position === position
     );
 
+    switch (currentPostion) {
+        case currentPostion === "goalkeeper":
+            displayPlayers(
+                players.filter((player) => player.position === currentPostion)
+            );
+    }
+
+    console.log(currentPostion, position);
+
     displayPlayers(currentPostion);
 };
 
-playerPosition("goalkeeper");
+// playerPosition("goalkeeper");
 
 allBtn.addEventListener("click", (e) => {
     // console.log(e.target.value);
     playerPosition(e.target.value);
 });
+
 nicknameBtn.addEventListener("click", () => {});
 goalkeeperBtn.addEventListener("click", () => {});
 defenderBtn.addEventListener("click", () => {});
