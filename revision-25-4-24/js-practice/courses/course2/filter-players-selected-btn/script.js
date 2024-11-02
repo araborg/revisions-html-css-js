@@ -212,8 +212,6 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
-// console.log(team, sport, year, players, coachName);
-
 teamName.textContent = team;
 typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
