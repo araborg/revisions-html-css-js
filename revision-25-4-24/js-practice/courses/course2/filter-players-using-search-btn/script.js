@@ -305,14 +305,16 @@ searchBtn.addEventListener("click", (e) => {
 
     const play = players.map((player) =>
         player.name.toLowerCase().includes(inputValue)
-            ? // players.filter(
-              //       (player) =>
-              //           player.name.toLowerCase().split()[0] === inputValue
-              //   )
-              console.log(player.name.toLowerCase().split(" "))
+            ? players.filter(
+                  (player) =>
+                      player.name.toLowerCase().split(" ")[0] === inputValue
+              )
             : ""
     );
     console.log(setPlayerCards(play), play);
+
+    playerCards.innerHTML = "";
+    setPlayerCards(play);
 });
 // players?.name?.includes(inputValue)
 // players.findIndex((player) => player.name === inputValue)
