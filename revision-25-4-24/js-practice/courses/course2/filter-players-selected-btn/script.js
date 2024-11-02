@@ -210,6 +210,8 @@ Object.freeze(myFavoriteFootballTeam);
 
 const { team, sport, year, players } = myFavoriteFootballTeam;
 
+console.log(players);
+
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 teamName.textContent = team;
@@ -217,11 +219,11 @@ typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
-const playerPosition = (postiion) => {
-    // const currentPostion = players.position.filter(
-    //     (player) => player.position === position
-    // );
-    // console.log(currentPostion);
+const playerPosition = (position) => {
+    const currentPostion = players.filter(
+        (player) => player.position === position
+    );
+    console.log(currentPostion);
 };
 
-// playerPosition("goalkeeper");
+playerPosition("goalkeeper");
