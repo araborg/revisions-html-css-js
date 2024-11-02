@@ -209,6 +209,23 @@ const myFavoriteFootballTeam = {
 
 Object.freeze(myFavoriteFootballTeam);
 
+const {} = myFavoriteFootballTeam;
+
+/*
+
+ team: "Argentina",
+    sport: "Football",
+
+    year: 1986,
+
+    isWorldCupWinner: true,
+
+    headCoach: {
+        coachName: "Carlos Bilardo",
+        matches: 7,
+    },
+*/
+
 const playerPosition = (postiion) => {
     const currentPostion = players.position.filter(
         (player) => player.position === position
