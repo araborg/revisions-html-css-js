@@ -224,12 +224,12 @@ const displayPlayers = (arr = players) => {
 };
 
 const playerPosition = (position) => {
-    const currentPostion = players.filter(
-        (player) => player.position === position
-    );
+    // const currentPostion = players.filter(
+    //     (player) => player.position === position
+    // );
 
-    switch (currentPostion) {
-        case currentPostion === "goalkeeper":
+    switch (position) {
+        case "goalkeeper":
             displayPlayers(
                 players.filter((player) => player.position === currentPostion)
             );
@@ -251,7 +251,9 @@ allBtn.addEventListener("click", (e) => {
 });
 
 nicknameBtn.addEventListener("click", () => {});
-goalkeeperBtn.addEventListener("click", () => {});
+goalkeeperBtn.addEventListener("click", (e) => {
+    playerPosition(e.target.value);
+});
 defenderBtn.addEventListener("click", () => {});
 midfielderBtn.addEventListener("click", () => {});
 forwardBtn.addEventListener("click", () => {});
