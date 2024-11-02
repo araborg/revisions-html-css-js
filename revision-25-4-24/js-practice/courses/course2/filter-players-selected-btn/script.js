@@ -222,24 +222,26 @@ headCoach.textContent = coachName;
 const displayPlayers = (arr = players) => {
     playerCards.textContent = "";
 
-    const show = arr
+    // const show =
+    playerCards.textContent += arr
         .map(
-            (player) => `
-            <div class="player-card">
-                <h2>${player.name} </h2>
-                <p>Position:${player.position}</p>
-                <p>Number:${player.number}</p>
-                <p>Nickname:${player.nickname}</p>
-            </div>
-    `
+            (player) =>
+                `
+                    <div class="player-card">
+                        <h2>${player.name} </h2>
+                        <p>Position:${player.position}</p>
+                        <p>Number:${player.number}</p>
+                        <p>Nickname:${player.nickname}</p>
+                    </div>
+                 `
         )
-        .join(",");
+        .join("");
 
-    console.log(show);
+    // console.log((playerCards.textContent += show));
 };
 
-console.log(displayPlayers(players));
-
+// console.log(displayPlayers(players));
+displayPlayers(players);
 /*
 const playerPosition = (position) => {
     switch (position) {
