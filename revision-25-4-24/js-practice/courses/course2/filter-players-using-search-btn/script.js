@@ -301,20 +301,23 @@ searchBtn.addEventListener("click", (e) => {
 searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
+    playerCards.innerHTML = "";
+
     const inputValue = userInput.value.toLowerCase();
 
     const play = players.map((player) =>
         player.name.toLowerCase().includes(inputValue)
-            ? players.filter(
-                  (player) =>
-                      player.name.toLowerCase().split(" ")[0] === inputValue
+            ? setPlayerCards(
+                  players.filter(
+                      (player) =>
+                          player.name.toLowerCase().split(" ")[0] === inputValue
+                  )
               )
-            : null
+            : ""
     );
-    console.log(setPlayerCards(play), play);
+    // console.log(setPlayerCards(play), play);
 
-    playerCards.innerHTML = "";
-    setPlayerCards(play);
+    // setPlayerCards(play);
 });
 // players?.name?.includes(inputValue)
 // players.findIndex((player) => player.name === inputValue)
