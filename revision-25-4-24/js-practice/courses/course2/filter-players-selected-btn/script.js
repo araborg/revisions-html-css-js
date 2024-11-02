@@ -24,6 +24,13 @@ const defenderBtn = document.getElementById("defender");
 const midfielderBtn = document.getElementById("midfielder");
 const forwardBtn = document.getElementById("forward");
 
+allBtn.addEventListener("click", () => console.log("allBtn"));
+nicknameBtn.addEventListener("click", () => console.log("nicknameBtn"));
+goalkeeperBtn.addEventListener("click", () => console.log("goalkeeperBtn"));
+defenderBtn.addEventListener("click", () => console.log("defenderBtn"));
+midfielderBtn.addEventListener("click", () => console.log("midfielderBtn"));
+forwardBtn.addEventListener("click", () => console.log("forwardBtn"));
+
 console.log(
     allBtn,
     nicknameBtn,
