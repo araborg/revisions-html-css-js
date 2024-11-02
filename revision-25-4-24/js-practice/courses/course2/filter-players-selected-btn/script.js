@@ -207,6 +207,8 @@ const myFavoriteFootballTeam = {
     ],
 };
 
+Object.freeze(myFavoriteFootballTeam);
+
 const playerPosition = (postiion) => {
     const currentPostion = players.position.filter(
         (player) => player.position === position
