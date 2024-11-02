@@ -209,8 +209,11 @@ const myFavoriteFootballTeam = {
 
 Object.freeze(myFavoriteFootballTeam);
 
-const {} = myFavoriteFootballTeam;
+const { team, sport, year, players } = myFavoriteFootballTeam;
 
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+console.log(team, sport, year, players, coachName);
 /*
 
  team: "Argentina",
@@ -227,11 +230,10 @@ const {} = myFavoriteFootballTeam;
 */
 
 const playerPosition = (postiion) => {
-    const currentPostion = players.position.filter(
-        (player) => player.position === position
-    );
-
-    console.log(currentPostion);
+    // const currentPostion = players.position.filter(
+    //     (player) => player.position === position
+    // );
+    // console.log(currentPostion);
 };
 
-playerPosition("goalkeeper");
+// playerPosition("goalkeeper");
