@@ -207,11 +207,6 @@ const myFavoriteFootballTeam = {
 // Mk d obj immutable:
 Object.freeze(myFavoriteFootballTeam);
 
-/*
-    const sport = myFavoriteFootballTeam.sport;
-    const team = myFavoriteFootballTeam.team;
-*/
-
 // obj destructuring:
 const { sport, team, year, players } = myFavoriteFootballTeam;
 
@@ -247,87 +242,24 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
-/*
 searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
-    playerCards.innerHTML = "";
-
-    const inputValue = userInput.value.toLowerCase();
-
-    switch (inputValue) {
-        case "nickname":
-            setPlayerCards(
-                players.filter((player) => player.nickname !== null)
-            );
-
-            break;
-
-        case "forward":
-            setPlayerCards(
-                players.filter((player) => player.position === "forward")
-            );
-
-            break;
-
-        case "midfielder":
-            setPlayerCards(
-                players.filter((player) => player.position === "midfielder")
-            );
-
-            break;
-
-        case "defender":
-            setPlayerCards(
-                players.filter((player) => player.position === "defender")
-            );
-
-            break;
-
-        case "goalkeeper":
-            setPlayerCards(
-                players.filter((player) => player.position === "goalkeeper")
-            );
-
-            break;
-
-        default:
-            setPlayerCards();
-    }
-});
-*/
-// console.log(setPlayerCards());
-
-searchBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    playerCards.innerHTML = "";
 
     const inputValue = userInput.value.toLowerCase();
 
     const selectedPlayer = players.map((player) => {
-        // console.log(player.name.toLowerCase().includes(inputValue));
-
         if (player.name.toLowerCase().includes(inputValue)) {
-            const choosenPlayer = players.filter(
-                (player) =>
-                    player.name.toLowerCase().split(" ")[0] === inputValue ||
-                    player.name.toLowerCase().split(" ")[1] === inputValue ||
-                    player.name.toLowerCase() === inputValue
+            const choosenPlayer = players.filter((player) =>
+                player.name.toLowerCase().includes(inputValue)
             );
+
+            playerCards.innerHTML = "";
 
             setPlayerCards(choosenPlayer);
         } else {
             return;
         }
     });
-
-    // );
-
-    // console.log(selectedPlayer);
-    // console.log(setPlayerCards(play), play);
-
-    // setPlayerCards(play);
 });
 // players?.name?.includes(inputValue)
 // players.findIndex((player) => player.name === inputValue)
