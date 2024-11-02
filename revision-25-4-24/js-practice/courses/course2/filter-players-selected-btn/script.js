@@ -251,9 +251,13 @@ allBtn.addEventListener("click", (e) => {
 });
 
 nicknameBtn.addEventListener("click", () => {});
+
 goalkeeperBtn.addEventListener("click", (e) => {
     playerPosition(e.target.value);
 });
+
 defenderBtn.addEventListener("click", () => {});
+
 midfielderBtn.addEventListener("click", () => {});
+
 forwardBtn.addEventListener("click", () => {});
