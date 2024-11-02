@@ -305,11 +305,15 @@ searchBtn.addEventListener("click", (e) => {
 
     const play = players.map((player) =>
         player.name.toLowerCase().includes(inputValue)
-            ? 
+            ? // players.filter(
+              //       (player) =>
+              //           player.name.toLowerCase().split()[0] === inputValue
+              //   )
+              console.log(player.name.toLowerCase().split(" "))
             : ""
     );
-    console.log(inputValue, play);
+    console.log(setPlayerCards(play), play);
 });
 // players?.name?.includes(inputValue)
 // players.findIndex((player) => player.name === inputValue)
-console.log(player.name.toLowerCase().split()[0], inputValue)
+// console.log(typeof player.name.toLowerCase().split()[0], typeof inputValue)
