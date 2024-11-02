@@ -220,7 +220,13 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 const displayPlayers = (arr = players) => {
-    console.log(arr);
+    arr.map(
+        (player) => `
+        <div class="player-card">
+            <p>${player.name}</p>
+        </div>
+    `
+    );
 };
 
 const playerPosition = (position) => {
@@ -231,7 +237,7 @@ const playerPosition = (position) => {
     switch (position) {
         case "goalkeeper":
             displayPlayers(
-                players.filter((player) => player.position === currentPostion)
+                players.filter((player) => player.position === "goalkeeper")
             );
 
             break;
