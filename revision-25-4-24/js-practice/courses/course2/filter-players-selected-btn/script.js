@@ -219,14 +219,16 @@ typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
-const displayPlayers = (arr = players) => {};
+const displayPlayers = (arr = players) => {
+    console.log(arr);
+};
 
 const playerPosition = (position) => {
     const currentPostion = players.filter(
         (player) => player.position === position
     );
 
-    console.log(currentPostion);
+    displayPlayers(currentPostion);
 };
 
 playerPosition("goalkeeper");
