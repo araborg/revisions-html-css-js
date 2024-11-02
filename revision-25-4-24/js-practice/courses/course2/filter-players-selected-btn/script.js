@@ -239,10 +239,6 @@ const displayPlayers = (arr = players) => {
 };
 
 const playerPosition = (position) => {
-    // const currentPostion = players.filter(
-    //     (player) => player.position === position
-    // );
-
     switch (position) {
         case "goalkeeper":
             displayPlayers(
@@ -254,14 +250,9 @@ const playerPosition = (position) => {
         default:
             displayPlayers(players);
     }
-
-    // displayPlayers(currentPostion);
 };
 
-// playerPosition("goalkeeper");
-
 allBtn.addEventListener("click", (e) => {
-    // console.log(e.target.value);
     playerPosition(e.target.value);
 });
 
