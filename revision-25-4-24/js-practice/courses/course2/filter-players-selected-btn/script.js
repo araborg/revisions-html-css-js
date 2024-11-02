@@ -233,11 +233,14 @@ const playerPosition = (position) => {
             displayPlayers(
                 players.filter((player) => player.position === currentPostion)
             );
+
+            break;
+
+        default:
+            displayPlayers(players);
     }
 
-    console.log(currentPostion, position);
-
-    displayPlayers(currentPostion);
+    // displayPlayers(currentPostion);
 };
 
 // playerPosition("goalkeeper");
