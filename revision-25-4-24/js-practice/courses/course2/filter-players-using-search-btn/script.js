@@ -304,8 +304,12 @@ searchBtn.addEventListener("click", (e) => {
     const inputValue = userInput.value.toLowerCase();
 
     const play = players.map((player) =>
-        player.name.toLowerCase().includes(inputValue) ? "true" : false
+        player.name.toLowerCase().includes(inputValue)
+            ? 
+            : ""
     );
     console.log(inputValue, play);
 });
 // players?.name?.includes(inputValue)
+// players.findIndex((player) => player.name === inputValue)
+console.log(player.name.toLowerCase().split()[0], inputValue)
