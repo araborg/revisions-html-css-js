@@ -217,23 +217,6 @@ typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
-/*
-
-
-
- team: "Argentina",
-    sport: "Football",
-
-    year: 1986,
-
-    isWorldCupWinner: true,
-
-    headCoach: {
-        coachName: "Carlos Bilardo",
-        matches: 7,
-    },
-*/
-
 const playerPosition = (postiion) => {
     // const currentPostion = players.position.filter(
     //     (player) => player.position === position
