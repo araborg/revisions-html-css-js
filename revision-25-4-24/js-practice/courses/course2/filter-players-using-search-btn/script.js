@@ -230,7 +230,7 @@ const setPlayerCards = (arr = players) => {
                 `
                     <div class="player-card">
                         <h2>
-                            ${isCaptain !== null ? "(Captain)" : ""} 
+                            ${isCaptain ? "(Captain)" : ""} 
                             ${name}
                         </h2>
 
@@ -305,16 +305,26 @@ searchBtn.addEventListener("click", (e) => {
 
     const inputValue = userInput.value.toLowerCase();
 
-    const play = players.map((player) =>
-        player.name.toLowerCase().includes(inputValue)
-            ? setPlayerCards(
-                  players.filter(
-                      (player) =>
-                          player.name.toLowerCase().split(" ")[0] === inputValue
-                  )
-              )
-            : ""
-    );
+    const selectedPlayer = players.map((player) => {
+        // console.log(player.name.toLowerCase().includes(inputValue));
+
+        if (player.name.toLowerCase().includes(inputValue)) {
+            const choosenPlayer = players.filter(
+                (player) =>
+                    player.name.toLowerCase().split(" ")[0] === inputValue ||
+                    player.name.toLowerCase().split(" ")[1] === inputValue ||
+                    player.name.toLowerCase() === inputValue
+            );
+
+            setPlayerCards(choosenPlayer);
+        } else {
+            return;
+        }
+    });
+
+    // );
+
+    // console.log(selectedPlayer);
     // console.log(setPlayerCards(play), play);
 
     // setPlayerCards(play);
