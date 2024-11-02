@@ -230,8 +230,8 @@ const playerPosition = (position) => {
 playerPosition("goalkeeper");
 
 allBtn.addEventListener("click", (e) => {
-    console.log(e.value);
-    // playerPosition(e.value)
+    console.log(e.target.value);
+    playerPosition(e.target.value);
 });
 nicknameBtn.addEventListener("click", () => {});
 goalkeeperBtn.addEventListener("click", () => {});
