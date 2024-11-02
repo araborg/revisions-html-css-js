@@ -228,3 +228,13 @@ const playerPosition = (position) => {
 };
 
 playerPosition("goalkeeper");
+
+allBtn.addEventListener("click", (e) => {
+    console.log(e.value);
+    // playerPosition(e.value)
+});
+nicknameBtn.addEventListener("click", () => {});
+goalkeeperBtn.addEventListener("click", () => {});
+defenderBtn.addEventListener("click", () => {});
+midfielderBtn.addEventListener("click", () => {});
+forwardBtn.addEventListener("click", () => {});
