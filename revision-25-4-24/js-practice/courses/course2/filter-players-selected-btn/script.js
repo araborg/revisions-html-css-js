@@ -223,6 +223,7 @@ const playerPosition = (position) => {
     const currentPostion = players.filter(
         (player) => player.position === position
     );
+
     console.log(currentPostion);
 };
 
