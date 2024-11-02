@@ -220,23 +220,22 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 const displayPlayers = (arr = players) => {
-    playerCards.innerHTML = "";
-
-    players.map(
+    playerCards.innerHTML += arr.map(
         ({ isCaptain, name, position, number, nickname }) =>
-            // console.log(isCaptain, name, position, number, nickname)
-
             `
-            <div class="player-card">
-                <h2>${name}</h2>
-                
-            </div>
-        `
+                <div class="player-card">
+                    <h2>${name}</h2>
+                </div>
+
+            ` `
+
     );
+
+    // console.log(playerCards);
 };
 
-// console.log(displayPlayers(players));
-displayPlayers(players);
+console.log(displayPlayers(players));
+// displayPlayers(players);
 
 /*
 <p>Position: ${position}</p>
