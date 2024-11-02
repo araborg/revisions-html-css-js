@@ -222,22 +222,25 @@ headCoach.textContent = coachName;
 const displayPlayers = (arr = players) => {
     playerCards.textContent = "";
 
-    playerCards.textContent += arr
+    const show = arr
         .map(
             (player) => `
             <div class="player-card">
-                <h2>${player.name}</h2>
-                <p>Position: ${player.position}</p>
-                <p>Number: ${player.number}</p>
-                <p>Nickname: ${player.nickname}</p>
+                <h2>${player.name} </h2>
+                <p>Position:${player.position}</p>
+                <p>Number:${player.number}</p>
+                <p>Nickname:${player.nickname}</p>
             </div>
     `
         )
         .join(",");
 
-    console.log(playerCards);
+    console.log(show);
 };
 
+console.log(displayPlayers(players));
+
+/*
 const playerPosition = (position) => {
     switch (position) {
         case "goalkeeper":
@@ -267,3 +270,4 @@ defenderBtn.addEventListener("click", () => {});
 midfielderBtn.addEventListener("click", () => {});
 
 forwardBtn.addEventListener("click", () => {});
+*/
