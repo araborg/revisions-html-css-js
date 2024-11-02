@@ -222,13 +222,20 @@ headCoach.textContent = coachName;
 const displayPlayers = (arr = players) => {
     playerCards.textContent = "";
 
-    arr.map(
-        (player) => `
-        <div class="player-card">
-            <p>${player.name}</p>
-        </div>
+    playerCards.textContent += arr
+        .map(
+            (player) => `
+            <div class="player-card">
+                <h2>${player.name}</h2>
+                <p>Position: ${player.position}</p>
+                <p>Number: ${player.number}</p>
+                <p>Nickname: ${player.nickname}</p>
+            </div>
     `
-    );
+        )
+        .join(",");
+
+    console.log(playerCards);
 };
 
 const playerPosition = (position) => {
