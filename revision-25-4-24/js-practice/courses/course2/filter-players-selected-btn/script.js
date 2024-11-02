@@ -225,7 +225,7 @@ const displayPlayers = (arr = players) => {
     players.map(({ name, position, number }) => {
         `
             <div class="player-card">
-                <h2>${name}</h2>
+                <h2>${isCaptain ? "Captain" : ""} ${name}</h2>
                 <p>Position: ${position}</p>
                 <p>Number: ${number}</p>
                 <p>Nickname: ${nickname}</p>
