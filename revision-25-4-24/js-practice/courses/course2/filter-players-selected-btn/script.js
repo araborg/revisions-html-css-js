@@ -219,29 +219,10 @@ typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
-const displayPlayers = (arr = players) => {
-    playerCards.textContent = "";
-
-    // const show =
-    playerCards.textContent += arr
-        .map(
-            (player) =>
-                `
-                    <div class="player-card">
-                        <h2>${player.name} </h2>
-                        <p>Position:${player.position}</p>
-                        <p>Number:${player.number}</p>
-                        <p>Nickname:${player.nickname}</p>
-                    </div>
-                 `
-        )
-        .join("");
-
-    // console.log((playerCards.textContent += show));
-};
+const displayPlayers = (arr = players) => {};
 
 // console.log(displayPlayers(players));
-displayPlayers(players);
+// displayPlayers(players);
 /*
 const playerPosition = (position) => {
     switch (position) {
