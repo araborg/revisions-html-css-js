@@ -219,6 +219,8 @@ typeOfSport.textContent = sport;
 worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
+const displayPlayers = (arr = players) => {};
+
 const playerPosition = (position) => {
     const currentPostion = players.filter(
         (player) => player.position === position
