@@ -24,19 +24,6 @@ const defenderBtn = document.getElementById("defender");
 const midfielderBtn = document.getElementById("midfielder");
 const forwardBtn = document.getElementById("forward");
 
-const playerPosition = (postiion) => {
-    const currentPostion = players.position;
-};
-
-console.log(
-    allBtn,
-    nicknameBtn,
-    midfielderBtn,
-    defenderBtn,
-    forwardBtn,
-    goalkeeperBtn
-);
-
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
