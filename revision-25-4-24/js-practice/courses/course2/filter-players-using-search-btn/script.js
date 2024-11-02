@@ -261,6 +261,3 @@ searchBtn.addEventListener("click", (e) => {
         }
     });
 });
-// players?.name?.includes(inputValue)
-// players.findIndex((player) => player.name === inputValue)
-// console.log(typeof player.name.toLowerCase().split()[0], typeof inputValue)
