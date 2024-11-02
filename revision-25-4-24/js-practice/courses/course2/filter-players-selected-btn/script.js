@@ -210,7 +210,7 @@ Object.freeze(myFavoriteFootballTeam);
 
 const { team, sport, year, players } = myFavoriteFootballTeam;
 
-console.log(players);
+// console.log(players);
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
@@ -224,7 +224,7 @@ const playerPosition = (position) => {
         (player) => player.position === position
     );
 
-    console.log(currentPostion);
+    // console.log(currentPostion);
 };
 
 playerPosition("goalkeeper");
