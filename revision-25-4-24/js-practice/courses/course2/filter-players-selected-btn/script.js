@@ -15,9 +15,14 @@ const playersDropdownList = document.getElementById("players");
             <button id="defender" type="button">Defender</button>
             <button id="forward type="button">Forward</button>
             <button id="goalkeeper" type="button">Goalkeeper</button>
+            */
 
-
-*/
+const allBtn = document.getElementById("all");
+const nicknameBtn = document.getElementById("nickname");
+const midfielderBtn = document.getElementById("midfielder");
+const defenderBtn = document.getElementById("defender");
+const forwardBtn = document.getElementById("forward");
+const goalkeeperBtn = document.getElementById("goalkeeper");
 
 const myFavoriteFootballTeam = {
     team: "Argentina",
