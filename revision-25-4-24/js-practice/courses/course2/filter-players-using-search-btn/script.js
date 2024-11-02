@@ -225,7 +225,7 @@ headCoach.textContent = coachName;
 // Logic:
 const setPlayerCards = (arr = players) => {
     playerCards.innerHTML += arr
-        .map(
+        ?.map(
             ({ name, position, number, isCaptain, nickname }) =>
                 `
                     <div class="player-card">
@@ -309,7 +309,7 @@ searchBtn.addEventListener("click", (e) => {
                   (player) =>
                       player.name.toLowerCase().split(" ")[0] === inputValue
               )
-            : ""
+            : null
     );
     console.log(setPlayerCards(play), play);
 
