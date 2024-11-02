@@ -7,6 +7,18 @@ const headCoach = document.getElementById("head-coach");
 const playerCards = document.getElementById("player-cards");
 const playersDropdownList = document.getElementById("players");
 
+// btns
+/*
+ <button id="all" type="button">All</button>
+            <button id="nickname" type="button">Nickname</button>
+            <button id="midfielder" type="button">Midfielder</button>
+            <button id="defender" type="button">Defender</button>
+            <button id="forward type="button">Forward</button>
+            <button id="goalkeeper" type="button">Goalkeeper</button>
+
+
+*/
+
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
