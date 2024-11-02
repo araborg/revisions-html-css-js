@@ -5,7 +5,6 @@ const worldCupYear = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
 
 const playerCards = document.getElementById("player-cards");
-const playersDropdownList = document.getElementById("players");
 
 // btns
 const allBtn = document.getElementById("all");
@@ -213,8 +212,19 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
-console.log(team, sport, year, players, coachName);
+// console.log(team, sport, year, players, coachName);
+
+teamName.textContent = team;
+
 /*
+
+ <div class="team-stats">
+                <p>Team: <span id="team"></span></p>
+                <p>Sport: <span id="sport"></span></p>
+                <p>Year: <span id="year"></span></p>
+                <p>Head coach: <span id="head-coach"></span></p>
+            </div>
+
 
  team: "Argentina",
     sport: "Football",
