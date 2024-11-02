@@ -220,6 +220,8 @@ worldCupYear.textContent = year;
 headCoach.textContent = coachName;
 
 const displayPlayers = (arr = players) => {
+    playerCards.textContent = "";
+
     arr.map(
         (player) => `
         <div class="player-card">
