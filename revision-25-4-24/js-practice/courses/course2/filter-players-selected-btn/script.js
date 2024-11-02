@@ -19,10 +19,19 @@ const playersDropdownList = document.getElementById("players");
 
 const allBtn = document.getElementById("all");
 const nicknameBtn = document.getElementById("nickname");
-const midfielderBtn = document.getElementById("midfielder");
-const defenderBtn = document.getElementById("defender");
-const forwardBtn = document.getElementById("forward");
 const goalkeeperBtn = document.getElementById("goalkeeper");
+const defenderBtn = document.getElementById("defender");
+const midfielderBtn = document.getElementById("midfielder");
+const forwardBtn = document.getElementById("forward");
+
+console.log(
+    allBtn,
+    nicknameBtn,
+    midfielderBtn,
+    defenderBtn,
+    forwardBtn,
+    goalkeeperBtn
+);
 
 const myFavoriteFootballTeam = {
     team: "Argentina",
