@@ -235,15 +235,8 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
-console.log(setPlayerCards(players));
-console.log(playerCards);
 
-/*
-<p>Position: ${position}</p>
-                <p>Number: ${number}</p>
-                <p>Nickname: ${nickname}</p>
-*/
-/*
+
 const playerPosition = (position) => {
     switch (position) {
         case "goalkeeper":
