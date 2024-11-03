@@ -245,7 +245,7 @@ const setPlayerCards = (arr = players) => {
 
 // console.log(setPlayerCards(players));
 
-console.log(setPlayerCards(players));
+console.log(setPlayerCards([...players]));
 // displayPlayers(players);
 
 /*
