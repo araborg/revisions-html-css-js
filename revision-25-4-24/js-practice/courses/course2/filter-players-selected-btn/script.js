@@ -235,6 +235,7 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
+// ds by default loads all the players
 setPlayerCards();
 
 const playerPosition = (position) => {
