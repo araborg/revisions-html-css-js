@@ -235,6 +235,7 @@ const setPlayerCards = (arr = players) => {
 };
 
 console.log(setPlayerCards(players));
+console.log(playerCards);
 
 /*
 <p>Position: ${position}</p>
