@@ -258,7 +258,9 @@ allBtn.addEventListener("click", (e) => {
     playerPosition(e.target.value);
 });
 
-nicknameBtn.addEventListener("click", () => {});
+nicknameBtn.addEventListener("click", (e) => {
+    playerPosition(e.target.value);
+});
 
 goalkeeperBtn.addEventListener("click", (e) => {
     playerPosition(e.target.value);
