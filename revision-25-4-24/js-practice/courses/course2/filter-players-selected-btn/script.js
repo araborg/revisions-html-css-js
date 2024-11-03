@@ -235,19 +235,19 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
-
-
 const playerPosition = (position) => {
+    playerCards.innerHTML = "";
+
     switch (position) {
         case "goalkeeper":
-            displayPlayers(
+            setPlayerCards(
                 players.filter((player) => player.position === "goalkeeper")
             );
 
             break;
 
         default:
-            displayPlayers(players);
+            setPlayerCards(players);
     }
 };
 
@@ -266,4 +266,3 @@ defenderBtn.addEventListener("click", () => {});
 midfielderBtn.addEventListener("click", () => {});
 
 forwardBtn.addEventListener("click", () => {});
-*/
