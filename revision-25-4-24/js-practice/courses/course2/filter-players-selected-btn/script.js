@@ -225,7 +225,7 @@ const setPlayerCards = (arr = players) => {
             ({ name, position, number, isCaptain, nickname }) =>
                 `
                     <div class="player-card">
-                        <h2>${name}</h2>
+                        <h2>${isCaptain ? "Captain" : ""} ${name}</h2>
                         <p>Position: ${position}</p>
                         <p>Number: ${number}</p>
                         <p>Nickname: ${nickname}</p>
@@ -249,6 +249,13 @@ const playerPosition = (position) => {
 
             break;
 
+        case "nickname":
+            setPlayerCards(
+                players.filter((player) => player.position === "nickname")
+            );
+
+            break;
+
         default:
             setPlayerCards(players);
     }
@@ -259,6 +266,7 @@ allBtn.addEventListener("click", (e) => {
 });
 
 nicknameBtn.addEventListener("click", (e) => {
+    console.log(e.target.value);
     playerPosition(e.target.value);
 });
 
