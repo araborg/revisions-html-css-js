@@ -266,8 +266,14 @@ goalkeeperBtn.addEventListener("click", (e) => {
     playerPosition(e.target.value);
 });
 
-defenderBtn.addEventListener("click", () => {});
+defenderBtn.addEventListener("click", (e) => {
+    playerPosition(e.target.value);
+});
 
-midfielderBtn.addEventListener("click", () => {});
+midfielderBtn.addEventListener("click", (e) => {
+    playerPosition(e.target.value);
+});
 
-forwardBtn.addEventListener("click", () => {});
+forwardBtn.addEventListener("click", (e) => {
+    playerPosition(e.target.value);
+});
