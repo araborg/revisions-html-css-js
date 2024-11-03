@@ -265,6 +265,20 @@ const playerPosition = (position) => {
 
             break;
 
+        case "midfielder":
+            setPlayerCards(
+                players.filter((player) => player.position === "midfielder")
+            );
+
+            break;
+
+        case "forward":
+            setPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+
+            break;
+
         default:
             setPlayerCards(players);
     }
