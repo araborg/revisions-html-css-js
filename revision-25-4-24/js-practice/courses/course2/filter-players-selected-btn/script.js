@@ -235,6 +235,8 @@ const setPlayerCards = (arr = players) => {
         .join("");
 };
 
+setPlayerCards();
+
 const playerPosition = (position) => {
     playerCards.innerHTML = "";
 
