@@ -244,6 +244,13 @@ const playerPosition = (position) => {
     console.log(position);
 
     switch (position) {
+        case "nickname":
+            setPlayerCards(
+                players.filter((player) => player?.position === "nickname")
+            );
+
+            break;
+
         case "goalkeeper":
             setPlayerCards(
                 players.filter((player) => player.position === "goalkeeper")
@@ -251,9 +258,9 @@ const playerPosition = (position) => {
 
             break;
 
-        case "nickname":
+        case "defender":
             setPlayerCards(
-                players.filter((player) => player.position === "nickname")
+                players.filter((player) => player.position === "defender")
             );
 
             break;
