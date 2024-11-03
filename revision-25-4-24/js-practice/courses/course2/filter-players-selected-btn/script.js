@@ -241,12 +241,10 @@ setPlayerCards();
 const playerPosition = (position) => {
     playerCards.innerHTML = "";
 
-    console.log(position);
-
     switch (position) {
         case "nickname":
             setPlayerCards(
-                players.filter((player) => player?.position === "nickname")
+                players.filter((player) => player.nickname !== null)
             );
 
             break;
