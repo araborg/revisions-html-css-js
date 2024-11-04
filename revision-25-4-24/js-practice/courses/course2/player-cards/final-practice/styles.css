@@ -23,7 +23,6 @@ body {
     background-color: var(--black);
 }
 
-/* Typography */
 .title {
     text-align: center;
 }
@@ -38,8 +37,6 @@ main {
 
     margin-left: auto;
     margin-right: auto;
-
-    border: 2px solid green;
 }
 
 .team-stats {
@@ -105,10 +102,6 @@ footer {
 }
 
 @media (min-width: 680px) {
-    body {
-        /* background-color: white; */
-    }
-
     .team-stats {
         display: flex;
         flex-direction: column;
