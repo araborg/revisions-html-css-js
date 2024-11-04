@@ -1,9 +1,13 @@
+// team stats
 const team = document.getElementById("team");
 const sport = document.getElementById("sport");
 const year = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
 console.log(team, sport, year, headCoach);
 
+// btns
+
+// football team obj ppty
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
