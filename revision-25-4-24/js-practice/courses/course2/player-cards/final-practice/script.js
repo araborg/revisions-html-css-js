@@ -215,9 +215,9 @@ const setPlayerCard = (arr = players) => {
         .join("");
 };
 
-console.log(setPlayerCard(players));
+// console.log(setPlayerCard(players));
 
-console.log(playerCards);
+// console.log(playerCards);
 
 // logic
 
@@ -228,9 +228,7 @@ const getBtnValue = (val) => {
 
     switch (val) {
         case "nickname":
-            setPlayerCard(
-                players.filter((player) => player.position === "nickname")
-            );
+            setPlayerCard(players.filter((player) => player.nickname !== null));
     }
 };
 
