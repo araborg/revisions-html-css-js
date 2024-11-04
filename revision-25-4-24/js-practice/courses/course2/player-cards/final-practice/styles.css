@@ -78,13 +78,13 @@ button {
 #player-cards {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: center;
 
     gap: 3em;
 }
 
 .player-card {
-    width: 30%;
+    width: 18.75em;
 
     color: var(--dark-grey);
 
