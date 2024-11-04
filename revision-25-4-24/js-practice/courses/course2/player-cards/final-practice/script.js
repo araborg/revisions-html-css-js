@@ -224,11 +224,24 @@ console.log(playerCards);
 const getBtnValue = (val) => {
     playerCards.innerHTML = "";
 
-    // const
+    console.log(val);
+
+    switch (val) {
+        case "nickname":
+            setPlayerCard(
+                players.filter((player) => player.position === "nickname")
+            );
+    }
 };
 
 allBtn.addEventListener("click", (e) => {
     console.log(e.target.value);
+
+    getBtnValue(e.target.value);
+});
+
+nicknameBtn.addEventListener("click", (e) => {
+    // console.log(e.target.value);
 
     getBtnValue(e.target.value);
 });
