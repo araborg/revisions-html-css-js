@@ -69,11 +69,13 @@ button {
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .player-card {
-    width: 30%;
+    /* width: 30%; */
+
+    border: 2px solid red;
 
     background-color: var(--white);
 }
