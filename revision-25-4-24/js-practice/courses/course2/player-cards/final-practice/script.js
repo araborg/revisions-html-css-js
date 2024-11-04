@@ -227,7 +227,7 @@ const getBtnValue = (val) => {
     console.log(val);
 
     switch (val) {
-        case "nickname":
+        case "Nickname":
             setPlayerCard(players.filter((player) => player.nickname !== null));
 
             break;
