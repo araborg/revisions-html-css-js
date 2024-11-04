@@ -266,8 +266,6 @@ const getBtnValue = (val) => {
 };
 
 allBtn.addEventListener("click", (e) => {
-    console.log(e.target.value);
-
     getBtnValue(e.target.value);
 });
 
