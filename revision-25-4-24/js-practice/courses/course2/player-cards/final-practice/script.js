@@ -246,13 +246,9 @@ allBtn.addEventListener("click", (e) => {
 });
 
 nicknameBtn.addEventListener("click", (e) => {
-    // console.log(e.target.value);
-
     getBtnValue(e.target.value);
 });
 
-nicknameBtn.addEventListener("click", (e) => {
-    // console.log(e.target.value);
-
+goalkeeperBtn.addEventListener("click", (e) => {
     getBtnValue(e.target.value);
 });
