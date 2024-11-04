@@ -12,7 +12,7 @@ const defender = document.getElementById("defender");
 const midfielder = document.getElementById("midfielder");
 const forward = document.getElementById("forward");
 
-const playerCard = document.getElementById("player-card");
+const playerCards = document.getElementById("player-cards");
 
 // football team obj ppty
 const myFavoriteFootballTeam = {
@@ -196,9 +196,10 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const setPlayerCard = (arr = players) => {
-    playerarr.map(
-        ({ name, position, number, isCaptain, nickname }) =>
-            `
+    playerCards.innerHTML += arr
+        .map(
+            ({ name, position, number, isCaptain, nickname }) =>
+                `
             <div class="player-card">
                 <h2>
                     ${isCaptain ? "Captain" : ""}
@@ -210,7 +211,10 @@ const setPlayerCard = (arr = players) => {
                 <p>Nickname: ${nickname}</p>
             </div>
         `
-    );
+        )
+        .join("");
 };
 
 console.log(setPlayerCard(players));
+
+console.log(playerCards);
