@@ -229,11 +229,24 @@ const getBtnValue = (val) => {
     switch (val) {
         case "nickname":
             setPlayerCard(players.filter((player) => player.nickname !== null));
+
+            break;
+
+        case "goalkeeper":
+            setPlayerCard(
+                players.filter((player) => player.position === "goalkeeper")
+            );
     }
 };
 
 allBtn.addEventListener("click", (e) => {
     console.log(e.target.value);
+
+    getBtnValue(e.target.value);
+});
+
+nicknameBtn.addEventListener("click", (e) => {
+    // console.log(e.target.value);
 
     getBtnValue(e.target.value);
 });
