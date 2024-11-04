@@ -5,12 +5,12 @@ const yearEl = document.getElementById("year");
 const headCoachEl = document.getElementById("head-coach");
 
 // btns
-const all = document.getElementById("all");
-const nickname = document.getElementById("nickname");
-const goalkeeper = document.getElementById("goalkeeper");
-const defender = document.getElementById("defender");
-const midfielder = document.getElementById("midfielder");
-const forward = document.getElementById("forward");
+const allBtn = document.getElementById("all");
+const nicknameBtn = document.getElementById("nickname");
+const goalkeeperBtn = document.getElementById("goalkeeper");
+const defenderBtn = document.getElementById("defender");
+const midfielderBtn = document.getElementById("midfielder");
+const forwardBtn = document.getElementById("forward");
 
 const playerCards = document.getElementById("player-cards");
 
@@ -218,3 +218,17 @@ const setPlayerCard = (arr = players) => {
 console.log(setPlayerCard(players));
 
 console.log(playerCards);
+
+// logic
+
+const getBtnValue = (val) => {
+    playerCards.innerHTML = "";
+
+    // const
+};
+
+allBtn.addEventListener("click", (e) => {
+    console.log(e.target.value);
+
+    getBtnValue(e.target.value);
+});
