@@ -67,6 +67,13 @@ button {
 
 #player-cards {
     display: flex;
-
     flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+.player-card {
+    width: 30%;
+
+    background-color: var(--white);
 }
