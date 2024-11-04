@@ -197,7 +197,11 @@ const setPlayerCard = (arr = players) => {
     arr.map(({ name, position, number, isCaptain, nickname }) => {
         `
             <div class="player-card">
-                <h2>Marcelo Trobbiani</h2>
+                <h2>
+                    ${isCaptain ? "Captain" : ""}
+                    ${name}
+                </h2>
+                    
                 <p>Position: midfielder</p>
                 <p>Number: 21</p>
                 <p>Nickname: Calesita</p>
@@ -206,4 +210,4 @@ const setPlayerCard = (arr = players) => {
     });
 };
 
-setPlayerCard(players);
+console.log(setPlayerCard(players));
