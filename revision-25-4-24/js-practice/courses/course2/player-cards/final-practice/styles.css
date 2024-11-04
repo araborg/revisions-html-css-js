@@ -18,11 +18,18 @@ html {
 }
 
 body {
+    color: var(--light-grey);
+
+    background-color: var(--black);
 }
 
 /* Typography */
 .title {
     text-align: center;
+}
+
+h1 {
+    margin: 1em 0;
 }
 
 main {
@@ -31,4 +38,11 @@ main {
 
     margin-left: auto;
     margin-right: auto;
+}
+
+.team-stats {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 1em 0 2em 0;
 }
