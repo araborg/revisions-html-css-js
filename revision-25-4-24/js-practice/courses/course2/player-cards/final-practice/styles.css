@@ -52,3 +52,21 @@ main {
 
     margin-bottom: 2em;
 }
+
+.btn-container {
+    margin-bottom: 2em;
+}
+
+.btn-container button {
+    margin-right: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+}
+
+#player-cards {
+    display: flex;
+
+    flex-wrap: wrap;
+}
