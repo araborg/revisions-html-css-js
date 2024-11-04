@@ -3,9 +3,14 @@ const team = document.getElementById("team");
 const sport = document.getElementById("sport");
 const year = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
-console.log(team, sport, year, headCoach);
 
 // btns
+const all = document.getElementById("all");
+const nickname = document.getElementById("nickname");
+const goalkeeper = document.getElementById("goalkeeper");
+const defender = document.getElementById("defender");
+const midfielder = document.getElementById("midfielder");
+const forward = document.getElementById("forward");
 
 // football team obj ppty
 const myFavoriteFootballTeam = {
