@@ -100,6 +100,10 @@ button {
     margin-bottom: 1em;
 }
 
+footer {
+    margin-bottom: 2em;
+}
+
 @media (min-width: 680px) {
     body {
         /* background-color: white; */
@@ -112,7 +116,8 @@ button {
     }
 
     .options-label,
-    .btn-container {
+    .btn-container,
+    footer {
         text-align: center;
     }
 }
