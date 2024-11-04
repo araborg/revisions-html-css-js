@@ -84,7 +84,7 @@ button {
 }
 
 .player-card {
-    /* width: 30%; */
+    width: 30%;
 
     color: var(--dark-grey);
 
