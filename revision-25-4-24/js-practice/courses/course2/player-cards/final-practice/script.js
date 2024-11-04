@@ -236,6 +236,32 @@ const getBtnValue = (val) => {
             setPlayerCard(
                 players.filter((player) => player.position === "goalkeeper")
             );
+
+            break;
+
+        case "defender":
+            setPlayerCard(
+                players.filter((player) => player.position === "defender")
+            );
+
+            break;
+
+        case "midfielder":
+            setPlayerCard(
+                players.filter((player) => player.position === "midfielder")
+            );
+
+            break;
+
+        case "forward":
+            setPlayerCard(
+                players.filter((player) => player.position === "forward")
+            );
+
+            break;
+
+        default:
+            setPlayerCard(players);
     }
 };
 
@@ -250,5 +276,17 @@ nicknameBtn.addEventListener("click", (e) => {
 });
 
 goalkeeperBtn.addEventListener("click", (e) => {
+    getBtnValue(e.target.value);
+});
+
+defenderBtn.addEventListener("click", (e) => {
+    getBtnValue(e.target.value);
+});
+
+midfielderBtn.addEventListener("click", (e) => {
+    getBtnValue(e.target.value);
+});
+
+forwardBtn.addEventListener("click", (e) => {
     getBtnValue(e.target.value);
 });
