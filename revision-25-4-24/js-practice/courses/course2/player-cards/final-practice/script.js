@@ -194,20 +194,21 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const setPlayerCard = (arr = players) => {
-    arr.map(({ name, position, number, isCaptain, nickname }) => {
-        `
+    arr.map(
+        ({ name, position, number, isCaptain, nickname }) =>
+            `
             <div class="player-card">
                 <h2>
                     ${isCaptain ? "Captain" : ""}
                     ${name}
                 </h2>
                     
-                <p>Position: midfielder</p>
-                <p>Number: 21</p>
-                <p>Nickname: Calesita</p>
+                <p>Position: ${position}</p>
+                <p>Number: ${number}</p>
+                <p>Nickname: ${nickname}</p>
             </div>
-        `;
-    });
+        `
+    );
 };
 
 console.log(setPlayerCard(players));
