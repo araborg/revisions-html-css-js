@@ -127,7 +127,7 @@ const myFavoriteFootballTeam = {
         },
         {
             name: "Luis Islas",
-            position: "goalkeeper",
+            position: "Goalkeeper",
             number: 15,
             isCaptain: false,
             nickname: "El loco",
@@ -148,7 +148,7 @@ const myFavoriteFootballTeam = {
         },
         {
             name: "Nery Pumpido",
-            position: "goalkeeper",
+            position: "Goalkeeper",
             number: 18,
             isCaptain: false,
             nickname: null,
@@ -176,7 +176,7 @@ const myFavoriteFootballTeam = {
         },
         {
             name: "Héctor Zelada",
-            position: "goalkeeper",
+            position: "Goalkeeper",
             number: 22,
             isCaptain: false,
             nickname: null,
