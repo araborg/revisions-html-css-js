@@ -12,6 +12,8 @@ const defender = document.getElementById("defender");
 const midfielder = document.getElementById("midfielder");
 const forward = document.getElementById("forward");
 
+const playerCard = document.getElementById("player-card");
+
 // football team obj ppty
 const myFavoriteFootballTeam = {
     team: "Argentina",
@@ -194,7 +196,7 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const setPlayerCard = (arr = players) => {
-    arr.map(
+    playerarr.map(
         ({ name, position, number, isCaptain, nickname }) =>
             `
             <div class="player-card">
