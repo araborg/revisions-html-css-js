@@ -1,3 +1,9 @@
+const team = document.getElementById("team");
+const sport = document.getElementById("sport");
+const year = document.getElementById("year");
+const headCoach = document.getElementById("head-coach");
+console.log(team, sport, year, headCoach);
+
 const myFavoriteFootballTeam = {
     team: "Argentina",
     sport: "Football",
