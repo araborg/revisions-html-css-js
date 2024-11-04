@@ -46,3 +46,9 @@ main {
 
     margin: 1em 0 2em 0;
 }
+
+.options-label {
+    display: block;
+
+    margin-bottom: 2em;
+}
