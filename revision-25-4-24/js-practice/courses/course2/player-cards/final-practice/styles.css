@@ -73,9 +73,13 @@ button {
     flex-wrap: wrap;
     justify-content: center;
 
+    padding: 3em 0;
+
     gap: 3em;
 
     margin-bottom: 2em;
+
+    background-color: var(--white);
 }
 
 .player-card {
@@ -86,7 +90,7 @@ button {
     padding: 1em;
 
     border-radius: 12px;
-    background-color: var(--white);
+    background-color: var(--light-grey);
 
     text-align: center;
 }
@@ -99,7 +103,7 @@ footer {
     margin-bottom: 2em;
 }
 
-@media (min-width: 680px) {
+@media (max-width: 680px) {
     .team-stats {
         display: flex;
         flex-direction: column;
