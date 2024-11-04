@@ -77,6 +77,10 @@ button {
     justify-content: center;
 
     gap: 3em;
+
+    /* border: 2px solid pink; */
+
+    margin-bottom: 2em;
 }
 
 .player-card {
@@ -86,7 +90,7 @@ button {
 
     padding: 1em;
 
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: var(--white);
 
     text-align: center;
@@ -94,4 +98,10 @@ button {
 
 .player-card * {
     margin-bottom: 1em;
+}
+
+@media (min-width: 1090px) {
+    body {
+        /* background-color: white; */
+    }
 }
