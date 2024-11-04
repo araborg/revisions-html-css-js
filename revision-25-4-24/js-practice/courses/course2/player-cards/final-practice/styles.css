@@ -32,6 +32,9 @@ h1 {
     margin: 1em 0;
 }
 
+h2 {
+}
+
 main {
     width: 90%;
     max-width: 1000px;
@@ -75,21 +78,27 @@ button {
 #player-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
-    row-gap: 3em;
+    gap: 3em;
 }
 
 .player-card {
-    width: 30%;
+    /* width: 30%; */
 
     color: var(--dark-grey);
 
     padding: 1em;
 
-    border-radius: 10px;
-
+    border-radius: 5px;
     background-color: var(--white);
+
+    text-align: center;
+
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .player-card * {
