@@ -192,3 +192,18 @@ teamEl.textContent = team;
 sportEl.textContent = sport;
 yearEl.textContent = year;
 headCoachEl.textContent = coachName;
+
+const setPlayerCard = (arr = players) => {
+    arr.map(({ name, position, number, isCaptain, nickname }) => {
+        `
+            <div class="player-card">
+                <h2>Marcelo Trobbiani</h2>
+                <p>Position: midfielder</p>
+                <p>Number: 21</p>
+                <p>Nickname: Calesita</p>
+            </div>
+        `;
+    });
+};
+
+setPlayerCard(players);

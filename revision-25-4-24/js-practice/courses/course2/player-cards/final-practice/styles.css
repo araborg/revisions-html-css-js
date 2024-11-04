@@ -101,6 +101,8 @@ button {
 
 footer {
     margin-bottom: 2em;
+
+    text-align: center;
 }
 
 @media (max-width: 680px) {
@@ -115,8 +117,7 @@ footer {
     }
 
     .options-label,
-    .btn-container,
-    footer {
+    .btn-container {
         text-align: center;
     }
 }
