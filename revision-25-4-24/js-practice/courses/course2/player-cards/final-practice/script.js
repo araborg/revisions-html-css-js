@@ -1,8 +1,8 @@
 // team stats
-const team = document.getElementById("team");
-const sport = document.getElementById("sport");
-const year = document.getElementById("year");
-const headCoach = document.getElementById("head-coach");
+const teamEl = document.getElementById("team");
+const sportEl = document.getElementById("sport");
+const yearEl = document.getElementById("year");
+const headCoachEl = document.getElementById("head-coach");
 
 // btns
 const all = document.getElementById("all");
@@ -183,3 +183,12 @@ const myFavoriteFootballTeam = {
 };
 
 Object.freeze(myFavoriteFootballTeam);
+
+const { team, sport, year, players } = myFavoriteFootballTeam;
+
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+teamEl.textContent = team;
+sportEl.textContent = sport;
+yearEl.textContent = year;
+headCoachEl.textContent = coachName;
