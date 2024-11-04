@@ -232,30 +232,30 @@ const getBtnValue = (val) => {
 
             break;
 
-        case "goalkeeper":
+        case "Goalkeeper":
             setPlayerCard(
-                players.filter((player) => player.position === "goalkeeper")
+                players.filter((player) => player.position === "Goalkeeper")
             );
 
             break;
 
-        case "defender":
+        case "Defender":
             setPlayerCard(
-                players.filter((player) => player.position === "defender")
+                players.filter((player) => player.position === "Defender")
             );
 
             break;
 
-        case "midfielder":
+        case "Midfielder":
             setPlayerCard(
-                players.filter((player) => player.position === "midfielder")
+                players.filter((player) => player.position === "Midfielder")
             );
 
             break;
 
-        case "forward":
+        case "Forward":
             setPlayerCard(
-                players.filter((player) => player.position === "forward")
+                players.filter((player) => player.position === "Forward")
             );
 
             break;
