@@ -27,3 +27,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+.todo-app {
+    width: 300px;
+    height: 350px;
+}
