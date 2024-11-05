@@ -18,3 +18,7 @@
 body {
     background-color: var(--dark-grey);
 }
+
+main {
+    border: 2px solid white;
+}
