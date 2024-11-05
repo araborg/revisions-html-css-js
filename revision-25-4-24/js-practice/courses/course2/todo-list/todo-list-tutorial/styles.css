@@ -31,4 +31,6 @@ main {
 .todo-app {
     width: 300px;
     height: 350px;
+
+    border: 5px solid var(--yellow);
 }
