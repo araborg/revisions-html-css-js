@@ -28,6 +28,11 @@ main {
     align-items: center;
 }
 
+h1 {
+    color: var(--light-grey);
+    margin: 20px 0 40px 0;
+}
+
 .todo-app {
     width: 300px;
     height: 350px;
