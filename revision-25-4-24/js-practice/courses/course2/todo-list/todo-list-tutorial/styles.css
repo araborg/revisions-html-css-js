@@ -181,7 +181,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    /* display: none; */
 }
 
 @media (min-width: 576px) {
@@ -189,5 +189,14 @@ h1 {
     .task-form {
         width: 400px;
         height: 450px;
+    }
+
+    .task-form-label {
+        font-size: 1.5rem;
+    }
+
+    #title-input,
+    #date-input {
+        height: 2rem;
     }
 }
