@@ -32,4 +32,6 @@ closeTaskFormBtn.addEventListener("click", () => {
     confirmCloseDialog.showModal();
 });
 
-cancelBtn.addEventListener("click", () => {});
+cancelBtn.addEventListener("click", () => {
+    confirmCloseDialog.closest();
+});
