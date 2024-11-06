@@ -4,8 +4,9 @@ const taskForm = document.getElementById("task-form");
 
 const closeTaskFormBtn = document.getElementById("close-task-form-btn");
 
-const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 const addOrUpdateTaskBtn = document.getElementById("add-or-update-task-btn");
+
+const confirmCloseDialog = document.getElementById("confirm-close-dialog");
 
 const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
