@@ -171,7 +171,8 @@ h1 {
 
 #tasks-container {
     height: 100%;
-    /* overflow-y: auto; */
+
+    overflow-y: auto;
 }
 
 .task {
