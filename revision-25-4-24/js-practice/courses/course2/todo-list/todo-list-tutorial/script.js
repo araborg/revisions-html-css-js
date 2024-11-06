@@ -33,7 +33,7 @@ closeTaskFormBtn.addEventListener("click", () => {
 });
 
 cancelBtn.addEventListener("click", () => {
-    confirmCloseDialog.close());
+    confirmCloseDialog.close();
 });
 
 discardBtn.addEventListener("click", () => {
