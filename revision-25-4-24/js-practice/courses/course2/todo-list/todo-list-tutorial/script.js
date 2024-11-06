@@ -44,4 +44,6 @@ discardBtn.addEventListener("click", () => {
 
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    console.log("form submitted");
 });
