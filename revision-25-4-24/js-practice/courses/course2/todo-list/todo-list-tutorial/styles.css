@@ -119,6 +119,7 @@ h1 {
 }
 
 .task-form-body {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
