@@ -180,7 +180,7 @@ h1 {
 }
 
 .hidden {
-    display: none;
+    /* display: none; */
 }
 
 @media (min-width: 576px) {
@@ -196,7 +196,7 @@ h1 {
 
     #title-input,
     #date-input {
-        height: 2rem;
+        /* height: 2rem; */
     }
 
     #title-input,
