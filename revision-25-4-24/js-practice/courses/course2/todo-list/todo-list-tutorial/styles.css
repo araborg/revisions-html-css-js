@@ -99,8 +99,6 @@ h1 {
 
     border-radius: 5px;
 
-    overflow: auto;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
