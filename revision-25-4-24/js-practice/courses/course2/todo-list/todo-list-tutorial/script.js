@@ -27,3 +27,7 @@ openTaskFormBtn.addEventListener("click", () => {
 // closeTaskFormBtn.addEventListener("click", () => {
 //     taskForm.classList.toggle("hidden");
 // });
+
+closeTaskFormBtn.addEventListener("click", () => {
+    confirmCloseDialog.showModal();
+});
