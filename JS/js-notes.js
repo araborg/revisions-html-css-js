@@ -317,14 +317,21 @@ First one has:
 ===================================
 
 Local storage
-1. 
+
+1. showModal() method:
 The HTML dialog element has a showModal() method that can 
 be used to display a modal dialog box on a web page.
 
 dialogElement.showModal();
 
 
-2.
+2. close() method:
+If the user clicks the Cancel button, you want to cancel 
+the process and close the modal so the user can continue 
+editing. The HTML dialog element has a close() method that 
+can be used to close a modal dialog box on a web page.
+
+dialogElement.close();
 
 
 3.
