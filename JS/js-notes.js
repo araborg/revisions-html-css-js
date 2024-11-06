@@ -334,8 +334,15 @@ can be used to close a modal dialog box on a web page.
 dialogElement.close();
 
 
-3.
+3. Function of: e.preventDefault();
+taskForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
 
+To start, add a submit event listener to your taskForm element and 
+pass in e as the parameter of your arrow function. Inside the curly 
+braces, use the preventDefault() method to stop the browser from 
+refreshing the page after submitting the form.
 
 4.
 
