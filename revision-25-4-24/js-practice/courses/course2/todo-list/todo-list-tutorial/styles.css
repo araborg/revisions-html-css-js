@@ -47,6 +47,7 @@ main {
 
 .btn {
     width: 100px;
+
     margin: 10px;
 
     color: var(--dark-grey);
@@ -56,4 +57,10 @@ main {
 
     border-color: var(--golden-yellow);
     border-width: 3px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(#ffcc4c, #f89808);
 }
