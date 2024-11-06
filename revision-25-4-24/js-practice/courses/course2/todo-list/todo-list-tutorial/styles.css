@@ -199,4 +199,11 @@ h1 {
     #date-input {
         height: 2rem;
     }
+
+    #title-input,
+    #date-input,
+    #description-input {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
 }
