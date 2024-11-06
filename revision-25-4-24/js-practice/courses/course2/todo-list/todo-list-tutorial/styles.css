@@ -161,6 +161,9 @@ h1 {
 
 .confirm-close-dialog-btn-container {
     display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
 }
 
 .hidden {
