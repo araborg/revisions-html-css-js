@@ -171,6 +171,17 @@ h1 {
     font-size: 1.5rem;
 }
 
+#tasks-container {
+    border: 2px solid purple;
+
+    height: 100%;
+    overflow-y: auto;
+}
+
+.task {
+    margin: 5px 0;
+}
+
 .hidden {
     display: none;
 }
