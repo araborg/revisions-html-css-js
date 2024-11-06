@@ -159,6 +159,10 @@ h1 {
     border: 2px solid red;
 }
 
+.confirm-close-dialog-btn-container {
+    display: flex;
+}
+
 .hidden {
     display: none;
 }
