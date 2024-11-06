@@ -123,3 +123,10 @@ main {
     display: flex;
     justify-content: center;
 }
+
+.task-form-label,
+#title-input,
+#date-input,
+#description-input {
+    display: block;
+}
