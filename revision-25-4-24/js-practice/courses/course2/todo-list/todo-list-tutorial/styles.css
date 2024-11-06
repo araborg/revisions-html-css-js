@@ -109,6 +109,8 @@ h1 {
     transform: translate(-50%, -50%);
 
     background-color: var(--white);
+
+    overflow: auto;
 }
 
 .task-form-header {
