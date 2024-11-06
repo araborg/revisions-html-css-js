@@ -312,6 +312,33 @@ First one has:
 =>{;} after the callback fxn while the 2nd does not.
 
 
+
+
+===================================
+
+Local storage
+1. 
+The HTML dialog element has a showModal() method that can 
+be used to display a modal dialog box on a web page.
+
+dialogElement.showModal();
+
+
+2.
+
+
+3.
+
+
+4.
+
+
+5.
+
+
+6.
+
+
 7.
 
 
