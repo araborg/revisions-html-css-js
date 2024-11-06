@@ -86,8 +86,6 @@ main {
 }
 
 .task-form {
-    border: 2px solid green;
-
     width: 300px;
     height: 350px;
 
@@ -111,4 +109,17 @@ main {
 .task-form-header {
     display: flex;
     justify-content: flex-end;
+}
+
+.task-form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border: 2px solid green;
+}
+
+.task-form-footer {
+    display: flex;
+    justify-content: center;
 }
