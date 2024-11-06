@@ -47,3 +47,5 @@ taskForm.addEventListener("submit", (e) => {
 
     console.log("form submitted");
 });
+
+// stops at 10: review 5- 10 again
