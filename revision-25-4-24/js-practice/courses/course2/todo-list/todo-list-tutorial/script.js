@@ -17,4 +17,6 @@ const tasksContainer = document.getElementById("tasks-container");
 
 const taskData = [];
 
+let currentTask = {};
+
 console.log(taskData);
