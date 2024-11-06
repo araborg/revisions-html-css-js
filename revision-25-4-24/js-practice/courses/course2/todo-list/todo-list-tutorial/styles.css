@@ -16,7 +16,7 @@
 }
 
 body {
-    /* background-color: var(--dark-grey); */
+    background-color: var(--dark-grey);
 }
 
 main {
@@ -36,10 +36,16 @@ main {
     background-color: var(--white);
 
     border: 5px solid var(--yellow);
-
     border-radius: 8px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    position: relative;
+}
+
+.btn {
+    width: 100px;
+    margin: 10px;
 }
