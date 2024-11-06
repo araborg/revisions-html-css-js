@@ -24,6 +24,6 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 // console.log(taskData);
 
-closeTaskFormBtn.addEventListener("click", () => {
-    taskForm.classList.toggle("hidden");
-});
+// closeTaskFormBtn.addEventListener("click", () => {
+//     taskForm.classList.toggle("hidden");
+// });
