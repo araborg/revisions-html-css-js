@@ -54,8 +54,10 @@ const dataArrIndex = taskData.findIndex((item) => {
 });
 
 const taskObj = {
-    id: titleInput.value.toLowerCase().split().join("-"),
+    id: `${titleInput.value.toLowerCase().split(" ").join("-")}`,
 };
+
+console.log(taskObj);
 
 //
 //
