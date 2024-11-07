@@ -49,4 +49,8 @@ taskForm.addEventListener("submit", (e) => {
     console.log("form submitted");
 });
 
+const dataArrIndex = taskData.findIndex((item) => {
+    item.id === currentTask.id;
+});
+
 // stops at 10: review 5- 10 again
