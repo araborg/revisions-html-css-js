@@ -371,7 +371,16 @@ This variable will be used to track the state when editing
 and discarding tasks.
 
 
-6.
+6. toggle() method:
+In earlier projects, you learned how to add and remove 
+classes from an element with el.classList.add() and 
+el.classList.remove(). 
+Another method to use with the classList property is the 
+toggle method.
+
+The toggle method will add the class if it is not present 
+on the element, and remove the class if it is present on 
+the element.
 
 
 7.
