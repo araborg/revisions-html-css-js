@@ -91,6 +91,8 @@ taskData.forEach(({ id, title, date, description }) => {
     taskForm.classList.toggle("hidden");
 });
 
+const reset = () => {};
+
 //
 //
 //
