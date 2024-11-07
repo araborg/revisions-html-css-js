@@ -21,7 +21,9 @@ const taskData = [];
 let currentTask = {};
 
 openTaskFormBtn.addEventListener("click", () => {
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
+
+    reset();
 });
 // console.log(taskData);
 
