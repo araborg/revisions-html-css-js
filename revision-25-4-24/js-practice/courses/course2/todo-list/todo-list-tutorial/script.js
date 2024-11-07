@@ -38,6 +38,10 @@ discardBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
+const dataArrIndex = taskData.findIndex((item) => {
+    item.id === currentTask.id;
+});
+
 /*
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -45,9 +49,7 @@ taskForm.addEventListener("submit", (e) => {
     console.log("form submitted");
 });
 
-const dataArrIndex = taskData.findIndex((item) => {
-    item.id === currentTask.id;
-});
+
 
 const taskObj = {
     id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
