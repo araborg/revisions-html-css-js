@@ -66,6 +66,8 @@ if (dataArrIndex === -1) {
     taskData.unshift(taskObj);
 }
 
+console.log(taskData);
+
 //
 //
 //
