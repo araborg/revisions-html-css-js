@@ -69,7 +69,11 @@ taskForm.addEventListener("submit", (e) => {
                 </p>
 
                  <p>
-                    <strong>Title: </strong>${title}
+                    <strong>Date: </strong>${date}
+                </p>
+
+                 <p>
+                    <strong>Description: </strong>${description}
                 </p>
             </div>
         `;
