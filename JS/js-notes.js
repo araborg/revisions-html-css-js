@@ -385,7 +385,9 @@ the element.
 element.classList.toggle("class-to-toggle");
 
 
-7.
+7. unshift() method:
+unshift() is an array method that is used to add one or more 
+elements to the beginning of an array.
 
 
 8.

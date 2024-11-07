@@ -55,9 +55,16 @@ const dataArrIndex = taskData.findIndex((item) => {
 
 const taskObj = {
     id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
+    title: titleInput.value,
+    date: dateInput.value,
+    description: descriptionInput.value,
 };
 
 console.log(taskObj);
+
+if (dataArrIndex === -1) {
+    taskData.unshift(taskObj);
+}
 
 //
 //
