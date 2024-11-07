@@ -42,15 +42,23 @@ const dataArrIndex = taskData.findIndex((item) => {
     item.id === currentTask.id;
 });
 
-/*
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     console.log("form submitted");
 });
 
+// addOrUpdateTaskBtn.addEventListener("submit", (e) => {
+//     e.preventDefault();
+// });
 
+const taskObj = {
+    id: titleInput.value.toLowerCase(),
+};
 
+console.log(taskObj);
+
+/*
 const taskObj = {
     id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
     title: titleInput.value,
