@@ -44,7 +44,6 @@ taskForm.addEventListener("submit", (e) => {
     const dataArrIndex = taskData.findIndex((item) => {
         item.id === currentTask.id;
     });
-    console.log("form submitted");
 
     const taskObj = {
         id: titleInput.value.toLowerCase(),
