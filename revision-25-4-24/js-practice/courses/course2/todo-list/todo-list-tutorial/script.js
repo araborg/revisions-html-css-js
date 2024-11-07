@@ -68,6 +68,10 @@ if (dataArrIndex === -1) {
 
 console.log(taskData);
 
+taskData.forEach(({ id, title, date, description }) => {
+    tasksContainer.innerHTML += ``;
+});
+
 //
 //
 //
