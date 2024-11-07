@@ -38,25 +38,24 @@ discardBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
-const dataArrIndex = taskData.findIndex((item) => {
-    item.id === currentTask.id;
-});
-
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    const dataArrIndex = taskData.findIndex((item) => {
+        item.id === currentTask.id;
+    });
     console.log("form submitted");
+
+    const taskObj = {
+        id: titleInput.value.toLowerCase(),
+    };
+
+    console.log(taskObj);
 });
 
 // addOrUpdateTaskBtn.addEventListener("submit", (e) => {
 //     e.preventDefault();
 // });
-
-const taskObj = {
-    id: titleInput.value.toLowerCase(),
-};
-
-console.log(taskObj);
 
 /*
 const taskObj = {
