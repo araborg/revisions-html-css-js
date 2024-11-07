@@ -46,7 +46,9 @@ taskForm.addEventListener("submit", (e) => {
     });
 
     const taskObj = {
-        id: `${titleInput.value.toLowerCase().split(" ").join("-")}`,
+        id: `${
+            titleInput.value.toLowerCase().split(" ").join("-") - Date.now()
+        }`,
     };
 
     console.log(taskObj);
