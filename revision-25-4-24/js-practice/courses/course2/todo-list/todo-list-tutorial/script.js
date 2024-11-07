@@ -56,7 +56,11 @@ taskForm.addEventListener("submit", (e) => {
         description: descriptionInput.value,
     };
 
-    console.log(taskObj);
+    if (dataArrIndex === -1) {
+        taskData.unshift(task);
+    }
+
+    taskData.forEach(({ id, title, date, description }) => {});
 });
 
 // addOrUpdateTaskBtn.addEventListener("submit", (e) => {
