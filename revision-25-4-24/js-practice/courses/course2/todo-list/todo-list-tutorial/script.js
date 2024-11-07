@@ -15,6 +15,7 @@ const discardBtn = document.getElementById("discard-btn");
 
 const tasksContainer = document.getElementById("tasks-container");
 
+// coding start
 const taskData = [];
 
 let currentTask = {};

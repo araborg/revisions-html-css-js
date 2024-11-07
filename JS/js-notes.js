@@ -350,6 +350,17 @@ submitting the form.
 
 
 4.
+const taskData = [];
+
+Create a taskData constant and set it to an empty array. 
+
+This array will store all the tasks along with their 
+associated data, including title, due date, and description. 
+This storage will enable you to keep track of tasks, display 
+them on the page, and save them to localStorage.
+
+let currentTask = {};
+
 
 
 5.
