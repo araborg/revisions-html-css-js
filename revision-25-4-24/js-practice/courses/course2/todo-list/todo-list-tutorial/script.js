@@ -32,13 +32,13 @@ cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 });
 
-/*
 discardBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 
     taskForm.classList.toggle("hidden");
 });
 
+/*
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
