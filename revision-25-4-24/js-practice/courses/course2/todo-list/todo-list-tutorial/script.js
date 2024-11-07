@@ -60,7 +60,9 @@ taskForm.addEventListener("submit", (e) => {
         taskData.unshift(task);
     }
 
-    taskData.forEach(({ id, title, date, description }) => {});
+    taskData.forEach(({ id, title, date, description }) => {
+        tasksContainer.innerHTML += ``;
+    });
 });
 
 // addOrUpdateTaskBtn.addEventListener("submit", (e) => {
