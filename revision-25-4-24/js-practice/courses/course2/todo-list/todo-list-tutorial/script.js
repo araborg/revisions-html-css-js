@@ -74,6 +74,10 @@ taskData.forEach(({ id, title, date, description }) => {
             <p>
                 <strong>Title:</strong> ${title}
             </p>
+
+            <p>
+                <strong>Date:</strong> ${date}
+            </p>
         </div>
     
     `;
