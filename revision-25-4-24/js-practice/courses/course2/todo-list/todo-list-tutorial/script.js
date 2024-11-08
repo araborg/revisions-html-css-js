@@ -96,18 +96,6 @@ const updateTaskContainer = () => {
     });
 };
 
-const reset = () => {
-    addOrUpdateTaskBtn.innerText = "Add Task";
-
-    titleInput.value = "";
-    dateInput.value = "";
-    descriptionInput.value = "";
-
-    taskForm.classList.toggle("hidden");
-
-    currentTask = {};
-};
-
 const deleteTask = (buttonEl) => {
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === buttonEl.parentElement.id
@@ -136,6 +124,18 @@ const editTask = (buttonEl) => {
     taskForm.classList.toggle("hidden");
 };
 
+const reset = () => {
+    addOrUpdateTaskBtn.innerText = "Add Task";
+
+    titleInput.value = "";
+    dateInput.value = "";
+    descriptionInput.value = "";
+
+    taskForm.classList.toggle("hidden");
+
+    currentTask = {};
+};
+
 if (taskData.length) {
     updateTaskContainer();
 }
@@ -160,12 +160,6 @@ closeTaskFormBtn.addEventListener("click", () => {
     }
 });
 
-taskForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    addOrUpdateTask();
-});
-
 cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 });
@@ -175,6 +169,12 @@ discardBtn.addEventListener("click", () => {
 
     // taskForm.classList.toggle("hidden");
     reset();
+});
+
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    addOrUpdateTask();
 });
 
 //
