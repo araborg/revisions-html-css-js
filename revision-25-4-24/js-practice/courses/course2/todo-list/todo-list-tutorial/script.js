@@ -57,12 +57,11 @@ taskForm.addEventListener("submit", (e) => {
     };
 
     if (dataArrIndex === -1) {
-        taskData.unshift(task);
+        taskData.unshift(taskObj);
     }
 
     taskData.forEach(({ id, title, date, description }) => {
         tasksContainer.innerHTML += `
-        
             <div class="task" id="${id}">
                 <p>
                     <strong>Title: </strong>${title}
