@@ -96,7 +96,13 @@ const updateTaskContainer = () => {
                     Edit
                 </button>
 
-                <button type="button" class="btn" onclick=deleteTask(this)>Delete</button>
+                <button 
+                    type="button" 
+                    class="btn" 
+                    onclick=deleteTask(this)
+                >
+                    Delete
+                </button>
             </div>
         `;
     });
