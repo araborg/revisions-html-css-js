@@ -20,37 +20,6 @@ const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 let currentTask = {};
 
-openTaskFormBtn.addEventListener("click", () => {
-    taskForm.classList.toggle("hidden");
-});
-
-closeTaskFormBtn.addEventListener("click", () => {
-    const formInputsContainValues =
-        titleInput.value || dateInput.value || descriptionInput.value;
-
-    const formInputValuesUpdated =
-        titleInput.value !== currentTask.title ||
-        dateInput.value !== currentTask.date ||
-        descriptionInput.value !== currentTask.description;
-
-    if (formInputsContainValues && formInputValuesUpdated) {
-        confirmCloseDialog.showModal();
-    } else {
-        reset();
-    }
-});
-
-cancelBtn.addEventListener("click", () => {
-    confirmCloseDialog.close();
-});
-
-discardBtn.addEventListener("click", () => {
-    confirmCloseDialog.close();
-
-    // taskForm.classList.toggle("hidden");
-    reset();
-});
-
 const addOrUpdateTask = () => {
     const dataArrIndex = taskData.findIndex((item) => {
         item.id === currentTask.id;
@@ -166,12 +135,6 @@ taskForm.addEventListener("submit", (e) => {
 });
 */
 
-taskForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    addOrUpdateTask();
-});
-
 const reset = () => {
     titleInput.value = "";
     dateInput.value = "";
@@ -213,6 +176,43 @@ const editTask = (buttonEl) => {
 if (taskData.length) {
     updateTaskContainer();
 }
+
+openTaskFormBtn.addEventListener("click", () => {
+    taskForm.classList.toggle("hidden");
+});
+
+closeTaskFormBtn.addEventListener("click", () => {
+    const formInputsContainValues =
+        titleInput.value || dateInput.value || descriptionInput.value;
+
+    const formInputValuesUpdated =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        descriptionInput.value !== currentTask.description;
+
+    if (formInputsContainValues && formInputValuesUpdated) {
+        confirmCloseDialog.showModal();
+    } else {
+        reset();
+    }
+});
+
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    addOrUpdateTask();
+});
+
+cancelBtn.addEventListener("click", () => {
+    confirmCloseDialog.close();
+});
+
+discardBtn.addEventListener("click", () => {
+    confirmCloseDialog.close();
+
+    // taskForm.classList.toggle("hidden");
+    reset();
+});
 
 //
 //
