@@ -232,3 +232,9 @@ const myTaskArr = [
 ];
 
 localStorage.setItem("modak", JSON.stringify(myTaskArr));
+
+const getTaskArr = localStorage.getItem("modak");
+console.log(getTaskArr);
+
+const getTaskArrObj = JSON.parse(localStorage.getItem("modak"));
+console.log(getTaskArrObj);

@@ -500,6 +500,25 @@ console.log(getTaskArr)
 
 
 15.
+The item you retrieve is a string, as you saved it with 
+JSON.stringify(). To view it in its original form before 
+saving, you need to use JSON.parse().
+
+Use getItem() to retrieve the myTaskArr array again. This 
+time, wrap it inside JSON.parse(), assign it to the 
+variable getTaskArrObj and log the getTaskArrObj to the 
+console.
+
+Check the console to see the difference between getTaskArr 
+and getTaskObj.
+
+localStorage.setItem("data", JSON.stringify(myTaskArr));
+
+const getTaskArr = localStorage.getItem("data")
+console.log(getTaskArr)
+
+const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
+console.log(getTaskArrObj);
 
 
 16.
