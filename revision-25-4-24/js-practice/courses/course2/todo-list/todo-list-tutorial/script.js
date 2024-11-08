@@ -238,3 +238,11 @@ console.log(getTaskArr);
 
 const getTaskArrObj = JSON.parse(localStorage.getItem("modak"));
 console.log(getTaskArrObj);
+
+localStorage.removeItem("modak");
+
+const getTaskArr1 = localStorage.getItem("modak");
+console.log(getTaskArr1);
+
+const getTaskArrObj1 = JSON.parse(localStorage.getItem("modak"));
+console.log(getTaskArrObj1);
