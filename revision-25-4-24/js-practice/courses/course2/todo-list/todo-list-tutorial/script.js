@@ -183,7 +183,11 @@ const deleteTask = (buttonEl) => {
     taskData.splice(dataArrIndex, 1);
 };
 
-const editTask = (buttonEl) => {};
+const editTask = (buttonEl) => {
+    const dataArrIndex = taskData.findIndex(
+        (item) => item.id === buttonEl.parentElement.id
+    );
+};
 
 //
 //
