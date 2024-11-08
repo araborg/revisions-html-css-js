@@ -16,7 +16,7 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 // coding start
-const taskData = [];
+const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 let currentTask = {};
 
@@ -209,6 +209,10 @@ const editTask = (buttonEl) => {
 
     taskForm.classList.toggle("hidden");
 };
+
+if (taskData.length) {
+    updateTaskContainer();
+}
 
 //
 //
