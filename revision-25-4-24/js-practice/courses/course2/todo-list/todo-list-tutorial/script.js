@@ -178,7 +178,9 @@ const deleteTask = (buttonEl) => {
         (item) => item.id === buttonEl.parentElement.id
     );
 
-    console.log(dataArrIndex);
+    buttonEl.parentElement.remove();
+
+    taskData.splice(dataArrIndex, 1);
 };
 
 //
