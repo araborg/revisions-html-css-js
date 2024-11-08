@@ -522,6 +522,22 @@ console.log(getTaskArrObj);
 
 
 16.
+You can use localStorage.removeItem() to remove a specific 
+item and localStorage.clear() to clear all items in the 
+local storage.
+
+Remove the data item from local storage and open the console 
+to observe the result. You should see null.
+
+localStorage.setItem("data", JSON.stringify(myTaskArr));
+
+localStorage.removeItem("data");
+
+const getTaskArr = localStorage.getItem("data")
+console.log(getTaskArr)
+
+const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
+console.log(getTaskArrObj);
 
 
 17.
