@@ -84,17 +84,8 @@ taskForm.addEventListener("submit", (e) => {
     taskForm.classList.toggle("hidden");
 });
 
-/*
-const reset = () => {
-    titleInput.value = "";
-    dateInput.value = "";
-    descriptionInput.value = "";
+const reset = () => {};
 
-    taskForm.classList.toggle("hidden");
-
-    currentTask = {};
-};
-*/
 //
 //
 //
