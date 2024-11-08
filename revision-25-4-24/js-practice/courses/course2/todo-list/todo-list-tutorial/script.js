@@ -177,25 +177,6 @@ taskForm.addEventListener("submit", (e) => {
     addOrUpdateTask();
 });
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
 /*
 const myTaskArr = [
     { task: "Walk the Dog", date: "22-04-2022" },
