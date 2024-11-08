@@ -65,6 +65,9 @@ const addOrUpdateTask = () => {
     if (dataArrIndex === -1) {
         taskData.unshift(taskObj);
     }
+
+    updateTaskContainer();
+    reset();
 };
 
 const updateTaskContainer = () => {
@@ -90,51 +93,59 @@ const updateTaskContainer = () => {
     });
 };
 
+/*
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    // const dataArrIndex = taskData.findIndex((item) => {
-    //     item.id === currentTask.id;
-    // });
+    const dataArrIndex = taskData.findIndex((item) => {
+        item.id === currentTask.id;
+    });
 
-    // const taskObj = {
-    //     id: `${titleInput.value
-    //         .toLowerCase()
-    //         .split(" ")
-    //         .join("-")}-${Date.now()}`,
+    const taskObj = {
+        id: `${titleInput.value
+            .toLowerCase()
+            .split(" ")
+            .join("-")}-${Date.now()}`,
 
-    //     title: titleInput.value,
-    //     date: dateInput.value,
-    //     description: descriptionInput.value,
-    // };
+        title: titleInput.value,
+        date: dateInput.value,
+        description: descriptionInput.value,
+    };
 
-    // if (dataArrIndex === -1) {
-    //     taskData.unshift(taskObj);
-    // }
+    if (dataArrIndex === -1) {
+        taskData.unshift(taskObj);
+    }
 
-    // taskData.forEach(({ id, title, date, description }) => {
-    //     tasksContainer.innerHTML += `
-    //         <div class="task" id="${id}">
-    //             <p>
-    //                 <strong>Title: </strong>${title}
-    //             </p>
+    taskData.forEach(({ id, title, date, description }) => {
+        tasksContainer.innerHTML += `
+            <div class="task" id="${id}">
+                <p>
+                    <strong>Title: </strong>${title}
+                </p>
 
-    //              <p>
-    //                 <strong>Date: </strong>${date}
-    //             </p>
+                 <p>
+                    <strong>Date: </strong>${date}
+                </p>
 
-    //              <p>
-    //                 <strong>Description: </strong>${description}
-    //             </p>
+                 <p>
+                    <strong>Description: </strong>${description}
+                </p>
 
-    //             <button type="button" class="btn">Edit</button>
-    //             <button type="button" class="btn">Delete</button>
-    //         </div>
-    //     `;
-    // });
+                <button type="button" class="btn">Edit</button>
+                <button type="button" class="btn">Delete</button>
+            </div>
+        `;
+    });
 
     // taskForm.classList.toggle("hidden");
     reset();
+});
+*/
+
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    addOrUpdateTask();
 });
 
 const reset = () => {
