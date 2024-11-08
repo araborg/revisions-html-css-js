@@ -422,7 +422,9 @@ const deleteTask = (buttonEl) => {
 }
 
 
-10.
+10. DOM:
+You need to remove the task from the DOM using remove() 
+and from the taskData array using splice().
 
 
 11.
