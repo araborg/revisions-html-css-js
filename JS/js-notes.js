@@ -427,7 +427,15 @@ You need to remove the task from the DOM using remove()
 and from the taskData array using splice().
 
 
-11.
+11. splice(index, items, replacement)
+splice() is an array method that modifies arrays by 
+removing, replacing, or adding elements at a specified 
+index, while also returning the removed elements. 
+
+It can take up to three arguments: the first one is the 
+mandatory index at which to start, the second is the 
+number of items to remove, and the third is an optional 
+replacement element. 
 
 
 12.
