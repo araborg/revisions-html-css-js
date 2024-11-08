@@ -541,6 +541,28 @@ console.log(getTaskArrObj);
 
 
 17.
+Using localStorage.clear() won't just delete a single 
+item from local storage but will remove all items.
+
+Remove localStorage.removeItem() and use 
+localStorage.clear() instead. You don't need to pass in 
+anything. You should also see null in the console.
+
+const myTaskArr = [
+    { task: "Walk the Dog", date: "22-04-2022" },
+    { task: "Read some books", date: "02-11-2023" },
+    { task: "Watch football", date: "10-08-2021" },
+];
+
+localStorage.setItem("data", JSON.stringify(myTaskArr));
+
+localStorage.clear();
+
+const getTaskArr = localStorage.getItem("data")
+console.log(getTaskArr)
+
+const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
+console.log(getTaskArrObj);
 
 
 18.
