@@ -33,7 +33,7 @@ closeTaskFormBtn.addEventListener("click", () => {
         dateInput.value !== currentTask.date ||
         descriptionInput.value !== currentTask.description;
 
-    if (formInputsContainValues) {
+    if (formInputsContainValues && formInputValuesUpdated) {
         confirmCloseDialog.showModal();
     } else {
         reset();
