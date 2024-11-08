@@ -32,14 +32,14 @@ const addOrUpdateTask = () => {
     });
 
     const taskObj = {
-        id: `${titleInput.value
+        id: `${removeSpecialChars(titleInput.value)
             .toLowerCase()
             .split(" ")
             .join("-")}-${Date.now()}`,
 
-        title: titleInput.value,
-        date: dateInput.value,
-        description: descriptionInput.value,
+        title: removeSpecialChars(titleInput.value),
+        date: removeSpecialChars(dateInput.value),
+        description: removeSpecialChars(descriptionInput.value),
     };
 
     if (dataArrIndex === -1) {
