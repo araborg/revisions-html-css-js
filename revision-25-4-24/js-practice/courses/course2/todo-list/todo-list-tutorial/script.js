@@ -224,7 +224,8 @@ const editTask = (buttonEl) => {
 //
 //
 //
-// stops at 10: review 5- 10 again
+
+/*
 const myTaskArr = [
     { task: "Walk the Dog", date: "22-04-2022" },
     { task: "Read some books", date: "02-11-2023" },
@@ -246,3 +247,4 @@ console.log(getTaskArr1);
 
 const getTaskArrObj1 = JSON.parse(localStorage.getItem("modak"));
 console.log(getTaskArrObj1);
+*/
