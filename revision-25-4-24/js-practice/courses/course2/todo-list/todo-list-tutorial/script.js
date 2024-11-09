@@ -17,7 +17,6 @@ const tasksContainer = document.getElementById("tasks-container");
 
 // coding start
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
-console.log(taskData);
 
 let currentTask = {};
 
@@ -135,7 +134,7 @@ const editTask = (buttonEl) => {
 };
 
 const reset = () => {
-    // addOrUpdateTaskBtn.innerText = "Add Task (Reset)";
+    // addOrUpdateTaskBtn.innerText = "Add Task";
 
     titleInput.value = "";
     dateInput.value = "";
