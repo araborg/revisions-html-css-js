@@ -146,7 +146,7 @@ const editTask = (buttonEl) => {
     reset() was called in 3 places:
     - addOrUpdateTask(): wn task is 1st created
 
-    - closeTaskFormBtn: wn close, X, btn was clicked 
+    - closeTaskFormBtn: wn close btn was clicked 
       without an update being md and dialog box nt 
       activated
 
