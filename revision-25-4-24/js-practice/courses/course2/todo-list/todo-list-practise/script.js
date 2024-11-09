@@ -57,6 +57,8 @@ taskForm.addEventListener("submit", (e) => {
     console.log("task form btn clicked");
 });
 
+console.log(taskData);
+
 /*
 taskData
 
