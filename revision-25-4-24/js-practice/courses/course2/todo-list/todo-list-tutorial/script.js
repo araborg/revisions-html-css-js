@@ -200,6 +200,7 @@ closeTaskFormBtn.addEventListener("click", () => {
     }
 });
 
+// ds doesn't lead to d disappearance of d taskForm
 cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 });
