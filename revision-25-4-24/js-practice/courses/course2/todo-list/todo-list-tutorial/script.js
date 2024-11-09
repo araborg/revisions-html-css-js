@@ -196,7 +196,7 @@ closeTaskFormBtn.addEventListener("click", () => {
     } else {
         addOrUpdateTaskBtn.innerText = "Add Task";
 
-        reset();
+        // reset();
     }
 });
 
