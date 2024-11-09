@@ -42,6 +42,8 @@ discardBtn.addEventListener("click", () => {
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    taskForm.classList.toggle("hidden");
+
     console.log("task form btn clicked");
 });
 
