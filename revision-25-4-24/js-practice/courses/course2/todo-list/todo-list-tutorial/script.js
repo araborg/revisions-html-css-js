@@ -174,6 +174,7 @@ if (taskData.length) {
     updateTaskContainer();
 }
 
+// event listeners
 openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
