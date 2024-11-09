@@ -154,8 +154,6 @@ const editTask = (buttonEl) => {
       update/edit was md
 */
 const reset = () => {
-    // addOrUpdateTaskBtn.innerText = "Add Task";
-
     titleInput.value = "";
     dateInput.value = "";
     descriptionInput.value = "";
