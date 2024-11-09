@@ -21,12 +21,6 @@ console.log(taskData);
 
 let currentTask = {};
 
-const myTaskArr = [
-    { task: "Walk the Dog", date: "22-04-2022" },
-    { task: "Read some books", date: "02-11-2023" },
-    { task: "Watch football", date: "10-08-2021" },
-];
-
 const removeSpecialChars = (val) => {
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
@@ -66,6 +60,12 @@ const addOrUpdateTask = () => {
     updateTaskContainer();
     reset();
 };
+
+const myTaskArr = [
+    { task: "Walk the Dog", date: "22-04-2022" },
+    { task: "Read some books", date: "02-11-2023" },
+    { task: "Watch football", date: "10-08-2021" },
+];
 
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
