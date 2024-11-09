@@ -165,6 +165,8 @@ closeTaskFormBtn.addEventListener("click", () => {
     if (formInputsContainValues && formInputValuesUpdated) {
         confirmCloseDialog.showModal();
     } else {
+        addOrUpdateTaskBtn.innerText = "Add Task";
+
         reset();
     }
 });
