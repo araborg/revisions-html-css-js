@@ -151,6 +151,7 @@ const reset = () => {
 
     taskForm.classList.toggle("hidden");
 
+    // after d currentTask is edited, it shd be empty
     currentTask = {};
 };
 
