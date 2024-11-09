@@ -23,6 +23,8 @@ let currentTask = {};
 // event listeners
 openTaskFormBtn.addEventListener("click", () => {
     console.log("Hello");
+
+    taskForm.classList.toggle("hidden");
 });
 
 /*
