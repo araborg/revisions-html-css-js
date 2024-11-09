@@ -180,11 +180,11 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
-    // dre r presence of values
+    // dre r presence of values: wn creating a new task
     const formInputsContainValues =
         titleInput.value || dateInput.value || descriptionInput.value;
 
-    // initial values have changed
+    // initial values have changed: wn editing a previous task
     const formInputValuesUpdated =
         titleInput.value !== currentTask.title ||
         dateInput.value !== currentTask.date ||
