@@ -260,5 +260,14 @@ const getTaskArrObj1 = JSON.parse(localStorage.getItem("modak"));
 console.log(getTaskArrObj1);
 
 Methods used with localStorage:
+localStorage.setItem("modak", JSON.stringify(myTaskArr));
+localStorage.getItem("modak");
+
+JSON.stringify(parameter)
+JSON.parse(localStorage.getItem("modak"));
+
+localStorage.removeItem("modak");
+localStorage.clear();
+
 
 */
