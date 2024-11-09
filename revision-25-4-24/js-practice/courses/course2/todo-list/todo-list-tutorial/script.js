@@ -208,6 +208,11 @@ cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 });
 
+/*
+    ds lead to d disappearance of d taskForm 
+    and shows d Add New Task btn i.e goes back
+    to d beginning of d app.
+*/
 discardBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 
