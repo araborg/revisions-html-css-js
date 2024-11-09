@@ -17,6 +17,7 @@ const tasksContainer = document.getElementById("tasks-container");
 
 // coding start
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
+console.log(taskData);
 
 let currentTask = {};
 
@@ -31,9 +32,10 @@ const addOrUpdateTask = () => {
         return;
     }
 
-    const dataArrIndex = taskData.findIndex((item) => {
-        item.id === currentTask.id;
-    });
+    const dataArrIndex = taskData.findIndex(
+        (item) => item.id === currentTask.id
+    );
+    console.log(dataArrIndex);
 
     const taskObj = {
         id: `${removeSpecialChars(titleInput.value)
@@ -46,6 +48,7 @@ const addOrUpdateTask = () => {
         description: removeSpecialChars(descriptionInput.value),
     };
 
+    // for new task and updated task
     if (dataArrIndex === -1) {
         taskData.unshift(taskObj);
     } else {
@@ -114,6 +117,7 @@ const editTask = (buttonEl) => {
     );
 
     currentTask = taskData[dataArrIndex];
+    console.log(currentTask);
 
     titleInput.value = currentTask.title;
     dateInput.value = currentTask.date;
