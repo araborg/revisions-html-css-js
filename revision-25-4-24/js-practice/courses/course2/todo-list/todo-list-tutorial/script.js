@@ -20,6 +20,7 @@ const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 let currentTask = {};
 
+// removes all special characters.
 const removeSpecialChars = (val) => {
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
