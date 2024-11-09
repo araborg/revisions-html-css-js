@@ -89,6 +89,7 @@ const updateTaskContainer = () => {
                 <button 
                     type="button" 
                     class="btn" 
+
                     onclick="editTask(this)"
                 >
                     Edit
@@ -97,6 +98,7 @@ const updateTaskContainer = () => {
                 <button 
                     type="button" 
                     class="btn" 
+                    
                     onclick="deleteTask(this)"
                 >
                     Delete
