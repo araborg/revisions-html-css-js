@@ -166,6 +166,10 @@ const reset = () => {
     currentTask = {};
 };
 
+/* 
+    if dre r tasks being created wn d browser was used, 
+    show those task. ds happens due to d localStorage.
+*/
 if (taskData.length) {
     updateTaskContainer();
 }
