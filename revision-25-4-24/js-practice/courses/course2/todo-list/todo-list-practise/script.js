@@ -14,3 +14,10 @@ const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
 const tasksContainer = document.getElementById("tasks-container");
+
+/*
+taskData
+
+currentTask
+
+removeSpecialChars
