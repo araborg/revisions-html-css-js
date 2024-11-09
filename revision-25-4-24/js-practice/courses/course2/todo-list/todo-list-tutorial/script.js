@@ -128,7 +128,7 @@ const editTask = (buttonEl) => {
         (item) => item.id === buttonEl.parentElement.id
     );
 
-    // update currentTask, an obj dt was initially an empty obj
+    // update currentTask, an obj dt was initially empty
     currentTask = taskData[dataArrIndex];
     console.log(currentTask);
 

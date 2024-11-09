@@ -576,7 +576,7 @@ To return a new string with whitespace trimmed from just
 one end, use trimStart() or trimEnd().
 
 
-19.
+19. 
 
 
 20.
