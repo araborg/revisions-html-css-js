@@ -216,10 +216,10 @@ cancelBtn.addEventListener("click", () => {
 discardBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 
-    // taskForm.classList.toggle("hidden");
     reset();
 });
 
+// d event listener is on d form and not
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
