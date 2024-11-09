@@ -565,7 +565,15 @@ const getTaskArrObj = JSON.parse(localStorage.getItem("data"));
 console.log(getTaskArrObj);
 
 
-18.
+18. trim():
+
+String.prototype.trim()
+The trim() method of String values removes whitespace from 
+both ends of this string and returns a new string, without 
+modifying the original string.
+
+To return a new string with whitespace trimmed from just 
+one end, use trimStart() or trimEnd().
 
 
 19.
