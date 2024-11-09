@@ -28,13 +28,15 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
-    // taskForm.classList.toggle("hidden");
-
     confirmCloseDialog.showModal();
 });
 
 cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
+});
+
+discardBtn.addEventListener("click", () => {
+    taskForm.classList.toggle("hidden");
 });
 
 /*
