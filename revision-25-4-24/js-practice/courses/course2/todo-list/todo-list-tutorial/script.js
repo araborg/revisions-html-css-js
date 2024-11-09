@@ -180,9 +180,11 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
+    // dre r presence of values
     const formInputsContainValues =
         titleInput.value || dateInput.value || descriptionInput.value;
 
+    // initial values have changed
     const formInputValuesUpdated =
         titleInput.value !== currentTask.title ||
         dateInput.value !== currentTask.date ||
