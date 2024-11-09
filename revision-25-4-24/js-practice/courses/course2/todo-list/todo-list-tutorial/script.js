@@ -129,6 +129,7 @@ const editTask = (buttonEl) => {
 
     addOrUpdateTaskBtn.innerText = "Update Task";
 
+    // shows d taskForm
     taskForm.classList.toggle("hidden");
 };
 
