@@ -65,11 +65,11 @@ taskForm.addEventListener("submit", (e) => {
     taskData.forEach(({ id, title, date, description }) => {
         tasksContainer.innerHTML += `
             <div class='task' id='${id}'>
-                <p>${title}</p>
+                <p><strong>Title:</strong> ${title}</p>
 
-                <p>${date}</p>
+                <p><strong>Date:</strong> ${date}</p>
 
-                <p>${description}</p>
+                <p><strong>Description:</strong> ${description}</p>
             </div>
         `;
     });
