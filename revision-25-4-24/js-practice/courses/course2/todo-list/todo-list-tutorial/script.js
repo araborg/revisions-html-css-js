@@ -142,6 +142,12 @@ const editTask = (buttonEl) => {
     // taskForm.classList.toggle("hidden");
 };
 
+/*
+    reset() was called in 3 places:
+    - addOrUpdateTask(): wn task is 1st created
+    -
+    -
+*/
 const reset = () => {
     // addOrUpdateTaskBtn.innerText = "Add Task";
 
