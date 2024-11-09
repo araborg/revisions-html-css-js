@@ -145,8 +145,8 @@ const editTask = (buttonEl) => {
 /*
     reset() was called in 3 places:
     - addOrUpdateTask(): wn task is 1st created
-    - closeTaskFormBtn: wn close, X, btn was clicked
-    - discardBtn: wn discard btn was clicked
+    - closeTaskFormBtn: wn close, X, btn was clicked without an update being md and dialog box nt activated
+    - discardBtn: wn discard btn was clicked wn an update/edit was md
 */
 const reset = () => {
     // addOrUpdateTaskBtn.innerText = "Add Task";
