@@ -200,7 +200,10 @@ closeTaskFormBtn.addEventListener("click", () => {
     }
 });
 
-// ds doesn't lead to d disappearance of d taskForm
+/*
+    ds doesn't lead to d disappearance of d taskForm 
+    but allows d user to return to d form
+*/
 cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
 });
