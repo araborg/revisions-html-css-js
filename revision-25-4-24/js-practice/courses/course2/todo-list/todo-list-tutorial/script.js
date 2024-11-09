@@ -112,13 +112,14 @@ const deleteTask = (buttonEl) => {
 };
 
 const editTask = (buttonEl) => {
-    console.log("edit clicked");
+    // shows d taskForm
+    taskForm.classList.toggle("hidden");
 
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === buttonEl.parentElement.id
     );
 
-    // update currentTask dt was initially an empty obj
+    // update currentTask, an obj dt was initially an empty obj
     currentTask = taskData[dataArrIndex];
     console.log(currentTask);
 
@@ -130,7 +131,7 @@ const editTask = (buttonEl) => {
     addOrUpdateTaskBtn.innerText = "Update Task";
 
     // shows d taskForm
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
 };
 
 const reset = () => {
