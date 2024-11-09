@@ -236,8 +236,10 @@ const myTaskArr = [
     { task: "Watch football", date: "10-08-2021" },
 ];
 
+// convert d arr to str
 localStorage.setItem("modak", JSON.stringify(myTaskArr));
 
+// retrive myTaskArr
 const getTaskArr = localStorage.getItem("modak");
 console.log(getTaskArr);
 
