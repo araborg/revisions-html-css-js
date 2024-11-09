@@ -112,6 +112,8 @@ const deleteTask = (buttonEl) => {
 };
 
 const editTask = (buttonEl) => {
+    console.log("edit clicked");
+
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === buttonEl.parentElement.id
     );
