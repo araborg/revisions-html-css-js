@@ -45,7 +45,14 @@ taskForm.addEventListener("submit", (e) => {
     taskForm.classList.toggle("hidden");
 
     // store d todo list values in an obj
-    const taskObj = {};
+    const taskObj = {
+        id: titleInput.value,
+        title: titleInput.value,
+        date: dateInput.value,
+        description: descriptionInput.value,
+    };
+
+    console.log(taskObj);
 
     console.log("task form btn clicked");
 });
