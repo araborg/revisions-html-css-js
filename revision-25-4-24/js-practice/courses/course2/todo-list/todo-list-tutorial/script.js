@@ -259,4 +259,6 @@ localStorage.clear();
 const getTaskArrObj1 = JSON.parse(localStorage.getItem("modak"));
 console.log(getTaskArrObj1);
 
+Methods used with localStorage:
+
 */
