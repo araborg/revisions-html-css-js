@@ -217,7 +217,10 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
-// d event listener is on d form and not
+/*
+    d event listener is on d form and not on 
+    addOrUpdateTaskBtn within d form
+*/
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
