@@ -21,3 +21,15 @@ taskData
 currentTask
 
 removeSpecialChars
+
+addOrUpdateTask
+
+updateTaskContainer
+
+deleteTask
+
+editTask
+
+reset
+
+*/
