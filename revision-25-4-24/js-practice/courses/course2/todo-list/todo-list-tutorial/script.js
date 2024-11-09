@@ -26,35 +26,42 @@ const removeSpecialChars = (val) => {
 };
 
 const addOrUpdateTask = () => {
+    // ds works for no value and empty space(s)
     if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
         return;
     }
 
-    const dataArrIndex = taskData.findIndex(
-        (item) => item.id === currentTask.id
-    );
-    console.log(dataArrIndex);
-
     const taskObj = {
-        id: `${removeSpecialChars(titleInput.value)
+        id: `${titleInput.value
             .toLowerCase()
             .split(" ")
             .join("-")}-${Date.now()}`,
-
-        title: removeSpecialChars(titleInput.value),
-        date: removeSpecialChars(dateInput.value),
-        description: removeSpecialChars(descriptionInput.value),
+        title: titleInput.value,
+        date: dateInput.value,
+        description: descriptionInput.value,
     };
+
+    /* 
+        wc task is to be updated i.e currentTask? Even 
+        though it has not be selected wn a task is 1st 
+        created?
+    */
+    const dataArrIndex = taskData.findIndex(
+        (item) => item.id === currentTask.id
+    );
 
     // for new task and updated task
     if (dataArrIndex === -1) {
+        // new task created for d 1st time
         taskData.unshift(taskObj);
     } else {
+        // updating/editing a specific task
         taskData[dataArrIndex] = taskObj;
     }
 
+    // stores/update taskData in d browser's local storage
     localStorage.setItem("data", JSON.stringify(taskData));
 
     updateTaskContainer();
