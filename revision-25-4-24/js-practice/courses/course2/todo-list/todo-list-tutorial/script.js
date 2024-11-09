@@ -130,7 +130,6 @@ const editTask = (buttonEl) => {
 
     // update currentTask, an obj dt was initially empty
     currentTask = taskData[dataArrIndex];
-    console.log(currentTask);
 
     // taskObj wasn't used bcos we still need d id ppty
     titleInput.value = currentTask.title;
