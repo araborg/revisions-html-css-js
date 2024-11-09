@@ -18,6 +18,8 @@ const tasksContainer = document.getElementById("tasks-container");
 // logic
 const taskData = [];
 
+let currentTask = {};
+
 /*
 taskData
 
