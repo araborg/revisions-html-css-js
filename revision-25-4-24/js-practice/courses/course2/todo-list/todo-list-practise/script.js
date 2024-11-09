@@ -79,8 +79,13 @@ taskForm.addEventListener("submit", (e) => {
 
                 <p><strong>Description:</strong> ${description}</p>
 
-                <button type="button" class="btn">Edit</button>
-                <button type="button" class="btn">Delete</button>
+                <button type="button" class="btn">
+                    Edit
+                </button>
+
+                <button type="button" class="btn">
+                    Delete
+                </button>
             </div>
         `;
     });
