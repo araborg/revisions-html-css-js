@@ -239,10 +239,11 @@ const myTaskArr = [
 // convert d arr to str
 localStorage.setItem("modak", JSON.stringify(myTaskArr));
 
-// retrive myTaskArr
+// retrive myTaskArr: ds won't yield d required format
 const getTaskArr = localStorage.getItem("modak");
 console.log(getTaskArr);
 
+// retrive myTaskArr: yields d required format
 const getTaskArrObj = JSON.parse(localStorage.getItem("modak"));
 console.log(getTaskArrObj);
 
