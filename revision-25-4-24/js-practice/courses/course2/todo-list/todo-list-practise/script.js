@@ -20,8 +20,6 @@ const taskData = [];
 
 let currentTask = {};
 
-console.log(currentTask);
-
 const reset = () => {
     titleInput.value = "";
     dateInput.value = "";
