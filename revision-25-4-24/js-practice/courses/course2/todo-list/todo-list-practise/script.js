@@ -71,6 +71,7 @@ taskForm.addEventListener("submit", (e) => {
 
     // console.log(taskData);
 
+    updateTaskContainer();
     reset();
 });
 
@@ -117,8 +118,8 @@ const editTask = (buttonEl) => {
     dateInput.value = currentTask.date;
     descriptionInput.value = currentTask.description;
 
-    // taskForm.classList.toggle("hidden");
-    updateTaskContainer();
+    taskForm.classList.toggle("hidden");
+    // updateTaskContainer();
 };
 
 /*
