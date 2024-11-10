@@ -56,6 +56,8 @@ const addOrUpdateTask = () => {
 
     updateTaskContainer();
     reset();
+
+    console.log(taskData);
 };
 
 const updateTaskContainer = () => {
@@ -135,9 +137,9 @@ closeTaskFormBtn.addEventListener("click", () => {
 
     const taskInputValueChanged = titleInput.value !== currentTask.title;
 
-    console.log(taskInputHasValue);
+    // console.log();
 
-    console.log(titleInput.value, currentTask.title);
+    // console.log();
 });
 
 cancelBtn.addEventListener("click", () => {
