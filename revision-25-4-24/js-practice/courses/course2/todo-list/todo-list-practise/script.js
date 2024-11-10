@@ -96,9 +96,10 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
-    const taskInputHasValue;
+    const taskInputHasValue =
+        titleInput.value || dateInput.value || descriptionInput.value;
 
-    const taskInputValueChanged;
+    const taskInputValueChanged = titleInput.value;
 });
 
 cancelBtn.addEventListener("click", () => {
