@@ -134,20 +134,10 @@ const deleteTask = (buttonEl) => {
 };
 
 /*
-taskData
-
-currentTask
-
-removeSpecialChars
-
-addOrUpdateTask
 
 
 
-deleteTask
 
-editTask
 
-reset
 
 */
