@@ -21,11 +21,11 @@ const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentTask = {};
 
 const reset = () => {
+    taskForm.classList.toggle("hidden");
+
     titleInput.value = "";
     dateInput.value = "";
     descriptionInput.value = "";
-
-    taskForm.classList.toggle("hidden");
 
     addOrUpdateTaskBtn.innerText = "Add Task";
 
