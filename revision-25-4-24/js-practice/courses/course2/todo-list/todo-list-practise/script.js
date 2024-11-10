@@ -21,7 +21,7 @@ const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentTask = {};
 
 const reset = () => {
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
 
     titleInput.value = "";
     dateInput.value = "";
