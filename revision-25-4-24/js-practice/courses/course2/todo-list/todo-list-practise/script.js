@@ -105,6 +105,8 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 const editTask = (buttonEl) => {
+    tasksContainer.innerHTML = "";
+
     const taskDataIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
     );
