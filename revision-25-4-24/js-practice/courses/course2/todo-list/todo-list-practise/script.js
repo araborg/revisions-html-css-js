@@ -26,6 +26,8 @@ const reset = () => {
     descriptionInput.value = "";
 
     taskForm.classList.toggle("hidden");
+
+    addOrUpdateTaskBtn.innerText = "Add Task";
 };
 
 const addOrUpdateTask = () => {
