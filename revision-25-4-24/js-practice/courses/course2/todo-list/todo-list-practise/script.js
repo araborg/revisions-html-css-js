@@ -30,6 +30,8 @@ const reset = () => {
     addOrUpdateTaskBtn.innerText = "Add Task";
 
     currentTask = {};
+
+    console.log("btn updated");
 };
 
 const addOrUpdateTask = () => {
@@ -62,6 +64,8 @@ const addOrUpdateTask = () => {
 
     updateTaskContainer();
     reset();
+
+    console.log("btn updated");
 };
 
 const updateTaskContainer = () => {
