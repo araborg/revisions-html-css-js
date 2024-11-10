@@ -19,12 +19,24 @@ const tasksContainer = document.getElementById("tasks-container");
 // const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 
 const myTaskArr = [
-    { task: "Walk the Dog", date: "22-04-2022" },
-    { task: "Read some books", date: "02-11-2023" },
-    { task: "Watch football", date: "10-08-2021" },
+    {
+        title: "Note-taking web app",
+        date: "22-04-2022",
+        description:
+            "This project has many fun and challenging features to add, including color and font themes. It can also be built as a full-stack web app!",
+    },
+
+    {
+        title: "Bento grid",
+        date: "02-11-2023",
+        description:
+            "This challenge is perfect for testing your CSS Grid and responsive skills with this bento grid layout.",
+    },
+
+    { title: "Watch football", date: "10-08-2021", description: "" },
 ];
 
-const taskData = JSON.parse(localStorage.getItem("tasks")) || myTaskArr;
+const taskData = myTaskArr;
 
 let currentTask = {};
 
@@ -72,6 +84,8 @@ const addOrUpdateTask = () => {
 
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
+
+    console.log(taskData);
 
     taskData.forEach(({ id, title, date, description }) => {
         tasksContainer.innerHTML += `
