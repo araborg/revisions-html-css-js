@@ -147,8 +147,6 @@ closeTaskFormBtn.addEventListener("click", () => {
     if (taskInputHasValue && taskInputValueChanged) {
         confirmCloseDialog.showModal();
     } else {
-        // reset();
-
         taskForm.classList.toggle("hidden");
     }
 });
