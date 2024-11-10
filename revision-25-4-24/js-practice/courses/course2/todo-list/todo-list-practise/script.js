@@ -16,7 +16,7 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 // logic
-const taskData = [];
+const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 
 let currentTask = {};
 
@@ -24,6 +24,68 @@ const reset = () => {
     titleInput.value = "";
     dateInput.value = "";
     descriptionInput.value = "";
+};
+
+const updateTaskContainer = () => {
+    tasksContainer.innerHTML = "";
+
+    taskData.forEach(({ id, title, date, description }) => {
+        tasksContainer.innerHTML += `
+            <div class='task' id='${id}'>
+                <p><strong>Title:</strong> ${title}</p>
+
+                <p><strong>Date:</strong> ${date}</p>
+
+                <p><strong>Description:</strong> ${description}</p>
+
+                <button 
+                    type="button" 
+                    class="btn"
+                    onclick="editTask(this)"
+                >
+                    Edit
+                </button>
+
+                <button 
+                    type="button" 
+                    class="btn"
+                    onclick="deleteTask(this)"
+                >
+                    Delete
+                </button>
+            </div>
+        `;
+    });
+};
+
+if (taskData.length) {
+    updateTaskContainer();
+}
+
+const editTask = (buttonEl) => {
+    const taskDataIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
+
+    currentTask = taskData[taskDataIndex];
+
+    titleInput.value = currentTask.title;
+    dateInput.value = currentTask.date;
+    descriptionInput.value = currentTask.description;
+
+    addOrUpdateTaskBtn.innerText = "Update Task";
+
+    taskForm.classList.toggle("hidden");
+};
+
+const deleteTask = (buttonEl) => {
+    const taskDataIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
+
+    taskData.splice(taskDataIndex, 1);
+
+    updateTaskContainer();
 };
 
 // event listeners
@@ -76,64 +138,6 @@ taskForm.addEventListener("submit", (e) => {
     updateTaskContainer();
     reset();
 });
-
-const updateTaskContainer = () => {
-    tasksContainer.innerHTML = "";
-
-    taskData.forEach(({ id, title, date, description }) => {
-        tasksContainer.innerHTML += `
-            <div class='task' id='${id}'>
-                <p><strong>Title:</strong> ${title}</p>
-
-                <p><strong>Date:</strong> ${date}</p>
-
-                <p><strong>Description:</strong> ${description}</p>
-
-                <button 
-                    type="button" 
-                    class="btn"
-                    onclick="editTask(this)"
-                >
-                    Edit
-                </button>
-
-                <button 
-                    type="button" 
-                    class="btn"
-                    onclick="deleteTask(this)"
-                >
-                    Delete
-                </button>
-            </div>
-        `;
-    });
-};
-
-const editTask = (buttonEl) => {
-    const taskDataIndex = taskData.findIndex(
-        (task) => task.id === buttonEl.parentElement.id
-    );
-
-    currentTask = taskData[taskDataIndex];
-
-    titleInput.value = currentTask.title;
-    dateInput.value = currentTask.date;
-    descriptionInput.value = currentTask.description;
-
-    addOrUpdateTaskBtn.innerText = "Update Task";
-
-    taskForm.classList.toggle("hidden");
-};
-
-const deleteTask = (buttonEl) => {
-    const taskDataIndex = taskData.findIndex(
-        (task) => task.id === buttonEl.parentElement.id
-    );
-
-    taskData.splice(taskDataIndex, 1);
-
-    updateTaskContainer();
-};
 
 /*
 
