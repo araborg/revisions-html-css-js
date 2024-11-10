@@ -33,7 +33,12 @@ const myTaskArr = [
             "This challenge is perfect for testing your CSS Grid and responsive skills with this bento grid layout.",
     },
 
-    { title: "Watch football", date: "10-08-2021", description: "" },
+    {
+        title: "Personal finance app",
+        date: "10-08-2021",
+        description:
+            "This app contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) and includes a lot of tricky elements. You can also build it as a full-stack app!",
+    },
 ];
 
 const taskData = myTaskArr;
