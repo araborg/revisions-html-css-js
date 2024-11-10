@@ -61,9 +61,9 @@ taskForm.addEventListener("submit", (e) => {
         description: descriptionInput.value,
     };
 
-    const taskDataIndex = taskData.findIndex((task) => {
-        task.id === currentTask.id;
-    });
+    const taskDataIndex = taskData.findIndex(
+        (task) => task.id === currentTask.id
+    );
 
     // console.log(taskObj, taskDataIndex);
 
