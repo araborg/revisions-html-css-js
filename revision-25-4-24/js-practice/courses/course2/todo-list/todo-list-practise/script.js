@@ -117,7 +117,8 @@ const editTask = (buttonEl) => {
     dateInput.value = currentTask.date;
     descriptionInput.value = currentTask.description;
 
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
+    updateTaskContainer();
 };
 
 /*
