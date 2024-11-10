@@ -16,7 +16,15 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 // logic
-const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
+// const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
+
+const myTaskArr = [
+    { task: "Walk the Dog", date: "22-04-2022" },
+    { task: "Read some books", date: "02-11-2023" },
+    { task: "Watch football", date: "10-08-2021" },
+];
+
+const taskData = JSON.parse(localStorage.getItem("tasks")) || myTaskArr;
 
 let currentTask = {};
 
