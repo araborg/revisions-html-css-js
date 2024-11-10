@@ -104,9 +104,10 @@ taskForm.addEventListener("submit", (e) => {
 const editTask = (buttonEl) => {
     const taskDataIndex = taskData.findIndex((task) => {
         task.id === buttonEl.parentElement.id;
-    });
 
-    console.log("hello");
+=    });
+
+    console.log(buttonEl.parentElement.id, taskDataIndex);
 };
 
 /*
