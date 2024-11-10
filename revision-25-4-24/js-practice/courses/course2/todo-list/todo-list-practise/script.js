@@ -73,6 +73,8 @@ taskForm.addEventListener("submit", (e) => {
         taskData.unshift(taskObj);
     } else {
         taskData[taskDataIndex] = taskObj;
+
+        addOrUpdateTaskBtn.innerText = "";
     }
 
     updateTaskContainer();
