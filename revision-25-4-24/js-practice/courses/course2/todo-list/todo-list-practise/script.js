@@ -96,7 +96,9 @@ openTaskFormBtn.addEventListener("click", () => {
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
-    confirmCloseDialog.showModal();
+    const taskInputHasValue;
+
+    const taskInputValueChanged;
 });
 
 cancelBtn.addEventListener("click", () => {
