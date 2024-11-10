@@ -123,6 +123,10 @@ const editTask = (buttonEl) => {
     taskForm.classList.toggle("hidden");
 };
 
+const deleteTask = (buttonEl) => {
+    console.log(buttonEl);
+};
+
 /*
 taskData
 
