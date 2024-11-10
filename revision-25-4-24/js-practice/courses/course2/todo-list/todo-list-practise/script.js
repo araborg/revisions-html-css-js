@@ -128,7 +128,9 @@ const deleteTask = (buttonEl) => {
         (task) => task.id === buttonEl.parentElement.id
     );
 
-    taskData = taskData.filter((task) => task.id === taskDataIndex);
+    tasksContainer.innerHTML += taskData.filter(
+        (task) => task.id === taskDataIndex
+    );
 
     console.log(taskData);
 
