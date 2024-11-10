@@ -21,8 +21,6 @@ const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 let currentTask = {};
 
 const reset = () => {
-    // taskForm.classList.toggle("hidden");
-
     titleInput.value = "";
     dateInput.value = "";
     descriptionInput.value = "";
@@ -154,8 +152,6 @@ closeTaskFormBtn.addEventListener("click", () => {
         // reset();
 
         taskForm.classList.toggle("hidden");
-
-        console.log("btn updated");
     }
 });
 
