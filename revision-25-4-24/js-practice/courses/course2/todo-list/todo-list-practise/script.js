@@ -115,7 +115,7 @@ const editTask = (buttonEl) => {
     dateInput.value = currentTask.date;
     descriptionInput.value = currentTask.description;
 
-    console.log(taskObj);
+    console.log(titleInput.value, dateInput.value, descriptionInput.value);
 };
 
 /*
