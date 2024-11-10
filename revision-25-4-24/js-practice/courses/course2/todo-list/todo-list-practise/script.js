@@ -108,11 +108,7 @@ const editTask = (buttonEl) => {
         task.id === buttonEl.parentElement.id;
     });
 
-    console.log(
-        buttonEl.parentElement.id,
-        buttonEl.parentElement.id,
-        taskDataIndex
-    );
+    console.log(taskData[0].id, buttonEl.parentElement.id, taskDataIndex);
 };
 
 /*
