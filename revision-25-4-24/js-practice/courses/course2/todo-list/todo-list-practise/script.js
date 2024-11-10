@@ -135,11 +135,18 @@ closeTaskFormBtn.addEventListener("click", () => {
     const taskInputHasValue =
         titleInput.value || dateInput.value || descriptionInput.value;
 
-    const taskInputValueChanged = titleInput.value !== currentTask.title;
+    const taskInputValueChanged =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        descriptionInput.value !== currentTask.description;
 
-    // console.log();
+    console.log(taskInputHasValue);
 
-    // console.log();
+    console.log(taskInputValueChanged);
+
+    if (taskInputHasValue && taskInputValueChanged) {
+        confirmCloseDialog.showModal();
+    }
 });
 
 cancelBtn.addEventListener("click", () => {
