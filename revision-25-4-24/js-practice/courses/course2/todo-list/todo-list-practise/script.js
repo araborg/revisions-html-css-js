@@ -67,15 +67,16 @@ taskForm.addEventListener("submit", (e) => {
 
     // console.log(taskObj, taskDataIndex);
 
-    console.log(currentTask, taskDataIndex);
+    // console.log(currentTask, taskDataIndex);
 
     if (taskDataIndex === -1) {
         taskData.unshift(taskObj);
     } else {
-        taskData[taskDataIndex] = taskObj;
+        console.log(`taskDataIndex: ${taskDataIndex}`);
+        // taskData[taskDataIndex] = taskObj;
 
-        console.log(taskData[taskDataIndex], taskDataIndex);
-        console.log(taskObj);
+        // console.log(taskData[taskDataIndex], taskDataIndex);
+        // console.log(taskObj);
     }
 
     // console.log(taskData);
@@ -123,9 +124,9 @@ const editTask = (buttonEl) => {
 
     currentTask = taskData[taskDataIndex];
 
-    titleInput.value = currentTask.title;
-    dateInput.value = currentTask.date;
-    descriptionInput.value = currentTask.description;
+    // titleInput.value = currentTask.title;
+    // dateInput.value = currentTask.date;
+    // descriptionInput.value = currentTask.description;
 
     taskForm.classList.toggle("hidden");
     // updateTaskContainer();
