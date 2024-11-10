@@ -152,6 +152,8 @@ closeTaskFormBtn.addEventListener("click", () => {
         confirmCloseDialog.showModal();
     } else {
         reset();
+
+        console.log("btn updated");
     }
 });
 
