@@ -151,7 +151,9 @@ closeTaskFormBtn.addEventListener("click", () => {
     if (taskInputHasValue && taskInputValueChanged) {
         confirmCloseDialog.showModal();
     } else {
-        reset();
+        // reset();
+
+        taskForm.classList.toggle("hidden");
 
         console.log("btn updated");
     }
