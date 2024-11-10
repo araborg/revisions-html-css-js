@@ -124,7 +124,15 @@ const editTask = (buttonEl) => {
 };
 
 const deleteTask = (buttonEl) => {
-    console.log(buttonEl);
+    const taskDataIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
+
+    taskData.filter((task) => task.id === taskDataIndex);
+
+    console.log(taskData);
+
+    console.log(taskDataIndex);
 };
 
 /*
