@@ -79,14 +79,18 @@ taskForm.addEventListener("submit", (e) => {
 
                 <p><strong>Description:</strong> ${description}</p>
 
-                <button type="button" class="btn">
+                <button 
+                    type="button" 
+                    class="btn"
+                    onclick="editTask(this)"
+                >
                     Edit
                 </button>
 
                 <button 
                     type="button" 
                     class="btn"
-                    onclick="editTask(this)"
+                    onclick="deleteTask(this)"
                 >
                     Delete
                 </button>
@@ -102,7 +106,7 @@ const editTask = (buttonEl) => {
         task.id === buttonEl.parentElement.id;
     });
 
-    console.log(taskDataIndex);
+    console.log("hello");
 };
 
 /*
