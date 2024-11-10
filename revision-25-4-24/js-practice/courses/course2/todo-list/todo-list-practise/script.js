@@ -73,12 +73,7 @@ taskForm.addEventListener("submit", (e) => {
         taskData.unshift(taskObj);
     } else {
         taskData[taskDataIndex] = taskObj;
-
-        console.log(taskData[taskDataIndex], taskDataIndex);
-        // console.log(taskObj);
     }
-
-    console.log("Add Task clicked", taskDataIndex);
 
     updateTaskContainer();
     reset();
