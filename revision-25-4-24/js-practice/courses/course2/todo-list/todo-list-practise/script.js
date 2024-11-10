@@ -118,8 +118,6 @@ const editTask = (buttonEl) => {
     descriptionInput.value = currentTask.description;
 
     taskForm.classList.toggle("hidden");
-
-    console.log(titleInput.value, dateInput.value, descriptionInput.value);
 };
 
 /*
