@@ -128,9 +128,10 @@ const deleteTask = (buttonEl) => {
         (task) => task.id === buttonEl.parentElement.id
     );
 
-    tasksContainer.innerHTML += taskData.filter(
-        (task) => task.id === taskDataIndex
-    );
+    // tasksContainer.innerHTML += taskData.filter(
+    //     (task) => task.id === taskDataIndex
+    // );
+    taskData.splice(taskDataIndex, 1);
 
     console.log(taskData);
 
