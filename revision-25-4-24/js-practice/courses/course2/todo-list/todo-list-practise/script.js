@@ -133,6 +133,7 @@ const deleteTask = (buttonEl) => {
     // );
     taskData.splice(taskDataIndex, 1);
 
+    updateTaskContainer();
     console.log(taskData);
 
     console.log(taskDataIndex);
