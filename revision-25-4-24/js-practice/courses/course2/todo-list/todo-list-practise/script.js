@@ -28,6 +28,8 @@ const reset = () => {
     taskForm.classList.toggle("hidden");
 
     addOrUpdateTaskBtn.innerText = "Add Task";
+
+    console.log(currentTask);
 };
 
 const addOrUpdateTask = () => {
@@ -106,8 +108,6 @@ const editTask = (buttonEl) => {
     );
 
     currentTask = taskData[taskDataIndex];
-
-    console.log(currentTask);
 
     titleInput.value = currentTask.title;
     dateInput.value = currentTask.date;
