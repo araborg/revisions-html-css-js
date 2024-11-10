@@ -50,11 +50,13 @@ taskForm.addEventListener("submit", (e) => {
 
     // store d todo list values in an obj
     const taskObj = {
-        id: titleInput.value,
+        id: titleInput.value.toLowerCase().split(" ").join("-"),
         title: titleInput.value,
         date: dateInput.value,
         description: descriptionInput.value,
     };
+
+    console.log(taskObj.id);
 
     const taskDataIndex = taskData.findIndex((task) => {
         task.id === currentTask.id;
@@ -104,8 +106,7 @@ taskForm.addEventListener("submit", (e) => {
 const editTask = (buttonEl) => {
     const taskDataIndex = taskData.findIndex((task) => {
         task.id === buttonEl.parentElement.id;
-
-=    });
+    });
 
     console.log(buttonEl.parentElement.id, taskDataIndex);
 };
