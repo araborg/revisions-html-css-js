@@ -71,6 +71,8 @@ taskForm.addEventListener("submit", (e) => {
         addOrUpdateTaskBtn.innerText = "Add Task";
     }
 
+    localStorage.setItem("tasks", JSON.stringify(taskData));
+
     updateTaskContainer();
     reset();
 });
