@@ -66,7 +66,7 @@ taskForm.addEventListener("submit", (e) => {
         taskData.unshift(taskObj);
     }
 
-    console.log(taskData);
+    // console.log(taskData);
 
     tasksContainer.innerHTML = "";
 
