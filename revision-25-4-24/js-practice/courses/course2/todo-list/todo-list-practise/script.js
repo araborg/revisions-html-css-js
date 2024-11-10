@@ -63,10 +63,6 @@ taskForm.addEventListener("submit", (e) => {
         (task) => task.id === currentTask.id
     );
 
-    // console.log(taskObj, taskDataIndex);
-
-    // console.log(currentTask, taskDataIndex);
-
     if (taskDataIndex === -1) {
         taskData.unshift(taskObj);
     } else {
@@ -125,8 +121,6 @@ const editTask = (buttonEl) => {
     addOrUpdateTaskBtn.innerText = "Update Task";
 
     taskForm.classList.toggle("hidden");
-    // updateTaskContainer();
-    console.log(currentTask, taskDataIndex);
 };
 
 /*
