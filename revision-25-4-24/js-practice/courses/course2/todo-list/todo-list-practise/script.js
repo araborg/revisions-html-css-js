@@ -109,7 +109,9 @@ const editTask = (buttonEl) => {
         (task) => task.id === buttonEl.parentElement.id
     );
 
-    console.log(taskData[0].id, buttonEl.parentElement.id, taskDataIndex);
+    currentTask = taskData[taskDataIndex];
+
+    console.log(taskObj);
 };
 
 /*
