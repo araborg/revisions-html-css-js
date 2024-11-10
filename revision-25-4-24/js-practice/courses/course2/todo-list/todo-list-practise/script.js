@@ -79,7 +79,7 @@ taskForm.addEventListener("submit", (e) => {
         // console.log(taskObj);
     }
 
-    console.log("Add Task clicked");
+    console.log("Add Task clicked", taskDataIndex);
 
     updateTaskContainer();
     reset();
