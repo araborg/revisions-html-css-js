@@ -99,7 +99,11 @@ closeTaskFormBtn.addEventListener("click", () => {
     const taskInputHasValue =
         titleInput.value || dateInput.value || descriptionInput.value;
 
-    const taskInputValueChanged = titleInput.value;
+    const taskInputValueChanged = titleInput.value !== currentTask.title;
+
+    console.log(taskInputHasValue);
+
+    console.log(titleInput.value, currentTask.title);
 });
 
 cancelBtn.addEventListener("click", () => {
