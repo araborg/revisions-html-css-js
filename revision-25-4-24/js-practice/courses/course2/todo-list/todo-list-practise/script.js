@@ -16,7 +16,7 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 // logic
-// const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
+const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 
 const myTaskArr = [
     {
@@ -41,7 +41,7 @@ const myTaskArr = [
     },
 ];
 
-const taskData = myTaskArr;
+// const taskData = myTaskArr;
 
 let currentTask = {};
 
