@@ -140,10 +140,6 @@ closeTaskFormBtn.addEventListener("click", () => {
         dateInput.value !== currentTask.date ||
         descriptionInput.value !== currentTask.description;
 
-    console.log(taskInputHasValue);
-
-    console.log(taskInputValueChanged);
-
     if (taskInputHasValue && taskInputValueChanged) {
         confirmCloseDialog.showModal();
     }
