@@ -60,8 +60,6 @@ const addOrUpdateTask = () => {
 
     updateTaskContainer();
     reset();
-
-    console.log("btn updated");
 };
 
 const updateTaskContainer = () => {
