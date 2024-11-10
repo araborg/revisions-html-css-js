@@ -127,6 +127,7 @@ const editTask = (buttonEl) => {
 
     taskForm.classList.toggle("hidden");
     // updateTaskContainer();
+    console.log(currentTask, taskDataIndex);
 };
 
 /*
