@@ -72,10 +72,9 @@ taskForm.addEventListener("submit", (e) => {
     if (taskDataIndex === -1) {
         taskData.unshift(taskObj);
     } else {
-        console.log(`taskDataIndex: ${taskDataIndex}`);
-        // taskData[taskDataIndex] = taskObj;
+        taskData[taskDataIndex] = taskObj;
 
-        // console.log(taskData[taskDataIndex], taskDataIndex);
+        console.log(taskData[taskDataIndex], taskDataIndex);
         // console.log(taskObj);
     }
 
