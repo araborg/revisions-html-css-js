@@ -71,6 +71,10 @@ taskForm.addEventListener("submit", (e) => {
 
     // console.log(taskData);
 
+    reset();
+});
+
+const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
 
     taskData.forEach(({ id, title, date, description }) => {
@@ -100,13 +104,9 @@ taskForm.addEventListener("submit", (e) => {
             </div>
         `;
     });
-
-    reset();
-});
+};
 
 const editTask = (buttonEl) => {
-    tasksContainer.innerHTML = "";
-
     const taskDataIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
     );
@@ -129,7 +129,7 @@ removeSpecialChars
 
 addOrUpdateTask
 
-updateTaskContainer
+
 
 deleteTask
 
