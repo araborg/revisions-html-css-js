@@ -62,8 +62,6 @@ const addOrUpdateTask = () => {
 
     updateTaskContainer();
     reset();
-
-    console.log(taskData);
 };
 
 const updateTaskContainer = () => {
