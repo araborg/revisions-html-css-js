@@ -26,6 +26,38 @@ const reset = () => {
     descriptionInput.value = "";
 };
 
+const addOrUpdateTask = () => {
+    taskForm.classList.toggle("hidden");
+
+    // store d todo list values in an obj
+    const taskObj = {
+        id: `${titleInput.value
+            .toLowerCase()
+            .split(" ")
+            .join("-")}-${Date.now()}`,
+        title: titleInput.value,
+        date: dateInput.value,
+        description: descriptionInput.value,
+    };
+
+    const taskDataIndex = taskData.findIndex(
+        (task) => task.id === currentTask.id
+    );
+
+    if (taskDataIndex === -1) {
+        taskData.unshift(taskObj);
+    } else {
+        taskData[taskDataIndex] = taskObj;
+
+        addOrUpdateTaskBtn.innerText = "Add Task";
+    }
+
+    localStorage.setItem("tasks", JSON.stringify(taskData));
+
+    updateTaskContainer();
+    reset();
+};
+
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
 
@@ -68,6 +100,8 @@ const editTask = (buttonEl) => {
     );
 
     currentTask = taskData[taskDataIndex];
+
+    console.log(currentTask);
 
     titleInput.value = currentTask.title;
     dateInput.value = currentTask.date;
@@ -117,35 +151,7 @@ discardBtn.addEventListener("click", () => {
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    taskForm.classList.toggle("hidden");
-
-    // store d todo list values in an obj
-    const taskObj = {
-        id: `${titleInput.value
-            .toLowerCase()
-            .split(" ")
-            .join("-")}-${Date.now()}`,
-        title: titleInput.value,
-        date: dateInput.value,
-        description: descriptionInput.value,
-    };
-
-    const taskDataIndex = taskData.findIndex(
-        (task) => task.id === currentTask.id
-    );
-
-    if (taskDataIndex === -1) {
-        taskData.unshift(taskObj);
-    } else {
-        taskData[taskDataIndex] = taskObj;
-
-        addOrUpdateTaskBtn.innerText = "Add Task";
-    }
-
-    localStorage.setItem("tasks", JSON.stringify(taskData));
-
-    updateTaskContainer();
-    reset();
+    addOrUpdateTask();
 });
 
 /*
