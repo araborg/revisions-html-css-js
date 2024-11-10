@@ -50,7 +50,7 @@ taskForm.addEventListener("submit", (e) => {
 
     // store d todo list values in an obj
     const taskObj = {
-        id: titleInput.value.toLowerCase().split(" ").join("-"),
+        id: `${titleInput.value.toLowerCase().split(" ").join("-")}`,
         title: titleInput.value,
         date: dateInput.value,
         description: descriptionInput.value,
