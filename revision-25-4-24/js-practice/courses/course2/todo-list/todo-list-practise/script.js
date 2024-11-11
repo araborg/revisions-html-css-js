@@ -150,7 +150,7 @@ const deleteTask = (buttonEl) => {
 
     localStorage.setItem("tasks", JSON.stringify(taskData));
 
-    updateTaskContainer();
+    // updateTaskContainer();
 };
 
 // event listeners
