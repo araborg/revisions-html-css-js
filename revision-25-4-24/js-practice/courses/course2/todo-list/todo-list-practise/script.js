@@ -53,6 +53,8 @@ const reset = () => {
     addOrUpdateTaskBtn.innerText = "Add Task";
 
     currentTask = {};
+
+    // taskForm.classList.toggle("hidden");
 };
 
 const addOrUpdateTask = () => {
@@ -89,8 +91,6 @@ const addOrUpdateTask = () => {
 
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
-
-    console.log(taskData);
 
     taskData.forEach(({ id, title, date, description }) => {
         tasksContainer.innerHTML += `
