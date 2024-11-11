@@ -47,6 +47,20 @@ const myTaskArr = [
 const taskData = myTaskArr;
 */
 
+/*
+Negated character class, ^: 
+Matches anything that is not enclosed in the square brackets. 
+You can specify a range of characters by using a hyphen, but 
+if the hyphen appears as the first character after the ^ or 
+the last character enclosed in the square brackets, it is 
+taken as a literal hyphen to be included in the character 
+class as a normal character. 
+
+For example, [^abc] is the same as [^a-c]. They initially match "o" in "bacon" and "h" in "chop".
+
+
+*/
+
 const removeSpecialChars = (val) => {
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
@@ -72,13 +86,13 @@ const addOrUpdateTask = () => {
 
     // store d todo list values in an obj
     const taskObj = {
-        id: `${titleInput.value
+        id: `${removeSpecialChars(titleInput.value)
             .toLowerCase()
             .split(" ")
             .join("-")}-${Date.now()}`,
-        title: titleInput.value,
-        date: dateInput.value,
-        description: descriptionInput.value,
+        title: removeSpecialChars(titleInput.value),
+        date: removeSpecialChars(dateInput.value),
+        description: removeSpecialChars(descriptionInput.value),
     };
 
     const taskDataIndex = taskData.findIndex(
