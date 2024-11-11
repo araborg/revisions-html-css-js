@@ -62,7 +62,7 @@ const reset = () => {
 const addOrUpdateTask = () => {
     // taskForm.classList.toggle("hidden");
 
-    if (!titleInput.value) {
+    if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
         return;
