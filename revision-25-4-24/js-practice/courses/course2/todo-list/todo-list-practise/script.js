@@ -178,12 +178,12 @@ closeTaskFormBtn.addEventListener("click", () => {
 
 cancelBtn.addEventListener("click", () => {
     confirmCloseDialog.close();
-
-    reset();
 });
 
 discardBtn.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
+
+    reset();
 });
 
 taskForm.addEventListener("submit", (e) => {
