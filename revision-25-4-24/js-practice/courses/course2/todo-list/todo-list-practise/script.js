@@ -58,8 +58,6 @@ class as a normal character.
 
 For example, [^abc] is the same as [^a-c]. They initially 
 match "o" in "bacon" and "h" in "chop".
-
-
 */
 
 const removeSpecialChars = (val) => {
