@@ -200,8 +200,6 @@ cancelBtn.addEventListener("click", () => {
 });
 
 discardBtn.addEventListener("click", () => {
-    // taskForm.classList.toggle("hidden");
-
     confirmCloseDialog.close();
 
     reset();
