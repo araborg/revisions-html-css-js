@@ -18,6 +18,7 @@ const tasksContainer = document.getElementById("tasks-container");
 // logic
 const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 
+/*
 const myTaskArr = [
     {
         title: "Note-taking web app",
@@ -41,7 +42,8 @@ const myTaskArr = [
     },
 ];
 
-// const taskData = myTaskArr;
+const taskData = myTaskArr;
+*/
 
 let currentTask = {};
 
