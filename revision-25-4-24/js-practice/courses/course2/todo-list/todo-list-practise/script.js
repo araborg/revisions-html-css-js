@@ -47,7 +47,7 @@ const myTaskArr = [
 const taskData = myTaskArr;
 
 
-Negated character class, ^: 
+Negated character class, ^: /[^A-Za-z0-9\-\s]/g
 Matches anything that is not enclosed in the square brackets. 
 
 You can specify a range of characters by using a hyphen, but 
