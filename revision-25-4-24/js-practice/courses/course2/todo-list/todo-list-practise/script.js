@@ -77,6 +77,8 @@ const reset = () => {
 };
 
 const addOrUpdateTask = () => {
+    console.log(titleInput.value);
+
     if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
