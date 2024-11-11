@@ -148,6 +148,8 @@ const deleteTask = (buttonEl) => {
         (task) => task.id === buttonEl.parentElement.id
     );
 
+    buttonEl.parentElement.remove();
+
     taskData.splice(taskDataIndex, 1);
 
     localStorage.setItem("tasks", JSON.stringify(taskData));
