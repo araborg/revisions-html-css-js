@@ -49,6 +49,7 @@ const taskData = myTaskArr;
 
 Negated character class, ^: 
 Matches anything that is not enclosed in the square brackets. 
+
 You can specify a range of characters by using a hyphen, but 
 if the hyphen appears as the first character after the ^ or 
 the last character enclosed in the square brackets, it is 
