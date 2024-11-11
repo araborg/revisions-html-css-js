@@ -62,8 +62,10 @@ const reset = () => {
 const addOrUpdateTask = () => {
     // taskForm.classList.toggle("hidden");
 
-    if (!titleInput.value.trim()) {
+    if (!titleInput.value) {
         alert("Please provide a title");
+
+        return;
     }
 
     // store d todo list values in an obj
