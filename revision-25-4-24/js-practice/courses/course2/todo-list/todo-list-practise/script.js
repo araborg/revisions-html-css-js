@@ -102,8 +102,6 @@ const addOrUpdateTask = () => {
         taskData.unshift(taskObj);
     } else {
         taskData[taskDataIndex] = taskObj;
-
-        // addOrUpdateTaskBtn.innerText = "Add Task";
     }
 
     localStorage.setItem("tasks", JSON.stringify(taskData));
