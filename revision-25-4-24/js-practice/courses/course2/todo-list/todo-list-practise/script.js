@@ -18,6 +18,8 @@ const tasksContainer = document.getElementById("tasks-container");
 // logic
 const taskData = JSON.parse(localStorage.getItem("tasks")) || [];
 
+let currentTask = {};
+
 /*
 const myTaskArr = [
     {
@@ -45,7 +47,9 @@ const myTaskArr = [
 const taskData = myTaskArr;
 */
 
-let currentTask = {};
+const removeSpecialChars = (val) => {
+    return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
+};
 
 const reset = () => {
     titleInput.value = "";
@@ -60,8 +64,6 @@ const reset = () => {
 };
 
 const addOrUpdateTask = () => {
-    // taskForm.classList.toggle("hidden");
-
     if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
