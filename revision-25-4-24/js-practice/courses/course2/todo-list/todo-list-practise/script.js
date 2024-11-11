@@ -56,7 +56,8 @@ the last character enclosed in the square brackets, it is
 taken as a literal hyphen to be included in the character 
 class as a normal character. 
 
-For example, [^abc] is the same as [^a-c]. They initially match "o" in "bacon" and "h" in "chop".
+For example, [^abc] is the same as [^a-c]. They initially 
+match "o" in "bacon" and "h" in "chop".
 
 
 */
