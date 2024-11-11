@@ -60,7 +60,7 @@ const reset = () => {
 };
 
 const addOrUpdateTask = () => {
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
 
     // store d todo list values in an obj
     const taskObj = {
@@ -82,7 +82,7 @@ const addOrUpdateTask = () => {
     } else {
         taskData[taskDataIndex] = taskObj;
 
-        addOrUpdateTaskBtn.innerText = "Add Task";
+        // addOrUpdateTaskBtn.innerText = "Add Task";
     }
 
     localStorage.setItem("tasks", JSON.stringify(taskData));
