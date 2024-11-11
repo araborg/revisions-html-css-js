@@ -54,7 +54,7 @@ const reset = () => {
 
     currentTask = {};
 
-    // taskForm.classList.toggle("hidden");
+    taskForm.classList.toggle("hidden");
 };
 
 const addOrUpdateTask = () => {
