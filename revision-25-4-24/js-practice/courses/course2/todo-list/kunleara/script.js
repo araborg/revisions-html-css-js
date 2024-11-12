@@ -138,8 +138,8 @@ const drugData = [
         description:
             "A perfect first challenge if youre new to HTML and CSS The card layout doesnt shift so its ideal if you havent learned about building responsive layouts yet",
 
-        price: "#",
-        Qty: "",
+        price: "#6000",
+        Qty: "2",
     },
 
     {
@@ -149,8 +149,8 @@ const drugData = [
         description:
             "This small-ish HTML and CSS only landing page includes some interesting layout decisions Perfect if you want to put your layout and responsive skills to the test",
 
-        price: "#",
-        Qty: "",
+        price: "#7890",
+        Qty: "61",
     },
 
     {
