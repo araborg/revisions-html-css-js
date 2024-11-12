@@ -336,8 +336,8 @@ const drugData = [
         description:
             "An excellent test for your form-building and JS skills this project will pose many challenges along the way to completion",
 
-        price: "",
-        Qty: "",
+        price: "459",
+        Qty: "213",
     },
 
     {
