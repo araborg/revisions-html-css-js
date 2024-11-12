@@ -358,8 +358,8 @@ const drugData = [
         description:
             "This challenge has something for everyone Its a HTML and CSS only project but weve also provided a JSON file of the test results for anyone wanting to practice JS",
 
-        price: "",
-        Qty: "",
+        price: "570",
+        Qty: "100",
     },
 
     {
