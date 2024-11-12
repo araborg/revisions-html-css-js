@@ -160,8 +160,8 @@ const drugData = [
         description:
             "The perfect project if youre learning how to interact with 3rd-party APIs This challenge uses the Advice Slip API to generate random quotes of advice",
 
-        price: "#",
-        Qty: "",
+        price: "#390",
+        Qty: "500",
     },
 
     {
@@ -171,8 +171,8 @@ const drugData = [
         description:
             "This multi-page entertainment web app will have you working with JSON data routing state management and search functionality",
 
-        price: "#",
-        Qty: "",
+        price: "#550",
+        Qty: "85",
     },
 
     {
