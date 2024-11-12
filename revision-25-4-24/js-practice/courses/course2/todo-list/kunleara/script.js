@@ -424,8 +424,8 @@ const drugData = [
         description:
             "In this challenge youll build an FAQ accordion This is an extremely common front-end pattern so its an excellent opportunity to get some practice in",
 
-        price: "",
-        Qty: "",
+        price: "4500",
+        Qty: "58",
     },
 
     {
@@ -435,8 +435,8 @@ const drugData = [
         description:
             "This HTML  CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals like HTML structure and the box model",
 
-        price: "",
-        Qty: "",
+        price: "9000",
+        Qty: "230",
     },
 
     {
@@ -446,8 +446,8 @@ const drugData = [
         description:
             "In this small project youll build out your social link-sharing profile You can even personalize it and use it to share all your social profiles",
 
-        price: "",
-        Qty: "",
+        price: "7000",
+        Qty: "69",
     },
 
     {
