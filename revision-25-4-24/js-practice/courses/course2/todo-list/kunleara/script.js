@@ -534,8 +534,8 @@ const drugData = [
         description:
             "This challenge is perfect for testing your CSS Grid and responsive skills with this bento grid layout.",
 
-        price: "",
-        Qty: "",
+        price: "870",
+        Qty: "400",
     },
 
     {
