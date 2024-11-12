@@ -259,8 +259,8 @@ const drugData = [
         description:
             "This project will test your layout skills especially in making the site fully responsive The skills grid is a perfect chance to practice CSS Grid",
 
-        price: "",
-        Qty: "",
+        price: "1200",
+        Qty: "800",
     },
 
     {
