@@ -10,6 +10,14 @@
     display: flex;
 }
 
+.left-container {
+    border: 2px solid red;
+}
+
+.right-container {
+    border: 2px solid blue;
+}
+
 .icon {
     width: 20px;
     height: 20px;
