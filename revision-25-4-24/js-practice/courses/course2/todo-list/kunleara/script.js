@@ -83,8 +83,8 @@ const drugData = [
         description:
             "This challenge will be a perfect test of your HTML  CSS skills If youre starting to get comfortable building smaller projects this will be a great step up",
 
-        price: "#",
-        Qty: "",
+        price: "#1910",
+        Qty: "805",
     },
 
     {
@@ -94,8 +94,8 @@ const drugData = [
         description:
             "This HTML  CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with",
 
-        price: "#",
-        Qty: "",
+        price: "#1200",
+        Qty: "485",
     },
 
     {
