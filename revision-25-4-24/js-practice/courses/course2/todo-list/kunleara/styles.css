@@ -1,0 +1,11 @@
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.plus-icon,
+.cart-icon,
+.minus-icon {
+    width: 15px;
+    height: 15px;
+}
