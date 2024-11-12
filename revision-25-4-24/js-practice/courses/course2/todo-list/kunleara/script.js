@@ -270,8 +270,8 @@ const drugData = [
         description:
             "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test",
 
-        price: "",
-        Qty: "",
+        price: "740",
+        Qty: "224",
     },
 
     {
@@ -281,8 +281,8 @@ const drugData = [
         description:
             "This app will be an excellent test of your HTML CSS and JS skills Youll build custom form controls and use JavaScript to generate random passwords",
 
-        price: "",
-        Qty: "",
+        price: "921",
+        Qty: "35",
     },
 
     {
@@ -292,8 +292,8 @@ const drugData = [
         description:
             "This project will be a brilliant test of your HTML CSS and basic JavaScript skills Youll use JS to toggle the visual state of the notifications",
 
-        price: "",
-        Qty: "",
+        price: "875",
+        Qty: "960578912",
     },
 
     {
