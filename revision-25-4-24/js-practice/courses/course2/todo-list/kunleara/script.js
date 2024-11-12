@@ -17,8 +17,8 @@ const drugData = [
         description:
             "A perfect project for newbies who are starting to build confidence with layouts",
 
-        price: "#",
-        Qty: "",
+        price: "#500",
+        Qty: "180",
     },
 
     {
@@ -28,8 +28,8 @@ const drugData = [
         description:
             "In this project youll use the GitHub users API to pull profile data and display it Its a great challenge if youre looking to practice working with a 3rd-party API",
 
-        price: "#",
-        Qty: "",
+        price: "#3000",
+        Qty: "150",
     },
 
     {
@@ -39,8 +39,8 @@ const drugData = [
         description:
             "A perfect opportunity to practice your CSS Grid skills For anyone wanting to take it up a notch we provide a JSON data file to practice working with data",
 
-        price: "#",
-        Qty: "",
+        price: "#200",
+        Qty: "170",
     },
 
     {
