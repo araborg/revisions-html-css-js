@@ -369,8 +369,8 @@ const drugData = [
         description:
             "This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills Theres also some fun to be had creating the curved section borders",
 
-        price: "",
-        Qty: "",
+        price: "365",
+        Qty: "245",
     },
 
     {
@@ -380,8 +380,8 @@ const drugData = [
         description:
             "This challenge is designed to sharpen your JavaScript and form validation skills Working with dates in JavaScript can be tricky so this will be a nice test",
 
-        price: "",
-        Qty: "",
+        price: "3800",
+        Qty: "380",
     },
 
     {
