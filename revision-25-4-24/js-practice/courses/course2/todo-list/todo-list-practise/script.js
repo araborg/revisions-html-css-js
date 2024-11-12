@@ -210,5 +210,3 @@ taskForm.addEventListener("submit", (e) => {
 
     addOrUpdateTask();
 });
-
-console.log(taskData);
