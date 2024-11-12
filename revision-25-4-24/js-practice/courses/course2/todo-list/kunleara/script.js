@@ -105,8 +105,8 @@ const drugData = [
         description:
             "This two-page art gallery project will be perfect if youre ready to branch out beyond single landing pages There are some particularly interesting layout challenges",
 
-        price: "#",
-        Qty: "",
+        price: "#1000",
+        Qty: "50",
     },
 
     {
@@ -116,8 +116,8 @@ const drugData = [
         description:
             "This is project will put your JavaScript skills to the test We provide a JSON file to pull the data but its also a perfect project to build as a full-stack CRUD app",
 
-        price: "#",
-        Qty: "",
+        price: "#2700",
+        Qty: "600",
     },
 
     {
@@ -127,8 +127,8 @@ const drugData = [
         description:
             "This classic practice project for web developers is a great exercise to complete It will test your HTML semantics your grid layout skill as well as your JS logic",
 
-        price: "#",
-        Qty: "",
+        price: "#8000",
+        Qty: "640",
     },
 
     {
