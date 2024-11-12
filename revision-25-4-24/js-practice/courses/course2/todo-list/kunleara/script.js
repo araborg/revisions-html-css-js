@@ -6,8 +6,8 @@ const drugData = [
         description:
             "This art gallery slideshow project will be a great test for your layout and JS skills With the masonry layout slideshow logic and lightbox view theres a lot to build",
 
-        price: "",
-        Qty: "",
+        price: "#250#",
+        Qty: "2000",
     },
 
     {
@@ -17,7 +17,7 @@ const drugData = [
         description:
             "A perfect project for newbies who are starting to build confidence with layouts",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -28,7 +28,7 @@ const drugData = [
         description:
             "In this project youll use the GitHub users API to pull profile data and display it Its a great challenge if youre looking to practice working with a 3rd-party API",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -39,7 +39,7 @@ const drugData = [
         description:
             "A perfect opportunity to practice your CSS Grid skills For anyone wanting to take it up a notch we provide a JSON data file to practice working with data",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -50,7 +50,7 @@ const drugData = [
         description:
             "This project will be an excellent test for your HTML CSS and JS skills Youll be building a fun memory game where players try to match pairs",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -61,7 +61,7 @@ const drugData = [
         description:
             "In this challenge youll build a beautiful product page Well be putting your JS skills to the test with a lightbox product gallery and cart functionality",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -72,7 +72,7 @@ const drugData = [
         description:
             "This project is a fun collaboration with Scrimba and Kevin Powell If you like you can follow along and watch Kevin complete the project on Scrimba Lots to learn",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -83,7 +83,7 @@ const drugData = [
         description:
             "This challenge will be a perfect test of your HTML  CSS skills If youre starting to get comfortable building smaller projects this will be a great step up",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -94,7 +94,7 @@ const drugData = [
         description:
             "This HTML  CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -105,7 +105,7 @@ const drugData = [
         description:
             "This two-page art gallery project will be perfect if youre ready to branch out beyond single landing pages There are some particularly interesting layout challenges",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -116,7 +116,7 @@ const drugData = [
         description:
             "This is project will put your JavaScript skills to the test We provide a JSON file to pull the data but its also a perfect project to build as a full-stack CRUD app",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -127,7 +127,7 @@ const drugData = [
         description:
             "This classic practice project for web developers is a great exercise to complete It will test your HTML semantics your grid layout skill as well as your JS logic",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -138,7 +138,7 @@ const drugData = [
         description:
             "A perfect first challenge if youre new to HTML and CSS The card layout doesnt shift so its ideal if you havent learned about building responsive layouts yet",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -149,7 +149,7 @@ const drugData = [
         description:
             "This small-ish HTML and CSS only landing page includes some interesting layout decisions Perfect if you want to put your layout and responsive skills to the test",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -160,7 +160,7 @@ const drugData = [
         description:
             "The perfect project if youre learning how to interact with 3rd-party APIs This challenge uses the Advice Slip API to generate random quotes of advice",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -171,7 +171,7 @@ const drugData = [
         description:
             "This multi-page entertainment web app will have you working with JSON data routing state management and search functionality",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -182,7 +182,7 @@ const drugData = [
         description:
             "This is a nice small project to practice handling user interactions and updating the DOM Perfect for anyone who has learned the basics of JavaScript",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -193,7 +193,7 @@ const drugData = [
         description:
             "In this project youll build a fully-functional in-browser markdown editor application with a lightdark mode toggle Its also perfect to build as a full-stack app",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -204,7 +204,7 @@ const drugData = [
         description:
             "This challenge will test your ability to create dropdown navigation menus a common pattern on larger sites It will also provide some nice basic layout challenges",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -215,7 +215,7 @@ const drugData = [
         description:
             "This responsive page is perfect if youve learned the fundamentals of HTML  CSS completed a couple of smaller projects and want to take it up a notch",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -226,7 +226,7 @@ const drugData = [
         description:
             "In this challenge youll create a bar chart component from scratch We provide a local JSON file so you can add the chart data dynamically if you choose",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -237,7 +237,7 @@ const drugData = [
         description:
             "In this project youll build a fully-functional task management app with a lightdark mode toggle We provide a JSON file so you can practice working with JSON data",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -248,7 +248,7 @@ const drugData = [
         description:
             "This HTML  CSS-only challenge will be perfect for anyone starting to build responsive projects",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -259,7 +259,7 @@ const drugData = [
         description:
             "This project will test your layout skills especially in making the site fully responsive The skills grid is a perfect chance to practice CSS Grid",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -270,7 +270,7 @@ const drugData = [
         description:
             "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -281,7 +281,7 @@ const drugData = [
         description:
             "This app will be an excellent test of your HTML CSS and JS skills Youll build custom form controls and use JavaScript to generate random passwords",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -292,7 +292,7 @@ const drugData = [
         description:
             "This project will be a brilliant test of your HTML CSS and basic JavaScript skills Youll use JS to toggle the visual state of the notifications",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -303,7 +303,7 @@ const drugData = [
         description:
             "Your JS knowledge will be challenged in this fun project where youll build a two-player game Youll write the logic for the game and how to test for win conditions",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -314,7 +314,7 @@ const drugData = [
         description:
             "This news homepage will be an excellent opportunity to practice your CSS Grid skills There will be lots of tricky decisions to make and plenty of learning opportunities",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -325,7 +325,7 @@ const drugData = [
         description:
             "Test your HTML and CSS skills with this portfolio site Basic JS knowledge is needed for the form validation You can even customize and use this as your own site",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -336,7 +336,7 @@ const drugData = [
         description:
             "An excellent test for your form-building and JS skills this project will pose many challenges along the way to completion",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -347,7 +347,7 @@ const drugData = [
         description:
             "In this project youll integrate with the Dictionary API to create a real-world dictionary web app Additional tests include colour themes and font selection",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -358,7 +358,7 @@ const drugData = [
         description:
             "This challenge has something for everyone Its a HTML and CSS only project but weve also provided a JSON file of the test results for anyone wanting to practice JS",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -369,7 +369,7 @@ const drugData = [
         description:
             "This HTML and CSS-only landing page will be an excellent test of your UI and responsive skills Theres also some fun to be had creating the curved section borders",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -380,7 +380,7 @@ const drugData = [
         description:
             "This challenge is designed to sharpen your JavaScript and form validation skills Working with dates in JavaScript can be tricky so this will be a nice test",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -391,7 +391,7 @@ const drugData = [
         description:
             "This body mass index BMI tool will be fun to build testing your layout JS and HTML form skills The responsive layout shifts will also be an interesting challenge",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -402,7 +402,7 @@ const drugData = [
         description:
             "This will test your skills with basic form structure validation and submission The success state will also be an excellent opportunity to work with DOM manipulation",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -413,7 +413,7 @@ const drugData = [
         description:
             "In this project youll build a fully-functional link-sharing app for developers Youll practice working with image uploads repeater fields drag-and-drop and more",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -424,7 +424,7 @@ const drugData = [
         description:
             "In this challenge youll build an FAQ accordion This is an extremely common front-end pattern so its an excellent opportunity to get some practice in",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -435,7 +435,7 @@ const drugData = [
         description:
             "This HTML  CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals like HTML structure and the box model",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -446,7 +446,7 @@ const drugData = [
         description:
             "In this small project youll build out your social link-sharing profile You can even personalize it and use it to share all your social profiles",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -457,7 +457,7 @@ const drugData = [
         description:
             "This challenge will help you focus on writing semantic HTML Ensure you think through what HTML elements are most appropriate for each piece of content",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -468,7 +468,7 @@ const drugData = [
         description:
             "This app will test your skills as well as your knowledge as you build out a fully functional quiz We provide a local JSON file to help you practice working with JSON",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -479,7 +479,7 @@ const drugData = [
         description:
             "This project is a great all-around test. You'll need good HTML to ensure accessible navigation. There are many tricky CSS details, and the game logic will test your JS.",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -490,7 +490,7 @@ const drugData = [
         description:
             "Building accessible forms is a crucial task for front-end developers. This challenge will help you practice building a form with several input types and validation.",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -501,7 +501,7 @@ const drugData = [
         description:
             "This mortgage calculator is an excellent project for practicing working with forms, client-side validation, and updating the DOM. Remember to focus on accessibility, too!",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -512,7 +512,7 @@ const drugData = [
         description:
             "Practice updating the UI in multiple places based on user actions. The starter download also includes a JSON file to help you practice populating the DOM dynamically.",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -523,7 +523,7 @@ const drugData = [
         description:
             "This app contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) and includes a lot of tricky elements. You can also build it as a full-stack app!",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -534,7 +534,7 @@ const drugData = [
         description:
             "This challenge is perfect for testing your CSS Grid and responsive skills with this bento grid layout.",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 
@@ -545,7 +545,7 @@ const drugData = [
         description:
             "This project has many fun and challenging features to add, including color and font themes. It can also be built as a full-stack web app!",
 
-        price: "",
+        price: "#",
         Qty: "",
     },
 ];
