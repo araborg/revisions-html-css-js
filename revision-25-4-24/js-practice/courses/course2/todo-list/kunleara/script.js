@@ -402,8 +402,8 @@ const drugData = [
         description:
             "This will test your skills with basic form structure validation and submission The success state will also be an excellent opportunity to work with DOM manipulation",
 
-        price: "",
-        Qty: "",
+        price: "2200",
+        Qty: "500",
     },
 
     {
@@ -413,8 +413,8 @@ const drugData = [
         description:
             "In this project youll build a fully-functional link-sharing app for developers Youll practice working with image uploads repeater fields drag-and-drop and more",
 
-        price: "",
-        Qty: "",
+        price: "3900",
+        Qty: "60",
     },
 
     {
