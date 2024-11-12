@@ -303,8 +303,8 @@ const drugData = [
         description:
             "Your JS knowledge will be challenged in this fun project where youll build a two-player game Youll write the logic for the game and how to test for win conditions",
 
-        price: "",
-        Qty: "",
+        price: "300",
+        Qty: "250",
     },
 
     {
@@ -314,8 +314,8 @@ const drugData = [
         description:
             "This news homepage will be an excellent opportunity to practice your CSS Grid skills There will be lots of tricky decisions to make and plenty of learning opportunities",
 
-        price: "",
-        Qty: "",
+        price: "360",
+        Qty: "980",
     },
 
     {
@@ -325,8 +325,8 @@ const drugData = [
         description:
             "Test your HTML and CSS skills with this portfolio site Basic JS knowledge is needed for the form validation You can even customize and use this as your own site",
 
-        price: "",
-        Qty: "",
+        price: "750",
+        Qty: "420",
     },
 
     {
