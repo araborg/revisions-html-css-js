@@ -347,8 +347,8 @@ const drugData = [
         description:
             "In this project youll integrate with the Dictionary API to create a real-world dictionary web app Additional tests include colour themes and font selection",
 
-        price: "",
-        Qty: "",
+        price: "800",
+        Qty: "250",
     },
 
     {
