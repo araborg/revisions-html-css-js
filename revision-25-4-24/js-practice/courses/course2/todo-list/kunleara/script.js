@@ -182,8 +182,8 @@ const drugData = [
         description:
             "This is a nice small project to practice handling user interactions and updating the DOM Perfect for anyone who has learned the basics of JavaScript",
 
-        price: "#",
-        Qty: "",
+        price: "#937",
+        Qty: "25",
     },
 
     {
@@ -193,8 +193,8 @@ const drugData = [
         description:
             "In this project youll build a fully-functional in-browser markdown editor application with a lightdark mode toggle Its also perfect to build as a full-stack app",
 
-        price: "#",
-        Qty: "",
+        price: "#840",
+        Qty: "900",
     },
 
     {
