@@ -204,8 +204,8 @@ const drugData = [
         description:
             "This challenge will test your ability to create dropdown navigation menus a common pattern on larger sites It will also provide some nice basic layout challenges",
 
-        price: "#",
-        Qty: "",
+        price: "#800",
+        Qty: "200",
     },
 
     {
