@@ -545,7 +545,7 @@ const drugData = [
         description:
             "This project has many fun and challenging features to add, including color and font themes. It can also be built as a full-stack web app!",
 
-        price: "",
-        Qty: "",
+        price: "385",
+        Qty: "900",
     },
 ];
