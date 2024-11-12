@@ -226,8 +226,8 @@ const drugData = [
         description:
             "In this challenge youll create a bar chart component from scratch We provide a local JSON file so you can add the chart data dynamically if you choose",
 
-        price: "",
-        Qty: "",
+        price: "6000",
+        Qty: "28",
     },
 
     {
@@ -237,8 +237,8 @@ const drugData = [
         description:
             "In this project youll build a fully-functional task management app with a lightdark mode toggle We provide a JSON file so you can practice working with JSON data",
 
-        price: "",
-        Qty: "",
+        price: "2025",
+        Qty: "30",
     },
 
     {
@@ -248,8 +248,8 @@ const drugData = [
         description:
             "This HTML  CSS-only challenge will be perfect for anyone starting to build responsive projects",
 
-        price: "",
-        Qty: "",
+        price: "1500",
+        Qty: "800",
     },
 
     {
