@@ -523,8 +523,8 @@ const drugData = [
         description:
             "This app contains 5 pages (Overview, Transactions, Budgets, Pots, and Recurring Bills) and includes a lot of tricky elements. You can also build it as a full-stack app!",
 
-        price: "",
-        Qty: "",
+        price: "2550",
+        Qty: "87",
     },
 
     {
