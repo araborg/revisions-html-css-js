@@ -215,8 +215,8 @@ const drugData = [
         description:
             "This responsive page is perfect if youve learned the fundamentals of HTML  CSS completed a couple of smaller projects and want to take it up a notch",
 
-        price: "#",
-        Qty: "",
+        price: "#1000",
+        Qty: "600",
     },
 
     {
