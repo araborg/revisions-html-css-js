@@ -6,7 +6,7 @@ const drugData = [
         description:
             "This art gallery slideshow project will be a great test for your layout and JS skills With the masonry layout slideshow logic and lightbox view theres a lot to build",
 
-        price: "#250#",
+        price: "#250",
         Qty: "2000",
     },
 
