@@ -50,8 +50,8 @@ const drugData = [
         description:
             "This project will be an excellent test for your HTML CSS and JS skills Youll be building a fun memory game where players try to match pairs",
 
-        price: "#",
-        Qty: "",
+        price: "#515",
+        Qty: "38",
     },
 
     {
@@ -61,8 +61,8 @@ const drugData = [
         description:
             "In this challenge youll build a beautiful product page Well be putting your JS skills to the test with a lightbox product gallery and cart functionality",
 
-        price: "#",
-        Qty: "",
+        price: "#490",
+        Qty: "230",
     },
 
     {
@@ -72,8 +72,8 @@ const drugData = [
         description:
             "This project is a fun collaboration with Scrimba and Kevin Powell If you like you can follow along and watch Kevin complete the project on Scrimba Lots to learn",
 
-        price: "#",
-        Qty: "",
+        price: "#880",
+        Qty: "123",
     },
 
     {
