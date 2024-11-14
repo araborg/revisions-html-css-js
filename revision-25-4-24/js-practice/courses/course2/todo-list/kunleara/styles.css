@@ -134,17 +134,20 @@ body {
     text-align: center;
     /* justify-self: center; */
     /* align-self: center; */
-    /* border: 2px solid green; */
 }
 
 .icon {
+    border: 2px solid green;
     width: 20px;
     height: 20px;
 
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
 
     cursor: pointer;
+
+    padding: 1em;
 }
 
 .plus-icon,
