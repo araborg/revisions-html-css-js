@@ -73,6 +73,17 @@ body {
 
 .svg-icons {
     display: flex;
+
+    align-items: center;
+
+    border: 2px solid red;
+}
+
+.item-input {
+    width: 3.5em;
+
+    text-align: center;
+    border: 2px solid green;
 }
 
 .icon {
