@@ -65,6 +65,16 @@ body {
     justify-content: space-between;
 }
 
+.details {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.svg-icons {
+    display: flex;
+}
+
 .icon {
     width: 20px;
     height: 20px;
