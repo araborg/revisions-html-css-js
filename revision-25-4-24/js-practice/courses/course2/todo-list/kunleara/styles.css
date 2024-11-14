@@ -164,4 +164,8 @@ body {
 
 .icon:last-of-type {
     border: 2px solid green;
+
+    fill: #fff;
+
+    background-color: #3f78e0;
 }
