@@ -122,6 +122,8 @@ body {
     width: 3.5em;
 
     text-align: center;
+    /* justify-self: center; */
+    /* align-self: center; */
     border: 2px solid green;
 }
 
