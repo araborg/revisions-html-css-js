@@ -131,7 +131,7 @@ body {
 .item-input {
     /* width: 3.5em; */
 
-    width: 35px;
+    width: 70px;
     height: 35px;
 
     text-align: center;
@@ -165,7 +165,9 @@ body {
 .icon:last-of-type {
     border: 2px solid green;
 
-    fill: #fff;
-
     background-color: #3f78e0;
+}
+
+.icon:last-of-type svg {
+    fill: #fff;
 }
