@@ -79,8 +79,17 @@ body {
 
 .details {
     display: flex;
+    /* align-items: flex-end; */
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.details * {
+    margin: 0.2em;
+}
+
+.details *:first-child {
+    margin-left: 0;
 }
 
 .svg-icons {
