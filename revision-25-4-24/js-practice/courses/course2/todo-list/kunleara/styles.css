@@ -129,7 +129,10 @@ body {
 }
 
 .item-input {
-    width: 3.5em;
+    /* width: 3.5em; */
+
+    width: 35px;
+    height: 35px;
 
     text-align: center;
     /* justify-self: center; */
@@ -138,16 +141,16 @@ body {
 
 .icon {
     border: 2px solid green;
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     cursor: pointer;
 
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 .plus-icon,
