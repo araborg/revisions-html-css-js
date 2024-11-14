@@ -69,13 +69,16 @@ body {
 }
 
 .item {
-    margin: 1em 0;
+    margin: 2em 0;
 
     /* padding: 0.8em; */
 
     padding: 0.5em 0.8em;
 
-    border-bottom: 1px solid rgba(8, 60, 130, 0.07);
+    /* border-bottom: 1px solid rgba(8, 60, 130, 0.07);
+     */
+
+    border: 2px solid red;
 }
 
 .item h2 {
