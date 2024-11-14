@@ -74,8 +74,6 @@ body {
 .svg-icons {
     display: flex;
 
-    align-items: center;
-
     border: 2px solid red;
 }
 
@@ -89,6 +87,9 @@ body {
 .icon {
     width: 20px;
     height: 20px;
+
+    display: flex;
+    align-items: center;
 }
 
 .plus-icon,
