@@ -115,7 +115,7 @@ body {
 .svg-icons {
     display: flex;
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .item-input {
@@ -124,7 +124,7 @@ body {
     text-align: center;
     /* justify-self: center; */
     /* align-self: center; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .icon {
