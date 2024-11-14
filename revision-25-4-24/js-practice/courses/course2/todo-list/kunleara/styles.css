@@ -29,6 +29,10 @@ body {
     column-gap: 2rem;
 }
 
+.search-input {
+    width: 100%;
+}
+
 .left-container {
     border: 2px solid red;
 
