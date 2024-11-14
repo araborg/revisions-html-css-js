@@ -143,6 +143,8 @@ body {
 
     display: flex;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .plus-icon,
@@ -152,4 +154,8 @@ body {
     height: 15px;
 
     font-weight: bold;
+}
+
+.icon:last-of-type {
+    border: 2px solid green;
 }
