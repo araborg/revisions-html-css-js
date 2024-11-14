@@ -51,8 +51,6 @@ body {
 
     width: 50%;
 
-    padding: 2em 0;
-
     background-color: #fefefe;
 
     height: 39em;
@@ -73,7 +71,9 @@ body {
 .item {
     margin: 1em 0;
 
-    padding: 0.8em;
+    /* padding: 0.8em; */
+
+    padding: 0.5em 0.8em;
 
     border-bottom: 1px solid rgba(8, 60, 130, 0.07);
 }
