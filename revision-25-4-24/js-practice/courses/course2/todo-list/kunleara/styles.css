@@ -53,16 +53,28 @@ body {
 
 .item {
     border: 2px solid blue;
+
+    margin: 1em 0;
+
+    padding: 0.8em;
 }
 
 .item h2 {
     font-size: 15px;
+
+    width: 60%;
+    text-wrap: wrap;
+
+    border: 2px solid purple;
+
+    margin-bottom: 1em;
 }
 
 .details-icons {
     display: flex;
 
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .details {
