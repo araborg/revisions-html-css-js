@@ -27,6 +27,8 @@ body {
     justify-content: space-between;
 
     column-gap: 2rem;
+
+    margin: 4em 0;
 }
 
 .search-input {
@@ -35,6 +37,7 @@ body {
     height: 3em;
 
     padding: 12px 20px;
+    margin-bottom: 2em;
 
     color: #60697b;
 
@@ -50,9 +53,10 @@ body {
     /* border: 2px solid red; */
 
     width: 50%;
+}
 
+.inner-box {
     height: 39em;
-
     overflow-y: scroll;
 }
 
@@ -61,13 +65,13 @@ body {
 
     width: 50%;
 
-    padding: 2em 0;
+    padding: 0.5em 0;
 
     /* background-color: #fefefe; */
 }
 
 .item {
-    margin: 2em 0;
+    margin-bottom: 2em;
 
     /* padding: 0.8em; */
 
