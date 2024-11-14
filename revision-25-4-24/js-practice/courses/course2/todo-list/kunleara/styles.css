@@ -35,6 +35,10 @@ body {
     padding: 2em 0;
 
     background-color: #fefefe;
+
+    height: 39em;
+
+    overflow-y: scroll;
 }
 
 .right-container {
@@ -45,6 +49,14 @@ body {
     padding: 2em 0;
 
     background-color: #fefefe;
+}
+
+.item {
+    border: 2px solid blue;
+}
+
+.item h2 {
+    font-size: 15px;
 }
 
 .icon {
