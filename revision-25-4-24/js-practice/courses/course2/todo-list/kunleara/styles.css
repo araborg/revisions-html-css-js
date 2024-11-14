@@ -17,14 +17,24 @@
 
 .box {
     display: flex;
+
+    /* column-gap: 2rem; */
 }
 
 .left-container {
     border: 2px solid red;
+
+    width: 40%;
+
+    padding: 2em 0;
 }
 
 .right-container {
     border: 2px solid blue;
+
+    width: 40%;
+
+    padding: 2em 0;
 }
 
 .icon {
