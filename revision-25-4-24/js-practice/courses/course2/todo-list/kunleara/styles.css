@@ -9,6 +9,8 @@
 
 body {
     background-color: #f6f7f8;
+
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -61,6 +63,8 @@ body {
 
 .item h2 {
     font-size: 15px;
+
+    font-weight: 700;
 
     width: 60%;
     text-wrap: wrap;
