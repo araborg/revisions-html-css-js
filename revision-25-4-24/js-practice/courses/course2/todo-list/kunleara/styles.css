@@ -84,9 +84,7 @@ body {
     font-weight: 700;
 
     width: 60%;
-    text-wrap: wrap;
-
-    border: 2px solid purple;
+    /* text-wrap: wrap; */
 
     margin-bottom: 1em;
 }
