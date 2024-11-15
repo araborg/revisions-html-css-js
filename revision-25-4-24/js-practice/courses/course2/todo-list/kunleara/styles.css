@@ -82,9 +82,8 @@ body {
     font-weight: 700;
 
     width: 60%;
-    /* text-wrap: wrap; */
 
-    margin-bottom: 1em;
+    margin-bottom: 0.2em;
 }
 
 .details-icons {
