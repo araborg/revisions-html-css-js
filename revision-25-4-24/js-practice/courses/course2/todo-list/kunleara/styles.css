@@ -127,7 +127,6 @@ body {
 }
 
 .icon {
-    /* border: 2px solid green; */
     width: 40px;
     height: 40px;
 
@@ -138,8 +137,6 @@ body {
     cursor: pointer;
 
     background-color: #f6f7f9;
-
-    /* padding: 1em; */
 }
 
 .plus-icon,
@@ -154,8 +151,6 @@ body {
 }
 
 .icon:last-of-type {
-    /* border: 2px solid green; */
-
     background-color: #3f78e0;
 
     border-radius: 0.4rem;
