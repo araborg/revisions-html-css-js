@@ -123,15 +123,19 @@ body {
 .svg-icons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     /* border: 2px solid red; */
+}
+
+.svg-icons * {
+    margin: 0 0.4em;
 }
 
 .item-input {
     /* width: 3.5em; */
 
-    width: 70px;
+    width: 55px;
     height: 35px;
 
     text-align: center;
