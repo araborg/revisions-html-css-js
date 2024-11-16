@@ -88,6 +88,7 @@ body {
     border-radius: 0.4rem;
 
     /* overflow-y: scroll; */
+    border: 2px solid red;
 }
 
 .item {
