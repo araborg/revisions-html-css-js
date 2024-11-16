@@ -614,7 +614,7 @@ searchInput.addEventListener("change", () => {
                     </div>
 
                     <div class="svg-icons">
-                        <div class="icon" onclick="minusVal(this)" id="${id}">
+                        <div class="icon" onclick="minusVal(this)" >
                             <svg
                                 width="800px"
                                 height="800px"
@@ -640,7 +640,7 @@ searchInput.addEventListener("change", () => {
                             placeholder="0"
                         />
 
-                        <div class="icon" onclick="addVal(this)" id="${id}">
+                        <div class="icon" onclick="addVal(this)">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -706,7 +706,7 @@ const minusVal = (buttonEl) => {
 
     console.log(--num);
 
-    const htmlEl = buttonEl.parentElement.id;
+    const htmlEl = buttonEl.parentElement;
     console.log(htmlEl);
 };
 
