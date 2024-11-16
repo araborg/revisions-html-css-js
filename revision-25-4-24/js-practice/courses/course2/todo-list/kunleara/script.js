@@ -614,7 +614,7 @@ searchInput.addEventListener("change", () => {
                     </div>
 
                     <div class="svg-icons">
-                        <div class="icon" onclick="minusVal(this)" >
+                        <div class="icon" onclick="minusVal(this)" id="${id}">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -638,6 +638,7 @@ searchInput.addEventListener("change", () => {
                             class="item-input"
                             id="${id}"
                             placeholder="0"
+                            id="${id}"
                         />
 
                         <div class="icon" onclick="addVal(this)">
@@ -702,8 +703,10 @@ searchInput.addEventListener("change", () => {
 let num;
 
 const minusVal = (buttonEl) => {
-    console.log(buttonEl);
+    console.log(buttonEl.id);
 
+    const currentDrug = drugData.filter((drug) => drug.id === buttonEl.id);
+    console.log(currentDrug);
     console.log(--num);
 
     const htmlEl = buttonEl.parentElement;
