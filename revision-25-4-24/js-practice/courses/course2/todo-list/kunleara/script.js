@@ -697,10 +697,13 @@ searchInput.addEventListener("change", () => {
 // })
 // ();
 
-const minusVal = (val) => {
-    console.log(val);
+// let num;
 
-    console.log("minus clicked");
+const minusVal = (num) => {
+    // console.log(num);
+    const val = getInput(num);
+
+    console.log("minus clicked", val);
 };
 
 const getInput = (val) => {
@@ -708,7 +711,9 @@ const getInput = (val) => {
 
     console.log(num);
 
-    minusVal(num);
+    return num;
+
+    // minusVal(num);
     // return num;
 
     // console.log(val.value);
