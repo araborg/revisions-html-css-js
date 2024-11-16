@@ -702,20 +702,17 @@ searchInput.addEventListener("change", () => {
 
 let num;
 
-const minusVal = (buttonEl) => {
-    console.log(buttonEl.id);
+const minusVal = (iconEl) => {
+    console.log(iconEl.id);
 
-    const currentDrug = drugData.filter((drug) => drug.id === buttonEl.id);
+    const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
     console.log(currentDrug);
 
-    console.log(--num);
-
-    const htmlEl = buttonEl.parentElement;
-    console.log(htmlEl);
+    console.log(--num, iconEl.value);
 };
 
-const getInput = (val) => {
-    num = Number(val.value);
+const getInput = (iconEl) => {
+    num = Number(iconEl.value);
 
     console.log(num);
 
