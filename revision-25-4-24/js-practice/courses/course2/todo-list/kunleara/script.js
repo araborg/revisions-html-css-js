@@ -592,7 +592,7 @@ searchInput.addEventListener("change", () => {
                             Price:
                             <strong>
                                 <span id="price">
-                                    ₦360.00
+                                    ₦${price}
                                 </span>
                             </strong>
                         </p>
@@ -600,7 +600,7 @@ searchInput.addEventListener("change", () => {
                         <p>
                             Qty:
                             <strong>
-                                <span id="qty">60</span>
+                                <span id="qty">${Qty}</span>
                             </strong>
                         </p>
                     </div>
