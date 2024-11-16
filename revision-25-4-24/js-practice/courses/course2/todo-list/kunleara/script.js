@@ -697,14 +697,14 @@ searchInput.addEventListener("change", () => {
 // })
 // ();
 
-const minusVal = () => {
-    console.log("minus clicked");
+const minusVal = (val) => {
+    console.log(val);
 };
 
 const getInput = (val) => {
     console.log(val);
 };
 
-const addVal = () => {
-    console.log("add clicked");
+const addVal = (val) => {
+    console.log(val);
 };
