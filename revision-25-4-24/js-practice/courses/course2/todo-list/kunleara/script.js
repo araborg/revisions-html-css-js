@@ -554,7 +554,9 @@ const drugData = [
 
 const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
-const itemInput = document.querySelector(".item-input");
+const valueAdded = document.querySelector(".item-input");
+
+// console.log(valueAdded);
 
 const getDrug = (drug) => {
     // drug.map(mol=> )
@@ -630,7 +632,7 @@ searchInput.addEventListener("change", () => {
                         </div>
 
                         <input
-                            type="text"
+                          
                             class="item-input"
                             id="item-input"
                             placeholder="0"
@@ -682,8 +684,8 @@ searchInput.addEventListener("change", () => {
     // console.log(itemInput);
 });
 
-// itemInput.addEventListener("click", () => {
-//     console.log("hello");
-// });
+valueAdded.addEventListener("change", () => {
+    console.log("hello");
+});
 
 const getInput = (val) => {};
