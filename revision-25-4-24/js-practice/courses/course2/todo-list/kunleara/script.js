@@ -711,7 +711,7 @@ const minusVal = (iconEl) => {
 
     valInput.value = --num;
 
-    console.log(--num, valInput, num--);
+    console.log(valInput.value);
 };
 
 const getInput = (iconEl) => {
