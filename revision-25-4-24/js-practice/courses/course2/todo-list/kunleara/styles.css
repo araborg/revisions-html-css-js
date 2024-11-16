@@ -37,7 +37,7 @@ body {
     height: 3em;
 
     padding: 12px 20px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
     color: #60697b;
 
@@ -67,7 +67,7 @@ body {
 }
 
 .item {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 
     padding: 0.5em 0.8em;
 
@@ -163,7 +163,8 @@ body {
 /* right container */
 
 .right-container h2 {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
+    margin-top: 0.6em;
 
     font-size: 1rem;
 }
