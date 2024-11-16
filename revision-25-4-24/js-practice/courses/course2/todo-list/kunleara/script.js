@@ -554,8 +554,7 @@ const drugData = [
 
 const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
-const itemInput = document.getElementById("item-input");
-console.log(itemInput);
+const itemInput = document.querySelector(".item-input");
 
 const getDrug = (drug) => {
     // drug.map(mol=> )
