@@ -47,7 +47,11 @@ body {
 
     border-radius: 0.4rem;
 
-    border: 1px solid rgba(8, 60, 130, 0.07);
+    border: 2px solid rgba(8, 60, 130, 0.07);
+}
+
+.search-input:focus {
+    outline: none;
 }
 
 .left-container {
