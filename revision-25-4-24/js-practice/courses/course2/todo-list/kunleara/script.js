@@ -566,20 +566,9 @@ getDrug(drugData);
 searchInput.addEventListener("change", () => {
     const inputValue = searchInput.value.toLowerCase();
 
-    // console.log(inputValue);
-
-    const displayDrug = drugData.map(
+    const displayDrug = drugData.filter(
         (drug) =>
-            // console.log(drug.description);
-            // drug.title.includes(inputValue);
-
-            console.log(
-                drug.description.toLowerCase().split(" ").includes(inputValue)
-            )
-
-        // .split(" ").includes(inputValue)
-        // ||
-        // drug.description.toLocaleLowerCase().includes(inputValue);
+            drug.description.toLowerCase().split(" ").includes(inputValue) ||
+            drug.title.toLowerCase().split(" ").includes(inputValue)
     );
-    // console.log(displayDrug);
 });
