@@ -553,6 +553,7 @@ const drugData = [
 // console.log(drugData);
 
 const searchInput = document.getElementById("search-input");
+const innerBox = document.getElementById("inner-box");
 // console.log(searchInput);
 
 const getDrug = (drug) => {
