@@ -552,7 +552,10 @@ const drugData = [
 
 // console.log(drugData);
 
+const searchInput = document.getElementById("search-input");
+
 const getDrug = (drug) => {
+    // drug.map(mol=> )
     console.log(drug);
 };
 
