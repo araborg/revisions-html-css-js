@@ -152,6 +152,7 @@ body {
 
     outline: none;
 
+    font-size: 0.9rem;
     color: inherit;
     font-weight: 600;
 }
@@ -233,10 +234,16 @@ body {
 
 .price {
     color: #60697b;
+
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .total-cost {
     color: #e2626b;
+
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .checkout {
