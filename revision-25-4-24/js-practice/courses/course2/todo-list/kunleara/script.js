@@ -565,7 +565,7 @@ getDrug(drugData);
 
 // event listeners
 searchInput.addEventListener("change", () => {
-    // innerBox.innerHTML = "";
+    innerBox.innerHTML = "";
 
     const inputValue = searchInput.value.toLowerCase();
 
