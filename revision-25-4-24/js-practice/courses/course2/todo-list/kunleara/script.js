@@ -709,7 +709,7 @@ const minusVal = (iconEl) => {
     const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
     console.log(currentDrug);
 
-    valInput.value.innerHTML = --num;
+    valInput.value = --num;
 
     console.log(--num, valInput, num--);
 };
