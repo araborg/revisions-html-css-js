@@ -74,6 +74,11 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    height: 33.6em;
+    border-radius: 0.4rem;
+
+    /* overflow-y: scroll; */
 }
 
 .item {
@@ -184,7 +189,7 @@ body {
 }
 
 .order-container {
-    height: 30em;
+    /* height: 33em; */
     overflow-y: scroll;
 
     border: 2px solid red;
@@ -232,7 +237,7 @@ body {
 
     align-self: flex-end;
 
-    margin-top: 4em;
+    margin-top: 1em;
 
     font-size: 1rem;
 
