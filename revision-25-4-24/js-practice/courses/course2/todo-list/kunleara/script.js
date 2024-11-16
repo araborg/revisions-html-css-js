@@ -556,6 +556,8 @@ const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
 const valueAdded = document.querySelectorAll(".item-input");
 
+// const minusIcon = document.querySelectorAll('')
+
 // console.log(valueAdded);
 
 const getDrug = (drug) => {
@@ -612,7 +614,7 @@ searchInput.addEventListener("change", () => {
                     </div>
 
                     <div class="svg-icons">
-                        <div class="icon" onclick="minusVal(this)">
+                        <div class="icon" onclick="minusVal(this)" id="${id}">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -638,7 +640,7 @@ searchInput.addEventListener("change", () => {
                             placeholder="0"
                         />
 
-                        <div class="icon" onclick="addVal(this)">
+                        <div class="icon" onclick="addVal(this)" id="${id}">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -699,10 +701,13 @@ searchInput.addEventListener("change", () => {
 
 let num;
 
-const minusVal = (val) => {
-    console.log(val);
+const minusVal = (buttonEl) => {
+    console.log(buttonEl);
 
-    console.log(num--);
+    console.log(--num);
+
+    const htmlEl = buttonEl.parentElement.id;
+    console.log(htmlEl);
 };
 
 const getInput = (val) => {
