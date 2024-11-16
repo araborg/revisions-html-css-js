@@ -59,7 +59,7 @@ body {
 }
 
 .inner-box {
-    height: 39em;
+    height: 30em;
     overflow-y: scroll;
 }
 
@@ -181,6 +181,13 @@ body {
     margin-top: 0.6em;
 
     font-size: 1rem;
+}
+
+.order-container {
+    height: 30em;
+    overflow-y: scroll;
+
+    border: 2px solid red;
 }
 
 .order-item {

@@ -581,13 +581,15 @@ searchInput.addEventListener("change", () => {
         innerBox.innerHTML += `
             <div class="item">
                 <h2>
-                    ${title}
+                    ${title.toUpperCase()}
                 </h2>
 
                 <div class="details-icons">
                     <div class="details">
                         <p>${date}</p>
+
                         <span>|</span>
+                        
                         <p>
                             Price:
                             <strong>
@@ -596,7 +598,9 @@ searchInput.addEventListener("change", () => {
                                 </span>
                             </strong>
                         </p>
+                        
                         <span>|</span>
+                        
                         <p>
                             Qty:
                             <strong>
@@ -626,7 +630,7 @@ searchInput.addEventListener("change", () => {
                         </div>
 
                         <input
-                            type="text"
+                            type="number"
                             class="item-input"
                             placeholder="0"
                         />
