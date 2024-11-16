@@ -64,6 +64,8 @@ body {
     width: 50%;
 
     padding: 0.5em 0;
+
+    background-color: #f6f7f9;
 }
 
 .item {
@@ -167,4 +169,7 @@ body {
     margin-top: 0.6em;
 
     font-size: 1rem;
+}
+
+.order-container {
 }
