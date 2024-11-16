@@ -673,4 +673,6 @@ searchInput.addEventListener("change", () => {
             </div>
         `;
     });
+
+    console.log(innerBox);
 });
