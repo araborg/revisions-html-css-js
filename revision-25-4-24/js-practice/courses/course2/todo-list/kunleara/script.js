@@ -577,7 +577,7 @@ searchInput.addEventListener("change", () => {
 
     // console.log(displayDrug);
 
-    displayDrug.map(({ title, date, description, Qty, price }) => {
+    displayDrug.map(({ title, date, Qty, price }) => {
         innerBox.innerHTML += `
             <div class="item">
                 <h2>
