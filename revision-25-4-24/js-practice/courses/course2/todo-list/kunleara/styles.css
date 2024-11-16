@@ -175,5 +175,7 @@ body {
 }
 
 .item-with-serial-number {
-    display: flex;
+    /* display: flex; */
+
+    /* border-bottom: 1px solid #60697b; */
 }
