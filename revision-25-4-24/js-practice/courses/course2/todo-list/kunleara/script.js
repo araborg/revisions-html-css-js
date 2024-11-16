@@ -611,7 +611,7 @@ searchInput.addEventListener("change", () => {
                         </p>
                     </div>
 
-                    <div class="svg-icons">
+                    <div class="svg-icons" onclick="minusVal(this)">
                         <div class="icon">
                             <svg
                                 width="800px"
@@ -632,13 +632,13 @@ searchInput.addEventListener("change", () => {
                         </div>
 
                         <input
-                          
+                            onclick="getInput(this)"
                             class="item-input"
                             id="item-input"
                             placeholder="0"
                         />
 
-                        <div class="icon">
+                        <div class="icon" onclick="addVal(this)">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -688,12 +688,23 @@ searchInput.addEventListener("change", () => {
 //     console.log("hello");
 // });
 
-valueAdded.forEach(
-    (item) => console.log(item)
+// valueAdded
+//     .forEach
+// (item) => console.log(item)
 
-    // item.addEventListener("click", () => {
-    //     console.log("click");
-    // })
-);
+// item.addEventListener("click", () => {
+//     console.log("click");
+// })
+// ();
 
-const getInput = (val) => {};
+const minusVal = () => {
+    console.log("minus clicked");
+};
+
+const getInput = (val) => {
+    console.log(val);
+};
+
+const addVal = () => {
+    console.log("add clicked");
+};
