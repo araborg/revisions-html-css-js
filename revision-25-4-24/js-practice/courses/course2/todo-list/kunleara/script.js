@@ -579,9 +579,9 @@ searchInput.addEventListener("change", () => {
 
     // console.log(displayDrug);
 
-    displayDrug.map(({ title, date, Qty, price }) => {
+    displayDrug.map(({ id, title, date, Qty, price }) => {
         innerBox.innerHTML += `
-            <div class="item">
+            <div class="item" id="${id}">
                 <h2>
                     ${title.toUpperCase()}
                 </h2>
@@ -688,10 +688,12 @@ searchInput.addEventListener("change", () => {
 //     console.log("hello");
 // });
 
-valueAdded.forEach((item) =>
-    item.addEventListener("click", () => {
-        console.log("click");
-    })
+valueAdded.forEach(
+    (item) => console.log(item)
+
+    // item.addEventListener("click", () => {
+    //     console.log("click");
+    // })
 );
 
 const getInput = (val) => {};
