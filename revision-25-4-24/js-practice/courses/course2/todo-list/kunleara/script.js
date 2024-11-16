@@ -554,9 +554,9 @@ const drugData = [
 
 const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
-const valueAdded = document.querySelector(".item-input");
+const valueAdded = document.querySelectorAll(".item-input");
 
-// console.log(valueAdded);
+console.log(valueAdded);
 
 const getDrug = (drug) => {
     // drug.map(mol=> )
@@ -684,8 +684,10 @@ searchInput.addEventListener("change", () => {
     // console.log(itemInput);
 });
 
-valueAdded.addEventListener("change", () => {
-    console.log("hello");
-});
+// valueAdded.addEventListener("change", () => {
+//     console.log("hello");
+// });
+
+valueAdded.forEach((item) => console.log(item));
 
 const getInput = (val) => {};
