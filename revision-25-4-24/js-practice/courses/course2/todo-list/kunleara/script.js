@@ -566,11 +566,12 @@ getDrug(drugData);
 searchInput.addEventListener("change", () => {
     const inputValue = searchInput.value.toLowerCase();
 
-    // console.log(inputValue);
+    console.log(inputValue);
 
     const displayDrug = drugData.filter((drug) => {
+        // console.log(drug.description);
         drug.title.toLocaleLowerCase().includes(inputValue);
-        drug.description.toLocaleLowerCase().includes(inputValue);
+        // drug.description..toLocaleLowerCase().includes(inputValue);
     });
 
     console.log(displayDrug);
