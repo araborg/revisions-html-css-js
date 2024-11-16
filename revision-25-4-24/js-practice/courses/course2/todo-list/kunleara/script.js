@@ -681,5 +681,5 @@ searchInput.addEventListener("change", () => {
     });
 });
 
-console.log(itemInput.value);
+console.log(itemInput);
 const getInput = (val) => {};
