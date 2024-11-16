@@ -171,11 +171,16 @@ body {
     font-size: 1rem;
 }
 
+.order-item {
+}
+
 .order-container {
 }
 
 .item-with-delete-btn {
     display: flex;
+
+    margin-bottom: 1em;
 
     /* border-bottom: 1px solid #60697b; */
 }
@@ -189,5 +194,5 @@ body {
     display: flex;
 
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
