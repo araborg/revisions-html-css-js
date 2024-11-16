@@ -683,8 +683,8 @@ searchInput.addEventListener("change", () => {
     // console.log(itemInput);
 });
 
-itemInput.addEventListener("click", () => {
-    console.log("hello");
-});
+// itemInput.addEventListener("click", () => {
+//     console.log("hello");
+// });
 
 const getInput = (val) => {};
