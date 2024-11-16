@@ -565,6 +565,8 @@ getDrug(drugData);
 
 // event listeners
 searchInput.addEventListener("change", () => {
+    // innerBox.innerHTML = "";
+
     const inputValue = searchInput.value.toLowerCase();
 
     const displayDrug = drugData.filter(
@@ -572,4 +574,12 @@ searchInput.addEventListener("change", () => {
             drug.description.toLowerCase().split(" ").includes(inputValue) ||
             drug.title.toLowerCase().split(" ").includes(inputValue)
     );
+
+    // innerBox.innerHTML+=
+
+    // console.log(displayDrug);
+
+    displayDrug.map(({ title, date, description, Qty, price }) => {
+        console.log(title, Qty);
+    });
 });
