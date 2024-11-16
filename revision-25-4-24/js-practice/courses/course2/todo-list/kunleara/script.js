@@ -698,13 +698,14 @@ searchInput.addEventListener("change", () => {
 // ();
 
 const minusVal = (val) => {
-    const currVal = getInput(val);
-
-    console.log(val.value);
+    console.log(val);
 };
 
 const getInput = (val) => {
-    return Number(val.value);
+    const num = Number(val.value);
+
+    minusVal(val);
+    return num;
 };
 
 const addVal = (val) => {
