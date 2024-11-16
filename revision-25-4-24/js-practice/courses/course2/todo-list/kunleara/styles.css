@@ -203,3 +203,9 @@ body {
 .total-cost {
     color: #e2626b;
 }
+
+.checkout {
+    background-color: #3f78e0;
+
+    padding: 0.75em 1.25em;
+}
