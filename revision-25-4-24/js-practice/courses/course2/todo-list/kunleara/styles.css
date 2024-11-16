@@ -184,3 +184,9 @@ body {
     width: 20px;
     height: 20px;
 }
+
+.icons-with-prices {
+    display: flex;
+
+    justify-content: space-between;
+}
