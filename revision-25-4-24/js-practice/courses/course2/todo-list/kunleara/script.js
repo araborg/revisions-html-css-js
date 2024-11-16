@@ -573,11 +573,13 @@ searchInput.addEventListener("change", () => {
             // console.log(drug.description);
             // drug.title.includes(inputValue);
 
-            console.log(typeof drug.description.split(""))
+            console.log(
+                drug.description.toLowerCase().split(" ").includes(inputValue)
+            )
 
+        // .split(" ").includes(inputValue)
         // ||
         // drug.description.toLocaleLowerCase().includes(inputValue);
     );
-
     // console.log(displayDrug);
 });
