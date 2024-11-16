@@ -62,14 +62,14 @@ body {
 
 .inner-box {
     height: 30em;
-    overflow-y: scroll;
+    overflow-y: auto;
 
-    scrollbar-width: thin;
-    scrollbar-color: #c4c4c4;
+    scrollbar-width: none;
+    /* scrollbar-color: #c4c4c4; */
 
-    scrollbar-gutter: 2px;
+    /* scrollbar-gutter: 2px; */
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .right-container {
@@ -200,6 +200,7 @@ body {
 .order-container {
     /* height: 33em; */
     overflow-y: scroll;
+    scrollbar-width: none;
 
     /* border: 2px solid red; */
 }
