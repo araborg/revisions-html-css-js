@@ -560,3 +560,5 @@ const getDrug = (drug) => {
 };
 
 getDrug(drugData);
+
+// event listeners
