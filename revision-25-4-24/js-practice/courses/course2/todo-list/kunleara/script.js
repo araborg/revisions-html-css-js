@@ -707,6 +707,7 @@ const minusVal = (buttonEl) => {
 
     const currentDrug = drugData.filter((drug) => drug.id === buttonEl.id);
     console.log(currentDrug);
+
     console.log(--num);
 
     const htmlEl = buttonEl.parentElement;
