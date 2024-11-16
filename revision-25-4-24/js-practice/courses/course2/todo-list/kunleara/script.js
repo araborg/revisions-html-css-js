@@ -549,3 +549,11 @@ const drugData = [
         Qty: "900",
     },
 ];
+
+// console.log(drugData);
+
+const getDrug = (drug) => {
+    console.log(drug);
+};
+
+getDrug(drugData);
