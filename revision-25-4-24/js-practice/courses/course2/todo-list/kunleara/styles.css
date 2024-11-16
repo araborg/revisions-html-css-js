@@ -179,3 +179,8 @@ body {
 
     /* border-bottom: 1px solid #60697b; */
 }
+
+.delete-icon {
+    width: 40px;
+    height: 40px;
+}
