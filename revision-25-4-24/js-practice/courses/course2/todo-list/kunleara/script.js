@@ -611,8 +611,8 @@ searchInput.addEventListener("change", () => {
                         </p>
                     </div>
 
-                    <div class="svg-icons" onclick="minusVal(this)">
-                        <div class="icon">
+                    <div class="svg-icons">
+                        <div class="icon" onclick="minusVal(this)">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -660,7 +660,7 @@ searchInput.addEventListener("change", () => {
                             </svg>
                         </div>
 
-                        <div class="icon cart">
+                        <div class="icon cart" onclick="getCart(this)">
                             <svg
                                 fill="#000000"
                                 width="800px"
@@ -697,13 +697,13 @@ searchInput.addEventListener("change", () => {
 // })
 // ();
 
-const minusVal = (val) => {
-    console.log(val);
-};
-
-// const getInput = (val) => {
+// const minusVal = (val) => {
 //     console.log(val);
 // };
+
+const getInput = (val) => {
+    console.log(val);
+};
 
 // const addVal = (val) => {
 //     console.log(val);
