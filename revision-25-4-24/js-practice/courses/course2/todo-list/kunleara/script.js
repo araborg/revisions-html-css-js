@@ -688,6 +688,10 @@ searchInput.addEventListener("change", () => {
 //     console.log("hello");
 // });
 
-valueAdded.forEach((item) => console.log(item));
+valueAdded.forEach((item) =>
+    item.addEventListener("click", () => {
+        console.log("click");
+    })
+);
 
 const getInput = (val) => {};
