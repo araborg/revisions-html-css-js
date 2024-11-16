@@ -632,7 +632,7 @@ searchInput.addEventListener("change", () => {
                         </div>
 
                         <input
-                            onclick="getInput(this)"
+                            onchange="getInput(this)"
                             class="item-input"
                             id="item-input"
                             placeholder="0"
@@ -698,11 +698,13 @@ searchInput.addEventListener("change", () => {
 // ();
 
 const minusVal = (val) => {
-    console.log(val);
+    const currVal = getInput(val);
+
+    console.log(val.value);
 };
 
 const getInput = (val) => {
-    console.log(val);
+    return Number(val.value);
 };
 
 const addVal = (val) => {
