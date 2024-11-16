@@ -699,7 +699,11 @@ searchInput.addEventListener("change", () => {
 
 let num;
 
-const minusVal = (val) => {};
+const minusVal = (val) => {
+    console.log(val);
+
+    console.log(num--);
+};
 
 const getInput = (val) => {
     num = Number(val.value);
