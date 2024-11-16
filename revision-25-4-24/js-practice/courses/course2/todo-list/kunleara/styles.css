@@ -61,7 +61,7 @@ body {
 }
 
 .inner-box {
-    height: 30em;
+    height: 30.5em;
     overflow-y: auto;
 
     scrollbar-width: none;
@@ -69,7 +69,7 @@ body {
 
     /* scrollbar-gutter: 2px; */
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .right-container {
@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    height: 33em;
+    height: 34em;
     border-radius: 0.4rem;
 
     /* overflow-y: scroll; */
@@ -199,11 +199,8 @@ body {
 
 .order-container {
     /* height: 33em; */
-    height: 39em;
     overflow-y: scroll;
     scrollbar-width: none;
-
-    border: 2px solid red;
 }
 
 .order-item {
