@@ -553,12 +553,16 @@ const drugData = [
 // console.log(drugData);
 
 const searchInput = document.getElementById("search-input");
+// console.log(searchInput);
 
 const getDrug = (drug) => {
     // drug.map(mol=> )
-    console.log(drug);
+    // console.log(drug);
 };
 
 getDrug(drugData);
 
 // event listeners
+searchInput.addEventListener("keydown", () => {
+    console.log(searchInput.value);
+});
