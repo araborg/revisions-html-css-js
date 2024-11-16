@@ -701,10 +701,10 @@ const minusVal = (val) => {
     console.log(val);
 };
 
-const getInput = (val) => {
-    console.log(val);
-};
+// const getInput = (val) => {
+//     console.log(val);
+// };
 
-const addVal = (val) => {
-    console.log(val);
-};
+// const addVal = (val) => {
+//     console.log(val);
+// };
