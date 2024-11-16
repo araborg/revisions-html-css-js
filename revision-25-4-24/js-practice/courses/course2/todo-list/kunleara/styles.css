@@ -199,10 +199,11 @@ body {
 
 .order-container {
     /* height: 33em; */
+    height: 39em;
     overflow-y: scroll;
     scrollbar-width: none;
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .order-item {
