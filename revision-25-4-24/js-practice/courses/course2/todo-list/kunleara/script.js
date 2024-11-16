@@ -563,6 +563,15 @@ const getDrug = (drug) => {
 getDrug(drugData);
 
 // event listeners
-searchInput.addEventListener("keydown", () => {
-    console.log(searchInput.value);
+searchInput.addEventListener("change", () => {
+    const inputValue = searchInput.value.toLowerCase();
+
+    // console.log(inputValue);
+
+    const displayDrug = drugData.filter((drug) => {
+        drug.title.toLocaleLowerCase().includes(inputValue);
+        drug.description.toLocaleLowerCase().includes(inputValue);
+    });
+
+    console.log(displayDrug);
 });
