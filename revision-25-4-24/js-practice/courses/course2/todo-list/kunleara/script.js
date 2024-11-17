@@ -684,7 +684,7 @@ const minusVal = (iconEl) => {
 
     // valInput = valInput === undefined ? 0 : valInput.value;
 
-    console.log(valInput.value);
+    console.log(valInput.value, iconEl.value);
     // console.log(valInput);
     // if (valInput.value > 0) {
     //     valInput.value = --num;
