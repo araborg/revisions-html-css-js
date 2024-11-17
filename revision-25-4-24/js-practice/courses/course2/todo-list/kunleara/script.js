@@ -692,7 +692,7 @@ const minusVal = (iconEl) => {
         console.log(0);
         num = 0;
 
-        valInput.value = num;
+        valInput = num;
     }
 };
 
@@ -718,6 +718,6 @@ const addVal = (val) => {
         // console.log(0);
         num = 0;
 
-        valInput.value = num++;
+        valInput = num++;
     }
 };
