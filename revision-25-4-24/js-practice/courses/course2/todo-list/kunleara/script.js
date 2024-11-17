@@ -629,6 +629,7 @@ searchInput.addEventListener("change", () => {
                             id="${id}"
                             placeholder="0"
                             id="${id}"
+                            value="0"
                         />
 
                         <div class="icon" onclick="addVal(this)">
