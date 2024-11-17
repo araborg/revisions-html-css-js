@@ -716,10 +716,10 @@ const addVal = (val) => {
 
     valInput = valInput === undefined ? 0 : valInput.value;
 
+    num = 0;
     if (!valInput) {
-        console.log(0);
-        num = 0;
+        // console.log(0);
 
-        valInput.value = num++;
+        valInput = num++;
     }
 };
