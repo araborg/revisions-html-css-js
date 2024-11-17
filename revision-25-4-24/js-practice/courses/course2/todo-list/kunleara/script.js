@@ -717,7 +717,7 @@ const addVal = (val) => {
     valInput = valInput !== undefined ? valInput.value : 0;
 
     // num = 0;
-    if (!valInput) {
+    while (!valInput && valInput >= 0) {
         valInput = 0;
         valInput++;
 
