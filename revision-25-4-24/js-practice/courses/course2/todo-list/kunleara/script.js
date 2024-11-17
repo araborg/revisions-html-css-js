@@ -554,10 +554,7 @@ const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
 const valueAdded = document.querySelectorAll(".item-input");
 
-const getDrug = (drug) => {
-    // drug.map(mol=> )
-    // console.log(drug);
-};
+const getDrug = (drug) => {};
 
 getDrug(drugData);
 
