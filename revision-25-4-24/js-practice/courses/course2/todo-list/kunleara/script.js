@@ -687,6 +687,10 @@ const minusVal = (iconEl) => {
     // if (valInput.value > 0) {
     //     valInput.value = --num;
     // }
+
+    if (!valInput) {
+        console.log(0);
+    }
 };
 
 const getInput = (iconEl) => {
