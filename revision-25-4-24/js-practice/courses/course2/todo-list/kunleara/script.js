@@ -550,15 +550,9 @@ const drugData = [
     },
 ];
 
-// console.log(drugData);
-
 const searchInput = document.getElementById("search-input");
 const innerBox = document.getElementById("inner-box");
 const valueAdded = document.querySelectorAll(".item-input");
-
-// const minusIcon = document.querySelectorAll('')
-
-// console.log(valueAdded);
 
 const getDrug = (drug) => {
     // drug.map(mol=> )
