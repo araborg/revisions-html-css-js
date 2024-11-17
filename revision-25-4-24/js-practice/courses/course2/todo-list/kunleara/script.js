@@ -602,8 +602,8 @@ searchInput.addEventListener("change", () => {
                         </p>
                     </div>
 
-                    <div class="svg-icons" id="${id}">
-                        <div class="icon" onclick="minusVal(this)" >
+                    <div class="svg-icons">
+                        <div class="icon" onclick="minusVal(this)" id="${id}">
                             <svg
                                 width="800px"
                                 height="800px"
