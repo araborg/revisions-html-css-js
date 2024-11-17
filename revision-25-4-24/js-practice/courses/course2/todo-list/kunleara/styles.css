@@ -118,6 +118,8 @@ body {
     align-items: center;
 }
 
+/* removes d spin btn from d input with type=number */
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
