@@ -690,7 +690,7 @@ const minusVal = (iconEl) => {
 
     // console.log(valInput.value, iconEl.value);
 
-    console.log(initVal);
+    console.log(iconEl.parentElement);
 
     if (!valInput) {
         // console.log(0);
