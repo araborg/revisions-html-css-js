@@ -703,6 +703,8 @@ const minusVal = (iconEl) => {
 };
 
 const getInput = (iconEl) => {
+    console.log(iconEl);
+
     // valInput = iconEl.value;
     // num = Number(iconEl.value);
     // console.log(num);
