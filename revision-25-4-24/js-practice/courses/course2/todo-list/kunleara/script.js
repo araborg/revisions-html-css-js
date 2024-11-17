@@ -690,14 +690,14 @@ const minusVal = (iconEl) => {
 const getInput = (iconEl) => {
     valInput = iconEl;
     num = Number(iconEl.value);
-    console.log(num);
+    console.log(num, valInput);
 
     return num;
 };
 
 const addVal = (val) => {
     // valInput.value = 0
-    if (valInput.value >= 0) {
+    if (valInput.value > 0) {
         valInput.value = ++num;
     }
 };
