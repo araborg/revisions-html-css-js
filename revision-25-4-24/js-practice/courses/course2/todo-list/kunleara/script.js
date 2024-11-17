@@ -677,16 +677,16 @@ searchInput.addEventListener("change", () => {
 
 let num;
 let valInput;
-// let initVal = 0;
+let initVal = 0;
 
 const minusVal = (iconEl) => {
     const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
 
-    // valInput = valInput === undefined ? 0 : valInput.value;
+    initVal = valInput === undefined ? 0 : valInput.value;
 
     // console.log(valInput.value, iconEl.value);
 
-    console.log(valInput.value);
+    console.log(initVal);
 
     // if (valInput.value > 0) {
     //     valInput.value = --num;
