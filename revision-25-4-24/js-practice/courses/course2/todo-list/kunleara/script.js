@@ -686,9 +686,6 @@ const minusVal = (iconEl) => {
     //     valInput.value = --num;
     // }
 
-    const val = getInput(iconEl);
-
-    console.log(val);
     // valInput = valInput === undefined ? 0 : valInput.value;
 
     // console.log(valInput, initVal);
@@ -701,14 +698,14 @@ const minusVal = (iconEl) => {
 
     // valInput = initVal++;
     // }
+
+    console.log(num, valInput, initVal);
 };
 
 const getInput = (iconEl) => {
-    initVal = iconEl.value;
+    initVal = iconEl.value || 0;
 
     // console.log(initVal);
-
-    valInput = iconEl;
 
     // === undefined ? 0 : iconEl
     num = Number(iconEl.value);
