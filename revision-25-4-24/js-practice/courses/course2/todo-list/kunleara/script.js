@@ -625,7 +625,6 @@ searchInput.addEventListener("change", () => {
                         <input
                             type="number"
                             onchange="getInput(this)"
-                            onkeydown="getInput(this)"
                             class="item-input"
                             id="${id}"
                             placeholder="0"
@@ -683,8 +682,8 @@ let initVal;
 
 const minusVal = (iconEl) => {
     // const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
-    if (valInput.value > 0) {
-        valInput.value = --num;
+    if (iconEl.value > 0) {
+        iconEl.value = --num;
     }
 
     // valInput = valInput === undefined ? 0 : valInput.value;
@@ -700,19 +699,17 @@ const minusVal = (iconEl) => {
     // valInput = initVal++;
     // }
 
-    console.log(num, valInput, initVal);
+    // console.log(num, valInput, initVal);
 };
 
 const getInput = (iconEl) => {
-    valInput = iconEl.value || 0;
-
-    console.log(valInput);
+    valInput = iconEl.value;
 
     // === undefined ? 0 : iconEl
-    // num = Number(iconEl.value);
-    // console.log(num, valInput);
+    num = Number(iconEl.value);
+    console.log(num);
 
-    num = Number(valInput);
+    // num = Number(valInput);
 
     return num;
 };
