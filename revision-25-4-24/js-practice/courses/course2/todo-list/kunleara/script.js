@@ -718,7 +718,7 @@ const addVal = (val) => {
 
     // num = 0;
     while (!valInput && valInput >= 0) {
-        valInput = 0;
+        // valInput = 0;
         valInput++;
 
         // console.log(0);
