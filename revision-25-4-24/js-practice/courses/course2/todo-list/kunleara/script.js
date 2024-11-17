@@ -8,6 +8,7 @@ const drugData = [
 
         price: "250",
         Qty: "2000",
+        value: 0,
     },
 
     {
@@ -19,6 +20,7 @@ const drugData = [
 
         price: "500",
         Qty: "180",
+        value: 0,
     },
 
     {
@@ -30,6 +32,7 @@ const drugData = [
 
         price: "3000",
         Qty: "150",
+        value: 0,
     },
 
     {
@@ -41,6 +44,7 @@ const drugData = [
 
         price: "200",
         Qty: "170",
+        value: 0,
     },
 
     {
@@ -52,6 +56,7 @@ const drugData = [
 
         price: "515",
         Qty: "38",
+        value: 0,
     },
 
     {
@@ -63,6 +68,7 @@ const drugData = [
 
         price: "490",
         Qty: "230",
+        value: 0,
     },
 
     {
@@ -74,6 +80,7 @@ const drugData = [
 
         price: "880",
         Qty: "123",
+        value: 0,
     },
 
     {
@@ -85,6 +92,7 @@ const drugData = [
 
         price: "1910",
         Qty: "805",
+        value: 0,
     },
 
     {
@@ -96,6 +104,7 @@ const drugData = [
 
         price: "1200",
         Qty: "485",
+        value: 0,
     },
 
     {
@@ -107,6 +116,7 @@ const drugData = [
 
         price: "1000",
         Qty: "50",
+        value: 0,
     },
 
     {
@@ -118,6 +128,7 @@ const drugData = [
 
         price: "2700",
         Qty: "600",
+        value: 0,
     },
 
     {
@@ -129,6 +140,7 @@ const drugData = [
 
         price: "8000",
         Qty: "640",
+        value: 0,
     },
 
     {
@@ -140,6 +152,7 @@ const drugData = [
 
         price: "6000",
         Qty: "2",
+        value: 0,
     },
 
     {
@@ -151,6 +164,7 @@ const drugData = [
 
         price: "7890",
         Qty: "61",
+        value: 0,
     },
 
     {
@@ -162,6 +176,7 @@ const drugData = [
 
         price: "390",
         Qty: "500",
+        value: 0,
     },
 
     {
@@ -173,6 +188,7 @@ const drugData = [
 
         price: "550",
         Qty: "85",
+        value: 0,
     },
 
     {
@@ -184,6 +200,7 @@ const drugData = [
 
         price: "937",
         Qty: "25",
+        value: 0,
     },
 
     {
@@ -195,6 +212,7 @@ const drugData = [
 
         price: "840",
         Qty: "900",
+        value: 0,
     },
 
     {
@@ -206,6 +224,7 @@ const drugData = [
 
         price: "800",
         Qty: "200",
+        value: 0,
     },
 
     {
@@ -217,6 +236,7 @@ const drugData = [
 
         price: "1000",
         Qty: "600",
+        value: 0,
     },
 
     {
@@ -228,6 +248,7 @@ const drugData = [
 
         price: "6000",
         Qty: "28",
+        value: 0,
     },
 
     {
@@ -239,6 +260,7 @@ const drugData = [
 
         price: "2025",
         Qty: "30",
+        value: 0,
     },
 
     {
@@ -250,6 +272,7 @@ const drugData = [
 
         price: "1500",
         Qty: "800",
+        value: 0,
     },
 
     {
@@ -261,6 +284,7 @@ const drugData = [
 
         price: "1200",
         Qty: "800",
+        value: 0,
     },
 
     {
@@ -272,6 +296,7 @@ const drugData = [
 
         price: "740",
         Qty: "224",
+        value: 0,
     },
 
     {
@@ -283,6 +308,7 @@ const drugData = [
 
         price: "921",
         Qty: "35",
+        value: 0,
     },
 
     {
@@ -294,6 +320,7 @@ const drugData = [
 
         price: "875",
         Qty: "960578912",
+        value: 0,
     },
 
     {
@@ -305,6 +332,7 @@ const drugData = [
 
         price: "300",
         Qty: "250",
+        value: 0,
     },
 
     {
@@ -316,6 +344,7 @@ const drugData = [
 
         price: "360",
         Qty: "980",
+        value: 0,
     },
 
     {
@@ -327,6 +356,7 @@ const drugData = [
 
         price: "750",
         Qty: "420",
+        value: 0,
     },
 
     {
@@ -338,6 +368,7 @@ const drugData = [
 
         price: "459",
         Qty: "213",
+        value: 0,
     },
 
     {
@@ -349,6 +380,7 @@ const drugData = [
 
         price: "800",
         Qty: "250",
+        value: 0,
     },
 
     {
@@ -360,6 +392,7 @@ const drugData = [
 
         price: "570",
         Qty: "100",
+        value: 0,
     },
 
     {
@@ -371,6 +404,7 @@ const drugData = [
 
         price: "365",
         Qty: "245",
+        value: 0,
     },
 
     {
@@ -382,6 +416,7 @@ const drugData = [
 
         price: "3800",
         Qty: "380",
+        value: 0,
     },
 
     {
@@ -393,6 +428,7 @@ const drugData = [
 
         price: "5800",
         Qty: "40",
+        value: 0,
     },
 
     {
@@ -404,6 +440,7 @@ const drugData = [
 
         price: "2200",
         Qty: "500",
+        value: 0,
     },
 
     {
@@ -415,6 +452,7 @@ const drugData = [
 
         price: "3900",
         Qty: "60",
+        value: 0,
     },
 
     {
@@ -426,6 +464,7 @@ const drugData = [
 
         price: "4500",
         Qty: "58",
+        value: 0,
     },
 
     {
@@ -437,6 +476,7 @@ const drugData = [
 
         price: "9000",
         Qty: "230",
+        value: 0,
     },
 
     {
@@ -448,6 +488,7 @@ const drugData = [
 
         price: "7000",
         Qty: "69",
+        value: 0,
     },
 
     {
@@ -459,6 +500,7 @@ const drugData = [
 
         price: "960",
         Qty: "600",
+        value: 0,
     },
 
     {
@@ -470,6 +512,7 @@ const drugData = [
 
         price: "3600",
         Qty: "54",
+        value: 0,
     },
 
     {
@@ -481,6 +524,7 @@ const drugData = [
 
         price: "3200",
         Qty: "470",
+        value: 0,
     },
 
     {
@@ -492,6 +536,7 @@ const drugData = [
 
         price: "1300",
         Qty: "500",
+        value: 0,
     },
 
     {
@@ -503,6 +548,7 @@ const drugData = [
 
         price: "1870",
         Qty: "500",
+        value: 0,
     },
 
     {
@@ -514,6 +560,7 @@ const drugData = [
 
         price: "5400",
         Qty: "856",
+        value: 0,
     },
 
     {
@@ -525,6 +572,7 @@ const drugData = [
 
         price: "2550",
         Qty: "87",
+        value: 0,
     },
 
     {
@@ -536,6 +584,7 @@ const drugData = [
 
         price: "870",
         Qty: "400",
+        value: 0,
     },
 
     {
@@ -547,6 +596,7 @@ const drugData = [
 
         price: "385",
         Qty: "900",
+        value: 0,
     },
 ];
 
@@ -688,8 +738,8 @@ let initVal;
 const minusVal = (iconEl) => {
     console.log(iconEl);
 
-    const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
-    console.log(currentDrug);
+    // const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
+    // console.log(currentDrug.value);
 
     // if()
     // if (iconEl.value > 0) {
