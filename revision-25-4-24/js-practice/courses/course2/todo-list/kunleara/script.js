@@ -726,5 +726,7 @@ const addVal = (val) => {
         // valInput = valInput++;
         // console.log(0);
         // console.log(valInput, num);
+
+        valInput.value = num++;
     }
 };
