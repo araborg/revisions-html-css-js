@@ -702,7 +702,7 @@ const minusVal = (iconEl) => {
 };
 
 const getInput = (iconEl) => {
-    initVal = iconEl.type;
+    initVal = iconEl.value;
 
     console.log(initVal);
 
