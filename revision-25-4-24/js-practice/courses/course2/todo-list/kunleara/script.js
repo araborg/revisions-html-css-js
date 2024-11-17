@@ -736,29 +736,21 @@ let valInput;
 let initVal;
 
 const minusVal = (iconEl) => {
-    console.log(iconEl);
-
+    // console.log(iconEl);
     // const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
-    // console.log(currentDrug.value);
-
+    // console.log(currentDrug);
     // if()
     // if (iconEl.value > 0) {
     //     iconEl.value = --num;
     // }
-
     // valInput = valInput === undefined ? 0 : valInput.value;
-
     // console.log(valInput, initVal);
-
     // console.log(iconEl.parentElement.placeholder);
-
     // if (!valInput) {
     // console.log(0);
     // num = 0;
-
     // valInput = initVal++;
     // }
-
     // console.log(num, valInput, initVal);
 };
 
