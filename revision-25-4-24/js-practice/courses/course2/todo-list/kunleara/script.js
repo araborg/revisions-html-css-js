@@ -676,19 +676,19 @@ searchInput.addEventListener("change", () => {
 
 let num;
 let valInput;
-// let initVal = 0;
+let initVal = 0;
 
 const minusVal = (iconEl) => {
     const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
 
     if (valInput.value > 0) {
-        valInput.value = --num || initVal;
+        valInput.value = --num;
     }
 };
 
 const getInput = (iconEl) => {
     valInput = iconEl;
-    num = Number(iconEl.value) || iconEl;
+    num = Number(iconEl.value);
     console.log(num);
 
     return num;
@@ -697,6 +697,6 @@ const getInput = (iconEl) => {
 const addVal = (val) => {
     // valInput.value = 0
     if (valInput.value >= 0) {
-        valInput.value = ++num || initVal++;
+        valInput.value = ++num;
     }
 };
