@@ -683,13 +683,16 @@ const minusVal = (iconEl) => {
 
     valInput === undefined ? 0 : valInput.value;
 
-    console.log(valInput);
+    // console.log(valInput);
     // if (valInput.value > 0) {
     //     valInput.value = --num;
     // }
 
     if (!valInput) {
         console.log(0);
+        num = 0;
+
+        valInput.value = num;
     }
 };
 
@@ -705,7 +708,16 @@ const getInput = (iconEl) => {
 
 const addVal = (val) => {
     // valInput.value = 0
-    if (valInput.value > 0) {
-        valInput.value = ++num;
+    // if (valInput.value > 0) {
+    //     valInput.value = ++num;
+    // }
+
+    valInput === undefined ? 0 : valInput.value;
+
+    if (!valInput) {
+        // console.log(0);
+        num = 0;
+
+        valInput.value = num++;
     }
 };
