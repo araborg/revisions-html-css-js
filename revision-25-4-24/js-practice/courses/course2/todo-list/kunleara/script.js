@@ -687,7 +687,7 @@ const minusVal = (iconEl) => {
 
 const getInput = (iconEl) => {
     valInput = iconEl;
-    num = Number(iconEl.value) || 0;
+    num = Number(iconEl.value || 0);
 
     return num;
 };
