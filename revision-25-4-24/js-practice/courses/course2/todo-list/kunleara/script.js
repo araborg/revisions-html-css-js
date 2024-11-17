@@ -703,15 +703,11 @@ const minusVal = (iconEl) => {
 };
 
 const getInput = (iconEl) => {
-    valInput = iconEl.value;
-
-    // === undefined ? 0 : iconEl
-    num = Number(iconEl.value);
-    console.log(num);
-
+    // valInput = iconEl.value;
+    // num = Number(iconEl.value);
+    // console.log(num);
     // num = Number(valInput);
-
-    return num;
+    // return num;
 };
 
 const addVal = (val) => {
