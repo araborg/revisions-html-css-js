@@ -714,12 +714,14 @@ const addVal = (val) => {
     //     valInput.value = ++num;
     // }
 
-    valInput = valInput === undefined ? 0 : valInput.value;
+    valInput = valInput !== undefined ? valInput.value : 0;
 
-    num = 0;
+    // num = 0;
     if (!valInput) {
-        // console.log(0);
+        valInput = 0;
+        valInput++;
 
-        valInput = num++;
+        // console.log(0);
+        console.log(valInput);
     }
 };
