@@ -570,8 +570,6 @@ searchInput.addEventListener("change", () => {
             drug.title.toLowerCase().split(" ").includes(inputValue)
     );
 
-    // console.log(displayDrug);
-
     displayDrug.map(({ id, title, date, Qty, price }) => {
         innerBox.innerHTML += `
             <div class="item" id="${id}">
@@ -674,47 +672,22 @@ searchInput.addEventListener("change", () => {
             </div>
         `;
     });
-
-    // console.log(itemInput);
 });
-
-// valueAdded.addEventListener("change", () => {
-//     console.log("hello");
-// });
-
-// valueAdded
-//     .forEach
-// (item) => console.log(item)
-
-// item.addEventListener("click", () => {
-//     console.log("click");
-// })
-// ();
 
 let num;
 let valInput;
 
 const minusVal = (iconEl) => {
-    console.log(iconEl.id);
-
     const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
-    console.log(currentDrug);
 
     valInput.value = --num;
-
-    console.log(valInput.value);
 };
 
 const getInput = (iconEl) => {
     valInput = iconEl;
     num = Number(iconEl.value);
 
-    // console.log(num);
-
     return num;
-
-    // minusVal(num);
-    // return num;
 
     // console.log(val.value);
 };
