@@ -628,6 +628,7 @@ searchInput.addEventListener("change", () => {
                             id="${id}"
                             placeholder="0"
                             id="${id}"
+                            value=0
                         />
 
                         <div class="icon" onclick="addVal(this)">
@@ -715,9 +716,9 @@ const addVal = (val) => {
     valInput === undefined ? 0 : valInput.value;
 
     if (!valInput) {
-        // console.log(0);
+        console.log(0);
         num = 0;
 
-        valInput = num++;
+        valInput.value = num++;
     }
 };
