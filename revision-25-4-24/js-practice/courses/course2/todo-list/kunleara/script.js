@@ -690,7 +690,7 @@ const minusVal = (iconEl) => {
 
     // valInput = valInput === undefined ? 0 : valInput.value;
 
-    console.log(valInput);
+    console.log(valInput, initVal);
 
     // console.log(iconEl.parentElement.placeholder);
 
