@@ -688,11 +688,7 @@ const getInput = (iconEl) => {
     num = Number(iconEl.value);
 
     return num;
-
-    // console.log(val.value);
 };
-
-console.log(num);
 
 const addVal = (val) => {
     console.log(val);
