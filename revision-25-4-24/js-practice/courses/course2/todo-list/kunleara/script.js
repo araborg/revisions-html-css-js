@@ -692,4 +692,6 @@ const getInput = (iconEl) => {
 
 const addVal = (val) => {
     console.log(val);
+
+    valInput.value = ++num;
 };
