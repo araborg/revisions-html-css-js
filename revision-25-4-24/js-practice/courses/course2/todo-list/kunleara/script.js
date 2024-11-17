@@ -706,9 +706,8 @@ const getInput = (iconEl) => {
     // valInput = iconEl.value;
     num = Number(iconEl.value);
     console.log(num);
-    // console.log(iconEl.value);
-    // num = Number(valInput);
-    // return num;
+
+    return num;
 };
 
 const addVal = (val) => {
