@@ -717,11 +717,14 @@ const addVal = (val) => {
     valInput = valInput !== undefined ? valInput.value : 0;
 
     // num = 0;
-    while (!valInput && valInput >= 0) {
+    if (!valInput && valInput >= 0) {
         // valInput = 0;
         valInput++;
 
+        num = valInput;
+
+        // valInput = valInput++;
         // console.log(0);
-        console.log(valInput);
+        // console.log(valInput, num);
     }
 };
