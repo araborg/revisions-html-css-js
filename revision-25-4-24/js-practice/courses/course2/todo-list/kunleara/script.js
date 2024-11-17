@@ -678,7 +678,7 @@ searchInput.addEventListener("change", () => {
 
 let num;
 let valInput;
-let initVal = 0;
+let initVal;
 
 const minusVal = (iconEl) => {
     // if (valInput.value > 0) {
@@ -702,6 +702,10 @@ const minusVal = (iconEl) => {
 };
 
 const getInput = (iconEl) => {
+    initVal = iconEl.childElement;
+
+    console.log(initVal);
+
     valInput = iconEl;
 
     // === undefined ? 0 : iconEl
