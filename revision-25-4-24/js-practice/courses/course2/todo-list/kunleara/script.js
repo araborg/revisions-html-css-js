@@ -692,12 +692,12 @@ const minusVal = (iconEl) => {
     //     valInput.value = --num;
     // }
 
-    // if (!valInput) {
-    //     console.log(0);
-    //     num = 0;
+    if (!valInput) {
+        // console.log(0);
+        // num = 0;
 
-    //     valInput = num;
-    // }
+        valInput = initVal++;
+    }
 };
 
 const getInput = (iconEl) => {
