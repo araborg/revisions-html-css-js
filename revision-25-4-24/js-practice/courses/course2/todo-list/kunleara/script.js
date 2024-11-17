@@ -676,7 +676,7 @@ searchInput.addEventListener("change", () => {
 
 let num;
 let valInput;
-let initVal = 0;
+// let initVal = 0;
 
 const minusVal = (iconEl) => {
     const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
@@ -686,7 +686,7 @@ const minusVal = (iconEl) => {
     }
 };
 
-const getInput = (iconEl = 0) => {
+const getInput = (iconEl) => {
     valInput = iconEl;
     num = Number(iconEl.value) || iconEl;
     console.log(num);
