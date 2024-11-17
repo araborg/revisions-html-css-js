@@ -684,10 +684,11 @@ let valInput;
 let initVal;
 
 const minusVal = (iconEl) => {
+    console.log(num);
     // const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
-    if (iconEl.value > 0) {
-        iconEl.value = --num;
-    }
+    // if (iconEl.value > 0) {
+    //     iconEl.value = --num;
+    // }
 
     // valInput = valInput === undefined ? 0 : valInput.value;
 
