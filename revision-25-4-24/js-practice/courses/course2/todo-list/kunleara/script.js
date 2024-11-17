@@ -623,12 +623,12 @@ searchInput.addEventListener("change", () => {
                         </div>
 
                         <input
+                            type="number"
                             onchange="getInput(this)"
                             class="item-input"
                             id="${id}"
                             placeholder="0"
                             id="${id}"
-                            value="0"
                         />
 
                         <div class="icon" onclick="addVal(this)">
