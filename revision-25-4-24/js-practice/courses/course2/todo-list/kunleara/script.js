@@ -625,6 +625,7 @@ searchInput.addEventListener("change", () => {
                         <input
                             type="number"
                             onchange="getInput(this)"
+                            onkeydown="getInput(this)"
                             class="item-input"
                             id="${id}"
                             placeholder="0"
