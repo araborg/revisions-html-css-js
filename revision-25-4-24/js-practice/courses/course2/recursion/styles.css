@@ -65,6 +65,8 @@ h1 {
 }
 
 #result {
+    margin: 10px 0;
+
     min-width: 200px;
     width: fit-content;
 
@@ -76,4 +78,5 @@ h1 {
     border: 5px solid var(--orange);
 
     font-size: 2rem;
+    text-align: center;
 }
