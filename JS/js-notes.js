@@ -619,6 +619,15 @@ log e to the console in the body of your callback function.
 some common falsy values you'll see are null, undefined, the 
 number 0, and empty strings.
 
+Rather than check if a value is equal to a falsy value, you can 
+use the logical NOT operator (!) to check if the value itself 
+is falsy. For example:
+
+const num = 0;
+console.log(num === 0); // true
+console.log(!num); // true
+
+
 5.
 
 
