@@ -39,8 +39,6 @@ h1 {
 }
 
 .input-container {
-    border: 2px solid green;
-
     margin: 10px 0;
 
     display: flex;
