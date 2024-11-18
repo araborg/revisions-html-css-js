@@ -49,9 +49,9 @@ h1 {
 
 .convert-btn {
     background-color: var(--orange);
-    padding: 4px;
-
     border: none;
+
+    padding: 4px;
 
     cursor: pointer;
 }
