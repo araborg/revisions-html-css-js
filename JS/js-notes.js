@@ -614,8 +614,10 @@ that e is a common parameter name for the event object. Next,
 log e to the console in the body of your callback function.
 
 
-4.
-
+4. falsy values:
+ In JavaScript, 
+some common falsy values you'll see are null, undefined, the 
+number 0, and empty strings.
 
 5.
 
