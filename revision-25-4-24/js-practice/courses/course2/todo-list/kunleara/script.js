@@ -732,7 +732,7 @@ searchInput.addEventListener("change", () => {
 });
 
 let num;
-let valInput;
+let valInput = {};
 let initVal;
 
 const minusVal = (iconEl) => {
@@ -741,7 +741,7 @@ const minusVal = (iconEl) => {
     // console.log(currentDrug);
     // if()
 
-    console.log(iconEl.value);
+    console.log(iconEl.value, valInput);
 
     if (iconEl.value > 0) {
         iconEl.value = --num;
