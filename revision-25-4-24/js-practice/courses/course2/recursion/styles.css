@@ -29,3 +29,11 @@ body {
 
     /* height: 100vh; */
 }
+
+h1 {
+    font-size: 2.3rem;
+
+    margin: 20px 0;
+
+    text-align: center;
+}
