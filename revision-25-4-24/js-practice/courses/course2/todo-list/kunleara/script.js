@@ -684,7 +684,7 @@ searchInput.addEventListener("change", () => {
                             value="0"
                         />
 
-                        <div class="icon" onclick="addVal(this)">
+                        <div class="icon" onclick="plusVal(this)">
                             <svg
                                 width="800px"
                                 height="800px"
@@ -732,6 +732,14 @@ let num;
 
 // onkeydown="getInput(this)"
 
+/*
+Next tasks with suggestions:
+get d minusVal and plusVal to work
+consider storing d values dt need to be available as
+state in an obj
+
+*/
+
 const minusVal = (iconEl) => {};
 
 const getInput = (iconEl) => {
@@ -742,4 +750,4 @@ const getInput = (iconEl) => {
     return num;
 };
 
-const addVal = (iconEl) => {};
+const plusVal = (iconEl) => {};
