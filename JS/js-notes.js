@@ -597,6 +597,10 @@ The keydown event fires every time a user presses a key on their
 keyboard, and is a good way to add more interactivity to input 
 elements.
 
+numberInput.addEventListener("keydown", () => {});
+
+In d above case, d eventlistener was added to d input elemt.
+
 
 3.
 
