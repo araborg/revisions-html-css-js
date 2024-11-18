@@ -741,20 +741,11 @@ const minusVal = (iconEl) => {
     // console.log(currentDrug);
     // if()
 
-    console.log(iconEl.value, valInput);
+    console.log(iconEl.value, valInput, num);
 
-    if (iconEl.value > 0) {
-        iconEl.value = --num;
+    if (valInput.value > 0) {
+        valInput.value = --num;
     }
-    // valInput = valInput === undefined ? 0 : valInput.value;
-    // console.log(valInput, initVal);
-    // console.log(iconEl.parentElement.placeholder);
-    // if (!valInput) {
-    // console.log(0);
-    // num = 0;
-    // valInput = initVal++;
-    // }
-    // console.log(num, valInput, initVal);
 };
 
 const getInput = (iconEl) => {
