@@ -12,3 +12,13 @@
     --dark-blue: #1b1b32;
     --orange: #f1be32;
 }
+
+body {
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+
+    font-size: "Times New Roman", Times, serif;
+
+    font-size: 18px;
+    padding: 0 15px;
+}
