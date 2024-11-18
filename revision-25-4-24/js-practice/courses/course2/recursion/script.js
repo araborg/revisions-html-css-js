@@ -5,7 +5,7 @@ const result = document.getElementById("result");
 const checkUserInput = () => {
     console.log(numberInput.value);
 
-    if (numberInput.value === "") {
+    if (!numberInput.value) {
     }
 };
 
