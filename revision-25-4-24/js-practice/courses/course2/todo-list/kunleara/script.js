@@ -760,7 +760,7 @@ const minusVal = (iconEl) => {
 const getInput = (iconEl) => {
     num = Number(iconEl.value);
 
-    valInput = num;
+    valInput.qty = num;
 
     return num;
 };
