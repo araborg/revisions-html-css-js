@@ -19,26 +19,28 @@ body {
 
     font-size: "Times New Roman", Times, serif;
 
-    font-size: 1.125rem;
-    padding: 0 0.9375em;
+    font-size: 18px;
+    padding: 0 15px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
     /* justify-content: center; */
+
     /* height: 100vh; */
 }
 
 h1 {
     font-size: 2.3rem;
 
-    margin: 1.25em 0;
+    margin: 20px 0;
 
     text-align: center;
 }
 
 .input-container {
+    border: 2px solid green;
+
     margin: 10px 0;
 
     display: flex;
