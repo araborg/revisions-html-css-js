@@ -36,13 +36,9 @@ h1 {
     margin: 20px 0;
 
     text-align: center;
-
-    border: 2px solid blue;
 }
 
 .input-container {
-    border: 2px solid green;
-
     margin: 10px 0;
 
     display: flex;
