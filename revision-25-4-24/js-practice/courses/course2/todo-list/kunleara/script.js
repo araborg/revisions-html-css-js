@@ -676,7 +676,7 @@ searchInput.addEventListener("change", () => {
                             type="number"
 
                             onchange="getInput(this)"
-                            onkeydown="getInput(this)"
+                            
 
                             class="item-input"
                             id="${id}"
@@ -733,6 +733,8 @@ let num;
 let valInput = {};
 let initVal;
 
+// onkeydown="getInput(this)"
+
 const minusVal = (iconEl) => {
     console.log(iconEl.value, valInput, num);
 
@@ -747,7 +749,7 @@ const getInput = (iconEl) => {
 
     console.log(num);
 
-    valInput.qty = num;
+    valInput = num;
 
     return num;
 };
