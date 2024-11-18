@@ -5,7 +5,11 @@ const result = document.getElementById("result");
 const checkUserInput = () => {
     console.log(numberInput.value);
 
-    if (!numberInput.value || parseInt(numberInput.value)) {
+    if (
+        !numberInput.value ||
+        isNaN(parseInt(numberInput.value)) ||
+        parseInt(numberInput.value) < 0
+    ) {
     }
 };
 
@@ -13,6 +17,15 @@ console.log(parseInt("3"));
 console.log(parseInt(3));
 console.log(parseInt("3e+2"));
 console.log(parseInt(3e2));
+
+console.log(isNaN("3"));
+console.log(isNaN(3));
+console.log(isNaN("3e+2"));
+console.log(isNaN(3e2));
+
+console.log(isNaN(NaN));
+console.log(isNaN(parseInt("test")));
+console.log(parseInt("test"));
 
 convertBtn.addEventListener("click", checkUserInput);
 
