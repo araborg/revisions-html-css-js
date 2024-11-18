@@ -730,8 +730,6 @@ searchInput.addEventListener("change", () => {
 });
 
 let num;
-let valInput = {};
-let initVal;
 
 // onkeydown="getInput(this)"
 
@@ -742,14 +740,7 @@ const getInput = (iconEl) => {
 
     console.log(num);
 
-    valInput.qty = num;
-
     return num;
 };
 
-const addVal = (val) => {
-    // valInput.value = 0
-    if (valInput.value > 0) {
-        valInput.value = ++num;
-    }
-};
+const addVal = (val) => {};
