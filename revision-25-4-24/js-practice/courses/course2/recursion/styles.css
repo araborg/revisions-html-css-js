@@ -63,3 +63,9 @@ h1 {
 .number-input {
     height: 25px;
 }
+
+#result {
+    border: 2px solid green;
+
+    min-width: 200px;
+}
