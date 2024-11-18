@@ -735,21 +735,14 @@ let initVal;
 
 // onkeydown="getInput(this)"
 
-const minusVal = (iconEl) => {
-    console.log(iconEl.value, valInput, num);
-
-    if (iconEl.value > 0) {
-        iconEl.value = --num;
-    }
-};
+const minusVal = (iconEl) => {};
 
 const getInput = (iconEl) => {
-    console.log(iconEl);
     num = Number(iconEl.value);
 
     console.log(num);
 
-    valInput = num;
+    valInput.qty = num;
 
     return num;
 };
