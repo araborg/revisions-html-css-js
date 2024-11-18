@@ -740,9 +740,9 @@ const minusVal = (iconEl) => {
     // const currentDrug = drugData.filter((drug) => drug.id === iconEl.id);
     // console.log(currentDrug);
     // if()
-    // if (iconEl.value > 0) {
-    //     iconEl.value = --num;
-    // }
+    if (iconEl.value > 0) {
+        iconEl.value = --num;
+    }
     // valInput = valInput === undefined ? 0 : valInput.value;
     // console.log(valInput, initVal);
     // console.log(iconEl.parentElement.placeholder);
