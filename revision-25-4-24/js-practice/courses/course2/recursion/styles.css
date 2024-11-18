@@ -51,3 +51,7 @@ h1 {
     align-items: center;
     gap: 10px;
 }
+
+.convert-btn {
+    background-color: var(--orange);
+}
