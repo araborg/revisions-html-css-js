@@ -592,7 +592,10 @@ This can reduce a complex problem into simpler sub-problems,
 until they become straightforward to solve.
 
 
-2.
+2. keydown event listener:
+The keydown event fires every time a user presses a key on their 
+keyboard, and is a good way to add more interactivity to input 
+elements.
 
 
 3.
