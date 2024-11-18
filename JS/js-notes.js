@@ -640,7 +640,14 @@ parseInt("2e+3"); // 2
 parseInt("e") // NaN
 
 
-6.
+6. isNaN()
+isNaN() function. This function 
+takes in a string or number as an argument, and returns true 
+if it evaluates to NaN. For example:
+
+isNaN("test"); // true
+isNaN(2); // false
+isNaN("3.5"); // false
 
 
 7.

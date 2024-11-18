@@ -9,6 +9,11 @@ const checkUserInput = () => {
     }
 };
 
+console.log(parseInt("3"));
+console.log(parseInt(3));
+console.log(parseInt("3e+2"));
+console.log(parseInt(3e2));
+
 convertBtn.addEventListener("click", checkUserInput);
 
 numberInput.addEventListener("keydown", (e) => {
