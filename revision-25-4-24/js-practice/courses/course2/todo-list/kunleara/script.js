@@ -672,20 +672,18 @@ searchInput.addEventListener("change", () => {
                             </svg>
                         </div>
 
-                        <div id="${id}">
-                            <input
-                                type="number"
+                        <input
+                            type="number"
 
-                                onchange="getInput(this)"
-                                onkeydown="getInput(this)"
+                            onchange="getInput(this)"
+                            onkeydown="getInput(this)"
 
-                                class="item-input"
-                                id="${id}"
-                                placeholder="0"
-                                id="${id}"
-                                value="0"
-                            />
-                        </div>
+                            class="item-input"
+                            id="${id}"
+                            placeholder="0"
+                            id="${id}"
+                            value="0"
+                        />
 
                         <div class="icon" onclick="addVal(this)">
                             <svg
@@ -738,13 +736,16 @@ let initVal;
 const minusVal = (iconEl) => {
     console.log(iconEl.value, valInput, num);
 
-    if (valInput.value > 0) {
-        valInput.value = --num;
+    if (iconEl.value > 0) {
+        iconEl.value = --num;
     }
 };
 
 const getInput = (iconEl) => {
+    console.log(iconEl);
     num = Number(iconEl.value);
+
+    console.log(num);
 
     valInput.qty = num;
 
