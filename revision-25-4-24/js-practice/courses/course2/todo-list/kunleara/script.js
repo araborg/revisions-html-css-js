@@ -743,4 +743,4 @@ const getInput = (iconEl) => {
     return num;
 };
 
-const addVal = (val) => {};
+const addVal = (iconEl) => {};
