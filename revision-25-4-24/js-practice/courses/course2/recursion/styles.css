@@ -59,3 +59,7 @@ h1 {
 
     cursor: pointer;
 }
+
+.number-input {
+    height: 25px;
+}
