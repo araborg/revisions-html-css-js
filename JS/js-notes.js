@@ -577,6 +577,7 @@ one end, use trimStart() or trimEnd().
 
 
 19. 
+attributes: NamedNodeMap {0: value, 1: type, 2: name, 3: id, 4: class, value: value, type: type, name: name, id: id, class: class, …}
 
 
 20.
