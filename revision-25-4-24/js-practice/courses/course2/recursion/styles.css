@@ -51,6 +51,7 @@ h1 {
 .convert-btn {
     background-color: var(--orange);
     padding: 4px;
+
     border: none;
 
     cursor: pointer;
@@ -58,6 +59,9 @@ h1 {
 
 .number-input {
     height: 25px;
+
+    outline: none;
+    border: none;
 }
 
 #result {
