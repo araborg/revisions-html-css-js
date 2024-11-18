@@ -677,7 +677,6 @@ searchInput.addEventListener("change", () => {
 
                             onchange="getInput(this)"
                             
-
                             class="item-input"
                             id="${id}"
                             placeholder="0"
