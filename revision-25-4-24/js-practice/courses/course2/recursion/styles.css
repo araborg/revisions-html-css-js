@@ -69,4 +69,6 @@ h1 {
 
     min-width: 200px;
     width: fit-content;
+
+    min-height: 80px;
 }
