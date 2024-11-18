@@ -82,5 +82,7 @@ h1 {
 }
 
 #animation-container {
+    border: 5px solid var(--orange);
+
     margin: auto;
 }
