@@ -42,10 +42,6 @@ const decimatToBinary = (input) => {
         input = quotient;
     }
 
-    // console.log("Inputs: ", inputs);
-    // console.log("Quotients: ", quotients);
-    // console.log("Reminders: ", reminders);
-
     result.innerText = reminders.reverse().join("");
 };
 */
