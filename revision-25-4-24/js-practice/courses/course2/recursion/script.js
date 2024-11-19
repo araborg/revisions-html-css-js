@@ -3,7 +3,8 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
-    if (numberInput.value === 5) {
+    if (parseInt(numberInput.value) === 5) {
+        console.log("true");
     }
 
     if (
