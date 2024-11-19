@@ -16,7 +16,9 @@ const checkUserInput = () => {
     decimatToBinary(parseInt(numberInput.value));
 };
 
-const decimatToBinary = (input) => {};
+const decimatToBinary = (input) => {
+    console.log(input);
+};
 
 convertBtn.addEventListener("click", checkUserInput);
 
