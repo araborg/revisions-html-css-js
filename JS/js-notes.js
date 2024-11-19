@@ -804,12 +804,16 @@ number to zero, the base case is when the number parameter is
 equal to 0. Then it should return to break out of its 
 recursive loop.
 
-recursive case:
+
+16. recursive case:
 Recursive functions also have a recursive case, which is where 
 the function calls itself.
 
+When writing the recursive case, you need to remember two things:
 
-16.
+1. What is the base case?
+2. What is the least amount of work you need to do to get closer 
+to the base case?
 
 
 17.
