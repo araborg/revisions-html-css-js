@@ -13,7 +13,7 @@ const checkUserInput = () => {
         return;
     }
 
-    console.log(numberInput.value);
+    decimatToBinary(parseInt(numberInput.value));
 };
 
 const decimatToBinary = (input) => {};
