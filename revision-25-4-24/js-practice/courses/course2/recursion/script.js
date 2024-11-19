@@ -105,3 +105,5 @@ const c = () => {
 };
 
 console.log(a()); // freeCodeCamp is awesome!
+
+const callStack = [];
