@@ -637,6 +637,10 @@ parseInt() takes at least one argument, a string to be
 converted into an integer, and returns either an integer 
 or NaN which stands for Not a Number. For example:
 
+parseInt(takes at least one string argument, to be 
+converted into an integer, and returns either an integer 
+or NaN)
+
 parseInt(2.2); // 2
 parseInt("2e+3"); // 2
 parseInt("e") // NaN
