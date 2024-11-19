@@ -651,6 +651,8 @@ isNaN() function. This function
 takes in a string or number as an argument, and returns true 
 if it evaluates to NaN. For example:
 
+isNaN(string or number) returbs true wn d string/number === NaN
+
 isNaN("test"); // true
 isNaN(2); // false
 isNaN("3.5"); // false
