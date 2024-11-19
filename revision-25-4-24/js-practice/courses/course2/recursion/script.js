@@ -24,6 +24,9 @@ const decimatToBinary = (input) => {
     const reminders = [];
 
     if (input === 0) {
+        result.innerText = "0";
+
+        return;
     }
 
     while (input > 0) {
