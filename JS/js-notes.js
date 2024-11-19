@@ -756,7 +756,20 @@ while (input > 0) {}
 Math.floor() function to round down the number.
 
 
-13. call stack
+13. call stack:
+const a = () => {
+    return "freeCodeCamp " + b();
+};
+
+const b = () => {
+    return "is " + c();
+};
+
+const c = () => {
+    return "awesome!";
+};
+
+console.log(a()); // freeCodeCamp is awesome!
 
 
 14.
