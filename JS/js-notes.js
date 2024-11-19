@@ -784,6 +784,10 @@ stack structure. When you call a function, it is added to the
 top of the stack, and when it returns, it is removed from 
 the top / end of the stack.
 
+Remember that the call stack is a LIFO data structure, so 
+the last function is added to the top or end of the stack, 
+similar to pushing an element into an array.
+
 
 15.
 
