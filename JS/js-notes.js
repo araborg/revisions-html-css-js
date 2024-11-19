@@ -651,8 +651,8 @@ parseInt("e") // NaN
 6. isNaN()
 isNaN() function. This function takes in a string or number 
 as an argument, and returns true if it evaluates to NaN. 
-For example:
 
+For example:
 isNaN(string or number) returbs true wn d string/number === NaN
 else it returns false.
 
