@@ -126,9 +126,11 @@ const callStack = [
 const countdown = (number) => {
     console.log(number);
 
+    // base case:
     if (number === 0) {
         return;
     } else {
+        // recursive case:
         countdown(number - 1);
     }
 };
