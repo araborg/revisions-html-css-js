@@ -125,4 +125,8 @@ const callStack = [
 // 4.
 const countdown = (number) => {
     console.log(number);
+
+    if (number === 0) {
+        return;
+    }
 };
