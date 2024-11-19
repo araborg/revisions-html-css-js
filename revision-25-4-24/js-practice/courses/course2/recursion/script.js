@@ -29,6 +29,9 @@ const decimatToBinary = (input) => {
         const reminder = input % 2;
 
         inputs.push(input);
+        quotients.push(quotient);
+        reminders.push(reminder);
+
         input = quotient;
     }
 };
