@@ -110,7 +110,7 @@ const callStack = [
     `a(): returns "freeCodeCamp " + b()`,
     // "freeCodeCamp is awesome!"
 
-    `b(): returns "is " + c()`, // "is " + "awesome!"
+    `b(): returns "is " + c()`, // "is awesome!"
 
     `c(): returns "awesome!"`, // "awesome!"
 ];
