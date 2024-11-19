@@ -109,7 +109,7 @@ console.log(a()); // freeCodeCamp is awesome!
 const callStack = [
     `a(): returns "freeCodeCamp " + b()`,
 
-    `b(): returns "is " + c()`,
+    `b(): returns "is " + c()`, // "is " + "awesome!"
 
-    `c(): returns "awesome!"`,
+    `c(): returns "awesome!"`, // "awesome!"
 ];
