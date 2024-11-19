@@ -31,6 +31,7 @@ const decimatToBinary = (input) => {
         quotients.push(quotient);
         reminders.push(reminder);
 
+        // rate limiting step
         input = quotient;
     }
 
