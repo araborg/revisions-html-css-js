@@ -629,11 +629,13 @@ console.log(!num); // true
 
 
 5. parseInt()
-A good way to check and normalize numbers in JavaScript is to use 
-the built-in parseInt() function, which converts a string into an 
-integer or whole number. parseInt() takes at least one argument, a 
-string to be converted into an integer, and returns either an 
-integer or NaN which stands for Not a Number. For example:
+A good way to check and normalize numbers in JavaScript is 
+to use the built-in parseInt() function, which converts a 
+string into an integer or whole number. 
+
+parseInt() takes at least one argument, a string to be 
+converted into an integer, and returns either an integer 
+or NaN which stands for Not a Number. For example:
 
 parseInt(2.2); // 2
 parseInt("2e+3"); // 2
