@@ -18,7 +18,32 @@ const checkUserInput = () => {
     numberInput.value = "";
 };
 
+const decimatToBinary = (input) => {
+    let binary = "";
+
+    if (input === 0) {
+        binary = "0";
+    }
+
+    while (input > 0) {
+        binary = (input % 2) + binary;
+
+        input = Math.floor(input / 2);
+    }
+
+    result.innerText = binary;
+};
+
+convertBtn.addEventListener("click", checkUserInput);
+
+numberInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        checkUserInput();
+    }
+});
+
 /*
+
 1.
 const decimatToBinary = (input) => {
     const inputs = [];
@@ -65,36 +90,8 @@ const decimatToBinary = (input) => {
 };
 
 
-*/
 
-const decimatToBinary = (input) => {
-    let binary = "";
-
-    if (input === 0) {
-        binary = "0";
-    }
-
-    while (input > 0) {
-        binary = (input % 2) + binary;
-
-        input = Math.floor(input / 2);
-    }
-
-    result.innerText = binary;
-};
-
-convertBtn.addEventListener("click", checkUserInput);
-
-numberInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        checkUserInput();
-    }
-});
-
-/*
-
-// 3.
-// call stack
+3. call stack
 const a = () => {
     return "freeCodeCamp " + b();
 };
@@ -121,8 +118,7 @@ const callStack = [
 ];
 
 
-*/
-// 4.
+4. recursion:
 const countdown = (number) => {
     console.log(number);
 
@@ -140,3 +136,5 @@ const countdown = (number) => {
 };
 
 countdown(3);
+
+*/
