@@ -22,6 +22,8 @@ const decimatToBinary = (input) => {
     const inputs = [];
     const quotients = [];
     const reminders = [];
+
+    input = 0;
 };
 
 convertBtn.addEventListener("click", checkUserInput);
