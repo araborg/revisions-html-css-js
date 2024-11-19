@@ -20,7 +20,7 @@ const checkUserInput = () => {
 
 const decimatToBinary = (input) => {
     if (input === 0) {
-        return "";
+        return "0";
     } else {
         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
     }
@@ -52,6 +52,7 @@ const checkUserInput = () => {
 
     numberInput.value = "";
 };
+
 
 2.
 const decimatToBinary = (input) => {
