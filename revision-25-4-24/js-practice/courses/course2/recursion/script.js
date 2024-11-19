@@ -36,8 +36,8 @@ const decimatToBinary = (input) => {
     }
 
     console.log("Inputs: ", inputs);
-    console.log("Quotients: ", quotient);
-    console.log("Reminders: ", reminder);
+    console.log("Quotients: ", quotients);
+    console.log("Reminders: ", reminders);
 };
 
 convertBtn.addEventListener("click", checkUserInput);
