@@ -734,10 +734,12 @@ the placement values:
 
 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
   0 |  0 |  1 |  1 | 0 | 1 | 0 | 0
-  
 
-11.
 
+11. while loop:
+A while loop is used to run a block of code as long 
+as the condition evaluates to true, and the condition 
+is checked before the code block is executed.
 
 12.
 
