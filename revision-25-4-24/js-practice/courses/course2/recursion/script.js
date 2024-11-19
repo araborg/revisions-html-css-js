@@ -25,9 +25,9 @@ const decimatToBinary = (input) => {
 };
 
 /*
-118
-128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
 
+128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+01110110
 */
 
 convertBtn.addEventListener("click", checkUserInput);
