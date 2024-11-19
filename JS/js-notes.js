@@ -741,6 +741,7 @@ A while loop is used to run a block of code as long
 as the condition evaluates to true, and the condition 
 is checked before the code block is executed.
 
+
 12.
 
 
