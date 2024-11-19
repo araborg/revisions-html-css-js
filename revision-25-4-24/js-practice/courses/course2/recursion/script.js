@@ -3,6 +3,9 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
+    console.log(isNaN(parseInt(numberInput.value)));
+
+    console.log(parseInt(numberInput.value));
     if (
         !numberInput.value ||
         isNaN(parseInt(numberInput.value)) ||
