@@ -53,7 +53,7 @@ const checkUserInput = () => {
     numberInput.value = "";
 };
 
-1.
+2.
 const decimatToBinary = (input) => {
     const inputs = [];
     const quotients = [];
@@ -81,7 +81,7 @@ const decimatToBinary = (input) => {
 };
 
 
-2.
+3.
 const decimatToBinary = (input) => {
     let binary = "";
 
@@ -99,8 +99,7 @@ const decimatToBinary = (input) => {
 };
 
 
-
-3. call stack
+4. call stack
 const a = () => {
     return "freeCodeCamp " + b();
 };
@@ -127,7 +126,7 @@ const callStack = [
 ];
 
 
-4. recursion:
+5. recursion:
 const countdown = (number) => {
     console.log(number);
 
