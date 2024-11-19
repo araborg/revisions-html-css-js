@@ -13,7 +13,7 @@ const checkUserInput = () => {
         return;
     }
 
-    decimatToBinary(parseInt(numberInput.value));
+    result.textContent = decimatToBinary(parseInt(numberInput.value));
 
     numberInput.value = "";
 };
@@ -35,6 +35,23 @@ numberInput.addEventListener("keydown", (e) => {
 });
 
 /*
+
+1.
+const checkUserInput = () => {
+    if (
+        !numberInput.value ||
+        isNaN(parseInt(numberInput.value)) ||
+        parseInt(numberInput.value) < 0
+    ) {
+        alert("Please provide a decimal number greater than or equal to 0");
+
+        return;
+    }
+
+    decimatToBinary(parseInt(numberInput.value));
+
+    numberInput.value = "";
+};
 
 1.
 const decimatToBinary = (input) => {
