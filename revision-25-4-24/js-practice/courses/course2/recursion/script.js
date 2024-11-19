@@ -53,11 +53,11 @@ const decimatToBinary = (input) => {
 const decimatToBinary = (input) => {
     let binary = "";
 
-    result.innerText = binary;
-
     while (input > 0) {
         input = 0;
     }
+
+    result.innerText = binary;
 };
 
 convertBtn.addEventListener("click", checkUserInput);
