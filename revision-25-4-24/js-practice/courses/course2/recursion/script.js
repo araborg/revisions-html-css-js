@@ -14,19 +14,19 @@ const checkUserInput = () => {
     }
 };
 
-console.log(parseInt("3"));
-console.log(parseInt(3));
-console.log(parseInt("3e+2"));
-console.log(parseInt(3e2));
+// console.log(parseInt("3"));
+// console.log(parseInt(3));
+// console.log(parseInt("3e+2"));
+// console.log(parseInt(3e2));
 
-console.log(isNaN("3"));
-console.log(isNaN(3));
-console.log(isNaN("3e+2"));
-console.log(isNaN(3e2));
+// console.log(isNaN("3"));
+// console.log(isNaN(3));
+// console.log(isNaN("3e+2"));
+// console.log(isNaN(3e2));
 
-console.log(isNaN(NaN));
-console.log(isNaN(parseInt("test")));
-console.log(parseInt("test"));
+// console.log(isNaN(NaN));
+// console.log(isNaN(parseInt("test")));
+// console.log(parseInt("test"));
 
 convertBtn.addEventListener("click", checkUserInput);
 
