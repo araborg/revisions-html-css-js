@@ -128,6 +128,8 @@ const countdown = (number) => {
 
     // base case:
     if (number === 0) {
+        console.log("Reached base case");
+
         return;
     } else {
         // recursive case:
