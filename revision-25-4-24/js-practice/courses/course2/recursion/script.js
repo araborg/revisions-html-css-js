@@ -24,12 +24,6 @@ const decimatToBinary = (input) => {
     return "1";
 };
 
-/*
-
-128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
-01110110
-*/
-
 convertBtn.addEventListener("click", checkUserInput);
 
 numberInput.addEventListener("keydown", (e) => {
