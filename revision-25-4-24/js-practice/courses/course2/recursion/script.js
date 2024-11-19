@@ -21,6 +21,8 @@ const checkUserInput = () => {
 const decimatToBinary = (input) => {
     if (input === 0) {
         return "";
+    } else {
+        return decimatToBinary(Math.floor(input / 2));
     }
 };
 
