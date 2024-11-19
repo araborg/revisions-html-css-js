@@ -106,4 +106,4 @@ const c = () => {
 
 console.log(a()); // freeCodeCamp is awesome!
 
-const callStack = [];
+const callStack = [`a(): returns "freeCodeCamp " + b()`];
