@@ -20,6 +20,8 @@ const checkUserInput = () => {
 
 const decimatToBinary = (input) => {
     console.log(input);
+
+    return "1";
 };
 
 convertBtn.addEventListener("click", checkUserInput);
