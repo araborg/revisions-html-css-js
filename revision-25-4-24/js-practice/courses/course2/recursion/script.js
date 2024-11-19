@@ -129,5 +129,8 @@ const countdown = (number) => {
     if (number === 0) {
         return;
     } else {
+        countdown(number - 1);
     }
 };
+
+countdown(3);
