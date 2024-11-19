@@ -639,7 +639,9 @@ or NaN which stands for Not a Number. For example:
 
 parseInt(takes at least one string argument, to be 
 converted into an integer, and returns either an integer 
-or NaN)
+or NaN).
+
+parseInt() returns either a Number or NaN.
 
 parseInt(2.2); // 2
 parseInt("2e+3"); // 2
@@ -653,6 +655,8 @@ For example:
 
 isNaN(string or number) returbs true wn d string/number === NaN
 else it returns false.
+
+isNaN() returns trues for argumts dt r nt a Number.
 
 isNaN("test"); // true
 isNaN(2); // false
