@@ -3,10 +3,6 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
-    if (parseInt(numberInput.value) === 5) {
-        console.log("true");
-    }
-
     if (
         !numberInput.value ||
         isNaN(parseInt(numberInput.value)) ||
@@ -15,6 +11,10 @@ const checkUserInput = () => {
         alert("Please provide a decimal number greater than or equal to 0");
 
         return;
+    }
+
+    if (parseInt(numberInput.value) === 5) {
+        console.log("true");
     }
 
     result.textContent = decimatToBinary(parseInt(numberInput.value));
