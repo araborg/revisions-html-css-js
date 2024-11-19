@@ -26,6 +26,8 @@ const decimatToBinary = (input) => {
     }
 };
 
+const showAnimation = () => {};
+
 // event listeners:
 convertBtn.addEventListener("click", checkUserInput);
 
