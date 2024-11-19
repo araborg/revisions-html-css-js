@@ -816,7 +816,24 @@ When writing the recursive case, you need to remember two things:
 to the base case?
 
 
-17.
+17. log number to the console after your recursive 
+countDownAndUp(number - 1) function call.
+
+const countDownAndUp = (number) => {
+    console.log(number);
+
+    if (number === 0) {
+        console.log("Reached base case");
+        
+        return;
+    } else {
+        countDownAndUp(number - 1);
+
+        console.log(number);
+    }
+};
+
+countDownAndUp(3);
 
 
 18.

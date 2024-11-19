@@ -134,6 +134,8 @@ const countdown = (number) => {
     } else {
         // recursive case:
         countdown(number - 1);
+
+        console.log(number);
     }
 };
 
