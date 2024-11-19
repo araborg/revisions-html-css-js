@@ -14,6 +14,8 @@ const checkUserInput = () => {
     }
 
     decimatToBinary(parseInt(numberInput.value));
+
+    numberInput.value = "";
 };
 
 const decimatToBinary = (input) => {
