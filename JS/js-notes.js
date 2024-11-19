@@ -684,6 +684,27 @@ they are often represented as strings.
 
 
 9.
+In the base-2 number system, the rightmost digit represents the 
+ones place, the next digit to the left represents the twos place, 
+then the fours place, then the eights place, and so on. In this 
+system, each digit's place value is two times greater than the 
+digit to its right.
+
+Here are numbers zero to nine in the base-10 and base-2 number 
+systems:
+
+| Base-10 | Base-2 |
+| ------- | ------ |
+|    0    |  0     |
+|    1    |  1     |
+|    2    |  10    |
+|    3    |  11    |
+|    4    |  100   |
+|    5    |  101   |
+|    6    |  110   |
+|    7    |  111   |
+|    8    |  1000  |
+|    9    |  1001  |
 
 
 10.
