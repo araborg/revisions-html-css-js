@@ -14,7 +14,9 @@ const checkUserInput = () => {
     }
 
     if (parseInt(numberInput.value) === 5) {
-        console.log("true");
+        showAnimation();
+
+        return;
     }
 
     result.textContent = decimatToBinary(parseInt(numberInput.value));
