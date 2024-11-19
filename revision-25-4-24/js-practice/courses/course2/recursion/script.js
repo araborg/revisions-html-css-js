@@ -90,3 +90,5 @@ numberInput.addEventListener("keydown", (e) => {
         checkUserInput();
     }
 });
+
+// call stack

@@ -756,7 +756,7 @@ while (input > 0) {}
 Math.floor() function to round down the number.
 
 
-13.
+13. call stack
 
 
 14.
