@@ -91,6 +91,9 @@ numberInput.addEventListener("keydown", (e) => {
     }
 });
 
+/*
+
+3.
 // call stack
 const a = () => {
     return "freeCodeCamp " + b();
@@ -116,3 +119,6 @@ const callStack = [
     `c(): returns "awesome!"`,
     // "awesome!"
 ];
+
+
+*/
