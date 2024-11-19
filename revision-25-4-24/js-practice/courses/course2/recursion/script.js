@@ -18,6 +18,7 @@ const checkUserInput = () => {
     numberInput.value = "";
 };
 
+/*
 const decimatToBinary = (input) => {
     const inputs = [];
     const quotients = [];
@@ -46,6 +47,11 @@ const decimatToBinary = (input) => {
     // console.log("Reminders: ", reminders);
 
     result.innerText = reminders.reverse().join("");
+};
+*/
+
+const decimatToBinary = (input) => {
+    let binary = "";
 };
 
 convertBtn.addEventListener("click", checkUserInput);
