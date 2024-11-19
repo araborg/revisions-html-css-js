@@ -93,7 +93,7 @@ numberInput.addEventListener("keydown", (e) => {
 
 /*
 
-3.
+// 3.
 // call stack
 const a = () => {
     return "freeCodeCamp " + b();
@@ -122,3 +122,5 @@ const callStack = [
 
 
 */
+// 4.
+const countdown = (number) => {};
