@@ -123,4 +123,6 @@ const callStack = [
 
 */
 // 4.
-const countdown = (number) => {};
+const countdown = (number) => {
+    console.log(number);
+};
