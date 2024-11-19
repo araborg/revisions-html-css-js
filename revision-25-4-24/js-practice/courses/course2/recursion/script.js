@@ -27,9 +27,9 @@ const decimatToBinary = (input) => {
         const quotient = Math.floor(input / 2);
         const reminder = input % 2;
 
-        inputs.push(input);
-        quotients.push(quotient);
-        reminders.push(reminder);
+        inputs.push(input); // [6, 3, 1]
+        quotients.push(quotient); // [3, 1, 0]
+        reminders.push(reminder); // [0, 1, 1]
 
         // rate limiting step
         input = quotient;
