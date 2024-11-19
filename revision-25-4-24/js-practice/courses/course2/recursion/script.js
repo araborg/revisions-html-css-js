@@ -104,4 +104,4 @@ const c = () => {
     return "awesome!";
 };
 
-console.log(a());
+console.log(a()); // freeCodeCamp is awesome!
