@@ -663,7 +663,9 @@ isNaN(2); // false
 isNaN("3.5"); // false
 
 
-7.
+7. window.alert():
+Note that alert() is a method on the window object in the browser, 
+so you can use either window.alert() or alert().
 
 
 8.
