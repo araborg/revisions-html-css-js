@@ -752,7 +752,8 @@ to make sure that the input variable eventually becomes 0.
 while (input > 0) {}
 
 
-12.
+12. Math.floor():
+Math.floor() function to round down the number.
 
 
 13.
