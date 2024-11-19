@@ -9,10 +9,14 @@ const checkUserInput = () => {
         parseInt(numberInput.value) < 0
     ) {
         alert("Please provide a decimal number greater than or equal to 0");
+
+        return;
     }
 
     console.log(numberInput.value);
 };
+
+const decimatToBinary = (input) => {};
 
 convertBtn.addEventListener("click", checkUserInput);
 
