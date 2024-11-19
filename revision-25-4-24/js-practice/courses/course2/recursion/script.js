@@ -54,7 +54,7 @@ const decimatToBinary = (input) => {
     let binary = "";
 
     if (input === 0) {
-        binary = "";
+        binary = "0";
     }
 
     while (input > 0) {
