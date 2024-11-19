@@ -855,7 +855,15 @@ the code after the recursive call. This is why you see Reached
 base case before the count from 1 to 3.
 
 
-18.
+18. String() function:
+For a reliable way to convert a value into a string, even falsy 
+values like null and undefined, you can use the String() 
+function. For example:
+
+const num = 5;
+
+console.log(String(num)); // "5"
+console.log(String(null)); // "null"
 
 
 19.
