@@ -39,7 +39,7 @@ const decimatToBinary = (input) => {
     // console.log("Quotients: ", quotients);
     // console.log("Reminders: ", reminders);
 
-    result.innerText = reminders.reverse().join(" ");
+    result.innerText = reminders.reverse().join("");
 };
 
 convertBtn.addEventListener("click", checkUserInput);
