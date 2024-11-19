@@ -789,7 +789,19 @@ the last function is added to the top or end of the stack,
 similar to pushing an element into an array.
 
 
-15.
+15. recursive function:
+A recursive function is a function that calls itself over 
+and over. But you have to be careful because you can easily 
+create an infinite loop. 
+
+That's where the base case comes in. The base case is when 
+the function stops calling itself, and it is a good idea 
+to write it first.
+
+Since your countdown() function will count down from a given 
+number to zero, the base case is when the number parameter is 
+equal to 0. Then it should return to break out of its 
+recursive loop.
 
 
 16.
