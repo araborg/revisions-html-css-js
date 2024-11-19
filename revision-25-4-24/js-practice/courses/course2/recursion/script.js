@@ -92,3 +92,6 @@ numberInput.addEventListener("keydown", (e) => {
 });
 
 // call stack
+function a() {
+    return "freeCodeCamp " + b();
+}
