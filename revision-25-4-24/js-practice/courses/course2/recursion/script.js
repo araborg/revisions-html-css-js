@@ -269,23 +269,14 @@ else {
 }
 
 3rd time: input = 1
-const decimatToBinary = (input) => {
-    // base cases:
-    if (input === 0) {
-        return "0";
-
-    // ds bcoms active wn input = 1 or we enter 1
-    } else if (input === 1) { 
-        return "1";
-
-    } else {
-        // recursive case:
-        return 
-            decimatToBinary(Math.floor(input / 2)) 
-            + 
-            (input % 2);
-    }
-};
+else {
+    // recursive case:
+    return 
+                                    1 / 2 = 0.5 wc bcoms 0
+        decimatToBinary(Math.floor(input / 2)) 
+        + 
+        (input % 2); // 1 % 2 = 1
+}
 
 
 7.
