@@ -138,6 +138,20 @@ const decimatToBinary = (input) => {
         input = Math.floor(input / 2);
     }
 
+    3rd time: input = 1
+    while (input > 0) {
+              //  1 % 2 = 1 + "10" i.e binary = "110"
+        binary = (input % 2) + binary;
+
+        // input = 0
+        input = Math.floor(input / 2);
+    }
+
+    4th time: input = 0
+    while (input > 0) { 0 is not greater than 0
+             
+    }
+
 
 4. call stack
 const a = () => {
