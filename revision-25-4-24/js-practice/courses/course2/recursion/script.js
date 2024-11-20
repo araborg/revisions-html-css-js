@@ -93,9 +93,9 @@ const decimatToBinary = (input) => {
         // rate limiting step: ds changes input value from e.g 6 to 3 to 1
         input = quotient;
     }
-        
 
-    result.innerText = reminders.reverse().join("");
+
+    result.innerText = reminders.reverse().join(""); // 110
 };
 
 
