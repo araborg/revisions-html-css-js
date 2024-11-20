@@ -308,6 +308,8 @@ const decimatToBinary = (input) => {
 
 
 9. setTimeout
+setTimeout(callback fxn, time(ms))
+
 setTimeout(() => {
     console.log("Hello, World");
 }, 3000);
