@@ -171,7 +171,9 @@ const c = () => {
     return "awesome!";
 };
 
-// d bottom fxn is called:
+// d bottom fxn is called: 
+ds mks d top and middle fxns to be called and removed from d stack
+
 console.log(a()); // freeCodeCamp is awesome!
 
 const callStack = [
