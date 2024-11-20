@@ -29,8 +29,11 @@ const decimatToBinary = (input) => {
         return String(input);
     } else {
         // return (input % 2) + decimatToBinary(Math.floor(input / 2));
+        const reminder = input % 2;
 
-        return decimatToBinary(Math.floor(input / 2)) + (input % 2);
+        console.log(reminder);
+
+        return decimatToBinary(Math.floor(input / 2)) + reminder;
     }
 };
 
