@@ -592,6 +592,25 @@ calls itself.
 This can reduce a complex problem into simpler sub-problems,
 until they become straightforward to solve.
 
+In most cases, d fxn being called inside d other fxn (both
+of wc r d same), only changes d value of d argument of d fxn
+e.g
+const countdown = (number) => {
+    console.log(number);
+
+    // base case:
+    if (number === 0) {
+        console.log("Reached base case");
+
+        return;
+    } else {
+        // recursive case:
+        countdown(number - 1);
+
+        console.log(number);
+    }
+};
+
 
 2. keydown event listener:
 The keydown event fires every time a user presses a key on their 
