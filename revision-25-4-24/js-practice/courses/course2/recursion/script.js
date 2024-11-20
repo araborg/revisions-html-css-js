@@ -122,7 +122,7 @@ const decimatToBinary = (input) => {
 
     1st time: input = 6
     while (input > 0) {
-                    6 % 2 = 0 + ""
+                    6 % 2 = 0 + "" i.e binary = "0"
         binary = (input % 2) + binary;
 
         input = Math.floor(input / 2);
