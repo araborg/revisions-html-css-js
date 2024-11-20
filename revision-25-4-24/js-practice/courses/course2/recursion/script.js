@@ -97,6 +97,10 @@ const decimatToBinary = (input) => {
 const decimatToBinary = (input) => {
     let binary = "";
 
+        // base case:
+
+        // recursive case:
+
     if (input === 0) {
         binary = "0";
     }
@@ -160,6 +164,10 @@ countdown(3);
 
 6.
 const decimatToBinary = (input) => {
+        // base case:
+
+        // recursive case:
+
     if (input === 0) {
         return "0";
     } else if (input === 1) {
@@ -169,5 +177,16 @@ const decimatToBinary = (input) => {
     }
 };
 
+
+7.
+const decimatToBinary = (input) => {
+    // base case:
+    if (input === 0 || input === 1) {
+        return String(input);
+    } else {
+        // recursive case:
+        return decimatToBinary(Math.floor(input / 2)) + (input % 2);
+    }
+};
 
 */
