@@ -247,13 +247,42 @@ const decimatToBinary = (input) => {
 };
 
 
- else {
-        // recursive case:
-        return 
-            decimatToBinary(Math.floor(input / 2)) 
-            + 
-            (input % 2);
-    }
+1st time:
+else {
+    // recursive case:
+    return 
+        decimatToBinary(Math.floor(input / 2)) 
+        + 
+        (input % 2);
+}
+
+
+2nd time:
+else {
+    // recursive case:
+    return 
+        decimatToBinary(Math.floor(input / 2)) 
+        + 
+        (input % 2);
+}
+
+3rd time:
+else {
+    // recursive case:
+    return 
+        decimatToBinary(Math.floor(input / 2)) 
+        + 
+        (input % 2);
+}
+
+4th time:
+else {
+    // recursive case:
+    return 
+        decimatToBinary(Math.floor(input / 2)) 
+        + 
+        (input % 2);
+}
 
 
 7.
