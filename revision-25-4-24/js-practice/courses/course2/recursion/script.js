@@ -171,6 +171,7 @@ const c = () => {
     return "awesome!";
 };
 
+// d bottom fxn is called:
 console.log(a()); // freeCodeCamp is awesome!
 
 const callStack = [
