@@ -319,7 +319,9 @@ setTimeout(() => {
 const showAnimation = () => {
     console.log("free");
 
-    setTimeout(() => {}, 1000);
-    console.log("Code");
+    setTimeout(() => {
+        console.log("Code");
+    }, 1000);
+
     console.log("Camp");
 };
