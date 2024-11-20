@@ -57,6 +57,7 @@ const checkUserInput = () => {
         return;
     }
 
+    // call decimatToBinary()
     decimatToBinary(parseInt(numberInput.value));
 
     numberInput.value = "";
@@ -97,14 +98,14 @@ const decimatToBinary = (input) => {
 const decimatToBinary = (input) => {
     let binary = "";
 
-        // base case:
 
-        // recursive case:
-
+    // base case:
     if (input === 0) {
         binary = "0";
     }
 
+
+    // recursive case:
     while (input > 0) {
         binary = (input % 2) + binary;
 
@@ -164,9 +165,7 @@ countdown(3);
 
 6.
 const decimatToBinary = (input) => {
-    
-    
-    // base case:
+    // base cases:
     if (input === 0) {
         return "0";
     } else if (input === 1) {
