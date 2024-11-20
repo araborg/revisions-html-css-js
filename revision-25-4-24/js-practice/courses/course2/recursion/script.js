@@ -69,12 +69,16 @@ const decimatToBinary = (input) => {
     const quotients = [];
     const reminders = [];
 
+    
+    
+    // base case:
     if (input === 0) {
         result.innerText = "0";
-
+        
         return;
     }
-
+            
+    // recursive case:
     while (input > 0) {
         const quotient = Math.floor(input / 2);
         const reminder = input % 2;
