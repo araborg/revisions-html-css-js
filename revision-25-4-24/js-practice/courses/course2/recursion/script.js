@@ -210,20 +210,6 @@ countdown(3);                       // 1st
 
 
 6.
-const decimatToBinary = (input) => {
-    // base cases:
-    if (input === 0) {
-        return "0";
-    } else if (input === 1) {
-        return "1";
-    } else {
-        // recursive case:
-        return decimatToBinary(Math.floor(input / 2)) + (input % 2);
-    }
-};
-
-
-7.
 const checkUserInput = () => {
     if (
         !numberInput.value ||
@@ -235,15 +221,23 @@ const checkUserInput = () => {
         return;
     }
 
-    if (parseInt(numberInput.value) === 5) {
-        showAnimation();
-
-        return;
-    }
-
     result.textContent = decimatToBinary(parseInt(numberInput.value));
 
     numberInput.value = "";
+};
+
+
+7.
+const decimatToBinary = (input) => {
+    // base cases:
+    if (input === 0) {
+        return "0";
+    } else if (input === 1) {
+        return "1";
+    } else {
+        // recursive case:
+        return decimatToBinary(Math.floor(input / 2)) + (input % 2);
+    }
 };
 
 
