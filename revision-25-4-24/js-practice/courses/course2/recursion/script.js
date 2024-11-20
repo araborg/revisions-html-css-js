@@ -299,7 +299,7 @@ else {
 }
 
 
-7.
+8.
 const decimatToBinary = (input) => {
     // base case:
     if (input === 0 || input === 1) {
@@ -310,4 +310,12 @@ const decimatToBinary = (input) => {
     }
 };
 
+
+9.
+
+
 */
+
+setTimeout(() => {
+    console.log("Hello, World");
+}, 3000);
