@@ -288,17 +288,6 @@ const decimatToBinary = (input) => {
 };
 
 
-
-4th time:
-else {
-    // recursive case:
-    return 
-        decimatToBinary(Math.floor(input / 2)) 
-        + 
-        (input % 2);
-}
-
-
 7.
 const decimatToBinary = (input) => {
     // base case:
