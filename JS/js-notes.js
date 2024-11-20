@@ -611,6 +611,17 @@ const countdown = (number) => {
     }
 };
 
+const decimatToBinary = (input) => {
+    if (input === 0 || input === 1) {
+        return String(input);
+    } else {
+        return 
+            decimatToBinary(Math.floor(input / 2)) <=========
+            + 
+            (input % 2);
+    }
+};
+
 
 2. keydown event listener:
 The keydown event fires every time a user presses a key on their 
