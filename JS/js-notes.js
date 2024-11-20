@@ -605,7 +605,7 @@ const countdown = (number) => {
         return;
     } else {
         // recursive case:
-        countdown(number - 1);
+        countdown(number - 1); <=========
 
         console.log(number);
     }
