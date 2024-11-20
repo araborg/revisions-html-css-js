@@ -57,7 +57,7 @@ const checkUserInput = () => {
         return;
     }
 
-    // call decimatToBinary()
+    // call decimatToBinary() with input value
     decimatToBinary(parseInt(numberInput.value));
 
     // return d input value to d default value: (an empty string)
@@ -78,16 +78,17 @@ const decimatToBinary = (input) => {
         return;
     }
             
-    // recursive case:
+    // recursive case: (assume input = 5)
     while (input > 0) {
         const quotient = Math.floor(input / 2);
+
         const reminder = input % 2;
 
         inputs.push(input); // [6, 3, 1]
         quotients.push(quotient); // [3, 1, 0]
         reminders.push(reminder); // [0, 1, 1]
 
-        // rate limiting step
+        // rate limiting step: ds changes input value from e.g 5 to 2 to 1
         input = quotient;
     }
 
