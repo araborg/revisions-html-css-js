@@ -48,11 +48,7 @@ const decimatToBinary = (input) => {
 //     }
 // };
 
-const showAnimation = () => {
-    console.log("free");
-    console.log("Code");
-    console.log("Camp");
-};
+// const showAnimation = () => {};
 
 // event listeners:
 convertBtn.addEventListener("click", checkUserInput);
@@ -311,7 +307,7 @@ const decimatToBinary = (input) => {
 };
 
 
-9.
+9. setTimeout
 
 
 */
@@ -319,3 +315,11 @@ const decimatToBinary = (input) => {
 setTimeout(() => {
     console.log("Hello, World");
 }, 3000);
+
+const showAnimation = () => {
+    console.log("free");
+
+    setTimeout(() => {}, 1000);
+    console.log("Code");
+    console.log("Camp");
+};
