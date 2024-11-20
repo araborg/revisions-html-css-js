@@ -173,17 +173,18 @@ const c = () => {
 
 // d bottom fxn is called: 
 ds mks d top and middle fxns to be called and removed from d stack
+b4 d bottom fxn:
 
 console.log(a()); // freeCodeCamp is awesome!
 
 const callStack = [
-    `a(): returns "freeCodeCamp " + b()`,
+    `a(): returns "freeCodeCamp " + b()`,   // 3rd
     // "freeCodeCamp is awesome!"
 
-    `b(): returns "is " + c()`,
+    `b(): returns "is " + c()`,             // 2nd
     // "is awesome!"
 
-    `c(): returns "awesome!"`,
+    `c(): returns "awesome!"`,              // 1st
     // "awesome!"
 ];
 
