@@ -110,7 +110,7 @@ const decimatToBinary = (input) => {
     }
 
 
-    // recursive case:
+    // recursive case: (assume input = 6)
     while (input > 0) {
         binary = (input % 2) + binary;
 
