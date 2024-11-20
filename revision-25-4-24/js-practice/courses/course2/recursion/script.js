@@ -191,7 +191,7 @@ const callStack = [
 
 5. recursion:
 const countdown = (number) => {
-    console.log(number);            // 2nd, 4th, 6th, 8th
+    console.log(number);            // 2nd(3), 4th(2), 6th(1), 8th(0)
 
     // base case:
     if (number === 0) {
@@ -200,7 +200,7 @@ const countdown = (number) => {
         return;
     } else {
         // recursive case:
-        countdown(number - 1);      // 3rd, 5th, 7th
+        countdown(number - 1);      // 3rd(2), 5th(1), 7th(0)
 
         console.log(number); // 10th, 11th, 12th
     }
