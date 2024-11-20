@@ -268,13 +268,14 @@ else {
         (input % 2); // 3 % 2 = 1
 }
 
-3rd time:
+3rd time: input = 1
 else {
     // recursive case:
     return 
+                                    1 / 2 = 0.5 wc bcoms 0
         decimatToBinary(Math.floor(input / 2)) 
         + 
-        (input % 2);
+        (input % 2); // 1 % 2 = 1
 }
 
 4th time:
