@@ -228,6 +228,7 @@ const checkUserInput = () => {
 
 
 7.
+assuming input = 6
 const decimatToBinary = (input) => {
     // base cases:
     if (input === 0) {
