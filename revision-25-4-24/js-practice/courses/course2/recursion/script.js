@@ -254,7 +254,7 @@ else {
                                     6 / 2 = 3
         decimatToBinary(Math.floor(input / 2)) 
         + 
-        (input % 2);
+        (input % 2); // 6 % 2 = 0
 }
 
 
