@@ -3,23 +3,21 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
 const checkUserInput = () => {
-    if (
-        !numberInput.value ||
-        isNaN(parseInt(numberInput.value)) ||
-        parseInt(numberInput.value) < 0
-    ) {
+    const inputInt = parseInt(numberInput.value);
+
+    if (!numberInput.value || isNaN(inputInt) || inputInt < 0) {
         alert("Please provide a decimal number greater than or equal to 0");
 
         return;
     }
 
-    if (parseInt(numberInput.value) === 5) {
+    if (inputInt === 5) {
         showAnimation();
 
         return;
     }
 
-    result.textContent = decimatToBinary(parseInt(numberInput.value));
+    result.textContent = decimatToBinary(inputInt);
 
     numberInput.value = "";
 };
@@ -309,20 +307,3 @@ const decimatToBinary = (input) => {
 };
 
 */
-const countdown = (number) => {
-    // console.log(number);
-
-    // base case:
-    if (number === 0 || number === 1) {
-        console.log("Reached base case");
-
-        return String(number);
-    } else {
-        // recursive case:
-        return countdown(Math.floor(number / 2)) + (number % 2);
-
-        // console.log(number);
-    }
-};
-
-console.log(countdown(3));
