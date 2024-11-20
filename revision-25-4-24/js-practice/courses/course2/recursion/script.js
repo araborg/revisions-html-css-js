@@ -195,14 +195,14 @@ const countdown = (number) => {
 
     // base case:
     if (number === 0) {
-        console.log("Reached base case"); // 9th
+        console.log("Reached base case"); // 9th(0)
 
         return;
     } else {
         // recursive case:
         countdown(number - 1);      // 3rd(2), 5th(1), 7th(0)
 
-        console.log(number); // 10th, 11th, 12th
+        console.log(number); // 10th(1), 11th(2), 12th(3)
     }
 };
 
