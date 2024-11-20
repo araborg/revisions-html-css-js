@@ -78,7 +78,7 @@ const decimatToBinary = (input) => {
         return;
     }
             
-    // recursive case: (assume input = 5)
+    // recursive case: (assume input = 6)
     while (input > 0) {
         const quotient = Math.floor(input / 2);
 
@@ -88,7 +88,7 @@ const decimatToBinary = (input) => {
         quotients.push(quotient); // [3, 1, 0]
         reminders.push(reminder); // [0, 1, 1]
 
-        // rate limiting step: ds changes input value from e.g 5 to 2 to 1
+        // rate limiting step: ds changes input value from e.g 6 to 3 to 1
         input = quotient;
     }
 
