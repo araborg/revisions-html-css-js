@@ -310,18 +310,18 @@ const decimatToBinary = (input) => {
 
 */
 const countdown = (number) => {
-    console.log(number);
+    // console.log(number);
 
     // base case:
-    if (number === 0) {
+    if (number === 0 || number === 1) {
         console.log("Reached base case");
 
-        return String("number");
+        return String(number);
     } else {
         // recursive case:
-        return countdown(number - 1) + (number % 2);
+        return countdown(Math.floor(number / 2)) + (number % 2);
 
-        console.log(number);
+        // console.log(number);
     }
 };
 
