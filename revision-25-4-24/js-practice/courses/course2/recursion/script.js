@@ -28,9 +28,9 @@ const decimatToBinary = (input) => {
     if (input === 0 || input === 1) {
         return String(input);
     } else {
-        // return decimatToBinary(Math.floor(input / 2)) + (input % 2);
+        // return (input % 2) + decimatToBinary(Math.floor(input / 2));
 
-        return (input % 2) + decimatToBinary(Math.floor(input / 2));
+        return decimatToBinary(Math.floor(input / 2)) + (input % 2);
     }
 };
 
