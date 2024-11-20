@@ -24,31 +24,31 @@ const checkUserInput = () => {
     numberInput.value = "";
 };
 
-// const decimatToBinary = (input) => {
-//     if (input === 0 || input === 1) {
-//         return String(input);
-//     } else {
-//         // return (input % 2) + decimatToBinary(Math.floor(input / 2));
-//         // const reminder = input % 2;
-//         // const actual = decimatToBinary(Math.floor(input / 2)) + reminder;
-//         // console.log(reminder, actual);
-//         // return actual;
-
-//         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
-//     }
-// };
-
 const decimatToBinary = (input) => {
-    // base cases:
-    if (input === 0) {
-        return "0";
-    } else if (input === 1) {
-        return "1";
+    if (input === 0 || input === 1) {
+        return String(input);
     } else {
-        // recursive case:
+        // return (input % 2) + decimatToBinary(Math.floor(input / 2));
+        // const reminder = input % 2;
+        // const actual = decimatToBinary(Math.floor(input / 2)) + reminder;
+        // console.log(reminder, actual);
+        // return actual;
+
         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
     }
 };
+
+// const decimatToBinary = (input) => {
+//     // base cases:
+//     if (input === 0) {
+//         return "0";
+//     } else if (input === 1) {
+//         return "1";
+//     } else {
+//         // recursive case:
+//         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
+//     }
+// };
 
 const showAnimation = () => {};
 
@@ -309,3 +309,18 @@ const decimatToBinary = (input) => {
 };
 
 */
+const countdown = (number) => {
+    console.log(number);
+
+    // base case:
+    if (number === 0) {
+        console.log("Reached base case");
+
+        return;
+    } else {
+        // recursive case:
+        countdown(number - 1);
+
+        console.log(number);
+    }
+};
