@@ -70,6 +70,7 @@ const decimatToBinary = (input) => {
     const inputs = [];
     const quotients = [];
     const reminders = [];
+
     
     // base case:
     if (input === 0) {
@@ -77,6 +78,7 @@ const decimatToBinary = (input) => {
         
         return;
     }
+
             
     // recursive case: (assume input = 6)
     while (input > 0) {
@@ -91,6 +93,7 @@ const decimatToBinary = (input) => {
         // rate limiting step: ds changes input value from e.g 6 to 3 to 1
         input = quotient;
     }
+        
 
     result.innerText = reminders.reverse().join("");
 };
