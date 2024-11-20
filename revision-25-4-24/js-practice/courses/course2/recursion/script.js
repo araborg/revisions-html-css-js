@@ -60,7 +60,7 @@ const checkUserInput = () => {
     // call decimatToBinary()
     decimatToBinary(parseInt(numberInput.value));
 
-    // return d input value to d default value (an empty string)
+    // return d input value to d default value: (an empty string)
     numberInput.value = "";
 };
 
