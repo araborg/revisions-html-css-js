@@ -156,14 +156,17 @@ const decimatToBinary = (input) => {
 
 
 4. call stack
+// bottom:
 const a = () => {
     return "freeCodeCamp " + b();
 };
 
+// middle:
 const b = () => {
     return "is " + c();
 };
 
+// top:
 const c = () => {
     return "awesome!";
 };
