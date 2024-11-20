@@ -142,7 +142,7 @@ const decimatToBinary = (input) => {
 
     3rd time: input = 1
     while (input > 0) {
-              //  1 % 2 = 1 + "10" i.e binary = "110"
+              //  1 % 2 = 1  + "10" i.e binary = "110" i.e 1 + "10"
         binary = (input % 2) + binary;
 
         // input = 0
