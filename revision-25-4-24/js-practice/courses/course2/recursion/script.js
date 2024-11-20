@@ -149,7 +149,7 @@ const decimatToBinary = (input) => {
 
     4th time: input = 0
     while (input > 0) { 0 is not greater than 0
-             
+        // d condition is false
     }
 
 
