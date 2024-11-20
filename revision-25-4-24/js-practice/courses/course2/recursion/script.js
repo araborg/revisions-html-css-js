@@ -191,22 +191,22 @@ const callStack = [
 
 5. recursion:
 const countdown = (number) => {
-    console.log(number);
+    console.log(number);            // 2nd, 4th, 6th, 8th
 
     // base case:
     if (number === 0) {
-        console.log("Reached base case");
+        console.log("Reached base case"); // 9th
 
         return;
     } else {
         // recursive case:
-        countdown(number - 1);
+        countdown(number - 1);      // 3rd, 5th, 7th
 
-        console.log(number);
+        console.log(number); // 10th, 11th, 12th
     }
 };
 
-countdown(3);
+countdown(3);                       // 1st
 
 
 6.
