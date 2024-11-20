@@ -316,11 +316,13 @@ const countdown = (number) => {
     if (number === 0) {
         console.log("Reached base case");
 
-        return;
+        return String("number");
     } else {
         // recursive case:
-        countdown(number - 1) + (number % 2);
+        return countdown(number - 1) + (number % 2);
 
         console.log(number);
     }
 };
+
+console.log(countdown(3));
