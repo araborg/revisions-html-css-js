@@ -247,7 +247,7 @@ const decimatToBinary = (input) => {
 };
 
 
-1st time:
+1st time: input = 6
 else {
     // recursive case:
     return 
@@ -258,13 +258,14 @@ else {
 }
 
 
-2nd time:
+2nd time: input = 3
 else {
     // recursive case:
     return 
+                                    3 / 2 = 1.5 wc bcoms 1
         decimatToBinary(Math.floor(input / 2)) 
         + 
-        (input % 2);
+        (input % 2); // 3 % 2 = 1
 }
 
 3rd time:
