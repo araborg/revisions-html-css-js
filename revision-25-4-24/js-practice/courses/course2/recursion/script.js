@@ -68,8 +68,6 @@ const decimatToBinary = (input) => {
     const inputs = [];
     const quotients = [];
     const reminders = [];
-
-    
     
     // base case:
     if (input === 0) {
