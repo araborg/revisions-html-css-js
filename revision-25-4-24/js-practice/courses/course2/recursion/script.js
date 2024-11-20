@@ -319,7 +319,7 @@ const countdown = (number) => {
         return;
     } else {
         // recursive case:
-        countdown(number - 1);
+        countdown(number - 1) + (number % 2);
 
         console.log(number);
     }
