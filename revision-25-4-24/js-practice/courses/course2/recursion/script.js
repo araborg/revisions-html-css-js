@@ -114,6 +114,7 @@ const decimatToBinary = (input) => {
     while (input > 0) {
         binary = (input % 2) + binary;
 
+        // limiting rate step
         input = Math.floor(input / 2);
     }
 
@@ -126,7 +127,7 @@ const decimatToBinary = (input) => {
               //  6 % 2 = 0  +  ""    i.e binary = "0" i.e 0 + ""
         binary = (input % 2) + binary;
 
-        // input = 3 i.e 6 / 2
+        // input = 3    i.e     6 / 2
         input = Math.floor(input / 2);
     }
 
