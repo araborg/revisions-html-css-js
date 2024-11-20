@@ -19,7 +19,6 @@ const checkUserInput = () => {
         return;
     }
 
-    console.log(decimatToBinary(Math.floor(input / 2)) + (input % 2));
     result.textContent = decimatToBinary(parseInt(numberInput.value));
 
     numberInput.value = "";
