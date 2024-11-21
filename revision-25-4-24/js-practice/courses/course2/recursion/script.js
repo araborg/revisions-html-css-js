@@ -84,6 +84,10 @@ const showAnimation = () => {
         setTimeout(() => {
             document.getElementById(obj.inputVal).remove();
         }, obj.removeElDelay);
+
+        setTimeout(() => {
+            result.textContent = decimatToBinary(5);
+        }, 20000);
     });
 
     console.log(animationData);
