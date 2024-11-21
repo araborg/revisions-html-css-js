@@ -66,6 +66,7 @@ const decimatToBinary = (input) => {
         // console.log(reminder, actual);
         // return actual;
 
+        // ds: (input / 2) is diff 4rm ds: (input % 2)
         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
     }
 };
