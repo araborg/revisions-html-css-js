@@ -119,9 +119,6 @@ h2 {
 }
 
 #animation-container {
-    /* margin: auto;
-    max-width: 300px; */
-
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
