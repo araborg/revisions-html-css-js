@@ -923,8 +923,12 @@ https://dev.to/codeguppy/practice-recursion-in-javascript-with-these-8-coding-ch
 https://www.freecodecamp.org/news/recursion-in-javascript-1608032c7a1f/
 
 
-21.
-
+21. LIFO
+Recall that the call stack is a LIFO (last in, first out) 
+data structure. This means that, as functions are CALLED, 
+they are added to the top or end of the stack, and as 
+functions RETURN, they are removed from the top of the 
+stack.
 
 22.
 
