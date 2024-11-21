@@ -83,6 +83,11 @@ const showAnimation = () => {
                 >
                     decimalToBinary(${obj.inputVal})
                 </p>
+
+                <input
+                    type="number"
+                    value="2"
+                />
             `;
         }, obj.addElDelay);
 
