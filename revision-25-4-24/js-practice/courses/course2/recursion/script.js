@@ -36,19 +36,7 @@ const decimatToBinary = (input) => {
     }
 };
 
-// const decimatToBinary = (input) => {
-//     // base cases:
-//     if (input === 0) {
-//         return "0";
-//     } else if (input === 1) {
-//         return "1";
-//     } else {
-//         // recursive case:
-//         return decimatToBinary(Math.floor(input / 2)) + (input % 2);
-//     }
-// };
-
-// const showAnimation = () => {};
+const showAnimation = () => {};
 
 // event listeners:
 convertBtn.addEventListener("click", checkUserInput);
