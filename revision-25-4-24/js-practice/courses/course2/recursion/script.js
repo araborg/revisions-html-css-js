@@ -43,7 +43,9 @@ const showAnimation = () => {
 
     animationData.forEach((obj) => {
         setTimeout(() => {
-            animationContainer += ``;
+            animationContainer += `
+                <p id=""></p>
+            `;
         }, obj.addElDelay);
     });
 };
