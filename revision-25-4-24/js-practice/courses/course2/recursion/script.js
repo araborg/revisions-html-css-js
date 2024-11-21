@@ -7,12 +7,13 @@ const animationContainer = document.getElementById("animation-container");
 const animationData = [
     {
         inputVal: 5,
-        addElDelay: 1000,
+        addElDelay: 1000, // increases upward
 
         // d values r added from d right i.e '10' + 1
         msg: 'decimalToBinary(5) returns "10" + 1 (5 % 2). Then it pops off the stack.',
-        showMsgDelay: 15000,
-        removeElDelay: 20000,
+
+        showMsgDelay: 15000, // decreases upward
+        removeElDelay: 20000, // decreases upward
     },
 
     {
