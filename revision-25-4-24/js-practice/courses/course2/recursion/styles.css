@@ -139,7 +139,11 @@ h2 {
 
     margin-block-end: 1rem;
 
+    min-height: 40vh;
+
     border: 2px dashed var(--orange);
+
+    padding: 1rem;
 }
 
 .animation-frame {
