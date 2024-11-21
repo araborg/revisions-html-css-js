@@ -173,7 +173,7 @@ h2 {
         width: unset;
     }
 
-    #result {
-        max-width: 460px;
+    .number-input {
+        width: unset;
     }
 }
