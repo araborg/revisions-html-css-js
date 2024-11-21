@@ -98,20 +98,33 @@ h2 {
 }
 
 #result {
-    margin: 10px 0;
+    /* margin: 10px 0;
 
     min-width: 200px;
     width: fit-content;
 
-    min-height: 80px;
-
     word-break: break-word;
 
-    padding: 15px;
-    border: 5px solid var(--orange);
+    
+    font-size: 2rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     font-size: 2rem;
+
     text-align: center;
+
+    min-height: 80px;
+
+    margin-block-start: 20px;
+
+    padding: 15px;
+
+    border: 2px solid var(--orange);
+
+    border-radius: 2px;
 }
 
 #animation-container {
