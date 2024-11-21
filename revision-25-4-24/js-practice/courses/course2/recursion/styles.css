@@ -63,6 +63,12 @@ h2 {
     word-spacing: -6px;
 }
 
+.animation-container p {
+    white-space: nowrap;
+
+    border: 2px solid green;
+}
+
 .convert-btn {
     font-size: inherit;
     font-family: inherit;
