@@ -59,6 +59,12 @@ h2 {
     /* border: 2px solid green; */
 }
 
+.input-container label {
+    white-space: nowrap;
+
+    word-spacing: -6px;
+}
+
 .convert-btn {
     background-color: var(--orange);
     border: none;
