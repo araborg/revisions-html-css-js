@@ -38,7 +38,9 @@ const decimatToBinary = (input) => {
     }
 };
 
-const showAnimation = () => {};
+const showAnimation = () => {
+    result.innerText = "Call Stack Animation";
+};
 
 const animationData = [
     {
