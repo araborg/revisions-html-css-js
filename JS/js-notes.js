@@ -910,6 +910,10 @@ setTimeout(() => {
     console.log("Hello, world!");
 }, 3000);
 
+setTimeout() function is asynchronous, 
+meaning that it doesn't stop the execution of the rest of 
+your code.
+
 
 20. Recursion challenges:
 https://www.w3resource.com/javascript-exercises/javascript-recursion-functions-exercises.php#google_vignette
