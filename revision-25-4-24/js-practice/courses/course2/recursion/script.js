@@ -89,8 +89,6 @@ const showAnimation = () => {
             result.textContent = decimatToBinary(5);
         }, 20000);
     });
-
-    console.log(animationData);
 };
 
 // event listeners:
