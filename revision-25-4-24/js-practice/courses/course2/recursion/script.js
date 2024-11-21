@@ -22,7 +22,7 @@ const animationData = [
     {
         inputVal: 1,
         addElDelay: 2000,
-        msg: "decimalToBinary(1) returns '1' (5 % 2) (base case) and gives that value to the stack below. Then it pops off the stack.",
+        msg: "decimalToBinary(1) returns '1' (1 % 2) (base case) and gives that value to the stack below. Then it pops off the stack.",
         showMsgDelay: 5000,
         removeElDelay: 10000,
     },
@@ -76,6 +76,8 @@ const showAnimation = () => {
                 </p>
             `;
         }, obj.addElDelay);
+
+        setTimeout(() => {}, obj.showMsgDelay);
     });
 
     console.log(animationData);
