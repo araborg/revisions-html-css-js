@@ -44,7 +44,9 @@ const showAnimation = () => {
     animationData.forEach((obj) => {
         setTimeout(() => {
             animationContainer += `
-                <p id="${obj.inputVal}"></p>
+                <p id="${obj.inputVal}" class="animation-frame">
+                
+                </p>
             `;
         }, obj.addElDelay);
     });
