@@ -4,6 +4,26 @@ const result = document.getElementById("result");
 
 const animationContainer = document.getElementById("animation-container");
 
+const animationData = [
+    {
+        inputVal: 5,
+        marginTop: 300,
+        addElDelay: 1000,
+    },
+
+    {
+        inputVal: 2,
+        marginTop: -200,
+        addElDelay: 1500,
+    },
+
+    {
+        inputVal: 1,
+        marginTop: -200,
+        addElDelay: 2000,
+    },
+];
+
 const checkUserInput = () => {
     const inputInt = parseInt(numberInput.value);
 
@@ -43,37 +63,19 @@ const showAnimation = () => {
 
     animationData.forEach((obj) => {
         setTimeout(() => {
-            animationContainer += `
+            animationContainer.innerHTML += `
                 <p 
                     id="${obj.inputVal}" 
                     class="animation-frame"
                 >
-                
+                    decimalToBinary(${obj.inputVal})
                 </p>
             `;
         }, obj.addElDelay);
     });
+
+    console.log(animationData);
 };
-
-const animationData = [
-    {
-        inputVal: 5,
-        marginTop: 300,
-        addElDelay: 1000,
-    },
-
-    {
-        inputVal: 2,
-        marginTop: -200,
-        addElDelay: 1500,
-    },
-
-    {
-        inputVal: 1,
-        marginTop: -200,
-        addElDelay: 2000,
-    },
-];
 
 // event listeners:
 convertBtn.addEventListener("click", checkUserInput);
