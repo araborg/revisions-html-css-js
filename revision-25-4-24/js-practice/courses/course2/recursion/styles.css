@@ -147,7 +147,11 @@ h2 {
 }
 
 .animation-frame {
-    margin: 250px auto 0;
+    /* margin: 250px auto 0; */
+
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+        arial, sans-serif;
 
     padding: 15px 10px;
 
@@ -159,8 +163,14 @@ h2 {
 }
 
 @media screen and (min-width: 500px) {
+    body {
+        font-size: 1rem;
+    }
+
     .input-container {
         flex-direction: row;
+
+        width: unset;
     }
 
     #result {
