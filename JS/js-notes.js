@@ -911,7 +911,12 @@ setTimeout(() => {
 }, 3000);
 
 
-20.
+20. Recursion challenges:
+https://www.w3resource.com/javascript-exercises/javascript-recursion-functions-exercises.php#google_vignette
+
+https://dev.to/codeguppy/practice-recursion-in-javascript-with-these-8-coding-challenges-for-beginners-25bm
+
+https://www.freecodecamp.org/news/recursion-in-javascript-1608032c7a1f/
 
 
 21.
