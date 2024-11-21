@@ -93,23 +93,12 @@ h2 {
 }
 
 .output-container {
-    /* margin-inline: auto; */
-    /* margin: auto; */
+    margin-inline: auto;
 
     width: clamp(320px, 50vw, 460px);
 }
 
 #result {
-    /* margin: 10px 0;
-
-    min-width: 200px;
-    width: fit-content;
-
-    word-break: break-word;
-
-    
-    font-size: 2rem; */
-
     display: flex;
     align-items: center;
     justify-content: center;
