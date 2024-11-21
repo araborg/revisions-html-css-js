@@ -12,6 +12,7 @@ const animationData = [
         showMsgDelay: 15000,
         removeElDelay: 20000,
     },
+
     {
         inputVal: 2,
         addElDelay: 1500,
@@ -19,6 +20,7 @@ const animationData = [
         showMsgDelay: 10000,
         removeElDelay: 15000,
     },
+
     {
         inputVal: 1,
         addElDelay: 2000,
