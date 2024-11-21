@@ -17,7 +17,8 @@ body {
     background-color: var(--dark-blue);
     color: var(--light-grey);
 
-    font-size: "Times New Roman", Times, serif;
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+        monospace;
 
     font-size: 18px;
     padding: 0 15px;
