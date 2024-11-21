@@ -50,6 +50,12 @@ const animationData = [
         marginTop: -200,
         addElDelay: 1500,
     },
+
+    {
+        inputVal: 1,
+        marginTop: -200,
+        addElDelay: 2000,
+    },
 ];
 
 // event listeners:
