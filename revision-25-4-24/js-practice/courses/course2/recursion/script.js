@@ -318,7 +318,9 @@ setTimeout(() => {
 */
 
 const showAnimation = () => {
-    console.log("free");
+    setTimeout(() => {
+        console.log("free");
+    }, 500);
 
     setTimeout(() => {
         console.log("Code");
