@@ -130,6 +130,16 @@ h2 {
 #animation-container {
     margin: auto;
     max-width: 300px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+
+    gap: 1rem;
+
+    margin-block-end: 1rem;
+
+    border: 2px dashed var(--orange);
 }
 
 .animation-frame {
