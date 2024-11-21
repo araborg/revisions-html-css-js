@@ -314,9 +314,6 @@ setTimeout(() => {
     console.log("Hello, World");
 }, 3000);
 
-
-*/
-
 const showAnimation = () => {
     setTimeout(() => {
         console.log("free");
@@ -330,3 +327,5 @@ const showAnimation = () => {
         console.log("Camp");
     }, 1500);
 };
+
+*/
