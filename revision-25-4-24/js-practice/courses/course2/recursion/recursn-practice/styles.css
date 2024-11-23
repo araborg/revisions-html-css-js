@@ -135,4 +135,6 @@ h2 {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
         segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
         arial, sans-serif;
+
+    padding: 0.9375em 0.625em;
 }
