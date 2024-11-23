@@ -115,3 +115,7 @@ h2 {
 
     border-radius: 2px;
 }
+
+#animation-container {
+    border: 2px dashed var(--orange);
+}
