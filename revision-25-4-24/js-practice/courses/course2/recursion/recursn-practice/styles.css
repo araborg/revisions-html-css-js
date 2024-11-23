@@ -53,8 +53,6 @@ h2 {
 
     width: clamp(320px, 50vw, 460px);
     margin: 0.625em auto;
-
-    border: 2px solid green;
 }
 
 .input-container label {
@@ -93,8 +91,6 @@ h2 {
 }
 
 .output-container {
-    border: 2px solid red;
-
     width: clamp(320px, 50vw, 460px);
 
     margin-inline: auto;
