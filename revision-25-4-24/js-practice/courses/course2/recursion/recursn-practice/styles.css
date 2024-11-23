@@ -36,6 +36,14 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.5rem;
+
+    margin: 1.25em 0;
+
+    text-align: center;
+}
+
 .input-container {
     border: 2px solid green;
 }
