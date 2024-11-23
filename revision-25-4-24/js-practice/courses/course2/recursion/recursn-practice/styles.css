@@ -63,6 +63,10 @@ h2 {
     word-spacing: -6px;
 }
 
+.convert-btn {
+    font-size: inherit;
+}
+
 .output-container {
     border: 2px solid red;
 }
