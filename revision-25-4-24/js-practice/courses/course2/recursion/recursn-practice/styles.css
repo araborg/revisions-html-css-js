@@ -137,4 +137,10 @@ h2 {
         arial, sans-serif;
 
     padding: 0.9375em 0.625em;
+
+    border: 5px solid var(--orange);
+
+    font-size: 1.2rem;
+
+    text-align: center;
 }
