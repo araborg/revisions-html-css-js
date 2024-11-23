@@ -46,6 +46,9 @@ h2 {
 
 .input-container {
     border: 2px solid green;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .output-container {
