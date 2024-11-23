@@ -58,6 +58,8 @@ h2 {
 }
 
 .input-container label {
+    /* white-space: nowrap; */
+
     word-spacing: -6px;
 }
 
