@@ -127,4 +127,12 @@ h2 {
     margin-block-end: 1rem;
 
     border: 2px dashed var(--orange);
+
+    padding: 1rem;
+}
+
+.animation-frame {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+        arial, sans-serif;
 }
