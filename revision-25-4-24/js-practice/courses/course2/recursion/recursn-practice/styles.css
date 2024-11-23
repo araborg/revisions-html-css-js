@@ -117,6 +117,8 @@ h2 {
 }
 
 #animation-container {
+    min-height: 40vh;
+
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
@@ -124,6 +126,5 @@ h2 {
 
     margin-block-end: 1rem;
 
-    height: 400px;
     border: 2px dashed var(--orange);
 }
