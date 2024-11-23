@@ -108,4 +108,6 @@ h2 {
     font-size: 2rem;
 
     min-height: 2.5em;
+
+    margin-block-start: 20px;
 }
