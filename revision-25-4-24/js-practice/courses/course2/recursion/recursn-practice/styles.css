@@ -57,6 +57,10 @@ h2 {
     margin: 0.625em auto;
 }
 
+.input-container label {
+    word-spacing: -6px;
+}
+
 .output-container {
     border: 2px solid red;
 }
