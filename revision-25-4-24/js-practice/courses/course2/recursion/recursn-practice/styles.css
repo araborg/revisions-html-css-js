@@ -99,8 +99,6 @@ h2 {
 }
 
 #result {
-    border: 2px solid green;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,5 +109,9 @@ h2 {
 
     margin-block-start: 20px;
 
-    padding: 0.4688em;
+    padding: 0.46875em;
+
+    border: 2px solid var(--orange);
+
+    border-radius: 2px;
 }
