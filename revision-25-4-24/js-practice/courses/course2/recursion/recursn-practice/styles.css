@@ -45,8 +45,6 @@ h2 {
 }
 
 .input-container {
-    border: 2px solid green;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,4 +96,14 @@ h2 {
     width: clamp(320px, 50vw, 460px);
 
     margin-inline: auto;
+}
+
+#result {
+    border: 2px solid green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
 }
