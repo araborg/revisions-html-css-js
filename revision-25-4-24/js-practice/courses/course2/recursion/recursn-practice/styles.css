@@ -29,6 +29,13 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-size: 2.125rem;
+
+    margin: 1.25em 0;
+    text-align: center;
+}
+
 .input-container {
     border: 2px solid green;
 }
