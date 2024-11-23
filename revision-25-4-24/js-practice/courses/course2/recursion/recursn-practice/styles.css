@@ -58,7 +58,7 @@ h2 {
 }
 
 .input-container label {
-    /* white-space: nowrap; */
+    white-space: nowrap;
 
     word-spacing: -6px;
 }
@@ -154,5 +154,7 @@ h2 {
 
     .input-container {
         flex-direction: row;
+
+        width: unset;
     }
 }
