@@ -13,7 +13,14 @@
     --orange: #f1be32;
 }
 
+body {
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+}
+
 /* 
+
+    width: clamp(320px, 50vw, 460px);
 
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
         monospace;
