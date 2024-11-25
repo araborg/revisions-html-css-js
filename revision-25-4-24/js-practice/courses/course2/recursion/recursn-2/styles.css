@@ -45,6 +45,8 @@ h1 {
     align-items: center;
 
     gap: 0.5em;
+
+    margin-block-end: 2em;
 }
 
 .input-container label {
@@ -73,11 +75,6 @@ h1 {
         arial, sans-serif;
 }
 
-/* 
-
-
- 
-
-
-
-*/
+.binary-number {
+    border: 2px solid var(--orange);
+}
