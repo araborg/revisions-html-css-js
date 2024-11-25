@@ -75,6 +75,18 @@ h1 {
         arial, sans-serif;
 }
 
-.binary-number {
+.output-container {
+    width: clamp(320px, 50vw, 460px);
+}
+
+output {
     border: 2px solid var(--orange);
+
+    /* width: 100%; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em;
 }
