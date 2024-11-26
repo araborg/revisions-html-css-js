@@ -14,16 +14,18 @@
 }
 
 body {
-    background-color: var(--dark-blue);
-    color: var(--light-grey);
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
         monospace;
 
-    justify-content: center;
+    font-size: 1.125rem;
+
+    color: var(--light-grey);
+    background-color: var(--dark-blue);
 }
 
 h1 {
