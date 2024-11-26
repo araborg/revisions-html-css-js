@@ -107,7 +107,7 @@ output {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 
     gap: 1em;
 
@@ -117,7 +117,7 @@ output {
 #animation-stack p {
     width: 100%;
 
-    padding: 0.5em;
+    padding: 0.65em;
 
     display: flex;
     justify-content: center;
