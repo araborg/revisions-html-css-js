@@ -129,13 +129,10 @@ output {
         segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
         arial, sans-serif;
 
-    /* width: 100%; */
-
     padding: 0.65em;
 
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-
     border: 5px solid var(--orange);
+
+    font-size: 1.2rem;
+    text-align: center;
 }
