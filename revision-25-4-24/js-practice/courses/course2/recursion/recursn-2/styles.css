@@ -147,4 +147,8 @@ output {
         flex-direction: row;
         width: unset;
     }
+
+    #number-input {
+        width: unset;
+    }
 }
