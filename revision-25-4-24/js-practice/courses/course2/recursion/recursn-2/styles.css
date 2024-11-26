@@ -111,16 +111,17 @@ output {
 #animation-stack {
     border: 2px dashed var(--orange);
 
-    width: 100%;
-    padding: 0.8em;
-
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
 
     gap: 1em;
 
-    height: 40vh;
+    margin-block-end: 1em;
+
+    min-height: 40vh;
+
+    padding: 1em;
 }
 
 #animation-stack p {
