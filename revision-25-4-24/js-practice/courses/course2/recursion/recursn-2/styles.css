@@ -46,12 +46,12 @@ h2 {
 .input-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 0.5em;
+    justify-content: center;
+    /* align-items: center; */
 
     width: clamp(320px, 50vw, 460px);
-    margin-block-end: 2em;
+    /* margin-block-end: 2em;/////// */
 }
 
 .input-container label {
@@ -87,7 +87,7 @@ h2 {
 .output-container {
     width: clamp(320px, 50vw, 460px);
 
-    margin-inline: auto;
+    /* margin-inline: auto; */
 }
 
 output {
