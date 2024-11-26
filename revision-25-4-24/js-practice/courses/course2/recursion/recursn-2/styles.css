@@ -101,11 +101,11 @@ output {
 
     margin-block-start: 20px;
 
+    padding: 0.5em;
+
     border: 2px solid var(--orange);
 
     border-radius: 2px;
-
-    padding: 0.5em;
 }
 
 #animation-stack {
@@ -116,7 +116,6 @@ output {
 
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     justify-content: end;
 
     gap: 1em;
