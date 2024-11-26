@@ -125,13 +125,17 @@ output {
 }
 
 #animation-stack p {
-    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+        arial, sans-serif;
+
+    /* width: 100%; */
 
     padding: 0.65em;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 
-    border: 2px solid var(--orange);
+    border: 5px solid var(--orange);
 }
