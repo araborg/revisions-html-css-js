@@ -145,5 +145,6 @@ output {
 
     .input-container {
         flex-direction: row;
+        width: unset;
     }
 }
