@@ -109,7 +109,7 @@ output {
 
     display: flex;
     flex-direction: column-reverse;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
 
     gap: 1em;
@@ -124,6 +124,7 @@ output {
     /* margin-bottom: 0.5em; */
 
     padding: 0.5em;
+    text-align: center;
 
     border: 2px solid var(--orange);
 }
