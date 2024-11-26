@@ -42,8 +42,6 @@ h2 {
 .input-container {
     width: clamp(320px, 50vw, 460px);
 
-    border: 2px solid white;
-
     display: flex;
     flex-direction: column;
     align-items: center;
