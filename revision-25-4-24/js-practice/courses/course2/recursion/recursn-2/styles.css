@@ -86,22 +86,27 @@ h2 {
 .output-container {
     width: clamp(320px, 50vw, 460px);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column;
+    margin-inline: auto;
 }
 
 output {
-    border: 2px solid var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
 
-    width: 100%;
+    font-size: 2rem;
     text-align: center;
 
-    padding: 0.5em;
+    min-height: 80px;
 
-    font-size: 2em;
+    margin-block-start: 20px;
+
+    border: 2px solid var(--orange);
+
+    /* width: 100%; */
+
+    padding: 0.5em;
 }
 
 #animation-stack {
