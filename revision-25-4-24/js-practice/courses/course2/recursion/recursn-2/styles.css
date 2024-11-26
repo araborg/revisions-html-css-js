@@ -117,12 +117,8 @@ output {
 
 #animation-stack p {
     width: 100%;
-    /* align-self: center; */
-
-    /* margin-bottom: 0.5em; */
 
     padding: 0.5em;
-    /* text-align: center; */
 
     display: flex;
     justify-content: center;
