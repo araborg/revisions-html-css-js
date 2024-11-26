@@ -26,6 +26,8 @@ body {
 
     color: var(--light-grey);
     background-color: var(--dark-blue);
+
+    border: 2px solid var(--light-grey);
 }
 
 h1 {
@@ -61,7 +63,7 @@ h2 {
     word-spacing: -6px;
 }
 
-#number-input {
+.number-input {
     font-size: inherit;
 
     width: 100%;
@@ -89,7 +91,7 @@ h2 {
 .output-container {
     width: clamp(320px, 50vw, 460px);
 
-    /* margin-inline: auto; */
+    margin-inline: auto;
 }
 
 output {
