@@ -122,7 +122,6 @@ h2 {
     display: flex;
     flex-direction: column-reverse;
     justify-content: end;
-    /* align-items: center; */
 
     gap: 1em;
 
@@ -132,8 +131,6 @@ h2 {
 .animation-stack .stack {
     border: 5px solid var(--orange);
     padding: 0.5em;
-
-    /* margin-block-end: 1em; */
 }
 
 @media screen and (min-width: 36em) {
