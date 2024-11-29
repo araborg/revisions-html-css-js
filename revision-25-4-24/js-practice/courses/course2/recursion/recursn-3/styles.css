@@ -129,4 +129,17 @@ h2 {
 
 .animation-stack {
     border: 2px dashed var(--orange);
+
+    padding: 0.4em;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    justify-content: end;
+}
+
+.animation-stack .stack {
+    border: 5px solid var(--orange);
+
+    margin-block-end: 1em;
 }
