@@ -29,7 +29,7 @@ body {
 
     margin: 1em;
 
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
         monospace;
@@ -56,6 +56,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    gap: 0.5em;
     /* align-items: center; */
 
     text-align: center;
@@ -65,7 +67,7 @@ h1 {
 
     width: clamp(320px, 50vw, 420px);
 
-    margin-block-end: 1em;
+    /* margin-block-start: 1em; */
 }
 
 .input-container label {
