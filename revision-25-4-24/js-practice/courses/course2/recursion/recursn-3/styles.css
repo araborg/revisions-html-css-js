@@ -100,7 +100,7 @@ h1 {
 }
 
 .output-container {
-    width: clamp(320px, 50vw, 420px);
+    /* width: clamp(320px, 50vw, 420px); */
     margin-inline: auto;
 
     border: 2px solid red;
@@ -109,4 +109,8 @@ h1 {
 }
 
 .output-number {
+}
+
+.animation-stack {
+    border: 2px dashed var(--orange);
 }
