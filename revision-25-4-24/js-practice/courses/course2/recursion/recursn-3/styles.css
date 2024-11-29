@@ -2,10 +2,6 @@
 
 
 
-        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
-        monospace;
-
-
 
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
         segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
@@ -34,6 +30,9 @@ body {
     margin: 1em;
 
     font-size: 1.25rem;
+
+    font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
+        monospace;
 }
 
 .container {
@@ -74,6 +73,8 @@ h1 {
 
 .number-input {
     height: 2rem;
+
+    font-size: inherit;
 }
 
 .convert-btn {
