@@ -82,9 +82,15 @@ h1 {
 }
 
 .convert-btn {
-    height: 2rem;
+    height: 2em;
 
     background-color: var(--orange);
 
     font-size: inherit;
+    font-family: inherit;
+    /*  */
+    padding: 0 0.4em;
+
+    outline: none;
+    border: none;
 }
