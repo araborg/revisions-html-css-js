@@ -63,11 +63,11 @@ h1 {
     text-align: center;
     width: 100%;
 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
 
     width: clamp(320px, 50vw, 420px);
 
-    /* margin-block-start: 1em; */
+    margin-block-end: 1em;
 }
 
 .input-container label {
@@ -82,4 +82,8 @@ h1 {
 
 .convert-btn {
     height: 2rem;
+
+    background-color: var(--orange);
+
+    font-size: inherit;
 }
