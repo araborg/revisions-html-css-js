@@ -120,6 +120,10 @@ h2 {
 }
 
 .animation-stack {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto,
+        arial, sans-serif;
+
     border: 2px dashed var(--orange);
 
     padding: 0.8em;
