@@ -141,8 +141,6 @@ h2 {
 .animation-stack .stack {
     border: 5px solid var(--orange);
     padding: 0.5em;
-    font-size: inherit;
-    font-family: inherit;
 
     /* margin-block-end: 1em; */
 }
