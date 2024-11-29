@@ -132,7 +132,7 @@ h2 {
 .animation-stack {
     border: 2px dashed var(--orange);
 
-    padding: 0.5em;
+    padding: 0.8em;
 
     display: flex;
     flex-direction: column-reverse;
@@ -146,7 +146,7 @@ h2 {
 
 .animation-stack .stack {
     border: 5px solid var(--orange);
-    padding: 0.8em;
+    padding: 0.6em;
     font-size: inherit;
     font-family: inherit;
 
