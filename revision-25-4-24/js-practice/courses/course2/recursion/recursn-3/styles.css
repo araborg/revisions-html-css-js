@@ -128,7 +128,7 @@ h2 {
 .animation-stack {
     border: 2px dashed var(--orange);
 
-    padding: 0.4em;
+    padding: 0.5em;
 
     display: flex;
     flex-direction: column-reverse;
