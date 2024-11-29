@@ -30,8 +30,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* height: 100vh; */
 }
 
 h1 {
@@ -55,12 +53,9 @@ h2 {
     align-items: center;
 
     gap: 0.5em;
-    /* align-items: center; */
 
     text-align: center;
     width: 100%;
-
-    /* border: 2px solid yellow; */
 
     width: clamp(320px, 50vw, 420px);
 
