@@ -63,7 +63,6 @@ h2 {
 }
 
 .input-container label {
-    /* margin-bottom: 0.5em; */
     word-break: nowrap;
 }
 
@@ -85,7 +84,6 @@ h2 {
 
     font-size: inherit;
     font-family: inherit;
-    /*  */
     padding: 0 0.4em;
 
     outline: none;
@@ -95,8 +93,6 @@ h2 {
 }
 
 .output-container {
-    /* border: 2px solid red; */
-
     width: clamp(320px, 50vw, 420px);
     margin-inline: auto;
 
