@@ -75,10 +75,14 @@ h1 {
 }
 
 .number-input {
-    height: 2rem;
+    height: 2em;
+
+    padding: 0.4em;
 
     font-size: inherit;
     font-family: inherit;
+
+    outline: none;
 }
 
 .convert-btn {
