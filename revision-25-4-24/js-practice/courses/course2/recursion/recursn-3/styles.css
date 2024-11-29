@@ -50,3 +50,8 @@ h1 {
 
     font-size: 2.25rem;
 }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
