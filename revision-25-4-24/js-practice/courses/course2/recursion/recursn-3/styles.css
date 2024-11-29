@@ -160,5 +160,6 @@ h2 {
     }
 
     .number-input {
+        width: unset;
     }
 }
