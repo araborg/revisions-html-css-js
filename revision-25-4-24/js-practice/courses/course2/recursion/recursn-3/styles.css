@@ -54,6 +54,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+
+    margin-block: 1em;
 }
 
 .input-container {
@@ -71,7 +73,7 @@ h2 {
 
     width: clamp(320px, 50vw, 420px);
 
-    margin-block-end: 3em;
+    margin-block-end: 2em;
 }
 
 .input-container label {
