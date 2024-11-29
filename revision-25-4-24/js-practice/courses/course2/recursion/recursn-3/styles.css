@@ -71,7 +71,7 @@ h2 {
 
     width: clamp(320px, 50vw, 420px);
 
-    margin-block-end: 1em;
+    margin-block-end: 3em;
 }
 
 .input-container label {
@@ -110,13 +110,17 @@ h2 {
 
     width: clamp(320px, 50vw, 420px);
     margin-inline: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
 }
 
 .output-number {
     border: 2px solid var(--orange);
+
+    padding: 1.5em;
 }
 
 .animation-stack {
