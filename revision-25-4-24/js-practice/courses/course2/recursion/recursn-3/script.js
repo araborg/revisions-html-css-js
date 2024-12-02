@@ -13,7 +13,8 @@ const getInput = () => {
     console.log(inputValue);
 };
 
-getInput();
+// getInput();
 // input event listener
 
 // btn event listener
+convertBtn.addEventListener("click", getInput);
