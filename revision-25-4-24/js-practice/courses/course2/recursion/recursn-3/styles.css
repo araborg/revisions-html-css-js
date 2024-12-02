@@ -131,6 +131,8 @@ h2 {
 .animation-stack .stack {
     border: 5px solid var(--orange);
     padding: 0.5em;
+
+    /* min-height: 10vh; */
 }
 
 @media screen and (min-width: 36em) {
