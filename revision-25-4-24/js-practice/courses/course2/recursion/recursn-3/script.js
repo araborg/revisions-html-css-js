@@ -7,7 +7,13 @@ const animationStack = document.getElementById("animation-stack");
 console.log(numberInput, convertBtn, outputNumber, animationStack);
 
 // get input
+const getInput = () => {
+    const inputValue = numberInput.value;
 
+    console.log(inputValue);
+};
+
+getInput();
 // input event listener
 
 // btn event listener
