@@ -132,7 +132,11 @@ h2 {
     border: 5px solid var(--orange);
     padding: 0.5em;
 
-    /* min-height: 10vh; */
+    min-height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (min-width: 36em) {
