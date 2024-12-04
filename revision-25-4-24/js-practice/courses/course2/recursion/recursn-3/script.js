@@ -8,7 +8,7 @@ const animationStack = document.getElementById("animation-stack");
 
 // get input
 const getInput = () => {
-    const inputValue = numberInput.value;
+    const inputValue = parseInt(numberInput.value);
 
     console.log(typeof inputValue);
 };
