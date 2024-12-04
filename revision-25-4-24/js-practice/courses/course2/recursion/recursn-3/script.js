@@ -10,7 +10,7 @@ console.log(numberInput, convertBtn, outputNumber, animationStack);
 const getInput = () => {
     const inputValue = numberInput.value;
 
-    console.log(inputValue);
+    console.log(typeof inputValue);
 };
 
 // getInput();
