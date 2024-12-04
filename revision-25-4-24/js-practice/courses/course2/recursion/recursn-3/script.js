@@ -10,6 +10,10 @@ const animationStack = document.getElementById("animation-stack");
 const getInput = () => {
     const inputValue = parseInt(numberInput.value);
 
+    const input = [];
+    const remindder = [];
+    const divisor = [];
+
     console.log(inputValue);
 };
 
