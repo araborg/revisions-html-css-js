@@ -10,7 +10,7 @@ const animationStack = document.getElementById("animation-stack");
 const getInput = () => {
     const inputValue = parseInt(numberInput.value);
 
-    console.log(typeof inputValue);
+    console.log(inputValue);
 };
 
 // getInput();
