@@ -19,8 +19,6 @@ const getInput = () => {
     const divisor = input;
 
     console.log(reminder, input, divisor);
-
-    // console.log(inputValue);
 };
 
 // getInput();
