@@ -8,14 +8,14 @@ const animationStack = document.getElementById("animation-stack");
 
 // get input
 const getInput = (input) => {
-    console.log(input);
-
     const inputs = [];
     const reminders = [];
     const divisors = [];
 
     while (input > 0) {
         const reminder = input % 2;
+
+        console.log(input);
 
         input = 0;
     }
