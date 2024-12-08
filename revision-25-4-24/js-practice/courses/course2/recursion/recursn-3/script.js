@@ -17,8 +17,8 @@ const getInput = (input) => {
     // let input;
 
     while (input > 0) {
-        const reminder = inputValue % 2;
-        const divisor = Math.floor(inputValue / 2);
+        const reminder = input % 2;
+        const divisor = Math.floor(input / 2);
 
         input = divisor;
 
