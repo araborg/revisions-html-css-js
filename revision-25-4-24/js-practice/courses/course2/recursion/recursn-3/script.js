@@ -7,16 +7,16 @@ const animationStack = document.getElementById("animation-stack");
 // console.log(numberInput, convertBtn, outputNumber, animationStack);
 
 // get input
-const getInput = () => {
-    let inputValue = parseInt(numberInput.value);
+const getInput = (input) => {
+    // let inputValue = parseInt(numberInput.value);
 
     const inputs = [];
     const reminders = [];
     const divisors = [];
 
-    let input;
+    // let input;
 
-    if (input >= 0) {
+    while (input > 0) {
         const reminder = inputValue % 2;
         const divisor = Math.floor(inputValue / 2);
 
@@ -26,7 +26,7 @@ const getInput = () => {
     }
 };
 
-// getInput();
+getInput(5);
 // input event listener
 
 // btn event listener
