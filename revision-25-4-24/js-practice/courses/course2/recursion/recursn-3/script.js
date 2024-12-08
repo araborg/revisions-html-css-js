@@ -14,14 +14,16 @@ const getInput = () => {
     const reminders = [];
     const divisors = [];
 
-    // if (inputValue >= 0) {
-    const reminder = inputValue % 2;
-    const input = Math.floor(inputValue / 2);
+    let input;
 
-    inputValue = input;
+    if (input >= 0) {
+        const reminder = inputValue % 2;
+        const divisor = Math.floor(inputValue / 2);
 
-    console.log(reminder, input);
-    // }
+        input = divisor;
+
+        console.log(reminder, divisor, input);
+    }
 };
 
 // getInput();
