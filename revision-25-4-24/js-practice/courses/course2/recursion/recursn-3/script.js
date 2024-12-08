@@ -18,11 +18,15 @@ const getInput = (input) => {
 
         console.log(input, divisor, reminder);
 
-        input = 0;
+        input = divisor;
+
+        reminders.push(reminder);
     }
+
+    console.log(reminders);
 };
 
-getInput(5);
+getInput(4);
 // input event listener
 
 // btn event listener
