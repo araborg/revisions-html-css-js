@@ -11,10 +11,16 @@ const getInput = () => {
     const inputValue = parseInt(numberInput.value);
 
     const inputs = [];
-    const remindders = [];
+    const reminders = [];
     const divisors = [];
 
-    console.log(inputValue);
+    const input = Math.floor(inputValue / 2);
+    // const reminder = inputValue % 2;
+    // const divisor =
+
+    console.log(input);
+
+    // console.log(inputValue);
 };
 
 // getInput();
