@@ -8,22 +8,11 @@ const animationStack = document.getElementById("animation-stack");
 
 // get input
 const getInput = (input) => {
-    // let inputValue = parseInt(numberInput.value);
+    console.log(input);
 
     const inputs = [];
     const reminders = [];
     const divisors = [];
-
-    // let input;
-
-    while (input > 0) {
-        const reminder = input % 2;
-        const divisor = Math.floor(input / 2);
-
-        console.log(input, divisor, reminder);
-
-        input = divisor;
-    }
 };
 
 getInput(5);
