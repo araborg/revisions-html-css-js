@@ -16,7 +16,7 @@ const getInput = (input) => {
         const reminder = input % 2;
         const divisor = Math.floor(input / 2);
 
-        console.log(input, reminder);
+        console.log(input, divisor, reminder);
 
         input = 0;
     }
