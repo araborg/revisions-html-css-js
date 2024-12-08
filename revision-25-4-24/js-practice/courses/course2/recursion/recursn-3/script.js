@@ -16,17 +16,20 @@ const getInput = (input) => {
         const reminder = input % 2;
         const divisor = Math.floor(input / 2);
 
-        console.log(input, divisor, reminder);
+        // console.log(input, divisor, reminder);
 
         input = divisor;
 
         reminders.push(reminder);
     }
 
-    console.log(reminders);
+    const output = reminders.join("").split("").reverse().join("");
+    console.log(output);
+
+    outputNumber.textContent = output;
 };
 
-getInput(4);
+getInput(6);
 // input event listener
 
 // btn event listener
