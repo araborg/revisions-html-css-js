@@ -8,7 +8,7 @@ const animationStack = document.getElementById("animation-stack");
 
 // get input
 const getInput = () => {
-    const inputValue = parseInt(numberInput.value);
+    let inputValue = parseInt(numberInput.value);
 
     const inputs = [];
     const reminders = [];
