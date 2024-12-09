@@ -20,8 +20,10 @@ const getInput = (input) => {
         input = divisor;
     }
 
-    const returnVal = reminders.reverse();
-    console.log(returnVal);
+    const returnVal = reminders.reverse().join("");
+
+    outputNumber.textContent = returnVal;
+    // console.log(returnVal);
 };
 
 getInput(6);
