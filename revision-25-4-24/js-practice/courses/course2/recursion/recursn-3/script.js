@@ -39,5 +39,6 @@ getInput(6);
 convertBtn.addEventListener("click", userInput);
 
 numberInput.addEventListener("keydown", (e) => {
-    console.log(e.key);
+    if (e.key === "Enter") {
+    }
 });
