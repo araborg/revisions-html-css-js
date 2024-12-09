@@ -6,6 +6,12 @@ const animationStack = document.getElementById("animation-stack");
 
 // console.log(numberInput, convertBtn, outputNumber, animationStack);
 
+const userInput = () => {
+    const userVal = parseInt(numberInput.value);
+
+    console.log(userVal);
+};
+
 // get input
 const getInput = (input) => {
     const inputs = [];
@@ -30,4 +36,4 @@ getInput(6);
 // input event listener
 
 // btn event listener
-convertBtn.addEventListener("click", getInput);
+convertBtn.addEventListener("click", userInput);
