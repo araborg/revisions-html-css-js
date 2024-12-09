@@ -13,6 +13,8 @@ const getInput = (input) => {
     const reminders = [];
 
     while (input > 0) {
+        let input = Math.floor(input / 2);
+        const reminder = input % 2;
         input = 0;
     }
 };
