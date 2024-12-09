@@ -9,14 +9,19 @@ const animationStack = document.getElementById("animation-stack");
 // get input
 const getInput = (input) => {
     const inputs = [];
-    const divisiors = [];
+    const divisors = [];
     const reminders = [];
 
     while (input > 0) {
-        let input = Math.floor(input / 2);
+        let divisor = Math.floor(input / 2);
         const reminder = input % 2;
-        input = 0;
+
+        reminders.push(reminder);
+        input = divisor;
     }
+
+    const returnVal = reminders.join("");
+    console.log(returnVal);
 };
 
 getInput(6);
