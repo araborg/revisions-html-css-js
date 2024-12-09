@@ -38,4 +38,6 @@ getInput(6);
 // btn event listener
 convertBtn.addEventListener("click", userInput);
 
-numberInput.addEventListener("keydown", (e) => {});
+numberInput.addEventListener("keydown", (e) => {
+    console.log(e.key);
+});
