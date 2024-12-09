@@ -9,6 +9,10 @@ const animationStack = document.getElementById("animation-stack");
 // get input
 const getInput = (input) => {
     const inputs = [];
+    const divisiors = [];
+    const reminders = [];
+
+    while (input > 0) {}
 };
 
 getInput(6);
