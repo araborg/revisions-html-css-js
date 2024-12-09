@@ -20,7 +20,7 @@ const getInput = (input) => {
         input = divisor;
     }
 
-    const returnVal = reminders.join("");
+    const returnVal = reminders.reverse();
     console.log(returnVal);
 };
 
