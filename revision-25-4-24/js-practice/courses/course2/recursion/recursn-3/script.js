@@ -9,6 +9,8 @@ const animationStack = document.getElementById("animation-stack");
 const userInput = () => {
     const userVal = parseInt(numberInput.value);
 
+    getInput(userVal);
+
     console.log(userVal);
 };
 
@@ -41,6 +43,8 @@ convertBtn.addEventListener("click", userInput);
 numberInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         const userVal = parseInt(numberInput.value);
+
+        getInput(userVal);
 
         console.log(userVal);
     }
