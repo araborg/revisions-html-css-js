@@ -40,5 +40,8 @@ convertBtn.addEventListener("click", userInput);
 
 numberInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
+        const userVal = parseInt(numberInput.value);
+
+        console.log(userVal);
     }
 });
