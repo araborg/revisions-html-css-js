@@ -12,7 +12,9 @@ const getInput = (input) => {
     const divisiors = [];
     const reminders = [];
 
-    while (input > 0) {}
+    while (input > 0) {
+        input = 0;
+    }
 };
 
 getInput(6);
