@@ -34,7 +34,6 @@ const getInput = (input) => {
     // console.log(returnVal);
 };
 
-getInput(6);
 // input event listener
 
 // btn event listener
