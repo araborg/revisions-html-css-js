@@ -39,7 +39,9 @@ const getInput = (input) => {
 };
 */
 
-const getInput = (input) => {};
+const getInput = (input) => {
+    const binary = "";
+};
 
 // input event listener
 
