@@ -9,7 +9,7 @@ const animationStack = document.getElementById("animation-stack");
 const userInput = () => {
     const userVal = parseInt(numberInput.value);
 
-    if (userVal) {
+    if (!userVal) {
         alert("Kindly input a valid number");
     } else {
         getInput(userVal);
