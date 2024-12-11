@@ -39,6 +39,8 @@ const getInput = (input) => {
 };
 */
 
+const getInput = (input) => {};
+
 // input event listener
 
 // btn event listener
