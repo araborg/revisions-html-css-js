@@ -13,8 +13,6 @@ const userInput = () => {
         alert("Kindly input a valid number");
     } else {
         getInput(userVal);
-
-        console.log(userVal);
     }
 };
 
