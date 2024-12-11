@@ -45,8 +45,9 @@ numberInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         const userVal = parseInt(numberInput.value);
 
-        getInput(userVal);
+        // getInput(userVal);
+        userInput();
 
-        console.log(userVal);
+        // console.log(userVal);
     }
 });
