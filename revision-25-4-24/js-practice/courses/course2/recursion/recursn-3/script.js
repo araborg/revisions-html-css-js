@@ -41,6 +41,10 @@ const getInput = (input) => {
 
 const getInput = (input) => {
     const binary = "";
+
+    while (input > 0) {
+        input = 0;
+    }
 };
 
 // input event listener
