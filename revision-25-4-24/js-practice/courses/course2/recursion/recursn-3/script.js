@@ -19,6 +19,7 @@ const userInput = () => {
 };
 
 // get input
+/*
 const getInput = (input) => {
     const inputs = [];
     const divisors = [];
@@ -36,6 +37,7 @@ const getInput = (input) => {
 
     outputNumber.textContent = returnVal;
 };
+*/
 
 // input event listener
 
