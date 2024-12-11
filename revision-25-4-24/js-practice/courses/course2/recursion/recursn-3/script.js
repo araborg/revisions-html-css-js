@@ -35,7 +35,6 @@ const getInput = (input) => {
     const returnVal = reminders.reverse().join("");
 
     outputNumber.textContent = returnVal;
-    // console.log(returnVal);
 };
 
 // input event listener
