@@ -47,9 +47,10 @@ const getInput = (input) => {
 
         const reminder = (input % 2) + binary;
 
-        console.log(num, reminder);
         input = num;
     }
+
+    console.log(reminder);
 };
 
 getInput(5);
