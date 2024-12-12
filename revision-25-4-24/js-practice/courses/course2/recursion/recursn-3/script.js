@@ -40,10 +40,10 @@ const getInput = (input) => {
 */
 
 const getInput = (input) => {
-    const binary = "";
+    let binary = "";
 
     while (input > 0) {
-        let num = Math.floor(input / 2);
+        const num = Math.floor(input / 2);
 
         binary = (input % 2) + binary;
 
