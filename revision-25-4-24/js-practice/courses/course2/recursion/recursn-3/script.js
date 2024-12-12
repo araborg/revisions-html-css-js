@@ -56,7 +56,7 @@ const getInput = (input) => {
 // input event listener
 
 // btn event listener
-// convertBtn.addEventListener("click", userInput);
+convertBtn.addEventListener("click", userInput);
 
 numberInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
