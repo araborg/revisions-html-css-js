@@ -42,6 +42,8 @@ const getInput = (input) => {
 const getInput = (input) => {
     let binary = "";
 
+    console.log(input);
+
     if (input === 0) {
         return "0";
     }
