@@ -9,8 +9,6 @@ const animationStack = document.getElementById("animation-stack");
 const userInput = () => {
     const userVal = parseInt(numberInput.value);
 
-    console.log(typeof userVal, typeof numberInput.value);
-
     if (!numberInput.value || isNaN(userVal) || userVal < 0) {
         alert("Kindly input a valid number");
     } else {
@@ -42,8 +40,6 @@ const getInput = (input) => {
 
 const getInput = (input) => {
     let binary = "";
-
-    console.log(input);
 
     if (input === 0) {
         binary = "0";
