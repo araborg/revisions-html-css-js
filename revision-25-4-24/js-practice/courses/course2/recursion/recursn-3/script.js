@@ -9,7 +9,8 @@ const animationStack = document.getElementById("animation-stack");
 const userInput = () => {
     const userVal = parseInt(numberInput.value);
 
-    if (!userVal || isNaN(userVal) || userVal < -1) {
+    if (!userVal || isNaN(userVal) || userVal < 0) {
+        console.log(userVal);
         alert("Kindly input a valid number");
     } else {
         getInput(userVal);
