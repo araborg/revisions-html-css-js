@@ -45,8 +45,8 @@ const getInput = (input) => {
 
     console.log(input);
 
-    if (input === 0) {
-        return "0";
+    if (input === 1) {
+        return "1";
     }
 
     while (input > 0) {
