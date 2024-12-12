@@ -49,7 +49,7 @@ const getInput = (input) => {
         binary = "1";
     }
 
-    while (input > 0) {
+    while (input > 1) {
         const num = Math.floor(input / 2);
 
         binary = (input % 2) + binary;
