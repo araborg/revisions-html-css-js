@@ -12,7 +12,7 @@ const userInput = () => {
     if (!numberInput.value || isNaN(userVal) || userVal < 0) {
         alert("Kindly input a valid number");
     } else {
-        getInput(userVal);
+        outputNumber.textContent = getInput(userVal);
     }
 };
 
