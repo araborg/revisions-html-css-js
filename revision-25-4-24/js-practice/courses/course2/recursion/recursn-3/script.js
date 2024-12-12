@@ -53,7 +53,7 @@ const getInput = (input) => {
     console.log(binary);
 };
 
-getInput(5);
+getInput(4);
 
 // input event listener
 
