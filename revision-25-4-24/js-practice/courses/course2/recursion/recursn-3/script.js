@@ -40,13 +40,17 @@ const getInput = (input) => {
 */
 
 const getInput = (input) => {
-    // let binary = "";
-    // while (input > 0) {
-    //     const num = Math.floor(input / 2);
-    //     binary = (input % 2) + binary;
-    //     input = num;
-    // }
-    // console.log(binary);
+    let binary = "";
+
+    while (input > 0) {
+        const num = Math.floor(input / 2);
+
+        binary = (input % 2) + binary;
+
+        input = num;
+    }
+
+    outputNumber.textContent = binary;
 };
 
 getInput(4);
