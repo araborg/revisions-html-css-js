@@ -14,6 +14,8 @@ const userInput = () => {
     } else {
         outputNumber.textContent = getInput(userVal);
     }
+
+    outputNumber.textContent = "";
 };
 
 // get input
