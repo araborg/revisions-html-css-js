@@ -13,9 +13,8 @@ const userInput = () => {
         alert("Kindly input a valid number");
     } else {
         outputNumber.textContent = getInput(userVal);
+        numberInput.textContent = "";
     }
-
-    outputNumber.textContent = "";
 };
 
 // get input
