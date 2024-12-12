@@ -43,14 +43,19 @@ const getInput = (input) => {
     const binary = "";
 
     while (input > 0) {
+        const num = Math.floor(input / 2);
+
+        console.log(num);
         input = 0;
     }
 };
 
+getInput(5);
+
 // input event listener
 
 // btn event listener
-convertBtn.addEventListener("click", userInput);
+// convertBtn.addEventListener("click", userInput);
 
 numberInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
