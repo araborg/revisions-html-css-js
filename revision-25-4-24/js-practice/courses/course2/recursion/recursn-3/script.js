@@ -53,8 +53,6 @@ const getInput = (input) => {
     outputNumber.textContent = binary;
 };
 
-getInput(4);
-
 // input event listener
 
 // btn event listener
