@@ -36,7 +36,17 @@ const getInput = (input) => {
 
     outputNumber.textContent = returnVal;
 };
-*/
+
+2.
+const userInput = () => {
+    const userVal = parseInt(numberInput.value);
+
+    if (!numberInput.value || isNaN(userVal) || userVal < 0) {
+        alert("Kindly input a valid number");
+    } else {
+        getInput(userVal);
+    }
+};
 
 const getInput = (input) => {
     let binary = "";
@@ -59,6 +69,11 @@ const getInput = (input) => {
 
     outputNumber.textContent = binary;
 };
+
+
+*/
+
+const getInput = (input) => {};
 
 // input event listener
 
