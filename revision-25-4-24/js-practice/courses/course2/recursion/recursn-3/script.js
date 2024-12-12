@@ -18,6 +18,7 @@ const userInput = () => {
 
 // get input
 /*
+1.
 const getInput = (input) => {
     const inputs = [];
     const divisors = [];
@@ -39,6 +40,10 @@ const getInput = (input) => {
 
 const getInput = (input) => {
     let binary = "";
+
+    if (input === 0) {
+        return "0";
+    }
 
     while (input > 0) {
         const num = Math.floor(input / 2);
