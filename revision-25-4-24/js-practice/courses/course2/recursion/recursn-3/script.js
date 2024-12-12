@@ -11,7 +11,7 @@ const userInput = () => {
 
     if (!userVal) {
         // !userVal || isNaN(userVal) || userVal < 0
-        console.log(userVal < 0);
+        console.log(userVal);
 
         alert("Kindly input a valid number");
     } else {
