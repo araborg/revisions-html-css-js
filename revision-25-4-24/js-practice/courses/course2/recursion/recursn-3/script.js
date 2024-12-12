@@ -43,14 +43,14 @@ const getInput = (input) => {
     const binary = "";
 
     while (input > 0) {
-        const num = Math.floor(input / 2);
+        let num = Math.floor(input / 2);
 
-        const reminder = (input % 2) + binary;
+        binary = (input % 2) + binary;
 
         input = num;
     }
 
-    console.log(reminder);
+    console.log(binary);
 };
 
 getInput(5);
