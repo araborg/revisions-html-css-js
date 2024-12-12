@@ -46,7 +46,7 @@ const getInput = (input) => {
     console.log(input);
 
     if (input === 1) {
-        return "1";
+        return (binary = "1");
     }
 
     while (input > 0) {
