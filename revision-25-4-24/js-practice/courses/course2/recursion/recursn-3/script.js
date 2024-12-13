@@ -79,6 +79,9 @@ const getInput = (input) => {
 
 */
 
+console.log(parseInt(Math.floor(5 / 2)));
+console.log(Math.floor(5 / 2));
+
 const getInput = (input) => {
     if (input === 0 || input === 1) {
         return String(input);
