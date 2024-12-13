@@ -83,7 +83,7 @@ const getInput = (input) => {
     } else if (input === 1) {
         return 1;
     } else {
-        console.log(input % 2);
+        // console.log(input % 2);
         getInput(Math.floor(input / 2)) + (input % 2);
     }
 };
