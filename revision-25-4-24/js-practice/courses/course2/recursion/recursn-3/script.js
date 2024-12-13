@@ -78,10 +78,10 @@ const getInput = (input) => {
 const getInput = (input) => {
     if (input === 0) {
         return 0;
-    }
-
-    if (input === 1) {
+    } else if (input === 1) {
         return 1;
+    } else {
+        getInput(parseInt(Math.floor(input / 1))) + (input % 2);
     }
 };
 
