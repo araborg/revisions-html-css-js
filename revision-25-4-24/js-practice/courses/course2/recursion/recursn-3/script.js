@@ -92,6 +92,8 @@ const getInput = (input) => {
     }
 };
 
+getInput(Math.floor(input / 2));
+getInput(parseInt(Math.floor(input / 2)));
 // input event listener
 
 // btn event listener
