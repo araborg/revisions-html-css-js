@@ -11,11 +11,13 @@ const userInput = () => {
 
     if (!numberInput.value || isNaN(userVal) || userVal < 0) {
         alert("Kindly input a valid number");
-    } else {
-        outputNumber.textContent = getInput(userVal);
-
-        console.log(getInput(userVal));
     }
+
+    // else {
+    outputNumber.textContent = getInput(userVal);
+
+    console.log(getInput(userVal));
+    // }
 
     numberInput.value = "";
 };
