@@ -79,9 +79,6 @@ const getInput = (input) => {
 
 */
 
-console.log(parseInt(Math.floor(5 / 2)));
-console.log(Math.floor(5 / 2));
-
 const getInput = (input) => {
     console.log(input);
 
@@ -92,8 +89,8 @@ const getInput = (input) => {
     }
 };
 
-getInput(Math.floor(input / 2));
-getInput(parseInt(Math.floor(input / 2)));
+getInput(Math.floor(5 / 2));
+getInput(parseInt(Math.floor(5 / 2)));
 // input event listener
 
 // btn event listener
