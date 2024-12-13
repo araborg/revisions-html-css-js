@@ -86,7 +86,7 @@ const getInput = (input) => {
         return 1;
     } else {
         // console.log(input % 2);
-        getInput(Math.floor(input / 2)) + (input % 2);
+        return getInput(Math.floor(input / 2)) + (input % 2);
     }
 };
 
