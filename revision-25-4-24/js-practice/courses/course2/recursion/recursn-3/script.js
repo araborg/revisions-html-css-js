@@ -84,6 +84,7 @@ console.log(Math.floor(5 / 2));
 
 const getInput = (input) => {
     console.log(input);
+
     if (input === 0 || input === 1) {
         return String(input);
     } else {
