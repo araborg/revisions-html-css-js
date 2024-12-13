@@ -13,6 +13,8 @@ const userInput = () => {
         alert("Kindly input a valid number");
     } else {
         outputNumber.textContent = getInput(userVal);
+
+        console.log(getInput(userVal));
     }
 
     numberInput.value = "";
