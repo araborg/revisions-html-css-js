@@ -133,6 +133,8 @@ const showAnimation = () => {
         setTimeout(() => {
             document.getElementById(obj.inputVal).remove();
         }, obj.removeElDelay);
+
+        setTimeout(() => {}, 20000);
     });
 };
 
