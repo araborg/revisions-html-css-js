@@ -37,6 +37,8 @@ const getInputVal = () => {
     }
 
     decimatToBinary(inputVal);
+
+    console.log(decimatToBinary(inputVal));
 };
 
 /*
