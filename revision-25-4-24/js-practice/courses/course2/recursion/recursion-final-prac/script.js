@@ -118,7 +118,11 @@ const decimatToBinary = (input) => {
     }
 };
 
-const showAnimation = () => {};
+const showAnimation = () => {
+    animationData.forEach((obj) => {
+        console.log(obj);
+    });
+};
 
 convertBtn.addEventListener("click", getInputVal);
 
