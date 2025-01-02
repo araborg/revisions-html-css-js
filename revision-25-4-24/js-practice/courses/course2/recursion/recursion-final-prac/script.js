@@ -48,6 +48,8 @@ const decimatToBinary = (input) => {
         inputs.push(input);
         // console.log(input);
 
+        const reminder = reminders % 2;
+
         input = Math.floor(input / 2);
     }
 
