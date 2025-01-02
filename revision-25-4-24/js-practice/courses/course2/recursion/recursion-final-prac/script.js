@@ -42,7 +42,7 @@ const getInputVal = () => {
 const decimatToBinary = (input) => {
     const inputVal = [];
     const reminders = [];
-    const quotients = [];
+    const divisor = [];
 };
 
 convertBtn.addEventListener("click", getInputVal);
