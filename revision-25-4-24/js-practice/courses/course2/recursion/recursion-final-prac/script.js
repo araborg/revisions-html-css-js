@@ -30,14 +30,14 @@ const animationData = [
 const getInputVal = () => {
     const inputVal = parseInt(numberInput.value);
 
-    console.log(isNaN(inputVal), isNaN("true"));
-
     if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
         alert("Please provide a decimal number greater than or equal to 0");
     }
 
     console.log(typeof inputVal);
 };
+
+const decimatToBinary = () => {};
 
 convertBtn.addEventListener("click", getInputVal);
 numberInput.addEventListener("keydown", (e) => {
