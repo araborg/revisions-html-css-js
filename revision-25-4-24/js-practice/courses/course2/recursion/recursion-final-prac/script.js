@@ -125,6 +125,10 @@ const showAnimation = () => {
                 </p>
             `;
         }, obj.addElDelay);
+
+        setTimeout(() => {
+            document.getElementById("${obj.inputVal}");
+        }, obj.showMsgDelay);
     });
 };
 
