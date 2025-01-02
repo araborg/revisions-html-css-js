@@ -41,6 +41,8 @@ const getInputVal = () => {
     decimatToBinary(inputVal);
 };
 
+/*
+1.
 const decimatToBinary = (input) => {
     const inputs = [];
     const reminders = [];
@@ -61,6 +63,10 @@ const decimatToBinary = (input) => {
 
     result.textContent = reminders.reverse().join("");
 };
+
+2.
+
+*/
 
 convertBtn.addEventListener("click", getInputVal);
 numberInput.addEventListener("keydown", (e) => {
