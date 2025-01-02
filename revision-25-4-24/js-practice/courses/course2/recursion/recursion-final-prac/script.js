@@ -120,14 +120,15 @@ const showAnimation = () => {
     animationData.forEach((obj) => {
         setTimeout(() => {
             animationContainer.innerHTML += `
-                <p id=${obj.inputVal} class='animation-frame'>
+                <p id='${obj.inputVal}' class='animation-frame'>
                     decimalToBinary(${obj.inputVal})
                 </p>
             `;
         }, obj.addElDelay);
 
         setTimeout(() => {
-            document.getElementById("${obj.inputVal}").textContent = obj.msg;
+            console.log(document.getElementById("${obj.inputVal}"));
+            // document.getElementById("${obj.inputVal}").textContent = obj.msg;
         }, obj.showMsgDelay);
     });
 };
