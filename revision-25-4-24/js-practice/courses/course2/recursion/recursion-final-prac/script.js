@@ -117,7 +117,15 @@ const decimatToBinary = (input) => {
 };
 
 const showAnimation = () => {
-    animationData.forEach();
+    animationData.forEach((obj) => {
+        setTimeout(() => {
+            animationContainer += `
+                <p id=${obj.inputVal} class='animation-frame'>
+                    decimalToBinary(${obj.inputVal})
+                </p>
+            `;
+        }, obj.addElDelay);
+    });
 };
 
 convertBtn.addEventListener("click", getInputVal);
