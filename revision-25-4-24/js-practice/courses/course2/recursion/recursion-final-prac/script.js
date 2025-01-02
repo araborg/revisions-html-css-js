@@ -45,10 +45,11 @@ const decimatToBinary = (input) => {
     const results = [];
 
     while (input > 0) {
-        inputs.push(input);
-        // console.log(input);
-
         const reminder = reminders % 2;
+
+        inputs.push(input);
+        reminders.push(reminder);
+        // console.log(input);
 
         input = Math.floor(input / 2);
     }
