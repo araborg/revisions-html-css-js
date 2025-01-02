@@ -127,7 +127,7 @@ const showAnimation = () => {
         }, obj.addElDelay);
 
         setTimeout(() => {
-            document.getElementById(obj.inputVal).innerHTML = obj.msg;
+            document.getElementById(obj.inputVal).textContent = obj.msg;
         }, obj.showMsgDelay);
 
         setTimeout(() => {
