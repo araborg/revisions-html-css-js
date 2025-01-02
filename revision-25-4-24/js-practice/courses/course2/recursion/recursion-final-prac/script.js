@@ -26,3 +26,7 @@ const animationData = [
         removeElDelay: 10000,
     },
 ];
+
+convertBtn.addEventListener("click", () => {
+    console.log("Hello");
+});
