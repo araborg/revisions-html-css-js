@@ -39,9 +39,9 @@ const getInputVal = () => {
 
     if (inputVal === 5) {
         showAnimation();
+    } else {
+        result.textContent = decimatToBinary(inputVal);
     }
-
-    result.textContent = decimatToBinary(inputVal);
 
     numberInput.value = "";
 };
