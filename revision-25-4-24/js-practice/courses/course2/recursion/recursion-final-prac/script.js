@@ -104,7 +104,8 @@ const decimatToBinary = (input) => {
 
 */
 const decimatToBinary = (input) => {
-    console.log(input);
+    // console.log(input);
+
     if (input === 0) {
         return String(input);
     } else {
