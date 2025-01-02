@@ -73,8 +73,6 @@ const decimatToBinary = (input) => {
 
     if (input === 0) {
         binary = "0";
-    } else if (input === 1) {
-        binary = "1";
     }
 
     while (input > 0) {
