@@ -104,10 +104,11 @@ const decimatToBinary = (input) => {
 
 */
 const decimatToBinary = (input) => {
+    console.log(input);
     if (input === 0) {
         return String(input);
     } else {
-        return decimatToBinary(Math.floor(parseInt(input / 2)));
+        return decimatToBinary(Math.floor(parseInt(input / 2))) + (input % 2);
     }
 };
 
