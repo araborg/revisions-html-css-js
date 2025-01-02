@@ -119,7 +119,7 @@ const decimatToBinary = (input) => {
 const showAnimation = () => {
     animationData.forEach((obj) => {
         setTimeout(() => {
-            animationContainer += `
+            animationContainer.innerHTML += `
                 <p id=${obj.inputVal} class='animation-frame'>
                     decimalToBinary(${obj.inputVal})
                 </p>
