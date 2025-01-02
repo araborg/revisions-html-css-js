@@ -118,7 +118,11 @@ const decimatToBinary = (input) => {
 
 const showAnimation = () => {
     animationData.forEach((obj) => {
-        console.log(obj);
+        animationContainer += `
+            <p id=${obj.inputVal} class='animation-frame'>
+                decimalToBinary(${obj.inputVal})
+            </p>
+        `;
     });
 };
 
