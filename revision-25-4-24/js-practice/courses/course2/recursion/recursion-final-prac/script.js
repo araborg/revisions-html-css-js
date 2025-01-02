@@ -126,10 +126,11 @@ const showAnimation = () => {
             `;
         }, obj.addElDelay);
 
-        setTimeout(() => {
-            console.log(document.getElementById("${obj.inputVal}"));
-            // document.getElementById("${obj.inputVal}").textContent = obj.msg;
-        }, obj.showMsgDelay);
+        console.log(document.getElementById("${obj.inputVal}"));
+
+        // setTimeout(() => {
+        // document.getElementById("${obj.inputVal}").textContent = obj.msg;
+        // }, obj.showMsgDelay);
     });
 };
 
