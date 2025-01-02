@@ -1,3 +1,5 @@
+const numberInput = document.getElementById("number-input");
+
 const animationData = [
     {
         inputVal: 5,
