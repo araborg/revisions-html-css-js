@@ -56,7 +56,7 @@ const decimatToBinary = (input) => {
         input = result;
     }
 
-    console.log(reminders.join());
+    console.log(reminders.reverse().join(""));
 
     numberInput.value = "";
 
