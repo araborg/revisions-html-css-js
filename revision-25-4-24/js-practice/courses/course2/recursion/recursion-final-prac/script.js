@@ -73,10 +73,11 @@ const decimatToBinary = (input) => {
 
     while (input > 0) {
         binary = (input % 2) + binary;
-        console.log(binary);
 
         input = Math.floor(input / 2);
     }
+
+    result.textContent = binary;
 };
 
 convertBtn.addEventListener("click", getInputVal);
