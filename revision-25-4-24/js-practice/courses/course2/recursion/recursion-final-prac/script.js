@@ -104,9 +104,9 @@ const decimatToBinary = (input) => {
 const decimatToBinary = (input) => {
     if (input === 0) {
         return String(input);
+    } else {
+        return decimatToBinary(Math.floor(parseInt(input / 2)));
     }
-
-    return;
 };
 
 convertBtn.addEventListener("click", getInputVal);
