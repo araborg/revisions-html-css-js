@@ -69,13 +69,15 @@ const decimatToBinary = (input) => {
 */
 
 const decimatToBinary = (input) => {
-    const binary = "";
+    let binary = "";
 
     while (input > 0) {
         binary = input % 2;
 
         input = 0;
     }
+
+    console.log(binary);
 };
 
 convertBtn.addEventListener("click", getInputVal);
