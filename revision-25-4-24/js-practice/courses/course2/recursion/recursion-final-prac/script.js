@@ -28,7 +28,7 @@ const animationData = [
 ];
 
 const getInputVal = () => {
-    const inputVal = numberInput.value;
+    const inputVal = parseInt(numberInput.value);
 
     console.log(typeof inputVal);
 };
