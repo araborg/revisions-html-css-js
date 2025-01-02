@@ -117,6 +117,8 @@ const decimatToBinary = (input) => {
 };
 
 const showAnimation = () => {
+    result.textContent = "Call Stack Animation";
+
     animationData.forEach((obj) => {
         setTimeout(() => {
             animationContainer.innerHTML += `
