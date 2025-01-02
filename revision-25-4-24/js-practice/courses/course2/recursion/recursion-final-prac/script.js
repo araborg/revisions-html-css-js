@@ -49,7 +49,9 @@ const decimatToBinary = (input) => {
     const results = [];
 
     if (input === 0) {
-        return (result.textContent = 0);
+        result.textContent = 0;
+
+        return;
     }
 
     while (input > 0) {
