@@ -126,7 +126,7 @@ const showAnimation = () => {
             `;
         }, obj.addElDelay);
 
-        console.log(document.getElementById("${obj.inputVal}"));
+        console.log(document.getElementById());
 
         // setTimeout(() => {
         // document.getElementById("${obj.inputVal}").textContent = obj.msg;
