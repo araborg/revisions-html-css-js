@@ -35,10 +35,12 @@ const getInputVal = () => {
         alert("Please provide a decimal number greater than or equal to 0");
     }
 
-    console.log(typeof inputVal);
+    decimatToBinary(inputVal);
 };
 
-const decimatToBinary = () => {};
+const decimatToBinary = (input) => {
+    console.log(input);
+};
 
 convertBtn.addEventListener("click", getInputVal);
 numberInput.addEventListener("keydown", (e) => {
