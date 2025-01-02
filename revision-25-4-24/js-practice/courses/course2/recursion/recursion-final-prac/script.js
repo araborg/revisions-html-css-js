@@ -4,6 +4,8 @@ const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 const animationContainer = document.getElementById("animation-container");
 
+console.log(animationContainer);
+
 const animationData = [
     {
         inputVal: 5,
