@@ -47,7 +47,7 @@ const decimatToBinary = (input) => {
     while (input > 0) {
         console.log(input);
 
-        input--;
+        input = Math.floor(input / 2);
     }
 };
 
