@@ -30,7 +30,7 @@ const animationData = [
 const getInputVal = () => {
     const inputVal = numberInput.value;
 
-    console.log(inputVal);
+    console.log(typeof inputVal);
 };
 
 convertBtn.addEventListener("click", getInputVal);
