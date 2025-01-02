@@ -40,9 +40,9 @@ const getInputVal = () => {
 };
 
 const decimatToBinary = (input) => {
-    const inputVal = [];
+    const inputs = [];
     const reminders = [];
-    const divisor = [];
+    const results = [];
 };
 
 convertBtn.addEventListener("click", getInputVal);
