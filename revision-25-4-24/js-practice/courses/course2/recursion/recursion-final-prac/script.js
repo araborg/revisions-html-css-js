@@ -32,3 +32,4 @@ const getInputVal = () => {
 };
 
 convertBtn.addEventListener("click", getInputVal);
+numberInput.addEventListener("keydown", console.log("yes"));
