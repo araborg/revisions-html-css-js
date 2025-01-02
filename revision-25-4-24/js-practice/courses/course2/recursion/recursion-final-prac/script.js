@@ -48,7 +48,11 @@ const decimatToBinary = (input) => {
         console.log(input);
 
         input = Math.floor(input / 2);
+
+        inputs.push(input);
     }
+
+    console.log(inputs);
 };
 
 convertBtn.addEventListener("click", getInputVal);
