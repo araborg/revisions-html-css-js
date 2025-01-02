@@ -66,7 +66,13 @@ const decimatToBinary = (input) => {
 
 */
 
-const decimatToBinary = (input) => {};
+const decimatToBinary = (input) => {
+    const binary = "";
+
+    while (input > 0) {
+        input = 0;
+    }
+};
 
 convertBtn.addEventListener("click", getInputVal);
 numberInput.addEventListener("keydown", (e) => {
