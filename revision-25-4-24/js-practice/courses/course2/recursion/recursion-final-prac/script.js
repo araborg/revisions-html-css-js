@@ -106,13 +106,13 @@ const decimatToBinary = (input) => {
 const decimatToBinary = (input) => {
     // console.log(input);
 
-    if (input === 0 || input === 1) {
+    if (input === 0) {
         return String(input);
+    } else if (input === 1) {
+        return String(input);
+    } else {
+        return decimatToBinary(Math.floor(parseInt(input / 2))) + (input % 2);
     }
-
-    // else {
-    return decimatToBinary(Math.floor(parseInt(input / 2))) + (input % 2);
-    // }
 };
 
 convertBtn.addEventListener("click", getInputVal);
