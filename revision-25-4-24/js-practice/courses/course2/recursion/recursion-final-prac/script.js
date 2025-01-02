@@ -1,7 +1,8 @@
 const numberInput = document.getElementById("number-input");
-
 const convertBtn = document.getElementById("convert-btn");
-console.log(convertBtn);
+
+const result = document.getElementById("result");
+console.log(result);
 
 const animationData = [
     {
