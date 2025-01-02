@@ -42,6 +42,19 @@ const getInputVal = () => {
 };
 
 /*
+
+const getInputVal = () => {
+    const inputVal = parseInt(numberInput.value);
+
+    if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
+        alert("Please provide a decimal number greater than or equal to 0");
+    }
+
+    decimatToBinary(inputVal);
+
+    console.log(decimatToBinary(inputVal));
+};
+
 1.
 const decimatToBinary = (input) => {
     const inputs = [];
