@@ -43,6 +43,12 @@ const decimatToBinary = (input) => {
     const inputs = [];
     const reminders = [];
     const results = [];
+
+    while (input > 0) {
+        console.log(input);
+
+        input--;
+    }
 };
 
 convertBtn.addEventListener("click", getInputVal);
