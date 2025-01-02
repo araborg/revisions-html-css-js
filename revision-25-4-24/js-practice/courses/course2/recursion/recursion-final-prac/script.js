@@ -36,9 +36,11 @@ const getInputVal = () => {
         alert("Please provide a decimal number greater than or equal to 0");
     }
 
-    decimatToBinary(inputVal);
+    result.textContent = decimatToBinary(inputVal);
 
     console.log(decimatToBinary(inputVal));
+
+    numberInput.value = "";
 };
 
 /*
