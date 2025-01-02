@@ -30,7 +30,7 @@ const animationData = [
 const getInputVal = () => {
     const inputVal = parseInt(numberInput.value);
 
-    if (!numberInput.value) {
+    if (!numberInput.value || inputVal < 0) {
         alert("Please provide a decimal number greater than or equal to 0");
     }
 
