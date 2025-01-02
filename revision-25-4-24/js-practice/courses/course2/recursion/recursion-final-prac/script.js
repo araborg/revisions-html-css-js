@@ -41,12 +41,16 @@ const getInputVal = () => {
     console.log(decimatToBinary(inputVal));
 };
 
-/*
-1.
+// /*
+// 1.
 const decimatToBinary = (input) => {
     const inputs = [];
     const reminders = [];
     const results = [];
+
+    if (input === 0) {
+        binary = "0";
+    }
 
     while (input > 0) {
         const reminder = input % 2;
@@ -64,9 +68,9 @@ const decimatToBinary = (input) => {
     result.textContent = reminders.reverse().join("");
 };
 
-2.
+// 2.
 
-*/
+// */
 
 /*
 const decimatToBinary = (input) => {
