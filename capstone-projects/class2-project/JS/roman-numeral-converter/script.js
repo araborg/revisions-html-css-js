@@ -43,24 +43,18 @@ const convertToRoman = (input) => {
 
     if (input === 1) {
         return "I";
-    } else if (input === 2) {
-        return "II";
-    } else if (input === 3) {
-        return "III";
-    } else if (input === 4) {
-        return "IV";
     } else if (input === 5) {
         return "V";
-    } else if (input === 6) {
-        return "VI";
-    } else if (input === 7) {
-        return "VII";
-    } else if (input === 8) {
-        return "VIII";
-    } else if (input === 9) {
-        return "IX";
     } else if (input === 10) {
         return "X";
+    } else if (input === 50) {
+        return "L";
+    } else if (input === 100) {
+        return "C";
+    } else if (input === 500) {
+        return "D";
+    } else if (input === 1000) {
+        return "M";
     }
 
     if (input >= 1000 && input < 4000) {
