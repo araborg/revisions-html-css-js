@@ -17,8 +17,6 @@ const getInputVal = () => {
 };
 
 const convertToRoman = (input) => {
-    let noOfLoop = { loop: 0 };
-
     if (input === 1) {
         return "I";
     } else if (input === 2) {
@@ -44,9 +42,9 @@ const convertToRoman = (input) => {
     if (input >= 1000 && input < 4000) {
         noOfLoop.loop += 1;
         // console.log(convertToRoman(input - 1000) + (noOfLoop += 1));
-        // return convertToRoman(input - 1000) + (noOfLoop += 1);
+        convertToRoman(input - 1000);
+        console.log(noOfLoop);
     }
-    console.log(noOfLoop);
 };
 
 convertBtn.addEventListener("click", getInputVal);
