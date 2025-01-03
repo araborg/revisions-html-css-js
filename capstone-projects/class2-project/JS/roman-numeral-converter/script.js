@@ -32,6 +32,8 @@ const convertToRoman = (input) => {
         ["IV", 4],
         ["I", 1],
     ];
+
+    const result = [];
 };
 
 convertBtn.addEventListener("click", getInputVal);
