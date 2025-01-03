@@ -16,7 +16,7 @@ const getInputVal = () => {
     }
 };
 
-const convertToRoman = (input) => {
+const convertToRoman = () => {
     const romans = [
         ["M", 1000],
         ["CM", 900],
@@ -36,9 +36,11 @@ const convertToRoman = (input) => {
     const result = [];
 
     romans.forEach((arr) => {
-        console.log(arr);
+        while (input > arr[i]) {}
     });
 };
+
+// convertToRoman();
 
 convertBtn.addEventListener("click", getInputVal);
 
