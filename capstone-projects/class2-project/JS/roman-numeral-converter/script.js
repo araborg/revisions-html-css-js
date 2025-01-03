@@ -65,10 +65,15 @@ const convertToRoman = (input) => {
         if (input >= 1000) {
             console.log(input);
         } else if (input >= 500) {
+            console.log(input);
         } else if (input >= 100) {
+            console.log(input);
         } else if (input >= 50) {
+            console.log(input);
         } else if (input >= 10) {
+            console.log(input);
         } else if (input >= 5) {
+            console.log(input);
         }
 
         input = 0;
