@@ -37,13 +37,13 @@ const convertToRoman = (input) => {
 
     romans.forEach((arr) => {
         while (input >= arr[1]) {
-            console.log(arr);
-
             result.push(arr[0]);
 
             input -= arr[1];
         }
     });
+
+    return result.join("");
 };
 
 convertBtn.addEventListener("click", getInputVal);
