@@ -76,11 +76,11 @@ const convertToRoman = (input) => {
 
                 input -= 1000;
 
-                if (reminder === 0) {
-                    return;
-                } else {
-                    return reminder;
-                }
+                // if (reminder === 0) {
+                //     return noOfround;
+                // } else {
+                //     return reminder;
+                // }
             }
         } else if (input >= 500) {
             console.log(input);
