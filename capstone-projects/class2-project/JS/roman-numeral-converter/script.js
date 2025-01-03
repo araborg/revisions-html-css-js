@@ -63,6 +63,7 @@ const convertToRoman = (input) => {
 
     while (input > 0 && input < 4000) {
         let noOfround = "";
+        let reminder;
 
         if (input >= 1000) {
             // console.log(input);
@@ -71,8 +72,15 @@ const convertToRoman = (input) => {
                 // console.log(input);
 
                 noOfround += "M";
+                reminder = input % 1000;
 
                 input -= 1000;
+
+                if (reminder === 0) {
+                    return;
+                } else {
+                    return reminder;
+                }
             }
         } else if (input >= 500) {
             console.log(input);
@@ -87,7 +95,7 @@ const convertToRoman = (input) => {
         }
 
         // input = 0;
-        console.log(noOfround);
+        console.log(noOfround, reminder);
     }
 };
 
