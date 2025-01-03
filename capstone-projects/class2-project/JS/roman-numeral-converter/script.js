@@ -13,8 +13,6 @@ const getInputVal = () => {
         output.textContent = "Please enter a number less than or equal to 3999";
     } else {
         output.textContent = convertToRoman(inputVal);
-
-        // console.log(convertToRoman(inputVal));
     }
 };
 
@@ -51,3 +49,9 @@ const convertToRoman = (input) => {
 };
 
 convertBtn.addEventListener("click", getInputVal);
+
+inputNum.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        getInputVal();
+    }
+});
