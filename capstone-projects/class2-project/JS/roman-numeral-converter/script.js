@@ -62,8 +62,18 @@ const convertToRoman = (input) => {
     const reminders = [];
 
     while (input > 0 && input < 4000) {
+        let noOfround = 0;
+
         if (input >= 1000) {
             console.log(input);
+
+            while (input >= 1000) {
+                console.log(input);
+
+                noOfround++;
+
+                input -= 1000;
+            }
         } else if (input >= 500) {
             console.log(input);
         } else if (input >= 100) {
@@ -76,7 +86,8 @@ const convertToRoman = (input) => {
             console.log(input);
         }
 
-        input = 0;
+        // input = 0;
+        console.log(noOfround);
     }
 };
 
