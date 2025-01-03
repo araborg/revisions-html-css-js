@@ -36,7 +36,7 @@ const convertToRoman = (input) => {
     const result = [];
 
     romans.forEach((arr) => {
-        while (input > arr[1]) {
+        while (input >= arr[1]) {
             console.log(arr);
 
             result.push(arr[0]);
