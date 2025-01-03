@@ -932,12 +932,10 @@ they are added to the top or end of the stack, and as
 functions RETURN, they are removed from the top of the 
 stack.
 
+
 22.
-
-
-23.
-
-const ref = [
+const convertToRoman = (input) => {
+    const romans = [
         ["M", 1000],
         ["CM", 900],
         ["D", 500],
@@ -953,17 +951,22 @@ const ref = [
         ["I", 1],
     ];
 
-    const res = [];
+    const result = [];
 
-    ref.forEach((arr) => {
+    romans.forEach((arr) => {
         while (input >= arr[1]) {
-            res.push(arr[0]);
+            result.push(arr[0]);
 
             input -= arr[1];
         }
     });
 
-    return res.join("");
+    return result.join("");
+};
+
+
+23.
+
 
 24.
 
