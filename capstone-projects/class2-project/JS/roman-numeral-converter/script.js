@@ -44,8 +44,6 @@ const convertToRoman = (input) => {
             input -= arr[1];
         }
     });
-
-    // return result.join("");
 };
 
 convertBtn.addEventListener("click", getInputVal);
