@@ -62,6 +62,14 @@ const convertToRoman = (input) => {
     const reminders = [];
 
     while (input > 0 && input < 4000) {
+        if (input >= 1000) {
+        } else if (input >= 500) {
+        } else if (input >= 100) {
+        } else if (input >= 50) {
+        } else if (input >= 10) {
+        } else if (input >= 5) {
+        }
+
         input = 0;
     }
 };
