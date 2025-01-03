@@ -49,7 +49,7 @@ const convertToRoman = (input) => {
     return result.join("");
 };
 
-convertToRoman(500);
+// convertToRoman(420);
 
 convertBtn.addEventListener("click", getInputVal);
 
