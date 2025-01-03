@@ -19,84 +19,21 @@ const getInputVal = () => {
 };
 
 const convertToRoman = (input) => {
-    // if (input === 1) {
-    //     return "I";
-    // } else if (input === 2) {
-    //     return "II";
-    // } else if (input === 3) {
-    //     return "III";
-    // } else if (input === 4) {
-    //     return "IV";
-    // } else if (input === 5) {
-    //     return "V";
-    // } else if (input === 6) {
-    //     return "VI";
-    // } else if (input === 7) {
-    //     return "VII";
-    // } else if (input === 8) {
-    //     return "VIII";
-    // } else if (input === 9) {
-    //     return "IX";
-    // } else if (input === 10) {
-    //     return "X";
-    // }
-
-    // if (input === 1) {
-    //     return "I";
-    // } else if (input === 5) {
-    //     return "V";
-    // } else if (input === 10) {
-    //     return "X";
-    // } else if (input === 50) {
-    //     return "L";
-    // } else if (input === 100) {
-    //     return "C";
-    // } else if (input === 500) {
-    //     return "D";
-    // } else if (input === 1000) {
-    //     return "M";
-    // }
-
-    const inputs = [];
-    const results = [];
-    const reminders = [];
-
-    while (input > 0 && input < 4000) {
-        let noOfround = "";
-        let reminder;
-
-        if (input >= 1000) {
-            // console.log(input);
-
-            while (input >= 1000) {
-                // console.log(input);
-
-                noOfround += "M";
-                reminder = input % 1000;
-
-                input -= 1000;
-
-                // if (reminder === 0) {
-                //     return noOfround;
-                // } else {
-                //     return reminder;
-                // }
-            }
-        } else if (input >= 500) {
-            console.log(input);
-        } else if (input >= 100) {
-            console.log(input);
-        } else if (input >= 50) {
-            console.log(input);
-        } else if (input >= 10) {
-            console.log(input);
-        } else if (input >= 5) {
-            console.log(input);
-        }
-
-        // input = 0;
-        console.log(noOfround, reminder);
-    }
+    const ref = [
+        ["M", 1000],
+        ["CM", 900],
+        ["D", 500],
+        ["CD", 400],
+        ["C", 100],
+        ["XC", 90],
+        ["L", 50],
+        ["XL", 40],
+        ["X", 10],
+        ["IX", 9],
+        ["V", 5],
+        ["IV", 4],
+        ["I", 1],
+    ];
 };
 
 convertBtn.addEventListener("click", getInputVal);
