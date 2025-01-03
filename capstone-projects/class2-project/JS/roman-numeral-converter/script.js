@@ -34,6 +34,10 @@ const convertToRoman = (input) => {
     ];
 
     const result = [];
+
+    romans.forEach((arr) => {
+        console.log(arr);
+    });
 };
 
 convertBtn.addEventListener("click", getInputVal);
