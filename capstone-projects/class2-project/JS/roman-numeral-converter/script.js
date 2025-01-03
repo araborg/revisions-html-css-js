@@ -63,6 +63,7 @@ const convertToRoman = (input) => {
 
     while (input > 0 && input < 4000) {
         if (input >= 1000) {
+            console.log(input);
         } else if (input >= 500) {
         } else if (input >= 100) {
         } else if (input >= 50) {
