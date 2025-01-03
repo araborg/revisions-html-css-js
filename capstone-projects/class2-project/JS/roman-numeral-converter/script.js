@@ -36,20 +36,19 @@ const convertToRoman = (input) => {
     const result = [];
 
     romans.forEach((arr) => {
-        while (input >= arr[1]) {
-            console.log(arr);
+        // while (input >= arr[1]) {
+        //     console.log(arr);
 
-            result.push(arr[0]);
+        //     result.push(arr[0]);
 
-            input -= arr[1];
-        }
+        //     input -= arr[1];
+        // }
+
+        return convertToRoman((input -= arr[1])) + arr[0];
     });
 
-    // console.log(result);
-    return result.join("");
+    // return result.join("");
 };
-
-// convertToRoman(420);
 
 convertBtn.addEventListener("click", getInputVal);
 
