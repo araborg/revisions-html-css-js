@@ -36,8 +36,6 @@ const convertToRoman = (input) => {
     const res = [];
 
     ref.forEach((arr) => {
-        console.log(arr);
-
         while (input >= arr[1]) {
             res.push(arr[0]);
 
