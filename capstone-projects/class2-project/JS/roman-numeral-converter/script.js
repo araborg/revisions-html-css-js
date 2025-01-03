@@ -42,12 +42,10 @@ const convertToRoman = (input) => {
     }
 
     if (input >= 1000 && input < 4000) {
-        console.log(input);
-        noOfLoop += 1;
-
-        console.log(noOfLoop);
-        return convertToRoman(input - 1000);
+        // console.log(convertToRoman(input - 1000) + (noOfLoop += 1));
+        // return convertToRoman(input - 1000) + (noOfLoop += 1);
     }
+    console.log(noOfLoop);
 };
 
 convertBtn.addEventListener("click", getInputVal);
