@@ -922,7 +922,6 @@ https://dev.to/codeguppy/practice-recursion-in-javascript-with-these-8-coding-ch
 
 https://www.freecodecamp.org/news/recursion-in-javascript-1608032c7a1f/
 
-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
 
 
 21. LIFO
