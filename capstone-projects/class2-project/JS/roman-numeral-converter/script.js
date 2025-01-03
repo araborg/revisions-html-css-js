@@ -18,19 +18,21 @@ const getInputVal = () => {
 
 const convertToRoman = (input) => {
     const romans = [
-        ["M", 1000],
-        ["CM", 900],
-        ["D", 500],
-        ["CD", 400],
-        ["C", 100],
-        ["XC", 90],
-        ["L", 50],
-        ["XL", 40],
-        ["X", 10],
-        ["IX", 9],
-        ["V", 5],
-        ["IV", 4],
-        ["I", 1],
+        
+
+        ["M",	1000],
+['CM'	900],
+['D'	500],
+['CD'	400].
+['C'	100],
+['XC'	90],
+["L"	50],
+['XL'	40],
+['X'	10],
+['IX'	9],
+['V'	5],
+['IV'	4],
+['I'	1],
     ];
 
     const result = [];
@@ -39,16 +41,17 @@ const convertToRoman = (input) => {
         while (input > arr[1]) {
             result.push(arr[0]);
 
-            console.log(input);
+            input -= arr[1];
 
-            input - arr[1];
+            console.log(input);
         }
     });
 
     // console.log(result);
+    return result.join("");
 };
 
-convertToRoman(2500);
+convertToRoman(500);
 
 convertBtn.addEventListener("click", getInputVal);
 
