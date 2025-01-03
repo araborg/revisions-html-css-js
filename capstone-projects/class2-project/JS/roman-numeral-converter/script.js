@@ -38,12 +38,14 @@ const convertToRoman = (input) => {
     romans.forEach((arr) => {
         while (input > arr[1]) {
             result.push(arr[0]);
+
             console.log(input);
-            input -= arr[1];
+
+            input - arr[1];
         }
     });
 
-    console.log(result);
+    // console.log(result);
 };
 
 convertToRoman(2500);
