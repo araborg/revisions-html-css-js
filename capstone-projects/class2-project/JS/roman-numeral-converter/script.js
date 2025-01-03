@@ -14,7 +14,7 @@ const getInputVal = () => {
     } else {
         output.textContent = convertToRoman(inputVal);
 
-        console.log(convertToRoman(inputVal));
+        // console.log(convertToRoman(inputVal));
     }
 };
 
