@@ -57,8 +57,12 @@ const convertToRoman = (input) => {
         return "M";
     }
 
-    if (input >= 1000 && input < 4000) {
-        // return convertToRoman(input -) + Math.floor(input / 1000);
+    const inputs = [];
+    const results = [];
+    const reminders = [];
+
+    while (input > 0 && input < 4000) {
+        input = 0;
     }
 };
 
