@@ -10,6 +10,7 @@ character class: []
 occurence: + 
 capture group: ()
 optional: ?
+non-capturing group: ?:
 
 */
 
