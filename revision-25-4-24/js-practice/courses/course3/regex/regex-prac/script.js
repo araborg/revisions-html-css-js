@@ -16,6 +16,7 @@ non-capturing group: ?:
 
 const helpRegex = /please help|assist me/i;
 const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
+const freeRegex = /free money/i;
 
 const denyList = [helpRegex, dollarRegex];
 
