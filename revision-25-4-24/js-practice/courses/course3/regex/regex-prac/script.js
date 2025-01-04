@@ -5,6 +5,7 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 // console.log(messageInput, result, checkMessageBtn);
 /*
 case-insensitive: i
+alternate sequence: |
 character class: []
 
 */
