@@ -23,7 +23,7 @@ const dollarRegex = //
     /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 const freeRegex = //
     /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
-const stockRegex = /[s5][t7][0o]ck [a@4]l[e3]rt/i;
+const stockRegex = /[s5][t7][0o][c{[(]k [a@4]l[e3]rt/i;
 
 const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex];
 
