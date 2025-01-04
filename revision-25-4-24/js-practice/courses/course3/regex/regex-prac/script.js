@@ -5,12 +5,12 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 // console.log(messageInput, result, checkMessageBtn);
 /*
 case-insensitive: i
-
+character class: []
 
 */
 
 const helpRegex = /please help|assist me/i;
-const dollarRegex = /dollars/i;
+const dollarRegex = /[0-9] dollars/i;
 
 const denyList = [helpRegex, dollarRegex];
 
