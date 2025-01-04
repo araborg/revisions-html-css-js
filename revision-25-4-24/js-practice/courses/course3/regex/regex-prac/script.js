@@ -12,6 +12,7 @@ capture group: ()
 optional: ?
 non-capturing group: ?:
 paces, tabs, and line breaks: \s
+^ anchor: beginning
 
 */
 
