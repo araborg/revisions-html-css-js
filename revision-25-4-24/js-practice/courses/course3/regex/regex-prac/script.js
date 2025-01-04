@@ -19,3 +19,5 @@ checkMessageBtn.addEventListener("click", () => {
 });
 
 const isSpam = (msg) => false;
+
+const helpRegex = /please help/;
