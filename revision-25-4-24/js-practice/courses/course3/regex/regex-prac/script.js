@@ -18,7 +18,7 @@ const helpRegex = /please help|assist me/i;
 const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 const freeRegex = /free money/i;
 
-const denyList = [helpRegex, dollarRegex];
+const denyList = [helpRegex, dollarRegex, freeRegex];
 
 // .match() was called on d parameter
 // const isSpam = (msg) => msg.match(helpRegex);
