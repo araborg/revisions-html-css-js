@@ -8,8 +8,12 @@ const helpRegex = /please help|assist me/i;
 
 const denyList = [helpRegex];
 
+// .match() was called on d parameter
 // const isSpam = (msg) => msg.match(helpRegex);
-const isSpam = (msg) => helpRegex.test(msg);
+
+// .test() was called on d regexp
+// const isSpam = (msg) => helpRegex.test(msg);
+const isSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
 checkMessageBtn.addEventListener("click", () => {
     if (!messageInput.value) {
