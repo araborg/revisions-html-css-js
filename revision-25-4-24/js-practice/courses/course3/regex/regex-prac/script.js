@@ -6,6 +6,8 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 
 const helpRegex = /please help|assist me/i;
 
+const denyList = [helpRegex];
+
 // const isSpam = (msg) => msg.match(helpRegex);
 const isSpam = (msg) => helpRegex.test(msg);
 
