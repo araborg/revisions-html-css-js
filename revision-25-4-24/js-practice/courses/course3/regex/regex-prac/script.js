@@ -23,8 +23,9 @@ const dollarRegex = //
     /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 const freeRegex = //
     /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
+const stockRegex = /stock alert/i;
 
-const denyList = [helpRegex, dollarRegex, freeRegex];
+const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex];
 
 // .match() was called on d parameter
 // const isSpam = (msg) => msg.match(helpRegex);
