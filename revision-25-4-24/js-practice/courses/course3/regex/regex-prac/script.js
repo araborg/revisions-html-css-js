@@ -7,8 +7,9 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 case-insensitive: i
 alternate sequence: |
 character class: []
-quantifier: + 
+occurence: + 
 capture group: ()
+optional: ?
 
 */
 
