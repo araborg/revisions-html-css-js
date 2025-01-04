@@ -3,6 +3,11 @@ const result = document.getElementById("result");
 const checkMessageBtn = document.getElementById("check-message-btn");
 
 // console.log(messageInput, result, checkMessageBtn);
+/*
+case-insensitive: i
+
+
+*/
 
 const helpRegex = /please help|assist me/i;
 const dollarRegex = /dollars/i;
