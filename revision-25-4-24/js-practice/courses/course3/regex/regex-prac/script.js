@@ -5,8 +5,9 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 // console.log(messageInput, result, checkMessageBtn);
 
 const helpRegex = /please help|assist me/i;
+const dollarRegex = /dollars/i;
 
-const denyList = [helpRegex];
+const denyList = [helpRegex, dollarRegex];
 
 // .match() was called on d parameter
 // const isSpam = (msg) => msg.match(helpRegex);
