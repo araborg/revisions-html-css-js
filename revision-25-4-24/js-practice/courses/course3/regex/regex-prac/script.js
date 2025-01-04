@@ -12,7 +12,7 @@ quantifier: +
 */
 
 const helpRegex = /please help|assist me/i;
-const dollarRegex = /[0-9] dollars|[0-9]dollars/i;
+const dollarRegex = /[0-9]+ dollars|[0-9]+dollars/i;
 
 const denyList = [helpRegex, dollarRegex];
 
