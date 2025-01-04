@@ -24,8 +24,9 @@ const dollarRegex = //
 const freeRegex = //
     /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
 const stockRegex = /(?:\s|^)[s5][t7][0o][c{[(]k [a@4]l[e3]rt(?:\s|$)/i;
+const dearRegex = /dear friend/i;
 
-const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex];
+const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex, dearRegex];
 
 // .match() was called on d parameter
 // const isSpam = (msg) => msg.match(helpRegex);
