@@ -11,5 +11,7 @@ checkBtn.addEventListener("click", () => {
         return;
     }
 
-    result.textContent = "Hello world";
+    result.textContent = checkSpam()
+        ? "Oh no! This looks like a spam message."
+        : "This message does not seem to contain any spam.";
 });
