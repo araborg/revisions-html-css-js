@@ -28,8 +28,8 @@ helpRegex: please help or assist me
 dollarRegex: num hundred thousand million billion
 freeRegex: free money
 stockRegex: stock alert
-dearRegex:
-denyList
+dearRegex: dear friend
+denyList: []
 */
 
 const helpRegex = /please help|assist me/i;
