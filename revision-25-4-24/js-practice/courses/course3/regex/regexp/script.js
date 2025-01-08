@@ -20,11 +20,11 @@ checkBtn.addEventListener("click", () => {
         return;
     }
 
-    console.log(checkSpam(msgInput.value));
-
     result.textContent = checkSpam(msgInput.value)
         ? "Oh no! This looks like a spam message."
         : "This message does not seem to contain any spam.";
+
+    msgInput.value = "";
 });
 
 /*
