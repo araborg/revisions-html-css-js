@@ -7,9 +7,9 @@ const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 const freeRegex = /free money/;
 
 const stockRegex = /[s5]t[o0][c{([]k [a@][l1][e3]rt/;
-const dearRegex = /dear friend/;
+const dearRegex = /(?:^|\s)dear friend/;
 
-const denyList = [helpRegex, dollarRegex, freeRegex];
+const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex, dearRegex];
 
 const checkSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
