@@ -2,7 +2,9 @@ const msgInput = document.getElementById("message-input");
 const checkBtn = document.getElementById("check-message-btn");
 const result = document.getElementById("result");
 
-const checkSpam = () => {};
+const checkSpam = (msg) => {
+    console.log(msg);
+};
 
 checkBtn.addEventListener("click", () => {
     if (!msgInput.value) {
@@ -11,7 +13,7 @@ checkBtn.addEventListener("click", () => {
         return;
     }
 
-    result.textContent = checkSpam()
+    result.textContent = checkSpam(msgInput.value)
         ? "Oh no! This looks like a spam message."
         : "This message does not seem to contain any spam.";
 });
