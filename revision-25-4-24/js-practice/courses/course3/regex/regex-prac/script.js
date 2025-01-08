@@ -5,23 +5,37 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 // console.log(messageInput, result, checkMessageBtn);
 /*
 1. case-insensitive: i
+
 2. alternate sequence: |
+
 3. character class: []
+
 4. one or more occurence: + 
+
 5. capture group: ()
+
 6. non-capturing group: (?:)
+
 7. optional: ?
+
 8. spaces, tabs, and line breaks: \s
+
 9. beginning: ^  
+
 10. end: $ 
 
-
+helpRegex: please help or assist me
+dollarRegex: num hunderd
+freeRegex
+stockRegex
+dearRegex
+denyList
 */
 
 const helpRegex = /please help|assist me/i;
 
 const dollarRegex = //
-    /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
+    /[0-9]+ (?:hundred|thousand|million|billion) dollars/i;
 
 const freeRegex = //
     /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
