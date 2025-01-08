@@ -27,8 +27,8 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 helpRegex: please help or assist me
 dollarRegex: num hundred thousand million billion
 freeRegex: free money
-stockRegex
-dearRegex
+stockRegex: stock alert
+dearRegex:
 denyList
 */
 
