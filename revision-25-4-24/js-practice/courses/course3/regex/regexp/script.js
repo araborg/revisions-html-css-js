@@ -3,6 +3,7 @@ const checkBtn = document.getElementById("check-message-btn");
 const result = document.getElementById("result");
 
 const helpRegex = /pl[e3][a4][s5][e3] h[e3][l1]p|assist me/;
+const dollarRegex = /[0-9]+ dollars/;
 
 const denyList = [helpRegex];
 
