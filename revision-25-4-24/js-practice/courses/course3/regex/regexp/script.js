@@ -26,12 +26,3 @@ checkBtn.addEventListener("click", () => {
 
     msgInput.value = "";
 });
-
-/*
-helpRegex: please help or assist me
-dollarRegex: num hundred thousand million billion
-freeRegex: free money
-stockRegex: stock alert
-dearRegex: dear friend
-denyList: []
-*/
