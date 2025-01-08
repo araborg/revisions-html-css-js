@@ -30,8 +30,8 @@ const stockRegex = //
     /(?:\s|^)[s5][t7][0o][c{[(]k [a@4]l[e3]rt(?:\s|$)/i;
 
 const dearRegex = //
-    /(?:^|\s)d[e3][a@4]r fr[i1][e3]nd(?:$|\s)/i;
-// /d[e3][a@4]r fr[i1][e3]nd/i;
+    // /(?:^|\s)d[e3][a@4]r fr[i1][e3]nd(?:$|\s)/i;
+    /d[e3][a@4]r fr[i1][e3]nd/i;
 
 const denyList = [helpRegex, dollarRegex, freeRegex, stockRegex, dearRegex];
 
