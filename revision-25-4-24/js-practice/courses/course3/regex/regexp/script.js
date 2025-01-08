@@ -2,13 +2,11 @@ const msgInput = document.getElementById("message-input");
 const checkBtn = document.getElementById("check-message-btn");
 const result = document.getElementById("result");
 
-const helpRegex = /please help/;
+const helpRegex = /pl[e3][a4][s5][e3] help/;
 
 const denyList = [helpRegex];
 
-const checkSpam = (msg) => {
-    console.log(msg);
-};
+const checkSpam = (msg) => denyList.some((regex) => regex.test(msg));
 
 checkBtn.addEventListener("click", () => {
     if (!msgInput.value) {
@@ -16,6 +14,8 @@ checkBtn.addEventListener("click", () => {
 
         return;
     }
+
+    console.log(checkSpam(msgInput.value));
 
     result.textContent = checkSpam(msgInput.value)
         ? "Oh no! This looks like a spam message."
