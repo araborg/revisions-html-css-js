@@ -2,6 +2,10 @@ const msgInput = document.getElementById("message-input");
 const checkBtn = document.getElementById("check-message-btn");
 const result = document.getElementById("result");
 
+const helpRegex = /please help/;
+
+const denyList = [helpRegex];
+
 const checkSpam = (msg) => {
     console.log(msg);
 };
