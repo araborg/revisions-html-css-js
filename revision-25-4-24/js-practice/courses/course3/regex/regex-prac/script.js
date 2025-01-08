@@ -25,8 +25,8 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 10. end: $ 
 
 helpRegex: please help or assist me
-dollarRegex: num hunderd
-freeRegex
+dollarRegex: num hundred thousand million billion
+freeRegex: free money
 stockRegex
 dearRegex
 denyList
@@ -35,7 +35,7 @@ denyList
 const helpRegex = /please help|assist me/i;
 
 const dollarRegex = //
-    /[0-9]+ (?:hundred|thousand|million|billion) dollars/i;
+    /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 
 const freeRegex = //
     /(?:^|\s)fr[e3][e3] m[o0]n[e3]y(?:$|\s)/i;
