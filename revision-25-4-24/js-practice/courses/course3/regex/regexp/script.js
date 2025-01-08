@@ -17,3 +17,12 @@ checkBtn.addEventListener("click", () => {
         ? "Oh no! This looks like a spam message."
         : "This message does not seem to contain any spam.";
 });
+
+/*
+helpRegex: please help or assist me
+dollarRegex: num hundred thousand million billion
+freeRegex: free money
+stockRegex: stock alert
+dearRegex: dear friend
+denyList: []
+*/
