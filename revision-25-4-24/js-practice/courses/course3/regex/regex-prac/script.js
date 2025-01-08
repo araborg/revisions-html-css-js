@@ -10,8 +10,8 @@ character class: []
 one or more occurence: + 
 capture group: ()
 optional: ?
-non-capturing group: ?:
-paces, tabs, and line breaks: \s
+non-capturing group: (?:)
+spaces, tabs, and line breaks: \s
 beginning: ^  
 end: $ 
 
