@@ -4,7 +4,7 @@ const result = document.getElementById("result");
 
 const helpRegex = /pl[e3][a4][s5][e3] h[e3][l1]p|assist me/i;
 const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
-const freeRegex = /(?:^|\s)free money(?:$|\s)/;
+const freeRegex = /(?:^|\s)[7f]r[3e][e3] m[o0]n[e3]y(?:$|\s)/;
 
 const stockRegex = /[s5]t[o0][c{([]k [a@][l1][e3]rt/;
 const dearRegex = /(?:^|\s)dear friend(?:$|\s)/;
