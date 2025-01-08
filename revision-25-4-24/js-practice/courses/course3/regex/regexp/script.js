@@ -6,7 +6,7 @@ const helpRegex = /pl[e3][a4][s5][e3] h[e3][l1]p|assist me/i;
 const dollarRegex = /[0-9]+ (?:hundred|thousand|million|billion)? dollars/i;
 const freeRegex = /free money/;
 
-const stockRegex = /stock alert/;
+const stockRegex = /[s5]t[o0][c{([]k [a@][l1][e3]rt/;
 const dearRegex = /dear friend/;
 
 const denyList = [helpRegex, dollarRegex, freeRegex];
