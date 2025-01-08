@@ -4,16 +4,16 @@ const checkMessageBtn = document.getElementById("check-message-btn");
 
 // console.log(messageInput, result, checkMessageBtn);
 /*
-case-insensitive: i
-alternate sequence: |
-character class: []
-one or more occurence: + 
-capture group: ()
-non-capturing group: (?:)
-optional: ?
-spaces, tabs, and line breaks: \s
-beginning: ^  
-end: $ 
+1. case-insensitive: i
+2. alternate sequence: |
+3. character class: []
+4. one or more occurence: + 
+5. capture group: ()
+6. non-capturing group: (?:)
+7. optional: ?
+8. spaces, tabs, and line breaks: \s
+9. beginning: ^  
+10. end: $ 
 
 
 */
