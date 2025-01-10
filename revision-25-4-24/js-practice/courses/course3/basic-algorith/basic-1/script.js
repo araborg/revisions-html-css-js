@@ -7,12 +7,14 @@ const sortInputArray = (event) => {
         ...document.getElementsByClassName("values-dropdown"),
     ].map((dropdown) => Number(dropdown.value));
 
-    console.log(inputValues);
+    updateUI(inputValues);
 };
 
 const updateUI = (array = []) => {
     array.forEach((num, i) => {
         const outputValueNode = document.getElementById(`output-value-${i}`);
+
+        outputValueNode.textContent = num;
     });
 };
 
