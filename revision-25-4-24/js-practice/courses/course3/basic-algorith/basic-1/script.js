@@ -78,6 +78,12 @@ const selectionSort = (array) => {
     return array;
 };
 
-const insertionSort = (array) => {};
+const insertionSort = (array) => {
+    for (let i = 1; i < array.length; i++) {
+        const currValue = array[i];
+
+        let j = i - 1;
+    }
+};
 
 sortButton.addEventListener("click", sortInputArray);
