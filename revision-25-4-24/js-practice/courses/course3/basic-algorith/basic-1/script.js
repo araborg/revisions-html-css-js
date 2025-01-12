@@ -79,10 +79,15 @@ const selectionSort = (array) => {
 };
 
 const insertionSort = (array) => {
+    /* 
+        the first element is already sorted, hence
+        create a for loop that starts at the second [1]
+        element in the array 
+    */
     for (let i = 1; i < array.length; i++) {
         const currValue = array[i];
 
-        let j = i - 1;
+        let j = i - 1; // first elemt [0]
 
         while (j >= 0 && array[j] > currValue) {
             array[j + 1] = array[j];
