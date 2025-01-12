@@ -83,6 +83,8 @@ const insertionSort = (array) => {
         const currValue = array[i];
 
         let j = i - 1;
+
+        while (j >= 0 && array[j] > currValue) {}
     }
 };
 
