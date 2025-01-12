@@ -63,9 +63,14 @@ const selectionSort = (array) => {
             //
         }
 
-        const temp = array[i];
-        array[i] = array[minIndex];
-        array[minIndex] = temp;
+        // const temp = array[i];
+        // array[i] = array[minIndex];
+        // array[minIndex] = temp;
+
+        // ds also works:
+        const temp = array[minIndex];
+        array[minIndex] = array[i];
+        array[i] = temp;
 
         //
     }
