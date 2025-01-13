@@ -10,5 +10,9 @@ sortBtn.addEventListener("click", (event) => {
         Number(dropdown.value)
     );
 
-    console.log(inputValue);
+    updateuI(inputValue);
 });
+
+const updateuI = (array) => {
+    console.log(array);
+};
