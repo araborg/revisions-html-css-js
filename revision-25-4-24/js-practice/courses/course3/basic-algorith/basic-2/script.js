@@ -11,7 +11,9 @@ sortBtn.addEventListener("click", (event) => {
         Number(dropdown.value)
     );
 
-    updateuI(inputValue);
+    const displayUI = bubbleSort(inputValue);
+
+    updateuI(displayUI);
 });
 
 const updateuI = (array) => {
@@ -24,6 +26,8 @@ const updateuI = (array) => {
 
 // sort algorithm
 
-// bubble sort algorithm
+// Bubble sort algorithm
 
-// selection sort algorithm
+// Selection sort algorithm
+
+// Insertion sort algorithm
