@@ -79,4 +79,5 @@ const selectionSort = (array) => {
 
     return array;
 };
+
 // Insertion sort algorithm
