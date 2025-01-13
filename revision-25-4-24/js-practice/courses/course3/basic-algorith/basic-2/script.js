@@ -86,6 +86,9 @@ const insertionSort = (array) => {
         let currValue = i;
         let dvalB4currVal = i - 1;
 
+        // b4       curr    after
+        // i - 1      i     i + 1
+
         while (dvalB4currVal >= 0 && array[dvalB4currVal] > array[currValue]) {
             array[dvalB4currVal + 1] = array[dvalB4currVal];
 
