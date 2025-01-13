@@ -14,5 +14,5 @@ sortBtn.addEventListener("click", (event) => {
 });
 
 const updateuI = (array) => {
-    console.log(array);
+    console.log(array
 };
