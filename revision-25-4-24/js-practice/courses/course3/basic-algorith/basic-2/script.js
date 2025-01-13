@@ -4,5 +4,7 @@ const selectedValues = document.getElementsByClassName("values-dropdown");
 // console.log(selectedValues);
 
 sortBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+
     console.log(event);
 });
