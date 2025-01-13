@@ -83,8 +83,12 @@ const selectionSort = (array) => {
 // Insertion sort algorithm
 
 const insertionSort = (array) => {
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 1; i < array.length; i++) {
         let currValue = i;
         let prevValue = i - 1;
+
+        while (prevValue >= 0 && array[prevValue] > array[currValue]) {
+            prevValue--;
+        }
     }
 };
