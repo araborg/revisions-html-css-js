@@ -83,19 +83,21 @@ const selectionSort = (array) => {
 // Insertion sort algorithm
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
+        let b4currVal = i - 1;
         let currValue = i;
-        let dvalB4currVal = i - 1;
 
-        // b4       curr    after
-        // i - 1      i     i + 1
+        /*
+            b4       curr    after
+            i - 1      i     i + 1
+        */
 
-        while (dvalB4currVal >= 0 && array[dvalB4currVal] > array[currValue]) {
-            array[dvalB4currVal + 1] = array[dvalB4currVal];
+        while (b4currVal >= 0 && array[b4currVal] > array[currValue]) {
+            array[b4currVal + 1] = array[b4currVal];
 
-            dvalB4currVal--;
+            b4currVal--;
         }
 
-        array[dvalB4currVal + 1] = currValue;
+        array[b4currVal + 1] = currValue;
     }
 
     return array;
