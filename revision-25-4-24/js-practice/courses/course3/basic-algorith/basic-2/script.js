@@ -15,9 +15,9 @@ sortBtn.addEventListener("click", (event) => {
 });
 
 const updateuI = (array) => {
-    array.forEach((element, i) => {
+    array.forEach((num, i) => {
         const HTMLCollectionText = document.getElementById(`output-value-${i}`);
 
-        console.log(HTMLCollectionText);
+        HTMLCollectionText.textContent = num;
     });
 };
