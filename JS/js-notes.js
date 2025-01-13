@@ -965,6 +965,11 @@ const convertToRoman = (input) => {
 
 
 23.
+An array item can be assigned another array item or an index.
+
+    array[b4currVal + 1] = array[b4currVal];
+
+    array[b4currVal + 1] = currValue;
 
 
 24.
