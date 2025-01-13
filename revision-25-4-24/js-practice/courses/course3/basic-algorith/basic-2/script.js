@@ -70,14 +70,11 @@ const selectionSort = (array) => {
             if (array[j] < array[minIndex]) {
                 minIndex = j;
             }
-
-            const temp = array[i];
-
-            console.log(temp);
-
-            // array[i] = array[minIndex];
-            // array[minIndex] = temp;
         }
+
+        const temp = array[minIndex];
+        array[minIndex] = array[i];
+        array[i] = temp;
     }
 
     return array;
