@@ -64,7 +64,12 @@ const bubbleSort = (array) => {
 // Selection sort algorithm
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
-        console.log(array[i]);
+        let minIndex = i;
+
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] < array[i]) {
+            }
+        }
     }
 };
 
