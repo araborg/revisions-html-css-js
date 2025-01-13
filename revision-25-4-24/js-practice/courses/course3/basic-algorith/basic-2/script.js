@@ -1,10 +1,11 @@
 const sortBtn = document.getElementById("sort");
-const selectedValues = document.getElementsByClassName("values-dropdown");
 
 // console.log(selectedValues);
 
 sortBtn.addEventListener("click", (event) => {
     event.preventDefault();
+
+    const selectedValues = document.getElementsByClassName("values-dropdown");
 
     const inputValue = [...selectedValues].map((dropdown) =>
         Number(dropdown.value)
@@ -15,6 +16,8 @@ sortBtn.addEventListener("click", (event) => {
 
 const updateuI = (array) => {
     array.forEach((element, i) => {
-        console.log(element, i);
+        const HTMLCollectionText = document.getElementById(`output-value-${i}`);
+
+        console.log(HTMLCollectionText);
     });
 };
