@@ -21,3 +21,9 @@ const updateuI = (array) => {
         HTMLCollectionText.textContent = num;
     });
 };
+
+// sort algorithm
+
+// bubble sort algorithm
+
+// selection sort algorithm
