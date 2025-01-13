@@ -27,6 +27,23 @@ const updateuI = (array) => {
 // sort algorithm
 
 // Bubble sort algorithm
+const bubbleSort = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length - 1; j++) {
+            // console.log(array[j], array[j + 1]);
+
+            if (array[j] > array[j + 1]) {
+                array[j + 1] = array[j];
+
+                const temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+            }
+        }
+    }
+
+    return array;
+};
 
 // Selection sort algorithm
 
