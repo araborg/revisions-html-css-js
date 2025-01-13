@@ -6,5 +6,9 @@ const selectedValues = document.getElementsByClassName("values-dropdown");
 sortBtn.addEventListener("click", (event) => {
     event.preventDefault();
 
-    console.log(event);
+    const inputValue = [...selectedValues].map((dropdown) =>
+        Number(dropdown.value)
+    );
+
+    console.log(inputValue);
 });
