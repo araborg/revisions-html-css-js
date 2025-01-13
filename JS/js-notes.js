@@ -973,7 +973,28 @@ An array item can be assigned another array item or an index.
 
 
 24.
+Insertion sort algorithm:
+const insertionSort = (array) => {
+    for (let i = 1; i < array.length; i++) {
+        let b4currVal = i - 1;
+        let currValue = i;
 
+        ***********************
+        b4       curr    after
+        i - 1      i     i + 1
+        ***********************
+
+            while (b4currVal >= 0 && array[b4currVal] > array[currValue]) {
+                array[b4currVal + 1] = array[b4currVal];
+    
+                b4currVal--;
+            }
+    
+            array[b4currVal + 1] = currValue;
+        }
+    
+        return array;
+    };
 
 25.
 
