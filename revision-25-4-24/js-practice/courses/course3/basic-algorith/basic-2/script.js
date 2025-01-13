@@ -84,15 +84,15 @@ const selectionSort = (array) => {
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
         let currValue = i;
-        let prevValue = i - 1;
+        let dvalueB4 = i - 1;
 
-        while (prevValue >= 0 && array[prevValue + 1] > array[currValue]) {
-            array[prevValue + 1] = array[currValue];
+        while (dvalueB4 >= 0 && array[dvalueB4] > array[currValue]) {
+            array[dvalueB4 + 1] = array[dvalueB4];
 
-            prevValue--;
+            dvalueB4--;
         }
 
-        array[prevValue + 1] = currValue;
+        array[dvalueB4 + 1] = currValue;
     }
 
     return array;
