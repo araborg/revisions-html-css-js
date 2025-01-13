@@ -11,7 +11,9 @@ sortBtn.addEventListener("click", (event) => {
         Number(dropdown.value)
     );
 
-    const displayUI = insertionSort(inputValue);
+    // const displayUI = insertionSort(inputValue);
+
+    const displayUI = inputValue.sort((a, b) => a - b);
 
     updateuI(displayUI);
 });
