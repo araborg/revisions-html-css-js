@@ -81,14 +81,19 @@ const selectionSort = (array) => {
 };
 
 // Insertion sort algorithm
-
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
         let currValue = i;
         let prevValue = i - 1;
 
-        while (prevValue >= 0 && array[prevValue] > array[currValue]) {
+        while (prevValue >= 0 && array[prevValue + 1] > array[currValue]) {
+            array[prevValue + 1] = array[currValue];
+
             prevValue--;
         }
+
+        array[prevValue + 1] = currValue;
     }
+
+    return array;
 };
