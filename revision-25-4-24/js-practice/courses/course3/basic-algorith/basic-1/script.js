@@ -89,6 +89,11 @@ const insertionSort = (array) => {
 
         let j = i - 1; // first elemt [0]
 
+        /*
+            b4       curr    after
+            i - 1      i     i + 1
+        */
+
         while (j >= 0 && array[j] > currValue) {
             array[j + 1] = array[j];
 
