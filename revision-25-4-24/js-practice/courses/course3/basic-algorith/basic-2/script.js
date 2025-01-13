@@ -66,11 +66,21 @@ const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         let minIndex = i;
 
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[j] < array[i]) {
+        for (let j = 1; j < array.length; j++) {
+            if (array[j] < array[minIndex]) {
+                minIndex = j;
             }
+
+            // const temp = array[j];
+            // array[j] = array[minIndex];
+            // array[minIndex] = temp;
+            const temp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = temp;
         }
     }
+
+    return array;
 };
 
 // Insertion sort algorithm
