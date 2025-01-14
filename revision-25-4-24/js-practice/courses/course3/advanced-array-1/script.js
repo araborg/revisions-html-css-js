@@ -6,6 +6,6 @@ const calculate = () => {
         .map((el) => Number(el))
         // .filter((el) => !isNaN(el) !== NaN);
         .filter((el) => !isNaN(el));
-
-    console.log(numbers);
 };
+
+const getMean = (array) => {};
