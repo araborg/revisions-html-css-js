@@ -4,7 +4,9 @@ const calculate = () => {
 
     const numbers = array
         .map((el) => Number(el))
-        .filter((el) => !isNaN(el) !== NaN);
+        // .filter((el) => !isNaN(el) !== NaN);
+        .filter((el) => !isNaN(el));
+
     console.log(numbers);
 };
 
