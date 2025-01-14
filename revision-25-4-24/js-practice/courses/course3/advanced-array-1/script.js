@@ -9,6 +9,3 @@ const calculate = () => {
 
     console.log(numbers);
 };
-
-console.log(NaN === NaN);
-// calculate();
