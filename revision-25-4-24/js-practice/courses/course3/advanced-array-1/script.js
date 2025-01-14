@@ -5,4 +5,4 @@ const calculate = () => {
     console.log(value);
 };
 
-calculate();
+// calculate();
