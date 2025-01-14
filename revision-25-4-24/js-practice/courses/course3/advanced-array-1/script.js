@@ -6,7 +6,7 @@ const calculate = () => {
 
     const filtered = numbers.filter();
 
-    console.log(value);
+    console.log(NaN == NaN);
 };
 
 // calculate();
