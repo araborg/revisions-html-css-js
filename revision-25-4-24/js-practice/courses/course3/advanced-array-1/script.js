@@ -6,6 +6,14 @@ const calculate = () => {
         .map((el) => Number(el))
         // .filter((el) => !isNaN(el) !== NaN);
         .filter((el) => !isNaN(el));
+
+    console.log(getMean(numbers));
 };
 
-const getMean = (array) => {};
+const getMean = (array) => {
+    const sum = array.reduce((accu, el) => {
+        return accu + el;
+    }, 0);
+
+    return sum;
+};
