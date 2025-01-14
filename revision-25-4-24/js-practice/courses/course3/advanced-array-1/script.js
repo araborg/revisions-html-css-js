@@ -5,8 +5,7 @@ const calculate = () => {
     const numbers = array.map((el) => Number(el));
 
     const filtered = numbers.filter();
-
-    console.log(NaN == NaN);
 };
 
+console.log(NaN === NaN);
 // calculate();
