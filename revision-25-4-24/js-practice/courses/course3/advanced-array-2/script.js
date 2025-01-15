@@ -1,5 +1,7 @@
 const calculate = () => {
-    console.log("hello");
+    const numbers = document.querySelector("numbers");
+
+    console.log(numbers);
 };
 
 // mean
