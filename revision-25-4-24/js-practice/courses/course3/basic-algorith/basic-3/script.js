@@ -17,3 +17,9 @@ const updateUI = (array) => {
         HTMLText.textContent = el;
     });
 };
+
+// bubble sort
+
+// selection sort
+
+// insertion sort
