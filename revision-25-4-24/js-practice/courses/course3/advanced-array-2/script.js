@@ -8,10 +8,17 @@ const calculate = () => {
         .filter((el) => !isNaN(el))
         .sort((a, b) => a - b);
 
-    console.log(modNum);
+    const mean = getMean(modNum);
+
+    console.log(mean);
 };
 
 // mean
+const getMean = (array) => {
+    const mean = array.reduce((accu, el) => accu + el, 0) / array.length;
+
+    return mean;
+};
 
 // median
 
