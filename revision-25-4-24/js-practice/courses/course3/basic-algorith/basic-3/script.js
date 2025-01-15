@@ -37,7 +37,19 @@ const bubbleSort = (array) => {
 
 // selection sort
 const selectionSort = (array) => {
-    for (let i = 0; i < array.length; i++) {}
+    for (let i = 0; i < array.length; i++) {
+        let currIndex = i;
+
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] < array[currIndex]) {
+                currIndex = j;
+            }
+        }
+
+        const temp = array[j];
+        array[i] = array[currIndex];
+        array[currIndex] = temp;
+    }
 };
 
 // insertion sort
