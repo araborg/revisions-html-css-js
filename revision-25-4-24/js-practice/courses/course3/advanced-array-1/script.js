@@ -63,5 +63,5 @@ const getMode = (array) => {
         (el) => counts[el] === counts[highest]
     );
 
-    return mode;
+    return mode.join(", ");
 };
