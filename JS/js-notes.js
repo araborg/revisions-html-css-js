@@ -996,7 +996,14 @@ const insertionSort = (array) => {
         return array;
     };
 
-25.
+25. Set:
+A Set is a data structure that only allows unique values. 
+If you pass an array into the Set constructor, it will 
+remove any duplicate values.
+
+if (new Set(Object.values(counts)).size === 1) {
+    return null;
+}
 
 
 26.
