@@ -94,4 +94,6 @@ const getStandardDeviation = (array) => {
     // const standardDeviation = Math.pow(variance, 1 / 2);
 
     const standardDeviation = Math.sqrt(variance);
+
+    return standardDeviation;
 };
