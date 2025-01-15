@@ -15,5 +15,7 @@ const getMean = (array) => {
         return accu + el;
     }, 0);
 
+    const mean = sum / array.length;
+
     return sum;
 };
