@@ -9,7 +9,7 @@ const calculate = () => {
 
     const mean = getMean(numbers);
     const median = getMedian(numbers);
-    console.log(median);
+    // console.log(median);
 
     document.querySelector("#mean").textContent = mean;
 };
@@ -25,6 +25,6 @@ const getMean = (array) => {
 const getMedian = (array) => {
     const sorted = array.sort((a, b) => a - b);
 
-    console.log(sorted);
-    return sorted;
+    // console.log(sorted);
+    // return sorted;
 };
