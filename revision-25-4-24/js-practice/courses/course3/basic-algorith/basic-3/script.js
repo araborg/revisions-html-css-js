@@ -67,8 +67,11 @@ const insertionSort = (array) => {
         let currIndex = i;
         let prevIndex = i - 1;
 
+        // prev     curr    after
+
         while (prevIndex >= 0 && array[prevIndex] > array[currIndex]) {
             //
+            array[prevIndex + 1] = array[currIndex];
 
             prevIndex--;
         }
