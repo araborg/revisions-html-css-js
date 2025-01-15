@@ -76,12 +76,10 @@ const insertionSort = (array) => {
             prevIndex--;
         }
 
-        console.log(array[prevIndex + 1]);
-
         array[prevIndex + 1] = currIndex;
     }
 
-    // console.log(array);
+    console.log(array);
 
     return array;
 };
