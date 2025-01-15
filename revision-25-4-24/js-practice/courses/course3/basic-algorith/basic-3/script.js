@@ -40,7 +40,7 @@ const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         let currIndex = i;
 
-        for (let j = i + 1; j < array.length; j++) {
+        for (let j = 0; j < array.length; j++) {
             if (array[j] < array[currIndex]) {
                 currIndex = j;
             }
@@ -51,7 +51,7 @@ const selectionSort = (array) => {
         array[currIndex] = temp;
     }
 
-    console.log(array);
+    return array;
 };
 
 // insertion sort
