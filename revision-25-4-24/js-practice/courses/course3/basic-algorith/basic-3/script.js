@@ -62,3 +62,4 @@ const selectionSort = (array) => {
 };
 
 // insertion sort
+const insertionSort = (array) => {};
