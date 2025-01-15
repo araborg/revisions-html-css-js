@@ -17,6 +17,7 @@ const calculate = () => {
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
+    document.querySelector("#range").textContent = range;
 };
 
 const getMean = (array) => {
