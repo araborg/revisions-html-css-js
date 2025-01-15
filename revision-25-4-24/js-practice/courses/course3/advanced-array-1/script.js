@@ -7,7 +7,7 @@ const calculate = () => {
         // .filter((el) => !isNaN(el) !== NaN);
         .filter((el) => !isNaN(el));
 
-    console.log(getMean(numbers));
+    console.log(getMean(numbers), numbers);
 };
 
 const getMean = (array) => {
