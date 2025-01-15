@@ -6,7 +6,14 @@ sortBtn.addEventListener("click", (e) => {
     const values = [...document.getElementsByClassName("values-dropdown")].map(
         (el) => Number(el.value)
     );
-    console.log(values);
+
+    updateUI(values);
 });
 
-const sortNum = (array) => {};
+const updateUI = (array) => {
+    array.forEach((el, i) => {
+        const HTMLText = document.getElementById(`output-value-${i}`);
+
+        HTMLText.textContent = el;
+    });
+};
