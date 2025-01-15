@@ -70,3 +70,7 @@ const getMode = (array) => {
 const getRange = (array) => {
     return Math.max(...array) - Math.min(...array);
 };
+
+const getVariance = (array) => {
+    const mean = getMean(array);
+};
