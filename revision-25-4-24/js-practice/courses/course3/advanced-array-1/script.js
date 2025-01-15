@@ -27,8 +27,8 @@ const getMedian = (array) => {
 
     const median =
         array.length % 2 === 0
-            ? getMean(array[array.length / 2 - 1], array[array.length / 2])
-            : null;
+            ? getMean([array[array.length / 2 - 1], array[array.length / 2]])
+            : getMean([array[Math.floor(array.length / 2)]]);
 
     console.log(median);
     // return sorted;
