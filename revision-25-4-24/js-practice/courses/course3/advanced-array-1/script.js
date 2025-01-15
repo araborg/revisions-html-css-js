@@ -11,11 +11,9 @@ const calculate = () => {
 };
 
 const getMean = (array) => {
-    const sum = array.reduce((accu, el) => {
-        return accu + el;
-    }, 0);
+    const sum = array.reduce((accu, el) => accu + el, 0);
 
     const mean = sum / array.length;
 
-    return sum;
+    return mean;
 };
