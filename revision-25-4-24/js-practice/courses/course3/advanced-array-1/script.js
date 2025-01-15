@@ -10,7 +10,8 @@ const calculate = () => {
     const mean = getMean(numbers);
     const median = getMedian(numbers);
 
-    console.log(getMode(numbers));
+    // console.log(getMode(numbers));
+    getMode(numbers);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
@@ -46,11 +47,12 @@ const getMode = (array) => {
         }
     });
 
-    if (new Set(Object.values(counts))) {
+    if (new Set(Object.values(counts)).size === 1) {
+        return null;
     }
 
-    console.log(Object.values(counts).size);
-    console.log(Object.keys(counts));
+    console.log(new Set(Object.values(counts)).size === 1);
+    // console.log(Object.keys(counts));
 
     // return counts;
 
