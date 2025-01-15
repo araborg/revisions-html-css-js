@@ -8,6 +8,8 @@ const calculate = () => {
         .filter((el) => !isNaN(el));
 
     const mean = getMean(numbers);
+
+    document.querySelector("#mean").textContent = mean;
 };
 
 const getMean = (array) => {
