@@ -9,13 +9,17 @@ const calculate = () => {
         .sort((a, b) => a - b);
 
     const mean = getMean(modNum);
-
     console.log(mean);
+
+    document.querySelector("#mean").textContent = mean;
 };
 
 // mean
 const getMean = (array) => {
-    const mean = array.reduce((accu, el) => accu + el, 0) / array.length;
+    const mean =
+        array.reduce((accu, el) => {
+            return accu + el;
+        }, 0) / array.length;
 
     return mean;
 };
