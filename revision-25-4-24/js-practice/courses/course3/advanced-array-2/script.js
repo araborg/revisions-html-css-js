@@ -3,7 +3,10 @@ const calculate = () => {
 
     const value = numbers.split(/,\s*/g);
 
-    const modNum = value.map((el) => Number(el)).filter((el) => !isNaN(el));
+    const modNum = value
+        .map((el) => Number(el))
+        .filter((el) => !isNaN(el))
+        .sort((a, b) => a - b);
 
     console.log(modNum);
 };
