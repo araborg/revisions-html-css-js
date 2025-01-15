@@ -88,4 +88,6 @@ const getVariance = (array) => {
     return variance;
 };
 
-const getStandardDeviation = (array) => {};
+const getStandardDeviation = (array) => {
+    const variance = getVariance(array);
+};
