@@ -3,7 +3,7 @@ const calculate = () => {
 
     const value = numbers.split(/,\s*/g);
 
-    console.log(value);
+    const modNum = value.map((el) => Number(el));
 };
 
 // mean
