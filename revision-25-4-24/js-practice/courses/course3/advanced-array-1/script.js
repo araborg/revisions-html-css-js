@@ -20,4 +20,6 @@ const getMean = (array) => {
     return mean;
 };
 
-const getMedian = (array) => {};
+const getMedian = (array) => {
+    const sorted = array.sort();
+};
