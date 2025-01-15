@@ -38,7 +38,11 @@ const getMedian = (array) => {
 const getMode = (array) => {
     const counts = {};
 
-    array.forEach((el) => {});
+    array.forEach((el) => {
+        if (counts[el]) {
+        } else {
+        }
+    });
 
     return array;
 };
