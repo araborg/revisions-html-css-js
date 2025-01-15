@@ -62,4 +62,15 @@ const selectionSort = (array) => {
 };
 
 // insertion sort
-const insertionSort = (array) => {};
+const insertionSort = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        let currIndex = i;
+        let prevIndex = i - 1;
+
+        while (prevIndex >= 0 && array[prevIndex] > array[currIndex]) {
+            //
+
+            prevIndex--;
+        }
+    }
+};
