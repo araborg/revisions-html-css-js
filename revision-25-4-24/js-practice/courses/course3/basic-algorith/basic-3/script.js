@@ -7,7 +7,7 @@ sortBtn.addEventListener("click", (e) => {
         (el) => Number(el.value)
     );
 
-    const sortedArray = insertionSort(values);
+    const sortedArray = values.sort((a, b) => a - b);
 
     updateUI(sortedArray);
 });
