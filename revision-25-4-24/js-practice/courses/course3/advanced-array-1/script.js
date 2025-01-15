@@ -30,6 +30,6 @@ const getMedian = (array) => {
             ? getMean(array[array.length / 2 - 1], array[array.length / 2])
             : null;
 
-    // console.log(sorted);
+    console.log(median);
     // return sorted;
 };
