@@ -5,5 +5,3 @@ sortBtn.addEventListener("click", (e) => {
 
     console.log(e);
 });
-
-console.log(sortBtn);
