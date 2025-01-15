@@ -9,7 +9,6 @@ const calculate = () => {
 
     const mean = getMean(numbers);
     const median = getMedian(numbers);
-    // console.log(median);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
