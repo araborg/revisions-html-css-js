@@ -73,4 +73,13 @@ const getRange = (array) => {
 
 const getVariance = (array) => {
     const mean = getMean(array);
+
+    const difference = array.map((el) => el - mean);
+
+    const squaredDifferences = difference.map((el) => el ** 2);
+
+    const sumSquaredDifferences = squaredDifferences.reduce(
+        (accu, el) => accu + el,
+        0
+    );
 };
