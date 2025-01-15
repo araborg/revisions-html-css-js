@@ -9,7 +9,6 @@ const calculate = () => {
         .sort((a, b) => a - b);
 
     const mean = getMean(modNum);
-    console.log(mean);
 
     document.querySelector("#mean").textContent = mean;
 };
