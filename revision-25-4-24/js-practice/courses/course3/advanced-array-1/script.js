@@ -82,4 +82,6 @@ const getVariance = (array) => {
         (accu, el) => accu + el,
         0
     );
+
+    const variance = array.reduce((accu, el) => {}, 0);
 };
