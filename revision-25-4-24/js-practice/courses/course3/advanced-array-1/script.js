@@ -23,13 +23,12 @@ const getMean = (array) => {
 };
 
 const getMedian = (array) => {
-    const sorted = array.sort((a, b) => a - b);
+    const sorted = array.slice().sort((a, b) => a - b);
 
     const median =
         array.length % 2 === 0
-            ? getMean([array[array.length / 2 - 1], array[array.length / 2]])
-            : getMean([array[Math.floor(array.length / 2)]]);
+            ? getMean([sorted[array.length / 2 - 1], sorted[array.length / 2]])
+            : getMean([sorted[Math.floor(array.length / 2)]]);
 
-    console.log(median);
-    // return sorted;
+    return median;
 };
