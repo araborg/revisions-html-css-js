@@ -8,6 +8,8 @@ const calculate = () => {
         .filter((el) => !isNaN(el));
 
     const mean = getMean(numbers);
+    const median = getMedian(numbers);
+    console.log(median);
 
     document.querySelector("#mean").textContent = mean;
 };
@@ -21,5 +23,8 @@ const getMean = (array) => {
 };
 
 const getMedian = (array) => {
-    const sorted = array.sort();
+    const sorted = array.sort((a, b) => a - b);
+
+    console.log(sorted);
+    return sorted;
 };
