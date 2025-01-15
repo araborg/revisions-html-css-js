@@ -19,3 +19,5 @@ const getMean = (array) => {
 
     return mean;
 };
+
+const getMedian = (array) => {};
