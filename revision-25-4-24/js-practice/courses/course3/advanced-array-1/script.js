@@ -59,15 +59,7 @@ const getMode = (array) => {
         (a, b) => counts[b] - counts[a]
     )[0];
 
-    // const high = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
-
-    console.log(highest);
-    // console.log(high);
-
-    // console.log(new Set(Object.values(counts)).size === 1);
-    // console.log(Object.keys(counts));
-
-    // return counts;
+    const mode = Object.keys(counts);
 
     return array;
 };
