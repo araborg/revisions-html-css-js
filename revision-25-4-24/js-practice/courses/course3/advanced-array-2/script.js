@@ -1,5 +1,5 @@
 const calculate = () => {
-    const numbers = document.querySelector("numbers");
+    const numbers = document.querySelector("numbers").value;
 
     console.log(numbers);
 };
