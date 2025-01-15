@@ -28,3 +28,11 @@ const getMedian = (array) => {
     // console.log(sorted);
     // return sorted;
 };
+
+const testArr1 = [1, 2, 3, 4, 5];
+const testArr2 = [1, 2, 3, 4, 5, 6];
+
+const isEven = testArr2.length % 2 === 0;
+console.log(isEven);
+
+console.log(Math.round(testArr1.length / 2));
