@@ -7,7 +7,7 @@ sortBtn.addEventListener("click", (e) => {
         (el) => Number(el.value)
     );
 
-    const sortedArray = bubbleSort(values);
+    const sortedArray = selectionSort(values);
 
     updateUI(sortedArray);
 });
@@ -46,10 +46,12 @@ const selectionSort = (array) => {
             }
         }
 
-        const temp = array[j];
+        const temp = array[i];
         array[i] = array[currIndex];
         array[currIndex] = temp;
     }
+
+    console.log(array);
 };
 
 // insertion sort
