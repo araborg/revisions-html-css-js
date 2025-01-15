@@ -7,7 +7,7 @@ sortBtn.addEventListener("click", (e) => {
         (el) => Number(el.value)
     );
 
-    const sortedArray = selectionSort(values);
+    const sortedArray = insertionSort(values);
 
     updateUI(sortedArray);
 });
@@ -63,17 +63,25 @@ const selectionSort = (array) => {
 
 // insertion sort
 const insertionSort = (array) => {
-    for (let i = 0; i < array.length; i++) {
-        let currIndex = i;
+    for (let i = 1; i < array.length; i++) {
         let prevIndex = i - 1;
+        let currIndex = i;
 
         // prev     curr    after
 
         while (prevIndex >= 0 && array[prevIndex] > array[currIndex]) {
             //
-            array[prevIndex + 1] = array[currIndex];
+            array[prevIndex + 1] = array[prevIndex];
 
             prevIndex--;
         }
+
+        console.log(array[prevIndex + 1]);
+
+        array[prevIndex + 1] = currIndex;
     }
+
+    // console.log(array);
+
+    return array;
 };
