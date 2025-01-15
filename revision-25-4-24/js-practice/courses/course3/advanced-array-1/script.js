@@ -46,7 +46,7 @@ const getMode = (array) => {
         }
     });
 
-    return counts;
+    // return counts;
 
     return array;
 };
