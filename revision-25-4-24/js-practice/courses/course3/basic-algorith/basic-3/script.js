@@ -7,7 +7,9 @@ sortBtn.addEventListener("click", (e) => {
         (el) => Number(el.value)
     );
 
-    updateUI(values);
+    const sortedArray = bubbleSort(values);
+
+    updateUI(sortedArray);
 });
 
 const updateUI = (array) => {
