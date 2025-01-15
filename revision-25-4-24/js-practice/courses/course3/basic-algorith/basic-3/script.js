@@ -78,7 +78,5 @@ const insertionSort = (array) => {
         array[prevIndex + 1] = currIndex;
     }
 
-    console.log(array);
-
     return array;
 };
