@@ -9,9 +9,8 @@ const calculate = () => {
 
     const mean = getMean(numbers);
     const median = getMedian(numbers);
-
+    const mode = getMode(numbers);
     // console.log(getMode(numbers));
-    getMode(numbers);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
@@ -63,7 +62,5 @@ const getMode = (array) => {
         (el) => counts[el] === counts[highest]
     );
 
-    console.log(mode);
-
-    return array;
+    return mode;
 };
