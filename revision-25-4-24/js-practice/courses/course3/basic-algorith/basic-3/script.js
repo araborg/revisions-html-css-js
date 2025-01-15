@@ -70,7 +70,6 @@ const insertionSort = (array) => {
         // prev     curr    after
 
         while (prevIndex >= 0 && array[prevIndex] > array[currIndex]) {
-            //
             array[prevIndex + 1] = array[prevIndex];
 
             prevIndex--;
