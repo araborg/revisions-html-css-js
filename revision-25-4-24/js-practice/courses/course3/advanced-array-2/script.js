@@ -56,10 +56,12 @@ const getMode = (array) => {
     // console.log(new Set(Object.values(obj)).size);
 
     if (new Set(Object.values(obj)).size === 1) {
-        return;
+        return null;
     }
 
-    console.log(obj);
+    const highest = Object.keys(obj).sort((a, b) => obj[b] - obj[a]);
+
+    console.log(highest);
 };
 
 // range
