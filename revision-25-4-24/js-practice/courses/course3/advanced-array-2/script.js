@@ -81,13 +81,17 @@ const getRange = (array) => {
 const getVariance = (array) => {
     const mean = getMean(array);
 
-    const difference = array.map((el) => el - mean);
-
-    const squared = difference.map((el) => el ** 2);
+    // const variance =
+    //     squared.reduce((accu, el) => {
+    //         return accu + el;
+    //     }, 0) / array.length;
 
     const variance =
-        squared.reduce((accu, el) => {
-            return accu + el;
+        array.reduce((accu, el) => {
+            const difference = array.map((el) => el - mean);
+            const squared = difference.map((el) => el ** 2);
+
+            return accu + squared;
         }, 0) / array.length;
 
     return variance;
