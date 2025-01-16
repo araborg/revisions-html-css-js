@@ -12,6 +12,7 @@ const calculate = () => {
     console.log(median);
 
     document.querySelector("#mean").textContent = mean;
+    document.querySelector("#median").textContent = median;
 };
 
 // mean
