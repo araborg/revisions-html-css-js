@@ -9,10 +9,8 @@ const calculate = () => {
     const mean = getMean(modNum);
     const median = getMedian(modNum);
 
-    console.log(median);
-
     document.querySelector("#mean").textContent = mean;
-    // document.querySelector("#median").textContent = median;
+    document.querySelector("#median").textContent = median;
 };
 
 // mean
