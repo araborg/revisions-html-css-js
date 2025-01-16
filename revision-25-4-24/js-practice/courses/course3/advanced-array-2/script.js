@@ -12,6 +12,8 @@ const calculate = () => {
     const range = getRange(modNum);
     const variance = getVariance(modNum);
 
+    console.log(variance);
+
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
@@ -81,9 +83,13 @@ const getVariance = (array) => {
 
     const difference = array.forEach((el) => el - mean);
 
-    const squared = difference ** 2;
+    // const squared = difference ** 2;
 
-    console.log(difference);
+    // console.log(difference);
+
+    return difference;
+
+    // console.log(array);
 };
 
 // standard deviation
