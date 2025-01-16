@@ -59,9 +59,11 @@ const getMode = (array) => {
         return null;
     }
 
-    const highest = Object.keys(obj).sort((a, b) => obj[b] - obj[a]);
+    const highest = Object.keys(obj).sort((a, b) => obj[b] - obj[a])[0];
 
-    console.log(highest);
+    const mode = Object.keys(obj).filter((el) => obj[el] === obj[highest]);
+
+    console.log(mode);
 };
 
 // range
