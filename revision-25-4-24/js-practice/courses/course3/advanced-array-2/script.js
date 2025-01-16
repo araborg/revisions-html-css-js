@@ -74,5 +74,10 @@ const getRange = (array) => {
 };
 
 // variance
+const getVariance = (array) => {
+    const mean = getMean(array);
+
+    console.log(mean);
+};
 
 // standard deviation
