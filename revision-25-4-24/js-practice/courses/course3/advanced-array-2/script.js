@@ -93,6 +93,7 @@ const getVariance = (array) => {
     const variance =
         array.reduce((accu, el) => {
             const difference = el - mean;
+            console.log(difference);
             // const squared = difference.map((el) => el ** 2);
 
             return accu + difference;
