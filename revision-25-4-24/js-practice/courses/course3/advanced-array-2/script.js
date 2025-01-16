@@ -81,7 +81,7 @@ const getRange = (array) => {
 const getVariance = (array) => {
     const mean = getMean(array);
 
-    const difference = array.forEach((el) => console.log(el - mean));
+    const difference = array.map((el) => el - mean);
 
     // const squared = difference ** 2;
 
