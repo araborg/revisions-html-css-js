@@ -9,10 +9,12 @@ const calculate = () => {
     const mean = getMean(modNum);
     const median = getMedian(modNum);
     const mode = getMode(modNum);
+    const range = getRange(modNum);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
+    document.querySelector("#range").textContent = range;
 };
 
 // mean
@@ -67,6 +69,9 @@ const getMode = (array) => {
 };
 
 // range
+const getRange = (array) => {
+    return Math.max(...array) - Math.min(...array);
+};
 
 // variance
 
