@@ -108,7 +108,6 @@ const getVariance = (array) => {
 };
 
 // standard deviation
-
 const getStandardDeviation = (array) => {
     const variance = getVariance(array);
 
