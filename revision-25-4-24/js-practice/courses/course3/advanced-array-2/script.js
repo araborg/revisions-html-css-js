@@ -31,7 +31,13 @@ const getMedian = (array) => {
     const firstNum = sort.length / 2 - 1;
     const secondNum = sort.length / 2;
 
-    console.log(firstNum, secondNum);
+    const median =
+        sort.length % 2 === 0
+            ? getMean([array[firstNum], array[secondNum]])
+            : array[Math.floor(sort.length / 2)];
+
+    return median;
+    // console.log(firstNum, secondNum);
 };
 
 // mode
