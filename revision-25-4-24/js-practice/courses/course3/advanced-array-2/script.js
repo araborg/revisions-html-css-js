@@ -24,6 +24,7 @@ const getMean = (array) => {
 };
 
 // median
+const getMedian = (array) => {};
 
 // mode
 
