@@ -27,7 +27,11 @@ const getMean = (array) => {
 // median
 const getMedian = (array) => {
     const sort = array.sort((a, b) => a - b);
-    console.log(sort);
+
+    const firstNum = sort.length / 2 - 1;
+    const secondNum = sort.length / 2;
+
+    console.log(firstNum, secondNum);
 };
 
 // mode
