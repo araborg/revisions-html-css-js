@@ -11,6 +11,7 @@ const calculate = () => {
     const mode = getMode(modNum);
     const range = getRange(modNum);
     const variance = getVariance(modNum);
+    const standardDeviation = getStandardDeviation(modNum);
 
     console.log(variance);
 
@@ -19,6 +20,8 @@ const calculate = () => {
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
     document.querySelector("#variance").textContent = variance;
+    document.querySelector("#standardDeviation").textContent =
+        standardDeviation;
 };
 
 // mean
@@ -107,3 +110,9 @@ const getVariance = (array) => {
 };
 
 // standard deviation
+
+const getStandardDeviation = (array) => {
+    const variance = getVariance(array);
+
+    return Math.sqrt(variance);
+};
