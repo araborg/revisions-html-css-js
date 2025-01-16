@@ -50,19 +50,17 @@ const getMedian = (array) => {
 const getMode = (array) => {
     const obj = {};
 
-    array.forEach((el) => {
-        if (obj[el]) {
-            obj[el] += 1;
-        } else {
-            obj[el] = 1;
-        }
-    });
-
     // array.forEach((el) => {
-    //     obj[el] = obj(el || 0) + 1;
+    //     if (obj[el]) {
+    //         obj[el] += 1;
+    //     } else {
+    //         obj[el] = 1;
+    //     }
     // });
 
-    // console.log(new Set(Object.values(obj)).size);
+    array.forEach((el) => {
+        obj[el] = (obj[el] || 0) + 1;
+    });
 
     if (new Set(Object.values(obj)).size === 1) {
         return null;
