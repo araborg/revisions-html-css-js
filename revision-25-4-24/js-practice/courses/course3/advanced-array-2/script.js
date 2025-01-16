@@ -12,7 +12,7 @@ const calculate = () => {
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
-    // document.querySelector("#mode").textContent = mode;
+    document.querySelector("#mode").textContent = mode;
 };
 
 // mean
@@ -48,6 +48,16 @@ const getMode = (array) => {
             obj[el] = 1;
         }
     });
+
+    // array.forEach((el) => {
+    //     obj[el] = obj(el || 0) + 1;
+    // });
+
+    // console.log(new Set(Object.values(obj)).size);
+
+    if (new Set(Object.values(obj)).size === 1) {
+        return;
+    }
 
     console.log(obj);
 };
