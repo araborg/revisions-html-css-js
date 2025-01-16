@@ -10,11 +10,13 @@ const calculate = () => {
     const median = getMedian(modNum);
     const mode = getMode(modNum);
     const range = getRange(modNum);
+    const variance = getVariance(modNum);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
+    document.querySelector("#variance").textContent = variance;
 };
 
 // mean
