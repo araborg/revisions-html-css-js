@@ -18,7 +18,7 @@ const calculate = () => {
     document.querySelector("#median").textContent = median;
     document.querySelector("#mode").textContent = mode;
     document.querySelector("#range").textContent = range;
-    document.querySelector("#variance").textContent = variance;
+    // document.querySelector("#variance").textContent = variance;
 };
 
 // mean
@@ -81,11 +81,11 @@ const getRange = (array) => {
 const getVariance = (array) => {
     const mean = getMean(array);
 
-    const difference = array.forEach((el) => el - mean);
+    const difference = array.forEach((el) => console.log(el - mean));
 
     // const squared = difference ** 2;
 
-    // console.log(difference);
+    console.log(difference);
 
     return difference;
 
