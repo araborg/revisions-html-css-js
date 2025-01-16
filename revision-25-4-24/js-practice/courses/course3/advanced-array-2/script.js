@@ -21,7 +21,7 @@ const calculate = () => {
         standardDeviation;
 };
 
-// mean
+// mean:
 const getMean = (array) => {
     const mean =
         array.reduce((accu, el) => {
@@ -31,7 +31,7 @@ const getMean = (array) => {
     return mean;
 };
 
-// median
+// median:
 const getMedian = (array) => {
     const sort = array.sort((a, b) => a - b);
 
@@ -43,7 +43,7 @@ const getMedian = (array) => {
     return median;
 };
 
-// mode
+// mode:
 const getMode = (array) => {
     const obj = {};
 
@@ -70,17 +70,15 @@ const getMode = (array) => {
     return mode.join(", ");
 };
 
-// range
+// range:
 const getRange = (array) => {
     return Math.max(...array) - Math.min(...array);
 };
 
-// variance
+// variance:
 const getVariance = (array) => {
     // const mean = getMean(array);
-
     // const difference = array.map((el) => el - mean);
-
     // const squared = difference.map((el) => el ** 2);
 
     // const variance =
@@ -104,7 +102,7 @@ const getVariance = (array) => {
     return variance;
 };
 
-// standard deviation
+// standard deviation:
 const getStandardDeviation = (array) => {
     const variance = getVariance(array);
 
