@@ -8,9 +8,11 @@ const calculate = () => {
 
     const mean = getMean(modNum);
     const median = getMedian(modNum);
+    const mode = getMode(modNum);
 
     document.querySelector("#mean").textContent = mean;
     document.querySelector("#median").textContent = median;
+    // document.querySelector("#mode").textContent = mode;
 };
 
 // mean
@@ -27,19 +29,16 @@ const getMean = (array) => {
 const getMedian = (array) => {
     const sort = array.sort((a, b) => a - b);
 
-    // const firstNum = sort.length / 2 - 1;
-    // const secondNum = sort.length / 2;
-
     const median =
         sort.length % 2 === 0
             ? getMean([array[sort.length / 2 - 1], array[sort.length / 2]])
             : array[Math.floor(sort.length / 2)];
 
     return median;
-    // console.log(firstNum, secondNum);
 };
 
 // mode
+const getMode = (array) => {};
 
 // range
 
