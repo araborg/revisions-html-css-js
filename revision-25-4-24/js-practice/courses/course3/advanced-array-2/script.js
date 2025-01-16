@@ -63,7 +63,7 @@ const getMode = (array) => {
 
     const mode = Object.keys(obj).filter((el) => obj[el] === obj[highest]);
 
-    return mode;
+    return mode.join(", ");
 };
 
 // range
