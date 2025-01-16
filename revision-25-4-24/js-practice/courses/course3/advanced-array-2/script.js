@@ -26,7 +26,8 @@ const getMean = (array) => {
 
 // median
 const getMedian = (array) => {
-    console.log(array);
+    const sort = array.sort((a, b) => a - b);
+    console.log(sort);
 };
 
 // mode
