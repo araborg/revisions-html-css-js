@@ -90,13 +90,13 @@ const getVariance = (array) => {
     //         return accu + el;
     //     }, 0) / array.length;
 
+    // Or:
+
     const variance =
         array.reduce((accu, el) => {
             const difference = el - mean;
 
             const squared = difference ** 2;
-
-            // console.log(squared);
 
             return accu + squared;
         }, 0) / array.length;
