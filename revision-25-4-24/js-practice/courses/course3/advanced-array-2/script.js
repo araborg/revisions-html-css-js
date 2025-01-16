@@ -94,6 +94,8 @@ const getVariance = (array) => {
             return accu + squared;
         }, 0) / array.length;
 
+    console.log(variance);
+
     return variance;
 };
 
