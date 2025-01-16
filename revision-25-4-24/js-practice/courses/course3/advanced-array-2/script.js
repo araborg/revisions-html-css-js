@@ -28,12 +28,12 @@ const getMean = (array) => {
 const getMedian = (array) => {
     const sort = array.sort((a, b) => a - b);
 
-    const firstNum = sort.length / 2 - 1;
-    const secondNum = sort.length / 2;
+    // const firstNum = sort.length / 2 - 1;
+    // const secondNum = sort.length / 2;
 
     const median =
         sort.length % 2 === 0
-            ? getMean([array[firstNum], array[secondNum]])
+            ? getMean([array[sort.length / 2 - 1], array[ort.length / 2]])
             : array[Math.floor(sort.length / 2)];
 
     return median;
