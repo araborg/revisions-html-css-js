@@ -83,13 +83,14 @@ const getVariance = (array) => {
 
     const difference = array.map((el) => el - mean);
 
-    // const squared = difference ** 2;
+    const squared = difference.map((el) => el ** 2);
 
-    console.log(difference);
+    const variance =
+        squared.reduce((accu, el) => {
+            return accu + el;
+        }, 0) / array.length;
 
-    return difference;
-
-    // console.log(array);
+    console.log(variance);
 };
 
 // standard deviation
