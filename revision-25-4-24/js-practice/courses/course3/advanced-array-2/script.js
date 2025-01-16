@@ -90,7 +90,7 @@ const getVariance = (array) => {
             return accu + el;
         }, 0) / array.length;
 
-    console.log(variance);
+    return variance;
 };
 
 // standard deviation
