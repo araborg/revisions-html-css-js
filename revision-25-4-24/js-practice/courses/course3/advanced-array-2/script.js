@@ -3,12 +3,13 @@ const calculate = () => {
 
     const value = numbers.split(/,\s*/g);
 
-    const modNum = value
-        .map((el) => Number(el))
-        .filter((el) => !isNaN(el))
-        .sort((a, b) => a - b);
+    const modNum = value.map((el) => Number(el)).filter((el) => !isNaN(el));
+    // .sort((a, b) => a - b);
 
     const mean = getMean(modNum);
+    const median = getMedian(modNum);
+
+    console.log(median);
 
     document.querySelector("#mean").textContent = mean;
 };
@@ -24,7 +25,9 @@ const getMean = (array) => {
 };
 
 // median
-const getMedian = (array) => {};
+const getMedian = (array) => {
+    console.log(array);
+};
 
 // mode
 
