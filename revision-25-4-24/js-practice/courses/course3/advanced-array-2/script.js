@@ -79,7 +79,7 @@ const getRange = (array) => {
 
 // variance
 const getVariance = (array) => {
-    const mean = getMean(array);
+    // const mean = getMean(array);
 
     // const difference = array.map((el) => el - mean);
 
@@ -94,6 +94,8 @@ const getVariance = (array) => {
 
     const variance =
         array.reduce((accu, el) => {
+            const mean = getMean(array);
+
             const difference = el - mean;
 
             const squared = difference ** 2;
