@@ -38,7 +38,13 @@ const getMedian = (array) => {
 };
 
 // mode
-const getMode = (array) => {};
+const getMode = (array) => {
+    const obj = {};
+
+    array.forEach((el) => {
+        console.log(el);
+    });
+};
 
 // range
 
