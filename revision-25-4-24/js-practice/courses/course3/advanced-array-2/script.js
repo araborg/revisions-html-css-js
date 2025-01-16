@@ -79,7 +79,11 @@ const getRange = (array) => {
 const getVariance = (array) => {
     const mean = getMean(array);
 
-    console.log(mean);
+    const difference = array.forEach((el) => el - mean);
+
+    const squared = difference ** 2;
+
+    console.log(difference);
 };
 
 // standard deviation
