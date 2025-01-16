@@ -12,7 +12,7 @@ const calculate = () => {
     console.log(median);
 
     document.querySelector("#mean").textContent = mean;
-    document.querySelector("#median").textContent = median;
+    // document.querySelector("#median").textContent = median;
 };
 
 // mean
@@ -34,7 +34,7 @@ const getMedian = (array) => {
 
     const median =
         sort.length % 2 === 0
-            ? getMean([array[sort.length / 2 - 1], array[ort.length / 2]])
+            ? getMean([array[sort.length / 2 - 1], array[sort.length / 2]])
             : array[Math.floor(sort.length / 2)];
 
     return median;
