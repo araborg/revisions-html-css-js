@@ -42,8 +42,14 @@ const getMode = (array) => {
     const obj = {};
 
     array.forEach((el) => {
-        console.log(el);
+        if (obj[el]) {
+            obj[el] += 1;
+        } else {
+            obj[el] = 1;
+        }
     });
+
+    console.log(obj);
 };
 
 // range
