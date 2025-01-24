@@ -88,3 +88,7 @@ const spreadsheetFunctions = {
     average,
     median,
 };
+
+console.log(spreadsheetFunctions);
+
+const update = (event) => {};
