@@ -23,6 +23,9 @@ window.onload = () => {
     const createLabel = (name) => {
         const label = document.createElement("div");
 
+        label.className = "label";
+        label.textContent = name;
+
         console.log(label);
     };
 };
