@@ -44,11 +44,11 @@ window.onload = () => {
             const input = document.createElement("input");
 
             input.type = "text";
-            input.id = number + letter;
-            input.ariaLabel = number + letter;
+            input.id = letter + number;
+            input.ariaLabel = letter + number;
 
-            // input.id = letter + number;
-            // input.ariaLabel = letter + number;
+            // input.id = number + letter;
+            // input.ariaLabel = number + letter;
 
             container.appendChild(input);
         });
