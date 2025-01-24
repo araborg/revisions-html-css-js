@@ -102,3 +102,5 @@ const update = (event) => {
         console.log("true");
     }
 };
+
+const evalFormula = (x, cells) => {};
