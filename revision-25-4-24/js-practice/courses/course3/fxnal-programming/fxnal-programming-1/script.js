@@ -36,3 +36,5 @@ const range = (start, end) =>
         .map((el, i) => el + i);
 
 console.log(range(1, 5));
+
+const charRange = (start, end) => range(start, end);
