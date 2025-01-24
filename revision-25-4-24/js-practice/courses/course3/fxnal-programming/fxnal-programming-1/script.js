@@ -4,7 +4,7 @@ Fxns:
     const createLabel = (name) =>{}
 
    
-2.
+2. const range = (start, end) => Array();
 
 
 3.
@@ -29,3 +29,5 @@ window.onload = () => {
         container.appendChild(label);
     };
 };
+
+const range = (start, end) => Array();
