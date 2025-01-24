@@ -38,4 +38,8 @@ const range = (start, end) =>
 
 console.log(range(1, 5));
 
-const charRange = (start, end) => range(start, end);
+const charRange = (start, end) =>
+    range(start.charCodeAt(0), end.charCodeAt(0)).map((el) =>
+        String.fromCharCode(el)
+    );
+console.log(charRange("A", "E"));
