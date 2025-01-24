@@ -33,6 +33,6 @@ window.onload = () => {
 const range = (start, end) =>
     Array(end - start + 1)
         .fill(start)
-        .map();
+        .map((el, i) => el + i);
 
 console.log(range(1, 5));
