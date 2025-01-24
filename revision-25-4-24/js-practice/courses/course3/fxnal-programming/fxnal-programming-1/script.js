@@ -33,7 +33,8 @@ window.onload = () => {
 
     // letters
     const letters = charRange("A", "J");
-    letters.forEach(createLabel);
+    const sample = ["Taye", "Kehinde", "Idowu", "Alaba", "Idogbe"];
+    sample.forEach(createLabel);
 
     // numbers
     const numbers = range(1, 99);
