@@ -93,4 +93,8 @@ const spreadsheetFunctions = {
 
 console.log(spreadsheetFunctions);
 
-const update = (event) => {};
+const update = (event) => {
+    const element = event.target;
+
+    console.log(element);
+};
