@@ -21,6 +21,7 @@ Fxns:
 window.onload = () => {
     const container = document.getElementById("container");
 
+    // cr8 labels
     const createLabel = (name) => {
         const label = document.createElement("div");
 
