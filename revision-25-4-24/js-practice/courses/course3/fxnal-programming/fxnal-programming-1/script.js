@@ -1,9 +1,24 @@
 /*
 Fxns:
-window.onload = () => {}
-    
+1. window.onload = () => {}
+    const createLabel = (name) =>{}
+
+   
+2.
+
+
+3.
+
+
+4.
+
+
 
 
 */
 
-window.onload = () => {};
+window.onload = () => {
+    const container = document.getElementById("container");
+
+    const createLabel = (name) => {};
+};
