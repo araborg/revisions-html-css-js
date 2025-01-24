@@ -107,4 +107,9 @@ const update = (event) => {
     }
 };
 
-const evalFormula = (x, cells) => {};
+const evalFormula = (x, cells) => {
+    // cells is an array
+    const idToText = (id) => {
+        cells.find((cell) => cell.id === id);
+    };
+};
