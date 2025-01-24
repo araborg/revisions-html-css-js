@@ -35,7 +35,20 @@ window.onload = () => {
     letters.forEach(createLabel);
 
     // numbers
-    range(1, 99).forEach((number) => createLabel(number));
+    range(1, 99).forEach((number) => {
+        createLabel(number);
+
+        letters.forEach((letter) => {
+            const input = document.createElement("input");
+
+            input.type = "text";
+            input.id = letter + number;
+
+            input.ariaLabel = letter + number;
+
+            container.appendChild(input);
+        });
+    });
 };
 
 const range = (start, end) =>
