@@ -26,6 +26,8 @@ window.onload = () => {
         label.className = "label";
         label.textContent = name;
 
-        console.log(label);
+        container.appendChild(label);
     };
+
+    console.log(container);
 };
