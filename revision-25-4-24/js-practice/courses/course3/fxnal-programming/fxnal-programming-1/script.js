@@ -30,7 +30,12 @@ window.onload = () => {
         container.appendChild(label);
     };
 
+    // letters
     const letters = charRange("A", "J");
+    letters.forEach(createLabel);
+
+    // numbers
+    range(1, 99).forEach((number) => createLabel(number));
 };
 
 const range = (start, end) =>
