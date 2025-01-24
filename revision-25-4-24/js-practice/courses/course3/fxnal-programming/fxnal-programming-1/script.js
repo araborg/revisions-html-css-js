@@ -91,12 +91,14 @@ const spreadsheetFunctions = {
     median,
 };
 
-console.log(spreadsheetFunctions);
-
 const update = (event) => {
     const element = event.target;
 
     const value = element.value.replace(/\s/g, "");
 
-    console.log(element);
+    console.log(value, element);
+
+    if (!value.includes(element.id) && value[0] === "=") {
+        console.log("true");
+    }
 };
