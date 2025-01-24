@@ -5,6 +5,7 @@ Fxns:
 
    
 2. const range = (start, end) => Array().fill().map();
+    const charRange = (start, end) => range(start, end);
 
 
 3.
