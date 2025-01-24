@@ -36,11 +36,7 @@ const range = (start, end) =>
         .fill(start)
         .map((el, i) => el + i);
 
-console.log(range(1, 5));
-
 const charRange = (start, end) =>
     range(start.charCodeAt(0), end.charCodeAt(0)).map((code) =>
         String.fromCharCode(code)
     );
-
-console.log(charRange("A", "E"));
