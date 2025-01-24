@@ -4,7 +4,7 @@ Fxns:
     const createLabel = (name) =>{}
 
    
-2. const range = (start, end) => Array();
+2. const range = (start, end) => Array().fill().map();
 
 
 3.
@@ -35,4 +35,4 @@ const range = (start, end) =>
         .fill(start)
         .map((el, i) => el + i);
 
-console.log(range(1, 10));
+console.log(range(1, 5));
