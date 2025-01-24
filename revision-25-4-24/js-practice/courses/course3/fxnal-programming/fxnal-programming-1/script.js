@@ -35,4 +35,4 @@ const range = (start, end) =>
         .fill(start)
         .map((el, i) => el + i);
 
-console.log(range(1, 5));
+console.log(range(1, 10));
