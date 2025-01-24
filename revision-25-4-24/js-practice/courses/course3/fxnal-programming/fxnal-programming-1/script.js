@@ -60,3 +60,5 @@ const charRange = (start, end) =>
     range(start.charCodeAt(0), end.charCodeAt(0)).map((code) =>
         String.fromCharCode(code)
     );
+
+const sum = (nums) => nums.reduce((accu, el) => accu + el, 0);
