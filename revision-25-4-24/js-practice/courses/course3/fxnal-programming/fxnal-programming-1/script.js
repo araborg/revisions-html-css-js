@@ -47,9 +47,6 @@ window.onload = () => {
             input.id = letter + number;
             input.ariaLabel = letter + number;
 
-            // input.id = number + letter;
-            // input.ariaLabel = number + letter;
-
             container.appendChild(input);
         });
     });
