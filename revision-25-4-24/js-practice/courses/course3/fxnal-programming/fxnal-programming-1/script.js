@@ -64,11 +64,11 @@ const charRange = (start, end) =>
 
 const sum = (nums) => nums.reduce((accu, el) => accu + el, 0);
 
+const average = (nums) => sum(nums) / nums.length;
+
 const isEven = (num) => {
     num % 2 === 0 ? true : false;
 };
-
-const average = (nums) => sum(nums) / nums.length;
 
 const median = (nums) => {
     const sorted = nums.slice().sort((a, b) => {
@@ -81,4 +81,10 @@ const median = (nums) => {
     return isEven(length)
         ? average(sorted[middle], sorted[middle + 1])
         : sorted[Math.ceil(middle)];
+};
+
+const spreadsheetFunctions = {
+    sum,
+    average,
+    median,
 };
