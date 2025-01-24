@@ -28,6 +28,4 @@ window.onload = () => {
 
         container.appendChild(label);
     };
-
-    console.log(container);
 };
