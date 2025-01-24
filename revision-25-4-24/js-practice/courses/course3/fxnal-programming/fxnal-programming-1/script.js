@@ -96,5 +96,7 @@ console.log(spreadsheetFunctions);
 const update = (event) => {
     const element = event.target;
 
+    const value = element.value.replace(/\s/g, "");
+
     console.log(element);
 };
