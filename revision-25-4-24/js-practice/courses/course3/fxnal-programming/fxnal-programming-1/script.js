@@ -92,14 +92,18 @@ const spreadsheetFunctions = {
 };
 
 const update = (event) => {
+    console.log(event);
     const element = event.target;
 
     const value = element.value.replace(/\s/g, "");
 
     console.log(value, element);
 
-    if (!value.includes(element.id) && value[0] === "=") {
-        console.log("true");
+    if (
+        !value.includes(element.id) &&
+        //
+        value[0] === "="
+    ) {
     }
 };
 
