@@ -30,4 +30,4 @@ window.onload = () => {
     };
 };
 
-const range = (start, end) => Array();
+const range = (start, end) => Array(end - start + 1);
