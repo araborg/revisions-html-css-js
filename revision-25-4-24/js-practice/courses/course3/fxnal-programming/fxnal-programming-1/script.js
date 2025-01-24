@@ -36,7 +36,8 @@ window.onload = () => {
     letters.forEach(createLabel);
 
     // numbers
-    range(1, 99).forEach((number) => {
+    const numbers = range(1, 99);
+    numbers.forEach((number) => {
         createLabel(number);
 
         letters.forEach((letter) => {
