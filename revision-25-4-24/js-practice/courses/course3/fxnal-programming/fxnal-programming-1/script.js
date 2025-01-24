@@ -29,6 +29,8 @@ window.onload = () => {
 
         container.appendChild(label);
     };
+
+    const letters = charRange("A", "J");
 };
 
 const range = (start, end) =>
