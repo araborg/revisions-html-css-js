@@ -31,3 +31,4 @@ window.onload = () => {
 };
 
 const range = (start, end) => Array(end - start + 1);
+console.log(range(5, 1));
