@@ -166,4 +166,6 @@ const highPrecedence = (str) => {
     return str === str2 ? str : highPrecedence(str2);
 };
 
-const applyFunction = (str) => {};
+const applyFunction = (str) => {
+    const noHigh = highPrecedence(str);
+};
