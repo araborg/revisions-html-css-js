@@ -175,7 +175,7 @@ const applyFunction = (str) => {
 
     const functionCall = /([a-z0-9]*)\(([0-9., ]*)\)(?!.*\()/i;
 
-    const toNumberList = args.split(",").map(parseFloat);
+    const toNumberList = (args) => args.split(",").map(parseFloat);
 
     const apply = (fn, args) =>
         //
