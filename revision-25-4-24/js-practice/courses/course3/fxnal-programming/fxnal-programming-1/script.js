@@ -108,4 +108,6 @@ const evalFormula = (x, cells) => {
         */
         return cells.find((cell) => cell.id === id).value;
     };
+
+    const rangeRegex = /([A-J])/;
 };
