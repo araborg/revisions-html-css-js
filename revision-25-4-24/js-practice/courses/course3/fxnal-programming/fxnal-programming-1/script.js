@@ -174,4 +174,6 @@ const applyFunction = (str) => {
     const str2 = infixEval(noHigh, infix);
 
     const functionCall = /([a-z0-9]*)\(([0-9., ]*)\)(?!.*\()/i;
+
+    const toNumberList = args.split(",").map(parseFloat);
 };
