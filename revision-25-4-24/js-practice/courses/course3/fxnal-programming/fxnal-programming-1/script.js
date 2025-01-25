@@ -114,5 +114,9 @@ const evalFormula = (x, cells) => {
     const rangeFromString = (num1, num2) =>
         range(parseInt(num1), parseInt(num2));
 
-    const elemValue = (num) => {};
+    const elemValue = (num) => {
+        const inner = (character) => {};
+
+        return inner;
+    };
 };
