@@ -132,9 +132,10 @@ const evalFormula = (x, cells) => {
     const idToText = (id) =>
         //
         cells.find((cell) => cell.id === id).value;
-    /* cell.id === id returns an input elemt 
+    /* 
+        cell.id === id returns an input elemt 
             while.value returns value
-        */
+    */
 
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
 
