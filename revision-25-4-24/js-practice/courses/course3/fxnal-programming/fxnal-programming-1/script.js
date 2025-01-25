@@ -130,5 +130,5 @@ const evalFormula = (x, cells) => {
         (character2) =>
         //
         (num) =>
-            charRange(character1, character2);
+            charRange(character1, character2).map();
 };
