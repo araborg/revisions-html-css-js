@@ -141,6 +141,10 @@ const evalFormula = (x, cells) => {
         );
 
     const functionExpanded = applyFunction(cellExpanded);
+
+    return functionExpanded === x
+        ? functionExpanded
+        : evalFormula(functionExpanded, cells);
 };
 
 const infixToFunction = {
