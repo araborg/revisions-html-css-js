@@ -144,4 +144,6 @@ const evalFormula = (x, cells) => {
 const infixToFunction = {
     "+": (x, y) => x + y,
     "-": (x, y) => x - y,
+    "*": (x, y) => x * y,
+    "/": (x, y) => x / y,
 };
