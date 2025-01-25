@@ -130,10 +130,11 @@ const update = (event) => {
 const evalFormula = (x, cells) => {
     // cells is an array
     const idToText = (id) =>
-        /* cell.id === id returns an input elemt 
+        //
+        cells.find((cell) => cell.id === id).value;
+    /* cell.id === id returns an input elemt 
             while.value returns value
         */
-        cells.find((cell) => cell.id === id).value;
 
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
 
