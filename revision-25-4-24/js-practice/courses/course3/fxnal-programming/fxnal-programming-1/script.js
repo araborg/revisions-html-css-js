@@ -179,5 +179,5 @@ const applyFunction = (str) => {
 
     const apply = (fn, args) =>
         //
-        spreadsheetFunctions[fn.toLowerCase()];
+        spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));
 };
