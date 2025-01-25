@@ -141,4 +141,7 @@ const evalFormula = (x, cells) => {
         );
 };
 
-const infixToFunction = {};
+const infixToFunction = {
+    "+": (x, y) => x + y,
+    "-": (x, y) => x - y,
+};
