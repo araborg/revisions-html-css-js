@@ -126,16 +126,17 @@ const update = (event) => {
 // console.log(Array.from(document.getElementById("container").children));
 
 const evalFormula = (x, cells) => {
-    // cells is an array
+    /* 
+        cells is an array
+    
+        cell.id === id returns an input elemt 
+            while.value returns value
+    */
 
     // ******** Helper fxns ********
     const idToText = (id) =>
         //
         cells.find((cell) => cell.id === id).value;
-    /* 
-        cell.id === id returns an input elemt 
-            while.value returns value
-    */
 
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
 
