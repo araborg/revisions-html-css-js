@@ -91,6 +91,9 @@ const spreadsheetFunctions = {
     median,
 
     even: (nums) => nums.filter(isEven),
+
+    firsttwo: (nums) => nums.slice(0, 2),
+    lasttwo: (nums) => nums.slice(-2),
 };
 
 const update = (event) => {
