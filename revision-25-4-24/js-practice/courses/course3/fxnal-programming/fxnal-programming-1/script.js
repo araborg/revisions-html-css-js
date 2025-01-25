@@ -120,8 +120,6 @@ const update = (event) => {
             value.slice(1),
             Array.from(document.getElementById("container").children)
         );
-
-        // console.log(element.value);
     }
 };
 
@@ -136,6 +134,8 @@ const evalFormula = (x, cells) => {
         cell.id === id returns an input elemt 
             while.value returns value
     */
+
+    console.log(idToText);
 
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
 
