@@ -168,4 +168,6 @@ const highPrecedence = (str) => {
 
 const applyFunction = (str) => {
     const noHigh = highPrecedence(str);
+
+    const infix = /([\d.]+)([+-])([\d.]+)/;
 };
