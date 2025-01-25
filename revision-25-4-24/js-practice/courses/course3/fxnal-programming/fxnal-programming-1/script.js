@@ -137,5 +137,7 @@ const evalFormula = (x, cells) => {
         (match, char1, num1, char2, num2) =>
             //
             rangeFromString(num1, num2)
+                //
+                .map(addCharacters)
     );
 };
