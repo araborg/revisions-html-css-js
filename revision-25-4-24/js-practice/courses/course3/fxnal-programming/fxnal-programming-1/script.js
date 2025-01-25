@@ -96,11 +96,7 @@ const update = (event) => {
 
     const value = element.value.replace(/\s/g, "");
 
-    if (
-        !value.includes(element.id) &&
-        //
-        value[0] === "="
-    ) {
+    if (!value.includes(element.id) && value[0] === "=") {
     }
 };
 
