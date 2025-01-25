@@ -89,6 +89,8 @@ const spreadsheetFunctions = {
     sum,
     average,
     median,
+
+    even: (nums) => nums.filter(isEven),
 };
 
 const update = (event) => {
@@ -103,7 +105,7 @@ const update = (event) => {
     }
 };
 
-console.log(Array.from(document.getElementById("container").children));
+// console.log(Array.from(document.getElementById("container").children));
 
 const evalFormula = (x, cells) => {
     // cells is an array
