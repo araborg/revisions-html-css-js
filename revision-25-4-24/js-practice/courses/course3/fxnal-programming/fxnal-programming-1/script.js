@@ -138,6 +138,6 @@ const evalFormula = (x, cells) => {
             //
             rangeFromString(num1, num2)
                 //
-                .map(addCharacters)
+                .map(addCharacters(char1)(char2))
     );
 };
