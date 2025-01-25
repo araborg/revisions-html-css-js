@@ -113,14 +113,6 @@ const evalFormula = (x, cells) => {
     const rangeFromString = (num1, num2) =>
         range(parseInt(num1), parseInt(num2));
 
-    // const elemValue = (num) => {
-    //     const inner = (character) => {
-    //         idToText(character + num);
-    //     };
-
-    //     return inner;
-    // };
-
     const elemValue = (num) => (character) => idToText(character + num);
 
     const addCharacters =
@@ -144,7 +136,7 @@ const evalFormula = (x, cells) => {
 
     const cellExpanded =
         //
-        rangeExpanded.replace(cellRegex, (match) => {
-            idToText(match.toUpperCase());
-        });
+        rangeExpanded.replace(cellRegex, (match) =>
+            idToText(match.toUpperCase())
+        );
 };
