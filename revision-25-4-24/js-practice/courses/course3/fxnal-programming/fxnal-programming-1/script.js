@@ -100,6 +100,8 @@ const spreadsheetFunctions = {
 
     someeven: (nums) => nums.some(isEven),
     everyeven: (nums) => nums.every(isEven),
+
+    random: ([x, y]) => Math.floor(Math.random() * y + x),
 };
 
 const update = (event) => {
