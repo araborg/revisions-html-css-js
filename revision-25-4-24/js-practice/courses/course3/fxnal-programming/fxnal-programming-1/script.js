@@ -114,9 +114,10 @@ const update = (event) => {
     const element = event.target;
 
     const value = element.value.replace(/\s/g, "");
-    console.log(value);
 
     if (!value.includes(element.id) && value[0] === "=") {
+        console.log(value);
+
         element.value = evalFormula(
             value.slice(1),
             Array.from(document.getElementById("container").children)
