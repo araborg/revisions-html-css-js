@@ -112,9 +112,9 @@ const spreadsheetFunctions = {
 
 const update = (event) => {
     const element = event.target;
-    console.log(element);
 
     const value = element.value.replace(/\s/g, "");
+    console.log(value);
 
     if (!value.includes(element.id) && value[0] === "=") {
         element.value = evalFormula(
