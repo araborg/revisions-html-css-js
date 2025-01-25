@@ -134,7 +134,7 @@ const evalFormula = (x, cells) => {
 
     const rangeExpanded = x.replace(
         rangeRegex,
-        (match, char1, num1, char2, num2) =>
+        (_match, char1, num1, char2, num2) =>
             //
             rangeFromString(num1, num2)
                 //
