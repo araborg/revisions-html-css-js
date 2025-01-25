@@ -127,6 +127,8 @@ const update = (event) => {
 
 const evalFormula = (x, cells) => {
     // cells is an array
+
+    // ******** Helper fxns ********
     const idToText = (id) =>
         //
         cells.find((cell) => cell.id === id).value;
