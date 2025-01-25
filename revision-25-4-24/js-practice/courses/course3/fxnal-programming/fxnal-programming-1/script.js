@@ -115,8 +115,12 @@ const evalFormula = (x, cells) => {
         range(parseInt(num1), parseInt(num2));
 
     const elemValue = (num) => {
-        const inner = (character) => {};
+        const inner = (character) => {
+            idToText(character + num);
+        };
 
         return inner;
     };
+
+    const addCharacters = (character1) => (character2) => {};
 };
