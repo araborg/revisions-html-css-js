@@ -97,9 +97,14 @@ const update = (event) => {
     const value = element.value.replace(/\s/g, "");
 
     if (!value.includes(element.id) && value[0] === "=") {
-        element.value = evalFormula(value.slice(1));
+        element.value = evalFormula(
+            value.slice(1),
+            document.getElementById("container").children
+        );
     }
 };
+
+// console.log(document.getElementById("container").children);
 
 const evalFormula = (x, cells) => {
     // cells is an array
