@@ -135,8 +135,6 @@ const evalFormula = (x, cells) => {
             while.value returns value
     */
 
-    console.log(idToText);
-
     const rangeRegex = /([A-J])([1-9][0-9]?):([A-J])([1-9][0-9]?)/gi;
 
     const rangeFromString = (num1, num2) =>
