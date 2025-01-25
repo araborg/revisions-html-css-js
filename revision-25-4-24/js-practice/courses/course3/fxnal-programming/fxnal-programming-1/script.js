@@ -99,6 +99,7 @@ const spreadsheetFunctions = {
     increment: nums.map((num) => num + 1),
 
     someeven: (nums) => nums.some(isEven),
+    everyeven: (nums) => nums.every(isEven),
 };
 
 const update = (event) => {
