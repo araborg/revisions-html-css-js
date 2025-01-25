@@ -177,5 +177,7 @@ const applyFunction = (str) => {
 
     const toNumberList = args.split(",").map(parseFloat);
 
-    const apply = (fn, args) => {};
+    const apply = (fn, args) =>
+        //
+        spreadsheetFunctions[fn.toLowerCase()];
 };
