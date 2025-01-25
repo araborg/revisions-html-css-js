@@ -181,5 +181,12 @@ const applyFunction = (str) => {
         //
         spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));
 
-    return str2.replace(functionCall, () => {});
+    return str2.replace(
+        functionCall,
+        (match, fn, args) =>
+            spreadsheetFunctions.hasOwnProperty(fn.toLowerCase())
+                ? apply(fn, args)
+                : match
+        // {}
+    );
 };
