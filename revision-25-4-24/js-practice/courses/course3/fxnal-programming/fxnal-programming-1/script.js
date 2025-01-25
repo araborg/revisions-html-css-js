@@ -139,6 +139,8 @@ const evalFormula = (x, cells) => {
         rangeExpanded.replace(cellRegex, (match) =>
             idToText(match.toUpperCase())
         );
+
+    const functionExpanded = applyFunction(cellExpanded);
 };
 
 const infixToFunction = {
