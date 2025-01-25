@@ -180,4 +180,6 @@ const applyFunction = (str) => {
     const apply = (fn, args) =>
         //
         spreadsheetFunctions[fn.toLowerCase()](toNumberList(args));
+
+    return str2.replace(functionCall, () => {});
 };
