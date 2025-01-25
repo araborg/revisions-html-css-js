@@ -103,7 +103,7 @@ const update = (event) => {
     }
 };
 
-// console.log(document.getElementById("container").children);
+console.log(Array.from(document.getElementById("container").children));
 
 const evalFormula = (x, cells) => {
     // cells is an array
