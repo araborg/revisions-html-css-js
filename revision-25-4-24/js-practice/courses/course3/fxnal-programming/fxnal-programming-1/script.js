@@ -30,8 +30,6 @@ window.onload = () => {
         container.appendChild(label);
     };
 
-    console.log(container);
-
     // letters
     const letters = charRange("A", "J");
     letters.forEach(createLabel);
