@@ -121,7 +121,7 @@ const update = (event) => {
             Array.from(document.getElementById("container").children)
         );
 
-        console.log(element.value);
+        // console.log(element.value);
     }
 };
 
