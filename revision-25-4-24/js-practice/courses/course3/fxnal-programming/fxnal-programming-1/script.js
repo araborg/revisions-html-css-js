@@ -148,4 +148,6 @@ const infixToFunction = {
     "/": (x, y) => x / y,
 };
 
-const infixEval = (str, regex) => str.replace(regex, () => {});
+const infixEval = (str, regex) =>
+    //
+    str.replace(regex, (_match, arg1, operator, arg2) => {});
