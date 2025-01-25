@@ -140,3 +140,5 @@ const evalFormula = (x, cells) => {
             idToText(match.toUpperCase())
         );
 };
+
+const infixToFunction = {};
