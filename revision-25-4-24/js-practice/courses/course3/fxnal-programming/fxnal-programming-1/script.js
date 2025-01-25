@@ -157,3 +157,5 @@ const infixEval = (str, regex) =>
             //
             infixToFunction[operator](parseFloat(arg1), parseFloat(arg2))
     );
+
+const highPrecedence = (str) => {};
