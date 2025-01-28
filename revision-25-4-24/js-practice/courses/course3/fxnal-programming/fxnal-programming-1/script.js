@@ -167,8 +167,6 @@ const evalFormula = (x, cells) => {
                 .map(addCharacters(char1)(char2))
     );
 
-    console.log(x, rangeRegex, rangeExpanded);
-
     const cellRegex = /[A-J][1-9][0-9]?/gi;
 
     const cellExpanded =
