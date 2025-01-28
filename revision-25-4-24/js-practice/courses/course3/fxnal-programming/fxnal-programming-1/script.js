@@ -156,8 +156,6 @@ const evalFormula = (x, cells) => {
         (num) =>
             charRange(character1, character2).map(elemValue(num));
 
-    // ******** Helper fxns ********
-
     const rangeExpanded = x.replace(
         rangeRegex,
         (_match, char1, num1, char2, num2) =>
