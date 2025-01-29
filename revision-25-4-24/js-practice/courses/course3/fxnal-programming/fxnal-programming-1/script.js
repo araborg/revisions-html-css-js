@@ -52,6 +52,8 @@ window.onload = () => {
             container.appendChild(input);
         });
     });
+
+    console.log(Array.from(document.getElementById("container").children));
 };
 
 const range = (start, end) =>
