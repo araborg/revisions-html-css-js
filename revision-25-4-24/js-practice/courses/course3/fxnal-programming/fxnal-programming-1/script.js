@@ -121,11 +121,6 @@ const update = (event) => {
             Array.from(document.getElementById("container").children)
         );
     }
-
-    console.log(
-        Array.from(document.getElementById("container").children),
-        value
-    );
 };
 
 const evalFormula = (x, cells) => {
