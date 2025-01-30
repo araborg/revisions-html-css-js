@@ -56,6 +56,8 @@ window.onload = () => {
     console.log(Array.from(document.getElementById("container").children));
 };
 
+const charLet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+
 const range = (start, end) =>
     Array(end - start + 1)
         .fill(start)
