@@ -52,8 +52,6 @@ window.onload = () => {
             container.appendChild(input);
         });
     });
-
-    console.log(Array.from(document.getElementById("container").children));
 };
 
 const charLet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
