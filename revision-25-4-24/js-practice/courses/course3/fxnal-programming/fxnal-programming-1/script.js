@@ -64,10 +64,6 @@ const charRange = (start, end) =>
         String.fromCharCode(code)
     );
 
-const input = "=2+3";
-
-const numbers = [1, 2, 3, 4, 5];
-
 const sum = (nums) => nums.reduce((accu, el) => accu + el, 0);
 
 const average = (nums) => sum(nums) / nums.length;
