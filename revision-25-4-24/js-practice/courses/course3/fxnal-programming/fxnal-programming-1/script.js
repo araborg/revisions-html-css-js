@@ -72,9 +72,9 @@ const sum = (nums) => nums.reduce((accu, el) => accu + el, 0);
 
 const average = (nums) => sum(nums) / nums.length;
 
-const isEven = (num) => {
-    num % 2 === 0 ? true : false;
-};
+const isEven = (num) => (num % 2 === 0 ? true : false);
+
+console.log(isEven(3));
 
 const median = (nums) => {
     const sorted = nums.slice().sort((a, b) => {
