@@ -3,7 +3,7 @@ Fxns:
 1. window.onload = () => {}
     const createLabel = (name) =>{}
 
-   
+
 2. const range = (start, end) => Array().fill().map();
     const charRange = (start, end) => range(start, end);
 
@@ -74,8 +74,6 @@ const average = (nums) => sum(nums) / nums.length;
 
 const isEven = (num) => (num % 2 === 0 ? true : false);
 
-console.log(isEven(3));
-
 const median = (nums) => {
     const sorted = nums.slice().sort((a, b) => {
         a - b;
@@ -88,6 +86,8 @@ const median = (nums) => {
         ? average(sorted[middle], sorted[middle + 1])
         : sorted[Math.ceil(middle)];
 };
+
+console.log(median(numbers));
 
 const spreadsheetFunctions = {
     "": (arg) => arg,
@@ -128,10 +128,10 @@ const update = (event) => {
 };
 
 const evalFormula = (x, cells) => {
-    /* 
+    /*
         cells is an array
-    
-        cell.id === id returns an input elemt 
+
+        cell.id === id returns an input elemt
             while.value returns value
     */
 
