@@ -202,6 +202,8 @@ const highPrecedence = (str) => {
     return str === str2 ? str : highPrecedence(str2);
 };
 
+console.log(highPrecedence("5*3"))
+
 const applyFunction = (str) => {
     const noHigh = highPrecedence(str);
 
