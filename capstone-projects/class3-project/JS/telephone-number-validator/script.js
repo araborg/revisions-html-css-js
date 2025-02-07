@@ -5,13 +5,13 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
-    const regex = /([\s*-*#&a-z"!()])/gi;
+    const regex = /([\s*\-*#&a-z"!()])/gi;
 
     return str.replace(regex, "");
 };
 
 checkBtn.addEventListener("click", () => {
-    const parseNum = removeSpace(parseInt(userInput.value));
+    const parseNum = parseInt(removeSpace(userInput.value));
     console.log(parseNum);
 
     if (!userInput.value || isNaN(parseNum)) {
