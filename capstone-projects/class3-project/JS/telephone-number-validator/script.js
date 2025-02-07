@@ -2,7 +2,7 @@ const userInput = document.getElementById("user-input");
 const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 
-const result = document.getElementById("result-div");
+const result = document.getElementById("results-div");
 
 console.log(result);
 
@@ -15,5 +15,7 @@ checkBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
+    userInput.value = "";
+
     result.textContent = "";
 });
