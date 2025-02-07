@@ -16,6 +16,9 @@ checkBtn.addEventListener("click", () => {
     if (!userInput.value || isNaN(parseNum)) {
         alert("Please provide a phone number");
     } else {
+        const outcome = removeSpace(userInput.value);
+        console.log(outcome);
+
         result.textContent = userInput.value;
     }
 });
