@@ -4,6 +4,12 @@ const clearBtn = document.getElementById("clear-btn");
 
 const result = document.getElementById("results-div");
 
+const removeSpace = (str) => {
+    const regex = /\s/gi;
+
+    str.replace(regex, "");
+};
+
 checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(userInput.value);
 
