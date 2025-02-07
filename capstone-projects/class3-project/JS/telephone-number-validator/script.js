@@ -7,7 +7,7 @@ const result = document.getElementById("results-div");
 checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(userInput.value);
 
-    if (!userInput.value) {
+    if (!userInput.value && isNaN(parseNum)) {
         alert("Please provide a phone number");
     } else {
         console.log(parseNum);
