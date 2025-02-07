@@ -9,11 +9,9 @@ checkBtn.addEventListener("click", () => {
 
     console.log(isNaN(parseNum));
 
-    if (!userInput.value && isNaN(parseNum)) {
+    if (!userInput.value || isNaN(parseNum)) {
         alert("Please provide a phone number");
     } else {
-        console.log(parseNum);
-
         result.textContent = userInput.value;
     }
 });
