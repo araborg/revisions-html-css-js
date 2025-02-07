@@ -5,11 +5,11 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 checkBtn.addEventListener("click", () => {
-    if (!userInput.value && parseInt(userInput.value)) {
+    const parseNum = parseInt(userInput.value);
+
+    if (!userInput.value) {
         alert("Please provide a phone number");
     } else {
-        const parseNum = parseInt(userInput.value);
-
         console.log(parseNum);
 
         result.textContent = userInput.value;
