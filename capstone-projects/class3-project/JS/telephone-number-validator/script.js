@@ -7,4 +7,3 @@ checkBtn.addEventListener("click", () => {
         alert("Please provide a phone number");
     }
 });
-console.log(userInput, clearBtn);
