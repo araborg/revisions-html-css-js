@@ -5,13 +5,14 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
-    const regex = /([\s-*#&a-z"!()])/gi;
+    const regex = /([\s*-*#&a-z"!()])/gi;
 
     return str.replace(regex, "");
 };
 
 checkBtn.addEventListener("click", () => {
-    const parseNum = parseInt(userInput.value);
+    const parseNum = removeSpace(parseInt(userInput.value));
+    console.log(parseNum);
 
     if (!userInput.value || isNaN(parseNum)) {
         alert("Please provide a phone number");
