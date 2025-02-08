@@ -6,15 +6,19 @@ const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
     // const regex = /([\s*\-*[()]#&a-z"!?])/gi;
-    const regex = /([()])/gi;
+    const regex = /\s*-/gi;
 
     return str.replace(regex, "");
 };
 
 checkBtn.addEventListener("click", () => {
-    const parseNum = parseInt(removeSpace(userInput.value));
+    const input = userInput.value.split("");
+    const outcome = removeSpace(input);
+    console.log(outcome, outcome.length);
+
+    // const parseNum = parseInt(removeSpace(userInput.value));
     // console.log(parseNum);
-    console.log(removeSpace(userInput.value));
+    // console.log(removeSpace(userInput.value));
 
     // if (!userInput.value || isNaN(parseNum)) {
     //     // if (!userInput.value) {
