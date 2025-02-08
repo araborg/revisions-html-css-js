@@ -5,40 +5,35 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
-    // const regex = /([\s*\-*#&a-z"!()?])/gi;
-    const regex = /([\s*-])/gi;
+    const regex = /([\s*\-*[()]#&a-z"!?])/gi;
+    // const regex = /([\s*-])/gi;
 
     return str.replace(regex, "");
 };
 
 checkBtn.addEventListener("click", () => {
-    const input = removeSpace(userInput.value).split("");
-    console.log(input.length);
+    const parseNum = parseInt(removeSpace(userInput.value));
+    console.log(parseNum);
 
-    // const parseNum = parseInt(removeSpace(userInput.value));
-    // console.log(parseNum);
+    if (!userInput.value || isNaN(parseNum)) {
+        // if (!userInput.value) {
+        alert("Please provide a phone number");
+    } else {
+        const outcome = removeSpace(userInput.value);
 
-    // if (!userInput.value || isNaN(parseNum)) {
-    // if (!userInput.value) {
-    //     alert("Please provide a phone number");
-    // } else {
-    //     const outcome = removeSpace(userInput.value);
-    //     console.log(outcome.split(" ").length);
+        let displayText;
 
-    //     // console.log(typeof outcome[0]);
+        if (
+            outcome.length >= 10 &&
+            (outcome[0] === "1" || outcome[0] === "5")
+        ) {
+            displayText = `Valid US number:  ${userInput.value}`;
+        } else {
+            displayText = `Invalid US number:  ${userInput.value}`;
+        }
+    }
 
-    //     let displayText;
-
-    //     if (
-    //         outcome.length >= 10 &&
-    //         (outcome[0] === "1" || outcome[0] === "5")
-    //     ) {
-    //         displayText = `Valid US number:  ${userInput.value}`;
-    //     } else {
-    //         displayText = `Invalid US number:  ${userInput.value}`;
-    //     }
-
-    //     result.textContent = displayText;
+    result.textContent = displayText;
 });
 
 clearBtn.addEventListener("click", () => {
