@@ -13,7 +13,7 @@ const removeSpace = (str) => {
 
 checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(removeSpace(userInput.value));
-    console.log(parseNum);
+    // console.log(parseNum);
 
     // if (!userInput.value || isNaN(parseNum)) {
     if (!userInput.value) {
