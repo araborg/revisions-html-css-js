@@ -17,9 +17,13 @@ checkBtn.addEventListener("click", () => {
         alert("Please provide a phone number");
     } else {
         const outcome = removeSpace(userInput.value);
-        console.log(outcome);
+        // console.log(outcome);
 
-        const displayText = `Valid US number:  ${userInput.value}`;
+        if ((outcome.length >= 10 && outcome[0] === 1) || outcome[0] === 5) {
+            const displayText = `Valid US number:  ${userInput.value}`;
+        } else {
+            const displayText = `Invalid US number:  ${userInput.value}`;
+        }
 
         result.textContent = displayText;
     }
