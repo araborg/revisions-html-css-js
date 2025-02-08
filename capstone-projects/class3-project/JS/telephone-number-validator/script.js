@@ -13,6 +13,7 @@ const removeSpace = (str) => {
 
 checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(removeSpace(userInput.value));
+    console.log(parseNum);
 
     if (!userInput.value || isNaN(parseNum)) {
         alert("Please provide a phone number");
