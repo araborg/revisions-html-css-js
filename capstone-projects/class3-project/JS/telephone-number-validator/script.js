@@ -20,9 +20,9 @@ checkBtn.addEventListener("click", () => {
         alert("Please provide a phone number");
     } else {
         const outcome = removeSpace(userInput.value);
-        console.log(outcome);
+        console.log(outcome.length);
 
-        console.log(typeof outcome[0]);
+        // console.log(typeof outcome[0]);
 
         let displayText;
 
