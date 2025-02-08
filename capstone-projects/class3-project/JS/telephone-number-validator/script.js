@@ -5,15 +5,16 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
-    const regex = /([\s*\-*[()]#&a-z"!?])/gi;
-    // const regex = /([\s*-])/gi;
+    // const regex = /([\s*\-*[()]#&a-z"!?])/gi;
+    const regex = /([()])/gi;
 
     return str.replace(regex, "");
 };
 
 checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(removeSpace(userInput.value));
-    console.log(parseNum);
+    // console.log(parseNum);
+    console.log(removeSpace(userInput.value));
 
     if (!userInput.value || isNaN(parseNum)) {
         // if (!userInput.value) {
@@ -31,9 +32,9 @@ checkBtn.addEventListener("click", () => {
         } else {
             displayText = `Invalid US number:  ${userInput.value}`;
         }
-    }
 
-    result.textContent = displayText;
+        result.textContent = displayText;
+    }
 });
 
 clearBtn.addEventListener("click", () => {
