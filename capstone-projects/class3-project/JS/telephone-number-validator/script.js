@@ -13,7 +13,7 @@ const removeSpace = (str) => {
 
 checkBtn.addEventListener("click", () => {
     const input = removeSpace(userInput.value).split("");
-    console.log(input);
+    console.log(input.length);
 
     // const parseNum = parseInt(removeSpace(userInput.value));
     // console.log(parseNum);
