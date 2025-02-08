@@ -12,30 +12,33 @@ const removeSpace = (str) => {
 };
 
 checkBtn.addEventListener("click", () => {
-    const parseNum = parseInt(removeSpace(userInput.value));
+const input = userInput.value
+console.log(input)
+
+    // const parseNum = parseInt(removeSpace(userInput.value));
     // console.log(parseNum);
 
     // if (!userInput.value || isNaN(parseNum)) {
-    if (!userInput.value) {
-        alert("Please provide a phone number");
-    } else {
-        const outcome = removeSpace(userInput.value);
-        console.log(outcome.split(" ").length);
+    // if (!userInput.value) {
+    //     alert("Please provide a phone number");
+    // } else {
+    //     const outcome = removeSpace(userInput.value);
+    //     console.log(outcome.split(" ").length);
 
-        // console.log(typeof outcome[0]);
+    //     // console.log(typeof outcome[0]);
 
-        let displayText;
+    //     let displayText;
 
-        if (
-            outcome.length >= 10 &&
-            (outcome[0] === "1" || outcome[0] === "5")
-        ) {
-            displayText = `Valid US number:  ${userInput.value}`;
-        } else {
-            displayText = `Invalid US number:  ${userInput.value}`;
-        }
+    //     if (
+    //         outcome.length >= 10 &&
+    //         (outcome[0] === "1" || outcome[0] === "5")
+    //     ) {
+    //         displayText = `Valid US number:  ${userInput.value}`;
+    //     } else {
+    //         displayText = `Invalid US number:  ${userInput.value}`;
+    //     }
 
-        result.textContent = displayText;
+    //     result.textContent = displayText;
     }
 });
 
