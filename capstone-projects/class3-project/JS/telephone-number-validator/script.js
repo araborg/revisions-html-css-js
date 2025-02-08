@@ -15,7 +15,8 @@ checkBtn.addEventListener("click", () => {
     const parseNum = parseInt(removeSpace(userInput.value));
     console.log(parseNum);
 
-    if (!userInput.value || isNaN(parseNum)) {
+    // if (!userInput.value || isNaN(parseNum)) {
+    if (!userInput.value) {
         alert("Please provide a phone number");
     } else {
         const outcome = removeSpace(userInput.value);
