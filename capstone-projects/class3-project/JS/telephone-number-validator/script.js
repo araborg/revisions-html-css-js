@@ -16,25 +16,25 @@ checkBtn.addEventListener("click", () => {
     // console.log(parseNum);
     console.log(removeSpace(userInput.value));
 
-    if (!userInput.value || isNaN(parseNum)) {
-        // if (!userInput.value) {
-        alert("Please provide a phone number");
-    } else {
-        const outcome = removeSpace(userInput.value);
+    // if (!userInput.value || isNaN(parseNum)) {
+    //     // if (!userInput.value) {
+    //     alert("Please provide a phone number");
+    // } else {
+    //     const outcome = removeSpace(userInput.value);
 
-        let displayText;
+    //     let displayText;
 
-        if (
-            outcome.length >= 10 &&
-            (outcome[0] === "1" || outcome[0] === "5")
-        ) {
-            displayText = `Valid US number:  ${userInput.value}`;
-        } else {
-            displayText = `Invalid US number:  ${userInput.value}`;
-        }
+    //     if (
+    //         outcome.length >= 10 &&
+    //         (outcome[0] === "1" || outcome[0] === "5")
+    //     ) {
+    //         displayText = `Valid US number:  ${userInput.value}`;
+    //     } else {
+    //         displayText = `Invalid US number:  ${userInput.value}`;
+    //     }
 
-        result.textContent = displayText;
-    }
+    //     result.textContent = displayText;
+    // }
 });
 
 clearBtn.addEventListener("click", () => {
