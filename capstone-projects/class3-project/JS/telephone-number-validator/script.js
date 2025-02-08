@@ -12,8 +12,8 @@ const removeSpace = (str) => {
 };
 
 checkBtn.addEventListener("click", () => {
-const input = userInput.value
-console.log(input)
+    const input = userInput.value.split("");
+    console.log(input);
 
     // const parseNum = parseInt(removeSpace(userInput.value));
     // console.log(parseNum);
@@ -39,7 +39,6 @@ console.log(input)
     //     }
 
     //     result.textContent = displayText;
-    }
 });
 
 clearBtn.addEventListener("click", () => {
