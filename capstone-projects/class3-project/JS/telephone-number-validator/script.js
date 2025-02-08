@@ -19,9 +19,14 @@ checkBtn.addEventListener("click", () => {
         const outcome = removeSpace(userInput.value);
         console.log(outcome);
 
+        console.log(typeof outcome[0]);
+
         let displayText;
 
-        if ((outcome.length >= 10 && outcome[0] === 1) || outcome[0] === 5) {
+        if (
+            outcome.length >= 10 &&
+            (outcome[0] === "1" || outcome[0] === "5")
+        ) {
             displayText = `Valid US number:  ${userInput.value}`;
         } else {
             displayText = `Invalid US number:  ${userInput.value}`;
