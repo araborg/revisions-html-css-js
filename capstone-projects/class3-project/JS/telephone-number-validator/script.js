@@ -19,9 +19,9 @@ checkBtn.addEventListener("click", () => {
         const outcome = removeSpace(userInput.value);
         console.log(outcome);
 
-        const displayText = "Valid US number: ";
+        const displayText = `Valid US number:  ${userInput.value}`;
 
-        result.textContent = userInput.value;
+        result.textContent = displayText;
     }
 });
 
