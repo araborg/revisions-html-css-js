@@ -23,6 +23,8 @@ const removeSpace = (str) => {
     1(555)555-5555      // 13           0       1
     1 (555) 555-5555    // 13           2       1
 
+    factors to be considered:
+    
 
 
     Invalid US number:
