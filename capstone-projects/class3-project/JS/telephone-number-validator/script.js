@@ -11,6 +11,12 @@ const removeSpace = (str) => {
     return str.replace(regex, "");
 };
 
+/*
+    1 555-555-5555 // 11
+    1 (555) 555-5555". // 13
+
+*/
+
 checkBtn.addEventListener("click", () => {
     const input = removeSpace(userInput.value);
     const outcome = input.split("");
