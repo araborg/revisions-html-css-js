@@ -46,9 +46,6 @@ const removeSpace = (str) => {
     2(757)622-7382      // 13
     10 (757) 622-7382   // 14
     (555)5(55?)-5555    // 15
-
-    
-
 */
 
 checkBtn.addEventListener("click", () => {
