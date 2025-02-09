@@ -6,7 +6,7 @@ const result = document.getElementById("results-div");
 
 const removeSpace = (str) => {
     // const regex = /([\s*\-*[()]#&a-z"!?])/gi;
-    const regex = /\s-/gi;
+    const regex = /[\s-]/gi;
 
     return str.replace(regex, "");
 };
