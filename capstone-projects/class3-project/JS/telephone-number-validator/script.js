@@ -18,6 +18,8 @@ const checkValidNumber = (input) => {
         `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
     );
 
+    console.log(phoneRegex.test(input));
+
     const pTag = document.createElement("p");
     pTag.className = "results-text";
 
