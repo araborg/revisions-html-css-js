@@ -19,6 +19,15 @@ const checkValidNumber = (input) => {
         1(555)555-5555      
         1 (555) 555-5555    
 
+        Landline Number: 00-1-703-555-1234
+ 
+        00 - Exit code (when calling from UK)
+        1 - US country code
+        703 - Area code
+        555 - Exchange code
+        1234 - Subscriber’s landline number
+
+
     */
 
     const countryCode = "^(1\\s?)?";
