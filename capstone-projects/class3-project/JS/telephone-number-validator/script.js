@@ -15,11 +15,9 @@ const checkValidNumber = (input) => {
     const phoneNumber = "[0-9]{3}[\\s\\-]?[0-9]{4}$";
 
     const phoneRegex = new RegExp(
-        `${countryCode}${areaCode}`
-        // `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
+        // `${countryCode}${areaCode}`
+        `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
     );
-
-    console.log(phoneRegex.test(input));
 
     const pTag = document.createElement("p");
     pTag.className = "results-text";
