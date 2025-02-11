@@ -30,7 +30,8 @@ const checkValidNumber = (input) => {
 
     */
 
-    const countryCode = "^(1\\s?)?";
+    // const countryCode = "^(1\\s?)?";
+    const countryCode = /(^1s?)?/;
     const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
     const spacesDashes = "[\\s\\-]?";
     const phoneNumber = "[0-9]{3}[\\s\\-]?[0-9]{4}$";
@@ -39,6 +40,8 @@ const checkValidNumber = (input) => {
         // `${countryCode}${areaCode}`
         `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
     );
+
+    console.log(phoneRegex.test(input));
 
     const pTag = document.createElement("p");
     pTag.className = "results-text";
