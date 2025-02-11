@@ -30,10 +30,10 @@ const checkValidNumber = (input) => {
 
     */
 
-    const countryCode = "^(1\\s?)?";
-    const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
-    const spacesDashes = "[\\s\\-]?";
-    const phoneNumber = "[0-9]{3}[\\s\\-]?[0-9]{4}$";
+    const countryCode = "^(1s?)?";
+    const areaCode = "(([0-9]{3})|[0-9]{3})";
+    const spacesDashes = "[s-]?";
+    const phoneNumber = "[0-9]{3}[s-]?[0-9]{4}$";
 
     const phoneRegex = new RegExp(
         // `${countryCode}${areaCode}`
