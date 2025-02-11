@@ -26,8 +26,6 @@ const checkValidNumber = (input) => {
         703 - Area code
         555 - Exchange code
         1234 - Subscriber’s landline number
-
-
     */
 
     const countryCode = "^(1\\s?)?";
