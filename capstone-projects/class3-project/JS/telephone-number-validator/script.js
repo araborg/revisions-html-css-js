@@ -8,4 +8,14 @@ const clearBtn = document.getElementById("clear-btn");
 
 const result = document.getElementById("results-div");
 
-console.log(userInput, checkBtn, clearBtn, result);
+userInput.addEventListener("keydown", () => {
+    console.log("keydown");
+});
+
+checkBtn.addEventListener("click", () => {
+    console.log("check btn");
+});
+
+clearBtn.addEventListener("click", () => {
+    console.log("clear btn");
+});
