@@ -21,7 +21,7 @@ userInput.addEventListener("keydown", (event) => {
 });
 
 checkBtn.addEventListener("click", () => {
-    console.log("check btn");
+    getUserInput(userInput.value);
 });
 
 clearBtn.addEventListener("click", () => {
