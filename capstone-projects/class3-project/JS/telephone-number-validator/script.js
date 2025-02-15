@@ -9,7 +9,9 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const getUserInput = (input) => {
-    console.log(input);
+    if (input === "") {
+        alert("Please provide a phone number");
+    }
 };
 
 userInput.addEventListener("keydown", (event) => {
