@@ -12,8 +12,10 @@ const getUserInput = (input) => {
     console.log(input);
 };
 
-userInput.addEventListener("keydown", () => {
-    getUserInput(userInput.value);
+userInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        getUserInput(userInput.value);
+    }
 });
 
 checkBtn.addEventListener("click", () => {
