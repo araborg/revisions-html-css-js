@@ -26,6 +26,9 @@ const getUserInput = (input) => {
 
         return;
     }
+
+    const formatInput = parseInt(input);
+    console.log(typeof formatInput);
 };
 
 userInput.addEventListener("keydown", (event) => {
