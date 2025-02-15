@@ -11,6 +11,8 @@ const result = document.getElementById("results-div");
 const getUserInput = (input) => {
     if (input === "") {
         alert("Please provide a phone number");
+
+        return;
     }
 };
 
