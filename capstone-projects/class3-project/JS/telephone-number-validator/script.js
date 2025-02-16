@@ -49,7 +49,7 @@ const getUserInput = (input) => {
     */
 
     const countryCode = "^(1\\s)?";
-    // const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
+    const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
     const regex1 = /([0-9]{3})|[0-9]{3}/;
 
     const spaceBtw = "[\\s\\-]?";
@@ -65,10 +65,14 @@ const getUserInput = (input) => {
         `${countryCode}${regex1}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    console.log(regex, regex2);
+    console.log(regex);
 
     const testRegex = regex.test(input);
     console.log(testRegex);
+
+    console.log(regex2);
+    const testRegex2 = regex2.test(input);
+    console.log(testRegex2);
 };
 
 userInput.addEventListener("keydown", (event) => {
