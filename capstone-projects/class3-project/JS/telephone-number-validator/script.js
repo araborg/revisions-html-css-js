@@ -61,13 +61,17 @@ const getUserInput = (input) => {
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    const testRegex = regex.test(input)
-        ? (result.style.color = "#00471b")
-        : (result.style.color = "#4d3800");
-    console.log(testRegex);
-
     const paraElement = document.createElement("p");
-    console.log(paraElement);
+
+    const testRegex = regex.test(input)
+        ? (paraElement.style.color = "#00471b")
+        : (paraElement.style.color = "#4d3800");
+    // console.log(testRegex);
+
+    const createText = document.createTextNode(`
+        ${regex.test(input) ? "Valid" : "Invalid"} US number: ${input}`);
+
+    console.log(createText);
 };
 
 userInput.addEventListener("keydown", (event) => {
