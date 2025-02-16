@@ -55,15 +55,15 @@ const getUserInput = (input) => {
     const spaceBtw = "[\\s\\-]?";
     const exchangeCode = "[0-9]{3}";
     const spaceBtw2 = "[\\s\\-]?";
-    const subscriberNumber = "[0-9]{4}";
+    const subscriberNumber = "[0-9]{4}$";
 
     const regex = new RegExp(
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    console.log(regex);
-
-    const testRegex = regex.test(input);
+    const testRegex = regex.test(input)
+        ? (result.style.color = "#00471b")
+        : (result.style.color = "#4d3800");
     console.log(testRegex);
 };
 
