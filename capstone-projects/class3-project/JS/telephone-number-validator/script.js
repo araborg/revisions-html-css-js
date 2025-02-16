@@ -43,8 +43,9 @@ const getUserInput = (input) => {
     const countryCode = "^1?\\s?";
     const areaCode = "(\\(0-9\\){3})|[0-9]{3}";
     const spaceBtw = "\\s-?";
-    const exchangeCode = "";
-    const subscriberNumber = "";
+    const exchangeCode = "[0-9]{3}";
+    const spaceBtw2 = "\\s-?";
+    const subscriberNumber = "[0-9]{4}";
 };
 
 userInput.addEventListener("keydown", (event) => {
