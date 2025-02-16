@@ -13,13 +13,7 @@ The format is:
 
 For example,1 (555) 555-1234. 
 
-1 555-555-5555
-1 (555) 555-5555
-1(555)555-5555
-1 555 555 5555
-5555555555
-555-555-5555
-(555)555-5555
+
 
 */
 const userInput = document.getElementById("user-input");
@@ -35,8 +29,19 @@ const getUserInput = (input) => {
         return;
     }
 
-    const countryCode = "^1\\s?";
-    const areaCode = "";
+    /*
+        1 555-555-5555
+        1 (555) 555-5555
+        1(555)555-5555
+        1 555 555 5555
+        5555555555
+        555-555-5555
+        (555)555-5555
+
+    */
+
+    const countryCode = "^1?\\s?";
+    const areaCode = "()|[0-9]{3}";
     const exchangeCode = "";
     const subscriberNumber = "";
 };
