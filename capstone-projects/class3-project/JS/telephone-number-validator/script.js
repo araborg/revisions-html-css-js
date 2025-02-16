@@ -50,8 +50,8 @@ const getUserInput = (input) => {
     const regexTest = `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`;
     console.log(regexTest);
 
-    // const testInput = regexTest.test(input);
-    // console.log(testInput);
+    const testInput = regexTest.test(input);
+    console.log(testInput);
 };
 
 userInput.addEventListener("keydown", (event) => {
