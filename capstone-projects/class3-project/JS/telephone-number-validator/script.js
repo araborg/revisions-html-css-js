@@ -51,7 +51,6 @@ const getUserInput = (input) => {
     const countryCode = "^(1\\s)?";
 
     const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
-    const areaCode2 = /(([0-9]{3}))|[0-9]{3}/;
 
     const spaceBtw = "[\\s\\-]?";
     const exchangeCode = "[0-9]{3}";
@@ -62,18 +61,10 @@ const getUserInput = (input) => {
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    const regex2 = new RegExp(
-        `${countryCode}${areaCode2}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
-    );
-
     console.log(regex);
 
     const testRegex = regex.test(input);
     console.log(testRegex);
-
-    console.log(regex2);
-    const testRegex2 = regex2.test(input);
-    console.log(testRegex2);
 };
 
 userInput.addEventListener("keydown", (event) => {
