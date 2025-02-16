@@ -49,7 +49,8 @@ const getUserInput = (input) => {
     */
 
     const countryCode = "^(1\\s)?";
-    const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
+    // const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
+    const regex1 = /([0-9]{3})|[0-9]{3}/;
 
     const spaceBtw = "[\\s\\-]?";
     const exchangeCode = "[0-9]{3}";
@@ -60,7 +61,11 @@ const getUserInput = (input) => {
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    console.log(regex);
+    const regex2 = new RegExp(
+        `${countryCode}${regex1}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
+    );
+
+    console.log(regex, regex2);
 
     const testRegex = regex.test(input);
     console.log(testRegex);
