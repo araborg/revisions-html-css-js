@@ -28,6 +28,9 @@ const getUserInput = (input) => {
     }
 
     const countryCode = "^1\\s?";
+    const areaCode = "";
+    const exchangeCode = "";
+    const subscriberNumber = "";
 };
 
 userInput.addEventListener("keydown", (event) => {
