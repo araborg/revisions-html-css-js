@@ -55,7 +55,7 @@ const getUserInput = (input) => {
     const spaceBtw2 = "[\\s\\-]?";
     const subscriberNumber = "[0-9]{4}$";
 
-    const regex = new regexExp(
+    const regex = new RegExp(
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
