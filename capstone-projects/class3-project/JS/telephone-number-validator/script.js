@@ -56,7 +56,7 @@ const getUserInput = (input) => {
     */
 
     const countryCode = "^(1\\s)?";
-    const areaCode = "";
+    const areaCode = "((\\[0-9]{3}\\)|[0-9]{3})";
     const spaceBtw = "";
     const exchangeCode = "";
     const spaceBtw2 = "";
