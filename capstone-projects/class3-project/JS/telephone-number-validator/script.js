@@ -65,6 +65,9 @@ const getUserInput = (input) => {
         ? (result.style.color = "#00471b")
         : (result.style.color = "#4d3800");
     console.log(testRegex);
+
+    const paraElement = document.createElement("p");
+    console.log(paraElement);
 };
 
 userInput.addEventListener("keydown", (event) => {
