@@ -53,7 +53,7 @@ const getUserInput = (input) => {
     const spaceBtw = "[\\s\\-]?";
     const exchangeCode = "[0-9]{3}";
     const spaceBtw2 = "[\\s\\-]?";
-    const subscriberNumber = "";
+    const subscriberNumber = "[0-9]{4}$";
 };
 
 userInput.addEventListener("keydown", (event) => {
