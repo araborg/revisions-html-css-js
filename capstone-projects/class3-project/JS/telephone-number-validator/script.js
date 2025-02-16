@@ -26,9 +26,6 @@ const getUserInput = (input) => {
 
         return;
     }
-
-    const formatInput = parseInt(input);
-    console.log(isNaN(input));
 };
 
 userInput.addEventListener("keydown", (event) => {
