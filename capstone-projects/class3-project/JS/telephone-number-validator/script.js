@@ -59,8 +59,6 @@ const getUserInput = (input) => {
         `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
     );
 
-    console.log(regexTest);
-
     const testInput = regexTest.test(input);
     console.log(testInput);
 };
