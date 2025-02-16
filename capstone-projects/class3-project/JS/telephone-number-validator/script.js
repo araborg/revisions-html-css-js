@@ -66,12 +66,10 @@ const getUserInput = (input) => {
     const testRegex = regex.test(input)
         ? (paraElement.style.color = "#00471b")
         : (paraElement.style.color = "#4d3800");
-    // console.log(testRegex);
 
-    const createText = document.createTextNode(`
-        ${regex.test(input) ? "Valid" : "Invalid"} US number: ${input}`);
-
-    console.log(createText);
+    const createText = document.createTextNode(
+        `${regex.test(input) ? "Valid" : "Invalid"} US number: ${input}`
+    );
 
     paraElement.appendChild(createText);
 
