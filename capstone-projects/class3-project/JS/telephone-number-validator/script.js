@@ -61,13 +61,6 @@ const getUserInput = (input) => {
     const exchangeCode = "";
     const spaceBtw2 = "";
     const subscriberNumber = "";
-
-    const regexTest = new RegExp(
-        `${countryCode}${areaCode}${spaceBtw}${exchangeCode}${spaceBtw2}${subscriberNumber}`
-    );
-
-    const testInput = regexTest.test(input);
-    console.log(testInput);
 };
 
 userInput.addEventListener("keydown", (event) => {
