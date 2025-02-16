@@ -74,5 +74,7 @@ checkBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-    console.log("clear btn");
+    userInput.value = "";
+
+    result.textContent = "";
 });
