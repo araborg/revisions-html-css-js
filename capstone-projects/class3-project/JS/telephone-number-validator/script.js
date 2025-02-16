@@ -72,6 +72,10 @@ const getUserInput = (input) => {
         ${regex.test(input) ? "Valid" : "Invalid"} US number: ${input}`);
 
     console.log(createText);
+
+    paraElement.appendChild(createText);
+
+    result.appendChild(paraElement);
 };
 
 userInput.addEventListener("keydown", (event) => {
