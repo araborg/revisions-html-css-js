@@ -42,6 +42,7 @@ const getUserInput = (input) => {
 
     const countryCode = "^1?\\s?";
     const areaCode = "(\\(0-9\\){3})|[0-9]{3}";
+    const spaceBtw = "\\s-?";
     const exchangeCode = "";
     const subscriberNumber = "";
 };
