@@ -22,6 +22,13 @@ const clearBtn = document.getElementById("clear-btn");
 
 const result = document.getElementById("results-div");
 
+/*
+[] denotes A CHARACTER class
+
+() denotes a capturing GROUP
+
+*/
+
 const getUserInput = (input) => {
     if (input === "") {
         alert("Please provide a phone number");
