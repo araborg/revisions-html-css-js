@@ -26,6 +26,8 @@ const getUserInput = (input) => {
 
         return;
     }
+
+    const countryCode = "^1\\s?";
 };
 
 userInput.addEventListener("keydown", (event) => {
