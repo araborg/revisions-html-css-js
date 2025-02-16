@@ -44,21 +44,14 @@ const getUserInput = (input) => {
         5555555555
         555-555-5555
         (555)555-5555
-
-        const countryCode = '^(1\\s?)?';
-  const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
-  const spacesDashes = '[\\s\\-]?';
-  const phoneNumber = '[0-9]{3}[\\s\\-]?[0-9]{4}$';
-  const phoneRegex = new RegExp(
-    `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
   );
 
     */
 
     const countryCode = "^(1\\s)?";
     const areaCode = "((\\[0-9]{3}\\)|[0-9]{3})";
-    const spaceBtw = "";
-    const exchangeCode = "";
+    const spaceBtw = "[\\s\\-]?";
+    const exchangeCode = "[0-9]{3}";
     const spaceBtw2 = "";
     const subscriberNumber = "";
 };
@@ -78,3 +71,15 @@ clearBtn.addEventListener("click", () => {
 
     result.textContent = "";
 });
+
+/*
+
+        const countryCode = '^(1\\s?)?';
+  const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
+  const spacesDashes = '[\\s\\-]?';
+  const phoneNumber = '[0-9]{3}[\\s\\-]?[0-9]{4}$';
+  const phoneRegex = new RegExp(
+    `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
+
+
+    */
