@@ -58,7 +58,7 @@ const checkInput = (input) => {
 
     const createParagraph = document.createElement("p");
     const textNode = document.createTextNode(
-        `${regex.test(input) ? "Valid" : "Invalid"}`
+        `${regex.test(input) ? "Valid" : "Invalid"}  US number: ${input}`
     );
 
     console.log(textNode);
