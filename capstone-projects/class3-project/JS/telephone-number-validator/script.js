@@ -39,12 +39,6 @@ checkBtn.addEventListener("click", () => {
     getUserInput(userInput.value);
 });
 
-clearBtn.addEventListener("click", () => {
-    userInput.value = "";
-
-    result.textContent = "";
-});
-
 /*
 
         const countryCode = '^(1\\s?)?';
