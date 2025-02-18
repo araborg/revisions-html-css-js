@@ -33,7 +33,9 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const checkInput = (input) => {
-    console.log(input);
+    if (userInput.value === "") {
+        alert("Please provide a phone number");
+    }
 };
 
 userInput.addEventListener("keydown", (e) => {
