@@ -40,6 +40,10 @@ const checkInput = (input) => {
     }
 
     const countryCode = "^(1\\s?)?";
+    const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
+    const areaCodeSpace = "[\\s\\-]?";
+    const exchangeCode = "[]0-9]{3}";
+    const exchangeCodeSpace = "";
 
     /*
         (country code): 1
