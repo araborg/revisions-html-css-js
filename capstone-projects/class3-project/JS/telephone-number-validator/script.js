@@ -28,3 +28,6 @@ For example,1 (555) 555-1234.
 */
 
 const userInput = document.getElementById("user-input");
+const checkBtn = document.getElementById("check-btn");
+const clearBtn = document.getElementById("clear-btn");
+const result = document.getElementById("results-div");
