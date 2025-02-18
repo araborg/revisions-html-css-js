@@ -30,6 +30,7 @@ const checkInput = (input) => {
     );
 
     const createParagraph = document.createElement("p");
+    pTag.className = "results-text";
 
     const test = regex.test(input)
         ? (createParagraph.style.color = "#00471b")
@@ -44,14 +45,14 @@ const checkInput = (input) => {
     result.appendChild(createParagraph);
 };
 
+checkBtn.addEventListener("click", () => {
+    checkInput(userInput.value);
+});
+
 userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         checkInput(userInput.value);
     }
-});
-
-checkBtn.addEventListener("click", () => {
-    checkInput(userInput.value);
 });
 
 clearBtn.addEventListener("click", () => {
