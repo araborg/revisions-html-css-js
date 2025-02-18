@@ -41,3 +41,7 @@ userInput.addEventListener("keydown", (e) => {
         checkInput(userInput.value);
     }
 });
+
+checkBtn.addEventListener("click", () => {
+    checkInput(userInput.value);
+});
