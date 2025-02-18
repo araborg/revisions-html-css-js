@@ -36,6 +36,8 @@ const checkInput = (input) => {
     console.log(isNaN(parseInt(input)));
     if (userInput.value === "" || isNaN(parseInt(input))) {
         alert("Please provide a phone number");
+
+        return;
     }
 };
 
