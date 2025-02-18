@@ -30,7 +30,7 @@ const checkInput = (input) => {
     );
 
     const createParagraph = document.createElement("p");
-    pTag.className = "results-text";
+    createParagraph.className = "results-text";
 
     const test = regex.test(input)
         ? (createParagraph.style.color = "#00471b")
