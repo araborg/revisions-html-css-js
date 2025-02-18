@@ -46,6 +46,10 @@ const checkInput = (input) => {
     const exchangeCodeSpace = "[0-9]{3}";
     const subscriberNumber = "[0-9]{4}$";
 
+    const regex = new RegExp(
+        `${countryCode}${areaCode}${areaCodeSpace}${exchangeCode}${exchangeCodeSpace}${subscriberNumber}`
+    );
+
     /*
         (country code): 1
         (area code): (555)  
