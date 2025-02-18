@@ -56,6 +56,8 @@ const checkInput = (input) => {
         ? (result.style.color = "#00471b")
         : (result.style.color = "#4d3800");
 
+    console.log(test);
+
     const createParagraph = document.createElement("p");
     const textNode = document.createTextNode(
         `${regex.test(input) ? "Valid" : "Invalid"}  US number: ${input}`
