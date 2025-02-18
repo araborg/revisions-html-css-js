@@ -29,28 +29,6 @@ For example,1 (555) 555-1234.
 
 */
 
-const getUserInput = (input) => {
-    if (input === "") {
-        alert("Please provide a phone number");
-
-        return;
-    }
-
-    const paraElement = document.createElement("p");
-
-    const testRegex = regex.test(input)
-        ? (paraElement.style.color = "#00471b")
-        : (paraElement.style.color = "#4d3800");
-
-    const createText = document.createTextNode(
-        `${regex.test(input) ? "Valid" : "Invalid"} US number: ${input}`
-    );
-
-    paraElement.appendChild(createText);
-
-    result.textContent = paraElement;
-};
-
 userInput.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         getUserInput(userInput.value);
