@@ -56,6 +56,8 @@ const checkInput = (input) => {
     const test = regex.test(input)
         ? (result.style.color = "#00471b")
         : (result.style.color = "#4d3800");
+
+    console.log(test);
 };
 
 userInput.addEventListener("keydown", (e) => {
