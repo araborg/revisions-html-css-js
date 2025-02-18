@@ -29,10 +29,6 @@ For example,1 (555) 555-1234.
 
 */
 
-checkBtn.addEventListener("click", () => {
-    getUserInput(userInput.value);
-});
-
 /*
 
         const countryCode = '^(1\\s?)?';
