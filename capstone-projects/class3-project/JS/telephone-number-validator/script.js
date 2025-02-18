@@ -63,7 +63,7 @@ const checkInput = (input) => {
 
     createParagraph.appendChild(textNode);
 
-    result.textContent = createParagraph;
+    result.appendChild(createParagraph);
 };
 
 userInput.addEventListener("keydown", (e) => {
