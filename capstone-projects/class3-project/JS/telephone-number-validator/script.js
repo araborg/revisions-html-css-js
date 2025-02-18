@@ -26,3 +26,5 @@ For example,1 (555) 555-1234.
     (555)555-5555
 
 */
+
+const userInput = document.getElementById("user-input");
