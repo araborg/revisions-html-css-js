@@ -52,14 +52,6 @@ const checkInput = (input) => {
 
     const test = regex.text(input);
     console.log(test);
-
-    /*
-        (country code): 1
-        (area code): (555)  
-        (exchange code): 555
-        (subscriber number): 1234 
-
-    */
 };
 
 userInput.addEventListener("keydown", (e) => {
