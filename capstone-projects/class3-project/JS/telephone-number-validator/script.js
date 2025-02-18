@@ -55,8 +55,8 @@ const checkInput = (input) => {
     const createParagraph = document.createElement("p");
 
     const test = regex.test(input)
-        ? (createParagraph.style.color = "green")
-        : (createParagraph.style.color = "red");
+        ? (createParagraph.style.color = "#00471b")
+        : (createParagraph.style.color = "#4d3800");
 
     // console.log(test);
 
