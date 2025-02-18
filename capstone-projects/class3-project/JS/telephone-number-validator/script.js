@@ -39,11 +39,11 @@ const checkInput = (input) => {
     }
 };
 
-console.log(isNaN("babs"));
-console.log(isNaN("2025"));
-console.log(isNaN("babs"));
-console.log(isNaN("1 555)555-5555"));
-console.log(isNaN(parseInt("1 555)555-5555")));
+// console.log(isNaN("babs"));
+// console.log(isNaN("2025"));
+// console.log(isNaN("babs"));
+// console.log(isNaN("1 555)555-5555"));
+// console.log(isNaN(parseInt("1 555)555-5555")));
 
 userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
