@@ -47,11 +47,15 @@ const checkInput = (input) => {
 
 checkBtn.addEventListener("click", () => {
     checkInput(userInput.value);
+
+    userInput.value = "";
 });
 
 userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         checkInput(userInput.value);
+
+        userInput.value = "";
     }
 });
 
