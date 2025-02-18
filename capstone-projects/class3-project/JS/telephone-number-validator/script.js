@@ -34,7 +34,7 @@ const result = document.getElementById("results-div");
 
 const checkInput = (input) => {};
 
-checkBtn.addEventListener("keydown", (e) => {
+userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         alert("Enter");
     }
