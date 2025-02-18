@@ -57,8 +57,11 @@ const checkInput = (input) => {
         : (result.style.color = "#4d3800");
 
     const createParagraph = document.createElement("p");
+    const textNode = document.createTextNode(
+        `${regex.test(input)} ? "Valid" : "Invalid" US number: ${input}`
+    );
 
-    console.log(test);
+    console.log(textNode);
 };
 
 userInput.addEventListener("keydown", (e) => {
