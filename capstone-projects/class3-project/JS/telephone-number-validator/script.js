@@ -53,10 +53,9 @@ const checkInput = (input) => {
         `${countryCode}${areaCode}${areaCodeSpace}${exchangeCode}${exchangeCodeSpace}${subscriberNumber}`
     );
 
-    console.log(regex);
-
-    const test = regex.test(input);
-    console.log(test);
+    const test = regex.test(input)
+        ? (result.style.color = "#00471b")
+        : (result.style.color = "#4d3800");
 };
 
 userInput.addEventListener("keydown", (e) => {
