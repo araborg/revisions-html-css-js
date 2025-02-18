@@ -32,7 +32,9 @@ const checkBtn = document.getElementById("check-btn");
 const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
-const checkInput = (input) => {};
+const checkInput = (input) => {
+    console.log(input);
+};
 
 userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
