@@ -61,7 +61,9 @@ const checkInput = (input) => {
         `${regex.test(input) ? "Valid" : "Invalid"}  US number: ${input}`
     );
 
-    console.log(textNode);
+    createParagraph.appendChild(textNode);
+
+    result.textContent = createParagraph;
 };
 
 userInput.addEventListener("keydown", (e) => {
