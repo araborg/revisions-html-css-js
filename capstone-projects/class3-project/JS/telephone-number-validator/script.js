@@ -33,8 +33,8 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 const checkInput = (input) => {
-    console.log(!isNaN(parseInt(input)));
-    if (userInput.value === "" || !isNaN(parseInt(input))) {
+    console.log(isNaN(parseInt(input)));
+    if (userInput.value === "" || isNaN(parseInt(input))) {
         alert("Please provide a phone number");
     }
 };
