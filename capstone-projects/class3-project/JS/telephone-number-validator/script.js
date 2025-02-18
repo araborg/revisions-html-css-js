@@ -36,6 +36,6 @@ const checkInput = (input) => {};
 
 userInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        alert("Enter");
+        checkInput(userInput.value);
     }
 });
