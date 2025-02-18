@@ -1,4 +1,9 @@
 /*
+[] denotes A CHARACTER class
+
+() denotes a capturing GROUP
+
+
 #00471b
 #4d3800
 
@@ -30,9 +35,7 @@ const clearBtn = document.getElementById("clear-btn");
 const result = document.getElementById("results-div");
 
 /*
-[] denotes A CHARACTER class
 
-() denotes a capturing GROUP
 
 */
 
