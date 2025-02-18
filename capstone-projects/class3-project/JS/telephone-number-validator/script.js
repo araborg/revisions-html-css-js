@@ -28,15 +28,3 @@ For example,1 (555) 555-1234.
     (555)555-5555
 
 */
-
-/*
-
-        const countryCode = '^(1\\s?)?';
-  const areaCode = '(\\([0-9]{3}\\)|[0-9]{3})';
-  const spacesDashes = '[\\s\\-]?';
-  const phoneNumber = '[0-9]{3}[\\s\\-]?[0-9]{4}$';
-  const phoneRegex = new RegExp(
-    `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
-
-
-    */
