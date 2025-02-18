@@ -56,6 +56,8 @@ const checkInput = (input) => {
         ? (result.style.color = "#00471b")
         : (result.style.color = "#4d3800");
 
+    const createParagraph = document.createElement("p");
+
     console.log(test);
 };
 
