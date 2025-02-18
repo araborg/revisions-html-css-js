@@ -29,12 +29,6 @@ For example,1 (555) 555-1234.
 
 */
 
-userInput.addEventListener("keydown", (event) => {
-    if (event.key === "Enter") {
-        getUserInput(userInput.value);
-    }
-});
-
 checkBtn.addEventListener("click", () => {
     getUserInput(userInput.value);
 });
