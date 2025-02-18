@@ -50,6 +50,9 @@ const checkInput = (input) => {
         `${countryCode}${areaCode}${areaCodeSpace}${exchangeCode}${exchangeCodeSpace}${subscriberNumber}`
     );
 
+    const test = regex.text(input);
+    console.log(test);
+
     /*
         (country code): 1
         (area code): (555)  
