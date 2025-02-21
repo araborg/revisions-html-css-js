@@ -4,3 +4,8 @@ const dessertCards = document.getElementById("dessert-card-container");
 
 const cartBtn = document.getElementById("cart-btn");
 const clearCartBtn = document.getElementById("clear-cart-btn");
+
+const totalNumberOfItems=document.getElementById('total-items');
+const cartSubTotal;
+const cartTaxes;
+const cartTotal;
