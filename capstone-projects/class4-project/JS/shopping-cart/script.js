@@ -9,3 +9,5 @@ const totalNumberOfItems = document.getElementById("total-items");
 const cartSubTotal = document.getElementById("subtotal");
 const cartTaxes = document.getElementById("taxes");
 const cartTotal = document.getElementById("total");
+
+console.log(totalNumberOfItems, cartSubTotal, cartTaxes, cartTotal);
