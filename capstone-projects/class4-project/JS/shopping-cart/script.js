@@ -10,4 +10,6 @@ const cartSubTotal = document.getElementById("subtotal");
 const cartTaxes = document.getElementById("taxes");
 const cartTotal = document.getElementById("total");
 
+const showHideCartSpan = document.getElementById("show-hide-cart");
+
 console.log(totalNumberOfItems, cartSubTotal, cartTaxes, cartTotal);
