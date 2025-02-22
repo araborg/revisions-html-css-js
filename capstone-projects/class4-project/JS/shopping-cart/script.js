@@ -99,4 +99,4 @@ const products = [
     },
 ];
 
-console.log(totalNumberOfItems, cartSubTotal, cartTaxes, cartTotal);
+products.forEach((element) => {});
