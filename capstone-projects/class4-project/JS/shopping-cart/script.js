@@ -99,4 +99,4 @@ const products = [
     },
 ];
 
-products.forEach((element) => {});
+products.forEach(({ id, name, price, category }) => {});
