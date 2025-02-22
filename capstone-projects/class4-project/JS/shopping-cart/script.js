@@ -120,6 +120,6 @@ class ShoppingCart {
     }
 
     addItem(id, products) {
-        const product = products.find((product = product.id === id));
+        const product = products.find((product) => product.id === id);
     }
 }
