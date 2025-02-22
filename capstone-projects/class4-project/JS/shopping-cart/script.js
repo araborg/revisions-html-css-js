@@ -130,7 +130,7 @@ class ShoppingCart {
 
         this.items.forEach((dessert) => {
             totalCountPerProduct[dessert.id] =
-                totalCountPerProduct[dessert.id] + 1;
+                (totalCountPerProduct[dessert.id] || 0) + 1;
         });
     }
 }
