@@ -128,4 +128,5 @@ class ShoppingCart {
     }
 }
 
+this.items.forEach((dessert) => {});
 const totalCountPerProduct = {};
