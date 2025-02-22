@@ -106,6 +106,8 @@ products.forEach(({ id, name, price, category }) => {
 
             <p class='dessert-price'>Price: $${price}</p>
             <p class="product-category">Category: ${category}</p>
+            
+            <button id=${id} class="btn add-to-cart-btn">Add to cart</button>
         </div>
     `;
 });
