@@ -100,7 +100,7 @@ const products = [
 ];
 
 products.forEach(({ id, name, price, category }) => {
-    dessertCards += `
+    dessertCards.innerHTML += `
         <div class='dessert-card'>
             <h2>${name}</h2>
         </div>
