@@ -103,6 +103,9 @@ products.forEach(({ id, name, price, category }) => {
     dessertCards.innerHTML += `
         <div class='dessert-card'>
             <h2>${name}</h2>
+
+            <p class='dessert-price'>Price: $${price}</p>
+            <p class="product-category">"Category: ${category}"</p>
         </div>
     `;
 });
