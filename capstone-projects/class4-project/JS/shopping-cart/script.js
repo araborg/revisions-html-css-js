@@ -139,6 +139,8 @@ class ShoppingCart {
             `product-count-id${product.id}`
         );
 
-        currentProductCount > 1 ? undefined : undefined;
+        currentProductCount > 1
+            ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
+            : `<div class="product" id="dessert${id}"></div>`;
     }
 }
