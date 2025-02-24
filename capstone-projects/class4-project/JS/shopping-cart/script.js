@@ -138,5 +138,7 @@ class ShoppingCart {
         const currentProductCountSpan = document.getElementById(
             `product-count-id${product.id}`
         );
+
+        currentProductCount > 1 ? undefined : undefined;
     }
 }
