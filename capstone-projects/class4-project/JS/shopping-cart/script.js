@@ -157,6 +157,8 @@ class ShoppingCart {
     getCounts() {
         return this.items.length;
     }
+
+    calculateTotal() {}
 }
 
 const cart = new ShoppingCart();
