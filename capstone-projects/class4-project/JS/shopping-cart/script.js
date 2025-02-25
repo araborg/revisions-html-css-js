@@ -188,6 +188,4 @@ cartBtn.addEventListener("click", () => {
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
     totalNumberOfItems.textContent = cart.getCounts();
-
-    console.log(cart.calculateTotal());
 });
