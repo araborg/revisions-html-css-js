@@ -154,7 +154,7 @@ class ShoppingCart {
                 `);
     }
 
-    getCount() {
+    getCounts() {
         return this.items.length;
     }
 }
@@ -177,3 +177,5 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
+
+totalNumberOfItems.textContent = cart.getCounts();
