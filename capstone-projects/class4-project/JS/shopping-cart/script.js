@@ -158,7 +158,9 @@ class ShoppingCart {
         return this.items.length;
     }
 
-    calculateTotal() {}
+    calculateTotal() {
+        const subTotal = this.items.reduce((total, item) => total + item, 0);
+    }
 }
 
 const cart = new ShoppingCart();
