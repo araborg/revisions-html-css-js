@@ -134,6 +134,7 @@ class ShoppingCart {
         });
 
         const currentProductCount = totalCountPerProduct[product.id];
+        console.log(currentProductCount);
 
         // unused for now
         const currentProductCountSpan = document.getElementById(
