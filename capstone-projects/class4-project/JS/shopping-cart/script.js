@@ -151,3 +151,5 @@ class ShoppingCart {
 }
 
 const cart = new ShoppingCart();
+
+const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
