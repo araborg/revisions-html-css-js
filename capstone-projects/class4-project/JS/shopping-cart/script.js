@@ -169,7 +169,9 @@ class ShoppingCart {
         // return subTotal;
     }
 
-    calculateTaxes(amount) {}
+    calculateTaxes(amount) {
+        return (this.taxRate / 100) * amount;
+    }
 }
 
 const cart = new ShoppingCart();
