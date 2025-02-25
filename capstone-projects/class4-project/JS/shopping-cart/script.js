@@ -135,6 +135,7 @@ class ShoppingCart {
 
         const currentProductCount = totalCountPerProduct[product.id];
 
+        // ds is pre-selecting the span b4 d name of d item added to d cart
         const currentProductCountSpan = document.getElementById(
             `product-count-for-id${id}`
         );
