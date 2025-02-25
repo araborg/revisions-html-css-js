@@ -161,8 +161,15 @@ class ShoppingCart {
     calculateTotal() {
         console.log(this.items);
 
-        const subTotal = this.items.reduce((total, item) => total + item, 0);
+        const subTotal = this.items.reduce(
+            (total, item) => total + item.price,
+            0
+        );
+
+        // return subTotal;
     }
+
+    calculateTaxes(amount) {}
 }
 
 const cart = new ShoppingCart();
@@ -184,4 +191,6 @@ cartBtn.addEventListener("click", () => {
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
     totalNumberOfItems.textContent = cart.getCounts();
+
+    console.log(cart.calculateTotal());
 });
