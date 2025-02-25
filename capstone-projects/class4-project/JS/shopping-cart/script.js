@@ -134,12 +134,10 @@ class ShoppingCart {
         });
 
         const currentProductCount = totalCountPerProduct[product.id];
-        console.log(currentProductCount);
 
         const currentProductCountSpan = document.getElementById(
             `product-count-for-id${id}`
         );
-        console.log(currentProductCountSpan);
 
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
@@ -147,6 +145,7 @@ class ShoppingCart {
                     <div class="product" id="dessert${id}">
                         <p>
                             <span class="product-count" id="product-count-for-id${id}"></span>
+
                             ${name}
                         </p>
                     </div>
