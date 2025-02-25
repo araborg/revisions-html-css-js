@@ -165,8 +165,6 @@ class ShoppingCart {
             (total, item) => total + item.price,
             0
         );
-
-        // return subTotal;
     }
 
     calculateTaxes(amount) {
