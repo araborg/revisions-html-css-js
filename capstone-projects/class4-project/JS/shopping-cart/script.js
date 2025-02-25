@@ -139,6 +139,8 @@ class ShoppingCart {
             `product-count-id${product.id}`
         );
 
+        console.log(currentProductCountSpan);
+
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
             : (productsContainer.innerHTML += `<div class="product" id="dessert${id}">
