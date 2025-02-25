@@ -136,19 +136,21 @@ class ShoppingCart {
         const currentProductCount = totalCountPerProduct[product.id];
         console.log(currentProductCount);
 
-        // unused for now
         const currentProductCountSpan = document.getElementById(
-            `product-count-id${product.id}`
+            `product-count-for-id${id}`
         );
+        console.log(currentProductCountSpan);
 
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
-            : (productsContainer.innerHTML += `<div class="product" id="dessert${id}">
-                <p>
-                    <span class="product-count" id="product-count-for-id${id}"></span>
-                    ${name}
-                </p>
-                </div>`);
+            : (productsContainer.innerHTML += `
+                    <div class="product" id="dessert${id}">
+                        <p>
+                            <span class="product-count" id="product-count-for-id${id}"></span>
+                            ${name}
+                        </p>
+                    </div>
+                `);
     }
 }
 
