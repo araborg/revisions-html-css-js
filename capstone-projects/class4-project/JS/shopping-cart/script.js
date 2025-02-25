@@ -159,6 +159,8 @@ class ShoppingCart {
     }
 
     calculateTotal() {
+        console.log(this.items);
+
         const subTotal = this.items.reduce((total, item) => total + item, 0);
     }
 }
