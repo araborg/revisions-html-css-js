@@ -153,6 +153,10 @@ class ShoppingCart {
                     </div>
                 `);
     }
+
+    getCount() {
+        return this.items.length;
+    }
 }
 
 const cart = new ShoppingCart();
@@ -166,7 +170,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 });
 
 cartBtn.addEventListener("click", () => {
-    isCartShowing = !isCartShowing;
+    // wn d cart btn is clicked isCartShowing = false
+    isCartShowing = !isCartShowing; // !false = true
 
     showHideCartSpan.textContent = isCartShowing ? "Hide" : "Show";
 
