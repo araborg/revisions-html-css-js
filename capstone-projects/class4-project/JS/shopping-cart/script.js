@@ -161,7 +161,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
-        console.log(event.target.id);
         cart.addItem(Number(event.target.id), products);
     });
 });
