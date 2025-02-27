@@ -169,6 +169,7 @@ class ShoppingCart {
         );
     }
 
+    // cal total method
     calculateTotal() {
         const subTotal = this.items.reduce(
             (total, item) => total + item.price,
