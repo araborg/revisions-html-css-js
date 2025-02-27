@@ -160,6 +160,7 @@ class ShoppingCart {
         return this.items.length;
     }
 
+    // cal taxes method
     calculateTaxes(amount) {
         return parseInt(((this.taxRate / 100) * amount).toFixed(2));
     }
