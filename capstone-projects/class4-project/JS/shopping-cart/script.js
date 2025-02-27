@@ -202,6 +202,8 @@ class ShoppingCart {
             cartTaxes.textContent = 0;
             cartTotal.textContent = 0;
         }
+
+        console.log(this.items);
     }
 }
 
