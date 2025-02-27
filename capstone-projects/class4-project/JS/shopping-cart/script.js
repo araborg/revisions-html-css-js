@@ -180,7 +180,11 @@ class ShoppingCart {
         return parseInt((this.taxRate / 100) * amount).toFixed(2);
     }
 
-    clearCart() {}
+    clearCart() {
+        if (!this.cart.length) {
+            alert("Your shopping cart is already empty");
+        }
+    }
 }
 
 const cart = new ShoppingCart();
