@@ -227,3 +227,5 @@ cartBtn.addEventListener("click", () => {
 
     totalNumberOfItems.textContent = cart.getCounts();
 });
+
+clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
