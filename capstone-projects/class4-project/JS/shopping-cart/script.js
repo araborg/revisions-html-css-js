@@ -179,6 +179,8 @@ class ShoppingCart {
     calculateTaxes(amount) {
         return parseInt((this.taxRate / 100) * amount).toFixed(2);
     }
+
+    clearCart() {}
 }
 
 const cart = new ShoppingCart();
