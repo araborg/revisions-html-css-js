@@ -229,3 +229,7 @@ cartBtn.addEventListener("click", () => {
 });
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
+
+clearCartBtn.addEventListener("click", () => {
+    cart.clearCart(cart);
+});
