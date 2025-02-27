@@ -189,8 +189,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     btn.addEventListener("click", (event) => {
         cart.addItem(Number(event.target.id), products);
 
-        totalNumberOfItems.textContent = cart.getCounts();
-
         cart.calculateTotal();
     });
 });
@@ -203,5 +201,5 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
-    // totalNumberOfItems.textContent = cart.getCounts();
+    totalNumberOfItems.textContent = cart.getCounts();
 });
