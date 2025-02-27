@@ -166,6 +166,8 @@ class ShoppingCart {
 
                             ${name}
                         </p>
+
+                        <p>${price}</p>
                     </div>
                 `);
     }
