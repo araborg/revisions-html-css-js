@@ -183,6 +183,8 @@ class ShoppingCart {
     clearCart() {
         if (!this.cart.length) {
             alert("Your shopping cart is already empty");
+
+            return;
         }
     }
 }
