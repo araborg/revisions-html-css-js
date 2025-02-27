@@ -107,7 +107,12 @@ products.forEach(({ id, name, price, category }) => {
             <p class='dessert-price'>Price: $${price}</p>
             <p class="product-category">Category: ${category}</p>
             
-            <button id=${id} class="btn add-to-cart-btn">Add to cart</button>
+            <button 
+                id=${id} 
+                class="btn add-to-cart-btn"
+            >
+                Add to cart
+            </button>
         </div>
     `;
 });
@@ -216,6 +221,7 @@ class ShoppingCart {
 // instantiate the ShoppingCart class
 const cart = new ShoppingCart();
 
+// events
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 [...addToCartBtns].forEach((btn) => {
