@@ -157,6 +157,10 @@ class ShoppingCart {
         return this.items.length;
     }
 
+    calculateTaxes(amount) {
+        return parseInt((this.taxRate / 100) * amount).toFixed(2);
+    }
+
     calculateTotal() {
         const subTotal = this.items.reduce(
             (total, item) => total + item.price,
@@ -175,10 +179,6 @@ class ShoppingCart {
 
         console.log(tax, subTotal, this.total);
         return this.total;
-    }
-
-    calculateTaxes(amount) {
-        return parseInt((this.taxRate / 100) * amount).toFixed(2);
     }
 
     clearCart() {
