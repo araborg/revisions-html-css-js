@@ -126,7 +126,14 @@ class ShoppingCart {
         this.taxRate = 8.25;
     }
 
-    // methods: addItem(id, products), getCounts(), calculateTaxes(amount), calculateTotal(),
+    /*
+        methods: 
+        addItem(id, products), 
+        getCounts(), 
+        calculateTaxes(amount), 
+        calculateTotal(), 
+        clearCart()
+    */
 
     // add item to cart method
     addItem(id, products) {
