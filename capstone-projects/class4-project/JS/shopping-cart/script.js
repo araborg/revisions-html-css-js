@@ -119,6 +119,7 @@ class ShoppingCart {
         this.taxRate = 8.25;
     }
 
+    // add item to cart method
     addItem(id, products) {
         const product = products.find((product) => product.id === id);
 
