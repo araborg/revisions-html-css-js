@@ -162,16 +162,12 @@ class ShoppingCart {
             (total, item) => total + item.price,
             0
         );
+
+        const tax = this.calculateTaxes(subTotal);
     }
 
     calculateTaxes(amount) {
-        return (
-            //
-            parseInt(
-                //
-                (this.taxRate / 100) * amount //
-            ).toFixed(2)
-        );
+        return parseInt((this.taxRate / 100) * amount).toFixed(2);
     }
 }
 
