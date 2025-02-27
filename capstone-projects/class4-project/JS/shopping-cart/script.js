@@ -187,6 +187,7 @@ class ShoppingCart {
         return this.total;
     }
 
+    // clear cart method
     clearCart() {
         if (!this.items.length) {
             alert("Your shopping cart is already empty");
