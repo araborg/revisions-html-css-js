@@ -109,6 +109,7 @@ products.forEach(({ id, name, price, category }) => {
             
             <button 
                 id=${id} 
+
                 class="btn add-to-cart-btn"
             >
                 Add to cart
@@ -124,6 +125,8 @@ class ShoppingCart {
         this.total = 0;
         this.taxRate = 8.25;
     }
+
+    // methods: addItem(id, products), getCounts(), calculateTaxes(amount), calculateTotal(),
 
     // add item to cart method
     addItem(id, products) {
