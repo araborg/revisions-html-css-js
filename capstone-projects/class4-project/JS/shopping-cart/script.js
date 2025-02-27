@@ -168,7 +168,6 @@ class ShoppingCart {
         );
 
         const tax = this.calculateTaxes(subTotal);
-        console.log(typeof tax);
 
         this.total = subTotal + tax;
 
