@@ -155,6 +155,7 @@ class ShoppingCart {
                 `);
     }
 
+    // get number of items in cart method
     getCounts() {
         return this.items.length;
     }
