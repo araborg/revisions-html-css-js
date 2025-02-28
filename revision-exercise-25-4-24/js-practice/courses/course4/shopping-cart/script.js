@@ -1,7 +1,12 @@
 const cartBtn = document.getElementById("cart-btn");
+const showCart = document.getElementById("show-hide-cart");
 const clearCartBtn = document.getElementById("clear-cart-btn");
 
-const showCart = document.getElementById("show-hide-cart");
+const productContainer = document.getElementById("products-container");
+
+const totalItems = document.getElementById("total-items");
+const subTotal = document.getElementById("subtotal");
+
 console.log(cartBtn, clearCartBtn);
 
 const products = [
