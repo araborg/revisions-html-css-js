@@ -115,3 +115,5 @@ products.forEach(({ id, name, price, category }) => {
         </div>
     `;
 });
+
+class ShoppingCart(){}
