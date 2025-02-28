@@ -130,11 +130,13 @@ class ShoppingCart {
 
         this.items.push(product);
 
-        const productInQty = {};
+        // const productInQty = {};
 
-        const eachProductValue = "";
+        // const eachProductValue = "";
 
-        console.log(productInQty);
+        // console.log(productInQty);
+
+        console.log(this.items);
     }
 }
 
