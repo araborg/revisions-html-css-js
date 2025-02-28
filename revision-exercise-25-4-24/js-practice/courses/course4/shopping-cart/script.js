@@ -101,5 +101,17 @@ const products = [
 ];
 
 products.forEach(({ id, name, price, category }) => {
-    dessertCardContainer.innerHTML += ``;
+    dessertCardContainer.innerHTML += `
+        <div class="dessert-card">
+            <h3>${name}</h3>
+
+            <p>Price: ${price}</p>
+
+            <p>Category: ${category}</p>
+
+            <button id=${id} class="btn add-to-cart-btn">
+                Add To Cart
+            </button>
+        </div>
+    `;
 });
