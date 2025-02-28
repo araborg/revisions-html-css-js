@@ -6,6 +6,8 @@ const productContainer = document.getElementById("products-container");
 
 const totalItems = document.getElementById("total-items");
 const subTotal = document.getElementById("subtotal");
+const taxes = document.getElementById("taxes");
+const total = document.getElementById("total");
 
 console.log(cartBtn, clearCartBtn);
 
