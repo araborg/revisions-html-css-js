@@ -133,10 +133,10 @@ class ShoppingCart {
         const productInQty = {};
 
         const eachProductValue = this.items.forEach((item) => {
-            productInQty[item] = (productInQty[item] || 0) + 1;
+            return (productInQty[item] = (productInQty[item] || 0) + 1);
         });
 
-        console.log(eachProductValue);
+        console.log(productInQty);
     }
 }
 
