@@ -1,4 +1,8 @@
+const cartBtn = document.getElementById("cart-btn");
+const clearCartBtn = document.getElementById("clear-cart-btn");
+
 const showCart = document.getElementById("show-hide-cart");
+console.log(cartBtn, clearCartBtn);
 
 const products = [
     {
