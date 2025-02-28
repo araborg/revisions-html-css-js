@@ -244,19 +244,17 @@ class ShoppingCart {
 const cart = new ShoppingCart();
 
 // events
-// const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
-const addToCartBtns = document.querySelectorAll(".add-to-cart-btn");
-console.log(addToCartBtns);
+const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
-// [...addToCartBtns].forEach((btn) => {
-//     btn.addEventListener("click", (event) => {
-//         cart.addItem(Number(event.target.id), products);
+[...addToCartBtns].forEach((btn) => {
+    btn.addEventListener("click", (event) => {
+        cart.addItem(Number(event.target.id), products);
 
-//         totalNumberOfItems.textContent = cart.getCounts();
+        totalNumberOfItems.textContent = cart.getCounts();
 
-//         cart.calculateTotal();
-//     });
-// });
+        cart.calculateTotal();
+    });
+});
 
 cartBtn.addEventListener("click", () => {
     // wn d cart btn is clicked isCartShowing = false
