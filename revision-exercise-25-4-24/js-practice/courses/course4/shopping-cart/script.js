@@ -128,7 +128,9 @@ class ShoppingCart {
 
         const { name, price } = product;
 
-        console.log(name, price);
+        this.items.push(product);
+
+        console.log(this.items);
     }
 }
 
