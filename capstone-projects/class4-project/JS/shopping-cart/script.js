@@ -139,9 +139,9 @@ class ShoppingCart {
     addItem(id, products) {
         const product = products.find((product) => product.id === id);
 
-        this.items.push(product);
-
         const { name, price } = product;
+
+        this.items.push(product);
 
         // <!------  N:B   ---------->
 
@@ -249,6 +249,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     btn.addEventListener("click", (event) => {
         cart.addItem(Number(event.target.id), products);
 
+        totalNumberOfItems.textContent = cart.getCounts();
+
         cart.calculateTotal();
     });
 });
@@ -261,7 +263,7 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
-    totalNumberOfItems.textContent = cart.getCounts();
+    // totalNumberOfItems.textContent = cart.getCounts();
 });
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
