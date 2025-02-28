@@ -99,3 +99,5 @@ const products = [
         category: "Cupcake",
     },
 ];
+
+products.forEach(({ id, name, price, category }) => {});
