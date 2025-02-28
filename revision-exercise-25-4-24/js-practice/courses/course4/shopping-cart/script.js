@@ -138,5 +138,7 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 console.log(addToCartBtns);
 
 [...addToCartBtns].forEach((btn) => {
-    btn.addEventListener("click", (event) => {});
+    btn.addEventListener("click", (event) => {
+        console.log(event.target.id);
+    });
 });
