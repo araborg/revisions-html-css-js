@@ -130,13 +130,15 @@ class ShoppingCart {
 
         this.items.push(product);
 
+        // console.log(this.items);
+
         const productInQty = {};
 
         const eachProductValue = this.items.forEach((item) => {
-            return item;
+            console.log(item);
         });
 
-        console.log(eachProductValue);
+        // console.log(eachProductValue);
     }
 }
 
