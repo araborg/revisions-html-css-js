@@ -151,8 +151,6 @@ class ShoppingCart {
                 (totalCountPerProduct[dessert.id] || 0) + 1;
         });
 
-        console.log(totalCountPerProduct);
-
         const currentProductCount = totalCountPerProduct[product.id];
         // <!------  N:B   ---------->
 
