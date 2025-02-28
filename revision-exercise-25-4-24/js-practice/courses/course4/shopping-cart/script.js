@@ -138,7 +138,7 @@ class ShoppingCart {
             productInQty[item.id] = (productInQty[item.id] || 0) + 1;
         });
 
-        console.log(eachProductValue);
+        console.log(eachProductValue, productInQty);
     }
 }
 
