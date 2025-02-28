@@ -152,6 +152,7 @@ class ShoppingCart {
         });
 
         const currentProductCount = totalCountPerProduct[product.id];
+        console.log(currentProductCount);
         // <!------  N:B   ---------->
 
         // ds is pre-selecting the span b4 d name of d item added to d cart
