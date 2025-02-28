@@ -123,3 +123,6 @@ class ShoppingCart {
         this.total = 0;
     }
 }
+
+const cart = new ShoppingCart();
+console.log(cart);
