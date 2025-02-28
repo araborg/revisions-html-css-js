@@ -11,7 +11,14 @@ const total = document.getElementById("total");
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
 
-console.log(cartBtn, clearCartBtn);
+console.log(
+    productContainer,
+    totalItems,
+    subTotal,
+    taxes,
+    total,
+    dessertCardContainer
+);
 
 const products = [
     {
