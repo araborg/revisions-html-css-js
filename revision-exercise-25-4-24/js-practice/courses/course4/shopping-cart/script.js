@@ -135,8 +135,6 @@ class ShoppingCart {
         // const eachProductValue = "";
 
         // console.log(productInQty);
-
-        console.log(this.items);
     }
 }
 
