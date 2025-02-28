@@ -122,6 +122,8 @@ class ShoppingCart {
         this.taxes = 8.3;
         this.total = 0;
     }
+
+    addItem(id, products) {}
 }
 
 const cart = new ShoppingCart();
