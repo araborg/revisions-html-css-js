@@ -105,7 +105,7 @@ products.forEach(({ id, name, price, category }) => {
         <div class="dessert-card">
             <h3>${name}</h3>
 
-            <p class="dessert-price">Price: ${price}</p>
+            <p class="dessert-price">Price: $${price}</p>
 
             <p>Category: ${category}</p>
 
