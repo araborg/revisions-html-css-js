@@ -101,5 +101,5 @@ const products = [
 ];
 
 products.forEach(({ id, name, price, category }) => {
-    console.log(id, name, price, category);
+    dessertCardContainer.innerHTML += ``;
 });
