@@ -166,7 +166,12 @@ class ShoppingCart {
             : (productsContainer.innerHTML += `
                     <div class="product" id="dessert${id}">
                         <p>
-                            <span class="product-count" id="product-count-for-id${id}"></span>
+                            <span 
+                                class="product-count" 
+                                
+                                id="product-count-for-id${id}"
+                            >
+                            </span>
 
                             ${name}
                         </p>
