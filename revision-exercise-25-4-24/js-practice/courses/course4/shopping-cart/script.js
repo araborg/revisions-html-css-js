@@ -9,6 +9,8 @@ const subTotal = document.getElementById("subtotal");
 const taxes = document.getElementById("taxes");
 const total = document.getElementById("total");
 
+const dessertCardContainer = document.getElementById("dessert-card-container");
+
 console.log(cartBtn, clearCartBtn);
 
 const products = [
