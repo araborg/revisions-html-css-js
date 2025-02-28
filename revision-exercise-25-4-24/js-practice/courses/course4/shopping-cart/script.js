@@ -136,3 +136,7 @@ const cart = new ShoppingCart();
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 console.log(addToCartBtns);
+
+[...addToCartBtns].forEach((btn) => {
+    btn.addEventListener("click", (event) => {});
+});
