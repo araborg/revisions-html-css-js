@@ -144,6 +144,7 @@ class ShoppingCart {
         this.items.push(product);
 
         // <!------  N:B   ---------->
+
         const totalCountPerProduct = {};
 
         this.items.forEach((dessert) => {
@@ -152,7 +153,7 @@ class ShoppingCart {
         });
 
         const currentProductCount = totalCountPerProduct[product.id];
-        console.log(currentProductCount);
+
         // <!------  N:B   ---------->
 
         // ds is pre-selecting the span b4 d name of "item added to d cart"
