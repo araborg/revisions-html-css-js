@@ -162,7 +162,7 @@ class ShoppingCart {
         );
 
         currentProductCount > 1
-            ? (currentProductCountSpan.textContent = `${currentProductCount}x`)
+            ? (currentProductCountSpan.textContent = `${currentProductCount}*`)
             : (productsContainer.innerHTML += `
                     <div class="product" id="dessert${id}">
                         <p>
