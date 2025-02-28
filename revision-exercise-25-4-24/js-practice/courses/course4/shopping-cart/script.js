@@ -132,8 +132,8 @@ class ShoppingCart {
 
         const productInQty = {};
 
-        const eachProductValue = this.items.forEach(() => {
-            console.log(item);
+        const eachProductValue = this.items.forEach((item) => {
+            return item;
         });
 
         console.log(eachProductValue);
