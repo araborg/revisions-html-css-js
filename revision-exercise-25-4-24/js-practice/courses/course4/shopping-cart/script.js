@@ -123,8 +123,16 @@ class ShoppingCart {
         this.total = 0;
     }
 
-    addItem(id, products) {}
+    addItem(id, products) {
+        const product = products.find((product) => product.id === id);
+
+        console.log(product);
+    }
 }
 
 const cart = new ShoppingCart();
-console.log(cart);
+
+// console.log(cart.addItem())
+const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
+
+console.log(addToCartBtns);
