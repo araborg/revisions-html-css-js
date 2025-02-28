@@ -1,3 +1,5 @@
+const showCart = document.getElementById("show-hide-cart");
+
 const products = [
     {
         id: 1,
