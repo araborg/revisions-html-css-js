@@ -166,6 +166,7 @@ class ShoppingCart {
             : (productsContainer.innerHTML += `
                     <div class="product" id="dessert${id}">
                         <p>
+                            // currentProductCountSpan
                             <span 
                                 class="product-count" 
                                 
