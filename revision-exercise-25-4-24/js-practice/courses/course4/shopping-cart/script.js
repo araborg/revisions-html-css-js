@@ -13,6 +13,7 @@ const taxes = document.getElementById("taxes");
 const total = document.getElementById("total");
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
+const isCartShowing = false;
 
 const products = [
     {
@@ -148,16 +149,16 @@ class ShoppingCart {
         const currentProductCount = productCount[product.id];
         // ------------------------
 
-        document.getElementById(`cart-product-id${id}`);
+        // document.getElementById(`cart-product-id${id}`);
 
-        currentProductCount > 1 ? unknown : unknown;
-
-        productContainer.innerHTML += `
+        currentProductCount > 1
+            ? currentProductCount
+            : (productContainer.innerHTML += `
 
             <div>
                 <p>
                     <span>
-                        ${currentProductCount} x
+                        
                     </span>
 
                     ${name}
@@ -166,7 +167,7 @@ class ShoppingCart {
                 <p>${price}</p>
 
             </div>
-        `;
+        `);
 
         console.log(productContainer);
     }
@@ -183,6 +184,10 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
     });
+});
+
+showCart.addEventListener("click", () => {
+    isCartShowing = !isCartShowing;
 });
 
 /*
