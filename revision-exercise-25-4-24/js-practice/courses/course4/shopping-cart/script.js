@@ -153,9 +153,7 @@ class ShoppingCart {
         productContainer.innerHTML += `
             <div>
                 <p>
-                    <span class='cart-product-id${id}>
-
-                    </span>
+                
 
                     ${name}
                 </p>
