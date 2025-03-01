@@ -141,6 +141,14 @@ class ShoppingCart {
 
         this.items.push(product);
 
+        //
+
+        const outcome = this.items?.length ? `(${cart.getCounts()})` : "";
+
+        console.log(outcome);
+
+        numOfItems.textContent = outcome;
+
         // ------------------------
         const productCount = {};
         this.items.forEach((item) => {
@@ -186,14 +194,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
-
-        console.log(this.items);
-
-        const outcome = this.items?.length ? `(${cart.getCounts()})` : "(0)";
-
-        console.log(outcome);
-
-        numOfItems.textContent = outcome;
     });
 });
 
