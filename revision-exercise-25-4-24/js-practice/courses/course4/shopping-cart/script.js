@@ -170,6 +170,10 @@ class ShoppingCart {
             </div>
         `);
     }
+
+    getCounts() {
+        return this.items.length;
+    }
 }
 
 const cart = new ShoppingCart();
@@ -189,6 +193,8 @@ cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
+
+    showOrHideCart.textContent += `${cart.getCounts()}`;
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
