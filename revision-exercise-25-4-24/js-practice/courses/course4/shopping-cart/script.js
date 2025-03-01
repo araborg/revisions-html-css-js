@@ -141,13 +141,9 @@ class ShoppingCart {
 
         this.items.push(product);
 
-        //
-
-        const outcome = this.items?.length ? `(${cart.getCounts()})` : "";
-
-        console.log(outcome);
-
-        numOfItems.textContent = outcome;
+        numOfItems.textContent = this.items?.length
+            ? `(${cart.getCounts()})`
+            : "";
 
         // ------------------------
         const productCount = {};
