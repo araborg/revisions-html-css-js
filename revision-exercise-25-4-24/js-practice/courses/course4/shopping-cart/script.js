@@ -194,8 +194,9 @@ cartBtn.addEventListener("click", () => {
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
-    numOfItems.textContent =
-        this.items.length >= 1 ? `(${cart.getCounts()})` : "";
+    numOfItems.textContent = this.items?.length
+        ? `(${cart.getCounts()})`
+        : "(0)";
 
     // console.log(cart.getCounts());
 
