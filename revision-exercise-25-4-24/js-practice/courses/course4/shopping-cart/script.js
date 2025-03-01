@@ -107,7 +107,7 @@ products.forEach(({ id, name, price, category }) => {
 
             <p class="dessert-price">Price: $${price}</p>
 
-            <p>Category: ${category}</p>
+            <p class="product-category">Category: ${category}</p>
 
             <button id=${id} class="btn add-to-cart-btn">
                 Add To Cart
@@ -146,9 +146,11 @@ class ShoppingCart {
         });
 
         const currentProductCount = productCount[product.id];
-        console.log(productCount, currentProductCount);
-
         // ------------------------
+
+        productContainer.innerHTML += `
+        
+        `;
     }
 }
 
