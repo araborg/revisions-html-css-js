@@ -13,7 +13,7 @@ const taxes = document.getElementById("taxes");
 const total = document.getElementById("total");
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
-const isCartShowing = false;
+let isCartShowing = false;
 
 const products = [
     {
@@ -188,6 +188,10 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 showCart.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
+
+    showCart.textContent = isCartShowing ? "Hide" : "Show";
+
+    console.log(isCartShowing);
 });
 
 /*
