@@ -149,15 +149,15 @@ class ShoppingCart {
         const currentProductCount = productCount[product.id];
         // ------------------------
 
-        // document.getElementById(`cart-product-id${id}`);
+        const addedItem = document.getElementById(`cart-product-id-${id}`);
 
         currentProductCount > 1
-            ? currentProductCount
+            ? (addedItem.textContent = currentProductCount)
             : (productContainer.innerHTML += `
 
             <div>
                 <p>
-                    <span>
+                    <span class="cart-product-id-${id}">
                         
                     </span>
 
