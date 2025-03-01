@@ -196,9 +196,10 @@ class ShoppingCart {
     }
 
     calculateTotal() {
-        const subTotal = this.items.reduce((total, product) => {
-            return total + product.price, 0;
-        });
+        const subTotal = this.items.reduce(
+            (total, product) => total + product.price,
+            0
+        );
 
         console.log(subTotal);
     }
