@@ -133,12 +133,12 @@ class ShoppingCart {
         const productCount = {};
 
         this.items.forEach((item) => {
-            productCount[item.name] = (productCount[item.id] || 0) + 1;
+            productCount[item.id] = (productCount[item.id] || 0) + 1;
         });
 
         console.log(productCount);
 
-        const currentProductCount = productCount[product];
+        // const currentProductCount = product[product];
     }
 }
 
