@@ -142,7 +142,7 @@ products.forEach(({ id, name, price, category }) => {
 class ShoppingCart {
     constructor() {
         this.items = [];
-        this.taxes = 8.3;
+        this.taxes = 8.25;
         this.total = 0;
     }
 
