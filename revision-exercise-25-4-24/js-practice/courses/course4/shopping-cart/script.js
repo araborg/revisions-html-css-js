@@ -1,5 +1,6 @@
 const cartBtn = document.getElementById("cart-btn");
 const showOrHideCart = document.getElementById("show-hide-cart");
+const numOfItems = document.getElementById("number-of-items");
 
 const cartContainer = document.getElementById("cart-container");
 
