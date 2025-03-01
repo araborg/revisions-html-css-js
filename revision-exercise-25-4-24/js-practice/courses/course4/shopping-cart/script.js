@@ -138,7 +138,8 @@ class ShoppingCart {
 
         console.log(productCount);
 
-        // const currentProductCount = product[product];
+        const currentProductCount = productCount[product.id];
+        console.log(currentProductCount);
     }
 }
 
