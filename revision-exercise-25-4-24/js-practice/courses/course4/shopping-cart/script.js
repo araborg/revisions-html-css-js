@@ -200,8 +200,6 @@ const cart = new ShoppingCart();
 
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
-// console.log(addToCartBtns);
-
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
@@ -212,8 +210,6 @@ cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
-
-    // console.log(cart.getCounts());
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
