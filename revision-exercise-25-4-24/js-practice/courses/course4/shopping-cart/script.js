@@ -226,5 +226,5 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
-    subTotal.textContent = cart.calculateTotal();
+    subTotal.textContent = `$${cart.calculateTotal()}`;
 });
