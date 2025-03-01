@@ -203,6 +203,12 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
+
+        const subTotal = products.reduce((tota, product) => {
+            total + product.price, 0;
+        });
+
+        console.log(cart.calculateTaxes());
     });
 });
 
