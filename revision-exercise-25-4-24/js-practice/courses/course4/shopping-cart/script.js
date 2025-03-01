@@ -211,13 +211,13 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
-
-        console.log(cart.calculateTaxes());
     });
 });
 
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
+
+    console.log(cart.subTotal());
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
