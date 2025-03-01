@@ -145,7 +145,7 @@ class ShoppingCart {
             productCount[item.id] = (productCount[item.id] || 0) + 1;
         });
 
-        const currentProductCount = productCount[id];
+        const currentProductCount = productCount[product.id];
         console.log(productCount, currentProductCount);
 
         // ------------------------
