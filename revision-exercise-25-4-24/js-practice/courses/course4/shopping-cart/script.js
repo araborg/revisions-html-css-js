@@ -1,5 +1,5 @@
 const cartBtn = document.getElementById("cart-btn");
-const showCart = document.getElementById("show-hide-cart");
+const showOrHideCart = document.getElementById("show-hide-cart");
 
 const cartContainer = document.getElementById("cart-container");
 
@@ -186,7 +186,7 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     });
 });
 
-showCart.addEventListener("click", () => {
+cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
     showCart.textContent = isCartShowing ? "Hide" : "Show";
