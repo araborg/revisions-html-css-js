@@ -227,4 +227,6 @@ cartBtn.addEventListener("click", () => {
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
     subTotal.textContent = `$${cart.calculateTotal()}`;
+
+    taxes.textContent = `$${this.taxes}`;
 });
