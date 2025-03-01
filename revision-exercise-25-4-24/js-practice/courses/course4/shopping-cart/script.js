@@ -194,9 +194,10 @@ cartBtn.addEventListener("click", () => {
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
-    numOfItems.textContent = isCartShowing ? `(${cart.getCounts()})` : "";
+    numOfItems.textContent =
+        this.items.length >= 1 ? `(${cart.getCounts()})` : "";
 
-    console.log(cart.getCounts());
+    // console.log(cart.getCounts());
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
