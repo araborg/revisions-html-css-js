@@ -129,17 +129,6 @@ class ShoppingCart {
         const { name, price } = product;
 
         this.items.push(product);
-
-        const productCount = {};
-
-        this.items.forEach((item) => {
-            productCount[item.id] = (productCount[item.id] || 0) + 1;
-        });
-
-        console.log(productCount);
-
-        const currentProductCount = productCount[product.id];
-        console.log(currentProductCount);
     }
 }
 
