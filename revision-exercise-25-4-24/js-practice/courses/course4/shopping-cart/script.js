@@ -151,8 +151,21 @@ class ShoppingCart {
         document.getElementById(`cart-product-id${id}`);
 
         productContainer.innerHTML += `
-        
+            <div>
+                <p>
+                    <span class='cart-product-id${id}>
+
+                    </span>
+
+                    ${name}
+                </p>
+
+                <p>${price}</p>
+
+            </div>
         `;
+
+        console.log(productContainer);
     }
 }
 
