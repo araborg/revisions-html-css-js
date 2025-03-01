@@ -186,6 +186,14 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
+
+        console.log(this.items);
+
+        const outcome = this.items?.length ? `(${cart.getCounts()})` : "(0)";
+
+        console.log(outcome);
+
+        numOfItems.textContent = outcome;
     });
 });
 
@@ -194,11 +202,6 @@ cartBtn.addEventListener("click", () => {
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
-    const outcome = this.items?.length ? `(${cart.getCounts()})` : "(0)";
-
-    console.log(outcome);
-
-    numOfItems.textContent = outcome;
     // console.log(cart.getCounts());
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
