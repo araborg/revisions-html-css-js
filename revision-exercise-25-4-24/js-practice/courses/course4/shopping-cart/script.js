@@ -201,7 +201,11 @@ class ShoppingCart {
             0
         );
 
-        return this.calculateTaxes(subTotal);
+        const total = subTotal + this.taxes;
+
+        console.log(total);
+
+        // return this.calculateTaxes(subTotal);
     }
 }
 
