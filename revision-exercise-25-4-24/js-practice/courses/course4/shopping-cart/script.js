@@ -150,10 +150,15 @@ class ShoppingCart {
 
         document.getElementById(`cart-product-id${id}`);
 
+        currentProductCount > 1 ? unknown : unknown;
+
         productContainer.innerHTML += `
+
             <div>
                 <p>
-                
+                    <span>
+                        ${currentProductCount} x
+                    </span>
 
                     ${name}
                 </p>
