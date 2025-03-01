@@ -201,7 +201,7 @@ class ShoppingCart {
             0
         );
 
-        return subTotal;
+        return this.calculateTaxes(subTotal);
     }
 }
 
