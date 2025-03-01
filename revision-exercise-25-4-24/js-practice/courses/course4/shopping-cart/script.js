@@ -149,7 +149,6 @@ class ShoppingCart {
         const currentProductCount = productCount[product.id];
         // ------------------------
 
-        console.log(id);
         const addedItemSpan = document.getElementById(`cart-product-id-${id}`);
 
         currentProductCount > 1
@@ -158,7 +157,7 @@ class ShoppingCart {
 
             <div>
                 <p>
-                    <span class="cart-product-id-${id}">
+                    <span id="cart-product-id-${id}">
                         
                     </span>
 
@@ -169,8 +168,6 @@ class ShoppingCart {
 
             </div>
         `);
-
-        console.log(addedItemSpan);
     }
 }
 
