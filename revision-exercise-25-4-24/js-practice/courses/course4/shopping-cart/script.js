@@ -194,10 +194,11 @@ cartBtn.addEventListener("click", () => {
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
-    numOfItems.textContent = this.items?.length
-        ? `(${cart.getCounts()})`
-        : "(0)";
+    const outcome = this.items?.length ? `(${cart.getCounts()})` : "(0)";
 
+    console.log(outcome);
+
+    numOfItems.textContent = outcome;
     // console.log(cart.getCounts());
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
