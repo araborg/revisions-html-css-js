@@ -189,9 +189,9 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
-    showCart.textContent = isCartShowing ? "Hide" : "Show";
+    showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
-    console.log(isCartShowing);
+    cartContainer.style.display = isCartShowing ? "block" : "none";
 });
 
 /*
