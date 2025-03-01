@@ -149,6 +149,7 @@ class ShoppingCart {
         const currentProductCount = productCount[product.id];
         // ------------------------
 
+        console.log(id);
         const addedItem = document.getElementById(`cart-product-id-${id}`);
 
         currentProductCount > 1
@@ -169,7 +170,7 @@ class ShoppingCart {
             </div>
         `);
 
-        console.log(productContainer);
+        console.log(addedItem);
     }
 }
 
