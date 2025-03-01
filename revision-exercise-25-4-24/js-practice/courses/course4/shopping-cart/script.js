@@ -194,6 +194,14 @@ class ShoppingCart {
     calculateTaxes(amount) {
         return (amount / 100) * this.taxes;
     }
+
+    calculateTotal() {
+        const subTotal = this.items.reduce((tota, product) => {
+            total + product.price, 0;
+        });
+
+        console.log(subTotal);
+    }
 }
 
 const cart = new ShoppingCart();
@@ -203,10 +211,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
-
-        const subTotal = products.reduce((tota, product) => {
-            total + product.price, 0;
-        });
 
         console.log(cart.calculateTaxes());
     });
