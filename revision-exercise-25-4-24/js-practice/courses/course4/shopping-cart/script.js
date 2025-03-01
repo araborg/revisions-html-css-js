@@ -116,6 +116,15 @@ products.forEach(({ id, name, price, category }) => {
     `;
 });
 
+/*
+    methods: 
+    addItem(id, products), 
+    getCounts(), 
+    calculateTaxes(amount), 
+    calculateTotal(), 
+    clearCart()
+*/
+
 class ShoppingCart {
     constructor() {
         this.items = [];
