@@ -217,7 +217,7 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
-    console.log(cart.subTotal());
+    console.log(cart.calculateTotal());
 
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
