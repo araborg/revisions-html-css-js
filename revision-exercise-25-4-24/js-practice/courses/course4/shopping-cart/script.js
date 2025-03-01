@@ -170,7 +170,7 @@ class ShoppingCart {
             </div>
         `);
 
-        console.log(addedItem);
+        console.log(addedItemSpan);
     }
 }
 
