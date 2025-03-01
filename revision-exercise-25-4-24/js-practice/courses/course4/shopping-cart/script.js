@@ -1,3 +1,15 @@
+/*
+    1 ctn: CardioCap = #30,300 * 12 = #363,600 
+    1 ctn: Nerveron = #39,390 * 12 = #472,680
+    2 boxes Renoaid = 54,540 * 2 = #109,080
+    4 boxes Fibronil = #42,420 * 4 = #169,680
+    2 boxes BPCap = #42,420 * 2 = #84,840
+    1 box Co-Q10 = #48,480 * 1 = #48,480
+
+    Total = #1,248,360
+    Amount paid by Kunleara = #1,249,140
+*/
+
 const cartBtn = document.getElementById("cart-btn");
 const showOrHideCart = document.getElementById("show-hide-cart");
 const numOfItems = document.getElementById("number-of-items");
@@ -178,11 +190,14 @@ class ShoppingCart {
     getCounts() {
         return this.items.length;
     }
+
+    calculateTaxes(amount) {
+        return (amount / 100) * this.taxes;
+    }
 }
 
 const cart = new ShoppingCart();
 
-// console.log(cart.addItem())
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 // console.log(addToCartBtns);
@@ -202,15 +217,3 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
-
-/*
-1 ctn: CardioCap = #30,300 * 12 = #363,600 
-1 ctn: Nerveron = #39,390 * 12 = #472,680
-2 boxes Renoaid = 54,540 * 2 = #109,080
-4 boxes Fibronil = #42,420 * 4 = #169,680
-2 boxes BPCap = #42,420 * 2 = #84,840
-1 box Co-Q10 = #48,480 * 1 = #48,480
-
-Total = #1,248,360
-Amount paid by Kunleara = #1,249,140
-*/
