@@ -130,6 +130,7 @@ class ShoppingCart {
 
         this.items.push(product);
 
+        const productCount = {};
     }
 }
 
