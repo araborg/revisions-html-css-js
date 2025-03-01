@@ -196,6 +196,8 @@ cartBtn.addEventListener("click", () => {
 
     showOrHideCart.textContent += `${cart.getCounts()}`;
 
+    console.log(cart.getCounts());
+
     cartContainer.style.display = isCartShowing ? "block" : "none";
 });
 
