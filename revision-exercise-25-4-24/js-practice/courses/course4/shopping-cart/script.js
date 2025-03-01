@@ -192,7 +192,7 @@ class ShoppingCart {
     }
 
     calculateTaxes(amount) {
-        return (amount / 100) * this.taxes;
+        return (this.taxes / 100) * amount;
     }
 
     calculateTotal() {
@@ -228,5 +228,5 @@ cartBtn.addEventListener("click", () => {
 
     subTotal.textContent = `$${cart.calculateTotal()}`;
 
-    taxes.textContent = `$${this.taxes}`;
+    // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
