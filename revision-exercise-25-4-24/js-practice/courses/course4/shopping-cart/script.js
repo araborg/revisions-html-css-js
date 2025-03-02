@@ -227,7 +227,7 @@ class ShoppingCart {
             this.items = [];
             this.total = 0;
 
-            numOfItems.textContent = 0;
+            numOfItems.textContent = "";
             productContainer.innerHTML = "";
 
             totalItems.textContent = 0;
