@@ -235,6 +235,8 @@ class ShoppingCart {
             taxes.textContent = 0;
             totalEl.textContent = 0;
 
+            totalItems.textContent = !this.getCounts() ? this.getCounts() : "";
+
             console.log(cart.getCounts());
         }
     }
