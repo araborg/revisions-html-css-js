@@ -227,9 +227,15 @@ class ShoppingCart {
             this.items = [];
             this.total = 0;
 
+            productContainer.innerHTML = "";
+
+            totalItems.textContent = 0;
+
             subTotalEl.textContent = 0;
             taxes.textContent = 0;
             totalEl.textContent = 0;
+
+            console.log(cart.getCounts());
         }
     }
 }
