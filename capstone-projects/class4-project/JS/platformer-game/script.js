@@ -8,7 +8,7 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 
 // canvas
 const ctx = canvas.getContext("2d");
-
+canvas.width;
 console.log(ctx);
 
 /*
