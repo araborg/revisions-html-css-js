@@ -226,8 +226,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
 
-    console.log(cart.calculateTotal());
-
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
