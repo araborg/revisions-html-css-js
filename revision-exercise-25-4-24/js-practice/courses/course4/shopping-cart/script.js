@@ -194,7 +194,7 @@ class ShoppingCart {
     }
 
     calculateTaxes(amount) {
-        return parseInt(((this.taxes / 100) * amount).toFixed(2));
+        return parseFloat(((this.taxes / 100) * amount).toFixed(2));
     }
 
     calculateTotal() {
@@ -204,7 +204,7 @@ class ShoppingCart {
         );
 
         const tax = this.calculateTaxes(subTotal);
-        console.log(tax, this.calculateTaxes(subTotal), subTotal);
+        console.log(tax, this.calculateTaxes("3.99"), subTotal);
 
         const total = subTotal + tax;
 
@@ -240,5 +240,7 @@ cartBtn.addEventListener("click", () => {
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
     cart.calculateTotal();
+
+    // console.log(cart.calculateTaxes("3.99"));
     // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
