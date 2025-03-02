@@ -213,7 +213,9 @@ class ShoppingCart {
     }
 
     clearCart() {
-        console.log("hello");
+        if (!this.items.length) {
+            alert("Your shopping cart is already empty.");
+        }
     }
 }
 
@@ -242,4 +244,4 @@ cartBtn.addEventListener("click", () => {
     // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
 
-clearCartBtn.addEventListener("click", cart.clearCart());
+clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
