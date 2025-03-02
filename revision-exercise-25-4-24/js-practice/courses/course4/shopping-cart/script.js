@@ -10,6 +10,15 @@
     Amount paid by Kunleara = #1,249,140
 */
 
+/*
+    methods: 
+    addItem(id, products), 
+    getCounts(), 
+    calculateTaxes(amount), 
+    calculateTotal(), 
+    clearCart()
+*/
+
 const cartBtn = document.getElementById("cart-btn");
 const showOrHideCart = document.getElementById("show-hide-cart");
 const numOfItems = document.getElementById("number-of-items");
@@ -24,8 +33,6 @@ const totalItems = document.getElementById("total-items");
 const subTotalEl = document.getElementById("subtotal");
 const taxes = document.getElementById("taxes");
 const totalEl = document.getElementById("total");
-
-// console.log(subTotal);
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
 let isCartShowing = false;
@@ -131,15 +138,6 @@ products.forEach(({ id, name, price, category }) => {
         </div>
     `;
 });
-
-/*
-    methods: 
-    addItem(id, products), 
-    getCounts(), 
-    calculateTaxes(amount), 
-    calculateTotal(), 
-    clearCart()
-*/
 
 class ShoppingCart {
     constructor() {
