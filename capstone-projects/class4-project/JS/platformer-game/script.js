@@ -9,7 +9,10 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 // canvas
 const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
-console.log(innerWidth);
+canvas.height = innerHeight;
+
+//
+console.log(innerWidth, innerHeight);
 
 /*
 Canvas methods:
