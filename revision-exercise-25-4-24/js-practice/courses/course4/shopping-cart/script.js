@@ -205,11 +205,13 @@ class ShoppingCart {
 
         const tax = this.calculateTaxes(subTotal);
 
-        const total = subTotal + tax;
+        this.total = subTotal + tax;
 
         subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
         taxes.textContent = `$${tax.toFixed(2)}`;
         totalEl.textContent = `$${total.toFixed(2)}`;
+
+        return this.total;
     }
 
     clearCart() {
@@ -235,10 +237,6 @@ class ShoppingCart {
             subTotalEl.textContent = 0;
             taxes.textContent = 0;
             totalEl.textContent = 0;
-
-            // totalItems.textContent = !this.getCounts() ? 0 : "";
-
-            console.log(cart.getCounts());
         }
     }
 }
