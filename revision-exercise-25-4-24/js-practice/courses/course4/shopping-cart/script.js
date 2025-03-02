@@ -206,6 +206,7 @@ class ShoppingCart {
         const tax = this.calculateTaxes(subTotal);
 
         this.total = subTotal + tax;
+        console.log(this.total);
 
         subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
         taxes.textContent = `$${tax.toFixed(2)}`;
