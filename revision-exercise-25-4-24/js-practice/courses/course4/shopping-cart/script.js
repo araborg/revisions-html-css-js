@@ -248,7 +248,7 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     btn.addEventListener("click", (event) => {
         cart.addItem(parseInt(event.target.id), products);
 
-        totalItems.textContent = !cart.getCounts() ? cart.getCounts() : "";
+        totalItems.textContent = cart.getCounts();
 
         cart.calculateTotal();
     });
