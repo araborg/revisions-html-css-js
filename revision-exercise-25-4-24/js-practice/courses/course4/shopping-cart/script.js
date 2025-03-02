@@ -227,6 +227,7 @@ class ShoppingCart {
             this.items = [];
             this.total = 0;
 
+            numOfItems.textContent = 0;
             productContainer.innerHTML = "";
 
             totalItems.textContent = 0;
@@ -235,7 +236,7 @@ class ShoppingCart {
             taxes.textContent = 0;
             totalEl.textContent = 0;
 
-            totalItems.textContent = !this.getCounts() ? this.getCounts() : "";
+            // totalItems.textContent = !this.getCounts() ? 0 : "";
 
             console.log(cart.getCounts());
         }
