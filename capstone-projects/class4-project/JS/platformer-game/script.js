@@ -10,3 +10,9 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 const ctx = canvas.getContext("2d");
 
 console.log(ctx);
+
+/*
+Canvas methods:
+canvas.getContext("2d")
+
+*/
