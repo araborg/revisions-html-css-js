@@ -211,6 +211,8 @@ class ShoppingCart {
         taxes.textContent = `$${tax.toFixed(2)}`;
         totalEl.textContent = `$${total.toFixed(2)}`;
     }
+
+    clearCart() {}
 }
 
 const cart = new ShoppingCart();
@@ -237,3 +239,5 @@ cartBtn.addEventListener("click", () => {
     // console.log(cart.calculateTaxes("3.99"));
     // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
+
+clearCartBtn.addEventListener("click", cart.clearCart());
