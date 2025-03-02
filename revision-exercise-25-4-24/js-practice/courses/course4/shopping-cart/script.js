@@ -21,9 +21,11 @@ const clearCartBtn = document.getElementById("clear-cart-btn");
 const productContainer = document.getElementById("products-container");
 
 const totalItems = document.getElementById("total-items");
-const subTotal = document.getElementById("subtotal");
+const subTotalEl = document.getElementById("subtotal");
 const taxes = document.getElementById("taxes");
-const total = document.getElementById("total");
+const totalEl = document.getElementById("total");
+
+// console.log(subTotal);
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
 let isCartShowing = false;
@@ -206,6 +208,10 @@ class ShoppingCart {
 
         console.log(subTotal);
 
+        subTotalEl.textContent = `$${subTotal}`;
+        taxes.textContent = `$${tax}`;
+        total.textContent = `$${total}`;
+
         // return this.calculateTaxes(subTotal);
     }
 }
@@ -219,8 +225,6 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         cart.addItem(parseInt(event.target.id), products);
 
         totalItems.textContent = cart.getCounts();
-
-        // subTotal.textContent = `$${subTotal}`;
     });
 });
 
@@ -231,5 +235,6 @@ cartBtn.addEventListener("click", () => {
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
 
+    cart.calculateTotal();
     // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
