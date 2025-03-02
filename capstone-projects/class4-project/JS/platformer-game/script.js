@@ -15,6 +15,8 @@ const gravity = 0.5;
 
 const isCheckpointCollisionDetectionActive = true;
 
+const proportionalSize = (size) => {};
+
 //
 console.log(innerWidth, innerHeight, gravity);
 
