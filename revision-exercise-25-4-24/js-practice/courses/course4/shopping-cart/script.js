@@ -227,9 +227,9 @@ class ShoppingCart {
             this.items = [];
             this.total = 0;
 
-            subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
-            taxes.textContent = `$${tax.toFixed(2)}`;
-            totalEl.textContent = `$${total.toFixed(2)}`;
+            subTotalEl.textContent = 0;
+            taxes.textContent = 0;
+            totalEl.textContent = 0;
         }
     }
 }
