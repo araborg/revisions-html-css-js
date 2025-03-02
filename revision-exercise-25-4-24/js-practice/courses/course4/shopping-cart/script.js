@@ -210,7 +210,7 @@ class ShoppingCart {
 
         subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
         taxes.textContent = `$${tax.toFixed(2)}`;
-        totalEl.textContent = `$${total.toFixed(2)}`;
+        totalEl.textContent = `$${this.total.toFixed(2)}`;
 
         return this.total;
     }
