@@ -226,6 +226,10 @@ class ShoppingCart {
         if (clearCartItems) {
             this.items = [];
             this.total = 0;
+
+            subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
+            taxes.textContent = `$${tax.toFixed(2)}`;
+            totalEl.textContent = `$${total.toFixed(2)}`;
         }
     }
 }
