@@ -204,6 +204,8 @@ class ShoppingCart {
         const tax = this.calculateTaxes(subTotal);
         const total = subTotal + tax;
 
+        subTotal.textContent = `$${subTotal}`;
+
         // return this.calculateTaxes(subTotal);
     }
 }
@@ -226,8 +228,6 @@ cartBtn.addEventListener("click", () => {
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
-
-    subTotal.textContent = `$${cart.calculateTotal()}`;
 
     // taxes.textContent = `$${cart.calculateTaxes()}`;
 });
