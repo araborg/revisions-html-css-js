@@ -223,7 +223,10 @@ class ShoppingCart {
             "Are you sure you want to clear all items from your shopping cart?"
         );
 
-        console.log(clearCartItems);
+        if (clearCartItems) {
+            this.items = [];
+            this.total = 0;
+        }
     }
 }
 
