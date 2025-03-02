@@ -206,8 +206,6 @@ class ShoppingCart {
 
         console.log(subTotal);
 
-        subTotal.textContent = `$${subTotal}`;
-
         // return this.calculateTaxes(subTotal);
     }
 }
@@ -221,6 +219,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         cart.addItem(parseInt(event.target.id), products);
 
         totalItems.textContent = cart.getCounts();
+
+        // subTotal.textContent = `$${subTotal}`;
     });
 });
 
