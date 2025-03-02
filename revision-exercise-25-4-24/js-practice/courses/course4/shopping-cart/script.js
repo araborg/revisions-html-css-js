@@ -212,7 +212,9 @@ class ShoppingCart {
         totalEl.textContent = `$${total.toFixed(2)}`;
     }
 
-    clearCart() {}
+    clearCart() {
+        console.log("hello");
+    }
 }
 
 const cart = new ShoppingCart();
