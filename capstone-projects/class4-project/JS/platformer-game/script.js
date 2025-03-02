@@ -11,8 +11,9 @@ const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 
+const gravity = 0.5;
 //
-console.log(innerWidth, innerHeight);
+console.log(innerWidth, innerHeight, gravity);
 
 /*
 Canvas methods:
