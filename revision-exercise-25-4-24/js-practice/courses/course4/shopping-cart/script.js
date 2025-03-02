@@ -204,19 +204,12 @@ class ShoppingCart {
         );
 
         const tax = this.calculateTaxes(subTotal);
-        console.log(tax, this.calculateTaxes("3.99"), subTotal);
 
         const total = subTotal + tax;
-
-        console.log(tax, subTotal, total);
-
-        // console.log(subTotal);
 
         subTotalEl.textContent = `$${subTotal.toFixed(2)}`;
         taxes.textContent = `$${tax.toFixed(2)}`;
         totalEl.textContent = `$${total.toFixed(2)}`;
-
-        // return this.calculateTaxes(subTotal);
     }
 }
 
