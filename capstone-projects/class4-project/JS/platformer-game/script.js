@@ -18,10 +18,16 @@ const isCheckpointCollisionDetectionActive = true;
 const proportionalSize = (size) => {};
 
 //
-console.log(innerWidth, innerHeight, gravity);
 
 /*
 Canvas methods:
 canvas.getContext("2d")
+
+
+
+canvas variables:
+canvas.width
+canvas.height
+
 
 */
