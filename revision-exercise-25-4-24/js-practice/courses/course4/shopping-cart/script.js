@@ -230,6 +230,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         cart.addItem(parseInt(event.target.id), products);
 
         totalItems.textContent = cart.getCounts();
+
+        cart.calculateTotal();
     });
 });
 
@@ -239,8 +241,6 @@ cartBtn.addEventListener("click", () => {
     showOrHideCart.textContent = isCartShowing ? "Hide" : "Show";
 
     cartContainer.style.display = isCartShowing ? "block" : "none";
-
-    cart.calculateTotal();
 
     // console.log(cart.calculateTaxes("3.99"));
     // taxes.textContent = `$${cart.calculateTaxes()}`;
