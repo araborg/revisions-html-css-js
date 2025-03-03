@@ -49,6 +49,7 @@ class Player {
 Canvas methods:
 const ctx = canvas.getContext("2d")
 ctx.fillStyle = "#99c9ff";
+ctx.fillRect(x, y, width, height)
 
 
 
