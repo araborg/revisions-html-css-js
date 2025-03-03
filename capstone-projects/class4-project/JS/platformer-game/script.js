@@ -60,6 +60,9 @@ class Player {
                 this.velocity.y = gravity;
             }
         }
+
+        this.velocity.y += gravity;
+
         this.position.y += this.velocity.y; // jumps up
     }
 }
