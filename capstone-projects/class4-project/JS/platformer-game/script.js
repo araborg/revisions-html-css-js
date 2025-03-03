@@ -56,6 +56,8 @@ class Player {
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
                 this.position.y = 0;
+
+                this.velocity.y = gravity;
             }
         }
         this.position.y += this.velocity.y; // jumps up
