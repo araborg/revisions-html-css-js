@@ -45,6 +45,13 @@ class Player {
     update() {
         this.draw();
 
+        console.log(
+            this.position.y,
+            this.height,
+            this.velocity.y,
+            canvas.height
+        );
+
         this.position.x += this.velocity.x; // moves right
 
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
