@@ -10,7 +10,6 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 const ctx = canvas.getContext("2d");
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-console.log(canvas.height);
 
 const gravity = 0.5;
 
@@ -56,6 +55,7 @@ class Player {
 
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
+                this.position.y = 0;
             }
         }
         this.position.y += this.velocity.y; // jumps up
@@ -63,7 +63,7 @@ class Player {
 }
 
 const player = new Player();
-console.log(player);
+console.log(player.update());
 
 //
 
