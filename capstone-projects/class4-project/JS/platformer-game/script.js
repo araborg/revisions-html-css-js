@@ -45,7 +45,7 @@ class Player {
 
 /*
 Canvas methods:
-canvas.getContext("2d")
+const ctx = canvas.getContext("2d")
 ctx.fillStyle = "#99c9ff";
 
 
