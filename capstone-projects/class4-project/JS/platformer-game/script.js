@@ -22,12 +22,12 @@ const proportionalSize = (size) => {
 /*
 console.log(innerHeight); @ 350
 
+console.log(proportionalSize(10)); // 7
+console.log(proportionalSize(400)); // 280
+console.log(proportionalSize(40)); // 28
+
 
 */
-
-console.log(proportionalSize(10));
-console.log(proportionalSize(400));
-console.log(proportionalSize(40));
 
 class Player {
     constructor() {
