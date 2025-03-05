@@ -76,6 +76,9 @@ class Player {
         } else {
             this.velocity.y = 0;
         }
+
+        if (this.position.x < this.width) {
+        }
     }
 }
 
