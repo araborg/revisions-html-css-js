@@ -31,7 +31,7 @@ console.log(
     
     */
 
-// Using innerHeight: @ 350
+// Using innerHeight / canvas.height: @ 350
 class Player {
     constructor() {
         this.position = {
@@ -63,6 +63,7 @@ class Player {
         // ========               0
         this.position.y += this.velocity.y; // jumps up
 
+        //          280           28               0
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
                 this.position.y = 0;
