@@ -26,6 +26,13 @@ console.log(proportionalSize(10)); // 7
 console.log(proportionalSize(400)); // 280
 console.log(proportionalSize(40)); // 28
 
+console.log(
+    this.position.y, // 280
+    this.height, // 28
+    this.velocity.y, // 0
+    canvas.height // 350
+);
+
 
 */
 
@@ -53,13 +60,6 @@ class Player {
 
     update() {
         this.draw();
-
-        console.log(
-            this.position.y,
-            this.height,
-            this.velocity.y,
-            canvas.height
-        );
 
         this.position.x += this.velocity.x; // moves right
         this.position.y += this.velocity.y; // jumps up
