@@ -21,10 +21,6 @@ const proportionalSize = (size) => {
 
 /*
 
-console.log(proportionalSize(10)); // 7
-console.log(proportionalSize(400)); // 280
-console.log(proportionalSize(40)); // 28
-
 console.log(
     this.position.y, // 280
     this.height, // 28
@@ -48,8 +44,8 @@ class Player {
             y: 0,
         };
 
-        this.width = proportionalSize(40);
-        this.height = proportionalSize(40);
+        this.width = proportionalSize(40); // 28
+        this.height = proportionalSize(40); // 28
     }
 
     draw() {
