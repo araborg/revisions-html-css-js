@@ -19,6 +19,16 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
+/*
+console.log(innerHeight); @ 350
+
+
+*/
+
+console.log(proportionalSize(10));
+console.log(proportionalSize(400));
+console.log(proportionalSize(40));
+
 class Player {
     constructor() {
         this.position = {
@@ -43,9 +53,6 @@ class Player {
 
     update() {
         this.draw();
-        console.log(this.proportionalSize(10));
-        console.log(this.proportionalSize(400));
-        console.log(this.proportionalSize(40));
 
         console.log(
             this.position.y,
