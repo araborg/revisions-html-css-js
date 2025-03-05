@@ -109,6 +109,16 @@ const animate = () => {
     player.update();
 };
 
+const keys = {
+    rightKey: {
+        pressed: false,
+    },
+
+    leftKey: {
+        pressed: false,
+    },
+};
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
