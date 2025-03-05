@@ -20,7 +20,6 @@ const proportionalSize = (size) => {
 };
 
 /*
-console.log(innerHeight); @ 350
 
 console.log(proportionalSize(10)); // 7
 console.log(proportionalSize(400)); // 280
@@ -31,15 +30,16 @@ console.log(
     this.height, // 28
     this.velocity.y, // 0
     canvas.height // 350
-);
+    );
+    
+    
+    */
 
-
-*/
-
+// Using innerHeight: @ 350
 class Player {
     constructor() {
         this.position = {
-            x: proportionalSize(10),
+            x: proportionalSize(10), // 7
             y: proportionalSize(400),
         };
 
