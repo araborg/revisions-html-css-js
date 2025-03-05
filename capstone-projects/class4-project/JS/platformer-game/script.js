@@ -84,6 +84,7 @@ class Player {
 
         // ensures the player does not accidentally go off screen to the right
         if (this.position.x >= canvas.width - 2 * this.width) {
+            this.position.x = canvas.width - 2 * this.width;
         }
     }
 }
