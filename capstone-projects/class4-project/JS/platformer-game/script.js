@@ -19,6 +19,8 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
+const movePlayer = (key, xVelocity, isPressed) => {};
+
 // console.log(proportionalSize(100));
 
 /*
