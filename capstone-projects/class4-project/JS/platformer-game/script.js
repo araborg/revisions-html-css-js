@@ -40,7 +40,7 @@ class Player {
     constructor() {
         this.position = {
             x: proportionalSize(10), // 7
-            y: proportionalSize(400),
+            y: proportionalSize(400), // 280
         };
 
         this.velocity = {
