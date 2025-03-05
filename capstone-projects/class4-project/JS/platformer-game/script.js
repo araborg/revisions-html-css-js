@@ -57,8 +57,10 @@ class Player {
 
     update() {
         this.draw();
-
+        // ========               0
         this.position.x += this.velocity.x; // moves right
+
+        // ========               0
         this.position.y += this.velocity.y; // jumps up
 
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
