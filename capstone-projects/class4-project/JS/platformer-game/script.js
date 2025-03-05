@@ -114,7 +114,7 @@ const animate = () => {
         keys.leftKey.pressed &&
         player.position.x > proportionalSize(100)
     ) {
-        player.velocity.x = 5;
+        player.velocity.x = -5;
     }
 };
 
