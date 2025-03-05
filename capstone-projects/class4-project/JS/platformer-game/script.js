@@ -19,7 +19,7 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
-console.log(proportionalSize(100));
+// console.log(proportionalSize(100));
 
 /*
 
@@ -114,7 +114,7 @@ const animate = () => {
         player.velocity.x = 5;
     } else if (
         keys.leftKey.pressed &&
-        player.position.x > proportionalSize(100)
+        player.position.x > proportionalSize(100) // 70
     ) {
         player.velocity.x = -5;
     }
