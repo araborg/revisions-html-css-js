@@ -43,6 +43,9 @@ class Player {
 
     update() {
         this.draw();
+        console.log(this.proportionalSize(10));
+        console.log(this.proportionalSize(400));
+        console.log(this.proportionalSize(40));
 
         console.log(
             this.position.y,
