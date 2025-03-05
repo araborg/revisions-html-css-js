@@ -51,6 +51,7 @@ class Player {
     draw() {
         ctx.fillStyle = "#99c9ff";
 
+        //                  7               280             20          20
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 
