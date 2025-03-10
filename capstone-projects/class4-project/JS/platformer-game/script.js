@@ -19,8 +19,6 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
-const movePlayer = (key, xVelocity, isPressed) => {};
-
 // Using innerHeight / canvas.height: @ 350
 class Player {
     constructor() {
@@ -121,9 +119,18 @@ const keys = {
     },
 };
 
-if (!isCheckpointCollisionDetectionActive) {
-    player.velocity.x = player.velocity.y = 0;
-}
+const movePlayer = (key, xVelocity, isPressed) => {
+    if (!isCheckpointCollisionDetectionActive) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+
+        return;
+    }
+
+    switch (key) {
+        case "ArrowLeft":
+    }
+};
 
 /*
 Canvas methods:
