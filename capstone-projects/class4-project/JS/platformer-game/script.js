@@ -122,6 +122,7 @@ const keys = {
 };
 
 if (!isCheckpointCollisionDetectionActive) {
+    player.velocity.x = player.velocity.y = 0;
 }
 
 /*
