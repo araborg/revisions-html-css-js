@@ -21,20 +21,6 @@ const proportionalSize = (size) => {
 
 const movePlayer = (key, xVelocity, isPressed) => {};
 
-// console.log(proportionalSize(100));
-
-/*
-
-console.log(
-    this.position.y, // 280
-    this.height, // 28
-    this.velocity.y, // 0
-    canvas.height // 350
-    );
-    
-    
-    */
-
 // Using innerHeight / canvas.height: @ 350
 class Player {
     constructor() {
