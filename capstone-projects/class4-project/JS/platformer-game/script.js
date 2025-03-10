@@ -121,6 +121,9 @@ const keys = {
     },
 };
 
+if (!isCheckpointCollisionDetectionActive) {
+}
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
