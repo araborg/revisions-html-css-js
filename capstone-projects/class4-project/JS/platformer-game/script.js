@@ -130,6 +130,13 @@ const movePlayer = (key, xVelocity, isPressed) => {
     switch (key) {
         case "ArrowLeft":
             keys.leftKey.pressed = isPressed;
+
+            if (xVelocity === 0) {
+                player.velocity.x = xVelocity;
+            }
+
+            player.velocity.x -= xVelocity;
+            break;
     }
 };
 
