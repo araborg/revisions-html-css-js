@@ -155,6 +155,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 };
 
+window.addEventListener("keydown", ({ key }) => {});
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
