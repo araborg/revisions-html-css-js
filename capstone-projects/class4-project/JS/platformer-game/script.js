@@ -175,9 +175,12 @@ class Platform {
 
     draw() {
         ctx.fillStyle = "#acd157";
+
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 }
+
+const platformPositions = [];
 
 /*
 Canvas methods:
