@@ -121,6 +121,8 @@ const animate = () => {
             platform.position.x += 5;
         });
     }
+
+    platforms.forEach((platform) => {});
 };
 
 const keys = {
