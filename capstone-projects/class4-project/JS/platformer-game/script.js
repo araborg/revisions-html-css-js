@@ -195,6 +195,8 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
+const platforms = platformPositions.map();
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
