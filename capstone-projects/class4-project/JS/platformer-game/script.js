@@ -122,7 +122,9 @@ const animate = () => {
         });
     }
 
-    platforms.forEach((platform) => {});
+    platforms.forEach((platform) => {
+        const collisionDetectionRules = [];
+    });
 };
 
 const keys = {
