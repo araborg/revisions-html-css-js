@@ -84,7 +84,9 @@ const startGame = () => {
 
     startScreen.style.display = "none";
 
-    player.draw();
+    // player.draw();
+
+    animate();
 };
 
 startBtn.addEventListener("click", startGame);
