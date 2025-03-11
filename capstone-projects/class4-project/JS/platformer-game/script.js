@@ -123,7 +123,9 @@ const animate = () => {
     }
 
     platforms.forEach((platform) => {
-        const collisionDetectionRules = [];
+        const collisionDetectionRules = [
+            player.position.y + player.height <= platform.position.y,
+        ];
     });
 };
 
