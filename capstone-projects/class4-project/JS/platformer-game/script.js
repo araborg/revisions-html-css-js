@@ -173,7 +173,9 @@ class Platform {
         this.height = proportionalSize(40);
     }
 
-    draw() {}
+    draw() {
+        ctx.fillStyle = "#acd157";
+    }
 }
 
 /*
