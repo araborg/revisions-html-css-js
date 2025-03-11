@@ -201,8 +201,6 @@ const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
-console.log(platforms);
-
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
