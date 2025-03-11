@@ -165,6 +165,8 @@ window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
 
+class Platform {}
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
