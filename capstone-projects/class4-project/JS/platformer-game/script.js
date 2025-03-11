@@ -111,6 +111,9 @@ const animate = () => {
     }
 
     platforms.forEach((platform) => platform.draw());
+
+    if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
+    }
 };
 
 const keys = {
