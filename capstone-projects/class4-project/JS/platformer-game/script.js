@@ -165,7 +165,9 @@ window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
 
-class Platform {}
+class Platform {
+    constructor(x, y) {}
+}
 
 /*
 Canvas methods:
