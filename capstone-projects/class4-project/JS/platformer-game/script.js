@@ -155,7 +155,9 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 };
 
-window.addEventListener("keydown", ({ key }) => {});
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
+});
 
 /*
 Canvas methods:
