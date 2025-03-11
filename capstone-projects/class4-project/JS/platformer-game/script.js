@@ -109,6 +109,8 @@ const animate = () => {
     } else {
         player.velocity.x = 0;
     }
+
+    platforms.forEach((platform) => platform.draw());
 };
 
 const keys = {
