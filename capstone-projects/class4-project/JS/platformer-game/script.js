@@ -166,7 +166,9 @@ window.addEventListener("keyup", ({ key }) => {
 });
 
 class Platform {
-    constructor(x, y) {}
+    constructor(x, y) {
+        this.position = { x, y };
+    }
 }
 
 /*
