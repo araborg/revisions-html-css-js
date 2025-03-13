@@ -174,7 +174,9 @@ const animate = () => {
     checkpoints.forEach((chekcpoint) => chekcpoint.draw());
 
     checkpoints.forEach((checkpoint, index, checkpoints) => {
-        const checkpointDetectionRules = [];
+        const checkpointDetectionRules = [
+            player.position.x >= checkpoint.position.x,
+        ];
     });
 };
 
