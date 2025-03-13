@@ -302,6 +302,8 @@ const checkpoints = checkpointPositions.map(
 
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
+
+    checkpointMessage.textContent = msg;
 };
 
 /*
