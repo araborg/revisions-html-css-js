@@ -146,6 +146,8 @@ const animate = () => {
 
             player.position.x <=
                 platform.position.x + platform.width - player.width / 3,
+
+            player.position.y + player.height >= platform.position.y,
         ];
     });
 };
