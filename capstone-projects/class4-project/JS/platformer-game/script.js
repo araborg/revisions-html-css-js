@@ -140,6 +140,8 @@ const animate = () => {
 
             return;
         }
+
+        const platformDetectionRules = [];
     });
 };
 
