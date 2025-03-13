@@ -120,6 +120,7 @@ class CheckPoint {
         this.height = 0;
 
         this.position.y = Infinity;
+
         this.claimed = true;
     }
 }
@@ -147,7 +148,9 @@ const platforms = platformPositions.map(
 
 const checkpointPositions = [
     { x: 1170, y: proportionalSize(80), z: 1 },
+
     { x: 2900, y: proportionalSize(330), z: 2 },
+
     { x: 4800, y: proportionalSize(80), z: 3 },
 ];
 
