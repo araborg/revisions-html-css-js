@@ -249,7 +249,9 @@ const platforms = platformPositions.map(
 );
 
 class CheckPoint {
-    constructor(x, y, z) {}
+    constructor(x, y, z) {
+        this.position = { x, y };
+    }
 }
 
 /*
