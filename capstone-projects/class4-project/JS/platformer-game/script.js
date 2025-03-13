@@ -260,6 +260,8 @@ class CheckPoint {
 
     draw() {
         ctx.fillStyle = "#f1be32";
+
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 }
 
