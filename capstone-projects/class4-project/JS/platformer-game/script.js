@@ -269,6 +269,8 @@ class CheckPoint {
         this.height = 0;
 
         this.position.y = Infinity;
+
+        this.claimed = true;
     }
 }
 
