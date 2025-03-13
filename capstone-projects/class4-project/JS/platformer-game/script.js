@@ -300,7 +300,9 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
-const showCheckpointScreen = (msg) => {};
+const showCheckpointScreen = (msg) => {
+    checkpointScreen.style.display = "block";
+};
 
 /*
 Canvas methods:
