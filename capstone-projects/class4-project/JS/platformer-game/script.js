@@ -248,6 +248,8 @@ const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
+class CheckPoint {}
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
