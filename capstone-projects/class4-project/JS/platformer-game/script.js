@@ -276,7 +276,9 @@ class CheckPoint {
 
 const checkpointPositions = [
     { x: 1170, y: proportionalSize(80), z: 1 },
+
     { x: 2900, y: proportionalSize(330), z: 2 },
+
     { x: 4800, y: proportionalSize(80), z: 3 },
 ];
 
