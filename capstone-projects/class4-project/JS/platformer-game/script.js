@@ -151,6 +151,9 @@ const animate = () => {
 
             player.position.y <= platform.position.y + platform.height,
         ];
+
+        if (platformDetectionRules.every((rule) => rule)) {
+        }
     });
 };
 
