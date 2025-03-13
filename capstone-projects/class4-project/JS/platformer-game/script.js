@@ -71,6 +71,7 @@ class Player {
             this.position.x = this.width;
         }
 
+        // ensures the player does not accidentally go off screen to the right
         if (this.position.x >= canvas.width - 2 * this.width) {
             this.position.x = canvas.width - 2 * this.width;
         }
@@ -311,6 +312,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
 const startGame = () => {
     canvas.style.display = "block";
     startScreen.style.display = "none";
+
+    // player.draw();
 
     animate();
 };
