@@ -23,8 +23,8 @@ const proportionalSize = (size) => {
 class Player {
     constructor() {
         this.position = {
-            x: proportionalSize(10),
-            y: proportionalSize(400),
+            x: proportionalSize(10), // 7
+            y: proportionalSize(400), // 280
         };
 
         this.velocity = {
@@ -32,8 +32,8 @@ class Player {
             y: 0,
         };
 
-        this.width = proportionalSize(40);
-        this.height = proportionalSize(40);
+        this.width = proportionalSize(40); // 28
+        this.height = proportionalSize(40); // 28
     }
 
     draw() {
