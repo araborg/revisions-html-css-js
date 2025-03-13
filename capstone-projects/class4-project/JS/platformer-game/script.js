@@ -282,7 +282,9 @@ const checkpointPositions = [
     { x: 4800, y: proportionalSize(80), z: 3 },
 ];
 
-const checkpoints = checkpointPositions.map();
+const checkpoints = checkpointPositions.map(
+    (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
+);
 
 /*
 Canvas methods:
