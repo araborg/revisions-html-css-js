@@ -257,6 +257,10 @@ class CheckPoint {
 
         this.claimed = false;
     }
+
+    draw() {
+        ctx.fillStyle = "#f1be32";
+    }
 }
 
 /*
