@@ -199,6 +199,11 @@ const animate = () => {
                 showCheckpointScreen("You reached the final checkpoint!");
 
                 movePlayer("ArrowRight", 0, false);
+            } else if (
+                player.position.x >=
+                checkpoint.position.x <=
+                checkpoint.position + 40
+            ) {
             }
         }
     });
