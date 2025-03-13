@@ -195,6 +195,8 @@ const animate = () => {
 
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
+
+                showCheckpointScreen("You reached the final checkpoint!");
             }
         }
     });
