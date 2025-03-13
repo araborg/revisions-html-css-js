@@ -204,6 +204,7 @@ const animate = () => {
                 checkpoint.position.x <=
                 checkpoint.position + 40
             ) {
+                showCheckpointScreen("You reached a checkpoint!");
             }
         }
     });
