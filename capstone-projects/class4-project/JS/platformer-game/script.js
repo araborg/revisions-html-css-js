@@ -173,7 +173,9 @@ const animate = () => {
 
     checkpoints.forEach((chekcpoint) => chekcpoint.draw());
 
-    checkpoints.forEach((checkpoint, index, checkpoints) => {});
+    checkpoints.forEach((checkpoint, index, checkpoints) => {
+        const checkpointDetectionRules = [];
+    });
 };
 
 const keys = {
