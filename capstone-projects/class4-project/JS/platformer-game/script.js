@@ -248,7 +248,9 @@ const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
-class CheckPoint {}
+class CheckPoint {
+    constructor(x, y, z) {}
+}
 
 /*
 Canvas methods:
