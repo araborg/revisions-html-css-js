@@ -194,6 +194,7 @@ const animate = () => {
             checkpoint.claim();
 
             if (index === checkpoints.length - 1) {
+                isCheckpointCollisionDetectionActive = false;
             }
         }
     });
