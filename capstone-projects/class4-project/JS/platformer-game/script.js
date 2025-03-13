@@ -300,6 +300,8 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
+const showCheckpointScreen = (msg) => {};
+
 /*
 Canvas methods:
 const ctx = canvas.getContext("2d")
