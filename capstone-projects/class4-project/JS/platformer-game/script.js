@@ -197,6 +197,8 @@ const animate = () => {
                 isCheckpointCollisionDetectionActive = false;
 
                 showCheckpointScreen("You reached the final checkpoint!");
+
+                movePlayer("ArrowRight", 0, false);
             }
         }
     });
