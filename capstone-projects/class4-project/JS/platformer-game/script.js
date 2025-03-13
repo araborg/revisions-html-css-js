@@ -38,14 +38,19 @@ class Player {
 
     draw() {
         ctx.fillStyle = "#99c9ff";
+
+        //                  7               280             20          20
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 
     update() {
         this.draw();
 
-        this.position.x += this.velocity.x;
-        this.position.y += this.velocity.y;
+        // ========               0
+        this.position.x += this.velocity.x; // moves right
+
+        // ========               0
+        this.position.y += this.velocity.y; // jumps up
 
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
