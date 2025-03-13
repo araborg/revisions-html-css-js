@@ -168,10 +168,11 @@ const animate = () => {
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
+        //280
         player.velocity.x = 5;
     } else if (
         keys.leftKey.pressed &&
-        player.position.x > proportionalSize(100)
+        player.position.x > proportionalSize(100) // 70
     ) {
         player.velocity.x = -5;
     } else {
@@ -282,12 +283,14 @@ const movePlayer = (key, xVelocity, isPressed) => {
     if (!isCheckpointCollisionDetectionActive) {
         player.velocity.x = 0;
         player.velocity.y = 0;
+
         return;
     }
 
     switch (key) {
         case "ArrowLeft":
             keys.leftKey.pressed = isPressed;
+
             if (xVelocity === 0) {
                 player.velocity.x = xVelocity;
             }
