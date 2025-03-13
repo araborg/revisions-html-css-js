@@ -158,6 +158,8 @@ const animate = () => {
             player.velocity.y = gravity;
         }
     });
+
+    checkpoints.forEach((chekcpoint) => chekcpoint.draw());
 };
 
 const keys = {
