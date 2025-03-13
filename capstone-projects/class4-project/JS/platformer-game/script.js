@@ -143,6 +143,9 @@ const animate = () => {
 
         const platformDetectionRules = [
             player.position.x >= platform.position.x - player.width / 2,
+
+            player.position.x <=
+                platform.position.x + platform.width - player.width / 3,
         ];
     });
 };
