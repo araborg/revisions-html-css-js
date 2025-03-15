@@ -69,7 +69,7 @@ class Player {
 
             this.velocity.y += gravity;
 
-            // if dse r greater than canvas.height
+            // if dse r greater than canvas.height: 654
         } else {
             this.velocity.y = 0;
         }
