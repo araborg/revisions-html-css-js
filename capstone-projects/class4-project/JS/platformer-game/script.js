@@ -32,6 +32,7 @@ class Player {
             y: proportionalSize(400), // 400
         };
 
+        // it store the player's speed in the x and y directions
         this.velocity = {
             x: 0,
             y: 0,
