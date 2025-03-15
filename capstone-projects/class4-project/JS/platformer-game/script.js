@@ -71,14 +71,8 @@ class Player {
                         this.velocity.y
                 );
             }
-            //
-            // else {
-            // this.velocity.y += gravity;
-            // console.log(this.velocity.y);
-            // }
 
             this.velocity.y += gravity;
-            console.log(this.velocity.y);
 
             // if dse r greater than canvas.height: 654
         } else {
