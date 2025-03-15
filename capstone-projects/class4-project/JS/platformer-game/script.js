@@ -135,71 +135,6 @@ const platforms = platformPositions.map((platform) => {
 });
 */
 
-// ======== check point ========
-class CheckPoint {
-    constructor(x, y, z) {
-        this.position = {
-            x,
-            y,
-        };
-
-        this.width = proportionalSize(40); // 40
-        this.height = proportionalSize(70); // 70
-
-        this.claimed = false;
-    }
-
-    draw() {
-        ctx.fillStyle = "#f1be32";
-
-        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
-    }
-
-    claim() {
-        // ds mks d checkpt to disappear
-        this.width = 0;
-        this.height = 0;
-
-        this.position.y = Infinity;
-
-        this.claimed = true;
-    }
-}
-
-const checkpointPositions = [
-    {
-        x: 1170,
-        y: proportionalSize(80),
-        z: 1,
-    },
-
-    {
-        x: 2900,
-        y: proportionalSize(330),
-        z: 2,
-    },
-
-    {
-        x: 4800,
-        y: proportionalSize(80),
-        z: 3,
-    },
-
-    // { x: 5200, y: proportionalSize(120), z: 3 },
-];
-
-const checkpoints = checkpointPositions.map(
-    (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
-);
-
-/*
-const checkpoints = checkpointPositions.map((checkpoint) => {
-    new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z);
-
-    console.log(new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
-});
-*/
-
 // ======== keys: obj of objs ========
 const keys = {
     rightKey: {
@@ -383,6 +318,8 @@ const animateIt = () => {
             player.position.x - player.width <=
                 checkpoint.position.x - checkpoint.width + player.width * 0.9,
 
+                console.log(index)
+
             index === 0 || checkpoints[index - 1].claimed === true,
         ];
 
@@ -404,6 +341,71 @@ const animateIt = () => {
         }
     });
 };
+
+// ======== check point ========
+class CheckPoint {
+    constructor(x, y, z) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = proportionalSize(40); // 40
+        this.height = proportionalSize(70); // 70
+
+        this.claimed = false;
+    }
+
+    draw() {
+        ctx.fillStyle = "#f1be32";
+
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
+
+    claim() {
+        // ds mks d checkpt to disappear
+        this.width = 0;
+        this.height = 0;
+
+        this.position.y = Infinity;
+
+        this.claimed = true;
+    }
+}
+
+const checkpointPositions = [
+    {
+        x: 1170,
+        y: proportionalSize(80),
+        z: 1,
+    },
+
+    {
+        x: 2900,
+        y: proportionalSize(330),
+        z: 2,
+    },
+
+    {
+        x: 4800,
+        y: proportionalSize(80),
+        z: 3,
+    },
+
+    // { x: 5200, y: proportionalSize(120), z: 3 },
+];
+
+const checkpoints = checkpointPositions.map(
+    (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
+);
+
+/*
+const checkpoints = checkpointPositions.map((checkpoint) => {
+    new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z);
+
+    console.log(new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
+});
+*/
 
 // ======== start game ========
 const startGame = () => {
