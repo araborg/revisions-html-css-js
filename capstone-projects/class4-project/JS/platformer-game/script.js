@@ -51,7 +51,7 @@ class Player {
         this.draw();
 
         // ========               0
-        this.position.x += this.velocity.x; // moves right
+        // this.position.x += this.velocity.x; // moves right
 
         // ========               0
         this.position.y += this.velocity.y; // jumps up
