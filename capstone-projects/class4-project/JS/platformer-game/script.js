@@ -20,6 +20,7 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
+// ======== player ========
 // Using innerHeight / canvas.height: @ 654
 // player: width:40, height:40
 class Player {
@@ -53,7 +54,6 @@ class Player {
 
         // ========               0
         this.position.y += this.velocity.y; // jumps up
-        console.log(this.position.y);
 
         // Increase d this.velocity.y
         //          400          40         heighest value = 14    654
@@ -190,6 +190,16 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
+const keys = {
+    rightKey: {
+        pressed: false,
+    },
+
+    leftKey: {
+        pressed: false,
+    },
+};
+
 const animateIt = () => {
     requestAnimationFrame(animateIt);
 
@@ -319,16 +329,6 @@ const animateIt = () => {
             }
         }
     });
-};
-
-const keys = {
-    rightKey: {
-        pressed: false,
-    },
-
-    leftKey: {
-        pressed: false,
-    },
 };
 
 const movePlayer = (key, xVelocity, isPressed) => {
