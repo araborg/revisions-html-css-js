@@ -8,6 +8,7 @@ const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 
 // canvas
 const ctx = canvas.getContext("2d");
+
 canvas.width = innerWidth; // 1366
 canvas.height = innerHeight; // 654
 
@@ -20,7 +21,7 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
-// Using innerHeight / canvas.height: @ 350
+// Using innerHeight / canvas.height: @ 654
 class Player {
     constructor() {
         this.position = {
