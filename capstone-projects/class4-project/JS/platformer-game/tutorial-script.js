@@ -45,7 +45,8 @@ the paragraph element.
 
 Assign that value to a const variable called checkpointMessage.
 
-const checkpointMessage = document.querySelector('.checkpoint-screen > p');
+const checkpointMessage = document
+                        .querySelector('.checkpoint-screen > p');
 
 
 Lesson 4:
