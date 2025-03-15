@@ -370,6 +370,14 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 };
 
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
+});
+
+window.addEventListener("keyup", ({ key }) => {
+    movePlayer(key, 0, false);
+});
+
 // ======== start game ========
 const startGame = () => {
     canvas.style.display = "block";
@@ -393,11 +401,3 @@ const showCheckpointScreen = (msg) => {
         }, 2000);
     }
 };
-
-window.addEventListener("keydown", ({ key }) => {
-    movePlayer(key, 8, true);
-});
-
-window.addEventListener("keyup", ({ key }) => {
-    movePlayer(key, 0, false);
-});
