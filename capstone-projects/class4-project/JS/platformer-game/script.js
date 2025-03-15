@@ -21,6 +21,8 @@ const proportionalSize = (size) => {
 };
 
 // Using innerHeight / canvas.height: @ 654
+
+// player: width:40, height:40
 class Player {
     constructor() {
         this.position = {
@@ -83,6 +85,7 @@ class Player {
     }
 }
 
+// d steps/platforms
 class Platform {
     constructor(x, y) {
         this.position = {
@@ -123,11 +126,7 @@ const platformPositions = [
 // );
 
 const platforms = platformPositions.map((platform) => {
-    // new Platform(platform.x, platform.y);
-
     const platformNew = new Platform(platform.x, platform.y);
-
-    console.log(platformNew);
 
     return platformNew;
 });
