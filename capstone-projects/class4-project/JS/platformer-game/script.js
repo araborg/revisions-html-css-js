@@ -162,6 +162,8 @@ const checkpointPositions = [
     { x: 2900, y: proportionalSize(330), z: 2 },
 
     { x: 4800, y: proportionalSize(80), z: 3 },
+
+    // { x: 5200, y: proportionalSize(120), z: 3 },
 ];
 
 const checkpoints = checkpointPositions.map(
