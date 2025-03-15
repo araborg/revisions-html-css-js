@@ -201,8 +201,6 @@ const keys = {
     },
 };
 
-console.log(keys);
-
 // ======== showCheckpointScreen ========
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
