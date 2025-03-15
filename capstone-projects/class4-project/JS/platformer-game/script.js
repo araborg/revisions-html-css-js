@@ -12,7 +12,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = innerWidth; // 1366
 canvas.height = innerHeight; // 654
 
-const gravity = 1;
+const gravity = 0.5;
 
 let isCheckpointCollisionDetectionActive = true;
 // console.log(innerWidth, innerHeight);
@@ -68,6 +68,8 @@ class Player {
             }
 
             this.velocity.y += gravity;
+
+            // if dse r greater than canvas.height
         } else {
             this.velocity.y = 0;
         }
