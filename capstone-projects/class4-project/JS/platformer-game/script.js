@@ -12,7 +12,7 @@ const ctx = canvas.getContext("2d");
 canvas.width = innerWidth; // 1366
 canvas.height = innerHeight; // 654
 
-const gravity = 0.5;
+const gravity = 1;
 
 let isCheckpointCollisionDetectionActive = true;
 // console.log(innerWidth, innerHeight);
