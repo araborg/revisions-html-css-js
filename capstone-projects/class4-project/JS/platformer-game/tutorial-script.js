@@ -208,7 +208,7 @@ class Player {
 
 
 Lesson 16:
-Below your position object, use the this keyword to set the 
+Below your position object, use the "this" keyword to set the 
 velocity property to an object.
 
 Inside that new velocity object, create a key called x with 
