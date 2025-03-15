@@ -157,7 +157,8 @@ class CheckPoint {
         this.width = 0;
         this.height = 0;
 
-        // this.position.y = Infinity;
+        this.position.y = Infinity;
+        console.log(this.position.y);
 
         this.claimed = true;
     }
