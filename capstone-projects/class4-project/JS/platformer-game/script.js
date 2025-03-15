@@ -38,6 +38,10 @@ class Player {
             y: 0,
         };
 
+        /*
+            Set the width and height properties to be 
+            proportional to the height of the screen.
+        */
         this.width = proportionalSize(40); // 40
         this.height = proportionalSize(40); // 40
     }
