@@ -231,6 +231,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
         return;
     }
 
+    console.log(key);
+
     switch (key) {
         case "ArrowLeft":
             keys.leftKey.pressed = isPressed;
