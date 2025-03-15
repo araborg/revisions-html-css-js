@@ -153,8 +153,8 @@ class CheckPoint {
     }
 
     claim() {
-        this.width = 40;
-        this.height = 70;
+        this.width = 0;
+        this.height = 0;
 
         this.position.y = Infinity;
 
@@ -163,9 +163,24 @@ class CheckPoint {
 }
 
 const checkpointPositions = [
-    { x: 1170, y: proportionalSize(80), z: 1 },
-    { x: 2900, y: proportionalSize(330), z: 2 },
-    { x: 4800, y: proportionalSize(80), z: 3 },
+    {
+        x: 1170,
+        y: proportionalSize(80),
+        z: 1,
+    },
+
+    {
+        x: 2900,
+        y: proportionalSize(330),
+        z: 2,
+    },
+
+    {
+        x: 4800,
+        y: proportionalSize(80),
+        z: 3,
+    },
+
     // { x: 5200, y: proportionalSize(120), z: 3 },
 ];
 
