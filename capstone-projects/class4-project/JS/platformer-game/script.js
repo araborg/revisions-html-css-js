@@ -87,11 +87,6 @@ class Player {
         }
 
         // Let's try for the left
-        if (this.position.x < this.width) {
-            this.position.x = 0;
-
-            console.log("Here");
-        }
 
         // console.log(this.position.x);
     }
@@ -224,6 +219,12 @@ const animate = () => {
             checkpoints.forEach((checkpoint) => {
                 checkpoint.position.x += 5;
             });
+        }
+    }
+
+    if (keys.leftKey.pressed) {
+        if (player.position.x <= 0) {
+            console.log("Here");
         }
     }
 
