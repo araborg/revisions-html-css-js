@@ -333,6 +333,7 @@ const animateIt = () => {
     });
 };
 
+// ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
     if (!isCheckpointCollisionDetectionActive) {
         player.velocity.x = 0;
