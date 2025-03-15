@@ -161,6 +161,7 @@ const showCheckpointScreen = (msg) => {
 
 // ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
+    // ds happens at the last platform
     if (!isCheckpointCollisionDetectionActive) {
         // isCheckpointCollisionDetectionActive = false;
 
