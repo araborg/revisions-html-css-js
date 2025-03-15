@@ -255,7 +255,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
                 player.velocity.x = xVelocity;
             }
 
-            player.velocity.x += xVelocity;
+            player.velocity.x -= xVelocity;
     }
 };
 
