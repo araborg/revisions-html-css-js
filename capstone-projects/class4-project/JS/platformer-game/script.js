@@ -227,6 +227,7 @@ const animate = () => {
 
         if (player.position.x - 2 < player.width) {
             console.log("Here");
+            player.position.x = 0;
         }
     }
 
