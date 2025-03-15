@@ -162,8 +162,12 @@ const showCheckpointScreen = (msg) => {
 // ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
     if (!isCheckpointCollisionDetectionActive) {
+        // isCheckpointCollisionDetectionActive = false;
+
         player.velocity.x = 0;
         player.velocity.y = 0;
+
+        console.log("We are here!!!");
 
         // console.log(player.velocity.x, player.velocity.y);
 
@@ -317,8 +321,6 @@ const animateIt = () => {
 
             player.position.x - player.width <=
                 checkpoint.position.x - checkpoint.width + player.width * 0.9,
-
-                console.log(index)
 
             index === 0 || checkpoints[index - 1].claimed === true,
         ];
