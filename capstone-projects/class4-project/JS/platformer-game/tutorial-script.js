@@ -1537,6 +1537,4 @@ if (index === checkpoints.length - 1) {
 }else if (player.position.x >= checkpoint.position.x && player.position.x <= checkpoint.position.x + 40) {
     showCheckpointScreen("You reached a checkpoint!");
 }
-
-
 */
