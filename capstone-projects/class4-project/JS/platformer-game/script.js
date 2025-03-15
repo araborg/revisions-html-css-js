@@ -64,7 +64,6 @@ class Player {
             if (this.position.y < 0) {
                 this.position.y = 0;
 
-                //                  0.5
                 this.velocity.y = gravity;
             }
 
