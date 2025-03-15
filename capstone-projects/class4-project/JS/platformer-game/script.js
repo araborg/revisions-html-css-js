@@ -121,9 +121,9 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
-// const platforms = platformPositions.map(
-//     (platform) => new Platform(platform.x, platform.y)
-// );
+const platforms = platformPositions.map(
+    (platform) => new Platform(platform.x, platform.y)
+);
 
 // const platforms = platformPositions.map((platform) => {
 //     const platformNew = new Platform(platform.x, platform.y);
