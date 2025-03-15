@@ -144,7 +144,9 @@ return a ternary that checks if innerHeight is less than
 otherwise return size.
 
 const proportionalSize = (size) => {
-    return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
+    return innerHeight < 500 
+        ? Math.ceil((size / 500) * innerHeight) 
+        : size;
 };
 
 
