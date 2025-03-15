@@ -194,14 +194,6 @@ const animate = () => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    platforms.forEach((platform) => {
-        platform.draw();
-    });
-
-    checkpoints.forEach((checkpoint) => {
-        checkpoint.draw();
-    });
-
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
@@ -244,6 +236,11 @@ const animate = () => {
     //     }
     // }
 
+    // platforms
+    platforms.forEach((platform) => {
+        platform.draw();
+    });
+
     platforms.forEach((platform) => {
         const collisionDetectionRules = [
             player.position.y + player.height <= platform.position.y,
@@ -278,6 +275,11 @@ const animate = () => {
             player.position.y = platform.position.y + player.height;
             player.velocity.y = gravity;
         }
+    });
+
+    // checkpoints
+    checkpoints.forEach((checkpoint) => {
+        checkpoint.draw();
     });
 
     checkpoints.forEach((checkpoint, index, checkpoints) => {
