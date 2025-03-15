@@ -75,13 +75,13 @@ class Player {
         }
 
         // This ensures the player doesn't move too far off to the left.
-        //       10               40
+        //       10+               40
         if (this.position.x < this.width) {
             this.position.x = this.width;
         }
 
         // This ensures the player does not accidentally go off screen to the right
-        //          10            654           2(40)
+        //          10+            654           2(40)
         if (this.position.x >= canvas.width - 2 * this.width) {
             this.position.x = canvas.width - 2 * this.width;
         }
