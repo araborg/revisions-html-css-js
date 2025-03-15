@@ -21,7 +21,7 @@ const proportionalSize = (size) => {
 };
 
 // ======== player ========
-// Using innerHeight / canvas.height: @ 654
+// Using innerHeight / canvas.height: @ 654 and innerWidth @ 1366
 // player: width:40, height:40
 class Player {
     constructor() {
@@ -276,7 +276,7 @@ const animateIt = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // player
-    // draws, changes player position and velocity
+    // draws platform, changes player position and velocity
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
