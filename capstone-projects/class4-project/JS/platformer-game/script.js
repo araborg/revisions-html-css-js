@@ -231,7 +231,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
         return;
     }
 
-    console.log(key);
+    // console.log(key);
 
     switch (key) {
         case "ArrowLeft":
@@ -266,6 +266,8 @@ window.addEventListener("keydown", ({ key }) => {
 });
 
 window.addEventListener("keyup", ({ key }) => {
+    console.log(key);
+
     movePlayer(key, 0, false);
 });
 
