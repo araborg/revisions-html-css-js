@@ -89,6 +89,8 @@ class Player {
         // Let's try for the left
         if (this.position.x < this.width) {
             this.position.x = 0;
+
+            console.log("Here");
         }
 
         // console.log(this.position.x);
