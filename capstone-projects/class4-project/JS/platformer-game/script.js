@@ -71,6 +71,8 @@ class Player {
             this.velocity.y = 0;
         }
 
+        console.log(this.velocity.x);
+
         // This ensures the player doesn't move too far off to the left.
         //       10+40            40
         if (this.position.x < this.width) {
