@@ -118,9 +118,19 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
+// const platforms = platformPositions.map(
+//     (platform) => new Platform(platform.x, platform.y)
+// );
+
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
+
+// const platformNew = new Platform(platform.x, platform.y);
+// console.log(platformNew);
+
+const platformNew = new Platform(platform.x, platform.y);
+console.log(platformNew);
 
 class CheckPoint {
     constructor(x, y, z) {
