@@ -51,12 +51,12 @@ class Player {
         this.draw();
 
         // ========               0
-        // this.position.x += this.velocity.x; // moves right
+        this.position.x += this.velocity.x; // moves right
 
         // ========               0
         this.position.y += this.velocity.y; // jumps up
 
-        //          280           28               0                350
+        //          400          40               0                654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
                 this.position.y = 0;
