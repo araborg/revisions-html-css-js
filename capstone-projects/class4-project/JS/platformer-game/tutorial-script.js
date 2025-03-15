@@ -128,6 +128,8 @@ and adapt to different screen sizes.
 Start by creating an arrow function called proportionalSize 
 that takes in a size parameter.
 
+const proportionalSize = (size) => {};
+
 
 Lesson 11:
 The width and the height of the main player, platforms and 
