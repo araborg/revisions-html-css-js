@@ -190,7 +190,7 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
-// ======== keys ========
+// ======== keys: obj of objs ========
 const keys = {
     rightKey: {
         pressed: false,
@@ -200,6 +200,8 @@ const keys = {
         pressed: false,
     },
 };
+
+console.log(keys);
 
 // ======== showCheckpointScreen ========
 const showCheckpointScreen = (msg) => {
