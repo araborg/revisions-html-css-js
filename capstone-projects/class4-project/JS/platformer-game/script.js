@@ -259,10 +259,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 };
 
-window.addEventListener("keydown", (event) => {
-    console.log(event);
-
-    movePlayer(event.key, 8, true);
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
 });
 
 window.addEventListener("keyup", ({ key }) => {
