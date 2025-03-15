@@ -189,12 +189,13 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
-const animate = () => {
-    requestAnimationFrame(animate);
+const animateIt = () => {
+    requestAnimationFrame(animateIt);
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // player
+    // draws, changes player position and velocity
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
@@ -371,7 +372,7 @@ const startGame = () => {
 
     // player.draw();
 
-    animate();
+    animateIt();
 };
 
 const showCheckpointScreen = (msg) => {
