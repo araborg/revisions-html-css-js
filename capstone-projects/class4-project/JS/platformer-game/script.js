@@ -131,11 +131,6 @@ const platformPositions = [
 //     return platformNew;
 // });
 
-// console.log(platformNew);
-
-// const platformNew = new Platform(platform.x, platform.y);
-// console.log(platformNew);
-
 class CheckPoint {
     constructor(x, y, z) {
         this.position = {
