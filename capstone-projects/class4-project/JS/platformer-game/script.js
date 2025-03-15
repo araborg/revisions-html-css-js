@@ -96,7 +96,7 @@ class Platform {
         };
 
         this.width = 200;
-        this.height = proportionalSize(40); // 40
+        this.height = proportionalSize(60); // 40
     }
 
     draw() {
