@@ -15,13 +15,10 @@ canvas.height = innerHeight; // 654
 const gravity = 0.5;
 
 let isCheckpointCollisionDetectionActive = true;
-// console.log(innerWidth, innerHeight);
 
 const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
-
-// console.log(proportionalSize(400));
 
 // Using innerHeight / canvas.height: @ 654
 class Player {
