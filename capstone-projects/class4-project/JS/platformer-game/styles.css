@@ -71,6 +71,7 @@ body {
     background-color: var(--section-bg-color);
     border-radius: 20px;
     padding: 10px;
+
     display: none;
 }
 
