@@ -214,6 +214,51 @@ const showCheckpointScreen = (msg) => {
     }
 };
 
+// ======== move player ========
+const movePlayer = (key, xVelocity, isPressed) => {
+    if (!isCheckpointCollisionDetectionActive) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+
+        return;
+    }
+
+    switch (key) {
+        case "ArrowLeft":
+            keys.leftKey.pressed = isPressed;
+
+            if (xVelocity === 0) {
+                player.velocity.x = xVelocity;
+            }
+
+            player.velocity.x -= xVelocity;
+            break;
+
+        case "ArrowUp":
+        case " ":
+        case "Spacebar":
+            player.velocity.y -= 8;
+            break;
+
+        case "ArrowRight":
+            keys.rightKey.pressed = isPressed;
+
+            if (xVelocity === 0) {
+                player.velocity.x = xVelocity;
+            }
+
+            player.velocity.x += xVelocity;
+    }
+};
+
+window.addEventListener("keydown", ({ key }) => {
+    movePlayer(key, 8, true);
+});
+
+window.addEventListener("keyup", ({ key }) => {
+    movePlayer(key, 0, false);
+});
+
 // ======== animateIt ========
 const animateIt = () => {
     requestAnimationFrame(animateIt);
@@ -345,51 +390,6 @@ const animateIt = () => {
         }
     });
 };
-
-// ======== move player ========
-const movePlayer = (key, xVelocity, isPressed) => {
-    if (!isCheckpointCollisionDetectionActive) {
-        player.velocity.x = 0;
-        player.velocity.y = 0;
-
-        return;
-    }
-
-    switch (key) {
-        case "ArrowLeft":
-            keys.leftKey.pressed = isPressed;
-
-            if (xVelocity === 0) {
-                player.velocity.x = xVelocity;
-            }
-
-            player.velocity.x -= xVelocity;
-            break;
-
-        case "ArrowUp":
-        case " ":
-        case "Spacebar":
-            player.velocity.y -= 8;
-            break;
-
-        case "ArrowRight":
-            keys.rightKey.pressed = isPressed;
-
-            if (xVelocity === 0) {
-                player.velocity.x = xVelocity;
-            }
-
-            player.velocity.x += xVelocity;
-    }
-};
-
-window.addEventListener("keydown", ({ key }) => {
-    movePlayer(key, 8, true);
-});
-
-window.addEventListener("keyup", ({ key }) => {
-    movePlayer(key, 0, false);
-});
 
 // ======== start game ========
 const startGame = () => {
