@@ -194,6 +194,7 @@ const animate = () => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    // player
     player.update();
 
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
