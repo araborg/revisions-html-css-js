@@ -192,7 +192,7 @@ const checkpoints = checkpointPositions.map(
 const animateIt = () => {
     requestAnimationFrame(animateIt);
 
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // player
     // draws, changes player position and velocity
