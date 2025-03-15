@@ -58,7 +58,7 @@ class Player {
 
         // console.log(`canvas.height: ${canvas.height}`);
 
-        //          400          40               0                654
+        //          400          40         heighest value=13.5    654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             console.log(
                 "this is this.velocity.y before the if condition  " +
