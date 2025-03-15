@@ -225,7 +225,7 @@ const animate = () => {
     if (keys.leftKey.pressed) {
         console.log(player.position.x, player.width);
 
-        if (player.position.x <= player.width.x) {
+        if (player.position.x < player.width) {
             console.log("Here");
         }
     }
