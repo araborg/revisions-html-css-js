@@ -12,8 +12,10 @@ const ctx = canvas.getContext("2d");
 canvas.width = innerWidth; // 1366
 canvas.height = innerHeight; // 654
 
+// ds is responsible for bringing d player dw after each jump
 const gravity = 0.5;
 
+// ds records d status for the checkpoint collision detection
 let isCheckpointCollisionDetectionActive = true;
 
 const proportionalSize = (size) => {
