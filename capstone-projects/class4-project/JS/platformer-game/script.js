@@ -21,7 +21,6 @@ const proportionalSize = (size) => {
 };
 
 // Using innerHeight / canvas.height: @ 654
-
 // player: width:40, height:40
 class Player {
     constructor() {
@@ -84,6 +83,8 @@ class Player {
         }
     }
 }
+
+const player = new Player();
 
 // d steps/platforms
 class Platform {
@@ -159,8 +160,6 @@ class CheckPoint {
         this.claimed = true;
     }
 }
-
-const player = new Player();
 
 const checkpointPositions = [
     // { x: 1170, y: proportionalSize(80), z: 1 },
