@@ -233,10 +233,10 @@ class Player {
 
 
 Lesson 17:
-Below your velocity object, use the this keyword to set the 
+Below your velocity object, use the "this" keyword to set the 
 width property to proportionalSize(40).
 
-Below your width property, use the this keyword to set the 
+Below your width property, use the "this" keyword to set the 
 height property to proportionalSize(40).
 
 You are using the proportionalSize() function here to set 
