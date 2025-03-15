@@ -65,11 +65,6 @@ class Player {
 
                 //                  0.5
                 this.velocity.y = gravity;
-
-                console.log(
-                    "this is this.velocity.y inside d embedded if condition  " +
-                        this.velocity.y
-                );
             }
 
             this.velocity.y += gravity;
