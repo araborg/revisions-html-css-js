@@ -87,7 +87,7 @@ class Player {
 
 const player = new Player();
 
-// d steps/platforms
+// ======== steps/platforms ========
 class Platform {
     constructor(x, y) {
         this.position = {
