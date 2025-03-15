@@ -218,11 +218,12 @@ const animate = () => {
         }
     }
 
-    if (keys.leftKey.pressed) {
-        if (player.position.x - 2 < player.width) {
-            player.position.x = 0;
-        }
-    }
+    // Let's try for the left
+    // if (keys.leftKey.pressed) {
+    //     if (player.position.x - 2 < player.width) {
+    //         player.position.x = 0;
+    //     }
+    // }
 
     platforms.forEach((platform) => {
         const collisionDetectionRules = [
