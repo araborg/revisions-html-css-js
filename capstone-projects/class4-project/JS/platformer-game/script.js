@@ -226,6 +226,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
         player.velocity.x = 0;
         player.velocity.y = 0;
 
+        console.log(player.velocity.x, player.velocity.y);
+
         return;
     }
 
