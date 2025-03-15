@@ -156,6 +156,8 @@ player of the game.
 
 Start by creating a new class called Player.
 
+class Player {}
+
 
 Lesson 13:
 Inside your Player class, you will need to define the 
