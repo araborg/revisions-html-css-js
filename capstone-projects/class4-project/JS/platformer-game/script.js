@@ -370,6 +370,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 };
 
+// ======== start game ========
 const startGame = () => {
     canvas.style.display = "block";
     startScreen.style.display = "none";
