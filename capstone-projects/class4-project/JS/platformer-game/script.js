@@ -58,7 +58,6 @@ class Player {
 
         //          400          40               0                654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
-            console.log(this.position.y);
             if (this.position.y < 0) {
                 this.position.y = 0;
 
