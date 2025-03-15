@@ -147,11 +147,11 @@ const platformPositions = [
     { x: 2500, y: proportionalSize(450) },
     { x: 2900, y: proportionalSize(400) },
     { x: 3150, y: proportionalSize(350) },
+
     { x: 3900, y: proportionalSize(450) },
     { x: 4200, y: proportionalSize(400) },
-
-    // { x: 4400, y: proportionalSize(200) },
-    // { x: 4700, y: proportionalSize(150) },
+    { x: 4400, y: proportionalSize(200) },
+    { x: 4700, y: proportionalSize(150) },
 ];
 
 const platforms = platformPositions.map(
@@ -159,12 +159,9 @@ const platforms = platformPositions.map(
 );
 
 const checkpointPositions = [
-    { x: 1170, y: proportionalSize(80), z: 1 },
-
-    { x: 2900, y: proportionalSize(330), z: 2 },
-
-    { x: 4800, y: proportionalSize(80), z: 3 },
-
+    // { x: 1170, y: proportionalSize(80), z: 1 },
+    // { x: 2900, y: proportionalSize(330), z: 2 },
+    // { x: 4800, y: proportionalSize(80), z: 3 },
     // { x: 5200, y: proportionalSize(120), z: 3 },
 ];
 
