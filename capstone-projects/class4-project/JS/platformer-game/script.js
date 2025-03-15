@@ -132,6 +132,7 @@ const platforms = platformPositions.map(
 //     return platformNew;
 // });
 
+// check point
 class CheckPoint {
     constructor(x, y, z) {
         this.position = {
@@ -139,8 +140,8 @@ class CheckPoint {
             y,
         };
 
-        this.width = proportionalSize(40);
-        this.height = proportionalSize(70);
+        this.width = proportionalSize(40); // 40
+        this.height = proportionalSize(70); // 70
 
         this.claimed = false;
     }
