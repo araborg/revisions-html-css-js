@@ -21,7 +21,7 @@ const proportionalSize = (size) => {
     return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 };
 
-console.log(proportionalSize(400));
+// console.log(proportionalSize(400));
 
 // Using innerHeight / canvas.height: @ 654
 class Player {
