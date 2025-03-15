@@ -123,11 +123,13 @@ const platformPositions = [
 // );
 
 const platforms = platformPositions.map((platform) => {
-    new Platform(platform.x, platform.y);
+    // new Platform(platform.x, platform.y);
 
     const platformNew = new Platform(platform.x, platform.y);
 
     console.log(platformNew);
+
+    return platformNew;
 });
 
 // console.log(platformNew);
