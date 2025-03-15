@@ -380,6 +380,8 @@ const startGame = () => {
     animateIt();
 };
 
+startBtn.addEventListener("click", startGame);
+
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
 
@@ -391,8 +393,6 @@ const showCheckpointScreen = (msg) => {
         }, 2000);
     }
 };
-
-startBtn.addEventListener("click", startGame);
 
 window.addEventListener("keydown", ({ key }) => {
     movePlayer(key, 8, true);
