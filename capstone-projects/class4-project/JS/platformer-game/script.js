@@ -161,7 +161,7 @@ const showCheckpointScreen = (msg) => {
 
 // ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
-    // ds happens at the last platform
+    // ds happens at the last platform, wn ds is shown: "You reached the final checkpoint!"
     if (!isCheckpointCollisionDetectionActive) {
         player.velocity.x = 0;
         player.velocity.y = 0;
