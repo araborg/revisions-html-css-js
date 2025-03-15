@@ -192,11 +192,13 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
-// const checkpoints = checkpointPositions.map((checkpoint) => {
-//     new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z);
+/*
+const checkpoints = checkpointPositions.map((checkpoint) => {
+    new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z);
 
-//     console.log(new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
-// });
+    console.log(new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z));
+});
+*/
 
 // ======== keys: obj of objs ========
 const keys = {
