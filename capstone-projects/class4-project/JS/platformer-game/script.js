@@ -87,9 +87,11 @@ class Player {
         }
 
         // Let's try for the left
-        if (this.position.x < 0) {
+        if (this.position.x <= 0) {
             this.position.x = 0;
         }
+
+        console.log(this.position.x);
     }
 }
 
