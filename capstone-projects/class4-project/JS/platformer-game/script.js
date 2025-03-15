@@ -134,7 +134,7 @@ const platforms = platformPositions.map(
 
 // check point
 class CheckPoint {
-    constructor(x, y, z) {
+    constructor(x, y) {
         this.position = {
             x,
             y,
@@ -185,7 +185,7 @@ const checkpointPositions = [
 ];
 
 const checkpoints = checkpointPositions.map(
-    (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
+    (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y)
 );
 
 const animate = () => {
