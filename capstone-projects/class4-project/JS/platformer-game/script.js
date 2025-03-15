@@ -123,15 +123,17 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
+/*
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
-// const platforms = platformPositions.map((platform) => {
-//     const platformNew = new Platform(platform.x, platform.y);
+const platforms = platformPositions.map((platform) => {
+    const platformNew = new Platform(platform.x, platform.y);
 
-//     return platformNew;
-// });
+    return platformNew;
+});
+*/
 
 // ======== check point ========
 class CheckPoint {
@@ -255,7 +257,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
                 player.velocity.x = xVelocity;
             }
 
-            player.velocity.x -= xVelocity;
+            player.velocity.x += xVelocity;
     }
 };
 
