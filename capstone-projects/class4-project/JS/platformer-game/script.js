@@ -56,8 +56,6 @@ class Player {
         // ========               0
         this.position.y += this.velocity.y; // jumps up
 
-        // console.log(`canvas.height: ${canvas.height}`);
-
         // Increase d this.velocity.y
         //          400          40         heighest value = 14    654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
