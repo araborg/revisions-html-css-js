@@ -60,6 +60,11 @@ class Player {
 
         //          400          40               0                654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
+            console.log(
+                "this is this.velocity.y before the if condition  " +
+                    this.velocity.y
+            );
+
             if (this.position.y < 0) {
                 this.position.y = 0;
 
@@ -73,7 +78,7 @@ class Player {
             }
 
             this.velocity.y += gravity;
-            console.log(this.velocity.y);
+            // console.log(this.velocity.y);
 
             // if dse r greater than canvas.height: 654
         } else {
