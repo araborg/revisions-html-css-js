@@ -133,7 +133,7 @@ const platforms = platformPositions.map(
 //     return platformNew;
 // });
 
-// check point
+// ======== check point ========
 class CheckPoint {
     constructor(x, y, z) {
         this.position = {
@@ -190,6 +190,7 @@ const checkpoints = checkpointPositions.map(
     (checkpoint) => new CheckPoint(checkpoint.x, checkpoint.y, checkpoint.z)
 );
 
+// ======== keys ========
 const keys = {
     rightKey: {
         pressed: false,
