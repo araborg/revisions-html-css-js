@@ -27,8 +27,8 @@ console.log(proportionalSize(400));
 class Player {
     constructor() {
         this.position = {
-            x: proportionalSize(10), // 7
-            y: proportionalSize(400), // 280
+            x: proportionalSize(10), // 10
+            y: proportionalSize(400), // 400
         };
 
         this.velocity = {
