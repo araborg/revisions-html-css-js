@@ -85,6 +85,11 @@ class Player {
         if (this.position.x >= canvas.width - 2 * this.width) {
             this.position.x = canvas.width - 2 * this.width;
         }
+
+        // Let's try for the left
+        if (this.position.x < 0) {
+            this.position.x = 0;
+        }
     }
 }
 
