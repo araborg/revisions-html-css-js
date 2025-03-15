@@ -117,6 +117,8 @@ Use let to create a new variable called
 isCheckpointCollisionDetectionActive and assign it the 
 value of true.
 
+let isCheckpointCollisionDetectionActive = true;
+
 
 Lesson 10:
 As you are designing the game, you will need to make sure 
