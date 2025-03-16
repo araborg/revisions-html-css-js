@@ -145,16 +145,8 @@ const animateIt = () => {
         ) {
             // As the player moves to the left, the Platform moves away it.
             platforms.forEach((platform) => {
-                platform.position.x -= 5;
+                platform.position.x += 5;
             });
-
-            // platforms.forEach((platform) => {
-            //     if (player.position.x === player.width) {
-            //         platform.position.x += 200;
-            //     }
-
-            //     platform.position.x += 5;
-            // });
 
             checkpoints.forEach((checkpoint) => {
                 checkpoint.position.x += 5;
