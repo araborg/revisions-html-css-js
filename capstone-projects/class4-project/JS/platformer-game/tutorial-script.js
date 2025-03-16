@@ -918,6 +918,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
             }
     
             player.velocity.x -= xVelocity;
+
             break;
     }
 }
@@ -935,19 +936,31 @@ subtract 8 from player.velocity.y.
 
 To close out these cases, make sure to add a break statement.
 
-switch (key) {
-    case "ArrowLeft":
-        keys.leftKey.pressed = isPressed;
-        if (xVelocity === 0) {
-            player.velocity.x = xVelocity;
-        }
-        player.velocity.x -= xVelocity;
-        break;
-    case "ArrowUp":
-    case " ":
-    case "Spacebar": 
-        player.velocity.y -= 8;
-        break;
+const movePlayer = (key, xVelocity, isPressed) => {
+    if (!isCheckpointCollisionDetectionActive) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+        
+        return;
+    }
+
+    switch (key) {
+        case "ArrowLeft":
+            keys.leftKey.pressed = isPressed;
+            if (xVelocity === 0) {
+                player.velocity.x = xVelocity;
+            }
+            player.velocity.x -= xVelocity;
+    
+            break;
+    
+        case "ArrowUp":
+        case " ":
+        case "Spacebar": 
+            player.velocity.y -= 8;
+    
+            break;
+    }
 }
 
 
