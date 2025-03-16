@@ -1018,12 +1018,12 @@ responsible for calling the movePlayer function.
 Start by adding an addEventListener to the global window 
 object.
 
-For the arguments, pass in the keydown event and an arrow 
+For the arguments, pass in the "keydown" event and an arrow 
 function that uses the destructuring assignment to get the 
 key property from the event object in the event listener 
 parameter.
 
-window.addEventListener('keydown', ({key}) => { })
+window.addEventListener('keydown', ({ key }) => { })
 
 
 Lesson 60:
