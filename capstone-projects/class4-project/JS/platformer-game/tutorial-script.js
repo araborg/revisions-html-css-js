@@ -323,7 +323,7 @@ update() {
 
 Lesson 23:
 When the player moves to the right, you will need to adjust 
-its velocity.
+its velocity/position?.
 
 Use the addition assignment operator to add the velocity's x 
 coordinate to the player's x position.
