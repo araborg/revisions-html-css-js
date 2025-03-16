@@ -344,7 +344,7 @@ window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
 
-window.addEventListener("click", (event) => {
+window.addEventListener("mousenter", (event) => {
     console.log(event);
 });
 
