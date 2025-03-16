@@ -330,6 +330,7 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
+// this helps to populate the platforms array
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
