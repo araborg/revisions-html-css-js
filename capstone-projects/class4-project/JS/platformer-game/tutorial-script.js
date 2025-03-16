@@ -2167,10 +2167,9 @@ width multiplied by 0.9. This will ensure that the player is
 close enough to the checkpoint to claim it.
 
 The second rule should check if index is strictly equal to 0 
-or if the previous checkpoint(checkpoints[index - 1].claimed) 
-is true. This will ensure that the player can only claim the 
-first checkpoint or a checkpoint that has already been 
-claimed.
+or if the previous checkpoints[index - 1].claimed is true. 
+This will ensure that the player can only claim the first 
+checkpoint or a checkpoint that has already been claimed.
 
 checkpoints.forEach((checkpoint, index, checkpoints) => {
     const checkpointDetectionRules =[
