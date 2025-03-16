@@ -351,7 +351,7 @@ and position.
 update() {
     this.draw();
 
-    this.position.x += this.velocity.x; // moves right
+    this.position.x += this.velocity.x; 
     
     this.position.y += this.velocity.y;
 }
