@@ -129,6 +129,7 @@ const animateIt = () => {
     } else {
         player.velocity.x = 0;
 
+        // ============================
         if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
             platforms.forEach((platform) => {
                 platform.position.x -= 5;
@@ -149,6 +150,7 @@ const animateIt = () => {
                 checkpoint.position.x += 5;
             });
         }
+        // ============================
     }
 
     // ********* platforms *********
