@@ -149,7 +149,7 @@ const animateIt = () => {
 
             platforms.forEach((platform) => {
                 if (player.position.x === player.width) {
-                    platform.position.x = player.width;
+                    platform.position.x = 500;
                 }
 
                 platform.position.x += 5;
