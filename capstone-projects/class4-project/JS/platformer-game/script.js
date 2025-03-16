@@ -155,7 +155,7 @@ const animateIt = () => {
     player.update();
 
     /*
-        increase or decrease a player's velocity 
+        ds increase or decrease a player's velocity 
         based on if they move to the left or right
         of the screen.
     */

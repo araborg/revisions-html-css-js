@@ -741,8 +741,13 @@ Lesson 47:
 Inside the if statement, assign the number 5 to the player's 
 x velocity.
 
-player.velocity.x = 5;
-
+if (
+    keys.rightKey.pressed && 
+    player.position.x < proportionalSize(400)
+) {
+    player.velocity.x = 5;
+}
+    
 
 Lesson 48:
 Add an else if statement where the condition checks if the 
