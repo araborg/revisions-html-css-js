@@ -1966,8 +1966,8 @@ const showCheckpointScreen = (msg) => {}
 
 
 Lesson 106:
-Inside the showCheckpointScreen function, set the checkpointScreen 
-style.display property to "block".
+Inside the showCheckpointScreen function, set the 
+checkpointScreen style.display property to "block".
 
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
@@ -1975,7 +1975,8 @@ const showCheckpointScreen = (msg) => {
 
 
 Lesson 107:
-Set the checkpointMessage's textContent property to the msg parameter.
+Set the checkpointMessage's textContent property to the 
+msg parameter.
 
 checkpointMessage.textContent = msg;
 
