@@ -1043,15 +1043,15 @@ Add another addEventListener to the global window object
 and pass in the "keyup" event and use destructuring to 
 pass in the key property from the event.
 
-N.B: This help remove the keydown effect. Comment it out 
-to see this.
-
 window.addEventListener("keyup", ({ key }) => {});
 
 
 Lesson 62:
-Inside the callback function, call the movePlayer function and pass 
-in key, 0, and false as arguments.
+Inside the callback function, call the movePlayer function 
+and pass in key, 0, and false as arguments.
+
+N.B: This help remove the keydown effect. Comment it out 
+to see this.
 
 window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
