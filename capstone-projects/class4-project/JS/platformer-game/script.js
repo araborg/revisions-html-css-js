@@ -377,6 +377,7 @@ class CheckPoint {
         this.width = proportionalSize(40); // 40
         this.height = proportionalSize(70); // 70
 
+        // This is used to check if the player has reached the checkpoint.
         this.claimed = false;
     }
 
