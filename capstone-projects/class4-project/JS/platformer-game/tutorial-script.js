@@ -2254,7 +2254,7 @@ is equal to the length of the checkpoints array minus one.
 You should have an empty if statement with the condition 
 index === checkpoints.length - 1
 
-checkpoints.forEach((checkpoint, index, checkpoints) => {
+checkpoints.forEach((checkpoint, index, checkpoints) => { // checkpoints here rep z
     const checkpointDetectionRules =[
         player.position.x >= checkpoint.position.x,
 
@@ -2283,9 +2283,9 @@ Lesson 116:
 Inside the condition, you want to first set the 
 isCheckpointCollisionDetectionActive to false.
 
-Then you will need to call the showCheckpointScreen function and 
-pass in the string "You reached the final checkpoint!" as an 
-argument.
+Then you will need to call the showCheckpointScreen 
+function and pass in the string "You reached the final 
+checkpoint!" as an argument.
 
 Lastly, you will need to call the movePlayer function and pass 
 in the string "ArrowRight" as the first argument, the number 0 
