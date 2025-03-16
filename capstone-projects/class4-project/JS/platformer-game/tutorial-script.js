@@ -1300,7 +1300,8 @@ platform.y values passed in as arguments.
 
 N.B: platform.x and platform.y values are expected to 
 change dynamically while the this.width and this.height 
-are statically provided.
+are statically provided. The platform.draw() method is
+expected to make use of these values.
 
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
