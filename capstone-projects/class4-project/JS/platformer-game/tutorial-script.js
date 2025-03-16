@@ -1133,7 +1133,7 @@ class Platform {
 Lesson 67:
 Next, add a width property to the constructor and assign it 
 the number 200.
-Don't forget to use the this keyword to access the properties.
+Don't forget to use the "this" keyword to access the properties.
 
 class Platform {
     constructor(x, y) {
@@ -1152,7 +1152,7 @@ Below that, add a height property and assign it the number
 proportionalSize(40). You need to use the proportionalSize() 
 function to make sure the height is proportional to the screen 
 size.
-Remember to use the this keyword to access the properties.
+Remember to use the "this" keyword to access the properties.
 
 this.height = proportionalSize(40);
 
