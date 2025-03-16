@@ -55,6 +55,7 @@ class Player {
 
     // updates the player's position and velocity as it moves throughout the game
     update() {
+        // player is continually drawn on the screen as the game updates.
         this.draw();
 
         // ========               0
