@@ -287,19 +287,6 @@ const keys = {
     },
 };
 
-// ======== showCheckpointScreen ========
-const showCheckpointScreen = (msg) => {
-    checkpointScreen.style.display = "block";
-
-    checkpointMessage.textContent = msg;
-
-    if (isCheckpointCollisionDetectionActive) {
-        setTimeout(() => {
-            checkpointScreen.style.display = "none";
-        }, 2000);
-    }
-};
-
 // ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
     // ds happens at the last platform, wn ds is shown: "You reached the final checkpoint!"
@@ -345,6 +332,19 @@ window.addEventListener("keydown", ({ key }) => {
 window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
+
+// ======== showCheckpointScreen ========
+const showCheckpointScreen = (msg) => {
+    checkpointScreen.style.display = "block";
+
+    checkpointMessage.textContent = msg;
+
+    if (isCheckpointCollisionDetectionActive) {
+        setTimeout(() => {
+            checkpointScreen.style.display = "none";
+        }, 2000);
+    }
+};
 
 // ======== check point ========
 class CheckPoint {

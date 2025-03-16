@@ -800,6 +800,8 @@ responsible for moving the player across the screen.
 Create a new arrow function called movePlayer that has 
 three parameters called key, xVelocity, isPressed.
 
+const movePlayer = (key, xVelocity, isPressed) => {}
+
 
 Lesson 51:
 In the game, the player will interact with different checkpoints. 
