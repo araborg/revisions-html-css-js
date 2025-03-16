@@ -394,6 +394,7 @@ class CheckPoint {
 
         this.position.y = Infinity;
 
+        // d claimed ppty was changed inside d claim method
         this.claimed = true;
     }
 }
