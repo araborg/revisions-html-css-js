@@ -331,7 +331,11 @@ coordinate to the player's x position.
 Don't forget to include the this keyword for the velocity 
 and position.
 
-this.position.x += this.velocity.x;
+update() {
+    this.draw();
+
+    this.position.x += this.velocity.x; // moves right
+}
 
 
 Lesson 24:

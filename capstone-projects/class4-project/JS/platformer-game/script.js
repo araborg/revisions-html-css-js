@@ -58,7 +58,7 @@ class Player {
         // player is continually drawn on the screen as the game updates.
         this.draw();
 
-        // ========               0
+        // When the player moves to the right, you will need to adjust its velocity.
         this.position.x += this.velocity.x; // moves right
 
         // ========               0
