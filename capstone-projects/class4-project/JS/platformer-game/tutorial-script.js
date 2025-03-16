@@ -1122,7 +1122,10 @@ shorthand property syntax .
 
 class Platform {
     constructor(x, y) {
-        this.position = {x, y}
+        this.position = {
+            x, 
+            y
+        }
     }
 }
 
