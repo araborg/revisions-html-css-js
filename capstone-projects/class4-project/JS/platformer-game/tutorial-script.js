@@ -1368,11 +1368,17 @@ through the platforms array.
 Inside the loop, use the addition assignment operator to 
 add 5 to the platform's x position.
 
-if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
+if (
+    keys.rightKey.pressed && 
+    isCheckpointCollisionDetectionActive
+) {
     platforms.forEach((platform) => {
         platform.position.x -= 5;
     });
-} else if (keys.leftKey.pressed && isCheckpointCollisionDetectionActive) {
+} else if (
+    keys.leftKey.pressed && 
+    isCheckpointCollisionDetectionActive
+) {
     platforms.forEach((platform) => {
         platform.position.x += 5;
     });
