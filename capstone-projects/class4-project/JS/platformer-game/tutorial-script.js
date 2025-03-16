@@ -1766,9 +1766,10 @@ checkpoints.forEach(checkpoint => checkpoint.draw())
 
 
 Lesson 103:
-Inside your condition, add a forEach loop to iterate through the 
-checkpoints array. Use checkpoint as the parameter name for the 
-callback function.
+Inside your (else) condition (as the player moves the checkpts too 
+shd move), add a forEach loop to iterate through the checkpoints 
+array. Use checkpoint as the parameter name for the callback 
+function.
 
 Inside the loop, use the subtraction assignment operator to 
 subtract 5 from the checkpoints's x position.
