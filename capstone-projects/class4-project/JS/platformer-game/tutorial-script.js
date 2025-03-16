@@ -1104,19 +1104,21 @@ as the property name.
 
 // using shorthand property name syntax
 obj = {
-    a, b, c
+    a, 
+    b, 
+    c,
 }
 
 The following code is the same as:
 obj = {
     a: a,
     b: b,
-    c: c
+    c: c,
 }
 
-Inside the constructor, add this.position and assign it an object 
-with the x and y coordinates. Make sure to use the shorthand 
-property syntax .
+Inside the constructor, add this.position and assign it an 
+object with the x and y coordinates. Make sure to use the 
+shorthand property syntax .
 
 class Platform {
     constructor(x, y) {
