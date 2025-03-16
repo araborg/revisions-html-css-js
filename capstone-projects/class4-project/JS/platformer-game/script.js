@@ -331,9 +331,10 @@ window.addEventListener("keydown", ({ key }) => {
     movePlayer(key, 8, true);
 });
 
-// window.addEventListener("keyup", ({ key }) => {
-//     movePlayer(key, 0, false);
-// });
+// this help remove the keydown effect. Comment it out to see this.
+window.addEventListener("keyup", ({ key }) => {
+    movePlayer(key, 0, false);
+});
 
 // ======== showCheckpointScreen ========
 const showCheckpointScreen = (msg) => {
