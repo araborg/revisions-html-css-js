@@ -1622,10 +1622,10 @@ class CheckPoint {
 
 
 Lesson 97:
-Below the checkpoint's width and height properties, use the this 
-keyword to add a new claimed property and assign it the value of 
-false. This property will be used to check if the player has 
-reached the checkpoint.
+Below the checkpoint's width and height properties, use 
+the "this" keyword to add a new claimed property and assign 
+it the value of false. This property will be used to check 
+if the player has reached the checkpoint.
 
 this.claimed = false;
 
