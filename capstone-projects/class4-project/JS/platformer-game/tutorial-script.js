@@ -640,6 +640,7 @@ browser you wish to perform an animation. It requests
 the browser to call a user-supplied callback function 
 before the next repaint.
 
+requestAnimationFrame(parentFxn) 
 
 Inside the animate function, call the requestAnimationFrame() 
 API and pass animate as the argument.
