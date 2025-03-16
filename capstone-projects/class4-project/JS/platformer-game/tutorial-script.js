@@ -432,7 +432,25 @@ Lesson 28:
 Below the this.position.y = 0, assign gravity to the velocity's 
 y position.
 
-this.velocity.y = gravity;
+update() {
+    this.draw();
+
+    this.position.x += this.velocity.x; 
+    
+    this.position.y += this.velocity.y;
+
+    if (
+            this.position.y  + 
+            this.height + 
+            this.velocity.y <= canvas.height
+        ) {
+            if (this.position.y < 0) {
+                this.position.y = 0
+
+                this.velocity.y = gravity;
+            }
+        }
+}
 
 
 Lesson 29:
