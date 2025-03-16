@@ -49,7 +49,7 @@ class Player {
     draw() {
         ctx.fillStyle = "#99c9ff";
 
-        //                  10              400             20          20
+        // player's shape    10              400             20          20
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 
