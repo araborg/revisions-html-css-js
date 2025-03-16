@@ -922,7 +922,6 @@ const movePlayer = (key, xVelocity, isPressed) => {
     }
 }
 
-      
 
 Lesson 57:
 The player can jump up by using the up arrow key or the spacebar.
