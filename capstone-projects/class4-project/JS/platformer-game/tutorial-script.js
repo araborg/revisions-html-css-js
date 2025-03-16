@@ -1336,7 +1336,10 @@ Inside the animate function, add a condition to check
 if the right key was pressed and if the 
 isCheckpointCollisionDetectionActive is true.
 
-if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {}
+if (
+    keys.rightKey.pressed && 
+    isCheckpointCollisionDetectionActive
+) {}
 
 
 Lesson 79:
