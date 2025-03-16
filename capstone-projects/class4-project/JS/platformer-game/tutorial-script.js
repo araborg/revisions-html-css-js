@@ -898,6 +898,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
 Lesson 56:
 Below your if statement, use the subtraction assignment operator 
 to subtract the xVelocity from player.velocity.x.
+
 To close out this case, make sure to add a break statement.
 
 switch (key) {
