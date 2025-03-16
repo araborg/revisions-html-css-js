@@ -258,13 +258,6 @@ const animateIt = () => {
         }
     }
 
-    // Let's try for the left
-    // if (keys.leftKey.pressed) {
-    //     if (player.position.x - 2 < player.width) {
-    //         player.position.x = 0;
-    //     }
-    // }
-
     // platforms
     platforms.forEach((platform) => {
         platform.draw();
