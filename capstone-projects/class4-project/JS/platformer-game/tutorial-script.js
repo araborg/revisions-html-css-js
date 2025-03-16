@@ -761,9 +761,15 @@ the screen size.
 Inside the else if statement, assign the number -5 to the 
 player's x velocity.
 
-if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
+if (
+    keys.rightKey.pressed && 
+    player.position.x < proportionalSize(400)
+) {
     player.velocity.x = 5;
-}else if(keys.leftKey.pressed && player.position.x >  proportionalSize(100)) {
+} else if(
+        keys.leftKey.pressed &&
+        player.position.x > proportionalSize(100) // 70
+) {
     player.velocity.x = -5;
 }
 
