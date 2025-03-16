@@ -1272,7 +1272,7 @@ const platformPositions = [
     { x: 2500, y: proportionalSize(450) },
     { x: 2900, y: proportionalSize(400) },
     { x: 3150, y: proportionalSize(350) },
-     
+
     { x: 3900, y: proportionalSize(450) },
     { x: 4200, y: proportionalSize(400) },
     { x: 4400, y: proportionalSize(200) },
@@ -1281,20 +1281,22 @@ const platformPositions = [
 
 
 Lesson 75:
-The next step is to create a list of new platform instances 
-using the Platform class. You will later reference this list 
-to draw the platforms on the canvas.
+The next step is to create a list of new platform 
+instances using the Platform class. You will later 
+reference this list to draw the platforms on the 
+canvas.
 
-Start by creating a new const variable called platforms and 
-assign it platformPositions.map().
+Start by creating a new const variable called 
+platforms and assign it platformPositions.map().
 
 const platforms = platformPositions.map();
 
 
 Lesson 76:
-In the map callback function, pass in platform for the parameter 
-and implicitly return the creation of a new Platform instance 
-with the platform.x and platform.y values passed in as arguments.
+In the map callback function, pass in platform for 
+the parameter and implicitly return the creation of 
+a new Platform instance with the platform.x and 
+platform.y values passed in as arguments.
 
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
