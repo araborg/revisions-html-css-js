@@ -2218,19 +2218,38 @@ checkpoints.forEach((checkpoint, index, checkpoints) => {
 
 
 Lesson 114:
-Inside the if statement, call the claim method on the checkpoint object.
+Inside the if statement, call the claim method on the 
+checkpoint object.
 
-if (checkpointDetectionRules.every((rule) => rule)) {
-    checkpoint.claim();
-};
+checkpoints.forEach((checkpoint, index, checkpoints) => {
+    const checkpointDetectionRules =[
+        player.position.x >= checkpoint.position.x,
+
+        player.position.y >= checkpoint.position.y,
+
+        player.position.y + player.height <= 
+            checkpoint.position.y + checkpoint.height,
+
+        isCheckpointCollisionDetectionActive
+
+        player.position.x - player.width <= 
+            checkpoint.position.x - checkpoint.width + player.width * 0.9,
+        
+        index === 0 || checkpoints[index - 1].claimed === true,
+    ]
+        
+    if (checkpointDetectionRules.every((rule) => rule)) {
+        checkpoint.claim();
+    };
+});
 
 
 Lesson 115:
-The next step is to write a condition that checks if the player has 
-reached the last checkpoint.
+The next step is to write a condition that checks if the 
+player has reached the last checkpoint.
 
-Start by adding an if statement that checks if the index is equal 
-to the length of the checkpoints array minus one.
+Start by adding an if statement that checks if the index 
+is equal to the length of the checkpoints array minus one.
 
 You should have an empty if statement with the condition 
 index === checkpoints.length - 1
