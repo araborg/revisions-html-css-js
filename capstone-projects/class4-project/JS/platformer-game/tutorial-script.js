@@ -1298,6 +1298,10 @@ the parameter and implicitly return the creation of
 a new Platform instance with the platform.x and 
 platform.y values passed in as arguments.
 
+N.B: platform.x and platform.y values are expected to 
+change dynamically while the this.width and this.height 
+are statically provided.
+
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
