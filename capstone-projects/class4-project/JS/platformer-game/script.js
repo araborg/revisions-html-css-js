@@ -328,7 +328,6 @@ const movePlayer = (key, xVelocity, isPressed) => {
 };
 
 window.addEventListener("keydown", ({ key }) => {
-    console.log(key);
     movePlayer(key, 8, true);
 });
 
