@@ -1349,7 +1349,10 @@ the platforms array.
 Inside the loop, use the subtraction assignment operator to 
 subtract 5 from the platform's x position.
 
-if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
+if (
+    keys.rightKey.pressed && 
+    isCheckpointCollisionDetectionActive
+) {
     platforms.forEach(platform => { platform.position.x -= 5 })
 }
 
