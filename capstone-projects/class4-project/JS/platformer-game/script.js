@@ -150,7 +150,7 @@ const animateIt = () => {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // player
+    // ********* player *********
     // update the player's position as it moves throughout the game
     player.update();
 
