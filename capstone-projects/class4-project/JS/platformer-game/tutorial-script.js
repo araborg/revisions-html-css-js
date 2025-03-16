@@ -376,10 +376,10 @@ update() {
     this.position.y += this.velocity.y;
 
     if (
-            this.position.y  + 
-            this.height + 
-            this.velocity.y <= canvas.height
-        ) {}
+        this.position.y  + 
+        this.height + 
+        this.velocity.y <= canvas.height
+    ) {}
 }
 
 
@@ -396,12 +396,12 @@ update() {
     this.position.y += this.velocity.y;
 
     if (
-            this.position.y  + 
-            this.height + 
-            this.velocity.y <= canvas.height
-        ) {
-            if (this.position.y < 0) {}
-        }
+        this.position.y  + 
+        this.height + 
+        this.velocity.y <= canvas.height
+    ) {
+        if (this.position.y < 0) {}
+    }
 }
 
 
@@ -417,14 +417,14 @@ update() {
     this.position.y += this.velocity.y;
 
     if (
-            this.position.y  + 
-            this.height + 
-            this.velocity.y <= canvas.height
-        ) {
-            if (this.position.y < 0) {
-                this.position.y = 0
-            }
+        this.position.y  + 
+        this.height + 
+        this.velocity.y <= canvas.height
+    ) {
+        if (this.position.y < 0) {
+            this.position.y = 0
         }
+    }
 }
 
 
@@ -440,16 +440,16 @@ update() {
     this.position.y += this.velocity.y;
 
     if (
-            this.position.y  + 
-            this.height + 
-            this.velocity.y <= canvas.height
-        ) {
-            if (this.position.y < 0) {
-                this.position.y = 0
+        this.position.y  + 
+        this.height + 
+        this.velocity.y <= canvas.height
+    ) {
+        if (this.position.y < 0) {
+            this.position.y = 0
 
-                this.velocity.y = gravity;
-            }
+            this.velocity.y = gravity;
         }
+    }
 }
 
 
@@ -465,18 +465,18 @@ update() {
     this.position.y += this.velocity.y;
 
     if (
-            this.position.y  + 
-            this.height + 
-            this.velocity.y <= canvas.height
-        ) {
-            if (this.position.y < 0) {
-                this.position.y = 0
+        this.position.y  + 
+        this.height + 
+        this.velocity.y <= canvas.height
+    ) {
+        if (this.position.y < 0) {
+            this.position.y = 0
 
-                this.velocity.y = gravity;
-            }
-
-            this.velocity.y += gravity;
+            this.velocity.y = gravity;
         }
+
+        this.velocity.y += gravity;
+    }
 }
 
 
