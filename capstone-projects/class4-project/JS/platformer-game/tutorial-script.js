@@ -1432,9 +1432,9 @@ platforms.forEach((platform) => {
 
 
 Lesson 84:
-Below that boolean expression, add another boolean expression that 
-checks if the player's x position is greater than or equal to the 
-platform's x position minus half of the player's width.
+Below that boolean expression, add another boolean 
+expression that checks if the player's x position is 
+greater than or equal to the platform's x position minus half of the player's width.
 
 player.position.x >= platform.position.x - player.width / 2,
 
