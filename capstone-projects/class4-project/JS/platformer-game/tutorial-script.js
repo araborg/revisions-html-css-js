@@ -1012,8 +1012,8 @@ const movePlayer = (key, xVelocity, isPressed) => {
 
 
 Lesson 59:
-Now it is time to add the event listeners that will be responsible 
-for calling the movePlayer function.
+Now it is time to add the event listeners that will be 
+responsible for calling the movePlayer function.
 
 Start by adding an addEventListener to the global window object.
 
