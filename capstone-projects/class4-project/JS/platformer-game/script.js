@@ -212,6 +212,7 @@ const animateIt = () => {
     });
 
     // ********* checkpoints *********
+    // draws each of the checkpoints onto the canvas.
     checkpoints.forEach((checkpoint) => {
         checkpoint.draw();
     });
