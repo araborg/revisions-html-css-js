@@ -731,7 +731,10 @@ Remember that the "this" keyword should not be used here
 because that is only for the Player class and not for the 
 player object.
 
-if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {}
+if (
+    keys.rightKey.pressed && 
+    player.position.x < proportionalSize(400)
+) {}
 
 
 Lesson 47:
