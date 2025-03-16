@@ -663,6 +663,7 @@ canvas.height as the arguments.
 
 const animate = () => {
     requestAnimationFrame(animate);
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -671,7 +672,8 @@ Lesson 43:
 The next step is to update the player's position as it moves 
 throughout the game.
 
-Below your ctx.clearRect(), call the update() method on the player.
+Below your ctx.clearRect(), call the update() method on the 
+player.
 
 player.update();
 

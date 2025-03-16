@@ -221,7 +221,7 @@ const animateIt = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     // player
-    // draws platform, changes player position and velocity
+    // update the player's position as it moves throughout the game
     player.update();
 
     // Using innerHeight / canvas.height: @ 654 and innerWidth @ 1366
