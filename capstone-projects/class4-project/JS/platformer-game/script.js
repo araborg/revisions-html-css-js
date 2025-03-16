@@ -154,6 +154,11 @@ const animateIt = () => {
     // update the player's position as it moves throughout the game
     player.update();
 
+    /*
+        increase or decrease a player's velocity 
+        based on if they move to the left or right
+        of the screen.
+    */
     // Using innerHeight / canvas.height: @ 654 and innerWidth @ 1366
     if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {
         //280
