@@ -635,6 +635,12 @@ animate function will be responsible for updating the
 player's position and continually drawing it on the 
 canvas.
 
+The window.requestAnimationFrame() method tells the 
+browser you wish to perform an animation. It requests 
+the browser to call a user-supplied callback function 
+before the next repaint.
+
+
 Inside the animate function, call the requestAnimationFrame() 
 API and pass animate as the argument.
 
