@@ -340,7 +340,7 @@ update() {
 
 Lesson 24:
 When the player jumps up, you will need to add the logic 
-for adjusting its velocity.
+for adjusting its velocity/position.
 
 Use the addition assignment operator to add the velocity's 
 y coordinate to the player's y position.

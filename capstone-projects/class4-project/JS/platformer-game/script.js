@@ -58,11 +58,11 @@ class Player {
         // player is continually drawn on the screen as the game updates.
         this.draw();
 
-        // When the player moves to the right, you will need to adjust its velocity/position.
-        this.position.x += this.velocity.x; // moves right
+        // When the player moves to the right, you will need to adjust its velocity/position?
+        this.position.x += this.velocity.x;
 
-        // ========               0
-        this.position.y += this.velocity.y; // jumps up
+        // When the player jumps up, you will need to add the logic for adjusting its velocity/position?
+        this.position.y += this.velocity.y;
 
         // Increase d this.velocity.y
         //          400          40         heighest value = 14    654
