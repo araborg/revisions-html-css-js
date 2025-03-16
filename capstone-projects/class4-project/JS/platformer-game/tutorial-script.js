@@ -1484,14 +1484,14 @@ the player's y velocity followed by a return statement.
 
 if (collisionDetectionRules.every(rule => rule)) {
     player.velocity.y = 0;
-    
+
     return;
 }
 
 
 Lesson 87:
-Create a new const variable called platformDetectionRules and 
-assign it an empty array.
+Create a new const variable called platformDetectionRules 
+and assign it an empty array.
 
 
 Lesson 88:
