@@ -1980,7 +1980,7 @@ msg parameter.
 
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
-    
+
     checkpointMessage.textContent = msg;
 };
 
@@ -1995,9 +1995,17 @@ function and a delay of 2000 milliseconds.
 For the callback function, it should set the checkpointScreen 
 style.display property to "none".
 
-if (isCheckpointCollisionDetectionActive) {
-    setTimeout(() => {checkpointScreen.style.display = "none"}, 2000)
-}
+const showCheckpointScreen = (msg) => {
+    checkpointScreen.style.display = "block";
+    
+    checkpointMessage.textContent = msg;
+
+    if (isCheckpointCollisionDetectionActive) {
+        setTimeout(
+            () => {checkpointScreen.style.display = "none"}, 2000
+        )
+    }
+};
 
 
 Lesson 109:
