@@ -1643,20 +1643,36 @@ class CheckPoint {
 
 
 Lesson 98:
-Now you need to create a draw method for the CheckPoint class.
+Now you need to create a draw method for the CheckPoint 
+class.
 
-Inside the draw method, add a fillStyle property to the ctx object 
-and set it to "#f1be32".
+Inside the draw method, add a fillStyle property to the 
+ctx object and set it to "#f1be32".
 
-Below the fillStyle property, use the fillRect method on the ctx 
-object and pass in the x, y, width, and height properties as 
-arguments.
+Below the fillStyle property, use the fillRect method on 
+the ctx object and pass in the x, y, width, and height 
+properties as arguments.
 
-Don't forget the this keyword.
+Don't forget the "this" keyword.
 
-draw(){
-    ctx.fillStyle = "#f1be32";
-    ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
+class CheckPoint {
+    constructor(x, y, z) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = proportionalSize(40); // 40
+        this.height = proportionalSize(70); // 70
+        
+        this.claimed = false;
+    }
+        
+    draw(){
+        ctx.fillStyle = "#f1be32";
+    
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
+    }
 }
 
 
