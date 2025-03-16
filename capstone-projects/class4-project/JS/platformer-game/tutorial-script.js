@@ -406,7 +406,8 @@ update() {
 
 
 Lesson 27:
-Inside the inner if statement, assign 0 to the player's y position.
+Inside the inner if statement, assign 0 to the player's 
+y position.
 
 this.position.y = 0
 
