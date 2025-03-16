@@ -408,8 +408,9 @@ const checkpoints = checkpointPositions.map((checkpoint) => {
 
 // ======== start game ========
 const startGame = () => {
-    canvas.style.display = "block";
     startScreen.style.display = "none";
+
+    canvas.style.display = "block";
 
     // player.draw();
 
