@@ -130,8 +130,8 @@ const animateIt = () => {
         player.velocity.x = 0;
 
         // ============================
-        // As the player moves to the right, the Platform moves with it.
         if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
+            // As the player moves to the right, the Platform moves with it.
             platforms.forEach((platform) => {
                 platform.position.x -= 5;
             });
@@ -143,17 +143,18 @@ const animateIt = () => {
             keys.leftKey.pressed &&
             isCheckpointCollisionDetectionActive
         ) {
+            // As the player moves to the left, the Platform moves away it.
+            platforms.forEach((platform) => {
+                platform.position.x -= 5;
+            });
+
             // platforms.forEach((platform) => {
+            //     if (player.position.x === player.width) {
+            //         platform.position.x += 200;
+            //     }
+
             //     platform.position.x += 5;
             // });
-
-            platforms.forEach((platform) => {
-                if (player.position.x === player.width) {
-                    platform.position.x = 500;
-                }
-
-                platform.position.x += 5;
-            });
 
             checkpoints.forEach((checkpoint) => {
                 checkpoint.position.x += 5;
