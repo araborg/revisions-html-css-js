@@ -553,7 +553,9 @@ to this.position.x.
 This will ensure that the player's x position will never exceed 
 the right edge of the canvas.
 
-this.position.x = canvas.width - 2 * this.width
+if (this.position.x >= canvas.width - 2 * this.width) {
+    this.position.x = canvas.width - 2 * this.width
+}
 
 
 Lesson 35:
