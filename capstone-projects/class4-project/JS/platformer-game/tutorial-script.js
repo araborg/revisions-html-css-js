@@ -855,7 +855,19 @@ The first case you will want to add is when the left arrow
 key is pressed.
 Inside the switch statement, add a new case called "ArrowLeft".
 
-case "ArrowLeft": 
+const movePlayer = (key, xVelocity, isPressed) => {
+    if (!isCheckpointCollisionDetectionActive) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+        
+        return;
+    }
+
+    switch(key) {
+        case "ArrowLeft": 
+    
+    }
+}
 
 
 Lesson 55:
