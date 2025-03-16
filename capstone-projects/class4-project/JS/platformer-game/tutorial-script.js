@@ -2287,16 +2287,40 @@ Then you will need to call the showCheckpointScreen
 function and pass in the string "You reached the final 
 checkpoint!" as an argument.
 
-Lastly, you will need to call the movePlayer function and pass 
-in the string "ArrowRight" as the first argument, the number 0 
-as the second argument, and the boolean false as the third 
-argument.
+Lastly, you will need to call the movePlayer function 
+and pass in the string "ArrowRight" as the first argument, 
+the number 0 as the second argument, and the boolean false 
+as the third argument.
 
-if (index === checkpoints.length - 1) {
-    isCheckpointCollisionDetectionActive = false;
-    showCheckpointScreen("You reached the final checkpoint!");
-    movePlayer("ArrowRight", 0, false);
-};
+checkpoints.forEach((checkpoint, index, checkpoints) => { // checkpoints here rep z
+    const checkpointDetectionRules =[
+        player.position.x >= checkpoint.position.x,
+
+        player.position.y >= checkpoint.position.y,
+
+        player.position.y + player.height <= 
+            checkpoint.position.y + checkpoint.height,
+
+        isCheckpointCollisionDetectionActive
+
+        player.position.x - player.width <= 
+            checkpoint.position.x - checkpoint.width + player.width * 0.9,
+        
+        index === 0 || checkpoints[index - 1].claimed === true,
+    ]
+        
+    if (checkpointDetectionRules.every((rule) => rule)) {
+        checkpoint.claim();
+    };
+
+    if (index === checkpoints.length - 1) {
+        isCheckpointCollisionDetectionActive = false;
+
+        showCheckpointScreen("You reached the final checkpoint!");
+
+        movePlayer("ArrowRight", 0, false);
+    }
+});
 
 
 Lesson 117:
