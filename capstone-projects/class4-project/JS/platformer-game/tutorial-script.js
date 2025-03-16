@@ -1332,9 +1332,9 @@ moves to the right, the platform does not move with it.
 To fix this issue, you will need to update the platform's 
 x position as the player moves across the screen.
 
-Inside the animate function, add a condition to check 
-if the right key was pressed and if the 
-isCheckpointCollisionDetectionActive is true.
+Inside the animate function, add a condition (inside the 
+else block) to check if the right key was pressed and if 
+the isCheckpointCollisionDetectionActive is true.
 
 if (
     keys.rightKey.pressed && 
@@ -1343,8 +1343,8 @@ if (
 
 
 Lesson 79:
-Inside your condition, add a forEach loop to iterate through the 
-platforms array.
+Inside your condition, add a forEach loop to iterate through 
+the platforms array.
 
 Inside the loop, use the subtraction assignment operator to 
 subtract 5 from the platform's x position.
