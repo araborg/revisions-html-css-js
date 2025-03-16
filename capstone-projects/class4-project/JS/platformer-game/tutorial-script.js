@@ -294,7 +294,7 @@ this.position.y, this.width and this.height values.
 
 draw() {
     ctx.fillStyle = "#99c9ff";
-    
+
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
 }
 

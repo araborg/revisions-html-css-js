@@ -53,6 +53,7 @@ class Player {
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     }
 
+    // updates the player's position and velocity as it moves throughout the game
     update() {
         this.draw();
 
