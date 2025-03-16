@@ -2292,7 +2292,7 @@ and pass in the string "ArrowRight" as the first argument,
 the number 0 as the second argument, and the boolean false 
 as the third argument.
 
-checkpoints.forEach((checkpoint, index, checkpoints) => { // checkpoints here rep z
+checkpoints.forEach((checkpoint, index, checkpoints) => { 
     const checkpointDetectionRules =[
         player.position.x >= checkpoint.position.x,
 
@@ -2324,21 +2324,51 @@ checkpoints.forEach((checkpoint, index, checkpoints) => { // checkpoints here re
 
 
 Lesson 117:
-The last thing you will need to do is add an else if statement.
+The last thing you will need to do is add an else if 
+statement.
 
-Your condition should check if the player's x position is greater 
-than or equal to the checkpoint's x position and less than or equal 
-to the checkpoint's x position plus 40.
+Your condition should check if the player's x position 
+is greater than or equal to the checkpoint's x position 
+and less than or equal to the checkpoint's x position 
+plus 40.
 
-Inside the body of the else if statement, you will need to call 
-the showCheckpointScreen function and pass in the string "You 
-reached a checkpoint!" as an argument.
+Inside the body of the else if statement, you will need 
+to call the showCheckpointScreen function and pass in the 
+string "You reached a checkpoint!" as an argument.
 
-if (index === checkpoints.length - 1) {
-    isCheckpointCollisionDetectionActive = false;
-    showCheckpointScreen("You reached the final checkpoint!");
-    movePlayer("ArrowRight", 0, false);
-}else if (player.position.x >= checkpoint.position.x && player.position.x <= checkpoint.position.x + 40) {
-    showCheckpointScreen("You reached a checkpoint!");
-}
+checkpoints.forEach((checkpoint, index, checkpoints) => { // checkpoints here rep z
+    const checkpointDetectionRules =[
+        player.position.x >= checkpoint.position.x,
+
+        player.position.y >= checkpoint.position.y,
+
+        player.position.y + player.height <= 
+            checkpoint.position.y + checkpoint.height,
+
+        isCheckpointCollisionDetectionActive
+
+        player.position.x - player.width <= 
+            checkpoint.position.x - checkpoint.width + player.width * 0.9,
+        
+        index === 0 || checkpoints[index - 1].claimed === true,
+    ]
+        
+    if (checkpointDetectionRules.every((rule) => rule)) {
+        checkpoint.claim();
+    };
+
+    if (index === checkpoints.length - 1) {
+        isCheckpointCollisionDetectionActive = false;
+
+        showCheckpointScreen("You reached the final checkpoint!");
+
+        movePlayer("ArrowRight", 0, false);
+    } else if (
+        player.position.x >= checkpoint.position.x && 
+        player.position.x <= checkpoint.position.x + 40
+    ) {
+        showCheckpointScreen("You reached a checkpoint!");
+    }
+});
+
 */
