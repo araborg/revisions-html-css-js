@@ -1493,6 +1493,8 @@ Lesson 87:
 Create a new const variable called platformDetectionRules 
 and assign it an empty array.
 
+const platformDetectionRules = []
+
 
 Lesson 88:
 Inside that array, add a boolean expression that checks if 
