@@ -691,6 +691,8 @@ monitor when the left and right arrow keys are pressed.
 Create a new const variable called keys and assign it an empty 
 object.
 
+const keys = {}
+
 
 Lesson 45:
 Inside the keys object, add a new key called rightKey and assign 
