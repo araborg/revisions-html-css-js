@@ -331,8 +331,8 @@ window.addEventListener("keydown", ({ key }) => {
     movePlayer(key, 8, true);
 });
 
-// this help remove the keydown effect. Comment it out to see this.
 window.addEventListener("keyup", ({ key }) => {
+    // this help remove the keydown effect. Comment it out to see this.
     movePlayer(key, 0, false);
 });
 

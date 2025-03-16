@@ -1050,8 +1050,9 @@ Lesson 62:
 Inside the callback function, call the movePlayer function 
 and pass in key, 0, and false as arguments.
 
-N.B: This help remove the keydown effect. Comment it out 
-to see this.
+N.B: This (movePlayer(key, 0, false);) help remove the keydown 
+effect. Comment it out to see this. False here stops the true
+effect.
 
 window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
@@ -1059,11 +1060,15 @@ window.addEventListener("keyup", ({ key }) => {
 
 
 Lesson 63:
-Before you can start moving your player across the screen, you will need to use the animate function.
+Before you can start moving your player across the screen, 
+you will need to use the animate function.
 
-Inside the startGame function, delete player.draw() and call the animate function.
+Inside the startGame function, delete player.draw() and call 
+the animate function.
 
-Click the Start Game button and use the left and right arrow keys to move the player across the screen. You can also use the spacebar or the up arrow key to jump up.
+Click the Start Game button and use the left and right arrow 
+keys to move the player across the screen. You can also use 
+the spacebar or the up arrow key to jump up.
 
 const startGame = () => {
     canvas.style.display = "block";
