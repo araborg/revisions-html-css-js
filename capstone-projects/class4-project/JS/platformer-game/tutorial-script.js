@@ -838,7 +838,16 @@ Lesson 53:
 Below the if statement, create a switch statement with a 
 value of key.
 
-switch(key) {}
+const movePlayer = (key, xVelocity, isPressed) => {
+    if (!isCheckpointCollisionDetectionActive) {
+        player.velocity.x = 0;
+        player.velocity.y = 0;
+        
+        return;
+    }
+
+    switch(key) {}
+}
 
 
 Lesson 54:
