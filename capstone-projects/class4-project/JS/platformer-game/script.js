@@ -64,7 +64,7 @@ class Player {
         // When the player jumps up, you will need to add the logic for adjusting its velocity/position?
         this.position.y += this.velocity.y;
 
-        // Increase d this.velocity.y
+        // When the player jumps up, it is possible for it to move past the height of the canvas
         //          400          40         heighest value = 14    654
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
