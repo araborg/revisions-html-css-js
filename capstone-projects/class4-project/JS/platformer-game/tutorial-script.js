@@ -1555,7 +1555,8 @@ if (platformDetectionRules.every(rule => rule)){}
 
 Lesson 92:
 Inside the body of the if statement, assign 
-platform.position.y + player.height to the player's y position.
+platform.position.y + player.height to the player's y 
+position.
 
 Then, assign gravity to the player's y velocity.
 
@@ -1564,16 +1565,19 @@ underneath the platform and collide with it.
 
 if (platformDetectionRules.every(rule => rule)) {
     player.position.y = platform.position.y + player.height;
+
     player.velocity.y = gravity;
 };
 
 
 Lesson 93:
-The last portion of the project is to add the logic for the 
-checkpoints. When a player collides with a checkpoint, the 
-checkpoint screen should appear.
+The last portion of the project is to add the logic for 
+the checkpoints. When a player collides with a checkpoint, 
+the checkpoint screen should appear.
 
 Start by creating a new class called CheckPoint.
+
+class CheckPoint {}
 
 
 Lesson 94:
