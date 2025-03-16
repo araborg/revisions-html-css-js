@@ -290,6 +290,8 @@ const keys = {
 // ======== move player ========
 const movePlayer = (key, xVelocity, isPressed) => {
     // ds happens at the last platform, wn ds is shown: "You reached the final checkpoint!"
+
+    // If the isCheckpointCollisionDetectionActive is false, stop the player's movements on the x and y axes.
     if (!isCheckpointCollisionDetectionActive) {
         player.velocity.x = 0;
         player.velocity.y = 0;
