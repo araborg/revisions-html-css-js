@@ -1592,7 +1592,7 @@ class CheckPoint {
 Lesson 95:
 Inside the constructor, create an object with x and y parameters 
 and assign it to the position.
-Remember to use the this keyword to access the properties.
+Remember to use the "this" keyword to access the properties.
 
 You should have a this.position property.
 
@@ -1604,12 +1604,21 @@ class CheckPoint {
 
 
 Lesson 96:
-The next step is to add the width and height to the CheckPoint class.
-The width and height should be proportionalSize(40) and 
+The next step is to add the width and height to the CheckPoint 
+class. The width and height should be proportionalSize(40) and 
 proportionalSize(70) respectively.
 
-this.width = proportionalSize(40);
-this.height = proportionalSize(70);
+class CheckPoint {
+    constructor(x, y, z) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = proportionalSize(40); // 40
+        this.height = proportionalSize(70); // 70
+    }
+}
 
 
 Lesson 97:
