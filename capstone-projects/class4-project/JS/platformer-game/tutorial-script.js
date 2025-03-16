@@ -513,8 +513,10 @@ The final condition you need to add inside the Player class is
 to ensure that the player stays within the boundaries of the 
 canvas screen and doesn't move too far off to the left.
 
-That is, if the player decides to move far left outside of the 
-canvas and it position bcoms lesser than the player's width.
+That is, if the player decides to move far left outside of 
+the canvas and it position bcoms lesser than the player's 
+width. The condition will ensure it starting pt is the 
+player's width (of 40)
 
 Create an if statement, to check if the player's x position 
 is less than the width (of the player).
