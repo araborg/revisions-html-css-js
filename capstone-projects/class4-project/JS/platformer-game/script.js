@@ -237,7 +237,7 @@ const animateIt = () => {
         if (checkpointDetectionRules.every((rule) => rule)) {
             checkpoint.claim();
 
-            console.log(index);
+            console.log(index, checkpoints[index - 1]);
 
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
