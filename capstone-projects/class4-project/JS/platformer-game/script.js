@@ -344,10 +344,6 @@ window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
 
-window.addEventListener("mousenter", (event) => {
-    console.log(event);
-});
-
 // ======== showCheckpointScreen ========
 const showCheckpointScreen = (msg) => {
     checkpointScreen.style.display = "block";
