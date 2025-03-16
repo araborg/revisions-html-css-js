@@ -130,6 +130,7 @@ const animateIt = () => {
         player.velocity.x = 0;
 
         // ============================
+        // As the player moves to the right, the Platform moves with it.
         if (keys.rightKey.pressed && isCheckpointCollisionDetectionActive) {
             platforms.forEach((platform) => {
                 platform.position.x -= 5;
