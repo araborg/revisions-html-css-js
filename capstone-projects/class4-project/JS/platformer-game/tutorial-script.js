@@ -1043,6 +1043,9 @@ Add another addEventListener to the global window object
 and pass in the "keyup" event and use destructuring to 
 pass in the key property from the event.
 
+N.B: This help remove the keydown effect. Comment it out 
+to see this.
+
 window.addEventListener("keyup", ({ key }) => {});
 
 
