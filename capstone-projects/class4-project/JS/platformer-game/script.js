@@ -84,6 +84,9 @@ class Player {
         //       10+40            40
         if (this.position.x < this.width) {
             this.position.x = this.width;
+
+            console.log(this.position.x);
+            console.log(this.width);
         }
 
         // This ensures the player does not accidentally go off screen to the right
