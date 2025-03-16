@@ -727,8 +727,9 @@ You need to use the proportionalSize function here to make
 sure the player's x position is always proportional to the 
 screen size.
 
-Remember that the this keyword should not be used here because 
-that is only for the Player class and not for the player object.
+Remember that the "this" keyword should not be used here 
+because that is only for the Player class and not for the 
+player object.
 
 if (keys.rightKey.pressed && player.position.x < proportionalSize(400)) {}
 
