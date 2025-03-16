@@ -294,7 +294,7 @@ window.addEventListener("keyup", ({ key }) => {
     movePlayer(key, 0, false);
 });
 
-// ======== steps/platforms ========
+// ======== platforms ========
 class Platform {
     constructor(x, y) {
         this.position = {
