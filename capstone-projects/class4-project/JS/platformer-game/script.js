@@ -324,15 +324,6 @@ const movePlayer = (key, xVelocity, isPressed) => {
             }
 
             player.velocity.x += xVelocity;
-
-        // case "ArrowRight":
-        //     keys.rightKey.pressed = isPressed;
-
-        //     if (xVelocity === 0) {
-        //         player.velocity.x = xVelocity;
-        //     }
-
-        //     player.velocity.x += xVelocity;
     }
 };
 
