@@ -96,46 +96,6 @@ class Player {
 
 const player = new Player();
 
-// ======== steps/platforms ========
-class Platform {
-    constructor(x, y) {
-        this.position = {
-            x,
-            y,
-        };
-
-        this.width = 200;
-        this.height = proportionalSize(40); // 40
-    }
-
-    draw() {
-        ctx.fillStyle = "#acd157";
-
-        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
-    }
-}
-
-const platformPositions = [
-    { x: 500, y: proportionalSize(450) },
-    { x: 700, y: proportionalSize(400) },
-    { x: 850, y: proportionalSize(350) },
-    { x: 900, y: proportionalSize(350) },
-    { x: 1050, y: proportionalSize(150) },
-
-    { x: 2500, y: proportionalSize(450) },
-    { x: 2900, y: proportionalSize(400) },
-    { x: 3150, y: proportionalSize(350) },
-
-    { x: 3900, y: proportionalSize(450) },
-    { x: 4200, y: proportionalSize(400) },
-    { x: 4400, y: proportionalSize(200) },
-    { x: 4700, y: proportionalSize(150) },
-];
-
-const platforms = platformPositions.map(
-    (platform) => new Platform(platform.x, platform.y)
-);
-
 /*
 const platforms = platformPositions.map((platform) => {
     const platformNew = new Platform(platform.x, platform.y);
@@ -182,9 +142,7 @@ const animateIt = () => {
             isCheckpointCollisionDetectionActive
         ) {
             platforms.forEach((platform) => {
-                // platform.position.x += 5;
-
-                platform.position.x = 0;
+                platform.position.x += 5;
             });
 
             checkpoints.forEach((checkpoint) => {
@@ -335,6 +293,46 @@ window.addEventListener("keyup", ({ key }) => {
     // this help remove the keydown effect. Comment it out to see this.
     movePlayer(key, 0, false);
 });
+
+// ======== steps/platforms ========
+class Platform {
+    constructor(x, y) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = 200;
+        this.height = proportionalSize(40); // 40
+    }
+
+    draw() {
+        ctx.fillStyle = "#acd157";
+
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
+}
+
+const platformPositions = [
+    { x: 500, y: proportionalSize(450) },
+    { x: 700, y: proportionalSize(400) },
+    { x: 850, y: proportionalSize(350) },
+    { x: 900, y: proportionalSize(350) },
+    { x: 1050, y: proportionalSize(150) },
+
+    { x: 2500, y: proportionalSize(450) },
+    { x: 2900, y: proportionalSize(400) },
+    { x: 3150, y: proportionalSize(350) },
+
+    { x: 3900, y: proportionalSize(450) },
+    { x: 4200, y: proportionalSize(400) },
+    { x: 4400, y: proportionalSize(200) },
+    { x: 4700, y: proportionalSize(150) },
+];
+
+const platforms = platformPositions.map(
+    (platform) => new Platform(platform.x, platform.y)
+);
 
 // ======== showCheckpointScreen ========
 const showCheckpointScreen = (msg) => {
