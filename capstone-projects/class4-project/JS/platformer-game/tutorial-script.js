@@ -675,7 +675,13 @@ throughout the game.
 Below your ctx.clearRect(), call the update() method on the 
 player.
 
-player.update();
+const animate = () => {
+    requestAnimationFrame(animate);
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    player.update();
+}
 
 
 Lesson 44:
