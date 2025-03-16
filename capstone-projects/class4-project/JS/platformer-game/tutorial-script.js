@@ -805,6 +805,7 @@ const movePlayer = (key, xVelocity, isPressed) => {}
 
 Lesson 51:
 In the game, the player will interact with different checkpoints. 
+
 If the isCheckpointCollisionDetectionActive is false, then you 
 will need to stop the player's movements on the x and y axes.
 
