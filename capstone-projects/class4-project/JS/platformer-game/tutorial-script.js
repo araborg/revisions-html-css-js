@@ -585,7 +585,7 @@ display value to "none".
 
 const startGame = () => {
     canvas.style.display = "block";
-    
+
     startScreen.style.display = "none";
 }
 
@@ -597,8 +597,13 @@ the canvas.
 Inside the startGame function, call the .draw() method of your 
 player object.
 
-player.draw();
-
+const startGame = () => {
+    canvas.style.display = "block";
+    
+    startScreen.style.display = "none";
+    
+    player.draw();
+}
 
 Lesson 39:
 Now it's time to add the functionality for the start game button.
