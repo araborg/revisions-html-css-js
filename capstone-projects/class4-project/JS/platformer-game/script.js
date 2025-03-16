@@ -182,7 +182,9 @@ const animateIt = () => {
             isCheckpointCollisionDetectionActive
         ) {
             platforms.forEach((platform) => {
-                platform.position.x += 5;
+                // platform.position.x += 5;
+
+                platform.position.x = 0;
             });
 
             checkpoints.forEach((checkpoint) => {
@@ -311,8 +313,7 @@ const movePlayer = (key, xVelocity, isPressed) => {
         case "ArrowUp":
         case " ":
         case "Spacebar":
-            // player.velocity.y -= 8;
-            player.velocity.y -= xVelocity;
+            player.velocity.y -= 8;
             break;
 
         case "ArrowRight":
