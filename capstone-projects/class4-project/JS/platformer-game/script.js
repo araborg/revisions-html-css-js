@@ -193,7 +193,7 @@ const animateIt = () => {
         }
     }
 
-    // platforms
+    // ********* platforms *********
     platforms.forEach((platform) => {
         platform.draw();
     });
@@ -235,7 +235,7 @@ const animateIt = () => {
         }
     });
 
-    // checkpoints
+    // ********* checkpoints *********
     checkpoints.forEach((checkpoint) => {
         checkpoint.draw();
     });
