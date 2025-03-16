@@ -1154,7 +1154,17 @@ function to make sure the height is proportional to the screen
 size.
 Remember to use the "this" keyword to access the properties.
 
-this.height = proportionalSize(40);
+class Platform {
+    constructor(x, y) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = 200;
+        this.height = proportionalSize(40);
+    }
+}
 
 
 Lesson 69:
