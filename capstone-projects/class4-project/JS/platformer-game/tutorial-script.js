@@ -2157,8 +2157,8 @@ checkpoints.forEach((checkpoint, index, checkpoints) => {
 
 
 Lesson 112:
-You will need to add two more checkpoint detection rules to the 
-checkpointDetectionRules array.
+You will need to add two more checkpoint detection rules to 
+the checkpointDetectionRules array.
 
 The first rule should check if the player's x position minus 
 the player's width is less than or equal to the checkpoint's 
@@ -2172,8 +2172,23 @@ is true. This will ensure that the player can only claim the
 first checkpoint or a checkpoint that has already been 
 claimed.
 
-player.position.x - player.width <= checkpoint.position.x - checkpoint.width + player.width * 0.9,
-index === 0 || checkpoints[index - 1].claimed === true,
+checkpoints.forEach((checkpoint, index, checkpoints) => {
+    const checkpointDetectionRules =[
+        player.position.x >= checkpoint.position.x,
+
+        player.position.y >= checkpoint.position.y,
+
+        player.position.y + player.height <= 
+            checkpoint.position.y + checkpoint.height,
+
+        isCheckpointCollisionDetectionActive
+
+        player.position.x - player.width <= 
+            checkpoint.position.x - checkpoint.width + player.width * 0.9,
+        
+        index === 0 || checkpoints[index - 1].claimed === true,
+    ]
+});
 
 
 Lesson 113:
