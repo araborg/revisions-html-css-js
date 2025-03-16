@@ -368,7 +368,16 @@ Create an empty if statement that checks if the sum of the
 player's y position, height, and y velocity is less than or 
 equal to the height of the canvas.
 
-if( this.position.y  + this.height + this.velocity.y <= canvas.height) {}
+update() {
+    this.draw();
+
+    this.position.x += this.velocity.x; 
+    
+    this.position.y += this.velocity.y;
+
+    if( this.position.y  + this.height + this.velocity.y <= canvas.height) {}
+}
+
 
 
 Lesson 26:
