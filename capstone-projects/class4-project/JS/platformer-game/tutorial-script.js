@@ -348,7 +348,13 @@ y coordinate to the player's y position.
 Don't forget to include the "this" keyword for the velocity 
 and position.
 
-this.position.y += this.velocity.y;
+update() {
+    this.draw();
+
+    this.position.x += this.velocity.x; // moves right
+    
+    this.position.y += this.velocity.y;
+}
 
 
 Lesson 25:
