@@ -239,6 +239,15 @@ const animateIt = () => {
 
             // console.log(index, checkpoints[index - 1]);
 
+            console.log(`player.position.x: ${player.position.x}`); // 458
+            console.log(`checkpoint.position.x: ${checkpoint.position.x}`); //440
+            console.log(`player.width: ${player.width}`); // 40
+            console.log(`platform.width: ${platform.width}`); //200
+            console.log(`player.position.y: ${player.position.y}`); // 440
+            console.log(` player.height: ${player.height}`); // 40
+            console.log(`platform.position.y: ${platform.position.y}`); // 400
+            console.log(`platform.height: ${platform.height}`); //40
+
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
 
