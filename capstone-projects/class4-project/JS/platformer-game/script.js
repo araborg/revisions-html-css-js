@@ -249,6 +249,19 @@ const animateIt = () => {
             ) {
                 showCheckpointScreen("You reached a checkpoint!");
             }
+
+            // console.log(`player.position.x: ${player.position.x}`);
+            // console.log(`checkpoint.position.x: ${checkpoint.position.x}`);
+            // console.log(`player.position.y: ${player.position.y}`);
+            // console.log(`checkpoint.position.y: ${checkpoint.position.y}`);
+            // console.log(`player.height: ${player.height}`);
+            // console.log(`checkpoint.height: ${checkpoint.height}`);
+            // console.log(isCheckpointCollisionDetectionActive);
+            // console.log(`player.width: ${player.width}`);
+            // console.log(`checkpoint.width: ${checkpoint.width}`);
+            // console.log(index);
+            // console.log(checkpoints[index].claimed === true);
+            // console.log(player.position.y >= checkpoint.position.y);
         }
     });
 };
