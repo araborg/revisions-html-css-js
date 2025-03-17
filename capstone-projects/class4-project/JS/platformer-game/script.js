@@ -247,7 +247,7 @@ const animateIt = () => {
             console.log(`player.width: ${player.width}`);
             console.log(`checkpoint.width: ${checkpoint.width}`);
             console.log(index);
-            console.log(checkpoints[index - 1].claimed === true);
+            console.log(checkpoints[index].claimed === true);
 
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
