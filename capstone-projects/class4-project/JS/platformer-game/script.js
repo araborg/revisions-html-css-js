@@ -237,16 +237,21 @@ const animateIt = () => {
         if (checkpointDetectionRules.every((rule) => rule)) {
             checkpoint.claim();
 
-            // console.log(index, checkpoints[index - 1]);
-
             console.log(`player.position.x: ${player.position.x}`); // 458
             console.log(`checkpoint.position.x: ${checkpoint.position.x}`); //440
-            console.log(`player.width: ${player.width}`); // 40
-            console.log(`platform.width: ${platform.width}`); //200
             console.log(`player.position.y: ${player.position.y}`); // 440
+            console.log(`checkpoint.position.y: ${checkpoint.position.y}`); // 400
+            console.log(`checkpoint.height: ${checkpoint.height}`); //40
+
+            console.log(isCheckpointCollisionDetectionActive);
+
+            console.log(`player.width: ${player.width}`); // 40
+
             console.log(` player.height: ${player.height}`); // 40
-            console.log(`platform.position.y: ${platform.position.y}`); // 400
-            console.log(`platform.height: ${platform.height}`); //40
+            console.log(`checkpoint.width: ${checkpoint.width}`); //200
+
+            console.log(index);
+            console.log(checkpoints[index - 1].claimed);
 
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
