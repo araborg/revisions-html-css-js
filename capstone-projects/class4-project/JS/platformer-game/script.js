@@ -198,6 +198,8 @@ const animateIt = () => {
         if (platformDetectionRules.every((rule) => rule)) {
             player.position.y = platform.position.y + player.height;
 
+            player.velocity.y = gravity;
+
             // console.log(`player.position.x: ${player.position.x}`); // 458
             // console.log(`platform.position.x: ${platform.position.x}`); //440
             // console.log(`player.width: ${player.width}`); // 40
@@ -206,8 +208,6 @@ const animateIt = () => {
             // console.log(` player.height: ${player.height}`); // 40
             // console.log(`platform.position.y: ${platform.position.y}`); // 400
             // console.log(`platform.height: ${platform.height}`); //40
-
-            player.velocity.y = gravity;
         }
     });
 
