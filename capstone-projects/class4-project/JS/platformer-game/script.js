@@ -221,7 +221,7 @@ const animateIt = () => {
         const checkpointDetectionRules = [
             player.position.x >= checkpoint.position.x,
 
-            player.position.y >= checkpoint.position.y,
+            player.position.y >= checkpoint.position.y, // false
 
             player.position.y + player.height <=
                 checkpoint.position.y + checkpoint.height,
@@ -236,18 +236,6 @@ const animateIt = () => {
 
         if (checkpointDetectionRules.every((rule) => rule)) {
             checkpoint.claim();
-
-            console.log(`player.position.x: ${player.position.x}`); // 394
-            console.log(`checkpoint.position.x: ${checkpoint.position.x}`); // 380
-            console.log(`player.position.y: ${player.position.y}`); //88
-            console.log(`checkpoint.position.y: ${checkpoint.position.y}`); //Infinity
-            console.log(`player.height: ${player.height}`); // 40
-            console.log(`checkpoint.height: ${checkpoint.height}`); // 0
-            console.log(isCheckpointCollisionDetectionActive); // true
-            console.log(`player.width: ${player.width}`); // 40
-            console.log(`checkpoint.width: ${checkpoint.width}`); // 0
-            console.log(index); // 0
-            // console.log(checkpoints[index].claimed === true);
 
             if (index === checkpoints.length - 1) {
                 isCheckpointCollisionDetectionActive = false;
@@ -265,8 +253,7 @@ const animateIt = () => {
     });
 };
 
-console.log(100 > Infinity);
-
+console.log(88 >= Infinity);
 // ======== keys: obj of objs ========
 const keys = {
     rightKey: {
