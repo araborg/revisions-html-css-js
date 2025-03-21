@@ -11,5 +11,5 @@ const scoreHistory = document.getElementById("score-history");
 const rulesBtn = document.getElementById("rules-btn");
 const rulesContainer = document.querySelector(".rules-container");
 const keepScoreBtn = document.querySelector("#keep-score-btn");
-
+const rollDiceBtn = document.querySelector("#roll-dice-btn");
 console.log(scoreInputs, scoreSpans);
