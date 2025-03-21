@@ -14,5 +14,8 @@ const keepScoreBtn = document.querySelector("#keep-score-btn");
 const rollDiceBtn = document.querySelector("#roll-dice-btn");
 
 let isModalShowing;
+let diceValuesArr;
 
-console.log(rulesBtn, rulesContainer, keepScoreBtn, rollDiceBtn);
+let rolls;
+let currentScore;
+let round;
