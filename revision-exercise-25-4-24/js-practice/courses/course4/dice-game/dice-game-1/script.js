@@ -8,4 +8,6 @@ const rollsElement = document.getElementById("current-round-rolls");
 const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
+const rulesBtn = document.getElementById("rules-btn");
+
 console.log(scoreInputs, scoreSpans);
