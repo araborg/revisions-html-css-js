@@ -74,31 +74,31 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    // let highestCount = 0;
+    let highestCount = 0;
 
-    // for (num of arr) {
-    //     const count = counts[num];
+    for (num of arr) {
+        const count = counts[num];
 
-    //     if (count >= 3 && count > highestCount) {
-    //         highestCount = count;
-    //     }
+        if (count >= 3 && count > highestCount) {
+            highestCount = count;
+        }
 
-    //     if (count >= 4 && count > highestCount) {
-    //         highestCount = count;
-    //     }
-    // }
+        if (count >= 4 && count > highestCount) {
+            highestCount = count;
+        }
+    }
 
-    // const sumOfAllDice = arr.reduce((a, b) => a + b, 0);
+    const sumOfAllDice = arr.reduce((a, b) => a + b, 0);
 
-    // if (highestCount >= 3) {
-    //     updateRadioOption(0, sumOfAllDice);
-    // }
+    if (highestCount >= 3) {
+        updateRadioOption(0, sumOfAllDice);
+    }
 
-    // if (highestCount >= 4) {
-    //     updateRadioOption(1, sumOfAllDice);
-    // }
+    if (highestCount >= 4) {
+        updateRadioOption(1, sumOfAllDice);
+    }
 
-    // updateRadioOption(5, 0);
+    updateRadioOption(5, 0);
 
     /*
         * The below code will also do the same thing as the above code
