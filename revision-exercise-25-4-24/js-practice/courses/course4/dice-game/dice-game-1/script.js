@@ -44,6 +44,8 @@ const rollDice = () => {
 
         diceValuesArr.push(randomDice);
     }
+
+    console.log(diceValuesArr);
 };
 
 rollDiceBtn.addEventListener("click", rollDice);
