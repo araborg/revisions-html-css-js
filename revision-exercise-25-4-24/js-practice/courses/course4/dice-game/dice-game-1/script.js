@@ -60,11 +60,9 @@ const updateRadioOption = (index, score) => {
     scoreInputs[index].disable = false;
 
     scoreInputs[index].value = score;
-};
 
-// scoreInputs.forEach((input) => {
-//     console.log(input);
-// });
+    scoreSpans[index].textContent = `, score = ${score}`;
+};
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
