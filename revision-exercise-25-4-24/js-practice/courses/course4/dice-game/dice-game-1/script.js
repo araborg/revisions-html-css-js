@@ -45,7 +45,7 @@ const rollDice = () => {
         diceValuesArr.push(randomDice);
     }
 
-    console.log(diceValuesArr);
+    listOfAllDice.forEach((dice, index) => {});
 };
 
 rollDiceBtn.addEventListener("click", rollDice);
