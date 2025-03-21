@@ -89,6 +89,8 @@ const getHighestDuplicates = (arr) => {
             highestCount = count;
         }
     }
+
+    const sumOfAllDice = arr.reduce((a, b) => a, b, 0);
 };
 
 // event listener
