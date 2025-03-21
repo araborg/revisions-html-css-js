@@ -66,12 +66,13 @@ const updateRadioOption = (index, score) => {
 const getHighestDuplicates = (arr) => {
     let counts = {};
 
-    if (counts[num]) {
-        counts[num] += 1;
-    } else {
-        counts[num] = 1;
+    for (num of arr) {
+        if (counts[num]) {
+            counts[num] += 1;
+        } else {
+            counts[num] = 1;
+        }
     }
-
     console.log(counts);
 };
 
