@@ -10,5 +10,6 @@ const scoreHistory = document.getElementById("score-history");
 
 const rulesBtn = document.getElementById("rules-btn");
 const rulesContainer = document.querySelector(".rules-container");
+const keepScoreBtn = document.querySelector("#keep-score-btn");
 
 console.log(scoreInputs, scoreSpans);
