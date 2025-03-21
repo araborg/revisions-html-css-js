@@ -75,6 +75,12 @@ const getHighestDuplicates = (arr) => {
     }
 
     let highestCount = 0;
+
+    for (num of arr) {
+        const count = count[num];
+
+        console.log(count);
+    }
 };
 
 // event listener
