@@ -124,6 +124,8 @@ const getHighestDuplicates = (arr) => {
     */
 };
 
+const resetRadioOptions = () => {};
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
