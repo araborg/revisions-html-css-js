@@ -63,7 +63,7 @@ const updateRadioOption = (index, score) => {
     scoreSpans[index].textContent = `, score = ${score}`;
 };
 
-const getHighestDuplicates = () => {};
+const getHighestDuplicates = (arr) => {};
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
@@ -74,5 +74,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         rollDice();
         updateStats();
+
+        getHighestDuplicates(diceValuesArr);
     }
 });
