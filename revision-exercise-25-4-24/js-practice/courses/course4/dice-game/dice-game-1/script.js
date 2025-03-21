@@ -50,7 +50,11 @@ const rollDice = () => {
     });
 };
 
-const updateStats = () => {};
+const updateStats = () => {
+    rollsElement.textContent = rolls;
+
+    roundElement.textContent = round;
+};
 
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
