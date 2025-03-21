@@ -136,6 +136,8 @@ const resetRadioOptions = () => {
     });
 };
 
+const updateScore = () => {};
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
