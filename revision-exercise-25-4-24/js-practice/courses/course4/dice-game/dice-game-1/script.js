@@ -57,14 +57,15 @@ const updateStats = () => {
 };
 
 const updateRadioOption = (index, score) => {
-    scoreInputs.forEach((input) => {
-        console.log(input);
-    });
+    scoreInputs[index].disable = false;
+
+    scoreInputs[index].value = score;
 };
 
-scoreInputs.forEach((input) => {
-    console.log(input);
-});
+// scoreInputs.forEach((input) => {
+//     console.log(input);
+// });
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
