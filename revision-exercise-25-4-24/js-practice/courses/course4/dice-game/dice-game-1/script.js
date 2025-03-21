@@ -58,6 +58,8 @@ const updateStats = () => {
 
 const updateRadioOption = (index, score) => {};
 
+console.log(scoreInputs);
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
