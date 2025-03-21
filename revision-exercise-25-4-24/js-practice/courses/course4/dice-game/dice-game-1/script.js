@@ -40,7 +40,9 @@ const rollDice = () => {
     diceValuesArr = [];
 
     for (let i = 0; i < 5; i++) {
-        const randomDice = Math.floor(Math.random() * 6);
+        const randomDice = Math.random() * 6;
+
+        console.log(randomDice);
     }
 };
 
