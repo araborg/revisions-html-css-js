@@ -14,11 +14,13 @@ const rulesContainer = document.querySelector(".rules-container");
 const keepScoreBtn = document.querySelector("#keep-score-btn");
 const rollDiceBtn = document.querySelector("#roll-dice-btn");
 
-let isModalShowing = [];
-let diceValuesArr;
+let isModalShowing = false;
+let diceValuesArr = [];
 
 let rolls = 0;
 let currentScore = 0;
 let round = 1;
 
-rulesBtn.addEventListener("click", () => {});
+rulesBtn.addEventListener("click", () => {
+    isModalShowing = !isModalShowing;
+});
