@@ -91,6 +91,16 @@ const getHighestDuplicates = (arr) => {
     }
 
     const sumOfAllDice = arr.reduce((a, b) => a, b, 0);
+
+    if (highestCount >= 3) {
+        updateRadioOption(0, sumOfAllDice);
+    }
+
+    if (highestCount >= 4) {
+        updateRadioOption(1, sumOfAllDice);
+    }
+
+    updateRadioOption(5, 0);
 };
 
 // event listener
