@@ -9,5 +9,6 @@ const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
 const rulesBtn = document.getElementById("rules-btn");
+const rulesContainer = document.querySelector(".rules-container");
 
 console.log(scoreInputs, scoreSpans);
