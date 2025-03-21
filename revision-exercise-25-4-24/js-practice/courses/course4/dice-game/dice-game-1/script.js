@@ -46,4 +46,4 @@ const rollDice = () => {
     }
 };
 
-rollDiceBtn.addEventListener("click");
+rollDiceBtn.addEventListener("click", rollDice);
