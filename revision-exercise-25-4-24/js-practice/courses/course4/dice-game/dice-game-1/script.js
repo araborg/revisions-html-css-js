@@ -15,6 +15,7 @@ const keepScoreBtn = document.querySelector("#keep-score-btn");
 const rollDiceBtn = document.querySelector("#roll-dice-btn");
 
 let isModalShowing = false;
+
 let diceValuesArr = [];
 
 let rolls = 0;
@@ -23,4 +24,14 @@ let round = 1;
 
 rulesBtn.addEventListener("click", () => {
     isModalShowing = !isModalShowing;
+
+    if (isModalShowing) {
+        rulesContainer.style.display = "block";
+
+        rulesBtn.textContent = "Hide rules";
+    } else {
+        rulesContainer.style.display = "none";
+
+        rulesBtn.textContent = "Show rules";
+    }
 });
