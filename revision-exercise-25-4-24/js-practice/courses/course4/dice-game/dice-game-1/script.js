@@ -16,6 +16,6 @@ const rollDiceBtn = document.querySelector("#roll-dice-btn");
 let isModalShowing;
 let diceValuesArr;
 
-let rolls;
-let currentScore;
-let round;
+let rolls = 0;
+let currentScore = 0;
+let round = 1;
