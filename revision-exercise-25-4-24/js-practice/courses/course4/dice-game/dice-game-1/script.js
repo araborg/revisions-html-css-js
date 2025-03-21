@@ -57,8 +57,7 @@ const updateStats = () => {
 };
 
 const updateRadioOption = (index, score) => {
-    scoreInputs[index].disable = false;
-
+    scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
 
     scoreSpans[index].textContent = `, score = ${score}`;
