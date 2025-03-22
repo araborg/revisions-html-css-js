@@ -207,11 +207,11 @@ keepScoreBtn.addEventListener("click", () => {
         updateScore(selectedValue, achievedId);
 
         if (round > 6) {
-            // setTimeout(() => {
-            alert(`Game Over! Your total score is ${currentScore}`);
+            setTimeout(() => {
+                alert(`Game Over! Your total score is ${currentScore}`);
 
-            resetGame();
-            // }, 500);
+                resetGame();
+            }, 500);
         }
 
         // resetGame();
