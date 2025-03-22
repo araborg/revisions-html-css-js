@@ -206,6 +206,14 @@ keepScoreBtn.addEventListener("click", () => {
 
         updateScore(selectedValue, achievedId);
 
+        if (round > 6) {
+            setTimeout(() => {
+                alert(`Game Over! Your total score is ${currentScore}`);
+
+                resetGame();
+            }, 500);
+        }
+
         // resetGame();
     } else {
         alert("Please select an option or roll the dice");
