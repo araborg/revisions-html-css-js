@@ -176,7 +176,8 @@ const detectFullHouse = (arr) => {
 
     console.log(counts);
 
-    const hasThreeOfAKind = Object.values(counts);
+    const hasThreeOfAKind = Object.values(counts).includes(3);
+    const hasPair = Object.values(counts).includes(2);
 
     console.log(hasThreeOfAKind);
 };
