@@ -190,7 +190,7 @@ const checkForStraights = (arr) => {
     const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
     const uniqueNumbersStr = uniqueNumbersArr.join("");
 
-    console.log(uniqueNumbersStr, sortedNumbersArr);
+    const smallStraightsArr = ["1234", "2345", "3456"];
 };
 
 // event listener
