@@ -168,10 +168,12 @@ keepScoreBtn.addEventListener("click", () => {
     let achievedId;
 
     for (const radioBtn of scoreInputs) {
-        selectedValue = radioBtn.value;
+        if (radioBtn.checked) {
+            selectedValue = radioBtn.value;
 
-        achievedId = radioBtn.id;
+            achievedId = radioBtn.id;
+        }
     }
 
-    console.log(selectedValue);
+    console.log(selectedValue, achievedId);
 });
