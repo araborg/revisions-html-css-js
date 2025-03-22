@@ -137,7 +137,7 @@ const resetRadioOptions = () => {
 };
 
 const updateScore = (selectedValue, achievedId) => {
-    score += parseInt(selectedValue);
+    currentScore += parseInt(selectedValue);
     totalScoreElement.textContent = score;
 
     scoreHistory.innerHTML += `
