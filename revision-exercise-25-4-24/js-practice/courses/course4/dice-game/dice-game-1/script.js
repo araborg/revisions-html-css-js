@@ -213,8 +213,6 @@ keepScoreBtn.addEventListener("click", () => {
                 resetGame();
             }, 500);
         }
-
-        // resetGame();
     } else {
         alert("Please select an option or roll the dice");
     }
