@@ -150,13 +150,13 @@ const updateScore = (selectedValue, achievedId) => {
 const resetGame = () => {
     diceValuesArr = [0, 0, 0, 0, 0];
 
-    listOfAllDice.forEach((dice) => {
-        dice.textContent = "";
-    });
-
     currentScore = 0;
     rolls = 0;
     round = 1;
+
+    listOfAllDice.forEach((dice, index) => {
+        dice.textContent = diceValuesArr[index];
+    });
 
     totalScoreElement.textContent = currentScore;
     scoreHistory.textContent = "";
