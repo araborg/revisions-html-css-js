@@ -160,6 +160,7 @@ const resetGame = () => {
 
     totalScoreElement.textContent = currentScore;
     scoreHistory.textContent = "";
+
     rollsElement.textContent = rolls;
     roundElement.textContent = round;
 
