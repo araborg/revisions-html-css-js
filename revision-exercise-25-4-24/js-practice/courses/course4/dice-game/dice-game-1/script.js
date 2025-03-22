@@ -101,29 +101,6 @@ const getHighestDuplicates = (arr) => {
     }
 
     updateRadioOption(5, 0);
-
-    /*
-        * The below code will also do the same thing as the above code
-
-        const sumOfAllDice = arr.reduce((a, b) => a + b, 0);
-
-        for (num of arr) {
-            const count = counts[num];
-
-            if (count >= 3) {
-                updateRadioOption(0, sumOfAllDice);
-            }
-
-            if (count >= 4) {
-                updateRadioOption(1, sumOfAllDice);
-            }
-
-            // updateRadioOption(5, 0);
-        }
-
-        updateRadioOption(5, 0);
-
-    */
 };
 
 const resetRadioOptions = () => {
