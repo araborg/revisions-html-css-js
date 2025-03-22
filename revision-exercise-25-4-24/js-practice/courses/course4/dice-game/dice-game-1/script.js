@@ -48,6 +48,8 @@ const rollDice = () => {
     listOfAllDice.forEach((dice, index) => {
         dice.textContent = diceValuesArr[index];
     });
+
+    updateRadioOption(5, 0);
 };
 
 const updateStats = () => {
