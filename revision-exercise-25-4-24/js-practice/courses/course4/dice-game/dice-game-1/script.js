@@ -187,9 +187,10 @@ const detectFullHouse = (arr) => {
 const checkForStraights = (arr) => {
     const sortedNumbersArr = arr.sort((a, b) => a - b);
 
-    const uniqueNumberArr = [...new Set(sortedNumbersArr)];
+    const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
+    const uniqueNumbersStr = uniqueNumbersArr.join("");
 
-    console.log(uniqueNumberArr);
+    console.log(uniqueNumbersStr, sortedNumbersArr);
 };
 
 // event listener
