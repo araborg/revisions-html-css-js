@@ -165,9 +165,12 @@ rollDiceBtn.addEventListener("click", () => {
 
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
+    let achievedId;
 
     for (const radioBtn of scoreInputs) {
         selectedValue = radioBtn.value;
+
+        achievedId = radioBtn.id;
     }
 
     console.log(selectedValue);
