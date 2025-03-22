@@ -177,8 +177,6 @@ keepScoreBtn.addEventListener("click", () => {
         }
     }
 
-    console.log(selectedValue);
-
     if (selectedValue) {
         rolls = 0;
         round++;
