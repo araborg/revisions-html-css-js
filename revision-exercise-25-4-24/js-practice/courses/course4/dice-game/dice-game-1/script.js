@@ -173,8 +173,10 @@ keepScoreBtn.addEventListener("click", () => {
 
             achievedId = radioBtn.id;
 
-            break;
+            // break;
         }
+
+        console.log("Essence of break");
     }
 
     if (selectedValue) {
