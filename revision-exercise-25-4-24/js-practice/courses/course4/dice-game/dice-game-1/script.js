@@ -140,6 +140,8 @@ const resetGame = () => {
 
     rollsElement.textContent = rolls;
     roundElement.textContent = round;
+
+    resetRadioOptions();
 };
 
 const detectFullHouse = (arr) => {
