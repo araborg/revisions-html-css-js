@@ -180,7 +180,11 @@ const detectFullHouse = (arr) => {
     if (hasThreeOfAKind && hasPair) {
         updateRadioOption(2, 25);
     }
+
+    updateRadioOption(5, 0);
 };
+
+const checkForStraights = (arr) => {};
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
