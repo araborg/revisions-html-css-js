@@ -147,7 +147,11 @@ const updateScore = (selectedValue, achievedId) => {
     `;
 };
 
-const resetGame = () => {};
+const resetGame = () => {
+    console.log(listOfAllDice);
+};
+
+resetGame();
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
