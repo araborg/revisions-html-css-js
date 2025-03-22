@@ -167,6 +167,8 @@ const resetGame = () => {
     resetRadioOptions();
 };
 
+const detectFullHouse = () => {};
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
