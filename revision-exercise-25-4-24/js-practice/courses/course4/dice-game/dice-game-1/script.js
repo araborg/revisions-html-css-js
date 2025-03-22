@@ -147,6 +147,8 @@ const updateScore = (selectedValue, achievedId) => {
     `;
 };
 
+const resetGame = () => {};
+
 // event listener
 rollDiceBtn.addEventListener("click", () => {
     if (rolls === 3) {
@@ -173,10 +175,8 @@ keepScoreBtn.addEventListener("click", () => {
 
             achievedId = radioBtn.id;
 
-            // break;
+            break;
         }
-
-        console.log("Essence of break");
     }
 
     if (selectedValue) {
