@@ -172,11 +172,20 @@ keepScoreBtn.addEventListener("click", () => {
             selectedValue = radioBtn.value;
 
             achievedId = radioBtn.id;
+
+            // break;
         }
     }
+
+    console.log(selectedValue);
 
     if (selectedValue) {
         rolls = 0;
         round++;
+
+        updateStats();
+        resetRadioOptions();
+
+        updateScore(selectedValue, achievedId);
     }
 });
