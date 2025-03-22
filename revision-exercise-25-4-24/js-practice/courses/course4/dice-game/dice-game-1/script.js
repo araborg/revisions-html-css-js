@@ -148,7 +148,22 @@ const updateScore = (selectedValue, achievedId) => {
 };
 
 const resetGame = () => {
-    console.log(listOfAllDice);
+    diceValuesArr = [0, 0, 0, 0, 0];
+
+    listOfAllDice.forEach((dice) => {
+        dice.textContent = "";
+    });
+
+    currentScore = 0;
+    rolls = 0;
+    round = 1;
+
+    totalScoreElement.textContent = currentScore;
+    scoreHistory.textContent = "";
+    rollsElement.textContent = rolls;
+    roundElement.textContent = round;
+
+    resetRadioOptions();
 };
 
 resetGame();
@@ -191,6 +206,8 @@ keepScoreBtn.addEventListener("click", () => {
         resetRadioOptions();
 
         updateScore(selectedValue, achievedId);
+
+        // resetGame();
     } else {
         alert("Please select an option or roll the dice");
     }
