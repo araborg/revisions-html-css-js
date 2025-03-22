@@ -205,18 +205,6 @@ const checkForStraights = (arr) => {
         updateRadioOption(4, 40);
     }
 
-    // if (smallStraightsArr.includes(uniqueNumbersStr)) {
-    //     updateRadioOption(3, 30);
-    // }
-
-    // if (
-    //     largeStraightsArr.some((straight) =>
-    //         uniqueNumbersStr.includes(straight)
-    //     )
-    // ) {
-    //     updateRadioOption(4, 40);
-    // }
-
     updateRadioOption(5, 0);
 };
 
