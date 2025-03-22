@@ -99,8 +99,6 @@ const getHighestDuplicates = (arr) => {
     if (highestCount >= 4) {
         updateRadioOption(1, sumOfAllDice);
     }
-
-    updateRadioOption(5, 0);
 };
 
 const resetRadioOptions = () => {
