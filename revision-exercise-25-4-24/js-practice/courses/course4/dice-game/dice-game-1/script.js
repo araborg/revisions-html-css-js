@@ -136,7 +136,16 @@ const resetRadioOptions = () => {
     });
 };
 
-const updateScore = () => {};
+const updateScore = (selectedValue, achievedId) => {
+    score += parseInt(selectedValue);
+    totalScoreElement.textContent = score;
+
+    scoreHistory.innerHTML += `
+        <li>
+            ${achievedId}: ${selectedValue}
+        </li>
+    `;
+};
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
@@ -153,3 +162,5 @@ rollDiceBtn.addEventListener("click", () => {
         getHighestDuplicates(diceValuesArr);
     }
 });
+
+keepScoreBtn.addEventListener("click", () => {});
