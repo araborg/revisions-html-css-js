@@ -167,7 +167,9 @@ const resetGame = () => {
     resetRadioOptions();
 };
 
-const detectFullHouse = () => {};
+const detectFullHouse = (arr) => {
+    const counts = {};
+};
 
 // event listener
 rollDiceBtn.addEventListener("click", () => {
