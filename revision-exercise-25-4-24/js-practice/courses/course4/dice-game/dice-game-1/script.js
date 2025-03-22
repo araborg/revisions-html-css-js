@@ -192,6 +192,20 @@ const checkForStraights = (arr) => {
 
     const smallStraightsArr = ["1234", "2345", "3456"];
     const largeStraightsArr = ["12345", "23456"];
+
+    if (
+        smallStraightsArr.some((straight) =>
+            uniqueNumbersStr.includes(straight)
+        )
+    ) {
+        updateRadioOption(3, 30);
+    }
+
+    if (largeStraightsArr.includes(uniqueNumbersStr)) {
+        updateRadioOption(4, 40);
+    }
+
+    updateRadioOption(5, 0);
 };
 
 // event listener
