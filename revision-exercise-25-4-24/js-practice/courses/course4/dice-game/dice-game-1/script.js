@@ -138,7 +138,7 @@ const resetRadioOptions = () => {
 
 const updateScore = (selectedValue, achievedId) => {
     currentScore += parseInt(selectedValue);
-    totalScoreElement.textContent = score;
+    totalScoreElement.textContent = currentScore;
 
     scoreHistory.innerHTML += `
         <li>
@@ -173,7 +173,7 @@ keepScoreBtn.addEventListener("click", () => {
 
             achievedId = radioBtn.id;
 
-            // break;
+            break;
         }
     }
 
@@ -187,5 +187,7 @@ keepScoreBtn.addEventListener("click", () => {
         resetRadioOptions();
 
         updateScore(selectedValue, achievedId);
+    } else {
+        alert("Please select an option or roll the dice");
     }
 });
