@@ -62,9 +62,6 @@ const fetchMoreAuthors = () => {
     displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
 
     if (authorDataArr.length <= endingIndex) {
-        // console.log(authorDataArr.length);
-        // console.log(endingIndex);
-
         loadMoreBtn.disabled = true;
 
         loadMoreBtn.textContent = "No more data to load";
