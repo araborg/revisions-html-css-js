@@ -25,6 +25,7 @@ const displayAuthors = (authors) => {
     authors.forEach(({ author, image, url, bio }, index) => {
         authorContainer.innerHTML += `
             <div id=${index} class="user-card">
+
                 <h2 class="author-name">
                     ${author}
                 </h2>
@@ -48,9 +49,8 @@ const displayAuthors = (authors) => {
                 >
                     ${author}'s author page
                 </a>
-
+                
             </div>
-
         `;
     });
 };
