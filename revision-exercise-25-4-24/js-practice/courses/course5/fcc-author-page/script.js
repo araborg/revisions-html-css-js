@@ -23,9 +23,21 @@ const displayAuthors = (authors) => {
             <div id=${index} class="user-card">
                 <h2 class="author-name">
                     ${author}
-                <h2>
+                </h2>
 
-                <img src="${image}" alt="${author} avatar">
+                <img 
+                    class="user-img" 
+                    src="${image}" 
+                    alt="${author} avatar"
+                >
+                
+
+                <p>${bio}</p>
+
+                <a href="${url}" class="author-link" target="_blank">
+                    ${author}'s author page
+                </a>
+
             </div>
 
         `;
