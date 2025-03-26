@@ -23,6 +23,8 @@ fetch("https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json")
 
 const displayAuthors = (authors) => {
     authors.forEach(({ author, image, url, bio }, index) => {
+        console.log(bio);
+
         authorContainer.innerHTML += `
             <div id=${index} class="user-card">
                 <h2 class="author-name">
@@ -36,8 +38,6 @@ const displayAuthors = (authors) => {
                 >
 
                 <div class="purple-divider"></div>       
-                
-                console.log(bio)
 
                 <p class="bio">
                     ${bio.length > 50 ? bio.slice(0, 50) + "..." : bio}
@@ -64,8 +64,8 @@ const fetchMoreAuthors = () => {
     displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
 
     if (authorDataArr.length <= endingIndex) {
-        console.log(authorDataArr.length);
-        console.log(endingIndex);
+        // console.log(authorDataArr.length);
+        // console.log(endingIndex);
 
         loadMoreBtn.disabled = true;
 
