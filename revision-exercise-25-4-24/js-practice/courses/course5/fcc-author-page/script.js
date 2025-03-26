@@ -25,4 +25,4 @@ const displayAuthors = (authors) => {
     });
 };
 
-console.log(authorDataArr);
+// console.log(authorDataArr);
