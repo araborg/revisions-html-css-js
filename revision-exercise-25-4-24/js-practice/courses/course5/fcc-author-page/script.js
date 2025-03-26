@@ -12,9 +12,11 @@ let endingIndex = 8;
 let authorDataArr = [];
 
 const displayAuthors = (authors) => {
-    authors.forEach({ author, image, url, bio }, index);
-
-    authorContainer += `
-        <div id=${index} class="user-card"></div>
-    `;
+    authors.forEach({ author, image, url, bio }, (index) => {
+        authorContainer += `
+            <div id=${index} class="user-card">
+            
+            </div>
+        `;
+    });
 };
