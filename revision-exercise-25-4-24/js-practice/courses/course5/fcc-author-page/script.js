@@ -13,4 +13,6 @@ let authorDataArr = [];
 
 const displayAuthors = (authors) => {
     authors.forEach({ author, image, url, bio }, index);
+
+    authorContainer += ``;
 };
