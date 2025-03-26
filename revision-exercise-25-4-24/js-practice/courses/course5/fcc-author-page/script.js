@@ -35,7 +35,9 @@ const displayAuthors = (authors) => {
                     alt="${author} avatar"
                 >
 
-                <div class="purple-divider"></div>                
+                <div class="purple-divider"></div>       
+                
+                console.log(bio)
 
                 <p class="bio">
                     ${bio.length > 50 ? bio.slice(0, 50) + "..." : bio}
