@@ -11,7 +11,7 @@ fetch("https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json")
     .then((data) => {
         authorDataArr = data;
 
-        displayAuthors(authorDataArr);
+        console.log("Author Data Array: ", authorDataArr);
     })
     .catch((err) => console.error(`There was an error: ${err}`));
 
