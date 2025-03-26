@@ -30,9 +30,12 @@ const displayAuthors = (authors) => {
                     src="${image}" 
                     alt="${author} avatar"
                 >
-                
 
-                <p>${bio}</p>
+                <div class="purple-divider"></div>                
+
+                <p class="bio">
+                    ${bio.length > 50 ? bio.slice(0, 50) + "..." : bio}
+                </p>
 
                 <a 
                     class="author-link" 
@@ -55,6 +58,9 @@ const fetchMoreAuthors = () => {
     displayAuthors(authorDataArr.slice(startingIndex, endingIndex));
 
     if (authorDataArr.length <= endingIndex) {
+        loadMoreBtn.disabled = true;
+
+        loadMoreBtn.textContent = "No more data to load";
     }
 };
 
