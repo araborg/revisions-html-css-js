@@ -48,4 +48,4 @@ const displayAuthors = (authors) => {
     });
 };
 
-// console.log(authorDataArr);
+const fetchMoreAuthors = () => {};
