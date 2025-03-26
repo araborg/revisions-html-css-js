@@ -34,7 +34,11 @@ const displayAuthors = (authors) => {
 
                 <p>${bio}</p>
 
-                <a href="${url}" class="author-link" target="_blank">
+                <a 
+                    class="author-link" 
+                    href="${url}" 
+                    target="_blank"
+                >
                     ${author}'s author page
                 </a>
 
