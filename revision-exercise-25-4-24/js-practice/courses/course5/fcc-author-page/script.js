@@ -22,6 +22,8 @@ const displayAuthors = (authors) => {
                 <h2 class="author-name">
                     ${author}
                 <h2>
+
+                <img class="user-img" src=${image} alt="${author} avatar"/> 
             </div>
         `;
     });
