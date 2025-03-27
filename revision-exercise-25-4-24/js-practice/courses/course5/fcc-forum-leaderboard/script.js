@@ -175,3 +175,5 @@ const forumCategory = (id) => {
         </a>
     `;
 };
+
+const avatars = (posters, users) => {};
