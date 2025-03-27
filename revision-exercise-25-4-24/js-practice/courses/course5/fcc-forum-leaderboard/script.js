@@ -99,3 +99,5 @@ const viewCount = (views) => {
     // shows the amount of views less than 1000.
     return views;
 };
+
+const allCategories = () => {};
