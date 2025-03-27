@@ -164,8 +164,12 @@ const forumCategory = (id) => {
     const linkClass = `${selectedCategory.className}`;
 
     return `
-        <a href="${url}">
-
+        <a 
+            href="${url}" 
+            className="${linkClass}" 
+            target="_blank"
+        >
+            ${linkText}
         </a>
     `;
 };
