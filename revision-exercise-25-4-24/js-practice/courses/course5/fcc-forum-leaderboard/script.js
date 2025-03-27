@@ -17,8 +17,10 @@ const fetchData = async () => {
     }
 };
 
-// fetchData();
+fetchData();
 
 const showLatestPosts = (data) => {
-    console.log(data);
+    const { topic_list, users } = data;
+
+    const { topics } = topic_list;
 };
