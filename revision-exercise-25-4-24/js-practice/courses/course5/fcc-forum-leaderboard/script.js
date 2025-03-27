@@ -101,5 +101,8 @@ const viewCount = (views) => {
 };
 
 const allCategories = {
-    299: {},
+    299: {
+        category: "Career Advice",
+        className: "career",
+    },
 };
