@@ -5,6 +5,8 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 
 const postsContainer = document.getElementById("posts-container");
 
+console.log(forumCategoryUrl);
+
 const fetchData = async () => {
     try {
         const res = await fetch(forumLatest);
@@ -158,4 +160,6 @@ const forumCategory = (id) => {
     }
 
     const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+    const linkText = selectedCategory.category;
+    const linkClass = `${selectedCategory.className}`;
 };
