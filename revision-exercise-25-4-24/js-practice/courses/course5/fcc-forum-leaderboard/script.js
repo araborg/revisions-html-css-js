@@ -48,7 +48,9 @@ const showLatestPosts = (data) => {
                     </td>
         
                     <td>
-                    
+                        <div class="avatar-container">
+                        
+                        </div>
                     </td>
         
                     <td>
@@ -189,12 +191,12 @@ const avatars = (posters, users) => {
                     : avatar;
 
                 return `
-                <img
-                    src="${userAvatarUrl}"
+                    <img
+                        src="${userAvatarUrl}"
 
-                    alt="${user.name}"
-                />
-            `;
+                        alt="${user.name}"
+                    />
+                `;
             }
         })
         .join("");
