@@ -52,7 +52,7 @@ const showLatestPosts = (data) => {
                     </td>
         
                     <td>
-                    
+                        ${views}
                     </td>
         
                     <td>
@@ -64,3 +64,5 @@ const showLatestPosts = (data) => {
         })
         .join("");
 };
+
+const timeAgo = (time) => {};
