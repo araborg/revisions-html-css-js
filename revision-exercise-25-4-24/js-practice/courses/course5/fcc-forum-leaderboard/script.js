@@ -150,5 +150,6 @@ const forumCategory = (id) => {
 
         selectedCategory.category = category;
         selectedCategory.className = className;
+    } else {
     }
 };
