@@ -182,6 +182,10 @@ const avatars = (posters, users) => {
 
         if (user) {
             const avatar = user.avatar_template.replace(/{size}/, 30);
+
+            const userAvatarUrl = avatar.startsWith("/user_avatar/")
+                ? avatarUrl.concat(avatar)
+                : avatar;
         }
     });
 };
