@@ -176,4 +176,6 @@ const forumCategory = (id) => {
     `;
 };
 
-const avatars = (posters, users) => {};
+const avatars = (posters, users) => {
+    return posters.map((poster) => {});
+};
