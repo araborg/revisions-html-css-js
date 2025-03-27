@@ -81,5 +81,3 @@ const timeAgo = (time) => {
         return `${minutesAgo}m ago`;
     }
 };
-
-console.log(timeAgo());
