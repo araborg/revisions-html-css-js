@@ -100,4 +100,6 @@ const viewCount = (views) => {
     return views;
 };
 
-const allCategories = () => {};
+const allCategories = {
+    299: {},
+};
