@@ -141,3 +141,5 @@ const allCategories = {
         className: "backend",
     },
 };
+
+const forumCategory = (id) => {};
