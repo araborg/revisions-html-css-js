@@ -5,11 +5,7 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 
 const postsContainer = document.getElementById("posts-container");
 
-const fetchData = async () => {};
-
-try {
-    const name = "freeCodeCamp";
-    name = "fCC";
-} catch (error) {
-    console.log(error);
-}
+const fetchData = async () => {
+    try {
+    } catch (err) {}
+};
