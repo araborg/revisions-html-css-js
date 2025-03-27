@@ -17,7 +17,7 @@ const fetchData = async () => {
     }
 };
 
-// fetchData();
+fetchData();
 
 const showLatestPosts = (data) => {
     const { topic_list, users } = data;
@@ -205,3 +205,5 @@ const avatars = (posters, users) => {
         })
         .join("");
 };
+
+// ======================================
