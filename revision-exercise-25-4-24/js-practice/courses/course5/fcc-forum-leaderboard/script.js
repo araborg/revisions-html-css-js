@@ -151,6 +151,9 @@ const forumCategory = (id) => {
         selectedCategory.category = category;
         selectedCategory.className = className;
     } else {
+        selectedCategory.category = "General";
         selectedCategory.className = "general";
+
+        selectedCategory.id = 1;
     }
 };
