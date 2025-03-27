@@ -142,4 +142,6 @@ const allCategories = {
     },
 };
 
-const forumCategory = (id) => {};
+const forumCategory = (id) => {
+    let selectedCategory = {};
+};
