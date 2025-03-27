@@ -147,5 +147,8 @@ const forumCategory = (id) => {
 
     if (allCategories.hasOwnProperty(id)) {
         const { category, className } = allCategories[id];
+
+        selectedCategory.category = category;
+        selectedCategory.className = className;
     }
 };
