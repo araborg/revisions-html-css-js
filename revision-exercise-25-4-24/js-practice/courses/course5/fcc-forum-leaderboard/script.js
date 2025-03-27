@@ -87,3 +87,5 @@ const timeAgo = (time) => {
 
     return `${daysAgo}d ago`;
 };
+
+const viewCount = (views) => {};
