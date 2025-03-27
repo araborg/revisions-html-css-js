@@ -175,7 +175,7 @@ const showLatestPosts = (data) => {
 
                     <td>
                         <div class="avatar-container">
-                        ${avatars(posters, users)}
+                            ${avatars(posters, users)}
                         </div>
                     </td>
                     
