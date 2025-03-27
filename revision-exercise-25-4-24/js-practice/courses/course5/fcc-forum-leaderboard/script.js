@@ -41,11 +41,26 @@ const showLatestPosts = (data) => {
 
     return `
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                <p class="post-title">${title}</title>
+            </td>
+
+            <td>
+            
+            </td>
+
+            <td>
+            
+            </td>
+
+            <td>
+            
+            </td>
+
+            <td>
+            
+            </td>
+
         </tr>
     `;
 };
