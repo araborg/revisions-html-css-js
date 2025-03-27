@@ -105,4 +105,14 @@ const allCategories = {
         category: "Career Advice",
         className: "career",
     },
+
+    409: {
+        category: "Project Feedback",
+        className: "feedback",
+    },
+
+    417: {
+        category: "freeCodeCamp Support",
+        className: "support",
+    },
 };
