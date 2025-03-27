@@ -82,6 +82,8 @@ const timeAgo = (time) => {
     }
 
     if (hoursAgo < 24) {
-        return `${hoursAgo}m ago`;
+        return `${hoursAgo}h ago`;
     }
+
+    return `${daysAgo}d ago`;
 };
