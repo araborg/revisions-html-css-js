@@ -36,31 +36,31 @@ const showLatestPosts = (data) => {
                 category_id,
                 bumped_at,
             } = item;
+
+            return `
+                <tr>
+                    <td>
+                        <p class="post-title">${title}</title>
+                    </td>
+        
+                    <td>
+                    
+                    </td>
+        
+                    <td>
+                    
+                    </td>
+        
+                    <td>
+                    
+                    </td>
+        
+                    <td>
+                    
+                    </td>
+        
+                </tr>
+            `;
         })
         .join("");
-
-    return `
-        <tr>
-            <td>
-                <p class="post-title">${title}</title>
-            </td>
-
-            <td>
-            
-            </td>
-
-            <td>
-            
-            </td>
-
-            <td>
-            
-            </td>
-
-            <td>
-            
-            </td>
-
-        </tr>
-    `;
 };
