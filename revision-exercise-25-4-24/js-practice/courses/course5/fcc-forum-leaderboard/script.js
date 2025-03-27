@@ -71,7 +71,9 @@ const timeAgo = (time) => {
 
     const timeDifference = currentTime - lastPost;
 
-    console.log(lastPost);
+    const msPerMinute = 1000 * 60;
+
+    const minutesAgo = Math.floor(timeDifference / msPerMinute);
 };
 
 console.log(timeAgo());
