@@ -277,6 +277,7 @@ const viewCount = (views) => {
         return `${thousands}k`;
     }
 
+    // shows the amount of views less than 1000.
     return views;
 };
 
