@@ -37,8 +37,6 @@ const showLatestPosts = (data) => {
                 bumped_at,
             } = item;
 
-            console.log(bumped_at);
-
             return `
                 <tr>
                     <td>
