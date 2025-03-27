@@ -54,10 +54,12 @@ const forumCategory = (id) => {
         const { className, category } = allCategories[id];
 
         selectedCategory.className = className;
+
         selectedCategory.category = category;
     } else {
         selectedCategory.className = "general";
         selectedCategory.category = "General";
+
         selectedCategory.id = 1;
     }
 
@@ -65,9 +67,14 @@ const forumCategory = (id) => {
     const linkText = selectedCategory.category;
     const linkClass = `category ${selectedCategory.className}`;
 
-    return `<a href="${url}" class="${linkClass}" target="_blank">
-        ${linkText}
-    </a>`;
+    return `<a 
+                href="${url}" 
+                class="${linkClass}" 
+                target="_blank"
+            >
+                ${linkText}
+            </a>
+        `;
 };
 
 const timeAgo = (time) => {
@@ -117,7 +124,12 @@ const avatars = (posters, users) => {
                     ? avatarUrl.concat(avatar)
                     : avatar;
 
-                return `<img src="${userAvatarUrl}" alt="${user.name}" />`;
+                return `
+                    <img 
+                        src="${userAvatarUrl}" 
+                        alt="${user.name}" 
+                    />
+                `;
             }
         })
         .join("");
