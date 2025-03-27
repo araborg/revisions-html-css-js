@@ -42,14 +42,20 @@ const showLatestPosts = (data) => {
             return `
                 <tr>
                     <td>
-                        <p class="post-title">${title}</title>
+                        <a 
+                            class="post-title"
+                            target="_blank
+                            href="${forumCategoryUrl}${slug}/${id}"
+                        >
+                            ${title}
+                        </a>
 
                         ${forumCategory(category_id)}
                     </td>
         
                     <td>
                         <div class="avatar-container">
-                        
+                            ${avatars(posters, users)}
                         </div>
                     </td>
         
