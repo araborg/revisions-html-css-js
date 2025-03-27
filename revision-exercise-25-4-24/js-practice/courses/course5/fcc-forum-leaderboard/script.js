@@ -65,4 +65,10 @@ const showLatestPosts = (data) => {
         .join("");
 };
 
-const timeAgo = (time) => {};
+const timeAgo = (time) => {
+    const currentTime = new Date();
+
+    console.log(currentTime);
+};
+
+console.log(timeAgo());
