@@ -183,8 +183,6 @@ const forumCategory = (id) => {
 };
 
 const avatars = (posters, users) => {
-    // console.log(users);
-
     return posters
         .map((poster) => {
             const user = users.find((user) => user.id === poster.user_id);
@@ -193,7 +191,8 @@ const avatars = (posters, users) => {
                 const avatar = user.avatar_template.replace(/{size}/, 30);
 
                 const userAvatarUrl = avatar.startsWith("/user_avatar/")
-                    ? avatarUrl.concat(avatar)
+                    ? // const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
+                      avatarUrl.concat(avatar)
                     : avatar;
 
                 return `
