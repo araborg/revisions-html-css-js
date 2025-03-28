@@ -6,7 +6,7 @@ the amount of cash provided by the customer
 the amount of cash in the cash drawer. 
 
 show different messages to the user in different 
-scenarios, such as when the 
+scenarios, such as when:
 customer provides too little cash or 
 when the cash drawer doesn't have enough to issue 
 the correct change.
@@ -14,7 +14,10 @@ the correct change.
 
 
 */
+
+// the price of the item
 let price = 1.87;
+
 let cid = [
     ["PENNY", 1.01],
     ["NICKEL", 2.05],
