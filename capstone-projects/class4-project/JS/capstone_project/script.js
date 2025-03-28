@@ -88,8 +88,8 @@ const getCurrency = (curr) => {
     currencies.forEach((currency, index) => {
         // console.log(currency, index);
 
-        if (currency[1] <= curr) {
-            console.log(currency[1]);
+        if (currency[1] <= curr && curr < currency[1][index + 1]) {
+            console.log(currency[0]);
         }
         // console.log(reminder)
     });
