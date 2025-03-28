@@ -50,9 +50,11 @@ const purchaseBtn = document.getElementById("purchase-btn");
 const getPrice = () => {
     const value = cashEl.value;
 
-    return (cash = parseFloat(value));
+    // return (cash = parseFloat(value));
+
+    console.log(value);
 };
 
-console.log(getPrice());
+// console.log(getPrice());
 
 purchaseBtn.addEventListener("click", getPrice);
