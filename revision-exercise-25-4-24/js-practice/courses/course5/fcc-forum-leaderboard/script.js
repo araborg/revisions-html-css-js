@@ -20,6 +20,7 @@ const fetchData = async () => {
 fetchData();
 
 const showLatestPosts = (data) => {
+    // destructuring the data object
     const { topic_list, users } = data;
     const { topics } = topic_list;
 
