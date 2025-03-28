@@ -85,21 +85,27 @@ const getPrice = () => {
 
 const getCurrency = (curr) => {
     // // console.log(curr);
-    // let arr = [];
+    let arr = [];
 
     currencies.forEach((currency, i, currencies) => {
+        // console.log(currencies);
         // const item = ;
-        const reminder = (curr % currency[1]).toFixed(2);
-        arr.push(reminder);
+        // const reminder = (curr % currency[1]).toFixed(2);
+        arr.push(currency[1]);
 
-        //     console.log(reminder);
+        const chosenCurr = arr.filter(
+            (item, i, items) =>
+                item <= curr && item < currencies[currencies.length - 1][1]
+        );
 
-        if (currency[1] <= arr[i] && arr[i] < currencies[i + 1][1]) {
-            console.log(currency[1], arr[1]);
-        }
+        // if (currency[1] <= arr[i] && arr[i] < currencies[i + 1][1]) {
+        //     console.log(currency[1], arr[1]);
+        // }
 
-        // console.log(item)
+        console.log(chosenCurr);
     });
+
+    // console.log(arr);
 
     // // console.log(new Set(arr));
 };
