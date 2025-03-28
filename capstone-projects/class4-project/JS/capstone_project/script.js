@@ -62,6 +62,12 @@ const checkCashRegister = () => {
 
     let changeDue = cashinCents - priceInCents;
 
-    const reversedCid = [cid].reverse();
+    const reversedCid = [...cid]
+        .reverse()
+        .map(([denominationName, amount]) => [
+            denominationName,
+            Math.round(amount * 100),
+        ]);
+
     console.log(reversedCid);
 };
