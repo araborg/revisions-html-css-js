@@ -81,32 +81,6 @@ const getPrice = () => {
     diff = cashValue - price;
 
     getCurrency(diff);
-
-    console.log("got to this level");
-
-    // if (cashValue > price) {
-    //     cid.forEach((item, index) => {
-    //         const cashInDrawer = item[1];
-
-    // diff = cashValue - price;
-
-    // console.log(cashInDrawer)
-    // if (diff <= cashInDrawer) {
-    //     // console.log(cashInDrawer)
-    //     changeDue.textContent += `Status: OPEN ${item[0]}: $${diff}`;
-    // }
-
-    // if (diff >= cashInDrawer) {
-    //     console.log(cashInDrawer);
-    // }
-
-    // else if (cashInDrawer >= cashValue) {
-    //   console.log(cashInDrawer);
-    //   console.log(cashValue);
-
-    // }
-    // });
-    // }
 };
 
 const getCurrency = (curr) => {
