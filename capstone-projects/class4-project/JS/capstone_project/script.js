@@ -59,6 +59,4 @@ const checkCashRegister = () => {
 
         return;
     }
-
-    console.log(cashinCents);
 };
