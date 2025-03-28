@@ -88,5 +88,11 @@ const checkCashRegister = () => {
                 Status: INSUFFICIENT_FUNDS
             </p>
         `;
+
+        return;
+    }
+
+    if (totalCID === changeDue) {
+        result.status = "CLOSED";
     }
 };
