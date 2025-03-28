@@ -84,17 +84,18 @@ const getPrice = () => {
 };
 
 const getCurrency = (curr) => {
-    // console.log(curr);
-    let arr = [];
+    // // console.log(curr);
+    // let arr = [];
 
     currencies.forEach((currency, i, currencies) => {
-        const reminder = (curr % currency[1]).toFixed(2);
-        arr.push(reminder);
+        console.log(currency);
+        //     const reminder = (curr % currency[1]).toFixed(2);
+        //     arr.push(reminder);
 
-        console.log(reminder);
+        //     console.log(reminder);
     });
 
-    // console.log(new Set(arr));
+    // // console.log(new Set(arr));
 };
 
 purchaseBtn.addEventListener("click", getPrice);
