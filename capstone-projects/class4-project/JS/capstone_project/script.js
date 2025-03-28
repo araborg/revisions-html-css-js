@@ -84,15 +84,14 @@ const getPrice = () => {
 };
 
 const getCurrency = (curr) => {
-    // // console.log(curr);
     let arr = [];
     let chosenCurr;
 
-    currencies.forEach((currency, i, currencies) => {
+    currencies.forEach((currency, _, currencies) => {
         arr.push(currency[1]);
 
         chosenCurr = arr.filter(
-            (item, i, items) =>
+            (item) =>
                 item <= curr && item < currencies[currencies.length - 1][1]
         );
     });
