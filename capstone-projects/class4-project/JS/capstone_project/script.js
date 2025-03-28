@@ -48,5 +48,17 @@ const checkCashRegister = () => {
         return;
     }
 
+    if (cashinCents === priceInCents) {
+        displayChangeDue.innerHTML = `
+            <p>
+                No change due - customer paid with exact cash
+            </p>
+        `;
+
+        cash.value = ``;
+
+        return;
+    }
+
     console.log(cashinCents);
 };
