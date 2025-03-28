@@ -89,11 +89,7 @@ const getCurrency = (curr) => {
         // console.log(currency, index);
 
         if (currency[1] <= curr && curr < currencies[i + 1][1]) {
-            console.log(currency[0]);
-
-            console.log(currency);
-
-            console.log(currencies[i + 1]);
+            changeDue.textContent = `Status: OPEN QUARTER: $${curr}`;
         }
         // console.log(reminder)
     });
