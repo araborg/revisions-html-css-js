@@ -41,7 +41,7 @@ const checkCashRegister = () => {
     const priceInCents = Math.round(price * 100);
 
     if (cashinCents < priceInCents) {
-        alert();
+        alert("Customer does not have enough money to purchase the item");
     }
 
     console.log(cashinCents);
