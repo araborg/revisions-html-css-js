@@ -44,7 +44,6 @@ let cid = [
 ];
 
 const cashEl = document.getElementById("cash");
-console.log(cashEl);
 
 const purchaseBtn = document.getElementById("purchase-btn");
 
