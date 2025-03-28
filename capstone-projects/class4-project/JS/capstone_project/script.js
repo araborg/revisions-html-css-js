@@ -59,4 +59,8 @@ const checkCashRegister = () => {
 
         return;
     }
+
+    let changeDue = cashinCents - priceInCents;
+
+    console.log(changeDue);
 };
