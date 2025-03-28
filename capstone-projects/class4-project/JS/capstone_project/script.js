@@ -110,14 +110,11 @@ const getPrice = () => {
 };
 
 const getCurrency = (curr) => {
-    console.log(curr);
+    // console.log(currencies);
     currencies.forEach((currency, index) => {
-        // console.log(diff)
-        // console.log(typeof curr[1])
+        console.log(currency, index);
 
-        // const reminder = diff % currency[1];
-
-        if (currency[1] >= curr && currency[1] < currency[1][index + 1]) {
+        if (currency[1] <= curr) {
             console.log(currency[1]);
         }
         // console.log(reminder)
