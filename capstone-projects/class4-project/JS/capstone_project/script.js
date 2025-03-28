@@ -21,7 +21,7 @@ const priceScreen = document.getElementById("price-screen");
 const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
 const checkResults = () => {
-    if (cash.value) {
+    if (!cash.value) {
         return;
     }
 
@@ -29,3 +29,9 @@ const checkResults = () => {
 };
 
 purchaseBtn.addEventListener("click", checkResults);
+
+cash.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") {
+        checkResults();
+    }
+});
