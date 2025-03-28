@@ -69,5 +69,7 @@ const checkCashRegister = () => {
             Math.round(amount * 100),
         ]);
 
+    const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+
     console.log(reversedCid);
 };
