@@ -167,17 +167,6 @@ const forumCategory = (id) => {
         `;
 };
 
-const viewCount = (views) => {
-    const thousands = Math.floor(views / 1000);
-
-    if (views >= 1000) {
-        return `${thousands}k`;
-    }
-
-    // shows the amount of views less than 1000.
-    return views;
-};
-
 const avatars = (posters, users) => {
     return posters
         .map((poster) => {
