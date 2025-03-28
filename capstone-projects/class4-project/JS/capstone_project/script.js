@@ -88,11 +88,17 @@ const getCurrency = (curr) => {
     // let arr = [];
 
     currencies.forEach((currency, i, currencies) => {
-        console.log(currency);
-        //     const reminder = (curr % currency[1]).toFixed(2);
-        //     arr.push(reminder);
+        // const item = ;
+        const reminder = (curr % currency[1]).toFixed(2);
+        arr.push(reminder);
 
         //     console.log(reminder);
+
+        if (currency[1] <= arr[i] && arr[i] < currencies[i + 1][1]) {
+            console.log(currency[1], arr[1]);
+        }
+
+        // console.log(item)
     });
 
     // // console.log(new Set(arr));
