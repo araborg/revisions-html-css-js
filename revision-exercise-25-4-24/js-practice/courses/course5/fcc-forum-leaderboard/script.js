@@ -13,7 +13,7 @@ const fetchData = async () => {
 
         showLatestPosts(data);
     } catch (err) {
-        console.log(err);
+        console.log(`There is error: ${err}`);
     }
 };
 
@@ -23,6 +23,8 @@ const showLatestPosts = (data) => {
     // destructuring the data object
     const { topic_list, users } = data;
     const { topics } = topic_list;
+
+    console.log(users);
 
     postsContainer.innerHTML = topics
         .map((item) => {
