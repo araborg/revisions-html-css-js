@@ -49,8 +49,8 @@ const purchaseBtn = document.getElementById("purchase-btn");
 const changeDue = document.getElementById("change-due");
 
 // let price = 1.87;
-let price = 19.5;
-// let price = 3.26;
+// let price = 19.5;
+let price = 3.26;
 
 let currencies = [
     ["PENNY", 0.01],
