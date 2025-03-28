@@ -45,3 +45,14 @@ let cid = [
 
 const cashEl = document.getElementById("cash");
 console.log(cashEl);
+
+const purchaseBtn = document.getElementById("purchase-btn");
+
+const getPrice = () => {
+    const value = cashEl.value;
+    cash = parseFloat(value);
+};
+
+console.log(getPrice());
+
+purchaseBtn.addEventListener("click", getPrice);
