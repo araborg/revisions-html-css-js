@@ -42,3 +42,6 @@ let cid = [
     ["TWENTY", 60],
     ["ONE HUNDRED", 100],
 ];
+
+const cashEl = document.getElementById("cash");
+console.log(cashEl);
