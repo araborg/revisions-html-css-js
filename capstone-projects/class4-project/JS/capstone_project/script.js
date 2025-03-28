@@ -50,7 +50,7 @@ const changeDue = document.getElementById("change-due");
 
 // let price = 1.87;
 // let price = 19.5;
-let price = 3.26;
+// let price = 3.26;
 
 let currencies = [
     ["PENNY", 0.01],
@@ -87,12 +87,14 @@ const getCurrency = (curr) => {
     console.log(curr);
 
     currencies.forEach((currency, i, currencies) => {
-        console.log(currency[1]);
+        // console.log(currency[1]);
 
         if (currency[1] <= curr && curr < currencies[i + 1][1]) {
-            changeDue.textContent = `Status: OPEN QUARTER: $${curr}`;
+            changeDue.textContent = `Status: OPEN ${currency[0]}: $${curr}`;
         }
-        // console.log(reminder)
+
+        const reminder = diff % currency[1];
+        console.log(reminder);
     });
 };
 
