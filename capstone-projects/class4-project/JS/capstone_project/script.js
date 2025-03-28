@@ -84,7 +84,8 @@ const getPrice = () => {
 };
 
 const getCurrency = (curr) => {
-    // console.log(currencies);
+    console.log(curr);
+
     currencies.forEach((currency, i, currencies) => {
         // console.log(currency, index);
 
