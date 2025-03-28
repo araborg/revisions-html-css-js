@@ -90,9 +90,9 @@ const getCurrency = (curr) => {
         // console.log(currency[1]);
 
         const reminder = (curr % currency[1]).toFixed(2);
-        console.log(reminder);
+        // console.log(reminder);
 
-        if (currency[1] <= curr && curr < currencies[i + 1][1]) {
+        if (currency[1] <= reminder && reminder < currencies[i + 1][1]) {
             changeDue.textContent = `Status: OPEN ${currency[0]}: $${curr}`;
         }
     });
