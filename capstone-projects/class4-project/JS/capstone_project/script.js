@@ -89,7 +89,7 @@ const getCurrency = (curr) => {
     currencies.forEach((currency, i, currencies) => {
         // console.log(currency[1]);
 
-        const reminder = (diff % currency[1]).toFixed(2);
+        const reminder = (curr % currency[1]).toFixed(2);
         console.log(reminder);
 
         if (currency[1] <= curr && curr < currencies[i + 1][1]) {
