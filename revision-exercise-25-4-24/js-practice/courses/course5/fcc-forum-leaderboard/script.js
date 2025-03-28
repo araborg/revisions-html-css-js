@@ -154,6 +154,10 @@ const allCategories = {
 const forumCategory = (id) => {
     let selectedCategory = {};
 
+    // console.log(id);
+
+    console.log(allCategories);
+
     if (allCategories.hasOwnProperty(id)) {
         const { className, category } = allCategories[id];
 
