@@ -93,7 +93,7 @@ const getCurrency = (curr) => {
             changeDue.textContent = `Status: OPEN ${currency[0]}: $${curr}`;
         }
 
-        const reminder = Math.round(diff % currency[1]);
+        const reminder = (diff % currency[1]).toFixed(2);
         console.log(reminder);
     });
 };
