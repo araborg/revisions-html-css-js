@@ -1,4 +1,5 @@
-const forumLatest = "https://forum-proxy.freecodecamp.rocks/latest";
+const forumLatest =
+    "https://cdn.freecodecamp.org/curriculum/forum-latest/latest.json";
 const forumTopicUrl = "https://forum.freecodecamp.org/t/";
 const forumCategoryUrl = "https://forum.freecodecamp.org/c/";
 const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
@@ -23,6 +24,8 @@ const showLatestPosts = (data) => {
     // destructuring the data object
     const { topic_list, users } = data;
     const { topics } = topic_list;
+
+    console.log(topics);
 
     postsContainer.innerHTML = topics
         .map((item) => {
@@ -66,6 +69,12 @@ const showLatestPosts = (data) => {
         })
         .join("");
 };
+
+// helper functions:
+// forumCategory
+// avatars
+// viewCount
+// timeAgo
 
 const timeAgo = (time) => {
     const currentTime = new Date();
