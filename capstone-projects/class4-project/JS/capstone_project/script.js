@@ -18,6 +18,7 @@ the correct change.
 // the price of the item
 let price = 1.87;
 
+// cash-in-drawer
 let cid = [
     ["PENNY", 1.01],
     ["NICKEL", 2.05],
