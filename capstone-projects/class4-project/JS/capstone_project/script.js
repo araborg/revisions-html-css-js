@@ -90,10 +90,12 @@ const getCurrency = (curr) => {
     currencies.forEach((currency, _, currencies) => {
         arr.push(currency[1]);
 
-        chosenCurr = arr.filter(
-            (item) =>
-                item <= curr && item < currencies[currencies.length - 1][1]
-        );
+        chosenCurr = arr
+            .filter(
+                (item) =>
+                    item <= curr && item < currencies[currencies.length - 1][1]
+            )
+            .reverse();
     });
 
     console.log(chosenCurr);
