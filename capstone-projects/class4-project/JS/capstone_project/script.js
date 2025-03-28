@@ -98,7 +98,21 @@ const getCurrency = (curr) => {
             .reverse();
     });
 
-    console.log(chosenCurr);
+    // console.log(chosenCurr);
+
+    chosenCurr.forEach((item) => {
+        while (curr > 0) {
+            const occurence = Math.floor(curr / item);
+
+            // console.log(occurence);
+
+            let output = item * occurence;
+
+            curr -= output;
+
+            console.log(output);
+        }
+    });
 };
 
 purchaseBtn.addEventListener("click", getPrice);
