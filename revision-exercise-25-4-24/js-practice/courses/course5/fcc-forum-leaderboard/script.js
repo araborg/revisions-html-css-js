@@ -5,6 +5,20 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 
 const postsContainer = document.getElementById("posts-container");
 
+// async and await:
+const fetchData = async () => {
+    try {
+        const res = await fetch(forumLatest);
+        const data = await res.json();
+
+        showLatestPosts(data);
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+fetchData();
+
 const allCategories = {
     299: {
         category: "Career Advice",
@@ -134,19 +148,6 @@ const avatars = (posters, users) => {
         })
         .join("");
 };
-
-const fetchData = async () => {
-    try {
-        const res = await fetch(forumLatest);
-        const data = await res.json();
-
-        showLatestPosts(data);
-    } catch (err) {
-        console.log(err);
-    }
-};
-
-fetchData();
 
 const showLatestPosts = (data) => {
     const { topic_list, users } = data;
