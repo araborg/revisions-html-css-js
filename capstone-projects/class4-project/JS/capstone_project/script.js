@@ -38,6 +38,11 @@ cash.addEventListener("keyup", (e) => {
 
 const checkCashRegister = () => {
     const cashinCents = Math.round(Number(cash.value) * 100);
+    const priceInCents = Math.round(price * 100);
+
+    if (cashinCents < priceInCents) {
+        alert();
+    }
 
     console.log(cashinCents);
 };
