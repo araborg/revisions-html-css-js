@@ -85,19 +85,24 @@ const getPrice = () => {
 
 const getCurrency = (curr) => {
     // console.log(curr);
+    let arr = [];
 
     currencies.forEach((currency, i, currencies) => {
         // console.log(currency[1]);
 
         const reminder = (curr % currency[1]).toFixed(2);
-        // console.log(reminder);
+        arr.push(reminder);
+
+        console.log(reminder);
 
         if (currency[1] <= reminder && reminder < currencies[i + 1][1]) {
             // changeDue.textContent += `Status: OPEN ${currency[0]}: $${curr}`;
-
-            console.log(currency[1]);
+            // console.log(currency[1]);
+            // arr.push(currency[1]);
         }
     });
+
+    console.log(arr);
 };
 
 purchaseBtn.addEventListener("click", getPrice);
