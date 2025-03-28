@@ -11,3 +11,5 @@ let cid = [
     ["TWENTY", 60],
     ["ONE HUNDRED", 100],
 ];
+
+const displayChangeDue = document.getElementById("change-due");
