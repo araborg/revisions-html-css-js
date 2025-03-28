@@ -98,11 +98,11 @@ const getCurrency = (curr) => {
         }
 
         // if (currency[1] <= reminder && reminder < currencies[i + 1][1]) {
-        if (currency[1] <= reminder) {
-            // changeDue.textContent += `Status: OPEN ${currency[0]}: $${curr}`;
-            // console.log(currency[1]);
-            // arr.push(currency[1]);
-        }
+        // if (currency[1] <= reminder) {
+        // changeDue.textContent += `Status: OPEN ${currency[0]}: $${curr}`;
+        // console.log(currency[1]);
+        // arr.push(currency[1]);
+        // }
     });
 
     console.log(new Set(arr));
