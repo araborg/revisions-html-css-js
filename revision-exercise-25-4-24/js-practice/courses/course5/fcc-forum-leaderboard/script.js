@@ -154,10 +154,6 @@ const allCategories = {
 const forumCategory = (id) => {
     let selectedCategory = {};
 
-    // console.log(id);
-
-    console.log(allCategories);
-
     if (allCategories.hasOwnProperty(id)) {
         const { className, category } = allCategories[id];
 
@@ -170,6 +166,9 @@ const forumCategory = (id) => {
 
         selectedCategory.id = 1;
     }
+
+    console.log(selectedCategory);
+    // console.log(allCategories);
 
     const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
     const linkText = selectedCategory.category;
