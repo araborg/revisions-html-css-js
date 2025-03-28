@@ -24,8 +24,6 @@ const showLatestPosts = (data) => {
     const { topic_list, users } = data;
     const { topics } = topic_list;
 
-    console.log(users);
-
     postsContainer.innerHTML = topics
         .map((item) => {
             const {
