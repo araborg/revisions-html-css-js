@@ -36,4 +36,8 @@ cash.addEventListener("keyup", (e) => {
     }
 });
 
-const checkCashRegister = () => {};
+const checkCashRegister = () => {
+    const cashinCents = Math.round(Number(cash.value) * 100);
+
+    console.log(cashinCents);
+};
