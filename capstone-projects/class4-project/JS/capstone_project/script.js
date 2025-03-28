@@ -61,7 +61,7 @@ let currencies = [
     ["FIVE", 5],
     ["TEN", 10],
     ["TWENTY", 20],
-    ["ONE HUNDRED", 20],
+    ["ONE HUNDRED", 100],
 ];
 
 let cashValue;
@@ -87,7 +87,7 @@ const getCurrency = (curr) => {
     console.log(curr);
 
     currencies.forEach((currency, i, currencies) => {
-        // console.log(currency, index);
+        console.log(currency[1]);
 
         if (currency[1] <= curr && curr < currencies[i + 1][1]) {
             changeDue.textContent = `Status: OPEN QUARTER: $${curr}`;
