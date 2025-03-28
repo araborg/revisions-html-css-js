@@ -112,7 +112,7 @@ const getPrice = () => {
 const getCurrency = (curr) => {
     // console.log(currencies);
     currencies.forEach((currency, index) => {
-        console.log(currency, index);
+        // console.log(currency, index);
 
         if (currency[1] <= curr) {
             console.log(currency[1]);
