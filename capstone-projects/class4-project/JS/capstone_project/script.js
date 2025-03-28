@@ -49,7 +49,8 @@ const purchaseBtn = document.getElementById("purchase-btn");
 
 const getPrice = () => {
     const value = cashEl.value;
-    cash = parseFloat(value);
+
+    return (cash = parseFloat(value));
 };
 
 console.log(getPrice());
