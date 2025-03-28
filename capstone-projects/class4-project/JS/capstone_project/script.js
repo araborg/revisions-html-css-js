@@ -89,26 +89,15 @@ const getCurrency = (curr) => {
     let chosenCurr;
 
     currencies.forEach((currency, i, currencies) => {
-        // console.log(currencies);
-        // const item = ;
-        // const reminder = (curr % currency[1]).toFixed(2);
         arr.push(currency[1]);
 
         chosenCurr = arr.filter(
             (item, i, items) =>
                 item <= curr && item < currencies[currencies.length - 1][1]
         );
-
-        // if (currency[1] <= arr[i] && arr[i] < currencies[i + 1][1]) {
-        //     console.log(currency[1], arr[1]);
-        // }
-
-        // return chosenCurr;
     });
 
     console.log(chosenCurr);
-
-    // // console.log(new Set(arr));
 };
 
 purchaseBtn.addEventListener("click", getPrice);
