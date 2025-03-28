@@ -49,10 +49,10 @@ const purchaseBtn = document.getElementById("purchase-btn");
 const changeDue = document.getElementById("change-due");
 
 // let price = 1.87;
-// let price = 19.5;
-let price = 3.26;
+let price = 19.5;
+// let price = 3.26;
 
-let currency = [
+let currencies = [
     ["PENNY", 0.01],
     ["NICKEL", 0.05],
     ["DIME", 0.1],
@@ -78,37 +78,50 @@ const getPrice = () => {
         changeDue.textContent = "No change due - customer paid with exact cash";
     }
 
-    if (cashValue > price) {
-        cid.forEach((item, index) => {
-            const cashInDrawer = item[1];
+    diff = cashValue - price;
 
-            diff = cashValue - price;
+    getCurrency(diff);
 
-            // console.log(cashInDrawer)
-            if (diff <= cashInDrawer) {
-                // console.log(cashInDrawer)
-                changeDue.textContent += `Status: OPEN ${item[0]}: $${diff}`;
-            }
+    console.log("got to this level");
 
-            if (diff >= cashInDrawer) {
-                console.log(cashInDrawer);
-            }
+    // if (cashValue > price) {
+    //     cid.forEach((item, index) => {
+    //         const cashInDrawer = item[1];
 
-            // else if (cashInDrawer >= cashValue) {
-            //   console.log(cashInDrawer);
-            //   console.log(cashValue);
+    // diff = cashValue - price;
 
-            // }
-        });
+    // console.log(cashInDrawer)
+    // if (diff <= cashInDrawer) {
+    //     // console.log(cashInDrawer)
+    //     changeDue.textContent += `Status: OPEN ${item[0]}: $${diff}`;
+    // }
 
-        currency.forEach((curr) => {
-            // console.log(diff)
-            // console.log(typeof curr[1])
+    // if (diff >= cashInDrawer) {
+    //     console.log(cashInDrawer);
+    // }
 
-            const reminder = diff % curr[1];
-            // console.log(reminder)
-        });
-    }
+    // else if (cashInDrawer >= cashValue) {
+    //   console.log(cashInDrawer);
+    //   console.log(cashValue);
+
+    // }
+    // });
+    // }
+};
+
+const getCurrency = (curr) => {
+    console.log(curr);
+    currencies.forEach((currency, index) => {
+        // console.log(diff)
+        // console.log(typeof curr[1])
+
+        // const reminder = diff % currency[1];
+
+        if (currency[1] >= curr && currency[1] < currency[1][index + 1]) {
+            console.log(currency[1]);
+        }
+        // console.log(reminder)
+    });
 };
 
 purchaseBtn.addEventListener("click", getPrice);
