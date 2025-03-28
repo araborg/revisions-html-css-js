@@ -35,3 +35,5 @@ cash.addEventListener("keyup", (e) => {
         checkResults();
     }
 });
+
+const checkCashRegister = () => {};
