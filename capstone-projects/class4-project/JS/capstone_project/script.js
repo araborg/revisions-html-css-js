@@ -123,6 +123,8 @@ const checkCashRegister = () => {
 
         return;
     }
+
+    formatResults(result.status, result.change);
 };
 
 const formatResults = (status, change) => {
@@ -132,7 +134,7 @@ const formatResults = (status, change) => {
         </p>
     `;
 
-    displayChangeDue.innerHTML = change
+    displayChangeDue.innerHTML += change
         .map(([denominationName, amount]) => {
             `
             <p>
