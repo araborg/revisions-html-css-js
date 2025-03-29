@@ -125,6 +125,8 @@ const checkCashRegister = () => {
     }
 
     formatResults(result.status, result.change);
+
+    updateUI(result.change);
 };
 
 const formatResults = (status, change) => {
