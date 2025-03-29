@@ -172,4 +172,14 @@ const updateUI = (change) => {
                 100;
         });
     }
+
+    cash.value = "";
+
+    priceScreen.textContent = `Total: $${price}`;
+
+    cashDrawerDisplay.innerHTML = `
+        <p><strong>
+            Change in drawer:
+        </strong></p>
+    `;
 };
