@@ -147,4 +147,16 @@ const formatResults = (status, change) => {
         .join("");
 };
 
-const updateUI = (change) => {};
+const updateUI = (change) => {
+    const currencyNameMap = {
+        PENNY: "Pennies",
+        NICKEL: "Nickels",
+        DIME: "Dimes",
+        QUARTER: "Quarters",
+        ONE: "Ones",
+        FIVE: "Fives",
+        TEN: "Tens",
+        TWENTY: "Twenties",
+        "ONE HUNDRED": "Hundreds",
+    };
+};
