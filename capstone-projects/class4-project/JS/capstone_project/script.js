@@ -181,5 +181,16 @@ const updateUI = (change) => {
         <p><strong>
             Change in drawer:
         </strong></p>
+
+        ${cid
+            .map(
+                ([denominationName, amount]) =>
+                    `
+                <p>
+                    ${currencyNameMap[denominationName]}: $${amount}
+                </p>
+            `
+            )
+            .join("")}
     `;
 };
