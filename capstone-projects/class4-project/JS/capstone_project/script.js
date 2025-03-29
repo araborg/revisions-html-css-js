@@ -101,7 +101,26 @@ const checkCashRegister = () => {
 
             const possibleChange = Math.min(amount, changeDue);
 
-            console.log(total);
+            const count = Math.floor(possibleChange / denomination[i]);
+
+            const amountInChange = count * denominations[i];
+
+            changeDue -= amountInChange;
+
+            if (count > 0) {
+                result.change.push([denominationName, amountInChange / 100]);
+            }
+            console.log(possibleChange);
         }
+    }
+
+    if (changeDue > 0) {
+        displayChangeDue.innerHTML = `
+            <p>
+                Status: INSUFFICIENT_FUNDS
+            </p>
+        `;
+
+        return;
     }
 };
