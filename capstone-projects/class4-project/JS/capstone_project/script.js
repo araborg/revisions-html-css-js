@@ -80,7 +80,7 @@ const checkCashRegister = () => {
         (prev, [denominationName, amount]) => prev + amount,
         0
     );
-    // console.log(totalCID);
+    console.log(totalCID);
 
     if (totalCID < changeDue) {
         displayChangeDue.innerHTML = `
