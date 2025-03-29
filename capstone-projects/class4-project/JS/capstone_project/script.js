@@ -101,7 +101,7 @@ const checkCashRegister = () => {
 
             const possibleChange = Math.min(amount, changeDue);
 
-            const count = Math.floor(possibleChange / denomination[i]);
+            const count = Math.floor(possibleChange / denominations[i]);
 
             const amountInChange = count * denominations[i];
 
@@ -162,5 +162,6 @@ const updateUI = (change) => {
 
     // Update cid if change is passed in
     if (change) {
+        console.log(change);
     }
 };
