@@ -131,4 +131,14 @@ const formatResults = (status, change) => {
             Status: ${status}
         </p>
     `;
+
+    displayChangeDue.innerHTML = change
+        .map(([denominationName, amount]) => {
+            `
+            <p>
+                ${denominationName}: $${amount}
+            </p>
+        `;
+        })
+        .join("");
 };
