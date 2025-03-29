@@ -166,9 +166,10 @@ const updateUI = (change) => {
                 ([denominationName]) => denominationName === changeDenomination
             );
 
-            targetArr[1] = Math.round(targetArr[1] * 100);
-
-            console.log(targetArr[1]);
+            targetArr[1] =
+                (Math.round(targetArr[1] * 100) -
+                    Math.round(changeAmount * 100)) /
+                100;
         });
     }
 };
