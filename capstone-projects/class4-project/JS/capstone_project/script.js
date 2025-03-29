@@ -124,3 +124,11 @@ const checkCashRegister = () => {
         return;
     }
 };
+
+const formatResults = (status, change) => {
+    displayChangeDue.innerHTML = `
+        <p> 
+            Status: ${status}
+        </p>
+    `;
+};
