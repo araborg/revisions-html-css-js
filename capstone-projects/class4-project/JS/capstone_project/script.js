@@ -40,8 +40,6 @@ const checkCashRegister = () => {
     const cashinCents = Math.round(Number(cash.value) * 100);
     const priceInCents = Math.round(price * 100);
 
-    console.log(priceInCents);
-
     if (cashinCents < priceInCents) {
         alert("Customer does not have enough money to purchase the item");
 
@@ -70,6 +68,12 @@ const checkCashRegister = () => {
             denominationName,
             Math.round(amount * 100),
         ]);
+
+    const reversedC = [...cid]
+        .reverse()
+        .map(([denominationName, amount]) => {});
+
+    console.log(reversedC);
 
     const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
 
