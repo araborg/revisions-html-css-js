@@ -99,6 +99,9 @@ const checkCashRegister = () => {
     for (let i = 0; i <= reversedCid.length; i++) {
         if (changeDue >= denominations[i] && changeDue > 0) {
             const [denominationName, total] = reversedCid[i];
+
+            console.log(denominationName);
+            console.log(total);
         }
     }
 };
