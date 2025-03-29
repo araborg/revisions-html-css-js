@@ -110,7 +110,6 @@ const checkCashRegister = () => {
             if (count > 0) {
                 result.change.push([denominationName, amountInChange / 100]);
             }
-            console.log(possibleChange);
         }
     }
 
