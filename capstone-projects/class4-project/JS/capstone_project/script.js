@@ -145,4 +145,4 @@ const formatResults = (status, change) => {
         .join("");
 };
 
-const updateUI = (change = {});
+const updateUI = (change) => {};
