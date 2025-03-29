@@ -159,4 +159,8 @@ const updateUI = (change) => {
         TWENTY: "Twenties",
         "ONE HUNDRED": "Hundreds",
     };
+
+    // Update cid if change is passed in
+    if (change) {
+    }
 };
