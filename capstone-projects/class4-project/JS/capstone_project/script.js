@@ -178,9 +178,11 @@ const updateUI = (change) => {
     priceScreen.textContent = `Total: $${price}`;
 
     cashDrawerDisplay.innerHTML = `
-        <p><strong>
-            Change in drawer:
-        </strong></p>
+        <p>
+            <strong>
+                Change in drawer:
+            </strong>
+        </p>
 
         ${cid
             .map(
