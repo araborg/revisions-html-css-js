@@ -80,7 +80,6 @@ const checkCashRegister = () => {
         (prev, [denominationName, amount]) => prev + amount,
         0
     );
-    console.log(totalCID);
 
     if (totalCID < changeDue) {
         displayChangeDue.innerHTML = `
@@ -100,8 +99,8 @@ const checkCashRegister = () => {
         if (changeDue >= denominations[i] && changeDue > 0) {
             const [denominationName, total] = reversedCid[i];
 
-            console.log(denominationName);
-            console.log(total);
+            console.log(reversedCid[i], i);
+            // console.log(total);
         }
     }
 };
