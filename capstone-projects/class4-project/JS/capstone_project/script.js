@@ -69,12 +69,6 @@ const checkCashRegister = () => {
             Math.round(amount * 100),
         ]);
 
-    const reversedC = [...cid].reverse().map(([denominationName, amount]) => {
-        denominationName, Math.round(amount * 100);
-    });
-
-    console.log(reversedCid);
-
     const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
 
     const result = {
