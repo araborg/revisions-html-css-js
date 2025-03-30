@@ -29,6 +29,7 @@ const pokemons = async () => {
         );
 
         const pokem = await res.json();
+        findPokemon(pokem);
 
         console.log(pokem);
 
