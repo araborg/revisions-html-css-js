@@ -8,7 +8,7 @@ let inputPoke;
 const findPokemon = () => {
     const inputValue = searchInput.value;
 
-    pokemons(inputValue);
+    pokemons();
 
     // console.log(pokem);
 };
@@ -25,14 +25,17 @@ const pokemons = async (input) => {
 
     try {
         // const res = await fetch(pokemonUrl);
-        const res = await fetch(
-            `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`
-        );
+        const inputValue = searchInput.value;
+        console.log(inputValue);
 
-        console.log(res);
-        const pokem = await res.json();
+        // const res = await fetch(
+        //     `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`
+        // );
 
-        console.log(pokem);
+        // console.log(res);
+        // const pokem = await res.json();
+
+        // console.log(pokem);
 
         // findPokemon(pokem);
     } catch (err) {
