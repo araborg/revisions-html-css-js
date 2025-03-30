@@ -21,6 +21,8 @@ const pokemons = async (input) => {
 
         const pokem = await res.json();
         console.log(pokem);
+
+        return pokem;
     } catch (err) {
         console.error(err);
     }
