@@ -21,11 +21,15 @@ console.log(inputPoke);
 // console.log(pokemonUrl);
 
 const pokemons = async (input) => {
+    // console.log(input);
+
     try {
         // const res = await fetch(pokemonUrl);
         const res = await fetch(
             `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`
         );
+
+        console.log(res);
         const pokem = await res.json();
 
         console.log(pokem);
