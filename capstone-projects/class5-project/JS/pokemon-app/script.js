@@ -5,10 +5,10 @@ const searchBtn = document.getElementById("search-button");
 
 let inputPoke;
 
-const findPokemon = ()) => {
+const findPokemon = () => {
     const inputValue = searchInput.value;
 
-    pokemons(inputValue)
+    pokemons(inputValue);
 
     // console.log(pokem);
 };
@@ -23,7 +23,9 @@ console.log(inputPoke);
 const pokemons = async (input) => {
     try {
         // const res = await fetch(pokemonUrl);
-        const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`)
+        const res = await fetch(
+            `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`
+        );
         const pokem = await res.json();
 
         console.log(pokem);
