@@ -20,7 +20,7 @@ console.log(inputPoke);
 // const pokemonUrl = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${inputPoke}`;
 // console.log(pokemonUrl);
 
-const pokemons = async (input) => {
+const pokemons = async () => {
     // console.log(input);
 
     try {
