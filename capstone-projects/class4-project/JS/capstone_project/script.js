@@ -15,14 +15,16 @@ let cid = [
 
 /* selected element*/
 const cashEl = document.getElementById("cash");
-const changeDue = document.getElementById("change-due");
+const changeDueDisplay = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
-const cashDrawerDisplay = document.getElementById("cash-drawer-display");
+// const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
 // logic
 const cashRegister = () => {
     const cashInCents = Math.round(Number(cash.value) * 100);
     const priceInCents = Math.round(price * 100);
+
+    console.log(cashInCents, priceInCents);
 
     if (cashInCents < priceInCents) {
         alert("Customer does not have enough money to purchase the item");
@@ -33,7 +35,7 @@ const cashRegister = () => {
     }
 
     if (cashInCents === priceInCents) {
-        changeDue.innerHTML =
+        changeDueDisplay.innerHTML =
             "<p>No change due - customer paid with exact cash</p>";
 
         cash.value = "";
@@ -92,13 +94,13 @@ const cashRegister = () => {
 };
 
 const showResult = (status, change) => {
-    changeDue.innerHTML = `
+    changeDueDisplay.innerHTML = `
         <p>
             Status: ${status}
         </p>
     `;
 
-    changeDue.innerHTML += change
+    changeDueDisplay.innerHTML += change
         .map(
             ([denominationName, amt]) => `
                 <p>
@@ -158,15 +160,15 @@ const updateUI = (change) => {
 
     // show d UI update in cashDrawerDisplay
     cashDrawerDisplay.innerHTML = `
-        <p><strong>Change in drawer:</strong></p>
-    
-        ${cid
-            .map(
-                ([denominationName, amount]) =>
-                    `<p>${currencyNames[denominationName]}: $${amount}</p>`
-            )
-            .join("")}
-  `;
+            <p><strong>Change in drawer:</strong></p>
+
+            ${cid
+                .map(
+                    ([denominationName, amount]) =>
+                        `<p>${currencyNames[denominationName]}: $${amount}</p>`
+                )
+                .join("")}
+      `;
 };
 
 const checkResults = () => {
