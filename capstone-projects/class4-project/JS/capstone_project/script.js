@@ -98,6 +98,7 @@ const checkCashRegister = () => {
         result.status = "CLOSED";
     }
 
+    // console.log(reversedCid.length); // 9
     for (let i = 0; i <= reversedCid.length; i++) {
         if (changeDue >= denominations[i] && changeDue > 0) {
             const [denominationName, amount] = reversedCid[i];
