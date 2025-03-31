@@ -107,9 +107,9 @@ const updateUI = (change) => {
         Nickels: $2.05
         Dimes: $3.1
         Quarters: $4.25
-        Ones: $9
+        Ones: $90
         Fives: $55
-        Tens: $2
+        Tens: $20
         Twenties: $60
         Hundreds: $100
     
@@ -120,16 +120,21 @@ const updateUI = (change) => {
     if (change) {
         change.forEach(([changeDenomination, changeAmount]) => {
             console.log(change);
+
+            // using change to find cid dt correlate
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
             );
 
+            // substract change from cid amount
             targetArr[1] =
                 (Math.round(targetArr[1] * 100) -
                     Math.round(changeAmount * 100)) /
                 100;
         });
     }
+
+    console.log(cid);
 
     cash.value = "";
     // priceScreen.textContent = `Total: $${price}`;
