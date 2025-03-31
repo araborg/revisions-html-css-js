@@ -13,3 +13,6 @@ let cid = [
 ];
 
 /* selected element*/
+const cashEl = document.getElementById("cash");
+const purchaseBtn = document.getElementById("purchase-btn");
+const changeDue = document.getElementById("change-due");
