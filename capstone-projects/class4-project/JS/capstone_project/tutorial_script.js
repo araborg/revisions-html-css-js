@@ -105,9 +105,12 @@ price, an alert should appear with the text
 "Customer does not have enough money to purchase 
 the item".
 
-const cashEl = document.getElementById("cash")
-const purchaseBtn = document.getElementById("purchase-btn")
-const changeDue = document.getElementById("change-due")
+const cashEl = document.getElementById("cash");
+const purchaseBtn = 
+    document.getElementById("purchase-btn");
+const changeDue = document.getElementById("change-due");
+const cashDrawerDisplay = 
+    document.getElementById("cash-drawer-display");
 
 const cashRegister = () => {
     const cashInCents = Math.round(Number(cash.value) * 100);

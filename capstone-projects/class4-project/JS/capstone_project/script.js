@@ -17,6 +17,7 @@ let cid = [
 const cashEl = document.getElementById("cash");
 const purchaseBtn = document.getElementById("purchase-btn");
 const changeDue = document.getElementById("change-due");
+const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
 // logic
 const cashRegister = () => {
