@@ -90,22 +90,23 @@ const cashRegister = () => {
 };
 
 const updateUI = (change) => {
-    // const currencyNameMap = {
-    //     PENNY: "Pennies",
-    //     NICKEL: "Nickels",
-    //     DIME: "Dimes",
-    //     QUARTER: "Quarters",
-    //     ONE: "Ones",
-    //     FIVE: "Fives",
-    //     TEN: "Tens",
-    //     TWENTY: "Twenties",
-    //     "ONE HUNDRED": "Hundreds",
-    // };
+    const currencyNames = {
+        PENNY: "Pennies",
+        NICKEL: "Nickels",
+        DIME: "Dimes",
+        QUARTER: "Quarters",
+        ONE: "Ones",
+        FIVE: "Fives",
+        TEN: "Tens",
+        TWENTY: "Twenties",
+        "ONE HUNDRED": "Hundreds",
+    };
 
     // ?????????
     // Update cid if change is passed in
     if (change) {
         change.forEach(([changeDenomination, changeAmount]) => {
+            console.log(change);
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
             );
@@ -124,7 +125,7 @@ const updateUI = (change) => {
     ${cid
         .map(
             ([denominationName, amount]) =>
-                `<p>${currencyNameMap[denominationName]}: $${amount}</p>`
+                `<p>${currencyNames[denominationName]}: $${amount}</p>`
         )
         .join("")}
   `;
