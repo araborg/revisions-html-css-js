@@ -1,11 +1,11 @@
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
 
-const findPokemon = (pokem) => {
+const findPokemon = (data) => {
     // const inputValue = searchInput.value;
     // console.log(pokemons(inputValue));
 
-    console.log([...pokem]);
+    console.log(data);
 };
 
 searchBtn.addEventListener("click", findPokemon);
@@ -19,9 +19,9 @@ const pokemons = async () => {
         const eachPokemon = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokeNameOrNum}`;
 
         const res = await fetch(eachPokemon);
-        const pokem = await res.json();
+        const data = await res.json();
 
-        findPokemon(pokem);
+        findPokemon(data);
     } catch (err) {
         console.error(err);
     }
