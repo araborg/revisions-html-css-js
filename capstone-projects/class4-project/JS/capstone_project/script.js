@@ -63,7 +63,7 @@ const checkCashRegister = () => {
 
     let changeDue = cashinCents - priceInCents; // 4674
 
-    const reversedCid = [...cid]
+    const reversedCid = [...cid] // adds the key-value pairs to the object being created.
         .reverse()
         .map(([denominationName, amount]) => [
             denominationName,
