@@ -6,6 +6,8 @@ let inputPoke;
 const findPokemon = (pokem) => {
     // const inputValue = searchInput.value;
     // console.log(pokemons(inputValue));
+
+    console.log([...pokem]);
 };
 
 searchBtn.addEventListener("click", findPokemon);
