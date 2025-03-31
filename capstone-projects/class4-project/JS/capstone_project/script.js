@@ -145,7 +145,7 @@ const updateUI = (change) => {
         ${cid
             .map(
                 ([denominationName, amount]) =>
-                    `<p>${currencyNames[denominationName]}: $${amount}</p>`
+                    `<p>${denominationName}: $${amount}</p>`
             )
             .join("")}
   `;
