@@ -102,11 +102,10 @@ const checkCashRegister = () => {
             const [denominationName, amount] = reversedCid[i];
 
             const possibleChange = Math.min(amount, changeDue);
-            console.log(amount, changeDue, possibleChange);
 
-            //     const count = Math.floor(possibleChange / denominations[i]);
+            const count = Math.floor(possibleChange / denominations[i]);
 
-            //     const amountInChange = count * denominations[i];
+            const amountInChange = count * denominations[i];
 
             //     changeDue -= amountInChange;
 
