@@ -137,6 +137,8 @@ const updateUI = (change) => {
 
     cash.value = "";
     // priceScreen.textContent = `Total: $${price}`;
+
+    // show d UI update in cashDrawerDisplay
     cashDrawerDisplay.innerHTML = `
         <p><strong>Change in drawer:</strong></p>
     
