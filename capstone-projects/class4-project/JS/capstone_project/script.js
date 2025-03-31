@@ -81,6 +81,8 @@ const checkCashRegister = () => {
         0
     );
 
+    console.log(totalCID);
+
     if (totalCID < changeDue) {
         displayChangeDue.innerHTML = `
             <p>
