@@ -195,10 +195,10 @@ const updateUI = (change) => {
             .map(
                 ([denominationName, amount]) =>
                     `
-                <p>
-                    ${currencyNameMap[denominationName]}: $${amount}
-                </p>
-            `
+                        <p>
+                            ${currencyNameMap[denominationName]}: $${amount}
+                        </p>
+                    `
             )
             .join("")}
     `;
