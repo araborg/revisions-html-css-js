@@ -187,6 +187,56 @@ and the #purchase-btn element is clicked, the value
 in the #change-due element should be 
 "Status: OPEN QUARTER: $0.5".
 
+const cashRegister = () => {
+    const cashInCents = Math.round(Number(cash.value) * 100);
+    const priceInCents = Math.round(price * 100);
+
+    if (cashInCents < priceInCents) {
+        alert("Customer does not have enough money to purchase the item");
+
+        cash.value = "";
+
+        return;
+    }
+
+    if (cashInCents === priceInCents) {
+        changeDue.innerHTML =
+            "<p> No change due - customer paid with exact cash </p>";
+
+        cash.value = "";
+
+        return;
+    }
+
+        // needed variables:
+    let changeDue = cashInCents - priceInCents;
+    const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+    const result = { status: "OPEN", change: [] };
+
+    const reversedCid = [...cid] // adds the key-value pairs to the object being created.
+        .reverse()
+        .map(([denominationName, amount]) => [
+            denominationName,
+            Math.round(amount * 100),
+        ]);
+
+    const totalCID = reversedCid.reduce(
+        (prev, [_, amount]) => prev + amount,
+        0
+    ); // 33541
+
+    if (totalCID < changeDue) {
+        displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+        return;
+    }
+
+    // e.g: totalCID = 33541 and changeDue = 33541
+    if (totalCID === changeDue) {
+        result.status = "CLOSED";
+    }
+
+};
+
 
 Lesson 7:
 When price is 3.26, the value in the #cash element 

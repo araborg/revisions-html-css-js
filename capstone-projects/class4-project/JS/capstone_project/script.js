@@ -1,4 +1,5 @@
-let price = 3.26;
+// let price = 3.26;
+let price = 19.5;
 
 let cid = [
     ["PENNY", 1.01],
@@ -37,6 +38,33 @@ const cashRegister = () => {
         cash.value = "";
 
         return;
+    }
+
+    // needed variables:
+    let changeDue = cashInCents - priceInCents;
+    const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+    const result = { status: "OPEN", change: [] };
+
+    const reversedCid = [...cid] // adds the key-value pairs to the object being created.
+        .reverse()
+        .map(([denominationName, amount]) => [
+            denominationName,
+            Math.round(amount * 100),
+        ]);
+
+    const totalCID = reversedCid.reduce(
+        (prev, [_, amount]) => prev + amount,
+        0
+    ); // 33541
+
+    if (totalCID < changeDue) {
+        displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+        return;
+    }
+
+    // e.g: totalCID = 33541 and changeDue = 33541
+    if (totalCID === changeDue) {
+        result.status = "CLOSED";
     }
 };
 
