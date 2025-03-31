@@ -79,7 +79,7 @@ const checkCashRegister = () => {
     const totalCID = reversedCid.reduce(
         (prev, [denominationName, amount]) => prev + amount,
         0
-    );
+    ); // 33541
 
     console.log(totalCID);
 
