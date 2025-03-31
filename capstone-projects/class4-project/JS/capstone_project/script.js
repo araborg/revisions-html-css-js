@@ -17,7 +17,7 @@ let cid = [
 const cashEl = document.getElementById("cash");
 const changeDueDisplay = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
-// const cashDrawerDisplay = document.getElementById("cash-drawer-display");
+const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
 // logic
 const cashRegister = () => {
@@ -87,6 +87,12 @@ const cashRegister = () => {
                 result.change.push([denominationName, amountInChange / 100]);
             }
         }
+    }
+
+    if (changeDue > 0) {
+        displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+
+        return;
     }
 
     showResult(result.status, result.change);
