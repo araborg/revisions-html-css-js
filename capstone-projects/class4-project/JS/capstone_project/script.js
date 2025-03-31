@@ -87,6 +87,7 @@ const cashRegister = () => {
         }
     }
 
+    // changeDur is expected to be 0 after it's passed via d for loop
     if (changeDue > 0) {
         displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 

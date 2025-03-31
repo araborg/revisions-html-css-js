@@ -1,6 +1,8 @@
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
 
+const pokemonName = document.getElementById("pokemon-name");
+
 const pokemons = async () => {
     try {
         const pokeNameOrNum = searchInput.value.toLowerCase();
@@ -19,7 +21,7 @@ const pokemons = async () => {
 const findPokemon = (data) => {
     console.log(data.name);
 
-    return data.name;
+    pokemonName.textContent = `${data.name}`;
 };
 
 searchBtn.addEventListener("click", findPokemon);
