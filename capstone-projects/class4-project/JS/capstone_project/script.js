@@ -70,8 +70,8 @@ const checkCashRegister = () => {
             Math.round(amount * 100),
         ]);
 
+    // needed variables:
     const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
-
     const result = {
         status: "OPEN",
         change: [],
