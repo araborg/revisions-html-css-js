@@ -60,6 +60,7 @@ const cashRegister = () => {
 
     if (totalCID < changeDue) {
         displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+
         return;
     }
 
@@ -86,9 +87,7 @@ const cashRegister = () => {
         }
     }
 
-    console.log(result.change);
-
-    showResult(result.change);
+    showResult(result.status, result.change);
     updateUI(result.change);
 };
 
@@ -98,8 +97,6 @@ const showResult = (status, change) => {
             Status: ${status}
         </p>
     `;
-
-    console.log(change);
 
     changeDue.innerHTML += change
         .map(
