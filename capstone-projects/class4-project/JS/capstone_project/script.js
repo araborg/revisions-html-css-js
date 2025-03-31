@@ -61,7 +61,7 @@ const checkCashRegister = () => {
         return;
     }
 
-    let changeDue = cashinCents - priceInCents;
+    let changeDue = cashinCents - priceInCents; // 4674
 
     const reversedCid = [...cid]
         .reverse()
