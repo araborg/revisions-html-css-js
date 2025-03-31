@@ -125,11 +125,6 @@ const checkCashRegister = () => {
         return;
     }
 
-    // if (changeDue > 0) {
-    //     displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
-    //     return;
-    // }
-
     formatResults(result.status, result.change);
 
     updateUI(result.change);
