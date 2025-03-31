@@ -101,19 +101,21 @@ const checkCashRegister = () => {
     // console.log(reversedCid.length); // 9
     for (let i = 0; i <= reversedCid.length; i++) {
         if (changeDue >= denominations[i] && changeDue > 0) {
+            console.log(changeDue, denominations[i]);
             const [denominationName, amount] = reversedCid[i];
 
             const possibleChange = Math.min(amount, changeDue);
+            console.log(total, changeDue, possibleChange);
 
-            const count = Math.floor(possibleChange / denominations[i]);
+            //     const count = Math.floor(possibleChange / denominations[i]);
 
-            const amountInChange = count * denominations[i];
+            //     const amountInChange = count * denominations[i];
 
-            changeDue -= amountInChange;
+            //     changeDue -= amountInChange;
 
-            if (count > 0) {
-                result.change.push([denominationName, amountInChange / 100]);
-            }
+            //     if (count > 0) {
+            //         result.change.push([denominationName, amountInChange / 100]);
+            //     }
         }
     }
 
