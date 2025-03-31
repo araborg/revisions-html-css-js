@@ -13,18 +13,24 @@ searchBtn.addEventListener("click", findPokemon);
 
 // console.log(inputPoke);
 
-const pokemons = async (input) => {
-    try {
-        const res = await fetch(
-            `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${input}`
-        );
+const pokemonUrl = "https://pokemon-search-app.freecodecamp.rocks";
 
-        const pokem = await res.json();
-        const pokem1 = await pokem.json();
-        console.log(pokem1);
+const pokemons = async () => {
+    // const pokeNameOrNum = searchInput.value;
+    const pokeNameOrNum = "25"; // Pikachu
+    const eachPokemon = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokeNameOrNum}`;
 
-        return pokem1;
-    } catch (err) {
-        console.error(err);
-    }
+    console.log(eachPokemon);
+
+    // try {
+    //     const res = await fetch(`pokemonUrl/api/pokemon/${pokeNameOrNum}`);
+    //     const pokem = await res.json();
+    //     console.log(pokem);
+
+    //     // findPokemon(pokem);
+    // } catch (err) {
+    //     console.error(err);
+    // }
 };
+
+pokemons();

@@ -229,7 +229,8 @@ const cashRegister = () => {
     ); // 33541
 
     if (totalCID < changeDue) {
-        displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+        changeDueDisplay.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+
         return;
     }
 
@@ -494,6 +495,5 @@ due, and the #purchase-btn element is clicked, the
 value in the #change-due element should be 
 "Status: CLOSED" with change due in coins and bills 
 sorted in highest to lowest order.
-
 
 */
