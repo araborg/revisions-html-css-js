@@ -3,34 +3,26 @@ const searchBtn = document.getElementById("search-button");
 
 let inputPoke;
 
-const findPokemon = () => {
-    const inputValue = searchInput.value;
-
-    console.log(pokemons(inputValue));
+const findPokemon = (pokem) => {
+    // const inputValue = searchInput.value;
+    // console.log(pokemons(inputValue));
 };
 
 searchBtn.addEventListener("click", findPokemon);
 
-// console.log(inputPoke);
-
 const pokemonUrl = "https://pokemon-search-app.freecodecamp.rocks";
 
 const pokemons = async () => {
-    // const pokeNameOrNum = searchInput.value;
-    const pokeNameOrNum = "25"; // Pikachu
-    const eachPokemon = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokeNameOrNum}`;
+    try {
+        const pokeNameOrNum = searchInput.value.toLowerCase();
 
-    console.log(eachPokemon);
+        const eachPokemon = `https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokeNameOrNum}`;
 
-    // try {
-    //     const res = await fetch(`pokemonUrl/api/pokemon/${pokeNameOrNum}`);
-    //     const pokem = await res.json();
-    //     console.log(pokem);
+        const res = await fetch(eachPokemon);
+        const pokem = await res.json();
 
-    //     // findPokemon(pokem);
-    // } catch (err) {
-    //     console.error(err);
-    // }
+        findPokemon(pokem);
+    } catch (err) {
+        console.error(err);
+    }
 };
-
-pokemons();
