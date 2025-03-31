@@ -89,6 +89,18 @@ const cashRegister = () => {
     updateUI(result.change);
 };
 
+const showResult = (change) => {
+    changeDue.innerHTML += change
+        .map(
+            ([denominationName, amt]) => `
+                <p>
+                    ${denominationName}: ${amt}
+                </p>
+            `
+        )
+        .join("");
+};
+
 const updateUI = (change) => {
     const currencyNames = {
         PENNY: "Pennies",
@@ -112,7 +124,6 @@ const updateUI = (change) => {
         Tens: $20
         Twenties: $60
         Hundreds: $100
-    
     */
 
     // Update cid if change is passed in
@@ -133,9 +144,8 @@ const updateUI = (change) => {
         });
     }
 
-    console.log(cid);
-
     cash.value = "";
+
     // priceScreen.textContent = `Total: $${price}`;
 
     // show d UI update in cashDrawerDisplay
