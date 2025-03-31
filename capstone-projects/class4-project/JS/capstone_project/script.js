@@ -61,7 +61,13 @@ const checkCashRegister = () => {
         return;
     }
 
+    // needed variables:
     let changeDue = cashinCents - priceInCents; // 4674
+    const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+    const result = {
+        status: "OPEN",
+        change: [],
+    };
 
     const reversedCid = [...cid] // adds the key-value pairs to the object being created.
         .reverse()
@@ -69,13 +75,6 @@ const checkCashRegister = () => {
             denominationName,
             Math.round(amount * 100),
         ]);
-
-    // needed variables:
-    const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
-    const result = {
-        status: "OPEN",
-        change: [],
-    };
 
     const totalCID = reversedCid.reduce(
         (prev, [denominationName, amount]) => prev + amount,
