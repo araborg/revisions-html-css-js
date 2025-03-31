@@ -93,6 +93,7 @@ const checkCashRegister = () => {
         return;
     }
 
+    // e.g: totalCID = 33541 and changeDue = 33541
     if (totalCID === changeDue) {
         result.status = "CLOSED";
     }
