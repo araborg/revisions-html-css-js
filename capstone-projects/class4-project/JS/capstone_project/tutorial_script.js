@@ -132,6 +132,7 @@ const checkResults = () => {
 
 
 purchaseBtn.addEventListener("click", checkResults);
+
 cash.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         checkResults();
@@ -139,11 +140,32 @@ cash.addEventListener("keydown", (e) => {
 });
 
 
-
 Lesson 5:
 When the value in the #cash element is equal to 
 price, the value in the #change-due element should 
 be "No change due - customer paid with exact cash".
+
+const cashRegister = () => {
+    const cashInCents = Math.round(Number(cash.value) * 100);
+    const priceInCents = Math.round(price * 100);
+
+    if (cashInCents < priceInCents) {
+        alert("Customer does not have enough money to purchase the item");
+
+        cash.value = "";
+
+        return;
+    }
+
+    if (cashInCents === priceInCents) {
+        changeDue.innerHTML =
+            "<p> No change due - customer paid with exact cash </p>";
+
+        cash.value = "";
+
+        return;
+    }
+};
 
 
 Lesson 6:
