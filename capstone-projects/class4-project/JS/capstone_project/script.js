@@ -38,8 +38,8 @@ cash.addEventListener("keyup", (e) => {
 });
 
 const checkCashRegister = () => {
-    const cashinCents = Math.round(Number(cash.value) * 100);
-    const priceInCents = Math.round(price * 100);
+    const cashinCents = Math.round(Number(cash.value) * 100); // 50
+    const priceInCents = Math.round(price * 100); // 326
 
     if (cashinCents < priceInCents) {
         alert("Customer does not have enough money to purchase the item");
