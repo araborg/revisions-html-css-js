@@ -6,7 +6,7 @@ let inputPoke;
 const findPokemon = () => {
     const inputValue = searchInput.value;
 
-    pokemons(inputValue);
+    console.log(pokemons(inputValue));
 };
 
 searchBtn.addEventListener("click", findPokemon);
@@ -20,9 +20,10 @@ const pokemons = async (input) => {
         );
 
         const pokem = await res.json();
-        console.log(pokem);
+        const pokem1 = await pokem.json();
+        console.log(pokem1);
 
-        return pokem;
+        return pokem1;
     } catch (err) {
         console.error(err);
     }
