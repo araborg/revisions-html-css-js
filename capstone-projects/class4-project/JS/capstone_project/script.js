@@ -138,13 +138,14 @@ const formatResults = (status, change) => {
     `;
 
     displayChangeDue.innerHTML += change
-        .map(([denominationName, amount]) => {
-            `
+        .map(
+            ([denominationName, amount]) =>
+                `
             <p>
                 ${denominationName}: $${amount}
             </p>
-        `;
-        })
+        `
+        )
         .join("");
 };
 
