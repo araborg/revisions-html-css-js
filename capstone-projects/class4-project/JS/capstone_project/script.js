@@ -118,15 +118,16 @@ const updateUI = (change) => {
     // ?????????
     // Update cid if change is passed in
     if (change) {
-        change.forEach(([changeDenomination, changeAmount]) => {
-            console.log(change);
+        console.log(change);
 
+        // find d cid array dt correspond with change and update
+        change.forEach(([changeDenomination, changeAmount]) => {
             // using change to find cid dt correlate
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
             );
 
-            // substract change from cid amount
+            // substract change from cid amount and modify ds value as d new amt for cid
             targetArr[1] =
                 (Math.round(targetArr[1] * 100) -
                     Math.round(changeAmount * 100)) /
