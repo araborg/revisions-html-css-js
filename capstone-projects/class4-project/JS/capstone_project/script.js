@@ -12,7 +12,7 @@ let cid = [
     ["ONE HUNDRED", 100],
 ];
 
-/* selected */
+/* selected element*/
 const displayChangeDue = document.getElementById("change-due");
 const cash = document.getElementById("cash");
 
