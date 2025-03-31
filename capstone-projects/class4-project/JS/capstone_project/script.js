@@ -102,6 +102,19 @@ const updateUI = (change) => {
         "ONE HUNDRED": "Hundreds",
     };
 
+    /*
+        Pennies: $1.01
+        Nickels: $2.05
+        Dimes: $3.1
+        Quarters: $4.25
+        Ones: $9
+        Fives: $55
+        Tens: $2
+        Twenties: $60
+        Hundreds: $100
+    
+    */
+
     // ?????????
     // Update cid if change is passed in
     if (change) {
