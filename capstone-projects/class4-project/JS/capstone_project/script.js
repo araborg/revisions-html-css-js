@@ -67,6 +67,67 @@ const cashRegister = () => {
     if (totalCID === changeDue) {
         result.status = "CLOSED";
     }
+
+    for (let i = 0; i <= reversedCid.length; i++) {
+        if (changeDue >= denominations[i] && changeDue > 0) {
+            const [denominationName, total] = reversedCid[i];
+
+            const possibleChange = Math.min(total, changeDue);
+
+            const count = Math.floor(possibleChange / denominations[i]);
+
+            const amountInChange = count * denominations[i];
+
+            changeDue -= amountInChange;
+
+            if (count > 0) {
+                result.change.push([denominationName, amountInChange / 100]);
+            }
+        }
+    }
+
+    updateUI(result.change);
+};
+
+const updateUI = (change) => {
+    // const currencyNameMap = {
+    //     PENNY: "Pennies",
+    //     NICKEL: "Nickels",
+    //     DIME: "Dimes",
+    //     QUARTER: "Quarters",
+    //     ONE: "Ones",
+    //     FIVE: "Fives",
+    //     TEN: "Tens",
+    //     TWENTY: "Twenties",
+    //     "ONE HUNDRED": "Hundreds",
+    // };
+
+    // ?????????
+    // Update cid if change is passed in
+    if (change) {
+        change.forEach(([changeDenomination, changeAmount]) => {
+            const targetArr = cid.find(
+                ([denominationName]) => denominationName === changeDenomination
+            );
+
+            targetArr[1] =
+                (Math.round(targetArr[1] * 100) -
+                    Math.round(changeAmount * 100)) /
+                100;
+        });
+    }
+
+    cash.value = "";
+    // priceScreen.textContent = `Total: $${price}`;
+    cashDrawerDisplay.innerHTML = `<p><strong>Change in drawer:</strong></p>
+    
+    ${cid
+        .map(
+            ([denominationName, amount]) =>
+                `<p>${currencyNameMap[denominationName]}: $${amount}</p>`
+        )
+        .join("")}
+  `;
 };
 
 const checkResults = () => {
