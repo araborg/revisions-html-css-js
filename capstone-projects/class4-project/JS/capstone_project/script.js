@@ -1,4 +1,5 @@
-let price = 3.26;
+// let price = 3.26;
+let price = 5.0;
 
 let cid = [
     ["PENNY", 1.01],
