@@ -109,6 +109,34 @@ const cashEl = document.getElementById("cash")
 const purchaseBtn = document.getElementById("purchase-btn")
 const changeDue = document.getElementById("change-due")
 
+const cashRegister = () => {
+    const cashInCents = Math.round(Number(cash.value) * 100);
+    const priceInCents = Math.round(price * 100);
+
+    if (cashInCents < priceInCents) {
+        alert("Customer does not have enough money to purchase the item");
+
+        cash.value = "";
+
+        return;
+    }
+};
+
+const checkResults = () => {
+    if (!cash.value) {
+        return;
+    }
+
+    cashRegister();
+};
+
+
+purchaseBtn.addEventListener("click", checkResults);
+cash.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        checkResults();
+    }
+});
 
 
 

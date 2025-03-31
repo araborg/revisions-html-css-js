@@ -48,6 +48,7 @@ const checkResults = () => {
     cashRegister();
 };
 
+// eventListeners
 purchaseBtn.addEventListener("click", checkResults);
 
 cash.addEventListener("keydown", (e) => {
