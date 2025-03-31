@@ -96,16 +96,7 @@ const checkCashRegister = () => {
         result.status = "CLOSED";
     }
 
-    if (changeDue > 0) {
-        displayChangeDue.innerHTML = `
-            <p>
-                Status: INSUFFICIENT_FUNDS
-            </p>
-        `;
-
-        return;
-    }
-
+    // ??????????
     // console.log(reversedCid.length); // 9
     for (let i = 0; i <= reversedCid.length; i++) {
         if (changeDue >= denominations[i] && changeDue > 0) {
@@ -125,11 +116,20 @@ const checkCashRegister = () => {
         }
     }
 
+    // ??????????
+    if (changeDue > 0) {
+        displayChangeDue.innerHTML = `
+            <p>
+                Status: INSUFFICIENT_FUNDS
+            </p>
+        `;
+
+        return;
+    }
+
     formatResults(result.status, result.change);
 
     updateUI(result.change);
-
-    console.log(changeDue);
 };
 
 const formatResults = (status, change) => {
@@ -167,6 +167,8 @@ const updateUI = (change) => {
     // Update cid if change is passed in
     if (change) {
         change.forEach(([changeDenomination, changeAmount]) => {
+            console.log(changeAmount);
+
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
             );
