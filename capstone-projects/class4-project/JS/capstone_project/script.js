@@ -86,6 +86,7 @@ const cashRegister = () => {
         }
     }
 
+    showResult(result.change);
     updateUI(result.change);
 };
 
@@ -94,7 +95,7 @@ const showResult = (change) => {
         .map(
             ([denominationName, amt]) => `
                 <p>
-                    ${denominationName}: ${amt}
+                    ${denominationName}: $${amt}
                 </p>
             `
         )
