@@ -115,12 +115,9 @@ const updateUI = (change) => {
     
     */
 
-    // ?????????
     // Update cid if change is passed in
     if (change) {
-        console.log(change);
-
-        // find d cid array dt correspond with change and update
+        // find d cid array dt correspond with change and update d diff in amount
         change.forEach(([changeDenomination, changeAmount]) => {
             // using change to find cid dt correlate
             const targetArr = cid.find(
@@ -128,6 +125,7 @@ const updateUI = (change) => {
             );
 
             // substract change from cid amount and modify ds value as d new amt for cid
+            // ds returns d remaining amt after changeDue has been removed
             targetArr[1] =
                 (Math.round(targetArr[1] * 100) -
                     Math.round(changeAmount * 100)) /
@@ -139,14 +137,15 @@ const updateUI = (change) => {
 
     cash.value = "";
     // priceScreen.textContent = `Total: $${price}`;
-    cashDrawerDisplay.innerHTML = `<p><strong>Change in drawer:</strong></p>
+    cashDrawerDisplay.innerHTML = `
+        <p><strong>Change in drawer:</strong></p>
     
-    ${cid
-        .map(
-            ([denominationName, amount]) =>
-                `<p>${currencyNames[denominationName]}: $${amount}</p>`
-        )
-        .join("")}
+        ${cid
+            .map(
+                ([denominationName, amount]) =>
+                    `<p>${currencyNames[denominationName]}: $${amount}</p>`
+            )
+            .join("")}
   `;
 };
 
