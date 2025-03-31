@@ -1,8 +1,6 @@
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-button");
 
-let inputPoke;
-
 const findPokemon = (pokem) => {
     // const inputValue = searchInput.value;
     // console.log(pokemons(inputValue));
