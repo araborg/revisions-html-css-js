@@ -90,7 +90,12 @@ const cashRegister = () => {
     updateUI(result.change);
 };
 
-const showResult = (change) => {
+const showResult = (status, change) => {
+    changeDue.innerHTML = `
+        <p>
+            Status: ${status}
+        </p>
+    `;
     changeDue.innerHTML += change
         .map(
             ([denominationName, amt]) => `
