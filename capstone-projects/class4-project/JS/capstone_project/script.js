@@ -61,7 +61,7 @@ const cashRegister = () => {
     ); // 33541
 
     if (totalCID < changeDue) {
-        displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+        changeDueDisplay.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 
         return;
     }
