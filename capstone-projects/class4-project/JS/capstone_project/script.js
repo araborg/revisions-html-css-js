@@ -77,6 +77,47 @@ const cashRegister = () => {
         result.status = "CLOSED";
     }
 
+    /*
+        2. Start with the Largest Denomination:
+        Begin with the largest denomination of currency 
+        (e.g., 100 Naira note, 1000 Naira note) that is less 
+        than or equal to the change amount.
+
+        if (changeDue >= denominations[i] && changeDue > 0) {
+            const [denominationName, total] = reversedCid[i];
+
+            const possibleChange = Math.min(total, changeDue);
+        }
+
+
+        3. Subtract and Repeat:
+        Subtract the value of that denomination from the change 
+        amount and repeat the process with the next smaller 
+        denomination.
+
+        for (let i = 0; i <= reversedCid.length; i++) {
+            if (changeDue >= denominations[i] && changeDue > 0) {
+                const count = Math.floor(possibleChange / denominations[i]);
+
+                const amountInChange = count * denominations[i];
+
+                changeDue -= amountInChange;
+
+                if (count > 0) {
+                    result.change.push([denominationName, amountInChange / 100]);
+                }
+            }
+        }
+
+
+        4. Example:
+        If the change is 127 Naira, you'd start with a 100 Naira 
+        note, leaving 27 Naira. Then you'd use a 20 Naira note, 
+        leaving 7 Naira. Finally, you'd give 5 Naira and 2 Naira, 
+        totaling 127 Naira.
+
+    */
+
     for (let i = 0; i <= reversedCid.length; i++) {
         if (changeDue >= denominations[i] && changeDue > 0) {
             const [denominationName, total] = reversedCid[i];
@@ -95,7 +136,7 @@ const cashRegister = () => {
         }
     }
 
-    // changeDur is expected to be 0 after it's passed via d for loop
+    // changeDue is expected to be 0 after it's passed via d for loop
     if (changeDue > 0) {
         displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 
