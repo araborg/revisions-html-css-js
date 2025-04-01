@@ -301,14 +301,14 @@ reversedCid.length = 9
 
 Using price: 326 and cash: 2000 changeDue: 1674
 
-for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times
+for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 9)
 
-    script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
-    script.js:124 changeDue: 674 denominations[i]: 500 reversedCid[i]: FIVE,5500
-    script.js:124 changeDue: 174 denominations[i]: 100 reversedCid[i]: ONE,9000
-    script.js:124 changeDue: 74 denominations[i]: 25 reversedCid[i]: QUARTER,425
-    script.js:124 changeDue: 24 denominations[i]: 10 reversedCid[i]: DIME,310
-    script.js:124 changeDue: 4 denominations[i]: 1 reversedCid[i]: PENNY,101
+    script.js:124 changeDue: 1674 denominations[i]: 1000 
+    script.js:124 changeDue: 674 denominations[i]: 500 
+    script.js:124 changeDue: 174 denominations[i]: 100 
+    script.js:124 changeDue: 74 denominations[i]: 25 
+    script.js:124 changeDue: 24 denominations[i]: 10 
+    script.js:124 changeDue: 4 denominations[i]: 1 
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
