@@ -306,17 +306,25 @@ Using price: 326 and cash: 2000 changeDue: 1674
 for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 9)
     script.js:126 index, i: 0
     script.js:126 index, i: 1
+    
     script.js:126 index, i: 2
-
     script.js:124 changeDue: 1674 denominations[i]: 1000 
+
+    script.js:126 index, i: 3
     script.js:124 changeDue: 674 denominations[i]: 500 
     
-    script.js:126 index, i: 3
-    
+    script.js:126 index, i: 4
     script.js:124 changeDue: 174 denominations[i]: 100 
+     
+    script.js:126 index, i: 5
     script.js:124 changeDue: 74 denominations[i]: 25 
+
+    script.js:126 index, i: 6
     script.js:124 changeDue: 24 denominations[i]: 10 
+
     script.js:124 changeDue: 4 denominations[i]: 1 
+    script.js:126 index, i: 7
+    script.js:126 index, i: 8
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
@@ -391,6 +399,15 @@ for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 
         }
     }
 }
+
+    script.js:129 changeDue: 4 denominations[i]: 1 reversedCid[i]: PENNY,101
+    script.js:136 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
+    script.js:143 possibleChange: 4 total: 101 changeDue: 4
+    script.js:150 possibleChange: 4 denominations[i]: 1 count: 4
+    script.js:157 amountInChange: 4
+    script.js:160 changeDue: 0
+    script.js:162 count: 4
+    script.js:126 index, i: 9
 
 
 // changeDue is expected to be 0 after it's passed via d for loop
