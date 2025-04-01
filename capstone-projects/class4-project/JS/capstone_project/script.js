@@ -41,6 +41,14 @@ const cashRegister = () => {
         return;
     }
 
+    /*
+        1. Identify the Change Amount:
+        Determine the total amount of change that needs to be 
+        given.
+
+        let changeDue = cashInCents - priceInCents;
+    */
+
     // needed variables:
     let changeDue = cashInCents - priceInCents;
     const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
