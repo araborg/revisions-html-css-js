@@ -61,6 +61,8 @@ const cashRegister = () => {
             Math.round(amount * 100),
         ]);
 
+    console.log(reversedCid);
+
     const totalCID = reversedCid.reduce(
         (prev, [_, amount]) => prev + amount,
         0
@@ -280,6 +282,8 @@ cash.addEventListener("keydown", (e) => {
 
 Using price: 326 and cash: 2000
 
+const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+
 script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
 script.js:131 denominationName: TEN total: 2000
 script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
@@ -339,9 +343,9 @@ script.js:162 result.change:
 
 // changeDue is expected to be 0 after it's passed via d for loop
 if (changeDue > 0) {
-displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+    displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 
-return;
+    return;
 }
 
 
