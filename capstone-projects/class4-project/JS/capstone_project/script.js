@@ -141,8 +141,10 @@ const cashRegister = () => {
             );
 
             const amountInChange = count * denominations[i];
+            console.log(`amountInChange: ${amountInChange}`);
 
             changeDue -= amountInChange;
+            console.log(`changeDue: ${changeDue}`);
 
             if (count > 0) {
                 result.change.push([denominationName, amountInChange / 100]);
