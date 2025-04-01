@@ -123,6 +123,8 @@ const cashRegister = () => {
 
     // Using price: 3.26 and cash: 20
     for (let i = 0; i <= reversedCid.length; i++) {
+        console.log(`index, i: ${i}`);
+
         if (changeDue >= denominations[i] && changeDue > 0) {
             console.log(
                 `changeDue: ${changeDue}`,
