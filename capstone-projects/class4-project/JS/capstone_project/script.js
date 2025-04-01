@@ -313,24 +313,24 @@ for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
 
-        script.js:131 denominationName: TEN total: 2000 reversedCid[i]: TEN,2000
-        script.js:131 denominationName: FIVE total: 5500 reversedCid[i]: FIVE,5500
-        script.js:131 denominationName: ONE total: 9000 reversedCid[i]: ONE,9000
-        script.js:131 denominationName: QUARTER total: 425 reversedCid[i]: QUARTER,425
-        script.js:131 denominationName: DIME total: 310 reversedCid[i]: DIME,310
-        script.js:131 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
+        script.js:131 denominationName: TEN amount: 2000 reversedCid[i]: TEN,2000
+        script.js:131 denominationName: FIVE amount: 5500 reversedCid[i]: FIVE,5500
+        script.js:131 denominationName: ONE amount: 9000 reversedCid[i]: ONE,9000
+        script.js:131 denominationName: QUARTER amount: 425 reversedCid[i]: QUARTER,425
+        script.js:131 denominationName: DIME amount: 310 reversedCid[i]: DIME,310
+        script.js:131 denominationName: PENNY amount: 101 reversedCid[i]: PENNY,101
 
-        const [denominationName, total] = reversedCid[i];
+        const [denominationName, amount] = reversedCid[i];
 
 
-        script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
-        script.js:137 possibleChange: 674 total: 5500 changeDue: 674
-        script.js:137 possibleChange: 174 total: 9000 changeDue: 174
-        script.js:137 possibleChange: 74 total: 425 changeDue: 74
-        script.js:137 possibleChange: 24 total: 310 changeDue: 24
-        script.js:137 possibleChange: 4 total: 101 changeDue: 4
+        script.js:137 possibleChange: 1674 amount: 2000 changeDue: 1674
+        script.js:137 possibleChange: 674 amount: 5500 changeDue: 674
+        script.js:137 possibleChange: 174 amount: 9000 changeDue: 174
+        script.js:137 possibleChange: 74 amount: 425 changeDue: 74
+        script.js:137 possibleChange: 24 amount: 310 changeDue: 24
+        script.js:137 possibleChange: 4 amount: 101 changeDue: 4
 
-        const possibleChange = Math.min(total, changeDue);
+        const possibleChange = Math.min(amount, changeDue);
 
 
         script.js:144 possibleChange: 1674 denominations[i]: 1000 count: 1
