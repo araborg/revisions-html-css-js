@@ -295,12 +295,13 @@ const reversedCid = [
 ]
 
 
-Using price: 326 and cash: 2000 changeDue: 1674
-
 const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
 
-for (let i = 0; i <= reversedCid.length; i++) {
-    
+reversedCid.length = 9
+
+Using price: 326 and cash: 2000 changeDue: 1674
+
+for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times
 
     script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
     script.js:124 changeDue: 674 denominations[i]: 500 reversedCid[i]: FIVE,5500
