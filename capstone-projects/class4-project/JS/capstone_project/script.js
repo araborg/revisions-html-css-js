@@ -157,6 +157,7 @@ const cashRegister = () => {
             changeDue -= amountInChange;
             console.log(`changeDue: ${changeDue}`);
 
+            console.log(`count: ${count}`);
             if (count > 0) {
                 result.change.push([denominationName, amountInChange / 100]);
             }
@@ -350,9 +351,26 @@ for (let i = 0; i <= reversedCid.length; i++) {
 
         const amountInChange = count * denominations[i];
 
+
+        script.js:154 changeDue: 674
+        script.js:154 changeDue: 174
+        script.js:154 changeDue: 74
+        script.js:154 changeDue: 24
+        script.js:154 changeDue: 4
+        script.js:154 changeDue: 0
+
         changeDue -= amountInChange;
 
+
         if (count > 0) {
+            script.js:162 result.change: 
+                TEN,10,
+                FIVE,5,
+                ONE,1,
+                QUARTER,0.5,
+                DIME,0.2,
+                PENNY,0.04
+
             result.change.push([denominationName, amountInChange / 100]);
         }
     }
