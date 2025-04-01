@@ -280,7 +280,7 @@ cash.addEventListener("keydown", (e) => {
     PENNY: $0.04
 
 
-Using price: 326 and cash: 2000
+Using price: 326 and cash: 2000 changeDue: 1674
 
 const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
 
