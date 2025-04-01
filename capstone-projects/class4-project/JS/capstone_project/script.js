@@ -67,6 +67,7 @@ const cashRegister = () => {
     ); // 33541
 
     if (totalCID < changeDue) {
+        console.log("This is used " + "totalCID < changeDue");
         changeDueDisplay.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 
         return;
@@ -334,5 +335,17 @@ script.js:162 result.change:
     QUARTER,0.5,
     DIME,0.2,
     PENNY,0.04
+
+
+// changeDue is expected to be 0 after it's passed via d for loop
+if (changeDue > 0) {
+displayChangeDue.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
+
+return;
+}
+
+
+
+
 
 */
