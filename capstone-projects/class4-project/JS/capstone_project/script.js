@@ -312,12 +312,12 @@ for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
-        script.js:131 denominationName: TEN amount: 2000 reversedCid[i]: TEN,2000
-        script.js:131 denominationName: FIVE amount: 5500 reversedCid[i]: FIVE,5500
-        script.js:131 denominationName: ONE amount: 9000 reversedCid[i]: ONE,9000
-        script.js:131 denominationName: QUARTER amount: 425 reversedCid[i]: QUARTER,425
-        script.js:131 denominationName: DIME amount: 310 reversedCid[i]: DIME,310
-        script.js:131 denominationName: PENNY amount: 101 reversedCid[i]: PENNY,101
+        script.js:131 denominationName: TEN amount: 2000 reversedCid[i]: TEN, 2000
+        script.js:131 denominationName: FIVE amount: 5500 reversedCid[i]: FIVE, 5500
+        script.js:131 denominationName: ONE amount: 9000 reversedCid[i]: ONE, 9000
+        script.js:131 denominationName: QUARTER amount: 425 reversedCid[i]: QUARTER, 425
+        script.js:131 denominationName: DIME amount: 310 reversedCid[i]: DIME, 310
+        script.js:131 denominationName: PENNY amount: 101 reversedCid[i]: PENNY, 101
 
         const [denominationName, amount] = reversedCid[i];
 
