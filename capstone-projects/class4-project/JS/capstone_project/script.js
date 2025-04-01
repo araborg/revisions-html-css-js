@@ -150,6 +150,8 @@ const cashRegister = () => {
                 result.change.push([denominationName, amountInChange / 100]);
             }
         }
+
+        console.log(`result.change: ${result.change}`);
     }
 
     // changeDue is expected to be 0 after it's passed via d for loop
