@@ -362,6 +362,13 @@ for (let i = 0; i <= reversedCid.length; i++) {
         changeDue -= amountInChange;
 
 
+        count: 1
+        count: 1
+        count: 1
+        count: 2
+        count: 2
+        count: 4
+
         if (count > 0) {
             script.js:162 result.change: 
                 TEN,10,
@@ -375,63 +382,6 @@ for (let i = 0; i <= reversedCid.length; i++) {
         }
     }
 }
-
-
-script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
-script.js:131 denominationName: TEN total: 2000
-script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
-script.js:144 possibleChange: 1674 denominations[i]: 1000 count: 1
-script.js:151 amountInChange: 1000
-script.js:154 changeDue: 674
-
-
-script.js:124 changeDue: 674 denominations[i]: 500 reversedCid[i]: FIVE,5500
-script.js:131 denominationName: FIVE total: 5500
-script.js:137 possibleChange: 674 total: 5500 changeDue: 674
-script.js:144 possibleChange: 674 denominations[i]: 500 count: 1
-script.js:151 amountInChange: 500
-script.js:154 changeDue: 174
-
-
-script.js:124 changeDue: 174 denominations[i]: 100 reversedCid[i]: ONE,9000
-script.js:131 denominationName: ONE total: 9000
-script.js:137 possibleChange: 174 total: 9000 changeDue: 174
-script.js:144 possibleChange: 174 denominations[i]: 100 count: 1
-script.js:151 amountInChange: 100
-script.js:154 changeDue: 74
-
-
-script.js:124 changeDue: 74 denominations[i]: 25 reversedCid[i]: QUARTER,425
-script.js:131 denominationName: QUARTER total: 425
-script.js:137 possibleChange: 74 total: 425 changeDue: 74
-script.js:144 possibleChange: 74 denominations[i]: 25 count: 2
-script.js:151 amountInChange: 50
-script.js:154 changeDue: 24
-
-
-script.js:124 changeDue: 24 denominations[i]: 10 reversedCid[i]: DIME,310
-script.js:131 denominationName: DIME total: 310
-script.js:137 possibleChange: 24 total: 310 changeDue: 24
-script.js:144 possibleChange: 24 denominations[i]: 10 count: 2
-script.js:151 amountInChange: 20
-script.js:154 changeDue: 4
-
-
-script.js:124 changeDue: 4 denominations[i]: 1 reversedCid[i]: PENNY,101
-script.js:131 denominationName: PENNY total: 101
-script.js:137 possibleChange: 4 total: 101 changeDue: 4
-script.js:144 possibleChange: 4 denominations[i]: 1 count: 4
-script.js:151 amountInChange: 4
-script.js:154 changeDue: 0
-
-
-script.js:162 result.change: 
-    TEN,10,
-    FIVE,5,
-    ONE,1,
-    QUARTER,0.5,
-    DIME,0.2,
-    PENNY,0.04
 
 
 // changeDue is expected to be 0 after it's passed via d for loop
