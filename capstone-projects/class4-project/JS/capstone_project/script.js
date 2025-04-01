@@ -296,6 +296,8 @@ const reversedCid = [
     ['PENNY', 101]
 ]
 
+
+
 script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
 script.js:131 denominationName: TEN total: 2000
 script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
