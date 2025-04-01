@@ -276,6 +276,9 @@ cash.addEventListener("keydown", (e) => {
     DIME: $0.2
     PENNY: $0.04
 
+
+Using price: 326 and cash: 2000
+
 script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
 script.js:131 denominationName: TEN total: 2000
 script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
