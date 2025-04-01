@@ -123,13 +123,11 @@ const cashRegister = () => {
 
     // Using price: 3.26 and cash: 20
     for (let i = 0; i <= reversedCid.length; i++) {
-        console.log(`index, i: ${i}`);
-
         if (changeDue >= denominations[i] && changeDue > 0) {
             console.log(
                 `changeDue: ${changeDue}`,
                 `denominations[i]: ${denominations[i]}`,
-                `reversedCid[i]: ${reversedCid[i]}`
+                `index, i: ${i}`
             );
 
             const [denominationName, total] = reversedCid[i];
@@ -304,27 +302,13 @@ reversedCid.length = 9
 Using price: 326 and cash: 2000 changeDue: 1674
 
 for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 9)
-    script.js:126 index, i: 0
-    script.js:126 index, i: 1
     
-    script.js:126 index, i: 2
     script.js:124 changeDue: 1674 denominations[i]: 1000 
-
-    script.js:126 index, i: 3
     script.js:124 changeDue: 674 denominations[i]: 500 
-    
-    script.js:126 index, i: 4
     script.js:124 changeDue: 174 denominations[i]: 100 
-     
-    script.js:126 index, i: 5
     script.js:124 changeDue: 74 denominations[i]: 25 
-
-    script.js:126 index, i: 6
     script.js:124 changeDue: 24 denominations[i]: 10 
-
     script.js:124 changeDue: 4 denominations[i]: 1 
-    script.js:126 index, i: 7
-    script.js:126 index, i: 8
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
