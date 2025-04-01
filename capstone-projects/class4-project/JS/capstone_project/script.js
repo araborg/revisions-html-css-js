@@ -310,6 +310,7 @@ for (let i = 0; i <= reversedCid.length; i++) {
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
+
         script.js:131 denominationName: TEN total: 2000 reversedCid[i]: TEN,2000
         script.js:131 denominationName: FIVE total: 5500 reversedCid[i]: FIVE,5500
         script.js:131 denominationName: ONE total: 9000 reversedCid[i]: ONE,9000
@@ -317,9 +318,15 @@ for (let i = 0; i <= reversedCid.length; i++) {
         script.js:131 denominationName: DIME total: 310 reversedCid[i]: DIME,310
         script.js:131 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
 
-
-
         const [denominationName, total] = reversedCid[i];
+
+
+        script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
+        script.js:137 possibleChange: 674 total: 5500 changeDue: 674
+        script.js:137 possibleChange: 174 total: 9000 changeDue: 174
+        script.js:137 possibleChange: 74 total: 425 changeDue: 74
+        script.js:137 possibleChange: 24 total: 310 changeDue: 24
+        script.js:137 possibleChange: 4 total: 101 changeDue: 4
 
         const possibleChange = Math.min(total, changeDue);
 
