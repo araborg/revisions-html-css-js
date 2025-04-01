@@ -133,7 +133,8 @@ const cashRegister = () => {
             const [denominationName, total] = reversedCid[i];
             console.log(
                 `denominationName: ${denominationName}`,
-                `total: ${total}`
+                `total: ${total}`,
+                `reversedCid[i]: ${reversedCid[i]}`
             );
 
             const possibleChange = Math.min(total, changeDue);
@@ -280,10 +281,6 @@ cash.addEventListener("keydown", (e) => {
     PENNY: $0.04
 
 
-Using price: 326 and cash: 2000 changeDue: 1674
-
-const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
-
 const reversedCid = [
     ['ONE HUNDRED', 10000]
     ['TWENTY', 6000]
@@ -296,8 +293,34 @@ const reversedCid = [
     ['PENNY', 101]
 ]
 
+
+Using price: 326 and cash: 2000 changeDue: 1674
+
+const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
+
 for (let i = 0; i <= reversedCid.length; i++) {
+    
+
+    script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
+    script.js:124 changeDue: 674 denominations[i]: 500 reversedCid[i]: FIVE,5500
+    script.js:124 changeDue: 174 denominations[i]: 100 reversedCid[i]: ONE,9000
+    script.js:124 changeDue: 74 denominations[i]: 25 reversedCid[i]: QUARTER,425
+    script.js:124 changeDue: 24 denominations[i]: 10 reversedCid[i]: DIME,310
+    script.js:124 changeDue: 4 denominations[i]: 1 reversedCid[i]: PENNY,101
     if (changeDue >= denominations[i] && changeDue > 0) {
+
+    script.js:131 denominationName: TEN total: 2000
+
+
+    script.js:131 denominationName: FIVE total: 5500
+
+    script.js:131 denominationName: ONE total: 9000
+
+    script.js:131 denominationName: QUARTER total: 425
+
+    script.js:131 denominationName: DIME total: 310
+
+    script.js:131 denominationName: PENNY total: 101
 
         const [denominationName, total] = reversedCid[i];
 
