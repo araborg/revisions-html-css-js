@@ -312,13 +312,9 @@ for (let i = 0; i <= reversedCid.length; i++) {
 
         script.js:131 denominationName: TEN total: 2000 reversedCid[i]: TEN,2000
         script.js:131 denominationName: FIVE total: 5500 reversedCid[i]: FIVE,5500
-
         script.js:131 denominationName: ONE total: 9000 reversedCid[i]: ONE,9000
-
         script.js:131 denominationName: QUARTER total: 425 reversedCid[i]: QUARTER,425
-
         script.js:131 denominationName: DIME total: 310 reversedCid[i]: DIME,310
-
         script.js:131 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
 
 
