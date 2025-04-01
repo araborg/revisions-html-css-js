@@ -296,6 +296,24 @@ const reversedCid = [
     ['PENNY', 101]
 ]
 
+for (let i = 0; i <= reversedCid.length; i++) {
+    if (changeDue >= denominations[i] && changeDue > 0) {
+
+        const [denominationName, total] = reversedCid[i];
+
+        const possibleChange = Math.min(total, changeDue);
+
+        const count = Math.floor(possibleChange / denominations[i]);
+
+        const amountInChange = count * denominations[i];
+
+        changeDue -= amountInChange;
+
+        if (count > 0) {
+            result.change.push([denominationName, amountInChange / 100]);
+        }
+    }
+}
 
 
 script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
