@@ -330,7 +330,23 @@ for (let i = 0; i <= reversedCid.length; i++) {
 
         const possibleChange = Math.min(total, changeDue);
 
+
+        script.js:144 possibleChange: 1674 denominations[i]: 1000 count: 1
+        script.js:144 possibleChange: 674 denominations[i]: 500 count: 1
+        script.js:144 possibleChange: 174 denominations[i]: 100 count: 1
+        script.js:144 possibleChange: 74 denominations[i]: 25 count: 2
+        script.js:144 possibleChange: 24 denominations[i]: 10 count: 2
+        script.js:144 possibleChange: 4 denominations[i]: 1 count: 4
+
         const count = Math.floor(possibleChange / denominations[i]);
+
+
+        script.js:151 amountInChange: 1000
+        script.js:151 amountInChange: 500
+        script.js:151 amountInChange: 100
+        script.js:151 amountInChange: 50
+        script.js:151 amountInChange: 20
+        script.js:151 amountInChange: 4
 
         const amountInChange = count * denominations[i];
 
