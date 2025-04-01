@@ -310,7 +310,6 @@ for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 
     script.js:127 changeDue: 24 denominations[i]: 10 index, i: 6
     script.js:127 changeDue: 4 denominations[i]: 1 index, i: 8
 
-
     if (changeDue >= denominations[i] && changeDue > 0) {
 
 
