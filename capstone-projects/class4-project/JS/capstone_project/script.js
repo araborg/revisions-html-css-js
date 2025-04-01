@@ -127,6 +127,11 @@ const cashRegister = () => {
             );
 
             const possibleChange = Math.min(total, changeDue);
+            console.log(
+                `possibleChange: ${possibleChange}`,
+                `total: ${total}`,
+                `changeDue: ${changeDue}`
+            );
 
             const count = Math.floor(possibleChange / denominations[i]);
 
