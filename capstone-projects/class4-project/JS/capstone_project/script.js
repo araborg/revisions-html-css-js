@@ -284,6 +284,18 @@ Using price: 326 and cash: 2000
 
 const denominations = [10000, 2000, 1000, 500, 100, 25, 10, 5, 1];
 
+const reversedCid = [
+    ['ONE HUNDRED', 10000]
+    ['TWENTY', 6000]
+    ['TEN', 2000]
+    ['FIVE', 5500]
+    ['ONE', 9000]
+    ['QUARTER', 425]
+    ['DIME', 310]
+    ['NICKEL', 205]
+    ['PENNY', 101]
+]
+
 script.js:124 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
 script.js:131 denominationName: TEN total: 2000
 script.js:137 possibleChange: 1674 total: 2000 changeDue: 1674
