@@ -303,12 +303,13 @@ Using price: 326 and cash: 2000 changeDue: 1674
 
 for (let i = 0; i <= reversedCid.length; i++) { // d loop will go 10 times (0 - 9)
     
-    script.js:124 changeDue: 1674 denominations[i]: 1000 
-    script.js:124 changeDue: 674 denominations[i]: 500 
-    script.js:124 changeDue: 174 denominations[i]: 100 
-    script.js:124 changeDue: 74 denominations[i]: 25 
-    script.js:124 changeDue: 24 denominations[i]: 10 
-    script.js:124 changeDue: 4 denominations[i]: 1 
+    script.js:127 changeDue: 1674 denominations[i]: 1000 index, i: 2
+    script.js:127 changeDue: 674 denominations[i]: 500 index, i: 3
+    script.js:127 changeDue: 174 denominations[i]: 100 index, i: 4
+    script.js:127 changeDue: 74 denominations[i]: 25 index, i: 5
+    script.js:127 changeDue: 24 denominations[i]: 10 index, i: 6
+    script.js:127 changeDue: 4 denominations[i]: 1 index, i: 8
+
 
     if (changeDue >= denominations[i] && changeDue > 0) {
 
@@ -408,60 +409,49 @@ if (changeDue > 0) {
 
 
 
-index, i: 0
-script.js:126 index, i: 1
-script.js:126 index, i: 2
-script.js:129 changeDue: 1674 denominations[i]: 1000 reversedCid[i]: TEN,2000
-script.js:136 denominationName: TEN total: 2000 reversedCid[i]: TEN,2000
-script.js:143 possibleChange: 1674 total: 2000 changeDue: 1674
-script.js:150 possibleChange: 1674 denominations[i]: 1000 count: 1
-script.js:157 amountInChange: 1000
-script.js:160 changeDue: 674
-script.js:162 count: 1
-script.js:126 index, i: 3
-script.js:129 changeDue: 674 denominations[i]: 500 reversedCid[i]: FIVE,5500
-script.js:136 denominationName: FIVE total: 5500 reversedCid[i]: FIVE,5500
-script.js:143 possibleChange: 674 total: 5500 changeDue: 674
-script.js:150 possibleChange: 674 denominations[i]: 500 count: 1
-script.js:157 amountInChange: 500
-script.js:160 changeDue: 174
-script.js:162 count: 1
-script.js:126 index, i: 4
-script.js:129 changeDue: 174 denominations[i]: 100 reversedCid[i]: ONE,9000
-script.js:136 denominationName: ONE total: 9000 reversedCid[i]: ONE,9000
-script.js:143 possibleChange: 174 total: 9000 changeDue: 174
-script.js:150 possibleChange: 174 denominations[i]: 100 count: 1
-script.js:157 amountInChange: 100
-script.js:160 changeDue: 74
-script.js:162 count: 1
-script.js:126 index, i: 5
-script.js:129 changeDue: 74 denominations[i]: 25 reversedCid[i]: QUARTER,425
-script.js:136 denominationName: QUARTER total: 425 reversedCid[i]: QUARTER,425
-script.js:143 possibleChange: 74 total: 425 changeDue: 74
-script.js:150 possibleChange: 74 denominations[i]: 25 count: 2
-script.js:157 amountInChange: 50
-script.js:160 changeDue: 24
-script.js:162 count: 2
-script.js:126 index, i: 6
-script.js:129 changeDue: 24 denominations[i]: 10 reversedCid[i]: DIME,310
-script.js:136 denominationName: DIME total: 310 reversedCid[i]: DIME,310
-script.js:143 possibleChange: 24 total: 310 changeDue: 24
-script.js:150 possibleChange: 24 denominations[i]: 10 count: 2
-script.js:157 amountInChange: 20
-script.js:160 changeDue: 4
-script.js:162 count: 2
-script.js:126 index, i: 7
-script.js:126 index, i: 8
-script.js:129 changeDue: 4 denominations[i]: 1 reversedCid[i]: PENNY,101
-script.js:136 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
-script.js:143 possibleChange: 4 total: 101 changeDue: 4
-script.js:150 possibleChange: 4 denominations[i]: 1 count: 4
-script.js:157 amountInChange: 4
-script.js:160 changeDue: 0
-script.js:162 count: 4
-script.js:126 index, i: 9
-script.js:169 result.change: TEN,10,FIVE,5,ONE,1,QUARTER,0.5,DIME,0.2,PENNY,0.04
-
+script.js:127 changeDue: 1674 denominations[i]: 1000 index, i: 2
+script.js:134 denominationName: TEN total: 2000 reversedCid[i]: TEN,2000
+script.js:141 possibleChange: 1674 total: 2000 changeDue: 1674
+script.js:148 possibleChange: 1674 denominations[i]: 1000 count: 1
+script.js:155 amountInChange: 1000
+script.js:158 changeDue: 674
+script.js:160 count: 1
+script.js:127 changeDue: 674 denominations[i]: 500 index, i: 3
+script.js:134 denominationName: FIVE total: 5500 reversedCid[i]: FIVE,5500
+script.js:141 possibleChange: 674 total: 5500 changeDue: 674
+script.js:148 possibleChange: 674 denominations[i]: 500 count: 1
+script.js:155 amountInChange: 500
+script.js:158 changeDue: 174
+script.js:160 count: 1
+script.js:127 changeDue: 174 denominations[i]: 100 index, i: 4
+script.js:134 denominationName: ONE total: 9000 reversedCid[i]: ONE,9000
+script.js:141 possibleChange: 174 total: 9000 changeDue: 174
+script.js:148 possibleChange: 174 denominations[i]: 100 count: 1
+script.js:155 amountInChange: 100
+script.js:158 changeDue: 74
+script.js:160 count: 1
+script.js:127 changeDue: 74 denominations[i]: 25 index, i: 5
+script.js:134 denominationName: QUARTER total: 425 reversedCid[i]: QUARTER,425
+script.js:141 possibleChange: 74 total: 425 changeDue: 74
+script.js:148 possibleChange: 74 denominations[i]: 25 count: 2
+script.js:155 amountInChange: 50
+script.js:158 changeDue: 24
+script.js:160 count: 2
+script.js:127 changeDue: 24 denominations[i]: 10 index, i: 6
+script.js:134 denominationName: DIME total: 310 reversedCid[i]: DIME,310
+script.js:141 possibleChange: 24 total: 310 changeDue: 24
+script.js:148 possibleChange: 24 denominations[i]: 10 count: 2
+script.js:155 amountInChange: 20
+script.js:158 changeDue: 4
+script.js:160 count: 2
+script.js:127 changeDue: 4 denominations[i]: 1 index, i: 8
+script.js:134 denominationName: PENNY total: 101 reversedCid[i]: PENNY,101
+script.js:141 possibleChange: 4 total: 101 changeDue: 4
+script.js:148 possibleChange: 4 denominations[i]: 1 count: 4
+script.js:155 amountInChange: 4
+script.js:158 changeDue: 0
+script.js:160 count: 4
+script.js:167 result.change: TEN,10,FIVE,5,ONE,1,QUARTER,0.5,DIME,0.2,PENNY,0.04
 
 
 */
