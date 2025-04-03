@@ -73,8 +73,6 @@ for (let i = 0; i < count; i = i + 1) {
 
 let index = 0;
 for (const row of rows) {
-    // console.log(row);
-
     result = result + "\n" + row;
 }
 
