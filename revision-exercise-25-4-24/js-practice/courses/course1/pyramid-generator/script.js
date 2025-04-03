@@ -20,7 +20,7 @@ console.log(rows[0]);
 rows[2] = 10;
 console.log(rows);
 
-console.log(rows[rows.length - 1]);
+rows[rows.length - 1] = 10;
 console.log(rows);
 
 // let pushed = rows.push("freeCodeCamp");
