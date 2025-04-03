@@ -75,29 +75,29 @@ const cashRegister = () => {
 
         // 2. compare changeDue with denominations[i] and it must be greater than 0
         if (changeDue >= denominations[i] && changeDue > 0) {
-            console.log(
-                `changeDue: ${changeDue}`,
-                `denominations[i]: ${denominations[i]}`,
-                `index, i: ${i}`
-            );
+            // console.log(
+            //     `changeDue: ${changeDue}`,
+            //     `denominations[i]: ${denominations[i]}`,
+            //     `index, i: ${i}`
+            // );
 
             // 3. use d iteratn index to select d cid array elemt and destructure it
             const [denominationName, amount] = reversedCid[i];
-            console.log(
-                `denominationName: ${denominationName}`,
-                `amount: ${amount}`,
-                `reversedCid[i]: ${reversedCid[i]}`
-            );
+            // console.log(
+            //     `denominationName: ${denominationName}`,
+            //     `amount: ${amount}`,
+            //     `reversedCid[i]: ${reversedCid[i]}`
+            // );
 
             // 4. choose d lowest value btw d amount with d changeDue as d possibleChange
             // e.g: possibleChange = 1674, amount = 2000, changeDue = 1674
             // e.g: possibleChange = 674, amount = 5500, changeDue = 674
             const possibleChange = Math.min(amount, changeDue);
-            console.log(
-                `possibleChange: ${possibleChange}`,
-                `amount: ${amount}`,
-                `changeDue: ${changeDue}`
-            );
+            // console.log(
+            //     `possibleChange: ${possibleChange}`,
+            //     `amount: ${amount}`,
+            //     `changeDue: ${changeDue}`
+            // );
 
             // 5. How many of d denominations[i] can be used to make up d possibleChange?
             // e.g: possibleChange = 1674, denominations[i] = 1000, count = 1
@@ -115,13 +115,13 @@ const cashRegister = () => {
 
             // 6. With count known, what is the closest change to d amount?
             const amountInChange = count * denominations[i];
-            console.log(`amountInChange: ${amountInChange}`);
+            // console.log(`amountInChange: ${amountInChange}`);
 
             // 7. remove ds total amt of change from initial changeDue to get a new changeDue
             changeDue -= amountInChange;
-            console.log(`changeDue: ${changeDue}`);
+            // console.log(`changeDue: ${changeDue}`);
 
-            console.log(`count: ${count}`);
+            // console.log(`count: ${count}`);
             if (count > 0) {
                 // 8. If count > 0, push d initial decimal amount and denominationName into empty result.change array
                 result.change.push([denominationName, amountInChange / 100]);
@@ -187,6 +187,7 @@ const updateUI = (change) => {
     if (change) {
         // find d cid array dt correspond with change and update d diff in amount
         change.forEach(([changeDenomination, changeAmount]) => {
+            console.log(changeAmount);
             // using change to find cid dt correlate
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
