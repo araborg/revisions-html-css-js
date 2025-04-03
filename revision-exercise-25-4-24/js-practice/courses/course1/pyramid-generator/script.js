@@ -66,16 +66,19 @@ let result = "";
 // console.log(result);
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(i);
+    // rows.push(i);
+
+    rows.push(character);
 }
 
 let index = 0;
 for (const row of rows) {
     // console.log(row);
 
-    result = result + row;
-    // console.log(++index, row + index);
+    result = result + "\n" + row;
 }
+
+console.log(result);
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
