@@ -131,6 +131,7 @@ const cashRegister = () => {
                 `index, i: ${i}`
             );
 
+            // use d index to select d cid array elemt and destructure it
             const [denominationName, total] = reversedCid[i];
             console.log(
                 `denominationName: ${denominationName}`,
