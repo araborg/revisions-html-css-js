@@ -59,7 +59,7 @@ const character = "Hello";
 */
 const rows = [];
 const count = 8;
-const character = "Hello";
+const character = "#";
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
