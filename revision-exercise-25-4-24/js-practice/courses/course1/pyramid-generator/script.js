@@ -69,6 +69,9 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(i);
 }
 
+for (const row of rows) {
+}
+
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
 
