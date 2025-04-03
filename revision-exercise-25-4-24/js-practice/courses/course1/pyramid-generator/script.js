@@ -61,6 +61,8 @@ const rows = [];
 const count = 8;
 const character = "#";
 
+for (let i = 0; i < count; i = i + 1) {}
+
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
 
