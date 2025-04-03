@@ -19,7 +19,7 @@ const changeDueDisplay = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
 const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
-// logic: Using price: 3.26 and cash: 20
+// logic: Using price: 3.26 and cash: 20 changeDue: 1674
 const cashRegister = () => {
     const cashInCents = Math.round(Number(cash.value) * 100);
     const priceInCents = Math.round(price * 100);
