@@ -59,13 +59,12 @@ const cashRegister = () => {
     ); // 33541
 
     if (totalCID < changeDue) {
-        console.log("This is used " + "totalCID < changeDue");
         changeDueDisplay.innerHTML = "<p>Status: INSUFFICIENT_FUNDS</p>";
 
         return;
     }
 
-    // e.g: totalCID = 33541 and changeDue = 33541
+    // e.g: if totalCID = 33541 and changeDue = 33541
     if (totalCID === changeDue) {
         result.status = "CLOSED";
     }
