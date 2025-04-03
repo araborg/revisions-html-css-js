@@ -45,6 +45,15 @@ let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
 console.log(pushed); // 4
+
+6.
+Changing let to const:
+const rows = [];
+const count = 8;
+
+const character = "Hello";
+
+
 *****************************
 
 */
