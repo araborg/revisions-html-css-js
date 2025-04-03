@@ -12,11 +12,6 @@ console.log(character);
 2.
 
 
-*****************************
-
-
-*/
-
 let character = "Hello";
 let count = 8;
 
@@ -26,10 +21,16 @@ let rows = ["Naomi", "Quincy", "CamperChan"];
 console.log(rows[0]); // Nsomi
 
 rows[2] = 10;
+console.log(rows); // ['Naomi', 'Quincy', 10]
+
+rows[rows.length - 1] = 10; // ['Naomi', 'Quincy', 10]
 console.log(rows);
 
-rows[rows.length - 1] = 10;
-console.log(rows);
+
+*****************************
+
+
+*/
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
