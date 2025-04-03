@@ -21,6 +21,8 @@ const rows = [];
 let result = "";
 
 
+=================================================
+
 A: For loop
 
 // change ds code to diff kind of loop
@@ -59,6 +61,9 @@ function getResult() {
 if (" ") {
     console.log("Condition is true");
 }
+
+
+=================================================
 
 B: While loop:
 
@@ -152,6 +157,7 @@ while (rows.length < count) {
 getResult();
 
 
+=================================================
 C: Inverted Loops:
 */
 const character = "#";
