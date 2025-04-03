@@ -46,14 +46,8 @@ console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 
 */
 let rows = ["Naomi", "Quincy", "CamperChan"];
-rows.push("freeCodeCamp");
-
-const popped = rows.pop();
-
-console.log(popped); // freeCodeCamp
-console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
-
 let pushed = rows.push("freeCodeCamp");
+
 console.log(pushed);
 
 // let pushed = rows.push("freeCodeCamp");
