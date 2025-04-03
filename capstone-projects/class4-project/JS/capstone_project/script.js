@@ -53,8 +53,6 @@ const cashRegister = () => {
             Math.round(amount * 100),
         ]);
 
-    console.log(reversedCid);
-
     const totalCID = reversedCid.reduce(
         (prev, [_, amount]) => prev + amount,
         0
