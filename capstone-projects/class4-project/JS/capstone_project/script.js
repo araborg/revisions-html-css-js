@@ -113,7 +113,7 @@ const cashRegister = () => {
                 `count: ${count}`
             );
 
-            // 6. With count known, what is the closest change to d total?
+            // 6. With count known, what is the closest change to d amount?
             const amountInChange = count * denominations[i];
             console.log(`amountInChange: ${amountInChange}`);
 
@@ -128,8 +128,6 @@ const cashRegister = () => {
             }
         }
     }
-
-    console.log(`result.change: ${result.change}`);
 
     // changeDue is expected to be 0 after it's passed via d for loop
     if (changeDue > 0) {
