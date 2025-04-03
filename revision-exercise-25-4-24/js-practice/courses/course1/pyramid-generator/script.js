@@ -62,7 +62,7 @@ const count = 8;
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
-    console.log(i);
+    rows.push(i);
 }
 
 // let pushed = rows.push("freeCodeCamp");
