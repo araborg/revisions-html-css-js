@@ -165,11 +165,11 @@ const cashRegister = () => {
                 `count: ${count}`
             );
 
-            // 6. With count know, what will total occurence?
+            // 6. With count known, what will total amt of change be?
             const amountInChange = count * denominations[i];
             console.log(`amountInChange: ${amountInChange}`);
 
-            // 7. remove ds total occurence from initial changeDue to get a new changeDue
+            // 7. remove ds total amt of change from initial changeDue to get a new changeDue
             changeDue -= amountInChange;
             console.log(`changeDue: ${changeDue}`);
 
