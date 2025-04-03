@@ -175,6 +175,7 @@ const cashRegister = () => {
 
             console.log(`count: ${count}`);
             if (count > 0) {
+                // 8. If count > 0, push d initial decimal amount and denominationName into empty result.change array
                 result.change.push([denominationName, amountInChange / 100]);
             }
         }
