@@ -33,6 +33,15 @@ rows.push("freeCodeCamp");
 
 console.log(rows); //  ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
 
+4.
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
+
+const popped = rows.pop();
+
+console.log(popped); // freeCodeCamp
+console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
+
 *****************************
 
 */
