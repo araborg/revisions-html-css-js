@@ -187,7 +187,6 @@ const updateUI = (change) => {
     if (change) {
         // find d cid array dt correspond with change and update d diff in amount
         change.forEach(([changeDenomination, changeAmount]) => {
-            console.log(changeAmount);
             // using change to find cid dt correlate
             const targetArr = cid.find(
                 ([denominationName]) => denominationName === changeDenomination
