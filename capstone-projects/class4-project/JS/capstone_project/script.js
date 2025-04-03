@@ -122,8 +122,9 @@ const cashRegister = () => {
     */
 
     // Using price: 3.26 and cash: 20
+    // 1. itierate through d reversedCid array. d loop will go 10 times (0 - 9)
     for (let i = 0; i <= reversedCid.length; i++) {
-        // compare changeDue with denominations[i] and it must be greater than 0
+        // 2. compare changeDue with denominations[i] and it must be greater than 0
         if (changeDue >= denominations[i] && changeDue > 0) {
             console.log(
                 `changeDue: ${changeDue}`,
@@ -131,18 +132,25 @@ const cashRegister = () => {
                 `index, i: ${i}`
             );
 
-            // use d index to select d cid array elemt and destructure it
-            const [denominationName, total] = reversedCid[i];
+            // 3. use d iteratn index to select d cid array elemt and destructure it
+            const [denominationName, amount] = reversedCid[i];
             console.log(
                 `denominationName: ${denominationName}`,
-                `total: ${total}`,
+                `amount: ${amount}`,
                 `reversedCid[i]: ${reversedCid[i]}`
             );
 
-            const possibleChange = Math.min(total, changeDue);
+            // compare d amount with d changeDue and choose d lowest value as d possibleChange
+            // e.g: possibleChange = 1674, amount = 2000, changeDue = 1674
+            // e.g: possibleChange = 674, amount = 5500, changeDue = 674
+            // e.g: possibleChange = 174, amount = 9000, changeDue = 174
+            // e.g: possibleChange = 74, amount = 425, changeDue = 74
+            // e.g: possibleChange = 24, amount = 310, changeDue = 24
+            // e.g: possibleChange = 4, amount = 101, changeDue = 4
+            const possibleChange = Math.min(amount, changeDue);
             console.log(
                 `possibleChange: ${possibleChange}`,
-                `total: ${total}`,
+                `amount: ${amount}`,
                 `changeDue: ${changeDue}`
             );
 
