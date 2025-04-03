@@ -61,6 +61,8 @@ const rows = [];
 const count = 8;
 const character = "#";
 
+let result = "";
+
 for (let i = 0; i < count; i = i + 1) {
     rows.push(i);
 }
@@ -77,7 +79,7 @@ for (let i = 0; i < count; i = i + 1) {
 // const count = 8;
 // const rows = [];
 
-let result = "";
+// let result = "";
 
 /*
 =================================================
