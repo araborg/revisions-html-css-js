@@ -36,6 +36,8 @@ console.log(rows); //  ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
 *****************************
 
 */
+let rows = ["Naomi", "Quincy", "CamperChan"];
+rows.push("freeCodeCamp");
 
 const popped = rows.pop();
 
