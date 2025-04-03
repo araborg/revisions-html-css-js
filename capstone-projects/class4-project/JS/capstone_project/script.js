@@ -107,11 +107,11 @@ const cashRegister = () => {
             // e.g: possibleChange = 24, denominations[i] = 10, count = 2
             // e.g: possibleChange = 4, denominations[i] = 1, count = 4
             const count = Math.floor(possibleChange / denominations[i]);
-            console.log(
-                `possibleChange: ${possibleChange}`,
-                `denominations[i]: ${denominations[i]}`,
-                `count: ${count}`
-            );
+            // console.log(
+            //     `possibleChange: ${possibleChange}`,
+            //     `denominations[i]: ${denominations[i]}`,
+            //     `count: ${count}`
+            // );
 
             // 6. With count known, what is the closest change to d amount?
             const amountInChange = count * denominations[i];
