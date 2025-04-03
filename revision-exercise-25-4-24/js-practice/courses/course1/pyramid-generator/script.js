@@ -1,10 +1,18 @@
+/*
 let character = "Hello";
-let count = 8;
 character[1] = "a";
 
-// Note that strings are immutable, which means once they are
-// created, they cannot be changed.
+Note that strings are immutable, which means once they are
+created, they cannot be changed. 
+
 console.log(character);
+
+*/
+
+let character = "Hello";
+let count = 8;
+
+console.log(count + 1);
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
 
