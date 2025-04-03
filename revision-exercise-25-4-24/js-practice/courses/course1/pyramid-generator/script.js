@@ -1,6 +1,6 @@
 /*
 1.
-let character = "Hello";
+let character = 'Hello';
 character[1] = "a";
 
 Note that strings are immutable, which means once they are
@@ -10,9 +10,7 @@ console.log(character);
 
 
 2.
-
-
-let character = "Hello";
+let character = 'Hello';
 let count = 8;
 
 console.log(count + 1);
@@ -42,13 +40,16 @@ const popped = rows.pop();
 console.log(popped); // freeCodeCamp
 console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 
-*****************************
-
-*/
+5.
 let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
 console.log(pushed); // 4
+*****************************
+
+*/
+let rows = [];
+let character = "Hello";
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
