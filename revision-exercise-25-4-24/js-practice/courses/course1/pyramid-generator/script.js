@@ -1,26 +1,28 @@
-/*
 let character = "Hello";
 let count = 8;
 character[1] = "a";
+
+// Note that strings are immutable, which means once they are
+// created, they cannot be changed.
 console.log(character);
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
 
-let pushed = rows.push("freeCodeCamp");
-console.log(`This is d pushed value: ${pushed}`);
+// let pushed = rows.push("freeCodeCamp");
+// console.log(`This is d pushed value: ${pushed}`);
 
-let popped = rows.pop();
-console.log(`This is d popped value: ${popped}`);
+// let popped = rows.pop();
+// console.log(`This is d popped value: ${popped}`);
 
-console.log(rows);
+// console.log(rows);
 
-const character = "#";
-const count = 8;
-const rows = [];
+// const character = "#";
+// const count = 8;
+// const rows = [];
 
 let result = "";
 
-
+/*
 =================================================
 
 A: For loop
@@ -160,27 +162,27 @@ getResult();
 =================================================
 C: Inverted Loops:
 */
-const character = "#";
-let count = 8;
-const rows = [];
+// const character = "#";
+// let count = 8;
+// const rows = [];
 
-let result = "";
+// let result = "";
 
-function padRow(rowNumber, rowCount) {
-    return (
-        " ".repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
-        " ".repeat(rowCount - rowNumber)
-    );
-}
+// function padRow(rowNumber, rowCount) {
+//     return (
+//         " ".repeat(rowCount - rowNumber) +
+//         character.repeat(2 * rowNumber - 1) +
+//         " ".repeat(rowCount - rowNumber)
+//     );
+// }
 
-function getResult() {
-    for (const row of rows) {
-        result = result + "\n" + row;
-    }
+// function getResult() {
+//     for (const row of rows) {
+//         result = result + "\n" + row;
+//     }
 
-    console.log(result);
-}
+//     console.log(result);
+// }
 
 /*
 1. For loops:
@@ -209,17 +211,17 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-count = 10;
+// count = 10;
 
-let inverted = true;
-// inverted = true;
+// let inverted = true;
+// // inverted = true;
 
-for (let i = 1; i <= count; i++) {
-    if (inverted) {
-        rows.unshift(padRow(i, count));
-    } else {
-        rows.push(padRow(i, count));
-    }
-}
+// for (let i = 1; i <= count; i++) {
+//     if (inverted) {
+//         rows.unshift(padRow(i, count));
+//     } else {
+//         rows.push(padRow(i, count));
+//     }
+// }
 
-getResult();
+// getResult();
