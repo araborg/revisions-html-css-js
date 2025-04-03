@@ -113,7 +113,7 @@ const cashRegister = () => {
                 `count: ${count}`
             );
 
-            // 6. With count known, what will total amt of change be?
+            // 6. With count known, what is the closest change to d total?
             const amountInChange = count * denominations[i];
             console.log(`amountInChange: ${amountInChange}`);
 
