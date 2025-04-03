@@ -71,6 +71,8 @@ const cashRegister = () => {
 
     // 1. itierate through d reversedCid array. d loop will go 10 times (0 - 9)
     for (let i = 0; i <= reversedCid.length; i++) {
+        //
+
         // 2. compare changeDue with denominations[i] and it must be greater than 0
         if (changeDue >= denominations[i] && changeDue > 0) {
             console.log(
