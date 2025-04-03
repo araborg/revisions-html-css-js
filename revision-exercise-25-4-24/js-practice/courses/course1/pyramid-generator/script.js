@@ -17,6 +17,12 @@ console.log(count + 1);
 let rows = ["Naomi", "Quincy", "CamperChan"];
 console.log(rows[0]);
 
+rows[2] = 10;
+console.log(rows);
+
+console.log(rows[rows.length - 1]);
+console.log(rows);
+
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
 
