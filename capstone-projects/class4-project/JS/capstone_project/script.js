@@ -19,7 +19,7 @@ const changeDueDisplay = document.getElementById("change-due");
 const purchaseBtn = document.getElementById("purchase-btn");
 const cashDrawerDisplay = document.getElementById("cash-drawer-display");
 
-// logic
+// logic: Using price: 3.26 and cash: 20
 const cashRegister = () => {
     const cashInCents = Math.round(Number(cash.value) * 100);
     const priceInCents = Math.round(price * 100);
@@ -40,14 +40,6 @@ const cashRegister = () => {
 
         return;
     }
-
-    /*
-        1. Identify the Change Amount:
-        Determine the total amount of change that needs to be 
-        given.
-
-        let changeDue = cashInCents - priceInCents;
-    */
 
     // needed variables:
     let changeDue = cashInCents - priceInCents;
@@ -79,49 +71,6 @@ const cashRegister = () => {
     if (totalCID === changeDue) {
         result.status = "CLOSED";
     }
-
-    /*
-        2. Start with the Largest Denomination:
-        Begin with the largest denomination of currency 
-        (e.g., 100 Naira note, 1000 Naira note) that is less 
-        than or equal to the change amount.
-
-        if (changeDue >= denominations[i] && changeDue > 0) {
-            const [denominationName, total] = reversedCid[i];
-
-            const possibleChange = Math.min(total, changeDue);
-        }
-
-
-        3. Subtract and Repeat:
-        Subtract the value of that denomination from the change 
-        amount and repeat the process with the next smaller 
-        denomination.
-
-        for (let i = 0; i <= reversedCid.length; i++) {
-            if (changeDue >= denominations[i] && changeDue > 0) {
-                const count = Math.floor(possibleChange / denominations[i]);
-
-                const amountInChange = count * denominations[i];
-
-                changeDue -= amountInChange;
-
-                if (count > 0) {
-                    result.change.push([denominationName, amountInChange / 100]);
-                }
-            }
-        }
-
-
-        4. Example:
-        If the change is 127 Naira, you'd start with a 100 Naira 
-        note, leaving 27 Naira. Then you'd use a 20 Naira note, 
-        leaving 7 Naira. Finally, you'd give 5 Naira and 2 Naira, 
-        totaling 127 Naira.
-
-    */
-
-    // Using price: 3.26 and cash: 20
 
     // 1. itierate through d reversedCid array. d loop will go 10 times (0 - 9)
     for (let i = 0; i <= reversedCid.length; i++) {
