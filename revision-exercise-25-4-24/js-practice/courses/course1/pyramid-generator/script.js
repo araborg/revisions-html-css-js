@@ -36,7 +36,11 @@ let rows = ["Naomi", "Quincy", "CamperChan"];
 
 rows.push("freeCodeCamp");
 
-console.log(rows); // ['Naomi', 'Quincy', 10]
+console.log(rows); //  ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
+
+const popped = rows.pop();
+
+console.log(popped);
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
