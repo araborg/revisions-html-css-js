@@ -1,4 +1,5 @@
 /*
+1.
 let character = "Hello";
 character[1] = "a";
 
@@ -6,6 +7,13 @@ Note that strings are immutable, which means once they are
 created, they cannot be changed. 
 
 console.log(character);
+
+
+2.
+
+
+*****************************
+
 
 */
 
@@ -15,7 +23,7 @@ let count = 8;
 console.log(count + 1);
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
-console.log(rows[0]);
+console.log(rows[0]); // Nsomi
 
 rows[2] = 10;
 console.log(rows);
