@@ -48,7 +48,7 @@ console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
-console.log(pushed);
+console.log(pushed); // 4
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
