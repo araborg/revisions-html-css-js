@@ -89,7 +89,7 @@ const cashRegister = () => {
                 `reversedCid[i]: ${reversedCid[i]}`
             );
 
-            // 4. compare d amount with d changeDue and choose d lowest value as d possibleChange
+            // 4. choose d lowest value btw d amount with d changeDue as d possibleChange
             // e.g: possibleChange = 1674, amount = 2000, changeDue = 1674
             // e.g: possibleChange = 674, amount = 5500, changeDue = 674
             const possibleChange = Math.min(amount, changeDue);
