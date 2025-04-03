@@ -63,13 +63,18 @@ const character = "#";
 
 let result = "";
 
-console.log(result);
+// console.log(result);
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(i);
 }
 
+let index = 0;
 for (const row of rows) {
+    // console.log(row);
+
+    result = result + row;
+    // console.log(++index, row + index);
 }
 
 // let pushed = rows.push("freeCodeCamp");
