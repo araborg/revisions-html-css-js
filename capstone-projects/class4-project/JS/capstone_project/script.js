@@ -151,7 +151,7 @@ const cashRegister = () => {
                 `changeDue: ${changeDue}`
             );
 
-            // 5. How many of d denominations[i] can be used to make up d possibleChange
+            // 5. How many of d denominations[i] can be used to make up d possibleChange?
             // e.g: possibleChange = 1674, denominations[i] = 1000, count = 1
             // e.g: possibleChange = 674, denominations[i] = 500, count = 1
             // e.g: possibleChange = 174, denominations[i] = 100, count = 1
@@ -165,11 +165,11 @@ const cashRegister = () => {
                 `count: ${count}`
             );
 
-            // 6. With count know, what will total occurence
+            // 6. With count know, what will total occurence?
             const amountInChange = count * denominations[i];
             console.log(`amountInChange: ${amountInChange}`);
 
-            // 7. remove ds total occurence from initial changeDue
+            // 7. remove ds total occurence from initial changeDue to get a new changeDue
             changeDue -= amountInChange;
             console.log(`changeDue: ${changeDue}`);
 
