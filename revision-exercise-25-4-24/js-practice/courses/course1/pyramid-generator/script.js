@@ -572,6 +572,34 @@ console.log(rows.length); // 8
 
 
 11.
+Final code:
+const rows = [];
+const count = 8;
+const character = "#";
+
+let result = "";
+
+// rows.length start from empty array wc = 0
+
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+console.log(rows.length); // 8
 
 
 12.
@@ -587,11 +615,12 @@ console.log(rows.length); // 8
 
 */
 const rows = [];
-let result = "";
 const count = 8;
 const character = "#";
 
-console.log(rows.length); // 0
+let result = "";
+
+// rows.length start from empty array wc = 0
 
 while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
