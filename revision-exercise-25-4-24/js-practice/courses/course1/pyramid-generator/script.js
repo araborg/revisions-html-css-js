@@ -63,17 +63,17 @@ const character = "#";
 
 let result = "";
 
-// console.log(result);
-
 for (let i = 0; i < count; i = i + 1) {
-    // rows.push(i);
-
     rows.push(character.repeat(i));
 }
 
 let index = 0;
 for (const row of rows) {
+    console.log("============");
+
     result = result + "\n" + row;
+
+    // result = result + row + "\n";
 }
 
 console.log(result);
