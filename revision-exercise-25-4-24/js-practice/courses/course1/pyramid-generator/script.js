@@ -3,8 +3,8 @@
 let character = 'Hello';
 character[1] = "a";
 
-Note that strings are immutable, which means once they are
-created, they cannot be changed. 
+Note that strings are immutable, which means 
+once they are created, they cannot be changed. 
 
 console.log(character); // Hello
 
@@ -48,7 +48,8 @@ console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
-console.log(pushed); // 4 i.e d length of the array, rows
+console.log(pushed); 
+// 4 i.e d length of the array, rows
 
 
 6.
@@ -324,6 +325,7 @@ console.log(result);
 
 
 *****************************
+
 1.
 Falsy values includes(6): 
 false (without strings), 
@@ -602,13 +604,23 @@ console.log(result);
 console.log(rows.length); // 8
 
 
-12.
+*****************************
+Inverted pyramid:
+
+1.
+for (let i = count; false; false) {}
 
 
-13.
+2.
 
 
+3.
 
+
+4.
+
+
+5.
 
 
 *****************************
@@ -622,9 +634,7 @@ let result = "";
 
 // rows.length start from empty array wc = 0
 
-while (rows.length < count) {
-    rows.push(padRow(rows.length + 1, count));
-}
+for (let i = count; false; false) {}
 
 function padRow(index, count) {
     return (
