@@ -1,4 +1,6 @@
 /*
+For loop:
+
 1.
 let character = 'Hello';
 character[1] = "a";
@@ -341,6 +343,7 @@ console.log(result);
 
 
 *****************************
+While loop:
 
 1.
 Falsy values includes(6): 
