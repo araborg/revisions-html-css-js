@@ -178,7 +178,7 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow() {}
+function padRow(rowNumber, rowCount) {}
 
 // const call = padRow("Babs");
 // console.log(call); // #Babs
