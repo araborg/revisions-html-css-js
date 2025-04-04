@@ -130,7 +130,8 @@ function padRow(name) {
     const test = "Testing";
 }
 
-console.log(test); // ReferenceError: test is not defined
+console.log(test); 
+// ReferenceError: test is not defined
 
 
 12. Two ths return does: it "defines" d value to be 
@@ -184,14 +185,14 @@ function padRow(index, count) {
 
 console.log(result);
 
-# 
-## 
-### 
-#### 
-##### 
-###### 
-####### 
-######## 
+#           1
+##          2
+###         3 
+####        4
+#####       5
+######      6
+#######     7
+########    8
 
 
 15.
@@ -222,14 +223,14 @@ function padRow(index, count) {
 
 console.log(result);
 
-       #       
-      ##      
-     ###     
-    ####    
-   #####   
-  ######  
- ####### 
-########
+       #      1 
+      ##      2
+     ###      3
+    ####      4
+   #####      5
+  ######      6
+ #######      7
+########      8
 
 
 16.
@@ -310,6 +311,15 @@ function padRow(index, count) {
 }
 
 console.log(result);
+
+       #            1       
+      ###           3
+     #####          5
+    #######         7    
+   #########        9
+  ###########       11
+ #############      13
+###############     15
 
 
 19.
