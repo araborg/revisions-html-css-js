@@ -48,7 +48,7 @@ console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
-console.log(pushed); // 4
+console.log(pushed); // 4 i.e d length of the array, rows
 
 
 6.
@@ -73,7 +73,8 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i));
 }
 
-console.log(rows); // ['', '#', '##', '###', '####', '#####', '######', '#######']
+console.log(rows); 
+// ['', '#', '##', '###', '####', '#####', '######', '#######']
 
 for (const row of rows) {
     result = result + "\n" + row;
