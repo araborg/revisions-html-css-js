@@ -46,6 +46,7 @@ console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 
 5.
 let rows = ["Naomi", "Quincy", "CamperChan"];
+
 let pushed = rows.push("freeCodeCamp");
 
 console.log(pushed); 
@@ -69,7 +70,8 @@ const count = 8;
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
-    // Wn i = 0, character.repeat(0) returns an empty space
+    Wn i = 0, character.repeat(0) returns 
+    an empty space 
 
     rows.push(character.repeat(i));
 }
