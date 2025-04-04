@@ -363,6 +363,10 @@ while (continueLoop) {
     }
 }
 
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
 
 5.
 let continueLoop = false;
@@ -372,6 +376,10 @@ while (done !== count) {
     done++;
 
     rows.push(padRow(done, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 
@@ -385,6 +393,10 @@ while (done !== count) {
     done++;
 
     rows.push(padRow(done, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 
@@ -408,6 +420,10 @@ while (done <= count) {
     rows.push(padRow(done, count));
 }
 
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
 
 8.
 Using done to track the number of rows that have 
@@ -415,7 +431,6 @@ been generated is functional, but you can actually
 clean up the logic a bit further.
 
 const rows = [];
-let result = "";
 
 const count = 8;
 
@@ -429,6 +444,10 @@ while (rows.length <= count) {
     rows.push(padRow(done, count));
 }
 
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
@@ -440,7 +459,6 @@ function padRow(index, count) {
 
 9.
 const rows = [];
-let result = "";
 
 const count = 8;
 
@@ -450,6 +468,10 @@ while (rows.length < count) {
     rows.push(
         padRow(rows.length + 1, count)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 function padRow(index, count) {
