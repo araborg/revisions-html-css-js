@@ -362,7 +362,7 @@ while (continueLoop) {
         continueLoop = false;
     }
 }
-    
+
 
 5.
 
@@ -404,14 +404,10 @@ const character = "#";
 let continueLoop = false;
 let done = 0;
 
-while (continueLoop) {
+while (done !== count) {
     done++;
 
     rows.push(padRow(done, count));
-
-    if (done === count) {
-        continueLoop = false;
-    }
 }
 
 function padRow(index, count) {
