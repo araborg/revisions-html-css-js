@@ -124,7 +124,7 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow() {
+function padRow(name) {
     return "Hello";
 }
 
