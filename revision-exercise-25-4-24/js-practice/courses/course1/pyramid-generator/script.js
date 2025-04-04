@@ -24,12 +24,14 @@ console.log(rows); // ['Naomi', 'Quincy', 10]
 rows[rows.length - 1] = 10; // ['Naomi', 'Quincy', 10]
 console.log(rows);
 
+
 3.
 let rows = ["Naomi", "Quincy", "CamperChan"];
 
 rows.push("freeCodeCamp");
 
 console.log(rows); //  ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
+
 
 4.
 let rows = ["Naomi", "Quincy", "CamperChan"];
@@ -40,11 +42,13 @@ const popped = rows.pop();
 console.log(popped); // freeCodeCamp
 console.log(rows); // ['Naomi', 'Quincy', 'CamperChan']
 
+
 5.
 let rows = ["Naomi", "Quincy", "CamperChan"];
 let pushed = rows.push("freeCodeCamp");
 
 console.log(pushed); // 4
+
 
 6.
 Changing let to const:
@@ -52,6 +56,7 @@ const rows = [];
 const count = 8;
 
 const character = "Hello";
+
 
 7.
 const rows = [];
@@ -74,6 +79,31 @@ for (const row of rows) {
 }
 
 console.log(result);
+
+
+8.
+const rows = [];
+let result = "";
+
+const count = 8;
+
+const character = "#";
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+console.log(rows); // ['#', '##', '###', '####', '#####', '######', '#######', '########']
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
+
+9.
+
 
 
 *****************************
