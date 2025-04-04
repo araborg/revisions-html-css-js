@@ -377,6 +377,10 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
+if (true) {
+    console.log("Condition is true");
+}
+
 for (const row of rows) {
     result = result + "\n" + row;
 }
