@@ -350,6 +350,12 @@ while (condition === true) {
 
 
 4.
+const rows = [];
+let result = "";
+const count = 8;
+const character = "#";
+
+
 let continueLoop = false;
 let done = 0;
 
@@ -369,6 +375,12 @@ for (const row of rows) {
 
 
 5.
+const rows = [];
+let result = "";
+const count = 8;
+const character = "#";
+
+
 let continueLoop = false;
 let done = 0;
 
@@ -386,6 +398,12 @@ for (const row of rows) {
 6.
 Your loop is no longer relying on the continueLoop 
 variable. 
+
+const rows = [];
+let result = "";
+const count = 8;
+const character = "#";
+
 
 let done = 0;
 
@@ -412,6 +430,12 @@ loop would go on forever.
 Update your loop's condition to check if done is 
 less than or equal to count.
 
+const rows = [];
+let result = "";
+const count = 8;
+const character = "#";
+
+
 let done = 0;
 
 while (done <= count) {
@@ -432,10 +456,9 @@ clean up the logic a bit further.
 
 const rows = [];
 let result = "";
-
 const count = 8;
-
 const character = "#";
+
 
 let done = 0;
 
