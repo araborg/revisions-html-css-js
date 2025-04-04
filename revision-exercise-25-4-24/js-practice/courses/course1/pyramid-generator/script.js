@@ -180,8 +180,17 @@ function padRow(rowNumber, rowCount) {
 
 console.log(result);
 
+# 
+## 
+### 
+#### 
+##### 
+###### 
+####### 
+######## 
 
-14.
+
+15.
 const rows = [];
 let result = "";
 
@@ -208,9 +217,17 @@ function padRow(rowNumber, rowCount) {
 }
 
 console.log(result);
+       #       
+      ##      
+     ###     
+    ####    
+   #####   
+  ######  
+ ####### 
+########
 
 
-15.
+16.
 
 
 
