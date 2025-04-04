@@ -468,16 +468,16 @@ while (rows.length <= count) {
     rows.push(padRow(done, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 
@@ -495,16 +495,16 @@ while (rows.length < count) {
     );
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 
@@ -521,16 +521,16 @@ while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
@@ -564,16 +564,16 @@ while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
