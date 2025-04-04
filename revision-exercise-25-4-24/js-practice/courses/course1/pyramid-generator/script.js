@@ -136,11 +136,11 @@ for (const row of rows) {
 }
 
 function padRow(name) {
-    return name;
+    return character + name;
 }
 
 const call = padRow("Babs");
-console.log(call); // Hello
+console.log(call); // #Babs
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
