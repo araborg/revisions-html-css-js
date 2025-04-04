@@ -171,7 +171,7 @@ const count = 8;
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i + 1));
+    rows.push(padRow());
 }
 
 for (const row of rows) {
