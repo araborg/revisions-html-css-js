@@ -120,6 +120,12 @@ const call = padRow("Babs");
 console.log(call); // #Babs
 
 
+11. Scope
+function padRow(name) {
+    const test = "Testing";
+}
+
+console.log(test);
 
 
 *****************************
@@ -148,8 +154,8 @@ function padRow(name) {
 
 console.log(test);
 
-const call = padRow("Babs");
-console.log(call); // #Babs
+// const call = padRow("Babs");
+// console.log(call); // #Babs
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
