@@ -638,9 +638,10 @@ const character = "#";
 
 let result = "";
 
-// rows.length start from empty array wc = 0
-
-for (let i = count; i > 0; i = i - 1) {}
+// for (let i = count; i > 0; i = i - 1) {
+for (let i = count; i > 0; i -= 1) {
+    rows.push(padRow(i, count));
+}
 
 function padRow(index, count) {
     return (
