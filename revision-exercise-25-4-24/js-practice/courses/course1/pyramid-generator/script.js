@@ -112,7 +112,12 @@ console.log(call); // Hello
 
 
 10.
+function padRow(name) {
+    return character + name;
+}
 
+const call = padRow("Babs");
+console.log(call); // #Babs
 
 
 
@@ -138,8 +143,10 @@ for (const row of rows) {
 function padRow(name) {
     const test = "Testing";
 
-    return character + name;
+    // return character + name;
 }
+
+console.log(test);
 
 const call = padRow("Babs");
 console.log(call); // #Babs
