@@ -744,12 +744,6 @@ for (const row of rows) {
 console.log(result);
 
 
-4.
-
-
-5.
-
-
 *****************************
 
 */
