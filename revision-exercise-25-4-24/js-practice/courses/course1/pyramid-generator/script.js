@@ -546,14 +546,14 @@ for (const row of rows) {
 }
 
 
-10.
+9.
 const rows = [];
-let result = "";
-
 const count = 8;
-console.log(rows.length); // 0
 
+let result = "";
 const character = "#";
+
+console.log(rows.length); // 0
 
 while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
