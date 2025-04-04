@@ -295,10 +295,12 @@ for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
 
+for...of loop:
 for (const row of rows) {
     result = result + "\n" + row;
 }
 
+padRow fxn:
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
