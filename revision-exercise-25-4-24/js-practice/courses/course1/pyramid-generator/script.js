@@ -124,10 +124,12 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow() {}
+function padRow() {
+    return "Hello";
+}
 
 const call = padRow();
-console.log(call);
+console.log(call); // Hello
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
