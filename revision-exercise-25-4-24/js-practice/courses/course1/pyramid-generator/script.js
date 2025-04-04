@@ -141,14 +141,22 @@ function padRow(name) {
 
 console.log(test);
 
+
+13.
 Note: A fxn call returns d fxn value from its scope 
 to the scope where it was called.
 
+function padRow() {
+    const test = "Testing";
 
-13.
+    return test;
+}
+
+const call = padRow();
+console.log(call); // Testing
 
 
-
+14.
 
 
 
@@ -170,13 +178,9 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow(name) {
-    const test = "Testing";
+function padRow() {}
 
-    return test;
-}
-
-const call = padRow("CamperChan");
+const call = padRow();
 console.log(call); // Testing
 
 // const call = padRow("Babs");
