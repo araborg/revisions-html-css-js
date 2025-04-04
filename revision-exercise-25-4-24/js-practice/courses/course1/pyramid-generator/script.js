@@ -175,12 +175,12 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(padRow(i + 1, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return " " + character.repeat(index) + " ";
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
@@ -209,16 +209,16 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(padRow(i + 1, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(index) +
         " ".repeat(count - index)
     );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
@@ -245,16 +245,17 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(padRow(i + 1, count));
 }
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for...of loop:
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
@@ -296,11 +297,6 @@ for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
 
-for...of loop:
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
 padRow fxn:
 function padRow(index, count) {
     return (
@@ -308,6 +304,11 @@ function padRow(index, count) {
         character.repeat(2 * index - 1) +
         " ".repeat(count - index)
     );
+}
+
+for...of loop:
+for (const row of rows) {
+    result = result + "\n" + row;
 }
 
 console.log(result);
@@ -369,6 +370,14 @@ while (continueLoop) {
     }
 }
 
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
 for (const row of rows) {
     result = result + "\n" + row;
 }
@@ -388,6 +397,14 @@ while (done !== count) {
     done++;
 
     rows.push(padRow(done, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
 }
 
 for (const row of rows) {
@@ -411,6 +428,14 @@ while (done !== count) {
     done++;
 
     rows.push(padRow(done, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
 }
 
 for (const row of rows) {
