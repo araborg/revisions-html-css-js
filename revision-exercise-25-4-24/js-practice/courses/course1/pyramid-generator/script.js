@@ -678,7 +678,37 @@ for (const row of rows) {
 console.log(result);
 
 
-2.
+2. Alternating btw inverted and non-inverted pyramids
+
+const rows = [];
+const count = 8;
+const character = "#";
+
+let result = "";
+
+let inverted = true;
+
+for (let i = 1; i <= count; i++) {
+    if (inverted) {
+        rows.unshift(padRow(i, count));
+    } else {
+        rows.push(padRow(i, count));
+    }
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 
 3.
