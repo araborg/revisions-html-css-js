@@ -122,10 +122,15 @@ console.log(call); // #Babs
 
 11. Scope
 function padRow(name) {
+    return character + name;
+
     const test = "Testing";
 }
 
 console.log(test);
+
+
+12.
 
 
 *****************************
@@ -149,7 +154,7 @@ for (const row of rows) {
 function padRow(name) {
     const test = "Testing";
 
-    // return character + name;
+    return character + name;
 }
 
 console.log(test);
