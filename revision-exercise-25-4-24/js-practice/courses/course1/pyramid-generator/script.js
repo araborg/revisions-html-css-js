@@ -532,11 +532,10 @@ console.log(rows.length); // 8
 */
 const rows = [];
 let result = "";
-
 const count = 8;
-console.log(rows.length); // 0
-
 const character = "#";
+
+console.log(rows.length); // 0
 
 while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
