@@ -385,9 +385,8 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-if ("false") {
-    console.log("Condition is true");
-}
+let continueLoop = false;
+let done = 0;
 
 for (const row of rows) {
     result = result + "\n" + row;
