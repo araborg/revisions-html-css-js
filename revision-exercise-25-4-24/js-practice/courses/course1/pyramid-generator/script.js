@@ -484,8 +484,9 @@ Update your loop's condition to check if done is
 less than or equal to count.
 
 const rows = [];
-let result = "";
 const count = 8;
+
+let result = "";
 const character = "#";
 
 
