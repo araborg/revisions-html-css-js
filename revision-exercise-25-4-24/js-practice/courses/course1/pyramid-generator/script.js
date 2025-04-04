@@ -58,12 +58,15 @@ const character = "Hello";
 
 */
 const rows = [];
-const count = 8;
-const character = "#";
-
 let result = "";
 
+const count = 8;
+
+const character = "#";
+
 for (let i = 0; i < count; i = i + 1) {
+    // character.repeat(0) returns an empty space
+
     rows.push(character.repeat(i));
 }
 
