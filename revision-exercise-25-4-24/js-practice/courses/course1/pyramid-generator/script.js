@@ -401,8 +401,19 @@ let done = 0;
 while (continueLoop) {
     done++;
 
+    rows.push(padRow(done, count));
+
     if (done === count) {
+        continueLoop = false;
     }
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
 }
 
 /*
