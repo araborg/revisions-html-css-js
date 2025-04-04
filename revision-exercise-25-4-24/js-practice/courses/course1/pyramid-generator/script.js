@@ -431,6 +431,7 @@ been generated is functional, but you can actually
 clean up the logic a bit further.
 
 const rows = [];
+let result = "";
 
 const count = 8;
 
@@ -459,6 +460,7 @@ function padRow(index, count) {
 
 9.
 const rows = [];
+let result = "";
 
 const count = 8;
 
@@ -484,6 +486,33 @@ function padRow(index, count) {
 
 
 10.
+const rows = [];
+let result = "";
+
+const count = 8;
+console.log(rows.length); // 0
+
+const character = "#";
+
+while (rows.length < count) {
+    rows.push(padRow(rows.length + 1, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+console.log(result);
+
+console.log(rows.length); // 8
 
 
 11.
@@ -502,6 +531,7 @@ function padRow(index, count) {
 
 */
 const rows = [];
+let result = "";
 
 const count = 8;
 console.log(rows.length); // 0
@@ -512,6 +542,10 @@ while (rows.length < count) {
     rows.push(padRow(rows.length + 1, count));
 }
 
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
 function padRow(index, count) {
     return (
         " ".repeat(count - index) +
@@ -520,7 +554,9 @@ function padRow(index, count) {
     );
 }
 
-console.log(rows);
+console.log(result);
+
+console.log(rows.length); // 8
 /*
 =================================================
 
