@@ -297,15 +297,19 @@ for (let i = 0; i < count; i++) {
 
 18.
 const rows = [];
-let result = "";
-
 const count = 8;
 
+let result = "";
 const character = "#";
 
-change i = 0
+change i = 0 to i = 1;
 
-for loop:
+From this to:
+for (let i = 0; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+To this:
 for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
