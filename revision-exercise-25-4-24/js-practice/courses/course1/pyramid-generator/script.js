@@ -373,9 +373,40 @@ while (done !== count) {
 
     rows.push(padRow(done, count));
 }
-    
+
 
 6.
+Your loop is no longer relying on the continueLoop 
+variable. 
+
+let done = 0;
+
+while (done !== count) {
+    done++;
+
+    rows.push(padRow(done, count));
+}
+
+
+7.
+Your pyramid generator is still working. However, it 
+could be possible to end up with an infinite loop 
+again.
+
+Because you are only checking if done is not equal 
+to count, if done were to be larger than count your 
+loop would go on forever.
+
+Update your loop's condition to check if done is 
+less than or equal to count.
+
+let done = 0;
+
+while (done <= count) {
+    done++;
+
+    rows.push(padRow(done, count));
+}
 
 
 8.
@@ -409,10 +440,9 @@ const count = 8;
 
 const character = "#";
 
-let continueLoop = false;
 let done = 0;
 
-while (done !== count) {
+while (done <= count) {
     done++;
 
     rows.push(padRow(done, count));
