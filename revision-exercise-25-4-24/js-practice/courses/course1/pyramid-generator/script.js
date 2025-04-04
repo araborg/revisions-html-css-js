@@ -444,6 +444,14 @@ while (done <= count) {
     rows.push(padRow(done, count));
 }
 
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
 for (const row of rows) {
     result = result + "\n" + row;
 }
