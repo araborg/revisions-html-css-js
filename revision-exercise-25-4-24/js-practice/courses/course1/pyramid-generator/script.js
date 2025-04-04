@@ -126,7 +126,8 @@ const call = padRow("Babs");
 console.log(call); // #Babs
 
 
-11. Scope
+11. 
+Scope:
 function padRow(name) {
     return character + name;
 
@@ -137,8 +138,10 @@ console.log(test);
 // ReferenceError: test is not defined
 
 
-12. Two ths return does: it "defines" d value to be 
-returned and stops code executn.
+12. 
+Two ths return does: 
+it "defines" d value to be returned and 
+stops code executn.
 
 function padRow(name) {
     const test = "Testing";
