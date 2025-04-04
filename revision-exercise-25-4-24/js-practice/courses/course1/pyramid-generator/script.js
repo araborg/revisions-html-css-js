@@ -180,9 +180,6 @@ for (const row of rows) {
 
 function padRow() {}
 
-const call = padRow();
-console.log(call); // Testing
-
 // const call = padRow("Babs");
 // console.log(call); // #Babs
 
