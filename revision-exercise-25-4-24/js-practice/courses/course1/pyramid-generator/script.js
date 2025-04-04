@@ -692,3 +692,27 @@ for (const row of rows) {
 
 console.log(result);
 */
+
+const rows = [];
+const count = 8;
+const character = "#";
+
+let result = "";
+
+for (let i = 1; i <= count; i++) {
+    rows.unshift(padRow(i, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
