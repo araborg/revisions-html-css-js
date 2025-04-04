@@ -126,7 +126,7 @@ for (const row of rows) {
 
 function padRow() {}
 
-padRow();
+const call = padRow();
 
 // let pushed = rows.push("freeCodeCamp");
 // console.log(`This is d pushed value: ${pushed}`);
