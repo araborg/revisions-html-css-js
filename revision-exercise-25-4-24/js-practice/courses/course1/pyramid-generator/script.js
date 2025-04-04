@@ -618,6 +618,33 @@ for (let i = count; false; false) {}
 
 
 2.
+const rows = [];
+const count = 8;
+const character = "#";
+
+let result = "";
+
+// for (let i = count; i > 0; i = i - 1) {]
+
+// for (let i = count; i > 0; i -= 1) {}
+
+for (let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
 
 
 3.
@@ -639,7 +666,8 @@ const character = "#";
 let result = "";
 
 // for (let i = count; i > 0; i = i - 1) {
-for (let i = count; i > 0; i -= 1) {
+// for (let i = count; i > 0; i -= 1) {
+for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));
 }
 
