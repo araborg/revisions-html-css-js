@@ -441,11 +441,12 @@ for (const row of rows) {
 
 6.
 Your loop is no longer relying on the continueLoop 
-variable. 
+variable. So remove it.
 
 const rows = [];
-let result = "";
 const count = 8;
+
+let result = "";
 const character = "#";
 
 
