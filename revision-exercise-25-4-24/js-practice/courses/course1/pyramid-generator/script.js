@@ -400,22 +400,6 @@ let done = 0;
 
 while (continueLoop) {}
 
-// for (const row of rows) {
-//     result = result + "\n" + row;
-// }
-
-// function padRow(rowNumber, rowCount) {
-//     return (
-//         " ".repeat(rowCount - rowNumber) +
-//         character.repeat(2 * rowNumber - 1) +
-//         " ".repeat(rowCount - rowNumber)
-//     );
-// }
-
-// console.log(result);
-
-// stops at 70
-
 /*
 =================================================
 
