@@ -174,7 +174,30 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-console.log(rows);
+function padRow(rowNumber, rowCount) {
+    return " " + character.repeat(rowNumber) + " ";
+}
+
+console.log(result);
+
+
+14.
+const rows = [];
+let result = "";
+
+const count = 8;
+
+const character = "#";
+
+for (let i = 0; i < count; i = i + 1) {
+    // rows.push(character.repeat(i + 1));
+
+    rows.push(padRow(i + 1, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
 
 function padRow(rowNumber, rowCount) {
     return (
@@ -183,6 +206,8 @@ function padRow(rowNumber, rowCount) {
         " ".repeat(rowCount - rowNumber)
     );
 }
+
+console.log(result);
 
 
 15.
@@ -209,7 +234,13 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-console.log(rows);
+// function padRow(rowNumber, rowCount) {
+//     return (
+//         " ".repeat(rowCount - rowNumber) +
+//         character.repeat(2 * rowNumber - 1) +
+//         " ".repeat(rowCount - rowNumber)
+//     );
+// }
 
 function padRow(rowNumber, rowCount) {
     return (
@@ -218,6 +249,8 @@ function padRow(rowNumber, rowCount) {
         " ".repeat(rowCount - rowNumber)
     );
 }
+
+console.log(result);
 
 // const call = padRow("Babs");
 // console.log(call); // #Babs
