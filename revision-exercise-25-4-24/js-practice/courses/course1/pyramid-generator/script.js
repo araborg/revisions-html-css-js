@@ -221,6 +221,7 @@ function padRow(index, count) {
 }
 
 console.log(result);
+
        #       
       ##      
      ###     
