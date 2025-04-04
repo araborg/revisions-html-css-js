@@ -273,6 +273,32 @@ for (let i = 0; i < count; i++) {
 }
 
 
+18.
+const rows = [];
+let result = "";
+
+const count = 8;
+
+const character = "#";
+
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+function padRow(rowNumber, rowCount) {
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        " ".repeat(rowCount - rowNumber)
+    );
+}
+
+console.log(result);
+
 
 
 *****************************
@@ -286,8 +312,8 @@ const count = 8;
 const character = "#";
 
 // for (let i = 0; i < count; i += 1) {
-for (let i = 0; i < count; i++) {
-    rows.push(padRow(i + 1, count));
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
 }
 
 for (const row of rows) {
