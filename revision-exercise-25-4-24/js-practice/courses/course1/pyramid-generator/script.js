@@ -410,6 +410,32 @@ while (done <= count) {
 
 
 8.
+Using done to track the number of rows that have 
+been generated is functional, but you can actually 
+clean up the logic a bit further.
+
+const rows = [];
+let result = "";
+
+const count = 8;
+
+const character = "#";
+
+let done = 0;
+
+while (rows.length <= count) {
+    done++;
+
+    rows.push(padRow(done, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
 
 
 9.
@@ -442,7 +468,7 @@ const character = "#";
 
 let done = 0;
 
-while (done <= count) {
+while (rows.length <= count) {
     done++;
 
     rows.push(padRow(done, count));
