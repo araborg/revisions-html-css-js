@@ -700,6 +700,8 @@ const character = "#";
 
 let result = "";
 
+let inverted = true;
+
 for (let i = 1; i <= count; i++) {
     rows.unshift(padRow(i, count));
 }
