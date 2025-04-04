@@ -648,6 +648,8 @@ console.log(result);
 
 
 *****************************
+Inverted pyramid(2):
+
 1.
 .unshift():
 
@@ -690,32 +692,6 @@ console.log(result);
 
 *****************************
 
-*/
-
-/*
-const rows = [];
-const count = 8;
-const character = "#";
-
-let result = "";
-
-for (let i = count; i > 0; i--) {
-    rows.push(padRow(i, count));
-}
-
-function padRow(index, count) {
-    return (
-        " ".repeat(count - index) +
-        character.repeat(2 * index - 1) +
-        " ".repeat(count - index)
-    );
-}
-
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
-console.log(result);
 */
 
 const rows = [];
