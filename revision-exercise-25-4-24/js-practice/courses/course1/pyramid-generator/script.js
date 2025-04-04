@@ -253,7 +253,17 @@ function padRow(rowNumber, rowCount) {
 
 console.log(result);
 
+       #       
+      ###      
+     #####     
+    #######    
+   #########   
+  ###########  
+ ############# 
+###############
 
+
+17.
 
 *****************************
 
@@ -265,7 +275,7 @@ const count = 8;
 
 const character = "#";
 
-for (let i = 0; i < count; i = i + 1) {
+for (let i = 0; i < count; i += 1) {
     // rows.push(character.repeat(i + 1));
 
     rows.push(padRow(i + 1, count));
