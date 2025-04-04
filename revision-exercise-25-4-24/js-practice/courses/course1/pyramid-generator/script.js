@@ -389,12 +389,6 @@ const count = 8;
 
 const character = "#";
 
-/*
-for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
-}
-*/
-
 let continueLoop = false;
 let done = 0;
 
