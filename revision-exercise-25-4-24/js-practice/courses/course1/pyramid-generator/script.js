@@ -67,13 +67,10 @@ for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i));
 }
 
-let index = 0;
+console.log(rows);
+
 for (const row of rows) {
-    console.log("============");
-
     result = result + "\n" + row;
-
-    // result = result + row + "\n";
 }
 
 console.log(result);
