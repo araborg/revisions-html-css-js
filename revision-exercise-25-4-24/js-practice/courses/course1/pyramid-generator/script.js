@@ -334,7 +334,10 @@ NaN.
 
 
 2.
-
+if (condition === true) {
+    run logic
+}
+    
 
 3.
 
