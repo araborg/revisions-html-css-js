@@ -324,9 +324,13 @@ console.log(result);
 
 *****************************
 1.
-Falsy values:
-Some of them include: false, 0, "", null, undefined, 
-and NaN.
+Falsy values includes(6): 
+false (without strings), 
+0, 
+"", 
+null, 
+undefined, and 
+NaN.
 
 
 2.
