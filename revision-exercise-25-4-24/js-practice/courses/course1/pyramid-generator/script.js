@@ -398,7 +398,9 @@ for (let i = 1; i <= count; i++) {
 let continueLoop = false;
 let done = 0;
 
-while (continueLoop) {}
+while (continueLoop) {
+    done++;
+}
 
 /*
 =================================================
