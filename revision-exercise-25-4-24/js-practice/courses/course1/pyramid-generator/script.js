@@ -446,12 +446,10 @@ const count = 8;
 
 const character = "#";
 
-let done = 0;
-
 while (rows.length < count) {
-    done++;
-
-    rows.push(padRow(rows.length + 1, count));
+    rows.push(
+        padRow(rows.length + 1, count)
+    );
 }
 
 function padRow(index, count) {
@@ -461,7 +459,7 @@ function padRow(index, count) {
         " ".repeat(count - index)
     );
 }
-    
+
 
 10.
 
