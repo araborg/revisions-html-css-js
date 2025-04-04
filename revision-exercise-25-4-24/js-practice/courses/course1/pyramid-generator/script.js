@@ -371,9 +371,11 @@ const count = 8;
 
 const character = "#";
 
+/*
 for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
+*/
 
 for (const row of rows) {
     result = result + "\n" + row;
