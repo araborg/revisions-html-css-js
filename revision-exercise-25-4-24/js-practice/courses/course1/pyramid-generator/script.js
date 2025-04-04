@@ -264,6 +264,16 @@ console.log(result);
 
 
 17.
+Note: Additn operator: i = i + 1; addition assignment: 
+i += 1; increment operator: i++.
+
+// for (let i = 0; i < count; i += 1) {
+for (let i = 0; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+
+
 
 *****************************
 
@@ -275,9 +285,8 @@ const count = 8;
 
 const character = "#";
 
-for (let i = 0; i < count; i += 1) {
-    // rows.push(character.repeat(i + 1));
-
+// for (let i = 0; i < count; i += 1) {
+for (let i = 0; i < count; i++) {
     rows.push(padRow(i + 1, count));
 }
 
