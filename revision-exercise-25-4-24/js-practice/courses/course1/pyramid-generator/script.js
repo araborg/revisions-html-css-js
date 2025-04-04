@@ -480,17 +480,13 @@ function padRow(index, count) {
 
 */
 const rows = [];
-let result = "";
 
 const count = 8;
+console.log(rows.length); // 0
 
 const character = "#";
 
-let done = 0;
-
 while (rows.length < count) {
-    done++;
-
     rows.push(padRow(rows.length + 1, count));
 }
 
@@ -502,6 +498,7 @@ function padRow(index, count) {
     );
 }
 
+console.log(rows);
 /*
 =================================================
 
