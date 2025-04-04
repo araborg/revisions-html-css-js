@@ -288,6 +288,8 @@ const count = 8;
 
 const character = "#";
 
+change i = 0
+
 for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
