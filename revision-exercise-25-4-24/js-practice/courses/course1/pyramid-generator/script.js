@@ -290,6 +290,7 @@ const character = "#";
 
 change i = 0
 
+for loop:
 for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
