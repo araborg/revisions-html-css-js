@@ -322,40 +322,44 @@ console.log(result);
 ###############     15
 
 
-19.
+*****************************
+1.
+Falsy values:
+Some of them include: false, 0, "", null, undefined, 
+and NaN.
 
 
-20.
+2.
 
 
-21.
+3.
 
 
-22.
+4.
 
 
-23.
+5.
 
 
-24.
+6.
 
 
-25.
+8.
 
 
-26.
+9.
 
 
-27.
+10.
 
 
-28.
+11.
 
 
-29.
+12.
 
 
-30.
+13.
 
 
 
@@ -377,7 +381,7 @@ for (let i = 1; i <= count; i++) {
 }
 */
 
-if (true) {
+if ("false") {
     console.log("Condition is true");
 }
 
