@@ -149,7 +149,8 @@ function padRow(name) {
     return character + name;
 }
 
-console.log(test);
+console.log(test); 
+// Uncaught ReferenceError: test is not defined
 
 
 13.
