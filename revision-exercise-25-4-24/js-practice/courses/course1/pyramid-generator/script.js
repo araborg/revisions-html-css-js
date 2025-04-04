@@ -171,15 +171,23 @@ const count = 8;
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow());
+    // rows.push(character.repeat(i + 1));
+
+    rows.push(padRow(i + 1, count));
 }
 
 for (const row of rows) {
     result = result + "\n" + row;
 }
 
+console.log(rows);
+
 function padRow(rowNumber, rowCount) {
-    return character.repeat(rowNumber);
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(rowNumber) +
+        " ".repeat(rowCount - rowNumber)
+    );
 }
 
 // const call = padRow("Babs");
