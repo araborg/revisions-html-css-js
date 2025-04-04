@@ -713,6 +713,36 @@ console.log(result);
 
 3.
 
+const rows = [];
+const count = 10;
+
+const character = "!";
+let result = "";
+
+let inverted = false;
+
+for (let i = 1; i <= count; i++) {
+    if (inverted) {
+        rows.unshift(padRow(i, count));
+    } else {
+        rows.push(padRow(i, count));
+    }
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(result);
+
 
 4.
 
@@ -725,12 +755,12 @@ console.log(result);
 */
 
 const rows = [];
-const count = 8;
-const character = "#";
+const count = 10;
 
+const character = "!";
 let result = "";
 
-let inverted = true;
+let inverted = false;
 
 for (let i = 1; i <= count; i++) {
     if (inverted) {
