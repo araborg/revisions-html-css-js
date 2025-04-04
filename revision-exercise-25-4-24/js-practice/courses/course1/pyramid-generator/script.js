@@ -377,8 +377,9 @@ while (true) {
 
 4.
 const rows = [];
-let result = "";
 const count = 8;
+
+let result = "";
 const character = "#";
 
 
@@ -410,8 +411,9 @@ for (const row of rows) {
 
 5.
 const rows = [];
-let result = "";
 const count = 8;
+
+let result = "";
 const character = "#";
 
 
