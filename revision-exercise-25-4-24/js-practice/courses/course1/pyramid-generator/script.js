@@ -244,10 +244,9 @@ console.log(result);
 
 16.
 const rows = [];
-let result = "";
-
 const count = 8;
 
+let result = "";
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
@@ -282,10 +281,15 @@ console.log(result);
 17.
 Note: 
     Additn operator: i = i + 1; 
+
     Addition assignment: i += 1; 
+
     Increment operator: i++.
 
-// for (let i = 0; i < count; i += 1) {
+This changed to:
+for (let i = 0; i < count; i += 1) {}
+
+This:
 for (let i = 0; i < count; i++) {
     rows.push(padRow(i + 1, count));
 }
