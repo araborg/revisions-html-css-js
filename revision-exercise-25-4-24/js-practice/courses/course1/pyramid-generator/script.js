@@ -337,10 +337,16 @@ NaN.
 if (condition === true) {
     run logic
 }
-    
+
+if (true) {
+    run logic
+}
+
 
 3.
-
+while (condition === true) {
+    run logic
+}
 
 4.
 
