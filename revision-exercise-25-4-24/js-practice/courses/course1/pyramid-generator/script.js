@@ -130,7 +130,23 @@ function padRow(name) {
 console.log(test);
 
 
-12.
+12. Two ths return does: it "defines" d value to be 
+returned and stops code executn.
+
+function padRow(name) {
+    const test = "Testing";
+
+    return character + name;
+}
+
+console.log(test);
+
+
+13.
+
+
+
+
 
 
 *****************************
