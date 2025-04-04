@@ -157,6 +157,35 @@ console.log(call); // Testing
 
 
 14.
+const rows = [];
+let result = "";
+
+const count = 8;
+
+const character = "#";
+
+for (let i = 0; i < count; i = i + 1) {
+    // rows.push(character.repeat(i + 1));
+
+    rows.push(padRow(i + 1, count));
+}
+
+for (const row of rows) {
+    result = result + "\n" + row;
+}
+
+console.log(rows);
+
+function padRow(rowNumber, rowCount) {
+    return (
+        " ".repeat(rowCount - rowNumber) +
+        character.repeat(rowNumber) +
+        " ".repeat(rowCount - rowNumber)
+    );
+}
+
+
+15.
 
 
 
