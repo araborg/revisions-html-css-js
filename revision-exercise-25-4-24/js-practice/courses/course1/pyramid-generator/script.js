@@ -516,39 +516,15 @@ Using done to track the number of rows that have
 been generated is functional, but you can actually 
 clean up the logic a bit further.
 
+N.B: Both done and rows.length will have a value 
+of 0 at d beginning of the while loop. So since rows 
+has been declared dre is no need to declare another
+variable.
+
 const rows = [];
-let result = "";
-const count = 8;
-const character = "#";
-
-
-let done = 0;
-
-while (rows.length <= count) {
-    done++;
-
-    rows.push(padRow(done, count));
-}
-
-function padRow(index, count) {
-    return (
-        " ".repeat(count - index) +
-        character.repeat(2 * index - 1) +
-        " ".repeat(count - index)
-    );
-}
-
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
-
-9.
-const rows = [];
-let result = "";
-
 const count = 8;
 
+let result = "";
 const character = "#";
 
 while (rows.length < count) {
