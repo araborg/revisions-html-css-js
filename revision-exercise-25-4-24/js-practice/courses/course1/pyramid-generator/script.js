@@ -154,9 +154,10 @@ console.log(test);
 
 
 13.
-Note: A fxn call returns d fxn value from its scope 
-to the scope (wc can be global or blk) where it 
-was called.
+Note: 
+A fxn call returns d fxn value from its scope to 
+the scope (wc can be global or blk) where it was 
+called.
 
 function padRow() {
     const test = "Testing";
