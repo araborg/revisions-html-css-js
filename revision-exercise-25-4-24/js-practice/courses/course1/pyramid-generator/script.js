@@ -578,16 +578,19 @@ console.log(rows.length); // 8
 
 11.
 Final code:
+
 const rows = [];
 const count = 8;
-const character = "#";
 
+const character = "#";
 let result = "";
 
-// rows.length start from empty array wc = 0
+rows.length start from empty array wc = 0
 
 while (rows.length < count) {
-    rows.push(padRow(rows.length + 1, count));
+    rows.push(
+        padRow(rows.length + 1, count)
+    );
 }
 
 function padRow(index, count) {
