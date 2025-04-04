@@ -248,11 +248,11 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow(rowNumber, rowCount) {
+function padRow(index, count) {
     return (
-        " ".repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
-        " ".repeat(rowCount - rowNumber)
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
     );
 }
 
