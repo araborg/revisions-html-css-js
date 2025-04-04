@@ -178,8 +178,8 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow(rowNumber, rowCount) {
-    return " " + character.repeat(rowNumber) + " ";
+function padRow(index, count) {
+    return " " + character.repeat(index) + " ";
 }
 
 console.log(result);
