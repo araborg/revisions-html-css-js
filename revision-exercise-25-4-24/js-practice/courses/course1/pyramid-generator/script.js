@@ -268,8 +268,10 @@ console.log(result);
 
 
 17.
-Note: Additn operator: i = i + 1; addition assignment: 
-i += 1; increment operator: i++.
+Note: 
+    Additn operator: i = i + 1; 
+    Addition assignment: i += 1; 
+    Increment operator: i++.
 
 // for (let i = 0; i < count; i += 1) {
 for (let i = 0; i < count; i++) {
@@ -293,11 +295,11 @@ for (const row of rows) {
     result = result + "\n" + row;
 }
 
-function padRow(rowNumber, rowCount) {
+function padRow(index, count) {
     return (
-        " ".repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
-        " ".repeat(rowCount - rowNumber)
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
     );
 }
 
@@ -371,22 +373,7 @@ function padRow(rowNumber, rowCount) {
 
 console.log(result);
 
-// const call = padRow("Babs");
-// console.log(call); // #Babs
-
-// let pushed = rows.push("freeCodeCamp");
-// console.log(`This is d pushed value: ${pushed}`);
-
-// let popped = rows.pop();
-// console.log(`This is d popped value: ${popped}`);
-
-// console.log(rows);
-
-// const character = "#";
-// const count = 8;
-// const rows = [];
-
-// let result = "";
+// stops at 70
 
 /*
 =================================================
