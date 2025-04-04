@@ -640,7 +640,7 @@ let result = "";
 
 // rows.length start from empty array wc = 0
 
-for (let i = count; false; false) {}
+for (let i = count; i > 0; i = i - 1) {}
 
 function padRow(index, count) {
     return (
@@ -656,7 +656,7 @@ for (const row of rows) {
 
 console.log(result);
 
-console.log(rows.length); // 8
+// console.log(rows.length); // 8
 /*
 =================================================
 
