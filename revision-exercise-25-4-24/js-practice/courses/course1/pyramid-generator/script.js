@@ -349,7 +349,7 @@ While loop:
 Falsy values includes(6): 
 false (without strings), 
 0, 
-"", 
+"": empty string, 
 null, 
 undefined, and 
 NaN.
@@ -367,6 +367,10 @@ if (true) {
 
 3.
 while (condition === true) {
+    run logic
+}
+
+while (true) {
     run logic
 }
 
