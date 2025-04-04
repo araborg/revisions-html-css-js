@@ -87,12 +87,10 @@ const count = 8;
 const character = "#";
 
 for (let i = 0; i < count; i = i + 1) {
-    // Wn i = 0, character.repeat(0) returns an empty space
-
     rows.push(character.repeat(i + 1));
 }
 
-console.log(rows); // ['', '#', '##', '###', '####', '#####', '######', '#######']
+console.log(rows); // ['#', '##', '###', '####', '#####', '######', '#######', '########']
 
 for (const row of rows) {
     result = result + "\n" + row;
