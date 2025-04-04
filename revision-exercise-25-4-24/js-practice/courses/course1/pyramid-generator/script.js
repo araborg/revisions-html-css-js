@@ -103,6 +103,17 @@ console.log(result);
 
 
 9.
+function padRow() {
+    return "Hello";
+}
+
+const call = padRow();
+console.log(call); // Hello
+
+
+10.
+
+
 
 
 
