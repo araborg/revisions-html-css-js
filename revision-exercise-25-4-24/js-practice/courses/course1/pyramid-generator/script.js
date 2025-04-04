@@ -136,10 +136,10 @@ for (const row of rows) {
 }
 
 function padRow(name) {
-    return "Hello";
+    return name;
 }
 
-const call = padRow();
+const call = padRow("Babs");
 console.log(call); // Hello
 
 // let pushed = rows.push("freeCodeCamp");
