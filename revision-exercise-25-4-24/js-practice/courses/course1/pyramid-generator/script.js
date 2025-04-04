@@ -6,7 +6,7 @@ character[1] = "a";
 Note that strings are immutable, which means once they are
 created, they cannot be changed. 
 
-console.log(character);
+console.log(character); // Hello
 
 
 2.
@@ -349,7 +349,6 @@ const count = 8;
 
 const character = "#";
 
-// for (let i = 0; i < count; i += 1) {
 for (let i = 1; i <= count; i++) {
     rows.push(padRow(i, count));
 }
