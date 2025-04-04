@@ -13,16 +13,16 @@ console.log(character); // Hello
 let character = 'Hello';
 let count = 8;
 
-console.log(count + 1);
+console.log(count + 1); // 9
 
 let rows = ["Naomi", "Quincy", "CamperChan"];
-console.log(rows[0]); // Nsomi
+console.log(rows[0]); // Naomi
 
 rows[2] = 10;
 console.log(rows); // ['Naomi', 'Quincy', 10]
 
-rows[rows.length - 1] = 10; // ['Naomi', 'Quincy', 10]
-console.log(rows);
+rows[rows.length - 1] = 10;
+console.log(rows);  // ['Naomi', 'Quincy', 10]
 
 
 3.
@@ -30,7 +30,8 @@ let rows = ["Naomi", "Quincy", "CamperChan"];
 
 rows.push("freeCodeCamp");
 
-console.log(rows); //  ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
+console.log(rows); 
+// ['Naomi', 'Quincy', 'CamperChan', 'freeCodeCamp']
 
 
 4.
