@@ -350,7 +350,19 @@ while (condition === true) {
 
 
 4.
+let continueLoop = false;
+let done = 0;
 
+while (continueLoop) {
+    done++;
+
+    rows.push(padRow(done, count));
+
+    if (done === count) {
+        continueLoop = false;
+    }
+}
+    
 
 5.
 
