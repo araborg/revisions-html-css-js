@@ -439,7 +439,29 @@ function padRow(index, count) {
 
 
 9.
+const rows = [];
+let result = "";
 
+const count = 8;
+
+const character = "#";
+
+let done = 0;
+
+while (rows.length < count) {
+    done++;
+
+    rows.push(padRow(rows.length + 1, count));
+}
+
+function padRow(index, count) {
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
+}
+    
 
 10.
 
@@ -468,10 +490,10 @@ const character = "#";
 
 let done = 0;
 
-while (rows.length <= count) {
+while (rows.length < count) {
     done++;
 
-    rows.push(padRow(done, count));
+    rows.push(padRow(rows.length + 1, count));
 }
 
 function padRow(index, count) {
