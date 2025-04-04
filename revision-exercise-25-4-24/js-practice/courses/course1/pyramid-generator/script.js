@@ -130,7 +130,7 @@ function padRow(name) {
     const test = "Testing";
 }
 
-console.log(test);
+console.log(test); // ReferenceError: test is not defined
 
 
 12. Two ths return does: it "defines" d value to be 
@@ -147,7 +147,8 @@ console.log(test);
 
 13.
 Note: A fxn call returns d fxn value from its scope 
-to the scope where it was called.
+to the scope (wc can be global or blk) where it 
+was called.
 
 function padRow() {
     const test = "Testing";
