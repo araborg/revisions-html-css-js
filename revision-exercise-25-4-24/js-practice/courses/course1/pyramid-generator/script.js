@@ -781,7 +781,9 @@ function rowPad(index, count) {
 }
 
 for (let row of rows) {
-    result = result + "\n" + row;
+    result += "\n" + row; // ds will an empty space at d beginning/top
+
+    // result += row + "\n"; // ds will nt av an empty space at d beginning/top
 }
 
 console.log(rows);
