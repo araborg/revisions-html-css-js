@@ -770,9 +770,11 @@ function rowPad(index, count) {
     );
 }
 
-// for (let row of rows) {
-//     console.log(row);
-// }
+for (let row of rows) {
+    console.log(row);
+}
+
+console.log(rows);
 
 // using while loop:
 
