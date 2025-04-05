@@ -70,15 +70,13 @@ console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
 
 // personal advancement
 const individualGrade = (scores) => {
-    let grade;
-    let passed;
-
     let outcome = "";
 
     for (let score of scores) {
         // scores.forEach((score) => {
+        let passed;
 
-        grade = getGrade(score);
+        let grade = getGrade(score);
 
         if (score < 60) {
             passed = false;
