@@ -851,7 +851,7 @@ console.log(result);
 
 
 */
-// Alternate btw inverted and non-inverted pyramid
+// inverted pyramid with !
 let character = "#";
 let result = "";
 
@@ -877,3 +877,5 @@ for (let row of rows) {
 }
 
 console.log(result);
+
+// Alternate btw inverted and non-inverted pyramid
