@@ -750,6 +750,7 @@ console.log(result);
 
 /* Revision */
 // pyramid:
+
 let character = "#";
 let result = "";
 
@@ -757,8 +758,8 @@ let rows = [];
 let counts = 8;
 
 // using for loop:
-for (let i = 0; i < counts; i++) {
-    rows.push(rowPad(i + 1, counts));
+for (let i = 1; i <= counts; i++) {
+    rows.push(rowPad(i, counts));
 }
 
 function rowPad(index, count) {
@@ -769,9 +770,9 @@ function rowPad(index, count) {
     );
 }
 
-for (let row of rows) {
-    console.log(row);
-}
+// for (let row of rows) {
+//     console.log(row);
+// }
 
 // using while loop:
 
