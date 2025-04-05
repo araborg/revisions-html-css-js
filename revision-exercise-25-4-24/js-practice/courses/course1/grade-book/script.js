@@ -4,7 +4,6 @@ Note:
     shd be required to hold dt sum of number and
     ds can be declared with a value e.g let sum = 0
 
-*/
 
 const getAverage = (scores) => {
     let sum = 0;
@@ -38,7 +37,7 @@ const hasPassingGrade = (score) => {
 
 // ============================
 
-/*
+
 
     const whatGrade = (grades) => {
         let value = "";
@@ -54,7 +53,7 @@ const hasPassingGrade = (score) => {
 
     console.log(whatGrade(grades));
 
-*/
+
 
 // ============================
 
@@ -108,6 +107,8 @@ const individualGrade = (scores) => {
 const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 console.log(individualGrade(grades));
 
-// const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
-// console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
-// console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
+*/
+
+const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
