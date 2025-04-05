@@ -884,7 +884,7 @@ Alternate btw inverted and non-inverted pyramid
 let character = "!";
 let result = "";
 
-let inverted = false;
+let inverted = true;
 
 let rows = [];
 let counts = 8;
@@ -897,8 +897,12 @@ const rowPad = (index, counts) => {
     );
 };
 
-for (let i = counts; i > 0; i--) {
-    rows.push(rowPad(i, counts));
+for (let i = 1; i <= counts; i++) {
+    if (inverted) {
+        rows.unshift(rowPad(i, counts));
+        rows.push(rowPad(i, counts));
+    } else {
+    }
 }
 
 for (let row of rows) {
