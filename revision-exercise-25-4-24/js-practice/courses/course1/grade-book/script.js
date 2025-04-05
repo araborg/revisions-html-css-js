@@ -28,19 +28,23 @@ const hasPassingGrade = (score) => {
     return getGrade(score) !== "F";
 };
 
-// const whatGrade = (grades) => {
-//     let value = "";
+/*
 
-//     for (let grade of grades) {
-//         value += getGrade(grade) + "\n";
-//     }
+    const whatGrade = (grades) => {
+        let value = "";
 
-//     return value;
-// };
+        for (let grade of grades) {
+            value += getGrade(grade) + "\n";
+        }
 
-// const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+        return value;
+    };
 
-// console.log(whatGrade(grades));
+    const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+
+    console.log(whatGrade(grades));
+
+*/
 
 function studentMsg(totalScores, studentScore) {
     const average = getAverage(totalScores);
@@ -54,7 +58,6 @@ function studentMsg(totalScores, studentScore) {
 }
 
 // console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
-
 // console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
 
 // personal advancement
@@ -89,5 +92,4 @@ const individualGrade = (scores) => {
 };
 
 const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
-
 console.log(individualGrade(grades));
