@@ -842,9 +842,7 @@ while (rows.length < counts) {
 }
 
 for (let row of rows) {
-    result += "\n" + row; // ds will an empty space at d beginning/top
-
-    // result += row + "\n"; // ds will nt av an empty space at d beginning/top
+    result += "\n" + row; 
 }
 
 console.log(result);
@@ -855,7 +853,7 @@ console.log(result);
 let character = "!";
 let result = "";
 
-let rows = []; // At d very beginning, rows.length will be 0
+let rows = [];
 let counts = 8;
 
 const rowPad = (index, counts) => {
