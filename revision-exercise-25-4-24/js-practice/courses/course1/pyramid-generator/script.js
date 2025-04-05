@@ -5,6 +5,13 @@ even number.
 Any even number which 1 is substracted from becomes
 an old number.
 
+Methods:
+.push()
+.pop()
+.unshift()
+.shift()
+.reverse()
+
 For loop:
 
 1.
