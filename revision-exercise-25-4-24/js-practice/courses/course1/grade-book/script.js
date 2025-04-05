@@ -10,7 +10,7 @@ const getAverage = (scores) => {
     return sum / scores.length;
 };
 
-console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37]));
+// console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37]));
 
 // console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
 
@@ -31,11 +31,15 @@ const getGrade = (score) => {
 };
 
 const whatGrade = (grades) => {
+    let value;
+
     for (let grade of grades) {
-        console.log(getGrade(grade));
+        value = getGrade(grade);
     }
+
+    return value;
 };
 
 const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 
-whatGrade(grades);
+console.log(whatGrade(grades));
