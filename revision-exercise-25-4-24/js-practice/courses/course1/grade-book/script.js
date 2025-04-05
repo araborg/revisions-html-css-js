@@ -30,16 +30,22 @@ const getGrade = (score) => {
     }
 };
 
-const whatGrade = (grades) => {
-    let value;
-
-    for (let grade of grades) {
-        value = getGrade(grade);
-    }
-
-    return value;
+const hasPassingGrade = (score) => {
+    return getGrade(score) !== "F";
 };
 
-const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+// const whatGrade = (grades) => {
+//     let value = "";
 
-console.log(whatGrade(grades));
+//     for (let grade of grades) {
+//         value += getGrade(grade) + "\n";
+//     }
+
+//     return value;
+// };
+
+// const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+
+// console.log(whatGrade(grades));
+
+function studentMsg(totalScores, studentScore) {}
