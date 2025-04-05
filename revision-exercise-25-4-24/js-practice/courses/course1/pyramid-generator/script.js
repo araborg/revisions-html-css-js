@@ -759,6 +759,8 @@ console.log(result);
 /*
 // pyramid:
 
+1.
+For loop:
 
 let character = "#";
 let result = "";
@@ -787,9 +789,8 @@ console.log(rows);
 console.log(result);
 
 
-*/
-
-// using while loop:
+2.
+While loop:
 
 let character = "#";
 let result = "";
@@ -818,7 +819,32 @@ for (let row of rows) {
 // console.log(rows);
 // console.log(result);
 
+*/
+
 // using .shift()
+let character = "#";
+let result = "";
+
+let rows = []; // At d very beginning, rows.length will be 0
+let counts = 8;
+
+const rowPad = (index, count) => {
+    return (
+        " ".repeat(counts - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(counts - index)
+    );
+};
+
+while (rows.length < counts) {
+    rows.push(rowPad(rows.length + 1, counts));
+}
+
+for (let row of rows) {
+    result += "\n" + row; // ds will an empty space at d beginning/top
+
+    // result += row + "\n"; // ds will nt av an empty space at d beginning/top
+}
 
 // inverted pyramid with #
 
