@@ -60,7 +60,6 @@ function studentMsg(totalScores, studentScore) {
 // personal advancement
 const individualGrade = (scores) => {
     let grade = "";
-    // let passed = true;
     let passed;
 
     let outcome = "";
@@ -68,13 +67,13 @@ const individualGrade = (scores) => {
     for (let score of scores) {
         grade = getGrade(score);
 
-        // if (score < 60) {
-        //     passed = false;
-        // } else {
-        //     passed = true;
-        // }
+        if (score < 60) {
+            passed = false;
+        } else {
+            passed = true;
+        }
 
-        passed = score < 60 ? false : true;
+        // passed = score < 60 ? false : true;
 
         outcome +=
             `With the score of: ${score}. Your grade is: ${grade}. You ${
