@@ -810,10 +810,11 @@ while (rows.length < counts) {
 }
 
 for (let row of rows) {
-    result += "\n";
+    result += "\n" + row;
 }
 
 console.log(rows);
+console.log(result);
 
 // using .shift()
 
