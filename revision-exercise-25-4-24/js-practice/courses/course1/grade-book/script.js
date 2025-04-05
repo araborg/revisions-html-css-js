@@ -29,3 +29,13 @@ const getGrade = (score) => {
         return "F";
     }
 };
+
+const whatGrade = (grades) => {
+    for (let grade of grades) {
+        console.log(getGrade(grade));
+    }
+};
+
+const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+
+whatGrade(grades);
