@@ -755,7 +755,10 @@ console.log(result);
 */
 
 /* Revision */
+
+/*
 // pyramid:
+
 
 let character = "#";
 let result = "";
@@ -783,7 +786,16 @@ for (let row of rows) {
 console.log(rows);
 console.log(result);
 
+
+*/
+
 // using while loop:
+
+let character = "#";
+let result = "";
+
+let rows = [];
+let counts = 8;
 
 // using .shift()
 
