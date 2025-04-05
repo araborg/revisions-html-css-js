@@ -1,4 +1,10 @@
 /*
+Note:
+Any number multiply by 2 automatically becomes an
+even number.
+Any even number which 1 is substracted from becomes
+an old number.
+
 For loop:
 
 1.
@@ -775,6 +781,7 @@ for (let row of rows) {
 }
 
 console.log(rows);
+console.log(result);
 
 // using while loop:
 
