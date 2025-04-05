@@ -748,7 +748,8 @@ console.log(result);
 
 */
 
-// pyramid
+/* Revision */
+// pyramid:
 
 // using for loop:
 
