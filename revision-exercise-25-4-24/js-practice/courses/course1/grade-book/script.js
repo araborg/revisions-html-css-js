@@ -1,8 +1,10 @@
 /*
 Note:
-    Wn adding numbers together, a new variable
-    shd be required to hold dt sum of number and
-    ds can be declared with a value e.g let sum = 0
+Wn adding numbers together, a new variable
+shd be required to hold dt sum of number and
+ds can be declared with a value e.g let sum = 0
+
+for...of loop:
 
 
 const getAverage = (scores) => {
@@ -130,4 +132,16 @@ const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 
 const getAverage = (grades) => {
     let sum = 0;
+
+    for (let grade of grades) {
+        sum = sum + grade;
+    }
+
+    // let sum = grades.reduce((acc, grade) => {
+    //     return acc + grade;
+    // }, 0);
+
+    return sum;
 };
+
+console.log(getAverage(grades));
