@@ -113,7 +113,6 @@ console.log(individualGrade(grades));
 
 // Revision:
 
-const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 // console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
 // console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
 
@@ -130,6 +129,8 @@ const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 
 */
 
+const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+
 const getAverage = (grades) => {
     let sum = 0;
 
@@ -141,7 +142,41 @@ const getAverage = (grades) => {
     //     return acc + grade;
     // }, 0);
 
-    return sum;
+    return Math.round(sum / grades.length);
 };
 
 console.log(getAverage(grades));
+
+const getGrade = (grade) => {
+    // if (grade === 100) {
+    //     return "A++";
+    // } else if (grade >= 90) {
+    //     return "A";
+    // } else if (grade >= 80) {
+    //     return "B";
+    // } else if (grade >= 70) {
+    //     return "C";
+    // } else if (grade >= 60) {
+    //     return "D";
+    // } else {
+    //     return "F";
+    // }
+
+    switch (grade) {
+        case grade === 100:
+    }
+};
+
+const knowGrades = (grade) => {
+    let placeholder = "";
+
+    for (let grade of grades) {
+        placeholder = placeholder + "\n" + getGrade(grade);
+    }
+
+    return placeholder;
+};
+
+console.log(knowGrades(grades));
+
+const hasPassingGrade = (grade) => {};
