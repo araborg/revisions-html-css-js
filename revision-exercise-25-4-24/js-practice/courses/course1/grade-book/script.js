@@ -113,19 +113,6 @@ console.log(individualGrade(grades));
 
 // Revision:
 
-/*
-`With the score of: ${score}. Your grade is: ${grade}. You ${
-                passed ? "failed" : "passed"
-            } the course.` + "\n";
-
-
-        return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
-
-        return `Class average: ${average}. Your grade: ${grade}. You failed the course.`;
-
-
-*/
-
 const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 
 const getAverage = (grades) => {
