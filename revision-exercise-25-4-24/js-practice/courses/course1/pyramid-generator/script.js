@@ -12,6 +12,7 @@ Methods:
 .shift()
 .reverse()
 
+
 For loop:
 
 1.
