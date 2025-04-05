@@ -63,7 +63,7 @@ const individualGrade = (scores) => {
     let passed = true;
 
     for (let score of scores) {
-        grade = getGrade(score) + "\n";
+        grade = getGrade(score);
 
         if (score < 60) {
             passed = false;
@@ -71,7 +71,7 @@ const individualGrade = (scores) => {
     }
 
     // return grade;
-    return `Your grade: ${grade}. You ${
+    return `Your grade is: ${grade}. You ${
         passed ? "passed" : "failed"
     } the course.`;
 };
