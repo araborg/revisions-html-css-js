@@ -157,7 +157,7 @@ const knowGrades = (grade) => {
     return placeholder;
 };
 
-// console.log(knowGrades(grades));
+console.log(knowGrades(grades));
 
 const hasPassingGrade = (grade) => {
     return getGrade(grade) !== "F";
