@@ -758,10 +758,16 @@ let counts = 8;
 
 // using for loop:
 for (let i = 0; i < counts; i++) {
-    rows.push(i);
+    rows.push(rowPad(i, counts));
 }
 
-console.log(rows);
+function rowPad(index, count) {
+    console.log(index, count);
+}
+
+for (let row of rows) {
+    console.log(row);
+}
 
 // using while loop:
 
