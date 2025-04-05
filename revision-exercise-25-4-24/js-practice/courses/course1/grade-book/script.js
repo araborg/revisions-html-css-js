@@ -108,6 +108,6 @@ const individualGrade = (scores) => {
 const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
 console.log(individualGrade(grades));
 
-const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
-console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
-console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
+// const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+// console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+// console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
