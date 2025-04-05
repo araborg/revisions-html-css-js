@@ -56,3 +56,26 @@ function studentMsg(totalScores, studentScore) {
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
 
 console.log(studentMsg([56, 23, 89, 42, 75, 11, 68, 34, 91, 19], 100));
+
+// personal advancement
+const individualGrade = (scores) => {
+    let grade = "";
+    let passed = true;
+
+    for (let score of scores) {
+        grade = getGrade(score) + "\n";
+
+        if (score < 60) {
+            passed = false;
+        }
+    }
+
+    // return grade;
+    return `Your grade: ${grade}. You ${
+        passed ? "passed" : "failed"
+    } the course.`;
+};
+
+const grades = [92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37];
+
+console.log(individualGrade(grades));
