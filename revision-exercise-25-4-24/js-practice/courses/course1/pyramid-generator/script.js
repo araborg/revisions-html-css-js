@@ -755,7 +755,13 @@ let result = "";
 
 let rows = [];
 let counts = 8;
+
 // using for loop:
+for (let i = 0; i < counts; i++) {
+    rows.push(i);
+}
+
+console.log(rows);
 
 // using while loop:
 
