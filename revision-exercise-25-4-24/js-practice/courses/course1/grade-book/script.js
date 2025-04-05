@@ -1,6 +1,4 @@
 const getAverage = (scores) => {
-    // console.log(scores);
-
     let sum = 0;
 
     for (let score of scores) {
