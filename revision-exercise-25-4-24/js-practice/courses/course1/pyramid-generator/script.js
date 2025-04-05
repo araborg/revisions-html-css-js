@@ -871,9 +871,7 @@ for (let i = counts; i > 0; i--) {
 }
 
 for (let row of rows) {
-    result += "\n" + row; // ds will an empty space at d beginning/top
-
-    // result += row + "\n"; // ds will nt av an empty space at d beginning/top
+    result += "\n" + row;
 }
 
 console.log(result);
