@@ -771,7 +771,7 @@ function rowPad(index, count) {
 }
 
 for (let row of rows) {
-    console.log(row);
+    result = result + "\n" + row;
 }
 
 console.log(rows);
