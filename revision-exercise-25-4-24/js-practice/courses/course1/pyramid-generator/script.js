@@ -802,6 +802,7 @@ const rowPad = (index, count) => {};
 while (false) {}
 
 for (let row of rows) {
+    result += "\n";
 }
 
 // using .shift()
