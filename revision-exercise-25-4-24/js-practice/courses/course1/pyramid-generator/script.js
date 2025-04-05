@@ -794,12 +794,14 @@ console.log(result);
 let character = "#";
 let result = "";
 
-let rows = [];
+let rows = []; // At d very beginning, rows.length will be 0
 let counts = 8;
 
 const rowPad = (index, count) => {};
 
-while (false) {}
+while (rows.length < counts) {
+    rows.push(rowPad(rows.length + 1, counts));
+}
 
 for (let row of rows) {
     result += "\n";
