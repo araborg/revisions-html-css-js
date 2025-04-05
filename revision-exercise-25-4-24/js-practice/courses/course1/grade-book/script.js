@@ -151,7 +151,7 @@ const knowGrades = (grade) => {
     let placeholder = "";
 
     for (let grade of grades) {
-        placeholder = placeholder + "\n" + getGrade(grade);
+        placeholder = placeholder + getGrade(grade) + "\n";
     }
 
     return placeholder;
@@ -183,10 +183,11 @@ const individualGrade = (grades) => {
     for (let grade of grades) {
         const studentGrade = getGrade(grade);
 
+        const status = hasPassingGrade(grade) ? "passed" : "failed";
+
         result +=
-            `With the score of: ${grade}. Your grade is: ${studentGrade}. You ${
-                hasPassingGrade(grade) ? "passed" : "failed"
-            } the course.` + "\n";
+            `With the score of: ${grade}. Your grade is: ${studentGrade}. You ${status} the course.` +
+            "\n";
     }
 
     return result;
