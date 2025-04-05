@@ -28,6 +28,8 @@ const hasPassingGrade = (score) => {
     return getGrade(score) !== "F";
 };
 
+// ============================
+
 /*
 
     const whatGrade = (grades) => {
@@ -45,6 +47,8 @@ const hasPassingGrade = (score) => {
     console.log(whatGrade(grades));
 
 */
+
+// ============================
 
 function studentMsg(totalScores, studentScore) {
     const average = getAverage(totalScores);
