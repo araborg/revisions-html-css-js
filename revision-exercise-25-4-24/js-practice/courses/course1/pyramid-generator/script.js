@@ -798,7 +798,11 @@ let rows = []; // At d very beginning, rows.length will be 0
 let counts = 8;
 
 const rowPad = (index, count) => {
-    return " ".repeat(counts - index) + character.repeat(2 * index - 1);
+    return (
+        " ".repeat(counts - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(counts - index)
+    );
 };
 
 while (rows.length < counts) {
