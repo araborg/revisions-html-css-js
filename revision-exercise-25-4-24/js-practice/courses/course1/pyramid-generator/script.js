@@ -748,32 +748,14 @@ console.log(result);
 
 */
 
-const rows = [];
-const count = 10;
+// pyramid
 
-const character = "!";
-let result = "";
+// using for loop:
 
-let inverted = false;
+// using while loop:
 
-for (let i = 1; i <= count; i++) {
-    if (inverted) {
-        rows.unshift(padRow(i, count));
-    } else {
-        rows.push(padRow(i, count));
-    }
-}
+// using .shift()
 
-function padRow(index, count) {
-    return (
-        " ".repeat(count - index) +
-        character.repeat(2 * index - 1) +
-        " ".repeat(count - index)
-    );
-}
+// inverted pyramid with #
 
-for (const row of rows) {
-    result = result + "\n" + row;
-}
-
-console.log(result);
+// inverted pyramid with !
