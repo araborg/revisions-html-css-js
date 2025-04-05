@@ -65,6 +65,8 @@ const individualGrade = (scores) => {
     let outcome = "";
 
     for (let score of scores) {
+        // scores.forEach((score) => {
+
         grade = getGrade(score);
 
         if (score < 60) {
@@ -79,9 +81,10 @@ const individualGrade = (scores) => {
             `With the score of: ${score}. Your grade is: ${grade}. You ${
                 passed ? "passed" : "failed"
             } the course.` + "\n";
+
+        // });
     }
 
-    // return grade;
     return outcome;
 };
 
