@@ -858,7 +858,7 @@ let result = "";
 let rows = []; // At d very beginning, rows.length will be 0
 let counts = 8;
 
-const rowPad = (index, count) => {
+const rowPad = (index, counts) => {
     return (
         " ".repeat(counts - index) +
         character.repeat(2 * index - 1) +
@@ -866,8 +866,8 @@ const rowPad = (index, count) => {
     );
 };
 
-for (let i = count; counts > 0; i--) {
-    rows.unshift(rowPad(rows.length + 1, counts));
+for (let i = counts; i > 0; i--) {
+    rows.push(rowPad(i, counts));
 }
 
 for (let row of rows) {
