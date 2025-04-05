@@ -750,7 +750,11 @@ console.log(result);
 
 /* Revision */
 // pyramid:
+let character = "#";
+let result = "";
 
+let rows = [];
+let counts = 8;
 // using for loop:
 
 // using while loop:
