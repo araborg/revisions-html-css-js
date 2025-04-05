@@ -10,10 +10,6 @@ const getAverage = (scores) => {
     return sum / scores.length;
 };
 
-// console.log(getAverage([92, 88, 12, 77, 57, 100, 67, 38, 97, 89, 37]));
-
-// console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
-
 const getGrade = (score) => {
     if (score === 100) {
         return "A++";
@@ -48,7 +44,16 @@ const hasPassingGrade = (score) => {
 
 // console.log(whatGrade(grades));
 
-function studentMsg(totalScores, studentScore) {}
+function studentMsg(totalScores, studentScore) {
+    const average = getAverage(totalScores);
+    const grade = getGrade(studentScore);
+
+    if (hasPassingGrade(studentScore)) {
+        return `Class average: ${average}. Your grade: ${grade}. You passed the course.`;
+    } else {
+        return `Class average: ${average}. Your grade: ${grade}. You failed the course.`;
+    }
+}
 
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
 
