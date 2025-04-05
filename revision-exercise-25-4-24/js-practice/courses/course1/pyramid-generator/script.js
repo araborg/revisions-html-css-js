@@ -851,7 +851,7 @@ console.log(result);
 
 
 */
-// inverted pyramid with !
+// Alternate btw inverted and non-inverted pyramid
 let character = "#";
 let result = "";
 
