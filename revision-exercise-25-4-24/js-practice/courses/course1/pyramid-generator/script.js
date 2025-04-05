@@ -757,7 +757,7 @@ console.log(result);
 /* Revision */
 
 /*
-// pyramid:
+pyramids:
 
 1.
 For loop:
@@ -768,7 +768,6 @@ let result = "";
 let rows = [];
 let counts = 8;
 
-// using for loop:
 for (let i = 1; i <= counts; i++) {
     rows.push(rowPad(i, counts));
 }
@@ -816,12 +815,14 @@ for (let row of rows) {
     // result += row + "\n"; // ds will nt av an empty space at d beginning/top
 }
 
-// console.log(rows);
-// console.log(result);
+console.log(rows);
+console.log(result);
 
 */
 
-// using .shift()
+// inverted pyramid with #
+
+// using .unshift()
 let character = "#";
 let result = "";
 
@@ -837,7 +838,7 @@ const rowPad = (index, count) => {
 };
 
 while (rows.length < counts) {
-    rows.push(rowPad(rows.length + 1, counts));
+    rows.unshift(rowPad(rows.length + 1, counts));
 }
 
 for (let row of rows) {
@@ -846,6 +847,6 @@ for (let row of rows) {
     // result += row + "\n"; // ds will nt av an empty space at d beginning/top
 }
 
-// inverted pyramid with #
+console.log(result);
 
 // inverted pyramid with !
