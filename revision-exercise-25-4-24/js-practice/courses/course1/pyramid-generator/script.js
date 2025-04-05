@@ -852,7 +852,7 @@ console.log(result);
 
 */
 // inverted pyramid with !
-let character = "#";
+let character = "!";
 let result = "";
 
 let rows = []; // At d very beginning, rows.length will be 0
@@ -866,7 +866,7 @@ const rowPad = (index, count) => {
     );
 };
 
-while (rows.length < counts) {
+for (let i = count; counts > 0; i--) {
     rows.unshift(rowPad(rows.length + 1, counts));
 }
 
