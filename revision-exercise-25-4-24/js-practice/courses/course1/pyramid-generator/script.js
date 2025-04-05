@@ -758,11 +758,15 @@ let counts = 8;
 
 // using for loop:
 for (let i = 0; i < counts; i++) {
-    rows.push(rowPad(i, counts));
+    rows.push(rowPad(i + 1, counts));
 }
 
 function rowPad(index, count) {
-    console.log(index, count);
+    return (
+        " ".repeat(count - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(count - index)
+    );
 }
 
 for (let row of rows) {
