@@ -797,6 +797,13 @@ let result = "";
 let rows = [];
 let counts = 8;
 
+const rowPad = (index, count) => {};
+
+while (false) {}
+
+for (let row of rows) {
+}
+
 // using .shift()
 
 // inverted pyramid with #
