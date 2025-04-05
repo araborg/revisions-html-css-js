@@ -848,8 +848,9 @@ for (let row of rows) {
 console.log(result);
 
 
-*/
-// inverted pyramid with !
+4.
+inverted pyramid with !
+
 let character = "!";
 let result = "";
 
@@ -874,4 +875,34 @@ for (let row of rows) {
 
 console.log(result);
 
-// Alternate btw inverted and non-inverted pyramid
+
+5.
+
+Alternate btw inverted and non-inverted pyramid
+
+*/
+let character = "!";
+let result = "";
+
+let inverted = false;
+
+let rows = [];
+let counts = 8;
+
+const rowPad = (index, counts) => {
+    return (
+        " ".repeat(counts - index) +
+        character.repeat(2 * index - 1) +
+        " ".repeat(counts - index)
+    );
+};
+
+for (let i = counts; i > 0; i--) {
+    rows.push(rowPad(i, counts));
+}
+
+for (let row of rows) {
+    result += "\n" + row;
+}
+
+console.log(result);
