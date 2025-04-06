@@ -26,3 +26,7 @@ const button3 = document.querySelector("#button3");
 // modem 09058603826
 
 const xpText = document.querySelector("#xpText");
+const healthText = document.querySelector("#healthText");
+const goldText = document.querySelector("#goldText");
+
+const text = document.querySelector("#text");
