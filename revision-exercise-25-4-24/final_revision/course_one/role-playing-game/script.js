@@ -28,5 +28,7 @@ const text = document.querySelector("#text");
 
 // hidden elements
 const monsterStats = document.querySelector("#monsterStats");
+const monsterName = document.querySelector("#monsterName");
+const monsterHealthText = document.querySelector("#monsterHealth");
 
 // modem 09058603826
