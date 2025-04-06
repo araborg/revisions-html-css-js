@@ -8,4 +8,10 @@ let gold = 50;
 // current weapon index
 let currentWeapon = 0;
 
-console.log(health);
+// console.log(health);
+
+let fighting;
+let monsterHealth;
+
+// weapon collections
+let inventory = ["stick"];
