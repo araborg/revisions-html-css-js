@@ -31,5 +31,34 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-console.log(monsterHealthText, monsterName, monsterStats);
 // modem 09058603826
+
+// provided weapons
+const weapons = [
+    // index: 0
+    {
+        name: "stick",
+        power: 5,
+    },
+
+    // index: 1
+
+    {
+        name: "dagger",
+        power: 30,
+    },
+
+    // index: 2
+    {
+        name: "claw hammer",
+        power: 50,
+    },
+
+    // index: 3
+    {
+        name: "sword",
+        power: 100,
+    },
+];
+
+console.log(weapons[2]);
