@@ -22,3 +22,7 @@ const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 
 // console.log(button1, button2, button3);
+
+// modem 09058603826
+
+const xpText = document.querySelector("#xpText");
