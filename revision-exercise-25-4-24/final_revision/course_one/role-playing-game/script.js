@@ -26,4 +26,7 @@ const goldText = document.querySelector("#goldText");
 
 const text = document.querySelector("#text");
 
+// hidden elements
+const monsterStats = document.querySelector("#monsterStats");
+
 // modem 09058603826
