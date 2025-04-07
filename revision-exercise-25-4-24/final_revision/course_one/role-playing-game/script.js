@@ -264,13 +264,29 @@ function goTown() {
     update(locations[0]);
 }
 
-function buyHealth() {
+function buyWeapon() {
     // currentWeapon = 0; weapons.length = 4;
     if (currentWeapon < weapons.length - 1) {
+        if (gold >= 30) {
+            gold -= 30;
+            currentWeapon++;
+
+            goldText.innerText = gold;
+
+            let newWeapon = weapons[currentWeapon].name;
+
+            text.innerText = "You now have a " + newWeapon + ".";
+
+            // weapon collections
+            inventory.push(newWeapon);
+
+            text.innerText += " In your inventory you have: " + inventory;
+        } else {
+        }
     }
 }
 
-function buyWeapon() {}
+function buyHealth() {}
 
 function sellWeapon() {}
 
