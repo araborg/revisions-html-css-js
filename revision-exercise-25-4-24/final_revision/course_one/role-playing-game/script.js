@@ -217,7 +217,7 @@ fightDragon,
 
 On pressing Go to store:
 
-1st btn: 
+1st btn: Go to store
 buyHealth, 
 buyWeapon, 
 goTown
@@ -227,23 +227,28 @@ fightSlime,
 fightBeast, 
 goTown
 
-btns: Fight dragon, fightSlime, fightBeast, 
+btns: fightSlime, fightDragon, fightBeast, 
 attack, 
 dodge, 
 goTown
 
 
+defeatMonster calls these:
 goTown, 
 goTown,
 easterEgg,
 
 
+win or lose:
+restart, 
+restart, 
 restart, 
 
 
+btn: easterEgg calls these:
 pickTwo, 
 pickEight, 
-
+goTown,
 
 */
 
