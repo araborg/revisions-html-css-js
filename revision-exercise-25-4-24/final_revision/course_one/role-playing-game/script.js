@@ -87,6 +87,16 @@ const locations = [
         name: "town square",
 
         "button text": ["Go to store", "Go to cave", "Fight dragon"],
+
+        /*
+            Initial version of the buttons:
+            <div id="controls">
+                <button id="button1">Go to store</button>
+                <button id="button2">Go to cave</button>
+                <button id="button3">Fight dragon</button>
+            </div>
+        */
+
         "button functions": [goStore, goCave, fightDragon],
 
         text: 'You are in the town square. You see a sign that says "Store".',
@@ -218,23 +228,6 @@ function goStore() {
 }
 
 /*
-// index: 0
-{
-    name: "town square",
-
-    "button text": ["Go to store", "Go to cave", "Fight dragon"],
-    "button functions": [goStore, goCave, fightDragon],
-
-    text: 'You are in the town square. You see a sign that says "Store".',
-},
-*/
-
-// button.text = "Go to town square",
-function goTown() {
-    update(locations[0]);
-}
-
-/*
 // index: 2
 {
     name: "cave",
@@ -252,6 +245,23 @@ function goTown() {
 
 function goCave() {
     update(locations[2]);
+}
+
+/*
+// index: 0; ds help return to d home pg
+{
+    name: "town square",
+
+    "button text": ["Go to store", "Go to cave", "Fight dragon"],
+    "button functions": [goStore, goCave, fightDragon],
+
+    text: 'You are in the town square. You see a sign that says "Store".',
+},
+*/
+
+// button.text = "Go to town square",
+function goTown() {
+    update(locations[0]);
 }
 
 function buyHealth() {}
