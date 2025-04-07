@@ -264,7 +264,11 @@ function goTown() {
     update(locations[0]);
 }
 
-function buyHealth() {}
+function buyHealth() {
+    // currentWeapon = 0; weapons.length = 4;
+    if (currentWeapon < weapons.length - 1) {
+    }
+}
 
 function buyWeapon() {}
 
