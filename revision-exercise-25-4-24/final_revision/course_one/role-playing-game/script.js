@@ -227,7 +227,7 @@ fightSlime,
 fightBeast, 
 goTown
 
-btns: fightSlime, fightDragon, fightBeast, 
+btns: fightSlime, fightBeast, fightDragon(3rd btn),
 attack, 
 dodge, 
 goTown
