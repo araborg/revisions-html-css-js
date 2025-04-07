@@ -178,17 +178,15 @@ function update(location) {}
 
 function goStore() {}
 
-function goCave() {}
+function goTown() {}
 
-function fightDragon() {}
+function goCave() {}
 
 function buyHealth() {}
 
 function buyWeapon() {}
 
 function sellWeapon() {}
-
-function goTown() {}
 
 function fightSlime() {}
 
@@ -221,5 +219,3 @@ function pickTwo() {}
 function pickEight() {}
 
 function pick(guess) {}
-
-function startGame() {}
