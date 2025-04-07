@@ -227,7 +227,7 @@ fightSlime,
 fightBeast, 
 goTown
 
-3rd btn: Fight dragon
+3rd btn: Fight dragon, fightSlime, fightBeast, 
 attack, 
 dodge, 
 goTown
