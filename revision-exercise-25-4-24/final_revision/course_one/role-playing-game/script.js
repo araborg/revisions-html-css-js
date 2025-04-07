@@ -210,7 +210,7 @@ function update(location) {
 /*
 functions associated with btns
 
-start:
+starting btns:
 goStore, 
 goCave, 
 fightDragon,
@@ -228,7 +228,7 @@ fightBeast,
 goTown
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn),
-attack, 
+attack, (calls defeatMonster)
 dodge, 
 goTown
 
