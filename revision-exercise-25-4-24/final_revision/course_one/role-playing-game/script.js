@@ -265,6 +265,28 @@ function goTown() {
 }
 
 /*
+buyHealth(): uses goStore() and location 1
+
+index: 1
+
+{
+    name: "store",
+
+    "button text": [
+        "Buy 10 health (10 gold)",
+        "Buy weapon (30 gold)",
+        "Go to town square",
+    ],
+    "button functions": [buyHealth, buyWeapon, goTown],
+
+    text: "You enter the store.",
+},
+
+*/
+
+function buyHealth() {}
+
+/*
 buyWeapon(): uses goStore() and location 1
 
 index: 1
@@ -306,8 +328,6 @@ function buyWeapon() {
         }
     }
 }
-
-function buyHealth() {}
 
 function sellWeapon() {}
 
