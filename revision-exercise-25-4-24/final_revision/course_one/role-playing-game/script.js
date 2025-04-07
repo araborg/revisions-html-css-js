@@ -228,6 +228,7 @@ function goStore() {
     text: 'You are in the town square. You see a sign that says "Store".',
 },
 */
+
 function goTown() {
     update(locations[0]);
 }
@@ -246,7 +247,6 @@ function goTown() {
 
     text: "You enter the cave. You see some monsters.",
 },
-
 */
 
 function goCave() {
