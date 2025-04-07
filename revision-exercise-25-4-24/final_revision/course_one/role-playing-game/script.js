@@ -173,7 +173,11 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-function update(location) {}
+// update UI
+function update(location) {
+    // hidden elements
+    monsterStats.style.display = "none";
+}
 
 function goStore() {}
 
