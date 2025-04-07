@@ -174,6 +174,8 @@ const locations = [
 
 // btns fxns calls
 
+function update(location) {}
+
 function goStore() {}
 
 function goCave() {}
@@ -198,10 +200,26 @@ function goFight() {}
 
 function attack() {}
 
+function getMonsterAttackValue(level) {}
+
+function isMonsterHit() {}
+
 function dodge() {}
-function easterEgg() {}
-function pickTwo() {}
-function pickEight() {}
+
+function defeatMonster() {}
+
+function lose() {}
+
+function winGame() {}
+
 function restart() {}
+
+function easterEgg() {}
+
+function pickTwo() {}
+
+function pickEight() {}
+
+function pick(guess) {}
 
 function startGame() {}
