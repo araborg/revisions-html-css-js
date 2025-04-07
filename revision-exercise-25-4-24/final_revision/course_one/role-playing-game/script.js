@@ -265,7 +265,7 @@ function goTown() {
 }
 
 /*
-uses goStore and location 1
+buyWeapon(): uses goStore() and location 1
 
 index: 1
 
