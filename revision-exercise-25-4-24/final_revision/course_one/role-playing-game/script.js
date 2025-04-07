@@ -267,24 +267,29 @@ function goTown() {
 function buyWeapon() {
     // currentWeapon = 0; weapons.length = 4;
     if (currentWeapon < weapons.length - 1) {
-        if (gold >= 30) {
-            gold -= 30;
-            currentWeapon++;
+        inventory.push(newWeapon);
 
-            goldText.innerText = gold;
+        // if (gold >= 30) {
+        //     gold -= 30;
+        //     currentWeapon++;
 
-            let newWeapon = weapons[currentWeapon].name;
+        //     goldText.innerText = gold;
 
-            text.innerText = "You now have a " + newWeapon + ".";
+        //     let newWeapon = weapons[currentWeapon].name;
 
-            // weapon collections
-            inventory.push(newWeapon);
+        //     text.innerText = "You now have a " + newWeapon + ".";
 
-            text.innerText += " In your inventory you have: " + inventory;
-        } else {
-        }
+        //     // weapon collections
+        //     inventory.push(newWeapon);
+
+        //     text.innerText += " In your inventory you have: " + inventory;
+        // } else {
+        //     text.innerText = "You do not have enough gold to buy a weapon.";
+        // }
     }
 }
+
+console.log(inventory);
 
 function buyHealth() {}
 
