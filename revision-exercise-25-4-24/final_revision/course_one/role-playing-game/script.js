@@ -208,19 +208,10 @@ function update(location) {
 }
 
 /*
-// index: 1
-{
-    name: "store",
+index: 1
 
-    "button text": [
-        "Buy 10 health (10 gold)",
-        "Buy weapon (30 gold)",
-        "Go to town square",
-    ],
-    "button functions": [buyHealth, buyWeapon, goTown],
-
-    text: "You enter the store.",
-},
+"button functions": [buyHealth, buyWeapon, goTown],
+"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
 */
 
 function goStore() {
@@ -228,19 +219,11 @@ function goStore() {
 }
 
 /*
-// index: 2
-{
-    name: "cave",
+index: 2
 
-    "button text": [
-        "Fight slime",
-        "Fight fanged beast",
-        "Go to town square",
-    ],
-    "button functions": [fightSlime, fightBeast, goTown],
+"button text": ["Fight slime","Fight fanged beast", "Go to town square",],
+"button functions": [fightSlime, fightBeast, goTown],
 
-    text: "You enter the cave. You see some monsters.",
-},
 */
 
 function goCave() {
@@ -248,15 +231,11 @@ function goCave() {
 }
 
 /*
-// index: 0; ds help return to d home pg
-{
-    name: "town square",
+index: 0; ds help return to d home pg
 
-    "button text": ["Go to store", "Go to cave", "Fight dragon"],
-    "button functions": [goStore, goCave, fightDragon],
+"button text": ["Go to store", "Go to cave", "Fight dragon"],
+"button functions": [goStore, goCave, fightDragon],
 
-    text: 'You are in the town square. You see a sign that says "Store".',
-},
 */
 
 // button.text = "Go to town square",
@@ -269,18 +248,8 @@ buyHealth(): uses goStore() and location 1
 
 index: 1
 
-{
-    name: "store",
-
-    "button text": [
-        "Buy 10 health (10 gold)",
-        "Buy weapon (30 gold)",
-        "Go to town square",
-    ],
-    "button functions": [buyHealth, buyWeapon, goTown],
-
-    text: "You enter the store.",
-},
+"button functions": [buyHealth, buyWeapon, goTown],
+"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
 
 */
 
@@ -302,18 +271,8 @@ buyWeapon(): uses goStore() and location 1
 
 index: 1
 
-{
-    name: "store",
-
-    "button text": [
-        "Buy 10 health (10 gold)",
-        "Buy weapon (30 gold)",
-        "Go to town square",
-    ],
-    "button functions": [buyHealth, buyWeapon, goTown],
-
-    text: "You enter the store.",
-},
+"button functions": [buyHealth, buyWeapon, goTown],
+"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
 */
 
 function buyWeapon() {
