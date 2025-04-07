@@ -171,3 +171,37 @@ const locations = [
         text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
     },
 ];
+
+// btns fxns calls
+
+function goStore() {}
+
+function goCave() {}
+
+function fightDragon() {}
+
+function buyHealth() {}
+
+function buyWeapon() {}
+
+function sellWeapon() {}
+
+function goTown() {}
+
+function fightSlime() {}
+
+function fightBeast() {}
+
+function fightDragon() {}
+
+function goFight() {}
+
+function attack() {}
+
+function dodge() {}
+function easterEgg() {}
+function pickTwo() {}
+function pickEight() {}
+function restart() {}
+
+function startGame() {}
