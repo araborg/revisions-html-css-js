@@ -252,51 +252,17 @@ goTown,
 
 */
 
-/*
-index: 1
-
-"button functions": [buyHealth, buyWeapon, goTown],
-"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
-*/
-
 function goStore() {
     update(locations[1]);
 }
-
-/*
-index: 2
-
-"button text": ["Fight slime","Fight fanged beast", "Go to town square",],
-"button functions": [fightSlime, fightBeast, goTown],
-
-*/
 
 function goCave() {
     update(locations[2]);
 }
 
-/*
-index: 0; ds help return to d home pg
-
-"button text": ["Go to store", "Go to cave", "Fight dragon"],
-"button functions": [goStore, goCave, fightDragon],
-
-*/
-
-// button.text = "Go to town square",
 function goTown() {
     update(locations[0]);
 }
-
-/*
-buyHealth(): uses goStore() and location 1
-
-index: 1
-
-"button functions": [buyHealth, buyWeapon, goTown],
-"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
-
-*/
 
 function buyHealth() {
     if (gold >= 10) {
@@ -311,16 +277,6 @@ function buyHealth() {
     }
 }
 
-/*
-buyWeapon(): uses goStore() and location 1
-and is d one who calls sellWeapon()
-
-index: 1
-
-"button functions": [buyHealth, buyWeapon, goTown],
-"button text": ["Buy 10 health (10 gold)", "Buy weapon (30 gold)", "Go to town square",],
-*/
-
 function buyWeapon() {
     /* for currentWeapon to equal weapons.length , wch 
         is 4 arr items we need an addition 3 items i.e 
@@ -333,6 +289,7 @@ function buyWeapon() {
 
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
+
             // weapon collections
             inventory.push(newWeapon);
 
