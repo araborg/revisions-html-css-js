@@ -228,7 +228,7 @@ fightBeast,
 goTown
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn),
-attack, (calls defeatMonster)
+attack, (calls defeatMonster, lose, winGame)
 dodge, 
 goTown
 
