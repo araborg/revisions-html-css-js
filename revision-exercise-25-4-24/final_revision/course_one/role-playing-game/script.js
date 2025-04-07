@@ -177,6 +177,16 @@ button3.onclick = fightDragon;
 function update(location) {
     // hidden elements
     monsterStats.style.display = "none";
+
+    // btns text
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+
+    // btns fxns calls
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
 }
 
 function goStore() {}
