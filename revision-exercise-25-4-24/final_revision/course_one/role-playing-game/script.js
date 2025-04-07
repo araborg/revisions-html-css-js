@@ -286,25 +286,14 @@ index: 1
 function buyWeapon() {
     // currentWeapon = 0; weapons.length = 4;
     if (currentWeapon < weapons.length - 1) {
-        currentWeapon++;
-
-        let newWeapon = weapons[currentWeapon].name;
-
-        inventory.push(newWeapon);
-
         // if (gold >= 30) {
         //     gold -= 30;
         //     currentWeapon++;
-
         //     goldText.innerText = gold;
-
         //     let newWeapon = weapons[currentWeapon].name;
-
         //     text.innerText = "You now have a " + newWeapon + ".";
-
         //     // weapon collections
         //     inventory.push(newWeapon);
-
         //     text.innerText += " In your inventory you have: " + inventory;
         // } else {
         //     text.innerText = "You do not have enough gold to buy a weapon.";
