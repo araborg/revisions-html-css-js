@@ -229,6 +229,7 @@ function goStore() {
 },
 */
 
+// button.text = "Go to town square",
 function goTown() {
     update(locations[0]);
 }
