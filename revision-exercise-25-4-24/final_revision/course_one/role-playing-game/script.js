@@ -1,5 +1,3 @@
-// provided resources
-
 // d experience,xp
 let xp = 0;
 
@@ -60,8 +58,6 @@ const weapons = [
         power: 100,
     },
 ];
-
-console.log(weapons[2]);
 
 // dse r monsters but dragon is vip
 const monsters = [
@@ -173,6 +169,7 @@ const locations = [
 ];
 
 // btns fxns calls
+b;
 
 function update(location) {}
 
