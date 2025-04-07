@@ -218,6 +218,7 @@ buyHealth,
 buyWeapon, 
 goTown
 
+
 fightSlime, 
 fightBeast, 
 
@@ -226,11 +227,11 @@ attack,
 dodge, 
 
 
-goTown, 
-goTown, 
 easterEgg,
 
+
 restart, 
+
 
 pickTwo, 
 pickEight, 
