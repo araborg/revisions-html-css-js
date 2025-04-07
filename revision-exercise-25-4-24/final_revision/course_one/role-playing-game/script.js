@@ -267,6 +267,10 @@ function goTown() {
 function buyWeapon() {
     // currentWeapon = 0; weapons.length = 4;
     if (currentWeapon < weapons.length - 1) {
+        currentWeapon++;
+
+        let newWeapon = weapons[currentWeapon].name;
+
         inventory.push(newWeapon);
 
         // if (gold >= 30) {
