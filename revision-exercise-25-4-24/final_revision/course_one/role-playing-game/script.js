@@ -208,6 +208,37 @@ function update(location) {
 }
 
 /*
+functions associated with btns
+goStore, 
+goCave, 
+fightDragon,
+
+
+buyHealth, 
+buyWeapon, 
+goTown
+
+fightSlime, 
+fightBeast, 
+
+
+attack, 
+dodge, 
+
+
+goTown, 
+goTown, 
+easterEgg,
+
+restart, 
+
+pickTwo, 
+pickEight, 
+
+
+*/
+
+/*
 index: 1
 
 "button functions": [buyHealth, buyWeapon, goTown],
