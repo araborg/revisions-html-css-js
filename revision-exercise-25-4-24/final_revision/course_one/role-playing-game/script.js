@@ -82,6 +82,7 @@ const monsters = [
 
 // locations
 const locations = [
+    // index: 0
     {
         name: "town square",
 
@@ -91,6 +92,7 @@ const locations = [
         text: 'You are in the town square. You see a sign that says "Store".',
     },
 
+    // index: 1
     {
         name: "store",
 
@@ -104,6 +106,7 @@ const locations = [
         text: "You enter the store.",
     },
 
+    // index: 2
     {
         name: "cave",
 
@@ -117,6 +120,7 @@ const locations = [
         text: "You enter the cave. You see some monsters.",
     },
 
+    // index: 3
     {
         name: "fight",
 
@@ -126,6 +130,7 @@ const locations = [
         text: "You are fighting a monster.",
     },
 
+    // index: 4
     {
         name: "kill monster",
 
@@ -140,6 +145,7 @@ const locations = [
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
     },
 
+    // index: 5
     {
         name: "lose",
 
@@ -149,6 +155,7 @@ const locations = [
         text: "You die. &#x2620;",
     },
 
+    // index: 6
     {
         name: "win",
 
@@ -158,6 +165,7 @@ const locations = [
         text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
     },
 
+    // index: 7
     {
         name: "easter egg",
 
@@ -189,11 +197,61 @@ function update(location) {
     button3.onclick = location["button functions"][2];
 }
 
-function goStore() {}
+/*
+// index: 1
+{
+    name: "store",
 
-function goTown() {}
+    "button text": [
+        "Buy 10 health (10 gold)",
+        "Buy weapon (30 gold)",
+        "Go to town square",
+    ],
+    "button functions": [buyHealth, buyWeapon, goTown],
 
-function goCave() {}
+    text: "You enter the store.",
+},
+*/
+
+function goStore() {
+    update(locations[1]);
+}
+
+/*
+// index: 0
+{
+    name: "town square",
+
+    "button text": ["Go to store", "Go to cave", "Fight dragon"],
+    "button functions": [goStore, goCave, fightDragon],
+
+    text: 'You are in the town square. You see a sign that says "Store".',
+},
+*/
+function goTown() {
+    update(locations[0]);
+}
+
+/*
+// index: 2
+{
+    name: "cave",
+
+    "button text": [
+        "Fight slime",
+        "Fight fanged beast",
+        "Go to town square",
+    ],
+    "button functions": [fightSlime, fightBeast, goTown],
+
+    text: "You enter the cave. You see some monsters.",
+},
+
+*/
+
+function goCave() {
+    update(locations[2]);
+}
 
 function buyHealth() {}
 
