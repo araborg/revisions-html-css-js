@@ -294,7 +294,6 @@ function buyWeapon() {
             gold -= 30;
 
             currentWeapon++;
-
             let newWeapon = weapons[currentWeapon].name;
             // weapon collections
             inventory.push(newWeapon);
