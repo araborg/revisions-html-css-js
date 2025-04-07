@@ -209,22 +209,29 @@ function update(location) {
 
 /*
 functions associated with btns
+
+start:
 goStore, 
 goCave, 
 fightDragon,
 
+On pressing Go to store:
 
+1st btn: 
 buyHealth, 
 buyWeapon, 
 goTown
 
-
+2nd btn: Go to cave
 fightSlime, 
 fightBeast, 
+goTown
 
-
+3rd btn: Fight dragon
 attack, 
 dodge, 
+goTown
+
 
 
 easterEgg,
