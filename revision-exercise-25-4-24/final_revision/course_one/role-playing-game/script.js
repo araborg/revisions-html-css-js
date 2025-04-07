@@ -264,6 +264,25 @@ function goTown() {
     update(locations[0]);
 }
 
+/*
+uses goStore and location 1
+
+index: 1
+
+{
+    name: "store",
+
+    "button text": [
+        "Buy 10 health (10 gold)",
+        "Buy weapon (30 gold)",
+        "Go to town square",
+    ],
+    "button functions": [buyHealth, buyWeapon, goTown],
+
+    text: "You enter the store.",
+},
+*/
+
 function buyWeapon() {
     // currentWeapon = 0; weapons.length = 4;
     if (currentWeapon < weapons.length - 1) {
