@@ -8,7 +8,7 @@ let gold = 1050;
 // current weapon index
 let currentWeapon = 0;
 
-//
+// wc monster r u fighting?
 let fighting;
 
 let monsterHealth;
@@ -405,14 +405,20 @@ fightDragon() calls attack(), dodge(), and goTown()
 
 function fightSlime() {
     fighting = 0;
+
+    goFight();
 }
 
 function fightBeast() {
     fighting = 1;
+
+    goFight();
 }
 
 function fightDragon() {
     fighting = 2;
+
+    goFight();
 }
 
 /*
@@ -425,7 +431,14 @@ fightDragon()
 and all dse calls: [attack, dodge, goTown]
 */
 
-function goFight() {}
+function goFight() {
+    // locations[3]:  fxns: [attack, dodge, goTown]
+    update(locations[3]);
+
+    monsterHealth = monsters[fighting].health;
+
+    console.log(monsters[fighting].name);
+}
 
 /**
  
