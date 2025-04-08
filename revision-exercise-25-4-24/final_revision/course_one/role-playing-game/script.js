@@ -545,13 +545,15 @@ function defeatMonster() {
 
     /**
      * index: 4
+     * Wn mosnter is defeated, u can either return to
+     * town square or pick a luck, easterEgg
      * 
         "button text": [
             "Go to town square",
             "Go to town square",
             "Go to town square",
         ],
-        
+
         "button functions": [goTown, goTown, easterEgg],
 
     */
