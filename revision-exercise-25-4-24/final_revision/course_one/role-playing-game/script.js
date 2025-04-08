@@ -530,7 +530,9 @@ function winGame() {
     update(locations[6]);
 }
 
-function defeatMonster() {}
+function defeatMonster() {
+    gold += Math.floor(monsters[fighting].level * 6.7);
+}
 
 /**
 
