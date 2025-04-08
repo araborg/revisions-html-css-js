@@ -215,9 +215,7 @@ goStore,
 goCave, 
 fightDragon,
 
-On pressing Go to store:
-
-1st btn: Go to store
+On pressing Go to store(1st btn):
 buyHealth, 
 buyWeapon, 
 goTown
