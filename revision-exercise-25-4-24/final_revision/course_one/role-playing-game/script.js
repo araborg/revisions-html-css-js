@@ -633,7 +633,16 @@ function easterEgg() {
     update(locations[7]);
 }
 
-function pick(guess) {}
+function pick(guess) {
+    const numbers = [];
+
+    // populate d number arr 10x
+    while (number.length < 10) {
+        numbers.push(Math.floor(Math.random() * 11));
+    }
+
+    text.innerText = `You picked ${guess}. Here are the random numbers: \n`;
+}
 
 function pickTwo() {}
 
