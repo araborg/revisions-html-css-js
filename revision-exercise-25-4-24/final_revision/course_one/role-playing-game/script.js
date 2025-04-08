@@ -473,6 +473,8 @@ function attack() {
            weapon powers r: 5, 30, 50, 100 */
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+    } else {
+        text.innerText += " You miss.";
     }
 
     healthText.innerText = playerHealth;
