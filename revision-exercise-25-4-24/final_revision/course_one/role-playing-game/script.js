@@ -326,6 +326,24 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
+            /**
+             * currentWeapon    inventory.length
+             *     initial stage
+             *        0             1
+             *
+             *     1st click:
+             *        0             2
+             *
+             *     2nd click:
+             *        1             3
+             *
+             *     3rd click:
+             *        2             4
+             *
+             *     4th click:
+             *        3 false :(3 (currentWeapon) < 3(weapons.length - 1))
+             */
+
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
