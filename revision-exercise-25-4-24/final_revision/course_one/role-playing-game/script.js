@@ -340,15 +340,13 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
-            // console.log(currentWeapon, inventory.length);
-
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
             // weapon collections
             inventory.push(newWeapon);
 
-            console.log(currentWeapon, inventory.length);
+            // console.log(currentWeapon, inventory.length);
 
             // update UI
             goldText.innerText = gold;
