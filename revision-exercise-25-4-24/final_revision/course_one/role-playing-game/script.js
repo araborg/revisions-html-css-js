@@ -404,6 +404,13 @@ function winGame() {}
 
 function defeatMonster() {}
 
+/**
+
+* restart() is called wn there is:
+ * winGame()
+ * lose()
+
+*/
 function restart() {}
 
 /**
