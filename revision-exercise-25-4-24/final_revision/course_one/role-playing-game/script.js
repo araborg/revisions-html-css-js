@@ -595,6 +595,8 @@ function defeatMonster() {
  * lose()
 
 */
+
+// used in indexes: 5 & 6
 function restart() {}
 
 /**
