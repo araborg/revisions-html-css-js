@@ -468,6 +468,9 @@ function attack() {
     while levels r: 2, 8, 20 */
     health -= getMonsterAttackValue(monsters[fighting].level);
 
+    if (isMonsterHit()) {
+        console.log(isMonsterHit());
+    }
     // console.log(health);
     healthText.innerText = health;
 }
