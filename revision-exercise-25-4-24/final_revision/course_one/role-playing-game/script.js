@@ -315,7 +315,7 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    /* for currentWeapon to equal weapons.length , wch 
+    /*  for currentWeapon to equal weapons.length, wch 
         is 4 arr items we need an addition 3 items i.e 
         item at index 0, 1, 2 wc mks weapons.length - 1
     */
