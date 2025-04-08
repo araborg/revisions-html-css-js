@@ -25,6 +25,7 @@ const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 
+// display text
 const text = document.querySelector("#text");
 
 // hidden elements
@@ -443,8 +444,8 @@ function goFight() {
 
     // display hidden elemts: monsterStats, monsterName, monsterHealthText
     monsterStats.style.display = "block";
-    monsterName = monsters[fighting].name;
-    monsterHealthText = monsterHealth;
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
 }
 
 /**
@@ -457,7 +458,9 @@ function goFight() {
  * defeatMonster()
  
  */
-function attack() {}
+function attack() {
+    text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}`;
+}
 
 function getMonsterAttackValue(level) {}
 
