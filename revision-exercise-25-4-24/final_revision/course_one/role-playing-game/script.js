@@ -315,9 +315,11 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    /*  for currentWeapon to equal weapons.length, wch 
-        is 4 arr items we need an addition 3 items i.e 
-        item at index 0, 1, 2 wc mks weapons.length - 1
+    /*  for currentWeapon (wc is 1 with index 0) to equal 
+        weapons.length (wc is 4 in number but with index 
+        btw 0 - 3) we need an addition 3 items i.e 
+        item at index 0, 1, 2 wc mks currentWeapon < 
+        weapons.length - 1 meaningful.
     */
 
     if (currentWeapon < weapons.length - 1) {
@@ -330,6 +332,7 @@ function buyWeapon() {
             // weapon collections
             inventory.push(newWeapon);
 
+            // update UI
             goldText.innerText = gold;
             text.innerText = "You now have a " + newWeapon + ".";
             text.innerText += " In your inventory you have: " + inventory;
