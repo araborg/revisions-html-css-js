@@ -621,16 +621,23 @@ function restart() {
  * while pick(guess) was d place holder for
  * pickTwo()
  * pickEight()
+ * 
+ * index: 7
+   
+    "button text": ["2", "8", "Go to town square?"],
+    "button functions": [pickTwo, pickEight, goTown],
     
 */
 
-function easterEgg() {}
+function easterEgg() {
+    update(locations[7]);
+}
+
+function pick(guess) {}
 
 function pickTwo() {}
 
 function pickEight() {}
-
-function pick(guess) {}
 
 // =========== revise ============
 /*
