@@ -314,28 +314,30 @@ function buyHealth() {
     }
 }
 
+/**
+ *   currentWeapon        inventory.length    weapons.length - 1
+ *    initial stage:
+ *       0                     1                   3
+ *
+ *  ===============================
+ *
+ *    1st click:
+ *       0                     2                   3
+ *
+ *    2nd click:
+ *       1                     3                   3
+ *
+ *    3rd click:
+ *       2                     4                   3
+ *
+ *    4th click:
+ *       3  :(3 < 3: false)
+ */
+
 function buyWeapon() {
     if (currentWeapon < weapons.length - 1) {
         if (gold >= 30) {
             gold -= 30;
-
-            /**
-             *   currentWeapon        inventory.length    weapons.length - 1
-             *    initial stage:
-             *       0                     1                   3
-             *
-             *    1st click:
-             *       0                     2                   3
-             *
-             *    2nd click:
-             *       1                     3                   3
-             *
-             *    3rd click:
-             *       2                     4                   3
-             *
-             *    4th click:
-             *       3  :(3 < 3: false)
-             */
 
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
