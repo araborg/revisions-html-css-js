@@ -369,12 +369,13 @@ function fightDragon() {}
 
 /*
 
-ds is called in:
+goFight() is called in:
 fightSlime()
 fightBeast()
 fightDragon()
 
 */
+
 function goFight() {}
 
 function attack() {}
