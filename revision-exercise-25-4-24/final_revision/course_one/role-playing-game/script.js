@@ -608,7 +608,8 @@ function restart() {}
  * pickTwo()
  * pickEight()
     
- */
+*/
+
 function easterEgg() {}
 
 function pickTwo() {}
