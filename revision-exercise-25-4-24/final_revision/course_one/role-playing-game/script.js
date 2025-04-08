@@ -492,6 +492,11 @@ function attack() {
     }
 
     // mk a player lose his weapon(s)
+    if (Math.random() <= 0.1 && inventory.length !== 1) {
+        text.innerText += ` Your ${inventory.pop()} breaks.`;
+
+        currentWeapon--;
+    }
 }
 
 function getMonsterAttackValue(level) {
