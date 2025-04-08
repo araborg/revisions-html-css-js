@@ -657,6 +657,10 @@ function pick(guess) {
 
         playerHealth -= 10;
         healthText.innerText = playerHealth;
+
+        if (playerHealth <= 0) {
+            lose();
+        }
     }
 }
 
