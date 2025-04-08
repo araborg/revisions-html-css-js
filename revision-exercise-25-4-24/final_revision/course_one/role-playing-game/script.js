@@ -543,6 +543,16 @@ function defeatMonster() {
     goldText.innerText = gold;
     xpText.innerText = xp;
 
+    /**
+     * index: 4
+        "button text": [
+            "Go to town square",
+            "Go to town square",
+            "Go to town square",
+        ],
+        "button functions": [goTown, goTown, easterEgg],
+
+     */
     update(locations[4]);
 }
 
