@@ -2,7 +2,7 @@
 let xp = 0;
 
 // initial value of monster health
-let health = 100;
+let playerHealth = 100;
 
 // let gold = 50;
 let gold = 1050;
@@ -466,13 +466,15 @@ function attack() {
 
     /* reduce monster health: 15, 60, 300
     while levels r: 2, 8, 20 */
-    health -= getMonsterAttackValue(monsters[fighting].level);
+    playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
-        console.log(isMonsterHit());
+        // weapon powers r: 5, 30, 50, 100
+        monsterHealth -=
+            weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     }
     // console.log(health);
-    healthText.innerText = health;
+    healthText.innerText = playerHealth;
 }
 
 function getMonsterAttackValue(level) {
@@ -491,7 +493,7 @@ function getMonsterAttackValue(level) {
 function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
-    return randomNum || health < 20;
+    return randomNum || playerHealth < 20;
 }
 
 function dodge() {}
