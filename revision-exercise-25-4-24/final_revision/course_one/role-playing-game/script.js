@@ -469,12 +469,12 @@ function attack() {
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
-        // monsterHealth r: 15, 60, 300
-        // weapon powers r: 5, 30, 50, 100
+        /* monsterHealth r: 15, 60, 300
+           weapon powers r: 5, 30, 50, 100 */
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     }
-    // console.log(health);
+
     healthText.innerText = playerHealth;
 }
 
