@@ -8,7 +8,7 @@ let gold = 1050;
 // current weapon index
 let currentWeapon = 0;
 
-// wc monster r u fighting?
+// monster index: wc monster r u fighting?
 let fighting;
 
 let monsterHealth;
