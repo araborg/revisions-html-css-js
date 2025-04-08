@@ -334,6 +334,7 @@ function buyWeapon() {
 
             // update UI
             goldText.innerText = gold;
+
             // text.innerText = "You now have a " + newWeapon + ".";
             // text.innerText += " In your inventory you have: " + inventory;
 
