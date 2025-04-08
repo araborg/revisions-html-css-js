@@ -490,6 +490,8 @@ function attack() {
             defeatMonster();
         }
     }
+
+    // mk a player lose his weapon(s)
 }
 
 function getMonsterAttackValue(level) {
