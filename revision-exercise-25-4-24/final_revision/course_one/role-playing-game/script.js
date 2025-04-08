@@ -332,7 +332,8 @@ function buyHealth() {
  *       3                     4                    3
  *
  *    4th click:
- *       4  :(currentWeanpon(3) < weapons.length - 1 (3): false)
+ *       4  :(current = inventory.shift()Weapon
+ * (3) < weapons.length - 1 (3): false)
  */
 
 function buyWeapon() {
@@ -367,7 +368,17 @@ function buyWeapon() {
     }
 }
 
-function sellWeapon() {}
+function sellWeapon() {
+    if (inventory.length > 1) {
+        gold += 15;
+
+        let currentWeapon = inventory.shift();
+
+        // update UI
+        goldText.innerText = gold;
+        text.innerText = `You sold a ${currentWeapon}. In your inventory you have ${inventory}`;
+    }
+}
 
 /*
 
