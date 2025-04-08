@@ -404,6 +404,7 @@ fightDragon() calls attack(), dodge(), and goTown()
 */
 
 function fightSlime() {
+    // fight monster at index: 0 i.e slime
     fighting = 0;
 
     goFight();
