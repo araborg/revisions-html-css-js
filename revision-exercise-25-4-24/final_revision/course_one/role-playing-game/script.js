@@ -653,6 +653,10 @@ function pick(guess) {
         gold += 20;
         goldText.innerText = gold;
     } else {
+        text.innerText += "Wrong! You lose 10 health!";
+
+        health -= 10;
+        healthText.innerText = health;
     }
 }
 
