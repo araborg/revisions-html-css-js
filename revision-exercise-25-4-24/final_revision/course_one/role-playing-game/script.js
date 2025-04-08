@@ -290,6 +290,13 @@ function goTown() {
     update(locations[0]);
 }
 
+/*
+These (buyHealth(), buyWeapon())
+are called by goStore().
+
+buyWeapon() calls sellWeapon()
+
+*/
 function buyHealth() {
     if (gold >= 10) {
         gold -= 10;
@@ -335,12 +342,39 @@ function buyWeapon() {
 
 function sellWeapon() {}
 
+/*
+
+2nd btn: Go to cave
+fightSlime, 
+fightBeast, 
+goTown
+
+btns: fightSlime, fightBeast, fightDragon(3rd btn),
+attack, (calls defeatMonster, lose, winGame)
+dodge, 
+goTown
+
+fightSlime(), fightBeast() calls attack(), dodge(),
+and goTown()
+
+fightDragon() calls attack(), dodge(), and goTown()
+
+*/
+
 function fightSlime() {}
 
 function fightBeast() {}
 
 function fightDragon() {}
 
+/*
+
+ds is called in:
+fightSlime()
+fightBeast()
+fightDragon()
+
+*/
 function goFight() {}
 
 function attack() {}
