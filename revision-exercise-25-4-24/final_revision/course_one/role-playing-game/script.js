@@ -490,7 +490,10 @@ function getMonsterAttackValue(level) {
 }
 
 function isMonsterHit() {
-    return Math.random > 0.2 || health < 20;
+    const randomNum = Math.random > 0.2;
+    console.log(randomNum);
+
+    return randomNum || health < 20;
 }
 
 function dodge() {}
