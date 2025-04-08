@@ -332,7 +332,7 @@ function buyHealth() {
  *       3                     4                    3
  *
  *    4th click:
- *       4  :(4 < 3: false)
+ *       4  :(currentWeanpon(3) < weapons.length - 1 (3): false)
  */
 
 function buyWeapon() {
