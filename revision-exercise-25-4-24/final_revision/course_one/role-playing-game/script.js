@@ -11,6 +11,7 @@ let currentWeapon = 0;
 // monster index: wc monster r u fighting?
 let fighting;
 
+// initial monster health: 15, 60, 300
 let monsterHealth;
 
 // weapon collections
