@@ -464,8 +464,8 @@ function attack() {
 }
 
 function getMonsterAttackValue(level) {
-    // hit, impact on monster depends substracting
-    // d product of random num & xp from 5 * level
+    /* hit, impact on monster depends substracting
+       d product of random num & xp from 5 * level. */
     const hit = level * 5 - Math.floor(Math.random() * xp);
 
     return hit > 0 ? hit : 0;
