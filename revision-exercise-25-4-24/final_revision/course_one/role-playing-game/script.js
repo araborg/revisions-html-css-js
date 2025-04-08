@@ -375,6 +375,7 @@ fightSlime()
 fightBeast()
 fightDragon()
 
+and all dse calls: [attack, dodge, goTown]
 */
 
 function goFight() {}
@@ -405,6 +406,16 @@ function defeatMonster() {}
 
 function restart() {}
 
+/**
+ * easterEgg() calls:
+ * pickTwo()
+ * pickEight()
+ *  
+ * while pick(guess) was d place holder for
+ * pickTwo()
+ * pickEight()
+    
+ */
 function easterEgg() {}
 
 function pickTwo() {}
