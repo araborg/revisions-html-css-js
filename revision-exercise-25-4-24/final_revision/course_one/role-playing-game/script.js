@@ -526,7 +526,9 @@ function lose() {
     update(locations[5]);
 }
 
-function winGame() {}
+function winGame() {
+    update(locations[6]);
+}
 
 function defeatMonster() {}
 
