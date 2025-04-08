@@ -315,13 +315,6 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    /*  for currentWeapon (wc is 1 with index 0) to equal 
-        weapons.length (wc is 4 in number but with index 
-        btw 0 - 3) we need an addition 3 items i.e 
-        item at index 0, 1, 2 wc mks currentWeapon < 
-        weapons.length - 1 meaningful.
-    */
-
     if (currentWeapon < weapons.length - 1) {
         if (gold >= 30) {
             gold -= 30;
