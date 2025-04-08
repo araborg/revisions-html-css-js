@@ -377,6 +377,8 @@ function sellWeapon() {
         // update UI
         goldText.innerText = gold;
         text.innerText = `You sold a ${currentWeapon}. In your inventory you have ${inventory}`;
+    } else {
+        text.innerText = `Don't sell your only weapon!: ${inventory[0]}`;
     }
 }
 
