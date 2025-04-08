@@ -522,9 +522,37 @@ function dodge() {
     text.innerText = `You dodge the attack from the ${monsters[fighting].name}.`;
 }
 
+/**
+ * index: 5
+ * 
+    {
+        name: "lose",
+
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+
+        text: "You die. &#x2620;",
+    },
+
+*/
+
 function lose() {
     update(locations[5]);
 }
+
+/**
+ *  index: 6
+ * 
+    {
+        name: "win",
+
+        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+        "button functions": [restart, restart, restart],
+
+        text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
+    },
+
+*/
 
 function winGame() {
     update(locations[6]);
