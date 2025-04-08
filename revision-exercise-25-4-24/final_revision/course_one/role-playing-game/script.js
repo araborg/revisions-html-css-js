@@ -227,7 +227,8 @@ fightSlime,
 fightBeast, 
 goTown
 
-btns: fightSlime, fightBeast, fightDragon(3rd btn),
+btns: fightSlime, fightBeast, fightDragon(3rd btn)
+calls goFight() then attack():
 attack, (calls defeatMonster, lose, winGame)
 dodge, 
 goTown
@@ -378,6 +379,16 @@ fightDragon()
 
 function goFight() {}
 
+/**
+ 
+ * attack() calls:
+ * getMonsterAttackValue(level)
+ * isMonsterHit()
+ * lose()
+ * winGame()
+ * defeatMonster()
+ 
+ */
 function attack() {}
 
 function getMonsterAttackValue(level) {}
@@ -386,11 +397,11 @@ function isMonsterHit() {}
 
 function dodge() {}
 
-function defeatMonster() {}
-
 function lose() {}
 
 function winGame() {}
+
+function defeatMonster() {}
 
 function restart() {}
 
