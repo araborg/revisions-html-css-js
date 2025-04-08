@@ -327,21 +327,21 @@ function buyWeapon() {
             gold -= 30;
 
             /**
-             * currentWeapon    inventory.length
-             *     initial stage
-             *        0             1
+             *   currentWeapon        inventory.length    weapons.length - 1
+             *    initial stage:
+             *       0                     1                   3
              *
-             *     1st click:
-             *        0             2
+             *    1st click:
+             *       0                     2                   3
              *
-             *     2nd click:
-             *        1             3
+             *    2nd click:
+             *       1                     3                   3
              *
-             *     3rd click:
-             *        2             4
+             *    3rd click:
+             *       2                     4                   3
              *
-             *     4th click:
-             *        3 false :(3 (currentWeapon) < 3(weapons.length - 1))
+             *    4th click:
+             *       3  :(3 < 3: false)
              */
 
             currentWeapon++;
