@@ -8,7 +8,9 @@ let gold = 1050;
 // current weapon index
 let currentWeapon = 0;
 
+//
 let fighting;
+
 let monsterHealth;
 
 // weapon collections
@@ -401,11 +403,17 @@ fightDragon() calls attack(), dodge(), and goTown()
 
 */
 
-function fightSlime() {}
+function fightSlime() {
+    fighting = 0;
+}
 
-function fightBeast() {}
+function fightBeast() {
+    fighting = 1;
+}
 
-function fightDragon() {}
+function fightDragon() {
+    fighting = 2;
+}
 
 /*
 
