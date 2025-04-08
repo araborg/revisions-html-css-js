@@ -226,7 +226,7 @@ fightBeast,
 goTown
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn)
-calls goFight() then attack():
+calls goFight() then attack(), dodge(), run/goTown():
 attack, (calls defeatMonster, lose, winGame)
 dodge, 
 goTown
@@ -251,7 +251,10 @@ goTown,
 
 */
 
+// =======================================
+
 /*
+
 starting btns:
 goStore, 
 goCave, 
@@ -261,6 +264,7 @@ fightDragon,
 buyHealth, 
 buyWeapon, 
 goTown
+
 */
 
 function goStore() {
