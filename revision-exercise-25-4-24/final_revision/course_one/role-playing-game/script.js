@@ -252,13 +252,39 @@ goTown,
 
 */
 
+/*
+starting btns:
+goStore, 
+goCave, 
+fightDragon,
+
+1st btn: Go to store
+buyHealth, 
+buyWeapon, 
+goTown
+*/
+
 function goStore() {
     update(locations[1]);
 }
 
+/*
+2nd btn: Go to cave
+fightSlime, 
+fightBeast, 
+goTown
+*/
+
 function goCave() {
     update(locations[2]);
 }
+
+/*
+returns us back to starting btns:
+goStore, 
+goCave, 
+fightDragon,
+*/
 
 function goTown() {
     update(locations[0]);
