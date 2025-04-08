@@ -518,7 +518,9 @@ function isMonsterHit() {
     return randomNum || playerHealth < 60;
 }
 
-function dodge() {}
+function dodge() {
+    text.innerText = `You dodge the attack from the ${monsters[fighting].name}.`;
+}
 
 function lose() {}
 
