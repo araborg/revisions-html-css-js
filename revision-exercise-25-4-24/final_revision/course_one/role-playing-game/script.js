@@ -664,9 +664,13 @@ function pick(guess) {
     }
 }
 
-function pickTwo() {}
+function pickTwo() {
+    pick(2);
+}
 
-function pickEight() {}
+function pickEight() {
+    pick(8);
+}
 
 // =========== revise ============
 /*
