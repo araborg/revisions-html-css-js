@@ -537,6 +537,13 @@ function defeatMonster() {
     console.log(impact);
 
     gold += Math.floor(impact);
+    xp += monsters[fighting].level;
+
+    // update UI
+    goldText.innerText = gold;
+    xpText.innerText = xp;
+
+    update(locations[4]);
 }
 
 /**
