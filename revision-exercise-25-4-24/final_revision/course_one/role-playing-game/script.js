@@ -483,7 +483,7 @@ function attack() {
     if (playerHealth <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
-        // for dragon: fighting = 2
+        // for dragon: fighting = 2 & u will only wn u kill dragon
         if (fighting === 2) {
             winGame();
         } else {
