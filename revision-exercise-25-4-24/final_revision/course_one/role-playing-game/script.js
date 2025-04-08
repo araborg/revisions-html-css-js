@@ -411,12 +411,14 @@ function fightSlime() {
 }
 
 function fightBeast() {
+    // fight monster at index: 1 i.e beast
     fighting = 1;
 
     goFight();
 }
 
 function fightDragon() {
+    // fight monster at index: 2 i.e dragon
     fighting = 2;
 
     goFight();
