@@ -531,6 +531,8 @@ function winGame() {
 }
 
 function defeatMonster() {
+    // levels: 2, 8, 20,
+
     gold += Math.floor(monsters[fighting].level * 6.7);
 }
 
