@@ -461,11 +461,19 @@ function goFight() {
  */
 function attack() {
     text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
+
+    /* reduce monster health: 15, 60, 300
+    while levels r: 2, 8, 20 */
+    health -= getMonsterAttackValue(monsters[fighting].level);
+
+    console.log(health);
 }
 
 function getMonsterAttackValue(level) {
     /* hit, impact on monster depends substracting
        d product of random num & xp from 5 * level. 
+
+       xp: increase only wn a monster is deafeated
     
        available monsters level: 2, 8, 20
     */
