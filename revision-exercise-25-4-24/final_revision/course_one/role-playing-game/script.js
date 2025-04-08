@@ -608,6 +608,9 @@ function restart() {
     xpText.innerText = xp;
     healthText.innerText = health;
     goldText.innerText = gold;
+
+    // return to initial/home UI
+    goTown();
 }
 
 /**
