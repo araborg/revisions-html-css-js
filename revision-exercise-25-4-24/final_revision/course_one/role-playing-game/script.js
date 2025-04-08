@@ -597,7 +597,12 @@ function defeatMonster() {
 */
 
 // used in indexes: 5 & 6
-function restart() {}
+function restart() {
+    // update UI: return it back to initial values
+    xp = 0;
+    health = 100;
+    gold = 50;
+}
 
 /**
  * easterEgg() calls:
