@@ -220,7 +220,7 @@ buyHealth,
 buyWeapon, 
 goTown
 
-2nd btn: Go to cave
+On pressing Go to cave(2nd btn):
 fightSlime, 
 fightBeast, 
 goTown
