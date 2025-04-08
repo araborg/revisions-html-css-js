@@ -478,6 +478,18 @@ function attack() {
     }
 
     healthText.innerText = playerHealth;
+    monsterHealthText.innerText = monsterHealth;
+
+    if (playerHealth <= 0) {
+        lose();
+    } else if (monsterHealth <= 0) {
+        // for dragon: fighting = 2
+        if (fighting === 2) {
+            winGame();
+        } else {
+            defeatMonster();
+        }
+    }
 }
 
 function getMonsterAttackValue(level) {
@@ -496,7 +508,7 @@ function getMonsterAttackValue(level) {
 function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
-    return randomNum || playerHealth < 20;
+    return randomNum || playerHealth < 60;
 }
 
 function dodge() {}
