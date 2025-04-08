@@ -460,10 +460,16 @@ function goFight() {
  
  */
 function attack() {
-    text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}`;
+    text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
 }
 
-function getMonsterAttackValue(level) {}
+function getMonsterAttackValue(level) {
+    // hit, impact on monster depends substracting
+    // d product of random num & xp from 5 * level
+    const hit = level * 5 - Math.floor(Math.random() * xp);
+
+    return hit > 0 ? hit : 0;
+}
 
 function isMonsterHit() {}
 
