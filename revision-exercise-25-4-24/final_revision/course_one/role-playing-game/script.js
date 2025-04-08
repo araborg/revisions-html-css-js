@@ -2,7 +2,8 @@
 let xp = 0;
 
 let health = 100;
-let gold = 50;
+// let gold = 50;
+let gold = 1050;
 
 // current weapon index
 let currentWeapon = 0;
@@ -322,16 +323,16 @@ function buyHealth() {
  *  ===============================
  *
  *    1st click:
- *       0                     2                   3
+ *       1                     2                   3
  *
  *    2nd click:
- *       1                     3                   3
+ *       2                     3                   3
  *
  *    3rd click:
- *       2                     4                   3
+ *       3                     4                    3
  *
  *    4th click:
- *       3  :(3 < 3: false)
+ *       4  :(4 < 3: false)
  */
 
 function buyWeapon() {
@@ -339,11 +340,15 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
+            // console.log(currentWeapon, inventory.length);
+
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
             // weapon collections
             inventory.push(newWeapon);
+
+            console.log(currentWeapon, inventory.length);
 
             // update UI
             goldText.innerText = gold;
