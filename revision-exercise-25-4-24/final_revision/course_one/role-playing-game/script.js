@@ -6,7 +6,7 @@ let xp = 0;
 let playerHealth = 100;
 
 // initial gold value
-let gold = 50;
+let gold = 1050;
 
 // current weapon index: wc new weapon did u buy?
 let currentWeapon = 0;
@@ -347,6 +347,7 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
+            // currentWeapon only increase after each click. Only
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
