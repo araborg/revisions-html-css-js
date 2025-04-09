@@ -463,6 +463,7 @@ function attack() {
         text.innerText += " You miss.";
     }
 
+    // update UI
     healthText.innerText = playerHealth;
     monsterHealthText.innerText = monsterHealth;
 
