@@ -241,7 +241,8 @@ goTown(), Go to town square
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn)
 calls goFight() then attack(), dodge(), run/goTown():
-attack, (calls defeatMonster, lose, winGame)
+
+attack, (calls lose(), winGame(), defeatMonster())
 dodge, 
 goTown
 
