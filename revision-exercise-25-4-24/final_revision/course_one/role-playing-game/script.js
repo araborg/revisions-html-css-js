@@ -282,10 +282,12 @@ N.B: goTown() text can either be
 // =======================================
 
 function goStore() {
+    // Go to store
     update(locations[1]);
 }
 
 function goCave() {
+    // Go to cave
     update(locations[2]);
 }
 
