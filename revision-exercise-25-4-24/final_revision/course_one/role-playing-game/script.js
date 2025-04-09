@@ -322,13 +322,16 @@ function buyHealth() {
     and 3 weaons r expected to be added to inventory
     to mk a total of 4 weapons.
 
+
+    initial value of currentWeapon: 0
+
     true:
-    1st click: currentWeapon = 0
-    2nd click: currentWeapon = 1
-    3rd click: currentWeapon = 2
+    1st click: currentWeapon = 0 (0 < 3)
+    2nd click: currentWeapon = 1 (1 < 3)
+    3rd click: currentWeapon = 2 (2 < 3)
 
     false:
-    4th click: currentWeapon = 3 
+    4th click: currentWeapon = 3 (3 < 3)
     
 */
 
