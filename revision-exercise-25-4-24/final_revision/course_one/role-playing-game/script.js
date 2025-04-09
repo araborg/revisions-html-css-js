@@ -201,7 +201,7 @@ button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
 
-// update UI
+// update UI: we only need from d locations: button texts/fxns
 function update(location) {
     // hidden elements
     monsterStats.style.display = "none";
