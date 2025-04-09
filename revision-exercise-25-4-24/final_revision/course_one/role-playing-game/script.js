@@ -483,7 +483,9 @@ function getMonsterAttackValue(level) {
     /* hit: d impact on monster depends on substracting
        d product of (random num & xp) from (5 * level). 
 
-       xp: increase only wn a monster is deafeated
+       xp: increase only wn a monster is deafeated by 
+       monster's level
+       
        xp += monsters[fighting].level;
     
        available monsters level: 2, 8, 20
