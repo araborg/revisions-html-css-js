@@ -206,12 +206,12 @@ function update(location) {
     // hidden elements
     monsterStats.style.display = "none";
 
-    // btns text
+    // btns text using bracket notation
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
 
-    // btns fxns calls
+    // btns fxns calls using bracket notation
     button1.onclick = location["button functions"][0];
     button2.onclick = location["button functions"][1];
     button3.onclick = location["button functions"][2];
