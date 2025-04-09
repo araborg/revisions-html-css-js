@@ -415,8 +415,10 @@ function goFight() {
     // get d health of d monster wc meant to reduce as fighting continue
     monsterHealth = monsters[fighting].health;
 
-    // display hidden elemts: monsterStats, monsterName, monsterHealthText
+    // display hidden elemts: monsterStats
     monsterStats.style.display = "block";
+
+    // update UI: monsterName, monsterHealthText
     monsterName.innerText = monsters[fighting].name;
     monsterHealthText.innerText = monsterHealth;
 }
