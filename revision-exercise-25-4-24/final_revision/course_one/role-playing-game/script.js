@@ -299,11 +299,11 @@ function goTown() {
 function buyHealth() {
     // if gold >= 10
     if (gold >= 10) {
-        // remove 10 golds 4rm gold & add 10 health to health
+        // remove 10 golds 4rm player's gold & add 10 health to player's health
         gold -= 10;
         playerHealth += 10;
 
-        // update d UI for both gold and health
+        // update d UI for both player's gold and health
         goldText.innerText = gold;
         healthText.innerText = playerHealth;
     } else {
