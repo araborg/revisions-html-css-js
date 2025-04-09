@@ -345,10 +345,8 @@ function buyWeapon() {
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
-            // weapon collections
+            // weapon collections increases
             inventory.push(newWeapon);
-
-            // console.log(currentWeapon, inventory.length);
 
             // update UI
             goldText.innerText = gold;
