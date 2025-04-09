@@ -347,7 +347,10 @@ function buyWeapon() {
         if (gold >= 30) {
             gold -= 30;
 
-            // currentWeapon only increase after each click. Only
+            /* currentWeapon only increase after each click. 
+               i.e. click b4 increase in currentWeapon. Only 
+               3 clicks r allow b4 currentWeapon === 3 */
+
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
 
