@@ -313,29 +313,31 @@ function buyHealth() {
     }
 }
 
+/* 
+
+    currentWeapon only increase after each click. 
+    i.e. click b4 increase in currentWeapon. 
+    
+    Only 3 clicks r allowed b4 currentWeapon === 3 
+    and 3 weaons r expected to be added to inventory
+    to mk a total of 4 weapons.
+
+    true:
+    1st click: currentWeapon = 0
+    2nd click: currentWeapon = 1
+    3rd click: currentWeapon = 2
+
+    false:
+    4th click: currentWeapon = 3 
+    
+*/
+
 function buyWeapon() {
     // if currentWeapon[0, 1, 2, 3] < weapons.length(3)
     if (currentWeapon < weapons.length - 1) {
         // if gold >= 30
         if (gold >= 30) {
             gold -= 30;
-
-            /* 
-                currentWeapon only increase after each click. 
-                i.e. click b4 increase in currentWeapon. 
-                
-                Only 3 clicks r allowed b4 currentWeapon === 3 
-                and 3 weaons r expected to be added to inventory
-                to mk a total of 4 weapons.
-
-                true:
-                1st click: currentWeapon = 0
-                2nd click: currentWeapon = 1
-                3rd click: currentWeapon = 2
-
-                false:
-                4th click: currentWeapon = 3 
-            */
 
             currentWeapon++;
             let newWeapon = weapons[currentWeapon].name;
