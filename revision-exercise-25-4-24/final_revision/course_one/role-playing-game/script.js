@@ -377,11 +377,11 @@ function sellWeapon() {
         gold += 15;
 
         // remove weapon from d front i.e index[0]
-        let currentWeapon = inventory.shift();
+        let soldWeapon = inventory.shift();
 
         // update UI
         goldText.innerText = gold;
-        text.innerText = `You sold a ${currentWeapon}. In your inventory you have ${inventory}`;
+        text.innerText = `You sold a ${soldWeapon}. In your inventory you have ${inventory}`;
     } else {
         text.innerText = `Don't sell your only weapon!: ${inventory[0]}`;
     }
