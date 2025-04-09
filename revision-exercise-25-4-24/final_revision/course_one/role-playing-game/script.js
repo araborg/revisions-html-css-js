@@ -218,12 +218,14 @@ function update(location) {
 }
 
 /*
-functions associated with btns
+functions associated with btns:
 
 starting btns:
 goStore, 
 goCave, 
 fightDragon,
+
+
 
 On pressing, "Go to store", goStore() (1st btn), 
 ds btns showed with associated text:
@@ -232,6 +234,8 @@ buyHealth(), Buy 10 health (10 gold)
 buyWeapon(), Buy weapon (30 gold) 
 goTown(), Go to town square
 
+
+
 On pressing "Go to cave", goCave() (2nd btn)
 ds btns showed with associated text:
 
@@ -239,15 +243,17 @@ fightSlime(), Fight slime
 fightBeast(), Fight fanged beast   
 goTown(), Go to town square
 
+
+
 btns: fightSlime, fightBeast, fightDragon(3rd btn)
 calls goFight() wc diplays: 
 attack(), Attack
 dodge(), Dodge
 goTown(), Run:
 
-attack, (calls lose(), winGame(), defeatMonster())
-dodge, 
-goTown
+Attack, (calls lose(), winGame(), defeatMonster())
+Dodge calls dodge(), 
+Run calls goTown()
 
 
 defeatMonster calls these:
