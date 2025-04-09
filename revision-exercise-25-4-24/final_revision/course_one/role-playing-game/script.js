@@ -225,13 +225,16 @@ goStore,
 goCave, 
 fightDragon,
 
-On pressing, "Go to store", goStore(1st btn), 
+On pressing, "Go to store", goStore() (1st btn), 
 ds btns showed with associated text:
+
 buyHealth(), Buy 10 health (10 gold) 
 buyWeapon(), Buy weapon (30 gold) 
 goTown(), Go to town square
 
-On pressing Go to cave(2nd btn):
+On pressing "Go to cave", goCave() (2nd btn)
+ds btns showed with associated text:
+
 fightSlime, 
 fightBeast, 
 goTown
