@@ -319,7 +319,9 @@ function buyHealth() {
  *       0                     1                   3
 
 
- *    1st click: values changes after each click and nt before
+    values changes after each 
+    click and nt before;
+ *    1st click: 
  *       1                     2                   3
  
 
@@ -339,7 +341,9 @@ function buyHealth() {
  */
 
 function buyWeapon() {
+    // if currentWeapon[0, 1, 2, 3] < weapons.length(3)
     if (currentWeapon < weapons.length - 1) {
+        // if gold >= 30
         if (gold >= 30) {
             gold -= 30;
 
