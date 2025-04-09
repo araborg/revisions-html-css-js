@@ -371,6 +371,7 @@ function buyWeapon() {
 }
 
 function sellWeapon() {
+    // d inventory (weapon collection) must av atleast 1 weapon.
     if (inventory.length > 1) {
         gold += 15;
 
