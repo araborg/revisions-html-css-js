@@ -6,7 +6,7 @@ let xp = 0;
 let playerHealth = 100;
 
 // let gold = 50;
-let gold = 1050;
+let gold = 50;
 
 // current weapon index
 let currentWeapon = 0;
@@ -309,7 +309,7 @@ function buyHealth() {
     if (gold >= 10) {
         // remove 10 golds 4rm gold & add 10 health to health
         gold -= 10;
-        health += 10;
+        playerHealth += 10;
 
         // update d UI for both gold and health
         goldText.innerText = gold;
