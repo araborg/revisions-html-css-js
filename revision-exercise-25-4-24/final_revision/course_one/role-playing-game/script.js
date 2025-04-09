@@ -306,6 +306,8 @@ function buyHealth() {
         // update d UI for both player's gold and health
         goldText.innerText = gold;
         healthText.innerText = playerHealth;
+
+        //
     } else {
         text.innerText = "You do not have enough gold to buy health.";
     }
