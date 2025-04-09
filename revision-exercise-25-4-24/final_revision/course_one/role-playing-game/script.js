@@ -36,9 +36,7 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-// modem 09058603826
-
-// provided weapons
+// provided (4) weapons
 const weapons = [
     // index: 0
     {
@@ -47,7 +45,6 @@ const weapons = [
     },
 
     // index: 1
-
     {
         name: "dagger",
         power: 30,
@@ -66,7 +63,7 @@ const weapons = [
     },
 ];
 
-// dse r monsters but dragon is vip
+// dse r (3) monsters but dragon is vip
 const monsters = [
     {
         name: "slime",
