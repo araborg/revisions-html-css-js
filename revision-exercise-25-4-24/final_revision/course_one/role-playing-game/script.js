@@ -317,20 +317,24 @@ function buyHealth() {
  *   currentWeapon        inventory.length    weapons.length - 1
  *    initial stage:
  *       0                     1                   3
- *
- *  ===============================
- *
- *    1st click:
+
+
+ *    1st click: values changes after each click and nt before
  *       1                     2                   3
- *
+ 
+
  *    2nd click:
  *       2                     3                   3
- *
+ 
+
  *    3rd click:
  *       3                     4                    3
- *
+ 
+
  *    4th click:
- *       4  :(currentWeapon (3) < (weapons.length - 1) (3): false)
+ *       3  :(currentWeapon (3) < (weapons.length - 1) (3): false)
+ 
+ 
  *
  */
 
