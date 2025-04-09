@@ -5,10 +5,10 @@ let xp = 0;
 // initial value of player's health
 let playerHealth = 100;
 
-// let gold = 50;
+// initial gold value
 let gold = 50;
 
-// current weapon index
+// current weapon index: wc new weapon did u buy?
 let currentWeapon = 0;
 
 // monster index: wc monster r u fighting?
