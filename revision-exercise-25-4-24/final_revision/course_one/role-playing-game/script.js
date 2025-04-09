@@ -67,18 +67,21 @@ const weapons = [
 
 // dse r (3) monsters but dragon is vip
 const monsters = [
+    // index: 0
     {
         name: "slime",
         level: 2,
         health: 15,
     },
 
+    // index: 1
     {
         name: "fanged beast",
         level: 8,
         health: 60,
     },
 
+    // index: 2
     {
         name: "dragon",
         level: 20,
