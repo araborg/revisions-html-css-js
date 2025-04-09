@@ -373,8 +373,10 @@ function buyWeapon() {
 function sellWeapon() {
     // d inventory (weapon collection) must av atleast 1 weapon.
     if (inventory.length > 1) {
+        // for 1 weapon add 15 golds
         gold += 15;
 
+        // remove weapon from d front i.e index[0]
         let currentWeapon = inventory.shift();
 
         // update UI
