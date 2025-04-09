@@ -355,11 +355,13 @@ function buyWeapon() {
                 and 3 weaons r expected to be added to inventory
                 to mk a total of 4 weapons.
 
+                true:
                 1st click: currentWeapon = 0
                 2nd click: currentWeapon = 1
                 3rd click: currentWeapon = 2
-                
-                4th click: currentWeapon = 3 (false)
+
+                false:
+                4th click: currentWeapon = 3 
             */
 
             currentWeapon++;
