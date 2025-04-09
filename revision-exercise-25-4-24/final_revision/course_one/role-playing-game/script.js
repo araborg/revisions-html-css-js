@@ -194,7 +194,7 @@ const locations = [
     },
 ];
 
-// btns fxns calls
+// btns fxns calls: dse fxns will be called wn d btns r clicked
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
