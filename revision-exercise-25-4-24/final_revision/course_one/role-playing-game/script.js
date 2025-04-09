@@ -336,7 +336,7 @@ function buyHealth() {
 */
 
 function buyWeapon() {
-    // if currentWeapon[0, 1, 2, 3] < weapons.length(3)
+    // if currentWeapon[0, 1, 2] < weapons.length(3)
     if (currentWeapon < weapons.length - 1) {
         // if gold >= 30
         if (gold >= 30) {
@@ -354,9 +354,13 @@ function buyWeapon() {
 
             //
         } else {
+            // if gold < 30
+
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
     } else {
+        // if currentWeapon === 3
+
         text.innerText = "You already have the most powerful weapon!";
 
         button2.innerText = "Sell weapon for 15 gold";
