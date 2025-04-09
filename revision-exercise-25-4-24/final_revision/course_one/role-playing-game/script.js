@@ -273,6 +273,10 @@ pickTwo,
 pickEight, 
 goTown,
 
+
+N.B: goTown() text can either be 
+"Go to town square" or Run
+
 */
 
 // =======================================
