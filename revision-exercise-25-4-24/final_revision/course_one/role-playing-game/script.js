@@ -38,7 +38,7 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 // display text e.g: Welcome to Dragon Repeller.....
 const text = document.querySelector("#text");
 
-// provided (4) weapons
+// provided (4) weapons with: name, power
 const weapons = [
     // index: 0
     {
@@ -65,7 +65,7 @@ const weapons = [
     },
 ];
 
-// dse r (3) monsters but dragon is vip
+// dse r (3) monsters with: name, level, health but dragon is vip
 const monsters = [
     // index: 0
     {
