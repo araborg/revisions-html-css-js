@@ -365,6 +365,7 @@ function buyWeapon() {
         text.innerText = "You already have the most powerful weapon!";
         button2.innerText = "Sell weapon for 15 gold";
 
+        // change d fxn of button2 wn d condition in if statemt is met
         button2.onclick = sellWeapon;
     }
 }
