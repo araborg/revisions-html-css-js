@@ -446,12 +446,13 @@ function attack() {
         while levels r: 2, 8, 20.
     
         number is passed into: getMonsterAttackValue()
-        
+
         getMonsterAttackValue(): means d effect d monser 
         has on d player
     */
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
+    // isMonsterHit(): means d effect d player has on d monsters
     if (isMonsterHit()) {
         /* monsterHealth r: 15, 60, 300
 
@@ -504,7 +505,7 @@ function getMonsterAttackValue(level) {
 function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
-    return randomNum || playerHealth < 60;
+    return randomNum || playerHealth < 20;
 }
 
 function dodge() {
