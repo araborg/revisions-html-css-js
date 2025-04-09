@@ -30,13 +30,13 @@ const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 
-// display text e.g: Welcome to Dragon Repeller.....
-const text = document.querySelector("#text");
-
 // hidden elements
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+
+// display text e.g: Welcome to Dragon Repeller.....
+const text = document.querySelector("#text");
 
 // provided (4) weapons
 const weapons = [
