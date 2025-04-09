@@ -30,7 +30,7 @@ const xpText = document.querySelector("#xpText");
 const healthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 
-// display text
+// display text e.g: Welcome to Dragon Repeller.....
 const text = document.querySelector("#text");
 
 // hidden elements
