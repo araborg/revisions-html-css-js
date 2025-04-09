@@ -235,9 +235,9 @@ goTown(), Go to town square
 On pressing "Go to cave", goCave() (2nd btn)
 ds btns showed with associated text:
 
-fightSlime, 
-fightBeast, 
-goTown
+fightSlime(), Fight slime 
+fightBeast(), Fight fanged beast   
+goTown(), Go to town square
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn)
 calls goFight() then attack(), dodge(), run/goTown():
