@@ -442,7 +442,10 @@ function attack() {
     /* 
         reduce player's health wc r: 15, 60, 300
 
-        while levels r: 2, 8, 20 */
+        while levels r: 2, 8, 20.
+    
+        number is passed into: getMonsterAttackValue()
+    */
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
