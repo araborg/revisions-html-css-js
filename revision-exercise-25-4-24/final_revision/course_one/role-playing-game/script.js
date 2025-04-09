@@ -89,6 +89,16 @@ const monsters = [
     },
 ];
 
+/*
+    Initial version of the buttons just like in location[0]:
+    
+    <div id="controls">
+        <button id="button1"> Go to store </button>
+        <button id="button2"> Go to cave </button>
+        <button id="button3"> Fight dragon </button>
+    </div>
+*/
+
 // locations
 const locations = [
     // index: 0
@@ -96,15 +106,6 @@ const locations = [
         name: "town square",
 
         "button text": ["Go to store", "Go to cave", "Fight dragon"],
-
-        /*
-            Initial version of the buttons:
-            <div id="controls">
-                <button id="button1"> Go to store </button>
-                <button id="button2"> Go to cave </button>
-                <button id="button3"> Fight dragon </button>
-            </div>
-        */
 
         "button functions": [goStore, goCave, fightDragon],
 
