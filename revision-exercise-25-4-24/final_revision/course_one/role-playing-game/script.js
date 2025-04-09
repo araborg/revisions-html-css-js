@@ -439,8 +439,10 @@ function goFight() {
 function attack() {
     text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
 
-    /* reduce monster health: 15, 60, 300
-    while levels r: 2, 8, 20 */
+    /* 
+        reduce player's health wc r: 15, 60, 300
+
+        while levels r: 2, 8, 20 */
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     if (isMonsterHit()) {
