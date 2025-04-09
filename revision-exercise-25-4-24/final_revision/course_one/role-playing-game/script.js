@@ -297,6 +297,7 @@ function goTown() {
 }
 
 function buyHealth() {
+    // if gold >= 10
     if (gold >= 10) {
         // remove 10 golds 4rm gold & add 10 health to health
         gold -= 10;
