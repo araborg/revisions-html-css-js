@@ -1,4 +1,4 @@
-// d experience,xp
+// d experience, xp += monsters[fighting].level;
 let xp = 0;
 
 // initial value of monster health
