@@ -408,6 +408,7 @@ function fightDragon() {
     goFight();
 }
 
+// goFight(): only update d UI
 function goFight() {
     // locations[3]:  fxns: attack(), dodge(), goTown()
     update(locations[3]);
@@ -445,6 +446,9 @@ function attack() {
         while levels r: 2, 8, 20.
     
         number is passed into: getMonsterAttackValue()
+        
+        getMonsterAttackValue(): means d effect d monser 
+        has on d player
     */
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
