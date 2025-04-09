@@ -1,3 +1,5 @@
+/*
+
 // levels r: 2, 8, 20,
 // d experience, xp += monsters[fighting].level;
 let xp = 0;
@@ -97,7 +99,7 @@ const monsters = [
         <button id="button2"> Go to cave </button>
         <button id="button3"> Fight dragon </button>
     </div>
-*/
+
 
 // locations: what to display and what to do wn a btn is pressed.
 const locations = [
@@ -277,7 +279,7 @@ goTown,
 N.B: goTown() text can either be 
 "Go to town square" or Run
 
-*/
+
 
 // =======================================
 
@@ -333,7 +335,7 @@ function buyHealth() {
     false:
     4th click: currentWeapon = 3 (3 < 3)
     
-*/
+
 
 function buyWeapon() {
     // if currentWeapon[0, 1, 2] < weapons.length(3)
@@ -435,7 +437,7 @@ function goFight() {
  * winGame()
  * defeatMonster()
  
-*/
+
 
 function attack() {
     text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
@@ -449,14 +451,15 @@ function attack() {
 
         getMonsterAttackValue(): means d effect d monser 
         has on d player
-    */
+    
+
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     // isMonsterHit(): means d effect d player has on d monsters
     if (isMonsterHit()) {
         /* monsterHealth r: 15, 60, 300
 
-           weapon powers r: 5, 30, 50, 100 */
+           weapon powers r: 5, 30, 50, 100 
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     } else {
@@ -496,7 +499,7 @@ function getMonsterAttackValue(level) {
        xp += monsters[fighting].level;
     
        available monsters level: 2, 8, 20
-    */
+    
 
     const hit = level * 5 - Math.floor(Math.random() * xp);
 
@@ -545,7 +548,7 @@ function defeatMonster() {
 
         "button functions": [goTown, goTown, easterEgg],
 
-    */
+    
     update(locations[4]);
 }
 
@@ -555,7 +558,7 @@ function defeatMonster() {
  * winGame()
  * lose()
 
-*/
+
 
 // used in indexes: 5 & 6
 function restart() {
@@ -588,7 +591,7 @@ function restart() {
  "button text": ["2", "8", "Go to town square?"],
  "button functions": [pickTwo, pickEight, goTown],
     
-*/
+
 
 function easterEgg() {
     update(locations[7]);
@@ -633,8 +636,11 @@ function pickEight() {
     pick(8);
 }
 
+
+*/
+
 // =========== revise ============
-/*
+
 let xp = 0;
 let health = 100;
 let gold = 50;
@@ -791,4 +797,3 @@ function pickTwo() {}
 function pickEight() {}
 
 function pick(guess) {}
-*/
