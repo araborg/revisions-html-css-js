@@ -424,10 +424,12 @@ function goFight() {
 }
 
 /**
- 
  * attack() calls:
+ 
  * getMonsterAttackValue(level)
+
  * isMonsterHit()
+
  * lose()
  * winGame()
  * defeatMonster()
