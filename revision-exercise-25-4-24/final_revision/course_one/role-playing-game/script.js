@@ -409,7 +409,7 @@ function fightDragon() {
 }
 
 function goFight() {
-    // locations[3]:  fxns: [attack, dodge, goTown]
+    // locations[3]:  fxns: attack(), dodge(), goTown()
     update(locations[3]);
 
     // get d health of d monster wc meant to reduce as fighting continue
