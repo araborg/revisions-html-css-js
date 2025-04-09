@@ -558,9 +558,7 @@ function winGame() {
 
 function defeatMonster() {
     // levels: 2, 8, 20,
-
     const impact = monsters[fighting].level * 6.7;
-    console.log(impact);
 
     gold += Math.floor(impact);
     xp += monsters[fighting].level;
