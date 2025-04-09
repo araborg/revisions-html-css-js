@@ -17,7 +17,7 @@ let fighting;
 // initial monster health: 15, 60, 300
 let monsterHealth;
 
-// weapon collections
+// weapon collections with index: 0 and length: 1
 let inventory = ["stick"];
 
 // btns
