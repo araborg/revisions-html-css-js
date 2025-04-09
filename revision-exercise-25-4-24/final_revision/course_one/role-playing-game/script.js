@@ -194,6 +194,8 @@ const locations = [
     },
 ];
 
+// N.B: .onclick() method:
+
 // btns fxns calls: dse fxns will be called wn d btns r clicked
 button1.onclick = goStore;
 button2.onclick = goCave;
