@@ -240,7 +240,10 @@ fightBeast(), Fight fanged beast
 goTown(), Go to town square
 
 btns: fightSlime, fightBeast, fightDragon(3rd btn)
-calls goFight() then attack(), dodge(), run/goTown():
+calls goFight() wc diplays: 
+attack(), Attack
+dodge(), Dodge
+goTown(), Run:
 
 attack, (calls lose(), winGame(), defeatMonster())
 dodge, 
