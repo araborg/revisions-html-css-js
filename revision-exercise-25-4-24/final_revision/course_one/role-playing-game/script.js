@@ -1,7 +1,8 @@
+// levels r: 2, 8, 20,
 // d experience, xp += monsters[fighting].level;
 let xp = 0;
 
-// initial value of monster health
+// initial value of player's health
 let playerHealth = 100;
 
 // let gold = 50;
