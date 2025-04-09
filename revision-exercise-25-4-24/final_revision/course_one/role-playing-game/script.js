@@ -370,25 +370,6 @@ function sellWeapon() {
     }
 }
 
-/*
-
-2nd btn: Go to cave
-fightSlime, 
-fightBeast, 
-goTown
-
-btns: fightSlime, fightBeast, fightDragon(3rd btn),
-attack, (calls defeatMonster, lose, winGame)
-dodge, 
-goTown
-
-fightSlime(), fightBeast() calls attack(), dodge(),
-and goTown()
-
-fightDragon() calls attack(), dodge(), and goTown()
-
-*/
-
 function fightSlime() {
     // fight monster at index: 0 i.e slime
     fighting = 0;
@@ -409,16 +390,6 @@ function fightDragon() {
 
     goFight();
 }
-
-/*
-
-goFight() is called in:
-fightSlime()
-fightBeast()
-fightDragon()
-
-and all dse calls: [attack, dodge, goTown]
-*/
 
 function goFight() {
     // locations[3]:  fxns: [attack, dodge, goTown]
@@ -442,7 +413,8 @@ function goFight() {
  * winGame()
  * defeatMonster()
  
- */
+*/
+
 function attack() {
     text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
 
@@ -465,7 +437,7 @@ function attack() {
     if (playerHealth <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
-        // for dragon: fighting = 2 & u will only wn u kill dragon
+        // for dragon: fighting = 2 & u will only win wn u kill dragon
         if (fighting === 2) {
             winGame();
         } else {
@@ -486,6 +458,7 @@ function getMonsterAttackValue(level) {
        d product of random num & xp from 5 * level. 
 
        xp: increase only wn a monster is deafeated
+       xp += monsters[fighting].level;
     
        available monsters level: 2, 8, 20
     */
@@ -504,37 +477,9 @@ function dodge() {
     text.innerText = `You dodge the attack from the ${monsters[fighting].name}.`;
 }
 
-/**
- * index: 5
- * 
-    {
-        name: "lose",
-
-        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
-        "button functions": [restart, restart, restart],
-
-        text: "You die. &#x2620;",
-    },
-
-*/
-
 function lose() {
     update(locations[5]);
 }
-
-/**
- *  index: 6
- * 
-    {
-        name: "win",
-
-        "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
-        "button functions": [restart, restart, restart],
-
-        text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
-    },
-
-*/
 
 function winGame() {
     update(locations[6]);
@@ -604,8 +549,8 @@ function restart() {
  * 
  * index: 7
    
-    "button text": ["2", "8", "Go to town square?"],
-    "button functions": [pickTwo, pickEight, goTown],
+ "button text": ["2", "8", "Go to town square?"],
+ "button functions": [pickTwo, pickEight, goTown],
     
 */
 
