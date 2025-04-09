@@ -412,11 +412,11 @@ function goFight() {
     // locations[3]:  fxns: attack(), dodge(), goTown()
     update(locations[3]);
 
-    // get d health of d monster wc meant to reduce as fighting continue
-    monsterHealth = monsters[fighting].health;
-
     // display hidden elemts: monsterStats
     monsterStats.style.display = "block";
+
+    // get d health of d monster wc meant to reduce as fighting continue
+    monsterHealth = monsters[fighting].health;
 
     // update UI: monsterName, monsterHealthText
     monsterName.innerText = monsters[fighting].name;
@@ -450,6 +450,7 @@ function attack() {
 
     if (isMonsterHit()) {
         /* monsterHealth r: 15, 60, 300
+
            weapon powers r: 5, 30, 50, 100 */
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
