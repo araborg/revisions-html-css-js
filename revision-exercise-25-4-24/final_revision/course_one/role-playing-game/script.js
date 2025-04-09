@@ -277,53 +277,18 @@ goTown,
 
 // =======================================
 
-/*
-
-starting btns:
-goStore, 
-goCave, 
-fightDragon,
-
-1st btn: Go to store
-buyHealth, 
-buyWeapon, 
-goTown
-
-*/
-
 function goStore() {
     update(locations[1]);
 }
-
-/*
-2nd btn: Go to cave
-fightSlime, 
-fightBeast, 
-goTown
-*/
 
 function goCave() {
     update(locations[2]);
 }
 
-/*
-returns us back to starting btns:
-goStore, 
-goCave, 
-fightDragon,
-*/
-
 function goTown() {
     update(locations[0]);
 }
 
-/*
-These (buyHealth(), buyWeapon())
-are called by goStore().
-
-buyWeapon() calls sellWeapon()
-
-*/
 function buyHealth() {
     if (gold >= 10) {
         // remove 10 golds 4rm gold & add 10 health to health
@@ -355,8 +320,8 @@ function buyHealth() {
  *       3                     4                    3
  *
  *    4th click:
- *       4  :(current = inventory.shift()Weapon
- * (3) < weapons.length - 1 (3): false)
+ *       4  :(currentWeapon (3) < (weapons.length - 1) (3): false)
+ *
  */
 
 function buyWeapon() {
