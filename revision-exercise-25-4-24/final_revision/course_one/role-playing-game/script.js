@@ -91,7 +91,7 @@ const monsters = [
 
 /*
     Initial version of the buttons just like in location[0]:
-    
+
     <div id="controls">
         <button id="button1"> Go to store </button>
         <button id="button2"> Go to cave </button>
@@ -99,7 +99,7 @@ const monsters = [
     </div>
 */
 
-// locations
+// locations: what to display and what to do wn a btn is pressed.
 const locations = [
     // index: 0
     {
