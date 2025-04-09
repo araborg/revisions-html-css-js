@@ -349,9 +349,10 @@ function buyWeapon() {
 
             /* 
                 currentWeapon only increase after each click. 
-                i.e. click b4 increase in currentWeapon. Only 
-                3 clicks r allow b4 currentWeapon === 3 and
-                3 weaons r expected to be added to inventory
+                i.e. click b4 increase in currentWeapon. 
+                
+                Only 3 clicks r allowed b4 currentWeapon === 3 
+                and 3 weaons r expected to be added to inventory
                 to mk a total of 4 weapons
             */
 
