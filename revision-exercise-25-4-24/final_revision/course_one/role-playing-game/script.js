@@ -561,7 +561,7 @@ function defeatMonster() {
 function restart() {
     // update UI: return it back to initial values
     xp = 0;
-    health = 100;
+    playerHealth = 100;
     gold = 50;
     currentWeapon = 0;
     inventory = ["stick"];
