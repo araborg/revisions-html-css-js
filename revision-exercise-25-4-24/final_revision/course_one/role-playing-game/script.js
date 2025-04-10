@@ -837,8 +837,6 @@ function buyWeapon() {
             // update UI
             goldText.innerText = gold;
             text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${inventory}`;
-
-            // console.log(newWeapon);
         } else {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
