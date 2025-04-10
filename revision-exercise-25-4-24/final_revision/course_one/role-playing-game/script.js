@@ -675,18 +675,21 @@ const weapons = [
 ];
 
 const monsters = [
+        // index = 0
     {
         name: "slime",
         level: 2,
         health: 15,
     },
 
+        // index = 1
     {
         name: "fanged beast",
         level: 8,
         health: 60,
     },
 
+        // index = 2
     {
         name: "dragon",
         level: 20,
@@ -695,6 +698,7 @@ const monsters = [
 ];
 
 const locations = [
+    // index = 0
     {
         name: "town square",
         "button text": ["Go to store", "Go to cave", "Fight dragon"],
@@ -774,6 +778,10 @@ function updateUI(location) {
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
+
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
 }
 
 // name: "town square",
@@ -781,17 +789,17 @@ function goTown() {
     updateUI(locations[0]);
 }
 
-// goTown();
 
 // name: "store",
 function goStore() {
     updateUI(locations[1]);
 }
 
-// goStore();
 
 // name: "cave",
-function goCave() {}
+function goCave() {
+    updateUI(locations[])
+}
 
 function buyHealth() {}
 
