@@ -765,7 +765,7 @@ const locations = [
 ];
 
 // add Events to d btns
-// button1.onclick = goStore;
+button1.onclick = goStore;
 
 // update UI
 function updateUI(location) {
