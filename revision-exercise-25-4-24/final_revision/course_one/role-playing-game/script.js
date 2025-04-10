@@ -643,7 +643,8 @@ function pickEight() {
 
 let xp = 0;
 let playerHealth = 100;
-let gold = 50;
+// let gold = 50;
+let gold = 500;
 
 let currentWeapon = 0;
 
