@@ -767,10 +767,13 @@ const locations = [
 // add Events to d btns
 button1.onclick = goStore;
 button2.onclick = goCave;
+button3.onclick = fightDragon;
 
 // update UI
 function updateUI(location) {
-    console.log(location);
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
 }
 
 // name: "town square",
@@ -800,7 +803,9 @@ function fightSlime() {}
 
 function fightBeast() {}
 
-function fightDragon() {}
+function fightDragon() {
+    // updateUI(locations[])
+}
 
 function goFight() {}
 
