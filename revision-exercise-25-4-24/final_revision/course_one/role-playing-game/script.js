@@ -831,21 +831,11 @@ function buyWeapon() {
             currentWeapon++;
 
             const newWeapon = weapons[currentWeapon].name;
-            inventory.unshift(" " + newWeapon);
-
-            // console.log(inventory);
-
-            // const spacedInventory = inventory.map((invent) => {
-            //     const weapon = invent.split(",").join(", ");
-
-            //     console.log(weapon);
-            // });
-            // console.log(spacedInventory);
-
-            text.innerText = `You now have a ${newWeapon}. In your inventory you have: `;
+            inventory.push("  " + newWeapon);
 
             // update UI
             goldText.innerText = gold;
+            text.innerText = `You now have a ${newWeapon}. In your inventory you have: ${inventory}`;
 
             // console.log(newWeapon);
         } else {
