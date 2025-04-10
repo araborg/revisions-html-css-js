@@ -766,6 +766,7 @@ const locations = [
 
 // add Events to d btns
 button1.onclick = goStore;
+button2.onclick = goCave;
 
 // update UI
 function updateUI(location) {
