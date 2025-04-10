@@ -642,7 +642,7 @@ function pickEight() {
 // =========== revise ============
 
 let xp = 0;
-let health = 100;
+let playerHealth = 100;
 let gold = 50;
 
 let currentWeapon = 0;
@@ -657,7 +657,7 @@ const button3 = document.querySelector("#button3");
 
 const text = document.querySelector("#text");
 const xpText = document.querySelector("#xpText");
-const healthText = document.querySelector("#healthText");
+const playerHealthText = document.querySelector("#healthText");
 const goldText = document.querySelector("#goldText");
 
 const monsterStats = document.querySelector("#monsterStats");
@@ -812,7 +812,15 @@ function goCave() {
     updateUI(locations[2]);
 }
 
-function buyHealth() {}
+function buyHealth() {
+    if (gold >= 30) {
+        gold -= 30;
+        playerHealth += 10;
+
+        goldText.innerText = gold;
+        playerHealthText.innerText = playerHealth;
+    }
+}
 
 function buyWeapon() {}
 
