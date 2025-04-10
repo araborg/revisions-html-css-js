@@ -843,6 +843,9 @@ function buyWeapon() {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
     } else {
+        button2.innerText = "Sell weapon for 15 gold Go to town square";
+
+        button2.onclick = sellWeapon;
     }
 }
 
