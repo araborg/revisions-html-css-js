@@ -854,7 +854,11 @@ function sellWeapon() {
 
         const soldWeapon = inventory.shift();
 
+        // update UI
+        goldText.innerText = gold;
         text.innerText = `You sold a ${soldWeapon}. In your inventory you have: ${inventory}`;
+    } else {
+        text.innerText = "Don't sell your only weapon!";
     }
 }
 
