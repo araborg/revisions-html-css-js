@@ -665,31 +665,35 @@ const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
 const weapons = [
+    // index = 0
     { name: "stick", power: 5 },
 
+    // index = 1
     { name: "dagger", power: 30 },
 
+    // index = 2
     { name: "claw hammer", power: 50 },
 
+    // index = 3
     { name: "sword", power: 100 },
 ];
 
 const monsters = [
-        // index = 0
+    // index = 0
     {
         name: "slime",
         level: 2,
         health: 15,
     },
 
-        // index = 1
+    // index = 1
     {
         name: "fanged beast",
         level: 8,
         health: 60,
     },
 
-        // index = 2
+    // index = 2
     {
         name: "dragon",
         level: 20,
@@ -706,6 +710,7 @@ const locations = [
         text: 'You are in the town square. You see a sign that says "Store".',
     },
 
+    // index = 1
     {
         name: "store",
         "button text": [
@@ -717,6 +722,7 @@ const locations = [
         text: "You enter the store.",
     },
 
+    // index = 2
     {
         name: "cave",
         "button text": [
@@ -728,6 +734,7 @@ const locations = [
         text: "You enter the cave. You see some monsters.",
     },
 
+    // index = 3
     {
         name: "fight",
         "button text": ["Attack", "Dodge", "Run"],
@@ -735,6 +742,7 @@ const locations = [
         text: "You are fighting a monster.",
     },
 
+    // index = 4
     {
         name: "kill monster",
         "button text": [
@@ -746,6 +754,7 @@ const locations = [
         "button functions": [goTown, goTown, easterEgg],
     },
 
+    // index = 5
     {
         name: "lose",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
@@ -753,6 +762,7 @@ const locations = [
         text: "You die. &#x2620;",
     },
 
+    // index = 6
     {
         name: "win",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
@@ -760,6 +770,7 @@ const locations = [
         text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
     },
 
+    // index = 7
     {
         name: "easter egg",
         "button text": ["2", "8", "Go to town square?"],
@@ -789,16 +800,14 @@ function goTown() {
     updateUI(locations[0]);
 }
 
-
 // name: "store",
 function goStore() {
     updateUI(locations[1]);
 }
 
-
 // name: "cave",
 function goCave() {
-    updateUI(locations[])
+    updateUI(locations[2]);
 }
 
 function buyHealth() {}
