@@ -831,7 +831,7 @@ function buyWeapon() {
             currentWeapon++;
 
             const newWeapon = weapons[currentWeapon].name;
-            inventory.unshift(newWeapon);
+            inventory.unshift(" " + newWeapon);
 
             // console.log(inventory);
 
@@ -847,7 +847,7 @@ function buyWeapon() {
             // update UI
             goldText.innerText = gold;
 
-            console.log(newWeapon);
+            // console.log(newWeapon);
         } else {
             text.innerText = "You do not have enough gold to buy a weapon.";
         }
