@@ -848,7 +848,15 @@ function buyWeapon() {
     }
 }
 
-function sellWeapon() {}
+function sellWeapon() {
+    if (inventory.length > 1) {
+        gold += 15;
+
+        const soldWeapon = inventory.shift();
+
+        text.innerText = `You sold a ${soldWeapon}. In your inventory you have: ${inventory}`;
+    }
+}
 
 function fightSlime() {}
 
