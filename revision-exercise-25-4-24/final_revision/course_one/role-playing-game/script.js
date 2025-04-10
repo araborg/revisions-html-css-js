@@ -825,8 +825,18 @@ function buyHealth() {
 }
 
 function buyWeapon() {
-    if() {}else {
-        text.innerText="You do not have enough gold to buy a weapon."
+    if (currentWeapon < weapons.length - 1) {
+        if (gold >= 30) {
+            gold -= 30;
+            currentWeapon++;
+
+            const newWeapon = weapons[currentWeapon].name;
+
+            console.log(newWeapon);
+        } else {
+            text.innerText = "You do not have enough gold to buy a weapon.";
+        }
+    } else {
     }
 }
 
