@@ -835,12 +835,12 @@ function buyWeapon() {
 
             // console.log(inventory);
 
-            const spacedInventory = inventory.map((invent) => {
-                const weapon = invent.split(",").join(", ");
+            // const spacedInventory = inventory.map((invent) => {
+            //     const weapon = invent.split(",").join(", ");
 
-                console.log(weapon);
-            });
-            console.log(spacedInventory);
+            //     console.log(weapon);
+            // });
+            // console.log(spacedInventory);
 
             text.innerText = `You now have a ${newWeapon}. In your inventory you have: `;
 
