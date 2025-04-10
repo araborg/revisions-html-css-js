@@ -813,14 +813,14 @@ function goCave() {
 }
 
 function buyHealth() {
-    if (gold <= 0) {
+    if (gold >= 10) {
         gold -= 10;
         playerHealth += 10;
 
         goldText.innerText = gold;
         playerHealthText.innerText = playerHealth;
     } else {
-        text.innerText += "You do not have enough gold to buy health.";
+        text.innerText = "You do not have enough gold to buy health.";
     }
 }
 
