@@ -859,6 +859,8 @@ function sellWeapon() {
         text.innerText = `You sold a ${soldWeapon}. In your inventory you have: ${inventory}`;
     } else {
         text.innerText = "Don't sell your only weapon!";
+
+        goTown();
     }
 }
 
