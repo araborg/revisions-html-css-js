@@ -824,7 +824,11 @@ function buyHealth() {
     }
 }
 
-function buyWeapon() {}
+function buyWeapon() {
+    if() {}else {
+        text.innerText="You do not have enough gold to buy a weapon."
+    }
+}
 
 function sellWeapon() {}
 
