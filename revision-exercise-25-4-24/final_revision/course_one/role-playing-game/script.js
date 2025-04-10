@@ -866,6 +866,8 @@ function sellWeapon() {
             // button2.onclick = goTown;
         }
     }
+
+    console.log(currentWeapon);
 }
 
 function fightSlime() {}
