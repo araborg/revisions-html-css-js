@@ -680,11 +680,13 @@ const monsters = [
         level: 2,
         health: 15,
     },
+
     {
         name: "fanged beast",
         level: 8,
         health: 60,
     },
+
     {
         name: "dragon",
         level: 20,
@@ -699,6 +701,7 @@ const locations = [
         "button functions": [goStore, goCave, fightDragon],
         text: 'You are in the town square. You see a sign that says "Store".',
     },
+
     {
         name: "store",
         "button text": [
@@ -709,6 +712,7 @@ const locations = [
         "button functions": [buyHealth, buyWeapon, goTown],
         text: "You enter the store.",
     },
+
     {
         name: "cave",
         "button text": [
@@ -719,12 +723,14 @@ const locations = [
         "button functions": [fightSlime, fightBeast, goTown],
         text: "You enter the cave. You see some monsters.",
     },
+
     {
         name: "fight",
         "button text": ["Attack", "Dodge", "Run"],
         "button functions": [attack, dodge, goTown],
         text: "You are fighting a monster.",
     },
+
     {
         name: "kill monster",
         "button text": [
@@ -735,18 +741,21 @@ const locations = [
         text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
         "button functions": [goTown, goTown, easterEgg],
     },
+
     {
         name: "lose",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You die. &#x2620;",
     },
+
     {
         name: "win",
         "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
         "button functions": [restart, restart, restart],
         text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
     },
+
     {
         name: "easter egg",
         "button text": ["2", "8", "Go to town square?"],
