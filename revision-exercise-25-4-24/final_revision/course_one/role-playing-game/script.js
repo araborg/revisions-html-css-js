@@ -764,12 +764,21 @@ const locations = [
     },
 ];
 
-function update(location) {}
+function updateUI(location) {
+    console.log(location);
+}
 
-function goTown() {}
+// name: "town square",
+function goTown() {
+    updateUI(locations[0]);
+}
 
+goTown();
+
+// name: "store",
 function goStore() {}
 
+// name: "cave",
 function goCave() {}
 
 function buyHealth() {}
