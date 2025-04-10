@@ -764,6 +764,10 @@ const locations = [
     },
 ];
 
+// add Events to d btns
+// button1.onclick = goStore;
+
+// update UI
 function updateUI(location) {
     console.log(location);
 }
@@ -773,10 +777,14 @@ function goTown() {
     updateUI(locations[0]);
 }
 
-goTown();
+// goTown();
 
 // name: "store",
-function goStore() {}
+function goStore() {
+    updateUI(locations[1]);
+}
+
+// goStore();
 
 // name: "cave",
 function goCave() {}
