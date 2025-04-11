@@ -862,11 +862,12 @@ function sellWeapon() {
         text.innerText = "Don't sell your only weapon!";
 
         // temporarily change currentWeapon to below 0
-        let localCurrentWeapon = currentWeapon--;
+        let localCurrentWeapon = 0;
 
-        // localCurrentWeapon--;
+        localCurrentWeapon--;
+        console.log(localCurrentWeapon);
 
-        if (localCurrentWeapon < 0) {
+        if (localCurrentWeapon === -2) {
             goTown();
         }
     }
