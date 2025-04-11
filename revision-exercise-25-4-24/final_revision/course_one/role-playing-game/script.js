@@ -902,17 +902,6 @@ function goFight() {
 }
 
 function attack() {
-    // console.log(fighting);
-    // monsterHealth = monsters[fighting].health;
-    // console.log("attack()" + monsterHealth);
-    // check player health
-
-    // check monster health
-
-    // u win if monster = dragon
-
-    // else u defeat monster
-
     if (playerHealth > 0) {
         playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
