@@ -897,10 +897,8 @@ function goFight() {
 }
 
 function attack() {
-    console.log("attack");
-
     if (playerHealth >= 0) {
-        text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon]}.`;
+        text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
     }
 }
