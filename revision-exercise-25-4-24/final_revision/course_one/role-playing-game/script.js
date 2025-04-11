@@ -1019,7 +1019,7 @@ function pick(guess) {
 
         gold += 20;
 
-        console.log(gold);
+        console.log(typeof gold);
 
         goldText.innerText = gold;
     } else {
