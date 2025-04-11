@@ -976,6 +976,14 @@ function winGame() {
 }
 
 function restart() {
+    xp = 0;
+    playerHealth = 100;
+    gold = 50;
+
+    xpText.innerText = 0;
+    playerHealthText.innerText = playerHealth;
+    goldText.innerText = gold;
+
     updateUI(locations[0]);
 }
 
