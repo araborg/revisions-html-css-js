@@ -979,11 +979,11 @@ function dodge() {
 }
 
 function defeatMonster() {
-    console.log("defeatMonster");
+    gold += Math.floor(monsters[fighting].level * 6.7);
 }
 
 function lose() {
-    console.log("You lose");
+    updateUI(locations);
 }
 
 function winGame() {
