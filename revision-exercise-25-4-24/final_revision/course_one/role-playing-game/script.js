@@ -1008,6 +1008,12 @@ function pick(guess) {
         numbers.push(randomNumber);
     }
 
+    for (let num of numbers) {
+        text.innerText = `You picked ${guess}. Here are the random numbers:`;
+
+        text.innerText += `${numbers[num]} \n`;
+    }
+
     console.log(numbers);
 }
 
