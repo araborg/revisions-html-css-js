@@ -905,7 +905,7 @@ function attack() {
 
     // else u defeat monster
 
-    if (playerHealth >= 0) {
+    if (playerHealth > 0) {
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
         if (playerHealth <= 0) {
