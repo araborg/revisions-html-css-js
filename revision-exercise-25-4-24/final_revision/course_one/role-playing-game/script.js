@@ -908,6 +908,8 @@ function attack() {
     if (playerHealth > 0) {
         playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
+        monsterHealth = monsters[fighting].health;
+
         if (isMonsterHit()) {
             monsterHealth -=
                 weapons[currentWeapon].power +
@@ -923,6 +925,12 @@ function attack() {
     } else {
         if (playerHealth <= 0) {
             lose();
+        } else if (monsterHealth <= 0) {
+            if (fighting === 2) {
+                winGame();
+            } else {
+                defeatMonster();
+            }
         }
     }
 }
