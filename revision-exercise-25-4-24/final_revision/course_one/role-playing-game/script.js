@@ -1017,10 +1017,10 @@ function pick(guess) {
         goldText.innerText = gold;
 
         text.innerText += `Right! You win 20 gold!`;
-
-        console.log(playerHealth);
     } else {
         if (playerHealth > 0) {
+            console.log(playerHealth);
+
             playerHealth -= 10;
 
             console.log(playerHealth);
