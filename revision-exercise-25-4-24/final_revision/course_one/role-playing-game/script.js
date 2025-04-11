@@ -906,6 +906,10 @@ function attack() {
     // else u defeat monster
 
     if (playerHealth > 0) {
+        playerHealth -= getMonsterAttackValue(monsters[fighting].level);
+
+        console.log(playerHealth);
+
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
         if (playerHealth <= 0) {
