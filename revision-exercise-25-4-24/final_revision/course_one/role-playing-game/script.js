@@ -1020,7 +1020,7 @@ function pick(guess) {
         goldText.innerText = gold;
     }
 
-    console.log(numbers);
+    // console.log(numbers);
 }
 
 pick(8);
