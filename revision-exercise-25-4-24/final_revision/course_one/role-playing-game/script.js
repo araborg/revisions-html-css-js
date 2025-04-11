@@ -926,38 +926,9 @@ function attack() {
 
     console.log(monsterHealth, playerHealth);
 
-    // if (playerHealth > 0) {
-    //     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
-
-    //     // Y is monsterHealth not effective here?????
-    //     // monsterHealth = monsters[fighting].health;
-
-    //     if (isMonsterHit()) {
-    //         monsterHealth -=
-    //             weapons[currentWeapon].power +
-    //             Math.floor(Math.random() * xp) +
-    //             1;
-    //     }
-
-    //     text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
-    // } else {
-    //     if (playerHealth <= 0) {
-    //         lose();
-    //     } else if (monsterHealth <= 0) {
-    //         if (fighting === 2) {
-    //             winGame();
-    //         } else {
-    //             defeatMonster();
-    //         }
-    //     }
-    // }
-
-    // monsterHealth -= playerHit;
-    // console.log(monsterHealth);
-
     // update UI
-    // playerHealthText.innerText = playerHealth;
-    // monsterHealthText.innerText = monsterHealth;
+    playerHealthText.innerText = playerHealth;
+    monsterHealthText.innerText = monsterHealth;
 }
 
 function getMonsterAttackValue(level) {
