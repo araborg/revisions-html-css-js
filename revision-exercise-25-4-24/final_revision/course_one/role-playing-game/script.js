@@ -1023,15 +1023,13 @@ function pick(guess) {
 
             playerHealth -= 10;
 
-            // console.log(playerHealth);
+            console.log(playerHealth);
 
             playerHealth.innerText = playerHealth;
 
             text.innerText += `Wrong! You lose 10 health!`;
         }
     }
-
-    // console.log(gold, playerHealth);
 }
 
 // pick(8);
