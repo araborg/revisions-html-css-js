@@ -953,6 +953,7 @@ function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
     const value = randomNum || playerHealth < 20;
+    console.log(value);
 
     return value;
 }
