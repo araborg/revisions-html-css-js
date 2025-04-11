@@ -644,8 +644,8 @@ function pickEight() {
 // =========== revise ============
 
 let xp = 0;
-// let playerHealth = 100;
-let playerHealth = 100000;
+let playerHealth = 100;
+// let playerHealth = 100000;
 
 // let gold = 50;
 let gold = 500;
@@ -981,8 +981,6 @@ function dodge() {
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
     xp += monsters[fighting].level;
-
-    console.log(xp);
 }
 
 function lose() {
