@@ -1002,5 +1002,12 @@ function pick(guess) {
     const numbers = [];
     let count = 10;
 
-    for (let i = 0; i < count; i++) {}
+    for (let i = 0; i < count; i++) {
+        const randomNumber = Math.floor(Math.random() * 10 + 1);
+
+        numbers.push(randomNumber);
+    }
+    console.log(number);
 }
+
+pick(8);
