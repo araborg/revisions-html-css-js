@@ -904,9 +904,12 @@ function goFight() {
 }
 
 function attack() {
+    playerHealth -= getMonsterAttackValue(monsters[fighting].level);
+
     // Y is monsterHealth not effective here?????
     monsterHealth = monsters[fighting].health;
-    console.log(monsterHealth);
+
+    console.log(monsterHealth, playerHealth);
 
     // if (playerHealth > 0) {
     //     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
