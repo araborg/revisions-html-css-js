@@ -871,8 +871,6 @@ function sellWeapon() {
             // }, 1000);
         }
     }
-
-    console.log(currentWeapon);
 }
 
 function fightSlime() {}
