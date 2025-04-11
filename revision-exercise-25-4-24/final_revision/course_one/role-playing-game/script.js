@@ -883,7 +883,9 @@ function fightDragon() {
     goFight();
 }
 
-function goFight() {}
+function goFight() {
+    console.log(`Fighting: ${monsters[fighting]}`);
+}
 
 function attack() {}
 
