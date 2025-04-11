@@ -861,10 +861,9 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        console.log(button2.onclick);
-
-        if (button2.onclick && inventory.length === 1) {
+        if (!currentWeapon && inventory.length === 1) {
             // button2.onclick = goTown;
+            console.log("Hello");
         }
     }
 
