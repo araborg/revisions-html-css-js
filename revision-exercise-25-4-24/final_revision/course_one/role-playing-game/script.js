@@ -870,6 +870,8 @@ function sellWeapon() {
             goTown();
         }
     }
+
+    console.log(currentWeapon);
 }
 
 function fightSlime() {}
