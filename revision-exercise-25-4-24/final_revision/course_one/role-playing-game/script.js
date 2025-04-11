@@ -923,13 +923,6 @@ function attack() {
             // console.log(playerHit);
         }
 
-        // monsterHealth -= playerHit;
-        console.log(monsterHealth);
-
-        // update UI
-        playerHealthText.innerText = playerHealth;
-        monsterHealthText.innerText = monsterHealth;
-
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
         if (playerHealth <= 0) {
@@ -942,6 +935,13 @@ function attack() {
             }
         }
     }
+
+    // monsterHealth -= playerHit;
+    console.log(monsterHealth);
+
+    // update UI
+    playerHealthText.innerText = playerHealth;
+    monsterHealthText.innerText = monsterHealth;
 }
 
 function getMonsterAttackValue(level) {
