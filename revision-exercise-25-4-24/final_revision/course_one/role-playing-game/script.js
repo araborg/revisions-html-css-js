@@ -1023,7 +1023,7 @@ function pick(guess) {
         if (playerHealth > 0) {
             playerHealth -= 10;
 
-            console.log(typeof playerHealth);
+            console.log(playerHealth);
 
             playerHealth.innerText = playerHealth;
 
