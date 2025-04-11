@@ -892,6 +892,8 @@ function fightDragon() {
 function goFight() {
     updateUI(locations[3]);
 
+    console.log(fighting);
+
     // ??????????????????
     monsterHealth = monsters[fighting].health;
     console.log(monsterHealth);
@@ -905,6 +907,7 @@ function goFight() {
 }
 
 function attack() {
+    console.log(fighting);
     // check player health
 
     // check monster health
