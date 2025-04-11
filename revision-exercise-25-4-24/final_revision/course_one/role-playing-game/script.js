@@ -205,7 +205,8 @@ button3.onclick = fightDragon;
 
 // update UI: we only need from d locations: button texts/fxns
 function update(location) {
-    // hidden elements
+    // hidden elements: ds is needed wn a player ran from a monster
+    // d hidden elements needs to be hidden after being revealed.
     monsterStats.style.display = "none";
 
     // btns text using bracket notation
