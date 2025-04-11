@@ -909,6 +909,11 @@ function attack() {
     // Y is monsterHealth not effective here?????
     monsterHealth = monsters[fighting].health;
 
+    if (isMonsterHit()) {
+        monsterHealth -=
+            weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+    }
+
     console.log(monsterHealth, playerHealth);
 
     // if (playerHealth > 0) {
