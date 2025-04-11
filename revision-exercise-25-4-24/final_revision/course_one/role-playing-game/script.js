@@ -998,4 +998,9 @@ function pickEight() {
     pick(8);
 }
 
-function pick(guess) {}
+function pick(guess) {
+    const numbers = [];
+    let count = 10;
+
+    for (let i = 0; i < count; i++) {}
+}
