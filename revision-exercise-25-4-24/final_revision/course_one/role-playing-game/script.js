@@ -884,7 +884,7 @@ function fightDragon() {
 }
 
 function goFight() {
-    console.log(`Fighting: ${monsters[fighting].name}`);
+    updateUI(locations[3]);
 }
 
 function attack() {}
