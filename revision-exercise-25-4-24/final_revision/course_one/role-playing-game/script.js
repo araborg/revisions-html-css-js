@@ -1016,7 +1016,13 @@ function pick(guess) {
 
     if (numbers.includes(guess)) {
         text.innerText += `Right! You win 20 gold!`;
+
+        console.log(gold);
+
         gold += 20;
+
+        console.log(gold);
+
         goldText.innerText = gold;
     } else {
         text.innerText += `Wrong! You lose 10 health!`;
