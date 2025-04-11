@@ -915,15 +915,15 @@ function attack() {
         // console.log(isMonsterHit());
 
         if (isMonsterHit()) {
-            const playerHit =
+            monsterHealth -=
                 weapons[currentWeapon].power +
                 Math.floor(Math.random() * xp) +
                 1;
 
             // console.log(playerHit);
-            monsterHealth -= playerHit;
         }
 
+        // monsterHealth -= playerHit;
         console.log(monsterHealth);
 
         // update UI
