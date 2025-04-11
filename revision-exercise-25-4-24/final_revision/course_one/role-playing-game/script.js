@@ -929,6 +929,13 @@ function attack() {
     // update UI
     playerHealthText.innerText = playerHealth;
     monsterHealthText.innerText = monsterHealth;
+
+    // break weapon
+    if (Math.random() <= 0.1 && inventory.length > 1) {
+        const brokenWeapon = inventory.pop(inventory[fighting]);
+
+        console.log(brokenWeapon);
+    }
 }
 
 function getMonsterAttackValue(level) {
