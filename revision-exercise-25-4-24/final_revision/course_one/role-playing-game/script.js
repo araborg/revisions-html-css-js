@@ -890,9 +890,9 @@ function fightDragon() {
 }
 
 function goFight() {
-    updateUI(locations[3]);
-
     monsterHealth = monsters[fighting].health;
+
+    updateUI(locations[3]);
 
     // update UI
     monsterStats.style.display = "block";
