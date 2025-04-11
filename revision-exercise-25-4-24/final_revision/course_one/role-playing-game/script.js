@@ -897,6 +897,14 @@ function goFight() {
 }
 
 function attack() {
+    // check player health
+
+    // check monster health
+
+    // u win if monster = dragon
+
+    // else u defeat monster
+
     if (playerHealth >= 0) {
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
