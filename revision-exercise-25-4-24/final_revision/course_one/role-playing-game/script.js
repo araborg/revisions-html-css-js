@@ -1003,7 +1003,7 @@ function pick(guess) {
     let count = 10;
 
     for (let i = 0; i < count; i++) {
-        const randomNumber = Math.floor(Math.random() * 10 + 1);
+        const randomNumber = Math.floor(Math.random() * 11);
 
         numbers.push(randomNumber);
     }
