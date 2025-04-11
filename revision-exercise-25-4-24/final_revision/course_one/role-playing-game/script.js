@@ -1023,7 +1023,6 @@ function pick(guess) {
 
         if (playerHealth <= 0) {
             lose();
-        } else {
         }
     }
 }
