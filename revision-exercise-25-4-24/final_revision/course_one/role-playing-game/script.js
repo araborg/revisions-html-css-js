@@ -922,8 +922,6 @@ function attack() {
         }
     }
 
-    console.log(monsterHealth, playerHealth);
-
     // update UI
     playerHealthText.innerText = playerHealth;
     monsterHealthText.innerText = monsterHealth;
