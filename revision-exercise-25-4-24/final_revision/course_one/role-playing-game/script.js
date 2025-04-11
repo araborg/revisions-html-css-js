@@ -896,7 +896,7 @@ function goFight() {
 
     // ??????????????????
     monsterHealth = monsters[fighting].health;
-    console.log(monsterHealth);
+    // console.log(monsterHealth);
 
     // update UI
     monsterStats.style.display = "block";
@@ -943,7 +943,7 @@ function attack() {
     }
 
     // monsterHealth -= playerHit;
-    console.log(monsterHealth);
+    // console.log(monsterHealth);
 
     // update UI
     playerHealthText.innerText = playerHealth;
