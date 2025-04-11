@@ -1019,13 +1019,15 @@ function pick(guess) {
 
         gold += 20;
 
-        console.log(typeof gold);
-
         goldText.innerText = gold;
     } else {
         text.innerText += `Wrong! You lose 10 health!`;
-        playerHealth -= 10;
-        playerHealth.innerText = playerHealth;
+
+        if (playerHealth > 0) {
+            playerHealth -= 10;
+
+            playerHealth.innerText = playerHealth;
+        }
     }
 
     console.log(gold, playerHealth);
