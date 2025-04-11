@@ -862,16 +862,14 @@ function sellWeapon() {
         text.innerText = "Don't sell your only weapon!";
 
         // temporarily change currentWeapon to below 0
-        let localCurrentWeapon = currentWeapon.slice();
+        let localCurrentWeapon = currentWeapon--;
 
-        localCurrentWeapon--;
+        // localCurrentWeapon--;
 
         if (localCurrentWeapon < 0) {
             goTown();
         }
     }
-
-    console.log(currentWeapon);
 }
 
 function fightSlime() {}
@@ -880,6 +878,7 @@ function fightBeast() {}
 
 function fightDragon() {
     // updateUI(locations[])
+    console.log(currentWeapon);
 }
 
 function goFight() {}
