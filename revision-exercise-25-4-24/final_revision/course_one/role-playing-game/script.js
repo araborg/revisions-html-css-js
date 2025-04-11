@@ -1007,7 +1007,8 @@ function pick(guess) {
 
         numbers.push(randomNumber);
     }
-    console.log(number);
+
+    console.log(numbers);
 }
 
 pick(8);
