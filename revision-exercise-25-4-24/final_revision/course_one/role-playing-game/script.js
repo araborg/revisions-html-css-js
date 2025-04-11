@@ -861,13 +861,15 @@ function sellWeapon() {
     } else {
         text.innerText = "Don't sell your only weapon!";
 
-        // if (text.innerText === "Don't sell your only weapon!") {
-        // button2.onclick = goTown;
-        // console.log("Hello");
-        setInterval(() => {
+        let localCurrentWeapon = currentWeapon--;
+
+        if (localCurrentWeapon < 0) {
+            // button2.onclick = goTown;
+            console.log("Hello");
+            // setInterval(() => {
             goTown();
-        }, 500);
-        // }
+            // }, 1000);
+        }
     }
 
     console.log(currentWeapon);
