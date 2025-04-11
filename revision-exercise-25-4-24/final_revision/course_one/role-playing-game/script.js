@@ -648,7 +648,9 @@ let gold = 500;
 
 let currentWeapon = 0;
 
+// monster index: wc monster r u fighting with?
 let fighting;
+
 let monsterHealth;
 let inventory = ["stick"];
 
