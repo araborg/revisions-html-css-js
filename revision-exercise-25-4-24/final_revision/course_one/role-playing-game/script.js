@@ -987,10 +987,16 @@ function restart() {
     updateUI(locations[0]);
 }
 
-function easterEgg() {}
+function easterEgg() {
+    updateUI(locations[7]);
+}
 
-function pickTwo() {}
+function pickTwo() {
+    pick(2);
+}
 
-function pickEight() {}
+function pickEight() {
+    pick(8);
+}
 
 function pick(guess) {}
