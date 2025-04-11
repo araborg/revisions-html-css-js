@@ -920,10 +920,11 @@ function attack() {
                 Math.floor(Math.random() * xp) +
                 1;
 
-            console.log(playerHit);
-
-            monsterHealthText.innerText -= playerHit;
+            // console.log(playerHit);
+            monsterHealth -= playerHit;
         }
+
+        console.log(monsterHealth);
 
         // update UI
         playerHealthText.innerText = playerHealth;
