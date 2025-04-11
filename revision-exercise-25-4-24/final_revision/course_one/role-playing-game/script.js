@@ -862,7 +862,7 @@ function sellWeapon() {
         text.innerText = "Don't sell your only weapon!";
 
         // temporarily change currentWeapon to below 0
-        let localCurrentWeapon = currentWeapon;
+        let localCurrentWeapon = currentWeapon.slice();
 
         localCurrentWeapon--;
 
