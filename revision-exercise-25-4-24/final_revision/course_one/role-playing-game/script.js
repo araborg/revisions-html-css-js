@@ -978,13 +978,17 @@ function dodge() {
     text.innerText = `You dodge the attack from the ${monsters[fighting].name}`;
 }
 
-function defeatMonster() {}
+function defeatMonster() {
+    console.log("defeatMonster");
+}
 
 function lose() {
     console.log("You lose");
 }
 
-function winGame() {}
+function winGame() {
+    console.log("winGame");
+}
 
 function restart() {}
 
