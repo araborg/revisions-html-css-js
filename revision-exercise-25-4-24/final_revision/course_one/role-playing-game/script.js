@@ -952,7 +952,9 @@ function getMonsterAttackValue(level) {
 function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
-    return randomNum || playerHealth < 20;
+    const value = randomNum || playerHealth < 20;
+
+    return value;
 }
 
 function dodge() {
