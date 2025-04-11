@@ -1015,18 +1015,16 @@ function pick(guess) {
     }
 
     if (numbers.includes(guess)) {
-        text.innerText += `Right! You win 20 gold!`;
-
         gold += 20;
-
         goldText.innerText = gold;
-    } else {
-        text.innerText += `Wrong! You lose 10 health!`;
 
+        text.innerText += `Right! You win 20 gold!`;
+    } else {
         if (playerHealth > 0) {
             playerHealth -= 10;
-
             playerHealth.innerText = playerHealth;
+
+            text.innerText += `Wrong! You lose 10 health!`;
         }
     }
 
