@@ -1013,10 +1013,15 @@ function pick(guess) {
     for (let num of numbers) {
         text.innerText += `${num} \n`;
     }
+
     if (numbers.includes(guess)) {
         text.innerText += `Right! You win 20 gold!`;
         gold += 20;
         goldText.innerText = gold;
+    } else {
+        text.innerText += `Wrong! You lose 10 health!`;
+        playerHealth -= 10;
+        playerHealth.innerText = playerHealth;
     }
 
     // console.log(numbers);
