@@ -1023,7 +1023,7 @@ function pick(guess) {
 
             playerHealth -= 10;
 
-            console.log(playerHealth);
+            // console.log(playerHealth);
 
             playerHealth.innerText = playerHealth;
 
@@ -1031,7 +1031,7 @@ function pick(guess) {
         }
     }
 
-    console.log(gold, playerHealth);
+    // console.log(gold, playerHealth);
 }
 
 // pick(8);
