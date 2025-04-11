@@ -914,6 +914,16 @@ function attack() {
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     }
 
+    if (playerHealth <= 0) {
+        lose();
+    } else if (monsterHealth <= 0) {
+        if (fighting === 2) {
+            winGame();
+        } else {
+            defeatMonster();
+        }
+    }
+
     console.log(monsterHealth, playerHealth);
 
     // if (playerHealth > 0) {
