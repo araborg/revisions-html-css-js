@@ -900,6 +900,9 @@ function attack() {
     if (playerHealth >= 0) {
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
+        if (playerHealth <= 0) {
+            lose();
+        }
     }
 }
 
@@ -913,7 +916,9 @@ function dodge() {
 
 function defeatMonster() {}
 
-function lose() {}
+function lose() {
+    console.log("You lose");
+}
 
 function winGame() {}
 
