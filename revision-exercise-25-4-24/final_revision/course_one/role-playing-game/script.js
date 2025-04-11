@@ -1033,4 +1033,4 @@ function pick(guess) {
     // console.log(numbers);
 }
 
-pick(8);
+// pick(8);
