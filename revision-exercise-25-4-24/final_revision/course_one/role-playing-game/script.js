@@ -205,6 +205,7 @@ button3.onclick = fightDragon;
 
 // update UI: we only need from d locations: button texts/fxns
 function update(location) {
+
     // hidden elements: ds is needed wn a player ran from a monster
     // d hidden elements needs to be hidden after being revealed.
     monsterStats.style.display = "none";
@@ -897,6 +898,11 @@ function goFight() {
 
 function attack() {
     console.log("attack");
+
+    if (playerHealth >= 0) {
+        text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon]}.`;
+    } else {
+    }
 }
 
 function getMonsterAttackValue(level) {}
