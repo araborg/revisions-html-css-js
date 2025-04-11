@@ -644,8 +644,8 @@ function pickEight() {
 // =========== revise ============
 
 let xp = 0;
-let playerHealth = 100;
-// let playerHealth = 1000;
+// let playerHealth = 100;
+let playerHealth = 1000;
 
 // let gold = 50;
 let gold = 500;
@@ -913,12 +913,14 @@ function attack() {
         monsterHealth = monsters[fighting].health;
 
         if (isMonsterHit()) {
-            monsterHealth -=
+            const playerHit =
                 weapons[currentWeapon].power +
                 Math.floor(Math.random() * xp) +
                 1;
 
-            console.log("monster hit");
+            console.log(playerHealth);
+
+            monsterHealth -= playerHit;
         }
 
         // update UI
