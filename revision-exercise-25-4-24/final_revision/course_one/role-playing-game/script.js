@@ -917,7 +917,7 @@ function attack() {
 
         // update UI
         playerHealthText.innerText = playerHealth;
-        monsterHealth.innerText = monsterHealth;
+        monsterHealthText.innerText = monsterHealth;
 
         text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
     } else {
