@@ -1012,6 +1012,12 @@ function pick(guess) {
         text.innerText = `You picked ${guess}. Here are the random numbers:`;
 
         text.innerText += `${numbers[num]} \n`;
+
+        text.innerText += `Right! You win 20 gold!`;
+
+        gold += 20;
+
+        goldText.innerText = gold;
     }
 
     console.log(numbers);
