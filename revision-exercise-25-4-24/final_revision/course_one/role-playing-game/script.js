@@ -1022,6 +1022,9 @@ function pick(guess) {
     } else {
         if (playerHealth > 0) {
             playerHealth -= 10;
+
+            console.log(typeof playerHealth);
+
             playerHealth.innerText = playerHealth;
 
             text.innerText += `Wrong! You lose 10 health!`;
