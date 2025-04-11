@@ -1018,13 +1018,12 @@ function pick(guess) {
     } else {
         console.log(playerHealth);
         playerHealth -= 10;
+        playerHealthText.innerText = playerHealth;
+        text.innerText += `Wrong! You lose 10 health!`;
 
-        if (playerHealth > 0) {
-            playerHealthText.innerText = playerHealth;
-
-            text.innerText += `Wrong! You lose 10 health!`;
-        } else {
+        if (playerHealth <= 0) {
             lose();
+        } else {
         }
     }
 }
