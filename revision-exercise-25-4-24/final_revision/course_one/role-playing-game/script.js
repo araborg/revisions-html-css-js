@@ -890,16 +890,17 @@ function fightDragon() {
 }
 
 function goFight() {
-    // monsterHealth = monsters[fighting].health;
-
     updateUI(locations[3]);
+
+    monsterHealth = monsters[fighting].health;
+    // console.log(monsters[fighting].health);
 
     // update UI
     monsterStats.style.display = "block";
     monsterName.innerText = monsters[fighting].name;
 
-    // monsterHealthText.innerText = monsterHealth;
-    monsterHealthText.innerText = monsters[fighting].health;
+    monsterHealthText.innerText = monsterHealth;
+    // monsterHealthText.innerText = monsters[fighting].health;
 }
 
 function attack() {
