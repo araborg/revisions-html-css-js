@@ -914,7 +914,9 @@ function attack() {
     }
 }
 
-function getMonsterAttackValue(level) {}
+function getMonsterAttackValue(level) {
+    return 5 * level - Math.floor(Math.random() * xp);
+}
 
 function isMonsterHit() {}
 
