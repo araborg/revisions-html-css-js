@@ -1016,13 +1016,13 @@ function pick(guess) {
 
         text.innerText += `Right! You win 20 gold!`;
     } else {
-        if (playerHealth <= 0) {
-            lose();
-        }
-
         playerHealth -= 10;
         playerHealthText.innerText = playerHealth;
         text.innerText += `Wrong! You lose 10 health!`;
+
+        if (playerHealth <= 0) {
+            lose();
+        }
     }
 }
 
