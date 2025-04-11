@@ -905,7 +905,7 @@ function attack() {
     if (playerHealth > 0) {
         playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
-        // while is monsterHealth not effective here?????
+        // Y is monsterHealth not effective here?????
         // monsterHealth = monsters[fighting].health;
 
         if (isMonsterHit()) {
