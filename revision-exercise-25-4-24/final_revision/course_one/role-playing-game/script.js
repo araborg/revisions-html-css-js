@@ -912,7 +912,7 @@ function attack() {
 
         monsterHealth = monsters[fighting].health;
 
-        console.log(isMonsterHit());
+        // console.log(isMonsterHit());
 
         if (isMonsterHit()) {
             const playerHit =
@@ -920,9 +920,9 @@ function attack() {
                 Math.floor(Math.random() * xp) +
                 1;
 
-            console.log(playerHealth);
+            console.log(playerHit);
 
-            monsterHealth -= playerHit;
+            monsterHealthText.innerText -= playerHit;
         }
 
         // update UI
