@@ -860,16 +860,6 @@ function sellWeapon() {
         text.innerText = `You sold a ${soldWeapon}. In your inventory you have: ${inventory}`;
     } else {
         text.innerText = "Don't sell your only weapon!";
-
-        // temporarily change currentWeapon to below 0
-        let localCurrentWeapon = 0;
-
-        localCurrentWeapon--;
-        console.log(localCurrentWeapon);
-
-        if (localCurrentWeapon === -2) {
-            goTown();
-        }
     }
 }
 
