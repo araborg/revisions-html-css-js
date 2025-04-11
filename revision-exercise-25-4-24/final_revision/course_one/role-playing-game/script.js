@@ -903,8 +903,7 @@ function getMonsterAttackValue(level) {}
 function isMonsterHit() {}
 
 function dodge() {
-    text.innerText =
-        'You are in the town square. You see a sign that says "Store".';
+    text.innerText = `You dodge the attack from the ${monsters[fighting].name}`;
 }
 
 function defeatMonster() {}
