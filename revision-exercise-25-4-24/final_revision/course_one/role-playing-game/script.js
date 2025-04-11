@@ -644,7 +644,9 @@ function pickEight() {
 // =========== revise ============
 
 let xp = 0;
-let playerHealth = 100;
+// let playerHealth = 100;
+let playerHealth = 1000;
+
 // let gold = 50;
 let gold = 500;
 
@@ -915,6 +917,8 @@ function attack() {
                 weapons[currentWeapon].power +
                 Math.floor(Math.random() * xp) +
                 1;
+
+            console.log("monster hit");
         }
 
         // update UI
