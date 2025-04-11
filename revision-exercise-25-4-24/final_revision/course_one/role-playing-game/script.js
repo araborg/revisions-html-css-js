@@ -941,13 +941,14 @@ function attack() {
 
 function getMonsterAttackValue(level) {
     const hit = 5 * level - Math.floor(Math.random() * xp);
+
     return hit > 0 ? hit : 0;
 }
 
 function isMonsterHit() {
     const randomNum = Math.random > 0.2;
 
-    return Math.random > 0.2 || monsterHealth < 20;
+    return randomNum || playerHealth < 20;
 }
 
 function dodge() {
