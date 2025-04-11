@@ -908,8 +908,8 @@ function goFight() {
 
 function attack() {
     // console.log(fighting);
-    monsterHealth = monsters[fighting].health;
-    console.log("attack()" + monsterHealth);
+    // monsterHealth = monsters[fighting].health;
+    // console.log("attack()" + monsterHealth);
     // check player health
 
     // check monster health
