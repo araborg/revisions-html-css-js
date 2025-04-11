@@ -983,11 +983,11 @@ function defeatMonster() {
 }
 
 function lose() {
-    updateUI(locations);
+    updateUI(locations[5]);
 }
 
 function winGame() {
-    console.log("winGame");
+    updateUI(locations[6]);
 }
 
 function restart() {}
