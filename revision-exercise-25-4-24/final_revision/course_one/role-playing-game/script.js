@@ -950,7 +950,7 @@ function getMonsterAttackValue(level) {
 }
 
 function isMonsterHit() {
-    const randomNum = Math.random > 0.2;
+    const randomNum = Math.random() > 0.2;
 
     const value = randomNum || playerHealth < 20;
 
