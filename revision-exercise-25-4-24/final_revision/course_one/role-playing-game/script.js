@@ -975,7 +975,9 @@ function winGame() {
     updateUI(locations[6]);
 }
 
-function restart() {}
+function restart() {
+    updateUI(locations[0]);
+}
 
 function easterEgg() {}
 
