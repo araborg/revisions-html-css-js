@@ -912,6 +912,8 @@ function attack() {
 
         monsterHealth = monsters[fighting].health;
 
+        console.log(isMonsterHit());
+
         if (isMonsterHit()) {
             const playerHit =
                 weapons[currentWeapon].power +
