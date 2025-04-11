@@ -933,6 +933,7 @@ function attack() {
         const brokenWeapon = inventory.pop();
 
         text.innerText += ` Your " + ${brokenWeapon} + " breaks.`;
+        currentWeapon--;
     }
 }
 
