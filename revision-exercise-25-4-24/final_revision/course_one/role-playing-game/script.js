@@ -645,10 +645,8 @@ function pickEight() {
 
 let xp = 0;
 let playerHealth = 100;
-// let playerHealth = 100000;
 
-// let gold = 50;
-let gold = 500;
+let gold = 50;
 
 let currentWeapon = 0;
 
@@ -1018,7 +1016,7 @@ function pick(guess) {
 
         text.innerText += `Right! You win 20 gold!`;
     } else {
-        if (playerHealth > 0) {
+        if (playerHealth > 10) {
             playerHealth -= 10;
 
             playerHealthText.innerText = playerHealth;
