@@ -865,13 +865,16 @@ function sellWeapon() {
     }
 }
 
-function fightSlime() {}
+function fightSlime() {
+    fighting = 0;
+}
 
-function fightBeast() {}
+function fightBeast() {
+    fighting = 1;
+}
 
 function fightDragon() {
-    // updateUI(locations[])
-    console.log(currentWeapon);
+    fighting = 2;
 }
 
 function goFight() {}
