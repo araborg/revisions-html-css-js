@@ -892,12 +892,14 @@ function fightDragon() {
 function goFight() {
     updateUI(locations[3]);
 
-    monsterHealth = monsters[fighting].health;
+    // monsterHealth = monsters[fighting].health;
 
     // update UI
     monsterStats.style.display = "block";
     monsterName.innerText = monsters[fighting].name;
-    monsterHealthText.innerText = monsterHealth;
+
+    // monsterHealthText.innerText = monsterHealth;
+    monsterHealthText.innerText = monsters[fighting].health;
 }
 
 function attack() {
@@ -914,10 +916,9 @@ function attack() {
 
         console.log(isMonsterHit());
         console.log(monsterHealth);
+        monsterHealth = monsters[fighting].health;
 
         if (isMonsterHit()) {
-            // monsterHealth = monsters[fighting].health;
-
             monsterHealth -=
                 weapons[currentWeapon].power +
                 Math.floor(Math.random() * xp) +
