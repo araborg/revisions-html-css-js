@@ -789,6 +789,8 @@ button3.onclick = fightDragon;
 
 // update UI
 function updateUI(location) {
+    monsterStats.style.display = "none";
+
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
@@ -892,13 +894,18 @@ function goFight() {
     monsterHealth.innerText = monsters[fighting].health;
 }
 
-function attack() {}
+function attack() {
+    console.log("attack");
+}
 
 function getMonsterAttackValue(level) {}
 
 function isMonsterHit() {}
 
-function dodge() {}
+function dodge() {
+    text.innerText =
+        'You are in the town square. You see a sign that says "Store".';
+}
 
 function defeatMonster() {}
 
