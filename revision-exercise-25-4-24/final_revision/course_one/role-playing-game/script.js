@@ -645,7 +645,7 @@ function pickEight() {
 
 let xp = 0;
 // let playerHealth = 100;
-let playerHealth = 1000;
+let playerHealth = 100000;
 
 // let gold = 50;
 let gold = 500;
