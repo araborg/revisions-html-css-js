@@ -1,3 +1,5 @@
+/*
+
 const body = document.querySelector("body");
 const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
 const btn = document.querySelector("#btn");
@@ -32,3 +34,12 @@ function changeBackgroundColor() {
 }
 
 btn.onclick = changeBackgroundColor;
+
+
+*/
+
+const body = document.querySelector("body");
+const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+const btn = document.querySelector("#btn");
+
+const color = [];
