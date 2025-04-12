@@ -43,7 +43,9 @@ const calculateCalories = (e) => {
     const inputVal = cleanInputString(budgetNumberInput.value);
     // const inputVal = budgetNumberInput.value;
 
-    console.log(inputVal);
+    const isInputValid = isInvalidInput(inputVal);
+
+    console.log(inputVal, isInputValid);
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
