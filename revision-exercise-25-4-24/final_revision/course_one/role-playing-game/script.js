@@ -1015,7 +1015,13 @@ function pick(guess) {
     const numbers = [];
     let count = 10;
 
-    for (let i = 0; i < count; i++) {
+    // for (let i = 0; i < count; i++) {
+    //     const randomNumber = Math.floor(Math.random() * 11);
+
+    //     numbers.push(randomNumber);
+    // }
+
+    while (numbers.length < 10) {
         const randomNumber = Math.floor(Math.random() * 11);
 
         numbers.push(randomNumber);
