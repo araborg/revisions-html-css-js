@@ -50,6 +50,10 @@ const calculateCalories = (e) => {
 
     // Y r will repeating ds?
     isError = false;
+
+    const breakfastNumberInputs = document.querySelectorAll(
+        "#breakfast input[type=number]"
+    );
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
