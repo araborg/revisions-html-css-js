@@ -39,6 +39,8 @@ btn.onclick = changeBackgroundColor;
 */
 
 const body = document.querySelector("body");
+const h1 = document.querySelector("h1");
+
 const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
 const btn = document.querySelector("#btn");
 
