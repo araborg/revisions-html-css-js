@@ -51,6 +51,7 @@ const calculateCalories = (e) => {
     // Y r will repeating ds?
     isError = false;
 
+    // dse r presently plaholders for future reference
     const breakfastNumberInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
@@ -71,16 +72,8 @@ const calculateCalories = (e) => {
         "#exercise input[type=number]"
     );
 
-    const modak = document.querySelectorAll("#modak");
-
-    console.log(
-        breakfastNumberInputs,
-        lunchNumberInputs,
-        dinnerNumberInputs,
-        snacksNumberInputs,
-        exerciseNumberInputs,
-        modak
-    );
+    // get d values in d inputs above: dse r meant to be
+    // atleast one or more inputs
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
