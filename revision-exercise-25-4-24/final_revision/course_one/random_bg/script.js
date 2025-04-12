@@ -21,5 +21,3 @@ function getRandomIndex() {
 
     return randomIndex;
 }
-
-console.log(getRandomIndex());
