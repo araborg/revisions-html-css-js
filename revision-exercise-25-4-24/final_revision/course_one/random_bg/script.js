@@ -26,7 +26,9 @@ function getRandomIndex() {
 function changeBackgroundColor() {
     const color = darkColorsArr[getRandomIndex()];
 
-    console.log(color);
+    bgHexCodeSpanElement.innerText = color;
+
+    body.style.backgroundColor = color;
 }
 
 btn.onclick = changeBackgroundColor;
