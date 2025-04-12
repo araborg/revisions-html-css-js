@@ -83,6 +83,12 @@ const calculateCalories = (e) => {
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+
+    // after d getCaloriesFromInputs() dre is tendency
+    // for isError to change to true
+    if (isError) {
+        return;
+    }
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
