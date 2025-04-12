@@ -21,10 +21,17 @@ let isError = false;
 
 // format budgetNumberInput value:
 
-// if d str contains any of dse: +, - or empty
-// space any where replace it with empty string
+// if d input value contains any of dse: +, - or
+// empty space any where replace it with empty string
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
 
     return str.replace(regex, "");
+}
+
+// if d input value contains invalid value
+function isInvalidInput(str) {
+    const regex = /\d+e\d/i;
+
+    return str.match(regex);
 }
