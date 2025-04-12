@@ -1,7 +1,7 @@
 // form
 const calorieCounter = document.getElementById("calorie-counter");
 
-// d proposed budget of calories to be consumed
+// d proposed budget of calories to be lost/burnt
 const budgetNumberInput = document.getElementById("budget");
 
 // dropdown
@@ -82,6 +82,8 @@ const calculateCalories = (e) => {
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+
+    // wt mks ds diff from other i.e. y was it added and nt removed?
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     // y did we pass in a arr: [budgetNumberInput]
