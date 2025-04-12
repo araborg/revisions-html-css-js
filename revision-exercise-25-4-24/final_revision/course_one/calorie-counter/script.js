@@ -29,13 +29,19 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-// if d input value contains scientific notation
-// return a boolean
+// if d input value contains scientific notation:
+// It will  return null when the input is a valid
+// number without any scientific notation else it
+// returns smth else
+
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
     return str.match(regex);
 }
+
+console.log(isInvalidInput("1e3"));
+console.log(isInvalidInput("10"));
 
 const calculateCalories = (e) => {
     e.preventDefault();
