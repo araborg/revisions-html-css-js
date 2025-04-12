@@ -84,11 +84,20 @@ const calculateCalories = (e) => {
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
+    // y did we pass in a arr: [budgetNumberInput]
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+
     // after d getCaloriesFromInputs() dre is tendency
     // for isError to change to true
     if (isError) {
         return;
     }
+
+    const consumedCalories =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    const remainingCalories =
+        budgetCalories - consumedCalories + exerciseCalories;
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
