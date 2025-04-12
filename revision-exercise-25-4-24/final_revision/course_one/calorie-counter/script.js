@@ -16,3 +16,10 @@ const output = document.getElementById("output");
 
 // boolean state
 let isError = false;
+
+// format budgetNumberInput value
+function cleanInputString(str) {
+    const regex = /[+-\s]/g;
+
+    return str.replace(regex, "");
+}
