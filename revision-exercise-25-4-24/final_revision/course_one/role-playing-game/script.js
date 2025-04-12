@@ -1,5 +1,3 @@
-/*
-
 // levels r: 2, 8, 20,
 // d experience, xp += monsters[fighting].level;
 let xp = 0;
@@ -641,7 +639,7 @@ function pickEight() {
 }
 
 
-*/
+
 
 // =========== revise ============
 
