@@ -49,6 +49,8 @@ const calculateCalories = (e) => {
     e.preventDefault();
 
     // Y r will repeating ds?
+    // ds may be for a local reference
+    // incase it changes globally
     isError = false;
 
     // dse r presently plaholders for future reference
