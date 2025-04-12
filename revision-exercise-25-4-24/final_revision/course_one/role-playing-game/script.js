@@ -996,7 +996,7 @@ function restart() {
     playerHealthText.innerText = playerHealth;
     goldText.innerText = gold;
 
-    updateUI(locations[0]);
+    goTown();
 }
 
 function easterEgg() {
