@@ -40,6 +40,7 @@ btn.onclick = changeBackgroundColor;
 
 const body = document.querySelector("body");
 const h1 = document.querySelector("h1");
+const p = document.querySelector("p");
 
 const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
 const btn = document.querySelector("#btn");
@@ -192,10 +193,10 @@ const getRandomColor = () => {
 
     const variedColor = colors[variedIndex()];
 
-    // bgHexCodeSpanElement.innerText = randomColor;
+    bgHexCodeSpanElement.innerText = randomColor;
     body.style.backgroundColor = randomColor;
 
-    bgHexCodeSpanElement.innerText = variedColor;
+    p.style.color = variedColor;
     h1.style.color = variedColor;
 };
 
