@@ -192,6 +192,8 @@ const getRandomColor = () => {
 
     bgHexCodeSpanElement.innerText = randomColor;
     body.style.backgroundColor = randomColor;
+
+    h1.style.color = colors[variedIndex()];
 };
 
 btn.onclick = getRandomColor;
