@@ -904,6 +904,8 @@ function goFight() {
 }
 
 function attack() {
+    text.innerText = `The ${monsters[fighting].name} attacks. You attack it with your ${weapons[currentWeapon].name}.`;
+
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     // Y is monsterHealth not effective here?????
@@ -912,6 +914,8 @@ function attack() {
     if (isMonsterHit()) {
         monsterHealth -=
             weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+    } else {
+        text.innerText += " You miss.";
     }
 
     if (playerHealth <= 0) {
@@ -937,13 +941,13 @@ function attack() {
     }
 }
 
-for (let i = 0; i < 5; i++) {
-    for (let j = i + 1; j < 5; j++) {
-        console.log(`i: ${i}, j: ${j}`);
-    }
+// for (let i = 0; i < 5; i++) {
+//     for (let j = i + 1; j < 5; j++) {
+//         console.log(`i: ${i}, j: ${j}`);
+//     }
 
-    console.log("==================");
-}
+//     console.log("==================");
+// }
 
 function getMonsterAttackValue(level) {
     const hit = 5 * level - Math.floor(Math.random() * xp);
