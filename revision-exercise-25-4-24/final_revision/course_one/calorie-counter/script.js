@@ -30,6 +30,7 @@ function cleanInputString(str) {
 }
 
 // if d input value contains invalid value
+// return a boolean
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
