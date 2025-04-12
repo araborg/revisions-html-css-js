@@ -1,5 +1,6 @@
 const body = document.querySelector("body");
 const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
+const btn = document.querySelector("#btn");
 
 const darkColorsArr = [
     "#2C3E50",
@@ -27,3 +28,5 @@ function changeBackgroundColor() {
 
     console.log(color);
 }
+
+btn.onclick = changeBackgroundColor;
