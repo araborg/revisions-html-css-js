@@ -70,6 +70,14 @@ const calculateCalories = (e) => {
     const exerciseNumberInputs = document.querySelectorAll(
         "#exercise input[type=number]"
     );
+
+    console.log(
+        breakfastNumberInputs,
+        lunchNumberInputs,
+        dinnerNumberInputs,
+        snacksNumberInputs,
+        exerciseNumberInputs
+    );
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
