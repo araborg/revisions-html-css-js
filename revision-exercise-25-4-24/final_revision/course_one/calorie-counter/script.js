@@ -37,7 +37,9 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-const calculateCalories = () => {
+const calculateCalories = (e) => {
+    e.preventDefault();
+
     const inputVal = budgetNumberInput.value;
 
     console.log(inputVal);
