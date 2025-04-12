@@ -71,12 +71,15 @@ const calculateCalories = (e) => {
         "#exercise input[type=number]"
     );
 
+    const modak = document.querySelectorAll("#modak");
+
     console.log(
         breakfastNumberInputs,
         lunchNumberInputs,
         dinnerNumberInputs,
         snacksNumberInputs,
-        exerciseNumberInputs
+        exerciseNumberInputs,
+        modak
     );
 };
 
