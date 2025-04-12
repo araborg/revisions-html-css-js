@@ -859,6 +859,8 @@ function buyWeapon() {
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15;
+
+        // Y is currentWeapon not reducing with reduction in weapon
         // currentWeapon--;
 
         const soldWeapon = inventory.shift();
