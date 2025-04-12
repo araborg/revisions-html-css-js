@@ -164,3 +164,17 @@ const colors = [
     "#2F4F4F",
     "#000000",
 ];
+
+const getRandomIndex = () => {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+
+    return randomIndex;
+};
+
+const getRandomColor = () => {
+    const randomColor = colors[getRandomIndex()];
+
+    console.log(randomColor);
+};
+
+btn.onclick = getRandomColor;
