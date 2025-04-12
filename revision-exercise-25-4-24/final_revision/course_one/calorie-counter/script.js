@@ -40,8 +40,8 @@ function isInvalidInput(str) {
 const calculateCalories = (e) => {
     e.preventDefault();
 
-    // const inputVal = cleanInputString(budgetNumberInput.value);
-    const inputVal = budgetNumberInput.value;
+    const inputVal = cleanInputString(budgetNumberInput.value);
+    // const inputVal = budgetNumberInput.value;
 
     console.log(inputVal);
 };
