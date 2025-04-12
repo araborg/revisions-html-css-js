@@ -1041,6 +1041,7 @@ function pick(guess) {
     } else {
         playerHealth -= 10;
         playerHealthText.innerText = playerHealth;
+
         text.innerText += `Wrong! You lose 10 health!`;
 
         if (playerHealth <= 0) {
