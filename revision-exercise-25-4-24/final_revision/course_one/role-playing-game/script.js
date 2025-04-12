@@ -928,7 +928,7 @@ function attack() {
     if (Math.random() <= 0.1 && inventory.length > 1) {
         const brokenWeapon = inventory.pop();
 
-        text.innerText += ` Your " + ${brokenWeapon} + " breaks.`;
+        text.innerText += ` Your ${brokenWeapon} breaks.`;
         currentWeapon--;
     }
 }
