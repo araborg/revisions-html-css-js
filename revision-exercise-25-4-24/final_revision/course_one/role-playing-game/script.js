@@ -918,6 +918,10 @@ function attack() {
         text.innerText += " You miss.";
     }
 
+    // update UI: both playerHealth & monsterHealth changed
+    playerHealthText.innerText = playerHealth;
+    monsterHealthText.innerText = monsterHealth;
+
     if (playerHealth <= 0) {
         lose();
     } else if (monsterHealth <= 0) {
@@ -927,10 +931,6 @@ function attack() {
             defeatMonster();
         }
     }
-
-    // update UI
-    playerHealthText.innerText = playerHealth;
-    monsterHealthText.innerText = monsterHealth;
 
     // break weapon
     if (Math.random() <= 0.1 && inventory.length > 1) {
