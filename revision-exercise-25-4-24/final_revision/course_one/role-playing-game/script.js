@@ -898,8 +898,8 @@ function goFight() {
 
     // update UI
     monsterStats.style.display = "block";
-    monsterName.innerText = monsters[fighting].name;
 
+    monsterName.innerText = monsters[fighting].name;
     monsterHealthText.innerText = monsterHealth;
 }
 
