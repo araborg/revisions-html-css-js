@@ -894,7 +894,7 @@ function fightDragon() {
 function goFight() {
     updateUI(locations[3]);
 
-    monsterHealth = monsters[fighting].health;
+    // monsterHealth = monsters[fighting].health;
 
     // update UI
     monsterStats.style.display = "block";
@@ -909,7 +909,7 @@ function attack() {
     playerHealth -= getMonsterAttackValue(monsters[fighting].level);
 
     // Y is monsterHealth not effective here?????
-    // monsterHealth = monsters[fighting].health;
+    monsterHealth = monsters[fighting].health;
 
     if (isMonsterHit()) {
         monsterHealth -=
