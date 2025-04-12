@@ -36,3 +36,11 @@ function isInvalidInput(str) {
 
     return str.match(regex);
 }
+
+const calculateCalories = () => {
+    const inputVal = budgetNumberInput.value;
+
+    console.log(inputVal);
+};
+
+calorieCounter.addEventListener("submit", calculateCalories);
