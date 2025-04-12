@@ -190,10 +190,13 @@ const variedIndex = () => {
 const getRandomColor = () => {
     const randomColor = colors[getRandomIndex()];
 
-    bgHexCodeSpanElement.innerText = randomColor;
+    const variedColor = colors[variedIndex()];
+
+    // bgHexCodeSpanElement.innerText = randomColor;
     body.style.backgroundColor = randomColor;
 
-    h1.style.color = colors[variedIndex()];
+    bgHexCodeSpanElement.innerText = variedColor;
+    h1.style.color = variedColor;
 };
 
 btn.onclick = getRandomColor;
