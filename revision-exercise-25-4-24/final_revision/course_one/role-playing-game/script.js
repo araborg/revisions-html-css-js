@@ -990,6 +990,7 @@ function restart() {
     xp = 0;
     playerHealth = 100;
     gold = 50;
+    currentWeapon = 0;
 
     xpText.innerText = 0;
     playerHealthText.innerText = playerHealth;
