@@ -174,7 +174,8 @@ const getRandomIndex = () => {
 const getRandomColor = () => {
     const randomColor = colors[getRandomIndex()];
 
-    console.log(randomColor);
+    bgHexCodeSpanElement.innerText = randomColor;
+    body.style.backgroundColor = randomColor;
 };
 
 btn.onclick = getRandomColor;
