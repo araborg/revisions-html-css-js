@@ -173,6 +173,20 @@ const getRandomIndex = () => {
     return randomIndex;
 };
 
+const variedIndex = () => {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+
+    if (randomIndex > 50 && randomIndex <= 100) {
+        return randomIndex - 20;
+    } else if (randomIndex >= 0 && randomIndex <= 50) {
+        return randomIndex + 30;
+    } else if (randomIndex > 100 && randomIndex <= 115) {
+        return randomIndex + 5;
+    } else {
+        return randomIndex;
+    }
+};
+
 const getRandomColor = () => {
     const randomColor = colors[getRandomIndex()];
 
