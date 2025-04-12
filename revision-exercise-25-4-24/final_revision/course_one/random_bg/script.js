@@ -164,5 +164,3 @@ const colors = [
     "#2F4F4F",
     "#000000",
 ];
-
-console.log(colors);
