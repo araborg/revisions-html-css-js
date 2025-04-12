@@ -936,8 +936,9 @@ function attack() {
 for (let i = 0; i < 5; i++) {
     for (let j = i + 1; j < 5; j++) {
         console.log(`i: ${i}, j: ${j}`);
-        console.log("==================");
     }
+
+    console.log("==================");
 }
 
 function getMonsterAttackValue(level) {
