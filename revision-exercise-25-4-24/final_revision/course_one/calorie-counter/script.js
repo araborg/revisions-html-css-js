@@ -29,7 +29,7 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-// if d input value contains invalid value
+// if d input value contains scientific notation
 // return a boolean
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
