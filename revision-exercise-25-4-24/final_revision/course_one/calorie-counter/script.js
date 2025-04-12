@@ -74,6 +74,12 @@ const calculateCalories = (e) => {
 
     // get d values in d inputs above: dse r meant to be
     // atleast one or more inputs
+
+    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
