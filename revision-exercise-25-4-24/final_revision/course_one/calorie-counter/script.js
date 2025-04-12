@@ -50,13 +50,6 @@ const calculateCalories = (e) => {
 
     // Y r will repeating ds?
     isError = false;
-
-    const inputVal = cleanInputString(budgetNumberInput.value);
-    // const inputVal = budgetNumberInput.value;
-
-    const isInputValid = isInvalidInput(inputVal);
-
-    console.log(inputVal, isInputValid);
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
