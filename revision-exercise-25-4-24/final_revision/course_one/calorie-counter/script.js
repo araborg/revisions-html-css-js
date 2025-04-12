@@ -54,6 +54,10 @@ const calculateCalories = (e) => {
     const breakfastNumberInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
+
+    const lunchNumberInputs = document.querySelectorAll(
+        "#lunch input[type=number]"
+    );
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
