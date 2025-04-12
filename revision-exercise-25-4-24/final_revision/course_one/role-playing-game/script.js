@@ -645,6 +645,7 @@ function pickEight() {
 
 // =========== revise ============
 
+/*
 let xp = 0;
 let playerHealth = 100;
 
@@ -1043,7 +1044,6 @@ function pick(guess) {
     }
 }
 */
-
 
 // O(n^2) notation
 // for (let i = 0; i < 5; i++) {
