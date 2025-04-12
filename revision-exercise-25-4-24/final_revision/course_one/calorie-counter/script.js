@@ -41,7 +41,9 @@ function isInvalidInput(str) {
 }
 
 console.log(isInvalidInput("1e3"));
-console.log(isInvalidInput("10"));
+// ['1e3', index: 0, input: '1e3', groups: undefined]
+
+console.log(isInvalidInput("10")); // null
 
 const calculateCalories = (e) => {
     e.preventDefault();
