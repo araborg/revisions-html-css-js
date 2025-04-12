@@ -859,7 +859,7 @@ function buyWeapon() {
 function sellWeapon() {
     if (inventory.length > 1) {
         gold += 15;
-        currentWeapon--;
+        // currentWeapon--;
 
         const soldWeapon = inventory.shift();
 
