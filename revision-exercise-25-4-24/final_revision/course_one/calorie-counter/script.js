@@ -1,7 +1,7 @@
 // form
 const calorieCounter = document.getElementById("calorie-counter");
 
-// inputs
+// d proposed budget of calories to be consumed
 const budgetNumberInput = document.getElementById("budget");
 
 // dropdown
@@ -96,8 +96,13 @@ const calculateCalories = (e) => {
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
+    // ds is same as
+    // const remainingCalories =
+    //     budgetCalories - consumedCalories + exerciseCalories;
+
+    // this: but y was exerciseCalories +ed to budgetCalories
     const remainingCalories =
-        budgetCalories - consumedCalories + exerciseCalories;
+        budgetCalories + exerciseCalories - consumedCalories;
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
