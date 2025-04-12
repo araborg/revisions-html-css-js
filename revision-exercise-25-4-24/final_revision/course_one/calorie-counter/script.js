@@ -40,13 +40,16 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("1e3"));
+// console.log(isInvalidInput("1e3"));
 // ['1e3', index: 0, input: '1e3', groups: undefined]
 
-console.log(isInvalidInput("10")); // null
+// console.log(isInvalidInput("10")); // null
 
 const calculateCalories = (e) => {
     e.preventDefault();
+
+    // Y r will repeating ds?
+    isError = false;
 
     const inputVal = cleanInputString(budgetNumberInput.value);
     // const inputVal = budgetNumberInput.value;
