@@ -21,3 +21,9 @@ function getRandomIndex() {
 
     return randomIndex;
 }
+
+function changeBackgroundColor() {
+    const color = darkColorsArr[getRandomIndex()];
+
+    console.log(color);
+}
