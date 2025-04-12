@@ -1025,5 +1025,3 @@ function pick(guess) {
         }
     }
 }
-
-// pick(8);
