@@ -197,7 +197,7 @@ function addEntry() {
         />
     `;
 
-    targetInputContainer.insertAdjacentElement("beforeend", HTMLString);
+    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
