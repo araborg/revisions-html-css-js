@@ -84,9 +84,11 @@ function calculateCalories(e) {
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
 
     // wt mks ds diff from other i.e. y was it added and nt removed?
+    // ds is bcos ds was exprected to be burnt off like d budgetCalories
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     // y did we pass in a arr: [budgetNumberInput]
+    // getCaloriesFromInputs() is expected an arr parameter
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
     // after d getCaloriesFromInputs() dre is tendency
