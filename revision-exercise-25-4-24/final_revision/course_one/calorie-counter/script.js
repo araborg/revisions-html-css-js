@@ -169,7 +169,7 @@ function addEntry() {
 
     // N.B: Hwever, both d id (#breakfast/#lunch/#dinner)
     // and d class (.input-container) used were already
-    // available in d HTML file.
+    // provided in d HTML file.
     const targetInputContainer = document.querySelector(
         `#${entryDropdown.value} .input-container`
     );
@@ -190,7 +190,9 @@ function addEntry() {
     // targetInputContainer.querySelectorAll('input[type="text"]').length + 1
     // Or:
     // targetInputContainer.querySelectorAll('input[type="number"]').length + 1
-    // will work
+    // will work.
+
+    // Note: .querySelectorAll() was used and nt .querySelector()
 
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryNumber}-name">
