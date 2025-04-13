@@ -102,7 +102,8 @@ const calculateCalories = (e) => {
     // const remainingCalories =
     //     budgetCalories - consumedCalories + exerciseCalories;
 
-    // this: but y was exerciseCalories +ed to budgetCalories
+    // this: but y was exerciseCalories +ed to budgetCalories?
+    // budgetCalories: is d calories budgeted to be burnt/loss
     const remainingCalories =
         budgetCalories + exerciseCalories - consumedCalories;
 };
