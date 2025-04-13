@@ -128,3 +128,23 @@ function calculateCalories(e) {
 }
 
 calorieCounter.addEventListener("submit", calculateCalories);
+
+function getCaloriesFromInputs(list) {
+    // since all calories we need to be added, set initial to 0
+    let calories = 0;
+
+    for (const item of list) {
+        const currVal = cleanInputString(item.value);
+        const invalidInputMatch = isInvalidInput(currVal);
+
+        if (invalidInputMatch) {
+            alert(`Invalid Input: ${invalidInputMatch[0]}`);
+
+            // for ds run it means dre an error
+            isError = true;
+
+            // jump out of ds closure
+            return null;
+        }
+    }
+}
