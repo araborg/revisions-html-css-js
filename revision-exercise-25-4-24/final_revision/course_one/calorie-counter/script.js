@@ -149,6 +149,7 @@ function getCaloriesFromInputs(list) {
             return null;
         }
 
+        // for each loop +d current currVal to calories
         calories += Number(currVal);
     }
 }
