@@ -161,10 +161,11 @@ function addEntry() {
     // #entryDropdown.value rep d id of d fieldset wc
     // serves as d container for anoda div with class
     // input-container.
+
     // With ds, d speciic input container will be selected.
     // It is like saying select an input container of class
     // .input-container inside a container with id of
-    // breakfast/lunch/dinner etc.
+    // #breakfast/#lunch/#dinner etc.
 
     // N.B: Hwever, both d id (#breakfast/#lunch/#dinner)
     // and d class (.input-container) used were already
