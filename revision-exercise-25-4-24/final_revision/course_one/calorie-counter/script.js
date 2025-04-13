@@ -36,7 +36,6 @@ function cleanInputString(str) {
 // ['1e3', index: 0, input: '1e3', groups: undefined]
 // console.log(isInvalidInput("10")); // null 4
 // normal Number.
-
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
@@ -52,7 +51,7 @@ function calculateCalories(e) {
     // value is false inside ds fxn
     isError = false;
 
-    // dse r presently plaholders for future reference
+    // dse select only d input with number
     const breakfastNumberInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
