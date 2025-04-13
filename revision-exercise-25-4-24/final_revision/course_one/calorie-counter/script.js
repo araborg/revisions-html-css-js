@@ -167,15 +167,36 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
-    console.log(targetInputContainer);
+    // console.log(targetInputContainer);
 
-    // find out abt this
+    // ds creates an obj id or index
     const entryNumber =
         targetInputContainer
-            //
+            // ds on it own gives:
+            // querySelectorAll('input[type="text"]').length
+            // so + 1 gives
             .querySelectorAll('input[type="text"]').length + 1;
 
-    console.log(targetInputContainer);
+    const HTMLString = `
+        <label for="${entryDropdown.value}-${entryNumber}-name">
+            Entry ${entryNumber} Name
+        </label>
+        <input 
+            type="text"
+            id="${entryDropdown.value}-${entryNumber}-name"
+            placeholder="Name"
+        />
+
+        <label for="${entryDropdown.value}-${entryNumber}-calories">
+            Entry ${entryNumber} Calories
+        </label>
+        <input 
+            type="number"
+            id="${entryDropdown.value}-${entryNumber}-calories"
+            placeholder="Calories"
+        />
+
+    `;
 }
 
 addEntryButton.addEventListener("click", addEntry);
