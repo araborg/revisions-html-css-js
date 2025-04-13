@@ -89,7 +89,7 @@ function calculateCalories(e) {
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     // y did we pass in a arr: [budgetNumberInput]
-    // getCaloriesFromInputs() is expected an arr argument
+    // getCaloriesFromInputs() expected an arr argument
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
     // after d getCaloriesFromInputs() dre is tendency
