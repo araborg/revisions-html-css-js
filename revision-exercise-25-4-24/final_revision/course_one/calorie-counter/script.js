@@ -240,6 +240,10 @@ function clearForm() {
         document.querySelectorAll(".input-container")
     );
 
+    for (let container of inputContainers) {
+        container.innerHTML = "";
+    }
+
     console.log(inputContainers);
 }
 
