@@ -32,18 +32,16 @@ function cleanInputString(str) {
 // if d input value contains scientific notation:
 // It will  return null when the input is a valid
 // number without any scientific notation else it
-// returns smth else
+// returns smth else like ds:
+// ['1e3', index: 0, input: '1e3', groups: undefined]
+// console.log(isInvalidInput("10")); // null 4
+// normal Number.
 
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
     return str.match(regex);
 }
-
-// console.log(isInvalidInput("1e3"));
-// ['1e3', index: 0, input: '1e3', groups: undefined]
-
-// console.log(isInvalidInput("10")); // null
 
 function calculateCalories(e) {
     e.preventDefault();
