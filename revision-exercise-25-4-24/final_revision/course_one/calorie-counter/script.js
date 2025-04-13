@@ -167,6 +167,8 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
+    console.log(targetInputContainer);
+
     // find out abt this
     const entryNumber =
         targetInputContainer
