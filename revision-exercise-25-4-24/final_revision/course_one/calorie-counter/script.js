@@ -242,6 +242,7 @@ function clearForm() {
 
     for (let container of inputContainers) {
         container.innerHTML = "";
+        // container.innerText = "";
     }
 
     budgetNumberInput.value = "";
