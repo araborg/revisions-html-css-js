@@ -244,7 +244,9 @@ function clearForm() {
         container.innerHTML = "";
     }
 
-    console.log(inputContainers);
+    budgetNumberInput.value = "";
+    output.innerText = "";
+    output.classList.add("hide");
 }
 
 clearButton.addEventListener("click", clearForm);
