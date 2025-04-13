@@ -42,6 +42,7 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
+// ds takes place after clicking Add Entry btn
 function calculateCalories(e) {
     e.preventDefault();
 
