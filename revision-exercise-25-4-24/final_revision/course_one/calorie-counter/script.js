@@ -157,7 +157,11 @@ function getCaloriesFromInputs(list) {
 }
 
 function addEntry() {
-    const targetInputContainer = ``;
+    const targetInputContainer = document.querySelector(
+        `#${entryDropdown.value} .input-container`
+    );
+
+    console.log(targetInputContainer);
 }
 
 addEntryButton.addEventListener("click", addEntry);
