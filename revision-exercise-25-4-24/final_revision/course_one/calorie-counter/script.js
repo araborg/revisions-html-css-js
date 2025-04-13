@@ -130,6 +130,8 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
+    // d list is similar to an arr but it is nt an arr
+
     // since all calories we need to be added, set initial to 0
     let calories = 0;
 
