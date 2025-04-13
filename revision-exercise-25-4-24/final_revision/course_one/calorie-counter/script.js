@@ -45,7 +45,7 @@ function isInvalidInput(str) {
 
 // console.log(isInvalidInput("10")); // null
 
-const calculateCalories = (e) => {
+function calculateCalories(e) {
     e.preventDefault();
 
     // Y r will repeating ds?
@@ -125,6 +125,6 @@ const calculateCalories = (e) => {
     `;
 
     output.classList.remove("hide");
-};
+}
 
 calorieCounter.addEventListener("submit", calculateCalories);
