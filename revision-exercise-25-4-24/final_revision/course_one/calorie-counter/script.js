@@ -159,3 +159,5 @@ function getCaloriesFromInputs(list) {
 function addEntry() {
     const targetInputContainer = ``;
 }
+
+addEntryButton.addEventListener("click", addEntry);
