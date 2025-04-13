@@ -166,6 +166,11 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
+    const entryNumber =
+        targetInputContainer
+            //
+            .querySelectorAll('input[type="text"]').length + 1;
+
     console.log(targetInputContainer);
 }
 
