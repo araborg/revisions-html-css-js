@@ -239,4 +239,8 @@ function clearForm() {
     const inputContainers = Array.from(
         document.querySelectorAll(".input-container")
     );
+
+    console.log(inputContainers);
 }
+
+clearButton.addEventListener("click", clearForm);
