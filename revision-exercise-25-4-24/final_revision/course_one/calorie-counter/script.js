@@ -183,8 +183,6 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
-    // console.log(targetInputContainer);
-
     // ds creates an obj id or index
     const entryNumber =
         targetInputContainer
