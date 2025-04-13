@@ -92,8 +92,9 @@ function calculateCalories(e) {
     // getCaloriesFromInputs() expected an arr argument
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
-    // after d getCaloriesFromInputs() dre is tendency
-    // for isError to change to true
+    // getCaloriesFromInputs() will either return null or smth
+    // like this: ['1e3', index: 0, input: '1e3', groups: undefined]
+    // wc will change it to true inside d getCaloriesFromInputs()
     if (isError) {
         return;
     }
