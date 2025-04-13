@@ -74,8 +74,8 @@ function calculateCalories(e) {
         "#exercise input[type=number]"
     );
 
-    // get d values in d inputs above: dse r meant to be
-    // atleast one or more inputs
+    // get d values (in an arr form) in d inputs above:
+    // dse r meant to be atleast one or more inputs
 
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
