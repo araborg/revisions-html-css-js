@@ -186,13 +186,15 @@ function addEntry() {
 
             // .querySelectorAll('input[type="text"]').length + 1;
             .querySelectorAll('input[type="number"]').length + 1;
+
     // Either:
     // targetInputContainer.querySelectorAll('input[type="text"]').length + 1
     // Or:
     // targetInputContainer.querySelectorAll('input[type="number"]').length + 1
     // will work.
 
-    // Note: .querySelectorAll() was used and nt .querySelector()
+    // Note: .querySelectorAll() was used and nt
+    // .querySelector(). Y?
 
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryNumber}-name">
