@@ -170,12 +170,15 @@ function addEntry() {
     // console.log(targetInputContainer);
 
     // ds creates an obj id or index
-    const entryNumber = targetInputContainer
-        // ds, querySelectorAll('input[type="text"]').length,
-        // on it own starts at 0. So + 1 mks it starts at 1
-        // for proper purpose since we r using length & nt
-        // index.
-        .querySelectorAll('input[type="text"]').length;
+    const entryNumber =
+        targetInputContainer
+            // ds, querySelectorAll('input[type="text"]').length,
+            // on it own starts at 0. So + 1 mks it starts at 1
+            // for proper purpose since we r using length & nt
+            // index.
+
+            // .querySelectorAll('input[type="text"]').length + 1;
+            .querySelectorAll('input[type="number"]').length + 1;
     console.log(entryNumber);
 
     const HTMLString = `
