@@ -107,7 +107,24 @@ const calculateCalories = (e) => {
     const remainingCalories =
         budgetCalories + exerciseCalories - consumedCalories;
 
+    // If surplusOrDeficit is -ve i.e < 0: consumedCalories > calories
+    // to burnt. ds means d consumedCalories is in surplus and vice versa
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+
+    // Math.abs() returns an absolute value. -25/+25 returns 25
+    output.innerHTML = `
+        <span class="${surplusOrDeficit.toLowerCase()}">
+            ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}
+        </span>
+
+        <hr>
+
+        <p>${budgetCalories} Calories Budgeted</p>
+        <p>${consumedCalories} Calories Consumed</p>
+        <p>${exerciseCalories} Calories Burned</p>
+    `;
+
+    output.classList.remove("hide");
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
