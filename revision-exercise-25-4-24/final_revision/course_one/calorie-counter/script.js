@@ -138,7 +138,6 @@ function getCaloriesFromInputs(list) {
 
     for (const item of list) {
         const currVal = cleanInputString(item.value);
-        console.log(item);
 
         // ds return null or ['1e3', index: 0, input: '1e3', groups: undefined]
         const invalidInputMatch = isInvalidInput(currVal);
@@ -189,13 +188,17 @@ function addEntry() {
             // index.
 
             .querySelectorAll('input[type="text"]').length + 1;
-    // .querySelectorAll('input[type="number"]').length + 1;
+    //      .querySelectorAll('input[type="number"]').length + 1;
 
     // Either:
     // targetInputContainer.querySelectorAll('input[type="text"]').length + 1
     // Or:
     // targetInputContainer.querySelectorAll('input[type="number"]').length + 1
-    // will work. But input[type="number"] will also return budget input
+    // will work.
+
+    // ???
+    // But input[type="number"] will also return budget
+    // input
 
     // Note: .querySelectorAll() was used and nt
     // .querySelector(). Y?
