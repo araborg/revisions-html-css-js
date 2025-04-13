@@ -159,9 +159,10 @@ function getCaloriesFromInputs(list) {
 function addEntry() {
     // #entryDropdown.value rep d id of d fieldset wc serves
     // as d container for anoda div with class input-container
-    // With ds, d speciic container will select. It is like
-    // saying select an input container inside a container
-    // with id of breakfast/lunch/dinner etc
+    // With ds, d speciic input container will be selected.
+    // It is like saying select an input container of class
+    // .input-container inside a container with id of
+    // breakfast/lunch/dinner etc
     const targetInputContainer = document.querySelector(
         `#${entryDropdown.value} .input-container`
     );
