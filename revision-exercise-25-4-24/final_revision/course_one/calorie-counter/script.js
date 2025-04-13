@@ -113,18 +113,20 @@ function calculateCalories(e) {
     // to burnt. ds means d consumedCalories is in surplus and vice versa
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 
-    // Math.abs() returns an absolute value. -25/+25 returns 25
-    output.innerHTML = `
-        <span class="${surplusOrDeficit.toLowerCase()}">
-            ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}
-        </span>
+    // create a span and 3 paragraphs
+    output.innerHTML =
+        // Math.abs() returns an absolute value. -25/+25 returns 25
+        `
+            <span class="${surplusOrDeficit.toLowerCase()}">
+                ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}
+            </span>
 
-        <hr>
+            <hr>
 
-        <p>${budgetCalories} Calories Budgeted</p>
-        <p>${consumedCalories} Calories Consumed</p>
-        <p>${exerciseCalories} Calories Burned</p>
-    `;
+            <p>${budgetCalories} Calories Budgeted</p>
+            <p>${consumedCalories} Calories Consumed</p>
+            <p>${exerciseCalories} Calories Burned</p>
+        `;
 
     output.classList.remove("hide");
 }
@@ -205,6 +207,7 @@ function addEntry() {
     // Note: .querySelectorAll() was used and nt
     // .querySelector(). Y?
 
+    // create a label and an input elements
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryNumber}-name">
             Entry ${entryNumber} Name
