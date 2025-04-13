@@ -52,7 +52,8 @@ function calculateCalories(e) {
     // value is false inside ds fxn
     isError = false;
 
-    // dse select only d input with number
+    // dse select only d input with number so we can
+    // access d values
     const breakfastNumberInputs = document.querySelectorAll(
         "#breakfast input[type=number]"
     );
