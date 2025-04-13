@@ -176,6 +176,7 @@ function addEntry() {
             // querySelectorAll('input[type="text"]').length
             // so + 1 gives
             .querySelectorAll('input[type="text"]').length + 1;
+    console.log(entryNumber);
 
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryNumber}-name">
