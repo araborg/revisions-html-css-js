@@ -106,6 +106,8 @@ const calculateCalories = (e) => {
     // budgetCalories: is d calories budgeted to be burnt/loss
     const remainingCalories =
         budgetCalories + exerciseCalories - consumedCalories;
+
+    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 };
 
 calorieCounter.addEventListener("submit", calculateCalories);
