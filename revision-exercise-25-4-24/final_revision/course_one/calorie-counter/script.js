@@ -131,8 +131,11 @@ function calculateCalories(e) {
         budgetCalories + exerciseCalories - consumedCalories;
 
     // If surplusOrDeficit is -ve i.e < 0: consumedCalories > calories
-    // to burnt. ds means d consumedCalories is in surplus and vice versa
-    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+    // to be burnt. ds means d consumedCalories is in surplus and vice
+    // versa
+    const surplusOrDeficit =
+        //
+        remainingCalories < 0 ? "Surplus" : "Deficit";
 
     // create a span and 3 paragraphs
     output.innerHTML =
