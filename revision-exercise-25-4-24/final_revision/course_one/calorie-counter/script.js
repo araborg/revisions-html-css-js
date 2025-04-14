@@ -53,6 +53,8 @@ function cleanInputString(str) {
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
+    // if both str & regex do match, d return smth like
+    // ds: ['1e3', index: 0, input: '1e3', groups: undefined]
     return str.match(regex);
 }
 
