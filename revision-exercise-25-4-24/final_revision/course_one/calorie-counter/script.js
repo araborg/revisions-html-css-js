@@ -126,6 +126,7 @@ function calculateCalories(e) {
 
     // this: but y was exerciseCalories +ed to budgetCalories?
     // budgetCalories: is d calories budgeted to be burnt/loss
+    // exerciseCalories is also expected to be burnt.
     const remainingCalories =
         budgetCalories + exerciseCalories - consumedCalories;
 
