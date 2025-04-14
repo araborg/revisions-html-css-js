@@ -231,8 +231,7 @@ function addEntry() {
     // will work.
 
     // ???
-    // But input[type="number"] will also return budget
-    // input
+    // But input[type="number"] will also return budget input
 
     // Note: .querySelectorAll() was used and nt
     // .querySelector(). Y?
