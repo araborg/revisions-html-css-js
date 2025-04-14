@@ -170,7 +170,8 @@ function getCaloriesFromInputs(list) {
     for (const item of list) {
         const currVal = cleanInputString(item.value);
 
-        // ds return null or ['1e3', index: 0, input: '1e3', groups: undefined]
+        // ds return null or
+        // ['1e3', index: 0, input: '1e3', groups: undefined]
         const invalidInputMatch = isInvalidInput(currVal);
 
         if (invalidInputMatch) {
