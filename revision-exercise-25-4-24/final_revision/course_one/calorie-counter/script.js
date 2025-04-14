@@ -137,7 +137,7 @@ function calculateCalories(e) {
         //
         remainingCalories < 0 ? "Surplus" : "Deficit";
 
-    // create a span and 3 paragraphs
+    // Update output UI: add a span and 3 paragraphs
     output.innerHTML =
         // Math.abs() returns an absolute value. -25/+25 returns 25
         `
