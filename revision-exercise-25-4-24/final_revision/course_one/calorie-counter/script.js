@@ -24,10 +24,14 @@ const output = document.getElementById("output");
 // boolean state
 let isError = false;
 
+// wt will happen when
+// let isError = true;
+
 // format budgetNumberInput value:
 
 // if d input value contains any of dse: +, - or
-// empty space any where replace it with empty string
+// empty space any where replace it with empty
+// string
 function cleanInputString(str) {
     const regex = /[+-\s]/g;
 
