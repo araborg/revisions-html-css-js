@@ -115,6 +115,7 @@ function calculateCalories(e) {
     // getCaloriesFromInputs() will either return null or smth
     // like this: ['1e3', index: 0, input: '1e3', groups: undefined]
     // wc will change it to true inside d getCaloriesFromInputs()
+    // or incase isError changes to true return.
     if (isError) {
         return;
     }
