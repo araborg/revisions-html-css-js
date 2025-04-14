@@ -16,7 +16,8 @@ const clearButton = document.getElementById("clear");
 
 // Calculate Remaining Calories btn is yet to be selected
 // ds is bcos d btn is trigger by d event listener on
-// calorieCounter. d btn is inside d form elemt.
+// calorieCounter. d btn is inside d form elemt. It is
+// also triggered by d Enter key.
 
 // outpust
 const output = document.getElementById("output");
@@ -33,7 +34,8 @@ let isError = false;
 // empty space any where replace it with empty
 // string
 function cleanInputString(str) {
-    const regex = /[+-\s]/g;
+    // const regex = /[+-\s]/g;
+    const regex = /[\s-+]/g;
 
     return str.replace(regex, "");
 }
