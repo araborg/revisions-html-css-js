@@ -1,3 +1,5 @@
+/*
+
 // form: ds is where
 // calorieCounter
 //      .addEventListener("submit", calculateCalories);
@@ -292,3 +294,6 @@ clearButton.addEventListener("click", clearForm);
 // for (let arr of newArr) {
 //     console.log(arr);
 // }
+
+
+*/
