@@ -34,6 +34,7 @@ let isError = false;
 // empty space any where replace it with empty
 // string
 function cleanInputString(str) {
+    // in no particular order:
     // const regex = /[+-\s]/g;
     const regex = /[\s-+]/g;
 
