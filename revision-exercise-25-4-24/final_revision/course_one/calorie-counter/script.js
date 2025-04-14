@@ -263,8 +263,9 @@ function addEntry() {
 addEntryButton.addEventListener("click", addEntry);
 
 function clearForm() {
-    // ds selects all inputs irrespective of weda
-    // it is budget/breakfast/lunch/dinner/snacks/exercise etc
+    // ds selects all inputs irrespective of weda it is
+    // budget/breakfast/lunch/dinner/snacks/exercise etc
+    // provided it's class .input-container
     const inputContainers = Array.from(
         document.querySelectorAll(".input-container")
     );
