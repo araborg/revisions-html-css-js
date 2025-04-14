@@ -120,6 +120,7 @@ function calculateCalories(e) {
         return;
     }
 
+    // amt of calories consumed by an individual via foods.
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
