@@ -283,10 +283,9 @@ function clearForm() {
 
 clearButton.addEventListener("click", clearForm);
 
+// Using Array.from(): means mk an array from d argument
 const arr = "1, 2, 3, 4, 5, 6";
 const newArr = Array.from(arr);
-
-// console.log(newArr);
 
 for (let arr of newArr) {
     console.log(arr);
