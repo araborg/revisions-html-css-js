@@ -60,6 +60,7 @@ function isInvalidInput(str) {
 
 // ds takes place after clicking "Add Entry" btn
 function calculateCalories(e) {
+    // ds prevent pg reloading
     e.preventDefault();
 
     // Y r will repeating ds?
