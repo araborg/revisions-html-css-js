@@ -92,7 +92,7 @@ function calculateCalories(e) {
     );
 
     // get d values (in an arr form) in d inputs above:
-    // dse r meant to be atleast one or more inputs.
+    // dse values r meant to be atleast one or more inputs.
     // Passing dm into getCaloriesFromInputs() will return
     // d sum of each values.
 
