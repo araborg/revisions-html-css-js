@@ -1,4 +1,7 @@
-// form
+// form: ds is where
+// calorieCounter
+//      .addEventListener("submit", calculateCalories);
+// is attached
 const calorieCounter = document.getElementById("calorie-counter");
 
 // d proposed budget of calories to be lost/burnt
