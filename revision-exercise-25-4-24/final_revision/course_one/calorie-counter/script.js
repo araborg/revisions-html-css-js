@@ -138,6 +138,8 @@ function calculateCalories(e) {
         remainingCalories < 0 ? "Surplus" : "Deficit";
 
     // Update output UI: add a span and 3 paragraphs
+    // innerHTML means embedded d added elemts instead of using
+    // output.innerText +=
     output.innerHTML =
         // Math.abs() returns an absolute value. -25/+25 returns 25
         `
