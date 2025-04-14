@@ -124,14 +124,14 @@ function calculateCalories(e) {
     const consumedCalories =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
-    // ds is same as
-    // const remainingCalories =
-    //     budgetCalories - consumedCalories + exerciseCalories;
-
     // this: but y was exerciseCalories +ed to budgetCalories?
     // budgetCalories: is d calories budgeted to be burnt/loss
     const remainingCalories =
         budgetCalories + exerciseCalories - consumedCalories;
+
+    // ds is same as
+    // const remainingCalories =
+    //     budgetCalories - consumedCalories + exerciseCalories;
 
     // If surplusOrDeficit is -ve i.e < 0: consumedCalories > calories
     // to burnt. ds means d consumedCalories is in surplus and vice versa
