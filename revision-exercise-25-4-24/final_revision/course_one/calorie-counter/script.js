@@ -48,7 +48,8 @@ function cleanInputString(str) {
 // ['1e3', index: 0, input: '1e3', groups: undefined]
 
 // console.log(isInvalidInput("10")); // null
-// 4 normal Number.
+// 4 normal Number. d essence of + is in case wt we r lking
+// 4 occurs more than oncuechange.
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
