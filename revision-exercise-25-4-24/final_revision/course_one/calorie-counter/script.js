@@ -93,8 +93,8 @@ function calculateCalories(e) {
 
     // get d values (in an arr form) in d inputs above:
     // dse values r meant to be atleast one or more inputs.
-    // Passing dm into getCaloriesFromInputs() will return
-    // d sum of each values.
+    // Passing dm as an arr into getCaloriesFromInputs()
+    // will return d sum of each values.
 
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
