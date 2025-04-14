@@ -182,10 +182,11 @@ function getCaloriesFromInputs(list) {
 
             // jump out of ds closure
             return null;
+        } else {
+            // y r we not using else statement
+            // for each loop +d current currVal to calories
+            calories += Number(currVal);
         }
-
-        // for each loop +d current currVal to calories
-        calories += Number(currVal);
     }
 
     return calories;
