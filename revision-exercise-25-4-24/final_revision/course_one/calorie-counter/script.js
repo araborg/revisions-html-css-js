@@ -15,6 +15,8 @@ const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 
 // Calculate Remaining Calories btn is yet to be selected
+// ds is bcos d btn is trigger by d event listener on
+// calorieCounter. d btn is inside d form elemt.
 
 // outpust
 const output = document.getElementById("output");
