@@ -145,7 +145,7 @@ function calculateCalories(e) {
         // Math.abs() returns an absolute value. -25/+25 returns 25
         `
             <span class="${surplusOrDeficit.toLowerCase()}">
-                ${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}
+                ${remainingCalories} Calorie ${surplusOrDeficit}
             </span>
 
             <hr>
