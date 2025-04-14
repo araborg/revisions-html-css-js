@@ -64,9 +64,9 @@ function calculateCalories(e) {
     e.preventDefault();
 
     // Y r will repeating ds?
-    // ds may be for a local reference incase it
-    // changes globally. ds mks sure d initial
-    // value is false inside ds fxn
+    // ds may be for a local scope incase it changes
+    // globally. ds mks sure d initial value is false
+    // inside ds fxn
     isError = false;
 
     // dse select only d input with number so we can
