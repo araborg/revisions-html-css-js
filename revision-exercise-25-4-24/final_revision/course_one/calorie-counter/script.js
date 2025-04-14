@@ -278,6 +278,8 @@ function clearForm() {
 
     budgetNumberInput.value = "";
     output.innerText = "";
+
+    // helps remove d output container
     output.classList.add("hide");
 }
 
