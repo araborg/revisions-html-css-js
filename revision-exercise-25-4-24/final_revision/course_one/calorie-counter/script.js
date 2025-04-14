@@ -96,13 +96,16 @@ function calculateCalories(e) {
     // Passing dm as an arr into getCaloriesFromInputs()
     // will return d sum of each values.
 
-    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const breakfastCalories =
+        //
+        getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
 
-    // wt mks ds diff from other i.e. y was it added and nt removed?
-    // ds is bcos ds was exprected to be burnt off like d budgetCalories
+    // Wt mks ds diff from other i.e. y was it added and nt
+    // removed? ds is bcos ds was exprected to be burnt off
+    // like d budgetCalories
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
     // y did we pass in a arr: [budgetNumberInput]
