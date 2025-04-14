@@ -135,7 +135,8 @@ function calculateCalories(e) {
     // versa
     const surplusOrDeficit =
         //
-        remainingCalories < 0 ? "Surplus" : "Deficit";
+        // remainingCalories < 0 ? "Surplus" : "Deficit";
+        remainingCalories > 0 ? "Deficit" : "Surplus";
 
     // Update output UI: add a span and 3 paragraphs
     // innerHTML means embedded d added elemts instead of using
