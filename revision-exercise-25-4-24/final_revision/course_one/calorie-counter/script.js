@@ -41,13 +41,14 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-// if d input value contains scientific notation:
+// if d input value contains scientific notation e.g: 10e1:
 // It will  return null when the input is a valid
 // number without any scientific notation else it
 // returns smth else like ds:
 // ['1e3', index: 0, input: '1e3', groups: undefined]
-// console.log(isInvalidInput("10")); // null 4
-// normal Number.
+
+// console.log(isInvalidInput("10")); // null
+// 4 normal Number.
 function isInvalidInput(str) {
     const regex = /\d+e\d/i;
 
