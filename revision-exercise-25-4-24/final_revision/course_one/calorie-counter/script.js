@@ -177,7 +177,7 @@ function getCaloriesFromInputs(list) {
         if (invalidInputMatch) {
             alert(`Invalid Input: ${invalidInputMatch[0]}`);
 
-            // for ds run it means dre an error
+            // for ds to run it means dre's an error
             isError = true;
 
             // jump out of ds closure
