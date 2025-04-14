@@ -42,11 +42,11 @@ function cleanInputString(str) {
 }
 
 // if d input value contains scientific notation e.g: 10e1:
-// It will  return null when the input is a valid
-// number without any scientific notation else it
-// returns smth else like ds:
+// It will return smth like ds:
 // ['1e3', index: 0, input: '1e3', groups: undefined]
 
+// It will  return null when the input is a valid
+// number without any scientific notation.
 // console.log(isInvalidInput("10")); // null
 // 4 normal Number. d essence of + is in case wt we r lking
 // 4 occurs more than oncuechange.
