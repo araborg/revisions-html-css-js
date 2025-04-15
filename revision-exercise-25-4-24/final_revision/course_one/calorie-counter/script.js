@@ -354,9 +354,9 @@ function addEntry() {
     const entryAdded = document.querySelectorAll(
         `#${entryDropdown.value} .input-container`
     );
-    const entryId = entryAdded.querySelectorAll("input[type=number]").length;
+    // const entryId = entryAdded.querySelectorAll("input[type=number]").length;
 
-    console.log(entryId);
+    console.log(entryAdded);
 
     const HTMLString = `
         <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
