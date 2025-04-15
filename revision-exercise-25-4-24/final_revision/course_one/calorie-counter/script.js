@@ -299,7 +299,7 @@ clearButton.addEventListener("click", clearForm);
 
 // Revision
 function cleanInputString(str) {
-    const regex = /-+\s/g;
+    const regex = /[-+\s]/g;
 
     const strLen = str.replace(regex, "");
     console.log(strLen.length);
