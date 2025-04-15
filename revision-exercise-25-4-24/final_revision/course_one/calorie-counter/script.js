@@ -363,7 +363,9 @@ function addEntry() {
         targetInputContainer.querySelectorAll("input[type=number]").length + 1;
 
     const HTMLString = `
-        <label for="${entryDropdown.value}-${targetId}-name">Entry ${targetId} Name</label>
+        <label for="${entryDropdown.value}-${targetId}-name">
+            Entry ${targetId} Name
+        </label>
         <input
             type="text"
             id="${entryDropdown.value}-${targetId}-name"
@@ -371,7 +373,9 @@ function addEntry() {
             required
         />
 
-        <label for="${entryDropdown.value}-${targetId}-calories">Entry ${targetId} Calories</label>
+        <label for="${entryDropdown.value}-${targetId}-calories">
+            Entry ${targetId} Calories
+        </label>
         <input
             type="number"
             id="${entryDropdown.value}-${targetId}-calories"
