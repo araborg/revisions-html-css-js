@@ -363,7 +363,7 @@ function addEntry() {
     const HTMLString = `
         <label for="budget">Entry ${targetId} Name</label>
         <input
-            type="text"
+            type="number"
             id="budget"
             placeholder="Daily calorie budget"
             required
