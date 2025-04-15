@@ -310,7 +310,7 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("1e2"));
+console.log(isInvalidInput("10"));
 
 function calculateCalories(e) {}
 
