@@ -379,6 +379,12 @@ function addEntry() {
         />
     `;
 
+    const arr = [];
+
+    const arrLength = arr.push(HTMLString);
+
+    console.log(arrLength.length);
+
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
