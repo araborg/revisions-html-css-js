@@ -297,3 +297,15 @@ clearButton.addEventListener("click", clearForm);
 
 
 */
+// Revision
+function cleanInputString(str) {}
+
+function isInvalidInput(str) {}
+
+function calculateCalories(e) {}
+
+function getCaloriesFromInputs(list) {}
+
+function addEntry() {}
+
+function clearForm() {}
