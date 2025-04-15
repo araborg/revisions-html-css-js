@@ -303,6 +303,7 @@ const calorieCounter = document.getElementById("calorie-counter");
 const budget = document.getElementById("#budget");
 
 const addEntry = document.getElementById("add-entry");
+const clearButton = document.getElementById("clear");
 
 let isError = false;
 
