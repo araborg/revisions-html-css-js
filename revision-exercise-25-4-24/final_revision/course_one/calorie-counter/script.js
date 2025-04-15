@@ -358,14 +358,14 @@ function addEntry() {
 
     console.log(entryAdded);
 
-    const HTMLString = `
-        <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
-        <input
-            type="number"
-            id="${entryDropdown.value}"
-            placeholder="Calories"
-        />
-    `;
+    // const HTMLString = `
+    //     <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
+    //     <input
+    //         type="number"
+    //         id="${entryDropdown.value}"
+    //         placeholder="Calories"
+    //     />
+    // `;
 }
 
 addEntryButton.addEventListener("click", addEntry);
