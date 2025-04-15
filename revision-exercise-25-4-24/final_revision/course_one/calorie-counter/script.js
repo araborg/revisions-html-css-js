@@ -371,7 +371,9 @@ function addEntry() {
         />
     `;
 
-    console.log(HTMLString);
+    // console.log(HTMLString);
+
+    entryAdded.insertAdjacentHTML("beforeend", HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
