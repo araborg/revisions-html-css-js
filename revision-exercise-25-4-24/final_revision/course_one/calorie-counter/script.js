@@ -381,7 +381,7 @@ function addEntry() {
         />
     `;
 
-    const arrLength = arr.push(HTMLString;
+    const arrLength = arr.push(HTMLString);
 
     console.log(arrLength);
 
