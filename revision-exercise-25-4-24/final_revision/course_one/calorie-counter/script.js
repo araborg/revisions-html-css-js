@@ -359,7 +359,7 @@ function addEntry() {
     // console.log(entryAdded);
 
     // d children
-    const entryId = entryAdded.querySelectorAll("input[type=text]");
+    const entryId = entryAdded.querySelectorAll("input[type=text]").length + 1;
 
     console.log(entryId);
 
