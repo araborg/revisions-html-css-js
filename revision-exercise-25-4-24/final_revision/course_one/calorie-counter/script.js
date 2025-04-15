@@ -371,7 +371,7 @@ function addEntry() {
             required
         />
 
-        <label for="budget">Entry ${targetId} Calories</label>
+        <label for="${entryDropdown.value}-${targetId}-calories">Entry ${targetId} Calories</label>
         <input
             type="number"
             id="${entryDropdown.value}-${targetId}-calories"
