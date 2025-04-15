@@ -361,7 +361,22 @@ function addEntry() {
         targetInputContainer.querySelectorAll("input[type=text]").length;
 
     const HTMLString = `
-    
+        <label for="budget">Entry ${targetId} Name</label>
+        <input
+            type="number"
+            id="budget"
+            placeholder="Daily calorie budget"
+            required
+        />
+
+        <label for="budget">Entry ${targetId} Calories</label>
+        <input
+            type="number"
+            id="budget"
+            placeholder="Daily calorie budget"
+            min="0"
+            required
+        />
     `;
 
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
