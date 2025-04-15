@@ -363,10 +363,10 @@ function addEntry() {
         targetInputContainer.querySelectorAll("input[type=number]").length + 1;
 
     const HTMLString = `
-        <label for="budget">Entry ${targetId} Name</label>
+        <label for="${entryDropdown.value}-${targetId}-name">Entry ${targetId} Name</label>
         <input
             type="text"
-            id="budget"
+            id="${entryDropdown.value}-${targetId}-name"
             placeholder="Name"
             required
         />
