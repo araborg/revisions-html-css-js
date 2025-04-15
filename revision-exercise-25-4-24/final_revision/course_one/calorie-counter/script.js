@@ -355,3 +355,4 @@ function addEntry() {}
 addEntryButton.addEventListener("click", addEntry);
 
 function clearForm() {}
+addEntryButton.addEventListener("click", clearForm);
