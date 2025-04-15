@@ -304,7 +304,13 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-function isInvalidInput(str) {}
+function isInvalidInput(str) {
+    const regex = /d+ed+/i;
+
+    return str.match(regex);
+}
+
+console.log(isInvalidInput("1e2"));
 
 function calculateCalories(e) {}
 
