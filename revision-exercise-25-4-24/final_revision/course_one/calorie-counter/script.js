@@ -350,9 +350,7 @@ calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {}
 
-function addEntry() {
-    console.log("Hello");
-}
+function addEntry() {}
 
 addEntryButton.addEventListener("click", addEntry);
 
