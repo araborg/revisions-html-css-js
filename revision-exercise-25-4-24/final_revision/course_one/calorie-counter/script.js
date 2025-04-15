@@ -324,10 +324,9 @@ function isInvalidInput(str) {
 function calculateCalories(e) {
     e.preventDefault();
 
-    const breakfastNumberInputs = document
-        .querySelectorAll
-        // `${}`
-        ();
+    const breakfastNumberInputs = document.querySelectorAll(
+        `#${entryDropdown.value} .input-container`
+    );
 
     console.log(breakfastNumberInputs);
 }
