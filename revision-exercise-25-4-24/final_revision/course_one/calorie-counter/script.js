@@ -302,8 +302,10 @@ clearButton.addEventListener("click", clearForm);
 const calorieCounter = document.getElementById("calorie-counter");
 const budget = document.getElementById("#budget");
 
-const addEntry = document.getElementById("add-entry");
+const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
+
+console.log(calorieCounter, budget, addEntryButton, clearButton);
 
 let isError = false;
 
