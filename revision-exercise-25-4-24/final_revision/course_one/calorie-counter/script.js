@@ -335,6 +335,10 @@ calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {}
 
-function addEntry() {}
+function addEntry() {
+    console.log("Hello");
+}
+
+addEntry.addEventListener("click", addEntry);
 
 function clearForm() {}
