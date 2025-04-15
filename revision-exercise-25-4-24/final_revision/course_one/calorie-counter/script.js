@@ -350,45 +350,7 @@ calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {}
 
-function addEntry() {
-    // const entryNumber =
-    //     targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
-
-    // d container
-    const entryAdded = document.querySelector(
-        `#${entryDropdown.value} .input-container`
-    );
-
-    // console.log(entryAdded);
-
-    // d children
-    const entryId =
-        entryAdded.querySelectorAll('input[type="text"]').length + 1;
-
-    console.log(entryId);
-
-    const HTMLString = `
-        <label for="${entryDropdown.value}-${entryId}-Name">
-            Entry ${entryId} Name
-        </label>
-        <input
-            type="text"
-            id="${entryDropdown.value}-${entryId}-Name"
-            placeholder="Name"
-        />
-
-        <label for="${entryDropdown.value}-${entryId}-calories">Entry ${entryId} Calories</label>
-        <input
-            type="number"
-            id="${entryDropdown.value}-${entryId}-calories"
-            placeholder="Calories"
-        />
-    `;
-
-    // console.log(HTMLString);
-
-    entryAdded.insertAdjacentHTML("beforeend", HTMLString);
-}
+function addEntry() {}
 
 addEntryButton.addEventListener("click", addEntry);
 
