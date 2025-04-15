@@ -300,6 +300,9 @@ clearButton.addEventListener("click", clearForm);
 // Revision
 
 const calorieCounter = document.getElementById("calorie-counter");
+const budget = document.getElementById("#budget");
+
+const addEntry = document.getElementById("add-entry");
 
 let isError = false;
 
