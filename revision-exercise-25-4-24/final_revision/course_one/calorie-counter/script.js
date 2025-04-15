@@ -358,12 +358,12 @@ function addEntry() {
 
     // get an id to be used
     const targetId =
-        targetInputContainer.querySelectorAll("input[type=text]").length;
+        targetInputContainer.querySelectorAll("input[type=number]").length;
 
     const HTMLString = `
         <label for="budget">Entry ${targetId} Name</label>
         <input
-            type="number"
+            type="text"
             id="budget"
             placeholder="Daily calorie budget"
             required
