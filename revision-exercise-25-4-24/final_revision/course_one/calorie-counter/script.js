@@ -351,6 +351,8 @@ calorieCounter.addEventListener("submit", calculateCalories);
 function getCaloriesFromInputs(list) {}
 
 function addEntry() {
+    const arr = [];
+
     // get d div container where new labels and inputs will be added
     const targetInputContainer = document.querySelector(
         `#${entryDropdown.value} .input-container`
@@ -379,13 +381,13 @@ function addEntry() {
         />
     `;
 
-    const arr = [];
-
-    const arrLength = arr.push(HTMLString);
+    const arrLength = arr.push([HTMLString]);
 
     console.log(arrLength.length);
 
     targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
+
+    return arrLength;
 }
 
 addEntryButton.addEventListener("click", addEntry);
