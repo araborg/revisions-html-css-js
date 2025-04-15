@@ -357,9 +357,14 @@ function addEntry() {
     );
 
     // get an id to be used
-    const targetId = targetInputContainer.querySelectorAll("input[type=text]");
+    const targetId =
+        targetInputContainer.querySelectorAll("input[type=text]").length;
 
-    console.log(targetId);
+    const HTMLString = `
+    
+    `;
+
+    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
