@@ -355,6 +355,8 @@ function addEntry() {
     const targetInputContainer = document.querySelector(
         `#${entryDropdown.value} .input-container`
     );
+
+    console.log(targetInputContainer);
 }
 
 addEntryButton.addEventListener("click", addEntry);
