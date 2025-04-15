@@ -364,7 +364,6 @@ function addEntry() {
     // d children
     const entryId =
         entryAdded.querySelectorAll('input[type="text"]').length + 1;
-    // .querySelectorAll('input[type="text"]').length + 1;
 
     console.log(entryId);
 
