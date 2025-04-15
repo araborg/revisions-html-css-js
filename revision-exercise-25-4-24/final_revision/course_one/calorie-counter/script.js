@@ -304,8 +304,6 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-console.log(cleanInputString(" hello"));
-
 function isInvalidInput(str) {}
 
 function calculateCalories(e) {}
