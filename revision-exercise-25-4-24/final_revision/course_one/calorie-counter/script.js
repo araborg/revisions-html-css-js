@@ -362,17 +362,17 @@ function addEntry() {
     const entryId = entryAdded.querySelectorAll("input[type=text]").length + 1;
 
     const HTMLString = `
-        <label for="${entryDropdown.value}-Name">Entry ${entryId} Name</label>
+        <label for="${entryDropdown.value}-${entryId}-Name">Entry ${entryId} Name</label>
         <input
             type="number"
-            id="${entryDropdown.value}-Name"
+            id="${entryDropdown.value}-${entryId}-Name"
             placeholder="Name"
         />
 
-        <label for="${entryDropdown.value}-calories">Entry ${entryId} Calories</label>
+        <label for="${entryDropdown.value}-${entryId}-calories">Entry ${entryId} Calories</label>
         <input
             type="number"
-            id="${entryDropdown.value}-calories"
+            id="${entryDropdown.value}-${entryId}-calories"
             placeholder="Calories"
         />
     `;
