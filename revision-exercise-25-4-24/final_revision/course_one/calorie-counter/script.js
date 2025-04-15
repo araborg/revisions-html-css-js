@@ -305,7 +305,7 @@ function cleanInputString(str) {
 }
 
 function isInvalidInput(str) {
-    const regex = /d+ed+/i;
+    const regex = /[d+ed+]/i;
 
     return str.match(regex);
 }
