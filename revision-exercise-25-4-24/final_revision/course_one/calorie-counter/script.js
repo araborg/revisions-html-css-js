@@ -352,7 +352,7 @@ function getCaloriesFromInputs(list) {}
 
 function addEntry() {
     // d container
-    const entryAdded = document.querySelector(
+    const entryAdded = document.querySelectorAll(
         `#${entryDropdown.value} .input-container`
     );
 
