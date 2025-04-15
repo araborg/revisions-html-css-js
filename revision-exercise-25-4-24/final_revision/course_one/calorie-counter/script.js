@@ -321,6 +321,10 @@ function isInvalidInput(str) {
 
 function calculateCalories(e) {}
 
+// add addEventListener to d form and nt d btn i.e
+// Calculate Remaining Calories btn
+calorieCounter.addEventListener("submit", calculateCalories);
+
 function getCaloriesFromInputs(list) {}
 
 function addEntry() {}
