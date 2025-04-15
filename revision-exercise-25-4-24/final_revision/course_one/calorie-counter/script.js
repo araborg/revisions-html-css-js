@@ -383,11 +383,11 @@ function addEntry() {
 
     const arrLength = arr.push(HTMLString);
 
-    console.log(arrLength);
+    console.log(arr);
 
     // targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 
-    return arrLength;
+    return arr;
 }
 
 addEntryButton.addEventListener("click", addEntry);
