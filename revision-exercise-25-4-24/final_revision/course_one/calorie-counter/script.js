@@ -305,8 +305,6 @@ const budget = document.getElementById("budget");
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 
-console.log(calorieCounter, budget, addEntryButton, clearButton);
-
 let isError = false;
 
 function cleanInputString(str) {
