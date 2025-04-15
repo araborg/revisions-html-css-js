@@ -351,16 +351,17 @@ calorieCounter.addEventListener("submit", calculateCalories);
 function getCaloriesFromInputs(list) {}
 
 function addEntry() {
-const entryId = ""
+    const entryAdded = document.querySelectorAll(`#${entryDropdown.value}`);
+    const entryId = entryAdded.querySelectorAll("input[type=number]").length;
+
+    console.log(entryId);
 
     const HTMLString = `
-        <label for=`${}`>Budget</label>
+        <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
         <input
             type="number"
-            id="budget"
-            placeholder="Daily calorie budget"
-            min="0"
-            required
+            id="${entryDropdown.value}"
+            placeholder="Calories"
         />
     `;
 }
