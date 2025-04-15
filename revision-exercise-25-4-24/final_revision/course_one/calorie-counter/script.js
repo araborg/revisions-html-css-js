@@ -381,11 +381,11 @@ function addEntry() {
         />
     `;
 
-    const arrLength = arr.push([HTMLString]);
+    const arrLength = arr.push(HTMLString;
 
-    console.log(arrLength.length);
+    console.log(arrLength);
 
-    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
+    // targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 
     return arrLength;
 }
