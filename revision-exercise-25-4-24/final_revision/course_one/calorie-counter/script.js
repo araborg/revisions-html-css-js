@@ -357,8 +357,7 @@ function addEntry() {
     );
 
     // get an id to be used
-    const targetId =
-        targetInputContainer.querySelectorAll('input[type="text"]');
+    const targetId = targetInputContainer.querySelectorAll("input[type=text]");
 
     console.log(targetId);
 }
