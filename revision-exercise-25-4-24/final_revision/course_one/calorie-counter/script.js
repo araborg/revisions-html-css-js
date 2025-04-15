@@ -319,7 +319,9 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-function calculateCalories(e) {}
+function calculateCalories(e) {
+    e.preventDefault();
+}
 
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
