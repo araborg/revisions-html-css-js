@@ -357,10 +357,9 @@ function addEntry() {
     );
 
     // d children
-    const entryId =
-        entryAdded.querySelectorAll("input[type=number]").length + 1;
+    const entryId = entryAdded.querySelectorAll("input[type=text]").length + 1;
 
-    console.log(entryAdded, entryId);
+    console.log(entryId);
 
     const HTMLString = `
         <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
@@ -370,7 +369,7 @@ function addEntry() {
             placeholder="Name"
         />
 
-        <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
+        <label for="${entryDropdown.value}">Entry ${entryId} Calories</label>
         <input
             type="number"
             id="${entryDropdown.value}"
