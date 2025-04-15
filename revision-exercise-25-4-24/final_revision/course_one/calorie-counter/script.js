@@ -322,7 +322,11 @@ function isInvalidInput(str) {
 function calculateCalories(e) {
     e.preventDefault();
 
-    console.log(e);
+    const breakfastNumberInputs = document.querySelectorAll(
+        `#{entry-dropdwon} .input-container`
+    );
+
+    console.log(breakfastNumberInputs);
 }
 
 // add addEventListener to d form and nt d btn i.e
