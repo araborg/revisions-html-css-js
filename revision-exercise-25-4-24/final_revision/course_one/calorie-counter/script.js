@@ -365,7 +365,7 @@ function addEntry() {
     const HTMLString = `
         <label for="budget">Entry ${targetId} Name</label>
         <input
-            type="text"
+            type="number"
             id="budget"
             placeholder="Daily calorie budget"
             required
@@ -381,13 +381,7 @@ function addEntry() {
         />
     `;
 
-    const arrLength = arr.push(HTMLString);
-
-    console.log(arr);
-
-    // targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
-
-    return arr;
+    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
