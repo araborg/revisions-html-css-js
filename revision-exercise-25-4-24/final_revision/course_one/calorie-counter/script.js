@@ -351,9 +351,6 @@ calorieCounter.addEventListener("submit", calculateCalories);
 function getCaloriesFromInputs(list) {}
 
 function addEntry() {
-    // const targetInputContainer = document.querySelector(
-    //     `#${entryDropdown.value} .input-container`
-    // );
     // const entryNumber =
     //     targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
 
@@ -376,7 +373,7 @@ function addEntry() {
             Entry ${entryId} Name
         </label>
         <input
-            type="number"
+            type="text"
             id="${entryDropdown.value}-${entryId}-Name"
             placeholder="Name"
         />
