@@ -361,6 +361,8 @@ function addEntry() {
     // d children
     const entryId = entryAdded.querySelectorAll("input[type=text]");
 
+    console.log(entryId);
+
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryId}-Name">
             Entry ${entryId} Name
