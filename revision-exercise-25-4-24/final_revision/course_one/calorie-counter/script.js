@@ -374,7 +374,7 @@ function addEntry() {
         <label for="budget">Entry ${targetId} Calories</label>
         <input
             type="number"
-            id="budget"
+            id="${entryDropdown.value}-${targetId}-calories"
             placeholder="Calories"
             min="0"
             required
