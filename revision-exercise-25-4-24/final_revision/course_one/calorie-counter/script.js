@@ -341,7 +341,7 @@ function calculateCalories(e) {
         `#${entryDropdown.value} .input-container`
     );
 
-    console.log(breakfastNumberInputs);
+    // console.log(breakfastNumberInputs);
 }
 
 // add addEventListener to d form and nt d btn i.e
@@ -362,14 +362,16 @@ function addEntry() {
 
     console.log(entryAdded, entryId);
 
-    // const HTMLString = `
-    //     <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
-    //     <input
-    //         type="number"
-    //         id="${entryDropdown.value}"
-    //         placeholder="Calories"
-    //     />
-    // `;
+    const HTMLString = `
+        <label for="${entryDropdown.value}">Entry ${entryId} Name</label>
+        <input
+            type="number"
+            id="${entryDropdown.value}"
+            placeholder="Calories"
+        />
+    `;
+
+    console.log(HTMLString);
 }
 
 addEntryButton.addEventListener("click", addEntry);
