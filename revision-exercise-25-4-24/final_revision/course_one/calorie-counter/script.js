@@ -302,6 +302,8 @@ clearButton.addEventListener("click", clearForm);
 const calorieCounter = document.getElementById("calorie-counter");
 const budget = document.getElementById("budget");
 
+const entryDropdown = document.getElementById("entry-dropdown");
+
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 
@@ -322,9 +324,10 @@ function isInvalidInput(str) {
 function calculateCalories(e) {
     e.preventDefault();
 
-    const breakfastNumberInputs = document.querySelectorAll(
-        `#${entry - dropdwon.value} .input-container`
-    );
+    const breakfastNumberInputs = document
+        .querySelectorAll
+        // `${}`
+        ();
 
     console.log(breakfastNumberInputs);
 }
