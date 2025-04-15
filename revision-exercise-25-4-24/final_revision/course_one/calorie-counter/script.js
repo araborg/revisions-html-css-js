@@ -350,7 +350,20 @@ calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {}
 
-function addEntry() {}
+function addEntry() {
+const entryId = ""
+
+    const HTMLString = `
+        <label for=`${}`>Budget</label>
+        <input
+            type="number"
+            id="budget"
+            placeholder="Daily calorie budget"
+            min="0"
+            required
+        />
+    `;
+}
 
 addEntryButton.addEventListener("click", addEntry);
 
