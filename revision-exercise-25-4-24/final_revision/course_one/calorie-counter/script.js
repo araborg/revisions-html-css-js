@@ -298,7 +298,11 @@ clearButton.addEventListener("click", clearForm);
 */
 
 // Revision
-function cleanInputString(str) {}
+function cleanInputString(str) {
+    const regex = /-+\s/g;
+
+    str.replace(regex, "");
+}
 
 function isInvalidInput(str) {}
 
