@@ -323,7 +323,7 @@ function calculateCalories(e) {
     e.preventDefault();
 
     const breakfastNumberInputs = document.querySelectorAll(
-        `#{entry-dropdwon} .input-container`
+        `#${entry - dropdwon} .input-container`
     );
 
     console.log(breakfastNumberInputs);
@@ -339,6 +339,6 @@ function addEntry() {
     console.log("Hello");
 }
 
-addEntry.addEventListener("click", addEntry);
+addEntryButton.addEventListener("click", addEntry);
 
 function clearForm() {}
