@@ -356,7 +356,11 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
-    console.log(targetInputContainer);
+    // get an id to be used
+    const targetId =
+        targetInputContainer.querySelectorAll('input[type="text"]');
+
+    console.log(targetId);
 }
 
 addEntryButton.addEventListener("click", addEntry);
