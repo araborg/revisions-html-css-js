@@ -299,6 +299,8 @@ clearButton.addEventListener("click", clearForm);
 
 // Revision
 
+const calorieCounter = document.getElementById("calorie-counter");
+
 let isError = false;
 
 function cleanInputString(str) {
