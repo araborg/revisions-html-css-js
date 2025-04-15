@@ -295,8 +295,8 @@ clearButton.addEventListener("click", clearForm);
 //     console.log(arr);
 // }
 
-
 */
+
 // Revision
 function cleanInputString(str) {}
 
