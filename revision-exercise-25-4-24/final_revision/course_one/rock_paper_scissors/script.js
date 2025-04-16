@@ -8,10 +8,12 @@ const winnerMsgElement = document.getElementById("winner-msg");
 const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
 
-console.log();
+// btns
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
 
-const rockBtn = document.getElementById();
-
+console.log(rockBtn, paperBtn, scissorsBtn);
 // fxns:
 function getRandomComputerResult() {}
 
