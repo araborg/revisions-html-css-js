@@ -447,14 +447,15 @@ function addEntry() {
 addEntryButton.addEventListener("click", addEntry);
 
 function clearForm() {
-    const availableInputs = Array.from(document.querySelectorAll("input"));
+    const availableInputs = Array.from(
+        document.querySelectorAll(".input-container")
+    );
 
     for (let input of availableInputs) {
-        input.value = "";
-
-        input.style.display = "none";
+        input.innerHTML = "";
     }
 
+    budgetNumberInput.value = "";
     output.classList.add("hide");
 }
 clearButton.addEventListener("click", clearForm);
