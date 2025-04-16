@@ -8,14 +8,9 @@ const winnerMsgElement = document.getElementById("winner-msg");
 const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
 
-console.log(
-    playerScoreSpanElement,
-    computerScoreSpanElement,
-    roundResultsMsg,
-    winnerMsgElement,
-    optionsContainer,
-    resetGameBtn
-);
+console.log();
+
+const rockBtn = document.getElementById();
 
 // fxns:
 function getRandomComputerResult() {}
@@ -28,8 +23,8 @@ function showResults(userOption) {}
 
 function resetGame() {}
 
-rockBtn.addEventListener("click", function () {});
+// rockBtn.addEventListener("click", function () {});
 
-paperBtn.addEventListener("click", function () {});
+// paperBtn.addEventListener("click", function () {});
 
-scissorsBtn.addEventListener("click", function () {});
+// scissorsBtn.addEventListener("click", function () {});
