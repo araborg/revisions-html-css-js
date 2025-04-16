@@ -26,7 +26,7 @@ function showResults(userOption) {}
 
 function resetGame() {}
 
-// Event Listeners:
+// Event Listeners: with anonymous fxns
 rockBtn.addEventListener("click", function () {});
 paperBtn.addEventListener("click", function () {});
 scissorsBtn.addEventListener("click", function () {});
