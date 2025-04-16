@@ -447,10 +447,12 @@ function addEntry() {
 addEntryButton.addEventListener("click", addEntry);
 
 function clearForm() {
-    const availableInputs = Array.from(
-        document.querySelectorAll("input[type=number]")
-    );
+    const availableInputs = Array.from(document.querySelectorAll("input"));
 
-    console.log(availableInputs);
+    for (let input of availableInputs) {
+        input = "";
+    }
+
+    output.classList.add("hide");
 }
-addEntryButton.addEventListener("click", clearForm);
+clearButton.addEventListener("click", clearForm);
