@@ -356,12 +356,26 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
+    let calories = 0;
+
     for (let inputValue of list) {
         const checkedValue = cleanInputString(inputValue.value);
 
         const validateInput = isInvalidInput(checkedValue);
         console.log(validateInput);
+
+        if (validateInput) {
+            alert(`Invalid Input: ${checkedValue}`);
+
+            isError = true;
+
+            return null;
+        }
+
+        calories += Number(checkedValue);
     }
+
+    return calories;
 }
 
 function addEntry() {
