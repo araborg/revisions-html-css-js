@@ -327,6 +327,8 @@ function calculateCalories(e) {
 
     isError = false;
 
+    // in dse selectns, dse were used: #breakfast #lunch,
+    // #dinner, #snacks, #exercise instead of #${entryDropdown.value}
     const breakfastNumberInputs = document.querySelectorAll(
         `#breakfast input[type="number"]`
     );
@@ -359,8 +361,6 @@ function calculateCalories(e) {
 
     const totalConsumption =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-
-    // console.log(totalConsumption);
 }
 
 // add addEventListener to d form and nt d btn i.e
