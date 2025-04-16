@@ -31,7 +31,7 @@ function getRandomComputerResult() {
 
 function hasPlayerWonTheRound(player, computer) {
     // conditions for player to win. d computer option must
-    // be 2 step ahead of d player's option.
+    // be 2 steps ahead of d player's option.
     const result =
         (player === "Rock" && computer === "Scissors") ||
         (player === "Paper" && computer === "Rock") ||
