@@ -8,6 +8,15 @@ const winnerMsgElement = document.getElementById("winner-msg");
 const optionsContainer = document.querySelector(".options-container");
 const resetGameBtn = document.getElementById("reset-game-btn");
 
+console.log(
+    playerScoreSpanElement,
+    computerScoreSpanElement,
+    roundResultsMsg,
+    winnerMsgElement,
+    optionsContainer,
+    resetGameBtn
+);
+
 // fxns:
 function getRandomComputerResult() {}
 
