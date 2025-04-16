@@ -371,9 +371,9 @@ function calculateCalories(e) {
     // console.log(${surplusOrDeficit.toLowerCase()});
 
     output.innerHTML = `
-        <p class="${surplusOrDeficit.toLowerCase()}">
+        <span class="${surplusOrDeficit.toLowerCase()}">
             ${Math.abs(diffInCalories)} Calories ${surplusOrDeficit}
-        </p>
+        </span>
 
         <hr>
 
