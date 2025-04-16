@@ -75,6 +75,7 @@ function showResults(userOption) {
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
 
+        // update UI only wn dre is a winner
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
     }
