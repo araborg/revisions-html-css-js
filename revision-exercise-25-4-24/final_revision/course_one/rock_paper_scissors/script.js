@@ -40,7 +40,10 @@ function hasPlayerWonTheRound(player, computer) {
     return result;
 }
 
-function getRoundResults(userOption) {}
+function getRoundResults(userOption) {
+    // playing agst computer
+    const computerResult = getRandomComputerResult();
+}
 
 function showResults(userOption) {}
 
