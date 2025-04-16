@@ -450,7 +450,9 @@ function clearForm() {
     const availableInputs = Array.from(document.querySelectorAll("input"));
 
     for (let input of availableInputs) {
-        input = "";
+        input.value = "";
+
+        input.style.display = "none";
     }
 
     output.classList.add("hide");
