@@ -368,10 +368,10 @@ function calculateCalories(e) {
     const diffInCalories = totalCaloriesBurnt - totalConsumption;
 
     const surplusOrDeficit = diffInCalories > 0 ? "Deficit" : "Surplus";
-    console.log("surplusOrDeficit.toLowerCase()");
+    // console.log(${surplusOrDeficit.toLowerCase()});
 
     output.innerHTML = `
-        <p class="surplusOrDeficit".toLowerCase()>
+        <p class="${surplusOrDeficit.toLowerCase()}">
             ${Math.abs(diffInCalories)} Calories ${surplusOrDeficit}
         </p>
 
