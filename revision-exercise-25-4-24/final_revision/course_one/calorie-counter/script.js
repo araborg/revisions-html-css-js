@@ -369,7 +369,7 @@ function getCaloriesFromInputs(list) {
         console.log(validateInput);
 
         if (validateInput) {
-            alert(`Invalid Input: ${checkedValue}[0]`);
+            alert(`Invalid Input: ${checkedValue[0]}`);
 
             isError = true;
 
