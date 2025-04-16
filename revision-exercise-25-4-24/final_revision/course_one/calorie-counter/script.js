@@ -378,6 +378,8 @@ function getCaloriesFromInputs(list) {
     for (let inputValue of list) {
         const checkedValue = cleanInputString(inputValue.value);
 
+        console.log(list);
+
         const validateInput = isInvalidInput(checkedValue);
 
         if (validateInput) {
