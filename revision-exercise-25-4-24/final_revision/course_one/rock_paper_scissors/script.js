@@ -28,8 +28,6 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
 
-console.log(getRandomComputerResult());
-
 function hasPlayerWonTheRound(player, computer) {}
 
 function getRoundResults(userOption) {}
