@@ -63,7 +63,7 @@ function getRoundResults(userOption) {
 
 function showResults(userOption) {
     // returns a str
-    roundResultsMsg.innerText = getRoundResults();
+    roundResultsMsg.innerText = getRoundResults(userOption);
 
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
