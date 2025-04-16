@@ -329,16 +329,16 @@ function calculateCalories(e) {
     );
 
     const lunchNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} .input-container`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const dinnerNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} .input-container`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const snacksNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} .input-container`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const exerciseNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} .input-container`
+        `#${entryDropdown.value} input[type="number"]`
     );
 
     console.log(breakfastNumberInputs);
