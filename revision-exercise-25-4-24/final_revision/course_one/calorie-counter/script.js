@@ -348,9 +348,9 @@ function calculateCalories(e) {
     const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 
-    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
-
-    console.log(breakfastCalories);
+    if (isError) {
+        return;
+    }
 }
 
 // add addEventListener to d form and nt d btn i.e
