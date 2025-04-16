@@ -380,6 +380,8 @@ function calculateCalories(e) {
         <p>${totalConsumption} Calories Consumed</p>
         <p>${totalCaloriesBurnt} Calories Burned</p>
     `;
+
+    output.classList.remove("hide");
 }
 
 // add addEventListener to d form and nt d btn i.e
