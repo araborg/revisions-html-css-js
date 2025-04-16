@@ -341,7 +341,7 @@ function calculateCalories(e) {
         `#${entryDropdown.value} .input-container`
     );
 
-    // console.log(breakfastNumberInputs);
+    console.log(breakfastNumberInputs);
 }
 
 // add addEventListener to d form and nt d btn i.e
