@@ -33,8 +33,8 @@ function hasPlayerWonTheRound(player, computer) {
     // conditions for player to win
     const result =
         (player === "Rock" && computer === "Scissors") ||
-        (player === "Scissors" && computer === "Paper") ||
-        (player === "Player" && computer === "Rock");
+        (player === "Paper" && computer === "Rock") ||
+        (player === "Scissors" && computer === "Paper");
 }
 
 function getRoundResults(userOption) {}
