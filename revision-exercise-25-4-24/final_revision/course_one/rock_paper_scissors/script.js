@@ -50,6 +50,8 @@ function getRoundResults(userOption) {
         playerScore++;
 
         return `Player wins! ${userOption} beats ${computerResult}`;
+
+        // if both result r equal, it is a tie.
     } else if (computerResult === userOption) {
         return `It's a tie! Both chose ${userOption}`;
     } else {
