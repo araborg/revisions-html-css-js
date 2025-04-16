@@ -74,10 +74,10 @@ function showResults(userOption) {
         winnerMsgElement.innerText = `${
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
-    }
 
-    resetGameBtn.style.display = "block";
-    optionsContainer.style.display = "none";
+        resetGameBtn.style.display = "block";
+        optionsContainer.style.display = "none";
+    }
 }
 
 function resetGame() {
