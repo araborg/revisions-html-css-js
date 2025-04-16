@@ -41,7 +41,7 @@ function hasPlayerWonTheRound(player, computer) {
     return result;
 }
 
-// ds connect both: getRandomComputerResult()
+// ds calls both: getRandomComputerResult()
 // & hasPlayerWonTheRound(player, computer)
 function getRoundResults(userOption) {
     // playing agst computer
@@ -64,6 +64,8 @@ function getRoundResults(userOption) {
     }
 }
 
+// ds calls: getRoundResults(userOption) & is itself called
+// inside d addEventListener()
 function showResults(userOption) {
     // returns a str
     roundResultsMsg.innerText = getRoundResults(userOption);
