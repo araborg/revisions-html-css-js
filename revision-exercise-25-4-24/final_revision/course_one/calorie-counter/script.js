@@ -307,6 +307,8 @@ const entryDropdown = document.getElementById("entry-dropdown");
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
 
+const output = document.getElementById("output");
+
 let isError = false;
 
 function cleanInputString(str) {
@@ -367,7 +369,17 @@ function calculateCalories(e) {
 
     const surplusOrDeficit = diffInCalories > 0 ? "Deficit" : "Surplus";
 
-    // output.
+    output.innerHTML += `
+        <p class="surplusOrDeficit.toLowerCase()">
+            ${diffInCalories} Calories ${surplusOrDeficit}
+        </p>
+
+        <hr>
+
+        <p>${budgetCalories} Calories Bugdeted</p>
+        <p>${totalConsumption} Calories Consumed</p>
+        <p>${totalCaloriesBurnt} Calories Burned</p>
+    `;
 }
 
 // add addEventListener to d form and nt d btn i.e
