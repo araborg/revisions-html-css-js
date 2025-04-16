@@ -65,6 +65,7 @@ function showResults(userOption) {
     // returns a str
     roundResultsMsg.innerText = getRoundResults(userOption);
 
+    // show player and computer scores
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
 
@@ -95,6 +96,14 @@ function resetGame() {
 resetGameBtn.addEventListener("click", resetGame);
 
 // Event Listeners: with anonymous fxns
-rockBtn.addEventListener("click", function () {});
-paperBtn.addEventListener("click", function () {});
-scissorsBtn.addEventListener("click", function () {});
+rockBtn.addEventListener("click", function () {
+    showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+    showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+    showResults("Scissors");
+});
