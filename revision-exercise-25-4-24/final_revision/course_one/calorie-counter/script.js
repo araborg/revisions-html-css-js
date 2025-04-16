@@ -327,20 +327,20 @@ function calculateCalories(e) {
     isError = false;
 
     const breakfastNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type=number]`
+        `#${entryDropdown.value} input[type="number"]`
     );
 
     const lunchNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type=number]`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const dinnerNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type=number]`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const snacksNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type=number]`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const exerciseNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type=number]`
+        `#${entryDropdown.value} input[type="number"]`
     );
     const budgetNumberInput = document.querySelector("#budget");
 
@@ -352,11 +352,14 @@ function calculateCalories(e) {
 
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
-    console.log(isError);
-
     if (isError) {
         return;
     }
+
+    const totalConsumption =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    console.log(totalConsumption);
 }
 
 // add addEventListener to d form and nt d btn i.e
