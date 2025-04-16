@@ -352,6 +352,7 @@ function calculateCalories(e) {
 
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
+    console.log(isError);
     if (isError) {
         return;
     }
@@ -379,6 +380,7 @@ function getCaloriesFromInputs(list) {
         }
 
         calories += Number(checkedValue);
+        console.log(calories);
     }
 
     return calories;
