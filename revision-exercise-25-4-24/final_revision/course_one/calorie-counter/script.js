@@ -369,7 +369,7 @@ function calculateCalories(e) {
 
     const surplusOrDeficit = diffInCalories > 0 ? "Deficit" : "Surplus";
 
-    output.innerHTML += `
+    output.innerHTML = `
         <p class="surplusOrDeficit.toLowerCase()">
             ${Math.abs(diffInCalories)} Calories ${surplusOrDeficit}
         </p>
