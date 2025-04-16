@@ -36,6 +36,8 @@ function hasPlayerWonTheRound(player, computer) {
         (player === "Rock" && computer === "Scissors") ||
         (player === "Paper" && computer === "Rock") ||
         (player === "Scissors" && computer === "Paper");
+
+    return result;
 }
 
 function getRoundResults(userOption) {}
