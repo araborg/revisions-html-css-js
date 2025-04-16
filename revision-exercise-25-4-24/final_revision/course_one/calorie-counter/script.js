@@ -356,6 +356,11 @@ function calculateCalories(e) {
         return;
     }
 
+    console.log("breakfastCalories " + breakfastCalories);
+    console.log("lunchCalories " + lunchCalories);
+    console.log("dinnerCalories " + dinnerCalories);
+    console.log("snacksCalories " + snacksCalories);
+
     const totalConsumption =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
@@ -365,6 +370,8 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
+    console.log(list);
+
     let calories = 0;
 
     for (let inputValue of list) {
@@ -381,9 +388,8 @@ function getCaloriesFromInputs(list) {
         }
 
         calories += Number(checkedValue);
-
-        console.log(checkedValue);
     }
+    console.log(calories);
 
     return calories;
 }
