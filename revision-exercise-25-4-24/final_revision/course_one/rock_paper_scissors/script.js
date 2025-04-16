@@ -18,6 +18,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 // fxns:
+// get an option of: Rock/Paper/Scissors
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
 
@@ -28,7 +29,13 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
 
-function hasPlayerWonTheRound(player, computer) {}
+function hasPlayerWonTheRound(player, computer) {
+    // conditions for player to win
+    const result =
+        (player === "Rock" && computer === "Scissors") ||
+        (player === "Scissors" && computer === "Paper") ||
+        (player === "Player" && computer === "Rock");
+}
 
 function getRoundResults(userOption) {}
 
