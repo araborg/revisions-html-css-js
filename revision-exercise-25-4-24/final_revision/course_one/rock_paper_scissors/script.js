@@ -26,8 +26,7 @@ function showResults(userOption) {}
 
 function resetGame() {}
 
-// rockBtn.addEventListener("click", function () {});
-
-// paperBtn.addEventListener("click", function () {});
-
-// scissorsBtn.addEventListener("click", function () {});
+// Event Listeners:
+rockBtn.addEventListener("click", function () {});
+paperBtn.addEventListener("click", function () {});
+scissorsBtn.addEventListener("click", function () {});
