@@ -359,6 +359,8 @@ function calculateCalories(e) {
 
     const totalConsumption =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    console.log(totalConsumption);
 }
 
 // add addEventListener to d form and nt d btn i.e
