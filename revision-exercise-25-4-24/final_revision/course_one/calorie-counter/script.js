@@ -321,8 +321,6 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("10e1"));
-
 function calculateCalories(e) {
     e.preventDefault();
 
