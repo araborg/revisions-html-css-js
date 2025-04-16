@@ -18,7 +18,14 @@ let playerScore = 0;
 let computerScore = 0;
 
 // fxns:
-function getRandomComputerResult() {}
+function getRandomComputerResult() {
+    const options = ["Rock", "Paper", "Scissors"];
+
+    const randomIndex = Math.floor(Math.random() * options.length);
+
+    // return an option
+    return options[randomIndex];
+}
 
 function hasPlayerWonTheRound(player, computer) {}
 
