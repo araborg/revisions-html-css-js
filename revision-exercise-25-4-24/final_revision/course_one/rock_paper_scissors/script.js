@@ -41,6 +41,8 @@ function hasPlayerWonTheRound(player, computer) {
     return result;
 }
 
+// ds connect both: getRandomComputerResult()
+// & hasPlayerWonTheRound(player, computer)
 function getRoundResults(userOption) {
     // playing agst computer
     const computerResult = getRandomComputerResult();
