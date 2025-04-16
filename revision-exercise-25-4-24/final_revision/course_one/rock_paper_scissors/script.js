@@ -13,7 +13,9 @@ const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 
-// console.log(rockBtn, paperBtn, scissorsBtn);
+// initial values
+let playerScore = 0;
+let computerScore = 0;
 
 // fxns:
 function getRandomComputerResult() {}
