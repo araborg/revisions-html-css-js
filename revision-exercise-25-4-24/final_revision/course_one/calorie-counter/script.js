@@ -376,7 +376,7 @@ function getCaloriesFromInputs(list) {
 
             isError = true;
 
-            return null;
+            return;
         }
 
         calories += Number(checkedValue);
