@@ -446,5 +446,11 @@ function addEntry() {
 
 addEntryButton.addEventListener("click", addEntry);
 
-function clearForm() {}
+function clearForm() {
+    const availableInputs = Array.from(
+        document.querySelectorAll("input[type=number]")
+    );
+
+    console.log(availableInputs);
+}
 addEntryButton.addEventListener("click", clearForm);
