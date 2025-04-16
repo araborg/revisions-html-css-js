@@ -311,153 +311,21 @@ const output = document.getElementById("output");
 
 let isError = false;
 
-function cleanInputString(str) {
-    const regex = /[-+\s]/g;
+function cleanInputString(str) {}
 
-    return str.replace(regex, "");
-}
+function isInvalidInput(str) {}
 
-function isInvalidInput(str) {
-    const regex = /\d+e\d+/i;
-
-    return str.match(regex);
-}
-
-function calculateCalories(e) {
-    e.preventDefault();
-
-    isError = false;
-
-    // in dse selectns, dse were used: #breakfast #lunch,
-    // #dinner, #snacks, #exercise instead of #${entryDropdown.value}
-    const breakfastNumberInputs = document.querySelectorAll(
-        `#breakfast input[type="number"]`
-    );
-
-    const lunchNumberInputs = document.querySelectorAll(
-        `#lunch input[type="number"]`
-    );
-    const dinnerNumberInputs = document.querySelectorAll(
-        `#dinner input[type="number"]`
-    );
-    const snacksNumberInputs = document.querySelectorAll(
-        `#snacks input[type="number"]`
-    );
-    const exerciseNumberInputs = document.querySelectorAll(
-        `#exercise input[type="number"]`
-    );
-
-    const budgetNumberInput = document.querySelector("#budget");
-
-    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
-    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
-    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
-    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
-    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
-
-    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
-
-    if (isError) {
-        return;
-    }
-
-    const totalConsumption =
-        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-
-    const totalCaloriesBurnt = budgetCalories + exerciseCalories;
-
-    const diffInCalories = totalCaloriesBurnt - totalConsumption;
-
-    const surplusOrDeficit = diffInCalories > 0 ? "Deficit" : "Surplus";
-    // console.log(${surplusOrDeficit.toLowerCase()});
-
-    output.innerHTML = `
-        <span class="${surplusOrDeficit.toLowerCase()}">
-            ${Math.abs(diffInCalories)} Calories ${surplusOrDeficit}
-        </span>
-
-        <hr>
-
-        <p>${budgetCalories} Calories Bugdeted</p>
-        <p>${totalConsumption} Calories Consumed</p>
-        <p>${totalCaloriesBurnt} Calories Burned</p>
-    `;
-
-    output.classList.remove("hide");
-}
+function calculateCalories(e) {}
 
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
 calorieCounter.addEventListener("submit", calculateCalories);
 
-function getCaloriesFromInputs(list) {
-    let calories = 0;
+function getCaloriesFromInputs(list) {}
 
-    for (let inputValue of list) {
-        const checkedValue = cleanInputString(inputValue.value);
-
-        const validateInput = isInvalidInput(checkedValue);
-
-        if (validateInput) {
-            alert(`Invalid Input: ${validateInput[0]}`);
-
-            isError = true;
-
-            return null;
-        }
-
-        calories += Number(checkedValue);
-    }
-
-    return calories;
-}
-
-function addEntry() {
-    // get d div container where new labels and inputs will be added
-    const targetInputContainer = document.querySelector(
-        `#${entryDropdown.value} .input-container`
-    );
-
-    // get an id to be used
-    const targetId =
-        targetInputContainer.querySelectorAll("input[type=number]").length + 1;
-
-    const HTMLString = `
-        <label for="${entryDropdown.value}-${targetId}-name">
-            Entry ${targetId} Name
-        </label>
-        <input
-            type="text"
-            id="${entryDropdown.value}-${targetId}-name"
-            placeholder="Name"
-        />
-
-        <label for="${entryDropdown.value}-${targetId}-calories">
-            Entry ${targetId} Calories
-        </label>
-        <input
-            type="number"
-            id="${entryDropdown.value}-${targetId}-calories"
-            placeholder="Calories"
-        />
-    `;
-
-    targetInputContainer.insertAdjacentHTML("beforeend", HTMLString);
-}
+function addEntry() {}
 
 addEntryButton.addEventListener("click", addEntry);
 
-function clearForm() {
-    const availableInputs = Array.from(
-        document.querySelectorAll(".input-container")
-    );
-
-    for (let input of availableInputs) {
-        input.innerHTML = "";
-    }
-
-    budget.value = "";
-    output.innerText = "";
-    output.classList.add("hide");
-}
+function clearForm() {}
 clearButton.addEventListener("click", clearForm);
