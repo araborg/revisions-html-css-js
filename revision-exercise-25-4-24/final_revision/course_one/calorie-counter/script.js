@@ -356,8 +356,9 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
-    for (let value of list) {
-        console.log(value.value);
+    for (let inputValue of list) {
+        const checkedValue = cleanInputString(inputValue.value);
+        console.log(checkedValue);
     }
 }
 
