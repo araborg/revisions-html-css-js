@@ -346,6 +346,7 @@ function calculateCalories(e) {
     const exerciseNumberInputs = document.querySelectorAll(
         `#exercise input[type="number"]`
     );
+
     const budgetNumberInput = document.querySelector("#budget");
 
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
@@ -452,10 +453,13 @@ function clearForm() {
     );
 
     for (let input of availableInputs) {
+        console.log(input);
+
         input.innerHTML = "";
     }
 
-    budgetNumberInput.value = "";
+    budget.value = "";
+    output.innerText = "";
     output.classList.add("hide");
 }
 clearButton.addEventListener("click", clearForm);
