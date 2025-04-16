@@ -316,10 +316,12 @@ function cleanInputString(str) {
 }
 
 function isInvalidInput(str) {
-    const regex = /[d+ed+]/i;
+    const regex = /[\d+e\d+]/i;
 
     return str.match(regex);
 }
+
+console.log(isInvalidInput("10e1"));
 
 function calculateCalories(e) {
     e.preventDefault();
