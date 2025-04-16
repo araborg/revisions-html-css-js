@@ -453,8 +453,6 @@ function clearForm() {
     );
 
     for (let input of availableInputs) {
-        console.log(input);
-
         input.innerHTML = "";
     }
 
