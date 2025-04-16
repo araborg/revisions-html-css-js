@@ -360,7 +360,7 @@ function calculateCalories(e) {
     const totalConsumption =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 
-    console.log(totalConsumption);
+    // console.log(totalConsumption);
 }
 
 // add addEventListener to d form and nt d btn i.e
@@ -368,8 +368,6 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
-    console.log(list);
-
     let calories = 0;
 
     for (let inputValue of list) {
@@ -387,7 +385,6 @@ function getCaloriesFromInputs(list) {
 
         calories += Number(checkedValue);
     }
-    console.log(calories);
 
     return calories;
 }
