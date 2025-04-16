@@ -367,12 +367,10 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
-    console.log(list);
     let calories = 0;
 
     for (let inputValue of list) {
         const checkedValue = cleanInputString(inputValue.value);
-        console.log(checkedValue);
 
         const validateInput = isInvalidInput(checkedValue);
 
@@ -408,7 +406,6 @@ function addEntry() {
             type="text"
             id="${entryDropdown.value}-${targetId}-name"
             placeholder="Name"
-            required
         />
 
         <label for="${entryDropdown.value}-${targetId}-calories">
@@ -418,8 +415,6 @@ function addEntry() {
             type="number"
             id="${entryDropdown.value}-${targetId}-calories"
             placeholder="Calories"
-            min="0"
-            required
         />
     `;
 
