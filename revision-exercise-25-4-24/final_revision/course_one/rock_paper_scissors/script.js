@@ -78,7 +78,21 @@ function showResults(userOption) {
     optionsContainer.style.display = "none";
 }
 
-function resetGame() {}
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+
+    computerScoreSpanElement.innerText = computerScore;
+    playerScoreSpanElement.innerText = playerScore;
+
+    resetGameBtn.style.display = "none";
+    optionsContainer.style.display = "block";
+
+    roundResultsMsg.innerText = "";
+    winnerMsgElement.innerText = "";
+}
+
+resetGameBtn.addEventListener("click", resetGame);
 
 // Event Listeners: with anonymous fxns
 rockBtn.addEventListener("click", function () {});
