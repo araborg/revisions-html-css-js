@@ -325,7 +325,7 @@ function calculateCalories(e) {
     e.preventDefault();
 
     const breakfastNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} .input-container`
+        `#${entryDropdown.value} input[type="number"]`
     );
 
     const lunchNumberInputs = document.querySelectorAll(
