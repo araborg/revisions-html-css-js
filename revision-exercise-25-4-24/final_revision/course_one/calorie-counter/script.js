@@ -355,7 +355,11 @@ function calculateCalories(e) {
 // Calculate Remaining Calories btn
 calorieCounter.addEventListener("submit", calculateCalories);
 
-function getCaloriesFromInputs(list) {}
+function getCaloriesFromInputs(list) {
+    for (let value of list) {
+        console.log(value);
+    }
+}
 
 function addEntry() {
     const arr = [];
