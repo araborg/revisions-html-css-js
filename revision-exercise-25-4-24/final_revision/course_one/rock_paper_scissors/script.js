@@ -44,6 +44,8 @@ function getRoundResults(userOption) {
     // playing agst computer
     const computerResult = getRandomComputerResult();
 
+    // if hasPlayerWonTheRound(userOption, computerResult)
+    // returns true, player won.
     if (hasPlayerWonTheRound(userOption, computerResult)) {
         playerScore++;
 
