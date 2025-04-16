@@ -303,7 +303,6 @@ const calorieCounter = document.getElementById("calorie-counter");
 const budget = document.getElementById("budget");
 
 const entryDropdown = document.getElementById("entry-dropdown");
-console.log(entryDropdown);
 
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
@@ -361,6 +360,14 @@ function calculateCalories(e) {
 
     const totalConsumption =
         breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    const totalCaloriesBurnt = budgetCalories + exerciseCalories;
+
+    const diffInCalories = totalCaloriesBurnt - totalConsumption;
+
+    const surplusOrDeficit = diffInCalories > 0 ? "Deficit" : "Surplus";
+
+    // output.
 }
 
 // add addEventListener to d form and nt d btn i.e
