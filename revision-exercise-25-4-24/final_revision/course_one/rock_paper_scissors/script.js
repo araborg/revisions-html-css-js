@@ -21,11 +21,14 @@ let computerScore = 0;
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
 
+    // ds will return value btw: 0 - 2 & not 3
     const randomIndex = Math.floor(Math.random() * options.length);
 
     // return an option
     return options[randomIndex];
 }
+
+console.log(getRandomComputerResult());
 
 function hasPlayerWonTheRound(player, computer) {}
 
