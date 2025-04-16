@@ -344,6 +344,9 @@ function calculateCalories(e) {
     );
     const budgetNumberInput = document.querySelector("#budget");
 
+    console.log(breakfastNumberInputs);
+    console.log(lunchNumberInputs);
+
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
@@ -356,13 +359,13 @@ function calculateCalories(e) {
         return;
     }
 
-    console.log("breakfastCalories " + breakfastCalories);
-    console.log("lunchCalories " + lunchCalories);
-    console.log("dinnerCalories " + dinnerCalories);
-    console.log("snacksCalories " + snacksCalories);
+    // console.log("breakfastCalories " + breakfastCalories);
+    // console.log("lunchCalories " + lunchCalories);
+    // console.log("dinnerCalories " + dinnerCalories);
+    // console.log("snacksCalories " + snacksCalories);
 
-    const totalConsumption =
-        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    // const totalConsumption =
+    //     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
 
 // add addEventListener to d form and nt d btn i.e
