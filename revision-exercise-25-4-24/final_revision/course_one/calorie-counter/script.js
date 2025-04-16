@@ -340,8 +340,15 @@ function calculateCalories(e) {
     const exerciseNumberInputs = document.querySelectorAll(
         `#${entryDropdown.value} input[type="number"]`
     );
+    const budgetNumberInput = document.querySelector("#budget");
 
-    console.log(breakfastNumberInputs);
+    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 }
 
 // add addEventListener to d form and nt d btn i.e
