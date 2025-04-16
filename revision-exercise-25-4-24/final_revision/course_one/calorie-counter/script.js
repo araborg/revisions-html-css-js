@@ -327,20 +327,20 @@ function calculateCalories(e) {
     isError = false;
 
     const breakfastNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#${entryDropdown.value} input[type=number]`
     );
 
     const lunchNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#${entryDropdown.value} input[type=number]`
     );
     const dinnerNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#${entryDropdown.value} input[type=number]`
     );
     const snacksNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#${entryDropdown.value} input[type=number]`
     );
     const exerciseNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#${entryDropdown.value} input[type=number]`
     );
     const budgetNumberInput = document.querySelector("#budget");
 
