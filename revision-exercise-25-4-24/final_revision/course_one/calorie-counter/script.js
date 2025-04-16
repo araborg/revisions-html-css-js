@@ -303,6 +303,7 @@ const calorieCounter = document.getElementById("calorie-counter");
 const budget = document.getElementById("budget");
 
 const entryDropdown = document.getElementById("entry-dropdown");
+console.log(entryDropdown);
 
 const addEntryButton = document.getElementById("add-entry");
 const clearButton = document.getElementById("clear");
@@ -327,25 +328,22 @@ function calculateCalories(e) {
     isError = false;
 
     const breakfastNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#breakfast input[type="number"]`
     );
 
     const lunchNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#lunch input[type="number"]`
     );
     const dinnerNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#dinner input[type="number"]`
     );
     const snacksNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#snacks input[type="number"]`
     );
     const exerciseNumberInputs = document.querySelectorAll(
-        `#${entryDropdown.value} input[type="number"]`
+        `#exercise input[type="number"]`
     );
     const budgetNumberInput = document.querySelector("#budget");
-
-    console.log(breakfastNumberInputs);
-    console.log(lunchNumberInputs);
 
     const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
     const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
@@ -359,13 +357,8 @@ function calculateCalories(e) {
         return;
     }
 
-    // console.log("breakfastCalories " + breakfastCalories);
-    // console.log("lunchCalories " + lunchCalories);
-    // console.log("dinnerCalories " + dinnerCalories);
-    // console.log("snacksCalories " + snacksCalories);
-
-    // const totalConsumption =
-    //     breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const totalConsumption =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 }
 
 // add addEventListener to d form and nt d btn i.e
