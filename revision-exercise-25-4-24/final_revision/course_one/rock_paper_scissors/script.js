@@ -138,14 +138,14 @@ const playerScoreSpanElement = document.getElementById("player-score");
 const computerScoreSpanElement = document.getElementById("computer-score");
 
 const roundResultsMsg = document.getElementById("results-msg");
-const winnerMsgElement = document.querySelector(".winner-msg");
+const winnerMsgElement = document.getElementById("winner-msg");
 
 // btns
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
-const btnContainer = document.getElementById("btn-container");
+const btnContainer = document.querySelector(".btn-container");
 console.log(btnContainer);
 
 // initial scores
