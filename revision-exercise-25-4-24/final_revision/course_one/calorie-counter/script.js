@@ -327,7 +327,13 @@ function isInvalidInput(str) {
 // console.log(isInvalidInput("30"));
 // console.log(isInvalidInput("10e2"));
 
-function calculateCalories(e) {}
+function calculateCalories(e) {
+    const breakfastNumberInputs = document.querySelectorAll(
+        'breakfast input[type="number"]'
+    );
+
+    console.log(breakfastNumberInputs);
+}
 
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
