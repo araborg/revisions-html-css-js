@@ -354,8 +354,16 @@ function calculateCalories(e) {
 
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
-}
 
+    const consumedCalories =
+        breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+
+    const burntCalores = budgetCalories + exerciseCalories;
+
+    const caloriesDiff = consumedCalories - burntCalores;
+
+    console.log(caloriesDiff);
+}
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
 calorieCounter.addEventListener("submit", calculateCalories);
