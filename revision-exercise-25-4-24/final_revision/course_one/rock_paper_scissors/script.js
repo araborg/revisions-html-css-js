@@ -123,6 +123,15 @@ scissorsBtn.addEventListener("click", function () {
 let playerScore = 0;
 let computerScore = 0;
 
+function getRandomComputerResult() {}
+
+function hasPlayerWonTheRound(player, computer) {}
+
+function getRoundResults(userOption) {}
+
+function showResults(userOption) {}
+
+function resetGame() {}
 
 
 
