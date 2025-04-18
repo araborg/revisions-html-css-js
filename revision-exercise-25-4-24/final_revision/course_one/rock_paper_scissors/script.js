@@ -161,12 +161,19 @@ function getRandomComputerResult() {
 }
 
 function hasPlayerWonTheRound(player, computer) {
-    const playerWon =
+    // const playerWon =
+    //     (player === "Rock" && computer === "Scissors") ||
+    //     (player === "Paper" && computer === "Rock") ||
+    //     (player === "Scissors" && computer === "Paper");
+
+    // return playerWon;
+
+    // Or:
+    return (
         (player === "Rock" && computer === "Scissors") ||
         (player === "Paper" && computer === "Rock") ||
-        (player === "Scissors" && computer === "Paper");
-
-    return playerWon;
+        (player === "Scissors" && computer === "Paper")
+    );
 }
 
 function getRoundResults(player) {
