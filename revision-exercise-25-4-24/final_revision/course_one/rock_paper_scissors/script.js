@@ -251,11 +251,12 @@ resetGameBtn.addEventListener("click", resetGame);
 
 const btnClass = document.getElementById("btnClass");
 
-const increaseBtnValue = ()=> {
-    const value = Number(btnClass.value)++
+const increaseBtnValue = () => {
+    let value = Number(btnClass.value);
+    value++;
 
-    console.log(value)
-}
+    console.log(value);
+};
 
-btnClass.addEventListener("click", increaseBtnValue)
+btnClass.addEventListener("click", increaseBtnValue);
 // console.log(btnClass);
