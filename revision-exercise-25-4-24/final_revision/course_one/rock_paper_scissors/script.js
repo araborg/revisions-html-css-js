@@ -30,7 +30,7 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
 
-// Has d player won instead of the computer
+// Has d player won instead of the computer?
 function hasPlayerWonTheRound(player, computer) {
     // conditions for player to win. d computer option must
     // be 2 steps ahead of d player's option.
