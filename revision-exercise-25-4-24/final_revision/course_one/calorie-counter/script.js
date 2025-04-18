@@ -365,6 +365,8 @@ function calculateCalories(e) {
             ${Math.abs(caloriesDiff)} Calories ${surplusOrDeficit}
         </p>    
 
+        <hr/>
+
         <p>${budgetCalories} Calories Budgeted</p>
         <p>${consumedCalories} Calories Consumed</p>
         <p>${burntCalores} Calories Burned</p>
