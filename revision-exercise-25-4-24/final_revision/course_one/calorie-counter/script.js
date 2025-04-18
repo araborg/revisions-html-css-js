@@ -360,9 +360,9 @@ function calculateCalories(e) {
 
     const surplusOrDeficit = caloriesDiff > 0 ? "Deficit" : "Surplus";
 
-    output.innerText += `
+    output.innerHTML += `
         <p class="${surplusOrDeficit.toLowerCase()}">
-            ${caloriesDiff} Calories ${surplusOrDeficit}
+            ${Math.abs(caloriesDiff)} Calories ${surplusOrDeficit}
         </p>    
 
         <p>${budgetCalories} Calories Budgeted</p>
