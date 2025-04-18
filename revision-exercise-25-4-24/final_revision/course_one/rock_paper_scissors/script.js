@@ -227,6 +227,7 @@ function resetGame() {
     optionsContainer.style.display = "block";
 
     winnerMsgElement.innerText = "";
+    roundResultsMsg.innerText = "";
 }
 
 resetGameBtn.addEventListener("click", resetGame);
