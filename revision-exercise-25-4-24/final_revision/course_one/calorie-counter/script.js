@@ -317,8 +317,6 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-// console.log(cleanInputString("200"));
-
 function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
 
@@ -360,7 +358,7 @@ function calculateCalories(e) {
 
     const caloriesDiff = consumedCalories - burntCalores;
 
-    console.log(caloriesDiff);
+    const surplusOrDeficit = caloriesDiff > 0 ? "Deficit" : "Surplus";
 }
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
@@ -380,7 +378,7 @@ function getCaloriesFromInputs(list) {
             return null;
         }
 
-        calories += cleanVal;
+        calories += Number(cleanVal);
     }
 
     return calories;
