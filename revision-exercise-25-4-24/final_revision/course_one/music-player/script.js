@@ -89,3 +89,32 @@ const shuffleBtn = document.getElementById("shuffle");
 
 // songs container
 const playlistSongs = document.getElementById("playlist-songs");
+
+// logic
+const playSong = (id) => {};
+
+const pauseSong = () => {};
+
+const playNextSong = () => {};
+
+const playPreviousSong = () => {};
+
+const shuffle = () => {};
+
+const deleteSong = (id) => {};
+
+const setPlayerDisplay = () => {};
+
+const highlightCurrentSong = () => {};
+
+const setPlayButtonAccessibleText = () => {};
+
+const sortSongs = () => {};
+
+const renderSongs = (array) => {};
+
+const getCurrentSongIndex = () => {};
+
+audio.addEventListener("ended", () => {});
+
+function init() {}
