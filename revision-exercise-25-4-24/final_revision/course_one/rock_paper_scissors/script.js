@@ -220,10 +220,10 @@ rockBtn.addEventListener("click", function () {
 });
 
 paperBtn.addEventListener("click", function () {
-    showResults("Paper");
+    // showResults("Paper");
 
-    // const paper = paperBtn.value;
-    // showResults(paper);
+    const paper = paperBtn.value;
+    showResults(paper);
 });
 
 scissorsBtn.addEventListener("click", function () {
