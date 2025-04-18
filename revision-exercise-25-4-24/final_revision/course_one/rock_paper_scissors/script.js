@@ -249,14 +249,4 @@ function resetGame() {
 
 resetGameBtn.addEventListener("click", resetGame);
 
-const btnClass = document.getElementById("btnClass");
-
-const increaseBtnValue = () => {
-    let value = Number(btnClass.value);
-    value++;
-
-    console.log(value);
-};
-
-btnClass.addEventListener("click", increaseBtnValue);
-// console.log(btnClass);
+c;
