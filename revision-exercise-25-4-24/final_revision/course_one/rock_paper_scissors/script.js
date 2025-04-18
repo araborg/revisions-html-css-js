@@ -220,10 +220,3 @@ function resetGame() {
 }
 
 resetGameBtn.addEventListener("click", resetGame);
-
-// It's a tie! Both chose Rock
-// Player wins! Rock beats Scissors
-// Computer wins! Scissors beats Paper
-
-// Player has won the game!
-// Computer has won the game!
