@@ -355,7 +355,7 @@ function addEntry() {
         />
 
         <label for="${entryDropdown.value}-${entryId}-calorie">
-            ${entryDropdown} ${entryId} Calorie
+            ${entryDropdown.value} ${entryId} Calorie
         </label>
         <input 
             type="number"
