@@ -360,22 +360,20 @@ function calculateCalories(e) {
 
     const surplusOrDeficit = caloriesDiff > 0 ? "Deficit" : "Surplus";
 
+    output.classList.remove("hide");
+
     output.innerHTML += `
         <p class="${surplusOrDeficit.toLowerCase()}">
             ${Math.abs(caloriesDiff)} Calories ${surplusOrDeficit}
         </p>    
-
         <hr/>
 
         <p>${budgetCalories} Calories Budgeted</p>
         <p>${consumedCalories} Calories Consumed</p>
         <p>${burntCalores} Calories Burned</p>
     `;
-
-    output.classList.remove("hide");
-
-    // console.log(output);
 }
+
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
 calorieCounter.addEventListener("submit", calculateCalories);
