@@ -247,6 +247,15 @@ function resetGame() {
     roundResultsMsg.innerText = "";
 }
 
-console.log("hello");
-
 resetGameBtn.addEventListener("click", resetGame);
+
+const btnClass = document.getElementById("btnClass");
+
+const increaseBtnValue = ()=> {
+    const value = Number(btnClass.value)++
+
+    console.log(value)
+}
+
+btnClass.addEventListener("click", increaseBtnValue)
+// console.log(btnClass);
