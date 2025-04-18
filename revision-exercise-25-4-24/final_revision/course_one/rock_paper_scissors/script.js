@@ -196,8 +196,8 @@ function showResults(userOption) {
         optionsContainer.style.display = "none";
     }
 
-    playerScoreSpanElement.innerText = playerScore;
-    computerScoreSpanElement.innerText = computerScore;
+    // playerScoreSpanElement.innerText = playerScore;
+    // computerScoreSpanElement.innerText = computerScore;
 }
 
 rockBtn.addEventListener("click", function () {
