@@ -366,9 +366,8 @@ function calculateCalories(e) {
         </p>    
 
         <p>${budgetCalories} Calories Budgeted</p>
-        <p></p>
-        <p></p>
-        
+        <p>${consumedCalories} Calories Consumed</p>
+        <p>${burntCalores} Calories Burned</p>
     `;
 }
 // add addEventListener to d form and nt d btn i.e
