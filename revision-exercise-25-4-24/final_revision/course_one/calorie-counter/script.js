@@ -323,9 +323,9 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-console.log(isInvalidInput("1e9"));
-console.log(isInvalidInput("30"));
-console.log(isInvalidInput("10e2"));
+// console.log(isInvalidInput("1e9"));
+// console.log(isInvalidInput("30"));
+// console.log(isInvalidInput("10e2"));
 
 function calculateCalories(e) {}
 
@@ -341,7 +341,9 @@ function addEntry() {
         `#${entryDropdown.value} .input-container`
     );
 
-    console.log(newInput);
+    const entryId = newInput.querySelectorAll('input[type="text"]').length + 1;
+
+    console.log(entryId);
 }
 
 addEntryButton.addEventListener("click", addEntry);
