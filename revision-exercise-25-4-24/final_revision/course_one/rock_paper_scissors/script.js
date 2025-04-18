@@ -207,9 +207,6 @@ function showResults(userOption) {
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
     }
-
-    // playerScoreSpanElement.innerText = playerScore;
-    // computerScoreSpanElement.innerText = computerScore;
 }
 
 rockBtn.addEventListener("click", function () {
