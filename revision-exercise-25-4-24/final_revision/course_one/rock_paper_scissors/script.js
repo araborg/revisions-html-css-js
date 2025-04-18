@@ -96,6 +96,7 @@ function resetGame() {
     playerScore = 0;
     computerScore = 0;
 
+    // show d of: playerScore, computerScore
     computerScoreSpanElement.innerText = computerScore;
     playerScoreSpanElement.innerText = playerScore;
 
