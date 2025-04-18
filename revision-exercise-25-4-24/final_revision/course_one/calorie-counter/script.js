@@ -370,7 +370,9 @@ function calculateCalories(e) {
         <p>${burntCalores} Calories Burned</p>
     `;
 
-    console.log(output);
+    output.classList.remove("hide");
+
+    // console.log(output);
 }
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
