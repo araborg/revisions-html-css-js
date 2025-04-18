@@ -139,7 +139,15 @@ resetGameBtn.addEventListener("click", resetGame);
 let playerScore = 0;
 let computerScore = 0;
 
-function getRandomComputerResult() {}
+function getRandomComputerResult() {
+    const options = ["Rock", "Paper", "Scissors"];
+
+    const randomIndex = Math.random() * options.length;
+
+    console.log(randomIndex);
+}
+
+getRandomComputerResult();
 
 function hasPlayerWonTheRound(player, computer) {}
 
