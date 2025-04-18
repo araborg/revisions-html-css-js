@@ -371,10 +371,7 @@ function getCaloriesFromInputs(list) {
 
     for (let input of list) {
         const cleanVal = cleanInputString(input.value);
-
         const validInput = isInvalidInput(cleanVal);
-
-        console.log(validInput);
 
         if (validInput) {
             alert(`Invalid Input: ${validInput[0]}`);
@@ -382,7 +379,11 @@ function getCaloriesFromInputs(list) {
             isError = false;
             return null;
         }
+
+        calories += cleanVal;
     }
+
+    return calories;
 }
 
 function addEntry() {
