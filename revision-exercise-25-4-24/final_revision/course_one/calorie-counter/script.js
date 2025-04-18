@@ -333,8 +333,26 @@ function calculateCalories(e) {
     const breakfastNumberInputs = document.querySelectorAll(
         '#breakfast input[type="number"]'
     );
+    const lunchNumberInputs = document.querySelectorAll(
+        '#lunch input[type="number"]'
+    );
+    const dinnerNumberInputs = document.querySelectorAll(
+        '#dinner input[type="number"]'
+    );
+    const snacksNumberInputs = document.querySelectorAll(
+        '#snacks input[type="number"]'
+    );
+    const exerciseNumberInputs = document.querySelectorAll(
+        '#exercise input[type="number"]'
+    );
 
-    console.log(breakfastNumberInputs);
+    console.log(
+        breakfastNumberInputs,
+        lunchNumberInputs,
+        dinnerNumberInputs,
+        dinnerNumberInputs,
+        exerciseNumberInputs
+    );
 }
 
 // add addEventListener to d form and nt d btn i.e
