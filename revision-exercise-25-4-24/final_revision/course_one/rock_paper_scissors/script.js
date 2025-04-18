@@ -45,7 +45,7 @@ function hasPlayerWonTheRound(player, computer) {
 // ds calls both: getRandomComputerResult()
 // & hasPlayerWonTheRound(player, computer)
 function getRoundResults(userOption) {
-    // playing agst computer
+    // playing agst computer: a random selectn of: Rock, Paper, Scissors
     const computerResult = getRandomComputerResult();
 
     // if hasPlayerWonTheRound(userOption, computerResult)
