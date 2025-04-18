@@ -91,6 +91,19 @@ function showResults(userOption) {
     }
 }
 
+// Event Listeners: with anonymous fxns
+rockBtn.addEventListener("click", function () {
+    showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+    showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+    showResults("Scissors");
+});
+
 // reset to initial state
 function resetGame() {
     // return d scores to d initial value
@@ -105,24 +118,12 @@ function resetGame() {
     resetGameBtn.style.display = "none";
     optionsContainer.style.display = "block";
 
+    // mk d round msg and winner msg an empty string
     roundResultsMsg.innerText = "";
     winnerMsgElement.innerText = "";
 }
 
 resetGameBtn.addEventListener("click", resetGame);
-
-// Event Listeners: with anonymous fxns
-rockBtn.addEventListener("click", function () {
-    showResults("Rock");
-});
-
-paperBtn.addEventListener("click", function () {
-    showResults("Paper");
-});
-
-scissorsBtn.addEventListener("click", function () {
-    showResults("Scissors");
-});
 
 /*
 // revision:
