@@ -345,21 +345,21 @@ function addEntry() {
     // newInput.querySelectorAll('input[type="number"]').length + 1;
 
     const HTMLString = `
-        <label for="${entryDropdown.value}-${entryId}-name">
-            ${entryDropdown.value} ${entryId} Name
+        <label for="Entry-${entryId}-name">
+            Entry ${entryId} Name
         </label>
         <input 
             type="text"
-            id="${entryDropdown.value}-${entryId}-name"
+            id="Entry-${entryId}-name"
             placeholder="Name"
         />
 
-        <label for="${entryDropdown.value}-${entryId}-calorie">
-            ${entryDropdown.value} ${entryId} Calorie
+        <label for="Entry-${entryId}-calorie">
+            Entry ${entryId} Calorie
         </label>
         <input 
             type="number"
-            id="${entryDropdown.value}-${entryId}-calorie"
+            id="Entry-${entryId}-calorie"
             placeholder="Calorie"
         />
     `;
