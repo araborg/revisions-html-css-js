@@ -144,6 +144,7 @@ const winnerMsgElement = document.getElementById("winner-msg");
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
+const resetGameBtn = document.getElementById("reset-game-btn");
 
 // initial scores
 let playerScore = 0;
@@ -186,9 +187,9 @@ function showResults(userOption) {
     const user = getRoundResults(userOption);
 
     console.log(user);
-    // if (playerScore === 3 || computerScore === 3) {
-    //     // playerScore? "Player"
-    // }
+    if (playerScore === 3 || computerScore === 3) {
+        return `${playerScore === 3 ? "Player" : "Computer"} has won the game!`;
+    }
 
     // console.log(userOption);
 
