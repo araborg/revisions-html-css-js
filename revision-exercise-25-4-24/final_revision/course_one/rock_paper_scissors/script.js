@@ -161,7 +161,15 @@ function hasPlayerWonTheRound(player, computer) {
     return playerWon;
 }
 
-function getRoundResults(userOption) {}
+function getRoundResults(player) {
+    const computer = getRandomComputerResult();
+
+    if (hasPlayerWonTheRound(player, computer)) {
+        playerScore++;
+
+        roundResultsMsg.innerText = `Player wins! ${player} beats ${computer}`;
+    }
+}
 
 function showResults(userOption) {}
 
