@@ -187,24 +187,22 @@ function getRoundResults(player) {
 function showResults(userOption) {
     const user = getRoundResults(userOption);
 
-    // let showOutput;
+    let showOutput;
 
-    console.log(user);
     if (playerScore === 3 || computerScore === 3) {
-        const showOutput = `${
+        showOutput = `${
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
 
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
-
-        roundResultsMsg.innerText = showOutput;
     }
 
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
 
     winnerMsgElement.innerText = user;
+    roundResultsMsg.innerText = showOutput;
 
     // return showOutput;
 
