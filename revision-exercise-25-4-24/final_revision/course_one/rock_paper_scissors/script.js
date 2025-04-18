@@ -193,8 +193,9 @@ function showResults(userOption) {
 }
 
 rockBtn.addEventListener("click", function () {
-    console.log(rockBtn.value);
-    showResults("Rock");
+    const rock = rockBtn.value;
+
+    showResults(rock);
 });
 
 paperBtn.addEventListener("click", function () {
