@@ -346,7 +346,7 @@ function addEntry() {
 
     const HTMLString = `
         <label for="${entryDropdown.value}-${entryId}-name">
-            ${entryDropdown} ${entryId} Name
+            ${entryDropdown.value} ${entryId} Name
         </label>
         <input 
             type="text"
