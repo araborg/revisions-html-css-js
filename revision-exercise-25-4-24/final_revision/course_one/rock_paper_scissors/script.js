@@ -20,7 +20,7 @@ let computerScore = 0;
 
 // fxns:
 // get an option of: Rock/Paper/Scissors
-function getRandomComputerResult() {
+function getRandomComputerOption() {
     const options = ["Rock", "Paper", "Scissors"];
 
     // ds will return value btw: 0 - 2 & not 3
@@ -42,26 +42,26 @@ function hasPlayerWonTheRound(player, computer) {
     return playerWon;
 }
 
-// ds calls both: getRandomComputerResult()
+// ds calls both: getRandomComputerOption()
 // & hasPlayerWonTheRound(player, computer)
 function getRoundResults(userOption) {
     // playing agst computer: a random selectn of: Rock, Paper, Scissors
-    const computerResult = getRandomComputerResult();
+    const computerOption = getRandomComputerOption();
 
-    // if hasPlayerWonTheRound(userOption, computerResult)
+    // if hasPlayerWonTheRound(userOption, computerOption)
     // returns true, player won.
-    if (hasPlayerWonTheRound(userOption, computerResult)) {
+    if (hasPlayerWonTheRound(userOption, computerOption)) {
         playerScore++;
 
-        return `Player wins! ${userOption} beats ${computerResult}`;
+        return `Player wins! ${userOption} beats ${computerOption}`;
 
         // if both result r equal, it is a tie.
-    } else if (computerResult === userOption) {
+    } else if (userOption === computerOption) {
         return `It's a tie! Both chose ${userOption}`;
     } else {
         computerScore++;
 
-        return `Computer wins! ${computerResult} beats ${userOption}`;
+        return `Computer wins! ${computerOption} beats ${userOption}`;
     }
 }
 
