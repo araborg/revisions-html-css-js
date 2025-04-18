@@ -328,6 +328,8 @@ function isInvalidInput(str) {
 // console.log(isInvalidInput("10e2"));
 
 function calculateCalories(e) {
+    e.preventDefault();
+
     const breakfastNumberInputs = document.querySelectorAll(
         'breakfast input[type="number"]'
     );
