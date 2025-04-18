@@ -212,25 +212,25 @@ function showResults(userOption) {
 }
 
 rockBtn.addEventListener("click", function () {
-    // showResults("Rock");
+    showResults("Rock");
 
     // Is this logical, calling d btn inside it scope?
-    const rock = rockBtn.value;
-    showResults(rock);
+    // const rock = rockBtn.value;
+    // showResults(rock);
 });
 
 paperBtn.addEventListener("click", function () {
-    // showResults("Paper");
+    showResults("Paper");
 
-    const paper = paperBtn.value;
-    showResults(paper);
+    // const paper = paperBtn.value;
+    // showResults(paper);
 });
 
 scissorsBtn.addEventListener("click", function () {
-    // showResults("Scissors");
+    showResults("Scissors");
 
-    const scissors = scissorsBtn.value;
-    showResults(scissors);
+    // const scissors = scissorsBtn.value;
+    // showResults(scissors);
 });
 
 function resetGame() {
