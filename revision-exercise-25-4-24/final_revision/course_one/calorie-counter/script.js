@@ -369,6 +369,8 @@ function calculateCalories(e) {
         <p>${consumedCalories} Calories Consumed</p>
         <p>${burntCalores} Calories Burned</p>
     `;
+
+    console.log(output);
 }
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
