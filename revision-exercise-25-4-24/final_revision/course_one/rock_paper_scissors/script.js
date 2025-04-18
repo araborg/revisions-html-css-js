@@ -140,6 +140,11 @@ const computerScoreSpanElement = document.getElementById("computer-score");
 const roundResultsMsg = document.getElementById("results-msg");
 const winnerMsgElement = document.getElementById("winner-msg");
 
+// btns
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
+
 // initial scores
 let playerScore = 0;
 let computerScore = 0;
@@ -168,10 +173,22 @@ function getRoundResults(player) {
         playerScore++;
 
         roundResultsMsg.innerText = `Player wins! ${player} beats ${computer}`;
+    } else if (player === computer) {
+        roundResultsMsg.innerText = ` It's a tie! Both chose ${player}`;
+    } else {
+        computerScore++;
+
+        roundResultsMsg.innerText = `Computer wins! ${computer} beats ${player}`;
     }
 }
 
-function showResults(userOption) {}
+// console.log(getRoundResults("Rock"));
+
+function showResults(userOption) {
+    if (playerScore === 3 || computerScore === 3) {
+        // playerScore? "Player"
+    }
+}
 
 function resetGame() {}
 
