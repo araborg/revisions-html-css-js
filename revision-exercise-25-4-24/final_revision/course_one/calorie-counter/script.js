@@ -317,11 +317,15 @@ function cleanInputString(str) {
     return str.replace(regex, "");
 }
 
-console.log(cleanInputString(" +234"));
-console.log(cleanInputString("- +234  +"));
-console.log(cleanInputString("=+234"));
+function isInvalidInput(str) {
+    const regex = /d+ed+/i;
 
-function isInvalidInput(str) {}
+    return str.match(regex);
+}
+
+console.log(isInvalidInput("1e9"));
+console.log(isInvalidInput("30"));
+console.log(isInvalidInput("10e2"));
 
 function calculateCalories(e) {}
 
