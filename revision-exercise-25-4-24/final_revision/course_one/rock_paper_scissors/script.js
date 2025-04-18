@@ -142,9 +142,9 @@ let computerScore = 0;
 function getRandomComputerResult() {
     const options = ["Rock", "Paper", "Scissors"];
 
-    const randomIndex = Math.random() * options.length;
+    const randomIndex = Math.floor(Math.random() * options.length);
 
-    console.log(randomIndex);
+    return options[randomIndex];
 }
 
 getRandomComputerResult();
