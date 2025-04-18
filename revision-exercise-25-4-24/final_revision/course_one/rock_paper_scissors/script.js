@@ -72,12 +72,12 @@ function getRoundResults(userOption) {
 // ds calls getRoundResults(userOption) & is itself called inside
 // d addEventListener()
 function showResults(userOption) {
-    // returns a str
-    roundResultsMsg.innerText = getRoundResults(userOption);
-
     // show player and computer scores
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
+
+    // returns a str
+    roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
         winnerMsgElement.innerText = `${
