@@ -140,12 +140,13 @@ const computerScoreSpanElement = document.getElementById("computer-score");
 const roundResultsMsg = document.getElementById("results-msg");
 const winnerMsgElement = document.getElementById("winner-msg");
 
+const optionsContainer = document.querySelector(".options-container");
+
 // btns
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
-const optionsContainer = document.querySelector(".options-container");
 
 // initial scores
 let playerScore = 0;
