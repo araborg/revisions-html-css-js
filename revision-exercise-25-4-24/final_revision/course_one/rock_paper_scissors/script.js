@@ -166,3 +166,15 @@ function getRoundResults(userOption) {}
 function showResults(userOption) {}
 
 function resetGame() {}
+
+// It's a tie! Both chose Rock
+
+// Player wins! Rock beats Scissors
+
+// Player has won the game!
+
+// Computer wins! Scissors beats Paper
+
+// Computer wins! Scissors beats Paper
+
+// Computer has won the game!
