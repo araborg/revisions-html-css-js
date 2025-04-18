@@ -202,6 +202,8 @@ function showResults(userOption) {
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
 
+    winnerMsgElement.innerText = user;
+
     return showOutput;
 
     // console.log(userOption);
