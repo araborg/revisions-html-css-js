@@ -1,3 +1,4 @@
+/*
 // html elemts
 const playerScoreSpanElement = document.getElementById("player-score");
 const computerScoreSpanElement = document.getElementById("computer-score");
@@ -125,7 +126,13 @@ function resetGame() {
 
 resetGameBtn.addEventListener("click", resetGame);
 
-/*
+
+
+
+
+
+*/
+
 // revision:
 
 // initial scores
@@ -141,9 +148,3 @@ function getRoundResults(userOption) {}
 function showResults(userOption) {}
 
 function resetGame() {}
-
-
-
-
-
-*/
