@@ -115,3 +115,17 @@ paperBtn.addEventListener("click", function () {
 scissorsBtn.addEventListener("click", function () {
     showResults("Scissors");
 });
+
+/*
+// revision:
+
+// initial scores
+let playerScore = 0;
+let computerScore = 0;
+
+
+
+
+
+
+*/
