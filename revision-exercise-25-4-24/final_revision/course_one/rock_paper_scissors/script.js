@@ -185,24 +185,21 @@ function getRoundResults(player) {
 }
 
 function showResults(userOption) {
-    const user = getRoundResults(userOption);
+    playerScoreSpanElement.innerText = playerScore;
+    computerScoreSpanElement.innerText = computerScore;
 
-    let showOutput;
+    roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
-        showOutput = `${
+        const showOutput = `${
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
+
+        winnerMsgElement.innerText = showOutput;
 
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
     }
-
-    playerScoreSpanElement.innerText = playerScore;
-    computerScoreSpanElement.innerText = computerScore;
-
-    winnerMsgElement.innerText = user;
-    roundResultsMsg.innerText = showOutput;
 
     // return showOutput;
 
