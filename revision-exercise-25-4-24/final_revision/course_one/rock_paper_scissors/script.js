@@ -138,7 +138,7 @@ const playerScoreSpanElement = document.getElementById("player-score");
 const computerScoreSpanElement = document.getElementById("computer-score");
 
 const roundResultsMsg = document.getElementById("results-msg");
-const winnerMsgElement = document.getElementById("winner-msg");
+const winnerMsgElement = document.querySelector(".winner-msg");
 
 // btns
 const rockBtn = document.getElementById("rock-btn");
