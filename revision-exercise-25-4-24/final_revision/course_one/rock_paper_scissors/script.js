@@ -65,8 +65,8 @@ function getRoundResults(userOption) {
     }
 }
 
-// ds calls: getRoundResults(userOption) & is itself called
-// inside d addEventListener()
+// Update UI: ds calls getRoundResults(userOption) & is
+// itself called inside d addEventListener()
 function showResults(userOption) {
     // returns a str
     roundResultsMsg.innerText = getRoundResults(userOption);
