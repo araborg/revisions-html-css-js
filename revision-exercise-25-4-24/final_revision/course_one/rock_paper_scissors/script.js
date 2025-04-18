@@ -195,6 +195,8 @@ function getRoundResults(player) {
 function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
 
+    // by calling getRoundResults(), both playerScore
+    // & computerScore were md available.
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
 
