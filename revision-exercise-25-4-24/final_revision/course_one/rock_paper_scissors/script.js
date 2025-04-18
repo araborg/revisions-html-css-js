@@ -146,6 +146,8 @@ const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
 const btnContainer = document.getElementById("btn-container");
+console.log(btnContainer);
+
 // initial scores
 let playerScore = 0;
 let computerScore = 0;
