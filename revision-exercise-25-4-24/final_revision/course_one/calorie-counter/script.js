@@ -346,13 +346,23 @@ function calculateCalories(e) {
         '#exercise input[type="number"]'
     );
     const budgetNumberInput = document.querySelector("#budget");
+
+    const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+    const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
+    const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
+    const snacksCalories = getCaloriesFromInputs(snacksNumberInputs);
+
+    const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 }
 
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
 calorieCounter.addEventListener("submit", calculateCalories);
 
-function getCaloriesFromInputs(list) {}
+function getCaloriesFromInputs(list) {
+    console.log(list);
+}
 
 function addEntry() {
     // select where to add new input for a new Entry
