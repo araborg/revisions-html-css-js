@@ -360,7 +360,7 @@ function calculateCalories(e) {
 
     const caloriesDiff = consumedCalories - burntCalores;
 
-    // console.log(caloriesDiff);
+    console.log(caloriesDiff);
 }
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
