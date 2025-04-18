@@ -369,7 +369,13 @@ function calculateCalories(e) {
 calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {
-    console.log(list);
+    let calories = 0;
+
+    for (let input of list) {
+        const cleanVal = cleanInputString(input);
+
+        console.log(cleanVal);
+    }
 }
 
 function addEntry() {
