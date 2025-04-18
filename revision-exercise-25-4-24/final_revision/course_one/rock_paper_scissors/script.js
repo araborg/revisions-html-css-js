@@ -79,6 +79,7 @@ function showResults(userOption) {
     // returns a str of who wins or weda it is tie
     roundResultsMsg.innerText = getRoundResults(userOption);
 
+    // whoever reaches a score of 3 wins
     if (playerScore === 3 || computerScore === 3) {
         winnerMsgElement.innerText = `${
             playerScore === 3 ? "Player" : "Computer"
