@@ -145,7 +145,7 @@ const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
-
+const btnContainer = document.getElementById("btn-container");
 // initial scores
 let playerScore = 0;
 let computerScore = 0;
@@ -186,15 +186,24 @@ function getRoundResults(player) {
 function showResults(userOption) {
     const user = getRoundResults(userOption);
 
+    let showOutput;
+
     console.log(user);
     if (playerScore === 3 || computerScore === 3) {
-        return `${playerScore === 3 ? "Player" : "Computer"} has won the game!`;
-    }
+        showOutput = `${
+            playerScore === 3 ? "Player" : "Computer"
+        } has won the game!`;
 
-    // console.log(userOption);
+        resetGameBtn.style.display = "block";
+        btnContainer.style.display = "none";
+    }
 
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
+
+    return showOutput;
+
+    // console.log(userOption);
 }
 
 rockBtn.addEventListener("click", function () {
