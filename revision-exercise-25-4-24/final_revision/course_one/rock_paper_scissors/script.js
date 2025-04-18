@@ -43,7 +43,8 @@ function hasPlayerWonTheRound(player, computer) {
 }
 
 // ds calls both: getRandomComputerOption()
-// & hasPlayerWonTheRound(player, computer)
+// & hasPlayerWonTheRound(player, computer). Its duty is to return
+// a STRING wc shows weda a player/computer won or it is a tie.
 function getRoundResults(userOption) {
     // playing agst computer: a random selectn of: Rock, Paper, Scissors
     const computerOption = getRandomComputerOption();
