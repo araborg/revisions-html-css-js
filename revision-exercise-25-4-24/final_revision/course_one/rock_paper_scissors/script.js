@@ -247,4 +247,6 @@ function resetGame() {
     roundResultsMsg.innerText = "";
 }
 
+console.log("hello");
+
 resetGameBtn.addEventListener("click", resetGame);
