@@ -248,5 +248,3 @@ function resetGame() {
 }
 
 resetGameBtn.addEventListener("click", resetGame);
-
-c;
