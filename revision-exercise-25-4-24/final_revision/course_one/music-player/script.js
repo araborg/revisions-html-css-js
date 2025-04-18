@@ -90,6 +90,12 @@ const shuffleBtn = document.getElementById("shuffle");
 // songs container
 const playlistSongs = document.getElementById("playlist-songs");
 
+// ths needed
+const audio = new Audio();
+console.log(audio);
+
+let userData = {};
+
 // logic
 const playSong = (id) => {};
 
