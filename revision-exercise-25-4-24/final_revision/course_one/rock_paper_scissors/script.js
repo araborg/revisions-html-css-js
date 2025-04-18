@@ -185,10 +185,22 @@ function getRoundResults(player) {
 // console.log(getRoundResults("Rock"));
 
 function showResults(userOption) {
-    if (playerScore === 3 || computerScore === 3) {
-        // playerScore? "Player"
-    }
+    // if (playerScore === 3 || computerScore === 3) {
+    //     // playerScore? "Player"
+    // }
 }
+
+rockBtn.addEventListener("click", function () {
+    showResults("Rock");
+});
+
+paperBtn.addEventListener("click", function () {
+    showResults("Paper");
+});
+
+scissorsBtn.addEventListener("click", function () {
+    showResults("Scissors");
+});
 
 function resetGame() {}
 
