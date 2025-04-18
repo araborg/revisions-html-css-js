@@ -227,7 +227,10 @@ paperBtn.addEventListener("click", function () {
 });
 
 scissorsBtn.addEventListener("click", function () {
-    showResults("Scissors");
+    // showResults("Scissors");
+
+    const scissors = scissorsBtn.value;
+    showResults(scissors);
 });
 
 function resetGame() {
