@@ -14,7 +14,7 @@ const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
 
-// initial values
+// initial scores
 let playerScore = 0;
 let computerScore = 0;
 
@@ -30,6 +30,7 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
 
+// Has d player won instead of the computer
 function hasPlayerWonTheRound(player, computer) {
     // conditions for player to win. d computer option must
     // be 2 steps ahead of d player's option.
