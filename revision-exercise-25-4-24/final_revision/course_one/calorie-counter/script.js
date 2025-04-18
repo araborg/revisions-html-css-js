@@ -311,7 +311,11 @@ const output = document.getElementById("output");
 
 let isError = false;
 
-function cleanInputString(str) {}
+function cleanInputString(str) {
+    console.log(str);
+}
+
+console.log(cleanInputString(" +234"));
 
 function isInvalidInput(str) {}
 
