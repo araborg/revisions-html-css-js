@@ -76,7 +76,7 @@ function showResults(userOption) {
     playerScoreSpanElement.innerText = playerScore;
     computerScoreSpanElement.innerText = computerScore;
 
-    // returns a str
+    // returns a str of who wins or weda it is tie
     roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
