@@ -318,7 +318,7 @@ function cleanInputString(str) {
 }
 
 function isInvalidInput(str) {
-    const regex = /d+ed+/i;
+    const regex = /\d+e\d+/i;
 
     return str.match(regex);
 }
@@ -335,7 +335,12 @@ calorieCounter.addEventListener("submit", calculateCalories);
 
 function getCaloriesFromInputs(list) {}
 
-function addEntry() {}
+function addEntry() {
+    // select where to add new input for a new Entry
+    const newInput = document.querySelector(
+        `#${entryDropdown.value} .input-container`
+    );
+}
 
 addEntryButton.addEventListener("click", addEntry);
 
