@@ -342,8 +342,9 @@ function addEntry() {
     );
 
     const entryId = newInput.querySelectorAll('input[type="text"]').length + 1;
+    // newInput.querySelectorAll('input[type="number"]').length + 1;
 
-    console.log(entryId);
+    const HTMLString = ``;
 }
 
 addEntryButton.addEventListener("click", addEntry);
