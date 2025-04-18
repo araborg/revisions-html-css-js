@@ -344,7 +344,21 @@ function addEntry() {
     const entryId = newInput.querySelectorAll('input[type="text"]').length + 1;
     // newInput.querySelectorAll('input[type="number"]').length + 1;
 
-    const HTMLString = ``;
+    const HTMLString = `
+        <label for=""> </label>
+        <input 
+            type="text"
+            id=""
+            placeholder=""
+        />
+
+        <label for=""> </label>
+        <input 
+            type="text"
+            id=""
+            placeholder=""
+        />
+    `;
 }
 
 addEntryButton.addEventListener("click", addEntry);
