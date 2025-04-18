@@ -182,8 +182,6 @@ function getRoundResults(player) {
     }
 }
 
-// console.log(getRoundResults("Rock"));
-
 function showResults(userOption) {
     const user = getRoundResults(userOption);
 
