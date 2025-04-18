@@ -172,22 +172,19 @@ function getRoundResults(player) {
     const computer = getRandomComputerResult();
 
     if (hasPlayerWonTheRound(player, computer)) {
-        playerScore++;
+        playerScore += 1;
 
         return `Player wins! ${player} beats ${computer}`;
     } else if (player === computer) {
         return `It's a tie! Both chose ${player}`;
     } else {
-        computerScore++;
+        computerScore += 1;
 
         return `Computer wins! ${computer} beats ${player}`;
     }
 }
 
 function showResults(userOption) {
-    playerScoreSpanElement.innerText = playerScore;
-    computerScoreSpanElement.innerText = computerScore;
-
     roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
@@ -198,6 +195,9 @@ function showResults(userOption) {
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
     }
+
+    playerScoreSpanElement.innerText = playerScore;
+    computerScoreSpanElement.innerText = computerScore;
 }
 
 rockBtn.addEventListener("click", function () {
