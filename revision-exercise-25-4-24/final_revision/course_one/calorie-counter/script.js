@@ -345,14 +345,6 @@ function calculateCalories(e) {
     const exerciseNumberInputs = document.querySelectorAll(
         '#exercise input[type="number"]'
     );
-
-    console.log(
-        breakfastNumberInputs,
-        lunchNumberInputs,
-        dinnerNumberInputs,
-        dinnerNumberInputs,
-        exerciseNumberInputs
-    );
 }
 
 // add addEventListener to d form and nt d btn i.e
