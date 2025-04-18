@@ -188,6 +188,8 @@ function showResults(userOption) {
     // if (playerScore === 3 || computerScore === 3) {
     //     // playerScore? "Player"
     // }
+
+    console.log(userOption);
 }
 
 rockBtn.addEventListener("click", function () {
