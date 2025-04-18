@@ -147,7 +147,14 @@ function getRandomComputerResult() {
     return options[randomIndex];
 }
 
-function hasPlayerWonTheRound(player, computer) {}
+function hasPlayerWonTheRound(player, computer) {
+    const playerWon =
+        (player === "Rock" && computer === "Scissors") ||
+        (player === "Paper" && computer === "Rock") ||
+        (player === "Scissors" && computer === "Paper");
+
+    return playerWon;
+}
 
 function getRoundResults(userOption) {}
 
