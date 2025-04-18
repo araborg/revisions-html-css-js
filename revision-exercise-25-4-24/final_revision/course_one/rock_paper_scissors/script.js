@@ -195,6 +195,9 @@ function getRoundResults(player) {
 function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
 
+    playerScoreSpanElement.innerText = playerScore;
+    computerScoreSpanElement.innerText = computerScore;
+
     if (playerScore === 3 || computerScore === 3) {
         // text was added directly to winnerMsgElement
         winnerMsgElement.innerText = `${
