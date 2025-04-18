@@ -191,11 +191,9 @@ function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
-        const showOutput = `${
+        winnerMsgElement.innerText = `${
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
-
-        winnerMsgElement.innerText = showOutput;
 
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
