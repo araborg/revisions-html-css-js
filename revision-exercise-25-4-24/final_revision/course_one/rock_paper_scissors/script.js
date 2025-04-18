@@ -189,6 +189,7 @@ function showResults(userOption) {
     roundResultsMsg.innerText = getRoundResults(userOption);
 
     if (playerScore === 3 || computerScore === 3) {
+        // text was added directly to winnerMsgElement
         winnerMsgElement.innerText = `${
             playerScore === 3 ? "Player" : "Computer"
         } has won the game!`;
