@@ -34,12 +34,12 @@ function getRandomComputerResult() {
 function hasPlayerWonTheRound(player, computer) {
     // conditions for player to win. d computer option must
     // be 2 steps ahead of d player's option.
-    const result =
+    const playerWon =
         (player === "Rock" && computer === "Scissors") ||
         (player === "Paper" && computer === "Rock") ||
         (player === "Scissors" && computer === "Paper");
 
-    return result;
+    return playerWon;
 }
 
 // ds calls both: getRandomComputerResult()
