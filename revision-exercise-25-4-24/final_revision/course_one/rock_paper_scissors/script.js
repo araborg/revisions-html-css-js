@@ -172,24 +172,27 @@ function getRoundResults(player) {
     if (hasPlayerWonTheRound(player, computer)) {
         playerScore++;
 
-        roundResultsMsg.innerText = `Player wins! ${player} beats ${computer}`;
+        return `Player wins! ${player} beats ${computer}`;
     } else if (player === computer) {
-        roundResultsMsg.innerText = ` It's a tie! Both chose ${player}`;
+        return `It's a tie! Both chose ${player}`;
     } else {
         computerScore++;
 
-        roundResultsMsg.innerText = `Computer wins! ${computer} beats ${player}`;
+        return `Computer wins! ${computer} beats ${player}`;
     }
 }
 
 // console.log(getRoundResults("Rock"));
 
 function showResults(userOption) {
+    const user = getRoundResults(userOption);
+
+    console.log(user);
     // if (playerScore === 3 || computerScore === 3) {
     //     // playerScore? "Player"
     // }
 
-    console.log(userOption);
+    // console.log(userOption);
 }
 
 rockBtn.addEventListener("click", function () {
@@ -209,13 +212,8 @@ scissorsBtn.addEventListener("click", function () {
 function resetGame() {}
 
 // It's a tie! Both chose Rock
-
 // Player wins! Rock beats Scissors
+// Computer wins! Scissors beats Paper
 
 // Player has won the game!
-
-// Computer wins! Scissors beats Paper
-
-// Computer wins! Scissors beats Paper
-
 // Computer has won the game!
