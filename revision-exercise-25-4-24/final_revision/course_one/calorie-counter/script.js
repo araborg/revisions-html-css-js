@@ -359,6 +359,17 @@ function calculateCalories(e) {
     const caloriesDiff = consumedCalories - burntCalores;
 
     const surplusOrDeficit = caloriesDiff > 0 ? "Deficit" : "Surplus";
+
+    output += `
+        <p class="${surplusOrDeficit.toLowerCase()}">
+            ${caloriesDiff} Calories ${surplusOrDeficit}
+        </p>    
+
+        <p>${budgetCalories} Calories Budgeted</p>
+        <p></p>
+        <p></p>
+        
+    `;
 }
 // add addEventListener to d form and nt d btn i.e
 // Calculate Remaining Calories btn
