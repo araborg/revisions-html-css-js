@@ -323,10 +323,6 @@ function isInvalidInput(str) {
     return str.match(regex);
 }
 
-// console.log(isInvalidInput("1e9"));
-// console.log(isInvalidInput("30"));
-// console.log(isInvalidInput("10e2"));
-
 function calculateCalories(e) {
     e.preventDefault();
 
