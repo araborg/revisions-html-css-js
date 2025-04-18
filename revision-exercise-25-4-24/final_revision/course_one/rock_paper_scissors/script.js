@@ -93,6 +93,7 @@ function showResults(userOption) {
 
 // reset to initial state
 function resetGame() {
+    // return d scores to d initial value
     playerScore = 0;
     computerScore = 0;
 
@@ -100,6 +101,7 @@ function resetGame() {
     computerScoreSpanElement.innerText = computerScore;
     playerScoreSpanElement.innerText = playerScore;
 
+    // hide resetGameBtn & show optionsContainer
     resetGameBtn.style.display = "none";
     optionsContainer.style.display = "block";
 
