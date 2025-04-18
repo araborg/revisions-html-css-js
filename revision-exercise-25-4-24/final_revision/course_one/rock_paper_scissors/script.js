@@ -91,6 +91,7 @@ function showResults(userOption) {
     }
 }
 
+// reset to initial state
 function resetGame() {
     playerScore = 0;
     computerScore = 0;
