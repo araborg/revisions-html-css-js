@@ -198,10 +198,6 @@ function showResults(userOption) {
         resetGameBtn.style.display = "block";
         optionsContainer.style.display = "none";
     }
-
-    // return showOutput;
-
-    // console.log(userOption);
 }
 
 rockBtn.addEventListener("click", function () {
