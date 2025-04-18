@@ -145,8 +145,8 @@ const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
 const resetGameBtn = document.getElementById("reset-game-btn");
-const btnContainer = document.querySelector(".btn-container");
-console.log(btnContainer);
+const optionsContainer = document.querySelector(".options-container");
+console.log(optionsContainer);
 
 // initial scores
 let playerScore = 0;
@@ -197,7 +197,7 @@ function showResults(userOption) {
         } has won the game!`;
 
         resetGameBtn.style.display = "block";
-        btnContainer.style.display = "none";
+        optionsContainer.style.display = "none";
     }
 
     playerScoreSpanElement.innerText = playerScore;
@@ -222,7 +222,11 @@ scissorsBtn.addEventListener("click", function () {
     showResults("Scissors");
 });
 
-function resetGame() {}
+function resetGame() {
+    console.log("Reset");
+}
+
+resetGameBtn.addEventListener("click", resetGame);
 
 // It's a tie! Both chose Rock
 // Player wins! Rock beats Scissors
