@@ -103,7 +103,9 @@ let userData = {
 };
 
 // logic
-const playSong = (id) => {};
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+};
 
 const pauseSong = () => {};
 
@@ -123,7 +125,18 @@ const setPlayButtonAccessibleText = () => {};
 
 const sortSongs = () => {};
 
-const renderSongs = (array) => {};
+const renderSongs = (array) => {
+    const songHTML = array.map((song) => {
+        return `
+            <li 
+                id="song-${song.id}" 
+                class="playlist-song"
+            >
+
+            </li>
+        `;
+    });
+};
 
 const getCurrentSongIndex = () => {};
 
