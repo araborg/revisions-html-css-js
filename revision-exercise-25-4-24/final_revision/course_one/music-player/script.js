@@ -127,11 +127,12 @@ const sortSongs = () => {};
 const renderSongs = (array) => {
     // d array here for now is: userData?.songs
 
-    const songHTML = array.map((song) => {
-        // here we have 2 btns: one for playing a particular
-        // song and the other to delete a particular song.
-        // Both r inside a list item.
-        return `
+    const songHTML = array
+        .map((song) => {
+            // here we have 2 btns: one for playing a particular
+            // song and the other to delete a particular song.
+            // Both r inside a list item.
+            return `
                 <li 
                     id="song-${song.id}" 
                     class="playlist-song"
@@ -164,8 +165,8 @@ const renderSongs = (array) => {
 
                 </li>
             `;
-    });
-    // .join("");
+        })
+        .join("");
 
     // playlistSongs: d container for d songs
     playlistSongs.innerHTML = songHTML;
