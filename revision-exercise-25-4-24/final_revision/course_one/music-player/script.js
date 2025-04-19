@@ -126,6 +126,8 @@ const setPlayButtonAccessibleText = () => {};
 const sortSongs = () => {};
 
 const renderSongs = (array) => {
+    // d array here for now is: userData?.songs
+
     const songHTML = array
         .map((song) => {
             return `
