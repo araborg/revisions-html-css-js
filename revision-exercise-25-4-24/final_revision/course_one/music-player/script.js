@@ -94,9 +94,9 @@ console.log(allSongs);
 
 // ths needed
 const audio = new Audio();
-console.log(audio);
 
 let userData = {
+    // spread(...) helps mks a copy of allSongs
     songs: [...allSongs],
     currentSong: null,
     songCurrentTime: 0,
