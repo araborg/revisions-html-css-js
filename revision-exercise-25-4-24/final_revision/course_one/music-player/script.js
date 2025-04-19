@@ -130,6 +130,8 @@ const renderSongs = (array) => {
 
     const songHTML = array
         .map((song) => {
+            // here we have 2 btns: one for playing a particular
+            // song and the other to delete a particular song
             return `
                 <li 
                     id="song-${song.id}" 
