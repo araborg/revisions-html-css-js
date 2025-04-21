@@ -170,7 +170,6 @@ const playNextSong = () => {
         userData?.currentSong === null ||
         getCurrentSongIndex() === userData?.songs.length - 1
     ) {
-        console.log(getCurrentSongIndex());
         playSong(userData?.songs[0].id);
     } else {
         const currentSongIndex = getCurrentSongIndex();
@@ -182,7 +181,11 @@ const playNextSong = () => {
 
 nextBtn.addEventListener("click", playNextSong);
 
-const playPreviousSong = () => {};
+const playPreviousSong = () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[userData?.songs.length - 1]);
+    }
+};
 
 const shuffle = () => {};
 
