@@ -93,6 +93,11 @@ const playlistSongs = document.getElementById("playlist-songs");
 // ths needed
 const audio = new Audio();
 
+// ths gotten from audio so far:
+// audio.src
+// audio.title
+// audio.currentTime
+
 let userData = {
     // spread(...) helps mks a copy of allSongs
     songs: [...allSongs],
