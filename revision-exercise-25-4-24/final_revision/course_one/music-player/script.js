@@ -106,6 +106,14 @@ const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
 };
 
+playBtn.addEventListener("click", () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    } else {
+        playSong(userData?.currentSong.id);
+    }
+});
+
 const pauseSong = () => {};
 
 const playNextSong = () => {};
