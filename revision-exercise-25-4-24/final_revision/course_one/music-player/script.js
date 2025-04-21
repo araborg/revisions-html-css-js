@@ -185,8 +185,6 @@ const playPreviousSong = () => {
     const currentSongIndex = getCurrentSongIndex();
 
     if (userData?.currentSong === null || currentSongIndex === 0) {
-        console.log("In here");
-
         playSong(userData?.songs[userData?.songs.length - 1].id);
     } else {
         const prevSong = userData?.songs[currentSongIndex - 1];
