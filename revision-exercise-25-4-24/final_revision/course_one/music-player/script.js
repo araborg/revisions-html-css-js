@@ -128,6 +128,8 @@ const playSong = (id) => {
         // After  userData.currentSong = song,
         // let audio.currentTime = userData?.songCurrentTime;
         audio.currentTime = userData?.songCurrentTime;
+
+        console.log(audio.currentTime);
     }
 
     // audio.currentTime = userData?.songCurrentTime;
@@ -151,6 +153,7 @@ playBtn.addEventListener("click", () => {
 
 const pauseSong = () => {
     // userData.songCurrentTime = audio.currentTime;
+    console.log(audio.currentTime);
 
     playBtn.classList.remove("playing");
 
