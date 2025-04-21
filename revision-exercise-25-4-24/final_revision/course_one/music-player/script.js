@@ -183,9 +183,7 @@ nextBtn.addEventListener("click", playNextSong);
 
 const playPreviousSong = () => {
     if (userData?.currentSong === null) {
-        console.log(userData?.songs.length - 1);
-
-        playSong(userData?.songs[userData?.songs.length - 1]);
+        playSong(userData?.songs[userData?.songs.length - 1].id);
     } else {
         const currentSongIndex = getCurrentSongIndex();
         const prevSong = userData?.songs[currentSongIndex - 1];
