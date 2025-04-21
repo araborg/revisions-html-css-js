@@ -150,7 +150,7 @@ playBtn.addEventListener("click", () => {
 });
 
 const pauseSong = () => {
-    userData.songCurrentTime = audio.currentTime;
+    // userData.songCurrentTime = audio.currentTime;
 
     playBtn.classList.remove("playing");
 
