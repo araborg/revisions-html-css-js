@@ -126,7 +126,7 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
-    console.log(song);
+    // console.log(song);
 };
 
 playBtn.addEventListener("click", () => {
