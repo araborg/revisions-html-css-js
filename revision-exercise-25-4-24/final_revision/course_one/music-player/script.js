@@ -110,8 +110,10 @@ const playSong = (id) => {
 
 playBtn.addEventListener("click", () => {
     if (userData?.currentSong === null) {
+        // if dre is no currentSong, play d song at index: 0
         playSong(userData?.songs[0].id);
     } else {
+        // else play current song
         playSong(userData?.currentSong.id);
     }
 });
