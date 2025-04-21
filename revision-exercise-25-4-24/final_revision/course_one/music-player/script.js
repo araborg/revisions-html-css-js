@@ -114,9 +114,8 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
-    console.log(
-        `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
-    );
+    // console.log(`userData.currentSong.id is ${userData.currentSong.id}`);
+    // console.log(`userData.currentSong: is ${audio.currentSong}`);
 
     if (
         userData?.currentSong === null ||
@@ -130,7 +129,13 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
+    userData.currentSong = song;
+    playBtn.classList.add("playing");
+
     // console.log(song);
+    console.log(
+        `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
+    );
 };
 
 playBtn.addEventListener("click", () => {
