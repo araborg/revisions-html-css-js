@@ -104,6 +104,8 @@ let userData = {
 // logic
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
+
+    console.log(song);
 };
 
 playBtn.addEventListener("click", () => {
