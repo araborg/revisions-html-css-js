@@ -131,6 +131,8 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
+    console.log(audio.currentTime);
+
     // audio.currentTime helps hold d song current time
     // so wn it is paused, d song can go back to where
     // it stops.
