@@ -115,11 +115,17 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
+    console.log(
+        userData?.currentSong,
+        userData?.currentSong?.id,
+        // ====================
+        song.id
+    );
+
     // audio.currentTime
     if (
         // Wn dre is no userData?.currentSong or
-        // userData?.currentSong.id, let audio.currentTime = 0
-
+        // userData?.currentSong.id, let audio.currentTime =
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
     ) {
@@ -133,9 +139,6 @@ const playSong = (id) => {
     // populate userData.currentSong
     userData.currentSong = song;
     playBtn.classList.add("playing");
-
-    // console.log(song);
-    // console.log`userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`();
 
     audio.play();
 };
