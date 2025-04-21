@@ -131,8 +131,6 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
-    console.log(audio.currentTime);
-
     // audio.currentTime helps hold d song current time
     // so wn it is paused, d song can go back to where
     // it stops.
@@ -162,7 +160,16 @@ const pauseSong = () => {
 
 pauseBtn.addEventListener("click", pauseSong);
 
-const playNextSong = () => {};
+const playNextSong = () => {
+    if (userData?.currentSong === null) {
+        playSong(userData?.songs[0].id);
+    } else {
+        const currentSongIndex = getCurrentSongIndex();
+        const nextSong = userData?.songs[currentSongIndex + 1];
+
+        playSong(nextSong.id);
+    }
+};
 
 const playPreviousSong = () => {};
 
