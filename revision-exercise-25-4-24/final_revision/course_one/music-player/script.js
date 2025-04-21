@@ -189,9 +189,10 @@ const playPreviousSong = () => {
     } else {
         const prevSong = userData?.songs[currentSongIndex - 1];
 
-        if (currentSongIndex - 1 > 0) {
-            playSong(prevSong.id);
-        }
+        // if (currentSongIndex - 1 > 0) {
+        console.log(prevSong);
+        playSong(prevSong.id);
+        // }
     }
 };
 
