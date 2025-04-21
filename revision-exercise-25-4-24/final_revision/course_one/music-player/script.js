@@ -172,6 +172,8 @@ const playNextSong = () => {
         const nextSong = userData?.songs[currentSongIndex + 1];
 
         playSong(nextSong.id);
+
+        console.log(currentSongIndex);
     }
 };
 
