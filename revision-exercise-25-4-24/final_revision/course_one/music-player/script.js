@@ -97,6 +97,7 @@ const audio = new Audio();
 // audio.src
 // audio.title
 // audio.currentTime
+// audio.play()
 
 let userData = {
     // spread(...) helps mks a copy of allSongs
@@ -136,6 +137,8 @@ const playSong = (id) => {
     console.log(
         `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
     );
+
+    audio.play();
 };
 
 playBtn.addEventListener("click", () => {
