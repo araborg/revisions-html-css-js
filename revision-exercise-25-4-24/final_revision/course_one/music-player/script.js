@@ -125,7 +125,9 @@ const playSong = (id) => {
         console.log(`audio.currentSong: is ${audio.currentSong}`);
         audio.currentTime = 0;
     } else {
-        console.log(`audio.currentSong: is ${userData?.currentSong}`);
+        console.log`userData.songCurrentTime is ${userData.songCurrentTime}`();
+
+        console.log(`audio.currentSong: is ${userData?.currentSong.id}`);
 
         audio.currentTime = userData?.songCurrentTime;
     }
@@ -135,10 +137,7 @@ const playSong = (id) => {
     playBtn.classList.add("playing");
 
     // console.log(song);
-    console
-        .log
-        // `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
-        ();
+    // console.log`userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`();
 
     audio.play();
 };
