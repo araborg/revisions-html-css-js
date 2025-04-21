@@ -135,9 +135,10 @@ const playSong = (id) => {
     playBtn.classList.add("playing");
 
     // console.log(song);
-    console.log(
-        `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
-    );
+    console
+        .log
+        // `userData.currentSong: is ${audio.currentSong}, userData.currentSong.id is ${userData.currentSong.id}`
+        ();
 
     audio.play();
 };
