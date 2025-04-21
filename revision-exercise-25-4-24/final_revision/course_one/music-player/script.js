@@ -115,9 +115,6 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
-    // console.log(`userData.currentSong.id is ${userData.currentSong.id}`);
-    // console.log(`userData.currentSong: is ${audio.currentSong}`);
-
     if (
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
