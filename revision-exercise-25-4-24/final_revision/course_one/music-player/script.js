@@ -119,21 +119,20 @@ const playSong = (id) => {
     // Update audio.currentTime wn dre is no
     // userData?.currentSong and wn dre is
     if (
+        // in case dre is no current song at all
         userData?.currentSong === null ||
+        // in case a song is pause and anoda song is
+        // played and not d paused song.
         userData?.currentSong.id !== song.id
     ) {
         audio.currentTime = 0;
     } else {
-        // After  userData.currentSong = song,
-        // let audio.currentTime = userData?.songCurrentTime;
         audio.currentTime = userData?.songCurrentTime;
-
-        console.log(audio.currentTime);
     }
 
-    // audio.currentTime = userData?.songCurrentTime;
-
-    // populate userData.currentSong
+    // audio.currentTime helps hold d song current time
+    // so wn it is paused, d song can go back to where
+    // it stops.
     userData.currentSong = song;
     playBtn.classList.add("playing");
 
