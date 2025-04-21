@@ -160,9 +160,10 @@ const pauseSong = () => {
 
 pauseBtn.addEventListener("click", pauseSong);
 
-const getCurrentSongIndex = () => {
+const getCurrentSongIndex = () =>
     userData?.songs.indexOf(userData?.currentSong);
-};
+
+console.log(getCurrentSongIndex());
 
 const playNextSong = () => {
     if (userData?.currentSong === null) {
@@ -170,6 +171,7 @@ const playNextSong = () => {
     } else {
         const currentSongIndex = getCurrentSongIndex();
         const nextSong = userData?.songs[currentSongIndex + 1];
+        console.log(nextSong);
 
         playSong(nextSong.id);
 
