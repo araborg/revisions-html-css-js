@@ -184,13 +184,15 @@ nextBtn.addEventListener("click", playNextSong);
 const playPreviousSong = () => {
     const currentSongIndex = getCurrentSongIndex();
 
-    if (userData?.currentSong === null || currentSongIndex < 0) {
+    if (userData?.currentSong === null || currentSongIndex === 0) {
+        console.log("In here");
+
         playSong(userData?.songs[userData?.songs.length - 1].id);
     } else {
         const prevSong = userData?.songs[currentSongIndex - 1];
 
         // if (currentSongIndex - 1 > 0) {
-        console.log(prevSong);
+        console.log(prevSong, currentSongIndex, currentSongIndex - 1);
         playSong(prevSong.id);
         // }
     }
