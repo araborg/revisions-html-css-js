@@ -257,7 +257,13 @@ const deleteSong = (id) => {};
 
 const setPlayerDisplay = () => {};
 
-const highlightCurrentSong = () => {};
+const highlightCurrentSong = () => {
+    const playlistSongElements = document.querySelectorAll(".playlist-song");
+
+    const songToHighlight = document.getElementById(
+        `song-${userData?.currentSong?.id}`
+    );
+};
 
 const setPlayButtonAccessibleText = () => {};
 
