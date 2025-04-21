@@ -130,6 +130,7 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
+    // populate userData.currentSong
     userData.currentSong = song;
     playBtn.classList.add("playing");
 
