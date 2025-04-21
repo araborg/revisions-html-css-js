@@ -127,7 +127,7 @@ const playSong = (id) => {
     console.log(
         userData,
         userData?.currentSong,
-        userData?.currentSong.id,
+        userData?.currentSong?.id,
         song.id
     );
 
