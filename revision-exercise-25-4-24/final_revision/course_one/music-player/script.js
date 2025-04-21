@@ -184,6 +184,11 @@ nextBtn.addEventListener("click", playNextSong);
 const playPreviousSong = () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[userData?.songs.length - 1]);
+    } else {
+        const currentSongIndex = getCurrentSongIndex();
+        const prevSong = userData?.songs[currentSongIndex - 1];
+
+        playSong(prevSong.id);
     }
 };
 
