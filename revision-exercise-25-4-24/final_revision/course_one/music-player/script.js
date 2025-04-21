@@ -109,6 +109,7 @@ let userData = {
 
 // logic
 const playSong = (id) => {
+    // select a song either by clicking playbtn or d song
     const song = userData?.songs.find((song) => song.id === id);
 
     // get d audio src & title
