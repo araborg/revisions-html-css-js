@@ -157,6 +157,8 @@ const pauseSong = () => {
     audio.pause();
 };
 
+pauseBtn.addEventListener("click", pauseSong);
+
 const playNextSong = () => {};
 
 const playPreviousSong = () => {};
