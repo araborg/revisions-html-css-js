@@ -244,6 +244,8 @@ const playPreviousSong = () => {
         playSong(userData?.songs[userData?.songs.length - 1].id);
     } else {
         const prevSong = userData?.songs[currentSongIndex - 1];
+
+        playSong(prevSong.id);
     }
 };
 
