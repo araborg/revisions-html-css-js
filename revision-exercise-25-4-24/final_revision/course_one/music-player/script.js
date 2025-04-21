@@ -160,6 +160,22 @@ const sortSongs = () => {};
 
 renderSongs(userData?.songs);
 
+const highlightCurrentSong = () => {
+    const playlistSongElements = document.querySelectorAll(".playlist-song");
+
+    const songToHighlight = document.getElementById(
+        `song-${userData?.currentSong?.id}`
+    );
+
+    playlistSongElements.forEach((songEl) => {
+        songEl.removeAttribute("aria-current");
+    });
+
+    if (songToHighlight) {
+        songToHighlight.setAttribute("aria-current", true);
+    }
+};
+
 const playSong = (id) => {
     // select a song either by clicking playbtn or d song
     const song = userData?.songs.find((song) => song.id === id);
@@ -258,22 +274,6 @@ const shuffle = () => {};
 const deleteSong = (id) => {};
 
 const setPlayerDisplay = () => {};
-
-const highlightCurrentSong = () => {
-    const playlistSongElements = document.querySelectorAll(".playlist-song");
-
-    const songToHighlight = document.getElementById(
-        `song-${userData?.currentSong?.id}`
-    );
-
-    playlistSongElements.forEach((songEl) => {
-        songEl.removeAttribute("aria-current");
-    });
-
-    if (songToHighlight) {
-        songToHighlight.setAttribute("aria-current", true);
-    }
-};
 
 const setPlayButtonAccessibleText = () => {};
 
