@@ -124,6 +124,8 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 
+    console.log(userData, userData?.currentSong, userData?.currentSong.id);
+
     // populate userData.currentSong
     userData.currentSong = song;
     playBtn.classList.add("playing");
