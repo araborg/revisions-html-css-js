@@ -127,6 +127,7 @@ const playSong = (id) => {
     ) {
         audio.currentTime = 0;
     } else {
+        // wn same song is played after being paused
         audio.currentTime = userData?.songCurrentTime;
     }
 
