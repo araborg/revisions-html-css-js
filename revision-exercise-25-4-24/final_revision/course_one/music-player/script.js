@@ -166,7 +166,10 @@ const getCurrentSongIndex = () =>
 // console.log(getCurrentSongIndex());
 
 const playNextSong = () => {
-    if (userData?.currentSong === null) {
+    if (
+        userData?.currentSong === null ||
+        getCurrentSongIndex() + 1 === userData?.songs.length
+    ) {
         playSong(userData?.songs[0].id);
     } else {
         const currentSongIndex = getCurrentSongIndex();
