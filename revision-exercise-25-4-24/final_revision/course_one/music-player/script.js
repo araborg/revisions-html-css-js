@@ -116,10 +116,9 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
-    // audio.currentTime
+    // Update audio.currentTime wn dre is no
+    // userData?.currentSong and wn dre is
     if (
-        // Wn dre is no userData?.currentSong or
-        // userData?.currentSong.id, let audio.currentTime =
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
     ) {
