@@ -160,7 +160,9 @@ const pauseSong = () => {
 
 pauseBtn.addEventListener("click", pauseSong);
 
-const getCurrentSongIndex = () => {};
+const getCurrentSongIndex = () => {
+    userData?.songs.indexOf(userData?.currentSong);
+};
 
 const playNextSong = () => {
     if (userData?.currentSong === null) {
