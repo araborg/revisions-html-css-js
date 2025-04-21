@@ -177,6 +177,8 @@ const playNextSong = () => {
     }
 };
 
+nextBtn.addEventListener("click", playNextSong);
+
 const playPreviousSong = () => {};
 
 const shuffle = () => {};
