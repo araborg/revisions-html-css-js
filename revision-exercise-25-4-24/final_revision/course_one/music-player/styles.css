@@ -182,7 +182,9 @@ button {
 
 button:focus,
 .playlist-song:focus {
+    /* responsible for d dashed border ard d btns */
     outline-style: dashed;
+
     outline-width: 2px;
 }
 
