@@ -115,7 +115,10 @@ const playSong = (id) => {
     audio.src = song.src;
     audio.title = song.title;
 
+    // audio.currentTime
     if (
+        // wn dre is no userData?.currentSong or userData?.currentSong,id
+        // let audio,currentTime = 0
         userData?.currentSong === null ||
         userData?.currentSong.id !== song.id
     ) {
@@ -123,13 +126,6 @@ const playSong = (id) => {
     } else {
         audio.currentTime = userData?.songCurrentTime;
     }
-
-    console.log(
-        userData,
-        userData?.currentSong,
-        userData?.currentSong?.id,
-        song.id
-    );
 
     // populate userData.currentSong
     userData.currentSong = song;
