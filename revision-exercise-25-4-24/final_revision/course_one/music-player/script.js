@@ -286,7 +286,11 @@ const playPreviousSong = () => {
 
 prevBtn.addEventListener("click", playPreviousSong);
 
-const shuffle = () => {};
+const shuffle = () => {
+    userData?.songs.sort(() => Math.random() - 0.5);
+};
+
+shuffleBtn.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {};
 
