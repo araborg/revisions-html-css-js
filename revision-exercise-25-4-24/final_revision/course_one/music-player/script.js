@@ -287,17 +287,14 @@ const playPreviousSong = () => {
 prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
-    const shuffleLogic = () => Math.random() - 0.5;
-    console.log(shuffleLogic());
-
-    userData?.songs.sort(shuffleLogic);
-
+    // const shuffleLogic = () => Math.random() - 0.5;
+    // console.log(shuffleLogic());
+    // userData?.songs.sort(shuffleLogic);
     // return sm features to d initial state
-    userData.currentSong = null;
-    userData.songCurrentTime = 0;
-
-    renderSongs(userData?.songs);
-    pauseSong();
+    // userData.currentSong = null;
+    // userData.songCurrentTime = 0;
+    // renderSongs(userData?.songs);
+    // pauseSong();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
