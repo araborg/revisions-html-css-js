@@ -287,7 +287,8 @@ const playPreviousSong = () => {
 prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
-    userData?.songs.sort(() => Math.random() - 0.5);
+    const shuffleLogic = () => Math.random() - 0.5;
+    userData?.songs.sort(shuffleLogic);
 
     // return sm features to d initial state
     userData.currentSong = null;
