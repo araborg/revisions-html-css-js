@@ -288,7 +288,7 @@ prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
     const shuffleLogic = () => Math.random() - 0.5;
-    console.log(shuffleLogic);
+    console.log(shuffleLogic());
 
     userData?.songs.sort(shuffleLogic);
 
