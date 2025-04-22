@@ -169,10 +169,12 @@ const highlightCurrentSong = () => {
         `song-${userData?.currentSong?.id}`
     );
 
+    // remove d feature common to all d songs
     playlistSongElements.forEach((songEl) => {
         songEl.removeAttribute("aria-current");
     });
 
+    // add ds feature to d song to be highlighted
     if (songToHighlight) {
         songToHighlight.setAttribute("aria-current", true);
     }
