@@ -174,8 +174,8 @@ const highlightCurrentSong = () => {
         songEl.removeAttribute("aria-current");
     });
 
-    // if dre is a song to be highlighted,
-    // add ds feature to d song to be highlighted
+    // if dre is a song to be highlighted, add ds
+    // feature to d song
     if (songToHighlight) {
         songToHighlight.setAttribute("aria-current", true);
     }
