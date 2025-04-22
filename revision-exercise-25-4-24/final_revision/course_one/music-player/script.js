@@ -288,6 +288,13 @@ prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
     userData?.songs.sort(() => Math.random() - 0.5);
+
+    // return sm features to d initial state
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+
+    renderSongs(userData?.songs);
+    pauseSong();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
