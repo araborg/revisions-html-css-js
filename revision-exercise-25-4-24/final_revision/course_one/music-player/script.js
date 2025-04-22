@@ -161,8 +161,10 @@ const sortSongs = () => {};
 renderSongs(userData?.songs);
 
 const highlightCurrentSong = () => {
+    // select all songs
     const playlistSongElements = document.querySelectorAll(".playlist-song");
 
+    // select d particular song to be highlighted
     const songToHighlight = document.getElementById(
         `song-${userData?.currentSong?.id}`
     );
