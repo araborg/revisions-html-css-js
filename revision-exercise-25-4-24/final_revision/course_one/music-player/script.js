@@ -313,7 +313,15 @@ shuffleBtn.addEventListener("click", shuffle);
 // renderSongs(sortSongs()) and
 // userData?.songs.sort(shuffleLogic);
 
-const deleteSong = (id) => {};
+const deleteSong = (id) => {
+    // deleting a playing song
+    if (userData?.currentSong?.id === id) {
+        userData.currentSong = null;
+        userData.songCurrentTime = 0;
+
+        pauseSong();
+    }
+};
 
 const setPlayerDisplay = () => {};
 
