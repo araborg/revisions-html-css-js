@@ -386,7 +386,12 @@ const setPlayerDisplay = () => {
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
 
+    // is there a next song?
     const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
+
+    if (nextSongExists) {
+        playNextSong();
+    }
 });
 
 function init() {}
