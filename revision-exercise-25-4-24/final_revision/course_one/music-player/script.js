@@ -391,6 +391,10 @@ audio.addEventListener("ended", () => {
 
     if (nextSongExists) {
         playNextSong();
+    } else {
+        // if dre is no next song
+        userData.currentSong = null;
+        userData.songCurrentTime = 0;
     }
 });
 
