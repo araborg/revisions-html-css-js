@@ -424,7 +424,9 @@ audio.addEventListener("ended", () => {
     if (nextSongExists) {
         playNextSong();
     } else {
-        // if dre is no next song
+        // if dre is no next song, return 
+        // userData.currentSong & userData.songCurrentTime
+        // to dre initial values
         userData.currentSong = null;
         userData.songCurrentTime = 0;
 
@@ -435,7 +437,6 @@ audio.addEventListener("ended", () => {
 
         // set play title attribute on Play btn
         setPlayButtonAccessibleText();
-
     }
 });
 
