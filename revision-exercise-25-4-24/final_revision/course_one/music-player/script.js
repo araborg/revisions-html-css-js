@@ -403,4 +403,8 @@ audio.addEventListener("ended", () => {
     }
 });
 
-function init() {}
+function init() {
+    highlightCurrentSong();
+}
+
+init();
