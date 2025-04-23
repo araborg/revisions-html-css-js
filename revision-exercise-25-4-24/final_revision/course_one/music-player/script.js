@@ -1,3 +1,4 @@
+/*
 const allSongs = [
     {
         id: 0,
@@ -410,8 +411,16 @@ function init() {
 
 init();
 
-// Revision
-/*
+
+
+
+
+
+//  Revision
+
+
+*/
+
 const allSongs = [
     {
         id: 0,
@@ -494,56 +503,28 @@ const allSongs = [
     },
 ];
 
-let userData = {
+let userData = {};
 
-}
+const renderSongs = (array) => {};
 
-const renderSongs = (array) => {
-    
-}
+const sortSongs = () => {};
 
-const sortSongs = () => {
-    
-}
+const highlightCurrentSong = () => {};
 
-const highlightCurrentSong = () => {
-    
-}
+const playSong = (id) => {};
 
-const playSong = (id) => {
-    
-}
+const pauseSong = () => {};
 
-const pauseSong = () => {
-    
-}
+const getCurrentSongIndex = () => {};
 
-const getCurrentSongIndex = () =>
+const playNextSong = () => {};
 
-const playNextSong = () => {
-    
-}
+const playPreviousSong = () => {};
 
-const playPreviousSong = () => {
-    
-}
+const shuffle = () => {};
 
-const shuffle = () => {
-    
-}
+const deleteSong = (id) => {};
 
-const deleteSong = (id) => {
-    
-}
+const setPlayerDisplay = () => {};
 
-const setPlayerDisplay = () => {
-    
-}
-
-audio.addEventListener("ended", () => {
-    
-}
-
-
-
-*/
+audio.addEventListener("ended", () => {});
