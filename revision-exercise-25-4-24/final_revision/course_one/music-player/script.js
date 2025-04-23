@@ -342,7 +342,9 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
     highlightCurrentSong();
 
-    
+    // set play title attribute on Play btn
+    setPlayButtonAccessibleText();
+
 
     // if all songs were deleted, show a reset btn
     // d purpose of ds btn is to renden all d songs.
