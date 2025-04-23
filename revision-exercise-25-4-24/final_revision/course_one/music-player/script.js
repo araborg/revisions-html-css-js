@@ -395,7 +395,8 @@ const setPlayerDisplay = () => {
     songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
-// ds affects only d playBtn
+// ds affects only d playBtn by setting d songTitle 
+// on its aria-label
 const setPlayButtonAccessibleText = () => {
     // const song = userData?.currentSong || userData?.songs[0];
 
