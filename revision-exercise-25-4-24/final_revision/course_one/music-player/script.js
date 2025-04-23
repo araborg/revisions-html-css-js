@@ -204,7 +204,8 @@ const playSong = (id) => {
     audio.title = song.title;
 
     // Update audio.currentTime wn dre is no
-    // userData?.currentSong and wn dre is
+    // userData?.currentSong, currentSong.id and song.id
+    // r nt d same and wn dre is userData?.currentSong
     if (
         // in case dre is no current song at all
         userData?.currentSong === null ||
