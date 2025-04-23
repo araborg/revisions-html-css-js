@@ -290,6 +290,7 @@ const playPreviousSong = () => {
 prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
+    // ds is a fxn
     const shuffleLogic = () => Math.random() - 0.5;
 
     // passing a fxn reference, shuffleLogic rada than
@@ -300,11 +301,17 @@ const shuffle = () => {
     userData.currentSong = null;
     userData.songCurrentTime = 0;
 
+    // userData?.songs is instead of sortSongs() bcos
+    // shuffle is d opp of sort.
     renderSongs(userData?.songs);
     pauseSong();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
+
+// Wt is d diff btw:
+// renderSongs(sortSongs()) and
+// userData?.songs.sort(shuffleLogic);
 
 const deleteSong = (id) => {};
 
