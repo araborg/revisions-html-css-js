@@ -380,8 +380,10 @@ const setPlayerDisplay = () => {
     songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
-const setPlayButtonAccessibleText = () => {};
+// const setPlayButtonAccessibleText = () => {};
 
-audio.addEventListener("ended", () => {});
+audio.addEventListener("ended", () => {
+    const currentSongIndex = getCurrentSongIndex();
+});
 
 function init() {}
