@@ -335,11 +335,30 @@ const deleteSong = (id) => {
 
     highlightCurrentSong();
 
-    // if all songs were deleted
+    // if all songs were deleted, show a reset btn
+    // d purpose of ds btn is to renden all d songs.
     if (userData?.songs.length === 0) {
         // create button and text
         const resetBtn = document.createElement("button");
         const resetText = document.createTextNode("Reset Playlist");
+
+        // add attributes to d btn
+        resetBtn.id = "reset";
+        resetBtn.ariaLabel = "Reset playlist";
+
+        // add d text to d btn and d btn to
+        // playlistSongs container: <ul id="playlist-songs"></ul>
+        resetBtn.appendChild(resetText);
+        playlistSongs.appendChild(resetBtn);
+
+        // add an event listener to d btn
+        resetBtn.addEventListener("click", () => {
+            userData.songs = [...allSongs];
+
+            renderSongs(sortSongs());
+
+            // remove d resetBtn
+        });
     }
 };
 
