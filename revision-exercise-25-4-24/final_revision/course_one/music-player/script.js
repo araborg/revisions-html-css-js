@@ -318,13 +318,13 @@ shuffleBtn.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {
     // deleting a playing song
-    if (userData?.currentSong?.id === id) {
-        userData.currentSong = null;
-        userData.songCurrentTime = 0;
+    // if (userData?.currentSong?.id === id) {
+    //     userData.currentSong = null;
+    //     userData.songCurrentTime = 0;
 
-        pauseSong();
-        setPlayerDisplay();
-    }
+    //     pauseSong();
+    //     setPlayerDisplay();
+    // }
 
     // temporary modificatn of d userData.songs
     // let songs dt have diff ids apart from given
