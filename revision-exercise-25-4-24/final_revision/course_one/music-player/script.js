@@ -323,7 +323,19 @@ const deleteSong = (id) => {
     }
 };
 
-const setPlayerDisplay = () => {};
+const setPlayerDisplay = () => {
+    // select songTitle, songArtist elemts
+    const songTitle = document.getElementById("player-song-title");
+    const songArtist = document.getElementById("player-song-artist");
+
+    // select currentTitle, currentArtist
+    const currentTitle = userData?.currentSong?.title;
+    const currentArtist = userData?.currentSong?.artist;
+
+    // update songTitle, songArtist elemts
+    songTitle.textContent = currentTitle ? currentTitle : "";
+    songArtist.textContent = currentArtist ? currentArtist : "";
+};
 
 const setPlayButtonAccessibleText = () => {};
 
