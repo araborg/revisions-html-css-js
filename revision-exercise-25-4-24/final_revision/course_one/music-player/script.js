@@ -395,6 +395,11 @@ audio.addEventListener("ended", () => {
         // if dre is no next song
         userData.currentSong = null;
         userData.songCurrentTime = 0;
+
+        pauseSong();
+        setPlayerDisplay();
+
+        highlightCurrentSong();
     }
 });
 
