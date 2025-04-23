@@ -320,6 +320,7 @@ const deleteSong = (id) => {
         userData.songCurrentTime = 0;
 
         pauseSong();
+        setPlayerDisplay();
     }
 };
 
