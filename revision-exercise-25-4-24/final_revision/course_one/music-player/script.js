@@ -325,6 +325,8 @@ const deleteSong = (id) => {
         pauseSong();
         setPlayerDisplay();
     }
+
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
 };
 
 const setPlayerDisplay = () => {
