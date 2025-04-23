@@ -336,6 +336,11 @@ const deleteSong = (id) => {
     highlightCurrentSong();
 
     // if all songs were deleted
+    if (userData?.songs.length === 0) {
+        // create button and text
+        const resetBtn = document.createElement("button");
+        const resetText = document.createTextNode("Reset Playlist");
+    }
 };
 
 const setPlayerDisplay = () => {
