@@ -523,6 +523,8 @@ const shuffle = () => {};
 
 const deleteSong = (id) => {};
 
+const setPlayButtonAccessibleText = () => {};
+
 const setPlayerDisplay = () => {};
 
 // mk d next song play at d end of the current song
