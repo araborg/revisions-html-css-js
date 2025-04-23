@@ -99,6 +99,8 @@ const audio = new Audio();
 // audio.currentTime
 // audio.play()
 
+// This helps to handle the current song's information,
+// currentSong, and its playback time, songCurrentTime.
 let userData = {
     // spread(...) helps mks a copy of allSongs
     songs: [...allSongs],
@@ -289,8 +291,9 @@ prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
     const shuffleLogic = () => Math.random() - 0.5;
-    console.log(shuffleLogic());
 
+    // passing a fxn reference, shuffleLogic rada than
+    // calling it
     userData?.songs.sort(shuffleLogic);
 
     // return sm features to d initial state
