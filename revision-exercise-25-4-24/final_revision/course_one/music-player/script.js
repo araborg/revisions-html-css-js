@@ -312,6 +312,10 @@ const shuffle = () => {
     pauseSong();
 
     setPlayerDisplay();
+
+    // set play title attribute on Play btn
+    setPlayButtonAccessibleText();
+
 };
 
 shuffleBtn.addEventListener("click", shuffle);
@@ -336,8 +340,9 @@ const deleteSong = (id) => {
     userData.songs = userData?.songs.filter((song) => song.id !== id);
 
     renderSongs(userData?.songs);
-
     highlightCurrentSong();
+
+    
 
     // if all songs were deleted, show a reset btn
     // d purpose of ds btn is to renden all d songs.
