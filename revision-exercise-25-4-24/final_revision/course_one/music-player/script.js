@@ -334,6 +334,8 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
 
     highlightCurrentSong();
+
+    // if all songs were deleted
 };
 
 const setPlayerDisplay = () => {
