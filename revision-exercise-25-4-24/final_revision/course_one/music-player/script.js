@@ -431,6 +431,10 @@ audio.addEventListener("ended", () => {
         setPlayerDisplay();
 
         highlightCurrentSong();
+
+        // set play title attribute on Play btn
+        setPlayButtonAccessibleText();
+
     }
 });
 
