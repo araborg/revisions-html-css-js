@@ -353,11 +353,13 @@ const deleteSong = (id) => {
 
         // add an event listener to d btn
         resetBtn.addEventListener("click", () => {
+            // y ds?
             userData.songs = [...allSongs];
 
             renderSongs(sortSongs());
 
             // remove d resetBtn
+            // resetBtn.remove()
         });
     }
 };
