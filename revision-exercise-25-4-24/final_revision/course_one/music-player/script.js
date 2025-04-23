@@ -381,8 +381,24 @@ const setPlayerDisplay = () => {
     songArtist.textContent = currentArtist ? currentArtist : "";
 };
 
-// const setPlayButtonAccessibleText = () => {};
+// ds affects only d playBtn
+const setPlayButtonAccessibleText = () => {
+    // const song = userData?.currentSong || userData?.songs[0];
 
+    // playButton.setAttribute(
+    //     "aria-label",
+    //     song?.title ? `Play ${song.title}` : "Play"
+    // );
+
+    const song = userData?.currentSong || userData?.songs[0];
+    const songTitle = song?.title ? `Play ${song.title}` : "Play";
+
+    playButton.setAttribute("aria-label", songTitle);
+};
+
+setPlayButtonAccessibleText();
+
+    
 // d player shd be able to play d next song
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
