@@ -231,6 +231,7 @@ const playSong = (id) => {
     highlightCurrentSong();
     setPlayerDisplay();
 
+    // set play title attribute on Play btn
     setPlayButtonAccessibleText();
 
     audio.play();
