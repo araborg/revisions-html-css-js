@@ -494,6 +494,56 @@ const allSongs = [
     },
 ];
 
+let userData = {
+
+}
+
+const renderSongs = (array) => {
+    
+}
+
+const sortSongs = () => {
+    
+}
+
+const highlightCurrentSong = () => {
+    
+}
+
+const playSong = (id) => {
+    
+}
+
+const pauseSong = () => {
+    
+}
+
+const getCurrentSongIndex = () =>
+
+const playNextSong = () => {
+    
+}
+
+const playPreviousSong = () => {
+    
+}
+
+const shuffle = () => {
+    
+}
+
+const deleteSong = (id) => {
+    
+}
+
+const setPlayerDisplay = () => {
+    
+}
+
+audio.addEventListener("ended", () => {
+    
+}
+
 
 
 */
