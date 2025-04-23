@@ -382,8 +382,11 @@ const setPlayerDisplay = () => {
 
 // const setPlayButtonAccessibleText = () => {};
 
+// d player shd be able to play d next song
 audio.addEventListener("ended", () => {
     const currentSongIndex = getCurrentSongIndex();
+
+    const nextSongExists = userData?.songs[currentSongIndex + 1] !== undefined;
 });
 
 function init() {}
