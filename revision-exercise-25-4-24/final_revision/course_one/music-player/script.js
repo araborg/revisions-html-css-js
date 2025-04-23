@@ -371,8 +371,12 @@ const deleteSong = (id) => {
 
             renderSongs(sortSongs());
 
+            // set play title attribute on Play btn
+            setPlayButtonAccessibleText();
+
+
             // remove d resetBtn
-            // resetBtn.remove()
+            resetBtn.remove()
         });
     }
 };
