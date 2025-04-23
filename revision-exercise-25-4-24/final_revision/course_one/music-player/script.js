@@ -353,9 +353,9 @@ const deleteSong = (id) => {
 
         // add an event listener to d btn
         resetBtn.addEventListener("click", () => {
-            console.log(userData.song);
+            console.log(userData.songs);
 
-            // y ds?
+            // y ds? bcos userDat.songs
             userData.songs = [...allSongs];
 
             renderSongs(sortSongs());
