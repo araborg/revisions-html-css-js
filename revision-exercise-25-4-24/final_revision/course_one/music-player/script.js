@@ -228,6 +228,7 @@ const playSong = (id) => {
     playBtn.classList.add("playing");
 
     highlightCurrentSong();
+    setPlayerDisplay();
 
     audio.play();
 };
@@ -305,6 +306,8 @@ const shuffle = () => {
     // shuffle is d opp of sort.
     renderSongs(userData?.songs);
     pauseSong();
+
+    setPlayerDisplay();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
