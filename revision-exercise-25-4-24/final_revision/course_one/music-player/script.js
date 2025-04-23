@@ -405,7 +405,7 @@ audio.addEventListener("ended", () => {
 
 function init() {
     // y ds fxn?
-    highlightCurrentSong();
+    // highlightCurrentSong();
 }
 
 init();
