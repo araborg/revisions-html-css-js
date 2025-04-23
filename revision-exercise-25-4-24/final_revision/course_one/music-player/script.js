@@ -307,7 +307,7 @@ const shuffle = () => {
     renderSongs(userData?.songs);
     pauseSong();
 
-    setPlayerDisplay();
+    // setPlayerDisplay();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
