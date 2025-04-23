@@ -523,8 +523,15 @@ const shuffle = () => {};
 
 const deleteSong = (id) => {};
 
-const setPlayButtonAccessibleText = () => {};
+// const setPlayButtonAccessibleText = () => {};
 
 const setPlayerDisplay = () => {};
 
 // mk d next song play at d end of the current song
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.currentSong || userData.songs[0];
+
+    const songTitle = song?.title ? `Play ${song.title}` : "Play";
+
+    playButton.setAttribute("aria-label", songTitle);
+};
