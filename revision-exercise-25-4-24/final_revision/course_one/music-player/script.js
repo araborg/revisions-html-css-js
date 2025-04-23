@@ -353,7 +353,7 @@ const deleteSong = (id) => {
 
         // add an event listener to d btn
         resetBtn.addEventListener("click", () => {
-            console.log(userData.songs); // []
+            // console.log(userData.songs); // []
 
             // y ds? bcos userDat.songs is no an empty arr
             userData.songs = [...allSongs];
