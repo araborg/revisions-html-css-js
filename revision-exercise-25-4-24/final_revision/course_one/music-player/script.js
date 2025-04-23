@@ -416,9 +416,7 @@ init();
 
 
 
-//  Revision
-
-
+//  Revision:
 */
 
 const allSongs = [
@@ -527,4 +525,4 @@ const deleteSong = (id) => {};
 
 const setPlayerDisplay = () => {};
 
-audio.addEventListener("ended", () => {});
+// mk d next song play at d end of the current song
