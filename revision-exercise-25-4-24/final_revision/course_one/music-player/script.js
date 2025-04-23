@@ -327,8 +327,13 @@ const deleteSong = (id) => {
     }
 
     // temporary modificatn of d userData.songs
-    // let songs dt have diff ids apart from id go via
+    // let songs dt have diff ids apart from given
+    // id go via
     userData.songs = userData?.songs.filter((song) => song.id !== id);
+
+    renderSongs(userData?.songs);
+
+    highlightCurrentSong();
 };
 
 const setPlayerDisplay = () => {
