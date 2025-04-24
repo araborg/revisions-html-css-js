@@ -543,8 +543,6 @@ let userData = {
     songCurrentTime: 0,
 };
 
-console.log(userData.songs);
-
 const renderSongs = (array) => {};
 
 const sortSongs = () => {};
