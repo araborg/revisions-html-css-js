@@ -552,6 +552,8 @@ let userData = {
     songCurrentTime: 0,
 };
 
+console.log(userData.songs[0]);
+
 const renderSongs = (array) => {
     array.map(
         (song) => `
