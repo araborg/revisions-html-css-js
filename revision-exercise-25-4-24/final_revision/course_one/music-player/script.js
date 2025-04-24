@@ -609,12 +609,10 @@ const highlightCurrentSong = () => {
     console.log(songToHighlight);
 };
 
-highlightCurrentSong();
+// highlightCurrentSong();
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
-
-    console.log(song);
 };
 
 playSong(3);
