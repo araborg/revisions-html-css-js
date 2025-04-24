@@ -558,8 +558,12 @@ const renderSongs = (array) => {
     array.map(
         (song) => `
             <li>
-                <button>
-
+                <button
+                    onclick="playSong(${song.id})"
+                >
+                    <span>${song.title}</span>
+                    <span>${song.artist}</span>
+                    <span>${song.duration}</span>
                 </button>
 
                 <button>
