@@ -598,7 +598,14 @@ const sortSongs = () => {
 
 renderSongs(sortSongs());
 
-const highlightCurrentSong = () => {};
+const highlightCurrentSong = () => {
+    // select all the songs
+    const playlists = document.querySelectorAll(".playlist-song");
+
+    console.log(playlists);
+};
+
+highlightCurrentSong();
 
 const playSong = (id) => {};
 
