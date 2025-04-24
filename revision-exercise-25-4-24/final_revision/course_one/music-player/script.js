@@ -538,16 +538,13 @@ const allSongs = [
 ];
 
 // btns
-const prevBtn = document.getElementById("previous")
-const playBtn = document.getElementById("play")
-const pauseBtn = document.getElementById("pause")
-const nextBtn = document.getElementById("next")
-const shuffleBtn=document.getElementById("shuffle")
+const prevBtn = document.getElementById("previous");
+const playBtn = document.getElementById("play");
+const pauseBtn = document.getElementById("pause");
+const nextBtn = document.getElementById("next");
+const shuffleBtn = document.getElementById("shuffle");
 
-    id="shuffle"
-
-<ul id="playlist-songs"></ul>
-
+const playlistSongs = document.getElementById("playlist-songs");
 
 let userData = {
     songs: [...allSongs],
@@ -558,7 +555,15 @@ let userData = {
 const renderSongs = (array) => {
     array.map(
         (song) => `
-        
+            <li>
+                <button>
+
+                </button>
+
+                <button>
+
+                </button>
+            </li>
         `
     );
 };
