@@ -561,7 +561,7 @@ const renderSongs = (array) => {
         (song) => `
             <li id="song-${song.id}" class="playlist-song">
                 <button
-                    class="playlist-song"
+                    class="playlist-song-info"
                     onclick="playSong(${song.id})"
                 >
                     <span>${song.title}</span>
@@ -570,6 +570,8 @@ const renderSongs = (array) => {
                 </button>
 
                 <button
+                    class="playlist-song-delete"
+                    aria-label="Delete ${song.title}"
                     onclick="deleteSong(${song.id})"
                 >
                     <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="8" fill="#4d4d62"/>
