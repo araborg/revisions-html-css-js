@@ -602,7 +602,9 @@ const highlightCurrentSong = () => {
     // select all the songs
     const playlists = document.querySelectorAll(".playlist-song");
 
-    const songToHighlight = document.getElementById(`song-${userData?.s}`);
+    const songToHighlight = document.getElementById(
+        `song-${userData?.currentSong}`
+    );
 
     console.log(songToHighlight);
 };
