@@ -537,13 +537,31 @@ const allSongs = [
     },
 ];
 
+// btns
+const prevBtn = document.getElementById("previous")
+const playBtn = document.getElementById("play")
+const pauseBtn = document.getElementById("pause")
+const nextBtn = document.getElementById("next")
+const shuffleBtn=document.getElementById("shuffle")
+
+    id="shuffle"
+
+<ul id="playlist-songs"></ul>
+
+
 let userData = {
     songs: [...allSongs],
     currentSong: null,
     songCurrentTime: 0,
 };
 
-const renderSongs = (array) => {};
+const renderSongs = (array) => {
+    array.map(
+        (song) => `
+        
+        `
+    );
+};
 
 const sortSongs = () => {};
 
