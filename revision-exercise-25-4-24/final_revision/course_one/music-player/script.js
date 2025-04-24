@@ -553,8 +553,9 @@ let userData = {
 };
 
 const renderSongs = (array) => {
-    const songHTML = array.map(
-        (song) => `
+    const songHTML = array
+        .map(
+            (song) => `
             <li id="song-${song.id}" class="playlist-song">
                 <button
                     class="playlist-song-info"
@@ -576,10 +577,13 @@ const renderSongs = (array) => {
                 </button>
             </li>
         `
-    );
+        )
+        .join("");
 
     playlistSongs.insertAdjacentHTML("beforeend", songHTML);
 };
+
+renderSongs(userData?.songs);
 
 const sortSongs = () => {};
 
