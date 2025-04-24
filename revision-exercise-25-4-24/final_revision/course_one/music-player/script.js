@@ -584,9 +584,9 @@ const renderSongs = (array) => {
     playlistSongs.insertAdjacentHTML("beforeend", songHTML);
 };
 
-renderSongs(userData?.songs);
-
 const sortSongs = () => {};
+
+renderSongs(userData?.songs);
 
 const highlightCurrentSong = () => {};
 
