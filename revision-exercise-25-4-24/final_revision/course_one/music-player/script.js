@@ -552,12 +552,8 @@ let userData = {
     songCurrentTime: 0,
 };
 
-console.log(userData.songs[0]);
-
-/* <li id="song-${song.id}" class="playlist-song"> */
-
 const renderSongs = (array) => {
-    array.map(
+    const songHTML = array.map(
         (song) => `
             <li id="song-${song.id}" class="playlist-song">
                 <button
@@ -581,15 +577,9 @@ const renderSongs = (array) => {
             </li>
         `
     );
+
+    playlistSongs.insertAdjacentHTML("beforeend", songHTML);
 };
-
-{
-    /* <button class="playlist-song-info" onclick="playSong(${song.id})"> */
-}
-
-{
-    /* <button onclick="deleteSong(${song.id})" class="playlist-song-delete" aria-label="Delete ${song.title}"> */
-}
 
 const sortSongs = () => {};
 
