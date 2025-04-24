@@ -611,7 +611,13 @@ const highlightCurrentSong = () => {
 
 highlightCurrentSong();
 
-const playSong = (id) => {};
+const playSong = (id) => {
+    const song = userData?.songs.find((song) => song.id === id);
+
+    console.log(song);
+};
+
+playSong();
 
 const pauseSong = () => {};
 
