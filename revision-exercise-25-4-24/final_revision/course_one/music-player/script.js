@@ -537,7 +537,11 @@ const allSongs = [
     },
 ];
 
-let userData = {};
+let userData = {
+    songs: [...allSongs],
+    currentSong: null,
+    songCurrentTime: 0,
+};
 
 const renderSongs = (array) => {};
 
