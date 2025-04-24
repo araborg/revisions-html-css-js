@@ -622,6 +622,8 @@ playSong(3);
 playBtn.addEventListener("click", () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0]);
+    } else {
+        playSong(userData?.currentSong.id);
     }
 });
 
