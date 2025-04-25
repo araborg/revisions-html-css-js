@@ -687,6 +687,10 @@ nextBtn.addEventListener("click", playNextSong);
 
 const playPreviousSong = () => {
     const currentSongIndex = getCurrentSongIndex();
+
+    const prevSong = userData?.songs[currentSongIndex - 1];
+
+    playSong(prevSong.id);
 };
 
 prevBtn.addEventListener("click", playPreviousSong);
