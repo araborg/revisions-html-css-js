@@ -672,7 +672,7 @@ const getCurrentSongIndex = () =>
     userData?.songs.indexOf(userData?.currentSong);
 
 const playNextSong = () => {
-    console.log(getCurrentSongIndex());
+    const currentSongIndex = getCurrentSongIndex();
 };
 
 nextBtn.addEventListener("click", playNextSong);
