@@ -686,7 +686,7 @@ const playNextSong = () => {
 nextBtn.addEventListener("click", playNextSong);
 
 const playPreviousSong = () => {
-    console.log(getCurrentSongIndex());
+    const currentSongIndex = getCurrentSongIndex();
 };
 
 prevBtn.addEventListener("click", playPreviousSong);
