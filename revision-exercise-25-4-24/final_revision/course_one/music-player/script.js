@@ -613,6 +613,9 @@ const highlightCurrentSong = () => {
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
+
+    audio.src = song.src;
+    audio.title = song.title;
 };
 
 playSong(3);
@@ -621,7 +624,7 @@ playBtn.addEventListener("click", () => {
     if (userData?.currentSong === null) {
         playSong(userData?.songs[0]);
     } else {
-        playSong(userData?.currentSong.id);
+        playSong(userData?.currentSong?.id);
     }
 });
 
