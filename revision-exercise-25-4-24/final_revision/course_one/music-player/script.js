@@ -643,13 +643,21 @@ const playSong = (id) => {
 
 playBtn.addEventListener("click", () => {
     if (userData?.currentSong === null) {
-        playSong(userData?.songs[0]);
+        playSong(userData?.songs[0].id);
     } else {
         playSong(userData?.currentSong?.id);
     }
+
+    playBtn.style.add(".playing");
 });
 
-const pauseSong = () => {};
+const pauseSong = () => {
+    if (userData?.currentSong?.id) {
+        userData.songCurrentTime = audio.currentTime;
+
+        playBtn.style.remove("playing");
+    }
+};
 
 const getCurrentSongIndex = () => {};
 
