@@ -608,6 +608,10 @@ const highlightCurrentSong = () => {
         `song-${userData?.currentSong?.id}`
     );
 
+    playlists.forEach((playlist) => {
+        playlist.removeAttribute("aria-current");
+    });
+
     console.log(songToHighlight);
 };
 
