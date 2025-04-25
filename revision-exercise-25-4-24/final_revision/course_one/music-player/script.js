@@ -629,6 +629,8 @@ const playSong = (id) => {
     }
 
     userData.currentSong = song;
+
+    audio.play();
 };
 
 playSong(3);
