@@ -694,7 +694,6 @@ const playPreviousSong = () => {
         playSong(userData?.songs[userData?.songs.length - 1].id);
     }
 
-    console.log("Hello sir");
     playSong(prevSong.id);
 };
 
