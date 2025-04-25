@@ -673,13 +673,13 @@ const getCurrentSongIndex = () => {
 };
 
 const playNextSong = () => {
-    console.log(getCurrentSongIndex);
+    console.log(getCurrentSongIndex());
 };
 
 nextBtn.addEventListener("click", playNextSong);
 
 const playPreviousSong = () => {
-    console.log(getCurrentSongIndex);
+    console.log(getCurrentSongIndex());
 };
 
 prevBtn.addEventListener("click", playPreviousSong);
