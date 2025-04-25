@@ -658,8 +658,12 @@ const pauseSong = () => {
         playBtn.classList.remove("playing");
 
         // playBtn.style.remove("playing");
+
+        audio.pause();
     }
 };
+
+pauseBtn.addEventListener("click", pauseSong);
 
 const getCurrentSongIndex = () => {};
 
