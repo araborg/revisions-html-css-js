@@ -659,6 +659,10 @@ const pauseSong = () => {
         playBtn.classList.remove("playing");
 
         audio.pause();
+    } else {
+        console.log("No song to pause");
+
+        return;
     }
 };
 
