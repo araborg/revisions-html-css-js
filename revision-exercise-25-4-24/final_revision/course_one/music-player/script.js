@@ -673,6 +673,10 @@ const getCurrentSongIndex = () =>
 
 const playNextSong = () => {
     const currentSongIndex = getCurrentSongIndex();
+
+    const nextSong = userData?.songs[currentSongIndex + 1];
+
+    console.log(nextSong);
 };
 
 nextBtn.addEventListener("click", playNextSong);
