@@ -638,6 +638,8 @@ const playSong = (id) => {
 
     highlightCurrentSong();
 
+    playBtn.classList.add(".playing");
+
     audio.play();
 };
 
@@ -647,8 +649,6 @@ playBtn.addEventListener("click", () => {
     } else {
         playSong(userData?.currentSong?.id);
     }
-
-    playBtn.style.add(".playing");
 });
 
 const pauseSong = () => {
