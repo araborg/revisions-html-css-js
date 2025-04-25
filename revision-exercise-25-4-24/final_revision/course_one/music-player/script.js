@@ -615,8 +615,6 @@ const highlightCurrentSong = () => {
     if (songToHighlight) {
         songToHighlight.setAttribute("aria-current", true);
     }
-
-    console.log(songToHighlight);
 };
 
 // highlightCurrentSong();
