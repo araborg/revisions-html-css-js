@@ -619,7 +619,9 @@ const playSong = (id) => {
 
     if (userData?.currentSong === null) {
         audio.currentTime = 0;
-    } else [(audio.currentTime = userData?.currentTime)];
+    } else {
+        audio.currentTime = userData?.currentTime;
+    }
 };
 
 playSong(3);
