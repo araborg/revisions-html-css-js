@@ -655,6 +655,8 @@ const pauseSong = () => {
     if (userData?.currentSong?.id) {
         userData.songCurrentTime = audio.currentTime;
 
+        playBtn.classList.remove(".playing");
+
         playBtn.style.remove("playing");
     }
 };
