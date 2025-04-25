@@ -612,6 +612,10 @@ const highlightCurrentSong = () => {
         playlist.removeAttribute("aria-current");
     });
 
+    if (songToHighlight) {
+        songToHighlight.addAttribute("aria-current", true);
+    }
+
     console.log(songToHighlight);
 };
 
