@@ -638,7 +638,7 @@ const playSong = (id) => {
 
     highlightCurrentSong();
 
-    playBtn.classList.add(".playing");
+    playBtn.classList.add("playing");
 
     audio.play();
 };
