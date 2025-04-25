@@ -630,9 +630,9 @@ const playSong = (id) => {
 
     userData.currentSong = song;
 
-    audio.play();
+    highlightCurrentSong();
 
-    console.log(userData.currentSong);
+    audio.play();
 };
 
 playBtn.addEventListener("click", () => {
