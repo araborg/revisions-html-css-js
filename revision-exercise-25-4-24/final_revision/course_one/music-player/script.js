@@ -619,7 +619,6 @@ const highlightCurrentSong = () => {
 
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
-    console.log(song);
 
     audio.src = song?.src;
     audio.title = song.title;
