@@ -633,7 +633,7 @@ const playSong = (id) => {
     audio.play();
 };
 
-// playSong(3);
+console.log(userData?.currentSong);
 
 playBtn.addEventListener("click", () => {
     if (userData?.currentSong === null) {
