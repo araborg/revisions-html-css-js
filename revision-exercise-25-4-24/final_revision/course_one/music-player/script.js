@@ -679,7 +679,6 @@ const playNextSong = () => {
     if (nextSong?.id === undefined) {
         playSong(userData?.songs[0].id);
     } else {
-        // console.log(nextSong?.id);
         playSong(nextSong?.id);
     }
 };
