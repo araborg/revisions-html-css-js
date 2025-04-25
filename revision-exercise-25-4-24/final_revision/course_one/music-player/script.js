@@ -605,7 +605,7 @@ const highlightCurrentSong = () => {
     const playlists = document.querySelectorAll(".playlist-song");
 
     const songToHighlight = document.getElementById(
-        `song-${userData?.currentSong}`
+        `song-${userData?.currentSong?.id}`
     );
 
     console.log(songToHighlight);
