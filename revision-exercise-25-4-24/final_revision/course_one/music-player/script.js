@@ -682,6 +682,8 @@ const playPreviousSong = () => {
     console.log(getCurrentSongIndex);
 };
 
+prevBtn.addEventListener("click", playPreviousSong);
+
 const shuffle = () => {};
 
 const deleteSong = (id) => {};
