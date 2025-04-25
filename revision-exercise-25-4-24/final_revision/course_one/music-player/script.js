@@ -631,6 +631,8 @@ const playSong = (id) => {
     userData.currentSong = song;
 
     audio.play();
+
+    console.log(userData.currentSong);
 };
 
 playBtn.addEventListener("click", () => {
@@ -639,8 +641,6 @@ playBtn.addEventListener("click", () => {
     } else {
         playSong(userData?.currentSong?.id);
     }
-
-    console.log(userData?.currentSong);
 });
 
 const pauseSong = () => {};
