@@ -537,6 +537,8 @@ const allSongs = [
     },
 ];
 
+const audio = new Audio();
+
 // btns
 const prevBtn = document.getElementById("previous");
 const playBtn = document.getElementById("play");
@@ -626,6 +628,8 @@ const playSong = (id) => {
         audio.currentTime = userData?.songCurrentTime;
     }
 };
+
+console.log([...audio]);
 
 playSong(3);
 
