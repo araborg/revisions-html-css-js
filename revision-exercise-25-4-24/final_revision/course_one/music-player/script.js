@@ -680,6 +680,7 @@ const playNextSong = () => {
         console.log(currentSongIndex);
         // playSong(userData?.songs[0]);
     } else {
+        console.log(nextSong?.id);
         playSong(nextSong?.id);
     }
 };
