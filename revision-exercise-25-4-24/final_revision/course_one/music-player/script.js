@@ -617,8 +617,6 @@ const highlightCurrentSong = () => {
     }
 };
 
-// highlightCurrentSong();
-
 const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
     console.log(song);
@@ -632,6 +630,7 @@ const playSong = (id) => {
     ) {
         audio.currentTime = 0;
     } else {
+        // if d user click again a particular song after it was paused
         audio.currentTime = userData?.songCurrentTime;
     }
 
