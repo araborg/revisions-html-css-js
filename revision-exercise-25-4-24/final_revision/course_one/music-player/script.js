@@ -678,10 +678,10 @@ const playNextSong = () => {
 
     if (nextSong?.id === undefined) {
         console.log(currentSongIndex);
-        // playSong(userData?.songs[0]);
+        playSong(userData?.songs[0].id);
     } else {
         // console.log(nextSong?.id);
-        // playSong(nextSong?.id);
+        playSong(nextSong?.id);
     }
 };
 
