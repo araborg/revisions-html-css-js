@@ -668,11 +668,17 @@ const pauseSong = () => {
 
 pauseBtn.addEventListener("click", pauseSong);
 
-const getCurrentSongIndex = () => {};
+const getCurrentSongIndex = () => {
+    return userData?.songs.indexOf(userData?.currentSong);
+};
 
-const playNextSong = () => {};
+const playNextSong = () => {
+    console.log(getCurrentSongIndex);
+};
 
-const playPreviousSong = () => {};
+const playPreviousSong = () => {
+    console.log(getCurrentSongIndex);
+};
 
 const shuffle = () => {};
 
