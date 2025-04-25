@@ -613,7 +613,7 @@ const highlightCurrentSong = () => {
     });
 
     if (songToHighlight) {
-        songToHighlight.addAttribute("aria-current", true);
+        songToHighlight.setAttribute("aria-current", true);
     }
 
     console.log(songToHighlight);
@@ -625,7 +625,7 @@ const playSong = (id) => {
     const song = userData?.songs.find((song) => song.id === id);
     console.log(song);
 
-    audio.src = song.src;
+    audio.src = song?.src;
     audio.title = song.title;
 
     if (
