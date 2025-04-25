@@ -691,7 +691,7 @@ const playPreviousSong = () => {
     const prevSong = userData?.songs[currentSongIndex - 1];
 
     if (prevSong?.song === undefined) {
-        playSong(userData?.songs[userData?.songs.length - 1]);
+        playSong(userData?.songs[userData?.songs.length - 1].id);
     }
 
     console.log("Hello sir");
