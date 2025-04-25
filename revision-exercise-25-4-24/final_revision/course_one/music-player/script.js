@@ -660,7 +660,7 @@ const pauseSong = () => {
 
         audio.pause();
     } else {
-        console.log("No song to pause");
+        alert("No song to pause");
 
         return;
     }
