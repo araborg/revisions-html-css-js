@@ -700,7 +700,7 @@ const playPreviousSong = () => {
 prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
-    const shuffleLogic = Math.random() - 0.5;
+    const shuffleLogic = Math.floor(Math.random() - 0.5);
 
     console.log(shuffleLogic);
 };
