@@ -638,6 +638,7 @@ const playSong = (id) => {
     userData.currentSong = song;
 
     highlightCurrentSong();
+    setPlayerDisplay();
 
     playBtn.classList.add("playing");
 
