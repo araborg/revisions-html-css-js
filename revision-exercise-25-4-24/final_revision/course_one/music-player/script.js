@@ -702,10 +702,10 @@ prevBtn.addEventListener("click", playPreviousSong);
 const shuffle = () => {
     const shuffleLogic = Math.random() - 0.5;
 
-    console.log(shuffleLogic);
     // return
-    userData?.songs.sort(shuffleLogic);
+    userData.songs.sort(shuffleLogic);
 
+    console.log(userData?.songs);
     return userData?.songs;
 };
 
