@@ -699,20 +699,20 @@ const playPreviousSong = () => {
 
 prevBtn.addEventListener("click", playPreviousSong);
 
-// const shuffle = () => {
-//     const shuffleLogic = () => Math.random() - 0.5;
+const shuffle = () => {
+    const shuffleLogic = () => Math.random() - 0.5;
 
-//     // userData.currentSong = null;
-//     // userData.songCurrentTime = 0;
+    // userData.currentSong = null;
+    // userData.songCurrentTime = 0;
 
-//     userData?.songs.sort(shuffleLogic);
+    userData?.songs.sort(shuffleLogic);
 
-//     console.log(userData?.songs);
+    console.log(userData?.songs);
 
-//     // renderSongs(userData.songs);
+    // renderSongs(userData.songs);
 
-//     renderSongs(userData?.songs);
-// };
+    renderSongs(userData?.songs);
+};
 
 shuffleBtn.addEventListener("click", shuffle);
 
