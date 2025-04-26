@@ -761,7 +761,11 @@ const deleteSong = (id) => {
     }
 };
 
-const setPlayButtonAccessibleText = () => {};
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.songs[0] || userData?.currentSong;
+
+    console.log(song);
+};
 
 const setPlayerDisplay = () => {
     const songTitleEl = document.getElementById("player-song-title");
