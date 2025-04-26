@@ -555,8 +555,6 @@ let userData = {
 };
 
 const renderSongs = (array) => {
-    console.log(array);
-
     const songHTML = array
         .map(
             (song) => `
@@ -704,7 +702,8 @@ prevBtn.addEventListener("click", playPreviousSong);
 const shuffle = () => {
     const shuffleLogic = () => Math.random() - 0.5;
 
-    userData.songs = userData?.songs.sort(shuffleLogic);
+    // userData.songs =
+    userData?.songs.sort(shuffleLogic);
     // .sort(shuffleLogic);
 
     console.log(userData?.songs);
