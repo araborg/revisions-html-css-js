@@ -795,7 +795,7 @@ repeatBtn.addEventListener("click", () => {
     const currentSongIndex = getCurrentSongIndex();
 
     audio.addEventListener("ended", () => {
-        if (currentSongIndex) {
+        if (currentSongIndex + 1) {
             console.log(currentSongIndex + " is here");
             // playNextSong();
             playSong(userData?.songs[currentSongIndex + 1].id);
