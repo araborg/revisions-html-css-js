@@ -726,9 +726,12 @@ const deleteSong = (id) => {
     }
 
     // find d song to delete
-    const songToDelete = userData?.songs.find((song) => song.id === id);
+    // const songToDelete =
+    userData?.songs.filter((song) => song.id === id);
 
-    console.log(songToDelete);
+    renderSongs(userData?.songs);
+
+    // console.log(userData?.songs);
 };
 
 const setPlayButtonAccessibleText = () => {};
