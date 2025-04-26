@@ -725,13 +725,15 @@ const deleteSong = (id) => {
         pauseSong();
     }
 
-    // find d song to delete
-    userData?.songs = userData?.songs.filter((song) => song.id !== id);
+    // find d songs remaining and update userData.songs
+    userData.songs = userData?.songs.filter((song) => song.id !== id);
     // console.log(remainingSongs);
 
     renderSongs(userData?.songs);
 
-    // console.log(userData?.songs);
+    if (!userData.songs.length) {
+        console.log("no more songs");
+    }
 };
 
 const setPlayButtonAccessibleText = () => {};
