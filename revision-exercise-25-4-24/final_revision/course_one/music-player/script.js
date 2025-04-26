@@ -756,8 +756,6 @@ const deleteSong = (id) => {
     }
 };
 
-// console.log(resetBtn);
-
 const setPlayButtonAccessibleText = () => {};
 
 const setPlayerDisplay = () => {};
