@@ -18,12 +18,12 @@ const formattedValueFxn = (str) => {
 // console.log(formattedValueFxn("nope"));
 // console.log(formattedValueFxn("almostomla"));
 // console.log(formattedValueFxn("My age is 0, 0 si ega ym"));
-// console.log(formattedValueFxn("1 eye for of 1 eye"));
-// console.log(formattedValueFxn("0_0 (: /- :) 0-0"));
-// console.log(formattedValueFxn("five|_/|four"));
-// console.log(formattedValueFxn("ar44ra"));
-// console.log(formattedValueFxn("ar4ra"));
-// console.log(formattedValueFxn("ar4r"));
+// console.log(formattedValueFxn("1 eye for of 1 eye");
+// console.log(formattedValueFxn("0_0 (: /- :) 0-0");
+// console.log(formattedValueFxn("five|_/|four");
+// console.log(formattedValueFxn("ar44ra");
+// console.log(formattedValueFxn("ar4ra");
+// console.log(formattedValueFxn("ar4r");
 
 const checkInputValue = () => {
     const inputValue = textInput.value;
