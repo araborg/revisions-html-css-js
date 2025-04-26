@@ -764,7 +764,10 @@ const deleteSong = (id) => {
 const setPlayButtonAccessibleText = () => {
     const song = userData?.currentSong || userData?.songs[0];
 
-    console.log(song);
+    const songTitle = son;
+    g?.title ? `Play ${song.title}` : `Play`;
+
+    console.log(songTitle);
 };
 
 const setPlayerDisplay = () => {
