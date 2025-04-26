@@ -583,7 +583,7 @@ const renderSongs = (array) => {
         )
         .join("");
 
-    playlistSongs.insertAdjacentHTML("beforeend", songHTML);
+    playlistSongs.innerHTML = songHTML;
 };
 
 const sortSongs = () => {
