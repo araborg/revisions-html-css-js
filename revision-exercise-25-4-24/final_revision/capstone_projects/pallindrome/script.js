@@ -2,7 +2,9 @@ const textInput = document.getElementById("text-input");
 const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
-const formattedValue = () => {};
+const formattedValue = (str) => {
+    const regex = /[\\_\s\(:)]/gi;
+};
 
 const checkInputValue = () => {
     const inputValue = textInput.value;
