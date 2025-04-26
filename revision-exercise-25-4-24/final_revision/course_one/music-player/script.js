@@ -790,3 +790,12 @@ audio.addEventListener("ended", () => {
         playSong(userData?.songs[0]);
     }
 });
+
+// for repeat all
+audio.addEventListener("ended", () => {
+    if (userData?.currentSong) {
+        playNextSong();
+    } else {
+        playSong(userData?.songs[0]);
+    }
+});
