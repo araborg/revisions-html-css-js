@@ -705,8 +705,8 @@ const shuffle = () => {
     // return
     userData.songs.sort(shuffleLogic);
 
-    console.log(userData?.songs);
-    return userData?.songs;
+    // console.log(userData?.songs);
+    // return userData?.songs;
 };
 
 shuffleBtn.addEventListener("click", shuffle);
