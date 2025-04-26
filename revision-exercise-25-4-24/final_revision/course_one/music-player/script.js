@@ -657,16 +657,16 @@ playBtn.addEventListener("click", () => {
 const pauseSong = () => {
     // console.log(userData?.currentSong?.id);
 
-    if (userData?.currentSong?.id) {
-        userData.songCurrentTime = audio.currentTime;
+    // if (userData?.currentSong?.id) {
+    userData.songCurrentTime = audio.currentTime;
 
-        playBtn.classList.remove("playing");
+    playBtn.classList.remove("playing");
 
-        audio.pause();
-    } else {
-        // alert("No song to pause");
-        // return;
-    }
+    audio.pause();
+    // } else {
+    // alert("No song to pause");
+    // return;
+    // }
 };
 
 pauseBtn.addEventListener("click", pauseSong);
@@ -729,6 +729,7 @@ const deleteSong = (id) => {
         console.log(userData?.currentSong);
 
         pauseSong();
+
         setPlayerDisplay();
     }
 
