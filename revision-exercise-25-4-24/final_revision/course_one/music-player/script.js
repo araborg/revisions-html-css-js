@@ -767,11 +767,9 @@ const setPlayerDisplay = () => {
     const songTitleEl = document.getElementById("player-song-title");
     const songArtistEl = document.getElementById("player-song-artist");
 
-    songTitleEl.innerHTML = userData?.currentSong?.title
+    songTitleEl.innerText = userData?.currentSong?.title
         ? userData?.currentSong.title
         : "";
-
-    console.log(songTitleEl);
 
     songArtistEl.innerText = userData?.currentSong?.artist
         ? userData?.currentSong.artist
