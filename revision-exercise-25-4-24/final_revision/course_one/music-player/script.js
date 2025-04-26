@@ -798,11 +798,13 @@ repeatBtn.addEventListener("click", () => {
         if (currentSongIndex + 1) {
             console.log(currentSongIndex + " is here");
             // playNextSong();
-            playSong(userData?.songs[currentSongIndex + 1].id);
-        } else if (!currentSongIndex + 1) {
+            playSong(userData?.songs[currentSongIndex + 1]?.id);
+        } else if (currentSongIndex + 1 === undefined) {
             console.log("we got here " + currentSongIndex);
 
-            playSong(userData?.songs[0]);
+            //     playSong(userData?.songs[0]);
         }
+
+        console.log(currentSongIndex + 1 + " end of d loop");
     });
 });
