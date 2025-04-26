@@ -739,6 +739,7 @@ const resetBtn = document.createElement("button");
 const resetText = document.createTextNode("Reset Playlist");
 
 resetBtn.id = "reset";
+resetBtn.ariaLabel = "reset btn";
 
 console.log(resetBtn);
 
