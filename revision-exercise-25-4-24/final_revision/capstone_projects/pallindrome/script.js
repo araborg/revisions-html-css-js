@@ -3,7 +3,7 @@ const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 const formattedValueFxn = (str) => {
-    const regex = /[\\_\s,\|\|\(:\-\/\:)]/gi;
+    const regex = /[\\_\s,\|\|\(:\-\/\:)]/g;
 
     return str.replace(regex, "");
 };
