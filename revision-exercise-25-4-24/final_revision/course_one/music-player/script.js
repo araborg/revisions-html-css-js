@@ -714,29 +714,6 @@ prevBtn.addEventListener("click", playPreviousSong);
 //     renderSongs(userData?.songs);
 // };
 
-const shuffle = () => {
-    // ds is a fxn
-    const shuffleLogic = () => Math.random() - 0.5;
-
-    // passing a fxn reference, shuffleLogic rada than
-    // calling it
-    userData?.songs.sort(shuffleLogic);
-
-    // return sm features to d initial state
-    // userData.currentSong = null;
-    // userData.songCurrentTime = 0;
-
-    // use userData?.songs instead of sortSongs() bcos
-    // shuffle is d opp of sort.
-    renderSongs(userData?.songs);
-    // pauseSong();
-
-    // setPlayerDisplay();
-
-    // set play title attribute on Play btn
-    // setPlayButtonAccessibleText();
-};
-
 shuffleBtn.addEventListener("click", shuffle);
 
 const deleteSong = (id) => {};
