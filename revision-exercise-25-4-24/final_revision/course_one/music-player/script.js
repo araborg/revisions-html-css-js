@@ -721,7 +721,7 @@ shuffleBtn.addEventListener("click", shuffle);
 const deleteSong = (id) => {
     // if there is a playing song
 
-    if (userData?.currentSong.id) {
+    if (userData?.currentSong.id === id) {
         pauseSong();
 
         userData.currentSong = null;
