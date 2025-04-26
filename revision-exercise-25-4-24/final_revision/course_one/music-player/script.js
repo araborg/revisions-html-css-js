@@ -749,6 +749,8 @@ const deleteSong = (id) => {
             userData.currentSong = null;
             userData.songCurrentTime = 0;
 
+            renderSongs(sortSongs());
+
             resetBtn.remove();
         });
     }
