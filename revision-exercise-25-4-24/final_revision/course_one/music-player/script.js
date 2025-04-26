@@ -699,7 +699,13 @@ const playPreviousSong = () => {
 
 prevBtn.addEventListener("click", playPreviousSong);
 
-const shuffle = () => {};
+const shuffle = () => {
+    const shuffleLogic = () => Math.random() - 0.5;
+
+    userData?.songs.sort(shuffleLogic);
+
+    renderSongs(userData?.songs);
+};
 
 shuffleBtn.addEventListener("click", shuffle);
 
