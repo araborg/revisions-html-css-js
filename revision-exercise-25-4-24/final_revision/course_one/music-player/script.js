@@ -732,16 +732,16 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
 
     if (!userData.songs.length) {
+        const resetBtn = document.createElement("button");
+        const resetText = document.createTextNode("Reset Playlist");
+
+        resetBtn.id = "reset";
+        resetBtn.type = "submit";
+        resetBtn.ariaLabel = "reset btn";
     }
 };
 
-const resetBtn = document.createElement("button");
-const resetText = document.createTextNode("Reset Playlist");
-
-resetBtn.id = "reset";
-resetBtn.ariaLabel = "reset btn";
-
-console.log(resetBtn);
+// console.log(resetBtn);
 
 const setPlayButtonAccessibleText = () => {};
 
