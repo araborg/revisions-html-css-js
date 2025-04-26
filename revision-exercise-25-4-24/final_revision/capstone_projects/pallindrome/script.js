@@ -10,12 +10,14 @@ const formattedValueFxn = (str) => {
 
 const checkInputValue = () => {
     const inputValue = textInput.value;
+    console.log(inputValue);
 
     const formattedValue = formattedValueFxn(inputValue);
 
     const splitString = formattedValue.split("");
+    console.log(splitString);
 
-    if (!inputValue) {
+    if (!textInput.value) {
         alert("Please input avalue.");
     } else {
         const reversedValue = splitString.reverse().join("");
@@ -24,8 +26,6 @@ const checkInputValue = () => {
             reversedValue === formattedValue
                 ? " is a palindrome"
                 : " is not a palindrome";
-
-        // console.log(reversedValue, formattedValue, response);
 
         result.innerHTML = `${inputValue} ${response}`;
     }
