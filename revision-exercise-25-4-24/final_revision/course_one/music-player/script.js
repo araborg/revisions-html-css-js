@@ -760,10 +760,18 @@ const deleteSong = (id) => {
 const setPlayButtonAccessibleText = () => {};
 
 const setPlayerDisplay = () => {
-    const songTitle = document.getElementById("player-song-title");
-    const songArtist = document.getElementById("player-song-artist");
+    const songTitleEl = document.getElementById("player-song-title");
+    const songArtistEl = document.getElementById("player-song-artist");
 
-    console.log(setPlayerDisplay);
+    songTitleEl.innerText = userData?.currentSong.title
+        ? userData?.currentSong.title
+        : "";
+
+    songArtistEl.innerText = userData?.currentSong.artist
+        ? userData?.currentSong.artist
+        : "";
+
+    // console.log(songTitle, songArtist);
 };
 
 // mk d next song play at d end of the current song
