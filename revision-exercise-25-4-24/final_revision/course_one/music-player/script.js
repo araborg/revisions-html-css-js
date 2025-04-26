@@ -662,9 +662,8 @@ const pauseSong = () => {
 
         audio.pause();
     } else {
-        alert("No song to pause");
-
-        return;
+        // alert("No song to pause");
+        // return;
     }
 };
 
@@ -718,8 +717,6 @@ shuffleBtn.addEventListener("click", shuffle);
 
 // ds does nt need addEventListener bcos of d onclick fxn
 const deleteSong = (id) => {
-    console.log(id);
-
     // if there is a playing song
     if (userData?.currentSong) {
         userData.currentSong = null;
