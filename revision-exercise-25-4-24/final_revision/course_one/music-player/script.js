@@ -787,7 +787,7 @@ audio.addEventListener("ended", () => {
     if (userData?.currentSong) {
         playNextSong();
     } else {
-        playSong(userData?.songs[0]);
+        return;
     }
 });
 
