@@ -719,9 +719,12 @@ shuffleBtn.addEventListener("click", shuffle);
 // ds does nt need addEventListener bcos of d onclick fxn
 const deleteSong = (id) => {
     // if there is a playing song
-    if (userData?.currentSong) {
-        userData.currentSong = null;
-        userData.songCurrentTime = 0;
+
+    if (userData?.currentSong.id) {
+        console.log(userData?.currentSong);
+
+        // userData.currentSong = null;
+        // userData.songCurrentTime = 0;
 
         pauseSong();
     }
@@ -731,6 +734,7 @@ const deleteSong = (id) => {
     // console.log(remainingSongs);
 
     renderSongs(userData?.songs);
+    setPlayerDisplay();
 
     if (!userData.songs.length) {
         const resetBtn = document.createElement("button");
@@ -751,7 +755,6 @@ const deleteSong = (id) => {
             userData.songCurrentTime = 0;
 
             renderSongs(sortSongs());
-            setPlayerDisplay();
 
             resetBtn.remove();
         });
