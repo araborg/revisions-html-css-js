@@ -703,9 +703,10 @@ const shuffle = () => {
     const shuffleLogic = Math.random() - 0.5;
 
     // return
-    userData.songs.sort(shuffleLogic);
+    return userData.songs.sort(shuffleLogic);
+    // .sort(shuffleLogic);
 
-    // console.log(userData?.songs);
+    console.log(userData?.songs);
     // return userData?.songs;
 };
 
