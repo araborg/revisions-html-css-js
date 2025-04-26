@@ -726,10 +726,10 @@ const deleteSong = (id) => {
     }
 
     // find d song to delete
-    const remainingSongs = userData?.songs.filter((song) => song.id !== id);
-    // console.log(songToDelete);
+    userData?.songs = userData?.songs.filter((song) => song.id !== id);
+    // console.log(remainingSongs);
 
-    renderSongs(remainingSongs);
+    renderSongs(userData?.songs);
 
     // console.log(userData?.songs);
 };
