@@ -723,10 +723,10 @@ const deleteSong = (id) => {
     if (userData?.currentSong.id) {
         console.log(userData?.currentSong);
 
-        // userData.currentSong = null;
-        // userData.songCurrentTime = 0;
-
         pauseSong();
+
+        userData.currentSong = null;
+        userData.songCurrentTime = 0;
     }
 
     // find d songs remaining and update userData.songs
@@ -767,11 +767,13 @@ const setPlayerDisplay = () => {
     const songTitleEl = document.getElementById("player-song-title");
     const songArtistEl = document.getElementById("player-song-artist");
 
-    songTitleEl.innerText = userData?.currentSong.title
+    songTitleEl.innerHTML = userData?.currentSong?.title
         ? userData?.currentSong.title
         : "";
 
-    songArtistEl.innerText = userData?.currentSong.artist
+    console.log(songTitleEl);
+
+    songArtistEl.innerText = userData?.currentSong?.artist
         ? userData?.currentSong.artist
         : "";
 
