@@ -28,9 +28,11 @@ console.log(formattedValueFxn("ar4r"));
 const checkInputValue = () => {
     const inputValue = textInput.value;
 
-    console.log(inputValue);
+    const formattedValue = formattedValueFxn(inputValue);
 
-    const formattedValue = formattedValueFxn();
+    const splitString = formattedValue.split("");
+
+    console.log(inputValue, splitString);
 
     if (!inputValue) {
         alert("Please input avalue.");
