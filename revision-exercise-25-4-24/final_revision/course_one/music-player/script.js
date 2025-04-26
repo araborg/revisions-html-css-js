@@ -707,6 +707,10 @@ const shuffle = () => {
     renderSongs(userData?.songs);
 
     highlightCurrentSong();
+
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+
     pauseSong();
 };
 
