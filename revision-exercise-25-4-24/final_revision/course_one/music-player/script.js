@@ -725,6 +725,11 @@ const deleteSong = (id) => {
 
         pauseSong();
     }
+
+    // find d song to delete
+    const songToDelete = userData?.songs.find((song) => song.id === id);
+
+    console.log(songToDelete);
 };
 
 const setPlayButtonAccessibleText = () => {};
