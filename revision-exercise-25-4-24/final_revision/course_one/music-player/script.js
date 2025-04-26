@@ -699,17 +699,42 @@ const playPreviousSong = () => {
 
 prevBtn.addEventListener("click", playPreviousSong);
 
+// const shuffle = () => {
+//     const shuffleLogic = () => Math.random() - 0.5;
+
+//     // userData.currentSong = null;
+//     // userData.songCurrentTime = 0;
+
+//     userData?.songs.sort(shuffleLogic);
+
+//     console.log(userData?.songs);
+
+//     // renderSongs(userData.songs);
+
+//     renderSongs(userData?.songs);
+// };
+
 const shuffle = () => {
+    // ds is a fxn
     const shuffleLogic = () => Math.random() - 0.5;
 
-    userData.currentSong = null;
-    userData.songCurrentTime = 0;
-
+    // passing a fxn reference, shuffleLogic rada than
+    // calling it
     userData?.songs.sort(shuffleLogic);
 
-    console.log(userData?.songs);
+    // return sm features to d initial state
+    // userData.currentSong = null;
+    // userData.songCurrentTime = 0;
 
-    renderSongs(userData.songs);
+    // use userData?.songs instead of sortSongs() bcos
+    // shuffle is d opp of sort.
+    renderSongs(userData?.songs);
+    // pauseSong();
+
+    // setPlayerDisplay();
+
+    // set play title attribute on Play btn
+    // setPlayButtonAccessibleText();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
