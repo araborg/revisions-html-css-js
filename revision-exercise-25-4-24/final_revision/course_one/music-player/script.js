@@ -794,6 +794,8 @@ audio.addEventListener("ended", () => {
 repeatBtn.addEventListener("click", () => {
     const currentSongIndex = getCurrentSongIndex();
 
+    console.log(currentSongIndex);
+
     audio.addEventListener("ended", () => {
         if (currentSongIndex) {
             // playNextSong();
