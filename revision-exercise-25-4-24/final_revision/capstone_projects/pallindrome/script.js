@@ -11,9 +11,9 @@ const checkInputValue = () => {
         alert("Please input avalue.");
     } else {
         const reversedValue = inputValue.reverse();
-    }
 
-    console.log(inputValue);
+        console.log(reversedValue);
+    }
 };
 
 checkBtn.addEventListener("click", checkInputValue);
