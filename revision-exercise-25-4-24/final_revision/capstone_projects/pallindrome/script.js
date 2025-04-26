@@ -2,8 +2,8 @@ const textInput = document.getElementById("text-input");
 const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
-const formattedValue = (str) => {
-    const regex = /[\\_\s\(:)]/gi;
+const formattedValueFxn = (str) => {
+    const regex = /[\\_\s\(:\-\/\:)]/gi;
 };
 
 const checkInputValue = () => {
@@ -11,7 +11,7 @@ const checkInputValue = () => {
 
     console.log(inputValue);
 
-    // const formattedValue
+    const formattedValue = formattedValueFxn();
 
     if (!inputValue) {
         alert("Please input avalue.");
