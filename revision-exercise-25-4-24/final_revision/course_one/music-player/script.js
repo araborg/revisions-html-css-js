@@ -703,9 +703,9 @@ const shuffle = () => {
     const shuffleLogic = () => Math.random() - 0.5;
     userData?.songs.sort(shuffleLogic);
 
-    userData.currentSong = null;
-    userData.songCurrentTime = 0;
-    pauseSong();
+    // userData.currentSong = null;
+    // userData.songCurrentTime = 0;
+    // pauseSong();
 
     renderSongs(userData?.songs);
 
