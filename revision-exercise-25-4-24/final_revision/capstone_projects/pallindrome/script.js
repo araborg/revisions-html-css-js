@@ -5,6 +5,10 @@ const result = document.getElementById("result");
 const checkInputValue = () => {
     const inputValue = textInput.value;
 
+    if (!inputValue) {
+        alert("Please input avalue.");
+    }
+
     console.log(inputValue);
 };
 
