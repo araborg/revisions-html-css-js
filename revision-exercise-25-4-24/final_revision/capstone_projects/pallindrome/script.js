@@ -37,9 +37,8 @@ const checkInputValue = () => {
     if (!inputValue) {
         alert("Please input avalue.");
     } else {
-        const reversedValue = inputValue.reverse();
-
-        console.log(reversedValue);
+        // const reversedValue = inputValue.reverse();
+        // console.log(reversedValue);
     }
 };
 
