@@ -707,6 +707,7 @@ const shuffle = () => {
     renderSongs(userData?.songs);
 
     highlightCurrentSong();
+    pauseSong();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
