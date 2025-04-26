@@ -714,7 +714,15 @@ const shuffle = () => {
 
 shuffleBtn.addEventListener("click", shuffle);
 
-const deleteSong = (id) => {};
+const deleteSong = (id) => {
+    // if there is a playing song
+    if (userData?.currentSong) {
+        userData.currentSong = null;
+        userData.songCurrentTime = 0;
+
+        pauseSong();
+    }
+};
 
 const setPlayButtonAccessibleText = () => {};
 
