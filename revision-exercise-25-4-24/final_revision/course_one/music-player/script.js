@@ -774,8 +774,6 @@ const setPlayerDisplay = () => {
     songArtistEl.innerText = userData?.currentSong?.artist
         ? userData?.currentSong.artist
         : "";
-
-    // console.log(songTitle, songArtist);
 };
 
 // mk d next song play at d end of the current song
