@@ -81,7 +81,8 @@ five|\_/|four is not a palindrome.
 3. You should have a div, span, or p element with
    an id of "result".
 
-4. When you click on the #check-btn element without entering a value into the #text-input element, an
+4. When you click on the #check-btn element without
+   0entering a value into the #text-input element, an
    alert should appear with the text Please input a
    value.
 
