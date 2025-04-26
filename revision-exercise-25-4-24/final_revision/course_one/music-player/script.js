@@ -786,5 +786,7 @@ const setPlayerDisplay = () => {
 audio.addEventListener("ended", () => {
     if (userData?.currentSong) {
         console.log(`${userData?.currentSong.title} has ended`);
+
+        playNextSong();
     }
 });
