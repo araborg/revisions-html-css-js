@@ -801,6 +801,8 @@ repeatBtn.addEventListener("click", () => {
             // playNextSong();
             playSong(userData?.songs[currentSongIndex + 1].id);
         } else {
+            console.log("we got here");
+
             playSong(userData?.songs[0]);
         }
     });
