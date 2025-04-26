@@ -555,6 +555,8 @@ let userData = {
 };
 
 const renderSongs = (array) => {
+    console.log(array);
+
     const songHTML = array
         .map(
             (song) => `
@@ -651,7 +653,7 @@ playBtn.addEventListener("click", () => {
 });
 
 const pauseSong = () => {
-    console.log(userData?.currentSong?.id);
+    // console.log(userData?.currentSong?.id);
 
     if (userData?.currentSong?.id) {
         userData.songCurrentTime = audio.currentTime;
@@ -700,14 +702,15 @@ const playPreviousSong = () => {
 prevBtn.addEventListener("click", playPreviousSong);
 
 const shuffle = () => {
-    const shuffleLogic = Math.random() - 0.5;
+    const shuffleLogic = () => Math.random() - 0.5;
 
-    // return
-    return userData.songs.sort(shuffleLogic);
+    userData.songs = userData?.songs.sort(shuffleLogic);
     // .sort(shuffleLogic);
 
     console.log(userData?.songs);
     // return userData?.songs;
+
+    renderSongs(userData?.songs);
 };
 
 shuffleBtn.addEventListener("click", shuffle);
