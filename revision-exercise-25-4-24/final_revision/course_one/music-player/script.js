@@ -767,7 +767,7 @@ const setPlayButtonAccessibleText = () => {
     const songTitle = song?.title ? `Play ${song.title}` : `Play`;
 
     playBtn.setAttribute("aria-label", songTitle);
-    // console.log(songTitle);
+    console.log(playBtn);
 };
 
 console.log(playBtn);
