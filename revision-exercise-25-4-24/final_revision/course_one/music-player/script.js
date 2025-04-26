@@ -727,7 +727,7 @@ const deleteSong = (id) => {
 
     // find d song to delete
     // const songToDelete =
-    userData?.songs.filter((song) => song.id === id);
+    userData?.songs.filter((song) => song.id !== id);
 
     renderSongs(userData?.songs);
 
