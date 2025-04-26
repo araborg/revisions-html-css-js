@@ -764,11 +764,13 @@ const deleteSong = (id) => {
 const setPlayButtonAccessibleText = () => {
     const song = userData?.currentSong || userData?.songs[0];
 
-    const songTitle = son;
-    g?.title ? `Play ${song.title}` : `Play`;
+    const songTitle = song?.title ? `Play ${song.title}` : `Play`;
 
-    console.log(songTitle);
+    playBtn.setAttribute("aria-label", songTitle);
+    // console.log(songTitle);
 };
+
+console.log(playBtn);
 
 const setPlayerDisplay = () => {
     const songTitleEl = document.getElementById("player-song-title");
