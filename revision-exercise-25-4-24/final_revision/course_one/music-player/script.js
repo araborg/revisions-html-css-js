@@ -732,9 +732,15 @@ const deleteSong = (id) => {
     renderSongs(userData?.songs);
 
     if (!userData.songs.length) {
-        console.log("no more songs");
     }
 };
+
+const resetBtn = document.createElement("button");
+const resetText = document.createTextNode("Reset Playlist");
+
+resetBtn.id = "reset";
+
+console.log(resetBtn);
 
 const setPlayButtonAccessibleText = () => {};
 
