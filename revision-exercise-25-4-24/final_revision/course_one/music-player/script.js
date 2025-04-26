@@ -745,6 +745,11 @@ const deleteSong = (id) => {
         // add addEventListener
         resetBtn.addEventListener("click", () => {
             userData.songs = [...allSongs];
+
+            userData.currentSong = null;
+            userData.songCurrentTime = 0;
+
+            resetBtn.remove();
         });
     }
 };
