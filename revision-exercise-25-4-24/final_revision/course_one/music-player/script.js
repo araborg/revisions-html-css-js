@@ -791,20 +791,20 @@ const setPlayerDisplay = () => {
 // });
 
 // for repeat all
-repeatBtn.addEventListener("click", () => {
-    const currentSongIndex = getCurrentSongIndex();
+// repeatBtn.addEventListener("click", () => {
+//     const currentSongIndex = getCurrentSongIndex();
 
-    audio.addEventListener("ended", () => {
-        if (currentSongIndex + 1) {
-            console.log(currentSongIndex + " is here");
-            // playNextSong();
-            playSong(userData?.songs[currentSongIndex + 1]?.id);
-        } else if (playSong(currentSongIndex + 1) === undefined) {
-            console.log("we got here " + currentSongIndex);
+//     audio.addEventListener("ended", () => {
+//         if (currentSongIndex + 1) {
+//             console.log(currentSongIndex + " is here");
+//             // playNextSong();
+//             playSong(userData?.songs[currentSongIndex + 1]?.id);
+//         } else if (playSong(currentSongIndex + 1) === undefined) {
+//             console.log("we got here " + currentSongIndex);
 
-            //     playSong(userData?.songs[0]);
-        }
+//             //     playSong(userData?.songs[0]);
+//         }
 
-        console.log(currentSongIndex + 1 + " end of d loop");
-    });
-});
+//         console.log(currentSongIndex + 1 + " end of d loop");
+//     });
+// });
