@@ -799,7 +799,7 @@ repeatBtn.addEventListener("click", () => {
             console.log(currentSongIndex + " is here");
             // playNextSong();
             playSong(userData?.songs[currentSongIndex + 1]?.id);
-        } else if (currentSongIndex + 1 === undefined) {
+        } else if (playSong(currentSongIndex + 1) === undefined) {
             console.log("we got here " + currentSongIndex);
 
             //     playSong(userData?.songs[0]);
