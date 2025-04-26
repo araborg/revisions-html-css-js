@@ -723,8 +723,6 @@ const deleteSong = (id) => {
     // if there is a playing song
 
     if (userData?.currentSong.id) {
-        console.log(userData?.currentSong);
-
         pauseSong();
 
         userData.currentSong = null;
