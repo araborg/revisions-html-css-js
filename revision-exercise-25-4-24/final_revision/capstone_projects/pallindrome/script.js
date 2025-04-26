@@ -3,3 +3,5 @@ const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 const checkInputValue = () => {};
+
+checkBtn.addEventListener("click", checkInputValue);

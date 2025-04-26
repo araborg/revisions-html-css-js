@@ -1,10 +1,13 @@
 <!-- User story -->
 
-You should have an input element with an id of "text-input".
+You should have an input element with an id of
+"text-input".
 
-You should have a button element with an id of "check-btn".
+You should have a button element with an id of
+"check-btn".
 
-You should have a div, span or p element with an id of "result".
+You should have a div, span or p element with an
+id of "result".
 
 When you click on the #check-btn element without entering a value into the #text-input element, an alert should appear with the text Please input a value.
 
