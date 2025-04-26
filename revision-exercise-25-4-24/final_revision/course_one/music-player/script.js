@@ -705,6 +705,8 @@ const shuffle = () => {
     userData?.songs.sort(shuffleLogic);
 
     renderSongs(userData?.songs);
+
+    highlightCurrentSong();
 };
 
 shuffleBtn.addEventListener("click", shuffle);
