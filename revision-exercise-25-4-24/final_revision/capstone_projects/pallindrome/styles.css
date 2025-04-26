@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(10, 10, 35);
+    color: #fff;
+
+    margin: 0;
+
+    font-size: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+
+    font-size: 1.6rem;
+}
+
+.container {
+    margin: 3.125rem auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.freecodecamp-logo {
+    width: 16rem;
+}
+
+.form-group {
+    width: 400px;
+
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    font-size: 1.3rem;
+
+    border-radius: 15px;
+}
+
+.input-btn {
+    width: 90%;
+
+    display: flex;
+}
+
+#text-input {
+    border: none;
+    width: 90%;
+
+    font-size: inherit;
+
+    border-bottom: 2px solid #030303;
+
+    padding: 3px 6px;
+    outline: none;
+    margin-right: 10px;
+}
+
+#check-btn {
+    background-color: #5401a7;
+    width: 120px;
+    color: #f3f3f3;
+
+    border: none;
+    padding: 9px 6px;
+    font-size: 1rem;
+
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#result {
+    height: 30px;
+}
+
+.white {
+    background-color: #f3f3f3;
+
+    color: #030303;
+
+    margin-bottom: 50px;
+
+    box-shadow: 0 6px 2px rgb(0, 46, 173);
+}
+
+.green {
+    background-color: #00471b;
+}
