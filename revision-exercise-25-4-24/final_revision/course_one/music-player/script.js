@@ -791,10 +791,12 @@ audio.addEventListener("ended", () => {
 });
 
 // for repeat all
-audio.addEventListener("ended", () => {
-    if (userData?.currentSong) {
-        playNextSong();
-    } else {
-        playSong(userData?.songs[0]);
-    }
+repeatBtn.addEventListener("click", () => {
+    audio.addEventListener("ended", () => {
+        if (userData?.currentSong) {
+            playNextSong();
+        } else {
+            playSong(userData?.songs[0]);
+        }
+    });
 });
