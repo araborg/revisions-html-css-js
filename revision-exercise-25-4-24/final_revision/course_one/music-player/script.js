@@ -729,7 +729,7 @@ const deleteSong = (id) => {
 
     // find d songs remaining and update userData.songs
     userData.songs = userData?.songs.filter((song) => song.id !== id);
-    // console.log(remainingSongs);
+    console.log(userData?.songs);
 
     renderSongs(userData?.songs);
     setPlayerDisplay();
