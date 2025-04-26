@@ -10,12 +10,10 @@ const formattedValueFxn = (str) => {
 
 const checkInputValue = () => {
     const inputValue = textInput.value;
-    // console.log(textInput.value);
 
     const formattedValue = formattedValueFxn(inputValue);
 
     const splitString = formattedValue.split("");
-    // console.log(splitString);
 
     if (!textInput.value) {
         alert("Please input a value.");
