@@ -11,9 +11,9 @@ const formattedValueFxn = (str) => {
 console.log(formattedValueFxn("A"));
 console.log(formattedValueFxn("eye"));
 console.log(formattedValueFxn("_eye"));
-console.log(formattedValueFxn(""));
-console.log(formattedValueFxn(""));
-console.log(formattedValueFxn(""));
+console.log(formattedValueFxn("race car"));
+console.log(formattedValueFxn("text not a palindrome"));
+console.log(formattedValueFxn("A man, a plan, a canal. Panama"));
 console.log(formattedValueFxn(""));
 console.log(formattedValueFxn(""));
 console.log(formattedValueFxn(""));
