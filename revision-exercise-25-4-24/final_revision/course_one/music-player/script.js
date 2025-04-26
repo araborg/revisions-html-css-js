@@ -720,12 +720,12 @@ shuffleBtn.addEventListener("click", shuffle);
 // ds does nt need addEventListener bcos of d onclick fxn
 const deleteSong = (id) => {
     // if there is a playing song
-
-    if (userData?.currentSong.id === id) {
-        pauseSong();
-
+    if (userData?.currentSong?.id === id) {
         userData.currentSong = null;
         userData.songCurrentTime = 0;
+
+        pauseSong();
+        setPlayerDisplay();
     }
 
     console.log(id);
