@@ -751,6 +751,7 @@ const deleteSong = (id) => {
             userData.songCurrentTime = 0;
 
             renderSongs(sortSongs());
+            setPlayerDisplay();
 
             resetBtn.remove();
         });
