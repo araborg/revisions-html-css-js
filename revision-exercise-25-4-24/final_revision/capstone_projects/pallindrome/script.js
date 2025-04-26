@@ -18,7 +18,7 @@ const checkInputValue = () => {
     // console.log(splitString);
 
     if (!textInput.value) {
-        alert("Please input avalue.");
+        alert("Please input a value.");
     } else {
         const reversedValue = splitString.reverse().join("");
 
