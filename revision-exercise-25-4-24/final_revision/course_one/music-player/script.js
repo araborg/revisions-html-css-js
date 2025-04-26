@@ -545,8 +545,8 @@ const playBtn = document.getElementById("play");
 const pauseBtn = document.getElementById("pause");
 const nextBtn = document.getElementById("next");
 const shuffleBtn = document.getElementById("shuffle");
-const deleteBtn = document.querySelector(".playlist-song-delete");
-console.log(deleteBtn);
+// const deleteBtn = document.querySelector(".playlist-song-delete");
+// console.log(deleteBtn);
 
 const playlistSongs = document.getElementById("playlist-songs");
 
@@ -716,6 +716,7 @@ const shuffle = () => {
 
 shuffleBtn.addEventListener("click", shuffle);
 
+// ds does nt need addEventListener bcos of d onclick fxn
 const deleteSong = (id) => {
     // if there is a playing song
     if (userData?.currentSong) {
