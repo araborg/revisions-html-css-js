@@ -758,6 +758,11 @@ const deleteSong = (id) => {
 
 const setPlayButtonAccessibleText = () => {};
 
-const setPlayerDisplay = () => {};
+const setPlayerDisplay = () => {
+    const songTitle = document.getElementById("player-song-title");
+    const songArtist = document.getElementById("player-song-artist");
+
+    console.log(setPlayerDisplay);
+};
 
 // mk d next song play at d end of the current song
