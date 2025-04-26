@@ -545,6 +545,8 @@ const playBtn = document.getElementById("play");
 const pauseBtn = document.getElementById("pause");
 const nextBtn = document.getElementById("next");
 const shuffleBtn = document.getElementById("shuffle");
+const deleteBtn = document.querySelector(".playlist-song-delete");
+console.log(deleteBtn);
 
 const playlistSongs = document.getElementById("playlist-songs");
 
