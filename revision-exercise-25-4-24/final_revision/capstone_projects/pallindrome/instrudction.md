@@ -156,14 +156,15 @@ five|\_/|four is not a palindrome.
     text 0_0 (: /-\ :) 0-0 is a palindrome.
 
 17. When the #text-input element contains the text
-    five|\_/|four and the #check-btn element is clicked,
-    the #result element should contain the text
-    five|\_/|four is not a palindrome.
+    five|\_/|four and the #check-btn element is
+    clicked, the #result element should contain the
+    text five|\_/|four is not a palindrome.
 
 18. When the #text-input element contains an
     alphanumeric palindrome, the #result element
     should correctly identify it as a palindrome.
 
 19. When the #text-input element contains a random
-    sequence of alphanumeric characters that is not a palindrome, the #result element should say it is not
-    a palindrome.
+    sequence of alphanumeric characters that is not
+    a palindrome, the #result element should say it
+    is not a palindrome.
