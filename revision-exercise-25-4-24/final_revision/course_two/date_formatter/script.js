@@ -3,7 +3,7 @@ const currentDateParagraph = document.getElementById("current-date");
 
 // console.log(dateOptionsSelectElement, currentDateParagraph);
 
-// date ppties and methods
+// date
 const date = new Date();
 
 // days
