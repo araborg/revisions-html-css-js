@@ -19,3 +19,7 @@ dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
     }
 });
+
+dateOptionsSelectElement.addEventListener("keydown", (e) => {
+    console.log(e.key);
+});
