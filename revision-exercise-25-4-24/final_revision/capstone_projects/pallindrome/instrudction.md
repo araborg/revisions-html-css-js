@@ -140,14 +140,15 @@ five|\_/|four is not a palindrome.
     almostomla is not a palindrome.
 
 14. When the #text-input element contains the text
-    My age is 0, 0 si ega ym. and the #check-btn element
-    is clicked, the #result element should contain the
-    text My age is 0, 0 si ega ym. is a palindrome.
+    My age is 0, 0 si ega ym. and the #check-btn
+    element is clicked, the #result element should
+    contain the text My age is 0, 0 si ega ym. is
+    a palindrome.
 
 15. When the #text-input element contains the text
-    1 eye for of 1 eye. and the #check-btn element is
-    clicked, the #result element should contain the text
-    1 eye for of 1 eye. is not a palindrome.
+    1 eye for of 1 eye. and the #check-btn element
+    is clicked, the #result element should contain
+    the text 1 eye for of 1 eye. is not a palindrome.
 
 16. When the #text-input element contains the text
     0_0 (: /-\ :) 0-0 and the #check-btn element is
