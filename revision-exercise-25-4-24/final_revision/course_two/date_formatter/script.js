@@ -18,6 +18,9 @@ const formattedDate = `${day}-${month}-${year}`;
 dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
         case "yyyy-mm-dd":
-            currentDateParagraph.textContent = formattedDate;
+            currentDateParagraph.textContent = formattedDate
+                .split("-")
+                .reverse()
+                .join("-");
     }
 });
