@@ -9,7 +9,7 @@ const formattedValueFxn = (str) => {
 };
 
 const checkInputValue = () => {
-    const inputValue = textInput.value;
+    const inputValue = textInput.value.toLowerCase();
 
     const formattedValue = formattedValueFxn(inputValue);
 
@@ -18,7 +18,7 @@ const checkInputValue = () => {
     if (!textInput.value) {
         alert("Please input a value.");
     } else {
-        const reversedValue = splitString.reverse().join("");
+        const reversedValue = splitString.reverse().join("").toLowerCase();
 
         console.log(reversedValue, formattedValue);
 
