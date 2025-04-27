@@ -14,3 +14,8 @@ const hours = date.getHours();
 const minutes = date.getMinutes();
 
 const formattedDate = `${day}-${month}-${year}`;
+
+dateOptionsSelectElement.addEventListener("change", () => {
+    switch (dateOptionsSelectElement.value) {
+    }
+});
