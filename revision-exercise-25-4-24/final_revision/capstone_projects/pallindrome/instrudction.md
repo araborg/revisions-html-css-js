@@ -34,7 +34,8 @@ car is a palindrome.
 
 When the #text-input element contains the text not
 a palindrome and the #check-btn element is clicked,
-the #result element should contain the text not a palindrome is not a palindrome.
+the #result element should contain the text not a
+palindrome is not a palindrome.
 
 When the #text-input element contains the text A man,
 a plan, a canal. Panama and the #check-btn element is clicked, the #result element should contain the text
