@@ -17,9 +17,7 @@ const formattedDate = `${day}-${month}-${year}`;
 
 dateOptionsSelectElement.addEventListener("change", () => {
     switch (dateOptionsSelectElement.value) {
+        case "yyyy-mm-dd":
+            currentDateParagraph.textContent = formattedDate;
     }
-});
-
-dateOptionsSelectElement.addEventListener("keydown", (e) => {
-    console.log(e.key);
 });
