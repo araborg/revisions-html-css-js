@@ -20,8 +20,6 @@ const checkInputValue = () => {
     } else {
         const reversedValue = splitString.reverse().join("").toLowerCase();
 
-        // console.log(reversedValue, formattedValue);
-
         const response =
             reversedValue === formattedValue
                 ? " is a palindrome"
