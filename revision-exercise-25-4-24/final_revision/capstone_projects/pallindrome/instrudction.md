@@ -130,10 +130,14 @@ five|\_/|four is not a palindrome.
     text never odd or even is a palindrome.
 
 12. When the #text-input element contains the text
-    nope and the #check-btn element is clicked, the #result element should contain the text nope is not a palindrome.
-
-13. When the #text-input element contains the text almostomla and the #check-btn element is clicked, the #result element should contain the text almostomla is
+    nope and the #check-btn element is clicked, the
+    #result element should contain the text nope is
     not a palindrome.
+
+13. When the #text-input element contains the text
+    almostomla and the #check-btn element is clicked,
+    the #result element should contain the text
+    almostomla is not a palindrome.
 
 14. When the #text-input element contains the text
     My age is 0, 0 si ega ym. and the #check-btn element
