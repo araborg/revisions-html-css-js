@@ -38,12 +38,14 @@ the #result element should contain the text not a
 palindrome is not a palindrome.
 
 When the #text-input element contains the text A man,
-a plan, a canal. Panama and the #check-btn element is clicked, the #result element should contain the text
-A man, a plan, a canal. Panama is a palindrome.
+a plan, a canal. Panama and the #check-btn element
+is clicked, the #result element should contain the
+text A man, a plan, a canal. Panama is a palindrome.
 
 When the #text-input element contains the text never
-odd or even and the #check-btn element is clicked, the #result element should contain the text never odd or
-even is a palindrome.
+odd or even and the #check-btn element is clicked,
+the #result element should contain the text never
+odd or even is a palindrome.
 
 When the #text-input element contains the text nope
 and the #check-btn element is clicked, the #result
