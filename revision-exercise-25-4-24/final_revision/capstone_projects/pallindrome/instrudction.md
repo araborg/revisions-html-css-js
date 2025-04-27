@@ -25,7 +25,8 @@ element should contain the text eye is a palindrome.
 
 When the #text-input element contains the text
 \_eye and the #check-btn element is clicked, the
-#result element should contain the text \_eye is a palindrome.
+#result element should contain the text \_eye is
+a palindrome.
 
 When the #text-input element contains the text
 race car and the #check-btn element is clicked,
