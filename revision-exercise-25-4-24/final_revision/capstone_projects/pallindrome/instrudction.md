@@ -53,12 +53,14 @@ element should contain the text nope is not a
 palindrome.
 
 When the #text-input element contains the text
-almostomla and the #check-btn element is clicked, the #result element should contain the text almostomla is
-not a palindrome.
+almostomla and the #check-btn element is clicked,
+the #result element should contain the text
+almostomla is not a palindrome.
 
 When the #text-input element contains the text My
-age is 0, 0 si ega ym. and the #check-btn element is clicked, the #result element should contain the text
-My age is 0, 0 si ega ym. is a palindrome.
+age is 0, 0 si ega ym. and the #check-btn element
+is clicked, the #result element should contain the
+text My age is 0, 0 si ega ym. is a palindrome.
 
 When the #text-input element contains the text 1 eye
 for of 1 eye. and the #check-btn element is clicked,
