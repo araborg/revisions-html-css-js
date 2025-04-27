@@ -1,34 +1,40 @@
-const dateOptionsSelectElement = document.getElementById("date-options");
-const currentDateParagraph = document.getElementById("current-date");
+// const dateOptionsSelectElement = document.getElementById("date-options");
+// const currentDateParagraph = document.getElementById("current-date");
 
-// date
-const date = new Date();
+// // date
+// const date = new Date();
 
-// days
-const day = date.getDate();
-const month = date.getMonth() + 1;
-const year = date.getFullYear();
+// // days
+// const day = date.getDate();
+// const month = date.getMonth() + 1;
+// const year = date.getFullYear();
 
-// time
-const hours = date.getHours();
-const minutes = date.getMinutes();
+// // time
+// const hours = date.getHours();
+// const minutes = date.getMinutes();
 
-const formattedDate = `${day}-${month}-${year}`;
+// const formattedDate = `${day}-${month}-${year}`;
 
-dateOptionsSelectElement.addEventListener("change", () => {
-    switch (dateOptionsSelectElement.value) {
-        case "yyyy-mm-dd":
-            currentDateParagraph.textContent = formattedDate
-                .split("-")
-                .reverse()
-                .join("-");
-            break;
+// dateOptionsSelectElement.addEventListener("change", () => {
+//     console.log(dateOptionsSelectElement.value);
 
-        case "mm-dd-yyyy-h-mm":
-            currentDateParagraph.textContent = `${month}-${day}-${year}-${hours}-${minutes}`;
-            break;
+//     console.log(typeof dateOptionsSelectElement.value);
 
-        default:
-            currentDateParagraph.textContent = formattedDate;
-    }
-});
+//     switch (dateOptionsSelectElement.value) {
+//         case "yyyy-mm-dd":
+//             currentDateParagraph.textContent = formattedDate
+//                 .split("-")
+//                 .reverse()
+//                 .join("-");
+//             break;
+
+//         case "mm-dd-yyyy-h-mm":
+//             currentDateParagraph.textContent = `${month}-${day}-${year}-${hours}-${minutes}`;
+//             break;
+
+//         default:
+//             currentDateParagraph.textContent = formattedDate;
+//     }
+// });
+
+// Revisn:
