@@ -4,8 +4,9 @@ const currentDateParagraph = document.getElementById("current-date");
 // console.log(dateOptionsSelectElement, currentDateParagraph);
 
 // date ppties and methods
-// days
 const date = new Date();
+
+// days
 const day = date.getDate();
 const month = date.getMonth() + 1;
 const year = date.getFullYear();
