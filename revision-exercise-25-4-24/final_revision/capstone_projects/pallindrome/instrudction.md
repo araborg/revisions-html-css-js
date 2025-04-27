@@ -99,19 +99,24 @@ five|\_/|four is not a palindrome.
    is a palindrome.
 
 6. When the #text-input element contains the text
-   eye and the #check-btn element is clicked, the #result element should contain the text eye is a palindrome.
+   eye and the #check-btn element is clicked, the
+   #result element should contain the text eye is
+   a palindrome.
 
 7. When the #text-input element contains the text
    \_eye and the #check-btn element is clicked, the
-   #result element should contain the text \_eye is a palindrome.
+   #result element should contain the text \_eye is
+   a palindrome.
 
 8. When the #text-input element contains the text
-   race car and the #check-btn element is clicked, the
-   #result element should contain the text race car is a palindrome.
+   race car and the #check-btn element is clicked,
+   the #result element should contain the text
+   race car is a palindrome.
 
 9. When the #text-input element contains the text
-   not a palindrome and the #check-btn element is clicked,
-   the #result element should contain the text not a palindrome is not a palindrome.
+   not a palindrome and the #check-btn element is
+   clicked, the #result element should contain the
+   text not a palindrome is not a palindrome.
 
 10. When the #text-input element contains the text A
     man, a plan, a canal. Panama and the #check-btn element
