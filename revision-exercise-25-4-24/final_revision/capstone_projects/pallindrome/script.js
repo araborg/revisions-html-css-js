@@ -3,7 +3,7 @@ const checkBtn = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 const formattedValueFxn = (str) => {
-    const regex = /[\\_\s,\|\|\(:\-\/\:)]/g;
+    const regex = /[\\_\s,\|\|\(:\-\/\:).]/g;
 
     return str.replace(regex, "");
 };
@@ -19,6 +19,8 @@ const checkInputValue = () => {
         alert("Please input a value.");
     } else {
         const reversedValue = splitString.reverse().join("");
+
+        console.log(reversedValue, formattedValue);
 
         const response =
             reversedValue === formattedValue
