@@ -112,10 +112,11 @@ insulin in the body. It PROMOTES INSULIN RESPONSE TO FOOD
 and lessens the need for insulin therapy and oral 
 hypoglycaemic drugs. 
 
-It block receptors in intestine hence lower sugar 
+This is a good option to drugs such as metformin.
+
+It blocks receptors in intestine hence lower sugar 
 absorption thereby controlling postprandial blood 
 sugar levels.
-
 
 
 Syzygium jambolanum (Black plum):
