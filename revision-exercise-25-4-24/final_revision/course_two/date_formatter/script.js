@@ -46,5 +46,7 @@ const date = new Date();
 
 // date methods
 const day = date.getDate();
+const month = date.getMonth() + 1;
+const year = date.getFullYear();
 
-console.log(date);
+console.log(day, month, year);
