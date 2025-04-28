@@ -104,8 +104,22 @@ sugar levels.
 
 
 Syzygium jambolanum ( Black plum)
+It alleviates diabetic symptoms such as excessive urination 
+or pushing.
+
+
 Catharanthus roseus (Madagascar Periwinkle)
+Vindoline is an alkaloid present in Catharanthus roseus.
+It effectively ameliorated diabetes-induced hepatotoxicity 
+(by docking oxidative stress), inflammation and 
+hyper-triglyceridemia in type 2 diabetes
+
 Cinnamomum zeylanicum ( Cinnamon)
+could lower hemoglobin A1c, a measure of long-term blood 
+sugar control over 3 months.
+Cinnamon may help lower blood sugar and fight diabetes by 
+imitating the effects of insulin and increasing the movement 
+of sugar from the bloodstream into cells
 
 
 */
