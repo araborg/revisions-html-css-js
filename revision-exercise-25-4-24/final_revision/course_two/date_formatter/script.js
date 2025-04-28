@@ -79,16 +79,18 @@ help reduce blood sugar levels.
 
 Cephalendra indica (Ivy gourd):
 It has a protective effect against DIABETIC NEPHROPATHY 
-as well as reduce blood sugar level.
+as well as REDUCE blood sugar level.
 
 
 Chionanthus virginica (Fringe tree):
-It has a direct blood sugar lowering effect.
+It has a DIRECT blood sugar lowering effect.
 
 Azadirachta indica (Neem):
-It exhibits islet (Beta cells) regeneration/protection 
+It exhibits islet (BETA CELLS) regeneration/protection 
 properties and therefore have beneficial effects in 
-diabetes mellitus
+diabetes mellitus. No product in d market does ds
+and also holds d hope of discovering a better 
+medication in d mgt of diabetes mellitus.
 
 Ocimum sanctum (Holy Basil):
 It helps protect against infection, lower blood sugar, 
@@ -96,18 +98,18 @@ lower cholesterol, ease joint pain, and protect stomach.
 
 
 Swertia chirayita (Chiretta):
-Chirata helps in weight loss as it increases metabolism 
+Chirata helps in WEIGHT LOSS as it increases metabolism 
 and helps in burning more calories. 
-It is also increases insulin secretion and reduces 
-oxidative stress in diabetic patients due to its 
+It is also INCREASE INSULIN SECRETION and REDUCES 
+OXIDATIVE STRESS in diabetic patients due to its 
 high antioxidant activity
 
 
 
 Gymnema sylvestre (Australian Cow plant):
 It reduces blood sugar levels by enhancing the level of 
-insulin in the body. It promotes insulin response to 
-food and lessens the need for insulin therapy and oral 
+insulin in the body. It PROMOTES INSULIN RESPONSE TO FOOD
+and lessens the need for insulin therapy and oral 
 hypoglycaemic drugs. 
 
 It block receptors in intestine hence lower sugar 
