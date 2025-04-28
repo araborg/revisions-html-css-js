@@ -60,7 +60,7 @@ It contains the following products:
 Momordica charantia (Bitter melon):
 The fruit contains at least three active substances with 
 anti-diabetic properties, wc r Charanti, Vicine, and an 
-insulin-like compound known as polypeptide-p. All dse
+insulin-like compound known as Polypeptide-p. All dse
 have been confirmed to have a blood glucose-lowering 
 effect, 
 
