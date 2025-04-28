@@ -66,7 +66,9 @@ These substances either work individually or together to
 help reduce blood sugar levels.
 
 
-Cephalendra indica (Ivy gourd)
+Cephalendra indica (Ivy gourd):
+It has a protective effect against diabetic nephropathy 
+as well as reduce blood sugar level.
 
 
 Chionanthus virginica (Fringe tree)
@@ -114,12 +116,16 @@ It effectively ameliorated diabetes-induced hepatotoxicity
 (by docking oxidative stress), inflammation and 
 hyper-triglyceridemia in type 2 diabetes
 
-Cinnamomum zeylanicum ( Cinnamon)
-could lower hemoglobin A1c, a measure of long-term blood 
+Cinnamomum zeylanicum (Cinnamon):
+It could lower hemoglobin A1c, a measure of long-term blood 
 sugar control over 3 months.
 Cinnamon may help lower blood sugar and fight diabetes by 
 imitating the effects of insulin and increasing the movement 
-of sugar from the bloodstream into cells
+of sugar from the bloodstream into cells.
+
+Dosage:
+This medication is to be used by adults and is to be taken
+1 tablet twice daily that one every 12 hours.
 
 
 */
