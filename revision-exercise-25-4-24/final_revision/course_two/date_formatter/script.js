@@ -44,6 +44,7 @@ Glucorex:
 Glucorex is Embassy Pharmaceuticals and Chemical’s Natural 
 Product indicated for the management of Diabetes mellitus. 
 It contains the following products:
+
 Momordica charantia (Bitter melon)
 
 Cephalendra indica (Ivy gourd)
@@ -53,8 +54,10 @@ Azadirachta indica (Neem)
 
 Ocimum sanctum (Holy Basil)
 Swertia chirayita (Chiretta)
-
-
+Gymnema sylvestre ( Australian Cow plant)
+Syzygium jambolanum ( Black plum)
+Catharanthus roseus (Madagascar Periwinkle)
+Cinnamomum zeylanicum ( Cinnamon)
 
 
 */
