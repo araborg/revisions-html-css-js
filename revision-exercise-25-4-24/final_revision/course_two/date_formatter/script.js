@@ -38,3 +38,4 @@
 // });
 
 // Revisn:
+const dateOptions = document.getElementById("date-options");
