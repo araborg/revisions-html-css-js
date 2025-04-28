@@ -42,7 +42,8 @@
 /*
 Glucorex:
 Glucorex is Embassy Pharmaceuticals and Chemical’s Natural 
-Product indicated for the management of Diabetes mellitus. 
+Product indicated for the management of Diabetes mellitus
+also known as type 2 diabetes and pre-diabetes. 
 
 It contains the following products:
     1. Momordica charantia (Bitter melon)
