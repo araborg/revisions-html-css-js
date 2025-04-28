@@ -45,7 +45,7 @@ Glucorex is Embassy Pharmaceuticals and Chemical’s Natural
 Product indicated for the management of Diabetes mellitus. 
 It contains the following products:
 
-Momordica charantia (Bitter melon)
+Momordica charantia (Bitter melon):
 The fruit contains at least three active substances with 
 anti-diabetic properties, wc r Charanti, vicine, and an 
 insulin-like compound known as polypeptide-p. All dse
@@ -60,8 +60,6 @@ This is thought to be a major factor behind the
 hypoglycemic effect that develops after eating 
 (Momordica charantia) bitter melon
 
-
-
 These substances either work individually or together to 
 help reduce blood sugar levels.
 
@@ -71,20 +69,20 @@ It has a protective effect against diabetic nephropathy
 as well as reduce blood sugar level.
 
 
-Chionanthus virginica (Fringe tree)
+Chionanthus virginica (Fringe tree):
 It has a direct blood sugar lowering effect.
 
-Azadirachta indica (Neem)
+Azadirachta indica (Neem):
 It exhibits islet (Beta cells) regeneration/protection 
 properties and therefore have beneficial effects in 
 diabetes mellitus
 
-Ocimum sanctum (Holy Basil)
+Ocimum sanctum (Holy Basil):
 It helps protect against infection, lower blood sugar, 
 lower cholesterol, ease joint pain, and protect stomach.
 
 
-Swertia chirayita (Chiretta)
+Swertia chirayita (Chiretta):
 Chirata helps in weight loss as it increases metabolism 
 and helps in burning more calories. 
 It is also increases insulin secretion and reduces 
@@ -93,7 +91,7 @@ high antioxidant activity
 
 
 
-Gymnema sylvestre ( Australian Cow plant)
+Gymnema sylvestre (Australian Cow plant):
 It reduces blood sugar levels by enhancing the level of 
 insulin in the body. It promotes insulin response to 
 food and lessens the need for insulin therapy and oral 
@@ -105,12 +103,12 @@ sugar levels.
 
 
 
-Syzygium jambolanum ( Black plum)
-It alleviates diabetic symptoms such as excessive urination 
-or pushing.
+Syzygium jambolanum (Black plum):
+It alleviates diabetic symptoms such as excessive 
+urination or pushing.
 
 
-Catharanthus roseus (Madagascar Periwinkle)
+Catharanthus roseus (Madagascar Periwinkle):
 Vindoline is an alkaloid present in Catharanthus roseus.
 It effectively ameliorated diabetes-induced hepatotoxicity 
 (by docking oxidative stress), inflammation and 
