@@ -52,6 +52,15 @@ insulin-like compound known as polypeptide-p. All dse
 have been confirmed to have a blood glucose-lowering 
 effect, 
 
+Lectin reduces blood glucose concentrations by acting 
+on peripheral tissues and suppressing appetite – similar 
+to the effects of insulin in the brain
+
+
+These substances either work individually or together to 
+help reduce blood sugar levels.
+
+
 Cephalendra indica (Ivy gourd)
 Chionanthus virginica ( Fringe tree)
 
