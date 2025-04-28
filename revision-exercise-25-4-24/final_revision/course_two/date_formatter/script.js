@@ -39,3 +39,4 @@
 
 // Revisn:
 const dateOptions = document.getElementById("date-options");
+const currentDate = document.getElementById("current-date");
