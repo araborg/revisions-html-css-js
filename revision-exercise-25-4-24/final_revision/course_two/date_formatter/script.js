@@ -40,3 +40,11 @@
 // Revisn:
 const dateOptions = document.getElementById("date-options");
 const currentDate = document.getElementById("current-date");
+
+// date
+const date = new Date();
+
+// date methods
+const day = date.getDate();
+
+console.log(date);
