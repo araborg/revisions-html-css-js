@@ -58,7 +58,7 @@ const formattedDate = `${day}-${month}-${year}`;
 
 dateOptions.addEventListener("change", () => {
     switch (dateOptions.value) {
-        case "dd-mm-yy":
+        case "dd-mm-yyyy":
             currentDate.textContent = formattedDate;
     }
 });
