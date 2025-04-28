@@ -83,6 +83,14 @@ lower cholesterol, ease joint pain, and protect stomach.
 
 
 Swertia chirayita (Chiretta)
+Chirata helps in weight loss as it increases metabolism 
+and helps in burning more calories. 
+It is also increases insulin secretion and reduces 
+oxidative stress in diabetic patients due to its 
+high antioxidant activity
+
+
+
 Gymnema sylvestre ( Australian Cow plant)
 Syzygium jambolanum ( Black plum)
 Catharanthus roseus (Madagascar Periwinkle)
