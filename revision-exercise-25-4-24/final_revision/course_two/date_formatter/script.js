@@ -49,4 +49,9 @@ const day = date.getDate();
 const month = date.getMonth() + 1;
 const year = date.getFullYear();
 
-console.log(day, month, year);
+// time methods
+const minutes = date.getMinutes();
+const hours = date.getHours();
+const seconds = date.getSeconds();
+
+console.log(day, month, year, minutes, hours);
