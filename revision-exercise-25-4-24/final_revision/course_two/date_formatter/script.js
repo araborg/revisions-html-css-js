@@ -56,6 +56,11 @@ Lectin reduces blood glucose concentrations by acting
 on peripheral tissues and suppressing appetite – similar 
 to the effects of insulin in the brain
 
+This is thought to be a major factor behind the 
+hypoglycemic effect that develops after eating 
+(Momordica charantia) bitter melon
+
+
 
 These substances either work individually or together to 
 help reduce blood sugar levels.
