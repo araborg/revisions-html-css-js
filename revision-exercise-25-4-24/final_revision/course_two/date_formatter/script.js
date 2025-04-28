@@ -74,9 +74,14 @@ It has a direct blood sugar lowering effect.
 
 Azadirachta indica (Neem)
 It exhibits islet (Beta cells) regeneration/protection 
-properties and therefore have beneficial effects in diabetes mellitus
+properties and therefore have beneficial effects in 
+diabetes mellitus
 
 Ocimum sanctum (Holy Basil)
+It helps protect against infection, lower blood sugar, 
+lower cholesterol, ease joint pain, and protect stomach.
+
+
 Swertia chirayita (Chiretta)
 Gymnema sylvestre ( Australian Cow plant)
 Syzygium jambolanum ( Black plum)
