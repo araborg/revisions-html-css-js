@@ -50,8 +50,8 @@ const month = date.getMonth() + 1;
 const year = date.getFullYear();
 
 // time methods
-const minutes = date.getMinutes();
 const hours = date.getHours();
+const minutes = date.getMinutes();
 const seconds = date.getSeconds();
 
 const formattedDate = `${day}-${month}-${year}`;
