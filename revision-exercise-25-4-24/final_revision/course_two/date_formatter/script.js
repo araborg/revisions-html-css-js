@@ -92,6 +92,17 @@ high antioxidant activity
 
 
 Gymnema sylvestre ( Australian Cow plant)
+It reduces blood sugar levels by enhancing the level of 
+insulin in the body. It promotes insulin response to 
+food and lessens the need for insulin therapy and oral 
+hypoglycaemic drugs. 
+
+It block receptors in intestine hence lower sugar 
+absorption thereby controlling postprandial blood 
+sugar levels.
+
+
+
 Syzygium jambolanum ( Black plum)
 Catharanthus roseus (Madagascar Periwinkle)
 Cinnamomum zeylanicum ( Cinnamon)
