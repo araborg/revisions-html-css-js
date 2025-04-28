@@ -73,6 +73,8 @@ Chionanthus virginica (Fringe tree)
 It has a direct blood sugar lowering effect.
 
 Azadirachta indica (Neem)
+It exhibits islet (Beta cells) regeneration/protection 
+properties and therefore have beneficial effects in diabetes mellitus
 
 Ocimum sanctum (Holy Basil)
 Swertia chirayita (Chiretta)
