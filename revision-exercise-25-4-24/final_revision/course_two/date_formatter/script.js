@@ -59,18 +59,18 @@ It contains the following products:
 
 
 Momordica charantia (Bitter melon):
-Itcontains at least three active substances with 
+It contains at least three active substances with 
 anti-diabetic properties, wc r CHARANTI, VICINE, and an 
 insulin-like compound known as POLYPEPTIDE-P. All dse
 have been confirmed to have a blood glucose-lowering 
 effect, 
 
-Lectin reduces blood glucose concentrations by acting 
+LECTIN reduces blood glucose concentrations by acting 
 on peripheral tissues and suppressing appetite – similar 
-to the effects of insulin in the brain
+to the effects of INSULIN in the BRAIN.
 
 This is thought to be a major factor behind the 
-hypoglycemic effect that develops after eating 
+HYPO-GLYCEMIC effect that develops after eating 
 (Momordica charantia) bitter melon
 
 These substances either work individually or together to 
@@ -78,7 +78,7 @@ help reduce blood sugar levels.
 
 
 Cephalendra indica (Ivy gourd):
-It has a protective effect against diabetic nephropathy 
+It has a protective effect against DIABETIC NEPHROPATHY 
 as well as reduce blood sugar level.
 
 
