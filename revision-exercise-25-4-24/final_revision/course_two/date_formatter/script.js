@@ -60,5 +60,12 @@ dateOptions.addEventListener("change", () => {
     switch (dateOptions.value) {
         case "dd-mm-yyyy":
             currentDate.textContent = formattedDate;
+            break;
+
+        case "yyyy-mm-dd":
+            currentDate.textContent = formattedDate
+                .split("-")
+                .reverse()
+                .join("-");
     }
 });
