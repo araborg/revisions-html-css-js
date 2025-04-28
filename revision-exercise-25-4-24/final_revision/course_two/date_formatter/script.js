@@ -54,4 +54,6 @@ const minutes = date.getMinutes();
 const hours = date.getHours();
 const seconds = date.getSeconds();
 
-console.log(day, month, year, minutes, hours);
+dateOptions.addEventListener("change", () => {
+    console.log("hello");
+});
