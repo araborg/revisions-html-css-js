@@ -54,6 +54,8 @@ const minutes = date.getMinutes();
 const hours = date.getHours();
 const seconds = date.getSeconds();
 
+console.log(minutes);
+
 const formattedDate = `${day}-${month}-${year}`;
 
 dateOptions.addEventListener("change", () => {
@@ -67,5 +69,13 @@ dateOptions.addEventListener("change", () => {
                 .split("-")
                 .reverse()
                 .join("-");
+            break;
+
+        case "mm-dd-yyyy-h-mm":
+            currentDate.textContent = `${month}-${day}-${year}-${hours}-${minutes}`;
+            break;
+
+        default:
+            currentDate.textContent = `${month}-${day}-${year}-${hours}-${minutes}-${seconds}`;
     }
 });
