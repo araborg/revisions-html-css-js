@@ -67,7 +67,10 @@ help reduce blood sugar levels.
 
 
 Cephalendra indica (Ivy gourd)
-Chionanthus virginica ( Fringe tree)
+
+
+Chionanthus virginica (Fringe tree)
+It has a direct blood sugar lowering effect.
 
 Azadirachta indica (Neem)
 
