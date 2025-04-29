@@ -194,7 +194,7 @@ const myFavoriteFootballTeam = {
 // keep a copy of: myFavoriteFootballTeam.players
 const copyPlayers = myFavoriteFootballTeam.players;
 
-// Effect of Object.freeze()
+// Showing d effect of Object.freeze()
 console.log("1st scenario: ");
 console.log(myFavoriteFootballTeam.players);
 
