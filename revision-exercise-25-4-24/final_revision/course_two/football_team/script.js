@@ -192,13 +192,15 @@ const myFavoriteFootballTeam = {
 };
 
 // Effect of Object.freeze()
-// 1st scenario:
+const copyPlayers = myFavoriteFootballTeam.players;
+console.log("1st scenario: ");
 console.log(myFavoriteFootballTeam.players);
 
 myFavoriteFootballTeam.players = [];
 console.log(myFavoriteFootballTeam.players);
 
-// 2nd scenario
+console.log("2nd scenario: ");
+myFavoriteFootballTeam.players = copyPlayers;
 console.log(myFavoriteFootballTeam.players);
 Object.freeze(myFavoriteFootballTeam);
 
