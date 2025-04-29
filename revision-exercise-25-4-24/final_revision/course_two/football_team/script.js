@@ -203,8 +203,10 @@ console.log(myFavoriteFootballTeam.players); // []
 
 console.log("2nd scenario: ");
 myFavoriteFootballTeam.players = copyPlayers;
+
 console.log(myFavoriteFootballTeam.players);
 Object.freeze(myFavoriteFootballTeam);
 
 myFavoriteFootballTeam.players = [];
 console.log(myFavoriteFootballTeam.players);
+// [] has no effect bcos of d Object.freeze()
