@@ -527,8 +527,10 @@ const displayPlayer = (arr = players) => {
         .join("");
 };
 
+console.log(displayPlayer);
+
 const check = players.filter((player) => player.nickname !== false);
-console.log(check);
+// console.log(check);
 
 playersSelectEl.addEventListener("change", (e) => {
     // mk d playerCardsContainer empty to display
