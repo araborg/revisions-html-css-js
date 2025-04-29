@@ -515,10 +515,12 @@ const { coachName } = myFavoriteFootballTeam.headCoach;
 const displayPlayer = (arr = players) => {
     playerCardsContainer.innerHTML += arr.map(
         ({ name, position, number, isCaptain, nickname }) => `
-            <h2>Player Name: ${name} ${isCaptain ? "(Captain)" : ""}</h2>
-            <p>Position: ${position}</p>
-            <p>Number: ${number}</p>
-            <p>${nickname ? "Nickname: ${nickname}" : ""}</p>
+            <div class="player-card">
+                <h2>Player Name: ${name} ${isCaptain ? "(Captain)" : ""}</h2>
+                <p>Position: ${position}</p>
+                <p>Number: ${number}</p>
+                <p>${nickname ? "Nickname: ${nickname}" : ""}</p>
+            </div>    
         `
     );
 };
@@ -530,10 +532,22 @@ playersSelectEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
+            playerCardsContainer.innerHTML = displayPlayer(
+                players.filter((player) => !player.nickname)
+            );
+            break;
+
         case "forward":
+            break;
+
         case "midfielder":
+            break;
+
         case "defender":
+            break;
+
         case "goalkeeper":
+            break;
     }
 });
 
