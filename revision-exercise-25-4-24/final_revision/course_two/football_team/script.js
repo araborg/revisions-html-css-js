@@ -513,25 +513,21 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 const displayPlayer = (arr = players) => {
-    return (playerCardsContainer.innerHTML += arr
+    playerCardsContainer.innerHTML += arr
         .map(
             ({ name, position, number, isCaptain, nickname }) =>
                 `
+                    <div class="player-card">
+                        <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
 
-                <div class="player-card">
-                    <h2>
-                        ${name} ${isCaptain ? "(Captain)" : ""}
-                    </h2>
+                        <p>Position: ${position}</p>
+                        <p>Number: ${number}</p>
 
-                    <p>Position: ${position}</p>
-                    <p>Number: ${number}</p>
-
-                    <p>${nickname ? "Nickname: " + nickname : ""}</p>
-
-                </div>
-            `
+                        <p>${nickname ? "Nickname: " + nickname : ""}</p>
+                    </div>
+                `
         )
-        .join(""));
+        .join("");
 };
 
 {
