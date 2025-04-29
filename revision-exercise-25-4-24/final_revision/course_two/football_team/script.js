@@ -191,8 +191,9 @@ const myFavoriteFootballTeam = {
     ],
 };
 
-console.log(myFavoriteFootballTeam);
+// Effect of Object.freeze()
+console.log(myFavoriteFootballTeam.players);
 Object.freeze(myFavoriteFootballTeam);
 
 myFavoriteFootballTeam.players = [];
-console.log(myFavoriteFootballTeam);
+console.log(myFavoriteFootballTeam.players);
