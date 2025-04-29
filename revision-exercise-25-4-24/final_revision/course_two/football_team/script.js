@@ -532,7 +532,7 @@ const displayPlayer = (arr = players) => {
 
 playersSelectEl.addEventListener("change", (e) => {
     // mk d playerCardsContainer empty to display
-    // players dynamically
+    // d specified players dynamically
     playerCardsContainer.innerHTML = "";
 
     switch (e.target.value) {
