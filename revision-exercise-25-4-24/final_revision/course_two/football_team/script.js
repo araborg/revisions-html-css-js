@@ -265,11 +265,40 @@ playersSelectEl.addEventListener("change", () => {
 
     console.log(playersSelectEl.value);
 
-    switch (playersEl.value) {
+    switch (playersSelectEl.value) {
         case "nickname":
             setPlayerCards(
                 players.filter((player) => player.nickname !== null)
             );
             break;
+
+        case "forward":
+            setPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        case "midfielder":
+            setPlayerCards(
+                players.filter((player) => player.position === "midfielder")
+            );
+            break;
+
+        case "defender":
+            setPlayerCards(
+                players.filter((player) => player.position === "defender")
+            );
+            break;
+
+        case "goalkeeper":
+            setPlayerCards(
+                players.filter((player) => player.position === "goalkeeper")
+            );
+            break;
+
+        default:
+            // ds was called without a parameter bcos of d
+            // default value provided i.e arr = player
+            setPlayerCards();
     }
 });
