@@ -530,19 +530,6 @@ const displayPlayer = (arr = players) => {
         .join("");
 };
 
-{
-    /* 
-
-<p>Position: ${position}</p>
-<p>Number: ${number}</p>
-<p>${nickname ? "Nickname: ${nickname}" : ""}</p> */
-}
-
-// console.log(displayPlayer);
-
-const check = players.filter((player) => player.nickname !== false);
-// console.log(check);
-
 playersSelectEl.addEventListener("change", (e) => {
     // mk d playerCardsContainer empty to display
     // players dynamically
