@@ -540,6 +540,8 @@ playersSelectEl.addEventListener("change", (e) => {
             playerCardsContainer.innerHTML = displayPlayer(
                 players.filter((player) => player.nickname !== false)
             );
+
+            console.log(playerCardsContainer);
             break;
 
         case "forward":
