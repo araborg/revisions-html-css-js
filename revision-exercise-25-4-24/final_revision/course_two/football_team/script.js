@@ -194,24 +194,24 @@ const myFavoriteFootballTeam = {
 // Showing d effect of Object.freeze():
 
 // keep a copy of: myFavoriteFootballTeam.players
-const copyPlayers = myFavoriteFootballTeam.players;
+// const copyPlayers = myFavoriteFootballTeam.players;
 
-// ===============================
-console.log("1st scenario: ");
-console.log(myFavoriteFootballTeam.players);
+// // ===============================
+// console.log("1st scenario: ");
+// console.log(myFavoriteFootballTeam.players);
 
-myFavoriteFootballTeam.players = [];
-console.log(myFavoriteFootballTeam.players); // []
+// myFavoriteFootballTeam.players = [];
+// console.log(myFavoriteFootballTeam.players); // []
 
-// ===============================
-console.log("2nd scenario: ");
-myFavoriteFootballTeam.players = copyPlayers;
+// // ===============================
+// console.log("2nd scenario: ");
+// myFavoriteFootballTeam.players = copyPlayers;
 
-console.log(myFavoriteFootballTeam.players);
-Object.freeze(myFavoriteFootballTeam);
+// console.log(myFavoriteFootballTeam.players);
+// Object.freeze(myFavoriteFootballTeam);
 
-myFavoriteFootballTeam.players = [];
+// myFavoriteFootballTeam.players = [];
 
-// myFavoriteFootballTeam.players = []; has no
-// effect bcos of d Object.freeze()
-console.log(myFavoriteFootballTeam.players);
+// // myFavoriteFootballTeam.players = []; has no
+// // effect bcos of d Object.freeze()
+// console.log(myFavoriteFootballTeam.players);
