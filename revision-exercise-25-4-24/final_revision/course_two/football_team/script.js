@@ -513,8 +513,9 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 const displayPlayer = (arr = players) => {
-    playerCardsContainer.innerHTML += arr.map(
-        ({ name, position, number, isCaptain, nickname }) => `
+    playerCardsContainer.innerHTML += arr
+        .map(
+            ({ name, position, number, isCaptain, nickname }) => `
             <div class="player-card">
                 <h2>Player Name: ${name} ${isCaptain ? "(Captain)" : ""}</h2>
                 <p>Position: ${position}</p>
@@ -522,8 +523,12 @@ const displayPlayer = (arr = players) => {
                 <p>${nickname ? "Nickname: ${nickname}" : ""}</p>
             </div>    
         `
-    );
+        )
+        .join("");
 };
+
+const check = players.filter((player) => player.nickname !== false);
+console.log(check);
 
 playersSelectEl.addEventListener("change", (e) => {
     // mk d playerCardsContainer empty to display
@@ -533,7 +538,7 @@ playersSelectEl.addEventListener("change", (e) => {
     switch (e.target.value) {
         case "nickname":
             playerCardsContainer.innerHTML = displayPlayer(
-                players.filter((player) => !player.nickname)
+                players.filter((player) => player.nickname !== false)
             );
             break;
 
