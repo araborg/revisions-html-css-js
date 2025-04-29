@@ -228,6 +228,8 @@ const playersSelectEl = document.getElementById("players");
 
 const playerCardsEl = document.getElementById("player-cards");
 
+const playerNickname = document.getElementById("nickname");
+
 // logic
 const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
@@ -258,14 +260,18 @@ const setPlayerCards = (arr = players) => {
     );
 };
 
-console.log(playersSelectEl, playerCardsEl);
+console.log(nickname);
 
-playersSelectEl.addEventListener("change", () => {
+// playersSelectEl.addEventListener("change", () => {
+// switch (playersSelectEl.value) {}
+// }
+
+playersSelectEl.addEventListener("change", (e) => {
     playerCardsEl.innerHTML = "";
 
     console.log(playersSelectEl.value);
 
-    switch (playersSelectEl.value) {
+    switch (e.target.value) {
         case "nickname":
             setPlayerCards(
                 players.filter((player) => player.nickname !== null)
