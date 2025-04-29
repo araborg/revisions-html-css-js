@@ -219,16 +219,16 @@ const myFavoriteFootballTeam = {
 Object.freeze(myFavoriteFootballTeam);
 
 // team stats
-const teamEl = document.getElementById("team");
-const sportEl = document.getElementById("sport");
-const yearEl = document.getElementById("year");
-const headCoachEl = document.getElementById("head-coach");
+// const teamEl = document.getElementById("team");
+// const sportEl = document.getElementById("sport");
+// const yearEl = document.getElementById("year");
+// const headCoachEl = document.getElementById("head-coach");
 
-const playersSelectEl = document.getElementById("players");
+// const playersSelectEl = document.getElementById("players");
 
-const playerCardsEl = document.getElementById("player-cards");
+// const playerCardsEl = document.getElementById("player-cards");
 
-const playerNickname = document.getElementById("nickname");
+// const playerNickname = document.getElementById("nickname");
 
 // // logic
 // const { team, sport, year, players } = myFavoriteFootballTeam;
@@ -303,3 +303,6 @@ const playerNickname = document.getElementById("nickname");
 //             setPlayerCards();
 //     }
 // });
+
+// Revision:
+const teamEl = document.getElementById("team");
