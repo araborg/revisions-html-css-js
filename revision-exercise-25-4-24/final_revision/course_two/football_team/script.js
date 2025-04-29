@@ -230,6 +230,12 @@ const playerCardsEl = document.getElementById("player-cards");
 
 // logic
 const { team, sport, year, players } = myFavoriteFootballTeam;
-const { coachName } = myFavoriteFootballTeam.coachName;
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+// update d text
+teamEl.textContent = team;
+sportEl.textContent = sport;
+yearEl.textContent = year;
+headCoachEl.textContent = coachName;
 
 console.log(team, sport, year, players, coachName);
