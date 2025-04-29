@@ -568,12 +568,24 @@ playersSelectEl.addEventListener("change", (e) => {
             break;
 
         case "midfielder":
+            playerCardsContainer.innerHTML = displayPlayer(
+                players.filter((player) => player.position === "midfielder")
+            );
+
             break;
 
         case "defender":
+            playerCardsContainer.innerHTML = displayPlayer(
+                players.filter((player) => player.position === "defender")
+            );
+
             break;
 
         case "goalkeeper":
+            playerCardsContainer.innerHTML = displayPlayer(
+                players.filter((player) => player.position === "goalkeeper")
+            );
+
             break;
     }
 });
