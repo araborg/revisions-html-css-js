@@ -258,12 +258,18 @@ const setPlayerCards = (arr = players) => {
     );
 };
 
-playersEl.addEventListener("change", () => {
-    playerCardsEl.innerHTML = "";
+console.log(playersEl, playerCardsEl);
 
-    switch (playersEl.value) {
-        case "nickname":
-            setPlayerCards(players.filter((player) => player.nickname !== ""));
-            break;
-    }
-});
+// playersEl.addEventListener("change", () => {
+//     playerCardsEl.innerHTML = "";
+
+//     console.log(playersEl.value);
+
+//     switch (playersEl.value) {
+//         case "nickname":
+//             setPlayerCards(
+//                 players.filter((player) => player.nickname !== null)
+//             );
+//             break;
+//     }
+// });
