@@ -230,76 +230,76 @@ const playerCardsEl = document.getElementById("player-cards");
 
 const playerNickname = document.getElementById("nickname");
 
-// logic
-const { team, sport, year, players } = myFavoriteFootballTeam;
-const { coachName } = myFavoriteFootballTeam.headCoach;
+// // logic
+// const { team, sport, year, players } = myFavoriteFootballTeam;
+// const { coachName } = myFavoriteFootballTeam.headCoach;
 
-// update d text
-teamEl.textContent = team;
-sportEl.textContent = sport;
-yearEl.textContent = year;
+// // update d text
+// teamEl.textContent = team;
+// sportEl.textContent = sport;
+// yearEl.textContent = year;
 
-headCoachEl.textContent = coachName;
+// headCoachEl.textContent = coachName;
 
-const setPlayerCards = (arr = players) => {
-    // name, position,number,isCaptain, nickname
+// const setPlayerCards = (arr = players) => {
+//     // name, position,number,isCaptain, nickname
 
-    playerCardsEl.innerHTML += arr.map(
-        ({ name, position, number, isCaptain, nickname }) =>
-            `
-                <div class="player-card">
-                    <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
-                   
-                    <p>Position: ${position}</p>
-                   
-                    <p>Number: ${number}</p>
-                   
-                    <p>Nickname: ${nickname !== null ? nickname : ""}
-                </div>
-            `
-    );
-};
+//     playerCardsEl.innerHTML += arr.map(
+//         ({ name, position, number, isCaptain, nickname }) =>
+//             `
+//                 <div class="player-card">
+//                     <h2>${name} ${isCaptain ? "(Captain)" : ""}</h2>
 
-playersSelectEl.addEventListener("change", (e) => {
-    playerCardsEl.innerHTML = "";
+//                     <p>Position: ${position}</p>
 
-    // console.log(playersSelectEl.value);
+//                     <p>Number: ${number}</p>
 
-    switch (e.target.value) {
-        case "nickname":
-            setPlayerCards(
-                players.filter((player) => player.nickname !== null)
-            );
-            break;
+//                     <p>Nickname: ${nickname !== null ? nickname : ""}
+//                 </div>
+//             `
+//     );
+// };
 
-        case "forward":
-            setPlayerCards(
-                players.filter((player) => player.position === "forward")
-            );
-            break;
+// playersSelectEl.addEventListener("change", (e) => {
+//     playerCardsEl.innerHTML = "";
 
-        case "midfielder":
-            setPlayerCards(
-                players.filter((player) => player.position === "midfielder")
-            );
-            break;
+//     // console.log(playersSelectEl.value);
 
-        case "defender":
-            setPlayerCards(
-                players.filter((player) => player.position === "defender")
-            );
-            break;
+//     switch (e.target.value) {
+//         case "nickname":
+//             setPlayerCards(
+//                 players.filter((player) => player.nickname !== null)
+//             );
+//             break;
 
-        case "goalkeeper":
-            setPlayerCards(
-                players.filter((player) => player.position === "goalkeeper")
-            );
-            break;
+//         case "forward":
+//             setPlayerCards(
+//                 players.filter((player) => player.position === "forward")
+//             );
+//             break;
 
-        default:
-            // ds was called without a parameter bcos of d
-            // default value provided i.e arr = player. ds
-            // will tks care of d "all" option.
-            setPlayerCards();
-    }
-});
+//         case "midfielder":
+//             setPlayerCards(
+//                 players.filter((player) => player.position === "midfielder")
+//             );
+//             break;
+
+//         case "defender":
+//             setPlayerCards(
+//                 players.filter((player) => player.position === "defender")
+//             );
+//             break;
+
+//         case "goalkeeper":
+//             setPlayerCards(
+//                 players.filter((player) => player.position === "goalkeeper")
+//             );
+//             break;
+
+//         default:
+//             // ds was called without a parameter bcos of d
+//             // default value provided i.e arr = player. ds
+//             // will tks care of d "all" option.
+//             setPlayerCards();
+//     }
+// });
