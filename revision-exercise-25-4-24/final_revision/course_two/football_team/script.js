@@ -309,3 +309,12 @@ const teamEl = document.getElementById("team");
 const sportEl = document.getElementById("sport");
 const yearEl = document.getElementById("year");
 const headCoachEl = document.getElementById("head-coach");
+
+const playersSelectEl = document.getElementById("players");
+const playerCardsContainer = document.getElementById("player-cards");
+
+// destructuring
+const { team, sport, year, players } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+const displayPlayer = () => {};
