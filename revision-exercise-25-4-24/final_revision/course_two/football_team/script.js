@@ -230,4 +230,6 @@ const playerCardsEl = document.getElementById("player-cards");
 
 // logic
 const { team, sport, year, players } = myFavoriteFootballTeam;
+const { coachName } = myFavoriteFootballTeam.coachName;
+
 console.log(myFavoriteFootballTeam);
