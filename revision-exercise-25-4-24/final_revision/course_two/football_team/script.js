@@ -211,5 +211,7 @@ console.log(myFavoriteFootballTeam.players);
 Object.freeze(myFavoriteFootballTeam);
 
 myFavoriteFootballTeam.players = [];
+
+// myFavoriteFootballTeam.players = []; has no
+// effect bcos of d Object.freeze()
 console.log(myFavoriteFootballTeam.players);
-// [] has no effect bcos of d Object.freeze()
