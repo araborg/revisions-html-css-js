@@ -325,7 +325,7 @@ const myFavoriteFootballTeam = {
             position: "forward",
             number: 1,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -333,7 +333,7 @@ const myFavoriteFootballTeam = {
             position: "midfielder",
             number: 2,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -381,7 +381,7 @@ const myFavoriteFootballTeam = {
             position: "defender",
             number: 8,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -413,7 +413,7 @@ const myFavoriteFootballTeam = {
             position: "midfielder",
             number: 12,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -421,7 +421,7 @@ const myFavoriteFootballTeam = {
             position: "defender",
             number: 13,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -429,7 +429,7 @@ const myFavoriteFootballTeam = {
             position: "midfielder",
             number: 14,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -445,7 +445,7 @@ const myFavoriteFootballTeam = {
             position: "defender",
             number: 16,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -453,7 +453,7 @@ const myFavoriteFootballTeam = {
             position: "forward",
             number: 17,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -461,7 +461,7 @@ const myFavoriteFootballTeam = {
             position: "goalkeeper",
             number: 18,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -477,7 +477,7 @@ const myFavoriteFootballTeam = {
             position: "midfielder",
             number: 20,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
 
         {
@@ -493,7 +493,7 @@ const myFavoriteFootballTeam = {
             position: "goalkeeper",
             number: 22,
             isCaptain: false,
-            nickname: null,
+            nickname: false,
         },
     ],
 };
