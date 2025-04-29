@@ -585,8 +585,10 @@ playersSelectEl.addEventListener("change", (e) => {
             playerCardsContainer.innerHTML = displayPlayer(
                 players.filter((player) => player.position === "goalkeeper")
             );
-
             break;
+
+        default:
+            displayPlayer();
     }
 });
 
