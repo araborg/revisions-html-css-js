@@ -232,4 +232,4 @@ const playerCardsEl = document.getElementById("player-cards");
 const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.coachName;
 
-console.log(myFavoriteFootballTeam);
+console.log(team, sport, year, players, coachName);
