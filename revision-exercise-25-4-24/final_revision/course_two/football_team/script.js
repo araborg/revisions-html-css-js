@@ -260,18 +260,6 @@ const setPlayerCards = (arr = players) => {
     );
 };
 
-// console.log(nickname);
-
-for (let name of nickname) {
-    name.textContent !== "" ? console.log(name) : "";
-
-    // console.log(name.textContent !== null);
-}
-
-// playersSelectEl.addEventListener("change", () => {
-// switch (playersSelectEl.value) {}
-// }
-
 playersSelectEl.addEventListener("change", (e) => {
     playerCardsEl.innerHTML = "";
 
