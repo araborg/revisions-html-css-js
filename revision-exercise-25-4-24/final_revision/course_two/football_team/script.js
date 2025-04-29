@@ -229,5 +229,5 @@ const playersEl = document.getElementById("players");
 const playerCardsEl = document.getElementById("player-cards");
 
 // logic
-const { team, sport, year } = myFavoriteFootballTeam;
+const { team, sport, year, players } = myFavoriteFootballTeam;
 console.log(myFavoriteFootballTeam);
