@@ -523,4 +523,18 @@ const displayPlayer = (arr = players) => {
     );
 };
 
-displayPlayer();
+playersSelectEl.addEventListener("change", (e) => {
+    // mk d playerCardsContainer empty to display
+    // players dynamically
+    playerCardsContainer.innerHTML = "";
+
+    switch (e.target.value) {
+        case "nickname":
+        case "forward":
+        case "midfielder":
+        case "defender":
+        case "goalkeeper":
+    }
+});
+
+// displayPlayer();
