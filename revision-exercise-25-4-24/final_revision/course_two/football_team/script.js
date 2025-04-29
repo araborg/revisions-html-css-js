@@ -518,7 +518,7 @@ const displayPlayer = (arr = players) => {
             ({ name, position, number, isCaptain, nickname }) =>
                 `
                 <div class="player-card">
-
+                    <p>Position: ${position}</p>
                 </div>    
             `
         )
