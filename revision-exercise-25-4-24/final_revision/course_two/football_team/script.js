@@ -216,7 +216,7 @@
 // // effect bcos of d Object.freeze()
 // console.log(myFavoriteFootballTeam.players);
 
-Object.freeze(myFavoriteFootballTeam);
+// Object.freeze(myFavoriteFootballTeam);
 
 // team stats
 // const teamEl = document.getElementById("team");
@@ -518,7 +518,9 @@ const displayPlayer = (arr = players) => {
             <h2>Player Name: ${name} ${isCaptain ? "(Captain)" : ""}</h2>
             <p>Position: ${position}</p>
             <p>Number: ${number}</p>
-            <p></p>
+            <p>${nickname ? "Nickname: ${nickname}" : ""}</p>
         `
     );
 };
+
+displayPlayer();
