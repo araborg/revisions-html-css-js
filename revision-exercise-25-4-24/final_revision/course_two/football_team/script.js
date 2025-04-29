@@ -306,3 +306,5 @@ Object.freeze(myFavoriteFootballTeam);
 
 // Revision:
 const teamEl = document.getElementById("team");
+const sportEl = document.getElementById("sport");
+const yearEl = document.getElementById("year");
