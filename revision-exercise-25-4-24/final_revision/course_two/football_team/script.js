@@ -257,3 +257,13 @@ const setPlayerCards = (arr = players) => {
             `
     );
 };
+
+playersEl.addEventListener("change", () => {
+    playerCardsEl.innerHTML = "";
+
+    switch (playersEl.value) {
+        case "nickname":
+            setPlayerCards(players.filter((player) => player.nickname !== ""));
+            break;
+    }
+});
