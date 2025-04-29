@@ -265,11 +265,11 @@ playersSelectEl.addEventListener("change", () => {
 
     console.log(playersSelectEl.value);
 
-    //     switch (playersEl.value) {
-    //         case "nickname":
-    //             setPlayerCards(
-    //                 players.filter((player) => player.nickname !== null)
-    //             );
-    //             break;
-    //     }
+    switch (playersEl.value) {
+        case "nickname":
+            setPlayerCards(
+                players.filter((player) => player.nickname !== null)
+            );
+            break;
+    }
 });
