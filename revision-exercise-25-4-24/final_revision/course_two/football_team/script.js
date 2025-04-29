@@ -225,3 +225,5 @@ const year = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
 
 const players = document.getElementById("players");
+
+const playerCards = document.getElementById("player-cards");
