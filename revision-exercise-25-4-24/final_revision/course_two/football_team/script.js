@@ -298,7 +298,8 @@ playersSelectEl.addEventListener("change", () => {
 
         default:
             // ds was called without a parameter bcos of d
-            // default value provided i.e arr = player
+            // default value provided i.e arr = player. ds
+            // will tks care of d "all" option.
             setPlayerCards();
     }
 });
