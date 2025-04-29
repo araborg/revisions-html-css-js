@@ -260,16 +260,14 @@ const setPlayerCards = (arr = players) => {
 
 console.log(playersEl, playerCardsEl);
 
-// playersEl.addEventListener("change", () => {
-//     playerCardsEl.innerHTML = "";
-
-//     console.log(playersEl.value);
-
-//     switch (playersEl.value) {
-//         case "nickname":
-//             setPlayerCards(
-//                 players.filter((player) => player.nickname !== null)
-//             );
-//             break;
-//     }
-// });
+playersEl.addEventListener("change", () => {
+    //     playerCardsEl.innerHTML = "";
+    //     console.log(playersEl.value);
+    //     switch (playersEl.value) {
+    //         case "nickname":
+    //             setPlayerCards(
+    //                 players.filter((player) => player.nickname !== null)
+    //             );
+    //             break;
+    //     }
+});
