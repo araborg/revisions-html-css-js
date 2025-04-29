@@ -217,3 +217,9 @@ const myFavoriteFootballTeam = {
 // console.log(myFavoriteFootballTeam.players);
 
 Object.freeze(myFavoriteFootballTeam);
+
+// team stats
+const team = document.getElementById("team");
+const sport = document.getElementById("sport");
+const year = document.getElementById("year");
+const headCoach = document.getElementById("head-coach");
