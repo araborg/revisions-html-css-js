@@ -190,3 +190,9 @@ const myFavoriteFootballTeam = {
         },
     ],
 };
+
+console.log(myFavoriteFootballTeam);
+Object.freeze(myFavoriteFootballTeam);
+
+myFavoriteFootballTeam.players = [];
+console.log(myFavoriteFootballTeam);
