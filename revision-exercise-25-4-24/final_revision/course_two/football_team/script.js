@@ -191,7 +191,7 @@ const myFavoriteFootballTeam = {
     ],
 };
 
-// keep a copy of; myFavoriteFootballTeam.players
+// keep a copy of: myFavoriteFootballTeam.players
 const copyPlayers = myFavoriteFootballTeam.players;
 
 // Effect of Object.freeze()
@@ -199,7 +199,7 @@ console.log("1st scenario: ");
 console.log(myFavoriteFootballTeam.players);
 
 myFavoriteFootballTeam.players = [];
-console.log(myFavoriteFootballTeam.players);
+console.log(myFavoriteFootballTeam.players); // []
 
 console.log("2nd scenario: ");
 myFavoriteFootballTeam.players = copyPlayers;
