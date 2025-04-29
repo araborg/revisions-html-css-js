@@ -236,6 +236,11 @@ const { coachName } = myFavoriteFootballTeam.headCoach;
 teamEl.textContent = team;
 sportEl.textContent = sport;
 yearEl.textContent = year;
+
 headCoachEl.textContent = coachName;
 
-console.log(team, sport, year, players, coachName);
+const setPlayerCards = (arr = players) => {
+    // name, position,number,isCaptain, nickname
+
+    playerCardsEl.innerHTML += arr.map({});
+};
