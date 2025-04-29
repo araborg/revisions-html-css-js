@@ -537,35 +537,31 @@ playersSelectEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-            playerCardsContainer.innerHTML = displayPlayer(
+            displayPlayer(
                 players.filter((player) => player.nickname !== false)
             );
-
-            console.log(playerCardsContainer);
             break;
 
         case "forward":
-            playerCardsContainer.innerHTML = displayPlayer(
+            displayPlayer(
                 players.filter((player) => player.position === "forward")
             );
             break;
 
         case "midfielder":
-            playerCardsContainer.innerHTML = displayPlayer(
+            displayPlayer(
                 players.filter((player) => player.position === "midfielder")
             );
-
             break;
 
         case "defender":
-            playerCardsContainer.innerHTML = displayPlayer(
+            displayPlayer(
                 players.filter((player) => player.position === "defender")
             );
-
             break;
 
         case "goalkeeper":
-            playerCardsContainer.innerHTML = displayPlayer(
+            displayPlayer(
                 players.filter((player) => player.position === "goalkeeper")
             );
             break;
