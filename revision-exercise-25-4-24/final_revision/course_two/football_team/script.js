@@ -513,29 +513,36 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 const displayPlayer = (arr = players) => {
-    playerCardsContainer.innerHTML = arr
+    return (playerCardsContainer.innerHTML += arr
         .map(
             ({ name, position, number, isCaptain, nickname }) =>
                 `
+
                 <div class="player-card">
+                    <h2>
+                        ${name} ${isCaptain ? "(Captain)" : ""}
+                    </h2>
+
                     <p>Position: ${position}</p>
-                </div>    
+                    <p>Number: ${number}</p>
+
+                    <p>${nickname ? "Nickname: " + nickname : ""}</p>
+
+                </div>
             `
         )
-        .join("");
+        .join(""));
 };
 
 {
-    /* <h2>
-Player Name: ${name} ${isCaptain ? "(Captain)" : ""}
-</h2>
+    /* 
 
 <p>Position: ${position}</p>
 <p>Number: ${number}</p>
 <p>${nickname ? "Nickname: ${nickname}" : ""}</p> */
 }
 
-console.log(displayPlayer);
+// console.log(displayPlayer);
 
 const check = players.filter((player) => player.nickname !== false);
 // console.log(check);
