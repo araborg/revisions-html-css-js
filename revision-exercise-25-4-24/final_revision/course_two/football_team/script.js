@@ -513,7 +513,7 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
 const displayPlayer = (arr = players) => {
-    playerCardsContainer.innerHTML += arr
+    playerCardsContainer.innerHTML = arr
         .map(
             ({ name, position, number, isCaptain, nickname }) => `
             <div class="player-card">
@@ -545,6 +545,9 @@ playersSelectEl.addEventListener("change", (e) => {
             break;
 
         case "forward":
+            playerCardsContainer.innerHTML = displayPlayer(
+                players.filter((player) => player.position === "forward")
+            );
             break;
 
         case "midfielder":
