@@ -261,8 +261,10 @@ const setPlayerCards = (arr = players) => {
 console.log(playersSelectEl, playerCardsEl);
 
 playersSelectEl.addEventListener("change", () => {
-    //     playerCardsEl.innerHTML = "";
-    //     console.log(playersEl.value);
+    playerCardsEl.innerHTML = "";
+
+    console.log(playersSelectEl.value);
+
     //     switch (playersEl.value) {
     //         case "nickname":
     //             setPlayerCards(
