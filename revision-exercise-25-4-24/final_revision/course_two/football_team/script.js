@@ -219,11 +219,15 @@ const myFavoriteFootballTeam = {
 Object.freeze(myFavoriteFootballTeam);
 
 // team stats
-const team = document.getElementById("team");
-const sport = document.getElementById("sport");
-const year = document.getElementById("year");
-const headCoach = document.getElementById("head-coach");
+const teamEl = document.getElementById("team");
+const sportEl = document.getElementById("sport");
+const yearEl = document.getElementById("year");
+const headCoachEl = document.getElementById("head-coach");
 
-const players = document.getElementById("players");
+const playersEl = document.getElementById("players");
 
-const playerCards = document.getElementById("player-cards");
+const playerCardsEl = document.getElementById("player-cards");
+
+// logic
+const { team, sport, year } = myFavoriteFootballTeam;
+console.log(myFavoriteFootballTeam);
