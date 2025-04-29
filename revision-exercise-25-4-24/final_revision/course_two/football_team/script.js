@@ -224,7 +224,7 @@ const sportEl = document.getElementById("sport");
 const yearEl = document.getElementById("year");
 const headCoachEl = document.getElementById("head-coach");
 
-const playersEl = document.getElementById("players");
+const playersSelectEl = document.getElementById("players");
 
 const playerCardsEl = document.getElementById("player-cards");
 
@@ -258,9 +258,9 @@ const setPlayerCards = (arr = players) => {
     );
 };
 
-console.log(playersEl, playerCardsEl);
+console.log(playersSelectEl, playerCardsEl);
 
-playersEl.addEventListener("change", () => {
+playersSelectEl.addEventListener("change", () => {
     //     playerCardsEl.innerHTML = "";
     //     console.log(playersEl.value);
     //     switch (playersEl.value) {
