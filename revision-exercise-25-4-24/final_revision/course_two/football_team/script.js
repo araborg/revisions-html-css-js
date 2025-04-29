@@ -317,4 +317,6 @@ const playerCardsContainer = document.getElementById("player-cards");
 const { team, sport, year, players } = myFavoriteFootballTeam;
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
-const displayPlayer = () => {};
+const displayPlayer = (arr = players) => {
+    playerCardsContainer.innerHTML += arr.map();
+};
