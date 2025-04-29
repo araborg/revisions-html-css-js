@@ -537,6 +537,7 @@ playersSelectEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
+            // displayPlayer() is called with d appropriate arr
             displayPlayer(
                 players.filter((player) => player.nickname !== false)
             );
