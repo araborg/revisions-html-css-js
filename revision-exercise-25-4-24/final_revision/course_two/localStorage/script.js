@@ -18,3 +18,6 @@ const discardBtn = document.getElementById("discard-btn");
 
 // task container
 const tasksContainer = document.getElementById("tasks-container");
+
+const taskData = [];
+const currentTask = {};
