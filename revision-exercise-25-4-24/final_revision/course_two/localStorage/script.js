@@ -19,5 +19,5 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-const taskData = [];
-const currentTask = {};
+const taskData = []; //store all the tasks
+const currentTask = {}; //track the state when editing and discarding tasks
