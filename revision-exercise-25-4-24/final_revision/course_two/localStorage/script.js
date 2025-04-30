@@ -31,6 +31,11 @@ openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.remove("hidden");
 });
 
+closeTaskFormBtn.addEventListener("click", () => {
+    const formInputContainValues =
+        titleInput.value || dateInput.value || descriptionInput.value;
+});
+
 // taskForm.addEventListener("submit", (e) => {
 //     e.preventDefault();
 
