@@ -55,8 +55,8 @@ const addOrUpdateTask = () => {
     }
 };
 
-// taskForm.addEventListener("submit", (e) => {
-//     e.preventDefault();
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-//     addOrUpdateTask();
-// });
+    addOrUpdateTask();
+});
