@@ -67,7 +67,18 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
-    console.log(taskObj);
+    // get d index of d task to be updated
+    const dataArrIndex = taskData.findIndex(
+        (item) => item.id === currentTask.id
+    );
+
+    if (dataArrIndex === -1) {
+        taskData.unshift(taskObj);
+    } else {
+        taskData[dataArrIndex] = taskObj;
+    }
+
+    localStorage.setItem("data", JSON.stringify(taskData));
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -75,3 +86,8 @@ taskForm.addEventListener("submit", (e) => {
 
     addOrUpdateTask();
 });
+
+// update UI
+const updateTaskContainer = () => {
+    tasksContainer.innerHTML = "";
+};
