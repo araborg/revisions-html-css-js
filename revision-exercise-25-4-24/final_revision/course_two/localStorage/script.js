@@ -39,6 +39,12 @@ closeTaskFormBtn.addEventListener("click", () => {
         titleInput.value !== currentTask.title ||
         dateInput.value !== currentTask.date ||
         descriptionInput.value !== currentTask.description;
+
+    if (formInputContainValues && formInputValuesUpdated) {
+        confirmCloseDialog.showModal();
+    } else {
+        reset;
+    }
 });
 
 // taskForm.addEventListener("submit", (e) => {
