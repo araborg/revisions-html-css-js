@@ -18,17 +18,3 @@ const discardBtn = document.getElementById("discard-btn");
 
 // task container
 const tasksContainer = document.getElementById("tasks-container");
-
-console.log(
-    taskForm,
-    openTaskFormBtn,
-    closeTaskFormBtn,
-    addOrUpdateTaskBtn,
-    titleInput,
-    dateInput,
-    descriptionInput,
-    confirmCloseDialog,
-    cancelBtn,
-    discardBtn,
-    tasksContainer
-);
