@@ -34,6 +34,11 @@ openTaskFormBtn.addEventListener("click", () => {
 closeTaskFormBtn.addEventListener("click", () => {
     const formInputContainValues =
         titleInput.value || dateInput.value || descriptionInput.value;
+
+    const formInputValuesUpdated =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        descriptionInput.value !== currentTask.description;
 });
 
 // taskForm.addEventListener("submit", (e) => {
