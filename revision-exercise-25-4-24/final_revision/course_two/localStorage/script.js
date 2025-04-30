@@ -48,7 +48,7 @@ closeTaskFormBtn.addEventListener("click", () => {
 });
 
 const addOrUpdateTask = () => {
-    if (!titleInput.value) {
+    if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
         return;
