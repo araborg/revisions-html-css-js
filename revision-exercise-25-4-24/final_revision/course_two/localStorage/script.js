@@ -47,6 +47,14 @@ closeTaskFormBtn.addEventListener("click", () => {
     }
 });
 
+const addOrUpdateTask = () => {
+    if (!titleInput.value.trim) {
+        alert("Please provide a title");
+
+        return;
+    }
+};
+
 // taskForm.addEventListener("submit", (e) => {
 //     e.preventDefault();
 
