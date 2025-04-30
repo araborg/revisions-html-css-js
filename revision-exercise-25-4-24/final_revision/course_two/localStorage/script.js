@@ -27,6 +27,10 @@ const removeSpecialChars = (val) => {
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
 
+openTaskFormBtn.addEventListener("click", () => {
+    taskForm.classList.remove("hidden");
+});
+
 // taskForm.addEventListener("submit", (e) => {
 //     e.preventDefault();
 
