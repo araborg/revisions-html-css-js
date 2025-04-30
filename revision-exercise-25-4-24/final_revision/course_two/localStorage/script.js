@@ -23,10 +23,11 @@ const taskData = []; //store all the tasks
 const currentTask = {}; //track the state when editing and discarding tasks
 
 const removeSpecialChars = (val) => {
+    // trim() removes whitespace from both ends of this string
     return val.trim();
 };
 
-const argu = " along";
+const argu = " alo ng";
 console.log(argu.length);
 
 console.log(removeSpecialChars(argu).length);
