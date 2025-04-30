@@ -13,10 +13,22 @@ const descriptionInput = document.getElementById("description-input");
 
 // dialog btns
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
-const cancleBtn = document.getElementById("cancle-btn");
+const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-console.log(openTaskFormBtn);
+console.log(
+    taskForm,
+    openTaskFormBtn,
+    closeTaskFormBtn,
+    addOrUpdateTaskBtn,
+    titleInput,
+    dateInput,
+    descriptionInput,
+    confirmCloseDialog,
+    cancelBtn,
+    discardBtn,
+    tasksContainer
+);
