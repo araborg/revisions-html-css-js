@@ -21,3 +21,9 @@ const tasksContainer = document.getElementById("tasks-container");
 
 const taskData = []; //store all the tasks
 const currentTask = {}; //track the state when editing and discarding tasks
+
+const removeSpecialChars = (val) => {
+    return val.trim();
+};
+
+console.log(" along");
