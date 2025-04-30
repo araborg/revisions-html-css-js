@@ -27,7 +27,8 @@ const removeSpecialChars = (val) => {
     return val.trim();
 };
 
-const argu = " alo ng";
-console.log(argu.length);
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-console.log(removeSpecialChars(argu).length);
+    addOrUpdateTask();
+});
