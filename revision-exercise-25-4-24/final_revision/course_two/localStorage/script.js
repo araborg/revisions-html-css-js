@@ -24,11 +24,11 @@ const currentTask = {}; //track the state when editing and discarding tasks
 
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
-    return val.trim();
+    return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
 
-taskForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+// taskForm.addEventListener("submit", (e) => {
+//     e.preventDefault();
 
-    addOrUpdateTask();
-});
+//     addOrUpdateTask();
+// });
