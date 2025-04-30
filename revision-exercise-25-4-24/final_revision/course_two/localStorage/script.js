@@ -81,6 +81,8 @@ const addOrUpdateTask = () => {
     localStorage.setItem("data", JSON.stringify(taskData));
 
     updateTaskContainer();
+
+    console.log(updateTaskContainer());
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -96,17 +98,11 @@ const updateTaskContainer = () => {
     taskData.forEach(({ id, title, date, description }) => {
         tasksContainer.innerHTML += `
             <div class="task" id="${id}">
-                <p>
-                    <strong> Title: </strong>  ${title} 
-                </p>
+                <p><strong>Title:</strong>${title}</p>
 
-                <p>
-                    <strong> Date: </strong> ${date}
-                </p>
+                <p><strong> Date: </strong> ${date}</p>
 
-                <p>
-                    <strong> Description: </strong> ${description}
-                </p>
+                <p><strong> Description: </strong> ${description}</p>
 
                 <button 
                     onclick="editTask(this)"
