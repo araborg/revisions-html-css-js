@@ -79,6 +79,8 @@ const addOrUpdateTask = () => {
     }
 
     localStorage.setItem("data", JSON.stringify(taskData));
+
+    updateTaskContainer();
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -110,13 +112,19 @@ const updateTaskContainer = () => {
                     onclick="editTask(this)"
                     type="button"
                     class="btn"
-                />
+                >
                     Edit
                 </button>
 
-            </div>
-        
-        
+                <button
+                    onclick="deleteTask(this)"
+                    type="button"
+                    class="btn"
+                >
+                    Delete
+                </button>
+
+            </div>        
         `;
     });
 };
