@@ -60,6 +60,11 @@ const addOrUpdateTask = () => {
             .toLowerCase()
             .split(" ")
             .join("-")}-${Date.now()}`,
+
+        title: titleInput.value,
+
+        date: dateInput.value,
+        description: descriptionInput.value,
     };
 
     console.log(taskObj);
