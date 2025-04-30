@@ -67,6 +67,8 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
+    console.log(taskObj);
+
     // get d index of d task to be updated
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === currentTask.id
