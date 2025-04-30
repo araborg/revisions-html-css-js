@@ -23,7 +23,7 @@ const taskData = []; //store all the tasks
 const currentTask = {}; //track the state when editing and discarding tasks
 
 const removeSpecialChars = (val) => {
-    // trim() removes whitespace from both ends of this string
+    // trim() removes whitespace from both ends of d string
     return val.trim();
 };
 
