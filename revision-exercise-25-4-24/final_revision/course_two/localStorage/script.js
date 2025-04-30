@@ -56,7 +56,10 @@ const addOrUpdateTask = () => {
 
     // cr8 a task
     const taskObj = {
-        id: `${titleInput.value.toLowerCase().split(" ")}`,
+        id: `${titleInput.value
+            .toLowerCase()
+            .split(" ")
+            .join("-")}-${Date.now()}`,
     };
 
     console.log(taskObj);
