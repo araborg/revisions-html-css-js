@@ -26,4 +26,7 @@ const removeSpecialChars = (val) => {
     return val.trim();
 };
 
-console.log(" along");
+const argu = " along";
+console.log(argu.length);
+
+console.log(removeSpecialChars(argu).length);
