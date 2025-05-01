@@ -178,7 +178,7 @@ const updateTaskContainer = () => {
                 <p><strong>Description:</strong> ${description}</p>
 
                 <button 
-                    onclick="editTask(${id})"
+                    onclick="editTask("${id}")"
                     type="button"
                     class="btn"
                 >
