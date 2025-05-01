@@ -209,11 +209,11 @@ const reset = () => {
 };
 
 const editTask = (buttonEl) => {
-    console.log(buttonEl);
+    const currentTaskIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
 
-    // const currentTaskIndex = taskData.findIndex(
-    //     (task) => task.id === buttonEl.parentElement.id
-    // );
+    currentTask = taskData[currentTaskIndex];
 
     // console.log(currentTaskIndex);
 };
