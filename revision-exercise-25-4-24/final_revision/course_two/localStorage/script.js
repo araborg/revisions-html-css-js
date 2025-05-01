@@ -30,6 +30,8 @@ const currentTask = {};
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
+
+    // wt does ds mean? ^
 };
 
 openTaskFormBtn.addEventListener("click", () => {
