@@ -81,6 +81,7 @@ const addOrUpdateTask = () => {
         (item) => item.id === currentTask.id
     );
 
+    // d task does nt exist
     if (dataArrIndex === -1) {
         taskData.unshift(taskObj);
     } else {
