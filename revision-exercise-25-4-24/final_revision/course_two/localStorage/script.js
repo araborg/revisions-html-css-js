@@ -21,8 +21,11 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-const taskData = []; //store all the tasks
-const currentTask = {}; //track the state when editing and discarding tasks
+// store all the tasks
+const taskData = [];
+
+// track the state when editing and discarding tasks
+const currentTask = {};
 
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
