@@ -34,6 +34,7 @@ const removeSpecialChars = (val) => {
     // wt does ds mean? ^
 };
 
+// Add New Task
 openTaskFormBtn.addEventListener("click", () => {
     taskForm.classList.remove("hidden");
 });
@@ -50,7 +51,7 @@ closeTaskFormBtn.addEventListener("click", () => {
     if (formInputContainValues && formInputValuesUpdated) {
         confirmCloseDialog.showModal();
     } else {
-        reset;
+        reset();
     }
 });
 
