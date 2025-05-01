@@ -44,14 +44,21 @@ const index60 = numbers.indexOf(60); // Returns -1
 
 findIndex():
 const objects = [
-  { id: 1, name: 'Alice' },
-  { id: 2, name: 'Bob' },
-  { id: 3, name: 'Charlie' }
+    { id: 1, name: 'Alice' },
+    { id: 2, name: 'Bob' },
+    { id: 3, name: 'Charlie' }
 ];
-
+    
 // Using findIndex to find an object with a specific id
 const indexBob = objects.findIndex(obj => obj.name === 'Bob'); // Returns 1
 const indexDave = objects.findIndex(obj => obj.name === 'Dave'); // Returns -1
+
+
+
+// wt does ds mean? ^
+^ asserts that the current position is the start of input. 
+$ asserts that the current position is the end of input. 
+Both are assertions, so they don't consume any characters.
 
 
 */
@@ -89,8 +96,6 @@ let currentTask = {};
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
-
-    // wt does ds mean? ^
 };
 
 // Add New Task
