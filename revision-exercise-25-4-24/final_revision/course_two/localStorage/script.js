@@ -81,30 +81,6 @@ const addOrUpdateTask = () => {
         (item) => item.id === currentTask.id
     );
 
-    // Diff btw .findIndex() & .indexOf():
-    // indexOf and findIndex are both JavaScript array
-    // methods used to find the position of an element,
-    // but they differ in how they determine the match.
-
-    // indexOf():
-    // This method searches for a specific value directly
-    // within the array, using strict equality (===). It
-    // returns the index of the first occurrence of the value,
-    // or -1 if not found. It is suitable for arrays of
-    // primitive types (strings, numbers, booleans) or
-    // when you know the exact value you're searching
-    // for.
-
-    // findIndex():
-    // This method takes a callback function as an argument.
-    // The callback is executed for each element in the array
-    // until it returns true, indicating a match. findIndex
-    // then returns the index of that element. If the
-    // callback never returns true, it returns -1. This is
-    // useful for more complex search conditions, especially
-    // with arrays of objects or when you need to check
-    // properties of elements.
-
     // d task does nt exist
     if (currentTaskIndex === -1) {
         // new task will be place as d 1st task
