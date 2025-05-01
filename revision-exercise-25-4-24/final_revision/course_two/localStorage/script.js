@@ -56,6 +56,7 @@ closeTaskFormBtn.addEventListener("click", () => {
 });
 
 const addOrUpdateTask = () => {
+    // if d entered value is an empty str
     if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
