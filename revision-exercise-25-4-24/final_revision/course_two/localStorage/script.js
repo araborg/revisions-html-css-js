@@ -216,5 +216,9 @@ const editTask = (buttonEl) => {
 
     currentTask = taskData[currentTaskIndex];
 
+    titleInput.value = currentTask.title;
+    dateInput.value = currentTask.dateInput;
+    descriptionInput.value = currentTask.description;
+
     // console.log(currentTaskIndex);
 };
