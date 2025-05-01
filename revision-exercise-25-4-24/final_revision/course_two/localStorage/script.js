@@ -81,11 +81,14 @@ const addOrUpdateTask = () => {
         (item) => item.id === currentTask.id
     );
 
+    // Diff btw .findIndex() & .indexOf()
+
     // d task does nt exist
     if (currentTaskIndex === -1) {
         // new task will be place as d 1st task
         taskData.unshift(taskObj);
     } else {
+        // if dre is a current Task
         taskData[currentTaskIndex] = taskObj;
     }
 
