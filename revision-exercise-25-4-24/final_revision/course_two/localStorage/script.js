@@ -83,7 +83,7 @@ const tasksContainer = document.getElementById("tasks-container");
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 // track the state when editing and discarding tasks
-const currentTask = {};
+let currentTask = {};
 // currentTask is populated wn we want to edit d task
 
 const removeSpecialChars = (val) => {
