@@ -32,6 +32,27 @@ Return Value        Index of the element or -1          Index of the first match
 Suitable for        Primitive types or known values     Objects or when specific conditions are needed
 
 
+Example:
+indexOf():
+const numbers = [10, 20, 30, 40, 50];
+
+// Using indexOf to find a specific number
+const index20 = numbers.indexOf(20); // Returns 1
+const index60 = numbers.indexOf(60); // Returns -1
+
+
+
+findIndex():
+const objects = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' },
+  { id: 3, name: 'Charlie' }
+];
+
+// Using findIndex to find an object with a specific id
+const indexBob = objects.findIndex(obj => obj.name === 'Bob'); // Returns 1
+const indexDave = objects.findIndex(obj => obj.name === 'Dave'); // Returns -1
+
 
 */
 
