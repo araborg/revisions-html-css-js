@@ -83,6 +83,7 @@ const addOrUpdateTask = () => {
 
     // d task does nt exist
     if (dataArrIndex === -1) {
+        // new task will be place as d 1st task
         taskData.unshift(taskObj);
     } else {
         taskData[dataArrIndex] = taskObj;
