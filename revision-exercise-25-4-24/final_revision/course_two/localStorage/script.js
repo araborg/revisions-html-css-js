@@ -165,20 +165,52 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 // update UI
+// const updateTaskContainer = () => {
+//     tasksContainer.innerHTML = "";
+
+//     taskData.forEach(({ id, title, date, description }) => {
+//         tasksContainer.innerHTML += `
+//             <div class="task" id="${id}">
+//                 <p><strong>Title:</strong> ${title}</p>
+
+//                 <p><strong>Date:</strong> ${date}</p>
+
+//                 <p><strong>Description:</strong> ${description}</p>
+
+//                 <button
+//                     onclick="editTask(this)"
+//                     type="button"
+//                     class="btn"
+//                 >
+//                     Edit
+//                 </button>
+
+//                 <button
+//                     onclick="deleteTask(this)"
+//                     type="button"
+//                     class="btn"
+//                 >
+//                     Delete
+//                 </button>
+//             </div>
+//         `;
+//     });
+// };
+
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
 
-    taskData.forEach(({ id, title, date, description }) => {
+    taskData.forEach((task) => {
         tasksContainer.innerHTML += `
-            <div class="task" id="${id}">
-                <p><strong>Title:</strong> ${title}</p>
+            <div class="task" id="${task.id}">
+                <p><strong>Title:</strong> ${task.title}</p>
 
-                <p><strong>Date:</strong> ${date}</p>
+                <p><strong>Date:</strong> ${task.date}</p>
 
-                <p><strong>Description:</strong> ${description}</p>
+                <p><strong>Description:</strong> ${task.description}</p>
 
                 <button 
-                    onclick="editTask("${id}")"
+                    onclick="editTask(${task.id})"
                     type="button"
                     class="btn"
                 >
