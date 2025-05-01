@@ -11,8 +11,10 @@ const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
 const descriptionInput = document.getElementById("description-input");
 
-// dialog btns
+// dialog
 const confirmCloseDialog = document.getElementById("confirm-close-dialog");
+
+// dialog btns
 const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
