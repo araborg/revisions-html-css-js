@@ -80,7 +80,7 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 // store all the tasks
-const taskData = [];
+const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 // track the state when editing and discarding tasks
 const currentTask = {};
