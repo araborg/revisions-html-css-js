@@ -25,6 +25,12 @@ with arrays of objects or when you need to check
 properties of elements.
 
 
+Feature                 indexOf()                       findIndex()
+Search Type         Strict equality (===)               Callback function with custom logic
+Use Case            Simple value lookup                 Complex conditions, object properties
+Return Value        Index of the element or -1          Index of the first matching element or -1
+Suitable for        Primitive types or known values     Objects or when specific conditions are needed
+
 
 
 */
