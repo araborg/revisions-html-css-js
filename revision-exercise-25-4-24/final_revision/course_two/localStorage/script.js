@@ -84,6 +84,7 @@ const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 // track the state when editing and discarding tasks
 const currentTask = {};
+// currentTask is populated wn we want to edit d task
 
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
