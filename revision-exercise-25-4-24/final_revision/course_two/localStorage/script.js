@@ -77,16 +77,16 @@ const addOrUpdateTask = () => {
     };
 
     // get d index of d task to be updated
-    const dataArrIndex = taskData.findIndex(
+    const currentTaskIndex = taskData.findIndex(
         (item) => item.id === currentTask.id
     );
 
     // d task does nt exist
-    if (dataArrIndex === -1) {
+    if (currentTaskIndex === -1) {
         // new task will be place as d 1st task
         taskData.unshift(taskObj);
     } else {
-        taskData[dataArrIndex] = taskObj;
+        taskData[currentTaskIndex] = taskObj;
     }
 
     localStorage.setItem("data", JSON.stringify(taskData));
