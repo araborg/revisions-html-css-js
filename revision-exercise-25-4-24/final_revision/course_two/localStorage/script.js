@@ -139,7 +139,7 @@ const addOrUpdateTask = () => {
         (task) => task.id === currentTask.id
     );
 
-    console.log(currentTask);
+    console.log(currentTaskIndex);
 
     // d task does nt exist
     if (currentTaskIndex === -1) {
