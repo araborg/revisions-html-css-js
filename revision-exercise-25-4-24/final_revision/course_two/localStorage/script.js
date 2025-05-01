@@ -75,8 +75,6 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
-    console.log(taskObj);
-
     // get d index of d task to be updated
     const dataArrIndex = taskData.findIndex(
         (item) => item.id === currentTask.id
@@ -136,5 +134,6 @@ const updateTaskContainer = () => {
 };
 
 const reset = () => {
+    // d form 4: title, date, description inputs
     taskForm.classList.toggle("hidden");
 };
