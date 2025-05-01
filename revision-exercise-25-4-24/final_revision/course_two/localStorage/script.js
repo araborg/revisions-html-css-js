@@ -158,10 +158,9 @@ const addOrUpdateTask = () => {
 
     localStorage.setItem("data", JSON.stringify(taskData));
 
+    // Update UI
     updateTaskContainer();
     reset();
-
-    // console.log(updateTaskContainer());
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -221,9 +220,9 @@ const editTask = (buttonEl) => {
 
     currentTask = taskData[currentTaskIndex];
 
-    titleInput.value = currentTask.title;
-    dateInput.value = currentTask.dateInput;
-    descriptionInput.value = currentTask.description;
+    // titleInput.value = currentTask.title;
+    // dateInput.value = currentTask.dateInput;
+    // descriptionInput.value = currentTask.description;
 
     // updateUI
     addOrUpdateTaskBtn.innerText = "Update Task";
