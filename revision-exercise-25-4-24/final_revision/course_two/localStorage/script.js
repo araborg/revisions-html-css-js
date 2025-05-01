@@ -178,7 +178,7 @@ const updateTaskContainer = () => {
                 <p><strong>Description:</strong> ${description}</p>
 
                 <button 
-                    onclick="editTask(this)"
+                    onclick="editTask(${id})"
                     type="button"
                     class="btn"
                 >
@@ -200,4 +200,12 @@ const updateTaskContainer = () => {
 const reset = () => {
     // d form 4: title, date, description inputs
     taskForm.classList.toggle("hidden");
+};
+
+const editTask = (buttonEl) => {
+    const currentTaskIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
+
+    console.log(currentTaskIndex);
 };
