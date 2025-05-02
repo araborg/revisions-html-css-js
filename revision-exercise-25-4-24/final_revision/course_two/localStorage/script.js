@@ -281,3 +281,9 @@ const deleteTask = (buttonEl) => {
 };
 
 cancelBtn.addEventListener("click", dialogBox.close());
+
+discardBtn.addEventListener("click", () => {
+    dialogBox.close();
+
+    reset();
+});
