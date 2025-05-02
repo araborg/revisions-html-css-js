@@ -215,6 +215,9 @@ const updateTaskContainer = () => {
 
 const reset = () => {
     // d form 4: title, date, description inputs
+
+    addOrUpdateTaskBtn.textContent = "Add Task";
+
     taskForm.classList.toggle("hidden");
 };
 
@@ -225,6 +228,7 @@ const editTask = (buttonEl) => {
 
     currentTask = taskData[currentTaskIndex];
 
+    // update every other things except d id
     titleInput.value = currentTask.title;
     dateInput.value = currentTask.dateInput;
     descriptionInput.value = currentTask.description;
