@@ -66,9 +66,14 @@ Both are assertions, so they don't consume any characters.
 // form
 const taskForm = document.getElementById("task-form");
 
-// btns
+// btns:
+// Add New Task Btn
 const openTaskFormBtn = document.getElementById("open-task-form-btn");
+
+// close form svg
 const closeTaskFormBtn = document.getElementById("close-task-form-btn");
+
+// Add Task or Update Task Btn
 const addOrUpdateTaskBtn = document.getElementById("add-or-update-task-btn");
 
 // inputs
@@ -145,8 +150,6 @@ const addOrUpdateTask = () => {
         (task) => task.id === currentTask.id
     );
 
-    console.log(currentTaskIndex);
-
     // d task does nt exist
     if (currentTaskIndex === -1) {
         // new task will be place as d 1st task
@@ -154,6 +157,8 @@ const addOrUpdateTask = () => {
     } else {
         // if dre is a current Task
         taskData[currentTaskIndex] = taskObj;
+
+        console.log(currentTaskIndex);
     }
 
     localStorage.setItem("data", JSON.stringify(taskData));
@@ -220,9 +225,9 @@ const editTask = (buttonEl) => {
 
     currentTask = taskData[currentTaskIndex];
 
-    // titleInput.value = currentTask.title;
-    // dateInput.value = currentTask.dateInput;
-    // descriptionInput.value = currentTask.description;
+    titleInput.value = currentTask.title;
+    dateInput.value = currentTask.dateInput;
+    descriptionInput.value = currentTask.description;
 
     // updateUI
     addOrUpdateTaskBtn.innerText = "Update Task";
