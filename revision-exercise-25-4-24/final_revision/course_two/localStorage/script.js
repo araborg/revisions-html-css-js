@@ -89,10 +89,10 @@ Diff btw dse?
 
 
 Diff btw JSON.parse() and JSON.stringify
-JSON.parse()
+JSON.parse():
 
 
-JSON.stringify()
+JSON.stringify():
 
 
 
@@ -231,11 +231,6 @@ const reset = () => {
     currentTask = {}; // Y?
 };
 
-// show d task if dre are any
-if (taskData.length) {
-    updateTaskContainer();
-}
-
 const editTask = (buttonEl) => {
     const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
@@ -273,6 +268,11 @@ const deleteTask = (buttonEl) => {
 
     localStorage.setItem("data", JSON.stringify(taskData));
 };
+
+// show d tasks if dre are any
+if (taskData.length) {
+    updateTaskContainer();
+}
 
 // btns:
 openTaskFormBtn.addEventListener("click", () => {
