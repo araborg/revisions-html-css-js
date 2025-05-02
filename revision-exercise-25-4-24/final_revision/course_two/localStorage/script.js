@@ -251,15 +251,17 @@ const editTask = (buttonEl) => {
 };
 
 const deleteTask = (buttonEl) => {
-    const currentTaskIndex = taskData.findIndex(
+    const currentTaskIndex = taskData.filter(
         (task) => task.id === buttonEl.parentElement.id
     );
 
     // console.log(buttonEl.parentElement.id); // returns an id
 
-    buttonEl.parentElement.remove();
+    console.log(currentTaskIndex[0]);
 
-    taskData.splice(currentTaskIndex, 1);
+    // buttonEl.parentElement.remove();
 
-    localStorage.setItem("data", JSON.stringify(taskData));
+    // taskData.splice(currentTaskIndex, 1);
+
+    // localStorage.setItem("data", JSON.stringify(taskData));
 };
