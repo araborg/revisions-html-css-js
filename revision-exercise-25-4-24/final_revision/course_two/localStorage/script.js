@@ -73,7 +73,7 @@ const openTaskFormBtn = document.getElementById("open-task-form-btn");
 // close form svg
 const closeTaskFormBtn = document.getElementById("close-task-form-btn");
 
-// Add Task or Update Task Btn
+// Add Task or Update Task Btn; eventListener() was nt added to it but d form.
 const addOrUpdateTaskBtn = document.getElementById("add-or-update-task-btn");
 
 // inputs
