@@ -111,7 +111,7 @@ const removeSpecialChars = (val) => {
 };
 
 const addOrUpdateTask = () => {
-    // if d entered value is an empty str, ""
+    // if d entered value is a space(s), " "
     if (!titleInput.value.trim()) {
         alert("Please provide a title");
 
