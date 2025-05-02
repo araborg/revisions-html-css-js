@@ -251,8 +251,8 @@ const deleteTask = (buttonEl) => {
 
 // btns:
 
-// Add New Task
 openTaskFormBtn.addEventListener("click", () => {
+    // Add New Task
     taskForm.classList.remove("hidden");
 });
 
