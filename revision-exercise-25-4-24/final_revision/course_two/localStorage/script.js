@@ -69,6 +69,25 @@ trim():
 trim() removes whitespace from both ends of d string
 
 
+Diff btw dse?
+<button 
+    onclick="editTask(${task.id})" 
+    type="button" 
+    class="btn"
+>
+    Edit
+</button>
+
+<button 
+    onclick="editTask(this)" 
+    type="button" 
+    class="btn"
+>
+    Edit
+</button>
+
+
+
 Diff btw JSON.parse() and JSON.stringify
 JSON.parse()
 
