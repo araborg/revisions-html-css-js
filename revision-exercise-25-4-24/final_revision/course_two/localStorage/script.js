@@ -137,7 +137,7 @@ const addOrUpdateTask = () => {
         (task) => task.id === currentTask.id
     );
 
-    // d task does nt exist
+    // If d task does nt exist
     if (currentTaskIndex === -1) {
         // new task will be place as d 1st task
         taskData.unshift(taskObj);
