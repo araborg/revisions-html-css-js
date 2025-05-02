@@ -244,3 +244,11 @@ const editTask = (buttonEl) => {
 
     taskForm.classList.toggle("hidden");
 };
+
+const deleteTask = (buttonEl) => {
+    const currentTaskIndex = taskData.findIndex(
+        (task) => task.id === buttonEl.parentElement.id
+    );
+
+    console.log(buttonEl.parentElement.id);
+};
