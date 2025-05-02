@@ -96,9 +96,7 @@ JSON.stringify():
 
 
 
-*/
 
-///*
 // form
 const taskForm = document.getElementById("task-form");
 
@@ -325,4 +323,4 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
-//*/
+*/
