@@ -100,9 +100,8 @@ const tasksContainer = document.getElementById("tasks-container");
 // store all the tasks
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
-// track the state when editing and discarding tasks
-// currentTask is populated wn we want to edit d task
-let currentTask = {};
+// ds tracks the state when editing and discarding tasks
+let currentTask = {}; //  populated task is edited
 
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
