@@ -256,4 +256,10 @@ const deleteTask = (buttonEl) => {
     );
 
     // console.log(buttonEl.parentElement.id); // returns an id
+
+    buttonEl.parentElement.remove();
+
+    taskData.splice(currentTaskIndex, 1);
+
+    localStorage.setItem("data", JSON.stringify(taskData));
 };
