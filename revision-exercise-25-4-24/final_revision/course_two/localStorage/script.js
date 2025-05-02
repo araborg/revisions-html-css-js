@@ -35,7 +35,7 @@ Return Value        Index of the element or -1          Index of the first match
 Suitable for        Primitive types or known values     Objects or when specific conditions are needed
 
 
-Example:
+Examples:
 indexOf():
 const numbers = [10, 20, 30, 40, 50];
 
@@ -61,6 +61,7 @@ const indexDave = objects.findIndex(obj => obj.name === 'Dave'); // Returns -1
 // wt does ds mean? ^
 ^ asserts that the current position is the start of input. 
 $ asserts that the current position is the end of input. 
+
 Both are assertions, so they don't consume any characters.
 
 
