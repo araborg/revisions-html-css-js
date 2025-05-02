@@ -218,7 +218,13 @@ const reset = () => {
 
     addOrUpdateTaskBtn.textContent = "Add Task";
 
+    titleInput.value = "";
+    dateInput.value = "";
+    descriptionInput.value = "";
+
     taskForm.classList.toggle("hidden");
+
+    currentTask = {};
 };
 
 const editTask = (buttonEl) => {
