@@ -317,6 +317,9 @@ taskForm.addEventListener("submit", (e) => {
 cancelBtn.addEventListener("click", dialogBox.close());
 
 discardBtn.addEventListener("click", () => {
+    // If we r to discard, d dialog box must
+    // disappear and also reset d form
+
     dialogBox.close();
 
     reset();
