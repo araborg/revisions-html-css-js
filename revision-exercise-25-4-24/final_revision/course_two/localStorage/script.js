@@ -144,6 +144,7 @@ const addOrUpdateTask = () => {
 
     // Update UI
     updateTaskContainer();
+
     reset();
 };
 
