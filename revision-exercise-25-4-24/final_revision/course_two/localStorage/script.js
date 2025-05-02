@@ -21,10 +21,11 @@ The callback is executed for each element in the array
 until it returns true, indicating a match. 
 
 findIndex then returns the index of that element. If 
-the callback never returns true, it returns -1. This 
-is useful for more complex search conditions, especially
-with arrays of objects or when you need to check
-properties of elements.
+the callback never returns true, it returns -1.
+
+This is useful for more complex search conditions, 
+especially with arrays of objects or when you need 
+to check properties of elements.
 
 
 Feature                 indexOf()                       findIndex()
