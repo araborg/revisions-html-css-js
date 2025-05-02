@@ -133,9 +133,9 @@ const addOrUpdateTask = () => {
     };
 
     // get d index of d task to be updated
-    // const currentTaskIndex = taskData.findIndex(
-    //     (task) => task.id === currentTask.id
-    // );
+    const currentTaskIndex = taskData.findIndex(
+        (task) => task.id === currentTask.id
+    );
 
     // d task does nt exist
     if (currentTaskIndex === -1) {
