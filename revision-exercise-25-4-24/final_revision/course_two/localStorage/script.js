@@ -227,6 +227,11 @@ const reset = () => {
     currentTask = {}; // Y?
 };
 
+// show d task if dre are any
+if (taskData.length) {
+    updateTaskContainer();
+}
+
 const editTask = (buttonEl) => {
     const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
@@ -250,5 +255,5 @@ const deleteTask = (buttonEl) => {
         (task) => task.id === buttonEl.parentElement.id
     );
 
-    console.log(buttonEl.parentElement.id);
+    // console.log(buttonEl.parentElement.id); // returns an id
 };
