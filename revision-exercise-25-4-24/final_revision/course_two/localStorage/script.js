@@ -142,7 +142,7 @@ const addOrUpdateTask = () => {
         // new task will be place as d 1st task
         taskData.unshift(taskObj);
     } else {
-        // if dre is a current Task
+        // if dre is a current Task, ds mks d edit possible
         taskData[currentTaskIndex] = taskObj;
     }
 
