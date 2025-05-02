@@ -1,6 +1,6 @@
 /*
-
 Diff btw .findIndex() & .indexOf():
+
 indexOf and findIndex are both JavaScript array
 methods used to find the position of an element,
 but they differ in how they determine the match.
