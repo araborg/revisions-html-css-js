@@ -65,6 +65,9 @@ $ asserts that the current position is the end of input.
 Both are assertions, so they don't consume any characters.
 
 
+trim():
+trim() removes whitespace from both ends of d string
+
 */
 
 ///*
@@ -104,7 +107,6 @@ const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {}; //  populated task is edited
 
 const removeSpecialChars = (val) => {
-    // trim() removes whitespace from both ends of d string
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
 
