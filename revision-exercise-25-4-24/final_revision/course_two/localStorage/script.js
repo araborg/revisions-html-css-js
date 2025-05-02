@@ -198,10 +198,6 @@ const updateTaskContainer = () => {
     });
 };
 
-// Diff btw dse?
-// <button onclick="editTask(${task.id})" type="button" class="btn">Edit</button>
-// <button onclick="editTask(this)" type="button" class="btn">Edit</button>
-
 const reset = () => {
     // d form 4: title, date, description inputs
 
