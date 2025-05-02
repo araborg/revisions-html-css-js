@@ -118,7 +118,7 @@ const addOrUpdateTask = () => {
         return;
     }
 
-    // cr8 a task
+    // cr8 a task obj
     const taskObj = {
         id: `${titleInput.value
             .toLowerCase()
@@ -133,9 +133,15 @@ const addOrUpdateTask = () => {
     };
 
     // get d index of d task to be updated
-    const currentTaskIndex = taskData.findIndex(
+    // const currentTaskIndex = taskData.findIndex(
+    //     (task) => task.id === currentTask.id
+    // );
+
+    const currentTaskIndex = taskData.filter(
         (task) => task.id === currentTask.id
     );
+
+    console.log(currentTaskIndex);
 
     // d task does nt exist
     if (currentTaskIndex === -1) {
