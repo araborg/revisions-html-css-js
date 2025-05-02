@@ -259,18 +259,23 @@ const editTask = (buttonEl) => {
     taskForm.classList.toggle("hidden");
 };
 
+// getting task id using filter()
+// const currentTaskIndex = taskData.filter(
+//     (task) => task.id === buttonEl.parentElement.id
+// );
+
+// console.log(currentTaskIndex[0].id);
+
 const deleteTask = (buttonEl) => {
-    const currentTaskIndex = taskData.filter(
+    const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
     );
 
     // console.log(buttonEl.parentElement.id); // returns an id
 
-    console.log(currentTaskIndex[0]);
+    buttonEl.parentElement.remove();
 
-    // buttonEl.parentElement.remove();
+    taskData.splice(currentTaskIndex, 1);
 
-    // taskData.splice(currentTaskIndex, 1);
-
-    // localStorage.setItem("data", JSON.stringify(taskData));
+    localStorage.setItem("data", JSON.stringify(taskData));
 };
