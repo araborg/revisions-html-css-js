@@ -232,6 +232,7 @@ const reset = () => {
 };
 
 const editTask = (buttonEl) => {
+    // get d index using btn ppties
     const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
     );
