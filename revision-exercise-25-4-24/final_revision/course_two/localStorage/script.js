@@ -264,8 +264,8 @@ const deleteTask = (buttonEl) => {
 
     // console.log(buttonEl.parentElement.id); // returns an id
 
-    // remove ds ppties
-    // buttonEl.parentElement.remove();
+    // remove ds ppties and update d UI
+    buttonEl.parentElement.remove();
 
     taskData.splice(currentTaskIndex, 1);
 
