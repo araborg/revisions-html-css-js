@@ -111,11 +111,15 @@ openTaskFormBtn.addEventListener("click", () => {
 
 closeTaskFormBtn.addEventListener("click", () => {
     const formInputContainValues =
-        titleInput.value || dateInput.value || descriptionInput.value;
+        titleInput.value ||
+        dateInput.value ||
+        priceInput.value ||
+        descriptionInput.value;
 
     const formInputValuesUpdated =
         titleInput.value !== currentTask.title ||
         dateInput.value !== currentTask.date ||
+        priceInput.value !== currentTask.price ||
         descriptionInput.value !== currentTask.description;
 
     if (formInputContainValues && formInputValuesUpdated) {
@@ -180,14 +184,16 @@ taskForm.addEventListener("submit", (e) => {
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
 
-    taskData.forEach(({ id, title, date, description }) => {
+    taskData.forEach(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
             <div class="task" id="${id}">
                 <p><strong>Title:</strong> ${title}</p>
 
                 <p><strong>Date:</strong> ${date}</p>
 
-                <p><strong>Description:</strong> ${description}</p>
+                <p><strong>Price:</strong> ${price * 5}</p>
+                
+                <p><strong>Description:</strong> ${description}</p> 
 
                 <button
                     onclick="editTask(this)"
@@ -243,7 +249,8 @@ const editTask = (buttonEl) => {
 
     // update every other things except d id
     titleInput.value = currentTask.title;
-    dateInput.value = currentTask.dateInput;
+    dateInput.value = currentTask.date;
+    priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
 
     // updateUI
