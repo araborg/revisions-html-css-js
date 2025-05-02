@@ -280,9 +280,9 @@ if (taskData.length) {
 // btns:
 openTaskFormBtn.addEventListener("click", () => {
     // Add New Task
-    // taskForm.classList.remove("hidden");
+    taskForm.classList.remove("hidden");
 
-    taskForm.classList.toggle("hidden");
+    // taskForm.classList.toggle("hidden");
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
@@ -292,12 +292,15 @@ closeTaskFormBtn.addEventListener("click", () => {
         priceInput.value ||
         descriptionInput.value;
 
+    // wn d value changes due to edit
     const formInputValuesUpdated =
         titleInput.value !== currentTask.title ||
         dateInput.value !== currentTask.date ||
         priceInput.value !== currentTask.price ||
         descriptionInput.value !== currentTask.description;
 
+    // d only reason d form will not close is if dse,
+    // formInputContainValues && formInputValuesUpdated, r true
     if (formInputContainValues && formInputValuesUpdated) {
         dialogBox.showModal();
     } else {
