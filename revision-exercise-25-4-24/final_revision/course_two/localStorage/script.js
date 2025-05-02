@@ -272,7 +272,7 @@ const deleteTask = (buttonEl) => {
     localStorage.setItem("data", JSON.stringify(taskData));
 };
 
-// show d tasks if dre are any
+// show d tasks if dre are any at d begining of opening d app
 if (taskData.length) {
     updateTaskContainer();
 }
