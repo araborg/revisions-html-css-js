@@ -111,6 +111,7 @@ h1 {
 .task-form-label,
 #title-input,
 #date-input,
+#price-input,
 #description-input {
     display: block;
 }
@@ -123,6 +124,7 @@ h1 {
 
 #title-input,
 #date-input,
+#price-input,
 #description-input {
     width: 100%;
     margin-bottom: 10px;
@@ -171,12 +173,14 @@ h1 {
     }
 
     #title-input,
+    #price-input,
     #date-input {
         height: 2rem;
     }
 
     #title-input,
     #date-input,
+    #price-input,
     #description-input {
         padding: 5px;
         margin-bottom: 20px;

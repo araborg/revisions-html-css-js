@@ -79,6 +79,7 @@ const addOrUpdateTaskBtn = document.getElementById("add-or-update-task-btn");
 // inputs
 const titleInput = document.getElementById("title-input");
 const dateInput = document.getElementById("date-input");
+const priceInput = document.getElementById("price-input");
 const descriptionInput = document.getElementById("description-input");
 
 // dialog
@@ -142,6 +143,7 @@ const addOrUpdateTask = () => {
         title: titleInput.value,
 
         date: dateInput.value,
+        price: priceInput.value,
         description: descriptionInput.value,
     };
 
