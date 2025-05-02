@@ -280,7 +280,9 @@ if (taskData.length) {
 // btns:
 openTaskFormBtn.addEventListener("click", () => {
     // Add New Task
-    taskForm.classList.remove("hidden");
+    // taskForm.classList.remove("hidden");
+
+    taskForm.classList.toggle("hidden");
 });
 
 closeTaskFormBtn.addEventListener("click", () => {
