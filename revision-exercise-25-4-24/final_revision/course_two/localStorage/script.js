@@ -323,4 +323,19 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
+
+Revision
+
+
+
 */
+
+const addOrUpdateTask = () => {};
+
+const updateTaskContainer = () => {};
+
+const reset = () => {};
+
+const editTask = () => {};
+
+const deleteTask = () => {};
