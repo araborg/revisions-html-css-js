@@ -104,31 +104,6 @@ const removeSpecialChars = (val) => {
     return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 };
 
-// Add New Task
-openTaskFormBtn.addEventListener("click", () => {
-    taskForm.classList.remove("hidden");
-});
-
-closeTaskFormBtn.addEventListener("click", () => {
-    const formInputContainValues =
-        titleInput.value ||
-        dateInput.value ||
-        priceInput.value ||
-        descriptionInput.value;
-
-    const formInputValuesUpdated =
-        titleInput.value !== currentTask.title ||
-        dateInput.value !== currentTask.date ||
-        priceInput.value !== currentTask.price ||
-        descriptionInput.value !== currentTask.description;
-
-    if (formInputContainValues && formInputValuesUpdated) {
-        dialogBox.showModal();
-    } else {
-        reset();
-    }
-});
-
 const addOrUpdateTask = () => {
     // if d entered value is an empty str
     if (!titleInput.value.trim()) {
@@ -173,12 +148,6 @@ const addOrUpdateTask = () => {
     updateTaskContainer();
     reset();
 };
-
-taskForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    addOrUpdateTask();
-});
 
 // update UI
 const updateTaskContainer = () => {
@@ -279,6 +248,39 @@ const deleteTask = (buttonEl) => {
 
     localStorage.setItem("data", JSON.stringify(taskData));
 };
+
+// btns:
+
+// Add New Task
+openTaskFormBtn.addEventListener("click", () => {
+    taskForm.classList.remove("hidden");
+});
+
+closeTaskFormBtn.addEventListener("click", () => {
+    const formInputContainValues =
+        titleInput.value ||
+        dateInput.value ||
+        priceInput.value ||
+        descriptionInput.value;
+
+    const formInputValuesUpdated =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        priceInput.value !== currentTask.price ||
+        descriptionInput.value !== currentTask.description;
+
+    if (formInputContainValues && formInputValuesUpdated) {
+        dialogBox.showModal();
+    } else {
+        reset();
+    }
+});
+
+taskForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    addOrUpdateTask();
+});
 
 cancelBtn.addEventListener("click", dialogBox.close());
 
