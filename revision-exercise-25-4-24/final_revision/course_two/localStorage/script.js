@@ -96,8 +96,8 @@ const tasksContainer = document.getElementById("tasks-container");
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 
 // track the state when editing and discarding tasks
-let currentTask = {};
 // currentTask is populated wn we want to edit d task
+let currentTask = {};
 
 const removeSpecialChars = (val) => {
     // trim() removes whitespace from both ends of d string
@@ -138,8 +138,6 @@ const addOrUpdateTask = () => {
     } else {
         // if dre is a current Task
         taskData[currentTaskIndex] = taskObj;
-
-        console.log(currentTaskIndex);
     }
 
     localStorage.setItem("data", JSON.stringify(taskData));
@@ -185,10 +183,8 @@ const updateTaskContainer = () => {
 };
 
 // Diff btw dse?
-{
-    /* <button onclick="editTask(${task.id})" type="button" class="btn">Edit</button> */
-    /* <button onclick="editTask(this)" type="button" class="btn">Edit</button> */
-}
+/* <button onclick="editTask(${task.id})" type="button" class="btn">Edit</button> */
+/* <button onclick="editTask(this)" type="button" class="btn">Edit</button> */
 
 const reset = () => {
     // d form 4: title, date, description inputs
@@ -233,8 +229,6 @@ const editTask = (buttonEl) => {
 //     (task) => task.id === buttonEl.parentElement.id
 // );
 
-// console.log(currentTaskIndex[0].id);
-
 const deleteTask = (buttonEl) => {
     const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
@@ -250,7 +244,6 @@ const deleteTask = (buttonEl) => {
 };
 
 // btns:
-
 openTaskFormBtn.addEventListener("click", () => {
     // Add New Task
     taskForm.classList.remove("hidden");
