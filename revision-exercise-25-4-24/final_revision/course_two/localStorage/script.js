@@ -257,13 +257,15 @@ const editTask = (buttonEl) => {
 // );
 
 const deleteTask = (buttonEl) => {
+    // get d index using btn ppties
     const currentTaskIndex = taskData.findIndex(
         (task) => task.id === buttonEl.parentElement.id
     );
 
     // console.log(buttonEl.parentElement.id); // returns an id
 
-    buttonEl.parentElement.remove();
+    // remove ds ppties
+    // buttonEl.parentElement.remove();
 
     taskData.splice(currentTaskIndex, 1);
 
