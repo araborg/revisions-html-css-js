@@ -83,7 +83,7 @@ const priceInput = document.getElementById("price-input");
 const descriptionInput = document.getElementById("description-input");
 
 // dialog
-const confirmCloseDialog = document.getElementById("confirm-close-dialog");
+const dialogBox = document.getElementById("confirm-close-dialog");
 
 // dialog btns
 const cancelBtn = document.getElementById("cancel-btn");
@@ -123,7 +123,7 @@ closeTaskFormBtn.addEventListener("click", () => {
         descriptionInput.value !== currentTask.description;
 
     if (formInputContainValues && formInputValuesUpdated) {
-        confirmCloseDialog.showModal();
+        dialogBox.showModal();
     } else {
         reset();
     }
@@ -279,3 +279,5 @@ const deleteTask = (buttonEl) => {
 
     localStorage.setItem("data", JSON.stringify(taskData));
 };
+
+cancelBtn.addEventListener("click", dialogBox.close());
