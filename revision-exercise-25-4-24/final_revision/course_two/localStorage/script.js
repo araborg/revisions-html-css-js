@@ -350,7 +350,7 @@ const dialogBox = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
-const tasks = [];
+const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 const currentTask = {};
 
 addNewTask.addEventListener("click", () => {
@@ -388,11 +388,13 @@ const addOrUpdateTask = () => {
         tasks[taskIndex] = taskObj;
     }
 
-    localStorage.setItem(JSON.stringify("addedTasks", tasks));
+    localStorage.setItem("addedTasks", JSON.stringify(tasks));
     reset();
 
     // console.log(tasks);
 };
+
+console.log(tasks);
 
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
