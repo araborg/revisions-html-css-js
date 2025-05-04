@@ -378,9 +378,13 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
-    console.log(taskObj);
+    const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
 
-    // console.log(titleInput.value);
+    // console.log(taskIndex === true);
+
+    if (taskIndex === -1) {
+        console.log("Hello");
+    }
 };
 
 taskForm.addEventListener("submit", (e) => {
