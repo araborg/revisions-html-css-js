@@ -1,3 +1,4 @@
+/*
 const myFavoriteFootballTeam = {
     team: "Argentina",
 
@@ -192,6 +193,7 @@ const myFavoriteFootballTeam = {
 };
 
 Object.freeze(myFavoriteFootballTeam);
+*/
 
 // Showing d effect of Object.freeze():
 
@@ -231,8 +233,6 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
-// const { name, position, number, nickname } = players;
-
 teamEl.textContent = team;
 sportEl.textContent = sport;
 yearEl.textContent = year;
@@ -240,6 +240,8 @@ headCoachEl.textContent = coachName;
 
 const showPlayerCards = () => {
     // myFavoriteFootballTeam.map(player)
+
+    players.map(({ name, position, number, nickname, isCaptain }) => ``);
 };
 
 selectPlayerEl.addEventListener("change", () => {
