@@ -337,7 +337,7 @@ const addNewTask = document.getElementById("open-task-form-btn");
 const closeBtn = document.getElementById("close-task-form-btn");
 const minusBtn = document.getElementById("minus-btn");
 const plusBtn = document.getElementById("plus-btn");
-const addTask = document.getElementById("add-or-update-task-btn");
+const addTaskBtn = document.getElementById("add-or-update-task-btn");
 
 // inputs
 const titleInput = document.getElementById("title-input");
@@ -357,15 +357,19 @@ addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
-// return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
-
 const removeSpecialChars = (str) => {
     const regex = /[^A-Za-z0-9\-\s]/g;
 
     return str.trim().replace(regex, "");
 };
 
-const addOrUpdateTask = () => {};
+const addOrUpdateTask = () => {
+    // if(titleInput.value)
+
+    console.log(titleInput.value);
+};
+
+addTaskBtn.addEventListener("submit", () => {});
 
 const updateTaskContainer = () => {};
 
