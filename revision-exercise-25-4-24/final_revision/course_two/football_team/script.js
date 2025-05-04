@@ -219,7 +219,19 @@ Object.freeze(myFavoriteFootballTeam);
 // console.log(myFavoriteFootballTeam.players);
 
 // team stats
+const team = document.getElementById("team");
+const sport = document.getElementById("sport");
+const year = document.getElementById("year");
+const headCoach = document.getElementById("head-coach");
 
-const setPlayerCards = () => {};
+const selectPlayerEl = document.getElementById("players");
 
-playersSelectEl.addEventListener();
+const playerCards = document.getElementById("player-cards");
+
+// const setPlayerCards = () => {};
+
+const showPlayerCards = () => {};
+
+// playersSelectEl.addEventListener();
+
+// console.log(team, sport, year, headCoach);
