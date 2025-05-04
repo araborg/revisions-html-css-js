@@ -225,7 +225,6 @@ const yearEl = document.getElementById("year");
 const headCoachEl = document.getElementById("head-coach");
 
 const selectPlayerEl = document.getElementById("players");
-
 const playerCards = document.getElementById("player-cards");
 
 const { team, sport, year, players } = myFavoriteFootballTeam;
