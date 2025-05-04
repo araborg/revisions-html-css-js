@@ -364,8 +364,10 @@ const removeSpecialChars = (str) => {
 };
 
 const addOrUpdateTask = () => {
-    if (titleInput.value) {
-        console.log("Empty string");
+    if (!titleInput.value.trim()) {
+        alert("Please provide a title");
+
+        return;
     }
 
     console.log(titleInput.value);
