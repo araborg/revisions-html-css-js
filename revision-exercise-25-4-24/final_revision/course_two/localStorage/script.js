@@ -334,6 +334,7 @@ Revision
 const addNewTask = document.getElementById("open-task-form-btn");
 const closeBtn = document.getElementById("close-task-form-btn");
 const minusBtn = document.getElementById("minus-btn");
+const plusBtn = document.getElementById("plus-btn");
 
 // inputs
 const titleInput = document.getElementById("title-input");
