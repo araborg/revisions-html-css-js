@@ -378,7 +378,7 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
-    console.log(taskObj.id);
+    console.log(taskObj);
 
     // console.log(titleInput.value);
 };
