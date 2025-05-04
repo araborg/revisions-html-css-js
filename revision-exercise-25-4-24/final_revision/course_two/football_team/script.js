@@ -453,21 +453,21 @@ const showPlayerCards = (arr = players) => {
 selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    console.log(e.target.value);
+    // console.log(e.target.value);
 
     // showPlayerCards();
 
-    // switch (e.target.value) {
-    //     case "nickname":
-    //         showPlayerCards(
-    //             players.filter((player) => player.nickname !== false)
-    //         );
-    //         break;
+    switch (e.target.value) {
+        case "nickname":
+            showPlayerCards(
+                players.filter((player) => player.nickname !== false)
+            );
+            break;
 
-    //     case "forward":
-    //         showPlayerCards(
-    //             players.filter((player) => player.position === "forward")
-    //         );
-    //         break;
-    // }
+        //     case "forward":
+        //         showPlayerCards(
+        //             players.filter((player) => player.position === "forward")
+        //         );
+        //         break;
+    }
 });
