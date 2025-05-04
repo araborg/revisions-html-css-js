@@ -370,7 +370,13 @@ const addOrUpdateTask = () => {
         return;
     }
 
-    console.log(titleInput.value);
+    const taskObj = {
+        id: `${titleInput.value}`.split(" ").join("-") - `${Date.now()}`,
+    };
+
+    console.log(taskObj.id);
+
+    // console.log(titleInput.value);
 };
 
 taskForm.addEventListener("submit", (e) => {
