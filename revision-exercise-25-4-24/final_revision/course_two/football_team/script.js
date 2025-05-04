@@ -233,6 +233,7 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
+// update d static values
 teamEl.textContent = team;
 sportEl.textContent = sport;
 yearEl.textContent = year;
