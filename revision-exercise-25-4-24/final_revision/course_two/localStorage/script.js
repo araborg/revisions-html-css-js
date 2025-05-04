@@ -332,6 +332,7 @@ Revision
 
 // btns
 const addNewTask = document.getElementById("open-task-form-btn");
+const closeBtn = document.getElementById("close-task-form-btn");
 
 const addOrUpdateTask = () => {};
 
