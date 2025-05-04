@@ -435,20 +435,19 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
-    // players
-    //     .map(
-    //         ({ name, position, number, nickname, isCaptain }) =>
-    //             (playerCards.innerHTML += `
-    //         <div class="player-card">
-    //             <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
-    //             <p>Position: ${position}</p>
-    //             <p>Number: ${number}</p>
-    //             <p>${nickname ? "Nickname: " + nickname : ""}
-    //         </div>
-    //     `)
-    //     )
-    //     .join(",");
-    // return savedPlayer;
+    players
+        .map(
+            ({ name, position, number, nickname, isCaptain }) =>
+                (playerCards.innerHTML = `
+                    <div class="player-card">
+                        <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+                        <p>Position: ${position}</p>
+                        <p>Number: ${number}</p>
+                        <p>${nickname ? "Nickname: " + nickname : ""}
+                    </div>
+        `)
+        )
+        .join(",");
 };
 
 // console.log(showPlayerCards());
