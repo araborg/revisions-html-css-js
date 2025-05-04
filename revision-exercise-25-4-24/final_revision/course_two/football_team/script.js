@@ -234,6 +234,11 @@ const { coachName } = myFavoriteFootballTeam.headCoach;
 
 // const { name, position, number, nickname } = players;
 
+teamEl.textContent = team;
+sportEl.textContent = sport;
+yearEl.textContent = year;
+headCoachEl.textContent = coachName;
+
 const showPlayerCards = () => {
     // myFavoriteFootballTeam.map(player)
 };
