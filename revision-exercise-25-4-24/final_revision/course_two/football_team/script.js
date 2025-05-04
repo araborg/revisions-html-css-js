@@ -219,18 +219,25 @@ Object.freeze(myFavoriteFootballTeam);
 // console.log(myFavoriteFootballTeam.players);
 
 // team stats
-const team = document.getElementById("team");
-const sport = document.getElementById("sport");
-const year = document.getElementById("year");
-const headCoach = document.getElementById("head-coach");
+const teamEl = document.getElementById("team");
+const sportEl = document.getElementById("sport");
+const yearEl = document.getElementById("year");
+const headCoachEl = document.getElementById("head-coach");
 
 const selectPlayerEl = document.getElementById("players");
 
 const playerCards = document.getElementById("player-cards");
 
+const { team, sport, year, players } = myFavoriteFootballTeam;
+
+const { coachName } = myFavoriteFootballTeam.headCoach;
+
+const { name, position, number, nickname } = players;
+
 const showPlayerCards = () => {
-    playerCards.innerHTML = "";
+    // myFavoriteFootballTeam.map(player)
 };
+
 selectPlayerEl.addEventListener("change", () => {
-    console.log("Hello");
+    playerCards.innerHTML = "";
 });
