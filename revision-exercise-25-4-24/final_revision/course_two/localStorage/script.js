@@ -354,6 +354,10 @@ addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
+const validateInputValue = (str) => {
+    str.replace(RegExp, "");
+};
+
 const addOrUpdateTask = () => {};
 
 const updateTaskContainer = () => {};
