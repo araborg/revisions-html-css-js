@@ -457,7 +457,7 @@ const showPlayerCards = () => {
     return savedPlayer;
 };
 
-console.log(showPlayerCards());
+// console.log(showPlayerCards());
 
 selectPlayerEl.addEventListener("change", () => {
     playerCards.innerHTML = "";
