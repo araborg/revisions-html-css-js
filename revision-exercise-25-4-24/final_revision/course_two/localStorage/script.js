@@ -354,13 +354,17 @@ addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
+// return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
+
 const validateInputValue = (str) => {
     const regex = /[^A-Za-z0-9\-\s]/g;
 
     return str.trim().replace(regex, "");
 };
 
-console.log(validateInputValue("9e9 $$$ llo9 t"));
+console.log(validateInputValue(" @o 9e9 $$$ llo9 t ").length);
+
+console.log(" 0@ 9e9 $$$ llo9 t ".length);
 
 const addOrUpdateTask = () => {};
 
