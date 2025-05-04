@@ -388,9 +388,10 @@ const addOrUpdateTask = () => {
         tasks[taskIndex] = taskObj;
     }
 
+    localStorage.setItem(JSON.stringify("addedTasks", tasks));
     reset();
 
-    console.log(tasks);
+    // console.log(tasks);
 };
 
 taskForm.addEventListener("submit", (e) => {
