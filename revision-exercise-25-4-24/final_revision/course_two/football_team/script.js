@@ -228,10 +228,6 @@ const selectPlayerEl = document.getElementById("players");
 
 const playerCards = document.getElementById("player-cards");
 
-// const setPlayerCards = () => {};
-
-const showPlayerCards = () => {};
-
-// playersSelectEl.addEventListener();
-
-// console.log(team, sport, year, headCoach);
+const showPlayerCards = () => {
+    playerCards.innerHTML = "";
+};
