@@ -231,3 +231,6 @@ const playerCards = document.getElementById("player-cards");
 const showPlayerCards = () => {
     playerCards.innerHTML = "";
 };
+selectPlayerEl.addEventListener("change", () => {
+    console.log("Hello");
+});
