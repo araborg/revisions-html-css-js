@@ -437,7 +437,15 @@ headCoachEl.textContent = coachName;
 const showPlayerCards = () => {
     // myFavoriteFootballTeam.map(player)
 
-    players.map(({ name, position, number, nickname, isCaptain }) => ``);
+    players.map(({ name, position, number, nickname, isCaptain }) => [
+        (playerCards.innerHTML += `
+            <div class="player-card">
+                <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+
+            </div>
+        
+        `),
+    ]);
 };
 
 selectPlayerEl.addEventListener("change", () => {
