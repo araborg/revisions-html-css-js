@@ -369,7 +369,7 @@ const addOrUpdateTask = () => {
     console.log(titleInput.value);
 };
 
-addTaskBtn.addEventListener("submit", (e) => {
+taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     addOrUpdateTask();
