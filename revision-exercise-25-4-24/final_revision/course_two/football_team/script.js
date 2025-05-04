@@ -466,30 +466,23 @@ selectPlayerEl.addEventListener("change", (e) => {
 
             break;
 
-        case "forward":
+        case "midfielder":
             showPlayerCards(
-                players.filter((player) => player.position === "forward")
+                players.filter((player) => player.position === "midfielder")
             );
 
             break;
 
-        case "forward":
+        case "defender":
             showPlayerCards(
-                players.filter((player) => player.position === "forward")
+                players.filter((player) => player.position === "defender")
             );
 
             break;
 
-        case "forward":
+        case "goalkeeper":
             showPlayerCards(
-                players.filter((player) => player.position === "forward")
-            );
-
-            break;
-
-        case "forward":
-            showPlayerCards(
-                players.filter((player) => player.position === "forward")
+                players.filter((player) => player.position === "goalkeeper")
             );
 
             break;
