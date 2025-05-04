@@ -359,7 +359,7 @@ addNewTask.addEventListener("click", () => {
 
 // return val.trim().replace(/[^A-Za-z0-9\-\s]/g, "");
 
-const validateInputValue = (str) => {
+const removeSpecialChars = (str) => {
     const regex = /[^A-Za-z0-9\-\s]/g;
 
     return str.trim().replace(regex, "");
