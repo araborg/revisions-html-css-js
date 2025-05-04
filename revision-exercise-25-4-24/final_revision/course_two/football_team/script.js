@@ -451,10 +451,6 @@ const showPlayerCards = (arr = players) => {
 selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    // console.log(e.target.value);
-
-    // showPlayerCards();
-
     switch (e.target.value) {
         case "nickname":
             showPlayerCards(
