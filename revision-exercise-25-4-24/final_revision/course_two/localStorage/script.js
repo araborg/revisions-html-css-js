@@ -330,6 +330,7 @@ Revision
 
 */
 // form
+const taskForm = document.getElementById("task-form");
 
 // btns
 const addNewTask = document.getElementById("open-task-form-btn");
