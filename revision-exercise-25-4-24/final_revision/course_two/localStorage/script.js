@@ -355,12 +355,12 @@ addNewTask.addEventListener("click", () => {
 });
 
 const validateInputValue = (str) => {
-    const regex = /^A-Za-z0-9\-\s/g;
+    const regex = /[^A-Za-z0-9\-\s]/g;
 
     return str.trim().replace(regex, "");
 };
 
-console.log(validateInputValue(" - hello9 t"));
+console.log(validateInputValue("9e9 $$$ llo9 t"));
 
 const addOrUpdateTask = () => {};
 
