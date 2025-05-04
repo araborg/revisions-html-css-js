@@ -345,6 +345,8 @@ const descriptionInput = document.getElementById("description-input");
 
 // dialog
 const dialogBox = document.getElementById("confirm-close-dialog");
+const cancelBtn = document.getElementById("cancel-btn");
+const discardBtn = document.getElementById("discard-btn");
 
 const addOrUpdateTask = () => {};
 
