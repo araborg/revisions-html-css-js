@@ -350,6 +350,9 @@ const dialogBox = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
+// task container
+const tasksContainer = document.getElementById("tasks-container");
+
 const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 const currentTask = {};
 
@@ -402,7 +405,11 @@ taskForm.addEventListener("submit", (e) => {
     addOrUpdateTask();
 });
 
-const updateTaskContainer = () => {};
+const updateTaskContainer = () => {
+    tasks.map(({ title, date, price, description }) => {
+        <div></div>;
+    });
+};
 
 const reset = () => {
     taskForm.classList.add("hidden");
