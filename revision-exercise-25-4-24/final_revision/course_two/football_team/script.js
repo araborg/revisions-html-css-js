@@ -453,7 +453,7 @@ const showPlayerCards = (arr = players) => {
 selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    // console.log(e.target.value);
+    console.log(e.target.value);
 
     // showPlayerCards();
 
@@ -464,10 +464,37 @@ selectPlayerEl.addEventListener("change", (e) => {
             );
             break;
 
-        //     case "forward":
-        //         showPlayerCards(
-        //             players.filter((player) => player.position === "forward")
-        //         );
-        //         break;
+        case "forward":
+            showPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        case "forward":
+            showPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        case "forward":
+            showPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        case "forward":
+            showPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        case "forward":
+            showPlayerCards(
+                players.filter((player) => player.position === "forward")
+            );
+            break;
+
+        default:
+            showPlayerCards();
     }
 });
