@@ -364,7 +364,9 @@ const removeSpecialChars = (str) => {
 };
 
 const addOrUpdateTask = () => {
-    // if(titleInput.value)
+    if (titleInput.value) {
+        console.log("Empty string");
+    }
 
     console.log(titleInput.value);
 };
