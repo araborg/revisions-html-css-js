@@ -434,10 +434,12 @@ sportEl.textContent = sport;
 yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
-const showPlayerCards = () => {
+const showPlayerCards = (arr = players) => {
     // myFavoriteFootballTeam.map(player)
 
-    const savedPlayer = players
+    // const savedPlayer =
+
+    players
         .map(
             ({ name, position, number, nickname, isCaptain }) =>
                 (playerCards.innerHTML += `
@@ -445,7 +447,7 @@ const showPlayerCards = () => {
                 <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
                 
                 <p>Position: ${position}</p>
-                <p>Number; ${number}</p>
+                <p>Number: ${number}</p>
                 
                 <p>${nickname ? "Nickname: " + nickname : ""}
             </div>
@@ -454,11 +456,16 @@ const showPlayerCards = () => {
         )
         .join(",");
 
-    return savedPlayer;
+    // return savedPlayer;
 };
 
 // console.log(showPlayerCards());
 
-selectPlayerEl.addEventListener("change", () => {
+selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
+
+    switch (e.target.value) {
+        case "nickname":
+            showPlayerCards();
+    }
 });
