@@ -383,8 +383,10 @@ const addOrUpdateTask = () => {
     // console.log(taskIndex === true);
 
     if (taskIndex === -1) {
-        console.log("Hello");
+        tasks.unshift(taskObj);
     }
+
+    console.log(tasks);
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -395,7 +397,9 @@ taskForm.addEventListener("submit", (e) => {
 
 const updateTaskContainer = () => {};
 
-const reset = () => {};
+const reset = () => {
+    taskForm.classList.add("hidden");
+};
 
 const editTask = () => {};
 
