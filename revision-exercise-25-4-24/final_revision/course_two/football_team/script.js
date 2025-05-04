@@ -435,10 +435,11 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
-    players
-        .map(
-            ({ name, position, number, nickname, isCaptain }) =>
-                (playerCards.innerHTML = `
+    console.log(arr);
+
+    arr.map(
+        ({ name, position, number, nickname, isCaptain }) =>
+            (playerCards.innerHTML = `
                     <div class="player-card">
                         <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
                         <p>Position: ${position}</p>
@@ -446,22 +447,26 @@ const showPlayerCards = (arr = players) => {
                         <p>${nickname ? "Nickname: " + nickname : ""}
                     </div>
         `)
-        )
-        .join(",");
+    ).join(",");
 };
 
 selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    console.log(e.target.value);
+    // console.log(e.target.value);
 
     // showPlayerCards();
 
     switch (e.target.value) {
         case "nickname":
-            showPlayerCards(
-                players.filter((player) => player.nickname !== false)
+            // showPlayerCards(
+
+            // );
+
+            const nickName = players.filter(
+                (player) => player.nickname !== false
             );
+            console.log(nickName);
             break;
 
         case "forward":
