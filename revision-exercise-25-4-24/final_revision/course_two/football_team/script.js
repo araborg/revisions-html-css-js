@@ -435,11 +435,9 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
-    console.log(arr);
-
     arr.map(
         ({ name, position, number, nickname, isCaptain }) =>
-            (playerCards.innerHTML = `
+            (playerCards.innerHTML += `
                     <div class="player-card">
                         <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
                         <p>Position: ${position}</p>
