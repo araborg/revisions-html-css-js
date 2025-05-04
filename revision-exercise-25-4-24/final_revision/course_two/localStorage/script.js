@@ -145,17 +145,17 @@ const addOrUpdateTask = () => {
     }
 
     // cr8 a task obj
-    const taskObj = {
-        id: `${titleInput.value
-            .toLowerCase()
-            .split(" ")
-            .join("-")}-${Date.now()}`,
-
-        title: titleInput.value,
-
+    const taskObj = {       
+        id: `${
+            removeSpecialChars(titleInput.value)
+            .toLowerCase().split(" ")
+            .join("-")
+            }-${Date.now()}`,
+            
+        title: removeSpecialChars(titleInput.value),
         date: dateInput.value,
-        price: priceInput.value,
-        description: descriptionInput.value,
+        price: removeSpecialChars(priceInput.value),
+        description: removeSpecialChars(descriptionInput.value),
     };
 
     // get d index of d task to be updated
@@ -355,10 +355,12 @@ addNewTask.addEventListener("click", () => {
 });
 
 const validateInputValue = (str) => {
-    const regex = /[^A-Za-z0-9\-\s]/g;
+    const regex = /^A-Za-z0-9\-\s/g;
 
-    return str.trim().replace(RegExp, "");
+    return str.trim().replace(regex, "");
 };
+
+console.log(validateInputValue(" - hello9 t"));
 
 const addOrUpdateTask = () => {};
 
