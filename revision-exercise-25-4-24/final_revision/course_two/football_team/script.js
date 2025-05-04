@@ -466,6 +466,8 @@ selectPlayerEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-            showPlayerCards();
+            showPlayerCards(
+                players.filter((player) => player.nickname !== false)
+            );
     }
 });
