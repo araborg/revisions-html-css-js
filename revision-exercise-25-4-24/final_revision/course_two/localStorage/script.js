@@ -384,6 +384,8 @@ const addOrUpdateTask = () => {
 
     if (taskIndex === -1) {
         tasks.unshift(taskObj);
+    } else {
+        tasks[taskIndex] = taskObj;
     }
 
     reset();
