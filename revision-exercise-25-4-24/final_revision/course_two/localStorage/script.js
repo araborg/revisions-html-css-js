@@ -333,9 +333,13 @@ Revision
 // btns
 const addNewTask = document.getElementById("open-task-form-btn");
 const closeBtn = document.getElementById("close-task-form-btn");
+const minusBtn = document.getElementById("minus-btn");
 
 // inputs
 const titleInput = document.getElementById("title-input");
+const dateInput = document.getElementById("date-input");
+const priceInput = document.getElementById("price-input");
+const descriptionInput = document.getElementById("description-input");
 
 const addOrUpdateTask = () => {};
 
