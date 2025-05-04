@@ -457,11 +457,11 @@ selectPlayerEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-            const nickName = players.filter(
-                (player) => player.nickname !== false
-            );
+            // const nickName = ;
 
-            showPlayerCards(nickName);
+            showPlayerCards(
+                players.filter((player) => player.nickname !== false)
+            );
 
             // console.log(nickName);
             break;
