@@ -330,6 +330,9 @@ Revision
 
 */
 
+// btns
+const addNewTask = document.getElementById("open-task-form-btn");
+
 const addOrUpdateTask = () => {};
 
 const updateTaskContainer = () => {};
