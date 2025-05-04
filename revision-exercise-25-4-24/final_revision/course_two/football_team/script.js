@@ -435,10 +435,6 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
-    playerCards.innerHTML = "";
-
-    // myFavoriteFootballTeam.map(player)
-    // const savedPlayer =
     // players
     //     .map(
     //         ({ name, position, number, nickname, isCaptain }) =>
