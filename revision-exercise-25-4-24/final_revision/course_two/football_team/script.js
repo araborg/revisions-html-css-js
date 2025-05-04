@@ -232,7 +232,7 @@ const { team, sport, year, players } = myFavoriteFootballTeam;
 
 const { coachName } = myFavoriteFootballTeam.headCoach;
 
-const { name, position, number, nickname } = players;
+// const { name, position, number, nickname } = players;
 
 const showPlayerCards = () => {
     // myFavoriteFootballTeam.map(player)
