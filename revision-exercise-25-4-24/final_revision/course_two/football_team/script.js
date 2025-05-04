@@ -450,10 +450,8 @@ const showPlayerCards = (arr = players) => {
         .join(",");
 };
 
-// console.log(showPlayerCards());
-
 selectPlayerEl.addEventListener("change", (e) => {
-    // playerCards.innerHTML = "";
+    playerCards.innerHTML = "";
 
     console.log(e.target.value);
 
