@@ -457,43 +457,45 @@ selectPlayerEl.addEventListener("change", (e) => {
 
     switch (e.target.value) {
         case "nickname":
-            // const nickName = ;
-
             showPlayerCards(
                 players.filter((player) => player.nickname !== false)
             );
 
-            // console.log(nickName);
             break;
 
         case "forward":
             showPlayerCards(
                 players.filter((player) => player.position === "forward")
             );
+
             break;
 
         case "forward":
             showPlayerCards(
                 players.filter((player) => player.position === "forward")
             );
+
             break;
 
         case "forward":
             showPlayerCards(
                 players.filter((player) => player.position === "forward")
             );
+
             break;
 
         case "forward":
             showPlayerCards(
                 players.filter((player) => player.position === "forward")
             );
+
             break;
 
         case "forward":
             showPlayerCards(
                 players.filter((player) => player.position === "forward")
             );
+
             break;
 
         default:
