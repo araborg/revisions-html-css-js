@@ -343,6 +343,9 @@ const dateInput = document.getElementById("date-input");
 const priceInput = document.getElementById("price-input");
 const descriptionInput = document.getElementById("description-input");
 
+// dialog
+const dialogBox = document.getElementById("confirm-close-dialog");
+
 const addOrUpdateTask = () => {};
 
 const updateTaskContainer = () => {};
