@@ -362,10 +362,6 @@ const validateInputValue = (str) => {
     return str.trim().replace(regex, "");
 };
 
-console.log(validateInputValue(" @o 9e9 $$$ llo9 t ").length);
-
-console.log(" 0@ 9e9 $$$ llo9 t ".length);
-
 const addOrUpdateTask = () => {};
 
 const updateTaskContainer = () => {};
