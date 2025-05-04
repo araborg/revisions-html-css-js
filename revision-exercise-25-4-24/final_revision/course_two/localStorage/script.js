@@ -386,6 +386,8 @@ const addOrUpdateTask = () => {
         tasks.unshift(taskObj);
     }
 
+    reset();
+
     console.log(tasks);
 };
 
