@@ -329,6 +329,7 @@ Revision
 
 
 */
+// form
 
 // btns
 const addNewTask = document.getElementById("open-task-form-btn");
@@ -349,6 +350,8 @@ const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
 const addOrUpdateTask = () => {};
+
+addNewTask.addEventListener("click", () => {});
 
 const updateTaskContainer = () => {};
 
