@@ -435,7 +435,8 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
-    // playerCards.innerHTML = "";
+    playerCards.innerHTML = "";
+
     // myFavoriteFootballTeam.map(player)
     // const savedPlayer =
     // players
@@ -457,9 +458,11 @@ const showPlayerCards = (arr = players) => {
 // console.log(showPlayerCards());
 
 selectPlayerEl.addEventListener("change", (e) => {
-    playerCards.innerHTML = "";
+    // playerCards.innerHTML = "";
 
     console.log(e.target.value);
+
+    // showPlayerCards();
 
     // switch (e.target.value) {
     //     case "nickname":
