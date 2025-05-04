@@ -401,6 +401,11 @@ const updateTaskContainer = () => {};
 
 const reset = () => {
     taskForm.classList.add("hidden");
+
+    titleInput.value = "";
+    dateInput.value = "";
+    priceInput.value = "";
+    descriptionInput.value = "";
 };
 
 const editTask = () => {};
