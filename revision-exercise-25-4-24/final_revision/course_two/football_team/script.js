@@ -437,17 +437,22 @@ headCoachEl.textContent = coachName;
 const showPlayerCards = () => {
     // myFavoriteFootballTeam.map(player)
 
-    const savedPlayer = players.map(
-        ({ name, position, number, nickname, isCaptain }) => {
-            playerCards.innerHTML += `
+    const savedPlayer = players
+        .map(
+            ({ name, position, number, nickname, isCaptain }) =>
+                (playerCards.innerHTML += `
             <div class="player-card">
                 <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
-
+                
+                <p>Position: ${position}</p>
+                <p>Number; ${number}</p>
+                
+                <p>${nickname ? "Nickname: " + nickname : ""}
             </div>
         
-        `;
-        }
-    );
+        `)
+        )
+        .join(",");
 
     return savedPlayer;
 };
