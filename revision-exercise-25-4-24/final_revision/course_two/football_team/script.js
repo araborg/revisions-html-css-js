@@ -435,27 +435,22 @@ yearEl.textContent = year;
 headCoachEl.textContent = coachName;
 
 const showPlayerCards = (arr = players) => {
+    // playerCards.innerHTML = "";
     // myFavoriteFootballTeam.map(player)
-
     // const savedPlayer =
-
-    players
-        .map(
-            ({ name, position, number, nickname, isCaptain }) =>
-                (playerCards.innerHTML += `
-            <div class="player-card">
-                <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
-                
-                <p>Position: ${position}</p>
-                <p>Number: ${number}</p>
-                
-                <p>${nickname ? "Nickname: " + nickname : ""}
-            </div>
-        
-        `)
-        )
-        .join(",");
-
+    // players
+    //     .map(
+    //         ({ name, position, number, nickname, isCaptain }) =>
+    //             (playerCards.innerHTML += `
+    //         <div class="player-card">
+    //             <h2>${isCaptain ? "(Captain)" : ""} ${name}</h2>
+    //             <p>Position: ${position}</p>
+    //             <p>Number: ${number}</p>
+    //             <p>${nickname ? "Nickname: " + nickname : ""}
+    //         </div>
+    //     `)
+    //     )
+    //     .join(",");
     // return savedPlayer;
 };
 
@@ -464,10 +459,19 @@ const showPlayerCards = (arr = players) => {
 selectPlayerEl.addEventListener("change", (e) => {
     playerCards.innerHTML = "";
 
-    switch (e.target.value) {
-        case "nickname":
-            showPlayerCards(
-                players.filter((player) => player.nickname !== false)
-            );
-    }
+    console.log(e.target.value);
+
+    // switch (e.target.value) {
+    //     case "nickname":
+    //         showPlayerCards(
+    //             players.filter((player) => player.nickname !== false)
+    //         );
+    //         break;
+
+    //     case "forward":
+    //         showPlayerCards(
+    //             players.filter((player) => player.position === "forward")
+    //         );
+    //         break;
+    // }
 });
