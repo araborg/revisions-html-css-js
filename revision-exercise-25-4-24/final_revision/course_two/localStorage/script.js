@@ -350,9 +350,11 @@ const dialogBox = document.getElementById("confirm-close-dialog");
 const cancelBtn = document.getElementById("cancel-btn");
 const discardBtn = document.getElementById("discard-btn");
 
-const addOrUpdateTask = () => {};
+addNewTask.addEventListener("click", () => {
+    taskForm.classList.toggle("hidden");
+});
 
-addNewTask.addEventListener("click", () => {});
+const addOrUpdateTask = () => {};
 
 const updateTaskContainer = () => {};
 
