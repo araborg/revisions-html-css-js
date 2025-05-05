@@ -354,7 +354,7 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
-const currentTask = {};
+let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
