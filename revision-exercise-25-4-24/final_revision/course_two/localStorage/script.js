@@ -397,7 +397,7 @@ const addOrUpdateTask = () => {
     // console.log(tasks);
 };
 
-console.log(tasks);
+// console.log(tasks);
 
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
