@@ -406,10 +406,27 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 const updateTaskContainer = () => {
-    tasks.map(({ title, date, price, description }) => {
-        <div></div>;
-    });
+    tasks
+        .map(({ id, title, date, price, description }) => {
+            tasksContainer.innerHTML += `
+                <div class="task" id="${id}">
+                    <p><strong>Title:</strong> ${title}</p>
+                    <p><strong>Date:</strong> ${date}</p>
+                    <p><strong>Price:</strong> ${price}</p>
+                    <p><strong>Description:</strong> ${description}</p>
+                
+
+                    <button type="button" class="btn">Edit</button>
+                    <button type="button" class="btn">Delete</button>
+                </div>
+        `;
+        })
+        .join(",");
 };
+
+if (tasks.length) {
+    updateTaskContainer();
+}
 
 const reset = () => {
     taskForm.classList.add("hidden");
