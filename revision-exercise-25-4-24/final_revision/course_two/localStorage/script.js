@@ -442,7 +442,9 @@ const editTask = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    console.log(currentTaskIndex);
+    currentTask = tasks[currentTaskIndex];
+
+    console.log(currentTask);
 };
 
 const deleteTask = (btnEl) => {
