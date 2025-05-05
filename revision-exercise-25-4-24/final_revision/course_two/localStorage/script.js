@@ -444,7 +444,10 @@ const editTask = (btnEl) => {
 
     currentTask = tasks[currentTaskIndex];
 
-    console.log(currentTask);
+    titleInput.value = currentTask.title;
+    dateInput.value = currentTask.date;
+    priceInput.value = currentTask.price;
+    descriptionInput.value = currentTask.description;
 };
 
 const deleteTask = (btnEl) => {
