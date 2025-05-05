@@ -437,6 +437,10 @@ const reset = () => {
     descriptionInput.value = "";
 };
 
-const editTask = () => {};
+const editTask = (btnEl) => {
+    console.log(btnEl);
+};
 
-const deleteTask = () => {};
+const deleteTask = (btnEl) => {
+    console.log(btnEl);
+};
