@@ -438,7 +438,7 @@ const reset = () => {
 };
 
 const editTask = (btnEl) => {
-    console.log(btnEl);
+    const currentTaskIndex = tasks.findIndex((task) => task.id === currentTask);
 };
 
 const deleteTask = (btnEl) => {
