@@ -497,4 +497,7 @@ cancelBtn.addEventListener("click", () => {
 
 discardBtn.addEventListener("click", () => {
     console.log("discard");
+    dialogBox.close();
+
+    reset();
 });
