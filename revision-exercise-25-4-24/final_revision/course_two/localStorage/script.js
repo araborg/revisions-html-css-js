@@ -459,7 +459,13 @@ const editTask = (btnEl) => {
 };
 
 const deleteTask = (btnEl) => {
-    console.log(btnEl);
+    const currentTaskIndex = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
+
+    tasks.splice(currentTaskIndex, 1);
+
+    console.log(tasks);
 };
 
 // closeTaskFormBtn.addEventListener("click", () => {
