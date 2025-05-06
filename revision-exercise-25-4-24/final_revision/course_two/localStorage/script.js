@@ -392,9 +392,11 @@ const addOrUpdateTask = () => {
     }
 
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
+
+    updateTaskContainer();
     reset();
 
-    // console.log(tasks);
+    console.log("Add Task Btn");
 };
 
 // console.log(tasks);
@@ -454,6 +456,8 @@ const editTask = (btnEl) => {
 
     taskForm.classList.toggle("hidden");
     addTaskBtn.innerHTML = "Update Task";
+
+    console.log("Update Task Btn");
 
     // localStorage.setItem("data", JSON.stringify(currentTask));
 
