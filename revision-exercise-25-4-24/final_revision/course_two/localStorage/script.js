@@ -467,8 +467,12 @@ const deleteTask = (btnEl) => {
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
 };
 
-closeTaskFormBtn.addEventListener("click", () => {
-    console.log("Hello");
+closeBtn.addEventListener("click", () => {
+    const inputValues =
+        titleInput.value ||
+        dateInput.value ||
+        priceInput.value ||
+        descriptionInput.value;
 });
 
 if (tasks.length) {
