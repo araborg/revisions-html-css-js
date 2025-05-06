@@ -481,6 +481,7 @@ closeBtn.addEventListener("click", () => {
         descriptionInput.value !== currentTask.description;
 
     if (inputValues && noValChange) {
+        dialogBox.showModal();
     } else {
         reset();
     }
