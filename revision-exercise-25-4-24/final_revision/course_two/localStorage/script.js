@@ -450,7 +450,7 @@ const editTask = (btnEl) => {
     descriptionInput.value = currentTask.description;
 
     // taskForm.classList.toggle("hidden");
-    addNewTask.innerHTML = "Update Task";
+    addTaskBtn.innerHTML = "Update Task";
 
     // console.log(currentTask);
 };
