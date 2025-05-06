@@ -426,10 +426,6 @@ const updateTaskContainer = () => {
         .join(",");
 };
 
-if (tasks.length) {
-    updateTaskContainer();
-}
-
 const reset = () => {
     addOrUpdateTask.innerHTML = "Add Task";
     taskForm.classList.toggle("hidden");
@@ -463,17 +459,18 @@ const deleteTask = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    // const delTask =
-    // tasks =
     btnEl.parentElement.remove();
     tasks.splice(currentTaskIndex, 1);
 
     localStorage.setItem("data", JSON.stringify(tasks));
 
-    // updateTaskContainer();
-    console.log("Hello");
+    console.log("Hello", tasks);
 };
 
 // closeTaskFormBtn.addEventListener("click", () => {
 //     console.log("Hello");
 // });
+
+if (tasks.length) {
+    updateTaskContainer();
+}
