@@ -353,7 +353,7 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-let tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
+const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
