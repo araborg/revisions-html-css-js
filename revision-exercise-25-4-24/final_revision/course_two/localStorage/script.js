@@ -455,3 +455,5 @@ const editTask = (btnEl) => {
 const deleteTask = (btnEl) => {
     console.log(btnEl);
 };
+
+// closeTaskFormBtn
