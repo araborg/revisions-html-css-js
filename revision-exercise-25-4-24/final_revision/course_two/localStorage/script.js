@@ -473,6 +473,16 @@ closeBtn.addEventListener("click", () => {
         dateInput.value ||
         priceInput.value ||
         descriptionInput.value;
+
+    const noValChange =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        priceInput.value !== currentTask.price ||
+        descriptionInput.value !== currentTask.description;
+
+    console.log(inputValues, noValChange);
+
+    console.log(currentTask);
 });
 
 if (tasks.length) {
