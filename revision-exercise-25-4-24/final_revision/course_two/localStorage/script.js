@@ -468,6 +468,7 @@ const deleteTask = (btnEl) => {
     tasks.splice(currentTaskIndex, 1);
 
     localStorage.setItem("data", JSON.stringify(tasks));
+    btnEl.parentElement.remove;
 
     // updateTaskContainer();
     // console.log(delTask, tasks);
