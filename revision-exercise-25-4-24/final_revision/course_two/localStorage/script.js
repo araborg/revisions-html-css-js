@@ -463,12 +463,11 @@ const deleteTask = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    tasks.splice(currentTaskIndex, 1);
+    const delTask = tasks.splice(currentTaskIndex, 1);
     updateTaskContainer();
 
-    localStorage.setItem("data", JSON.stringify(tasks));
-
-    console.log(tasks);
+    console.log(delTask, tasks);
+    // localStorage.setItem("data", JSON.stringify(tasks));
 };
 
 // closeTaskFormBtn.addEventListener("click", () => {
