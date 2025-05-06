@@ -465,13 +465,11 @@ const deleteTask = (btnEl) => {
     tasks.splice(currentTaskIndex, 1);
 
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
-
-    console.log(tasks);
 };
 
-// closeTaskFormBtn.addEventListener("click", () => {
-//     console.log("Hello");
-// });
+closeTaskFormBtn.addEventListener("click", () => {
+    console.log("Hello");
+});
 
 if (tasks.length) {
     updateTaskContainer();
