@@ -490,3 +490,11 @@ closeBtn.addEventListener("click", () => {
 if (tasks.length) {
     updateTaskContainer();
 }
+
+cancelBtn.addEventListener("click", () => {
+    console.log("cancel");
+});
+
+discardBtn.addEventListener("click", () => {
+    console.log("discard");
+});
