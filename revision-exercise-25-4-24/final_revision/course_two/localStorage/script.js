@@ -460,14 +460,6 @@ const editTask = (btnEl) => {
     addTaskBtn.innerHTML = "Update Task";
 
     console.log("Update Task Btn");
-
-    // localStorage.setItem("data", JSON.stringify(currentTask));
-
-    // updateTaskContainer();
-
-    // console.log(currentTask);
-
-    // reset();
 };
 
 const deleteTask = (btnEl) => {
