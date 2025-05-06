@@ -395,8 +395,6 @@ const addOrUpdateTask = () => {
 
     updateTaskContainer();
     reset();
-
-    console.log("Add Task Btn");
 };
 
 // console.log(tasks);
@@ -458,8 +456,6 @@ const editTask = (btnEl) => {
 
     taskForm.classList.toggle("hidden");
     addTaskBtn.innerHTML = "Update Task";
-
-    console.log("Update Task Btn");
 };
 
 const deleteTask = (btnEl) => {
