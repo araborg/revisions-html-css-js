@@ -353,7 +353,7 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
+let tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
@@ -463,11 +463,13 @@ const deleteTask = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    const delTask = tasks.splice(currentTaskIndex, 1);
+    // const delTask =
+    // tasks =
+    tasks.splice(currentTaskIndex, 1);
 
     localStorage.setItem("data", JSON.stringify(tasks));
 
-    updateTaskContainer();
+    // updateTaskContainer();
     // console.log(delTask, tasks);
 };
 
