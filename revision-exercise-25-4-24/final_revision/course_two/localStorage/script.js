@@ -449,10 +449,12 @@ const editTask = (btnEl) => {
     priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
 
-    taskForm.classList.toggle("hidden");
-    addTaskBtn.innerHTML = "Update Task";
+    // taskForm.classList.toggle("hidden");
+    // addTaskBtn.innerHTML = "Update Task";
 
-    localStorage.setItem("data", JSON.stringify(currentTask));
+    // localStorage.setItem("data", JSON.stringify(currentTask));
+
+    // updateTaskContainer();
 
     // console.log(currentTask);
 };
@@ -461,4 +463,4 @@ const deleteTask = (btnEl) => {
     console.log(btnEl);
 };
 
-// closeTaskFormBtn
+closeTaskFormBtn.addEventListener("click", () => {});
