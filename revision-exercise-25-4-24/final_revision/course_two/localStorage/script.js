@@ -448,6 +448,8 @@ const editTask = (btnEl) => {
     dateInput.value = currentTask.date;
     priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
+
+    console.log(currentTask);
 };
 
 const deleteTask = (btnEl) => {
