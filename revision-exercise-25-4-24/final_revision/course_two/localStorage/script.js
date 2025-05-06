@@ -480,9 +480,10 @@ closeBtn.addEventListener("click", () => {
         priceInput.value !== currentTask.price ||
         descriptionInput.value !== currentTask.description;
 
-    console.log(inputValues, noValChange);
-
-    console.log(currentTask);
+    if (inputValues && noValChange) {
+    } else {
+        reset();
+    }
 });
 
 if (tasks.length) {
