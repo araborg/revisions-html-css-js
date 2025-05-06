@@ -464,6 +464,7 @@ const deleteTask = (btnEl) => {
     );
 
     tasks.splice(currentTaskIndex, 1);
+    updateTaskContainer();
 
     console.log(tasks);
 };
