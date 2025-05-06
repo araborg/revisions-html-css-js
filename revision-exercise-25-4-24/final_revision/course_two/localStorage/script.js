@@ -449,8 +449,10 @@ const editTask = (btnEl) => {
     priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
 
-    // taskForm.classList.toggle("hidden");
+    taskForm.classList.toggle("hidden");
     addTaskBtn.innerHTML = "Update Task";
+
+    localStorage.stringify("data", currentTask);
 
     // console.log(currentTask);
 };
