@@ -408,6 +408,8 @@ taskForm.addEventListener("submit", (e) => {
 const updateTaskContainer = () => {
     tasksContainer.innerHTML = "";
 
+    console.log(tasks);
+
     tasks
         .map(({ id, title, date, price, description }) => {
             tasksContainer.innerHTML += `
