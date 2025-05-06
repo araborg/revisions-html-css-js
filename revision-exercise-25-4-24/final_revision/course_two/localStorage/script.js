@@ -429,12 +429,15 @@ if (tasks.length) {
 }
 
 const reset = () => {
+    addOrUpdateTask.innerHTML = "Add Task";
     taskForm.classList.toggle("hidden");
 
     titleInput.value = "";
     dateInput.value = "";
     priceInput.value = "";
     descriptionInput.value = "";
+
+    currentTask = {};
 };
 
 const editTask = (btnEl) => {
