@@ -452,7 +452,7 @@ const editTask = (btnEl) => {
     taskForm.classList.toggle("hidden");
     addTaskBtn.innerHTML = "Update Task";
 
-    localStorage.stringify("data", currentTask);
+    localStorage.setItem("data", stringify(currentTask));
 
     // console.log(currentTask);
 };
