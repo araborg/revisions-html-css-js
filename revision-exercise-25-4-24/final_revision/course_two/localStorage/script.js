@@ -492,11 +492,10 @@ if (tasks.length) {
 }
 
 cancelBtn.addEventListener("click", () => {
-    console.log("cancel");
+    dialogBox.close();
 });
 
 discardBtn.addEventListener("click", () => {
-    console.log("discard");
     dialogBox.close();
 
     reset();
