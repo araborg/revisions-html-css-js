@@ -464,7 +464,7 @@ const deleteTask = (btnEl) => {
 
     localStorage.setItem("data", JSON.stringify(tasks));
 
-    console.log("Hello", tasks);
+    console.log(tasks);
 };
 
 // closeTaskFormBtn.addEventListener("click", () => {
