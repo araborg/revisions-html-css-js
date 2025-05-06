@@ -429,7 +429,7 @@ if (tasks.length) {
 }
 
 const reset = () => {
-    taskForm.classList.add("hidden");
+    taskForm.classList.toggle("hidden");
 
     titleInput.value = "";
     dateInput.value = "";
@@ -457,10 +457,14 @@ const editTask = (btnEl) => {
     // updateTaskContainer();
 
     // console.log(currentTask);
+
+    reset();
 };
 
 const deleteTask = (btnEl) => {
     console.log(btnEl);
 };
 
-closeTaskFormBtn.addEventListener("click", () => {});
+closeTaskFormBtn.addEventListener("click", () => {
+    console.log("Hello");
+});
