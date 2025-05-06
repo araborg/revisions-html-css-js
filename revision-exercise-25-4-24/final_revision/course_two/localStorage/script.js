@@ -449,7 +449,7 @@ const editTask = (btnEl) => {
     priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
 
-    // taskForm.classList.toggle("hidden");
+    taskForm.classList.toggle("hidden");
     // addTaskBtn.innerHTML = "Update Task";
 
     // localStorage.setItem("data", JSON.stringify(currentTask));
@@ -458,13 +458,13 @@ const editTask = (btnEl) => {
 
     // console.log(currentTask);
 
-    reset();
+    // reset();
 };
 
 const deleteTask = (btnEl) => {
     console.log(btnEl);
 };
 
-closeTaskFormBtn.addEventListener("click", () => {
-    console.log("Hello");
-});
+// closeTaskFormBtn.addEventListener("click", () => {
+//     console.log("Hello");
+// });
