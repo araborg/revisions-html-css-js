@@ -403,7 +403,7 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 const loadTasksUI = () => {
-    console.log(tasks);
+    // console.log(tasks);
 
     tasks.map(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
@@ -422,3 +422,7 @@ const loadTasksUI = () => {
 
 // console.log(tasks);
 // console.log(loadTasksUI());
+
+if (tasks.length) {
+    loadTasksUI();
+}
