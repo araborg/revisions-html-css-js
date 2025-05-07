@@ -419,7 +419,11 @@ const loadTasksUI = () => {
                 <div class="task" id="${id}">
                     <p><strong>Title: </strong> ${title}</p>
                     <p><strong>Date: </strong> ${date}</p>
+
+                    <button onclick="" id="${id}" class="btn">Minus</button>
                     <p><strong>Price: </strong>${price}</p>
+                    <button onclick="" id="${id}" class="btn">Plus</button>
+                   
                     <p><strong>Description: </strong>${description}</p>
 
                     <button onclick="editTask(this)" id="${id}" class="btn">Edit</button>
@@ -502,3 +506,9 @@ discardBtn.addEventListener("click", () => {
 
     reset();
 });
+
+// plusBtn.addEventListener("click", () => {});
+
+const minusPrice = () => {};
+
+const plusPrice = () => {};
