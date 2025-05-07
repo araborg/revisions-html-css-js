@@ -414,13 +414,6 @@ const loadTasksUI = () => {
     //         </div>
     // `;
     // });
-
-    tasks.map((task) => (
-
-        <div></div>
-        <div></div>
-    )
-    );
 };
 
 console.log(tasks);
