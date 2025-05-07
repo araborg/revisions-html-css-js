@@ -435,3 +435,7 @@ const reset = () => {
     priceInput.value = "";
     descriptionInput.value = "";
 };
+
+closeBtn.addEventListener("click", () => {
+    console.log(closeBtn);
+});
