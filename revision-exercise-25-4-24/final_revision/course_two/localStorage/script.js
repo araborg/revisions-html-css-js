@@ -415,8 +415,8 @@ const loadTasksUI = () => {
                     <p><strong>Price: </strong>${price}</p>
                     <p><strong>Description: </strong>${description}</p>
 
-                    <button class="btn" onclick="">Edit</button>
-                    <button class="btn" onclick="">Delete</button>
+                    <button onclick="editTask(this)" class="btn">Edit</button>
+                    <button onclick="deleteTask(this)" class="btn">Delete</button>
                 </div>
         `;
     });
@@ -434,6 +434,14 @@ const reset = () => {
     dateInput.value = "";
     priceInput.value = "";
     descriptionInput.value = "";
+};
+
+const editTask = (btnEl) => {
+    console.log(btnEl);
+};
+
+const deleteTask = (btnEl) => {
+    console.log(btnEl);
 };
 
 closeBtn.addEventListener("click", () => {
