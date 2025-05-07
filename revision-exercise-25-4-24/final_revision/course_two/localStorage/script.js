@@ -358,3 +358,5 @@ addNewTask.addEventListener("click", () => {
 });
 
 const removeSpecialChars = () => {};
+
+// const addNewTask = () => {};
