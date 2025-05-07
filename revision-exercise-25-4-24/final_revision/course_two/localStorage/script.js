@@ -393,9 +393,6 @@ const addOrUpdateTask = () => {
 
     loadTasksUI();
     reset();
-
-    // console.log(tasks);
-    console.log(titleInput.value, dateInput.value);
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -405,8 +402,6 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 const loadTasksUI = () => {
-    // console.log(tasks);
-
     tasks.map(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
                 <div class="task" id="${id}">
