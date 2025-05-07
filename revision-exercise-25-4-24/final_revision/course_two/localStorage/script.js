@@ -426,6 +426,8 @@ const reset = () => {
     dateInput.value = "";
     priceInput.value = "";
     descriptionInput.value = "";
+
+    taskForm.classList.toggle("hidden");
 };
 
 const editTask = (btnEl) => {
