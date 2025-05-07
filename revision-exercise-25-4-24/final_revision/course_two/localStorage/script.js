@@ -526,7 +526,19 @@ discardBtn.addEventListener("click", () => {
 // plusBtn.addEventListener("click", () => {});
 
 const minusPrice = (btnEl) => {
-    console.log(btnEl.id);
+    const getTask = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
+
+    const currentTask = tasks[getTask];
+
+    const currentPrice = {
+        cost: Number(currentTask.price),
+    };
+
+    price = currentPrice;
+
+    console.log(price.cost);
 };
 
 const plusPrice = (btnEl) => {
