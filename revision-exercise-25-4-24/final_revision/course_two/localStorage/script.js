@@ -389,7 +389,7 @@ const addOrUpdateTask = () => {
         tasks[taskIndex] = taskObj;
     }
 
-    console.log(tasks);
+    localStorage.setItem("task", JSON.stringify(taskObj));
 };
 
 taskForm.addEventListener("submit", (e) => {
