@@ -442,4 +442,10 @@ closeBtn.addEventListener("click", () => {
         dateInput.value ||
         priceInput.value ||
         descriptionInput.value;
+
+    const formInputValuesUpdated =
+        titleInput.value !== currentTask.title ||
+        dateInput.value !== currentTask.date ||
+        priceInput.value !== currentTask.price ||
+        descriptionInput.value !== currentTask.description;
 });
