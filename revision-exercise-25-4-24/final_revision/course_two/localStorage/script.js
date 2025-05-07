@@ -356,6 +356,8 @@ const tasksContainer = document.getElementById("tasks-container");
 const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 let currentTask = {};
 
+let priceState = {};
+
 addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
@@ -433,6 +435,7 @@ const loadTasksUI = () => {
                         onclick="plusPrice" 
                         id="${id}"
                         class="btn"
+                        value="${priceInput.value}"
                     >
                         Plus
                     </button>
