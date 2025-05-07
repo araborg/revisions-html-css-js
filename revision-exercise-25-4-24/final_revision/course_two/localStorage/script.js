@@ -375,6 +375,7 @@ const addOrUpdateTask = () => {
 
     const taskObj = {
         id: `${removeSpecialChars(titleInput.value)
+            .toLowerCase()
             .split(" ")
             .join("-")}-${Date.now()}`,
 
@@ -386,6 +387,8 @@ const addOrUpdateTask = () => {
 
         description: removeSpecialChars(descriptionInput.value),
     };
+
+    console.log(tasks);
 
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
 
