@@ -480,6 +480,8 @@ closeBtn.addEventListener("click", () => {
     }
 });
 
-cancelBtn.addEventListener("click", () => {});
+cancelBtn.addEventListener("click", () => {
+    dialogBox.remove();
+});
 
 discardBtn.addEventListener("click", () => {});
