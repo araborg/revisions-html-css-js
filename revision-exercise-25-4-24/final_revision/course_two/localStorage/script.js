@@ -434,6 +434,10 @@ const editTask = (btnEl) => {
     );
 
     currentTask = tasks[currentTaskIndex];
+
+    titleInput.value = currentTask.title;
+
+    taskForm.classList.toggle("hidden");
 };
 
 const deleteTask = (btnEl) => {
