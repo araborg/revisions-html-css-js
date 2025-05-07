@@ -458,8 +458,6 @@ const deleteTask = (btnEl) => {
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
 
     btnEl.parentElement.remove();
-
-    console.log(tasks);
 };
 
 closeBtn.addEventListener("click", () => {
