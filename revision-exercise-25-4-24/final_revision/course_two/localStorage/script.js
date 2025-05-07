@@ -360,7 +360,7 @@ addNewTask.addEventListener("click", () => {
 const removeSpecialChars = () => {};
 
 const addOrUpdateTask = () => {
-    if (titleInput.value === " ") {
+    if (!titleInput.value.trim()) {
         console.log("Empty space");
     }
 };
