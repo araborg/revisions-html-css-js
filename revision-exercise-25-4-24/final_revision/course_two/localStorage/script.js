@@ -429,4 +429,9 @@ if (tasks.length) {
     loadTasksUI();
 }
 
-const reset = () => {};
+const reset = () => {
+    titleInput.value = "";
+    dateInput.value = "";
+    priceInput.value = "";
+    descriptionInput.value = "";
+};
