@@ -353,7 +353,9 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
+// const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
+
+const tasks = [];
 let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
@@ -378,8 +380,7 @@ const addOrUpdateTask = () => {
         description: descriptionInput.value,
     };
 
-    const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
-    console.log(taskIndex);
+    const taskIndex = -1;
 
     // ds is either adding a new task or updating an existing task
     if (taskIndex === -1) {
@@ -390,7 +391,7 @@ const addOrUpdateTask = () => {
         tasks[taskIndex] = taskObj;
     }
 
-    localStorage.setItem("addedTasks", JSON.stringify(taskObj));
+    // localStorage.setItem("addedTasks", JSON.stringify(taskObj));
 
     // loadTasksUI();
 
