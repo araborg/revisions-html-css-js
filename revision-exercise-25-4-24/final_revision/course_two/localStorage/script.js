@@ -353,9 +353,9 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
-// const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
+const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
 
-const tasks = [];
+// const tasks = [];
 let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
@@ -391,7 +391,7 @@ const addOrUpdateTask = () => {
         tasks[taskIndex] = taskObj;
     }
 
-    // localStorage.setItem("addedTasks", JSON.stringify(taskObj));
+    localStorage.setItem("addedTasks", JSON.stringify(tasks));
 
     // loadTasksUI();
 
@@ -419,5 +419,5 @@ taskForm.addEventListener("submit", (e) => {
 //     });
 // };
 
-// console.log(tasks);
+console.log(tasks);
 // console.log(loadTasksUI());
