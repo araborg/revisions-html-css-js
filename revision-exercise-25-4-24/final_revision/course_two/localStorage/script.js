@@ -380,7 +380,8 @@ const addOrUpdateTask = () => {
 
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
 
-    if (taskIndex) {
+    if (taskIndex === -1) {
+        tasks.unshift(taskObj);
     }
 };
 
