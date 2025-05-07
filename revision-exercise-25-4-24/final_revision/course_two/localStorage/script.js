@@ -382,7 +382,11 @@ const addOrUpdateTask = () => {
 
     if (taskIndex === -1) {
         tasks.unshift(taskObj);
+    } else {
+        tasks[taskIndex] = taskObj;
     }
+
+    console.log(tasks);
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -390,5 +394,3 @@ taskForm.addEventListener("submit", (e) => {
 
     addOrUpdateTask();
 });
-
-console.log(tasks);
