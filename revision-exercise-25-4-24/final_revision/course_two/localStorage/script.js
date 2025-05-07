@@ -353,6 +353,9 @@ const discardBtn = document.getElementById("discard-btn");
 // task container
 const tasksContainer = document.getElementById("tasks-container");
 
+const tasks = [];
+let currentTask = {};
+
 addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
