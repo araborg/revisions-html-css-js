@@ -437,5 +437,9 @@ const reset = () => {
 };
 
 closeBtn.addEventListener("click", () => {
-    console.log(closeBtn);
+    const formInputContainValues =
+        titleInput.value ||
+        dateInput.value ||
+        priceInput.value ||
+        descriptionInput.value;
 });
