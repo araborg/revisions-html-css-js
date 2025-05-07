@@ -440,9 +440,9 @@ const editTask = (btnEl) => {
     priceInput.value = currentTask.price;
     descriptionInput.value = currentTask.description;
 
-    taskForm.classList.toggle("hidden");
-
     addTaskBtn.textContent = "Update Task";
+
+    taskForm.classList.toggle("hidden");
 };
 
 const deleteTask = (btnEl) => {
