@@ -479,3 +479,7 @@ closeBtn.addEventListener("click", () => {
         reset();
     }
 });
+
+cancelBtn.addEventListener("click", () => {});
+
+discardBtn.addEventListener("click", () => {});
