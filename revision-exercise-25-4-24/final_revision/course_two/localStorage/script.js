@@ -429,7 +429,13 @@ const loadTasksUI = () => {
                         Minus
                     </button>
                         <p><strong>Price: </strong>${price}</p>
-                    <button onclick="plusPrice" id="${id}" class="btn">Plus</button>
+                    <button 
+                        onclick="plusPrice" 
+                        id="${id}"
+                        class="btn"
+                    >
+                        Plus
+                    </button>
                    
                     <p><strong>Description: </strong>${description}</p>
 
