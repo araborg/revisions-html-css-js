@@ -379,7 +379,7 @@ const addOrUpdateTask = () => {
     };
 
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
-    console.log(taskIndex);
+    // console.log(taskIndex);
 
     // ds is either adding a new task or updating an existing task
     if (taskIndex === -1) {
@@ -401,4 +401,17 @@ taskForm.addEventListener("submit", (e) => {
     addOrUpdateTask();
 });
 
-console.log(tasks);
+const loadTasksUI = () => {
+    tasks.map(({ id, title, date, price, description }) => {
+        tasksContainer.innerHTML += `
+                <div class="task" id="${id}">
+                    <p><strong>Title: </strong> ${title}</p>
+                    <p><strong>Date: </strong> ${date}</p>
+                    <p><strong>Price</strong>${price}</p>
+                    <p><strong>Description: </strong>${description}</p>
+                </div>
+        `;
+    });
+};
+
+console.log(loadTasksUI());
