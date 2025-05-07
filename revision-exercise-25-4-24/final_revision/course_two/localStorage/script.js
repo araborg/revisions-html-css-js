@@ -392,7 +392,7 @@ const addOrUpdateTask = () => {
 
     localStorage.setItem("tasks", JSON.stringify(taskObj));
 
-    loadTasksUI();
+    // loadTasksUI();
 
     console.log(tasks);
 };
@@ -406,15 +406,17 @@ taskForm.addEventListener("submit", (e) => {
 const loadTasksUI = () => {
     tasks.map(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
-                <div class="task" id="${id}">
-                    <p><strong>Title: </strong> ${title}</p>
-                    <p><strong>Date: </strong> ${date}</p>
-                    <p><strong>Price</strong>${price}</p>
-                    <p><strong>Description: </strong>${description}</p>
-                </div>
+                // <div class="task" id="${id}">
+                //     <p><strong>Title: </strong> ${title}</p>
+                //     <p><strong>Date: </strong> ${date}</p>
+                //     <p><strong>Price</strong>${price}</p>
+                //     <p><strong>Description: </strong>${description}</p>
+                // </div>
+
+                hello
         `;
     });
 };
 
 console.log(tasks);
-console.log(loadTasksUI());
+// console.log(loadTasksUI());
