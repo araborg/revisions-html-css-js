@@ -360,7 +360,11 @@ addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
 
-const removeSpecialChars = () => {};
+const removeSpecialChars = (str) => {
+    const regex = /[^A-Za-z0-9\-\s]/g;
+
+    str.replace(regex, "");
+};
 
 const addOrUpdateTask = () => {
     if (!titleInput.value.trim()) {
