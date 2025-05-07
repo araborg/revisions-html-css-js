@@ -363,7 +363,7 @@ addNewTask.addEventListener("click", () => {
 const removeSpecialChars = (str) => {
     const regex = /[^A-Za-z0-9\-\s]/g;
 
-    str.replace(regex, "");
+    return str.trim().replace(regex, "");
 };
 
 const addOrUpdateTask = () => {
@@ -374,12 +374,17 @@ const addOrUpdateTask = () => {
     }
 
     const taskObj = {
-        id: `${titleInput.value.split(" ").join("-")}-${Date.now()}`,
+        id: `${removeSpecialChars(titleInput.value)
+            .split(" ")
+            .join("-")}-${Date.now()}`,
 
-        title: titleInput.value,
-        date: dateInput.value,
-        price: priceInput.value,
-        description: descriptionInput.value,
+        title: removeSpecialChars(titleInput.value),
+
+        date: removeSpecialChars(dateInput.value),
+
+        price: removeSpecialChars(priceInput.value),
+
+        description: removeSpecialChars(descriptionInput.value),
     };
 
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
