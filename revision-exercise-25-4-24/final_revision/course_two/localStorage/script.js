@@ -420,9 +420,16 @@ const loadTasksUI = () => {
                     <p><strong>Title: </strong> ${title}</p>
                     <p><strong>Date: </strong> ${date}</p>
 
-                    <button onclick="" id="${id}" class="btn">Minus</button>
-                    <p><strong>Price: </strong>${price}</p>
-                    <button onclick="" id="${id}" class="btn">Plus</button>
+                    <button 
+                        onclick="minusPrice(this)" 
+                        id="${id}" 
+                        class="btn"
+                        value="${priceInput.value}"
+                    >
+                        Minus
+                    </button>
+                        <p><strong>Price: </strong>${price}</p>
+                    <button onclick="plusPrice" id="${id}" class="btn">Plus</button>
                    
                     <p><strong>Description: </strong>${description}</p>
 
@@ -509,6 +516,10 @@ discardBtn.addEventListener("click", () => {
 
 // plusBtn.addEventListener("click", () => {});
 
-const minusPrice = () => {};
+const minusPrice = (btnEl) => {
+    console.log(btnEl);
+};
 
-const plusPrice = () => {};
+const plusPrice = (btnEl) => {
+    console.log(btnEl);
+};
