@@ -430,6 +430,8 @@ const reset = () => {
     descriptionInput.value = "";
 
     taskForm.classList.toggle("hidden");
+
+    console.log(currentTask);
 };
 
 const editTask = (btnEl) => {
