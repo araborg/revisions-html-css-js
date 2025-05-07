@@ -485,11 +485,11 @@ closeBtn.addEventListener("click", () => {
 });
 
 cancelBtn.addEventListener("click", () => {
-    dialogBox.remove();
+    dialogBox.close();
 });
 
 discardBtn.addEventListener("click", () => {
-    dialogBox.remove();
+    dialogBox.close();
 
     reset();
 });
