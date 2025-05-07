@@ -436,6 +436,9 @@ const editTask = (btnEl) => {
     currentTask = tasks[currentTaskIndex];
 
     titleInput.value = currentTask.title;
+    dateInput.value = currentTask.date;
+    priceInput.value = currentTask.price;
+    descriptionInput.value = currentTask.description;
 
     taskForm.classList.toggle("hidden");
 };
