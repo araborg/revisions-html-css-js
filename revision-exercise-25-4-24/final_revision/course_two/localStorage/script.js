@@ -429,7 +429,11 @@ const reset = () => {
 };
 
 const editTask = (btnEl) => {
-    console.log(btnEl);
+    const currentTaskIndex = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
+
+    currentTask = tasks[currentTaskIndex];
 };
 
 const deleteTask = (btnEl) => {
@@ -451,5 +455,7 @@ closeBtn.addEventListener("click", () => {
 
     if (formInputContainValues && formInputValuesUpdated) {
         dialogBox.showModal();
-    } else [reset()];
+    } else {
+        reset();
+    }
 });
