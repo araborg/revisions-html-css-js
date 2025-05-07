@@ -388,8 +388,6 @@ const addOrUpdateTask = () => {
         description: removeSpecialChars(descriptionInput.value),
     };
 
-    console.log(tasks);
-
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
 
     // ds is either adding a new task or updating an existing task
@@ -442,6 +440,7 @@ const reset = () => {
     descriptionInput.value = "";
 
     taskForm.classList.toggle("hidden");
+    addTaskBtn.textContent = "Add Task";
 
     currentTask = {};
 };
