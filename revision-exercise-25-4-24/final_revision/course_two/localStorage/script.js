@@ -417,9 +417,6 @@ const loadTasksUI = () => {
     });
 };
 
-// console.log(tasks);
-// console.log(loadTasksUI());
-
 if (tasks.length) {
     loadTasksUI();
 }
