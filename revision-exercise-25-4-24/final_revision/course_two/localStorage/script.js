@@ -403,20 +403,20 @@ taskForm.addEventListener("submit", (e) => {
     addOrUpdateTask();
 });
 
-const loadTasksUI = () => {
-    tasks.map(({ id, title, date, price, description }) => {
-        tasksContainer.innerHTML += `
-                // <div class="task" id="${id}">
-                //     <p><strong>Title: </strong> ${title}</p>
-                //     <p><strong>Date: </strong> ${date}</p>
-                //     <p><strong>Price</strong>${price}</p>
-                //     <p><strong>Description: </strong>${description}</p>
-                // </div>
+// const loadTasksUI = () => {
+//     tasks.map(({ id, title, date, price, description }) => {
+//         tasksContainer.innerHTML += `
+//                 // <div class="task" id="${id}">
+//                 //     <p><strong>Title: </strong> ${title}</p>
+//                 //     <p><strong>Date: </strong> ${date}</p>
+//                 //     <p><strong>Price</strong>${price}</p>
+//                 //     <p><strong>Description: </strong>${description}</p>
+//                 // </div>
 
-                hello
-        `;
-    });
-};
+//                 hello
+//         `;
+//     });
+// };
 
-console.log(tasks);
+// console.log(tasks);
 // console.log(loadTasksUI());
