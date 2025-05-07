@@ -415,8 +415,8 @@ const loadTasksUI = () => {
                     <p><strong>Price: </strong>${price}</p>
                     <p><strong>Description: </strong>${description}</p>
 
-                    <button onclick="editTask(this)" class="btn">Edit</button>
-                    <button onclick="deleteTask(this)" class="btn">Delete</button>
+                    <button onclick="editTask(this)" id="${id}" class="btn">Edit</button>
+                    <button onclick="deleteTask(this)" id="${id}" class="btn">Delete</button>
                 </div>
         `;
     });
