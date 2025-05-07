@@ -395,6 +395,7 @@ const addOrUpdateTask = () => {
     reset();
 
     // console.log(tasks);
+    console.log(titleInput.value, dateInput.value);
 };
 
 taskForm.addEventListener("submit", (e) => {
