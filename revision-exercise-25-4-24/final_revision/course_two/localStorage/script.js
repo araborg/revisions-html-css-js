@@ -484,4 +484,8 @@ cancelBtn.addEventListener("click", () => {
     dialogBox.remove();
 });
 
-discardBtn.addEventListener("click", () => {});
+discardBtn.addEventListener("click", () => {
+    dialogBox.remove();
+
+    reset();
+});
