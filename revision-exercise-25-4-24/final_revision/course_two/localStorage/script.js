@@ -366,7 +366,12 @@ const addOrUpdateTask = () => {
         return;
     }
 
-    console.log("Not empty");
+    const taskObj = {
+        id: `${titleInput.value.split(" ").join("-")}`,
+        title: titleInput.value,
+    };
+
+    console.log(taskObj);
 };
 
 taskForm.addEventListener("submit", (e) => {
