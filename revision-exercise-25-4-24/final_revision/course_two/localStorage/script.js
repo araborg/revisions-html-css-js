@@ -380,9 +380,12 @@ const addOrUpdateTask = () => {
 
     const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
 
+    // ds is either adding a new task or updating an existing task
     if (taskIndex === -1) {
+        // add a new task
         tasks.unshift(taskObj);
     } else {
+        // update an existing task
         tasks[taskIndex] = taskObj;
     }
 
