@@ -432,8 +432,6 @@ const reset = () => {
     taskForm.classList.toggle("hidden");
 
     currentTask = {};
-
-    console.log(currentTask);
 };
 
 const editTask = (btnEl) => {
