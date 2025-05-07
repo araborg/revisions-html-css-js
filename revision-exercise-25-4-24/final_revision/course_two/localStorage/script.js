@@ -356,3 +356,5 @@ const tasksContainer = document.getElementById("tasks-container");
 addNewTask.addEventListener("click", () => {
     taskForm.classList.toggle("hidden");
 });
+
+const removeSpecialChars = () => {};
