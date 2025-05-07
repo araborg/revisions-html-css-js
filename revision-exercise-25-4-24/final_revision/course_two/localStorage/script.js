@@ -450,7 +450,9 @@ const editTask = (btnEl) => {
 };
 
 const deleteTask = (btnEl) => {
-    console.log(btnEl);
+    const currentTaskIndex = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
 };
 
 closeBtn.addEventListener("click", () => {
