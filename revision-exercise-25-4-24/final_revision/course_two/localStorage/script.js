@@ -359,4 +359,14 @@ addNewTask.addEventListener("click", () => {
 
 const removeSpecialChars = () => {};
 
-// const addNewTask = () => {};
+const addOrUpdateTask = () => {
+    if (titleInput.value === " ") {
+        console.log("Empty space");
+    }
+};
+
+addTaskBtn.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    addOrUpdateTask();
+});
