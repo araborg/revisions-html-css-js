@@ -538,7 +538,9 @@ const minusPrice = (btnEl) => {
 
     price = currentPrice;
 
-    console.log(price.cost);
+    price.cost--;
+
+    priceInput.value = price.cost;
 };
 
 const plusPrice = (btnEl) => {
