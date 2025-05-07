@@ -442,7 +442,7 @@ const editTask = (btnEl) => {
 
     taskForm.classList.toggle("hidden");
 
-    addNewTask.textContent = "Update Task";
+    addTaskBtn.textContent = "Update Task";
 };
 
 const deleteTask = (btnEl) => {
