@@ -354,8 +354,6 @@ const discardBtn = document.getElementById("discard-btn");
 const tasksContainer = document.getElementById("tasks-container");
 
 const tasks = JSON.parse(localStorage.getItem("addedTasks")) || [];
-
-// const tasks = [];
 let currentTask = {};
 
 addNewTask.addEventListener("click", () => {
@@ -407,17 +405,19 @@ taskForm.addEventListener("submit", (e) => {
 const loadTasksUI = () => {
     console.log(tasks);
 
-    tasks.map(
-        ({ id, title, date, price, description }) =>
-            (tasksContainer.innerHTML += `
-            <div class="task" id="${id}">
-                <p><strong>Title: </strong> ${title}</p>
-                <p><strong>Date: </strong> ${date}</p>
-                <p><strong>Price</strong>${price}</p>
-                <p><strong>Description: </strong>${description}</p>
-            </div>
-        `)
-    );
+    tasks.map(({ id, title, date, price, description }) => {
+        tasksContainer.innerHTML = `
+                <div class="task" id="${id}">
+                    <p><strong>Title: </strong> ${title}</p>
+                    <p><strong>Date: </strong> ${date}</p>
+                    <p><strong>Price</strong>${price}</p>
+                    <p><strong>Description: </strong>${description}</p>
+
+                    <button class="btn" onclick="">Edit</button>
+                    <button class="btn" onclick="">Delete</button>
+                </div>
+        `;
+    });
 };
 
 // console.log(tasks);
