@@ -393,7 +393,7 @@ const addOrUpdateTask = () => {
 
     loadTasksUI();
 
-    console.log(tasks);
+    // console.log(tasks);
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -406,11 +406,11 @@ const loadTasksUI = () => {
     console.log(tasks);
 
     tasks.map(({ id, title, date, price, description }) => {
-        tasksContainer.innerHTML = `
+        tasksContainer.innerHTML += `
                 <div class="task" id="${id}">
                     <p><strong>Title: </strong> ${title}</p>
                     <p><strong>Date: </strong> ${date}</p>
-                    <p><strong>Price</strong>${price}</p>
+                    <p><strong>Price: </strong>${price}</p>
                     <p><strong>Description: </strong>${description}</p>
 
                     <button class="btn" onclick="">Edit</button>
@@ -421,4 +421,4 @@ const loadTasksUI = () => {
 };
 
 // console.log(tasks);
-console.log(loadTasksUI());
+// console.log(loadTasksUI());
