@@ -363,6 +363,8 @@ const addOrUpdateTask = () => {
     if (!titleInput.value.trim()) {
         console.log("Empty space");
     }
+
+    console.log("Not empty");
 };
 
 taskForm.addEventListener("submit", (e) => {
@@ -370,3 +372,5 @@ taskForm.addEventListener("submit", (e) => {
 
     addOrUpdateTask();
 });
+
+console.log(!"");
