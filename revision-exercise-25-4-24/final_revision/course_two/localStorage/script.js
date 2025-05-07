@@ -453,6 +453,9 @@ const deleteTask = (btnEl) => {
     const currentTaskIndex = tasks.findIndex(
         (task) => task.id === btnEl.parentElement.id
     );
+
+    tasks.splice(currentTaskIndex, 1);
+    localStorage.setItem("addedTasks", JSON.stringify(tasks));
 };
 
 closeBtn.addEventListener("click", () => {
