@@ -391,4 +391,4 @@ taskForm.addEventListener("submit", (e) => {
     addOrUpdateTask();
 });
 
-// console.log(Boolean(1));
+console.log(tasks);
