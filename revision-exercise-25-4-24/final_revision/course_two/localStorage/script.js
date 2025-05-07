@@ -361,7 +361,9 @@ const removeSpecialChars = () => {};
 
 const addOrUpdateTask = () => {
     if (!titleInput.value.trim()) {
-        console.log("Empty space");
+        alert("Please provide a title");
+
+        return;
     }
 
     console.log("Not empty");
@@ -372,5 +374,3 @@ taskForm.addEventListener("submit", (e) => {
 
     addOrUpdateTask();
 });
-
-console.log(!"");
