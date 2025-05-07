@@ -371,6 +371,7 @@ const addOrUpdateTask = () => {
 
     const taskObj = {
         id: `${titleInput.value.split(" ").join("-")}-${Date.now()}`,
+
         title: titleInput.value,
         date: dateInput.value,
         price: priceInput.value,
