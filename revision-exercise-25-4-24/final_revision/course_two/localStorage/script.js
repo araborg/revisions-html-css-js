@@ -448,4 +448,8 @@ closeBtn.addEventListener("click", () => {
         dateInput.value !== currentTask.date ||
         priceInput.value !== currentTask.price ||
         descriptionInput.value !== currentTask.description;
+
+    if (formInputContainValues && formInputValuesUpdated) {
+        dialogBox.showModal();
+    } else [reset()];
 });
