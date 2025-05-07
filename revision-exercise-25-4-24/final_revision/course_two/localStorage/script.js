@@ -392,6 +392,7 @@ const addOrUpdateTask = () => {
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
 
     loadTasksUI();
+    reset();
 
     // console.log(tasks);
 };
@@ -426,3 +427,5 @@ const loadTasksUI = () => {
 if (tasks.length) {
     loadTasksUI();
 }
+
+const reset = () => {};
