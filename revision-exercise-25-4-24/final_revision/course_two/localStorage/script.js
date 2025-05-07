@@ -392,6 +392,8 @@ const addOrUpdateTask = () => {
 
     localStorage.setItem("tasks", JSON.stringify(taskObj));
 
+    loadTasksUI();
+
     console.log(tasks);
 };
 
@@ -414,4 +416,5 @@ const loadTasksUI = () => {
     });
 };
 
+console.log(tasks);
 console.log(loadTasksUI());
