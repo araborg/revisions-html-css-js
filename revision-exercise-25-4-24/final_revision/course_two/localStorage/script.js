@@ -402,6 +402,8 @@ taskForm.addEventListener("submit", (e) => {
 });
 
 const loadTasksUI = () => {
+    tasksContainer.innerHTML = ``;
+
     tasks.map(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
                 <div class="task" id="${id}">
