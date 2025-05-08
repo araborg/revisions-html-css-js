@@ -533,19 +533,17 @@ const minusPrice = (btnEl) => {
     const getTaskIndex = tasks.findIndex(
         (task) => task.id === btnEl.parentElement.id
     );
+
     const currentTask = tasks[getTaskIndex];
-    // console.log(currentTask?.date);
 
     const costEl = document.getElementById(
         `${currentTask.id}-${currentTask.date}`
     );
-    // console.log(costEl.id, currentTask.id);
 
     priceValue = Number(currentTask.price);
 
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue--;
-        console.log(priceValue);
     }
 
     costEl.textContent = priceValue;
