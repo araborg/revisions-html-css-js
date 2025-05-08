@@ -537,7 +537,7 @@ const minusPrice = (btnEl) => {
     const productPriceEl = document.getElementById("cost");
 
     const currentTask = tasks[getTaskIndex];
-    console.log(currentTask);
+    console.log(currentTask.id);
 
     priceValue = Number(currentTask.price);
 
