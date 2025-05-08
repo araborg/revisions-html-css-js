@@ -406,7 +406,8 @@ const addOrUpdateTask = () => {
         description: removeSpecialChars(descriptionInput.value),
     };
 
-    const taskIndex = tasks.findIndex((task) => task.id === currentTask.id);
+    const taskIndex = tasks //
+        .findIndex((task) => task.id === currentTask.id);
 
     // ds is either adding a new task or updating an existing task
     if (taskIndex === -1) {
