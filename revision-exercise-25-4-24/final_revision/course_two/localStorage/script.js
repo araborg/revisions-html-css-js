@@ -538,16 +538,16 @@ const minusPrice = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    const productPriceEl = document.getElementById("product-price");
+    const productPriceEl = document.getElementById("cost");
 
-    const currentTask = tasks[getTaskIndex];
-    console.log(productPriceEl);
+    // const currentTask = tasks[getTaskIndex];
+    console.log(productPriceEl.value);
 
     // priceValue = Number(productPriceEl.value);
 
     // priceValue--;
 
-    console.log(priceValue);
+    // console.log(priceValue);
     // productPriceEl.textContent = priceValue;
 };
 
