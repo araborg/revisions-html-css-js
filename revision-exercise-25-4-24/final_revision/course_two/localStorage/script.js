@@ -91,6 +91,10 @@ Diff btw dse?
 Diff btw JSON.parse() and JSON.stringify
 
 JSON.parse():
+The JSON.parse() static method parses a JSON string, 
+constructing the JavaScript value or object described 
+by the string. 
+
 const json = '{"result":true, "count":42}';
 const obj = JSON.parse(json);
 
