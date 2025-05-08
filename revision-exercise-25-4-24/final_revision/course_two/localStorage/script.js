@@ -552,11 +552,14 @@ const minusPrice = (btnEl) => {
 };
 
 const plusPrice = (btnEl) => {
-    const getTaskIndex = tasks.findIndex(
-        (task) => task.id === btnEl.parentElement.id
-    );
+    console.log(btnEl);
 
-    console.log(getTaskIndex);
+    // const getTaskIndex = tasks.findIndex(
+    //     (task) => task.id === btnEl.parentElement.id
+    // );
+
+    // console.log(getTaskIndex);
+    // console.log(tasks);
 
     // const currentTask = tasks[getTaskIndex];
 
