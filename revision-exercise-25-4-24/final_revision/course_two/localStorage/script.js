@@ -325,8 +325,6 @@ discardBtn.addEventListener("click", () => {
 
 
 
-
-
 Revision:
 */
 // form
