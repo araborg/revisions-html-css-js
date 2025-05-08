@@ -483,6 +483,8 @@ if (tasks.length) {
     loadTasksUI();
 }
 
+// fxn called in: addOrUpdateTask(),
+// closeBtn addEventListener, discardBtn
 const reset = () => {
     titleInput.value = "";
     dateInput.value = "";
