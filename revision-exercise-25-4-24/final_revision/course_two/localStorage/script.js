@@ -437,7 +437,7 @@ const loadTasksUI = () => {
                     </p>
                     
                     <button 
-                        onclick="plusPrice" 
+                        onclick="plusPrice(this)" 
                         id="${id}"
                         class="btn"
                     >
@@ -542,11 +542,8 @@ const minusPrice = (btnEl) => {
 
     priceValue = Number(currentTask.price);
 
-    // while (priceValue !== -1) {
     priceValue--;
-    console.log(priceValue);
     productPriceEl.textContent = priceValue;
-    // }
 
     currentTask.price = priceValue;
 };
