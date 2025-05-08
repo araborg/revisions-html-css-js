@@ -540,7 +540,7 @@ const minusPrice = (btnEl) => {
 
     // price.cost--;
 
-    while (currentPrice.cost >= 0) {
+    while (currentTask.price >= 0) {
         currentPrice.cost--;
     }
 
