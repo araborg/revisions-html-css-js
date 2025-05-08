@@ -490,6 +490,7 @@ const reset = () => {
     descriptionInput.value = "";
 
     taskForm.classList.toggle("hidden");
+
     addTaskBtn.textContent = "Add Task";
 
     currentTask = {};
