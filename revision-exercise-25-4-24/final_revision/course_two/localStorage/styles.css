@@ -76,10 +76,10 @@ h1 {
     height: 20px;
 }
 
-.price-container {
+/* .price-container {
     display: flex;
     align-items: center;
-}
+} */
 
 .task-form {
     display: flex;
