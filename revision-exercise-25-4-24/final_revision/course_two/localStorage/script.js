@@ -557,7 +557,6 @@ const plusPrice = (btnEl) => {
     );
 
     const currentTask = tasks[getTaskIndex];
-    // console.log(currentTask.id);
 
     const costEl = document.getElementById(
         `${currentTask.id}-${currentTask.date}`
