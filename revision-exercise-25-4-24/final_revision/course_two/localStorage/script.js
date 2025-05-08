@@ -553,7 +553,7 @@ const plusPrice = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    console.log("plus");
+    console.log(currentTask.id);
 
     const productPriceEl = document.getElementById("cost");
 
