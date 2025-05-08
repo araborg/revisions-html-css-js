@@ -559,23 +559,23 @@ const plusPrice = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    console.log(getTaskIndex);
+    // console.log(getTaskIndex);
     // console.log(tasks);
 
-    // const currentTask = tasks[getTaskIndex];
+    const currentTask = tasks[getTaskIndex];
 
     // console.log(currentTask);
 
-    // const costEl = document.getElementById(
-    //     `${currentTask.id}-${currentTask.date}`
-    // );
+    const costEl = document.getElementById(
+        `${currentTask.id}-${currentTask.date}`
+    );
 
-    // priceValue = Number(currentTask.price);
+    priceValue = Number(currentTask.price);
 
-    // if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
-    //     priceValue++;
-    // }
+    if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
+        priceValue++;
+    }
 
-    // costEl.textContent = priceValue;
-    // currentTask.price = priceValue;
+    costEl.textContent = priceValue;
+    currentTask.price = priceValue;
 };
