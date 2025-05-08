@@ -544,8 +544,9 @@ const minusPrice = (btnEl) => {
     }
 
     costEl.textContent = priceValue;
-
     currentTask.price = priceValue;
+
+    console.log(priceValue);
 };
 
 const plusPrice = (btnEl) => {
@@ -575,4 +576,6 @@ const plusPrice = (btnEl) => {
 
     costEl.textContent = priceValue;
     currentTask.price = priceValue;
+
+    console.log(priceValue);
 };
