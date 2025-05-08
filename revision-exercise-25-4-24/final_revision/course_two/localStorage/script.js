@@ -542,9 +542,11 @@ const minusPrice = (btnEl) => {
 
     priceValue = Number(currentTask.price);
 
-    priceValue--;
+    while (priceValue !== -1) {
+        console.log(priceValue);
 
-    console.log(priceValue);
+        priceValue--;
+    }
 };
 
 const plusPrice = (btnEl) => {
