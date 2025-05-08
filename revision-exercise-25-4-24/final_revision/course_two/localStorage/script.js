@@ -406,6 +406,7 @@ const addOrUpdateTask = () => {
         description: removeSpecialChars(descriptionInput.value),
     };
 
+    // find d index of d task clicked or newly created
     const taskIndex = tasks //
         .findIndex((task) => task.id === currentTask.id);
 
