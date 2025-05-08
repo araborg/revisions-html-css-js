@@ -433,7 +433,7 @@ const loadTasksUI = () => {
                     </button>
 
                     <p id="product-price"><strong>Price: </strong>
-                        <span id="cost" value="${price}">    
+                        <span id="cost" value="${price})">    
                             ${price}
                         </span>
                     </p>
