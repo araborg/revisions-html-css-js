@@ -554,9 +554,6 @@ const plusPrice = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    // console.log(getTaskIndex);
-    // console.log(tasks);
-
     const currentTask = tasks[getTaskIndex];
 
     // console.log(currentTask);
