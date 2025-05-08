@@ -428,7 +428,7 @@ const loadTasksUI = () => {
                         class="btn"
                         value="${price}"
                     >
-                        Minus
+                        -
                     </button>
                         <p><strong>Price: </strong>${price}</p>
                     <button 
@@ -437,7 +437,7 @@ const loadTasksUI = () => {
                         class="btn"
                         value="${price}"
                     >
-                        Plus
+                       +
                     </button>
                    
                     <p><strong>Description: </strong>${description}</p>
