@@ -424,13 +424,13 @@ const loadTasksUI = () => {
 
                     <button 
                         onclick="minusPrice(this)" 
-                        id="${id}" 
                         class="btn"
                     >
                         -
                     </button>
 
-                    <span"><strong>Price: </strong>
+                    <span>
+                        <strong>Price: </strong>
                         <span id="${id}-${date}">    
                             ${price}
                         </span>
@@ -438,10 +438,10 @@ const loadTasksUI = () => {
                     
                     <button 
                         onclick="plusPrice(this)" 
-                        id="${id}"
+                        
                         class="btn"
                     >
-                    +
+                        +
                     </button>
                    
                     <p><strong>Description: </strong>${description}</p>
@@ -552,13 +552,14 @@ const minusPrice = (btnEl) => {
 };
 
 const plusPrice = (btnEl) => {
-    console.log(btnEl);
+    // console.log(btnEl);
+    // console.log(btnEl.parentElement.id);
 
-    // const getTaskIndex = tasks.findIndex(
-    //     (task) => task.id === btnEl.parentElement.id
-    // );
+    const getTaskIndex = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
 
-    // console.log(getTaskIndex);
+    console.log(getTaskIndex);
     // console.log(tasks);
 
     // const currentTask = tasks[getTaskIndex];
