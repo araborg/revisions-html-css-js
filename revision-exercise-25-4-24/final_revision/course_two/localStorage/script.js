@@ -428,6 +428,7 @@ const addOrUpdateTask = () => {
 
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
 
+    // once tasks is populated, update d UI
     loadTasksUI();
     reset();
 };
