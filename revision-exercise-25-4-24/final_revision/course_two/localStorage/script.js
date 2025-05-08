@@ -324,10 +324,10 @@ discardBtn.addEventListener("click", () => {
 });
 
 
-Revision
 
 
 
+Revision:
 */
 // form
 const taskForm = document.getElementById("task-form");
@@ -382,11 +382,8 @@ const addOrUpdateTask = () => {
             .join("-")}-${Date.now()}`,
 
         title: removeSpecialChars(titleInput.value),
-
         date: removeSpecialChars(dateInput.value),
-
         price: removeSpecialChars(priceInput.value),
-
         description: removeSpecialChars(descriptionInput.value),
     };
 
