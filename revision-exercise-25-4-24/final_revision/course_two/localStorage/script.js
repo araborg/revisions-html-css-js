@@ -543,13 +543,12 @@ const minusPrice = (btnEl) => {
 
     priceValue = Number(currentTask.price);
 
-    priceValue--;
-
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
+        priceValue--;
         console.log(priceValue);
     }
 
-    // costEl.textContent = priceValue;
+    costEl.textContent = priceValue;
     // btnEl.parentElement.textContent = priceValue;
 
     currentTask.price = priceValue;
