@@ -544,27 +544,6 @@ const minusPrice = (btnEl) => {
 
     // console.log(typeof priceValue);
     productPriceEl.textContent = priceValue;
-
-    // console.log(productPriceEl.value);
-    // const currentPrice = {
-    //     cost: Number(currentTask.price),
-    // };
-
-    // // price = currentPrice;
-
-    // // price.cost--;
-
-    // while (currentTask.price >= 0) {
-    //     currentPrice.cost--;
-    // }
-
-    // console.log(currentPrice.cost);
-
-    // priceInput.value = price.cost;
-
-    // console.log(price.cost);
-
-    // priceInput.textContent = price.cost;
 };
 
 const plusPrice = (btnEl) => {
