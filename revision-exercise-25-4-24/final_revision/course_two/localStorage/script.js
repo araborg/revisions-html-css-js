@@ -89,8 +89,16 @@ Diff btw dse?
 
 
 Diff btw JSON.parse() and JSON.stringify
-JSON.parse():
 
+JSON.parse():
+const json = '{"result":true, "count":42}';
+const obj = JSON.parse(json);
+
+console.log(obj.count);
+// Expected output: 42
+
+console.log(obj.result);
+// Expected output: true
 
 JSON.stringify():
 
