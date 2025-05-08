@@ -430,7 +430,9 @@ const loadTasksUI = () => {
                     >
                         -
                     </button>
-                        <p><strong>Price: </strong>${price}</p>
+
+                    <p id="product-price"><strong>Price: </strong>${price}</p>
+                    
                     <button 
                         onclick="plusPrice" 
                         id="${id}"
@@ -525,26 +527,35 @@ discardBtn.addEventListener("click", () => {
 
 // plusBtn.addEventListener("click", () => {});
 
+let priceValue;
+
 const minusPrice = (btnEl) => {
-    const getTask = tasks.findIndex(
+    const getTaskIndex = tasks.findIndex(
         (task) => task.id === btnEl.parentElement.id
     );
 
-    const currentTask = tasks[getTask];
+    const productPrice = document.getElementById("product-price");
 
-    const currentPrice = {
-        cost: Number(currentTask.price),
-    };
+    const currentTask = tasks[getTaskIndex];
 
-    // price = currentPrice;
+    priceValue = Number(currentTask.price);
 
-    // price.cost--;
+    priceValue--;
 
-    while (currentTask.price >= 0) {
-        currentPrice.cost--;
-    }
+    console.log(typeof priceValue);
+    // const currentPrice = {
+    //     cost: Number(currentTask.price),
+    // };
 
-    console.log(currentPrice.cost);
+    // // price = currentPrice;
+
+    // // price.cost--;
+
+    // while (currentTask.price >= 0) {
+    //     currentPrice.cost--;
+    // }
+
+    // console.log(currentPrice.cost);
 
     // priceInput.value = price.cost;
 
