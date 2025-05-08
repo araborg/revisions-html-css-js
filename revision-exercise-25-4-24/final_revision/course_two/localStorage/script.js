@@ -430,11 +430,11 @@ const loadTasksUI = () => {
                         -
                     </button>
 
-                    <p id="product-price"><strong>Price: </strong>
+                    <span id="product-price"><strong>Price: </strong>
                         <span id="cost" value="${price}">    
                             ${price}
                         </span>
-                    </p>
+                    </span>
                     
                     <button 
                         onclick="plusPrice(this)" 
@@ -534,8 +534,6 @@ const minusPrice = (btnEl) => {
         (task) => task.id === btnEl.parentElement.id
     );
 
-    console.log("minus");
-
     const productPriceEl = document.getElementById("cost");
 
     const currentTask = tasks[getTaskIndex];
@@ -545,6 +543,7 @@ const minusPrice = (btnEl) => {
 
     priceValue--;
     productPriceEl.textContent = priceValue;
+    // btnEl.parentElement.textContent = priceValue;
 
     currentTask.price = priceValue;
 };
