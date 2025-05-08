@@ -540,7 +540,9 @@ const minusPrice = (btnEl) => {
 
     // price.cost--;
 
-    currentPrice.cost--;
+    while (currentPrice.cost >= 0) {
+        currentPrice.cost--;
+    }
 
     console.log(currentPrice.cost);
 
