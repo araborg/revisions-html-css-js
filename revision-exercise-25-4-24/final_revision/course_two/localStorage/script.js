@@ -393,6 +393,7 @@ const addOrUpdateTask = () => {
         return;
     }
 
+    // cr8 an obj dt rep a new task
     const taskObj = {
         id: `${removeSpecialChars(titleInput.value)
             .toLowerCase()
