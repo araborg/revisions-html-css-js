@@ -549,5 +549,18 @@ const minusPrice = (btnEl) => {
 };
 
 const plusPrice = (btnEl) => {
-    console.log(btnEl);
+    const getTaskIndex = tasks.findIndex(
+        (task) => task.id === btnEl.parentElement.id
+    );
+
+    const productPriceEl = document.getElementById("cost");
+
+    const currentTask = tasks[getTaskIndex];
+
+    priceValue = Number(currentTask.price);
+
+    priceValue++;
+    productPriceEl.textContent = priceValue;
+
+    currentTask.price = priceValue;
 };
