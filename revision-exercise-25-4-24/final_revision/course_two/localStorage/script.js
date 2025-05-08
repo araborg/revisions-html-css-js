@@ -107,7 +107,9 @@ console.log(obj.count);
 console.log(obj.result);
 // Expected output: true
 
+
 JSON.stringify():
+JSON Stringify plays a significant role in the JSON concept. It's a function in JavaScript that converts a JavaScript object into a JSON string. This method is commonly used to send data from the client side to a web server in a string format.
 
 
 
