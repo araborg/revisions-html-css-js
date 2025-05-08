@@ -164,7 +164,8 @@ const addOrUpdateTask = () => {
     const taskObj = {       
         id: `${
             removeSpecialChars(titleInput.value)
-            .toLowerCase().split(" ")
+            .toLowerCase()
+            .split(" ")
             .join("-")
             }-${Date.now()}`,
             
@@ -344,6 +345,7 @@ discardBtn.addEventListener("click", () => {
 Revision: Start reading from the top
 
 */
+
 // form
 const taskForm = document.getElementById("task-form");
 
