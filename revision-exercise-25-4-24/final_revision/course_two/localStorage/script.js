@@ -422,29 +422,27 @@ const loadTasksUI = () => {
                     <p><strong>Title: </strong> ${title}</p>
                     <p><strong>Date: </strong> ${date}</p>
 
-                    <div class="price-container">
-                        <button 
-                            onclick="minusPrice(this)" 
-                            id="${id}" 
-                            class="btn"
-                        >
-                            -
-                        </button>
+                    <button 
+                        onclick="minusPrice(this)" 
+                        id="${id}" 
+                        class="btn"
+                    >
+                        -
+                    </button>
 
-                        <p id="product-price"><strong>Price: </strong>
-                            <span id="cost" value="${price}">    
-                                ${price}
-                            </span>
-                        </p>
-                        
-                        <button 
-                            onclick="plusPrice(this)" 
-                            id="${id}"
-                            class="btn"
-                        >
-                        +
-                        </button>
-                    </div>
+                    <p id="product-price"><strong>Price: </strong>
+                        <span id="cost" value="${price}">    
+                            ${price}
+                        </span>
+                    </p>
+                    
+                    <button 
+                        onclick="plusPrice(this)" 
+                        id="${id}"
+                        class="btn"
+                    >
+                    +
+                    </button>
                    
                     <p><strong>Description: </strong>${description}</p>
 
