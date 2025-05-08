@@ -527,8 +527,6 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
-// plusBtn.addEventListener("click", () => {});
-
 let priceValue;
 
 const minusPrice = (btnEl) => {
