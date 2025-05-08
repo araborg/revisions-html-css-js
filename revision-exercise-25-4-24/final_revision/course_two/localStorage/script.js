@@ -417,8 +417,6 @@ const loadTasksUI = () => {
     tasksContainer.innerHTML = ``;
 
     tasks.map(({ id, title, date, price, description }) => {
-        console.log(price);
-
         tasksContainer.innerHTML += `
                 <div class="task" id="${id}">
                     <p><strong>Title: </strong> ${title}</p>
@@ -541,7 +539,7 @@ const minusPrice = (btnEl) => {
     const productPriceEl = document.getElementById("cost");
 
     // const currentTask = tasks[getTaskIndex];
-    console.log(productPriceEl.value);
+    console.log(productPriceEl.parentElement.value);
 
     // priceValue = Number(productPriceEl.value);
 
