@@ -94,6 +94,9 @@ JSON.parse():
 const json = '{"result":true, "count":42}';
 const obj = JSON.parse(json);
 
+console.log(json);
+console.log(obj);
+
 console.log(obj.count);
 // Expected output: 42
 
@@ -580,3 +583,15 @@ const plusPrice = (btnEl) => {
 
     console.log(priceValue);
 };
+
+const json = '{"result":true, "count":42}';
+const obj = JSON.parse(json);
+
+console.log(json);
+console.log(obj);
+
+console.log(obj.count);
+// Expected output: 42
+
+console.log(obj.result);
+// Expected output: true
