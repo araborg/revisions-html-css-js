@@ -43,6 +43,7 @@ const animationData = [
 ];
 
 /*
+
 1.
 const getInputValue = () => {
     // wn numberInput.value has noth inside: it means d value is: ""
