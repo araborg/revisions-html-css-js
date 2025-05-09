@@ -64,6 +64,13 @@ const getInputValue = () => {
     decimalToBinary(inputVal);
 };
 
-const decimalToBinary = (input) => {};
+const decimalToBinary = (input) => {
+    console.log(input);
+
+    // needed variables
+    const inputs = [];
+    const reminders = [];
+    const results = [];
+};
 
 convertBtn.addEventListener("click", getInputValue);
