@@ -98,7 +98,6 @@ const decimalToBinary = (input) => {
 
         input = result; // = 2, 1, 0
     }
-    console.log(inputs, reminders, results);
 
     numberInput.value = "";
 
