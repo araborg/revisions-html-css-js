@@ -525,11 +525,12 @@ const editTask = (btnEl) => {
     currentTask = tasks[currentTaskIndex];
 
     // ds helps update d form with currentTask values
-    // titleInput.value = currentTask.title;
-    // dateInput.value = currentTask.date;
-    // priceInput.value = currentTask.price;
-    // descriptionInput.value = currentTask.description;
+    titleInput.value = currentTask.title;
+    dateInput.value = currentTask.date;
+    priceInput.value = currentTask.price;
+    descriptionInput.value = currentTask.description;
 
+    // d same btn in Add Task Btn but change text
     addTaskBtn.textContent = "Update Task";
 
     taskForm.classList.toggle("hidden");
