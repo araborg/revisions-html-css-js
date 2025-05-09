@@ -595,7 +595,7 @@ const minusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
-    const priceValue = Number(currentTask.price);
+    let priceValue = Number(currentTask.price);
 
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue--;
@@ -618,7 +618,7 @@ const plusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
-    const priceValue = Number(currentTask.price);
+    let priceValue = Number(currentTask.price);
 
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue++;
