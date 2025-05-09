@@ -53,11 +53,13 @@ const getInputValue = () => {
 
     const inputVal = parseInt(numberInput.value);
 
+    // d if condition: in case of empty string || in case d Number,
+    // inputVal is less than 0 || in case inputVal returns NaN
     if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
-        // console.log(numberInput.value);
-    }
+        alert("Please provide a decimal number greater than or equal to 0");
 
-    // "Please provide a decimal number greater than or equal to 0"
+        return;
+    }
 };
 
 // console.log(());
