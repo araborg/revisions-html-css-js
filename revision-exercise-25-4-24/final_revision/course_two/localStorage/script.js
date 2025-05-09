@@ -583,7 +583,8 @@ discardBtn.addEventListener("click", () => {
 });
 
 // **************************************
-// Personal Update
+
+// Personal Addn
 const minusPrice = (btnEl) => {
     const getTaskIndex = tasks.findIndex(
         (task) => task.id === btnEl.parentElement.id
