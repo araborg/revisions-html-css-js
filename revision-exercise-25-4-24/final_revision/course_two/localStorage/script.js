@@ -604,6 +604,8 @@ const minusPrice = (btnEl) => {
     }
 
     costEl.textContent = priceValue;
+
+    // ds helps update d priceValue as it decreases
     currentTask.price = priceValue;
 
     console.log(priceValue);
@@ -629,6 +631,8 @@ const plusPrice = (btnEl) => {
     }
 
     costEl.textContent = priceValue;
+
+    // ds helps update d priceValue as it increases
     currentTask.price = priceValue;
 
     console.log(priceValue);
