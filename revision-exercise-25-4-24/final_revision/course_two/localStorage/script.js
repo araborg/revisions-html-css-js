@@ -459,7 +459,7 @@ const loadTasksUI = () => {
 
                     <span>
                         <strong>Price: </strong>
-                        
+
                         <span id="${id}-${date}">    
                             ${price}
                         </span>
@@ -475,8 +475,21 @@ const loadTasksUI = () => {
                    
                     <p><strong>Description: </strong>${description}</p>
 
-                    <button onclick="editTask(this)" id="${id}" class="btn">Edit</button>
-                    <button onclick="deleteTask(this)" id="${id}" class="btn">Delete</button>
+                    <button 
+                        onclick="editTask(this)" 
+                        id="${id}" 
+                        class="btn"
+                    >
+                        Edit
+                    </button>
+                    
+                    <button 
+                        onclick="deleteTask(this)" 
+                        id="${id}" 
+                        class="btn"
+                    >
+                        Delete
+                    </button>
                 </div>
         `;
     });
