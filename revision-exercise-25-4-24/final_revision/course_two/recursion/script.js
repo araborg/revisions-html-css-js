@@ -65,9 +65,9 @@ const getInputValue = () => {
 };
 
 // diff btw reminder and divisn
-// reminder:
+// reminder: returns d remaining value after a WHOLE divisn
 
-// divisn:
+// divisn: divides d value into equal half
 
 const decimalToBinary = (input) => {
     // needed variables
