@@ -132,11 +132,9 @@ const decimalToBinary = (input) => {
     }
 
     while (input > 0) {
+        // d purpose of: (input % 2) + binary is
+        // string concatenatn
         binary = (input % 2) + binary;
-
-        const newBinary = input % 2;
-
-        console.log(binary, newBinary);
 
         input = Math.floor(input / 2);
     }
