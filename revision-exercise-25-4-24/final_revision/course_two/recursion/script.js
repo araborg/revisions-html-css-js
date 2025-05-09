@@ -106,3 +106,7 @@ const decimalToBinary = (input) => {
 };
 
 convertBtn.addEventListener("click", getInputValue);
+
+numberInput.addEventListener("click", (e) => {
+    console.log(e);
+});
