@@ -605,7 +605,8 @@ const minusPrice = (btnEl) => {
 
     costEl.textContent = priceValue;
 
-    // ds helps update d priceValue as it decreases
+    // ds helps update d priceValue as it decreases. ds is called
+    // reassigning updated price, priceValue, to currentTask price
     currentTask.price = priceValue;
 
     console.log(priceValue);
