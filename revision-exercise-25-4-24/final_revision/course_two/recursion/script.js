@@ -76,6 +76,7 @@ const decimalToBinary = (input) => {
         return;
     }
 
+    // wn input = 4
     while (input > 0) {
         const reminder = input % 2;
         const result = Math.floor(input / 2);
