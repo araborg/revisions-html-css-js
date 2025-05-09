@@ -582,8 +582,8 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
-// let priceValue;
-
+// **************************************
+// Personal Update
 const minusPrice = (btnEl) => {
     const getTaskIndex = tasks.findIndex(
         (task) => task.id === btnEl.parentElement.id
