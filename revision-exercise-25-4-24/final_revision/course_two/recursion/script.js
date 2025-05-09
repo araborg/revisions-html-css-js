@@ -45,9 +45,15 @@ const animationData = [
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    // wn !numberInput.value: it means d value is !""
+    console.log(inputVal === " ", isNaN(""));
+
+    // wn !numberInput.value: it means d value is: !""
+    // isNaN(inputVal)
+
+    // console.log(isNaN(inputVal));
+
     if (!numberInput.value) {
-        console.log(numberInput.value);
+        // console.log(numberInput.value);
     }
 
     // "Please provide a decimal number greater than or equal to 0"
