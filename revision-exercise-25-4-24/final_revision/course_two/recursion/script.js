@@ -64,6 +64,11 @@ const getInputValue = () => {
     decimalToBinary(inputVal);
 };
 
+// diff btw reminder and divisn
+// reminder:
+
+// divisn:
+
 const decimalToBinary = (input) => {
     // needed variables
     const inputs = [];
