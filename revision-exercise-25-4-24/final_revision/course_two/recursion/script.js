@@ -87,7 +87,8 @@ const decimalToBinary = (input) => {
         // modulo
         const reminder = input % 2; // 0, 0, 1
 
-        // divisn
+        // divisn: ds reduces d value of input wc is a
+        // condition needed to avoid infinite loop
         const result = Math.floor(input / 2); // 2, 1, 0
 
         // update d needed variables declared earlier
