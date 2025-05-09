@@ -46,7 +46,6 @@ const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
     // wn !numberInput.value: it means d value is !""
-
     if (!numberInput.value) {
         console.log(numberInput.value);
     }
