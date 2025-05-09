@@ -512,6 +512,8 @@ const reset = () => {
 
     addTaskBtn.textContent = "Add Task";
 
+    // incase dre is a currentTask revert to empty obj
+    // to mk room for a new currentTask
     currentTask = {};
 };
 
