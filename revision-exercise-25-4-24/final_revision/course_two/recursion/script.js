@@ -108,7 +108,7 @@ const decimalToBinary = (input) => {
 convertBtn.addEventListener("click", getInputValue);
 
 numberInput.addEventListener("keydown", (e) => {
-    // if (e.target.key === "Enter") {
-    console.log(e);
-    // }
+    if (e.key === "Enter") {
+        console.log(e);
+    }
 });
