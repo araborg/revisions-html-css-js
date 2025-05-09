@@ -60,9 +60,10 @@ const getInputValue = () => {
 
         return;
     }
+
+    decimalToBinary(inputVal);
 };
 
-// console.log(());
-convertBtn.addEventListener("click", getInputValue);
-
 const decimalToBinary = (input) => {};
+
+convertBtn.addEventListener("click", getInputValue);
