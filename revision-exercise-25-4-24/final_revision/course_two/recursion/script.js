@@ -111,7 +111,7 @@ const decimalToBinary = (input) => {
 =====================================================
 
 2.
-*/
+
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
@@ -136,11 +136,17 @@ const decimalToBinary = (input) => {
         // for string concatenatn
         binary = (input % 2) + binary;
 
+        // reduce input
         input = Math.floor(input / 2);
     }
 
     result.textContent = binary;
 };
+
+=====================================================
+
+3.
+*/
 
 convertBtn.addEventListener("click", getInputValue);
 
