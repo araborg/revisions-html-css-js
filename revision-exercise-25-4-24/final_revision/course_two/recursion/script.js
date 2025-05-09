@@ -53,8 +53,6 @@ const getInputValue = () => {
 
     const inputVal = parseInt(numberInput.value);
 
-    console.log(Boolean(""));
-
     if (!numberInput.value) {
         // console.log(numberInput.value);
     }
