@@ -83,17 +83,17 @@ const decimalToBinary = (input) => {
 
     // wn input = 4
     while (input > 0) {
-        const reminder = input % 2;
-        const result = Math.floor(input / 2);
+        const reminder = input % 2; // 0, 0, 1
+        const result = Math.floor(input / 2); // 2, 1, 0
 
         console.log(reminder, result);
 
         // update d needed variables declared earlier
-        inputs.push(input);
-        reminders.push(reminder);
-        results.push(result);
+        inputs.push(input); // 4, 2, 1
+        reminders.push(reminder); // 0, 0, 1
+        results.push(result); // 2, 1, 0
 
-        input = result;
+        input = result; // = 2, 1, 0
     }
 
     numberInput.value = "";
