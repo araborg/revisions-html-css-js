@@ -65,7 +65,8 @@ const getInputValue = () => {
 };
 
 // diff btw reminder and divisn
-// reminder: returns d remaining value after a WHOLE divisn
+// reminder: returns d remaining value after a WHOLE
+// divisn e.g 1 (5 % 2) after has wholely divided 5 twice
 
 // divisn: divides d value into equal half
 
@@ -83,7 +84,10 @@ const decimalToBinary = (input) => {
 
     // wn input = 4
     while (input > 0) {
+        // modulo
         const reminder = input % 2; // 0, 0, 1
+
+        // divisn
         const result = Math.floor(input / 2); // 2, 1, 0
 
         // update d needed variables declared earlier
