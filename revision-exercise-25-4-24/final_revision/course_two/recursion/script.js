@@ -147,6 +147,20 @@ const decimalToBinary = (input) => {
 3. Using recursion
 
 */
+const getInputValue = () => {
+    const inputVal = parseInt(numberInput.value);
+
+    if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
+        alert("Please provide a decimal number greater than or equal to 0");
+
+        return;
+    }
+
+    // little modification
+    result.textContent = decimalToBinary(inputVal);
+};
+
+const decimalToBinary = () => {};
 
 convertBtn.addEventListener("click", getInputValue);
 
