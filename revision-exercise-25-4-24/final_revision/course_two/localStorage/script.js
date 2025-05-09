@@ -544,7 +544,7 @@ const deleteTask = (btnEl) => {
     tasks.splice(currentTaskIndex, 1);
     localStorage.setItem("addedTasks", JSON.stringify(tasks));
 
-    // remove it from the root file.
+    // remove it from the root file and d UI.
     btnEl.parentElement.remove();
 };
 
@@ -570,10 +570,12 @@ closeBtn.addEventListener("click", () => {
     }
 });
 
+// do nt close form during update
 cancelBtn.addEventListener("click", () => {
     dialogBox.close();
 });
 
+// close form even if dre is/r update
 discardBtn.addEventListener("click", () => {
     dialogBox.close();
 
