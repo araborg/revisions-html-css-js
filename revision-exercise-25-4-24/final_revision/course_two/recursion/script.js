@@ -47,7 +47,7 @@ const getInputValue = () => {
 
     console.log(!"");
 
-    if (numberInput.value) {
+    if (!numberInput.value) {
         console.log(numberInput.value);
     }
 
