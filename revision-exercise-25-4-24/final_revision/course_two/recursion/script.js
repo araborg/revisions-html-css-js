@@ -47,3 +47,6 @@ const getInputValue = () => {
 
     console.log(inputVal);
 };
+
+// console.log(());
+getInputValue();
