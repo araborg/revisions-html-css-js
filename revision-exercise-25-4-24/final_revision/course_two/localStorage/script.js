@@ -595,8 +595,10 @@ const minusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
+    // convert d currentTask price to Number 4rm String
     let priceValue = Number(currentTask.price);
 
+    // d concitionfor update
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue--;
     }
@@ -618,8 +620,10 @@ const plusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
+    // convert d currentTask price to Number 4rm String
     let priceValue = Number(currentTask.price);
 
+    // d concitionfor update
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue++;
     }
