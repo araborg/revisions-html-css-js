@@ -86,14 +86,14 @@ const decimalToBinary = (input) => {
         const reminder = input % 2; // 0, 0, 1
         const result = Math.floor(input / 2); // 2, 1, 0
 
-        console.log(reminder, result);
-
         // update d needed variables declared earlier
         inputs.push(input); // 4, 2, 1
         reminders.push(reminder); // 0, 0, 1
         results.push(result); // 2, 1, 0
 
         input = result; // = 2, 1, 0
+
+        console.log(inputs, reminders, results);
     }
 
     numberInput.value = "";
