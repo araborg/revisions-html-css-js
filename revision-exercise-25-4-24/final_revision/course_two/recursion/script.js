@@ -107,14 +107,8 @@ const decimalToBinary = (input) => {
     result.textContent = reminders.reverse().join("");
 };
 
-convertBtn.addEventListener("click", getInputValue);
 
-numberInput.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
-        getInputValue();
-    }
-});
-
+=====================================================
 
 2.
 */
@@ -138,9 +132,9 @@ const decimalToBinary = (input) => {
     }
 
     while (input > 0) {
-        binary = input % 2;
+        binary = (input % 2) + binary;
 
-        const newBinary = binary + binary;
+        const newBinary = input % 2;
 
         console.log(binary, newBinary);
 
@@ -149,3 +143,11 @@ const decimalToBinary = (input) => {
 
     result.textContent = binary;
 };
+
+convertBtn.addEventListener("click", getInputValue);
+
+numberInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        getInputValue();
+    }
+});
