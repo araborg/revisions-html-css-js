@@ -70,7 +70,7 @@ const getInputValue = () => {
 // divisn: divides d value into equal half
 
 const decimalToBinary = (input) => {
-    // needed variables
+    // needed variables containers
     const inputs = [];
     const reminders = [];
     const results = [];
@@ -92,9 +92,8 @@ const decimalToBinary = (input) => {
         results.push(result); // 2, 1, 0
 
         input = result; // = 2, 1, 0
-
-        console.log(inputs, reminders, results);
     }
+    console.log(inputs, reminders, results);
 
     numberInput.value = "";
 
