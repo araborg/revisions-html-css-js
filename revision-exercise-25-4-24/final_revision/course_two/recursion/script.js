@@ -43,13 +43,16 @@ const animationData = [
 ];
 
 const getInputValue = () => {
+    // wn numberInput.value: it means d value is: ""
+    // parseInt("") or parseInt(numberInput.value) return NaN
+    // NaN === NaN returns false
+
     const inputVal = parseInt(numberInput.value);
 
-    console.log(typeof inputVal, typeof numberInput.value);
+    console.log(NaN === NaN, typeof numberInput.value);
 
     console.log(inputVal === "", isNaN(""), numberInput.value === "");
 
-    // wn numberInput.value: it means d value is: ""
     // isNaN(inputVal)
 
     // console.log(isNaN(inputVal));
