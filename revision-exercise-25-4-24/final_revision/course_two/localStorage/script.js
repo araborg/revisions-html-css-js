@@ -582,7 +582,7 @@ discardBtn.addEventListener("click", () => {
     reset();
 });
 
-let priceValue;
+// let priceValue;
 
 const minusPrice = (btnEl) => {
     const getTaskIndex = tasks.findIndex(
@@ -595,7 +595,7 @@ const minusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
-    priceValue = Number(currentTask.price);
+    const priceValue = Number(currentTask.price);
 
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue--;
@@ -618,7 +618,7 @@ const plusPrice = (btnEl) => {
         `${currentTask.id}-${currentTask.date}`
     );
 
-    priceValue = Number(currentTask.price);
+    const priceValue = Number(currentTask.price);
 
     if (costEl.id === `${currentTask.id}-${currentTask.date}`) {
         priceValue++;
