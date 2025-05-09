@@ -71,6 +71,12 @@ const decimalToBinary = (input) => {
     const inputs = [];
     const reminders = [];
     const results = [];
+
+    if (input === 0) {
+        result.textContent = 0;
+
+        return;
+    }
 };
 
 convertBtn.addEventListener("click", getInputValue);
