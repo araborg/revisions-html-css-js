@@ -7,7 +7,9 @@ const animationContainer = document.getElementById("animation-container");
 // addElDelay: delays d msg for sm millisec b4 showing
 // showMsgDelay: keeps d msg for sm millisec
 // removeElDelay: remove d msg after sm millisec
+
 // How d animation is shown: 5 -->  2  --> 1
+// How d animation is removed: 1 -->  2  --> 5
 const animationData = [
     {
         inputVal: 5,
