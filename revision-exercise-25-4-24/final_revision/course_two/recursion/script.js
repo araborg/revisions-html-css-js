@@ -42,6 +42,8 @@ const animationData = [
     },
 ];
 
+/*
+1.
 const getInputValue = () => {
     // wn numberInput.value has noth inside: it means d value is: ""
     // console.log(Boolean("")); returns false
@@ -111,3 +113,5 @@ numberInput.addEventListener("keydown", (e) => {
         getInputValue();
     }
 });
+
+*/
