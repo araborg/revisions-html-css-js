@@ -53,7 +53,7 @@ const getInputValue = () => {
 
     const inputVal = parseInt(numberInput.value);
 
-    if (!numberInput.value) {
+    if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
         // console.log(numberInput.value);
     }
 
