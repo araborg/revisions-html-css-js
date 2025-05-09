@@ -65,8 +65,6 @@ const getInputValue = () => {
 };
 
 const decimalToBinary = (input) => {
-    console.log(input);
-
     // needed variables
     const inputs = [];
     const reminders = [];
