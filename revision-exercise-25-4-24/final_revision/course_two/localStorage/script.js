@@ -445,7 +445,9 @@ const loadTasksUI = () => {
     tasks.map(({ id, title, date, price, description }) => {
         tasksContainer.innerHTML += `
                 <div class="task" id="${id}">
+
                     <p><strong>Title: </strong> ${title}</p>
+
                     <p><strong>Date: </strong> ${date}</p>
 
                     <button 
@@ -457,6 +459,7 @@ const loadTasksUI = () => {
 
                     <span>
                         <strong>Price: </strong>
+                        
                         <span id="${id}-${date}">    
                             ${price}
                         </span>
