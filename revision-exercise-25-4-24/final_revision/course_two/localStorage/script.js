@@ -495,6 +495,7 @@ const loadTasksUI = () => {
     });
 };
 
+// if dre r existing task, load up
 if (tasks.length) {
     loadTasksUI();
 }
