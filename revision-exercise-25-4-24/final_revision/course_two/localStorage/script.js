@@ -561,6 +561,8 @@ closeBtn.addEventListener("click", () => {
         priceInput.value !== currentTask.price ||
         descriptionInput.value !== currentTask.description;
 
+    // conditions to show d dialog box r: if d inputs av values
+    // or if d values has changed/updated
     if (formInputContainValues && formInputValuesUpdated) {
         dialogBox.showModal();
     } else {
