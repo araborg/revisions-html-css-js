@@ -46,16 +46,9 @@ const getInputValue = () => {
     // wn numberInput.value: it means d value is: ""
     // parseInt("") or parseInt(numberInput.value) return NaN
     // NaN === NaN returns false
+    // isNaN(NaN) returns true
 
     const inputVal = parseInt(numberInput.value);
-
-    console.log(NaN === NaN, typeof numberInput.value);
-
-    console.log(inputVal === "", isNaN(""), numberInput.value === "");
-
-    // isNaN(inputVal)
-
-    // console.log(isNaN(inputVal));
 
     if (!numberInput.value) {
         // console.log(numberInput.value);
