@@ -115,4 +115,37 @@ numberInput.addEventListener("keydown", (e) => {
     }
 });
 
+
+2.
 */
+const getInputValue = () => {
+    const inputVal = parseInt(numberInput.value);
+
+    if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
+        alert("Please provide a decimal number greater than or equal to 0");
+
+        return;
+    }
+
+    decimalToBinary(inputVal);
+};
+
+const decimalToBinary = (input) => {
+    let binary = "";
+
+    if (input === 0) {
+        binary = "0";
+    }
+
+    while (input > 0) {
+        binary = input % 2;
+
+        const newBinary = binary + binary;
+
+        console.log(binary, newBinary);
+
+        input = Math.floor(input / 2);
+    }
+
+    result.textContent = binary;
+};
