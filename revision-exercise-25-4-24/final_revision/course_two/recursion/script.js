@@ -44,7 +44,7 @@ const animationData = [
 
 /*
 
-1.
+1. Using array 
 const getInputValue = () => {
     // wn numberInput.value has noth inside: it means d value is: ""
     // console.log(Boolean("")); returns false
@@ -110,8 +110,7 @@ const decimalToBinary = (input) => {
 
 =====================================================
 
-2.
-
+2. Using string 
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
@@ -145,7 +144,7 @@ const decimalToBinary = (input) => {
 
 =====================================================
 
-3.
+3. Using recursion
 
 */
 
