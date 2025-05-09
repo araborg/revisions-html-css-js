@@ -45,7 +45,7 @@ const animationData = [
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    console.log(numberInput.value);
+    console.log(!"");
 
     if (numberInput.value) {
         console.log(numberInput.value);
@@ -55,4 +55,4 @@ const getInputValue = () => {
 };
 
 // console.log(());
-getInputValue();
+convertBtn.addEventListener("click", getInputValue);
