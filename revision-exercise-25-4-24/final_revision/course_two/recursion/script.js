@@ -41,3 +41,9 @@ const animationData = [
         removeElDelay: 10000,
     },
 ];
+
+const getInputValue = () => {
+    const inputVal = Number(numberInput.value);
+
+    console.log(inputVal);
+};
