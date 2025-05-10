@@ -160,7 +160,11 @@ const getInputValue = () => {
     result.textContent = decimalToBinary(inputVal);
 };
 
-const decimalToBinary = () => {};
+const decimalToBinary = () => {
+    if (input === 0 || input === 1) {
+        return String(input);
+    }
+};
 
 convertBtn.addEventListener("click", getInputValue);
 
