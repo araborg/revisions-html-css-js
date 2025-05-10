@@ -259,17 +259,17 @@ const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
     // wn inputVal returns empty string, ""
-    console.log(numberInput.value === ""); // true
-    console.log(!"" === true); // true
+    // console.log(numberInput.value === ""); // true
+    // console.log(!"" === true); // true
 
-    console.log(parseInt("")); // NaN
-    console.log(inputVal); // NaN
+    // console.log(parseInt("")); // NaN
+    // console.log(inputVal); // NaN
 
-    console.log(isNaN(inputVal)); // true
-    console.log(isNaN(NaN)); // true
+    // console.log(isNaN(inputVal)); // true
+    // console.log(isNaN(NaN)); // true
 
     // ds shows dt it's effect of parseInt() dt returns isNaN
-    console.log(isNaN("")); // false
+    // console.log(isNaN("")); // false
 
     if (numberInput.value) {
         alert("Please provide a decimal number greater than or equal to 0");
