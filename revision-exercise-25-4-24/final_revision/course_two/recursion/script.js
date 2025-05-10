@@ -158,6 +158,8 @@ const getInputValue = () => {
 
     // little modification
     result.textContent = decimalToBinary(inputVal);
+
+    numberInput.value = "";
 };
 
 const decimalToBinary = (input) => {
@@ -169,7 +171,11 @@ const decimalToBinary = (input) => {
         // Math.floor(parseInt(input / 2)) reduces d value of input
         // (input % 2) returns d reminder
 
-        return decimalToBinary(Math.floor(parseInt(input / 2))) + (input % 2);
+        // ds will work just like
+        // return decimalToBinary(Math.floor(input / 2)) + (input % 2);
+
+        // this will too either with parseInt() or not
+        return decimalToBinary(Math.floor(input / 2)) + (input % 2);
     }
 };
 
