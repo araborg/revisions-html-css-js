@@ -164,7 +164,12 @@ const decimalToBinary = (input) => {
     if (input === 0 || input === 1) {
         return String(input);
     } else {
-        return decimalToBinary();
+        // decimalToBinary(Math.floor(parseInt(input / 2))) + (input % 2)
+        // is like string concetatenaion too.
+        // Math.floor(parseInt(input / 2)) reduces d value of input
+        // (input % 2) returns d reminder
+
+        return decimalToBinary(Math.floor(parseInt(input / 2))) + (input % 2);
     }
 };
 
