@@ -300,6 +300,13 @@ const decimalToBinary = (input) => {
 
 convertBtn.addEventListener("click", getInputValue);
 
+numberInput.addEventListener("keydown", (e) => {
+    console.log(e.key);
+    if (e.key === "Enter") {
+        getInputValue();
+    }
+});
+
 // Method 2:
 
 // Method 3:
