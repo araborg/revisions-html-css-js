@@ -297,6 +297,8 @@ const decimalToBinary = (input) => {
     }
 
     output.textContent = reminders.reverse().join("");
+
+    numberInput.textContent = "";
 };
 
 // Method 2:
