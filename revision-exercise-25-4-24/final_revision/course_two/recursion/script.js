@@ -286,8 +286,12 @@ const decimalToBinary = (input) => {
     const results = [];
 
     while (input > 0) {
-        const result = Math.floor(input / 2);
-        // const reminder = input % 2;
+        const input = Math.floor(input / 2);
+        const reminder = input % 2;
+
+        inputs.push(input);
+        reminders.push(reminder);
+
         // reminders.push(reminder);
 
         console.log(result);
