@@ -186,6 +186,11 @@ const decimalToBinary = (input) => {
     }
 };
 
+// Wt is showAnimation() doing?
+// 1. creates a pararaph of diff values of 5, 2, 1
+// 2. shows d obj msg
+// 3. remove d obj msg
+// 4. shows d binary result
 const showAnimation = () => {
     result.textContent = "Call Stack Animation";
 
@@ -199,6 +204,8 @@ const showAnimation = () => {
         }, obj.addElDelay);
 
         setTimeout(() => {
+            // ds, obj.inputVal, was used like ds bcos
+            // were r dealing with number and not string
             document.getElementById(obj.inputVal).textContent = obj.msg;
         }, obj.showMsgDelay);
 
