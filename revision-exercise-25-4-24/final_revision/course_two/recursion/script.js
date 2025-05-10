@@ -240,6 +240,7 @@ numberInput.addEventListener("keydown", (e) => {
 
 // Method 3:
 
+/*
 const animationData = [
     {
         inputVal: 5,
@@ -271,3 +272,5 @@ const animationData = [
         removeElDelay: 10000,
     },
 ];
+
+*/
