@@ -261,10 +261,9 @@ const getInputValue = () => {
     console.log(numberInput.value === ""); // true
     console.log(!"" === true); // true
     console.log(inputVal); // NaN
-    console.log(isNaN(NaN));
-    console.log(isNaN(""));
-
-    // console.log(inputVal === "");
+    console.log(isNaN(inputVal)); // true
+    console.log(isNaN(NaN)); // true
+    console.log(isNaN("")); // false
 
     if (numberInput.value) {
         alert("Please provide a decimal number greater than or equal to 0");
