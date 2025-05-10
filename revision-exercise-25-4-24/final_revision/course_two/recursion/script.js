@@ -160,9 +160,11 @@ const getInputValue = () => {
     result.textContent = decimalToBinary(inputVal);
 };
 
-const decimalToBinary = () => {
+const decimalToBinary = (input) => {
     if (input === 0 || input === 1) {
         return String(input);
+    } else {
+        return decimalToBinary();
     }
 };
 
