@@ -243,6 +243,13 @@ const output = document.getElementById("result");
 const animationContainer = document.getElementById("animation-container");
 
 // Method 1:
+const getInputValue = () => {
+    const inputVal = Number(numberInput.value);
+
+    console.log(inputVal);
+};
+
+convertBtn.addEventListener("click", getInputValue);
 
 // Method 2:
 
