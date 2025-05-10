@@ -190,7 +190,13 @@ const showAnimation = () => {
     result.textContent = "Call Stack Animation";
 
     animationData.forEach((obj) => {
-        setTimeout(() => {});
+        setTimeout(() => {
+            animationContainer.innerHTML += `
+                <p id="${obj.inputVal}" class="animation-frame">
+                    decimalToBinary(${obj.inputVal})
+                </p>
+            `;
+        }, obj.addElDelay);
     });
 };
 
