@@ -273,7 +273,7 @@ const getInputValue = () => {
     // ds shows dt it's effect of parseInt() dt returns isNaN
     // console.log(isNaN("")); // false
 
-    if (!numberInput.value || inputVal < 0 || isNaN(NaN)) {
+    if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
         alert("Please provide a decimal number greater than or equal to 0");
 
         return;
