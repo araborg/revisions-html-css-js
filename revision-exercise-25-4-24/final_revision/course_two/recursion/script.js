@@ -246,7 +246,10 @@ const animationContainer = document.getElementById("animation-container");
 const getInputValue = () => {
     const inputVal = Number(numberInput.value);
 
-    console.log(numberInput.value);
+    // console.log(numberInput.value === "");
+    // console.log(!"" === true);
+    // console.log(isNaN(""));
+    // console.log(isNaN(NaN));
 
     if (numberInput.value) {
         alert("Please provide a decimal number greater than or equal to 0");
@@ -254,7 +257,7 @@ const getInputValue = () => {
         return;
     }
 
-    console.log(typeof inputVal);
+    // console.log(typeof inputVal);
 };
 
 convertBtn.addEventListener("click", getInputValue);
