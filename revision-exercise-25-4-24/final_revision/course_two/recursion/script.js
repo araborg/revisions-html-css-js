@@ -186,6 +186,10 @@ const decimalToBinary = (input) => {
     }
 };
 
+const showAnimation = () => {
+    result.textContent = "Call Stack Animation";
+};
+
 convertBtn.addEventListener("click", getInputValue);
 
 numberInput.addEventListener("keydown", (e) => {
