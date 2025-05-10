@@ -276,10 +276,6 @@ const getInputValue = () => {
 
         return;
     }
-
-    const inputs = [];
-    const reminders = [];
-    const results = [];
 };
 
 convertBtn.addEventListener("click", getInputValue);
