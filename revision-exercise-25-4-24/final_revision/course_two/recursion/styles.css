@@ -89,7 +89,10 @@ h2 {
 
 #animation-container {
     display: flex;
+
+    /* ds is responsible 4 d stack starting from bottom */
     flex-direction: column-reverse;
+
     justify-content: end;
     gap: 1rem;
     margin-block-end: 1rem;
