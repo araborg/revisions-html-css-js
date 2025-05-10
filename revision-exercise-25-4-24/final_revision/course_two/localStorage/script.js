@@ -116,6 +116,9 @@ is commonly used to send data from the client side
 to a web server in a string format.
 
 
+Diff btw .close() and .remove() ?
+
+
 
 =============================================
 
