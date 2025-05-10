@@ -258,6 +258,7 @@ const animationContainer = document.getElementById("animation-container");
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
+    // wn inputVal returns empty string
     console.log(numberInput.value === ""); // true
     console.log(!"" === true); // true
     console.log(inputVal); // NaN
