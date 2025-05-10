@@ -258,12 +258,13 @@ const animationContainer = document.getElementById("animation-container");
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    // console.log(numberInput.value === "");
-    // console.log(!"" === true);
-    // console.log(isNaN(""));
-    // console.log(isNaN(NaN));
+    console.log(numberInput.value === ""); // true
+    console.log(!"" === true); // true
+    console.log(inputVal); // NaN
+    console.log(isNaN(NaN));
+    console.log(isNaN(""));
 
-    console.log(inputVal === "");
+    // console.log(inputVal === "");
 
     if (numberInput.value) {
         alert("Please provide a decimal number greater than or equal to 0");
