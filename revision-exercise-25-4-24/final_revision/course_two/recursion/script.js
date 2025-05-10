@@ -286,9 +286,14 @@ const decimalToBinary = (input) => {
     const results = [];
 
     while (input > 0) {
-        const input = Math.floor(inputs / 2);
+        const result = Math.floor(inputs / 2);
         const reminder = input % 2;
+        reminders.push(reminder);
+
+        input = result;
     }
+
+    console.log(reminders);
 };
 
 convertBtn.addEventListener("click", getInputValue);
