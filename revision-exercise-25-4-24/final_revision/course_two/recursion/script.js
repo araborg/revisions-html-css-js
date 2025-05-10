@@ -176,7 +176,7 @@ const decimalToBinary = (input) => {
 
         // this will too either with parseInt() or not
         return (
-            decimalToBinary(Math.floor(input / 2)) + //
+            decimalToBinary(Math.floor(parseInt(input / 2))) + //
             (input % 2)
         );
     }
