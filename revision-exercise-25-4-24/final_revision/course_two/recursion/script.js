@@ -258,8 +258,6 @@ const animationContainer = document.getElementById("animation-container");
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    console.log(inputVal);
-
     // wn inputVal returns empty string, ""
     // console.log(numberInput.value === ""); // true
     // console.log(!"" === true); // true
@@ -291,6 +289,8 @@ const decimalToBinary = (input) => {
         const result = Math.floor(inputs / 2);
         const reminder = input % 2;
         reminders.push(reminder);
+
+        console.log(result);
 
         input = result;
     }
