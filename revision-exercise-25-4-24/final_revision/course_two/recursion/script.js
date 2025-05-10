@@ -188,6 +188,8 @@ const decimalToBinary = (input) => {
 
 const showAnimation = () => {
     result.textContent = "Call Stack Animation";
+
+    animationData.forEach((obj) => {});
 };
 
 convertBtn.addEventListener("click", getInputValue);
