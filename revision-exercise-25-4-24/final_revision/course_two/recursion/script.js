@@ -234,6 +234,10 @@ numberInput.addEventListener("keydown", (e) => {
 
 // Revision:
 
+// Method 1:
+
+// Method 2:
+
 const animationData = [
     {
         inputVal: 5,
