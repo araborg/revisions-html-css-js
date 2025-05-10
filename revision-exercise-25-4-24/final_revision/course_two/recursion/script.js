@@ -237,6 +237,8 @@ numberInput.addEventListener("keydown", (e) => {
 // general HTML elements
 const numberInput = document.getElementById("number-input");
 
+const convertBtn = document.getElementById("convert-btn");
+
 // Method 1:
 
 // Method 2:
