@@ -115,6 +115,7 @@ const decimalToBinary = (input) => {
 
 // How d animation is shown: 5 -->  2  --> 1
 // How d animation is removed: 1 -->  2  --> 5
+
 const animationData = [
     {
         inputVal: 5,
