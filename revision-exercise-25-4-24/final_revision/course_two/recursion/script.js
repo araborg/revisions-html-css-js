@@ -286,13 +286,14 @@ const decimalToBinary = (input) => {
     const results = [];
 
     while (input > 0) {
-        const inputDiv = Math.floor(input / 2);
         const reminder = input % 2;
+        const result = Math.floor(input / 2);
 
-        inputs.push(inputDiv);
+        inputs.push(input);
         reminders.push(reminder);
+        results.push(result);
 
-        input = inputDiv;
+        input = result;
     }
 
     output.textContent = reminders.reverse().join("");
