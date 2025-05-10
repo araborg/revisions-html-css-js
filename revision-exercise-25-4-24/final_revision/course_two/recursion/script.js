@@ -1,4 +1,17 @@
 /*
+N.B:
+// diff btw reminder and divisn
+// reminder: returns d remaining value after a WHOLE
+// divisn e.g 1 (5 % 2) after has wholely divided 5 twice
+
+// divisn: divides d value into equal half
+
+
+// Diff btw parseInt() and Number()
+parseInt("") returns not a number, NaN
+
+Number("") returns 0
+
 
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
@@ -30,11 +43,6 @@ const getInputValue = () => {
     decimalToBinary(inputVal);
 };
 
-// diff btw reminder and divisn
-// reminder: returns d remaining value after a WHOLE
-// divisn e.g 1 (5 % 2) after has wholely divided 5 twice
-
-// divisn: divides d value into equal half
 
 const decimalToBinary = (input) => {
     // needed variables containers
@@ -244,12 +252,14 @@ const animationContainer = document.getElementById("animation-container");
 
 // Method 1:
 const getInputValue = () => {
-    const inputVal = Number(numberInput.value);
+    const inputVal = parseInt(numberInput.value);
 
     // console.log(numberInput.value === "");
     // console.log(!"" === true);
     // console.log(isNaN(""));
     // console.log(isNaN(NaN));
+
+    console.log(inputVal === "");
 
     if (numberInput.value) {
         alert("Please provide a decimal number greater than or equal to 0");
