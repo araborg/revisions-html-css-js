@@ -1,10 +1,11 @@
+/*
+
 const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 
 const result = document.getElementById("result");
 const animationContainer = document.getElementById("animation-container");
 
-/*
 
 1. Using array 
 const getInputValue = () => {
@@ -233,6 +234,8 @@ numberInput.addEventListener("keydown", (e) => {
 */
 
 // Revision:
+// general HTML elements
+const numberInput = document.getElementById("number-input");
 
 // Method 1:
 
