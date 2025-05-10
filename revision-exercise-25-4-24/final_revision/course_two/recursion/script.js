@@ -9,10 +9,12 @@ N.B:
 
 // Diff btw parseInt() and Number()
 parseInt("") returns not a number, NaN
-
 console.log(parseInt("")) // NaN
 
 Number("") returns 0
+console.log(Number("")) // 0
+
+
 
 
 const numberInput = document.getElementById("number-input");
