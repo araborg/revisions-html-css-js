@@ -320,10 +320,14 @@ const decimalToBinary = (val) => {
     let binary = "";
 
     while (input > 0) {
-        binary = binary % 2;
+        binary = (binary % 2) + binary;
 
         input = Math.floor(input / 2);
     }
+
+    output.textContent = binary;
+
+    numberInput.textContent = "";
 };
 
 // Method 3:
