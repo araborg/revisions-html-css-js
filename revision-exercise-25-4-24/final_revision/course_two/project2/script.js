@@ -6,7 +6,7 @@ const output = document.getElementById("output");
 console.log(numberInput);
 
 const convertToRoman = () => {
-    const input = parseInt(numberInput);
+    const input = parseInt(numberInput.value);
 
     console.log(input);
 
