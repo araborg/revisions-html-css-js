@@ -410,14 +410,17 @@ const showAnimation = (input) => {
 
     animationData.forEach(
         ({ inputVal, addElDelay, msg, showMsgDelay, removeElDelay }) => {
-            animationContainer.innerHTML += `
-                setTimeout(() => {}, timeout);
-            
-                setTimeout(() => {}, timeout);
-            
-                setTimeout(() => {}, timeout);
-            
-            `;
+            setTimeout(() => {
+                animationContainer.innerHTML += `
+                    <p id="${inputVal}">
+
+                    </p>
+                    `;
+            }, timeout);
+
+            setTimeout(() => {}, timeout);
+
+            setTimeout(() => {}, timeout);
         }
     );
 };
