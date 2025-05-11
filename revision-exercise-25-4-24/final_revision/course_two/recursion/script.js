@@ -397,17 +397,27 @@ const getInputValue = () => {
     }
 
     if (inputVal === 5) {
-        showAnimation();
-    }
-    {
+        showAnimation(inputVal);
+    } else {
         output.textContent = decimalToBinary(inputVal);
     }
 
     numberInput.value = "";
 };
 
-const showAnimation = () => {
-    console.log("Inside animation fxn");
+const showAnimation = (input) => {
+    animationData.forEach(
+        ({ inputVal, addElDelay, msg, showMsgDelay, removeElDelay }) => {
+            animationContainer.innerHTML += `
+                setTimeout(() => {}, timeout);
+            
+                setTimeout(() => {}, timeout);
+            
+                setTimeout(() => {}, timeout);
+            
+            `;
+        }
+    );
 };
 
 const decimalToBinary = (val) => {
