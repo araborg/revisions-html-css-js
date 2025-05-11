@@ -421,10 +421,10 @@ const showAnimation = (input) => {
             setTimeout(() => {
                 animationContainer.innerHTML += `
                     <p id="${inputVal}" class="animation-frame">
-                       
+                       document.getElementById("${inputVal}").textContent = ${msg}
                     </p>
                     `;
-            }, timeout);
+            }, showMsgDelay);
 
             // setTimeout(() => {}, timeout);
         }
