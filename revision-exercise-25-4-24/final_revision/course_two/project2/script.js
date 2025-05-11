@@ -8,11 +8,10 @@ const convertToRoman = () => {
     // console.log(isNaN(input));
 
     if (!numberInput.value) {
-        // outputEl.textContent = "Please enter a valid number";
-
-        // alert("Hello");
-
-        outputEl.textContent = "Hello";
+        return (outputEl.textContent = "Please enter a valid number");
+    } else if (input >= 4000) {
+        return (outputEl.textContent =
+            "Please enter a number less than or equal to 3999");
     }
 
     const romans = [
