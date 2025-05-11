@@ -410,29 +410,27 @@ const showAnimation = (input) => {
 
     animationData.forEach(
         ({ inputVal, addElDelay, msg, showMsgDelay, removeElDelay }) => {
-            animationContainer.innerHTML += `
-                setTimeout(() => {
-                        <p id="${inputVal}" class="animation-frame">
-                            decimalToBinary(${inputVal})
-                        </p>
-                        
-                }, ${addElDelay});
+            // setTimeout(() => {
+            //     animationContainer.innerHTML += `
+            //         <p id="${inputVal}" class="animation-frame">
+            //             decimalToBinary(${inputVal})
+            //         </p>
+            //         `;
+            // }, addElDelay);
 
-                setTimeout(() => {
-                
-                        <p id="${inputVal}" class="animation-frame">
-                        document.getElementById("${inputVal}").textContent = ${msg}
-                        </p>
-                    
-                }, ${showMsgDelay});
+            // setTimeout(() => {
+            //     animationContainer.innerHTML += `
+            //         <p id="${inputVal}" class="animation-frame">
+            //            document.getElementById("${inputVal}").textContent = ${msg}
+            //         </p>
+            //         `;
+            // }, showMsgDelay);
 
-                setTimeout(() => {
-               
-                    <p id="${inputVal}" class="animation-frame">
+            setTimeout(() => {
+                animationContainer.innerHTML += `
                        document.getElementById("${inputVal}").remove()
-                    </p>
-                }, ${removeElDelay});
-            `;
+                    `;
+            }, removeElDelay);
         }
     );
 };
