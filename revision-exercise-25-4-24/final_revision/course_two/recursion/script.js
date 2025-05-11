@@ -426,7 +426,13 @@ const showAnimation = (input) => {
                     `;
             }, showMsgDelay);
 
-            // setTimeout(() => {}, timeout);
+            setTimeout(() => {
+                animationContainer.innerHTML += `
+                    <p id="${inputVal}" class="animation-frame">
+                       document.getElementById("${inputVal}").remove()
+                    </p>
+                    `;
+            }, removeElDelay);
         }
     );
 };
