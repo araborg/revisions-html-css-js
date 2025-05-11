@@ -322,7 +322,7 @@ const decimalToBinary = (val) => {
     while (val > 0) {
         binary = (binary % 2) + binary;
 
-        input = Math.floor(input / 2);
+        input = Math.floor(val / 2);
     }
 
     output.textContent = binary;
