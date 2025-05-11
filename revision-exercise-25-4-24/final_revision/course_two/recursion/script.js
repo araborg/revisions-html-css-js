@@ -319,7 +319,7 @@ const getInputValue = () => {
 const decimalToBinary = (val) => {
     let binary = "";
 
-    while (input > 0) {
+    while (val > 0) {
         binary = (binary % 2) + binary;
 
         input = Math.floor(input / 2);
