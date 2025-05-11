@@ -25,7 +25,7 @@ const convertToRoman = () => {
     let output = [];
 
     romans.forEach((data) => {
-        if (input <= data[1]) {
+        if (input >= data[1]) {
             output.push(data[0]);
 
             input -= data[1];
