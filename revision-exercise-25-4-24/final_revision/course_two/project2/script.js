@@ -25,12 +25,12 @@ const convertToRoman = () => {
     let output = [];
 
     romans.forEach((data) => {
-        if (input >= data[1]) {
-            console.log(input);
-
+        if (input <= data[1]) {
             output.push(data[0]);
 
             input -= data[1];
+
+            console.log(input);
         }
     });
 
