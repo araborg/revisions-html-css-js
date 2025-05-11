@@ -25,7 +25,6 @@ const convertToRoman = () => {
     let output = [];
 
     romans.forEach((data) => {
-        console.log(input);
         // console.log(data[1]);
 
         while (input >= data[1]) {
@@ -37,7 +36,7 @@ const convertToRoman = () => {
 
     outputEl.textContent = output.join(",");
 
-    // console.log(romans);
+    // console.log(output.join(""));
 };
 
 convertBtn.addEventListener("click", convertToRoman);
