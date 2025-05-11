@@ -308,8 +308,6 @@ const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
     if (!numberInput.value) {
-        console.log("N");
-
         alert("Please provide a decimal number greater than or equal to 0");
 
         return;
