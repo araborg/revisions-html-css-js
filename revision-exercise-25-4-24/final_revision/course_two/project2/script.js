@@ -1,10 +1,12 @@
-const numberInput = document.getElementById("number");
+const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 
 const output = document.getElementById("output");
 
 const convertToRoman = () => {
-    const numberInput = parseInt(numberInput.value);
+    const numberInput = parseInt(numberInput);
+
+    // console.log(numberInput);
 
     console.log(numberInput);
 
@@ -24,7 +26,7 @@ const convertToRoman = () => {
         ["I", 1],
     ];
 
-    console.log(romans);
+    // console.log(romans);
 };
 
 convertBtn.addEventListener("click", convertToRoman);
