@@ -418,6 +418,7 @@ const showAnimation = (input) => {
                 `;
             }, addElDelay);
 
+            // ds add to d created paragraph
             setTimeout(() => {
                 document.getElementById(inputVal).textContent = msg;
             }, showMsgDelay);
