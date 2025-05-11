@@ -1,7 +1,7 @@
 const numberInput = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 
-const output = document.getElementById("output");
+const outputEl = document.getElementById("output");
 
 const convertToRoman = () => {
     let input = parseInt(numberInput.value);
@@ -31,12 +31,11 @@ const convertToRoman = () => {
         while (input >= data[1]) {
             output.push(data[0]);
 
-            console.log(data[1]);
             input = input - data[1];
         }
     });
 
-    console.log(output);
+    outputEl.textContent = output.join();
 
     // console.log(romans);
 };
