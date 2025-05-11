@@ -317,6 +317,8 @@ const getInputValue = () => {
 };
 
 const decimalToBinary = (val) => {
+    let binary = "";
+
     console.log(val);
 };
 
