@@ -308,6 +308,13 @@ const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
     console.log(inputVal);
+    if (!numberInput.value) {
+        console.log("N");
+
+        alert("Please provide a decimal number greater than or equal to 0");
+
+        return;
+    }
 };
 
 const decimalToBinary = (val) => {};
@@ -347,6 +354,9 @@ const animationData = [
         removeElDelay: 10000,
     },
 ];
+
+
+"Please provide a decimal number greater than or equal to 0"
 
 */
 
