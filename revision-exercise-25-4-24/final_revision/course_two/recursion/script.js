@@ -406,6 +406,8 @@ const getInputValue = () => {
 };
 
 const showAnimation = (input) => {
+    result.innerHTML = "Call Stack Animation";
+
     animationData.forEach(
         ({ inputVal, addElDelay, msg, showMsgDelay, removeElDelay }) => {
             animationContainer.innerHTML += `
