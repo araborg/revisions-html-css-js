@@ -403,7 +403,7 @@ const decimalToBinary = (val) => {
     if (val === 0 || val === 1) {
         return String(val);
     } else {
-        console.log(val);
+        decimalToBinary(Math.floor(val / 2));
     }
 
     result.value = "";
