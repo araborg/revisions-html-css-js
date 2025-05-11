@@ -425,6 +425,10 @@ const showAnimation = (input) => {
             setTimeout(() => {
                 document.getElementById(inputVal).remove();
             }, removeElDelay);
+
+            setTimeout(() => {
+                result.textContent = decimalToBinary(5);
+            }, 20000);
         }
     );
 };
