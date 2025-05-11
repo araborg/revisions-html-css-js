@@ -413,10 +413,10 @@ const showAnimation = (input) => {
             setTimeout(() => {
                 animationContainer.innerHTML += `
                     <p id="${inputVal}">
-
+                        decimalToBinary(${inputVal})
                     </p>
                     `;
-            }, timeout);
+            }, addElDelay);
 
             setTimeout(() => {}, timeout);
 
