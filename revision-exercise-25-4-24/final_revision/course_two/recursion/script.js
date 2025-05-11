@@ -254,6 +254,7 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("result");
 
 // Method 1:
+/*
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
@@ -300,7 +301,16 @@ const decimalToBinary = (input) => {
     output.textContent = reminders.reverse().join("");
 };
 
+*/
+
 // Method 2:
+const getInputValue = () => {
+    const inputVal = parseInt(numberInput.value);
+
+    console.log(inputVal);
+};
+
+const decimalToBinary = (val) => {};
 
 // Method 3:
 const animationContainer = document.getElementById("animation-container");
