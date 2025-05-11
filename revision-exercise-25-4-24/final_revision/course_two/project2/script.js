@@ -4,6 +4,10 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
 const convertToRoman = () => {
+    const numberInput = parseInt(numberInput.value);
+
+    console.log(numberInput);
+
     const romans = [
         ["M", 1000],
         ["CM", 900],
