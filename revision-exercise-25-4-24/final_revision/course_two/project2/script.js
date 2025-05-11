@@ -41,3 +41,9 @@ const convertToRoman = () => {
 };
 
 convertBtn.addEventListener("click", convertToRoman);
+
+numberInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        convertToRoman();
+    }
+});
