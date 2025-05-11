@@ -310,6 +310,8 @@ const getInputValue = () => {
     if (!numberInput.value || inputVal < 0) {
         alert("Please provide a decimal number greater than or equal to 0");
 
+        numberInput.value = "";
+
         return;
     }
 
@@ -331,7 +333,7 @@ const decimalToBinary = (val) => {
 
     output.textContent = binary;
 
-    numberInput.textContent = "";
+    numberInput.value = "";
 };
 
 // Method 3:
