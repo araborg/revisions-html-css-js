@@ -4,16 +4,6 @@ const convertBtn = document.getElementById("convert-btn");
 const outputEl = document.getElementById("output");
 
 const convertToRoman = () => {
-    let input = parseInt(numberInput.value);
-    // console.log(isNaN(input));
-
-    if (!numberInput.value) {
-        return (outputEl.textContent = "Please enter a valid number");
-    } else if (input >= 4000) {
-        return (outputEl.textContent =
-            "Please enter a number less than or equal to 3999");
-    }
-
     const romans = [
         ["M", 1000],
         ["CM", 900],
@@ -29,6 +19,15 @@ const convertToRoman = () => {
         ["IV", 4],
         ["I", 1],
     ];
+
+    let input = parseInt(numberInput.value);
+
+    if (!numberInput.value) {
+        return (outputEl.textContent = "Please enter a valid number");
+    } else if (input >= 4000) {
+        return (outputEl.textContent =
+            "Please enter a number less than or equal to 3999");
+    }
 
     let output = [];
 
