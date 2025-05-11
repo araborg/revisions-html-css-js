@@ -254,7 +254,7 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("result");
 
 // Method 1:
-// /*
+/*
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
