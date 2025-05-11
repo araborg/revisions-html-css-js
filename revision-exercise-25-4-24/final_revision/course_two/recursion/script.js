@@ -396,7 +396,12 @@ const getInputValue = () => {
         return;
     }
 
-    output.textContent = decimalToBinary(inputVal);
+    if (inputVal === 5) {
+        showAnimation();
+    }
+    {
+        output.textContent = decimalToBinary(inputVal);
+    }
 
     numberInput.value = "";
 };
