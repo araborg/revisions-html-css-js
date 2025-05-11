@@ -6,6 +6,10 @@ const outputEl = document.getElementById("output");
 const convertToRoman = () => {
     let input = parseInt(numberInput.value);
 
+    if (isNaN(input)) {
+        outputEl.textContent = "Please enter a valid number";
+    }
+
     const romans = [
         ["M", 1000],
         ["CM", 900],
@@ -34,7 +38,7 @@ const convertToRoman = () => {
         }
     });
 
-    outputEl.textContent = output.join(",");
+    outputEl.textContent = output.join("");
 
     // console.log(output.join(""));
 };
