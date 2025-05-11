@@ -28,10 +28,11 @@ const convertToRoman = () => {
         console.log(input);
         // console.log(data[1]);
 
-        if (input >= data[1]) {
+        while (input >= data[1]) {
             output.push(data[0]);
 
-            input -= data[1];
+            console.log(data[1]);
+            input = input - data[1];
         }
     });
 
