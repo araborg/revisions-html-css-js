@@ -252,7 +252,6 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 
 const output = document.getElementById("result");
-const animationContainer = document.getElementById("animation-container");
 
 // Method 1:
 const getInputValue = () => {
@@ -304,6 +303,7 @@ const decimalToBinary = (input) => {
 // Method 2:
 
 // Method 3:
+const animationContainer = document.getElementById("animation-container");
 
 /*
 const animationData = [
