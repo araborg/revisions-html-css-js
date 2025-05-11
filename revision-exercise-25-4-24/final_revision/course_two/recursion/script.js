@@ -353,7 +353,6 @@ const decimalToBinary = (val) => {
 // Method 3:
 const animationContainer = document.getElementById("animation-container");
 
-/*
 const animationData = [
     {
         inputVal: 5,
@@ -386,10 +385,7 @@ const animationData = [
     },
 ];
 
-
-"Please provide a decimal number greater than or equal to 0"
-
-*/
+// "Please provide a decimal number greater than or equal to 0"
 
 convertBtn.addEventListener("click", getInputValue);
 
