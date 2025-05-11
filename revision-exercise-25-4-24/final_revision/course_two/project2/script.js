@@ -20,3 +20,5 @@ const convertToRoman = () => {
         [I, 1],
     ];
 };
+
+convertBtn.addEventListener("click", convertToRoman);
