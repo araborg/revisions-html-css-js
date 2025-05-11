@@ -398,8 +398,6 @@ const getInputValue = () => {
 
     output.textContent = decimalToBinary(inputVal);
 
-    console.log(decimalToBinary(inputVal));
-
     numberInput.value = "";
 };
 
