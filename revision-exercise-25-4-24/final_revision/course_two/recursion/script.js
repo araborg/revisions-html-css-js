@@ -396,11 +396,15 @@ const getInputValue = () => {
         return;
     }
 
-    decimalToBinary(inputVal);
+    output.textContent = decimalToBinary(inputVal);
 };
 
 const decimalToBinary = (val) => {
-    console.log(val);
+    if (val === 0 || val === 1) {
+        return String(val);
+    }
+
+    result.value = "";
 };
 
 convertBtn.addEventListener("click", getInputValue);
