@@ -388,7 +388,11 @@ const animationData = [
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    console.log(inputVal);
+    decimalToBinary(inputVal);
+};
+
+const decimalToBinary = (val) => {
+    console.log(val);
 };
 
 // "Please provide a decimal number greater than or equal to 0"
