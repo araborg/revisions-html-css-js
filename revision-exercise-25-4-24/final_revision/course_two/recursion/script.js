@@ -444,8 +444,6 @@ const decimalToBinary = (val) => {
 convertBtn.addEventListener("click", getInputValue);
 
 numberInput.addEventListener("keydown", (e) => {
-    //
-
     if (e.key === "Enter") {
         getInputValue();
     }
