@@ -8,7 +8,7 @@ console.log(numberInput);
 const convertToRoman = () => {
     const input = parseInt(numberInput);
 
-    // console.log(numberInput);
+    console.log(input);
 
     const romans = [
         ["M", 1000],
