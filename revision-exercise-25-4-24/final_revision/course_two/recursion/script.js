@@ -419,14 +419,11 @@ const showAnimation = (input) => {
             }, addElDelay);
 
             setTimeout(() => {
-                document.getElementById("${inputVal}").textContent = msg;
+                document.getElementById(inputVal).textContent = msg;
             }, showMsgDelay);
 
             setTimeout(() => {
-               
-                       document.getElementById(${inputVal}).remove()
-                   
-                    
+                document.getElementById(inputVal).remove();
             }, removeElDelay);
         }
     );
