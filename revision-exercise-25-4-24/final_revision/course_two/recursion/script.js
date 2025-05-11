@@ -418,9 +418,9 @@ const showAnimation = (input) => {
                     `;
             }, addElDelay);
 
-            setTimeout(() => {}, timeout);
+            // setTimeout(() => {}, timeout);
 
-            setTimeout(() => {}, timeout);
+            // setTimeout(() => {}, timeout);
         }
     );
 };
