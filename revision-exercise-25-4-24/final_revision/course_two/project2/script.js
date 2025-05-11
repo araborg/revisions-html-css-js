@@ -4,7 +4,7 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
 const convertToRoman = () => {
-    const input = parseInt(numberInput.value);
+    let input = parseInt(numberInput.value);
 
     const romans = [
         ["M", 1000],
@@ -26,9 +26,13 @@ const convertToRoman = () => {
 
     romans.forEach((data) => {
         if (input > data[1]) {
-            console.log(data[1]);
+            output.push(data[0]);
+
+            input -= data[1];
         }
     });
+
+    console.log(output);
 
     // console.log(romans);
 };
