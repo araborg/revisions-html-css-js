@@ -429,7 +429,7 @@ const showAnimation = (input) => {
             setTimeout(() => {
                 animationContainer.innerHTML += `
                     <p id="${inputVal}" class="animation-frame">
-                       document.getElementById("${inputVal}").remove()
+                       document.getElementById(${inputVal}).remove()
                     </p>
                     `;
             }, removeElDelay);
