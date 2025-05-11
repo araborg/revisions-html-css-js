@@ -35,7 +35,7 @@ const convertToRoman = () => {
         }
     });
 
-    outputEl.textContent = output.join();
+    outputEl.textContent = output.join(",");
 
     // console.log(romans);
 };
