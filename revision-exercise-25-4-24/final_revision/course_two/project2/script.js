@@ -1,14 +1,14 @@
-const numberInput = document.getElementById("number-input");
+const numberInput = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 
 const output = document.getElementById("output");
 
+console.log(numberInput);
+
 const convertToRoman = () => {
-    const numberInput = parseInt(numberInput);
+    const input = parseInt(numberInput);
 
     // console.log(numberInput);
-
-    console.log(numberInput);
 
     const romans = [
         ["M", 1000],
