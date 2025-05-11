@@ -274,6 +274,8 @@ const getInputValue = () => {
     if (!numberInput.value || inputVal < 0 || isNaN(inputVal)) {
         alert("Please provide a decimal number greater than or equal to 0");
 
+        numberInput.value = "";
+
         return;
     }
 
@@ -284,6 +286,10 @@ const decimalToBinary = (input) => {
     const inputs = [];
     const reminders = [];
     const results = [];
+
+    if (input === 0) {
+        output.textContent = 0;
+    }
 
     while (input > 0) {
         const reminder = input % 2;
