@@ -311,9 +311,8 @@ const decimalToBinary = (input) => {
     output.textContent = reminders.reverse().join("");
 };
 
-// */
 
-/*
+
 
 // Method 2:
 const getInputValue = () => {
