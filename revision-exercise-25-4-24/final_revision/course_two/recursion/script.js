@@ -400,7 +400,7 @@ const getInputValue = () => {
 
     console.log(decimalToBinary(inputVal));
 
-    result.value = "";
+    numberInput.value = "";
 };
 
 const decimalToBinary = (val) => {
