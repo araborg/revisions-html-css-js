@@ -22,6 +22,14 @@ const convertToRoman = () => {
         ["I", 1],
     ];
 
+    let output = [];
+
+    romans.forEach((data) => {
+        if (input > data[1]) {
+            console.log(data[1]);
+        }
+    });
+
     // console.log(romans);
 };
 
