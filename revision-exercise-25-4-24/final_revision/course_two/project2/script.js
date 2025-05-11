@@ -5,9 +5,14 @@ const outputEl = document.getElementById("output");
 
 const convertToRoman = () => {
     let input = parseInt(numberInput.value);
+    // console.log(isNaN(input));
 
-    if (isNaN(input)) {
-        outputEl.textContent = "Please enter a valid number";
+    if (!numberInput.value) {
+        // outputEl.textContent = "Please enter a valid number";
+
+        // alert("Hello");
+
+        outputEl.textContent = "Hello";
     }
 
     const romans = [
