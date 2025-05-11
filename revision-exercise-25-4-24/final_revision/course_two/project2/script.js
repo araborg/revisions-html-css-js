@@ -19,6 +19,8 @@ const convertToRoman = () => {
         [IV, 4],
         [I, 1],
     ];
+
+    console.log(romans);
 };
 
 convertBtn.addEventListener("click", convertToRoman);
