@@ -288,7 +288,10 @@ const decimalToBinary = (input) => {
     const results = [];
 
     if (input === 0) {
+        // console.log(0);
         output.textContent = 0;
+
+        return;
     }
 
     while (input > 0) {
