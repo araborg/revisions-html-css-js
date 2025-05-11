@@ -415,7 +415,7 @@ const showAnimation = (input) => {
                     <p id="${inputVal}" class="animation-frame">
                         decimalToBinary(${inputVal})
                     </p>
-                    `;
+                `;
             }, addElDelay);
 
             setTimeout(() => {
