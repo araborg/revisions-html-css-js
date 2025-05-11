@@ -319,6 +319,10 @@ const getInputValue = () => {
 const decimalToBinary = (val) => {
     let binary = "";
 
+    if (val === 0) {
+        binary = "0";
+    }
+
     while (val > 0) {
         binary = (val % 2) + binary;
 
