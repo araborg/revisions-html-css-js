@@ -418,7 +418,13 @@ const showAnimation = (input) => {
                     `;
             }, addElDelay);
 
-            // setTimeout(() => {}, timeout);
+            setTimeout(() => {
+                animationContainer.innerHTML += `
+                    <p id="${inputVal}" class="animation-frame">
+                       
+                    </p>
+                    `;
+            }, timeout);
 
             // setTimeout(() => {}, timeout);
         }
