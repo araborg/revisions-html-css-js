@@ -307,7 +307,6 @@ const decimalToBinary = (input) => {
 const getInputValue = () => {
     const inputVal = parseInt(numberInput.value);
 
-    console.log(inputVal);
     if (!numberInput.value) {
         console.log("N");
 
