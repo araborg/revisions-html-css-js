@@ -397,16 +397,18 @@ const getInputValue = () => {
     }
 
     output.textContent = decimalToBinary(inputVal);
+
+    // result.value = "";
 };
 
 const decimalToBinary = (val) => {
+    console.log(val);
+
     if (val === 0 || val === 1) {
         return String(val);
     } else {
         decimalToBinary(Math.floor(val / 2)) + (val % 2);
     }
-
-    result.value = "";
 };
 
 convertBtn.addEventListener("click", getInputValue);
