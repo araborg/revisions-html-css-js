@@ -312,9 +312,13 @@ const getInputValue = () => {
 
         return;
     }
+
+    decimalToBinary(inputVal);
 };
 
-const decimalToBinary = (val) => {};
+const decimalToBinary = (val) => {
+    console.log(val);
+};
 
 // Method 3:
 const animationContainer = document.getElementById("animation-container");
