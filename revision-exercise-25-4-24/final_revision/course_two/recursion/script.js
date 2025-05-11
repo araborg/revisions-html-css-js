@@ -402,6 +402,8 @@ const getInputValue = () => {
 const decimalToBinary = (val) => {
     if (val === 0 || val === 1) {
         return String(val);
+    } else {
+        console.log(val);
     }
 
     result.value = "";
