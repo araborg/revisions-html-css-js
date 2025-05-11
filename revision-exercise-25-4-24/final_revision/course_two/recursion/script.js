@@ -406,7 +406,9 @@ const getInputValue = () => {
     numberInput.value = "";
 };
 
-const showAnimation = () => {};
+const showAnimation = () => {
+    console.log("Inside animation fxn");
+};
 
 const decimalToBinary = (val) => {
     if (val === 0 || val === 1) {
