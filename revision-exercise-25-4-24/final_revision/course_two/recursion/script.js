@@ -401,6 +401,8 @@ const getInputValue = () => {
     numberInput.value = "";
 };
 
+const showAnimation = () => {};
+
 const decimalToBinary = (val) => {
     if (val === 0 || val === 1) {
         return String(val);
