@@ -7,12 +7,12 @@ const getInputValue = () => {
     let input = parseInt(numberInput.value);
 
     if (!numberInput.value) {
-        return (outputEl.textContent = "Please enter a valid number");
+        outputEl.textContent = "Please enter a valid number";
     } else if (input < 0) {
         output.textContent = "Please enter a number greater than or equal to 1"; // //
     } else if (input >= 4000) {
-        return (outputEl.textContent =
-            "Please enter a number less than or equal to 3999");
+        outputEl.textContent =
+            "Please enter a number less than or equal to 3999";
     } else {
         outputEl.textContent = convertToRoman(input);
     }
