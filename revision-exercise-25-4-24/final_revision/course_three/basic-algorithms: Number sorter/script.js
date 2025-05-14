@@ -20,6 +20,8 @@ const updateUI = (array = []) => {
     });
 };
 
+// 8, 2, 4, 1, 3
+
 // bubble sort
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
