@@ -30,10 +30,13 @@ const updateUI = (array = []) => {
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         //
+        console.log(array[i]);
 
         //
 
-        for (let j = 0; j < array.length - 1; j++) {}
+        for (let j = 0; j < array.length - 1; j++) {
+            console.log(array[j]);
+        }
     }
 };
 
