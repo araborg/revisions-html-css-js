@@ -37,7 +37,7 @@ const bubbleSort = (array) => {
         //
 
         for (let j = 0; j < array.length - 1; j++) {
-            // inner loop runs 4 times
+            // inner loop runs 3, 2, 1, 0 times
             if (array[j] > array[j + 1]) {
                 // j is d current index while j+1 is
                 // d immediate index
