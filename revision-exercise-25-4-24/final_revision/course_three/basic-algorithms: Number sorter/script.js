@@ -38,11 +38,12 @@ const bubbleSort = (array) => {
         //
 
         for (let j = 0; j < array.length - 1; j++) {
-            input.push(array[j]);
+            justice.push(array[j]);
         }
     }
 
     console.log(input);
+    console.log(justice);
 };
 
 // =============================
