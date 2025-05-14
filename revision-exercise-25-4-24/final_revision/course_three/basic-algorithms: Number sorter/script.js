@@ -24,7 +24,7 @@ const updateUI = (array = []) => {
 
 // index i: 0, 1, 2, 3, 4
 
-// index j: 0, 1, 2, 3, 4
+// index j: 0, 1, 2, 3
 
 // bubble sort
 const bubbleSort = (array) => {
