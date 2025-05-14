@@ -32,18 +32,15 @@ let justice = [];
 // bubble sort
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
-        //
-        input.push(array[i]);
+        // wh outer loop runs once
 
         //
 
         for (let j = 0; j < array.length - 1; j++) {
+            // inner loop runs 4 times
             justice.push(array[j]);
         }
     }
-
-    console.log(input);
-    console.log(justice);
 };
 
 // =============================
