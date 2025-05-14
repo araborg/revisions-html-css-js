@@ -33,7 +33,9 @@ let j = [];
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         //
-        console.log(array[i]);
+        i.push(array[i]);
+
+        console.log(i);
 
         //
 
