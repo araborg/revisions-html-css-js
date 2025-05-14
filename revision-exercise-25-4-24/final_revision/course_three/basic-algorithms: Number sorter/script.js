@@ -5,7 +5,7 @@ const sortInputArray = (e) => {
 
     const inputValues = [
         ...document.getElementsByClassName("values-dropdown"),
-    ].map((dropdown) => Number(dropdown.value));
+    ].map((dropdownVal) => Number(dropdownVal.value));
 
     console.log(inputValues);
 };
