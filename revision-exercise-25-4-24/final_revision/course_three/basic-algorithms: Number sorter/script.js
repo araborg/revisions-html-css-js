@@ -9,7 +9,7 @@ const sortInputArray = (e) => {
 
     bubbleSort(inputValues);
 
-    // updateUI(inputValues);
+    updateUI(inputValues);
 };
 
 const updateUI = (array = []) => {
