@@ -38,7 +38,9 @@ const bubbleSort = (array) => {
 
         for (let j = 0; j < array.length - 1; j++) {
             // inner loop runs 4 times
-            justice.push(array[j]);
+            if (array[j] > array[j + 1]) {
+                const temp = array[j];
+            }
         }
     }
 };
