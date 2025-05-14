@@ -32,7 +32,7 @@ let justice = [];
 // bubble sort
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
-        // wn outer loop runs once
+        // outer loop runs once
 
         //
 
