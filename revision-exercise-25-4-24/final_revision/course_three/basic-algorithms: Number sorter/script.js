@@ -1,5 +1,7 @@
 const sortButton = document.getElementById("sort");
 
-console.log(sortButton);
+const sortInputArray = (e) => {
+    console.log(e);
+};
 
 sortButton.addEventListener("click", sortInputArray);
