@@ -5,9 +5,9 @@ const sortInputArray = (e) => {
 
     const inputValues = [
         ...document.getElementsByClassName("values-dropdown"),
-    ].map((dropdownVal) => Number(dropdownVal.value));
+    ].map((dropdownVal) => parseInt(dropdownVal.value));
 
-    // console.log(inputValues);
+    console.log(inputValues);
 
     updateUI(inputValues);
 };
