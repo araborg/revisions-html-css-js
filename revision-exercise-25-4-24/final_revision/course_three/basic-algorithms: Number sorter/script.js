@@ -20,6 +20,12 @@ const updateUI = (array = []) => {
     });
 };
 
+// bubble sort
+
+// selection sort
+
+// insertion sort
+
 sortButton.addEventListener("click", sortInputArray);
 
 /*
