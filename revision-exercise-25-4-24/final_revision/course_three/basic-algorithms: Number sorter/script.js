@@ -26,23 +26,23 @@ const updateUI = (array = []) => {
 
 // index j: 0, 1, 2, 3
 
-let i = [];
-let j = [];
+let input = [];
+let justice = [];
 
 // bubble sort
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         //
-        i.push(array[i]);
-
-        console.log(i);
+        input.push(array[i]);
 
         //
 
         for (let j = 0; j < array.length - 1; j++) {
-            console.log(array[j]);
+            input.push(array[j]);
         }
     }
+
+    console.log(input);
 };
 
 // =============================
