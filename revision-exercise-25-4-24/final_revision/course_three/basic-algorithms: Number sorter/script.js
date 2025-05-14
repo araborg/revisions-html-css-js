@@ -21,3 +21,7 @@ const updateUI = (array = []) => {
 };
 
 sortButton.addEventListener("click", sortInputArray);
+
+/*
+Courage knows no bounds, it begins where comfort ends.
+*/
