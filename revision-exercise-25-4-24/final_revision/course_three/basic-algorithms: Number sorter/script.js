@@ -72,6 +72,7 @@ const selectionSort = (array) => {
         let minIndex = i;
         //
 
+        // ds changes d index of minindex
         for (let j = i + 1; j < array.length; j++) {
             if (array[minIndex] > array[j]) {
                 minIndex = j;
