@@ -35,7 +35,8 @@ const bubbleSort = (array) => {
         //
 
         for (let j = 0; j < array.length - 1; j++) {
-            // inner loop runs 0, 1, 2, 3 times
+            // inner loop runs 0, 1, 2, 3 times and
+            // starts 4rm index 0 wn a loop ends.
 
             if (array[j] > array[j + 1]) {
                 // j is d current index while j+1 is
@@ -45,6 +46,11 @@ const bubbleSort = (array) => {
                 array[j] = array[j + 1];
 
                 array[j + 1] = temp;
+
+                // 1 = temp; 2 = array[j]; 3 = array[j + 1]
+                // 1 ----------> 2
+                // 2 ----------> 3
+                // 3 ----------> 1
             }
 
             console.log(array);
