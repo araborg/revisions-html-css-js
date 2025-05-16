@@ -88,15 +88,8 @@ const selectionSort = (array) => {
             if (array[minIndex] > array[j]) {
                 // ds is d cause of d changes
                 minIndex = j;
-
-                // jValues.push(minIndex);
             }
-            // console.log(jValues);
-
-            // console.log(i, j, array);
         }
-
-        // console.log(jValues);
 
         // output
         // i = 0: array: 2, 8, 4, 1, 3
