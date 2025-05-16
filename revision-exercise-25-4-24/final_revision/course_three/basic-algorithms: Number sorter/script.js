@@ -26,9 +26,6 @@ const updateUI = (array = []) => {
 
 // index j: 0, 1, 2, 3
 
-let input = [];
-let justice = [];
-
 // bubble sort
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
