@@ -69,7 +69,9 @@ const bubbleSort = (array) => {
 // selection sort: sorts to d left
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
+        // minIndex will always changes 4rm 0, 1, 2, 3, 4
         let minIndex = i;
+
         //
 
         // ds changes d index of minindex
