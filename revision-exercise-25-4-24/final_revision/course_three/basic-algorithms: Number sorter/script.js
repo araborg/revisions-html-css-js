@@ -71,9 +71,6 @@ const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         // minIndex will always changes 4rm 0, 1, 2, 3, 4
         let minIndex = i; // 0, 1, 2, 3, 4
-        console.log(minIndex);
-
-        // console.log(array[i]);
 
         // input
         // i = 0: array: 8, 2, 4, 1, 3
