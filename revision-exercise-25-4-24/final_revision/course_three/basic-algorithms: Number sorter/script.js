@@ -66,6 +66,8 @@ const bubbleSort = (array) => {
 
 // index j: 0, 1, 2, 3, 4
 
+const jValues = [];
+
 // selection sort: sorts to d left
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
@@ -85,6 +87,8 @@ const selectionSort = (array) => {
                 // ds is d cause of d changes
                 minIndex = j;
             }
+
+            console.log(minIndex);
         }
 
         // output
