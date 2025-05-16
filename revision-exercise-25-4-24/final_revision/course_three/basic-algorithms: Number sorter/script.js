@@ -69,6 +69,7 @@ const bubbleSort = (array) => {
 // selection sort: sorts to d left
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
+        let minIndex = i;
         //
 
         for (let j = i + 1; j < array.length; j++) {
