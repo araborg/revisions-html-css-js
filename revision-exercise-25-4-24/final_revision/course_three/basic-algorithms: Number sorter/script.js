@@ -70,7 +70,7 @@ const bubbleSort = (array) => {
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         // minIndex will always changes 4rm 0, 1, 2, 3, 4
-        let minIndex = i;
+        let minIndex = i; // 0, 1, 2, 3, 4
         console.log(minIndex);
 
         // console.log(array[i]);
@@ -100,7 +100,7 @@ const selectionSort = (array) => {
         array[i] = array[minIndex];
         array[minIndex] = temp;
 
-        console.log(array);
+        // console.log(array);
     }
 
     return array;
