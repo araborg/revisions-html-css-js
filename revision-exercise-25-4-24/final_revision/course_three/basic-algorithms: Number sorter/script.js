@@ -72,6 +72,8 @@ const selectionSort = (array) => {
         // minIndex will always changes 4rm 0, 1, 2, 3, 4
         let minIndex = i;
 
+        console.log(array[i]);
+
         //
 
         // ds changes d index of minindex
@@ -80,6 +82,8 @@ const selectionSort = (array) => {
                 // ds is d cause of d changes
                 minIndex = j;
             }
+
+            console.log(array);
         }
 
         const temp = array[i];
