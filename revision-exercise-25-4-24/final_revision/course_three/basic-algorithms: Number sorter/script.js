@@ -67,6 +67,15 @@ const bubbleSort = (array) => {
 // index j: 0, 1, 2, 3, 4
 
 // selection sort
+const selectionSort = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        //
+
+        for (let j = i + 1; j < array.length; j++) {
+            console.log(j);
+        }
+    }
+};
 
 // =============================
 
