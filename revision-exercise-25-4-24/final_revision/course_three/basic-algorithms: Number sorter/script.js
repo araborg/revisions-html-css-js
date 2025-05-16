@@ -74,8 +74,7 @@ const selectionSort = (array) => {
 
         console.log(array[i]);
 
-        // array: 8, 2, 4, 1, 3
-
+        // input
         // i = 0: array: 8, 2, 4, 1, 3
         // i = 1: array: 2, 8, 4, 1, 3
         // i = 2: array: 2, 4, 8, 1, 3
@@ -90,6 +89,7 @@ const selectionSort = (array) => {
             }
         }
 
+        // output
         // i = 0: array: 2, 8, 4, 1, 3
         // i = 1: array: 2, 4, 8, 1, 3
         // i = 2: array: 2, 4, 1, 8, 3
