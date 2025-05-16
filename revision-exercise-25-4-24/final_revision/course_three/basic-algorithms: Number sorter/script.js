@@ -30,6 +30,7 @@ const updateUI = (array = []) => {
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         // outer loop runs once
+        console.log(array[i], array);
 
         //
 
@@ -45,6 +46,8 @@ const bubbleSort = (array) => {
 
                 array[j + 1] = temp;
             }
+
+            console.log(array);
         }
     }
 
