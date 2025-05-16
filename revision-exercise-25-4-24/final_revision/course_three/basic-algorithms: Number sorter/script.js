@@ -79,7 +79,7 @@ const selectionSort = (array) => {
         // i = 1: array: 2, 8, 4, 1, 3
         // i = 2: array: 2, 4, 8, 1, 3
         // i = 3: array: 2, 4, 1, 8, 3
-        // i = 3: array: 2, 4, 1, , 3
+        // i = 4: array: 2, 4, 1, 3, 8
 
         // ds changes d index of minindex
         for (let j = i + 1; j < array.length; j++) {
