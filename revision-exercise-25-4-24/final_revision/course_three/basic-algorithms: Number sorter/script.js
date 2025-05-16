@@ -76,6 +76,8 @@ const selectionSort = (array) => {
 
         //
 
+        // array: 8, 2, 4, 1, 3
+
         // ds changes d index of minindex
         for (let j = i + 1; j < array.length; j++) {
             if (array[minIndex] > array[j]) {
@@ -84,6 +86,7 @@ const selectionSort = (array) => {
             }
         }
 
+        // array: 2, 8, 4, 1, 3
         const temp = array[i];
         array[i] = array[minIndex];
         array[minIndex] = temp;
