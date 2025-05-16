@@ -73,9 +73,17 @@ const selectionSort = (array) => {
         //
 
         for (let j = i + 1; j < array.length; j++) {
-            console.log(j);
+            if (array[minIndex] > array[j]) {
+                minIndex = j;
+            }
         }
+
+        const temp = array[i];
+        array[i] = array[minIndex];
+        array[minIndex] = temp;
     }
+
+    return array;
 };
 
 // =============================
