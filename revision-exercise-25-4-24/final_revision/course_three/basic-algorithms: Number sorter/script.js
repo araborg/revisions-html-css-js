@@ -82,13 +82,13 @@ const selectionSort = (array) => {
                 // ds is d cause of d changes
                 minIndex = j;
             }
-
-            console.log(array);
         }
 
         const temp = array[i];
         array[i] = array[minIndex];
         array[minIndex] = temp;
+
+        console.log(array);
     }
 
     return array;
