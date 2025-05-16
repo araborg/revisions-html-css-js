@@ -88,6 +88,7 @@ const selectionSort = (array) => {
         }
 
         // array: 2, 8, 4, 1, 3
+        // array: 2, 4, 8, 1, 3
         const temp = array[i];
         array[i] = array[minIndex];
         array[minIndex] = temp;
