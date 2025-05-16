@@ -27,7 +27,7 @@ const updateUI = (array = []) => {
 
 // index j: 0, 1, 2, 3
 
-// bubble sort
+// bubble sort: sorts to d right
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         // outer loop runs once
@@ -66,7 +66,7 @@ const bubbleSort = (array) => {
 
 // index j: 0, 1, 2, 3, 4
 
-// selection sort
+// selection sort: sorts to d left
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
         //
