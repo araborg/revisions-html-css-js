@@ -142,6 +142,4 @@ const bubbleSort = (arr) => {
     return arr;
 };
 
-console.log("hello");
-
 sortButton.addEventListener("click", sortInputArray);
