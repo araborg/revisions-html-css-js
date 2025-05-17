@@ -71,6 +71,7 @@ const selectionSort = (array) => {
 };
 
 // insertion sort
+
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
         const currValue = array[i];
