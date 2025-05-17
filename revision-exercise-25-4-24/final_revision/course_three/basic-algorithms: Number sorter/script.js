@@ -8,7 +8,8 @@ const sortInputArray = (e) => {
     ].map((dropdownVal) => Number(dropdownVal.value));
 
     // const sortedValue = bubbleSort(inputValues);
-    const sortedValue = selectionSort(inputValues);
+    // const sortedValue = selectionSort(inputValues);
+    const sortedValue = insertionSort(inputValues);
 
     updateUI(sortedValue);
 };
@@ -85,11 +86,15 @@ const selectionSort = (array) => {
         for (let j = i + 1; j < array.length; j++) {
             // array: 8, 2, 4, 1, 3
 
+            console.log(minIndex);
+
             if (array[minIndex] > array[j]) {
                 // ds is d cause of d changes
                 minIndex = j;
             }
         }
+
+        console.log("=======");
 
         // output
         // i = 0: array: 2, 8, 4, 1, 3
