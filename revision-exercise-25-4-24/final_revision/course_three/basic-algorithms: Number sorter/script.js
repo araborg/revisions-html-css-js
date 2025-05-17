@@ -147,17 +147,17 @@ const selectionSort = (arr) => {
         let minIndex = i;
 
         for (let j = i + 1; j < arr.length; j++) {
-            if (arr[j] < arr[minIndex]) {
+            if (arr[minIndex] > arr[j]) {
                 minIndex = j;
             }
         }
 
-        const temp = arr[minIndex];
-        arr[minIndex] = arr[i];
-        arr[i] = temp;
-
-        console.log(minIndex);
+        const temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
     }
+
+    return arr;
 };
 
 sortButton.addEventListener("click", sortInputArray);
