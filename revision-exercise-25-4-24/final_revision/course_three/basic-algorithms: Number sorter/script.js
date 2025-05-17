@@ -113,9 +113,9 @@ const sortInputArray = (e) => {
         ...document.getElementsByClassName("values-dropdown"),
     ].map((dropdownVal) => Number(dropdownVal.value));
 
-    // const sortedValue = bubbleSort(inputValues);
+    const sortedValue = bubbleSort(inputValues);
     // const sortedValue = selectionSort(inputValues);
-    const sortedValue = insertionSort(inputValues);
+    // const sortedValue = insertionSort(inputValues);
 
     updateUI(sortedValue);
 };
@@ -129,7 +129,17 @@ const updateUI = (array = []) => {
 };
 
 const bubbleSort = (arr) => {
-    for (let i = 0; i < arr.length; i++) {}
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; i < arr.length - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+
+    return arr;
 };
 
 sortButton.addEventListener("click", sortInputArray);
