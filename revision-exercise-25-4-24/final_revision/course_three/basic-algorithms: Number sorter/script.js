@@ -59,30 +59,16 @@ const bubbleSort = (array) => {
     return array;
 };
 
-// =============================
-
-// array: 8, 2, 4, 1, 3
-
-// index i: 0, 1, 2, 3, 4
-
-// index j: 0, 1, 2, 3, 4
-
-const jValues = [];
-
 // selection sort: sorts to d left
 const selectionSort = (array) => {
     for (let i = 0; i < array.length; i++) {
-        // minIndex will always changes 4rm 0, 1, 2, 3, 4
-        let minIndex = i; // 0, 1, 2, 3, 4
+        let minIndex = i;
 
         // ds changes d index of minindex
         for (let j = i + 1; j < array.length; j++) {
-            // array: 8, 2, 4, 1, 3
-
-            console.log(minIndex);
-
             if (array[minIndex] > array[j]) {
-                // ds is d cause of d changes
+                // ds is d cause of d changes, it assumes d final index
+                // j where array at minIndex is > array[j]
                 minIndex = j;
             }
         }
