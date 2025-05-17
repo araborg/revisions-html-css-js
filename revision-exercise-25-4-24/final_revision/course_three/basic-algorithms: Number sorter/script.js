@@ -165,6 +165,10 @@ const insertionSort = (arr) => {
         const currValue = arr[i];
 
         let j = i - 1;
+
+        while (j >= 0 && arr[j] < currValue) {
+            j--;
+        }
     }
 };
 
