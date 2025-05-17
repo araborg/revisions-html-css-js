@@ -130,7 +130,7 @@ const insertionSort = (array) => {
 
         while (j >= 0 && array[j] > currValue) {
             // j + 1 will bcom d index of d currValue i.e. i - 1 + 1 = i
-            // array[j + 1] = array[j];
+            array[j + 1] = array[j];
 
             j--;
         }
