@@ -22,6 +22,8 @@ const updateUI = (array = []) => {
     });
 };
 
+/*
+
 // bubble sort: sorts to d right
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
@@ -93,5 +95,14 @@ const insertionSort = (array) => {
 
     return array;
 };
+
+
+
+
+
+
+
+
+*/
 
 sortButton.addEventListener("click", sortInputArray);
