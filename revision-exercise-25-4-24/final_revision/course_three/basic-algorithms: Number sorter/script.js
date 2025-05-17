@@ -31,9 +31,7 @@ const updateUI = (array = []) => {
 // bubble sort: sorts to d right
 const bubbleSort = (array) => {
     for (let i = 0; i < array.length; i++) {
-        // outer loop runs once
-
-        //
+        // outer loop runs once, d inner runs for d length of d arr.
 
         for (let j = 0; j < array.length - 1; j++) {
             // inner loop runs 0, 1, 2, 3 times and
@@ -47,11 +45,6 @@ const bubbleSort = (array) => {
                 array[j] = array[j + 1];
 
                 array[j + 1] = temp;
-
-                // 1 = temp; 2 = array[j]; 3 = array[j + 1]
-                // 1 ----------> 2
-                // 2 ----------> 3
-                // 3 ----------> 1
             }
         }
     }
