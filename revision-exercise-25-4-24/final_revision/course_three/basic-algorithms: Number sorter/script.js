@@ -112,31 +112,27 @@ const selectionSort = (array) => {
     return array;
 };
 
-// =============================
-
-// array: 8, 2, 4, 1, 3
-
-// index i: 0, 1, 2, 3, 4
-
-// index j: 0, 1, 2, 3, 4
-
 // insertion sort
-
 const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
-        const currValue = array[i]; // i = 1
+        const currValue = array[i];
 
-        let j = i - 1; // j = 0,
+        // d value of j is d determinant here
+        let j = i - 1; // j = 0, 1, 2
 
         while (j >= 0 && array[j] > currValue) {
             // j + 1 will bcom d index of d currValue i.e. i - 1 + 1 = i
             array[j + 1] = array[j]; // j = 0,  array[j + 1] = array[1]
 
+            // d final j value is wt goes out and re-enters d while
+            // loop or enters d array[j + 1]
             j--;
         }
 
         array[j + 1] = currValue;
     }
+
+    console.log(array);
 
     return array;
 };
