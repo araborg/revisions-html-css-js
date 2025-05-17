@@ -174,6 +174,8 @@ const insertionSort = (arr) => {
 
         arr[j + 1] = currValue;
     }
+
+    return arr;
 };
 
 sortButton.addEventListener("click", sortInputArray);
