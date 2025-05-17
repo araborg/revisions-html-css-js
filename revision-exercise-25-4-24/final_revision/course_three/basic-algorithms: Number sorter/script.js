@@ -126,10 +126,11 @@ const insertionSort = (array) => {
     for (let i = 1; i < array.length; i++) {
         const currValue = array[i];
 
-        let j = i - 1;
+        let j = i - 1; // 0,
 
         while (j >= 0 && array[j] > currValue) {
-            array[j + 1] = array[j];
+            // j + 1 will bcom d index of d currValue i.e. i - 1 + 1 = i
+            // array[j + 1] = array[j];
 
             j--;
         }
