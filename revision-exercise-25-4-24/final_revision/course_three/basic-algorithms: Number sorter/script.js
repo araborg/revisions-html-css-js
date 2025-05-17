@@ -80,17 +80,15 @@ const insertionSort = (array) => {
 
         while (j >= 0 && array[j] > currValue) {
             // j + 1 will bcom d index of d currValue i.e. i - 1 + 1 = i
-            array[j + 1] = array[j]; // j = 0,  array[j + 1] = array[1]
+            array[j + 1] = array[j]; // j + 1 here rep d next index
 
             // d final j value is wt goes out and re-enters d while
             // loop or enters d array[j + 1]
             j--;
         }
 
-        array[j + 1] = currValue;
+        array[j + 1] = currValue; // j + 1 here reps d prev index
     }
-
-    console.log(array);
 
     return array;
 };
