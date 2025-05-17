@@ -1,3 +1,4 @@
+/*
 const sortButton = document.getElementById("sort");
 
 const sortInputArray = (e) => {
@@ -22,7 +23,6 @@ const updateUI = (array = []) => {
     });
 };
 
-/*
 
 // bubble sort: sorts to d right
 const bubbleSort = (array) => {
@@ -104,5 +104,28 @@ const insertionSort = (array) => {
 
 
 */
+const sortButton = document.getElementById("sort");
+
+const sortInputArray = (e) => {
+    e.preventDefault();
+
+    const inputValues = [
+        ...document.getElementsByClassName("values-dropdown"),
+    ].map((dropdownVal) => Number(dropdownVal.value));
+
+    // const sortedValue = bubbleSort(inputValues);
+    // const sortedValue = selectionSort(inputValues);
+    const sortedValue = insertionSort(inputValues);
+
+    updateUI(sortedValue);
+};
+
+const updateUI = (array = []) => {
+    array.forEach((num, i) => {
+        const outputValueNode = document.getElementById(`output-value-${i}`);
+
+        outputValueNode.textContent = num;
+    });
+};
 
 sortButton.addEventListener("click", sortInputArray);
