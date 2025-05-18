@@ -11,6 +11,12 @@ const sortValue = (e) => {
     ].map((input) => parseInt(input.value));
 
     console.log(valuesDropdown);
+
+    const sortedValue = bubbleSort(valuesDropdown);
+
+    displayUI(sortedValue);
 };
+
+const displayUI = (arr) => {};
 
 sortBtn.addEventListener("click", sortValue);
