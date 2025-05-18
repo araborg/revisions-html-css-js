@@ -35,6 +35,4 @@ rulesBtn.addEventListener("click", () => {
 
         rulesBtn.textContent = "Show rules";
     }
-
-    console.log(isModalShowing);
 });
