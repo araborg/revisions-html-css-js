@@ -16,4 +16,9 @@ const rulesContainer = document.querySelector(".rules-container");
 let isModalShowing;
 let diceValuesArr;
 
+let currentScore;
+let score;
+let rolls;
+let round;
+
 console.log(scoreInputs);
