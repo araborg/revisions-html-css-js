@@ -78,3 +78,5 @@ const updateRadioOption = (index, score) => {
 
     scoreSpans[index].textContent = `, score = ${score}`;
 };
+
+const getHighestDuplicates = () => {};
