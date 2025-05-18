@@ -10,15 +10,18 @@ const sortValue = (e) => {
         ...document.getElementsByClassName("values-dropdown"),
     ].map((input) => parseInt(input.value));
 
-    console.log(valuesDropdown);
-
     const sortedValue = bubbleSort(valuesDropdown);
+    // console.log(sortedValue);
 
     displayUI(sortedValue);
+
+    console.log(displayUI(sortedValue));
 };
 
 const displayUI = (arr) => {
-    console.log(arr);
+    arr.forEach((el, i) => {
+        document.getElementById(`output-value-${i}`).textContent = i;
+    });
 };
 
 const bubbleSort = (arr) => {
