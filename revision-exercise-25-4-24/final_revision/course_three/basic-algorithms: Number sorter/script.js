@@ -8,7 +8,7 @@ const sortValue = (e) => {
 
     const valuesDropdown = [
         ...document.getElementsByClassName("values-dropdown"),
-    ].map((input) => input.value);
+    ].map((input) => parseInt(input.value));
 
     console.log(valuesDropdown);
 };
