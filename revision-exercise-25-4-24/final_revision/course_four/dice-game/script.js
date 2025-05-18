@@ -13,4 +13,7 @@ const keepScoreBtn = document.getElementById("keep-score-btn");
 const rulesBtn = document.getElementById("rule-btn");
 const rulesContainer = document.querySelector(".rules-container");
 
+let isModalShowing;
+let diceValuesArr;
+
 console.log(scoreInputs);
