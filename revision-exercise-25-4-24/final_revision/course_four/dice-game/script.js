@@ -26,11 +26,11 @@ let round = 1;
 rulesBtn.addEventListener("click", () => {
     isModalShowing = !isModalShowing;
 
-    // if (!isModalShowing) {
-    //     rulesContainer.style.display = "block";
-    // } else {
-    //     rulesContainer.style.display = "none";
-    // }
+    if (isModalShowing) {
+        rulesContainer.style.display = "block";
+    } else {
+        rulesContainer.style.display = "none";
+    }
 
     console.log(isModalShowing);
 });
