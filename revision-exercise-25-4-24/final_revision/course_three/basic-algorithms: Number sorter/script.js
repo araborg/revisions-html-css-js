@@ -75,9 +75,10 @@ const insertSort = (arr) => {
             // use j only within ds scope
             arr[j + 1] = arr[j];
 
-            j--;
+            j--; // j can go as low as -1
         }
 
+        // j + 1 can only go as low as 1
         arr[j + 1] = currValue;
     }
 
