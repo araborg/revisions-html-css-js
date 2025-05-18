@@ -8,7 +8,8 @@ const sortValue = (e) => {
     ].map((input) => parseInt(input.value));
 
     // const sortedValue = bubbleSort(valuesDropdown);
-    const sortedValue = selectionSort(valuesDropdown);
+    // const sortedValue = selectionSort(valuesDropdown);
+    const sortedValue = insertSort(valuesDropdown);
 
     displayUI(sortedValue);
 };
@@ -62,6 +63,12 @@ const selectionSort = (arr) => {
     }
 
     return arr;
+};
+
+const insertSort = (arr) => {
+    for (let i = 1; i < arr.length; i++) {
+        let j = i - 1;
+    }
 };
 
 sortBtn.addEventListener("click", sortValue);
