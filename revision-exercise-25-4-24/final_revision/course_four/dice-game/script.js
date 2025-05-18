@@ -54,4 +54,6 @@ const rollDice = () => {
     });
 };
 
-rollDice();
+rollDiceBtn.addEventListener("click", () => {
+    rollDice();
+});
