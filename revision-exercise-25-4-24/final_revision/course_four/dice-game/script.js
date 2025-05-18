@@ -43,7 +43,9 @@ const rollDice = () => {
 
     for (let i = 0; i < 5; i++) {
         const randomDice = Math.floor(Math.random() * 6) + 1;
-    }
-};
 
-console.log(Math.floor(Math.random() * 6));
+        diceValuesArr.push(randomDice);
+    }
+
+    console.log(diceValuesArr);
+};
