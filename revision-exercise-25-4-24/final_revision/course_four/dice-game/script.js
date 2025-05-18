@@ -50,6 +50,8 @@ const rollDice = () => {
     listOfAllDice.forEach((dice, index) => {
         dice.textContent = diceValuesArr[index];
     });
+
+    updateRadioOption(5, 0);
 };
 
 rollDiceBtn.addEventListener("click", () => {
@@ -73,5 +75,5 @@ const updateRadioOption = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
 
-    scoreSpans[index].textContent = `, score=${score}`;
+    scoreSpans[index].textContent = `, score = ${score}`;
 };
