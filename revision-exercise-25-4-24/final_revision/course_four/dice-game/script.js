@@ -52,7 +52,7 @@ const rollDice = () => {
     });
 
     // default input selection
-    updateRadioOption(5, 0);
+    // updateRadioOption(5, 0);
 };
 
 rollDiceBtn.addEventListener("click", () => {
@@ -118,5 +118,6 @@ const getHighestDuplicates = (arr) => {
         updateRadioOption(1, sumOfAllDice);
     }
 
+    // default input selection
     updateRadioOption(5, 0);
 };
