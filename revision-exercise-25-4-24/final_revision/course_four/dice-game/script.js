@@ -51,6 +51,7 @@ const rollDice = () => {
         dice.textContent = diceValuesArr[index];
     });
 
+    // default input selection
     updateRadioOption(5, 0);
 };
 
