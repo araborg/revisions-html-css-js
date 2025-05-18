@@ -11,11 +11,8 @@ const sortValue = (e) => {
     ].map((input) => parseInt(input.value));
 
     const sortedValue = bubbleSort(valuesDropdown);
-    // console.log(sortedValue);
 
     displayUI(sortedValue);
-
-    console.log(displayUI(sortedValue));
 };
 
 const displayUI = (arr) => {
