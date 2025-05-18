@@ -82,6 +82,7 @@ const updateRadioOption = (index, score) => {
 };
 
 const getHighestDuplicates = (arr) => {
+    // using an obj to monitor d state
     const counts = {};
 
     for (const num of arr) {
