@@ -7,7 +7,8 @@ const sortValue = (e) => {
         ...document.getElementsByClassName("values-dropdown"),
     ].map((input) => parseInt(input.value));
 
-    const sortedValue = bubbleSort(valuesDropdown);
+    // const sortedValue = bubbleSort(valuesDropdown);
+    const sortedValue = selectionSort(valuesDropdown);
 
     displayUI(sortedValue);
 };
