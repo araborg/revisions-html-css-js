@@ -28,8 +28,12 @@ rulesBtn.addEventListener("click", () => {
 
     if (isModalShowing) {
         rulesContainer.style.display = "block";
+
+        rulesBtn.textContent = "Hide rules";
     } else {
         rulesContainer.style.display = "none";
+
+        rulesBtn.textContent = "Show rules";
     }
 
     console.log(isModalShowing);
