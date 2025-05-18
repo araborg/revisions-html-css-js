@@ -96,7 +96,7 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    // a placeholder for d occurenc of d num
+    // ds mks d count available outside of its scope
     let highestCount = 0;
 
     for (const num of arr) {
