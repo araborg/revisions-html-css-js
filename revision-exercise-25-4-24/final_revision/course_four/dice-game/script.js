@@ -24,9 +24,11 @@ let round = 1;
 
 // logic
 rulesBtn.addEventListener("click", () => {
-    !isModalShowing
-        ? (rulesContainer.style.display = "block")
-        : (rulesContainer.style.display = "none");
+    if (!isModalShowing) {
+        rulesContainer.style.display = "block";
+    } else {
+        rulesContainer.style.display = "none";
+    }
 
     console.log(isModalShowing);
 });
