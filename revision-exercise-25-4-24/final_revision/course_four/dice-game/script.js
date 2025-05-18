@@ -87,7 +87,6 @@ const getHighestDuplicates = (arr) => {
 
     for (const num of arr) {
         // num = key, counts[num] = value
-
         if (counts[num]) {
             counts[num]++;
         } else {
