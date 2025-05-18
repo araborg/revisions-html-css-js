@@ -49,3 +49,5 @@ const rollDice = () => {
 
     console.log(diceValuesArr);
 };
+
+rollDice();
