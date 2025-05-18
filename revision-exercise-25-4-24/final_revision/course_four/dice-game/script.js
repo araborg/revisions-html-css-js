@@ -24,6 +24,7 @@ let round = 1;
 
 // logic
 rulesBtn.addEventListener("click", () => {
+    // ds monitor d state of isModalShowing
     isModalShowing = !isModalShowing;
 
     if (isModalShowing) {
