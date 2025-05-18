@@ -1,9 +1,13 @@
 const sortBtn = document.getElementById("sort");
-const valuesDropdown = document.getElementsByClassName("values-dropdown");
+// const valuesDropdown = document.getElementsByClassName("values-dropdown");
 
 console.log(valuesDropdown);
 const sortValue = (e) => {
     e.preventDefault();
+
+    const valuesDropdown = [document.getElementsByClassName("values-dropdown")];
+
+    console.log(valuesDropdown);
 };
 
 sortBtn.addEventListener("click", sortValue);
