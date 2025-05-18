@@ -59,5 +59,14 @@ rollDiceBtn.addEventListener("click", () => {
         rolls++;
 
         rollDice();
+        updateStats();
     }
 });
+
+const updateStats = () => {
+    rollsElement.textContent = rolls;
+
+    // roundElement.textContent = round;
+};
+
+const updateRadioOption = (index, score) => {};
