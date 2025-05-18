@@ -63,6 +63,8 @@ rollDiceBtn.addEventListener("click", () => {
 
         rollDice();
         updateStats();
+
+        getHighestDuplicates();
     }
 });
 
