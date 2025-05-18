@@ -45,3 +45,5 @@ const rollDice = () => {
         const randomDice = Math.floor(Math.random() * 6) + 1;
     }
 };
+
+console.log(Math.random() * 6);
