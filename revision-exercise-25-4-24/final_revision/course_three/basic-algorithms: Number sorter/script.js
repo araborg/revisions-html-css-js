@@ -72,6 +72,7 @@ const insertSort = (arr) => {
         let j = i - 1;
 
         while (j >= 0 && arr[j] > currValue) {
+            // use j only within ds scope
             arr[j + 1] = arr[j];
 
             j--;
