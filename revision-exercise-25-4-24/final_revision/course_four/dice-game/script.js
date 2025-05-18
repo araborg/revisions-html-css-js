@@ -64,7 +64,7 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateStats();
 
-        getHighestDuplicates();
+        getHighestDuplicates(diceValuesArr);
     }
 });
 
@@ -81,4 +81,14 @@ const updateRadioOption = (index, score) => {
     scoreSpans[index].textContent = `, score = ${score}`;
 };
 
-const getHighestDuplicates = () => {};
+const getHighestDuplicates = (arr) => {
+    const counts = {};
+
+    for (const num of arr) {
+        if (counts[num]) {
+            counts[num]++;
+        } else {
+            counts[num] = 1;
+        }
+    }
+};
