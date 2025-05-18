@@ -17,8 +17,14 @@ const sortValue = (e) => {
     displayUI(sortedValue);
 };
 
-const displayUI = (arr) => {};
+const displayUI = (arr) => {
+    console.log(arr);
+};
 
-const bubbleSort = (arr) => {};
+const bubbleSort = (arr) => {
+    console.log(arr);
+
+    return arr;
+};
 
 sortBtn.addEventListener("click", sortValue);
