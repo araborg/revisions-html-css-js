@@ -20,7 +20,7 @@ const sortValue = (e) => {
 
 const displayUI = (arr) => {
     arr.forEach((el, i) => {
-        document.getElementById(`output-value-${i}`).textContent = i;
+        document.getElementById(`output-value-${i}`).textContent = arr[i];
     });
 };
 
