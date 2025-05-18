@@ -6,4 +6,4 @@ const sortValue = (e) => {
     console.log("Hello");
 };
 
-sortBtn.addEventListener("click", sortValue);
+sortBtn.addEventListener("submit", sortValue);
