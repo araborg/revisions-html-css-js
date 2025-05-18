@@ -39,7 +39,7 @@ rulesBtn.addEventListener("click", () => {
 });
 
 const rollDice = () => {
-    diceValuesArr = [];
+    // diceValuesArr = [];
 
     for (let i = 0; i < 5; i++) {
         const randomDice = Math.floor(Math.random() * 6) + 1;
