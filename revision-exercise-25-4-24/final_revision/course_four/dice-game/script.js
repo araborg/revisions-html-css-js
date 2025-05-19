@@ -123,7 +123,7 @@ const getHighestDuplicates = (arr) => {
     }
 
     // default input selection
-    // updateRadioOption(5, 0);
+    updateRadioOption(5, 0);
 };
 
 const resetRadioOptions = () => {
