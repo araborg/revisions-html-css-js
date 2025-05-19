@@ -18,7 +18,7 @@ let isModalShowing = false;
 
 let diceValuesArr = [];
 
-let currentScore = 0;
+let score = 0;
 let rolls = 0;
 let round = 1;
 
@@ -74,7 +74,7 @@ rollDiceBtn.addEventListener("click", () => {
 const updateStatsIU = () => {
     rollsElement.textContent = rolls;
 
-    // roundElement.textContent = round;
+    roundElement.textContent = round;
 };
 
 const updateRadioOption = (index, score) => {
