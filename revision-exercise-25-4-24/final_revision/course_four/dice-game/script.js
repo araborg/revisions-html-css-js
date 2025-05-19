@@ -138,4 +138,6 @@ const resetRadioOptions = () => {
     });
 };
 
-const updateScore = () => {};
+const updateScore = (selectedValue, achieved) => {
+    score += parseInt(selectedValue);
+};
