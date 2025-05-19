@@ -165,8 +165,8 @@ keepScoreBtn.addEventListener("click", () => {
         rolls = 0;
         round++;
 
-        updateStatsIU;
-        resetRadioOptions;
+        updateStatsIU();
+        resetRadioOptions();
 
         updateScore(selectedValue, inputId);
     } else {
