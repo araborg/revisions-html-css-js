@@ -138,12 +138,26 @@ const resetRadioOptions = () => {
     });
 };
 
-const updateScore = (selectedValue, achieved) => {
+const updateScore = (selectedValue, inputId) => {
     score += parseInt(selectedValue);
 
     totalScoreElement.textContent = score;
 
     scoreHistory.innerHTML += `
-        <li> ${achieved} : ${selectedValue} </li>
+        <li> ${inputId} : ${selectedValue} </li>
     `;
 };
+
+keepScoreBtn.addEventListener("click", () => {
+    let selectedValue;
+    let inputId;
+
+    for (const radioBtn of scoreInputs) {
+        if (radioBtn.checked) {
+            selectedValue = radioBtn.value;
+            inputId = radioBtn.id;
+
+            break;
+        }
+    }
+});
