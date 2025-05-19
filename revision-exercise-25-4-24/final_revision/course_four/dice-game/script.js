@@ -97,7 +97,7 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    // ds mks d count available outside of its scope
+    // ds mks d count available outside of its for loop scope
     let highestCount = 0;
 
     for (const num of arr) {
