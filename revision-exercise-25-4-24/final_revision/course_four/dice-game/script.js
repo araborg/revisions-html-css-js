@@ -137,3 +137,5 @@ const resetRadioOptions = () => {
         span.textContent = "";
     });
 };
+
+const updateScore = () => {};
