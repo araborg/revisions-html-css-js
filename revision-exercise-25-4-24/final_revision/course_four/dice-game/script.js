@@ -157,10 +157,10 @@ keepScoreBtn.addEventListener("click", () => {
             selectedValue = radioBtn.value;
             inputId = radioBtn.id;
 
-            // break;
+            break;
         }
 
-        console.log(radioBtn);
+        // console.log(radioBtn);
     }
 
     if (selectedValue) {
