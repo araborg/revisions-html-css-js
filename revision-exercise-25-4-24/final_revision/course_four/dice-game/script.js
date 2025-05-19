@@ -39,7 +39,8 @@ rulesBtn.addEventListener("click", () => {
 });
 
 const rollDice = () => {
-    // diceValuesArr = [];
+    // ds helps reset d diceValuesArr after each rollDice
+    diceValuesArr = [];
 
     for (let i = 0; i < 5; i++) {
         const randomDice = Math.floor(Math.random() * 6) + 1;
@@ -61,10 +62,10 @@ rollDiceBtn.addEventListener("click", () => {
     } else {
         rolls++;
 
-        resetRadioOptions();
-
         rollDice();
         updateStats();
+
+        resetRadioOptions();
 
         getHighestDuplicates(diceValuesArr);
     }
