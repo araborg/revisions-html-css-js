@@ -140,4 +140,10 @@ const resetRadioOptions = () => {
 
 const updateScore = (selectedValue, achieved) => {
     score += parseInt(selectedValue);
+
+    totalScoreElement.textContent = score;
+
+    scoreHistory.innerHTML += `
+        <li> ${achieved} : ${selectedValue} </li>
+    `;
 };
