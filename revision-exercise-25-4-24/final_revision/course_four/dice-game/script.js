@@ -160,4 +160,16 @@ keepScoreBtn.addEventListener("click", () => {
             break;
         }
     }
+
+    if (selectedValue) {
+        rolls = 0;
+        round++;
+
+        updateStatsIU;
+        resetRadioOptions;
+
+        updateScore(selectedValue, inputId);
+    } else {
+        alert("Please select an option or roll the dice");
+    }
 });
