@@ -320,11 +320,13 @@ const rollDice = () => {
     }
 
     dice.forEach((die, i) => {
-        die.textContent = randomValues[1];
+        die.textContent = randomValues[i];
     });
 
     console.log(randomValues);
 };
+
+// console.log(dice);
 
 // event listeners
 rulesBtn.addEventListener("click", showModal);
