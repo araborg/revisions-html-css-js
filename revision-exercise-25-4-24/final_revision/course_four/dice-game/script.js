@@ -249,9 +249,13 @@ const updateRadioOption = (index, score) => {
 
 // Revision
 const rulesBtn = document.getElementById("rules-btn");
-const rulesContainer = document.getElementById("rules-container");
+const rulesContainer = document.querySelector(".rules-container");
 
 const dice = document.querySelectorAll(".die");
 
 const currentRolls = document.getElementById("current-round-rolls");
 const currentRound = document.getElementById("current-round");
+
+const scoreInputs = document.querySelector("#score-options input");
+
+console.log(scoreInputs);
