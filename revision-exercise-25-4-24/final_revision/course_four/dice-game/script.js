@@ -330,6 +330,8 @@ const updateUI = () => {
     currentRolls.textContent = rolls;
 };
 
+const numOfOccurence = () => {};
+
 const updateRadioOption = () => {};
 
 // console.log(dice);
