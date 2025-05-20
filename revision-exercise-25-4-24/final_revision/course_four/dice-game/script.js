@@ -288,7 +288,14 @@ const showModal = () => {
 };
 
 /*
-on rolling dice
+on rolling dice:
+- There are total of six rounds
+- You can only roll the dice three times per round
+- To start the game, roll the dice
+- Then, choose from one of the selected scores or roll the dice again
+- If you choose a selected score, then you will move to the next round
+- If you decline to choose a selected score, then you can roll the dice again two more times
+
 
 1. generate random number
 2. display it
@@ -303,7 +310,11 @@ on rolling dice
 
 */
 
-const rollDice = () => {};
+const rollDice = () => {
+    const ramdomNum = Math.floor(Math.random() * 6 + 1);
+
+    console.log(ramdomNum);
+};
 
 // event listeners
 rulesBtn.addEventListener("click", showModal);
