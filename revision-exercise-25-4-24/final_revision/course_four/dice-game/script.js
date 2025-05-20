@@ -316,9 +316,9 @@ const rollDice = () => {
 
         randomValues.push(randomNum);
     }
-};
 
-console.log(randomValues);
+    console.log(randomValues);
+};
 
 // event listeners
 rulesBtn.addEventListener("click", showModal);
