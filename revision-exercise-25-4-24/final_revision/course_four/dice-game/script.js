@@ -323,7 +323,7 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    // updateRadioOption(0, 5);
+    updateRadioOption(5, 0);
 };
 
 const updateUI = () => {
@@ -406,6 +406,8 @@ rollDiceBtn.addEventListener("click", () => {
 const resetRadioOptions = () => {
     scoreInputs.forEach((el, i) => {
         el.disabled = true;
+
+        el.value = el.id;
     });
 
     scoreSpans.forEach((el) => {
