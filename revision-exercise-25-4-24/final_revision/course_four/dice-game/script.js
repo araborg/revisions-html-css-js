@@ -395,7 +395,7 @@ rollDiceBtn.addEventListener("click", () => {
 
 keepScoreBtn.addEventListener("click", () => {
     for (const input of scoreInputs) {
-        console.log(input);
+        console.log(input.disabled);
     }
 
     if (round > 6) {
