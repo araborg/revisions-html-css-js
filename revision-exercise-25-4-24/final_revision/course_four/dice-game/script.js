@@ -39,14 +39,6 @@ rulesBtn.addEventListener("click", () => {
     }
 });
 
-// Helper fxn: d parameters r provided manually
-const updateRadioOption = (index, score) => {
-    scoreInputs[index].disabled = false;
-    scoreInputs[index].value = score;
-
-    scoreSpans[index].textContent = `, score = ${score}`;
-};
-
 const rollDice = () => {
     // ds helps reset d diceValuesArr after each rollDice
     diceValuesArr = [];
@@ -177,3 +169,12 @@ keepScoreBtn.addEventListener("click", () => {
         alert("Please select an option or roll the dice");
     }
 });
+
+// ================================
+// Helper fxn: d parameters r provided manually
+const updateRadioOption = (index, score) => {
+    scoreInputs[index].disabled = false;
+    scoreInputs[index].value = score;
+
+    scoreSpans[index].textContent = `, score = ${score}`;
+};
