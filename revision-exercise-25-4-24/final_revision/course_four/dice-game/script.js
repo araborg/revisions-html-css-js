@@ -119,6 +119,10 @@ const resetGame = () => {
     score = 0;
     rolls = 0;
     round = 1;
+
+    listOfAllDice.forEach((dice, index) => {
+        dice.textContent = diceValuesArr[index];
+    });
 };
 
 // btns
