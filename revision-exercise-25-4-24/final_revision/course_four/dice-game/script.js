@@ -1,3 +1,4 @@
+/*
 const listOfAllDice = document.querySelectorAll(".die");
 
 const scoreInputs = document.querySelectorAll("#score-options input");
@@ -243,3 +244,7 @@ const updateRadioOption = (index, score) => {
 
     scoreSpans[index].textContent = `, score = ${score}`;
 };
+
+*/
+
+// Revision
