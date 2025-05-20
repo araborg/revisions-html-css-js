@@ -403,6 +403,14 @@ rollDiceBtn.addEventListener("click", () => {
     }
 });
 
+const resetRadioOptions = () => {
+    for (const input of scoreInputs) {
+        console.log(input);
+    }
+};
+
+resetRadioOptions();
+
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
     let inputId;
@@ -412,11 +420,9 @@ keepScoreBtn.addEventListener("click", () => {
             selectedValue = input.value;
             inputId = input.id;
         }
-
-        console.log(rolls, round, input);
     }
 
-    console.log(selectedValue);
+    // console.log(selectedValue);
 
     // resetGame();
 
