@@ -392,3 +392,14 @@ rollDiceBtn.addEventListener("click", () => {
         numOfOccurence(randomValues);
     }
 });
+
+keepScoreBtn.addEventListener("click", () => {
+    if (round > 6) {
+        setTimeout(() => {
+            alert("Game Over! Your total score is 113");
+        }, 500);
+    }
+
+    //
+    // You have made three rolls this round. Please select a score.
+});
