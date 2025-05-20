@@ -334,8 +334,12 @@ const numOfOccurence = (arr) => {
     const counts = {};
 
     for (const index of arr) {
-        console.log(counts[index]);
+        // console.log(counts[index]);
+
+        counts[index] = counts[index] ? counts[index]++ : 1;
     }
+
+    console.log(counts);
 };
 
 const updateRadioOption = () => {};
@@ -354,6 +358,6 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateUI();
 
-        numOfOccurence();
+        numOfOccurence(randomValues);
     }
 });
