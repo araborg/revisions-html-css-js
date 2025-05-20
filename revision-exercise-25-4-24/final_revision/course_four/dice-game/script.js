@@ -323,7 +323,7 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    updateRadioOption(0, 5);
+    // updateRadioOption(0, 5);
 };
 
 const updateUI = () => {
@@ -400,21 +400,20 @@ keepScoreBtn.addEventListener("click", () => {
     let inputId;
 
     for (const input of scoreInputs) {
-        console.log(input);
-        // if (!input.disabled) {
-        //     selectedValue = input.value;
-        //     inputId = input.id;
-        // }
+        if (!input.disabled) {
+            selectedValue = input.value;
+            inputId = input.id;
+        }
     }
 
     console.log(selectedValue);
 
-    // if (selectedValue) {
-    //     score += parseInt(selectedValue);
-    //     totalScoreElement.textContent = score;
+    if (selectedValue) {
+        score += parseInt(selectedValue);
+        totalScoreElement.textContent = score;
 
-    //     scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
-    // }
+        scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
+    }
 
     // console.log(selectedValue, inputId);
 
