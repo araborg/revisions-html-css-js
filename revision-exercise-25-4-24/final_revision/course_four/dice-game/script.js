@@ -294,6 +294,12 @@ on rolling dice
 2. display it
 3. check num of occurence(yes or no)
 4. if yes, sum it up
+5. Three of a kind
+6. Four of a kind
+7. Full house: 
+ Small straight
+ Large straight
+ None of the above
 */
 
 const rollDice = () => {};
