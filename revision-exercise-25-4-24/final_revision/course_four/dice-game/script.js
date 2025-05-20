@@ -287,5 +287,16 @@ const showModal = () => {
     }
 };
 
+/*
+on rolling dice
+
+1. generate random number
+2. display it
+3. check num of occurence(yes or no)
+4. if yes, sum it up
+*/
+
+const rollDice = () => {};
+
 // event listeners
 rulesBtn.addEventListener("click", showModal);
