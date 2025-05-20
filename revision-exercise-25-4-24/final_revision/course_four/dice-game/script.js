@@ -265,7 +265,7 @@ const rollDiceBtn = document.getElementById("roll-dice-btn");
 const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
-const isModalShowing = false;
+let isModalShowing = false;
 
 const randomValues = [];
 
@@ -278,6 +278,12 @@ const showModal = () => {
 
     if (isModalShowing) {
         rulesContainer.style.display = "block";
+
+        rulesBtn.textContent = "Hide Rules";
+    } else {
+        rulesContainer.style.display = "none";
+
+        rulesBtn.textContent = "Show Rules";
     }
 };
 
