@@ -394,9 +394,17 @@ rollDiceBtn.addEventListener("click", () => {
 });
 
 keepScoreBtn.addEventListener("click", () => {
+    let selectedValue;
+    let inputId;
+
     for (const input of scoreInputs) {
-        console.log(input.disabled);
+        if (!input.disabled) {
+            selectedValue = input.value;
+            inputId = input.id;
+        }
     }
+
+    console.log(selectedValue, inputId);
 
     if (round > 6) {
         setTimeout(() => {
