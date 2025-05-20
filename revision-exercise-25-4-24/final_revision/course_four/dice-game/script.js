@@ -265,4 +265,10 @@ const rollDiceBtn = document.getElementById("roll-dice-btn");
 const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
-console.log(scoreInputs);
+const isModalShowing = false;
+
+const randomValues = [];
+
+let score = 0;
+let roll = 0;
+let round = 1;
