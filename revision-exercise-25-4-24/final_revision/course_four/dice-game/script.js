@@ -287,4 +287,5 @@ const showModal = () => {
     }
 };
 
+// event listeners
 rulesBtn.addEventListener("click", showModal);
