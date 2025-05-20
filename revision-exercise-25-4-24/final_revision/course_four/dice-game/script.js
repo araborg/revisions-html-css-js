@@ -437,6 +437,8 @@ keepScoreBtn.addEventListener("click", () => {
         scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
     }
 
+    resetRadioOptions();
+
     // console.log(selectedValue, inputId);
 
     // if (round > 6) {
