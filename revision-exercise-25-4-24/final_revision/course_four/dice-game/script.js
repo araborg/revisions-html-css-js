@@ -273,4 +273,8 @@ let score = 0;
 let rolls = 0;
 let round = 1;
 
-const showModal = () => {};
+const showModal = () => {
+    isModalShowing = !isModalShowing;
+};
+
+rulesBtn.addEventListener("click", showModal);
