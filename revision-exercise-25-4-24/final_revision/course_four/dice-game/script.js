@@ -358,6 +358,10 @@ const numOfOccurence = (arr) => {
     if (highestCount === 3) {
         updateRadioOption(sum, 0);
     }
+
+    if (highestCount === 4) {
+        updateRadioOption(sum, 1);
+    }
 };
 
 const updateRadioOption = (sum, index) => {
