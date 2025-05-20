@@ -404,6 +404,13 @@ keepScoreBtn.addEventListener("click", () => {
         }
     }
 
+    if (selectedValue) {
+        score += selectedValue;
+        totalScoreElement.textContent = score;
+
+        scoreHistory.innerHTML += `${id}: ${selectedValue}`;
+    }
+
     console.log(selectedValue, inputId);
 
     if (round > 6) {
