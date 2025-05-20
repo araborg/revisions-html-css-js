@@ -294,12 +294,13 @@ on rolling dice
 2. display it
 3. check num of occurence(yes or no)
 4. if yes, sum it up
-5. Three of a kind
-6. Four of a kind
-7. Full house: 
- Small straight
- Large straight
- None of the above
+5. Three of a kind: Sum of all five dice
+6. Four of a kind: Sum of all five dice
+7. Full house: Three of a kind and a pair - 25 points
+8. Small straight: Four of the dice have consecutive values - 30 points
+9. Large straight: All five dice have consecutive values - 40 points
+10. None of the above
+
 */
 
 const rollDice = () => {};
