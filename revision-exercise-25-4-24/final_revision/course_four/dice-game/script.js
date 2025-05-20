@@ -256,6 +256,6 @@ const dice = document.querySelectorAll(".die");
 const currentRolls = document.getElementById("current-round-rolls");
 const currentRound = document.getElementById("current-round");
 
-const scoreInputs = document.querySelector("#score-options input");
-
+const scoreInputs = document.querySelectorAll("#score-options input");
+const scoreSpans = document.querySelectorAll("#score-options span");
 console.log(scoreInputs);
