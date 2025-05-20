@@ -248,3 +248,4 @@ const updateRadioOption = (index, score) => {
 */
 
 // Revision
+const rulesBtn = document.getElementById("rules-btn");
