@@ -364,6 +364,8 @@ const numOfOccurence = (arr) => {
 
 const updateRadioOption = (sum, index) => {
     scoreInputs[index].disable = false;
+
+    console.log(scoreInputs);
 };
 
 // console.log(dice);
