@@ -319,6 +319,10 @@ const rollDice = () => {
         randomValues.push(randomNum);
     }
 
+    dice.forEach((die, i) => {
+        die.textContent = randomValues[1];
+    });
+
     console.log(randomValues);
 };
 
