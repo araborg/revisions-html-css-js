@@ -267,7 +267,7 @@ const scoreHistory = document.getElementById("score-history");
 
 let isModalShowing = false;
 
-const randomValues = [];
+let randomValues = [];
 
 let score = 0;
 let rolls = 0;
