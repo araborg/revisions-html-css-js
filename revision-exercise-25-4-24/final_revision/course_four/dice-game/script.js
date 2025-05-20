@@ -59,19 +59,6 @@ const rollDice = () => {
     console.log(updateRadioOption(5, 0));
 };
 
-rollDiceBtn.addEventListener("click", () => {
-    if (rolls === 3) {
-        alert("You have made three rolls this round. Please select a score.");
-    } else {
-        rolls++;
-
-        rollDice();
-        updateStatsIU();
-
-        getHighestDuplicates(diceValuesArr);
-    }
-});
-
 const updateStatsIU = () => {
     rollsElement.textContent = rolls;
 
@@ -142,6 +129,8 @@ const updateScore = (selectedValue, inputId) => {
     `;
 };
 
+// btns
+
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
     let inputId;
@@ -167,6 +156,19 @@ keepScoreBtn.addEventListener("click", () => {
         updateScore(selectedValue, inputId);
     } else {
         alert("Please select an option or roll the dice");
+    }
+});
+
+rollDiceBtn.addEventListener("click", () => {
+    if (rolls === 3) {
+        alert("You have made three rolls this round. Please select a score.");
+    } else {
+        rolls++;
+
+        rollDice();
+        updateStatsIU();
+
+        getHighestDuplicates(diceValuesArr);
     }
 });
 
