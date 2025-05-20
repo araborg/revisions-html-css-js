@@ -19,9 +19,9 @@ let isModalShowing = false;
 
 let diceValuesArr = [];
 
-let score = 0;
 let rolls = 0;
 let round = 1;
+let score = 0;
 
 // logic
 rulesBtn.addEventListener("click", () => {
