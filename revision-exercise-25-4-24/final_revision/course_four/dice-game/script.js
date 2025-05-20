@@ -323,7 +323,7 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    updateRadioOption(5, 0);
+    updateRadioOption(0, 5);
 };
 
 const updateUI = () => {
@@ -358,15 +358,15 @@ const numOfOccurence = (arr) => {
     console.log(sum, counts);
 
     if (highestCount === 3) {
-        updateRadioOption(sum, 0);
+        updateRadioOption(0, sum);
     }
 
     if (highestCount === 4) {
-        updateRadioOption(sum, 1);
+        updateRadioOption(1, sum);
     }
 };
 
-const updateRadioOption = (sum, index) => {
+const updateRadioOption = (index, sum) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
@@ -400,10 +400,11 @@ keepScoreBtn.addEventListener("click", () => {
     let inputId;
 
     for (const input of scoreInputs) {
-        if (!input.disabled) {
-            selectedValue = input.value;
-            inputId = input.id;
-        }
+        console.log(input);
+        // if (!input.disabled) {
+        //     selectedValue = input.value;
+        //     inputId = input.id;
+        // }
     }
 
     console.log(selectedValue);
