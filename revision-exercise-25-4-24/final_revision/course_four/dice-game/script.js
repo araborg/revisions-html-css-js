@@ -405,10 +405,10 @@ keepScoreBtn.addEventListener("click", () => {
     }
 
     if (selectedValue) {
-        score += selectedValue;
+        score += parseInt(selectedValue);
         totalScoreElement.textContent = score;
 
-        scoreHistory.innerHTML += `${id}: ${selectedValue}`;
+        scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
     }
 
     console.log(selectedValue, inputId);
