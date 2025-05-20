@@ -357,15 +357,14 @@ const numOfOccurence = (arr) => {
 
     if (highestCount === 3) {
         updateRadioOption(sum, 0);
-
-        console.log(updateRadioOption(sum, 0));
     }
 };
 
 const updateRadioOption = (sum, index) => {
-    scoreInputs[index].disable = false;
+    scoreInputs[index].disabled = false;
+    scoreInputs[index].value = sum;
 
-    console.log(scoreInputs);
+    scoreInputs[index].textContent = `, score = ${score}`;
 };
 
 // console.log(dice);
