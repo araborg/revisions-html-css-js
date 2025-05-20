@@ -150,6 +150,10 @@ const detectFullHouse = (arr) => {
     updateRadioOption(5, 0);
 };
 
+const checkForStraights = (arr) => {
+    const sortedNumbersArr = arr.sort((a, b) => a - b);
+};
+
 // btns
 rulesBtn.addEventListener("click", () => {
     // ds monitor d state of isModalShowing
@@ -212,7 +216,9 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
+
         detectFullHouse(diceValuesArr);
+        checkForStraights(diceValuesArr);
     }
 });
 
