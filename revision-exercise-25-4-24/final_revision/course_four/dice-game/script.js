@@ -212,6 +212,7 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
+        detectFullHouse(diceValuesArr);
     }
 });
 
