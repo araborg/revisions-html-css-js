@@ -322,8 +322,6 @@ const rollDice = () => {
     dice.forEach((die, i) => {
         die.textContent = randomValues[i];
     });
-
-    console.log(randomValues);
 };
 
 const updateUI = () => {
@@ -353,10 +351,6 @@ const numOfOccurence = (arr) => {
             highestCount = occur;
         }
     }
-
-    console.log(highestCount);
-
-    console.log(counts);
 };
 
 const updateRadioOption = () => {};
