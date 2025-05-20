@@ -112,6 +112,15 @@ const updateScore = (selectedValue, inputId) => {
     `;
 };
 
+const resetGame = () => {
+    // diceValuesArr=[]
+    diceValuesArr = [0, 0, 0, 0, 0];
+
+    score = 0;
+    rolls = 0;
+    round = 1;
+};
+
 // btns
 rulesBtn.addEventListener("click", () => {
     // ds monitor d state of isModalShowing
