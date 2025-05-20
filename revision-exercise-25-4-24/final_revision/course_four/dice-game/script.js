@@ -330,8 +330,12 @@ const updateUI = () => {
     currentRolls.textContent = rolls;
 };
 
-const numOfOccurence = () => {
+const numOfOccurence = (arr) => {
     const counts = {};
+
+    for (const index of arr) {
+        console.log(counts[index]);
+    }
 };
 
 const updateRadioOption = () => {};
@@ -349,5 +353,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         rollDice();
         updateUI();
+
+        numOfOccurence();
     }
 });
