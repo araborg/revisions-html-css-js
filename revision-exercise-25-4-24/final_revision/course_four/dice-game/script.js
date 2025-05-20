@@ -405,7 +405,7 @@ rollDiceBtn.addEventListener("click", () => {
 
 const resetRadioOptions = () => {
     scoreInputs.forEach((el, i) => {
-        el[i].disabled = true;
+        el.disabled = true;
     });
 
     scoreSpans.forEach((el) => {
