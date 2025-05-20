@@ -55,6 +55,8 @@ const rollDice = () => {
 
     // default input selection
     // updateRadioOption(5, 0);
+
+    console.log(updateRadioOption(5, 0));
 };
 
 rollDiceBtn.addEventListener("click", () => {
@@ -67,8 +69,6 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
-
-        resetRadioOptions();
     }
 });
 
