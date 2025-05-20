@@ -24,7 +24,6 @@ let round = 1;
 let score = 0;
 
 // logic
-
 const rollDice = () => {
     // ds helps reset d diceValuesArr after each rollDice
     diceValuesArr = [];
@@ -41,8 +40,6 @@ const rollDice = () => {
 
     // default input selection
     // updateRadioOption(5, 0);
-
-    console.log(updateRadioOption(5, 0));
 };
 
 const updateStatsIU = () => {
@@ -154,6 +151,12 @@ keepScoreBtn.addEventListener("click", () => {
         resetRadioOptions();
 
         updateScore(selectedValue, inputId);
+
+        if (round > 6) {
+            setTimeout(() => {
+                alert(`Game Over! Your total score is ${score}`);
+            }, 500);
+        }
     } else {
         alert("Please select an option or roll the dice");
     }
