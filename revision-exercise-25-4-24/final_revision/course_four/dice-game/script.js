@@ -270,5 +270,5 @@ const isModalShowing = false;
 const randomValues = [];
 
 let score = 0;
-let roll = 0;
+let rolls = 0;
 let round = 1;
