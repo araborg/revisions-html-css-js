@@ -364,7 +364,7 @@ const updateRadioOption = (sum, index) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
-    scoreInputs[index].textContent = `, score = ${score}`;
+    scoreInputs[index].textContent = `, score = ${sum}`;
 };
 
 // console.log(dice);
