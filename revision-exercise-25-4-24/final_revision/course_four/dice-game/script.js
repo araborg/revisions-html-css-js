@@ -275,6 +275,10 @@ let round = 1;
 
 const showModal = () => {
     isModalShowing = !isModalShowing;
+
+    if (isModalShowing) {
+        rulesContainer.style.display = "block";
+    }
 };
 
 rulesBtn.addEventListener("click", showModal);
