@@ -39,7 +39,7 @@ const rollDice = () => {
     });
 
     // default input selection
-    // updateRadioOption(5, 0);
+    updateRadioOption(5, 0);
 };
 
 const updateStatsIU = () => {
