@@ -24,20 +24,6 @@ let round = 1;
 let score = 0;
 
 // logic
-rulesBtn.addEventListener("click", () => {
-    // ds monitor d state of isModalShowing
-    isModalShowing = !isModalShowing;
-
-    if (isModalShowing) {
-        rulesContainer.style.display = "block";
-
-        rulesBtn.textContent = "Hide rules";
-    } else {
-        rulesContainer.style.display = "none";
-
-        rulesBtn.textContent = "Show rules";
-    }
-});
 
 const rollDice = () => {
     // ds helps reset d diceValuesArr after each rollDice
@@ -130,6 +116,20 @@ const updateScore = (selectedValue, inputId) => {
 };
 
 // btns
+rulesBtn.addEventListener("click", () => {
+    // ds monitor d state of isModalShowing
+    isModalShowing = !isModalShowing;
+
+    if (isModalShowing) {
+        rulesContainer.style.display = "block";
+
+        rulesBtn.textContent = "Hide rules";
+    } else {
+        rulesContainer.style.display = "none";
+
+        rulesBtn.textContent = "Show rules";
+    }
+});
 
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
