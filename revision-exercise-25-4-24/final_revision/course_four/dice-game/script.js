@@ -336,7 +336,7 @@ const numOfOccurence = (arr) => {
     for (const index of arr) {
         // console.log(counts[index]);
 
-        counts[index] = counts[index] ? counts[index]++ : 1;
+        counts[index] = counts[index] ? counts[index]++ : (counts[index] = 1);
     }
 
     console.log(counts);
