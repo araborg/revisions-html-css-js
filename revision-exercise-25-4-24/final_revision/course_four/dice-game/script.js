@@ -355,7 +355,7 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    console.log(sum, counts);
+    // console.log(sum, counts);
 
     if (highestCount === 3) {
         updateRadioOption(0, sum);
@@ -405,9 +405,11 @@ rollDiceBtn.addEventListener("click", () => {
 
 const resetRadioOptions = () => {
     scoreInputs.forEach((el, i) => {
-        el.disabled = true;
+        // el.disabled = true;
 
-        el.value = el.id;
+        console.log(el);
+
+        // el.value = el.id;
     });
 
     scoreSpans.forEach((el) => {
@@ -415,7 +417,7 @@ const resetRadioOptions = () => {
     });
 };
 
-resetRadioOptions();
+// resetRadioOptions();
 
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
