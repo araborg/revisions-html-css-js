@@ -322,6 +322,8 @@ const rollDice = () => {
     dice.forEach((die, i) => {
         die.textContent = randomValues[i];
     });
+
+    updateRadioOption(5, 0);
 };
 
 const updateUI = () => {
@@ -353,7 +355,7 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    // console.log(sum, counts);
+    console.log(sum, counts);
 
     if (highestCount === 3) {
         updateRadioOption(sum, 0);
@@ -404,23 +406,25 @@ keepScoreBtn.addEventListener("click", () => {
         }
     }
 
-    if (selectedValue) {
-        score += parseInt(selectedValue);
-        totalScoreElement.textContent = score;
+    console.log(selectedValue);
 
-        scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
-    }
+    // if (selectedValue) {
+    //     score += parseInt(selectedValue);
+    //     totalScoreElement.textContent = score;
 
-    console.log(selectedValue, inputId);
+    //     scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
+    // }
 
-    if (round > 6) {
-        setTimeout(() => {
-            alert("Please select an option or roll the dice");
-        }, 500);
-    } else {
-        round++;
-        rolls = 0;
-    }
+    // console.log(selectedValue, inputId);
+
+    // if (round > 6) {
+    //     setTimeout(() => {
+    //         alert("Please select an option or roll the dice");
+    //     }, 500);
+    // } else {
+    //     round++;
+    //     rolls = 0;
+    // }
 
     // alert("Game Over! Your total score is 113");
 
