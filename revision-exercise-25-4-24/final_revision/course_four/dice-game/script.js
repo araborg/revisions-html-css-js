@@ -311,10 +311,18 @@ on rolling dice:
 */
 
 const rollDice = () => {
-    const ramdomNum = Math.floor(Math.random() * 6 + 1);
+    for (let i = 0; i < 5; i++) {
+        const randomNum = Math.floor(Math.random() * 6 + 1);
 
-    console.log(ramdomNum);
+        randomValues.push(randomNum);
+    }
 };
+
+console.log(randomValues);
 
 // event listeners
 rulesBtn.addEventListener("click", showModal);
+
+rollDiceBtn.addEventListener("click", () => {
+    rollDice();
+});
