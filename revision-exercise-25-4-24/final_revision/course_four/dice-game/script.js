@@ -332,5 +332,9 @@ const rollDice = () => {
 rulesBtn.addEventListener("click", showModal);
 
 rollDiceBtn.addEventListener("click", () => {
-    rollDice();
+    if (rolls === 3) {
+        alert("You have made three rolls this round. Please select a score.");
+    } else {
+        rollDice();
+    }
 });
