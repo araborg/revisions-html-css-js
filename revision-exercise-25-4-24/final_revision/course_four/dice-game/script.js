@@ -349,12 +349,16 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    if (highestCount > 3) {
-        updateRadioOption(sum);
+    console.log(sum, counts);
+
+    if (highestCount === 3) {
+        updateRadioOption(sum, 0);
     }
 };
 
-const updateRadioOption = (sum, index) => {};
+const updateRadioOption = (sum, index) => {
+    scoreInputs[index].disable = false;
+};
 
 // console.log(dice);
 
