@@ -126,6 +126,11 @@ const resetGame = () => {
 
     totalScoreElement.textContent = score;
     scoreHistory.innerHTML = "";
+
+    rollsElement.textContent = rolls;
+    roundElement.textContent = round;
+
+    resetRadioOptions();
 };
 
 // btns
