@@ -6,12 +6,12 @@ const scoreSpans = document.querySelectorAll("#score-options span");
 const rollsElement = document.getElementById("current-round-rolls");
 const roundElement = document.getElementById("current-round");
 
-const totalScoreElement = document.getElementById("total-score");
-const scoreHistory = document.getElementById("score-history");
-
 const rollDiceBtn = document.getElementById("roll-dice-btn");
 const keepScoreBtn = document.getElementById("keep-score-btn");
 const rulesBtn = document.getElementById("rules-btn");
+
+const totalScoreElement = document.getElementById("total-score");
+const scoreHistory = document.getElementById("score-history");
 
 const rulesContainer = document.querySelector(".rules-container");
 
