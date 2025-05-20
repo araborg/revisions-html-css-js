@@ -123,6 +123,9 @@ const resetGame = () => {
     listOfAllDice.forEach((dice, index) => {
         dice.textContent = diceValuesArr[index];
     });
+
+    totalScoreElement.textContent = score;
+    scoreHistory.innerHTML = "";
 };
 
 // btns
