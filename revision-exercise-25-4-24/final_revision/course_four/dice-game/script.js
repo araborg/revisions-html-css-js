@@ -335,7 +335,7 @@ const numOfOccurence = (arr) => {
         counts[index] ? counts[index]++ : (counts[index] = 1);
     }
 
-    console.log(counts);
+    // console.log(counts);
 
     let highestCount = 0;
 
@@ -364,9 +364,9 @@ const updateRadioOption = (sum, index) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
-    console.log(sum);
+    // console.log(sum);
 
-    console.log(scoreInputs[index]);
+    // console.log(scoreInputs[index]);
 
     scoreSpans[index].textContent = `, score = ${sum}`;
 };
