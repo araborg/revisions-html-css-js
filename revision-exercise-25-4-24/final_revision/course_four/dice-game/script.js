@@ -379,6 +379,14 @@ const updateRadioOption = (index, sum) => {
 
 // console.log(dice);
 
+const resetGame = () => {
+    // let randomValues = [];
+
+    let score = 0;
+    let rolls = 0;
+    let round = 1;
+};
+
 // event listeners
 rulesBtn.addEventListener("click", showModal);
 
@@ -404,9 +412,13 @@ keepScoreBtn.addEventListener("click", () => {
             selectedValue = input.value;
             inputId = input.id;
         }
+
+        console.log(rolls, round, input);
     }
 
     console.log(selectedValue);
+
+    // resetGame();
 
     if (selectedValue) {
         score += parseInt(selectedValue);
