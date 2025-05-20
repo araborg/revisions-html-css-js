@@ -344,14 +344,10 @@ const numOfOccurence = (arr) => {
 
         if (occur >= 3) {
             highestCount = occur;
-
-            console.log(3, highestCount);
         }
 
         if (occur >= 4) {
             highestCount = occur;
-
-            console.log(4, highestCount);
         }
     }
 
