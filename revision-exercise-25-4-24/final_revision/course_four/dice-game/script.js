@@ -311,6 +311,8 @@ on rolling dice:
 */
 
 const rollDice = () => {
+    randomValues = [];
+
     for (let i = 0; i < 5; i++) {
         const randomNum = Math.floor(Math.random() * 6 + 1);
 
