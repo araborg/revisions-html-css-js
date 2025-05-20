@@ -326,6 +326,12 @@ const rollDice = () => {
     console.log(randomValues);
 };
 
+const updateUI = () => {
+    currentRolls.textContent = rolls;
+};
+
+const updateRadioOption = () => {};
+
 // console.log(dice);
 
 // event listeners
@@ -338,5 +344,6 @@ rollDiceBtn.addEventListener("click", () => {
         rolls++;
 
         rollDice();
+        updateUI();
     }
 });
