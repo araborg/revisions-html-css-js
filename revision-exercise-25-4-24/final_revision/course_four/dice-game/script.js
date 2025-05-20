@@ -78,6 +78,7 @@ const updateStatsIU = () => {
     roundElement.textContent = round;
 };
 
+// d parameters r provided manually
 const updateRadioOption = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
