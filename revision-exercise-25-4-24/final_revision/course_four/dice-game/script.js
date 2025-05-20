@@ -394,12 +394,21 @@ rollDiceBtn.addEventListener("click", () => {
 });
 
 keepScoreBtn.addEventListener("click", () => {
-    if (round > 6) {
-        setTimeout(() => {
-            alert("Game Over! Your total score is 113");
-        }, 500);
+    for (const input of scoreInputs) {
+        console.log(input);
     }
 
-    //
+    if (round > 6) {
+        setTimeout(() => {
+            alert("Please select an option or roll the dice");
+        }, 500);
+    } else {
+        round++;
+        rolls = 0;
+    }
+
+    // alert("Game Over! Your total score is 113");
+
+    // Please select an option or roll the dice
     // You have made three rolls this round. Please select a score.
 });
