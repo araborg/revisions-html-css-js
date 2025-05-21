@@ -379,6 +379,8 @@ const resetGame = () => {
     let score = 0;
     let rolls = 0;
     let round = 1;
+
+    currentRound.textContent = round;
 };
 
 const resetRadioOptions = () => {
