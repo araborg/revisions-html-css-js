@@ -376,13 +376,17 @@ const updateRadioOption = (index, sum) => {
 // console.log(dice);
 
 const resetGame = () => {
-    // let randomValues = [];
+    let randomValues = [0, 0, 0, 0, 0];
 
     let score = 0;
     let rolls = 0;
     let round = 1;
 
     currentRound.textContent = round;
+
+    dice.forEach((el, i) => {
+        el.textContent = randomValues[i];
+    });
 
     totalScoreElement.textContent = 0;
 
