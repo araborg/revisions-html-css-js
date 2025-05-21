@@ -323,8 +323,6 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    console.log(randomValues);
-
     updateRadioOption(5, 0);
 };
 
