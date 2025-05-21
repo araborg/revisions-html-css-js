@@ -427,7 +427,7 @@ keepScoreBtn.addEventListener("click", () => {
     let inputId;
 
     for (const input of scoreInputs) {
-        if (!input.disabled) {
+        if (input.checked) {
             selectedValue = input.value;
             inputId = input.id;
         }
