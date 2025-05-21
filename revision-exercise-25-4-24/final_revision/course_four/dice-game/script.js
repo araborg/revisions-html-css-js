@@ -436,9 +436,9 @@ keepScoreBtn.addEventListener("click", () => {
         totalScoreElement.textContent = score;
 
         scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
-    }
 
-    round++;
+        round++;
+    }
 
     resetRadioOptions();
 
