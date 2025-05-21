@@ -398,6 +398,8 @@ rollDiceBtn.addEventListener("click", () => {
         updateUI();
 
         numOfOccurence(randomValues);
+
+        console.log(scoreInputs);
     }
 });
 
@@ -434,6 +436,7 @@ keepScoreBtn.addEventListener("click", () => {
     // console.log(selectedValue);
 
     // resetGame();
+    console.log(selectedValue);
 
     if (selectedValue) {
         score += parseInt(selectedValue);
