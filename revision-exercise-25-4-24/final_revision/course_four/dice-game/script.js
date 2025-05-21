@@ -323,7 +323,7 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    // updateRadioOption(5, 0);
+    updateRadioOption(5, 0);
 };
 
 const updateUI = () => {
@@ -365,7 +365,7 @@ const numOfOccurence = (arr) => {
         updateRadioOption(1, sum);
     }
 
-    updateRadioOption(5, 0);
+    // updateRadioOption(5, 0);
 };
 
 const updateRadioOption = (index, sum) => {
