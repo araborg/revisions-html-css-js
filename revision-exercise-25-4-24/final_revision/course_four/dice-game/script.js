@@ -383,6 +383,8 @@ const resetGame = () => {
     let round = 1;
 
     currentRound.textContent = round;
+
+    scoreHistory.innerHTML = "";
 };
 
 const resetRadioOptions = () => {
