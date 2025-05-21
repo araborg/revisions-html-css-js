@@ -384,6 +384,8 @@ const resetGame = () => {
 
     currentRound.textContent = round;
 
+    totalScoreElement.textContent = 0;
+
     scoreHistory.innerHTML = "";
 };
 
