@@ -439,11 +439,13 @@ keepScoreBtn.addEventListener("click", () => {
         rolls = 0;
 
         updateUI();
+
+        if (round > 6) {
+            alert(`Game Over! Your total score is ${score}`);
+        }
     }
 
     resetRadioOptions();
-
-    // alert("Game Over! Your total score is 113");
 
     // Please select an option or roll the dice
     // You have made three rolls this round. Please select a score.
