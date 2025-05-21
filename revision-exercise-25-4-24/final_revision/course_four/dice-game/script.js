@@ -429,14 +429,9 @@ keepScoreBtn.addEventListener("click", () => {
             selectedValue = input.value;
             inputId = input.id;
         }
-
-        console.log(input);
     }
 
-    // console.log(selectedValue);
-
     // resetGame();
-    console.log(selectedValue);
 
     if (selectedValue) {
         score += parseInt(selectedValue);
