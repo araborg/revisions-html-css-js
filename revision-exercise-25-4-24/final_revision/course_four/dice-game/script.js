@@ -440,7 +440,7 @@ keepScoreBtn.addEventListener("click", () => {
         round++;
         rolls = 0;
 
-        console.log(round, rolls);
+        updateUI();
     }
 
     resetRadioOptions();
