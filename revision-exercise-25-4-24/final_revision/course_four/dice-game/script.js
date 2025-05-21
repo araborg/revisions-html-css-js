@@ -381,6 +381,19 @@ const resetGame = () => {
     let round = 1;
 };
 
+const resetRadioOptions = () => {
+    scoreInputs.forEach((el, i) => {
+        if (el.value) {
+            el.disabled = true;
+            el.checked = false;
+        }
+    });
+
+    scoreSpans.forEach((el) => {
+        el.textContent = "";
+    });
+};
+
 const updateUI = () => {
     currentRolls.textContent = rolls;
 
@@ -402,19 +415,6 @@ rollDiceBtn.addEventListener("click", () => {
         numOfOccurence(randomValues);
     }
 });
-
-const resetRadioOptions = () => {
-    scoreInputs.forEach((el, i) => {
-        if (el.value) {
-            el.disabled = true;
-            el.checked = false;
-        }
-    });
-
-    scoreSpans.forEach((el) => {
-        el.textContent = "";
-    });
-};
 
 // resetRadioOptions();
 
