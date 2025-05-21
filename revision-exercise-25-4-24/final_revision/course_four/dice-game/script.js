@@ -441,7 +441,9 @@ keepScoreBtn.addEventListener("click", () => {
         updateUI();
 
         if (round > 6) {
-            alert(`Game Over! Your total score is ${score}`);
+            setTimeout(() => {
+                alert(`Game Over! Your total score is ${score}`);
+            }, 500);
         }
     }
 
