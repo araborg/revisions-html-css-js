@@ -445,8 +445,6 @@ keepScoreBtn.addEventListener("click", () => {
                 alert(`Game Over! Your total score is ${score}`);
 
                 resetGame();
-
-                console.log(resetGame());
             }, 500);
         }
     } else {
