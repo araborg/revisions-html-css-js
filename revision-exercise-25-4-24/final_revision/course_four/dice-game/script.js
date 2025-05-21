@@ -328,6 +328,8 @@ const rollDice = () => {
 
 const updateUI = () => {
     currentRolls.textContent = rolls;
+
+    currentRound.textContent = round;
 };
 
 const numOfOccurence = (arr) => {
@@ -435,6 +437,8 @@ keepScoreBtn.addEventListener("click", () => {
 
         scoreHistory.innerHTML += `<li>${inputId}: ${selectedValue}</li>`;
     }
+
+    round++;
 
     resetRadioOptions();
 
