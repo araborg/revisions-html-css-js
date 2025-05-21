@@ -416,8 +416,6 @@ rollDiceBtn.addEventListener("click", () => {
     }
 });
 
-// resetRadioOptions();
-
 keepScoreBtn.addEventListener("click", () => {
     let selectedValue;
     let inputId;
@@ -444,17 +442,6 @@ keepScoreBtn.addEventListener("click", () => {
     }
 
     resetRadioOptions();
-
-    // console.log(selectedValue, inputId);
-
-    // if (round > 6) {
-    //     setTimeout(() => {
-    //         alert("Please select an option or roll the dice");
-    //     }, 500);
-    // } else {
-    //     round++;
-    //     rolls = 0;
-    // }
 
     // alert("Game Over! Your total score is 113");
 
