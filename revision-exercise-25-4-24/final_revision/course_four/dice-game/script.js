@@ -449,10 +449,13 @@ keepScoreBtn.addEventListener("click", () => {
                 console.log(resetGame());
             }, 500);
         }
+    } else {
+        alert("Please select an option or roll the dice.");
     }
 
     resetRadioOptions();
 
     // Please select an option or roll the dice
+    // You have made three rolls this round. Please select a score.
     // You have made three rolls this round. Please select a score.
 });
