@@ -326,12 +326,6 @@ const rollDice = () => {
     updateRadioOption(5, 0);
 };
 
-const updateUI = () => {
-    currentRolls.textContent = rolls;
-
-    currentRound.textContent = round;
-};
-
 const numOfOccurence = (arr) => {
     const counts = {};
 
@@ -385,6 +379,12 @@ const resetGame = () => {
     let score = 0;
     let rolls = 0;
     let round = 1;
+};
+
+const updateUI = () => {
+    currentRolls.textContent = rolls;
+
+    currentRound.textContent = round;
 };
 
 // event listeners
