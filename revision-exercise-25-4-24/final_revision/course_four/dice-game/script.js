@@ -398,8 +398,6 @@ rollDiceBtn.addEventListener("click", () => {
         updateUI();
 
         numOfOccurence(randomValues);
-
-        console.log(scoreInputs);
     }
 });
 
