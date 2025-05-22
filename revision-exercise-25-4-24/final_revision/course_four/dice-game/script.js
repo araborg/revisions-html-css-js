@@ -401,7 +401,7 @@ const resetRadioOptions = () => {
 
 const detectFullHouse = () => {};
 
-const checkForStraights = () => {};
+const checkForStraights = (arr) => {};
 
 const updateUI = () => {
     currentRolls.textContent = rolls;
