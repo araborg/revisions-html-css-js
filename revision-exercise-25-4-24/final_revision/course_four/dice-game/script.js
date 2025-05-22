@@ -351,6 +351,8 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
+    console.log(highestCount, sum);
+
     if (highestCount === 3) {
         updateRadioOption(0, sum);
     }
@@ -359,7 +361,7 @@ const numOfOccurence = (arr) => {
         updateRadioOption(1, sum);
     }
 
-    console.log(randomValues);
+    // console.log(randomValues);
     // resetGame();
 
     randomValues = [];
@@ -428,7 +430,7 @@ const detectFullHouse = (arr) => {
     const hasPair = Object.values(counts).includes(2);
     const hasThreeOfAKind = Object.values(counts).includes(3);
 
-    console.log(hasPair, hasThreeOfAKind);
+    // console.log(hasPair, hasThreeOfAKind);
 
     if (hasPair && hasThreeOfAKind) {
         updateRadioOption(2, 25);
@@ -458,7 +460,7 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateUI();
 
-        resetRadioOptions();
+        // resetRadioOptions();
 
         numOfOccurence(randomValues);
 
