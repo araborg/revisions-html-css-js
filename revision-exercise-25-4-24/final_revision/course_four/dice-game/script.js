@@ -330,12 +330,13 @@ const rollDice = () => {
 
 const numOfOccurence = (arr) => {
     const counts = {};
+    let highestCount = 0;
+
+    const scoreKeeper = [];
 
     for (const index of arr) {
         counts[index] ? counts[index]++ : (counts[index] = 1);
     }
-
-    let highestCount = 0;
 
     for (const num of arr) {
         const occur = counts[num];
@@ -349,16 +350,22 @@ const numOfOccurence = (arr) => {
         }
     }
 
-    console.log(highestCount);
+    // console.log(highestCount);
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    if (highestCount >= 3) {
-        updateRadioOption(0, sum);
-    }
+    scoreKeeper.shift(sum);
 
-    if (highestCount >= 4) {
-        updateRadioOption(1, sum);
+    console.log(scoreKeeper);
+
+    if (sum !== scoreKeeper[0]) {
+        if (highestCount >= 3) {
+            updateRadioOption(0, sum);
+        }
+
+        if (highestCount >= 4) {
+            updateRadioOption(1, sum);
+        }
     }
 
     // console.log(randomValues);
