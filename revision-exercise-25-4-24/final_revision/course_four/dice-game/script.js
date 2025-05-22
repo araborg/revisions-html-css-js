@@ -442,10 +442,6 @@ rollDiceBtn.addEventListener("click", () => {
 
         updateUI();
 
-        // console.log(score);
-
-        // resetRadioOptions();
-
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
 
