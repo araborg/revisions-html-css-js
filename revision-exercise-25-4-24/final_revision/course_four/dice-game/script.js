@@ -336,6 +336,7 @@ const numOfOccurence = (arr) => {
     }
 
     let highestCount = 0;
+    // let highestCount;
 
     for (const num of arr) {
         const occur = counts[num];
@@ -350,8 +351,6 @@ const numOfOccurence = (arr) => {
     }
 
     const sum = arr.reduce((a, b) => a + b, 0);
-
-    console.log(highestCount, sum);
 
     if (highestCount === 3) {
         updateRadioOption(0, sum);
@@ -459,13 +458,15 @@ rollDiceBtn.addEventListener("click", () => {
         alert("You have made three rolls this round. Please select a score.");
     } else {
         rolls++;
+        score = 0;
 
         rollDice();
+
+        numOfOccurence(randomValues);
+
         updateUI();
 
         // resetRadioOptions();
-
-        numOfOccurence(randomValues);
 
         detectFullHouse(randomValues);
         // checkForStraights(randomValues);
