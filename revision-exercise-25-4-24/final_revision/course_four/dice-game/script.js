@@ -323,6 +323,8 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
+    // console.log(randomValues);
+
     updateRadioOption(5, 0);
 };
 
@@ -356,6 +358,8 @@ const numOfOccurence = (arr) => {
     if (highestCount === 4) {
         updateRadioOption(1, sum);
     }
+
+    resetGame();
 };
 
 const updateRadioOption = (index, sum) => {
@@ -422,6 +426,9 @@ const detectFullHouse = (arr) => {
     if (hasPair && hasThreeOfAKind) {
         updateRadioOption(2, 25);
     }
+
+    // resetRadioOptions();
+    // randomValues = [];
 };
 
 const checkForStraights = (arr) => {};
@@ -444,12 +451,12 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateUI();
 
-        console.log(randomValues);
-
         numOfOccurence(randomValues);
 
         detectFullHouse(randomValues);
         // checkForStraights(randomValues);
+
+        console.log(randomValues);
     }
 });
 
@@ -476,6 +483,8 @@ keepScoreBtn.addEventListener("click", () => {
         resetRadioOptions();
 
         updateUI();
+
+        // console.log(randomValues);
 
         if (round > 6) {
             setTimeout(() => {
