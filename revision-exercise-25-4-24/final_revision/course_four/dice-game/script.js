@@ -360,12 +360,8 @@ const numOfOccurence = (arr) => {
 };
 
 const updateRadioOption = (index, sum) => {
-    // console.log(index, sum);
-
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
-
-    // console.log(scoreInputs[index], index);
 
     scoreSpans[index].textContent = `, score = ${sum}`;
 };
@@ -397,10 +393,6 @@ const resetRadioOptions = () => {
             el.disabled = true;
             el.checked = false;
         }
-
-        // else {
-        //     updateRadioOption(5, 0);
-        // }
     });
 
     scoreSpans.forEach((el) => {
@@ -412,8 +404,6 @@ const detectFullHouse = (arr) => {
     const objCounts = {};
 
     for (const num of arr) {
-        // console.log(num);
-
         if (objCounts[num]) {
             objCounts[num]++;
         } else {
@@ -421,19 +411,12 @@ const detectFullHouse = (arr) => {
         }
     }
 
-    // console.log(counts);
-
     const hasPair = Object.values(objCounts).includes(2);
     const hasThreeOfAKind = Object.values(objCounts).includes(3);
-
-    // console.log(hasPair, hasThreeOfAKind);
 
     if (hasPair && hasThreeOfAKind) {
         // updateRadioOption(2, 25);
     }
-
-    // resetRadioOptions();
-    // randomValues = [];
 };
 
 const checkForStraights = (arr) => {};
@@ -452,7 +435,6 @@ rollDiceBtn.addEventListener("click", () => {
         alert("You have made three rolls this round. Please select a score.");
     } else {
         rolls++;
-        // score = 0;
 
         rollDice();
 
