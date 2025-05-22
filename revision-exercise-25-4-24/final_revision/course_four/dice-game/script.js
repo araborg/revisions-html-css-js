@@ -358,7 +358,7 @@ const numOfOccurence = (arr) => {
         updateRadioOption(0, sum);
     }
 
-    if (highestCount === 4) {
+    if (highestCount & (highestCount === 4)) {
         updateRadioOption(1, sum);
     }
 
