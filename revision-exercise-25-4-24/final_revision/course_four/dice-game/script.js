@@ -417,7 +417,7 @@ const detectFullHouse = (arr) => {
     const hasPair = Object.values(counts).includes(2);
     const hasThreeOfAKind = Object.values(counts).includes(3);
 
-    // console.log(hasPair, hasThreeOfAKind);
+    console.log(hasPair, hasThreeOfAKind);
 
     if (hasPair && hasThreeOfAKind) {
         updateRadioOption(2, 25);
@@ -473,6 +473,8 @@ keepScoreBtn.addEventListener("click", () => {
         round++;
         rolls = 0;
 
+        resetRadioOptions();
+
         updateUI();
 
         if (round > 6) {
@@ -485,6 +487,4 @@ keepScoreBtn.addEventListener("click", () => {
     } else {
         alert("Please select an option or roll the dice.");
     }
-
-    resetRadioOptions();
 });
