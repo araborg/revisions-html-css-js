@@ -336,7 +336,6 @@ const numOfOccurence = (arr) => {
     }
 
     let highestCount = 0;
-    // let highestCount;
 
     for (const num of arr) {
         const occur = counts[num];
@@ -350,13 +349,15 @@ const numOfOccurence = (arr) => {
         }
     }
 
+    console.log(highestCount);
+
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    if (highestCount === 3) {
+    if (highestCount >= 3) {
         updateRadioOption(0, sum);
     }
 
-    if (highestCount === 4) {
+    if (highestCount >= 4) {
         updateRadioOption(1, sum);
     }
 
@@ -368,15 +369,14 @@ const numOfOccurence = (arr) => {
 };
 
 const updateRadioOption = (index, sum) => {
-    console.log(index, sum);
+    // console.log(index, sum);
 
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     // console.log(scoreInputs[index], index);
 
-    scoreSpans[index].textContent =
-        sum > 0 ? `, score = ${sum}` : `, score = 0`;
+    scoreSpans[index].textContent = `, score = ${sum}`;
 };
 
 const resetGame = () => {
@@ -418,22 +418,22 @@ const resetRadioOptions = () => {
 };
 
 const detectFullHouse = (arr) => {
-    const counts = {};
+    const objCounts = {};
 
     for (const num of arr) {
         // console.log(num);
 
-        if (counts[num]) {
-            counts[num]++;
+        if (objCounts[num]) {
+            objCounts[num]++;
         } else {
-            counts[num] = 1;
+            objCounts[num] = 1;
         }
     }
 
     // console.log(counts);
 
-    const hasPair = Object.values(counts).includes(2);
-    const hasThreeOfAKind = Object.values(counts).includes(3);
+    const hasPair = Object.values(objCounts).includes(2);
+    const hasThreeOfAKind = Object.values(objCounts).includes(3);
 
     // console.log(hasPair, hasThreeOfAKind);
 
@@ -473,7 +473,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         // resetRadioOptions();
 
-        detectFullHouse(randomValues);
+        // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
 
         // console.log(randomValues);
