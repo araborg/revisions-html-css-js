@@ -381,6 +381,9 @@ const resetGame = () => {
     totalScoreElement.textContent = 0;
 
     scoreHistory.innerHTML = "";
+
+    currentRolls.textContent = rolls;
+    currentRound.textContent = round;
 };
 
 const resetRadioOptions = () => {
