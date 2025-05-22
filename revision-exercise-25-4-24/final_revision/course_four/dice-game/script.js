@@ -352,14 +352,14 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    // console.log(sum);
+    console.log(highestCount);
 
-    if (highestCount && highestCount === 3) {
-        return updateRadioOption(0, sum);
+    if (highestCount !== 0 && highestCount === 3) {
+        updateRadioOption(0, sum);
     }
 
-    if (highestCount & (highestCount === 4)) {
-        return updateRadioOption(1, sum);
+    if (highestCount !== 0 && highestCount === 4) {
+        updateRadioOption(1, sum);
     }
 
     // console.log(randomValues);
