@@ -359,7 +359,10 @@ const numOfOccurence = (arr) => {
         updateRadioOption(1, sum);
     }
 
-    resetGame();
+    console.log(randomValues);
+    // resetGame();
+
+    randomValues = [];
 };
 
 const updateRadioOption = (index, sum) => {
@@ -392,10 +395,14 @@ const resetGame = () => {
 
 const resetRadioOptions = () => {
     scoreInputs.forEach((el, i) => {
-        if (el.value) {
+        if (el.value && el.value !== 0) {
             el.disabled = true;
             el.checked = false;
         }
+
+        // else {
+        //     updateRadioOption(5, 0);
+        // }
     });
 
     scoreSpans.forEach((el) => {
@@ -451,12 +458,14 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateUI();
 
+        resetRadioOptions();
+
         numOfOccurence(randomValues);
 
         detectFullHouse(randomValues);
         // checkForStraights(randomValues);
 
-        console.log(randomValues);
+        // console.log(randomValues);
     }
 });
 
