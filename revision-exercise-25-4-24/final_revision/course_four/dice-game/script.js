@@ -352,7 +352,7 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    console.log(highestCount);
+    // console.log(highestCount);
 
     if (highestCount === 3) {
         updateRadioOption(0, sum);
