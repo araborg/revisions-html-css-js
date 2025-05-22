@@ -468,7 +468,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         updateUI();
 
-        console.log(score);
+        // console.log(score);
 
         // resetRadioOptions();
 
