@@ -359,11 +359,16 @@ const numOfOccurence = (arr) => {
     }
 };
 
+// called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
+    // console.log(index, sum);
+
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     scoreSpans[index].textContent = `, score = ${sum}`;
+
+    console.log(scoreSpans);
 };
 
 const resetGame = () => {
@@ -444,8 +449,6 @@ rollDiceBtn.addEventListener("click", () => {
 
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
-
-        // console.log(randomValues);
     }
 });
 
