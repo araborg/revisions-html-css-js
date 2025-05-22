@@ -412,7 +412,12 @@ const detectFullHouse = (arr) => {
         }
     }
 
-    console.log(arr);
+    console.log(counts);
+
+    const hasPair = Object.values(counts).includes(2);
+    const hasThreeOfAKind = Object.values(counts).includes(3);
+
+    console.log(hasPair, hasThreeOfAKind);
 };
 
 const checkForStraights = (arr) => {};
