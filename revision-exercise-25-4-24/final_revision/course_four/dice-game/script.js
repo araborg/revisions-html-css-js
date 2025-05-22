@@ -399,7 +399,9 @@ const resetRadioOptions = () => {
     });
 };
 
-const detectFullHouse = () => {};
+const detectFullHouse = (arr) => {
+    console.log(arr);
+};
 
 const checkForStraights = (arr) => {};
 
@@ -423,7 +425,8 @@ rollDiceBtn.addEventListener("click", () => {
 
         numOfOccurence(randomValues);
 
-        checkForStraights(randomValues);
+        detectFullHouse(randomValues);
+        // checkForStraights(randomValues);
     }
 });
 
