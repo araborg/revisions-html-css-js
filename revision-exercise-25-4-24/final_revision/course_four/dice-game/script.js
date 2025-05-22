@@ -432,8 +432,6 @@ keepScoreBtn.addEventListener("click", () => {
         }
     }
 
-    // resetGame();
-
     if (selectedValue) {
         score += parseInt(selectedValue);
         totalScoreElement.textContent = score;
@@ -457,8 +455,4 @@ keepScoreBtn.addEventListener("click", () => {
     }
 
     resetRadioOptions();
-
-    // Please select an option or roll the dice
-    // You have made three rolls this round. Please select a score.
-    // You have made three rolls this round. Please select a score.
 });
