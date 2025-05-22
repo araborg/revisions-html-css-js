@@ -323,8 +323,6 @@ const rollDice = () => {
         die.textContent = randomValues[i];
     });
 
-    // console.log(randomValues);
-
     updateRadioOption(5, 0);
 };
 
@@ -350,13 +348,7 @@ const numOfOccurence = (arr) => {
         }
     }
 
-    // console.log(highestCount);
-
     const sum = arr.reduce((a, b) => a + b, 0);
-
-    // scoreKeeper.unshift(sum);
-
-    // console.log(scoreKeeper, scoreKeeper[1], sum);
 
     if (highestCount >= 3) {
         updateRadioOption(0, sum);
