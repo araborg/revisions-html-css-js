@@ -354,25 +354,17 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    scoreKeeper.shift(sum);
+    // scoreKeeper.unshift(sum);
 
-    console.log(scoreKeeper);
+    // console.log(scoreKeeper, scoreKeeper[1], sum);
 
-    if (sum !== scoreKeeper[0]) {
-        if (highestCount >= 3) {
-            updateRadioOption(0, sum);
-        }
-
-        if (highestCount >= 4) {
-            updateRadioOption(1, sum);
-        }
+    if (highestCount >= 3) {
+        updateRadioOption(0, sum);
     }
 
-    // console.log(randomValues);
-    // resetGame();
-
-    // randomValues = [];
-    // updateUI();
+    if (highestCount >= 4) {
+        updateRadioOption(1, sum);
+    }
 };
 
 const updateRadioOption = (index, sum) => {
