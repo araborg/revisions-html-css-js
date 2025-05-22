@@ -364,14 +364,10 @@ const numOfOccurence = (arr) => {
 
 // called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
-    // console.log(index, sum);
-
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
-
-    console.log(scoreInputs[index], scoreSpans[index]);
 };
 
 const resetGame = () => {
@@ -449,6 +445,8 @@ rollDiceBtn.addEventListener("click", () => {
         numOfOccurence(randomValues);
 
         updateUI();
+
+        console.log(score);
 
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
