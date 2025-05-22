@@ -412,7 +412,7 @@ const detectFullHouse = (arr) => {
         }
     }
 
-    console.log(counts);
+    // console.log(counts);
 
     const hasPair = Object.values(counts).includes(2);
     const hasThreeOfAKind = Object.values(counts).includes(3);
