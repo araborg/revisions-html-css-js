@@ -422,6 +422,8 @@ rollDiceBtn.addEventListener("click", () => {
         updateUI();
 
         numOfOccurence(randomValues);
+
+        checkForStraights(randomValues);
     }
 });
 
