@@ -444,6 +444,8 @@ rollDiceBtn.addEventListener("click", () => {
         rollDice();
         updateUI();
 
+        console.log(randomValues);
+
         numOfOccurence(randomValues);
 
         detectFullHouse(randomValues);
