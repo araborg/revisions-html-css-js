@@ -333,8 +333,6 @@ const numOfOccurence = (arr) => {
         counts[index] ? counts[index]++ : (counts[index] = 1);
     }
 
-    // console.log(counts);
-
     let highestCount = 0;
 
     for (const num of arr) {
