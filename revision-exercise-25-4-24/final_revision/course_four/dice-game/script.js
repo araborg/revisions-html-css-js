@@ -368,7 +368,7 @@ const updateRadioOption = (index, sum) => {
 const resetGame = () => {
     let randomValues = [0, 0, 0, 0, 0];
 
-    // score = 0;
+    score = 0;
     rolls = 0;
     round = 1;
 
@@ -384,6 +384,8 @@ const resetGame = () => {
 
     currentRolls.textContent = rolls;
     currentRound.textContent = round;
+
+    scoreHistory.textContent = score;
 };
 
 const resetRadioOptions = () => {
