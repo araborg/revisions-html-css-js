@@ -327,14 +327,15 @@ const rollDice = () => {
 };
 
 const numOfOccurence = (arr) => {
-    const counts = {};
-    let highestCount = 0;
+    let counts = {};
 
     const scoreKeeper = [];
 
     for (const index of arr) {
         counts[index] ? counts[index]++ : (counts[index] = 1);
     }
+
+    let highestCount = 0;
 
     for (const num of arr) {
         const occur = counts[num];
@@ -357,6 +358,8 @@ const numOfOccurence = (arr) => {
     if (highestCount >= 4) {
         updateRadioOption(1, sum);
     }
+
+    counts = {};
 };
 
 // called inside rollDice, numOfOccurence
@@ -368,7 +371,7 @@ const updateRadioOption = (index, sum) => {
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    console.log(scoreSpans);
+    console.log(scoreSpans[index]);
 };
 
 const resetGame = () => {
