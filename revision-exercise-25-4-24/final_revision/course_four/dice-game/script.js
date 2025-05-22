@@ -473,8 +473,6 @@ keepScoreBtn.addEventListener("click", () => {
 
         updateUI();
 
-        // console.log(randomValues);
-
         if (round > 6) {
             setTimeout(() => {
                 alert(`Game Over! Your total score is ${score}`);
