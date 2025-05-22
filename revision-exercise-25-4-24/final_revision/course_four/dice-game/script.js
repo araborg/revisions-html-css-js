@@ -400,6 +400,18 @@ const resetRadioOptions = () => {
 };
 
 const detectFullHouse = (arr) => {
+    const counts = {};
+
+    for (const num of arr) {
+        console.log(num);
+
+        if (counts[num]) {
+            counts[num]++;
+        } else {
+            counts[num] = 1;
+        }
+    }
+
     console.log(arr);
 };
 
