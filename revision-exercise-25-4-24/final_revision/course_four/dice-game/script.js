@@ -399,6 +399,10 @@ const resetRadioOptions = () => {
     });
 };
 
+const detectFullHouse = () => {};
+
+const checkForStraights = () => {};
+
 const updateUI = () => {
     currentRolls.textContent = rolls;
 
