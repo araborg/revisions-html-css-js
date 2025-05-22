@@ -364,7 +364,8 @@ const numOfOccurence = (arr) => {
     // console.log(randomValues);
     // resetGame();
 
-    randomValues = [];
+    // randomValues = [];
+    // updateUI();
 };
 
 const updateRadioOption = (index, sum) => {
@@ -435,7 +436,7 @@ const detectFullHouse = (arr) => {
     // console.log(hasPair, hasThreeOfAKind);
 
     if (hasPair && hasThreeOfAKind) {
-        updateRadioOption(2, 25);
+        // updateRadioOption(2, 25);
     }
 
     // resetRadioOptions();
