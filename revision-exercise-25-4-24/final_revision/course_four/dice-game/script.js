@@ -418,6 +418,10 @@ const detectFullHouse = (arr) => {
     const hasThreeOfAKind = Object.values(counts).includes(3);
 
     console.log(hasPair, hasThreeOfAKind);
+
+    if (hasPair && hasThreeOfAKind) {
+        updateRadioOption(2, 25);
+    }
 };
 
 const checkForStraights = (arr) => {};
