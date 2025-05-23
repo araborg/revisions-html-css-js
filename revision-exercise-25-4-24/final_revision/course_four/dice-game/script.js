@@ -368,12 +368,13 @@ const numOfOccurence = (arr) => {
 const updateRadioOption = (index, sum) => {
     // console.log(sum);
 
+    sum = sum > 0 ? sum : 0;
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    console.log(sum);
+    console.log((scoreSpans[index].innerHTML = `, score = ${sum}`));
 
     // sum = 0;
 };
