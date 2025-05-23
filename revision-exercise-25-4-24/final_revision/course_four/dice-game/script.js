@@ -436,6 +436,8 @@ const detectFullHouse = (arr) => {
 
     if (hasPair && hasThreeOfAKind) {
         // updateRadioOption(2, 25);
+
+        console.log(hasPair, hasThreeOfAKind);
     }
 };
 
