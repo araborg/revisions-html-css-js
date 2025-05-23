@@ -326,10 +326,11 @@ const rollDice = () => {
     updateRadioOption(5, 0);
 };
 
+// it is sum dt is giving issue
 const numOfOccurence = (arr) => {
     let counts = {};
 
-    const scoreKeeper = [];
+    // const scoreKeeper = [];
 
     for (const index of arr) {
         counts[index] ? counts[index]++ : (counts[index] = 1);
@@ -350,6 +351,7 @@ const numOfOccurence = (arr) => {
     }
 
     const sum = arr.reduce((a, b) => a + b, 0);
+    console.log(sum, arr);
 
     if (highestCount >= 3) {
         updateRadioOption(0, sum);
