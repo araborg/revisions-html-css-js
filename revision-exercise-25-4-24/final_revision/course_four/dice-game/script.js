@@ -364,6 +364,8 @@ const numOfOccurence = (arr) => {
 
 // called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
+    console.log(sum);
+
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
