@@ -344,7 +344,8 @@ const numOfOccurence = (arr) => {
     for (const num of arr) {
         const occur = counts[num];
 
-        console.log(occur, highestCount); ///////
+        // console.log(`occur: ${occur}`);
+        // console.log(`highestCount: ${highestCount}`);
 
         // if (occur >= 3 && occur > highestCount) {
         if (occur >= 3) {
