@@ -454,7 +454,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         updateUI();
 
-        console.log(sum);
+        // console.log(sum);
 
         // console.log("where'r here", numOfOccurence(randomValues));
 
