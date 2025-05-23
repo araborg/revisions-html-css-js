@@ -408,6 +408,8 @@ const resetRadioOptions = () => {
     scoreSpans.forEach((el) => {
         el.textContent = "";
     });
+
+    scoreSpans[index].innerHTML = ``;
 };
 
 const detectFullHouse = (arr) => {
