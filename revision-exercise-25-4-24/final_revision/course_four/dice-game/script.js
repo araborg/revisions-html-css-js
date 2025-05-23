@@ -375,7 +375,7 @@ const updateRadioOption = (index, sum) => {
 
     // scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    scoreSpans[index].innerHTML = `, score = ${sum}`;
+    scoreSpans[index].textContent = `, score = ${sum}`;
 };
 
 const resetGame = () => {
