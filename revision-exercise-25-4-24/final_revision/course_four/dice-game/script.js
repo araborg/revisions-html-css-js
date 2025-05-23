@@ -452,11 +452,12 @@ rollDiceBtn.addEventListener("click", () => {
     } else {
         rolls++;
 
-        numOfOccurence(randomValues);
+        resetRadioOptions();
 
         rollDice();
         updateUI();
 
+        numOfOccurence(randomValues);
         // console.log(sum);
 
         // console.log("where'r here", numOfOccurence(randomValues));
