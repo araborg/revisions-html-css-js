@@ -357,11 +357,11 @@ const numOfOccurence = (arr) => {
 
     sumCopy = sum;
 
-    if (highestCount >= 3 && sum > 0) {
+    if (highestCount >= 3) {
         updateRadioOption(0, sum);
     }
 
-    if (highestCount >= 4 && sum > 0) {
+    if (highestCount >= 4) {
         updateRadioOption(1, sum);
     }
 
