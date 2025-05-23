@@ -403,13 +403,13 @@ const resetRadioOptions = () => {
             el.disabled = true;
             el.checked = false;
         }
+
+        scoreSpans[i].innerHTML = ``;
     });
 
     scoreSpans.forEach((el) => {
         el.textContent = "";
     });
-
-    scoreSpans[index].innerHTML = ``;
 };
 
 const detectFullHouse = (arr) => {
