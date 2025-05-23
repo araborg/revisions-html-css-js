@@ -405,10 +405,10 @@ const resetGame = () => {
 const resetRadioOptions = () => {
     // scoreInputs.forEach((el, i) => {
     scoreInputs.forEach((el) => {
-        // if (el.value && el.value !== 0) {
-        el.disabled = true;
-        el.checked = false;
-        // }
+        if (el.value && el.value !== 0) {
+            el.disabled = true;
+            el.checked = false;
+        }
 
         // scoreSpans[i].textContent = ``;
 
