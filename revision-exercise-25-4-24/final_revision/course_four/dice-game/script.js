@@ -370,6 +370,8 @@ const updateRadioOption = (index, sum) => {
     scoreInputs[index].value = sum;
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
+
+    sum = 0;
 };
 
 const resetGame = () => {
@@ -450,7 +452,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         // console.log(score);
 
-        console.log("where'r here", numOfOccurence(randomValues));
+        // console.log("where'r here", numOfOccurence(randomValues));
 
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
