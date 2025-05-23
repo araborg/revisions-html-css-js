@@ -346,11 +346,13 @@ const numOfOccurence = (arr) => {
 
         // console.log(occur, highestCount);
 
-        if (occur >= 3 && occur > highestCount) {
+        // if (occur >= 3 && occur > highestCount) {
+        if (occur >= 3) {
             highestCount = occur;
         }
 
-        if (occur >= 4 && occur > highestCount) {
+        // if (occur >= 4 && occur > highestCount) {
+        if (occur >= 4) {
             highestCount = occur;
         }
     }
@@ -400,7 +402,8 @@ const resetGame = () => {
 };
 
 const resetRadioOptions = () => {
-    scoreInputs.forEach((el, i) => {
+    // scoreInputs.forEach((el, i) => {
+    scoreInputs.forEach((el) => {
         // if (el.value && el.value !== 0) {
         el.disabled = true;
         el.checked = false;
