@@ -357,8 +357,6 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    sumCopy = sum;
-
     if (highestCount >= 3) {
         updateRadioOption(0, sum);
     }
@@ -403,10 +401,10 @@ const resetGame = () => {
 
 const resetRadioOptions = () => {
     scoreInputs.forEach((el, i) => {
-        if (el.value && el.value !== 0) {
-            el.disabled = true;
-            el.checked = false;
-        }
+        // if (el.value && el.value !== 0) {
+        el.disabled = true;
+        el.checked = false;
+        // }
 
         // scoreSpans[i].textContent = ``;
 
@@ -454,10 +452,10 @@ rollDiceBtn.addEventListener("click", () => {
     } else {
         rolls++;
 
+        numOfOccurence(randomValues);
+
         rollDice();
         updateUI();
-
-        numOfOccurence(randomValues);
 
         // console.log(sum);
 
