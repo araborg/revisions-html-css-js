@@ -351,7 +351,7 @@ const numOfOccurence = (arr) => {
     }
 
     const sum = arr.reduce((a, b) => a + b, 0);
-    console.log(sum, arr);
+    // console.log(sum, arr);
 
     if (highestCount >= 3) {
         updateRadioOption(0, sum);
@@ -372,6 +372,8 @@ const updateRadioOption = (index, sum) => {
     scoreInputs[index].value = sum;
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
+
+    console.log(sum);
 
     // sum = 0;
 };
@@ -404,7 +406,9 @@ const resetRadioOptions = () => {
             el.checked = false;
         }
 
-        scoreSpans[i].innerHTML = ``;
+        // scoreSpans[i].textContent = ``;
+
+        // console.log("We are here");
     });
 
     scoreSpans.forEach((el) => {
@@ -461,6 +465,8 @@ rollDiceBtn.addEventListener("click", () => {
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
     }
+
+    // resetRadioOptions();
 });
 
 keepScoreBtn.addEventListener("click", () => {
