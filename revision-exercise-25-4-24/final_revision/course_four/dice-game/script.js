@@ -359,19 +359,19 @@ const numOfOccurence = (arr) => {
         updateRadioOption(1, sum);
     }
 
-    counts = {};
+    // counts = {};
 };
 
 // called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
-    console.log(sum);
+    // console.log(sum);
 
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    sum = 0;
+    // sum = 0;
 };
 
 const resetGame = () => {
@@ -450,7 +450,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         updateUI();
 
-        // console.log(score);
+        console.log(sum);
 
         // console.log("where'r here", numOfOccurence(randomValues));
 
