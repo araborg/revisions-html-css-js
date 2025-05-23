@@ -273,6 +273,8 @@ let score = 0;
 let rolls = 0;
 let round = 1;
 
+let sumCopy;
+
 const showModal = () => {
     isModalShowing = !isModalShowing;
 
@@ -351,7 +353,8 @@ const numOfOccurence = (arr) => {
     }
 
     const sum = arr.reduce((a, b) => a + b, 0);
-    // console.log(sum, arr);
+
+    sumCopy = sum.slice();
 
     if (highestCount >= 3 && sum > 0) {
         updateRadioOption(0, sum);
@@ -367,8 +370,11 @@ const numOfOccurence = (arr) => {
 // called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
     // console.log(sum);
+    console.log(sum, sumCopy);
 
-    sum = sum > 0 ? sum : 0;
+    if (sum === sumCopy) {
+    }
+
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
