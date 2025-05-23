@@ -354,7 +354,7 @@ const numOfOccurence = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    sumCopy = sum.slice();
+    sumCopy = sum;
 
     if (highestCount >= 3 && sum > 0) {
         updateRadioOption(0, sum);
@@ -372,15 +372,18 @@ const updateRadioOption = (index, sum) => {
     // console.log(sum);
     console.log(sum, sumCopy);
 
-    if (sum === sumCopy) {
-    }
-
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
-    scoreSpans[index].innerHTML = `, score = ${sum}`;
+    // scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    console.log((scoreSpans[index].innerHTML = `, score = ${sum}`));
+    if (sum === sumCopy) {
+        scoreSpans[index].innerHTML = `, score = ${sum}`;
+    } else {
+        scoreSpans[index].innerHTML = `, score = 0`;
+    }
+
+    // console.log((scoreSpans[index].innerHTML = `, score = ${sum}`));
 
     // sum = 0;
 };
