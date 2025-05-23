@@ -450,7 +450,7 @@ rollDiceBtn.addEventListener("click", () => {
 
         // console.log(score);
 
-        console.log("where'r here");
+        console.log("where'r here", numOfOccurence(randomValues));
 
         // detectFullHouse(randomValues);
         // checkForStraights(randomValues);
