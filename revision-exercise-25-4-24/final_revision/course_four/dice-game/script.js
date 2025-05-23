@@ -273,7 +273,7 @@ let score = 0;
 let rolls = 0;
 let round = 1;
 
-let sumCopy;
+// let sumCopy;
 
 const showModal = () => {
     isModalShowing = !isModalShowing;
@@ -316,7 +316,8 @@ const rollDice = () => {
     randomValues = [];
 
     for (let i = 0; i < 5; i++) {
-        const randomNum = Math.floor(Math.random() * 6 + 1);
+        // const randomNum = Math.floor(Math.random() * 6 + 1);
+        const randomNum = Math.floor(Math.random() * 6) + 1;
 
         randomValues.push(randomNum);
     }
