@@ -370,23 +370,12 @@ const numOfOccurence = (arr) => {
 
 // called inside rollDice, numOfOccurence
 const updateRadioOption = (index, sum) => {
-    // console.log(sum);
-    console.log(sum, sumCopy);
-
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = sum;
 
     // scoreSpans[index].innerHTML = `, score = ${sum}`;
 
-    if (sum === sumCopy) {
-        scoreSpans[index].innerHTML = `, score = ${sum}`;
-    } else {
-        scoreSpans[index].innerHTML = `, score = 0`;
-    }
-
-    // console.log((scoreSpans[index].innerHTML = `, score = ${sum}`));
-
-    // sum = 0;
+    scoreSpans[index].innerHTML = `, score = ${sum}`;
 };
 
 const resetGame = () => {
