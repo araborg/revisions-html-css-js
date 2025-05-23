@@ -464,10 +464,9 @@ rollDiceBtn.addEventListener("click", () => {
         rolls++;
 
         rollDice();
+        updateUI();
 
         numOfOccurence(randomValues);
-
-        updateUI();
 
         // console.log(sum);
 
