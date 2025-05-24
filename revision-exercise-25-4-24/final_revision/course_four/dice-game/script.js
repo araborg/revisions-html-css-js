@@ -473,24 +473,24 @@ const updateUI = () => {
 rulesBtn.addEventListener("click", showModal);
 
 rollDiceBtn.addEventListener("click", () => {
-    if (rolls === 3) {
-        alert("You have made three rolls this round. Please select a score.");
-    } else {
-        rolls++;
+    // if (rolls === 3) {
+    //     alert("You have made three rolls this round. Please select a score.");
+    // } else {
+    rolls++;
 
-        resetRadioOptions();
+    resetRadioOptions();
 
-        rollDice();
-        updateUI();
+    rollDice();
+    updateUI();
 
-        numOfOccurence(randomValues);
-        // console.log(sum);
+    numOfOccurence(randomValues);
+    // console.log(sum);
 
-        // console.log("where'r here", numOfOccurence(randomValues));
+    // console.log("where'r here", numOfOccurence(randomValues));
 
-        detectFullHouse(randomValues);
-        checkForStraights(randomValues);
-    }
+    detectFullHouse(randomValues);
+    checkForStraights(randomValues);
+    // }
 
     // resetRadioOptions();
 });
