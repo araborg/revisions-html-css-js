@@ -439,7 +439,13 @@ const detectFullHouse = (arr) => {
     }
 };
 
-const checkForStraights = (arr) => {};
+const checkForStraights = (arr) => {
+    const sortedArr = arr.sort((a, b) => {
+        a - b;
+    });
+
+    console.log(arr);
+};
 
 const updateUI = () => {
     currentRolls.textContent = rolls;
@@ -467,7 +473,7 @@ rollDiceBtn.addEventListener("click", () => {
         // console.log("where'r here", numOfOccurence(randomValues));
 
         detectFullHouse(randomValues);
-        // checkForStraights(randomValues);
+        checkForStraights(randomValues);
     }
 
     // resetRadioOptions();
