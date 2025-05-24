@@ -245,6 +245,24 @@ const updateRadioOption = (index, score) => {
     scoreSpans[index].textContent = `, score = ${score}`;
 };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 */
 
 // Revision
