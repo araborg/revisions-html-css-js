@@ -444,7 +444,7 @@ const checkForStraights = (arr) => {
         a - b;
     });
 
-    console.log(arr);
+    console.log(sortedArr);
 };
 
 const updateUI = () => {
