@@ -448,7 +448,9 @@ const checkForStraights = (arr) => {
     const smallStraightsArr = ["1234", "2345", "3456"];
     const largeStraightsArr = ["12345", "23456"];
 
-    // if (smallStraightsArr.includes)
+    if (smallStraightsArr.includes(removeRepititionStr)) {
+        console.log(true);
+    }
     console.log(removeRepititionArr);
 };
 
