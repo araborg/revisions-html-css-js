@@ -451,8 +451,12 @@ const checkForStraights = (arr) => {
         updateRadioOption(3, 30);
     }
 
+    console.log(
+        largeStraightsArr.some((arr) => arr.includes(removeRepititionStr))
+    );
+
     if (largeStraightsArr.some((arr) => arr.includes(removeRepititionStr)))
-        console.log(true);
+        updateRadioOption(4, 40);
 };
 
 const updateUI = () => {
