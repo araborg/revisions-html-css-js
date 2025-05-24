@@ -443,7 +443,6 @@ const checkForStraights = (arr) => {
     const sortedArr = arr.sort((a, b) => a - b);
     const removeRepititionArr = [...new Set(sortedArr)];
     const removeRepititionStr = removeRepititionArr.join("");
-    console.log(removeRepititionStr);
 
     const smallStraightsArr = ["1234", "2345", "3456"];
     const largeStraightsArr = ["12345", "23456"];
@@ -453,7 +452,6 @@ const checkForStraights = (arr) => {
 
         updateRadioOption(3, 30);
     }
-    console.log(removeRepititionArr);
 };
 
 const updateUI = () => {
