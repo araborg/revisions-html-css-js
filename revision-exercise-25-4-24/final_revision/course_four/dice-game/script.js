@@ -441,12 +441,15 @@ const detectFullHouse = (arr) => {
 
 const checkForStraights = (arr) => {
     const sortedArr = arr.sort((a, b) => a - b);
-    const removeRepition = [...new Set(sortedArr)];
+    const removeRepititionArr = [...new Set(sortedArr)];
+    const removeRepititionStr = removeRepititionArr.join("");
+    console.log(removeRepititionStr);
 
     const smallStraightsArr = ["1234", "2345", "3456"];
     const largeStraightsArr = ["12345", "23456"];
 
-    console.log(removeRepition);
+    // if (smallStraightsArr.includes)
+    console.log(removeRepititionArr);
 };
 
 const updateUI = () => {
