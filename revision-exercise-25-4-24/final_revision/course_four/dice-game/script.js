@@ -316,10 +316,7 @@ const rollDice = () => {
         diceValuesArr.push(randomDice);
     }
 
-    console.log(dies);
-
     dies.forEach((die, i) => {
-        console.log(die);
         die.textContent = diceValuesArr[i];
     });
 };
