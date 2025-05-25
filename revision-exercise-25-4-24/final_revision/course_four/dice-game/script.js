@@ -308,11 +308,17 @@ const showRules = () => {
 };
 
 const rollDice = () => {
-    const randomDice = Math.floor(Math.random() * 6) + 1;
+    for (let i = 0; i < 5; i++) {
+        const randomDice = Math.floor(Math.random() * 6) + 1;
 
-    console.log(randomDice);
+        diceValuesArr.push(randomDice);
+    }
 
-    // return randomDice;
+    console.log(diceValuesArr);
+
+    dies.forEach((die) => {
+        // dies.textContent =
+    });
 };
 
 const updateStatsIU = () => {};
