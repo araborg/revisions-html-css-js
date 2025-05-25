@@ -308,6 +308,8 @@ const showRules = () => {
 };
 
 const rollDice = () => {
+    diceValuesArr = [];
+
     for (let i = 0; i < 5; i++) {
         const randomDice = Math.floor(Math.random() * 6) + 1;
 
