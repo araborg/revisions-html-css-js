@@ -273,3 +273,6 @@ const dies = document.querySelectorAll("die");
 
 const rollsElement = document.getElementById("current-round-rolls");
 const roundElement = document.getElementById("current-round");
+
+const scoreInputs = document.querySelectorAll("#score-options input");
+console.log(scoreInputs);
