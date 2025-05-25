@@ -363,8 +363,14 @@ const getHighestDuplicates = (arr) => {
 
 const resetRadioOptions = () => {
     //     console.log(scoreInputs);
-    //         let selectedValue;
-    // let valueId
+    let selectedValue;
+    let valueId;
+
+    scoreInputs.forEach((input) => {
+        if (!input.disabled === true) {
+            console.log(input);
+        }
+    });
     // scoreInputs.forEach(input=> {
     // })
 };
