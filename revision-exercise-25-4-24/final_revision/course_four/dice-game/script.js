@@ -275,4 +275,11 @@ const rollsElement = document.getElementById("current-round-rolls");
 const roundElement = document.getElementById("current-round");
 
 const scoreInputs = document.querySelectorAll("#score-options input");
-console.log(scoreInputs);
+const scoreSpans = document.querySelectorAll("#score-options span");
+
+const keepScoreBtn = document.getElementById("keep-score-btn");
+const rollDiceBtn = document.getElementById("roll-dice-btn");
+
+const totalScoreElement = document.getElementById("total-score");
+
+console.log(scoreSpans);
