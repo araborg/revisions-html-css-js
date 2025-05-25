@@ -327,7 +327,9 @@ const getHighestDuplicates = () => {};
 
 const resetRadioOptions = () => {};
 
-const updateScore = () => {};
+const updateScore = (arr) => {
+    console.log(arr);
+};
 
 const resetGame = () => {};
 
@@ -342,6 +344,8 @@ rulesBtn.addEventListener("click", showRules);
 
 rollDiceBtn.addEventListener("click", () => {
     rollDice();
+
+    updateScore();
 });
 
 /*
