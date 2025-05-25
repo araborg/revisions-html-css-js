@@ -339,11 +339,11 @@ const getHighestDuplicates = (arr) => {
     for (let val of arr) {
         let count = counts[val];
 
-        if (count === 3) {
+        if (count >= 3 && count > highestCount) {
             highestCount = count;
         }
 
-        if (count === 4) {
+        if (count >= 4 && count > highestCount) {
             highestCount = count;
         }
     }
@@ -371,7 +371,12 @@ const detectFullHouse = () => {};
 
 const checkForStraights = () => {};
 
-const updateRadioOption = () => {};
+const updateRadioOption = (index, score) => {
+    scoreInputs[index].disabled = false;
+    scoreInputs[index].value = score;
+
+    scoreInputs[index].textContent = ` score: ${score}`;
+};
 
 // Event Listener
 rulesBtn.addEventListener("click", showRules);
@@ -382,6 +387,8 @@ rollDiceBtn.addEventListener("click", () => {
     // updateScore(diceValuesArr);
 
     getHighestDuplicates(diceValuesArr);
+
+    // updateRadioOption()
 });
 
 /*
