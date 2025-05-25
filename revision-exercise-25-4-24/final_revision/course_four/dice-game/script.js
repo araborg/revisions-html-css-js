@@ -293,6 +293,10 @@ let score = 0;
 
 let isModalShowing = false;
 
+const showRules = () => {
+    isModalShowing = !isModalShowing;
+};
+
 const rollDice = () => {};
 const updateStatsIU = () => {};
 const getHighestDuplicates = () => {};
@@ -302,3 +306,6 @@ const resetGame = () => {};
 const detectFullHouse = () => {};
 const checkForStraights = () => {};
 const updateRadioOption = () => {};
+
+// Event Listener
+rulesBtn.addEventListener("click", showRules);
