@@ -323,7 +323,13 @@ const rollDice = () => {
 
 const updateStatsIU = () => {};
 
-const getHighestDuplicates = () => {};
+const getHighestDuplicates = (arr) => {
+    let count = {};
+
+    for (let num of arr) {
+        console.log(num);
+    }
+};
 
 const resetRadioOptions = () => {};
 
@@ -345,7 +351,9 @@ rulesBtn.addEventListener("click", showRules);
 rollDiceBtn.addEventListener("click", () => {
     rollDice();
 
-    updateScore(diceValuesArr);
+    // updateScore(diceValuesArr);
+
+    getHighestDuplicates();
 });
 
 /*
