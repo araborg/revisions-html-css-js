@@ -296,7 +296,15 @@ let isModalShowing = false;
 const showRules = () => {
     isModalShowing = !isModalShowing;
 
-    console.log(isModalShowing);
+    if (isModalShowing) {
+        rulesContainer.style.display = "block";
+
+        rulesBtn.textContent = "Hide rules";
+    } else {
+        rulesContainer.style.display = "none";
+
+        rulesBtn.textContent = "Show rules";
+    }
 };
 
 const rollDice = () => {};
