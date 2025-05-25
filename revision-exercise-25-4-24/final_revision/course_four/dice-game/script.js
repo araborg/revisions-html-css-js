@@ -269,7 +269,7 @@ const updateRadioOption = (index, score) => {
 const rulesBtn = document.getElementById("rules-btn");
 const rulesContainer = document.querySelector(".rules-container");
 
-const dies = document.querySelectorAll("die");
+const dies = document.querySelectorAll(".die");
 
 const rollsElement = document.getElementById("current-round-rolls");
 const roundElement = document.getElementById("current-round");
@@ -316,8 +316,11 @@ const rollDice = () => {
         diceValuesArr.push(randomDice);
     }
 
+    console.log(dies);
+
     dies.forEach((die, i) => {
-        dies.textContent = diceValuesArr[i];
+        console.log(die);
+        die.textContent = diceValuesArr[i];
     });
 };
 
@@ -341,7 +344,7 @@ const updateRadioOption = () => {};
 rulesBtn.addEventListener("click", showRules);
 
 rollDiceBtn.addEventListener("click", () => {
-    // console.log("Hello");
+    console.log("Hello");
 
     rollDice();
 });
