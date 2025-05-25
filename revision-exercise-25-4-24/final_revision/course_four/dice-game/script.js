@@ -348,7 +348,15 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    console.log(highestCount);
+    const sum = arr.reduce((a, b) => a + b, 0);
+
+    if (highestCount === 3) {
+        updateRadioOption(0, sum);
+    }
+
+    if (highestCount === 4) {
+        updateRadioOption(1, sum);
+    }
 };
 
 const resetRadioOptions = () => {};
