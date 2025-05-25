@@ -267,7 +267,8 @@ const updateRadioOption = (index, score) => {
 
 // Revision
 const rulesBtn = document.getElementById("rules-btn");
-const rulesContainer = document.getElementById("rules-container");
+const rulesContainer = document.querySelector(".rules-container");
+console.log(rulesContainer);
 
 const dies = document.querySelectorAll("die");
 
