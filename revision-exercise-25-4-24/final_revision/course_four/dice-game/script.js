@@ -319,6 +319,8 @@ const rollDice = () => {
     dies.forEach((die, i) => {
         die.textContent = diceValuesArr[i];
     });
+
+    updateRadioOption(5, 0);
 };
 
 const updateStatsIU = () => {};
@@ -387,6 +389,8 @@ rollDiceBtn.addEventListener("click", () => {
     // updateScore(diceValuesArr);
 
     getHighestDuplicates(diceValuesArr);
+
+    resetRadioOptions();
 
     // updateRadioOption()
 });
