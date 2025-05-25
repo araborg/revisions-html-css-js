@@ -327,7 +327,11 @@ const getHighestDuplicates = (arr) => {
     let count = {};
 
     for (let num of arr) {
-        console.log(num);
+        if (count[num]) {
+            count[num]++;
+        } else {
+            count[num] = 1;
+        }
     }
 };
 
@@ -353,7 +357,7 @@ rollDiceBtn.addEventListener("click", () => {
 
     // updateScore(diceValuesArr);
 
-    getHighestDuplicates();
+    getHighestDuplicates(diceValuesArr);
 });
 
 /*
