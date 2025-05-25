@@ -341,7 +341,14 @@ const updateRadioOption = () => {};
 rulesBtn.addEventListener("click", showRules);
 
 rollDiceBtn.addEventListener("click", () => {
-    console.log("Hello");
-
     rollDice();
 });
+
+/*
+
+alert("You have made three rolls this round. Please select a score.")
+alert("You have made three rolls this round. Please select a score.")
+alert("You have made three rolls this round. Please select a score.");
+alert("Please select an option or roll the dice");
+
+*/
