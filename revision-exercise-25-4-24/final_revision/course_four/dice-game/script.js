@@ -268,7 +268,6 @@ const updateRadioOption = (index, score) => {
 // Revision
 const rulesBtn = document.getElementById("rules-btn");
 const rulesContainer = document.querySelector(".rules-container");
-console.log(rulesContainer);
 
 const dies = document.querySelectorAll("die");
 
@@ -308,15 +307,35 @@ const showRules = () => {
     }
 };
 
-const rollDice = () => {};
+const rollDice = () => {
+    const randomDice = Math.floor(Math.random() * 6) + 1;
+
+    console.log(randomDice);
+
+    // return randomDice;
+};
+
 const updateStatsIU = () => {};
+
 const getHighestDuplicates = () => {};
+
 const resetRadioOptions = () => {};
+
 const updateScore = () => {};
+
 const resetGame = () => {};
+
 const detectFullHouse = () => {};
+
 const checkForStraights = () => {};
+
 const updateRadioOption = () => {};
 
 // Event Listener
 rulesBtn.addEventListener("click", showRules);
+
+rollDiceBtn.addEventListener("click", () => {
+    // console.log("Hello");
+
+    rollDice();
+});
