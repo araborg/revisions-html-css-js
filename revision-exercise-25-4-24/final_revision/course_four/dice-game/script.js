@@ -283,4 +283,13 @@ const rollDiceBtn = document.getElementById("roll-dice-btn");
 const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
-console.log(scoreSpans);
+// logic
+const rollDice = () => {};
+const updateStatsIU = () => {};
+const getHighestDuplicates = () => {};
+const resetRadioOptions = () => {};
+const updateScore = () => {};
+const resetGame = () => {};
+const detectFullHouse = () => {};
+const checkForStraights = () => {};
+const updateRadioOption = () => {};
