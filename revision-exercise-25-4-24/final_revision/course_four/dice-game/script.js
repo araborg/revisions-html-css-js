@@ -284,7 +284,7 @@ const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
 // logic
-const diceValuesArr = [];
+let diceValuesArr = [];
 
 let rolls = 0;
 let round = 1;
@@ -316,10 +316,8 @@ const rollDice = () => {
         diceValuesArr.push(randomDice);
     }
 
-    console.log(diceValuesArr);
-
-    dies.forEach((die) => {
-        // dies.textContent =
+    dies.forEach((die, i) => {
+        dies.textContent = diceValuesArr[i];
     });
 };
 
