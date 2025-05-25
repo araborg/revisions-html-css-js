@@ -295,6 +295,8 @@ let isModalShowing = false;
 
 const showRules = () => {
     isModalShowing = !isModalShowing;
+
+    console.log(isModalShowing);
 };
 
 const rollDice = () => {};
