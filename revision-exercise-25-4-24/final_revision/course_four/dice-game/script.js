@@ -284,6 +284,13 @@ const totalScoreElement = document.getElementById("total-score");
 const scoreHistory = document.getElementById("score-history");
 
 // logic
+const diceValuesArr = [];
+
+let rolls = 0;
+let round = 1;
+
+let score = 0;
+
 const rollDice = () => {};
 const updateStatsIU = () => {};
 const getHighestDuplicates = () => {};
