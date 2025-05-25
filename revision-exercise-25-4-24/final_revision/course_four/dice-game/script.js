@@ -375,7 +375,7 @@ const updateRadioOption = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
 
-    scoreInputs[index].textContent = ` score: ${score}`;
+    scoreSpans[index].textContent = `, score: ${score}`;
 };
 
 // Event Listener
