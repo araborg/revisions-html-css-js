@@ -324,15 +324,29 @@ const rollDice = () => {
 const updateStatsIU = () => {};
 
 const getHighestDuplicates = (arr) => {
-    let count = {};
+    let counts = {};
 
     for (let num of arr) {
-        if (count[num]) {
-            count[num]++;
+        if (counts[num]) {
+            counts[num]++;
         } else {
-            count[num] = 1;
+            counts[num] = 1;
         }
     }
+
+    let highestCount = 0;
+
+    for (let val of counts) {
+        if (count === 3) {
+            highestCount = val;
+        }
+
+        if (count === 4) {
+            highestCount = val;
+        }
+    }
+
+    console.log(highestCount);
 };
 
 const resetRadioOptions = () => {};
