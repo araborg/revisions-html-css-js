@@ -281,5 +281,6 @@ const keepScoreBtn = document.getElementById("keep-score-btn");
 const rollDiceBtn = document.getElementById("roll-dice-btn");
 
 const totalScoreElement = document.getElementById("total-score");
+const scoreHistory = document.getElementById("score-history");
 
 console.log(scoreSpans);
