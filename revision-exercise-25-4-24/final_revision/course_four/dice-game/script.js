@@ -291,6 +291,8 @@ let round = 1;
 
 let score = 0;
 
+let isModalShowing = false;
+
 const rollDice = () => {};
 const updateStatsIU = () => {};
 const getHighestDuplicates = () => {};
