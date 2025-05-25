@@ -339,7 +339,6 @@ const getHighestDuplicates = (arr) => {
     for (let val of arr) {
         let count = counts[val];
 
-        console.log(count);
         if (count === 3) {
             highestCount = count;
         }
