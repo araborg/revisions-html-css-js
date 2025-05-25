@@ -352,16 +352,22 @@ const getHighestDuplicates = (arr) => {
 
     const sum = arr.reduce((a, b) => a + b, 0);
 
-    if (highestCount === 3) {
+    if (highestCount >= 3) {
         updateRadioOption(0, sum);
     }
 
-    if (highestCount === 4) {
+    if (highestCount >= 4) {
         updateRadioOption(1, sum);
     }
 };
 
-const resetRadioOptions = () => {};
+const resetRadioOptions = () => {
+    //     console.log(scoreInputs);
+    //         let selectedValue;
+    // let valueId
+    // scoreInputs.forEach(input=> {
+    // })
+};
 
 const updateScore = (arr) => {
     console.log(arr);
