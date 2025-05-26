@@ -406,6 +406,8 @@ const resetGame = () => {
 
     updateStatsIU();
     resetRadioOptions();
+
+    diceValuesArr = [0, 0, 0, 0, 0];
 };
 
 const detectFullHouse = () => {};
