@@ -399,9 +399,10 @@ const updateScore = () => {
 const resetGame = () => {
     // if (rolls === 3) {
     rolls = 0;
-    round++;
+    round = 1;
 
     updateStatsIU();
+    resetRadioOptions();
     // }
 };
 
@@ -424,6 +425,8 @@ keepScoreBtn.addEventListener("click", () => {
     updateScore(diceValuesArr);
 
     resetRadioOptions();
+
+    round++;
 
     resetGame();
 
