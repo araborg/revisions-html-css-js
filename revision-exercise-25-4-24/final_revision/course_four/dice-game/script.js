@@ -366,10 +366,18 @@ const resetRadioOptions = () => {
     let selectedValue;
     let valueId;
 
+    console.log(diceValuesArr);
+
     scoreInputs.forEach((input) => {
-        if (!input.disabled === true) {
-            console.log(input);
-        }
+        // if (!input.disabled === true) {
+        //     console.log(input);
+        input.disabled = true;
+        input.checked = false;
+        // }
+    });
+
+    scoreSpans.forEach((span) => {
+        span.textContent = "";
     });
     // scoreInputs.forEach(input=> {
     // })
