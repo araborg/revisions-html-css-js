@@ -409,8 +409,10 @@ const resetGame = () => {
 
     diceValuesArr = [0, 0, 0, 0, 0];
 
-    scoreInputs.forEach((input) => {
-        input.textContent = diceValuesArr[i];
+    dies.forEach((die, i) => {
+        die.textContent = diceValuesArr[i];
+
+        // console.log(input.textContent);
     });
 };
 
