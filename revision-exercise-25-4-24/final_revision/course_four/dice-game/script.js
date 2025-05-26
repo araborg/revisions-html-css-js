@@ -474,13 +474,3 @@ rollDiceBtn.addEventListener("click", () => {
         getHighestDuplicates(diceValuesArr);
     }
 });
-
-/*
-
-alert("You have made three rolls this round. Please select a score.");
-alert(`Game Over! Your total score is ${score}`);
-alert("Please select an option or roll the dice");
-
-
-
-*/
