@@ -375,7 +375,10 @@ const resetRadioOptions = () => {
 };
 
 const updateScore = (arr) => {
-    console.log(arr);
+    let selectedValue;
+    let selectedId;
+
+    scoreInputs.forEach((el) => {});
 };
 
 const resetGame = () => {};
