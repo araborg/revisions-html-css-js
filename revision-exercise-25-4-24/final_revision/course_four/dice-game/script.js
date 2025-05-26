@@ -395,11 +395,11 @@ const updateScore = () => {
 };
 
 const resetGame = () => {
-    if (rolls === 3) {
-        rolls = 0;
+    // if (rolls === 3) {
+    rolls = 0;
 
-        updateStatsIU();
-    }
+    updateStatsIU();
+    // }
 };
 
 const detectFullHouse = () => {};
