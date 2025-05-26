@@ -394,7 +394,11 @@ const updateScore = () => {
     }
 };
 
-const resetGame = () => {};
+const resetGame = () => {
+    if (rolls === 3) {
+        rolls = 0;
+    }
+};
 
 const detectFullHouse = () => {};
 
@@ -414,9 +418,7 @@ rulesBtn.addEventListener("click", showRules);
 keepScoreBtn.addEventListener("click", () => {
     updateScore(diceValuesArr);
 
-    if (rolls === 3) {
-        rolls = 0;
-    }
+    resetGame();
 });
 
 rollDiceBtn.addEventListener("click", () => {
