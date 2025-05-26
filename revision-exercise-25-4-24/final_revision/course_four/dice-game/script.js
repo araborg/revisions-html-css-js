@@ -427,8 +427,9 @@ keepScoreBtn.addEventListener("click", () => {
 
     resetGame();
 
+    console.log(round);
+
     if (round >= 6) {
-        console.log(round);
         alert(`Game Over! Your total score is ${score}`);
     }
 });
