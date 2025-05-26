@@ -381,13 +381,12 @@ const updateScore = (arr) => {
     let selectedId;
 
     arr.forEach((el) => {
+        console.log(el.checked);
         if (el.checked) {
             selectedValue = el.value;
             selectedId = el.id;
         }
     });
-
-    console.log(selectedValue);
 
     if (selectedValue) {
         score += parseInt(selectedValue);
@@ -395,10 +394,6 @@ const updateScore = (arr) => {
         totalScoreElement.textContent = score;
 
         scoreHistory.innerHTML += `<li>${selectedId}: ${selectedValue}`;
-    } else {
-        // alert("Please select an option or roll the dice");
-        // return;
-        // updateRadioOption(selectedValue, selectedId);
     }
 };
 
@@ -436,6 +431,8 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 keepScoreBtn.addEventListener("click", () => {
+    updateScore(scoreInputs);
+
     let selectedValue;
 
     scoreInputs.forEach((el) => {
@@ -447,7 +444,7 @@ keepScoreBtn.addEventListener("click", () => {
     if (selectedValue) {
         resetRadioOptions();
 
-        updateScore(scoreInputs);
+        // updateScore(scoreInputs);
 
         rolls = 0;
         round++;
