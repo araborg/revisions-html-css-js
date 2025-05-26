@@ -408,6 +408,10 @@ const resetGame = () => {
     resetRadioOptions();
 
     diceValuesArr = [0, 0, 0, 0, 0];
+
+    for (let i = 0; i < diceValuesArr.length; i++) {
+        scoreInputs.textContent = diceValuesArr[i];
+    }
 };
 
 const detectFullHouse = () => {};
