@@ -381,7 +381,6 @@ const updateScore = (arr) => {
     let selectedId;
 
     arr.forEach((el) => {
-        console.log(el.checked);
         if (el.checked) {
             selectedValue = el.value;
             selectedId = el.id;
@@ -444,8 +443,6 @@ keepScoreBtn.addEventListener("click", () => {
     if (selectedValue) {
         resetRadioOptions();
 
-        // updateScore(scoreInputs);
-
         rolls = 0;
         round++;
 
@@ -461,8 +458,6 @@ keepScoreBtn.addEventListener("click", () => {
     } else {
         alert("Please select an option or roll the dice");
     }
-
-    console.log(score);
 });
 
 rollDiceBtn.addEventListener("click", () => {
