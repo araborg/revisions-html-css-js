@@ -393,6 +393,8 @@ const updateScore = (arr) => {
         totalScoreElement.textContent = score;
 
         scoreHistory.innerHTML += `<li>${selectedId}: ${selectedValue}`;
+    } else {
+        alert("Please select an option or roll the dice");
     }
 };
 
@@ -462,10 +464,6 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
-
-        // updateRadioOption();
-
-        // updateScore(diceValuesArr);
     }
 });
 
