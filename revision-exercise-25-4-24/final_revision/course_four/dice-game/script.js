@@ -336,6 +336,8 @@ const rollDice = () => {
 
 const updateStatsIU = () => {
     rollsElement.textContent = rolls;
+
+    roundElement.textContent = round;
 };
 
 const getHighestDuplicates = (arr) => {
