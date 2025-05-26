@@ -323,7 +323,9 @@ const rollDice = () => {
     updateRadioOption(5, 0);
 };
 
-const updateStatsIU = () => {};
+const updateStatsIU = () => {
+    rollsElement.textContent = rolls;
+};
 
 const getHighestDuplicates = (arr) => {
     let counts = {};
@@ -335,8 +337,6 @@ const getHighestDuplicates = (arr) => {
             counts[num] = 1;
         }
     }
-
-    console.log(counts);
 
     let highestCount = 0;
 
@@ -374,9 +374,7 @@ const resetRadioOptions = () => {
     });
 };
 
-const updateScore = (arr) => {
-    console.log(arr);
-};
+const updateScore = (arr) => {};
 
 const resetGame = () => {};
 
@@ -395,12 +393,14 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 rollDiceBtn.addEventListener("click", () => {
-    // updateScore(diceValuesArr);
+    rolls++;
 
     resetRadioOptions();
 
     rollDice();
     getHighestDuplicates(diceValuesArr);
+
+    // updateScore(diceValuesArr);
     // updateRadioOption()
 });
 
