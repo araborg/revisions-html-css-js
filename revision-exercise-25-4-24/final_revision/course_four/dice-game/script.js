@@ -400,6 +400,7 @@ const detectFullHouse = () => {};
 
 const checkForStraights = () => {};
 
+// Helper fxn
 const updateRadioOption = (index, score) => {
     scoreInputs[index].disabled = false;
     scoreInputs[index].value = score;
