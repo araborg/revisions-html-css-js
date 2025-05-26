@@ -420,7 +420,11 @@ rulesBtn.addEventListener("click", showRules);
 keepScoreBtn.addEventListener("click", () => {
     updateScore(diceValuesArr);
 
+    resetRadioOptions();
+
     resetGame();
+
+    round++;
 });
 
 rollDiceBtn.addEventListener("click", () => {
