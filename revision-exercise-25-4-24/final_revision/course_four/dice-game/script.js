@@ -429,8 +429,10 @@ keepScoreBtn.addEventListener("click", () => {
 
     console.log(round);
 
-    if (round >= 6) {
-        alert(`Game Over! Your total score is ${score}`);
+    if (round > 6) {
+        setTimeout(() => {
+            alert(`Game Over! Your total score is ${score}`);
+        }, 500);
     }
 });
 
