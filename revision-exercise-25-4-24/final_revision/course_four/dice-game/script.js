@@ -413,21 +413,29 @@ rulesBtn.addEventListener("click", showRules);
 
 keepScoreBtn.addEventListener("click", () => {
     updateScore(diceValuesArr);
+
+    if (rolls === 3) {
+        rolls = 0;
+    }
 });
 
 rollDiceBtn.addEventListener("click", () => {
-    rolls++;
+    if (rolls >= 3) {
+        alert("You have made three rolls this round. Please select a score.");
+    } else {
+        rolls++;
 
-    resetRadioOptions();
+        resetRadioOptions();
 
-    rollDice();
-    updateStatsIU();
+        rollDice();
+        updateStatsIU();
 
-    getHighestDuplicates(diceValuesArr);
+        getHighestDuplicates(diceValuesArr);
 
-    // updateRadioOption();
+        // updateRadioOption();
 
-    // updateScore(diceValuesArr);
+        // updateScore(diceValuesArr);
+    }
 });
 
 /*
