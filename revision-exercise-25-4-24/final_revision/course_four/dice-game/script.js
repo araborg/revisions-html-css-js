@@ -432,9 +432,9 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 keepScoreBtn.addEventListener("click", () => {
-    updateScore(scoreInputs);
-
     resetRadioOptions();
+
+    updateScore(scoreInputs);
 
     rolls = 0;
     round++;
