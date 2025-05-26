@@ -410,7 +410,7 @@ rollDiceBtn.addEventListener("click", () => {
 });
 
 keepScoreBtn.addEventListener("click", () => {
-    updateScore();
+    updateScore(diceValuesArr);
 });
 
 /*
