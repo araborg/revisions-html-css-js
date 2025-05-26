@@ -376,11 +376,11 @@ const getHighestDuplicates = (arr) => {
     }
 };
 
-const updateScore = () => {
+const updateScore = (arr) => {
     let selectedValue;
     let selectedId;
 
-    scoreInputs.forEach((el) => {
+    arr.forEach((el) => {
         if (el.checked) {
             selectedValue = el.value;
             selectedId = el.id;
@@ -425,12 +425,12 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 keepScoreBtn.addEventListener("click", () => {
-    updateScore(diceValuesArr);
+    updateScore(scoreInputs);
 
     resetRadioOptions();
 
-    round++;
     rolls = 0;
+    round++;
 
     console.log(round);
 
