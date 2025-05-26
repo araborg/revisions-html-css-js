@@ -336,7 +336,7 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    console.log(counts);
+    // console.log(counts);
 
     let highestCount = 0;
 
