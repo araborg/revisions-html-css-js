@@ -431,8 +431,6 @@ keepScoreBtn.addEventListener("click", () => {
 
     round++;
 
-    resetGame();
-
     console.log(round);
 
     if (round > 6) {
