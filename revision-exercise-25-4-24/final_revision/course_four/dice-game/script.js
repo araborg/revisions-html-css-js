@@ -336,6 +336,8 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
+    console.log(counts);
+
     let highestCount = 0;
 
     for (let val of arr) {
@@ -363,10 +365,8 @@ const getHighestDuplicates = (arr) => {
 
 const resetRadioOptions = () => {
     //     console.log(scoreInputs);
-    let selectedValue;
-    let valueId;
-
-    console.log(diceValuesArr);
+    // let selectedValue;
+    // let valueId;
 
     scoreInputs.forEach((input) => {
         // if (!input.disabled === true) {
@@ -410,7 +410,7 @@ rollDiceBtn.addEventListener("click", () => {
 
     getHighestDuplicates(diceValuesArr);
 
-    resetRadioOptions();
+    // resetRadioOptions();
 
     // updateRadioOption()
 });
