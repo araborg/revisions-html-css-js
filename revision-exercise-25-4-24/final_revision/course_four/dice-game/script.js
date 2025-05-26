@@ -426,6 +426,10 @@ keepScoreBtn.addEventListener("click", () => {
     resetRadioOptions();
 
     resetGame();
+
+    if (round >= 6) {
+        alert(`Game Over! Your total score is ${score}`);
+    }
 });
 
 rollDiceBtn.addEventListener("click", () => {
