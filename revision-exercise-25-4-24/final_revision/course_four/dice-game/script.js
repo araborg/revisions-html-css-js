@@ -364,23 +364,14 @@ const getHighestDuplicates = (arr) => {
 };
 
 const resetRadioOptions = () => {
-    //     console.log(scoreInputs);
-    // let selectedValue;
-    // let valueId;
-
     scoreInputs.forEach((input) => {
-        // if (!input.disabled === true) {
-        //     console.log(input);
         input.disabled = true;
         input.checked = false;
-        // }
     });
 
     scoreSpans.forEach((span) => {
         span.textContent = "";
     });
-    // scoreInputs.forEach(input=> {
-    // })
 };
 
 const updateScore = (arr) => {
@@ -408,9 +399,8 @@ rollDiceBtn.addEventListener("click", () => {
 
     // updateScore(diceValuesArr);
 
+    resetRadioOptions();
     getHighestDuplicates(diceValuesArr);
-
-    // resetRadioOptions();
 
     // updateRadioOption()
 });
