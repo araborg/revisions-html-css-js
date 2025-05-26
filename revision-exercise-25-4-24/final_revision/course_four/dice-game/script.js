@@ -395,13 +395,12 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 rollDiceBtn.addEventListener("click", () => {
-    rollDice();
-
     // updateScore(diceValuesArr);
 
     resetRadioOptions();
     getHighestDuplicates(diceValuesArr);
 
+    rollDice();
     // updateRadioOption()
 });
 
