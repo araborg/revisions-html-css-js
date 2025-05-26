@@ -397,16 +397,15 @@ const updateScore = (arr) => {
 };
 
 const resetGame = () => {
-    // if (rolls === 3) {
     rolls = 0;
     round = 1;
     score = 0;
 
     scoreHistory.innerHTML = "";
+    totalScoreElement.textContent = 0;
 
     updateStatsIU();
     resetRadioOptions();
-    // }
 };
 
 const detectFullHouse = () => {};
@@ -431,6 +430,8 @@ keepScoreBtn.addEventListener("click", () => {
 
     rolls = 0;
     round++;
+
+    updateStatsIU();
 
     console.log(round);
 
