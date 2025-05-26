@@ -416,9 +416,9 @@ rollDiceBtn.addEventListener("click", () => {
     resetRadioOptions();
 
     rollDice();
-    getHighestDuplicates(diceValuesArr);
-
     updateStatsIU();
+
+    getHighestDuplicates(diceValuesArr);
 
     // updateRadioOption();
 
