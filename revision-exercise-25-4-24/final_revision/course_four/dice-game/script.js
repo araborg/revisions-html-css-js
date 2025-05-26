@@ -374,7 +374,9 @@ const resetRadioOptions = () => {
     });
 };
 
-const updateScore = (arr) => {};
+const updateScore = (arr) => {
+    console.log(arr);
+};
 
 const resetGame = () => {};
 
@@ -400,9 +402,15 @@ rollDiceBtn.addEventListener("click", () => {
     rollDice();
     getHighestDuplicates(diceValuesArr);
 
-    updateRadioOption();
+    updateStatsIU();
+
+    // updateRadioOption();
 
     // updateScore(diceValuesArr);
+});
+
+keepScoreBtn.addEventListener("click", () => {
+    updateScore();
 });
 
 /*
