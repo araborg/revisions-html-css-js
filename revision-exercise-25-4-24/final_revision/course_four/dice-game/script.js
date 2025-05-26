@@ -430,6 +430,7 @@ keepScoreBtn.addEventListener("click", () => {
     resetRadioOptions();
 
     round++;
+    rolls = 0;
 
     console.log(round);
 
