@@ -387,6 +387,8 @@ const updateScore = (arr) => {
         }
     });
 
+    console.log(selectedValue);
+
     if (selectedValue) {
         score += parseInt(selectedValue);
 
@@ -452,8 +454,6 @@ keepScoreBtn.addEventListener("click", () => {
 
         updateStatsIU();
 
-        console.log(round);
-
         if (round > 6) {
             setTimeout(() => {
                 alert(`Game Over! Your total score is ${score}`);
@@ -464,6 +464,8 @@ keepScoreBtn.addEventListener("click", () => {
     } else {
         alert("Please select an option or roll the dice");
     }
+
+    console.log(score);
 });
 
 rollDiceBtn.addEventListener("click", () => {
