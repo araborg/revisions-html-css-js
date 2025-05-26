@@ -410,6 +410,10 @@ const updateRadioOption = (index, score) => {
 // Event Listener
 rulesBtn.addEventListener("click", showRules);
 
+keepScoreBtn.addEventListener("click", () => {
+    updateScore(diceValuesArr);
+});
+
 rollDiceBtn.addEventListener("click", () => {
     rolls++;
 
@@ -423,10 +427,6 @@ rollDiceBtn.addEventListener("click", () => {
     // updateRadioOption();
 
     // updateScore(diceValuesArr);
-});
-
-keepScoreBtn.addEventListener("click", () => {
-    updateScore(diceValuesArr);
 });
 
 /*
