@@ -394,8 +394,8 @@ const updateScore = (arr) => {
 
         scoreHistory.innerHTML += `<li>${selectedId}: ${selectedValue}`;
     } else {
-        alert("Please select an option or roll the dice");
-
+        // alert("Please select an option or roll the dice");
+        // return;
         // updateRadioOption(selectedValue, selectedId);
     }
 };
@@ -434,23 +434,35 @@ const updateRadioOption = (index, score) => {
 rulesBtn.addEventListener("click", showRules);
 
 keepScoreBtn.addEventListener("click", () => {
-    resetRadioOptions();
+    let selectedValue;
 
-    updateScore(scoreInputs);
+    scoreInputs.forEach((el) => {
+        if (el.checked) {
+            selectedValue = el.value;
+        }
+    });
 
-    rolls = 0;
-    round++;
+    if (selectedValue) {
+        resetRadioOptions();
 
-    updateStatsIU();
+        updateScore(scoreInputs);
 
-    console.log(round);
+        rolls = 0;
+        round++;
 
-    if (round > 6) {
-        setTimeout(() => {
-            alert(`Game Over! Your total score is ${score}`);
+        updateStatsIU();
 
-            resetGame();
-        }, 500);
+        console.log(round);
+
+        if (round > 6) {
+            setTimeout(() => {
+                alert(`Game Over! Your total score is ${score}`);
+
+                resetGame();
+            }, 500);
+        }
+    } else {
+        alert("Please select an option or roll the dice");
     }
 });
 
