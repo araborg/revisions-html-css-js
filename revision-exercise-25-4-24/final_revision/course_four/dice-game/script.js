@@ -307,6 +307,17 @@ const showRules = () => {
     }
 };
 
+const resetRadioOptions = () => {
+    scoreInputs.forEach((input) => {
+        input.disabled = true;
+        input.checked = false;
+    });
+
+    scoreSpans.forEach((span) => {
+        span.textContent = "";
+    });
+};
+
 const rollDice = () => {
     diceValuesArr = [];
 
@@ -343,8 +354,6 @@ const getHighestDuplicates = (arr) => {
     for (let val of arr) {
         let count = counts[val];
 
-        console.log(count, highestCount);
-
         if (count >= 3 && count > highestCount) {
             highestCount = count;
         }
@@ -365,18 +374,7 @@ const getHighestDuplicates = (arr) => {
     }
 };
 
-const resetRadioOptions = () => {
-    scoreInputs.forEach((input) => {
-        input.disabled = true;
-        input.checked = false;
-    });
-
-    scoreSpans.forEach((span) => {
-        span.textContent = "";
-    });
-};
-
-const updateScore = (arr) => {
+const updateScore = () => {
     let selectedValue;
     let selectedId;
 
