@@ -336,7 +336,7 @@ const getHighestDuplicates = (arr) => {
         }
     }
 
-    // console.log(counts);
+    console.log(counts);
 
     let highestCount = 0;
 
@@ -398,9 +398,9 @@ rollDiceBtn.addEventListener("click", () => {
     // updateScore(diceValuesArr);
 
     resetRadioOptions();
-    getHighestDuplicates(diceValuesArr);
 
     rollDice();
+    getHighestDuplicates(diceValuesArr);
     // updateRadioOption()
 });
 
