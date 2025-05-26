@@ -378,7 +378,20 @@ const updateScore = (arr) => {
     let selectedValue;
     let selectedId;
 
-    scoreInputs.forEach((el) => {});
+    scoreInputs.forEach((el) => {
+        if (el.checked) {
+            selectedValue = el.value;
+            selectedId = el.id;
+        }
+    });
+
+    if (selectedValue) {
+        score += parseInt(selectedValue);
+
+        totalScoreElement.textContent = score;
+
+        scoreHistory.innerHTML += `<li>${selectedId}: ${selectedValue}`;
+    }
 };
 
 const resetGame = () => {};
