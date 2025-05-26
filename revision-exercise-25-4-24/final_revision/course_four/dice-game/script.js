@@ -396,7 +396,7 @@ const updateScore = (arr) => {
     } else {
         alert("Please select an option or roll the dice");
 
-        updateRadioOption(selectedValue, selectedId);
+        // updateRadioOption(selectedValue, selectedId);
     }
 };
 
