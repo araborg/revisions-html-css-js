@@ -400,8 +400,9 @@ rollDiceBtn.addEventListener("click", () => {
     rollDice();
     getHighestDuplicates(diceValuesArr);
 
+    updateRadioOption();
+
     // updateScore(diceValuesArr);
-    // updateRadioOption()
 });
 
 /*
