@@ -395,6 +395,8 @@ const updateScore = (arr) => {
         scoreHistory.innerHTML += `<li>${selectedId}: ${selectedValue}`;
     } else {
         alert("Please select an option or roll the dice");
+
+        updateRadioOption(selectedValue, selectedId);
     }
 };
 
