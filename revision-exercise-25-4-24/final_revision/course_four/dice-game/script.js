@@ -400,6 +400,9 @@ const resetGame = () => {
     // if (rolls === 3) {
     rolls = 0;
     round = 1;
+    score = 0;
+
+    scoreHistory.innerHTML = "";
 
     updateStatsIU();
     resetRadioOptions();
