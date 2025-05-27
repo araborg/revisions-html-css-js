@@ -414,7 +414,13 @@ const resetGame = () => {
     });
 };
 
-const detectFullHouse = () => {};
+const detectFullHouse = () => {
+    const counts = {};
+
+    counts[num] = counts[num] ? counts[num]++ : (counts[num] = 1);
+
+    counts;
+};
 
 const checkForStraights = () => {};
 
