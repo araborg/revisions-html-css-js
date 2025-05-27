@@ -422,12 +422,11 @@ const detectFullHouse = (arr) => {
     for (let num of arr) {
         // counts[num] =
         // counts[num] ? counts[num]++ : (counts[num] = 1);
-
-        if (counts[num]) {
-            counts[num]++;
-        } else {
-            counts[num] = 1;
-        }
+        // if (counts[num]) {
+        //     counts[num]++;
+        // } else {
+        //     counts[num] = 1;
+        // }
     }
 
     console.log(counts);
