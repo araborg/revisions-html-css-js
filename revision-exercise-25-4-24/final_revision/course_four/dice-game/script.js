@@ -437,6 +437,12 @@ const checkForStraights = (arr) => {
     const sortedNumbersArr = arr.sort((a, b) => a - b);
 
     const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
+    const uniqueNumbersStr = uniqueNumbersArr.join("");
+
+    const smallStraightsArr = ["1234", "2345", "3456"];
+    const largeStraightsArr = ["12345", "23456"];
+
+    // if(arr.some(()=> arr.includes()) {}
 };
 
 // Helper fxn
