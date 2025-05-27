@@ -417,8 +417,6 @@ const resetGame = () => {
 const detectFullHouse = (arr) => {
     const counts = {};
 
-    console.log(arr);
-
     for (let num of arr) {
         counts[num] ? counts[num]++ : (counts[num] = 1);
     }
