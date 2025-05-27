@@ -423,7 +423,11 @@ const detectFullHouse = (arr) => {
         counts[num] ? counts[num]++ : (counts[num] = 1);
     }
 
-    console.log(counts);
+    for (let num of arr) {
+        const count = counts[num];
+
+        console.log(count);
+    }
 };
 
 const checkForStraights = () => {};
