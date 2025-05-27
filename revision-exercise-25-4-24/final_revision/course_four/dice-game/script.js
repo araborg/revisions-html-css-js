@@ -417,9 +417,11 @@ const resetGame = () => {
 const detectFullHouse = () => {
     const counts = {};
 
-    counts[num] = counts[num] ? counts[num]++ : (counts[num] = 1);
+    for (let num of arr) {
+        counts[num] = counts[num] ? counts[num]++ : (counts[num] = 1);
+    }
 
-    counts;
+    console.log(counts);
 };
 
 const checkForStraights = () => {};
