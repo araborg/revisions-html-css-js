@@ -442,7 +442,12 @@ const checkForStraights = (arr) => {
     const smallStraightsArr = ["1234", "2345", "3456"];
     const largeStraightsArr = ["12345", "23456"];
 
-    // if(arr.some(()=> arr.includes()) {}
+    // smallStraightsArr.forEach(num => {
+    if (smallStraightsArr.some((el) => el.includes(uniqueNumbersStr))) {
+        updateRadioOption(3, 30);
+    }
+
+    // })
 };
 
 // Helper fxn
