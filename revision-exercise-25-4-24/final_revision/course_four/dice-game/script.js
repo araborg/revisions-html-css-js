@@ -417,6 +417,8 @@ const resetGame = () => {
 const detectFullHouse = (arr) => {
     const counts = {};
 
+    console.log(arr);
+
     for (let num of arr) {
         // counts[num] =
         // counts[num] ? counts[num]++ : (counts[num] = 1);
@@ -487,6 +489,6 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
-        detectFullHouse(scoreInputs);
+        detectFullHouse(diceValuesArr);
     }
 });
