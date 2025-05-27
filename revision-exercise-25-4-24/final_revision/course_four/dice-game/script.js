@@ -433,7 +433,9 @@ const detectFullHouse = (arr) => {
     }
 };
 
-const checkForStraights = () => {};
+const checkForStraights = (arr) => {
+    console.log(arr);
+};
 
 // Helper fxn
 const updateRadioOption = (index, score) => {
