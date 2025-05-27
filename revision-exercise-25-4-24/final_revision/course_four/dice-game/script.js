@@ -426,7 +426,12 @@ const detectFullHouse = (arr) => {
     for (let num of arr) {
         const count = counts[num];
 
-        console.log(count);
+        const hasPair = Object.values(counts).includes(2);
+        const hasThreeOfAKind = Object.values(counts).includes(3);
+
+        if (hasPair && hasThreeOfAKind) {
+            updateRadioOption(2, 25);
+        }
     }
 };
 
