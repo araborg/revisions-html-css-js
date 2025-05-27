@@ -310,6 +310,7 @@ const showRules = () => {
 const resetRadioOptions = () => {
     scoreInputs.forEach((input) => {
         input.disabled = true;
+
         input.checked = false;
     });
 
@@ -383,6 +384,7 @@ const updateScore = (arr) => {
     arr.forEach((el) => {
         if (el.checked) {
             selectedValue = el.value;
+
             selectedId = el.id;
         }
     });
@@ -507,6 +509,7 @@ rollDiceBtn.addEventListener("click", () => {
         updateStatsIU();
 
         getHighestDuplicates(diceValuesArr);
+
         detectFullHouse(diceValuesArr);
         checkForStraights(diceValuesArr);
     }
