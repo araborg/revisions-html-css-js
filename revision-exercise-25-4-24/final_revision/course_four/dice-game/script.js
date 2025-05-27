@@ -434,7 +434,11 @@ const detectFullHouse = (arr) => {
 };
 
 const checkForStraights = (arr) => {
-    console.log(arr);
+    const sortedNumbersArr = arr.sort((a, b) => a - b);
+
+    const uniqueNumbersArr = [...new Set(sortedNumbersArr)];
+
+    console.log(uniqueNumbersArr);
 };
 
 // Helper fxn
