@@ -101,3 +101,12 @@ const products = [
 ];
 
 // Each product has id, name, price and category
+
+// Update UI
+products.forEach(({ id, name, price, category }) => {
+    dessertCards.innerHTML += `
+        <div class="dessert-card">
+
+        </div>
+    `;
+});
