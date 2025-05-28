@@ -12,4 +12,4 @@ const total = document.getElementById("total");
 
 const dessertCardContainer = document.getElementById("dessert-card-container");
 
-console.log(cartBtn, showOrHideCart);
+console.log(cartContainer, clearCartBtn);
