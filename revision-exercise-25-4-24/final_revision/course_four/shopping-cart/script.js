@@ -5,8 +5,13 @@ const cartContainer = document.getElementById("cart-container");
 const clearCartBtn = document.getElementById("clear-cart-btn");
 const productsContainer = document.getElementById("products-container");
 
+const totalItems = document.getElementById("total-items");
 /*
 
+"subtotal"
+"taxes"
+"total"
+"dessert-card-container
 
 
 
