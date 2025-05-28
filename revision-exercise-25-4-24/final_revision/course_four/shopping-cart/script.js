@@ -1,3 +1,17 @@
+const cartBtn = document.getElementById("cart-btn");
+const showHideCartSpan = document.getElementById("show-hide-cart");
+
+const cartContainer = document.getElementById("cart-container");
+const clearCartBtn = document.getElementById("clear-cart-btn");
+const productsContainer = document.getElementById("products-container");
+
+const totalNumberOfItems = document.getElementById("total-items");
+const cartSubTotal = document.getElementById("subtotal");
+const cartTaxes = document.getElementById("taxes");
+const cartTotal = document.getElementById("total");
+
+const dessertCards = document.getElementById("dessert-card-container");
+
 const isCartShowing = false;
 
 const products = [
