@@ -204,7 +204,8 @@ class ShoppingCart {
         this.total = subTotal + tax;
 
         cartSubTotal.textContent = `$${subTotal}`;
-        cartTaxes.textContent = `$${tax.toFixed(2)}`;
+        // cartTaxes.textContent = `$${tax.toFixed(2)}`;
+        cartTaxes.textContent = `$${tax}`;
 
         cartTotal.textContent = `${this.total}`;
 
