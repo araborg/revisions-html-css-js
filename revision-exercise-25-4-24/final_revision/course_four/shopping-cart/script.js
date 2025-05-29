@@ -146,6 +146,7 @@ class ShoppingCart {
         const currentProductCountSpan = document.getElementById(
             `product-count-for-id${id}`
         );
+
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount} *`)
             : (productsContainer.innerHTML += `
