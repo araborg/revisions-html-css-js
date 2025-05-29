@@ -130,4 +130,9 @@ class ShoppingCart {
         this.total = 0;
         this.taxRate = 8.25;
     }
+
+    // add items to cart
+    addItem(id, products) {
+        const product = products.find((item) => item.id === id);
+    }
 }
