@@ -103,7 +103,7 @@ const products = [
 // Update UI
 products.forEach(({ id, name, price, category }) => {
     dessertCards.innerHTML += `
-        <div class="dessert-card">
+        <div class="dessert-card" onclick="hideCart(this)">
             <h2>${name}</h2>
 
             <p class="dessert-price">$${price}</p>
@@ -149,7 +149,7 @@ class ShoppingCart {
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount} *`)
             : (productsContainer.innerHTML += `
-                <div id="dessert${id}" class="product" onclick="">
+                <div id="dessert${id}" class="product">
                     <p>
                         <span 
                             class="product-count"
@@ -225,6 +225,16 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         cart.calculateTotal();
     });
 });
+
+const hideCart = () => {
+    if (isCartShowing) {
+        console.log(isCartShowing);
+        // cartContainer.style.display = "block";
+        // console.log("Hidden");
+
+        // isCartShowing = !isCartShowing;
+    }
+};
 
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
