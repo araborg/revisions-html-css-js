@@ -100,8 +100,6 @@ const products = [
     },
 ];
 
-// Each product has id, name, price and category
-
 // Update UI
 products.forEach(({ id, name, price, category }) => {
     dessertCards.innerHTML += `
@@ -196,7 +194,15 @@ class ShoppingCart {
         return parseFloat((this.taxRate / 100) * amount).toFixed(2);
     }
 
-    calculateTotal() {}
+    calculateTotal() {
+        const subTotal = this.items.reduce(
+            (total, item) => total + item.price,
+            0
+        );
+
+        const tax = this.calculateTaxes(subtotal);
+        this.total = subTotal + tax;
+    }
 }
 
 /*
