@@ -237,16 +237,16 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
 
-// const hideCart = () => {
-//     if (isCartShowing) {
-//         cartContainer.style.display = "none";
+const hideCart = () => {
+    isCartShowing = !isCartShowing;
 
-//         showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
-//     }
-//     // console.log("Hidden");
+    if (isCartShowing) {
+        cartContainer.style.display = "none";
 
-//     // isCartShowing = !isCartShowing;
-// };
+        showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
+    }
+    // console.log("Hidden");
+};
 
 /*
 
