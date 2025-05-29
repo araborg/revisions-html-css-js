@@ -191,7 +191,7 @@ class ShoppingCart {
     }
 
     calculateTaxes(amount) {
-        return parseFloat((this.taxRate / 100) * amount).toFixed(2);
+        return parseFloat(((this.taxRate / 100) * amount).toFixed(2));
     }
 
     calculateTotal() {
@@ -200,8 +200,15 @@ class ShoppingCart {
             0
         );
 
-        const tax = this.calculateTaxes(subtotal);
+        const tax = this.calculateTaxes(subTotal);
         this.total = subTotal + tax;
+
+        cartSubTotal.textContent = `$${subTotal}`;
+        cartTaxes.textContent = `$${tax.toFixed(2)}`;
+
+        cartTotal.textContent = `${this.total}`;
+
+        return this.total;
     }
 }
 
