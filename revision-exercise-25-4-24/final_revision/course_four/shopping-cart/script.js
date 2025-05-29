@@ -12,7 +12,7 @@ const cartTotal = document.getElementById("total");
 
 const dessertCards = document.getElementById("dessert-card-container");
 
-const isCartShowing = false;
+let isCartShowing = false;
 
 const products = [
     {
@@ -147,7 +147,7 @@ class ShoppingCart {
             `product-count-for-id${id}`
         );
         currentProductCount > 1
-            ? (currentProductCountSpan.textContent = `${currentProductCount}*`)
+            ? (currentProductCountSpan.textContent = `${currentProductCount} *`)
             : (productsContainer.innerHTML += `
                 <div id="dessert${id}" class="product">
                     <p>
@@ -203,8 +203,8 @@ class ShoppingCart {
         const tax = this.calculateTaxes(subTotal);
         this.total = subTotal + tax;
 
-        cartSubTotal.textContent = `$${subTotal}`;
-        // cartTaxes.textContent = `$${tax.toFixed(2)}`;
+        // cartSubTotal.textContent = `$${subTotal}`;
+        cartTaxes.textContent = `$${tax.toFixed(2)}`;
         cartTaxes.textContent = `$${tax}`;
 
         cartTotal.textContent = `${this.total}`;
