@@ -235,6 +235,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     });
 });
 
+clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
+
 // const hideCart = () => {
 //     if (isCartShowing) {
 //         cartContainer.style.display = "none";
@@ -246,10 +248,7 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 //     // isCartShowing = !isCartShowing;
 // };
 
-clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
-
 /*
-
 
 Methods to note:
 confirm()
