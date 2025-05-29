@@ -103,7 +103,7 @@ const products = [
 // Update UI
 products.forEach(({ id, name, price, category }) => {
     dessertCards.innerHTML += `
-        <div class="dessert-card">
+        <div class="dessert-card" onclick="hideCart(this)">
             <h2>${name}</h2>
 
             <p class="dessert-price">$${price}</p>
