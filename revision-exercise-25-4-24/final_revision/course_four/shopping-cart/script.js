@@ -149,7 +149,7 @@ class ShoppingCart {
         currentProductCount > 1
             ? (currentProductCountSpan.textContent = `${currentProductCount} *`)
             : (productsContainer.innerHTML += `
-                <div id="dessert${id}" class="product">
+                <div id="dessert${id}" class="product" onclick="">
                     <p>
                         <span 
                             class="product-count"
@@ -203,11 +203,11 @@ class ShoppingCart {
         const tax = this.calculateTaxes(subTotal);
         this.total = subTotal + tax;
 
-        cartSubTotal.textContent = `$${subTotal}`;
+        cartSubTotal.textContent = `$${subTotal.toFixed(2)}`;
         cartTaxes.textContent = `$${tax.toFixed(2)}`;
         // cartTaxes.textContent = `$${tax}`;
 
-        cartTotal.textContent = `${this.total}`;
+        cartTotal.textContent = `${this.total.toFixed(2)}`;
 
         return this.total;
     }
