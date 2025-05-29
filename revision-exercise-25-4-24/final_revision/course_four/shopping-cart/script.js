@@ -168,4 +168,12 @@ class ShoppingCart {
     getCounts() {
         return this.items.length;
     }
+
+    clearCart() {
+        if (!this.items.length) {
+            alert("Your shopping cart is already empty");
+
+            return;
+        }
+    }
 }
