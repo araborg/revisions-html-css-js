@@ -103,7 +103,7 @@ const products = [
 // Update UI
 products.forEach(({ id, name, price, category }) => {
     dessertCards.innerHTML += `
-        <div class="dessert-card" onclick="hideCart(this)">
+        <div class="dessert-card">
             <h2>${name}</h2>
 
             <p class="dessert-price">$${price}</p>
@@ -205,7 +205,6 @@ class ShoppingCart {
 
         cartSubTotal.textContent = `$${subTotal.toFixed(2)}`;
         cartTaxes.textContent = `$${tax.toFixed(2)}`;
-        // cartTaxes.textContent = `$${tax}`;
 
         cartTotal.textContent = `${this.total.toFixed(2)}`;
 
@@ -229,6 +228,8 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 // const hideCart = () => {
 //     if (isCartShowing) {
 //         cartContainer.style.display = "none";
+
+//         showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
 //     }
 //     // console.log("Hidden");
 
