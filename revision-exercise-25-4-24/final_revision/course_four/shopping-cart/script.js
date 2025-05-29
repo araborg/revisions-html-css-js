@@ -133,15 +133,36 @@ class ShoppingCart {
 
     // add items to cart
     addItem(id, products) {
-        // Each product has id, name, price and category
         const product = products.find((item) => item.id === id);
         const { name, price } = product;
+
         this.items.push(product);
 
         const totalCountPerProduct = {};
         this.items.forEach((dessert) => {
             totalCountPerProduct[dessert.id] =
-                t(otalCountPerProduct[dessert.id] || 0) + 1;
+                (totalCountPerProduct[dessert.id] || 0) + 1;
         });
+        const currentProductCount = totalCountPerProduct[product.id];
+
+        const currentProductCountSpan = document.getElementById(
+            `product-count-for-id${id}`
+        );
+
+        currentProductCount > 1
+            ? (currentProductCountSpan.textContent = `${currentProductCount}*`)
+            : (productsContainer.innerHTML += `
+                <div id="dessert${id}" class="product">
+                    <p>
+                        <span 
+                            class="product-count"
+                            id="product-count-for-id${id}"
+                        >
+                        </span>${name}
+                    </p>
+
+                    <p>${price}</p>
+                </div>
+            `);
     }
 }
