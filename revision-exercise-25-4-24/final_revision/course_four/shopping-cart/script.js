@@ -226,15 +226,14 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
     });
 });
 
-const hideCart = () => {
-    if (isCartShowing) {
-        console.log(isCartShowing);
-        // cartContainer.style.display = "block";
-        // console.log("Hidden");
+// const hideCart = () => {
+//     if (isCartShowing) {
+//         cartContainer.style.display = "none";
+//     }
+//     // console.log("Hidden");
 
-        // isCartShowing = !isCartShowing;
-    }
-};
+//     // isCartShowing = !isCartShowing;
+// };
 
 cartBtn.addEventListener("click", () => {
     isCartShowing = !isCartShowing;
