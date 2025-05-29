@@ -224,6 +224,7 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
+let btnId;
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
@@ -232,15 +233,19 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         totalNumberOfItems.textContent = cart.getCounts();
 
         cart.calculateTotal();
+
+        btnId = event.target.id;
     });
 });
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
 
 const hideCart = () => {
+    console.log(isCartShowing);
     isCartShowing = !isCartShowing;
+    console.log(isCartShowing);
 
-    if (isCartShowing) {
+    if (!isCartShowing) {
         cartContainer.style.display = "none";
 
         showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
