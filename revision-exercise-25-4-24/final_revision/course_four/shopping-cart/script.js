@@ -195,4 +195,14 @@ class ShoppingCart {
     calculateTaxes(amount) {
         return parseFloat((this.taxRate / 100) * amount).toFixed(2);
     }
+
+    calculateTotal() {}
 }
+
+/*
+Methods to note:
+confirm()
+.toFixed(num)
+parseFloat()
+
+*/
