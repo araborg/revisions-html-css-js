@@ -13,6 +13,7 @@ const cartTotal = document.getElementById("total");
 const dessertCards = document.getElementById("dessert-card-container");
 
 let isCartShowing = false;
+let isCartModalOpen = false;
 
 const products = [
     {
@@ -233,23 +234,17 @@ const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
         totalNumberOfItems.textContent = cart.getCounts();
 
         cart.calculateTotal();
-
-        btnId = event.target.id;
     });
 });
 
 clearCartBtn.addEventListener("click", cart.clearCart.bind(cart));
 
 const hideCart = () => {
-    console.log(isCartShowing);
-    isCartShowing = !isCartShowing;
-    console.log(isCartShowing);
-
-    if (!isCartShowing) {
-        cartContainer.style.display = "none";
-
-        showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
-    }
+    // if (isCartModalOpen) {
+    //     cartContainer.style.display = "none";
+    //     showHideCartSpan.textContent = isCartShowing ? "Show" : "Hide";
+    //     isCartModalOpen = false;
+    // }
     // console.log("Hidden");
 };
 
