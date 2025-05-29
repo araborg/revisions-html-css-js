@@ -175,5 +175,9 @@ class ShoppingCart {
 
             return;
         }
+
+        const isCartCleard = confirm(
+            "Are you sure you want to clear all items from your shopping cart?"
+        );
     }
 }
