@@ -151,6 +151,10 @@ const platformPositions = [
     { x: 4700, y: proportionalSize(150) },
 ];
 
+const platforms = platformPositions.map(
+    (platform) => new Platform(platform.x, platform.y)
+);
+
 // console.log(canvas.width - 2, innerWidth);
 
 // proportionalSize(400);
