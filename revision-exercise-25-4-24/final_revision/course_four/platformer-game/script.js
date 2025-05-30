@@ -57,3 +57,12 @@ class Player {
 // proportionalSize(400);
 
 // console.log(Math.floor(5 / 2));
+
+/*
+position: 10, 400
+velocity: 0, 0
+
+
+
+
+*/
