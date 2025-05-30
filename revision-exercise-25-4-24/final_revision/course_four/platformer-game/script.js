@@ -108,6 +108,20 @@ class Platform {
     }
 }
 
+class CheckPoint {
+    constructor(x, y, z) {
+        this.position = {
+            x,
+            y,
+        };
+
+        this.width = proportionalSize(40);
+        this.height = proportionalSize(70);
+
+        this.claimed = false;
+    }
+}
+
 // console.log(canvas.width - 2, innerWidth);
 
 // proportionalSize(400);
