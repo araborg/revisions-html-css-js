@@ -89,6 +89,8 @@ class Player {
     }
 }
 
+const player = new Player();
+
 // console.log(canvas.width - 2, innerWidth);
 
 // proportionalSize(400);
