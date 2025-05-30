@@ -91,23 +91,6 @@ class Player {
 
 const player = new Player();
 
-class Platform {
-    constructor(x, y) {
-        this.position = {
-            x: x,
-            y: y,
-        };
-
-        this.width = 200;
-        this.height = proportionalSize(40);
-    }
-
-    draw() {
-        ctx.fillStyle = "#acd157";
-        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
-    }
-}
-
 class CheckPoint {
     constructor(x, y, z) {
         this.position = {
@@ -150,6 +133,23 @@ const platformPositions = [
     { x: 4400, y: proportionalSize(200) },
     { x: 4700, y: proportionalSize(150) },
 ];
+
+class Platform {
+    constructor(x, y) {
+        this.position = {
+            x: x,
+            y: y,
+        };
+
+        this.width = 200;
+        this.height = proportionalSize(40);
+    }
+
+    draw() {
+        ctx.fillStyle = "#acd157";
+        ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    }
+}
 
 const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
