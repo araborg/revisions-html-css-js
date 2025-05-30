@@ -6,5 +6,15 @@ const checkpointScreen = document.querySelector(".checkpoint-screen");
 const checkpointMessage = document.querySelector(".checkpoint-screen > p");
 
 const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
 
-// console.log(checkpointScreenMessage);
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+const gravity = 0.5;
+
+let isCheckpointCollisionDetectionActive = true;
+
+console.log(canvas);
+console.log(ctx);
+// console.log(ctx);
