@@ -48,6 +48,9 @@ class Player {
             x: 0,
             y: 0,
         };
+
+        this.width = proportionalSize(40);
+        this.height = proportionalSize(40);
     }
 }
 
