@@ -14,3 +14,10 @@ canvas.height = innerHeight;
 const gravity = 0.5;
 
 let isCheckpointCollisionDetectionActive = true;
+
+const startGame = () => {
+    canvas.style.display = "block";
+    startScreen.style.display = "none";
+};
+
+startBtn.addEventListener("click", startGame);
