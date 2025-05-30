@@ -14,7 +14,3 @@ canvas.height = innerHeight;
 const gravity = 0.5;
 
 let isCheckpointCollisionDetectionActive = true;
-
-console.log(canvas);
-console.log(ctx);
-// console.log(ctx);
