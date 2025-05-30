@@ -66,9 +66,14 @@ class Player {
 
         if (this.position.y + this.height + this.velocity.y <= canvas.height) {
             if (this.position.y < 0) {
+                console.log("Position is less than 0");
+
                 this.position.y = 0;
                 this.velocity.y = gravity;
             }
+
+            console.log("Position is greater than 0");
+            this.velocity.y += gravity;
         }
     }
 }
