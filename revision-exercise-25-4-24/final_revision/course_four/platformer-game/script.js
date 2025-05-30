@@ -91,6 +91,15 @@ class Player {
 
 const player = new Player();
 
+class Platform {
+    constructor(x, y) {
+        this.position = {
+            x: x,
+            y: y,
+        };
+    }
+}
+
 // console.log(canvas.width - 2, innerWidth);
 
 // proportionalSize(400);
