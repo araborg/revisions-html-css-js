@@ -25,9 +25,11 @@ const startGame = () => {
 startBtn.addEventListener("click", startGame);
 
 const proportionalSize = (size) => {
-    console.log(canvas.height);
+    console.log(innerHeight);
 
-    console.log(size);
+    return innerHeight < 500;
+
+    // console.log(size);
 };
 
 proportionalSize(400);
