@@ -69,11 +69,14 @@ class Player {
                 console.log("Position is less than 0");
 
                 this.position.y = 0;
+
                 this.velocity.y = gravity;
             }
 
             console.log("Position is greater than 0");
             this.velocity.y += gravity;
+        } else {
+            this.velocity.y = 0;
         }
     }
 }
