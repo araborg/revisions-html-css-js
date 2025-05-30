@@ -18,6 +18,8 @@ let isCheckpointCollisionDetectionActive = true;
 const startGame = () => {
     canvas.style.display = "block";
     startScreen.style.display = "none";
+
+    // animate()
 };
 
 startBtn.addEventListener("click", startGame);
