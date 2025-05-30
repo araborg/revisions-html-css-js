@@ -24,15 +24,16 @@ const startGame = () => {
 
 startBtn.addEventListener("click", startGame);
 
+// d determinant here is: innerHeight in case it is < 500
 const proportionalSize = (size) => {
-    console.log(`innerHeight: ${innerHeight}, size: ${size}`);
+    // console.log(`innerHeight: ${innerHeight}, size: ${size}`);
 
     size =
         innerHeight < 500 //
             ? Math.ceil((size / 500) * innerHeight)
             : size;
 
-    console.log(size);
+    // console.log(size);
     return size;
 };
 
