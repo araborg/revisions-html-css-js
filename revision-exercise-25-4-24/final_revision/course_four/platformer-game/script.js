@@ -33,3 +33,5 @@ const proportionalSize = (size) => {
 };
 
 proportionalSize(400);
+
+// console.log(Math.floor(5 / 2));
