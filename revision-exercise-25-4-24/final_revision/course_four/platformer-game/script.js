@@ -27,7 +27,7 @@ startBtn.addEventListener("click", startGame);
 const proportionalSize = (size) => {
     console.log(innerHeight);
 
-    return innerHeight < 500;
+    return innerHeight < 500 ? Math.ceil((size / 500) * innerHeight) : size;
 
     // console.log(size);
 };
