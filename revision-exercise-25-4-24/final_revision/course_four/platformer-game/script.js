@@ -24,4 +24,8 @@ const startGame = () => {
 
 startBtn.addEventListener("click", startGame);
 
-const proportionalSize = (size) => {};
+const proportionalSize = (size) => {
+    console.log(size);
+};
+
+proportionalSize(400);
