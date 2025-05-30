@@ -155,6 +155,12 @@ const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
+const checkpointPositions = [
+    { x: 1170, y: proportionalSize(80), z: 1 },
+    { x: 2900, y: proportionalSize(330), z: 2 },
+    { x: 4800, y: proportionalSize(80), z: 3 },
+];
+
 // console.log(canvas.width - 2, innerWidth);
 
 // proportionalSize(400);
