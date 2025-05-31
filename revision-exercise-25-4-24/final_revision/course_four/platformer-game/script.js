@@ -171,6 +171,8 @@ const animate = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     platforms.forEach((platform) => platform.draw());
+
+    checkpoints.forEach((checkpoint) => checkpoint.draw());
 };
 
 // console.log(canvas.width - 2, innerWidth);
