@@ -185,6 +185,17 @@ const animate = () => {
     checkpoints.forEach((checkpoint) => checkpoint.draw());
 
     player.update();
+
+    if (keys.rightkey.pressed && player.position.x < proportionalSize(400)) {
+        player.velocity.x = 5;
+    } else if (
+        keys.leftKey.pressed &&
+        player.position.x > proportionalSize(100)
+    ) {
+        player.velocity.x = -5;
+    } else {
+        player.velocity.x = 0;
+    }
 };
 
 // console.log(canvas.width - 2, innerWidth);
