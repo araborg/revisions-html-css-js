@@ -165,6 +165,16 @@ const platforms = platformPositions.map(
     (platform) => new Platform(platform.x, platform.y)
 );
 
+const keys = {
+    rightkey: {
+        pressed: false,
+    },
+
+    leftKey: {
+        pressed: false,
+    },
+};
+
 const animate = () => {
     requestAnimationFrame(animate);
 
@@ -173,6 +183,8 @@ const animate = () => {
     platforms.forEach((platform) => platform.draw());
 
     checkpoints.forEach((checkpoint) => checkpoint.draw());
+
+    player.update();
 };
 
 // console.log(canvas.width - 2, innerWidth);
