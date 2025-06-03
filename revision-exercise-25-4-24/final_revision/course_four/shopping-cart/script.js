@@ -225,7 +225,7 @@ class ShoppingCart {
 
 const cart = new ShoppingCart();
 
-let btnId;
+// let btnId;
 const addToCartBtns = document.getElementsByClassName("add-to-cart-btn");
 [...addToCartBtns].forEach((btn) => {
     btn.addEventListener("click", (event) => {
