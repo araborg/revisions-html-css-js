@@ -13,7 +13,7 @@ const cartTotal = document.getElementById("total");
 const dessertCards = document.getElementById("dessert-card-container");
 
 let isCartShowing = false;
-let isCartModalOpen = false;
+// let isCartModalOpen = false;
 
 const products = [
     {
