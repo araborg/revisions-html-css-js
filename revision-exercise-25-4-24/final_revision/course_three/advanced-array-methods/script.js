@@ -67,6 +67,14 @@ const getStandardDeviation = (array) => {
 	return standardDeviation;
 };
 
+const calculate = () => {
+	const value = document.querySelector("#number").value;
+
+	const array = value.split(/,\d*/g);
+
+	console.log(array);
+};
+
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
-console.log(getMode(array));
+// console.log(getMode(array));
