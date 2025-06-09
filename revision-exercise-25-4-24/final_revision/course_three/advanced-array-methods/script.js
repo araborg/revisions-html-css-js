@@ -44,6 +44,8 @@ const getRange = (array) => {
     return Math.max(...array) - Math.min(...array);
 };
 
+const getVariance = (array) => {};
+
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
 console.log(getMode(array));
