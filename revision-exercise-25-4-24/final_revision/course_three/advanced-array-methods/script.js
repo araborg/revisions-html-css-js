@@ -17,11 +17,15 @@ const getMedian = (array) => {
 };
 
 const getMode = (array) => {
-    const count = {};
+    const counts = {};
 
     array.forEach((el) => {
-        count[el] = (count[el] || 0) + 1;
+        counts[el] = (counts[el] || 0) + 1;
     });
+
+    if (new Set(Object.values(counts)).size === 1) {
+        return null;
+    }
 };
 
 const array = [1, 2, 3, 4, 5, 6];
