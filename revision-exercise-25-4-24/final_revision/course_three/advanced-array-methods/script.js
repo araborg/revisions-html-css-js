@@ -23,6 +23,8 @@ const getMode = (array) => {
         counts[el] = (counts[el] || 0) + 1;
     });
 
+    // If the size property of this Set is equal to 1, that
+    // tells you every value appears the same number of times
     if (new Set(Object.values(counts)).size === 1) {
         return null;
     }
