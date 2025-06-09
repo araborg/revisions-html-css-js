@@ -95,5 +95,3 @@ const calculate = () => {
 		"#standardDeviation"
 	).textContent = standardDeviation;
 };
-
-// console.log(getMode(array));
