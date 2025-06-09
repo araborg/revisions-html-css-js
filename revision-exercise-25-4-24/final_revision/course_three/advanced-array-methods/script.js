@@ -40,6 +40,6 @@ const getMode = (array) => {
     return mode.join(", ");
 };
 
-const array = [1, 2, 3, 4, 5, 6];
+const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
-console.log(getMedian(array));
+console.log(getMode(array));
