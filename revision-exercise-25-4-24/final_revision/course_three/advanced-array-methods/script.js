@@ -55,6 +55,8 @@ const getVariance = (array) => {
 
 			return acc + squared;
 		}, 0) / array.length;
+
+	return variance;
 };
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
