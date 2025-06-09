@@ -1,50 +1,52 @@
 const getMean = (array) =>
-    array.reduce((acc, el) => acc + el, 0) / array.length;
+	array.reduce((acc, el) => acc + el, 0) / array.length;
 
 const getMedian = (array) => {
-    const sorted = array.slice().sort((a, b) => a - b);
+	const sorted = array.slice().sort((a, b) => a - b);
 
-    const median =
-        // divisn happens bf minus
-        array.length % 2 === 0
-            ? getMean([
-                  sorted[array.length / 2 - 1],
-                  sorted[array.length / 2],
-              ])
-            : sorted[Math.floor(array.length / 2)];
+	const median =
+		// divisn happens bf minus
+		array.length % 2 === 0
+			? getMean([
+					sorted[array.length / 2 - 1],
+					sorted[array.length / 2],
+			  ])
+			: sorted[Math.floor(array.length / 2)];
 
-    return median;
+	return median;
 };
 
 const getMode = (array) => {
-    const counts = {};
+	const counts = {};
 
-    array.forEach((el) => {
-        counts[el] = (counts[el] || 0) + 1;
-    });
+	array.forEach((el) => {
+		counts[el] = (counts[el] || 0) + 1;
+	});
 
-    // If the size property of this Set is equal to 1, that
-    // tells you every value appears the same number of times
-    if (new Set(Object.values(counts)).size === 1) {
-        return null;
-    }
+	// If the size property of this Set is equal to 1, that
+	// tells you every value appears the same number of times
+	if (new Set(Object.values(counts)).size === 1) {
+		return null;
+	}
 
-    const highest = Object.keys(counts).sort(
-        (a, b) => counts[b] - counts[a]
-    )[0];
+	const highest = Object.keys(counts).sort(
+		(a, b) => counts[b] - counts[a]
+	)[0];
 
-    const mode = Object.keys(counts).filter(
-        (el) => counts[el] === counts[highest]
-    );
+	const mode = Object.keys(counts).filter(
+		(el) => counts[el] === counts[highest]
+	);
 
-    return mode.join(", ");
+	return mode.join(", ");
 };
 
 const getRange = (array) => {
-    return Math.max(...array) - Math.min(...array);
+	return Math.max(...array) - Math.min(...array);
 };
 
-const getVariance = (array) => {};
+const getVariance = (array) => {
+	const mean = getMean(array);
+};
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
