@@ -84,6 +84,13 @@ const calculate = () => {
 
 	const variance = getVariance(numbers);
 	const standardDeviation = getStandardDeviation(numbers);
+
+	document.querySelector("#mean").textContent = mean;
+	document.querySelector().textContent;
+	document.querySelector().textContent;
+	document.querySelector().textContent;
+	document.querySelector().textContent;
+	document.querySelector().textContent;
 };
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
