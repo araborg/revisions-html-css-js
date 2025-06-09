@@ -78,6 +78,12 @@ const calculate = () => {
 
 	const mean = getMean(numbers);
 	const median = getMedian(numbers);
+	const mode = getMode(numbers);
+
+	const range = getRange(numbers);
+
+	const variance = getVariance(numbers);
+	const standardDeviation = getStandardDeviation(numbers);
 };
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
