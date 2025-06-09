@@ -59,6 +59,10 @@ const getVariance = (array) => {
 	return variance;
 };
 
+const getStandardDeviation = (array) => {
+	const variance = getVariance(array);
+};
+
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
 console.log(getMode(array));
