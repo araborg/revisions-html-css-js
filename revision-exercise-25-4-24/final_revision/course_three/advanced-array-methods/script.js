@@ -86,13 +86,16 @@ const calculate = () => {
 	const standardDeviation = getStandardDeviation(numbers);
 
 	document.querySelector("#mean").textContent = mean;
-	document.querySelector().textContent;
-	document.querySelector().textContent;
-	document.querySelector().textContent;
-	document.querySelector().textContent;
-	document.querySelector().textContent;
+	document.querySelector("#median").textContent = median;
+	document.querySelector("#mode").textContent = mode;
+	document.querySelector("#range").textContent = range;
+	document.querySelector("#variance").textContent =
+		variance;
+	document.querySelector(
+		"#standardDeviation"
+	).textContent = standardDeviation;
 };
 
-const array = [1, 2, 3, 3, 4, 4, 5, 6];
+// const array = [1, 2, 3, 3, 4, 4, 5, 6];
 
 // console.log(getMode(array));
