@@ -46,6 +46,15 @@ const getRange = (array) => {
 
 const getVariance = (array) => {
 	const mean = getMean(array);
+
+	const variance =
+		array.reduce((acc, el) => {
+			const difference = el - mean;
+
+			const squared = difference ** 2;
+
+			return acc + squared;
+		}, 0) / array.length;
 };
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
