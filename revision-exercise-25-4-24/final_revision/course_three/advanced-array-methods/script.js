@@ -14,6 +14,7 @@ VS Code settings
 file icon theme: seti
 
 Image preview
+Color highlight
 
 
 word wrap
