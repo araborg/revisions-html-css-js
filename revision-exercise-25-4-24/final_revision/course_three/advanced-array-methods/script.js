@@ -61,6 +61,10 @@ const getVariance = (array) => {
 
 const getStandardDeviation = (array) => {
 	const variance = getVariance(array);
+
+	const standardDeviation = Math.sqrt(variance);
+
+	return standardDeviation;
 };
 
 const array = [1, 2, 3, 3, 4, 4, 5, 6];
