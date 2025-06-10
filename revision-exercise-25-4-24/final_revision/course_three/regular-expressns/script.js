@@ -5,6 +5,13 @@ const checkMessageButton = document.getElementById(
 );
 const result = document.getElementById("result");
 
+/*
+	4 e.g, (?:$|\s) matches either the end of the string 
+	or any whitespace character. It essentially looks for 
+	a position where the string ends or where a whitespace 
+	character is found.
+*/
+
 const helpRegex = /please help|assist me/i;
 
 const dollarRegex =
