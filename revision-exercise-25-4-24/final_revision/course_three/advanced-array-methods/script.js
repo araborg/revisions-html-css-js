@@ -75,7 +75,7 @@ const getStandardDeviation = (array) => {
 const calculate = () => {
 	const value = document.querySelector("#numbers").value;
 
-	const array = value.split(/,/g);
+	const array = value.split(/,\s*/g);
 
 	// console.log(array);
 
