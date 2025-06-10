@@ -25,3 +25,14 @@ const denyList = [
 	stockRegex,
 	dearRegex,
 ];
+
+const isSpam = (msg) =>
+	denyList.some((regex) => regex.text(msg));
+
+checkMessageButton.addEventListener("click", () => {
+	if (messageInput.value === "") {
+		alert("Please enter a message.");
+
+		return;
+	}
+});
