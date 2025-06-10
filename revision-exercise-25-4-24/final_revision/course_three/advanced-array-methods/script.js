@@ -77,9 +77,13 @@ const calculate = () => {
 
 	const array = value.split(/,\s*/g);
 
+	console.log(array);
+
 	const numbers = array
 		.map((el) => Number(el))
 		.filter((el) => !isNaN(el));
+
+	console.log(numbers);
 
 	const mean = getMean(numbers);
 	const median = getMedian(numbers);
