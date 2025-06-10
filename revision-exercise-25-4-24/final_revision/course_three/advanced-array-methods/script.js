@@ -25,12 +25,13 @@ const getMode = (array) => {
 	});
 
 	// If the size property of this Set is equal to 1, that
-	// tells you every value appears the same number of times
+	// tells you every value appears the same number of times.
 	if (new Set(Object.values(counts)).size === 1) {
 		return null;
 	}
 
 	const highest = Object.keys(counts).sort(
+		// we mk use of d value despite d fact we started with d key
 		(a, b) => counts[b] - counts[a]
 	)[0];
 
