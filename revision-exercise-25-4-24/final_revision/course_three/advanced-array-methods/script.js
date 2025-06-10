@@ -81,8 +81,6 @@ const calculate = () => {
 		.map((el) => Number(el))
 		.filter((el) => !isNaN(el));
 
-	console.log(numbers);
-
 	const mean = getMean(numbers);
 	const median = getMedian(numbers);
 	const mode = getMode(numbers);
