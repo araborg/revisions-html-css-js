@@ -45,6 +45,7 @@ const getMode = (array) => {
 };
 
 const getRange = (array) => {
+	// array needs to be destructure for it to be iterable hence [...array]
 	return Math.max(...array) - Math.min(...array);
 };
 
