@@ -6,7 +6,7 @@ const getMedian = (array) => {
 	const sorted = array.slice().sort((a, b) => a - b);
 
 	const median =
-		// divisn happens bf minus
+		// divisn happens bf minus: array.length / 2 - 1
 		array.length % 2 === 0
 			? getMean([
 					sorted[array.length / 2 - 1],
