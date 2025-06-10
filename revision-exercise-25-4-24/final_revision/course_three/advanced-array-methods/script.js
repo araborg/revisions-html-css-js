@@ -35,6 +35,7 @@ const getMode = (array) => {
 		(a, b) => counts[b] - counts[a] // arrange d keys in a descending order
 	)[0];
 
+	// get only d key(s) dt equals d highest value
 	const mode = Object.keys(counts).filter(
 		(el) => counts[el] === counts[highest]
 	);
