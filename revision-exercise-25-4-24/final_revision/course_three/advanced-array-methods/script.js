@@ -77,8 +77,6 @@ const calculate = () => {
 
 	const array = value.split(/,\s*/g);
 
-	// console.log(array);
-
 	const numbers = array
 		.map((el) => Number(el))
 		.filter((el) => !isNaN(el));
