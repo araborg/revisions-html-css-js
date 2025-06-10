@@ -32,7 +32,7 @@ const getMode = (array) => {
 
 	const highest = Object.keys(counts).sort(
 		// we mk use of d value despite d fact we started with d key
-		(a, b) => counts[b] - counts[a]
+		(a, b) => counts[b] - counts[a] // arrange d keys in a descending order
 	)[0];
 
 	const mode = Object.keys(counts).filter(
