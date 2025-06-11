@@ -40,7 +40,11 @@ const displayAuthors = (authors) => {
                 <div class="purple-divider"></div>
 
                 <p class="bio">
-
+                    ${
+						bio.length > 50
+							? bio.slice(0, 50) + "..."
+							: bio
+					}
                 </p>
             </div>
         `;
