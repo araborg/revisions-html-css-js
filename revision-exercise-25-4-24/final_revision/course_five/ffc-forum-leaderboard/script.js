@@ -48,35 +48,4 @@ const fetchForumLatest = async () => {
 	} catch (err) {}
 };
 
-const fetchforumTopicUrl = async () => {
-	try {
-		const res = await fetch(forumTopicUrl);
-		const data = await res.json();
-		console.log(data);
-	} catch (err) {}
-};
-
-const fetchforumCategoryUrl = async () => {
-	try {
-		const res = await fetch(forumCategoryUrl);
-		const data = await res.json();
-		console.log(data);
-	} catch (err) {
-		console.error(
-			"Error fetching forum category URL:",
-			err
-		);
-	}
-};
-
-const fetchavatarUrl = async () => {
-	try {
-		const res = await fetch(avatarUrl);
-		// const data = await res.json();
-		// console.log(data);
-
-		console.log(res);
-	} catch (err) {}
-};
-
 fetchForumLatest();
