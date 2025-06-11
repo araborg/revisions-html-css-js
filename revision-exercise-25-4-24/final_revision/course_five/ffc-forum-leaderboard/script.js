@@ -42,11 +42,37 @@ const allCategories = {
 
 const fetchForumLatest = async () => {
 	try {
+		const res = await fetch(fetchForumLatest);
+		const data = await res.json();
+		console.log(data);
 	} catch (err) {}
 };
 
-const fetchforumTopicUrl = async () => {};
+const fetchforumTopicUrl = async () => {
+	try {
+		const res = await fetch(fetchforumTopicUrl);
+		const data = await res.json();
+		console.log(data);
+	} catch (err) {}
+};
 
-const fetchforumCategoryUrl = async () => {};
+const fetchforumCategoryUrl = async () => {
+	try {
+		const res = await fetch(fetchforumCategoryUrl);
+		const data = await res.json();
+		console.log(data);
+	} catch (err) {}
+};
 
-const fetchavatarUrl = async () => {};
+const fetchavatarUrl = async () => {
+	try {
+		const res = await fetch(fetchavatarUrl);
+		const data = await res.json();
+		console.log(data);
+	} catch (err) {}
+};
+
+fetchForumLatest();
+// fetchforumTopicUrl()
+// fetchforumCategoryUrl()
+// fetchavatarUrl()
