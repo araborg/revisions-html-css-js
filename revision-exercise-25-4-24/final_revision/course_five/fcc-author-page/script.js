@@ -46,6 +46,8 @@ const displayAuthors = (authors) => {
 							: bio
 					}
                 </p>
+
+                <a class="author-link" href="${url}" target="_blank">${author} author page</a>
             </div>
         `;
 	});
