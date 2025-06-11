@@ -72,12 +72,14 @@ const fetchforumCategoryUrl = async () => {
 const fetchavatarUrl = async () => {
 	try {
 		const res = await fetch(avatarUrl);
-		const data = await res.json();
-		console.log(data);
+		// const data = await res.json();
+		// console.log(data);
+
+		console.log(res);
 	} catch (err) {}
 };
 
-fetchForumLatest();
-// fetchforumTopicUrl()
-// fetchforumCategoryUrl()
-// fetchavatarUrl()
+// fetchForumLatest();
+// fetchforumTopicUrl();
+// fetchforumCategoryUrl();
+fetchavatarUrl();
