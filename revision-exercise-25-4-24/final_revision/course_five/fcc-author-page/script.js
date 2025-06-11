@@ -5,6 +5,11 @@ const authorContainer = document.getElementById(
 const loadMoreBtn =
 	document.getElementById("load-more-btn");
 
+let startingIndex = 0;
+let endingIndex = 8;
+
+let authorDataArr = [];
+
 fetch(
 	"https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json"
 )
