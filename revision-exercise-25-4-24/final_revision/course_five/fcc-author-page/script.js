@@ -30,7 +30,7 @@ fetch(
 	});
 
 const displayAuthors = (authors) => {
-	authors.forEach(({author, image, url, bio}, index) => {
+	authors.forEach(({author, image, bio, url}, index) => {
 		authorContainer.innerHTML += `
             <div id="${index}" class="user-card">
                 <h2 class="author-name"">${author}</h2>
