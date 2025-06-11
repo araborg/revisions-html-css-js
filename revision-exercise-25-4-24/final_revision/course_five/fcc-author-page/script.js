@@ -35,7 +35,13 @@ const displayAuthors = (authors) => {
             <div id="${index}" class="user-card">
                 <h2 class="author-name"">${author}</h2>
 
-<img class="user-img" src="${image}" alt="${author} avatar">
+                <img class="user-img" src="${image}" alt="${author} avatar">
+
+                <div class="purple-divider"></div>
+
+                <p class="bio">
+
+                </p>
             </div>
         `;
 	});
