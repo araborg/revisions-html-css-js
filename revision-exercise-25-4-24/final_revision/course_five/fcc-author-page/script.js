@@ -17,7 +17,9 @@ fetch(
 	.then((data) => {
 		authorDataArr = data;
 
-		console.log(authorDataArr);
+		displayAuthors(
+			authorDataArr.slice(startingIndex, endingIndex)
+		);
 	})
 	.catch((err) => {
 		authorContainer.inerttHTML = `
