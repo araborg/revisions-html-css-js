@@ -16,6 +16,7 @@ fetch(
 	.then((res) => res.json())
 	.then((data) => {
 		authorDataArr = data;
-	});
+	})
+	.catch();
 
-console.log(authorDataArr);
+// cons
