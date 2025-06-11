@@ -4,3 +4,7 @@ const authorContainer = document.getElementById(
 
 const loadMoreBtn =
 	document.getElementById("load-more-btn");
+
+fetch(
+	"https://cdn.freecodecamp.org/curriculum/news-author-page/authors.json"
+);
