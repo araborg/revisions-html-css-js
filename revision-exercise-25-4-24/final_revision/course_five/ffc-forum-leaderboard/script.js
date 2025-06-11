@@ -40,7 +40,10 @@ const allCategories = {
 	},
 };
 
-const fetchForumLatest = async () => {};
+const fetchForumLatest = async () => {
+	try {
+	} catch (err) {}
+};
 
 const fetchforumTopicUrl = async () => {};
 
