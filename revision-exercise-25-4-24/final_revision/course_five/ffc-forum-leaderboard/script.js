@@ -79,7 +79,4 @@ const fetchavatarUrl = async () => {
 	} catch (err) {}
 };
 
-// fetchForumLatest();
-// fetchforumTopicUrl();
-// fetchforumCategoryUrl();
-fetchavatarUrl();
+fetchForumLatest();
