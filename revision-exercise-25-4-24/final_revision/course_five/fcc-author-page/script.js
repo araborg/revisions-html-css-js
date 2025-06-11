@@ -16,6 +16,8 @@ fetch(
 	.then((res) => res.json())
 	.then((data) => {
 		authorDataArr = data;
+
+		console.log(authorDataArr);
 	})
 	.catch((err) => {
 		authorContainer.inerttHTML = `
@@ -28,5 +30,7 @@ fetch(
 	});
 
 const displayAuthors = (authors) => {
-	authors.forEach((author) => {});
+	authors.forEach(
+		({author, image, url, bio}, index) => {}
+	);
 };
