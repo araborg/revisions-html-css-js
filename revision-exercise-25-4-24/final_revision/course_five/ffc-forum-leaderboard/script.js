@@ -61,7 +61,12 @@ const fetchforumCategoryUrl = async () => {
 		const res = await fetch(fetchforumCategoryUrl);
 		const data = await res.json();
 		console.log(data);
-	} catch (err) {}
+	} catch (err) {
+		console.error(
+			"Error fetching forum category URL:",
+			err
+		);
+	}
 };
 
 const fetchavatarUrl = async () => {
