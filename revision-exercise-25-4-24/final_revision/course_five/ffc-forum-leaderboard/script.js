@@ -41,6 +41,9 @@ const allCategories = {
 };
 
 const fetchForumLatest = async () => {};
+
 const fetchforumTopicUrl = async () => {};
+
 const fetchforumCategoryUrl = async () => {};
+
 const fetchavatarUrl = async () => {};
