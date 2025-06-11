@@ -71,3 +71,5 @@ const fetchMoreAuthors = () => {
 		loadMoreBtn.textContent = "No more authors to load";
 	}
 };
+
+loadMoreBtn.addEventListener("click", fetchMoreAuthors);
