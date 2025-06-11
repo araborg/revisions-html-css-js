@@ -23,6 +23,8 @@ fetch(
                 There was an error loading the authors
             </p>
         `;
+
+		console.error("Error fetching author data:", err);
 	});
 
 // cons
