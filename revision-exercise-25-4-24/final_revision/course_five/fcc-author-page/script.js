@@ -24,7 +24,7 @@ fetch(
             </p>
         `;
 
-		console.error("Error fetching author data:", err);
+		// console.error("Error fetching author data:", err);
 	});
 
 // cons
