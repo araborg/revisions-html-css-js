@@ -40,4 +40,7 @@ const allCategories = {
 	},
 };
 
-console.log(postContainer);
+const fetchForumLatest = async () => {};
+const fetchforumTopicUrl = async () => {};
+const fetchforumCategoryUrl = async () => {};
+const fetchavatarUrl = async () => {};
