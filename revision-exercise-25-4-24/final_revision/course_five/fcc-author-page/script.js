@@ -27,4 +27,6 @@ fetch(
 		// console.error("Error fetching author data:", err);
 	});
 
-// cons
+const displayAuthors = (authors) => {
+	authors.forEach((author) => {});
+};
