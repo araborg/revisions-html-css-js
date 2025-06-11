@@ -17,6 +17,12 @@ fetch(
 	.then((data) => {
 		authorDataArr = data;
 	})
-	.catch();
+	.catch((err) => {
+		authorContainer.inerttHTML = `
+            <p class='error-msg'>
+                There was an error loading the authors
+            </p>
+        `;
+	});
 
 // cons
