@@ -54,3 +54,5 @@ const displayAuthors = (authors) => {
         `;
 	});
 };
+
+const fetchMoreAuthors = () => {};
