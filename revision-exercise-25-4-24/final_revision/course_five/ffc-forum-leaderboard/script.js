@@ -42,7 +42,7 @@ const allCategories = {
 
 const fetchForumLatest = async () => {
 	try {
-		const res = await fetch(fetchForumLatest);
+		const res = await fetch(forumLatest);
 		const data = await res.json();
 		console.log(data);
 	} catch (err) {}
@@ -50,7 +50,7 @@ const fetchForumLatest = async () => {
 
 const fetchforumTopicUrl = async () => {
 	try {
-		const res = await fetch(fetchforumTopicUrl);
+		const res = await fetch(forumTopicUrl);
 		const data = await res.json();
 		console.log(data);
 	} catch (err) {}
@@ -58,7 +58,7 @@ const fetchforumTopicUrl = async () => {
 
 const fetchforumCategoryUrl = async () => {
 	try {
-		const res = await fetch(fetchforumCategoryUrl);
+		const res = await fetch(forumCategoryUrl);
 		const data = await res.json();
 		console.log(data);
 	} catch (err) {
@@ -71,7 +71,7 @@ const fetchforumCategoryUrl = async () => {
 
 const fetchavatarUrl = async () => {
 	try {
-		const res = await fetch(fetchavatarUrl);
+		const res = await fetch(avatarUrl);
 		const data = await res.json();
 		console.log(data);
 	} catch (err) {}
