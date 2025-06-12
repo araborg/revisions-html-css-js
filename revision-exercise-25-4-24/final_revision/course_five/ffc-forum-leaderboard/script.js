@@ -92,66 +92,26 @@ closed: false
 created_at: "2024-04-19T11:37:53.476Z"
 fancy_title: "Personal Portfolio Webpage - Build a Personal Portfolio Webpage"
 
-featured_link
-: 
-null
-has_accepted_answer
-: 
-true
-has_summary
-: 
-false
-highest_post_number
-: 
-3
-id
-: 
-686136
-image_url
-: 
-null
-last_posted_at
-: 
-"2024-04-19T11:47:25.603Z"
-last_poster_username
-: 
-"chiebukabonaventure"
-like_count
-: 
-1
-liked
-: 
-null
-pinned
-: 
-false
-pinned_globally
-: 
-false
-posters
-: 
-(2) [{…}, {…}]
-posts_count
-: 
-3
-reply_count
-: 
-1
-slug
-: 
-"personal-portfolio-webpage-build-a-personal-portfolio-webpage"
-tags_descriptions
-: 
-{}
-title
-: 
-"Personal Portfolio Webpage - Build a Personal Portfolio Webpage"
-unpinned
-: 
-null
-unseen
-: 
-false
+featured_link: null
+has_accepted_answer: true
+has_summary: false
+highest_post_number: 3
+id: 686136
+image_url: null
+last_posted_at: "2024-04-19T11:47:25.603Z"
+last_poster_username: "chiebukabonaventure"
+like_count: 1
+liked: null
+pinned: false
+pinned_globally: false
+posters: (2) [{…}, {…}]
+posts_count: 3
+reply_count: 1
+slug: "personal-portfolio-webpage-build-a-personal-portfolio-webpage"
+tags_descriptions: {}
+title: "Personal Portfolio Webpage - Build a Personal Portfolio Webpage"
+unpinned: null
+unseen: false
 views
 : 
 23
