@@ -58,9 +58,13 @@ const fetchData = async () => {
 
 		// topic_list
 		console.log(data.topic_list);
+
+		showLatestPosts(data);
 	} catch (err) {
 		console.log(err);
 	}
 };
 
 fetchData();
+
+const showLatestPosts = () => {};
