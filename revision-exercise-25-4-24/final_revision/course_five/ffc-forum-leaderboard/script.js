@@ -67,4 +67,6 @@ const fetchData = async () => {
 
 fetchData();
 
-const showLatestPosts = () => {};
+const showLatestPosts = (data) => {
+	console.log(data);
+};
