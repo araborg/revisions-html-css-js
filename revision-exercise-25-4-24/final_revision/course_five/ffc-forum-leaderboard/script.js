@@ -48,16 +48,16 @@ const fetchData = async () => {
 		// console.log(data);
 
 		// flair_groups
-		console.log(data.flair_groups);
+		// console.log(data.flair_groups);
 
 		// primary_groups:
-		console.log(data.primary_groups);
+		// console.log(data.primary_groups);
 
 		// flair_groups
-		console.log(data.flair_groups);
+		// console.log(data.flair_groups);
 
 		// topic_list
-		console.log(data.topic_list);
+		// console.log(data.topic_list);
 
 		showLatestPosts(data);
 	} catch (err) {
@@ -70,5 +70,10 @@ fetchData();
 const showLatestPosts = (data) => {
 	console.log(data);
 
-	const {} = data;
+	const {topic_list, users} = data;
+	const {topics} = topic_list;
+
+	postContainer.innerHTML = topics.map((item) => {
+		console.log(item);
+	});
 };
