@@ -112,12 +112,8 @@ tags_descriptions: {}
 title: "Personal Portfolio Webpage - Build a Personal Portfolio Webpage"
 unpinned: null
 unseen: false
-views
-: 
-23
-visible
-: 
-true
+views: 23
+visible: true
 
 
 */
