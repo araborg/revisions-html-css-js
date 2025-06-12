@@ -57,7 +57,7 @@ const fetchData = async () => {
 		console.log(data.flair_groups);
 
 		// topic_list
-		// console.log(data.topic_list);
+		console.log(data.topic_list);
 	} catch (err) {
 		console.log(err);
 	}
