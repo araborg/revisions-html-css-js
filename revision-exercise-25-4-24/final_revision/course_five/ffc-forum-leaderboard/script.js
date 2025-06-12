@@ -40,4 +40,7 @@ const allCategories = {
 	},
 };
 
-const fetchData = async () => {};
+const fetchData = async () => {
+	try {
+	} catch (err) {}
+};
