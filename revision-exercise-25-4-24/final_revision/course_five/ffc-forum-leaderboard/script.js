@@ -50,3 +50,5 @@ const fetchData = async () => {
 		console.log(err);
 	}
 };
+
+fetchData();
