@@ -39,3 +39,5 @@ const allCategories = {
 		className: "backend",
 	},
 };
+
+const fetchData = async () => {};
