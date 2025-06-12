@@ -47,12 +47,12 @@ const fetchData = async () => {
 
 		// console.log(data);
 
-		console.log("flair_groups: " + data.flair_groups);
-		console.log(
-			`primary_groups: ` + data.primary_groups
-		);
-		console.log(`flair_groups:` + data.flair_groups);
-		console.log(`topic_list:` + data.topic_list);
+		console.log("flair_groups:"`${data.flair_groups}`);
+		// console.log(
+		// 	`primary_groups: ${data.primary_groups``}
+		// );
+		// console.log(`flair_groups: ${data.flair_groups}`);
+		// console.log(`topic_list: ${data.topic_list}`);
 	} catch (err) {
 		console.log(err);
 	}
