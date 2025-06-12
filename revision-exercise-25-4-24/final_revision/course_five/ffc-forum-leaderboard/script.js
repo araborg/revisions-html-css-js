@@ -48,6 +48,7 @@ const fetchData = async () => {
 		console.log(data);
 
 		console.log(data.flair_groups);
+		console.log(data.primary_groups);
 	} catch (err) {
 		console.log(err);
 	}
