@@ -52,8 +52,12 @@ const fetchData = async () => {
 
 		// primary_groups:
 		console.log(data.primary_groups);
-		// console.log(`flair_groups: ${data.flair_groups}`);
-		// console.log(`topic_list: ${data.topic_list}`);
+
+		// flair_groups
+		console.log(data.flair_groups);
+
+		// topic_list
+		// console.log(data.topic_list);
 	} catch (err) {
 		console.log(err);
 	}
