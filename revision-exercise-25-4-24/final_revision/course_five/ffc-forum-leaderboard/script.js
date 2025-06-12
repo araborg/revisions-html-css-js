@@ -69,4 +69,6 @@ fetchData();
 
 const showLatestPosts = (data) => {
 	console.log(data);
+
+	const {} = data;
 };
