@@ -42,5 +42,11 @@ const allCategories = {
 
 const fetchData = async () => {
 	try {
-	} catch (err) {}
+		const res = await fetch(forumLatest);
+		const data = await res.json();
+
+		console.log(data);
+	} catch (err) {
+		console.log(err);
+	}
 };
