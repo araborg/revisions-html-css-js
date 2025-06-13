@@ -33,7 +33,11 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
-		pokemonName.textContent = `${data.name}`;
+		pokemonName.textContent = `${data.name.toUpperCase()}`;
+
+		pokemonID.textContent = `#${data.id}`;
+		weight.textContent = `${data.weight}`;
+		height.textContent = `${data.height}`;
 
 		console.log(data);
 	} catch (err) {}
