@@ -90,6 +90,8 @@ const showLatestPosts = (data) => {
 		.join("");
 };
 
+const avatars = (posters, users) => {};
+
 /*
 id: 686136
 bumped_at: "2024-04-19T11:47:25.603Z"
