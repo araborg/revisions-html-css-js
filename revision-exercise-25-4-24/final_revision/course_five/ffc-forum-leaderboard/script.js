@@ -99,6 +99,7 @@ const showLatestPosts = (data) => {
 
 					<td<${viewCount(views)}</td>
 
+					<td>${timeAgo(bumped_at)}</td>
 				</tr>
 			`;
 		})
@@ -137,8 +138,6 @@ const avatars = (posters, users) => {
 
 const viewCount = (views) => {
 	const thousands = Math.floor(views / 1000);
-
-	console.log(thousands);
 
 	if (views >= 1000) {
 		return `${thousands}k`;
