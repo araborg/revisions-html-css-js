@@ -107,10 +107,11 @@ const forumCategory = (id) => {
 		selectedCategory.className = className;
 		selectedCategory.category = category;
 	} else {
+		// if dre is no id
+		selectedCategory.id = 1;
+
 		selectedCategory.className = "general";
 		selectedCategory.category = "General";
-
-		selectedCategory.id = 1;
 	}
 
 	// link attributes
