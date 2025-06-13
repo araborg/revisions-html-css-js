@@ -76,7 +76,7 @@ const showLatestPosts = (data) => {
 
 			// console.log(`${forumTopicUrl}${slug}/${id}`);
 
-			console.log(posters);
+			console.log(posters, users);
 
 			return `
 			<tr>
@@ -103,6 +103,10 @@ const avatars = (posters, users) => {
 		const user = users.find(
 			(user) => user.id === poster.user_id
 		);
+
+		if (user) {
+			const avatar = user.avatar_template;
+		}
 	});
 };
 
