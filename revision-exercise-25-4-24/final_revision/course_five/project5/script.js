@@ -101,4 +101,6 @@ searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	getPokemon();
+
+	console.log("Hello");
 });
