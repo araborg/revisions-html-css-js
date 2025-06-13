@@ -138,8 +138,6 @@ const avatars = (posters, users) => {
 					30
 				);
 
-				console.log(avatar);
-
 				const userAvatarUrl = avatar.startsWith(
 					"/user_avatar"
 				)
@@ -180,7 +178,7 @@ const timeAgo = (time) => {
 		timeDifference / msPerMinute
 	);
 	const hoursAgo = Math.floor(minutesAgo / 60);
-	const daysAgo = Math.floor(hoursAgo / 60);
+	const daysAgo = Math.floor(hoursAgo / 24);
 
 	if (minutesAgo < 60) {
 		return `${minutesAgo}m ago`;
