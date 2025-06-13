@@ -37,8 +37,6 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
-		console.log(data);
-
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
 		pokemonID.textContent = `#${data.id}`;
@@ -67,8 +65,6 @@ const getPokemon = async () => {
 				</span>
 			`
 		);
-
-		console.log(data);
 	} catch (err) {}
 };
 
