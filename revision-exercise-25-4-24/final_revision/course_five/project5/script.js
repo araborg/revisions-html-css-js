@@ -102,16 +102,3 @@ searchForm.addEventListener("submit", (e) => {
 
 	getPokemon();
 });
-
-/*
-height: 32
-id: 1
-name: "Pyrolynx"
-
-special: {name: 'Blazing Reflex', description: 'Increases speed when hit by a Fire-type move.'}
-
-stats: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
-types: [{…}]
-weight: 42
-
-*/
