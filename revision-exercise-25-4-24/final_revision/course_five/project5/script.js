@@ -60,6 +60,8 @@ const getPokemon = async () => {
 
 		speed.textContent = data.stats[5].base_stat;
 
+		types.innerHTML = data.types.map();
+
 		console.log(data);
 	} catch (err) {}
 };
