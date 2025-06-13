@@ -164,11 +164,9 @@ const timeAgo = (time) => {
 };
 
 const forumCategory = (id) => {
-	// console.log(id);
-
 	let selectedCategory = {};
 
-	console.log(allCategories.hasOwnProperty(id));
+	// ds will aslo work: if (allCategories[id]) {}
 
 	if (allCategories.hasOwnProperty(id)) {
 		const {className, category} = allCategories[id];
