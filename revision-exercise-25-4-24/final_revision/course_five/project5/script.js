@@ -62,10 +62,10 @@ const getPokemon = async () => {
 
 		types.innerHTML = data.types.map(
 			(obj) => `
-	<span class="type ${obj.type.name}">
-		${obj.type.name}
-	</span>
-`
+				<span class="type ${obj.type.name}">
+					${obj.type.name}
+				</span>
+			`
 		);
 
 		console.log(data);
