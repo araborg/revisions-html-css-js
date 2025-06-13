@@ -37,6 +37,8 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
+		console.log(data);
+
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
 		pokemonID.textContent = `#${data.id}`;
@@ -77,6 +79,7 @@ const getPokemon = async () => {
 };
 
 const resetDisplay = () => {
+	// remove d img
 	const sprite = document.getElementById("sprite");
 };
 
