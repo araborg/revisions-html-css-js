@@ -105,13 +105,24 @@ const avatars = (posters, users) => {
 			(user) => user.id === poster.user_id
 		);
 
-		console.log(user.avatar_template);
+		// console.log(user.avatar_template);
 
 		if (user) {
 			const avatar = user.avatar_template.replace(
 				/{size}/,
 				30
 			);
+
+			const userAvatarUrl = avatar.startsWith(
+				"/user_avatar"
+			)
+				? avatarUrl.concat(avatar)
+				: avatar;
+
+			// https://sea1.discourse-cdn.com/freecodecamp/user_avatar/forum.freecodecamp.org/quincylarson/30/212400_2.png
+
+			// const avatarUrl =
+			// "https://sea1.discourse-cdn.com/freecodecamp";
 		}
 	});
 };
