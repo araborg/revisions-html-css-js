@@ -61,14 +61,14 @@ const showLatestPosts = (data) => {
 
 	postContainer.innerHTML = topics.map((item) => {
 		const {
+			bumped_at,
+			category_id,
 			id,
-			title,
-			views,
+			posters,
 			posts_count,
 			slug,
-			posters,
-			category_id,
-			bumped_at,
+			title,
+			views,
 		} = item;
 	});
 };
