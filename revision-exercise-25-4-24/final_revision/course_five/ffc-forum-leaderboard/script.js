@@ -93,6 +93,8 @@ const showLatestPosts = (data) => {
 						</div>
 					</td>
 
+					<td>${posts_count - 1}</td>
+
 				</tr>
 			`;
 		})
