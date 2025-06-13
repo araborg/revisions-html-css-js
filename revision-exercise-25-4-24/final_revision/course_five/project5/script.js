@@ -81,6 +81,7 @@ const getPokemon = async () => {
 const resetDisplay = () => {
 	// remove d img
 	const sprite = document.getElementById("sprite");
+	if (sprite) sprite.remove();
 };
 
 searchForm.addEventListener("submit", (e) => {
