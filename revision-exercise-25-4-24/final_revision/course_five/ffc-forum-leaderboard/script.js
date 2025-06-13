@@ -97,6 +97,8 @@ const showLatestPosts = (data) => {
 
 					<td>${posts_count - 1}</td>
 
+					<td<${viewCount(view)}</td>
+
 				</tr>
 			`;
 		})
@@ -131,6 +133,10 @@ const avatars = (posters, users) => {
 			}
 		})
 		.join("");
+};
+
+const viewCount = (views) => {
+	console.log(views);
 };
 
 /*
