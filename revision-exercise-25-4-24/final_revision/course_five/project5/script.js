@@ -36,8 +36,9 @@ const getPokemon = async () => {
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
 		pokemonID.textContent = `#${data.id}`;
-		weight.textContent = `${data.weight}`;
-		height.textContent = `${data.height}`;
+
+		weight.textContent = `Weight: ${data.weight}`;
+		height.textContent = `Height: ${data.height}`;
 
 		console.log(data);
 	} catch (err) {}
