@@ -70,6 +70,17 @@ const showLatestPosts = (data) => {
 			title,
 			views,
 		} = item;
+
+		return `
+			<tr>
+				<td>
+					<a class="post-title" target="_blank" href="${forumTopicUrl}${slug}/${id}">
+						${title}
+					</a>
+				</td>
+
+			</tr>
+		`;
 	});
 };
 
