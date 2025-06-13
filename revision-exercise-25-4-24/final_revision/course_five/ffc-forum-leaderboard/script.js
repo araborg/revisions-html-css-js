@@ -138,9 +138,13 @@ const avatars = (posters, users) => {
 const viewCount = (views) => {
 	// console.log(views);
 
-	const thousands = views / 1000;
+	const thousands = Math.floor(views / 1000);
 
 	console.log(thousands);
+
+	if (views >= 1000) {
+		return `${thousands}k`;
+	}
 };
 
 /*
