@@ -105,6 +105,12 @@ searchForm.addEventListener("submit", (e) => {
 	getPokemon();
 });
 
+searchInput.addEventListener("keydown", (e) => {
+	if (e.target.key === "Enter") {
+		console.log("Hello");
+	}
+});
+
 /*
 height: 32
 id: 1
