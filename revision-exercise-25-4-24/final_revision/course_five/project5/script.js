@@ -82,6 +82,21 @@ const resetDisplay = () => {
 	// remove d img
 	const sprite = document.getElementById("sprite");
 	if (sprite) sprite.remove();
+
+	pokemonName.textContent = "";
+	pokemonID.textContent = "";
+
+	height.textContent = "";
+	weight.textContent = "";
+
+	types.innerHTML = "";
+
+	hp.textContent = "";
+	attack.textContent = "";
+	defense.textContent = "";
+	specialAttack.textContent = "";
+	specialDefense.textContent = "";
+	speed.textContent = "";
 };
 
 searchForm.addEventListener("submit", (e) => {
