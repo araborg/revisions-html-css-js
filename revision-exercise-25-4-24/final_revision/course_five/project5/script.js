@@ -25,7 +25,11 @@ const speed = document.getElementById("speed");
 const getPokemon = async () => {
 	try {
 		const pokemonNameOrId =
-			searchInput.ariaValueMax.toLowerCase();
+			searchInput.value.toLowerCase();
+
+		const res = await fetch(
+			`https://rpg-creature-api.freecodecamp.rocks/api/creature/{name-or-id}`
+		);
 
 		console.log(pokemonNameOrId);
 	} catch (err) {}
