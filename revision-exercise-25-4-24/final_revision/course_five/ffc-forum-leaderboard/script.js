@@ -60,9 +60,7 @@ const showLatestPosts = (data) => {
 	const {topics} = topic_list;
 
 	postContainer.innerHTML = topics.map((item) => {
-		console.log(item);
-
-		const {id} = item;
+		const {} = item;
 	});
 };
 
