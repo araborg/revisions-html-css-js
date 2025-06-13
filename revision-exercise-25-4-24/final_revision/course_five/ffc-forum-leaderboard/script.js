@@ -150,6 +150,10 @@ const timeAgo = (time) => {
 	const hoursAgo = Math.floor(minutesAgo / 60);
 	const daysAgo = Math.floor(hoursAgo / 60);
 
+	if (minutesAgo < 60) {
+		return `${minutesAgo}m ago`;
+	}
+
 	console.log(timeDifference);
 };
 
