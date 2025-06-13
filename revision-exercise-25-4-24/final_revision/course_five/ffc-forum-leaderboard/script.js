@@ -97,6 +97,33 @@ const showLatestPosts = (data) => {
 		.join("");
 };
 
+const forumCategory = (id) => {
+	let selectedCategory = {};
+
+	// ds will aslo work: if (allCategories[id]) {}
+
+	if (allCategories.hasOwnProperty(id)) {
+		const {className, category} = allCategories[id];
+
+		selectedCategory.className = className;
+		selectedCategory.category = category;
+	} else {
+		selectedCategory.className = "general";
+		selectedCategory.category = "General";
+
+		selectedCategory.id = 1;
+	}
+
+	// link attributes
+	const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+	const linkText = selectedCategory.category;
+	const linkClass = `category ${selectedCategory.className}`;
+
+	return `<a href="${url}" class="${linkClass}" target="_blank">
+        ${linkText}
+    </a>`;
+};
+
 const avatars = (posters, users) => {
 	return posters
 		.map((poster) => {
@@ -161,33 +188,6 @@ const timeAgo = (time) => {
 	}
 
 	return `${daysAgo}d ago`;
-};
-
-const forumCategory = (id) => {
-	let selectedCategory = {};
-
-	// ds will aslo work: if (allCategories[id]) {}
-
-	if (allCategories.hasOwnProperty(id)) {
-		const {className, category} = allCategories[id];
-
-		selectedCategory.className = className;
-		selectedCategory.category = category;
-	} else {
-		selectedCategory.className = "general";
-		selectedCategory.category = "General";
-
-		selectedCategory.id = 1;
-	}
-
-	// link attributes
-	const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
-	const linkText = selectedCategory.category;
-	const linkClass = `category ${selectedCategory.className}`;
-
-	return `<a href="${url}" class="${linkClass}" target="_blank">
-        ${linkText}
-    </a>`;
 };
 
 /*
