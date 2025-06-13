@@ -22,4 +22,4 @@ const specialDefense = document.getElementById(
 );
 const speed = document.getElementById("speed");
 
-console.log(pokemonName, pokemonID);
+const getPokemon = async () => {};
