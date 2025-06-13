@@ -28,10 +28,12 @@ const getPokemon = async () => {
 			searchInput.value.toLowerCase();
 
 		const res = await fetch(
-			`https://rpg-creature-api.freecodecamp.rocks/api/creature/{name-or-id}`
+			`https://rpg-creature-api.freecodecamp.rocks/api/creature/${pokemonNameOrId}`
 		);
 
-		console.log(pokemonNameOrId);
+		const data = await res.json();
+
+		console.log(data);
 	} catch (err) {}
 };
 
