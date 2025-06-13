@@ -59,19 +59,20 @@ const showLatestPosts = (data) => {
 	const {topic_list, users} = data;
 	const {topics} = topic_list;
 
-	postContainer.innerHTML = topics.map((item) => {
-		const {
-			bumped_at,
-			category_id,
-			id,
-			posters,
-			posts_count,
-			slug,
-			title,
-			views,
-		} = item;
+	postContainer.innerHTML = topics
+		.map((item) => {
+			const {
+				bumped_at,
+				category_id,
+				id,
+				posters,
+				posts_count,
+				slug,
+				title,
+				views,
+			} = item;
 
-		return `
+			return `
 			<tr>
 				<td>
 					<a class="post-title" target="_blank" href="${forumTopicUrl}${slug}/${id}">
@@ -81,7 +82,10 @@ const showLatestPosts = (data) => {
 
 			</tr>
 		`;
-	});
+		})
+		.join("");
+
+	console.log("${forumTopicUrl}${slug}/${id}");
 };
 
 /*
