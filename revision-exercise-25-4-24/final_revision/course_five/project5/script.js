@@ -58,13 +58,15 @@ const getPokemon = async () => {
 
 		speed.textContent = data.stats[5].base_stat;
 
-		types.innerHTML = data.types.map(
-			(obj) => `
+		types.innerHTML = data.types
+			.map(
+				(obj) => `
 				<span class="type ${obj.type.name}">
 					${obj.type.name}
 				</span>
 			`
-		);
+			)
+			.join("");
 	} catch (err) {}
 };
 
