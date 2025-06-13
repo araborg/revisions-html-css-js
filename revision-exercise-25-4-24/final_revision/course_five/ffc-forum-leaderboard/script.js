@@ -97,7 +97,7 @@ const showLatestPosts = (data) => {
 
 					<td>${posts_count - 1}</td>
 
-					<td<${viewCount(view)}</td>
+					<td<${viewCount(views)}</td>
 
 				</tr>
 			`;
@@ -136,7 +136,11 @@ const avatars = (posters, users) => {
 };
 
 const viewCount = (views) => {
-	console.log(views);
+	// console.log(views);
+
+	const thousands = views / 1000;
+
+	console.log(thousands);
 };
 
 /*
