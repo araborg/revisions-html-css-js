@@ -37,7 +37,7 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
-		// console.log(data.sprites.front_default);
+		console.log(data);
 
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
