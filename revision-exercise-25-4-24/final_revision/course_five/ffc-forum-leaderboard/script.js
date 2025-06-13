@@ -59,6 +59,8 @@ const showLatestPosts = (data) => {
 	const {topic_list, users} = data;
 	const {topics} = topic_list;
 
+	// const {slug, id} = topic_list;
+
 	postContainer.innerHTML = topics
 		.map((item) => {
 			const {
@@ -72,6 +74,8 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
+			console.log(`${forumTopicUrl}${slug}/${id}`);
+
 			return `
 			<tr>
 				<td>
@@ -84,8 +88,6 @@ const showLatestPosts = (data) => {
 		`;
 		})
 		.join("");
-
-	console.log("${forumTopicUrl}${slug}/${id}");
 };
 
 /*
