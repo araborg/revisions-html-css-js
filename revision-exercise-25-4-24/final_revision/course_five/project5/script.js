@@ -76,6 +76,10 @@ const getPokemon = async () => {
 	}
 };
 
+const resetDisplay = () => {
+	const sprite = document.getElementById("sprite");
+};
+
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
