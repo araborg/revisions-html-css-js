@@ -101,7 +101,6 @@ const forumCategory = (id) => {
 	let selectedCategory = {};
 
 	// ds will aslo work: if (allCategories[id]) {}
-
 	if (allCategories.hasOwnProperty(id)) {
 		const {className, category} = allCategories[id];
 
