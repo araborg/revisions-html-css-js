@@ -163,7 +163,16 @@ const timeAgo = (time) => {
 	return `${daysAgo}d ago`;
 };
 
-const forumCategory = (id) => {};
+const forumCategory = (id) => {
+	// console.log(id);
+
+	let selectedCategory = {};
+
+	console.log(allCategories.hasOwnProperty(id));
+
+	if (allCategories.hasOwnProperty(id)) {
+	}
+};
 
 /*
 id: 686136
