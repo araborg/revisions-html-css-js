@@ -116,6 +116,7 @@ const forumCategory = (id) => {
 
 	// link attributes
 	const url = `${forumCategoryUrl}${selectedCategory.className}/${id}`;
+
 	const linkText = selectedCategory.category;
 	const linkClass = `category ${selectedCategory.className}`;
 
@@ -130,6 +131,8 @@ const avatars = (posters, users) => {
 			const user = users.find(
 				(user) => user.id === poster.user_id
 			);
+
+			console.log(user.avatar_template);
 
 			if (user) {
 				const avatar = user.avatar_template.replace(
