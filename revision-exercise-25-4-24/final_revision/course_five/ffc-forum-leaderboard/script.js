@@ -70,6 +70,8 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
+			console.log(viewCount(views));
+
 			return `
 				<tr>
 					<td>
