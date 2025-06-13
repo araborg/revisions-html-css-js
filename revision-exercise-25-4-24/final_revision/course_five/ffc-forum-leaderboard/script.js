@@ -139,6 +139,8 @@ const timeAgo = (time) => {
 	const currentTime = new Date();
 	const lastPost = new Date(time);
 
+	const timeDifference = currentTime - lastPost;
+
 	console.log(lastPost);
 };
 
