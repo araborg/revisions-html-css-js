@@ -54,12 +54,8 @@ const fetchData = async () => {
 fetchData();
 
 const showLatestPosts = (data) => {
-	// console.log(data);
-
 	const {topic_list, users} = data;
 	const {topics} = topic_list;
-
-	// const {slug, id} = topic_list;
 
 	postContainer.innerHTML = topics
 		.map((item) => {
