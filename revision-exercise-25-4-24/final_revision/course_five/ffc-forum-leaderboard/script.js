@@ -86,6 +86,12 @@ const showLatestPosts = (data) => {
 					</a>
 				</td>
 
+				<td>
+					<div class="avatar-container">
+						${avatars(posters, users)}
+					</div>
+				</td>
+
 			</tr>
 		`;
 		})
