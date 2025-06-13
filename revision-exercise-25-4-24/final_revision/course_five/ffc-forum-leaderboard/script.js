@@ -154,7 +154,11 @@ const timeAgo = (time) => {
 		return `${minutesAgo}m ago`;
 	}
 
-	console.log(timeDifference);
+	if (hoursAgo < 60) {
+		return `${hoursAgo}h ago`;
+	}
+
+	return `${daysAgo}d ago`;
 };
 
 /*
