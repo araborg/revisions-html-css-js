@@ -70,8 +70,6 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
-			console.log(slug);
-
 			return `
 				<tr>
 					<td>
