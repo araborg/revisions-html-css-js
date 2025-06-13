@@ -70,14 +70,14 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
-			console.log(viewCount(views));
-
 			return `
 				<tr>
 					<td>
 						<a class="post-title" target="_blank" href="${forumTopicUrl}${slug}/${id}">
 							${title}
 						</a>
+
+						${forumCategory(category_id)}
 					</td>
 
 					<td>
@@ -88,7 +88,7 @@ const showLatestPosts = (data) => {
 
 					<td>${posts_count - 1}</td>
 
-					<td<${viewCount(views)}</td>
+					<td>${viewCount(views)}</td>
 
 					<td>${timeAgo(bumped_at)}</td>
 				</tr>
@@ -162,6 +162,8 @@ const timeAgo = (time) => {
 
 	return `${daysAgo}d ago`;
 };
+
+const forumCategory = (id) => {};
 
 /*
 id: 686136
