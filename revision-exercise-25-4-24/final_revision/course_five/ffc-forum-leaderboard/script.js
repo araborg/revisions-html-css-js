@@ -45,20 +45,6 @@ const fetchData = async () => {
 		const res = await fetch(forumLatest);
 		const data = await res.json();
 
-		// console.log(data);
-
-		// flair_groups
-		// console.log(data.flair_groups);
-
-		// primary_groups:
-		// console.log(data.primary_groups);
-
-		// flair_groups
-		// console.log(data.flair_groups);
-
-		// topic_list
-		// console.log(data.topic_list);
-
 		showLatestPosts(data);
 	} catch (err) {
 		console.log(err);
