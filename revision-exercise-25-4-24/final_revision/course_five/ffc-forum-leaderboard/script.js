@@ -74,6 +74,8 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
+			console.log(posts_count);
+
 			// console.log(`${forumTopicUrl}${slug}/${id}`);
 
 			// console.log(posters);
