@@ -67,7 +67,13 @@ const getPokemon = async () => {
 			`
 			)
 			.join("");
-	} catch (err) {}
+	} catch (err) {
+		resetDisplay();
+
+		alert("Pokémon not found");
+
+		console.log(`Pokémon not found: ${err}`);
+	}
 };
 
 searchForm.addEventListener("submit", (e) => {
