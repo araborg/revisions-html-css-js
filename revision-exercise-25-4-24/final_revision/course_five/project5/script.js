@@ -30,3 +30,9 @@ const getPokemon = async () => {
 		console.log(pokemonNameOrId);
 	} catch (err) {}
 };
+
+searchForm.addEventListener("submit", (e) => {
+	e.preventDefault();
+
+	getPokemon();
+});
