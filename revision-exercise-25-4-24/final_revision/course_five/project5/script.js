@@ -27,11 +27,17 @@ const getPokemon = async () => {
 		const pokemonNameOrId =
 			searchInput.value.toLowerCase();
 
+		// const res = await fetch(
+		// 	`https://rpg-creature-api.freecodecamp.rocks/api/creature/${pokemonNameOrId}`
+		// );
+
 		const res = await fetch(
-			`https://rpg-creature-api.freecodecamp.rocks/api/creature/${pokemonNameOrId}`
+			`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${pokemonNameOrId}`
 		);
 
 		const data = await res.json();
+
+		// console.log(data.sprites.front_default);
 
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
