@@ -136,7 +136,10 @@ const viewCount = (views) => {
 };
 
 const timeAgo = (time) => {
-	console.log(time);
+	const currentTime = new Date();
+	const lastPost = new Date(time);
+
+	console.log(lastPost);
 };
 
 /*
