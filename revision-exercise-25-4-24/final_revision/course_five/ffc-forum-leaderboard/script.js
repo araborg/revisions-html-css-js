@@ -123,6 +123,8 @@ const avatars = (posters, users) => {
 
 			// const avatarUrl =
 			// "https://sea1.discourse-cdn.com/freecodecamp";
+
+			return `<img src="${userAvatarUrl}" alt="${user.name}`;
 		}
 	});
 };
