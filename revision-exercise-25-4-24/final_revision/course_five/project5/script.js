@@ -24,5 +24,9 @@ const speed = document.getElementById("speed");
 
 const getPokemon = async () => {
 	try {
+		const pokemonNameOrId =
+			searchInput.ariaValueMax.toLowerCase();
+
+		console.log(pokemonNameOrId);
 	} catch (err) {}
 };
