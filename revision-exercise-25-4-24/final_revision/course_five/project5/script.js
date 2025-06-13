@@ -37,8 +37,6 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
-		console.log(data);
-
 		pokemonName.textContent = `${data.name.toUpperCase()}`;
 
 		pokemonID.textContent = `#${data.id}`;
@@ -103,12 +101,6 @@ searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	getPokemon();
-});
-
-searchInput.addEventListener("keydown", (e) => {
-	if (e.target.key === "Enter") {
-		console.log("Hello");
-	}
 });
 
 /*
