@@ -74,7 +74,9 @@ const showLatestPosts = (data) => {
 				views,
 			} = item;
 
-			console.log(`${forumTopicUrl}${slug}/${id}`);
+			// console.log(`${forumTopicUrl}${slug}/${id}`);
+
+			console.log(posters);
 
 			return `
 			<tr>
@@ -90,7 +92,13 @@ const showLatestPosts = (data) => {
 		.join("");
 };
 
-const avatars = (posters, users) => {};
+const avatars = (posters, users) => {
+	return posters.map((poster) => {
+		const user = users.find(
+			(user) => user.id === poster.user_id
+		);
+	});
+};
 
 /*
 id: 686136
