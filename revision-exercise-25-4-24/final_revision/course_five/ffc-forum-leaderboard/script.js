@@ -76,7 +76,8 @@ const showLatestPosts = (data) => {
 
 			// console.log(`${forumTopicUrl}${slug}/${id}`);
 
-			console.log(posters, users);
+			// console.log(posters);
+			// console.log(users);
 
 			return `
 			<tr>
@@ -104,8 +105,13 @@ const avatars = (posters, users) => {
 			(user) => user.id === poster.user_id
 		);
 
+		console.log(user.avatar_template);
+
 		if (user) {
-			const avatar = user.avatar_template;
+			const avatar = user.avatar_template.replace(
+				/{size}/,
+				30
+			);
 		}
 	});
 };
