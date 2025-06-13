@@ -132,13 +132,13 @@ const avatars = (posters, users) => {
 				(user) => user.id === poster.user_id
 			);
 
-			console.log(user.avatar_template);
-
 			if (user) {
 				const avatar = user.avatar_template.replace(
 					/{size}/,
 					30
 				);
+
+				console.log(avatar);
 
 				const userAvatarUrl = avatar.startsWith(
 					"/user_avatar"
