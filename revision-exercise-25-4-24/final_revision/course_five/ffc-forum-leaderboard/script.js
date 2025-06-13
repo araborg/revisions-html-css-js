@@ -147,6 +147,8 @@ const timeAgo = (time) => {
 	const minutesAgo = Math.floor(
 		timeDifference / msPerMinute
 	);
+	const hoursAgo = Math.floor(minutesAgo / 60);
+	const daysAgo = Math.floor(hoursAgo / 60);
 
 	console.log(timeDifference);
 };
