@@ -80,53 +80,53 @@ const showLatestPosts = (data) => {
 			// console.log(users);
 
 			return `
-			<tr>
-				<td>
-					<a class="post-title" target="_blank" href="${forumTopicUrl}${slug}/${id}">
-						${title}
-					</a>
-				</td>
+				<tr>
+					<td>
+						<a class="post-title" target="_blank" href="${forumTopicUrl}${slug}/${id}">
+							${title}
+						</a>
+					</td>
 
-				<td>
-					<div class="avatar-container">
-						${avatars(posters, users)}
-					</div>
-				</td>
+					<td>
+						<div class="avatar-container">
+							${avatars(posters, users)}
+						</div>
+					</td>
 
-			</tr>
-		`;
+				</tr>
+			`;
 		})
 		.join("");
 };
 
 const avatars = (posters, users) => {
-	return posters.map((poster) => {
-		const user = users.find(
-			(user) => user.id === poster.user_id
-		);
-
-		// console.log(user.avatar_template);
-
-		if (user) {
-			const avatar = user.avatar_template.replace(
-				/{size}/,
-				30
+	return posters
+		.map((poster) => {
+			const user = users.find(
+				(user) => user.id === poster.user_id
 			);
 
-			const userAvatarUrl = avatar.startsWith(
-				"/user_avatar"
-			)
-				? avatarUrl.concat(avatar)
-				: avatar;
+			if (user) {
+				const avatar = user.avatar_template.replace(
+					/{size}/,
+					30
+				);
 
-			// https://sea1.discourse-cdn.com/freecodecamp/user_avatar/forum.freecodecamp.org/quincylarson/30/212400_2.png
+				const userAvatarUrl = avatar.startsWith(
+					"/user_avatar"
+				)
+					? avatarUrl.concat(avatar)
+					: avatar;
 
-			// const avatarUrl =
-			// "https://sea1.discourse-cdn.com/freecodecamp";
+				// https://sea1.discourse-cdn.com/freecodecamp/user_avatar/forum.freecodecamp.org/quincylarson/30/212400_2.png
 
-			return `<img src="${userAvatarUrl}" alt="${user.name}"/>`;
-		}
-	});
+				// const avatarUrl =
+				// "https://sea1.discourse-cdn.com/freecodecamp";
+
+				return `<img src="${userAvatarUrl}" alt="${user.name}"/>`;
+			}
+		})
+		.join("");
 };
 
 /*
