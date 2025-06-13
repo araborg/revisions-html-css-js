@@ -60,12 +60,25 @@ const showLatestPosts = (data) => {
 	const {topics} = topic_list;
 
 	postContainer.innerHTML = topics.map((item) => {
-		const {} = item;
+		const {id, title} = item;
 	});
 };
 
 /*
 id: 686136
+bumped_at: "2024-04-19T11:47:25.603Z"
+
+category_id: 423
+
+posters: (2) [{…}, {…}]
+
+posts_count: 3
+
+slug: "personal-portfolio-webpage-build-a-personal-portfolio-webpage"
+
+title: "Personal Portfolio Webpage - Build a Personal Portfolio Webpage"
+
+views: 23
 
 
 
