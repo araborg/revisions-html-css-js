@@ -40,7 +40,9 @@ const getPokemon = async () => {
 		weight.textContent = `Weight: ${data.weight}`;
 		height.textContent = `Height: ${data.height}`;
 
-		spriteContainer.innerHTML = ``;
+		spriteContainer.innerHTML = `
+      		<img id="sprite" src="${data.sprites.front_default}" alt="${data.name} front default sprite">
+	    `;
 
 		console.log(data);
 	} catch (err) {}
