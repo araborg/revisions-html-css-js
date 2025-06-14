@@ -49,6 +49,10 @@ const fetchData = async () => {
 
 fetchData();
 
+const getPokemon = (pokemon) => {
+	console.log(pokemon);
+};
+
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
