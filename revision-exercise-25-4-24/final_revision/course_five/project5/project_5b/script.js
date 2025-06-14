@@ -72,8 +72,8 @@ const resetPage = () => {
 	pokemonName.textContent = ``;
 	pokemonID.textContent = ``;
 
-	weight.textContent = `Weight: ${data.weight}`;
-	height.textContent = `Height: ${data.height}`;
+	weight.textContent = ``;
+	height.textContent = ``;
 
 	data.types.map((type) => {
 		types.innerHTML = `
