@@ -61,6 +61,8 @@ const getPokemon = async () => {
 	} catch (err) {
 		alert("Pokemon not found");
 
+		resetPage();
+
 		console.log(`Pokemon not found: ${err}`);
 	}
 };
