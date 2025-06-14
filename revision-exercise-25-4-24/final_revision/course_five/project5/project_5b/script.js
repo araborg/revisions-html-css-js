@@ -27,4 +27,4 @@ const specialAttack = document.getElementById(
 const specialDefense = document.getElementById(
 	"special-defense"
 );
-const hp = document.getElementById("hp");
+const speed = document.getElementById("speed");
