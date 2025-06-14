@@ -41,11 +41,15 @@ const getPokemon = async () => {
 		const data = await res.json();
 
 		pokemonName.textContent = data.name;
-		pokemonID.textContent = data.id;
+		pokemonID.textContent = `#${data.id}`;
 
 		weight.textContent = `Weight: ${data.weight}`;
 		height.textContent = `Height: ${data.height}`;
-		console.log(data);
+
+		data.types.map((type) => {
+			console.log(type);
+		});
+		// console.log(data.types);
 
 		// getPokemon(data);
 	} catch (err) {
