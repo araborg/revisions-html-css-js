@@ -40,8 +40,14 @@ const fetchData = async () => {
 
 		const data = res.json();
 		console.log(data);
-	} catch (err) {}
+	} catch (err) {
+		alert("Pokemon not found");
+
+		console.log(`Pokemon not found: ${err}`);
+	}
 };
+
+fetchData();
 
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
