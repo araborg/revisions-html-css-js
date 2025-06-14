@@ -29,7 +29,7 @@ const specialDefense = document.getElementById(
 );
 const speed = document.getElementById("speed");
 
-const fetchData = async () => {
+const getPokemon = async () => {
 	const pokemonNameOrId = searchInput.value.toLowerCase();
 	console.log(pokemonNameOrId);
 
@@ -48,12 +48,6 @@ const fetchData = async () => {
 
 		console.log(`Pokemon not found: ${err}`);
 	}
-};
-
-fetchData();
-
-const getPokemon = (pokemon) => {
-	console.log(pokemon);
 };
 
 searchForm.addEventListener("submit", (e) => {
