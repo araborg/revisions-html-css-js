@@ -40,6 +40,9 @@ const getPokemon = async () => {
 
 		const data = await res.json();
 
+		pokemonName.textContent = data.name;
+		pokemonID.textContent = data.id;
+
 		weight.textContent = `Weight: ${data.weight}`;
 		height.textContent = `Height: ${data.height}`;
 		console.log(data);
