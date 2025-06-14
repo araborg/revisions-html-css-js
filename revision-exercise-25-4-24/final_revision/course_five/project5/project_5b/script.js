@@ -75,11 +75,9 @@ const resetPage = () => {
 	weight.textContent = ``;
 	height.textContent = ``;
 
-	data.types.map((type) => {
-		types.innerHTML = `
-				<span id="types" class="type">${type.name}</span>
-			`;
-	});
+	types.innerHTML = ``;
+	// data.types.map((type) => {
+	// });
 
 	hp.textContent = ``;
 	attack.textContent = ``;
