@@ -17,3 +17,14 @@ const spriteContainer = document.getElementById(
 );
 
 const types = document.getElementById("types");
+
+const hp = document.getElementById("hp");
+const attack = document.getElementById("attack");
+const defense = document.getElementById("defense");
+const specialAttack = document.getElementById(
+	"special-attack"
+);
+const specialDefense = document.getElementById(
+	"special-defense"
+);
+const hp = document.getElementById("hp");
