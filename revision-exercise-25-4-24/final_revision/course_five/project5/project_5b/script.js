@@ -31,7 +31,6 @@ const speed = document.getElementById("speed");
 
 const getPokemon = async () => {
 	const pokemonNameOrId = searchInput.value.toLowerCase();
-	console.log(pokemonNameOrId);
 
 	try {
 		const res = await fetch(
@@ -47,8 +46,6 @@ const getPokemon = async () => {
 		height.textContent = `Height: ${data.height}`;
 
 		data.types.map((type) => {
-			console.log(type);
-
 			types.innerHTML = `
 				<span id="types" class="type">${type.name}</span>
 			`;
