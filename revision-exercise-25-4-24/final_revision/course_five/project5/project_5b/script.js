@@ -34,10 +34,12 @@ const pokemonUrl =
 
 const fetchData = async () => {
 	const pokemonNameOrId = searchInput.value.toLowerCase();
+	console.log(pokemonNameOrId);
 
 	try {
 		const res = await fetch(
-			`${pokemonUrl}${pokemonNameOrId}`
+			// `${pokemonUrl}${pokemonNameOrId}`
+			`https://rpg-creature-api.freecodecamp.rocks/api/creature/${pokemonNameOrId}`
 		);
 
 		const data = res.json();
@@ -59,5 +61,5 @@ const getPokemon = (pokemon) => {
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
-	console.log(e);
+	getPokemon();
 });
