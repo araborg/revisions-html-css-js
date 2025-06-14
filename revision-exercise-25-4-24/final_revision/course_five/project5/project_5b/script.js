@@ -39,9 +39,10 @@ const fetchData = async () => {
 		const res = await fetch(pokemonUrl);
 
 		const data = res.json();
-		console.log(data);
+
+		getPokemon(data);
 	} catch (err) {
-		alert("Pokemon not found");
+		// alert("Pokemon not found");
 
 		console.log(`Pokemon not found: ${err}`);
 	}
