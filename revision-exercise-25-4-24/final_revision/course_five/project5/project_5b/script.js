@@ -75,8 +75,6 @@ const resetPage = () => {
 	height.textContent = ``;
 
 	types.innerHTML = ``;
-	// data.types.map((type) => {
-	// });
 
 	hp.textContent = ``;
 	attack.textContent = ``;
