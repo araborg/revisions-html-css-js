@@ -44,11 +44,13 @@ const getPokemon = async () => {
 
 		// getPokemon(data);
 	} catch (err) {
-		// alert("Pokemon not found");
+		alert("Pokemon not found");
 
 		console.log(`Pokemon not found: ${err}`);
 	}
 };
+
+const resetPage = () => {};
 
 searchForm.addEventListener("submit", (e) => {
 	e.preventDefault();
