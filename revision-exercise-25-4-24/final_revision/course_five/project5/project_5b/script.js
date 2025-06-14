@@ -48,8 +48,11 @@ const getPokemon = async () => {
 
 		data.types.map((type) => {
 			console.log(type);
+
+			types.innerHTML = `
+				<span id="types">${type.name}</span>
+			`;
 		});
-		// console.log(data.types);
 
 		// getPokemon(data);
 	} catch (err) {
