@@ -36,7 +36,9 @@ const fetchData = async () => {
 	const pokemonNameOrId = searchInput.value.toLowerCase();
 
 	try {
-		const res = await fetch(pokemonUrl);
+		const res = await fetch(
+			`${pokemonUrl}${pokemonNameOrId}`
+		);
 
 		const data = res.json();
 
