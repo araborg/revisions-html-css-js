@@ -29,6 +29,9 @@ const specialDefense = document.getElementById(
 );
 const speed = document.getElementById("speed");
 
+const pokemonUrl =
+	"https://rpg-creature-api.freecodecamp.rocks/api/creature/";
+
 console.log(
 	hp,
 	attack,
@@ -39,6 +42,13 @@ console.log(
 );
 
 const fetchData = async () => {
+	const pokemonNameOrId = searchInput.value.toLowerCase();
+
 	try {
+		const res = await fetch(pokemonUrl);
 	} catch (err) {}
 };
+
+searchForm.addEventListener("submit", (e) => {
+	console.log(e);
+});
