@@ -41,5 +41,7 @@ const fetchData = async () => {
 };
 
 searchForm.addEventListener("submit", (e) => {
+	e.preventDefault();
+
 	console.log(e);
 });
