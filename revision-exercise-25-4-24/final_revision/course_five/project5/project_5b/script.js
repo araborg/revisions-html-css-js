@@ -29,22 +29,20 @@ const specialDefense = document.getElementById(
 );
 const speed = document.getElementById("speed");
 
-const pokemonUrl =
-	"https://rpg-creature-api.freecodecamp.rocks/api/creature/";
-
 const fetchData = async () => {
 	const pokemonNameOrId = searchInput.value.toLowerCase();
 	console.log(pokemonNameOrId);
 
 	try {
 		const res = await fetch(
-			// `${pokemonUrl}${pokemonNameOrId}`
 			`https://rpg-creature-api.freecodecamp.rocks/api/creature/${pokemonNameOrId}`
 		);
 
-		const data = res.json();
+		const data = await res.json();
 
-		getPokemon(data);
+		console.log(data);
+
+		// getPokemon(data);
 	} catch (err) {
 		// alert("Pokemon not found");
 
