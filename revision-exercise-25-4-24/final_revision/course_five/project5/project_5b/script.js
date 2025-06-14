@@ -37,6 +37,9 @@ const fetchData = async () => {
 
 	try {
 		const res = await fetch(pokemonUrl);
+
+		const data = res.json();
+		console.log(data);
 	} catch (err) {}
 };
 
