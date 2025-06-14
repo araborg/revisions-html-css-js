@@ -81,12 +81,12 @@ const resetPage = () => {
 			`;
 	});
 
-	hp.textContent = data.stats[0].base_stat;
-	attack.textContent = data.stats[1].base_stat;
-	defense.textContent = data.stats[0].base_stat;
-	specialAttack.textContent = data.stats[0].base_stat;
-	specialDefense.textContent = data.stats[0].base_stat;
-	speed.textContent = data.stats[0].base_stat;
+	hp.textContent = ``;
+	attack.textContent = ``;
+	defense.textContent = ``;
+	specialAttack.textContent = ``;
+	specialDefense.textContent = ``;
+	speed.textContent = ``;
 };
 
 searchForm.addEventListener("submit", (e) => {
