@@ -37,3 +37,8 @@ console.log(
 	specialDefense,
 	speed
 );
+
+const fetchData = async () => {
+	try {
+	} catch (err) {}
+};
